@@ -18,59 +18,104 @@
 <meta name="twitter:title" content="{{TITLE}}">
 <meta name="twitter:description" content="{{META_DESCRIPTION}}">
 <meta name="robots" content="index, follow, max-image-preview:large">
-<link rel="stylesheet" href="{{CSS_HREF}}">
+<meta name="theme-color" content="#0a1f33">
+<link rel="preconnect" href="https://images.pexels.com" crossorigin>
+<link rel="stylesheet" href="/styles.css">
 <script type="application/ld+json">{{JSONLD}}</script>
 </head>
 <body>
+
 <header class="site-header">
   <div class="container header-row">
-    <a class="brand" href="/"><span class="brand-mark">⚓</span> Boat Rental Marbella</a>
-    <nav class="nav">
+    <a class="brand" href="/">
+      <span class="brand-mark" aria-hidden="true">⚓</span>
+      <span class="brand-text">Boat Rental Marbella</span>
+    </a>
+    <nav class="nav" aria-label="Primary">
       <a href="/yacht-charter-marbella/">Yachts</a>
       <a href="/catamaran-rental-marbella/">Catamarans</a>
       <a href="/boat-rental-no-license-marbella/">No License</a>
       <a href="/boat-rental-puerto-banus/">Puerto Banús</a>
-      <a href="/blog/">Guide</a>
+      <a href="/blog/how-much-does-it-cost-to-rent-a-boat-in-marbella/">Guide</a>
     </nav>
     <div class="cta-stack">
-      <a class="cta-wa" href="https://wa.me/{{WHATSAPP_E164_NOPLUS}}?text=Hi%2C%20I%27d%20like%20to%20book%20a%20boat%20in%20Marbella" rel="nofollow noopener">💬 WhatsApp</a>
-      <a class="cta-tel" href="tel:{{PHONE_E164}}">📞 {{PHONE_DISPLAY}}</a>
-      <a class="cta-ig" href="{{INSTAGRAM_URL}}" rel="noopener" aria-label="Instagram">📷</a>
+      <a class="cta-wa" href="https://wa.me/{{WHATSAPP_E164_NOPLUS}}?text=Hi%2C%20I%27d%20like%20to%20book%20a%20boat%20in%20Marbella" rel="nofollow noopener">
+        <svg viewBox="0 0 24 24" width="16" height="16" fill="currentColor" aria-hidden="true"><path d="M17.5 14.4c-.3-.1-1.7-.8-2-.9-.3-.1-.5-.1-.6.1-.2.3-.7.9-.9 1.1-.2.2-.3.2-.6.1-.3-.1-1.2-.4-2.3-1.4-.8-.7-1.4-1.7-1.6-1.9-.2-.3 0-.4.1-.6.1-.1.3-.3.4-.5.1-.2.2-.3.3-.5.1-.2 0-.4 0-.5 0-.1-.6-1.4-.8-1.9-.2-.5-.4-.4-.6-.4-.2 0-.4 0-.5 0-.2 0-.5.1-.7.3-.2.3-.9.9-.9 2.2 0 1.3.9 2.6 1.1 2.8.1.2 1.8 2.7 4.3 3.8 1.5.6 2.1.7 2.9.5.5-.1 1.4-.6 1.6-1.1.2-.6.2-1 .1-1.1 0-.1-.2-.2-.5-.3zM12 2C6.5 2 2 6.5 2 12c0 1.8.5 3.4 1.4 4.9L2 22l5.2-1.4c1.4.8 3 1.2 4.8 1.2 5.5 0 10-4.5 10-10S17.5 2 12 2z"/></svg>
+        WhatsApp
+      </a>
+      <a class="cta-tel" href="tel:{{PHONE_E164}}" aria-label="Call us">📞</a>
     </div>
+    <button class="nav-burger" aria-label="Menu" onclick="document.querySelector('.nav').classList.toggle('open')">☰</button>
   </div>
 </header>
 
-<figure class="hero">
-  <img
-    src="{{HERO_IMG}}"
-    srcset="{{HERO_SRCSET}}"
-    sizes="100vw"
-    alt="{{HERO_ALT}}"
-    width="1600" height="700"
-    loading="eager" fetchpriority="high">
-</figure>
+<section class="hero">
+  <picture class="hero-img-wrap">
+    <img
+      src="{{HERO_IMG}}"
+      srcset="{{HERO_SRCSET}}"
+      sizes="100vw"
+      alt="{{HERO_ALT}}"
+      width="1600" height="800"
+      loading="eager" fetchpriority="high">
+  </picture>
+  <div class="hero-shade"></div>
+  <div class="hero-content container">
+    {{HERO_EYEBROW}}
+    <h1 class="hero-title">{{HERO_H1}}</h1>
+    <p class="hero-sub">{{HERO_SUB}}</p>
+    <div class="hero-meta">
+      <span class="hero-price">From <strong>€{{PRICE_LOW}}</strong> · 2h skippered</span>
+      <span class="hero-dot">·</span>
+      <span class="hero-incl">Skipper, fuel &amp; drinks included</span>
+    </div>
+    <div class="hero-actions">
+      <a class="btn-hero-primary" href="https://wa.me/{{WHATSAPP_E164_NOPLUS}}?text=Hi%2C%20I%27d%20like%20to%20book%20a%20boat%20in%20Marbella" rel="nofollow noopener">
+        <svg viewBox="0 0 24 24" width="18" height="18" fill="currentColor" aria-hidden="true"><path d="M17.5 14.4c-.3-.1-1.7-.8-2-.9-.3-.1-.5-.1-.6.1-.2.3-.7.9-.9 1.1-.2.2-.3.2-.6.1-.3-.1-1.2-.4-2.3-1.4-.8-.7-1.4-1.7-1.6-1.9-.2-.3 0-.4.1-.6.1-.1.3-.3.4-.5.1-.2.2-.3.3-.5.1-.2 0-.4 0-.5 0-.1-.6-1.4-.8-1.9-.2-.5-.4-.4-.6-.4-.2 0-.4 0-.5 0-.2 0-.5.1-.7.3-.2.3-.9.9-.9 2.2 0 1.3.9 2.6 1.1 2.8.1.2 1.8 2.7 4.3 3.8 1.5.6 2.1.7 2.9.5.5-.1 1.4-.6 1.6-1.1.2-.6.2-1 .1-1.1 0-.1-.2-.2-.5-.3zM12 2C6.5 2 2 6.5 2 12c0 1.8.5 3.4 1.4 4.9L2 22l5.2-1.4c1.4.8 3 1.2 4.8 1.2 5.5 0 10-4.5 10-10S17.5 2 12 2z"/></svg>
+        Book on WhatsApp
+      </a>
+      <a class="btn-hero-ghost" href="#boats">See boats ↓</a>
+    </div>
+  </div>
+</section>
 
 <div class="trust-strip">
   <div class="container trust-row">
-    <span>✓ Skipper &amp; fuel included</span>
-    <span>✓ 60+ boats across 5 marinas</span>
-    <span>✓ WhatsApp reply in &lt;5 min</span>
-    <span>✓ Year-round on the Costa del Sol</span>
+    <span class="trust-item"><span class="trust-ico">⚓</span> Skipper &amp; fuel included</span>
+    <span class="trust-item"><span class="trust-ico">⛵</span> 60+ boats · 5 marinas</span>
+    <span class="trust-item"><span class="trust-ico">💬</span> WhatsApp reply in &lt;5 min</span>
+    <span class="trust-item"><span class="trust-ico">☀</span> Year-round on the Costa del Sol</span>
   </div>
 </div>
 
-<main class="container page">
+{{BOAT_GRID}}
+
+<main id="boats" class="container page">
 {{BREADCRUMBS}}
 <article class="content">
 {{BODY_HTML}}
 </article>
 
 <aside class="book-card">
-  <h3>Book in 60 seconds</h3>
-  <p>WhatsApp our local team — instant quotes, real-time availability across Puerto Banús, Marbella Marina, Cabopino &amp; Estepona.</p>
+  <div class="book-card-price">
+    From <strong>€{{PRICE_LOW}}</strong>
+    <span class="book-card-sub">2h skippered charter</span>
+  </div>
+  <p class="book-card-pitch">Instant quotes from local operators across Puerto Banús, Marbella Marina, Cabopino, Estepona &amp; Sotogrande.</p>
   <a class="btn btn-primary" href="https://wa.me/{{WHATSAPP_E164_NOPLUS}}?text=Hi%2C%20I%27d%20like%20to%20book%20a%20boat%20in%20Marbella" rel="nofollow noopener">💬 Message on WhatsApp</a>
+  <p class="book-card-micro">Avg reply &lt; 5 min · No deposit until you confirm</p>
   <a class="btn btn-secondary" href="tel:{{PHONE_E164}}">📞 Call {{PHONE_DISPLAY}}</a>
   <a class="btn btn-ghost" href="{{AFFILIATE_LINK}}" rel="sponsored nofollow noopener">Browse 60+ boats on Click&amp;Boat →</a>
+  <div class="book-card-incl">
+    <strong>What's included</strong>
+    <ul>
+      <li>Licensed skipper</li>
+      <li>Fuel for the standard route</li>
+      <li>Soft drinks, water &amp; snacks</li>
+      <li>Snorkel gear &amp; inflatables</li>
+      <li>Towels</li>
+    </ul>
+  </div>
 </aside>
 </main>
 
@@ -91,7 +136,7 @@
       </ul>
     </div>
     <div>
-      <h4>Ports</h4>
+      <h4>Ports &amp; trips</h4>
       <ul>
         <li><a href="/boat-rental-puerto-banus/">Puerto Banús</a></li>
         <li><a href="/sunset-cruise-marbella/">Sunset cruises</a></li>
@@ -105,20 +150,29 @@
         <li><a href="/blog/boat-license-rules-spain/">License rules</a></li>
         <li><a href="/blog/best-month-to-rent-a-boat-in-marbella/">Best month</a></li>
         <li><a href="/blog/puerto-banus-vs-marbella-marina/">Which port?</a></li>
+        <li><a href="/blog/gibraltar-day-trip-by-boat/">Gibraltar by boat</a></li>
       </ul>
     </div>
     <div>
       <h4>Contact</h4>
-      <p><a href="https://wa.me/{{WHATSAPP_E164_NOPLUS}}" rel="nofollow noopener">WhatsApp</a><br>
-      <a href="tel:{{PHONE_E164}}">{{PHONE_DISPLAY}}</a><br>
-      <a href="mailto:{{EMAIL}}">{{EMAIL}}</a><br>
-      <a href="{{INSTAGRAM_URL}}" rel="noopener">Instagram {{INSTAGRAM_HANDLE}}</a><br>
-      <a href="{{FACEBOOK_URL}}" rel="noopener">{{FACEBOOK_LABEL}}</a></p>
+      <p>
+        <a href="https://wa.me/{{WHATSAPP_E164_NOPLUS}}" rel="nofollow noopener">WhatsApp</a><br>
+        <a href="tel:{{PHONE_E164}}">{{PHONE_DISPLAY}}</a><br>
+        <a href="mailto:{{EMAIL}}">{{EMAIL}}</a><br>
+        <a href="{{INSTAGRAM_URL}}" rel="noopener">Instagram {{INSTAGRAM_HANDLE}}</a><br>
+        <a href="{{FACEBOOK_URL}}" rel="noopener">{{FACEBOOK_LABEL}}</a>
+      </p>
     </div>
   </div>
   <div class="container footer-legal">
-    <p>© 2026 Boat Rental Marbella. Independent affiliate site. <a href="/">Home</a></p>
+    <p>© 2026 Boat Rental Marbella. Independent affiliate guide — links to operators may pay commission. <a href="/">Home</a></p>
   </div>
 </footer>
+
+<div class="mobile-cta">
+  <a class="mobile-cta-wa" href="https://wa.me/{{WHATSAPP_E164_NOPLUS}}?text=Hi%2C%20I%27d%20like%20to%20book%20a%20boat%20in%20Marbella" rel="nofollow noopener">💬 Book on WhatsApp</a>
+  <a class="mobile-cta-tel" href="tel:{{PHONE_E164}}" aria-label="Call">📞</a>
+</div>
+
 </body>
 </html>

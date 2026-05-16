@@ -216,13 +216,12 @@ def render(page: dict, kind: str, data: dict) -> str:
         srcset = ", ".join(f"{_v(src, w)} {w}w" for w in (480, 768, 1200))
         return tag.replace('<img ', f'<img srcset="{srcset}" sizes="(max-width: 880px) 100vw, 760px" ', 1)
     body = re.sub(r'<img [^>]+>', _add_srcset, body)
-    # ensure H1 prepended
-    h1 = page.get("h1", page['title'])
+    # H1 is rendered in hero overlay (no duplicate); only byline + body here
     byline = ""
     if kind == "blog":
         byline = (f'<p class="byline">By <strong>{html.escape(SITE.get("editorial_team", SITE["name"]))}</strong>'
                   f' · Updated 16 May 2026 · Reviewed by local Marbella skippers</p>\n')
-    body = f"<h1>{html.escape(h1)}</h1>\n{byline}" + body
+    body = byline + body
     url = f"{SITE['base_url']}/{page['slug']}/".replace("//", "/").replace(":/", "://")
     if not page['slug']:
         url = SITE['base_url'] + "/"
@@ -238,7 +237,69 @@ def render(page: dict, kind: str, data: dict) -> str:
     def _pexels_variant(u, w):
         return re.sub(r'[?&]w=\d+', '', u).rstrip('?&') + ('?' if '?' not in u else '&') + f'w={w}'
     hero_srcset = ", ".join(f"{_pexels_variant(hero_img, w)} {w}w" for w in (640, 960, 1280, 1600))
+
+    # Hero overlay text — H1, subtitle (from meta), eyebrow
+    h1 = page.get("h1", page['title'])
+    meta_desc = data.get("meta_description", page.get("meta_description",""))
+    # subtitle: first sentence or up to 160 chars
+    sub = re.split(r'(?<=[.!?])\s+', meta_desc.strip(), 1)[0]
+    if len(sub) > 170: sub = sub[:165].rsplit(' ',1)[0] + '…'
+    if kind == "hub":
+        eyebrow_text = "Marbella · Costa del Sol"
+    elif kind == "blog":
+        eyebrow_text = "Guide · Marbella"
+    else:
+        eyebrow_text = "Marbella charter · 2026"
+    eyebrow_html = f'<span class="eyebrow">{html.escape(eyebrow_text)}</span>'
+
+    # Boat-type grid — render only on hub
+    BOAT_GRID = ""
+    if kind == "hub":
+        BOAT_CARDS = [
+            ("yacht-charter-marbella",  "Yacht Charter",       "Crewed motor yachts 10–22 m for cruising the Golden Mile.",        "12837089", 450, "4h", "Most popular"),
+            ("catamaran-rental-marbella","Catamaran Rental",   "Stable twin-hull sail & power cats — best for families and groups.","32116621", 350, "4h", "Family favourite"),
+            ("luxury-yacht-rental-marbella","Luxury Yachts",   "Crewed 18–30 m superyachts with chef, stewardess and water toys.", "30483267", 2400, "day", "Premium"),
+            ("boat-rental-no-license-marbella","No-License Boats","Self-drive 5 m runabouts — no licence, no experience required.",  "144024",   130, "2h", "Self-drive"),
+            ("fishing-boat-rental-marbella","Fishing Charters","Inshore & deep-sea charters — dorado, tuna, amberjack year-round.","36893149", 220, "2h", ""),
+            ("boat-party-marbella","Boat Party",               "Group charters 10–40 guests — stag, hen, birthday, corporate.",    "27951598", 1200, "4h", ""),
+        ]
+        def _pex(id_, w):
+            return f"https://images.pexels.com/photos/{id_}/pexels-photo-{id_}.jpeg?auto=compress&cs=tinysrgb&w={w}"
+        cards_html = []
+        for slug, title, desc, pid, price, dur, tag in BOAT_CARDS:
+            tag_html = f'<span class="boat-card-tag">{html.escape(tag)}</span>' if tag else ''
+            srcset = ", ".join(f"{_pex(pid, w)} {w}w" for w in (400, 600, 900))
+            cards_html.append(f'''<a href="/{slug}/" class="boat-card">
+  <div class="boat-card-img">
+    <img src="{_pex(pid, 600)}" srcset="{srcset}" sizes="(max-width: 600px) 100vw, 360px" alt="{html.escape(title)} in Marbella" loading="lazy" width="600" height="375">
+    {tag_html}
+  </div>
+  <div class="boat-card-body">
+    <h3 class="boat-card-title">{html.escape(title)}</h3>
+    <p class="boat-card-desc">{html.escape(desc)}</p>
+    <div class="boat-card-meta">
+      <span class="boat-card-price">From <strong>€{price}</strong><small>{dur} charter</small></span>
+      <span class="boat-card-cta">Explore →</span>
+    </div>
+  </div>
+</a>''')
+        BOAT_GRID = f'''<section class="boat-grid-section">
+  <div class="section-head">
+    <span class="eyebrow">Browse by boat type</span>
+    <h2>Find the right boat for your day</h2>
+    <p>Six categories covering every group size, budget and experience level on the Costa del Sol.</p>
+  </div>
+  <div class="boat-grid">
+    {"".join(cards_html)}
+  </div>
+</section>'''
+
     repl = {
+        "{{HERO_EYEBROW}}": eyebrow_html,
+        "{{HERO_H1}}": html.escape(h1),
+        "{{HERO_SUB}}": html.escape(sub),
+        "{{PRICE_LOW}}": str(SITE['price_anchor_low_2h']),
+        "{{BOAT_GRID}}": BOAT_GRID,
         "{{HERO_IMG}}": hero_img,
         "{{HERO_SRCSET}}": html.escape(hero_srcset),
         "{{HERO_ALT}}": html.escape(hero_alt),

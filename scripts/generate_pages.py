@@ -128,6 +128,7 @@ def jsonld_for(page: dict, kind: str, data: dict) -> str:
         "telephone": SITE['phone_e164'],
         "email": SITE['email'],
         "areaServed": SITE['departure_ports'],
+        "sameAs": [SITE.get('instagram_url')] if SITE.get('instagram_url') else [],
         "priceRange": f"€{SITE['price_anchor_low_2h']}–€{SITE['price_anchor_fullday_8h']}",
         "address": {"@type":"PostalAddress","addressLocality":"Marbella","addressRegion":"Andalucía","addressCountry":"ES"}
     })
@@ -222,6 +223,8 @@ def render(page: dict, kind: str, data: dict) -> str:
         "{{PHONE_DISPLAY}}": SITE['phone_display'],
         "{{EMAIL}}": SITE['email'],
         "{{AFFILIATE_LINK}}": SITE['affiliate_link'],
+        "{{INSTAGRAM_URL}}": SITE.get('instagram_url',''),
+        "{{INSTAGRAM_HANDLE}}": SITE.get('instagram_handle',''),
     }
     out = TEMPLATE
     for k, v in repl.items():

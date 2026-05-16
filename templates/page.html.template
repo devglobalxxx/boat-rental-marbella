@@ -33,6 +33,7 @@
     <div class="cta-stack">
       <a class="cta-wa" href="https://wa.me/{{WHATSAPP_E164_NOPLUS}}?text=Hi%2C%20I%27d%20like%20to%20book%20a%20boat%20in%20Marbella" rel="nofollow noopener">💬 WhatsApp</a>
       <a class="cta-tel" href="tel:{{PHONE_E164}}">📞 {{PHONE_DISPLAY}}</a>
+      <a class="cta-ig" href="{{INSTAGRAM_URL}}" rel="noopener" aria-label="Instagram">📷</a>
     </div>
   </div>
 </header>
@@ -94,7 +95,8 @@
       <h4>Contact</h4>
       <p><a href="https://wa.me/{{WHATSAPP_E164_NOPLUS}}" rel="nofollow noopener">WhatsApp</a><br>
       <a href="tel:{{PHONE_E164}}">{{PHONE_DISPLAY}}</a><br>
-      <a href="mailto:{{EMAIL}}">{{EMAIL}}</a></p>
+      <a href="mailto:{{EMAIL}}">{{EMAIL}}</a><br>
+      <a href="{{INSTAGRAM_URL}}" rel="noopener">Instagram {{INSTAGRAM_HANDLE}}</a></p>
     </div>
   </div>
   <div class="container footer-legal">

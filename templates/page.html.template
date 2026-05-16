@@ -41,7 +41,13 @@
 </header>
 
 <figure class="hero">
-  <img src="{{HERO_IMG}}" alt="{{HERO_ALT}}" width="1600" height="700" loading="eager" fetchpriority="high">
+  <img
+    src="{{HERO_IMG}}"
+    srcset="{{HERO_SRCSET}}"
+    sizes="100vw"
+    alt="{{HERO_ALT}}"
+    width="1600" height="700"
+    loading="eager" fetchpriority="high">
 </figure>
 
 <div class="trust-strip">

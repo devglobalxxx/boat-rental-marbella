@@ -203,6 +203,19 @@ def generate(page: dict, kind: str) -> dict:
 # ---------- render ----------
 def render(page: dict, kind: str, data: dict) -> str:
     body = md_links_to_html(data["body_html"])
+    # add responsive srcset to inline pexels imgs that don't already have one
+    def _add_srcset(m):
+        tag = m.group(0)
+        if 'srcset=' in tag: return tag
+        src = re.search(r'src="([^"]+)"', tag).group(1)
+        if 'pexels.com' not in src: return tag
+        def _v(u, w):
+            u2 = re.sub(r'[?&]w=\d+', '', u).rstrip('?&')
+            sep = '&' if '?' in u2 else '?'
+            return f"{u2}{sep}w={w}"
+        srcset = ", ".join(f"{_v(src, w)} {w}w" for w in (480, 768, 1200))
+        return tag.replace('<img ', f'<img srcset="{srcset}" sizes="(max-width: 880px) 100vw, 760px" ', 1)
+    body = re.sub(r'<img [^>]+>', _add_srcset, body)
     # ensure H1 prepended
     h1 = page.get("h1", page['title'])
     byline = ""
@@ -219,9 +232,15 @@ def render(page: dict, kind: str, data: dict) -> str:
     # Hero image: page may declare hero_img + hero_alt in data; else picsum seeded by slug
     seed = (page['slug'] or 'boat-rental-marbella').replace('/', '-')
     hero_img = data.get('hero_img') or f"https://picsum.photos/seed/{seed}/1600/700"
-    hero_alt = data.get('hero_alt') or f"{page['primary_keyword']} — placeholder image"
+    # keyword-bearing alt — falls back to data hero_alt + primary keyword for SEO weight
+    hero_alt = f"{page['primary_keyword']} — {data.get('hero_alt','Marbella yacht')}"
+    # build srcset for Pexels-hosted images by swapping the ?w param
+    def _pexels_variant(u, w):
+        return re.sub(r'[?&]w=\d+', '', u).rstrip('?&') + ('?' if '?' not in u else '&') + f'w={w}'
+    hero_srcset = ", ".join(f"{_pexels_variant(hero_img, w)} {w}w" for w in (640, 960, 1280, 1600))
     repl = {
         "{{HERO_IMG}}": hero_img,
+        "{{HERO_SRCSET}}": html.escape(hero_srcset),
         "{{HERO_ALT}}": html.escape(hero_alt),
         "{{TITLE}}": html.escape(page['title']),
         "{{META_DESCRIPTION}}": html.escape(data.get("meta_description", page.get("meta_description",""))),

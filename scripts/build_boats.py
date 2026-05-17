@@ -290,7 +290,7 @@ def render_boat(boat):
 <p>{html.escape(boat["summary"])}</p>
 
 <div class="callout">
-  <strong>Quick specs:</strong> {boat["length_m"]} m · {boat["capacity_pax"]} pax · skipper included · departs {html.escape(boat["departure_port"])}.
+  <strong>Quick specs:</strong> {boat["length_m"]} m · {boat["capacity_pax"]} pax · skipper included{(" · in fleet since " + str(boat["model_year"])) if boat.get("model_year") else ""} · departs {html.escape(boat["departure_port"])}.
   <br><strong>From €{lowest_price(boat):,} for {entry_duration(boat)}.</strong> Drinks, fuel, insurance &amp; VAT included.{(" Plus jet ski free for the day." if "Jet ski" in " ".join(tier_extras) else "")}
 </div>
 
@@ -382,7 +382,7 @@ def render_boat(boat):
                 {"@type":"PropertyValue","name":"Capacity","value":f"{boat['capacity_pax']} pax"},
                 {"@type":"PropertyValue","name":"Departure","value":boat["departure_port"]},
                 {"@type":"PropertyValue","name":"Type","value":boat["type"]},
-            ],
+            ] + ([{"@type":"PropertyValue","name":"In fleet since","value":str(boat["model_year"])}] if boat.get("model_year") else []),
         },
         {
             "@context":"https://schema.org","@type":"BreadcrumbList",

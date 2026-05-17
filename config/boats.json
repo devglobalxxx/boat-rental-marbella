@@ -106,8 +106,8 @@
     {
       "slug": "mangusta-80",
       "name": "Mangusta 80",
-      "tagline": "The biggest yacht you can rent in Marbella — 24 m Italian flagship with on-board jet ski",
-      "model_year": null,
+      "tagline": "\"Nina\" — the biggest yacht you can rent in Marbella · 24 m Italian flagship with on-board jet ski · in service since 2020",
+      "model_year": 2020,
       "builder": "Overmarine",
       "type": "Luxury motor yacht",
       "length_m": 24,
@@ -116,16 +116,52 @@
       "tier": "tier_b",
       "highlights": [
         "Biggest yacht available for day charter in Marbella — 24 m / 80 ft",
-        "Jet ski on board — free for guests to use throughout the charter",
+        "Sea-Doo jet ski on board — free for guests to use throughout the charter",
         "Open-style sport yacht with full-beam sun-pad and aft swim platform",
         "12 guests in luxury — chef-grade galley and air-conditioned saloon",
         "Crewed by captain + deckhand; drinks, fuel, insurance and VAT included",
+        "In our charter fleet since 2020 — fully refit, immaculate condition",
         "Minimum charter 4 hours; full-day and overnight options quoted on WhatsApp"
       ],
       "hero_pexels_id": "30483267",
       "gallery_pexels": ["30483267", "34638593", "36893149"],
-      "summary": "The Mangusta 80 is the Marbella flagship — a 24-metre Italian sport yacht by Overmarine that's the largest boat available for day charter from Puerto Banús. Twelve guests in genuine luxury, a jet ski waiting on the swim platform, and the unmistakable Mangusta open-style superstructure that put the brand on the global map. From €4,719 for a 4-hour charter, fully crewed.",
-      "intent_keywords": ["Mangusta 80 Marbella", "biggest yacht charter Marbella", "luxury superyacht hire Puerto Banús", "yacht with jet ski Marbella"]
+      "hero_local": "/img/boats/mangusta-80/hero-1600.jpg",
+      "hero_local_srcset": [
+        ["/img/boats/mangusta-80/hero-600.jpg", 600],
+        ["/img/boats/mangusta-80/hero-900.jpg", 900],
+        ["/img/boats/mangusta-80/hero-1200.jpg", 1200],
+        ["/img/boats/mangusta-80/hero-1600.jpg", 1600]
+      ],
+      "hero_local_alt": "Mangusta 80 'Nina' cruising past La Concha mountain in Marbella — the biggest charter yacht on the Costa del Sol",
+      "gallery_local": [
+        {
+          "src": "/img/boats/mangusta-80/aerial-wake-1200.jpg",
+          "srcset": [["/img/boats/mangusta-80/aerial-wake-600.jpg", 600],["/img/boats/mangusta-80/aerial-wake-900.jpg", 900],["/img/boats/mangusta-80/aerial-wake-1200.jpg", 1200]],
+          "alt": "Mangusta 80 from above — wake spreading behind the 24 m sport-yacht hull"
+        },
+        {
+          "src": "/img/boats/mangusta-80/profile-1200.jpg",
+          "srcset": [["/img/boats/mangusta-80/profile-600.jpg", 600],["/img/boats/mangusta-80/profile-900.jpg", 900],["/img/boats/mangusta-80/profile-1200.jpg", 1200]],
+          "alt": "Mangusta 80 profile view at anchor — the unmistakable Overmarine sport-yacht silhouette"
+        },
+        {
+          "src": "/img/boats/mangusta-80/sun-pad-1200.jpg",
+          "srcset": [["/img/boats/mangusta-80/sun-pad-600.jpg", 600],["/img/boats/mangusta-80/sun-pad-900.jpg", 900],["/img/boats/mangusta-80/sun-pad-1200.jpg", 1200]],
+          "alt": "Full-beam sun pad on the Mangusta 80 foredeck — guests relaxing during a Marbella charter"
+        },
+        {
+          "src": "/img/boats/mangusta-80/saloon-1200.jpg",
+          "srcset": [["/img/boats/mangusta-80/saloon-600.jpg", 600],["/img/boats/mangusta-80/saloon-900.jpg", 900],["/img/boats/mangusta-80/saloon-1200.jpg", 1200]],
+          "alt": "Mangusta 80 main-deck saloon with leather seating and refit interior"
+        },
+        {
+          "src": "/img/boats/mangusta-80/galley-1200.jpg",
+          "srcset": [["/img/boats/mangusta-80/galley-600.jpg", 600],["/img/boats/mangusta-80/galley-900.jpg", 900],["/img/boats/mangusta-80/galley-1200.jpg", 1200]],
+          "alt": "Chef-grade galley on the Mangusta 80 — full kitchen for catered lunches on board"
+        }
+      ],
+      "summary": "The Mangusta 80 — known on the dock as \"Nina\" — is the Marbella flagship: a 24-metre Italian sport yacht by Overmarine, in our charter fleet since 2020, and the largest boat available for day charter from Puerto Banús. Twelve guests in genuine luxury, a Sea-Doo jet ski waiting on the swim platform, and the unmistakable Mangusta open-style superstructure that put the brand on the global map. From €4,719 for a 4-hour charter, fully crewed.",
+      "intent_keywords": ["Mangusta 80 Marbella", "biggest yacht charter Marbella", "luxury superyacht hire Puerto Banús", "yacht with jet ski Marbella", "Nina yacht Marbella"]
     }
   ]
 }

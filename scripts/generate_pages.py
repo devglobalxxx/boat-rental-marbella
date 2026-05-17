@@ -70,7 +70,7 @@ def video_section_html(videos):
   <figcaption><strong>{html.escape(v["title"])}</strong>{html.escape(v["description"])}</figcaption>
 </figure>''')
     return f'''<section class="video-section">
-  <h2>On the water with us</h2>
+  <h2>Watch from on board</h2>
   <div class="video-grid {single}">
 {chr(10).join(cards)}
   </div>
@@ -100,6 +100,10 @@ FLEET_IMAGES = {
     "mangusta-sun-pad":  _fl("/img/boats/mangusta-80/sun-pad",    [600,900,1200],      "Sun pad on the foredeck of the Mangusta 80 — group day charter"),
     "mangusta-saloon":   _fl("/img/boats/mangusta-80/saloon",     [600,900,1200],      "Mangusta 80 main saloon — refit luxury interior"),
     "mangusta-galley":   _fl("/img/boats/mangusta-80/galley",     [600,900,1200],      "Chef-grade galley on the Mangusta 80 — catered lunches on board"),
+    "jetski-hero":       _fl("/img/jet-ski/hero",   [600,900,1200,1600], "Sea-Doo jet ski rental Marbella — two riders cruising past the Marbella mountains"),
+    "jetski-cruise":     _fl("/img/jet-ski/cruise", [600,900,1200],      "Solo rider cruising on a Sea-Doo jet ski rental in Marbella"),
+    "jetski-marina":     _fl("/img/jet-ski/marina", [600,900,1200],      "Jet ski rental at Puerto Banús marina, Marbella"),
+    "jetski-fleet":      _fl("/img/jet-ski/fleet",  [600,900,1200],      "Sea-Doo jet ski fleet ready for rental in Marbella"),
 }
 
 # Hero override per page slug (hub = empty string)
@@ -113,6 +117,7 @@ PAGE_HERO_MAP = {
     "sunset-cruise-marbella": "astondoa-sunset",
     "boat-party-marbella": "mangusta-aerial",
     "boat-rental-puerto-banus": "astondoa-lifestyle",
+    "jet-ski-rental-marbella": "jetski-hero",
     "blog/how-much-does-it-cost-to-rent-a-boat-in-marbella": "mangusta-aerial",
     "blog/best-month-to-rent-a-boat-in-marbella": "azimut-hero",
     "blog/boat-license-rules-spain": "azimut-hero",
@@ -136,6 +141,7 @@ PAGE_INLINE_MAP = {
     "sunset-cruise-marbella": "mangusta-hero",
     "boat-party-marbella": "mangusta-sun-pad",
     "boat-rental-puerto-banus": "astondoa-sunset",
+    "jet-ski-rental-marbella": "jetski-cruise",
     "blog/how-much-does-it-cost-to-rent-a-boat-in-marbella": "astondoa-sunset",
     "blog/best-month-to-rent-a-boat-in-marbella": "mangusta-hero",
     "blog/boat-license-rules-spain": "astondoa-hero",
@@ -545,6 +551,7 @@ def render(page: dict, kind: str, data: dict) -> str:
             ("boat-rental-no-license-marbella","No-License Boats","Skip the licence — our skippered fleet handles everything.",                  "astondoa-hero",     749,  "2h",  "Skippered"),
             ("fishing-boat-rental-marbella", "Fishing Charters","Inshore fishing on our 12.5 m fleet — light tackle and trolling.",              "astondoa-lifestyle",749,  "2h",  ""),
             ("boat-party-marbella",          "Boat Party",      "Group charters up to 12 guests — stag, hen, birthday, corporate.",              "mangusta-aerial",   749,  "2h",  ""),
+            ("jet-ski-rental-marbella",      "Jet Ski Rental",  "Sea-Doo PWC from Puerto Banús — solo or two-up. Free with Mangusta 80.",        "jetski-hero",       200,  "1h",  "Sea-Doo"),
         ]
         cards_html = []
         for slug, title, desc, fkey, price, dur, tag in BOAT_CARDS:

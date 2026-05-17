@@ -98,6 +98,13 @@
       "title": "Luxury Yacht Rental Marbella 2026: Superyachts & Crewed Charters",
       "intent": "transactional",
       "target_words": 1500
+    },
+    {
+      "slug": "jet-ski-rental-marbella",
+      "primary_keyword": "jet ski rental Marbella",
+      "title": "Jet Ski Rental Marbella 2026: Sea-Doo Rides from €200/h",
+      "intent": "transactional",
+      "target_words": 1200
     }
   ],
   "blog": [

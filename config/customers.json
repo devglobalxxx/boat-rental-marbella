@@ -1,18 +1,24 @@
 {
-  "section_title": "Guests on board",
+  "section_title": "On the water with us",
   "section_sub": "Real charters with real groups across Marbella, Puerto Banús and the Costa del Sol.",
   "photos": [
     {
       "slug": "h03",
       "alt": "Mixed group of eight guests on the bow of our motor yacht — Marbella charter",
       "caption": "Day charter · group of eight",
-      "placement": ["/", "/yacht-charter-marbella/"]
+      "placement": ["/", "/yacht-charter-marbella/", "/boat-rental-puerto-banus/"]
     },
     {
       "slug": "h08",
       "alt": "Group of guests on the bow with the Sierra Blanca mountains behind — Marbella",
       "caption": "Friends weekend · Marbella coastline",
-      "placement": ["/", "/boat-party-marbella/"]
+      "placement": ["/", "/boat-party-marbella/", "/boat-rental-puerto-banus/"]
+    },
+    {
+      "slug": "h14",
+      "alt": "Mixed group of friends celebrating on the bow of our charter yacht in Marbella",
+      "caption": "Birthday charter · celebrating on the bow",
+      "placement": ["/", "/yacht-charter-marbella/", "/boat-rental-puerto-banus/"]
     },
     {
       "slug": "h02",
@@ -21,10 +27,22 @@
       "placement": ["/boat-party-marbella/"]
     },
     {
+      "slug": "h10",
+      "alt": "Bachelorette group of guests with drinks on a Marbella charter yacht",
+      "caption": "Bachelorette · drinks on board",
+      "placement": ["/boat-party-marbella/"]
+    },
+    {
+      "slug": "h15",
+      "alt": "Women's group on the stern of our Astondoa 40 charter yacht in Puerto Banús",
+      "caption": "Hen weekend · Astondoa 40 'Fufi'",
+      "placement": ["/boat-party-marbella/"]
+    },
+    {
       "slug": "h06",
       "alt": "Guests under the bimini shade with drinks on a Marbella motor yacht charter",
       "caption": "Afternoon under the bimini",
-      "placement": ["/"]
+      "placement": ["/", "/yacht-charter-marbella/"]
     },
     {
       "slug": "h04",

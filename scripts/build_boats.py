@@ -41,7 +41,7 @@ def video_section_html(videos):
   <figcaption><strong>{html.escape(v["title"])}</strong>{html.escape(v["description"])}</figcaption>
 </figure>''')
     return f'''<section class="video-section">
-  <h2>On the water</h2>
+  <h2>Watch from on board</h2>
   <div class="video-grid {single}">
 {chr(10).join(cards)}
   </div>

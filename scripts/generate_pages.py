@@ -255,6 +255,50 @@ def render(page: dict, kind: str, data: dict) -> str:
     # Boat-type grid — render only on hub
     BOAT_GRID = ""
     if kind == "hub":
+        # ---- Featured fleet section (from config/boats.json) ----
+        def _pex(id_, w):
+            return f"https://images.pexels.com/photos/{id_}/pexels-photo-{id_}.jpeg?auto=compress&cs=tinysrgb&w={w}"
+        FLEET_SECTION = ""
+        try:
+            boats_cfg_path = pathlib.Path(__file__).resolve().parents[1] / "config" / "boats.json"
+            boats_cfg = json.loads(boats_cfg_path.read_text())
+            fleet_cards = []
+            for b in boats_cfg["boats"]:
+                tier = boats_cfg["hourly_price_tiers"][b["tier"]]
+                low = min(tier["prices"].values())
+                pid = b["hero_pexels_id"]
+                srcset = ", ".join(f"{_pex(pid, w)} {w}w" for w in (400, 600, 900))
+                fleet_cards.append(f'''<a href="/boats/{b["slug"]}/" class="boat-card">
+  <div class="boat-card-img">
+    <img src="{_pex(pid, 600)}" srcset="{srcset}" sizes="(max-width: 600px) 100vw, 360px" alt="{html.escape(b["name"])} — motor yacht charter Marbella" loading="lazy" width="600" height="375">
+    <span class="boat-card-tag">{b["length_m"]}m · {b["capacity_pax"]} pax</span>
+  </div>
+  <div class="boat-card-body">
+    <h3 class="boat-card-title">{html.escape(b["name"])}</h3>
+    <p class="boat-card-desc">{html.escape(b["tagline"])}</p>
+    <div class="boat-card-meta">
+      <span class="boat-card-price">From <strong>€{low}</strong><small>2h skippered</small></span>
+      <span class="boat-card-cta">View boat →</span>
+    </div>
+  </div>
+</a>''')
+            if fleet_cards:
+                FLEET_SECTION = f'''<section class="boat-grid-section" style="background:linear-gradient(180deg, var(--c-sand) 0%, #fff 100%)">
+  <div class="section-head">
+    <span class="eyebrow">Our fleet</span>
+    <h2>Boats you can charter today</h2>
+    <p>The actual yachts in our Puerto Banús fleet — pick a boat, message us on WhatsApp, book in 60 seconds.</p>
+  </div>
+  <div class="boat-grid">
+    {"".join(fleet_cards)}
+  </div>
+  <div style="text-align:center;margin-top:28px">
+    <a href="/boats/" class="btn-hero-ghost" style="background:var(--c-sea-l);color:var(--c-sea-d);border-color:#cfe5f4">See the full fleet →</a>
+  </div>
+</section>'''
+        except Exception as e:
+            print(f"[warn] fleet section skipped: {e}")
+
         BOAT_CARDS = [
             ("yacht-charter-marbella",  "Yacht Charter",       "Crewed motor yachts 10–22 m for cruising the Golden Mile.",        "12837089", 450, "4h", "Most popular"),
             ("catamaran-rental-marbella","Catamaran Rental",   "Stable twin-hull sail & power cats — best for families and groups.","32116621", 350, "4h", "Family favourite"),
@@ -283,7 +327,7 @@ def render(page: dict, kind: str, data: dict) -> str:
     </div>
   </div>
 </a>''')
-        BOAT_GRID = f'''<section class="boat-grid-section">
+        category_section = f'''<section class="boat-grid-section">
   <div class="section-head">
     <span class="eyebrow">Browse by boat type</span>
     <h2>Find the right boat for your day</h2>
@@ -293,6 +337,7 @@ def render(page: dict, kind: str, data: dict) -> str:
     {"".join(cards_html)}
   </div>
 </section>'''
+        BOAT_GRID = FLEET_SECTION + category_section
 
     repl = {
         "{{HERO_EYEBROW}}": eyebrow_html,

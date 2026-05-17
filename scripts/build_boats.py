@@ -22,6 +22,29 @@ def pexels(id_, w=1600):
 def pexels_srcset(id_, widths):
     return ", ".join(f"{pexels(id_, w)} {w}w" for w in widths)
 
+def boat_hero(boat, target_w=1600):
+    """Return (src, srcset, alt) for the hero image — prefers local, falls back to Pexels."""
+    if boat.get("hero_local"):
+        src = boat["hero_local"]
+        srcset_pairs = boat.get("hero_local_srcset") or [[src, target_w]]
+        srcset = ", ".join(f"{p[0]} {p[1]}w" for p in srcset_pairs)
+        alt = boat.get("hero_local_alt") or f"{boat['name']} — motor yacht charter Marbella"
+        return src, srcset, alt
+    pid = boat["hero_pexels_id"]
+    return pexels(pid, target_w), pexels_srcset(pid, (640, 960, 1280, 1600)), f"{boat['name']} — motor yacht charter Marbella"
+
+def boat_card_thumb(boat):
+    """Return (src, srcset, alt) for the card thumbnail (smaller)."""
+    if boat.get("hero_local"):
+        srcset_pairs = boat.get("hero_local_srcset") or [[boat["hero_local"], 1600]]
+        smaller = [p for p in srcset_pairs if p[1] <= 1200] or srcset_pairs
+        src = smaller[-1][0]
+        srcset = ", ".join(f"{p[0]} {p[1]}w" for p in srcset_pairs if p[1] <= 1200)
+        alt = boat.get("hero_local_alt") or f"{boat['name']} — motor yacht charter Marbella"
+        return src, srcset, alt
+    pid = boat["hero_pexels_id"]
+    return pexels(pid, 600), pexels_srcset(pid, (400, 600, 900)), f"{boat['name']} — motor yacht charter Marbella"
+
 def wa_link(text):
     return f"https://wa.me/{SITE['whatsapp_e164'].lstrip('+')}?text=" + text.replace(" ", "%20").replace("'", "%27")
 
@@ -51,12 +74,11 @@ def render_index():
 
     cards = []
     for b in boats:
-        hid = b["hero_pexels_id"]
-        srcset = pexels_srcset(hid, (400, 600, 900))
+        src, srcset, alt = boat_card_thumb(b)
         low = lowest_price(b)
         cards.append(f'''<a href="/boats/{b["slug"]}/" class="boat-card">
   <div class="boat-card-img">
-    <img src="{pexels(hid, 600)}" srcset="{srcset}" sizes="(max-width: 600px) 100vw, 360px" alt="{html.escape(b["name"])} — motor yacht charter Marbella" loading="lazy" width="600" height="375">
+    <img src="{src}" srcset="{srcset}" sizes="(max-width: 600px) 100vw, 360px" alt="{html.escape(alt)}" loading="lazy" width="600" height="375">
     <span class="boat-card-tag">{str(b["length_m"])}m · {b["capacity_pax"]} pax</span>
   </div>
   <div class="boat-card-body">
@@ -117,7 +139,7 @@ def render_index():
         },
     ]
 
-    hero_id = boats[0]["hero_pexels_id"]
+    hero_src, hero_srcset, _ = boat_hero(boats[0])
     write_page(
         slug="boats",
         title="Our Marbella Boat Charter Fleet — Yachts &amp; Catamarans",
@@ -125,7 +147,8 @@ def render_index():
         h1="The Fleet",
         sub=f"Our Marbella boat charter fleet — every boat departs Puerto Banús with a licensed skipper, fuel, drinks and water toys included.",
         eyebrow="Boats · Marbella",
-        hero_pexels_id=hero_id,
+        hero_img=hero_src,
+        hero_srcset=hero_srcset,
         hero_alt=f"Marbella charter fleet — motor yachts at Puerto Banús",
         body_html=body,
         jsonld=jsonld,
@@ -137,7 +160,8 @@ def render_boat(boat):
     tier = boat_price_tier(boat)
     prices = tier["prices"]
     inclusions = BOATS_CFG["shared_inclusions"]
-    hero_id = boat["hero_pexels_id"]
+    hero_src, hero_srcset_str, hero_alt_text = boat_hero(boat)
+    hero_id = boat.get("hero_pexels_id")  # still used for OG / JSON-LD fallback
     gallery = boat.get("gallery_pexels", [])
     name = boat["name"]
 
@@ -147,9 +171,16 @@ def render_boat(boat):
         for dur, p in prices.items()
     )
 
-    # Gallery thumbnails
+    # Gallery thumbnails — prefer local
     gallery_html = ""
-    if gallery:
+    gallery_local = boat.get("gallery_local") or []
+    if gallery_local:
+        thumbs = "".join(
+            f'<figure class="inline-img"><img src="{g["src"]}" srcset="{", ".join(f"{p[0]} {p[1]}w" for p in g["srcset"])}" sizes="(max-width: 880px) 100vw, 720px" alt="{html.escape(g.get("alt", name))}" loading="lazy" width="1200" height="800"></figure>'
+            for g in gallery_local
+        )
+        gallery_html = f'<h2>Gallery</h2>\n{thumbs}'
+    elif gallery:
         thumbs = "".join(
             f'<figure class="inline-img"><img src="{pexels(gid, 1200)}" srcset="{pexels_srcset(gid, (480,768,1200))}" sizes="(max-width: 880px) 100vw, 720px" alt="{html.escape(name)} — Marbella" loading="lazy" width="1200" height="800"></figure>'
             for gid in gallery[1:]  # skip the hero (already rendered above the fold)
@@ -165,11 +196,10 @@ def render_boat(boat):
     if other_boats:
         cards = []
         for b in other_boats:
-            hid = b["hero_pexels_id"]
-            srcset = pexels_srcset(hid, (400, 600, 900))
+            src, srcset, alt = boat_card_thumb(b)
             cards.append(f'''<a href="/boats/{b["slug"]}/" class="boat-card">
   <div class="boat-card-img">
-    <img src="{pexels(hid, 600)}" srcset="{srcset}" sizes="(max-width: 600px) 100vw, 360px" alt="{html.escape(b["name"])} — motor yacht charter Marbella" loading="lazy" width="600" height="375">
+    <img src="{src}" srcset="{srcset}" sizes="(max-width: 600px) 100vw, 360px" alt="{html.escape(alt)}" loading="lazy" width="600" height="375">
     <span class="boat-card-tag">{str(b["length_m"])}m · {b["capacity_pax"]} pax</span>
   </div>
   <div class="boat-card-body">
@@ -269,7 +299,7 @@ def render_boat(boat):
             "description": boat["summary"],
             "brand":{"@type":"Brand","name":boat["builder"]},
             "category":"Boat Charter",
-            "image": pexels(hero_id, 1600),
+            "image": (SITE['base_url'] + hero_src) if hero_src.startswith('/') else hero_src,
             "url": SITE['base_url']+f"/boats/{boat['slug']}/",
             "offers":{
                 "@type":"AggregateOffer",
@@ -303,8 +333,9 @@ def render_boat(boat):
         h1=name,
         sub=html.unescape(boat["tagline"]),
         eyebrow=f"{boat['builder']} · {boat['length_m']}m · {boat['capacity_pax']} pax",
-        hero_pexels_id=hero_id,
-        hero_alt=f"{name} motor yacht charter — Marbella",
+        hero_img=hero_src,
+        hero_srcset=hero_srcset_str,
+        hero_alt=hero_alt_text,
         body_html=body,
         jsonld=jsonld,
         breadcrumbs=f'<nav class="breadcrumbs"><a href="/">Home</a> › <a href="/boats/">Boats</a> › <span>{html.escape(name)}</span></nav>',
@@ -312,10 +343,8 @@ def render_boat(boat):
     )
 
 # ---------- shared writer ----------
-def write_page(slug, title, meta, h1, sub, eyebrow, hero_pexels_id, hero_alt, body_html, jsonld, breadcrumbs, wa_text=None):
+def write_page(slug, title, meta, h1, sub, eyebrow, hero_img, hero_srcset, hero_alt, body_html, jsonld, breadcrumbs, wa_text=None):
     url = f"{SITE['base_url']}/{slug}/"
-    hero_img = pexels(hero_pexels_id, 1600)
-    hero_srcset = pexels_srcset(hero_pexels_id, (640, 960, 1280, 1600))
     wa = wa_link(wa_text or "Hi, I'd like to book a boat in Marbella")
     repl = {
         "{{HERO_IMG}}": hero_img,

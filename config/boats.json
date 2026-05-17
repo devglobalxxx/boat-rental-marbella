@@ -51,6 +51,21 @@
       ],
       "hero_pexels_id": "12837089",
       "gallery_pexels": ["12837089", "163236", "27951598"],
+      "hero_local": "/img/boats/azimut-39/hero-1600.jpg",
+      "hero_local_srcset": [
+        ["/img/boats/azimut-39/hero-600.jpg", 600],
+        ["/img/boats/azimut-39/hero-900.jpg", 900],
+        ["/img/boats/azimut-39/hero-1200.jpg", 1200],
+        ["/img/boats/azimut-39/hero-1600.jpg", 1600]
+      ],
+      "hero_local_alt": "Azimut 39 motor yacht cruising in Marbella with La Concha mountain behind",
+      "gallery_local": [
+        {
+          "src": "/img/boats/azimut-39/aerial-1200.jpg",
+          "srcset": [["/img/boats/azimut-39/aerial-600.jpg", 600],["/img/boats/azimut-39/aerial-900.jpg", 900],["/img/boats/azimut-39/aerial-1200.jpg", 1200]],
+          "alt": "Azimut 39 from above — flybridge, cockpit and swim platform"
+        }
+      ],
       "summary": "The Azimut 39 is the Italian counterpart to the Astondoa — same size class, same 9-guest capacity, but with the flybridge layout and modern lines Azimut is known for. A great pick for groups who want the upper sun-deck experience.",
       "intent_keywords": ["Azimut 39 Marbella", "Italian motor yacht charter Marbella", "flybridge yacht hire Puerto Banús"]
     }

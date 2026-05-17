@@ -266,11 +266,21 @@ def render(page: dict, kind: str, data: dict) -> str:
             for b in boats_cfg["boats"]:
                 tier = boats_cfg["hourly_price_tiers"][b["tier"]]
                 low = min(tier["prices"].values())
-                pid = b["hero_pexels_id"]
-                srcset = ", ".join(f"{_pex(pid, w)} {w}w" for w in (400, 600, 900))
+                # Prefer local image variants; fall back to Pexels
+                if b.get("hero_local"):
+                    srcset_pairs = b.get("hero_local_srcset") or [[b["hero_local"], 1600]]
+                    small = [p for p in srcset_pairs if p[1] <= 1200] or srcset_pairs
+                    card_src = small[-1][0]
+                    card_srcset = ", ".join(f"{p[0]} {p[1]}w" for p in srcset_pairs if p[1] <= 1200)
+                    card_alt = b.get("hero_local_alt") or f"{b['name']} — motor yacht charter Marbella"
+                else:
+                    pid = b["hero_pexels_id"]
+                    card_src = _pex(pid, 600)
+                    card_srcset = ", ".join(f"{_pex(pid, w)} {w}w" for w in (400, 600, 900))
+                    card_alt = f"{b['name']} — motor yacht charter Marbella"
                 fleet_cards.append(f'''<a href="/boats/{b["slug"]}/" class="boat-card">
   <div class="boat-card-img">
-    <img src="{_pex(pid, 600)}" srcset="{srcset}" sizes="(max-width: 600px) 100vw, 360px" alt="{html.escape(b["name"])} — motor yacht charter Marbella" loading="lazy" width="600" height="375">
+    <img src="{card_src}" srcset="{card_srcset}" sizes="(max-width: 600px) 100vw, 360px" alt="{html.escape(card_alt)}" loading="lazy" width="600" height="375">
     <span class="boat-card-tag">{b["length_m"]}m · {b["capacity_pax"]} pax</span>
   </div>
   <div class="boat-card-body">

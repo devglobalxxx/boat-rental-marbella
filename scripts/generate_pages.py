@@ -242,7 +242,7 @@ def render(page: dict, kind: str, data: dict) -> str:
     h1 = page.get("h1", page['title'])
     meta_desc = data.get("meta_description", page.get("meta_description",""))
     # subtitle: first sentence or up to 160 chars
-    sub = re.split(r'(?<=[.!?])\s+', meta_desc.strip(), 1)[0]
+    sub = re.split(r'(?<=[.!?])\s+', meta_desc.strip(), maxsplit=1)[0]
     if len(sub) > 170: sub = sub[:165].rsplit(' ',1)[0] + '…'
     if kind == "hub":
         eyebrow_text = "Marbella · Costa del Sol"

@@ -24,9 +24,9 @@
       "Estepona",
       "Sotogrande"
     ],
-    "price_anchor_low_2h": 250,
-    "price_anchor_high_2h": 275,
-    "price_anchor_fullday_8h": 750,
+    "price_anchor_low_2h": 749,
+    "price_anchor_high_2h": 749,
+    "price_anchor_fullday_8h": 2299,
     "operates_year_round": true,
     "geo_lat": 36.5108,
     "geo_lng": -4.885,

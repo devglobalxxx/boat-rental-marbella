@@ -3,19 +3,19 @@
 */
 :root{
   --c-bg:#fff;
-  --c-ink:#0a1f33;
-  --c-ink-soft:#2c3e50;
-  --c-muted:#5a6b7a;
-  --c-line:#e6ecf2;
-  --c-line-soft:#f0f4f8;
-  --c-sea:#0a6db5;
-  --c-sea-d:#075590;
-  --c-sea-l:#e8f2fa;
-  --c-sun:#f5a623;
+  --c-ink:#3f0f1c;           /* brand maroon — primary text + headings */
+  --c-ink-soft:#5a2330;
+  --c-muted:#7a5a64;
+  --c-line:#ecdfe2;
+  --c-line-soft:#f6efef;
+  --c-sea:#14cdc5;            /* brand turquoise — links, accents, buttons */
+  --c-sea-d:#0a9f99;
+  --c-sea-l:#dbf6f4;
+  --c-sun:#f5a623;            /* warm accent — H2 bar, eyebrows */
   --c-sun-d:#d68910;
   --c-sand:#fef7e7;
   --c-sand-d:#f1e5c1;
-  --c-wa:#25d366;
+  --c-wa:#25d366;             /* WhatsApp brand — primary CTA */
   --c-wa-d:#1ebe5a;
   --r:14px;
   --r-lg:20px;
@@ -310,16 +310,16 @@ details p{margin:.6em 0 0;color:var(--c-ink-soft)}
 .book-card-incl li::before{content:"✓";position:absolute;left:0;color:var(--c-wa);font-weight:700}
 
 /* ─── Footer ──────────────────────────── */
-.site-footer{background:#0a1f33;color:#cfd8e0;padding:56px 0 18px;margin-top:60px}
+.site-footer{background:var(--c-ink);color:#e0c8cf;padding:56px 0 18px;margin-top:60px}
 .site-footer h4{color:#fff;margin:0 0 12px;font-size:.95rem;font-weight:700;letter-spacing:.02em}
-.site-footer a{color:#cfd8e0;text-decoration:none}
-.site-footer a:hover{color:var(--c-sun);text-decoration:none}
+.site-footer a{color:#e0c8cf;text-decoration:none}
+.site-footer a:hover{color:var(--c-sea);text-decoration:none}
 .footer-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(170px,1fr));gap:32px}
 .footer-grid ul{list-style:none;padding:0;margin:0}
 .footer-grid li{margin:6px 0;font-size:.92rem}
 .footer-grid p{font-size:.92rem;line-height:1.55;color:#9eb1c3}
-.footer-legal{border-top:1px solid #1c3148;margin-top:36px;padding-top:16px;font-size:.82rem;color:#7a8fa3}
-.footer-legal a{color:#7a8fa3}
+.footer-legal{border-top:1px solid #5a2330;margin-top:36px;padding-top:16px;font-size:.82rem;color:#b39da4}
+.footer-legal a{color:#b39da4}
 
 /* ─── Mobile sticky CTA bar ──────────── */
 .mobile-cta{

@@ -1,12 +1,8 @@
 {
   "/": {
     "proposed": 6,
-    "applied": 3,
+    "applied": 2,
     "applied_links": [
-      {
-        "anchor": "motor yacht",
-        "to": "/yacht-charter-marbella/"
-      },
       {
         "anchor": "sweet spot",
         "to": "/blog/best-month-to-rent-a-boat-in-marbella/"

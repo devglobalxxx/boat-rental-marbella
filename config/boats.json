@@ -3,7 +3,16 @@
   "hourly_price_tiers": {
     "tier_a": {
       "label": "12.5m motor yacht",
+      "min_hours": 2,
       "prices": {"2h": 749, "3h": 1049, "4h": 1299, "5h": 1549, "6h": 1799, "7h": 2099, "8h": 2299},
+      "currency": "EUR"
+    },
+    "tier_b": {
+      "label": "Mangusta 80 superyacht — Marbella flagship",
+      "min_hours": 4,
+      "prices": {"4h": 4719},
+      "extended_note": "Longer charters (full day, overnight, multi-day) quoted on WhatsApp.",
+      "extra_inclusions": ["Jet ski (free for the day)"],
       "currency": "EUR"
     }
   },
@@ -93,6 +102,30 @@
       ],
       "summary": "The Azimut 39 is the Italian counterpart to the Astondoa — same size class, same 9-guest capacity, but with the flybridge layout and modern lines Azimut is known for. A great pick for groups who want the upper sun-deck experience.",
       "intent_keywords": ["Azimut 39 Marbella", "Italian motor yacht charter Marbella", "flybridge yacht hire Puerto Banús"]
+    },
+    {
+      "slug": "mangusta-80",
+      "name": "Mangusta 80",
+      "tagline": "The biggest yacht you can rent in Marbella — 24 m Italian flagship with on-board jet ski",
+      "model_year": null,
+      "builder": "Overmarine",
+      "type": "Luxury motor yacht",
+      "length_m": 24,
+      "capacity_pax": 12,
+      "departure_port": "Puerto Banús",
+      "tier": "tier_b",
+      "highlights": [
+        "Biggest yacht available for day charter in Marbella — 24 m / 80 ft",
+        "Jet ski on board — free for guests to use throughout the charter",
+        "Open-style sport yacht with full-beam sun-pad and aft swim platform",
+        "12 guests in luxury — chef-grade galley and air-conditioned saloon",
+        "Crewed by captain + deckhand; drinks, fuel, insurance and VAT included",
+        "Minimum charter 4 hours; full-day and overnight options quoted on WhatsApp"
+      ],
+      "hero_pexels_id": "30483267",
+      "gallery_pexels": ["30483267", "34638593", "36893149"],
+      "summary": "The Mangusta 80 is the Marbella flagship — a 24-metre Italian sport yacht by Overmarine that's the largest boat available for day charter from Puerto Banús. Twelve guests in genuine luxury, a jet ski waiting on the swim platform, and the unmistakable Mangusta open-style superstructure that put the brand on the global map. From €4,719 for a 4-hour charter, fully crewed.",
+      "intent_keywords": ["Mangusta 80 Marbella", "biggest yacht charter Marbella", "luxury superyacht hire Puerto Banús", "yacht with jet ski Marbella"]
     }
   ]
 }

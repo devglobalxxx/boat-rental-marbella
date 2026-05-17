@@ -103,6 +103,21 @@ def boat_price_tier(boat):
 def lowest_price(boat):
     return min(boat_price_tier(boat)["prices"].values())
 
+def entry_duration(boat):
+    """Return the minimum-charter duration label, e.g. '2h' or '4h'."""
+    tier = boat_price_tier(boat)
+    mh = tier.get("min_hours")
+    if mh:
+        return f"{mh}h"
+    # fall back to smallest key in prices grid
+    keys = sorted(int(k.rstrip('h')) for k in tier["prices"].keys())
+    return f"{keys[0]}h"
+
+def all_inclusions(boat):
+    """Return shared + boat-tier extra inclusions list."""
+    extras = boat_price_tier(boat).get("extra_inclusions", [])
+    return BOATS_CFG["shared_inclusions"] + extras
+
 def jsonld_org():
     return {
         "@context":"https://schema.org","@type":["LocalBusiness","Organization"],
@@ -134,7 +149,7 @@ def render_index():
     <h3 class="boat-card-title">{html.escape(b["name"])}</h3>
     <p class="boat-card-desc">{html.escape(b["tagline"])}</p>
     <div class="boat-card-meta">
-      <span class="boat-card-price">From <strong>€{low}</strong><small>2h skippered</small></span>
+      <span class="boat-card-price">From <strong>€{low:,}</strong><small>{entry_duration(b)} skippered</small></span>
       <span class="boat-card-cta">View boat →</span>
     </div>
   </div>
@@ -209,7 +224,9 @@ def render_index():
 def render_boat(boat):
     tier = boat_price_tier(boat)
     prices = tier["prices"]
-    inclusions = BOATS_CFG["shared_inclusions"]
+    inclusions = all_inclusions(boat)
+    tier_extras = tier.get("extra_inclusions", [])
+    extended_note = tier.get("extended_note", "")
     hero_src, hero_srcset_str, hero_alt_text = boat_hero(boat)
     hero_id = boat.get("hero_pexels_id")  # still used for OG / JSON-LD fallback
     gallery = boat.get("gallery_pexels", [])
@@ -273,19 +290,19 @@ def render_boat(boat):
 <p>{html.escape(boat["summary"])}</p>
 
 <div class="callout">
-  <strong>Quick specs:</strong> {boat["length_m"]} m · {boat["capacity_pax"]} pax · twin diesel · skipper included · departs {html.escape(boat["departure_port"])}.
-  <br><strong>From €{lowest_price(boat)} for 2h.</strong> Drinks, fuel, insurance &amp; VAT included.
+  <strong>Quick specs:</strong> {boat["length_m"]} m · {boat["capacity_pax"]} pax · skipper included · departs {html.escape(boat["departure_port"])}.
+  <br><strong>From €{lowest_price(boat):,} for {entry_duration(boat)}.</strong> Drinks, fuel, insurance &amp; VAT included.{(" Plus jet ski free for the day." if "Jet ski" in " ".join(tier_extras) else "")}
 </div>
 
-<h2>Hourly pricing</h2>
-<p>Same boat, same crew — price scales with duration. Pick the length that fits your day:</p>
+<h2>{("Pricing" if len(prices) == 1 else "Hourly pricing")}</h2>
+<p>{("Minimum charter on the " + name + " is " + entry_duration(boat) + " — the rate below is all-in. Longer durations on request." if len(prices) == 1 else "Same boat, same crew — price scales with duration. Pick the length that fits your day:")}</p>
 <table>
   <thead><tr><th>Duration</th><th>Price (EUR)</th></tr></thead>
   <tbody>
 {price_rows}
   </tbody>
 </table>
-<p><em>All prices include: {", ".join(inclusions).lower()}. No hidden marina fees, no fuel surcharge for the standard coastal route.</em></p>
+<p><em>All prices include: {", ".join(inclusions).lower()}. No hidden marina fees, no fuel surcharge for the standard coastal route.{(" " + extended_note) if extended_note else ""}</em></p>
 
 <h2>What makes this boat work</h2>
 {highlights_html}
@@ -298,6 +315,7 @@ def render_boat(boat):
   <li><strong>Insurance</strong> and Spanish IVA (VAT)</li>
   <li><strong>Water toys:</strong> snorkel masks, inflatable donut, paddleboard</li>
   <li><strong>Towels</strong> for every guest</li>
+  {chr(10).join(f'<li><strong>{html.escape(x)}</strong> — included on the {name}</li>' for x in tier_extras)}
 </ul>
 <p>Catered lunch, premium drinks, DJ and beach-club tender service can be added when you book.</p>
 
@@ -383,7 +401,7 @@ def render_boat(boat):
     write_page(
         slug=f"boats/{boat['slug']}",
         title=f"{name} — {boat['builder']} {boat['length_m']}m Charter from Puerto Banús",
-        meta=f"Charter the {name} from Puerto Banús — {boat['length_m']} m, {boat['capacity_pax']} guests, skipper & fuel included. From €{lowest_price(boat)} for 2h to €{max(prices.values()):,} for 8h.",
+        meta=f"Charter the {name} from Puerto Banús — {boat['length_m']} m, {boat['capacity_pax']} guests, skipper & fuel included. From €{lowest_price(boat):,} for {entry_duration(boat)}.",
         h1=name,
         sub=html.unescape(boat["tagline"]),
         eyebrow=f"{boat['builder']} · {boat['length_m']}m · {boat['capacity_pax']} pax",

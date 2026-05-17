@@ -321,6 +321,7 @@ def render(page: dict, kind: str, data: dict) -> str:
             for b in boats_cfg["boats"]:
                 tier = boats_cfg["hourly_price_tiers"][b["tier"]]
                 low = min(tier["prices"].values())
+                entry_dur = f"{tier.get('min_hours') or sorted(int(k.rstrip('h')) for k in tier['prices'].keys())[0]}h"
                 # Prefer local image variants; fall back to Pexels
                 if b.get("hero_local"):
                     srcset_pairs = b.get("hero_local_srcset") or [[b["hero_local"], 1600]]
@@ -342,7 +343,7 @@ def render(page: dict, kind: str, data: dict) -> str:
     <h3 class="boat-card-title">{html.escape(b["name"])}</h3>
     <p class="boat-card-desc">{html.escape(b["tagline"])}</p>
     <div class="boat-card-meta">
-      <span class="boat-card-price">From <strong>€{low}</strong><small>2h skippered</small></span>
+      <span class="boat-card-price">From <strong>€{low:,}</strong><small>{entry_dur} skippered</small></span>
       <span class="boat-card-cta">View boat →</span>
     </div>
   </div>

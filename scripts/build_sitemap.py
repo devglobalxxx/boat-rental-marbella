@@ -15,6 +15,11 @@ lines = ['<?xml version="1.0" encoding="UTF-8"?>',
          url("", "1.0", "weekly")]
 for s in CONFIG["spokes"]:
     lines.append(url(s["slug"], "0.9", "weekly"))
+lines.append(url("boats", "0.95", "weekly"))  # fleet index (high-intent)
+import json as _json
+boats_cfg = _json.loads((pathlib.Path(__file__).resolve().parents[1] / "config" / "boats.json").read_text())
+for b in boats_cfg["boats"]:
+    lines.append(url(f"boats/{b['slug']}", "0.9", "weekly"))
 lines.append(url("blog", "0.8", "weekly"))  # blog index
 for b in CONFIG["blog"]:
     lines.append(url(b["slug"], "0.7", "monthly"))

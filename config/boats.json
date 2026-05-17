@@ -1,0 +1,58 @@
+{
+  "shared_inclusions": ["Skipper", "Fuel", "Drinks", "Insurance", "VAT"],
+  "hourly_price_tiers": {
+    "tier_a": {
+      "label": "12.5m motor yacht (9 pax)",
+      "prices": {"2h": 749, "3h": 1049, "4h": 1299, "5h": 1549, "6h": 1799, "7h": 2099, "8h": 2299},
+      "currency": "EUR"
+    }
+  },
+  "boats": [
+    {
+      "slug": "astondoa-40",
+      "name": "Astondoa 40",
+      "tagline": "Spanish-built 12.5 m motor yacht with classic Mediterranean styling",
+      "model_year": null,
+      "builder": "Astondoa",
+      "type": "Motor yacht",
+      "length_m": 12.5,
+      "capacity_pax": 9,
+      "departure_port": "Puerto Banús",
+      "tier": "tier_a",
+      "highlights": [
+        "Spacious aft deck with shaded bimini",
+        "Air-conditioned interior saloon with dining for 6",
+        "Two private cabins for overnight charter",
+        "Twin diesel engines, 18-knot cruise",
+        "Snorkel gear, inflatable donut & paddleboard on board"
+      ],
+      "hero_pexels_id": "144024",
+      "gallery_pexels": ["144024", "31371841", "33852930"],
+      "summary": "Astondoa 40 is the Spanish equivalent of the classic Mediterranean motor yacht — built in Cádiz, fitted out in teak and cream, and at home anchoring off the Golden Mile for a long lunch. 12.5 metres, 9 guests, skipper and fuel included.",
+      "intent_keywords": ["motor yacht charter Marbella", "Astondoa 40 Marbella", "12 metre yacht hire Puerto Banús"]
+    },
+    {
+      "slug": "azimut-39",
+      "name": "Azimut 39",
+      "tagline": "Italian-built 12.5 m flybridge motor yacht with twin-cabin layout",
+      "model_year": null,
+      "builder": "Azimut",
+      "type": "Motor yacht",
+      "length_m": 12.5,
+      "capacity_pax": 9,
+      "departure_port": "Puerto Banús",
+      "tier": "tier_a",
+      "highlights": [
+        "Flybridge with second helm and sunbathing pad",
+        "Sleek Italian styling — Azimut's signature reverse sheer line",
+        "Large saloon with panoramic windows",
+        "Two cabins plus convertible saloon for overnight",
+        "Twin diesel engines, 18-knot cruise"
+      ],
+      "hero_pexels_id": "12837089",
+      "gallery_pexels": ["12837089", "163236", "27951598"],
+      "summary": "The Azimut 39 is the Italian counterpart to the Astondoa — same size class, same 9-guest capacity, but with the flybridge layout and modern lines Azimut is known for. A great pick for groups who want the upper sun-deck experience.",
+      "intent_keywords": ["Azimut 39 Marbella", "Italian motor yacht charter Marbella", "flybridge yacht hire Puerto Banús"]
+    }
+  ]
+}

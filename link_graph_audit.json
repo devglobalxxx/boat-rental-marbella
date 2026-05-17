@@ -15,12 +15,8 @@
   },
   "/yacht-charter-marbella/": {
     "proposed": 7,
-    "applied": 4,
+    "applied": 3,
     "applied_links": [
-      {
-        "anchor": "cheapest yacht charter Marbella",
-        "to": "/blog/how-much-does-it-cost-to-rent-a-boat-in-marbella/"
-      },
       {
         "anchor": "superyacht",
         "to": "/luxury-yacht-rental-marbella/"

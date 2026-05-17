@@ -76,6 +76,120 @@ def video_section_html(videos):
   </div>
 </section>'''
 
+# ---------- fleet image catalogue ----------
+# All landing-page imagery routes through this map. No Pexels anywhere visible.
+def _fl(prefix, widths, alt):
+    return {
+        "src": f"{prefix}-{widths[-1]}.jpg",
+        "srcset_hero": ", ".join(f"{prefix}-{w}.jpg {w}w" for w in widths),
+        "srcset_inline": ", ".join(f"{prefix}-{w}.jpg {w}w" for w in widths if w <= 1200),
+        "alt": alt,
+        "widths": widths,
+    }
+
+FLEET_IMAGES = {
+    "astondoa-hero":     _fl("/img/boats/astondoa-40/hero",       [600,900,1200,1600], "Astondoa 40 'Fufi' cruising in front of La Concha mountain, Marbella"),
+    "astondoa-sunset":   _fl("/img/boats/astondoa-40/sunset",     [600,900,1200,1600], "Charter yacht arriving Puerto Banús marina at sunset"),
+    "astondoa-interior": _fl("/img/boats/astondoa-40/interior",   [600,900,1200],      "Cream-leather saloon interior on our Marbella charter yacht"),
+    "astondoa-lifestyle":_fl("/img/boats/astondoa-40/lifestyle",  [600,900,1200],      "Guests on the bow of a charter yacht in Puerto Banús, Marbella"),
+    "azimut-hero":       _fl("/img/boats/azimut-39/hero",         [600,900,1200,1600], "Azimut 39 motor yacht cruising past La Concha mountain in Marbella"),
+    "azimut-aerial":     _fl("/img/boats/azimut-39/aerial",       [600,900,1200],      "Azimut 39 from above — flybridge and cockpit detail"),
+    "mangusta-hero":     _fl("/img/boats/mangusta-80/hero",       [600,900,1200,1600], "Mangusta 80 — biggest charter yacht in Marbella, past La Concha mountain"),
+    "mangusta-aerial":   _fl("/img/boats/mangusta-80/aerial-wake",[600,900,1200],      "Mangusta 80 from above with wake — 24 m sport yacht on the Costa del Sol"),
+    "mangusta-profile":  _fl("/img/boats/mangusta-80/profile",    [600,900,1200],      "Mangusta 80 profile view at anchor — Italian Overmarine sport yacht"),
+    "mangusta-sun-pad":  _fl("/img/boats/mangusta-80/sun-pad",    [600,900,1200],      "Sun pad on the foredeck of the Mangusta 80 — group day charter"),
+    "mangusta-saloon":   _fl("/img/boats/mangusta-80/saloon",     [600,900,1200],      "Mangusta 80 main saloon — refit luxury interior"),
+    "mangusta-galley":   _fl("/img/boats/mangusta-80/galley",     [600,900,1200],      "Chef-grade galley on the Mangusta 80 — catered lunches on board"),
+}
+
+# Hero override per page slug (hub = empty string)
+PAGE_HERO_MAP = {
+    "": "mangusta-hero",
+    "yacht-charter-marbella": "azimut-hero",
+    "catamaran-rental-marbella": "mangusta-sun-pad",
+    "fishing-boat-rental-marbella": "astondoa-lifestyle",
+    "boat-rental-no-license-marbella": "astondoa-hero",
+    "luxury-yacht-rental-marbella": "mangusta-hero",
+    "sunset-cruise-marbella": "astondoa-sunset",
+    "boat-party-marbella": "mangusta-aerial",
+    "boat-rental-puerto-banus": "astondoa-lifestyle",
+    "blog/how-much-does-it-cost-to-rent-a-boat-in-marbella": "mangusta-aerial",
+    "blog/best-month-to-rent-a-boat-in-marbella": "azimut-hero",
+    "blog/boat-license-rules-spain": "azimut-hero",
+    "blog/puerto-banus-vs-marbella-marina": "astondoa-sunset",
+    "blog/kids-on-a-boat-marbella": "astondoa-hero",
+    "blog/dolphin-watching-marbella": "mangusta-aerial",
+    "blog/gibraltar-day-trip-by-boat": "mangusta-profile",
+    "blog/what-to-bring-on-a-boat-charter": "astondoa-lifestyle",
+    "blog/seasickness-prevention-charter": "azimut-hero",
+    "blog/private-vs-shared-boat-charter": "mangusta-hero",
+}
+
+# Optional secondary inline image per page (for body figure)
+PAGE_INLINE_MAP = {
+    "": "astondoa-sunset",
+    "yacht-charter-marbella": "mangusta-aerial",
+    "catamaran-rental-marbella": "astondoa-hero",
+    "fishing-boat-rental-marbella": "astondoa-hero",
+    "boat-rental-no-license-marbella": "azimut-hero",
+    "luxury-yacht-rental-marbella": "mangusta-profile",
+    "sunset-cruise-marbella": "mangusta-hero",
+    "boat-party-marbella": "mangusta-sun-pad",
+    "boat-rental-puerto-banus": "astondoa-sunset",
+    "blog/how-much-does-it-cost-to-rent-a-boat-in-marbella": "astondoa-sunset",
+    "blog/best-month-to-rent-a-boat-in-marbella": "mangusta-hero",
+    "blog/boat-license-rules-spain": "astondoa-hero",
+    "blog/puerto-banus-vs-marbella-marina": "astondoa-lifestyle",
+    "blog/kids-on-a-boat-marbella": "mangusta-sun-pad",
+    "blog/dolphin-watching-marbella": "mangusta-profile",
+    "blog/gibraltar-day-trip-by-boat": "mangusta-aerial",
+    "blog/what-to-bring-on-a-boat-charter": "astondoa-interior",
+    "blog/seasickness-prevention-charter": "mangusta-aerial",
+    "blog/private-vs-shared-boat-charter": "mangusta-aerial",
+}
+
+def fleet_hero_for(slug):
+    """Return (src, srcset, alt) for the page's hero, overriding any data hero."""
+    key = PAGE_HERO_MAP.get(slug)
+    if not key or key not in FLEET_IMAGES:
+        return None
+    img = FLEET_IMAGES[key]
+    return (img["src"], img["srcset_hero"], img["alt"])
+
+def fleet_inline_figure_html(slug):
+    """Return a `<figure class='inline-img'>...</figure>` for the secondary body image."""
+    key = PAGE_INLINE_MAP.get(slug)
+    if not key or key not in FLEET_IMAGES:
+        return ""
+    img = FLEET_IMAGES[key]
+    return (
+        f'<figure class="inline-img"><img src="{img["src"]}" '
+        f'srcset="{img["srcset_inline"]}" sizes="(max-width: 880px) 100vw, 720px" '
+        f'alt="{html.escape(img["alt"])}" loading="lazy" width="1200" height="800">'
+        f'</figure>'
+    )
+
+def replace_inline_pexels(body_html, slug):
+    """Strip every `<figure class='inline-img'>` containing a Pexels URL.
+    Inject one fleet inline figure at the first stripped position (if mapped)."""
+    pattern = re.compile(r'\s*<figure class="inline-img">[\s\S]*?</figure>\s*')
+    replacement = fleet_inline_figure_html(slug)
+    matches = list(pattern.finditer(body_html))
+    if not matches:
+        return body_html
+    # Keep ONE figure (replaced) at the position of the first match; strip the rest.
+    pieces = []
+    cursor = 0
+    placed = False
+    for m in matches:
+        pieces.append(body_html[cursor:m.start()])
+        if not placed and replacement:
+            pieces.append("\n" + replacement + "\n")
+            placed = True
+        cursor = m.end()
+    pieces.append(body_html[cursor:])
+    return "".join(pieces)
+
 CUSTOMERS_CFG_PATH = ROOT / "config" / "customers.json"
 CUSTOMERS_CFG = json.loads(CUSTOMERS_CFG_PATH.read_text()) if CUSTOMERS_CFG_PATH.exists() else {"photos": []}
 
@@ -239,10 +353,13 @@ def jsonld_for(page: dict, kind: str, data: dict) -> str:
         org_block["foundingDate"] = str(SITE['founded_year'])
     blocks.append(org_block)
     if kind == "blog":
+        # Prefer fleet hero (absolute URL) for BlogPosting.image; fall back to data
+        fleet = fleet_hero_for(page['slug'])
+        blog_image = SITE['base_url'] + fleet[0] if fleet else data.get('hero_img', SITE['base_url']+"/og-image.jpg")
         blocks.append({
             "@context":"https://schema.org","@type":"BlogPosting",
             "headline": page['title'], "url": url,
-            "image": data.get('hero_img', SITE['base_url']+"/og-image.jpg"),
+            "image": blog_image,
             "inLanguage":"en",
             "author":{"@type":"Organization","name":SITE.get('editorial_team', SITE['name']),"url":SITE['base_url']+"/"},
             "publisher":{"@id":SITE['base_url']+"/#org"},
@@ -306,6 +423,8 @@ def generate(page: dict, kind: str) -> dict:
 # ---------- render ----------
 def render(page: dict, kind: str, data: dict) -> str:
     body = md_links_to_html(data["body_html"])
+    # Scrub any Pexels inline images, substitute one fleet image per page
+    body = replace_inline_pexels(body, page['slug'])
     # add responsive srcset to inline pexels imgs that don't already have one
     def _add_srcset(m):
         tag = m.group(0)
@@ -340,6 +459,11 @@ def render(page: dict, kind: str, data: dict) -> str:
     def _pexels_variant(u, w):
         return re.sub(r'[?&]w=\d+', '', u).rstrip('?&') + ('?' if '?' not in u else '&') + f'w={w}'
     hero_srcset = ", ".join(f"{_pexels_variant(hero_img, w)} {w}w" for w in (640, 960, 1280, 1600))
+    # OVERRIDE with curated fleet image where mapped (no Pexels on landing pages)
+    fleet = fleet_hero_for(page['slug'])
+    if fleet:
+        hero_img, hero_srcset, fleet_alt = fleet
+        hero_alt = f"{page['primary_keyword']} — {fleet_alt}"
 
     # Hero overlay text — H1, subtitle (from meta), eyebrow
     h1 = page.get("h1", page['title'])
@@ -413,23 +537,23 @@ def render(page: dict, kind: str, data: dict) -> str:
         except Exception as e:
             print(f"[warn] fleet section skipped: {e}")
 
+        # Each category card now uses a curated FLEET_IMAGE
         BOAT_CARDS = [
-            ("yacht-charter-marbella",  "Yacht Charter",       "Crewed motor yachts 10–22 m for cruising the Golden Mile.",        "12837089", 450, "4h", "Most popular"),
-            ("catamaran-rental-marbella","Catamaran Rental",   "Stable twin-hull sail & power cats — best for families and groups.","32116621", 350, "4h", "Family favourite"),
-            ("luxury-yacht-rental-marbella","Luxury Yachts",   "Crewed 18–30 m superyachts with chef, stewardess and water toys.", "30483267", 2400, "day", "Premium"),
-            ("boat-rental-no-license-marbella","No-License Boats","Self-drive 5 m runabouts — no licence, no experience required.",  "144024",   130, "2h", "Self-drive"),
-            ("fishing-boat-rental-marbella","Fishing Charters","Inshore & deep-sea charters — dorado, tuna, amberjack year-round.","36893149", 220, "2h", ""),
-            ("boat-party-marbella","Boat Party",               "Group charters 10–40 guests — stag, hen, birthday, corporate.",    "27951598", 1200, "4h", ""),
+            ("yacht-charter-marbella",       "Yacht Charter",   "Crewed motor yachts cruising the Golden Mile — from €749/2h.",                   "azimut-hero",       749,  "2h",  "Most popular"),
+            ("catamaran-rental-marbella",    "Catamaran Rental","Looking for a catamaran? Our flat-deck Mangusta 80 sun-pad delivers the same.", "mangusta-sun-pad",  749,  "2h",  "Group favourite"),
+            ("luxury-yacht-rental-marbella", "Luxury Yachts",   "Mangusta 80 — biggest yacht charter in Marbella, jet ski included.",            "mangusta-hero",     4719, "4h",  "Flagship"),
+            ("boat-rental-no-license-marbella","No-License Boats","Skip the licence — our skippered fleet handles everything.",                  "astondoa-hero",     749,  "2h",  "Skippered"),
+            ("fishing-boat-rental-marbella", "Fishing Charters","Inshore fishing on our 12.5 m fleet — light tackle and trolling.",              "astondoa-lifestyle",749,  "2h",  ""),
+            ("boat-party-marbella",          "Boat Party",      "Group charters up to 12 guests — stag, hen, birthday, corporate.",              "mangusta-aerial",   749,  "2h",  ""),
         ]
-        def _pex(id_, w):
-            return f"https://images.pexels.com/photos/{id_}/pexels-photo-{id_}.jpeg?auto=compress&cs=tinysrgb&w={w}"
         cards_html = []
-        for slug, title, desc, pid, price, dur, tag in BOAT_CARDS:
+        for slug, title, desc, fkey, price, dur, tag in BOAT_CARDS:
             tag_html = f'<span class="boat-card-tag">{html.escape(tag)}</span>' if tag else ''
-            srcset = ", ".join(f"{_pex(pid, w)} {w}w" for w in (400, 600, 900))
+            fimg = FLEET_IMAGES[fkey]
+            srcset = ", ".join(f"{fimg['src'].replace('-' + str(fimg['widths'][-1]) + '.jpg', f'-{w}.jpg')} {w}w" for w in fimg['widths'] if w <= 900)
             cards_html.append(f'''<a href="/{slug}/" class="boat-card">
   <div class="boat-card-img">
-    <img src="{_pex(pid, 600)}" srcset="{srcset}" sizes="(max-width: 600px) 100vw, 360px" alt="{html.escape(title)} in Marbella" loading="lazy" width="600" height="375">
+    <img src="{fimg['src'].replace('-' + str(fimg['widths'][-1]) + '.jpg', '-600.jpg')}" srcset="{srcset}" sizes="(max-width: 600px) 100vw, 360px" alt="{html.escape(title)} in Marbella — {html.escape(fimg['alt'])}" loading="lazy" width="600" height="375">
     {tag_html}
   </div>
   <div class="boat-card-body">

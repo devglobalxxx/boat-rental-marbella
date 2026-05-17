@@ -19,8 +19,22 @@ TEMPLATE = (ROOT / "templates" / "page.html.template").read_text()
 CONFIG = json.loads((ROOT / "config" / "keyword_map.json").read_text())
 SITE = CONFIG["site"]
 
-INDEX_HERO_IMG = "https://images.pexels.com/photos/15488149/pexels-photo-15488149.jpeg?auto=compress&cs=tinysrgb&w=1600"
-INDEX_HERO_ALT = "Aerial view of Marbella's coastline — the Marbella charter guide"
+INDEX_HERO_IMG = "/img/boats/mangusta-80/hero-1600.jpg"
+INDEX_HERO_ALT = "Mangusta 80 cruising past La Concha mountain — Marbella charter guide"
+
+# Per-blog-post fleet image (mirrors the map in generate_pages.py PAGE_HERO_MAP)
+BLOG_POST_IMAGE = {
+    "blog/how-much-does-it-cost-to-rent-a-boat-in-marbella": ("/img/boats/mangusta-80/aerial-wake",  "Mangusta 80 aerial — Marbella charter pricing"),
+    "blog/best-month-to-rent-a-boat-in-marbella":            ("/img/boats/azimut-39/hero",           "Azimut 39 cruising past La Concha — best month to charter"),
+    "blog/boat-license-rules-spain":                         ("/img/boats/azimut-39/hero",           "Azimut 39 motor yacht in Marbella — Spain license rules"),
+    "blog/puerto-banus-vs-marbella-marina":                  ("/img/boats/astondoa-40/sunset",       "Astondoa 40 at Puerto Banús sunset — marina comparison"),
+    "blog/kids-on-a-boat-marbella":                          ("/img/boats/astondoa-40/hero",         "Astondoa 40 cruising calmly — boat rental with kids in Marbella"),
+    "blog/dolphin-watching-marbella":                        ("/img/boats/mangusta-80/aerial-wake",  "Mangusta 80 offshore — dolphin-watching grounds Marbella"),
+    "blog/gibraltar-day-trip-by-boat":                       ("/img/boats/mangusta-80/profile",      "Mangusta 80 profile — Gibraltar day trip from Marbella"),
+    "blog/what-to-bring-on-a-boat-charter":                  ("/img/boats/astondoa-40/lifestyle",    "Charter yacht at Puerto Banús marina — packing checklist"),
+    "blog/seasickness-prevention-charter":                   ("/img/boats/azimut-39/hero",           "Azimut 39 motor yacht on a calm Marbella morning"),
+    "blog/private-vs-shared-boat-charter":                   ("/img/boats/mangusta-80/hero",         "Mangusta 80 cruising — private vs shared charter"),
+}
 INDEX_TITLE = "Marbella Boat Charter Guide: Prices, Routes, Rules & Tips"
 INDEX_META = "The complete 2026 guide to chartering a boat in Marbella — prices, license rules, best months, kids on board, Gibraltar by sea, seasickness prevention and more."
 INDEX_H1 = "The Marbella Boat Charter Guide"
@@ -45,11 +59,19 @@ def load_blog_posts():
     return posts
 
 def render_post_card(post):
-    src = post["hero"] or "https://picsum.photos/seed/" + post["slug"].strip("/") + "/600/375"
-    srcset = ", ".join(f"{pexels(src, w)} {w}w" for w in (400, 600, 900))
+    slug_key = post["slug"].strip("/")
+    mapping = BLOG_POST_IMAGE.get(slug_key)
+    if mapping:
+        base, alt = mapping
+        src = f"{base}-900.jpg"
+        srcset = ", ".join(f"{base}-{w}.jpg {w}w" for w in (600, 900, 1200))
+    else:
+        src = post["hero"] or "https://picsum.photos/seed/" + slug_key + "/600/375"
+        srcset = ", ".join(f"{pexels(src, w)} {w}w" for w in (400, 600, 900))
+        alt = post["hero_alt"]
     return f'''<a href="{post["slug"]}" class="boat-card">
   <div class="boat-card-img">
-    <img src="{pexels(src, 600)}" srcset="{srcset}" sizes="(max-width: 600px) 100vw, 360px" alt="{html.escape(post["hero_alt"])}" loading="lazy" width="600" height="375">
+    <img src="{src}" srcset="{srcset}" sizes="(max-width: 600px) 100vw, 360px" alt="{html.escape(alt)}" loading="lazy" width="600" height="375">
   </div>
   <div class="boat-card-body">
     <h3 class="boat-card-title">{html.escape(post["title"])}</h3>
@@ -124,8 +146,9 @@ def main():
         },
     ]
 
-    # Hero srcset
-    hero_srcset = ", ".join(f"{pexels(INDEX_HERO_IMG, w)} {w}w" for w in (640, 960, 1280, 1600))
+    # Hero srcset — local fleet image variants
+    hero_base = INDEX_HERO_IMG.rsplit("-", 1)[0]  # /img/boats/mangusta-80/hero
+    hero_srcset = ", ".join(f"{hero_base}-{w}.jpg {w}w" for w in (600, 900, 1200, 1600))
 
     repl = {
         "{{HERO_IMG}}": INDEX_HERO_IMG,

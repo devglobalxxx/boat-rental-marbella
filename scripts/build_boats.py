@@ -151,16 +151,22 @@ def wa_link(text):
 def boat_price_tier(boat):
     return BOATS_CFG["hourly_price_tiers"][boat["tier"]]
 
+def is_on_request(boat):
+    return boat.get("pricing_status") == "on_request" or boat.get("tier") == "on_request"
+
 def lowest_price(boat):
+    if is_on_request(boat):
+        return None
     return min(boat_price_tier(boat)["prices"].values())
 
 def entry_duration(boat):
     """Return the minimum-charter duration label, e.g. '2h' or '4h'."""
+    if is_on_request(boat):
+        return "WhatsApp"
     tier = boat_price_tier(boat)
     mh = tier.get("min_hours")
     if mh:
         return f"{mh}h"
-    # fall back to smallest key in prices grid
     keys = sorted(int(k.rstrip('h')) for k in tier["prices"].keys())
     return f"{keys[0]}h"
 
@@ -191,6 +197,9 @@ def render_index():
     for b in boats:
         src, srcset, alt = boat_card_thumb(b)
         low = lowest_price(b)
+        price_html = (f'<span class="boat-card-price">Quote on <strong>WhatsApp</strong><small>competitive rates</small></span>'
+                      if is_on_request(b)
+                      else f'<span class="boat-card-price">From <strong>€{low:,}</strong><small>{entry_duration(b)} skippered</small></span>')
         cards.append(f'''<a href="/boats/{b["slug"]}/" class="boat-card">
   <div class="boat-card-img">
     <img src="{src}" srcset="{srcset}" sizes="(max-width: 600px) 100vw, 360px" alt="{html.escape(alt)}" loading="lazy" width="600" height="375">
@@ -200,7 +209,7 @@ def render_index():
     <h3 class="boat-card-title">{html.escape(b["name"])}</h3>
     <p class="boat-card-desc">{html.escape(b["tagline"])}</p>
     <div class="boat-card-meta">
-      <span class="boat-card-price">From <strong>€{low:,}</strong><small>{entry_duration(b)} skippered</small></span>
+      {price_html}
       <span class="boat-card-cta">View boat →</span>
     </div>
   </div>
@@ -324,7 +333,7 @@ def render_boat(boat):
     <h3 class="boat-card-title">{html.escape(b["name"])}</h3>
     <p class="boat-card-desc">{html.escape(b["tagline"])}</p>
     <div class="boat-card-meta">
-      <span class="boat-card-price">From <strong>€{lowest_price(b)}</strong><small>2h skippered</small></span>
+      {('<span class="boat-card-price">Quote on <strong>WhatsApp</strong><small>competitive rates</small></span>' if is_on_request(b) else f'<span class="boat-card-price">From <strong>€{lowest_price(b)}</strong><small>{entry_duration(b)} skippered</small></span>')}
       <span class="boat-card-cta">View boat →</span>
     </div>
   </div>
@@ -340,20 +349,13 @@ def render_boat(boat):
 
 <p>{html.escape(boat["summary"])}</p>
 
-<div class="callout">
-  <strong>Quick specs:</strong> {boat["length_m"]} m · {boat["capacity_pax"]} pax · skipper included{(" · in fleet since " + str(boat["model_year"])) if boat.get("model_year") else ""} · departs {html.escape(boat["departure_port"])}.
-  <br><strong>From €{lowest_price(boat):,} for {entry_duration(boat)}.</strong> Drinks, fuel, insurance &amp; VAT included.{(" Plus jet ski free for the day." if "Jet ski" in " ".join(tier_extras) else "")}
-</div>
+{('<div class="callout"><strong>Quick specs:</strong> ' + str(boat["length_m"]) + ' m · ' + str(boat["capacity_pax"]) + ' pax · skipper included · departs ' + html.escape(boat["departure_port"]) + '.<br><strong>Quote on WhatsApp</strong> — give us your date and group size for a same-day price, no commitment.</div>'
+  if is_on_request(boat) else
+  '<div class="callout"><strong>Quick specs:</strong> ' + str(boat["length_m"]) + ' m · ' + str(boat["capacity_pax"]) + ' pax · skipper included' + ((' · in fleet since ' + str(boat["model_year"])) if boat.get("model_year") else '') + ' · departs ' + html.escape(boat["departure_port"]) + '.<br><strong>From €' + f"{lowest_price(boat):,}" + ' for ' + entry_duration(boat) + '.</strong> Drinks, fuel, insurance &amp; VAT included.' + ((" Plus jet ski free for the day." if "Jet ski" in " ".join(tier_extras) else "")) + '</div>')}
 
-<h2>{("Pricing" if len(prices) == 1 else "Hourly pricing")}</h2>
-<p>{("Minimum charter on the " + name + " is " + entry_duration(boat) + " — the rate below is all-in. Longer durations on request." if len(prices) == 1 else "Same boat, same crew — price scales with duration. Pick the length that fits your day:")}</p>
-<table>
-  <thead><tr><th>Duration</th><th>Price (EUR)</th></tr></thead>
-  <tbody>
-{price_rows}
-  </tbody>
-</table>
-<p><em>All prices include: {", ".join(inclusions).lower()}. No hidden marina fees, no fuel surcharge for the standard coastal route.{(" " + extended_note) if extended_note else ""}</em></p>
+{('<h2>Pricing</h2><p>This boat is quoted to order — send your date and group size on WhatsApp for an instant rate. Charters always include licensed skipper, fuel, insurance and VAT (Spanish IVA 21%).</p>'
+  if is_on_request(boat) else
+  '<h2>' + ("Pricing" if len(prices) == 1 else "Hourly pricing") + '</h2><p>' + ("Minimum charter on the " + name + " is " + entry_duration(boat) + " — the rate below is all-in. Longer durations on request." if len(prices) == 1 else "Same boat, same crew — price scales with duration. Pick the length that fits your day:") + '</p><table><thead><tr><th>Duration</th><th>Price (EUR)</th></tr></thead><tbody>' + price_rows + '</tbody></table><p><em>All prices include: ' + ", ".join(inclusions).lower() + '. No hidden marina fees, no fuel surcharge for the standard coastal route.' + ((" " + extended_note) if extended_note else "") + '</em></p>')}
 
 <h2>What makes this boat work</h2>
 {highlights_html}
@@ -412,24 +414,35 @@ def render_boat(boat):
         }
         for dur, price in prices.items()
     ]
+    product = {
+        "@context":"https://schema.org","@type":"Product",
+        "name": f"{name} – Marbella Boat Charter",
+        "description": boat["summary"],
+        "brand":{"@type":"Brand","name":boat["builder"]},
+        "category":"Boat Charter",
+        "image": (SITE['base_url'] + hero_src) if hero_src.startswith('/') else hero_src,
+        "url": SITE['base_url']+f"/boats/{boat['slug']}/",
+    }
+    if not is_on_request(boat) and prices:
+        product["offers"] = {
+            "@type":"AggregateOffer",
+            "priceCurrency":"EUR",
+            "lowPrice": min(prices.values()),
+            "highPrice": max(prices.values()),
+            "offerCount": len(prices),
+            "offers": offers,
+        }
+    else:
+        product["offers"] = {
+            "@type":"Offer",
+            "priceCurrency":"EUR",
+            "availability":"https://schema.org/InStock",
+            "url": boat_url if False else (SITE['base_url']+f"/boats/{boat['slug']}/"),
+            "price": "0",  # zero is a JSON-LD-valid placeholder; quote on contact
+        }
     jsonld = [
         jsonld_org(),
-        {
-            "@context":"https://schema.org","@type":"Product",
-            "name": f"{name} – Marbella Boat Charter",
-            "description": boat["summary"],
-            "brand":{"@type":"Brand","name":boat["builder"]},
-            "category":"Boat Charter",
-            "image": (SITE['base_url'] + hero_src) if hero_src.startswith('/') else hero_src,
-            "url": SITE['base_url']+f"/boats/{boat['slug']}/",
-            "offers":{
-                "@type":"AggregateOffer",
-                "priceCurrency":"EUR",
-                "lowPrice": min(prices.values()),
-                "highPrice": max(prices.values()),
-                "offerCount": len(prices),
-                "offers": offers,
-            },
+        {**product,
             "additionalProperty":[
                 {"@type":"PropertyValue","name":"Length","value":f"{boat['length_m']} m"},
                 {"@type":"PropertyValue","name":"Capacity","value":f"{boat['capacity_pax']} pax"},
@@ -454,7 +467,9 @@ def render_boat(boat):
     write_page(
         slug=f"boats/{boat['slug']}",
         title=f"{name} — {boat['builder']} {boat['length_m']}m Charter from Puerto Banús",
-        meta=f"Charter the {name} from Puerto Banús — {boat['length_m']} m, {boat['capacity_pax']} guests, skipper & fuel included. From €{lowest_price(boat):,} for {entry_duration(boat)}.",
+        meta=(f"Charter the {name} from Puerto Banús — {boat['length_m']} m, {boat['capacity_pax']} guests, skipper + drinks + VAT included. Quote on WhatsApp."
+              if is_on_request(boat) else
+              f"Charter the {name} from Puerto Banús — {boat['length_m']} m, {boat['capacity_pax']} guests, skipper & fuel included. From €{lowest_price(boat):,} for {entry_duration(boat)}."),
         h1=name,
         sub=html.unescape(boat["tagline"]),
         eyebrow=f"{boat['builder']} · {boat['length_m']}m · {boat['capacity_pax']} pax",

@@ -1,18 +1,44 @@
 {
-  "shared_inclusions": ["Licensed skipper", "Fuel", "Drinks (water, soft drinks, beer, white wine, cava)", "Light snacks", "Insurance", "Safety equipment", "VAT (21%)"],
+  "shared_inclusions": [
+    "Licensed skipper",
+    "Fuel",
+    "Drinks (water, soft drinks, beer, white wine, cava)",
+    "Light snacks",
+    "Insurance",
+    "Safety equipment",
+    "VAT (21%)"
+  ],
   "hourly_price_tiers": {
     "tier_a": {
       "label": "12.5m motor yacht",
       "min_hours": 2,
-      "prices": {"2h": 749, "3h": 1049, "4h": 1299, "5h": 1549, "6h": 1799, "7h": 2099, "8h": 2299},
+      "prices": {
+        "2h": 749,
+        "3h": 1049,
+        "4h": 1299,
+        "5h": 1549,
+        "6h": 1799,
+        "7h": 2099,
+        "8h": 2299
+      },
       "currency": "EUR"
     },
     "tier_b": {
       "label": "Mangusta 80 superyacht — Marbella flagship",
       "min_hours": 4,
-      "prices": {"4h": 4719},
+      "prices": {
+        "4h": 4719
+      },
       "extended_note": "Longer charters (full day, overnight, multi-day) quoted on WhatsApp.",
-      "extra_inclusions": ["Jet ski (free for the day)"],
+      "extra_inclusions": [
+        "Jet ski (free for the day)"
+      ],
+      "currency": "EUR"
+    },
+    "on_request": {
+      "label": "Quote on WhatsApp — competitive Marbella rates",
+      "min_hours": 0,
+      "prices": {},
       "currency": "EUR"
     }
   },
@@ -36,34 +62,97 @@
         "Snorkel gear, inflatable donut & paddleboard on board"
       ],
       "hero_pexels_id": "144024",
-      "gallery_pexels": ["144024", "31371841", "33852930"],
+      "gallery_pexels": [
+        "144024",
+        "31371841",
+        "33852930"
+      ],
       "hero_local": "/img/boats/astondoa-40/hero-1600.jpg",
       "hero_local_srcset": [
-        ["/img/boats/astondoa-40/hero-600.jpg", 600],
-        ["/img/boats/astondoa-40/hero-900.jpg", 900],
-        ["/img/boats/astondoa-40/hero-1200.jpg", 1200],
-        ["/img/boats/astondoa-40/hero-1600.jpg", 1600]
+        [
+          "/img/boats/astondoa-40/hero-600.jpg",
+          600
+        ],
+        [
+          "/img/boats/astondoa-40/hero-900.jpg",
+          900
+        ],
+        [
+          "/img/boats/astondoa-40/hero-1200.jpg",
+          1200
+        ],
+        [
+          "/img/boats/astondoa-40/hero-1600.jpg",
+          1600
+        ]
       ],
       "hero_local_alt": "Astondoa 40 motor yacht \"Fufi\" cruising off Marbella with La Concha mountain behind",
       "gallery_local": [
         {
           "src": "/img/boats/astondoa-40/sunset-1200.jpg",
-          "srcset": [["/img/boats/astondoa-40/sunset-600.jpg", 600],["/img/boats/astondoa-40/sunset-900.jpg", 900],["/img/boats/astondoa-40/sunset-1200.jpg", 1200],["/img/boats/astondoa-40/sunset-1600.jpg", 1600]],
+          "srcset": [
+            [
+              "/img/boats/astondoa-40/sunset-600.jpg",
+              600
+            ],
+            [
+              "/img/boats/astondoa-40/sunset-900.jpg",
+              900
+            ],
+            [
+              "/img/boats/astondoa-40/sunset-1200.jpg",
+              1200
+            ],
+            [
+              "/img/boats/astondoa-40/sunset-1600.jpg",
+              1600
+            ]
+          ],
           "alt": "Astondoa 40 arriving at Puerto Banús marina at sunset"
         },
         {
           "src": "/img/boats/astondoa-40/interior-1200.jpg",
-          "srcset": [["/img/boats/astondoa-40/interior-600.jpg", 600],["/img/boats/astondoa-40/interior-900.jpg", 900],["/img/boats/astondoa-40/interior-1200.jpg", 1200]],
+          "srcset": [
+            [
+              "/img/boats/astondoa-40/interior-600.jpg",
+              600
+            ],
+            [
+              "/img/boats/astondoa-40/interior-900.jpg",
+              900
+            ],
+            [
+              "/img/boats/astondoa-40/interior-1200.jpg",
+              1200
+            ]
+          ],
           "alt": "Astondoa 40 interior saloon with cream leather seating and teak finish"
         },
         {
           "src": "/img/boats/astondoa-40/lifestyle-1200.jpg",
-          "srcset": [["/img/boats/astondoa-40/lifestyle-600.jpg", 600],["/img/boats/astondoa-40/lifestyle-900.jpg", 900],["/img/boats/astondoa-40/lifestyle-1200.jpg", 1200]],
+          "srcset": [
+            [
+              "/img/boats/astondoa-40/lifestyle-600.jpg",
+              600
+            ],
+            [
+              "/img/boats/astondoa-40/lifestyle-900.jpg",
+              900
+            ],
+            [
+              "/img/boats/astondoa-40/lifestyle-1200.jpg",
+              1200
+            ]
+          ],
           "alt": "Guests relaxing on the bow of the Astondoa 40 at Puerto Banús marina"
         }
       ],
       "summary": "Astondoa 40 — known as \"Fufi\" — is the Spanish equivalent of the classic Mediterranean motor yacht. Built in Cádiz by Astondoa, fitted out in teak and cream leather, and at home anchoring off the Golden Mile for a long lunch. 12.5 metres, 9 guests, skipper and fuel included.",
-      "intent_keywords": ["motor yacht charter Marbella", "Astondoa 40 Marbella", "12 metre yacht hire Puerto Banús"]
+      "intent_keywords": [
+        "motor yacht charter Marbella",
+        "Astondoa 40 Marbella",
+        "12 metre yacht hire Puerto Banús"
+      ]
     },
     {
       "slug": "azimut-39",
@@ -84,24 +173,57 @@
         "Twin diesel engines, 18-knot cruise"
       ],
       "hero_pexels_id": "12837089",
-      "gallery_pexels": ["12837089", "163236", "27951598"],
+      "gallery_pexels": [
+        "12837089",
+        "163236",
+        "27951598"
+      ],
       "hero_local": "/img/boats/azimut-39/hero-1600.jpg",
       "hero_local_srcset": [
-        ["/img/boats/azimut-39/hero-600.jpg", 600],
-        ["/img/boats/azimut-39/hero-900.jpg", 900],
-        ["/img/boats/azimut-39/hero-1200.jpg", 1200],
-        ["/img/boats/azimut-39/hero-1600.jpg", 1600]
+        [
+          "/img/boats/azimut-39/hero-600.jpg",
+          600
+        ],
+        [
+          "/img/boats/azimut-39/hero-900.jpg",
+          900
+        ],
+        [
+          "/img/boats/azimut-39/hero-1200.jpg",
+          1200
+        ],
+        [
+          "/img/boats/azimut-39/hero-1600.jpg",
+          1600
+        ]
       ],
       "hero_local_alt": "Azimut 39 motor yacht cruising in Marbella with La Concha mountain behind",
       "gallery_local": [
         {
           "src": "/img/boats/azimut-39/aerial-1200.jpg",
-          "srcset": [["/img/boats/azimut-39/aerial-600.jpg", 600],["/img/boats/azimut-39/aerial-900.jpg", 900],["/img/boats/azimut-39/aerial-1200.jpg", 1200]],
+          "srcset": [
+            [
+              "/img/boats/azimut-39/aerial-600.jpg",
+              600
+            ],
+            [
+              "/img/boats/azimut-39/aerial-900.jpg",
+              900
+            ],
+            [
+              "/img/boats/azimut-39/aerial-1200.jpg",
+              1200
+            ]
+          ],
           "alt": "Azimut 39 from above — flybridge, cockpit and swim platform"
         }
       ],
       "summary": "The Azimut 39 is the Italian counterpart to the Astondoa — same size class, same 9-guest capacity, but with the flybridge layout and modern lines Azimut is known for. A great pick for groups who want the upper sun-deck experience.",
-      "intent_keywords": ["Azimut 39 Marbella", "Italian motor yacht charter Marbella", "flybridge yacht hire Puerto Banús"]
+      "intent_keywords": [
+        "Azimut 39 Marbella",
+        "Italian motor yacht charter Marbella",
+        "flybridge yacht hire Puerto Banús"
+      ]
     },
     {
       "slug": "mangusta-80",
@@ -124,44 +246,789 @@
         "Minimum charter 4 hours; full-day and overnight options quoted on WhatsApp"
       ],
       "hero_pexels_id": "30483267",
-      "gallery_pexels": ["30483267", "34638593", "36893149"],
+      "gallery_pexels": [
+        "30483267",
+        "34638593",
+        "36893149"
+      ],
       "hero_local": "/img/boats/mangusta-80/hero-1600.jpg",
       "hero_local_srcset": [
-        ["/img/boats/mangusta-80/hero-600.jpg", 600],
-        ["/img/boats/mangusta-80/hero-900.jpg", 900],
-        ["/img/boats/mangusta-80/hero-1200.jpg", 1200],
-        ["/img/boats/mangusta-80/hero-1600.jpg", 1600]
+        [
+          "/img/boats/mangusta-80/hero-600.jpg",
+          600
+        ],
+        [
+          "/img/boats/mangusta-80/hero-900.jpg",
+          900
+        ],
+        [
+          "/img/boats/mangusta-80/hero-1200.jpg",
+          1200
+        ],
+        [
+          "/img/boats/mangusta-80/hero-1600.jpg",
+          1600
+        ]
       ],
       "hero_local_alt": "Mangusta 80 'Nina' cruising past La Concha mountain in Marbella — the biggest charter yacht on the Costa del Sol",
       "gallery_local": [
         {
           "src": "/img/boats/mangusta-80/aerial-wake-1200.jpg",
-          "srcset": [["/img/boats/mangusta-80/aerial-wake-600.jpg", 600],["/img/boats/mangusta-80/aerial-wake-900.jpg", 900],["/img/boats/mangusta-80/aerial-wake-1200.jpg", 1200]],
+          "srcset": [
+            [
+              "/img/boats/mangusta-80/aerial-wake-600.jpg",
+              600
+            ],
+            [
+              "/img/boats/mangusta-80/aerial-wake-900.jpg",
+              900
+            ],
+            [
+              "/img/boats/mangusta-80/aerial-wake-1200.jpg",
+              1200
+            ]
+          ],
           "alt": "Mangusta 80 from above — wake spreading behind the 24 m sport-yacht hull"
         },
         {
           "src": "/img/boats/mangusta-80/profile-1200.jpg",
-          "srcset": [["/img/boats/mangusta-80/profile-600.jpg", 600],["/img/boats/mangusta-80/profile-900.jpg", 900],["/img/boats/mangusta-80/profile-1200.jpg", 1200]],
+          "srcset": [
+            [
+              "/img/boats/mangusta-80/profile-600.jpg",
+              600
+            ],
+            [
+              "/img/boats/mangusta-80/profile-900.jpg",
+              900
+            ],
+            [
+              "/img/boats/mangusta-80/profile-1200.jpg",
+              1200
+            ]
+          ],
           "alt": "Mangusta 80 profile view at anchor — the unmistakable Overmarine sport-yacht silhouette"
         },
         {
           "src": "/img/boats/mangusta-80/sun-pad-1200.jpg",
-          "srcset": [["/img/boats/mangusta-80/sun-pad-600.jpg", 600],["/img/boats/mangusta-80/sun-pad-900.jpg", 900],["/img/boats/mangusta-80/sun-pad-1200.jpg", 1200]],
+          "srcset": [
+            [
+              "/img/boats/mangusta-80/sun-pad-600.jpg",
+              600
+            ],
+            [
+              "/img/boats/mangusta-80/sun-pad-900.jpg",
+              900
+            ],
+            [
+              "/img/boats/mangusta-80/sun-pad-1200.jpg",
+              1200
+            ]
+          ],
           "alt": "Full-beam sun pad on the Mangusta 80 foredeck — guests relaxing during a Marbella charter"
         },
         {
           "src": "/img/boats/mangusta-80/saloon-1200.jpg",
-          "srcset": [["/img/boats/mangusta-80/saloon-600.jpg", 600],["/img/boats/mangusta-80/saloon-900.jpg", 900],["/img/boats/mangusta-80/saloon-1200.jpg", 1200]],
+          "srcset": [
+            [
+              "/img/boats/mangusta-80/saloon-600.jpg",
+              600
+            ],
+            [
+              "/img/boats/mangusta-80/saloon-900.jpg",
+              900
+            ],
+            [
+              "/img/boats/mangusta-80/saloon-1200.jpg",
+              1200
+            ]
+          ],
           "alt": "Mangusta 80 main-deck saloon with leather seating and refit interior"
         },
         {
           "src": "/img/boats/mangusta-80/galley-1200.jpg",
-          "srcset": [["/img/boats/mangusta-80/galley-600.jpg", 600],["/img/boats/mangusta-80/galley-900.jpg", 900],["/img/boats/mangusta-80/galley-1200.jpg", 1200]],
+          "srcset": [
+            [
+              "/img/boats/mangusta-80/galley-600.jpg",
+              600
+            ],
+            [
+              "/img/boats/mangusta-80/galley-900.jpg",
+              900
+            ],
+            [
+              "/img/boats/mangusta-80/galley-1200.jpg",
+              1200
+            ]
+          ],
           "alt": "Chef-grade galley on the Mangusta 80 — full kitchen for catered lunches on board"
         }
       ],
       "summary": "The Mangusta 80 — known on the dock as \"Nina\" — is the Marbella flagship: a 24-metre Italian sport yacht by Overmarine, in our charter fleet since 2020, and the largest boat available for day charter from Puerto Banús. Twelve guests in genuine luxury, a Sea-Doo jet ski waiting on the swim platform, and the unmistakable Mangusta open-style superstructure that put the brand on the global map. From €4,719 for a 4-hour charter, fully crewed.",
-      "intent_keywords": ["Mangusta 80 Marbella", "biggest yacht charter Marbella", "luxury superyacht hire Puerto Banús", "yacht with jet ski Marbella", "Nina yacht Marbella"]
+      "intent_keywords": [
+        "Mangusta 80 Marbella",
+        "biggest yacht charter Marbella",
+        "luxury superyacht hire Puerto Banús",
+        "yacht with jet ski Marbella",
+        "Nina yacht Marbella"
+      ]
+    },
+    {
+      "slug": "azimut-58",
+      "name": "Azimut 58 Flybridge",
+      "tagline": "17.6 m Italian flybridge — luxury day charter for up to 12 guests",
+      "builder": "Azimut",
+      "type": "Flybridge motor yacht",
+      "length_m": 17.6,
+      "capacity_pax": 12,
+      "departure_port": "Puerto Banús",
+      "tier": "on_request",
+      "pricing_status": "on_request",
+      "summary": "Azimut 58 — 17.6 m Italian flybridge with a full upper deck sun-pad and three cabins. The step up from the Azimut 39 for groups that want more space, longer cruising range and the Italian-design pedigree. Quote on WhatsApp.",
+      "highlights": [
+        "17.6 m Italian flybridge yacht",
+        "Sun-pad upper deck + secondary helm",
+        "Three cabins for overnight charter",
+        "12 guests for day charter, 6 overnight",
+        "Twin diesel cruise speed 22-24 knots"
+      ],
+      "intent_keywords": [
+        "Azimut 58 Marbella",
+        "17m flybridge yacht charter Marbella",
+        "luxury yacht charter Puerto Banús"
+      ],
+      "hero_local": "/img/boats/azimut-58/hero-1600.jpg",
+      "hero_local_srcset": [
+        [
+          "/img/boats/azimut-58/hero-600.jpg",
+          600
+        ],
+        [
+          "/img/boats/azimut-58/hero-900.jpg",
+          900
+        ],
+        [
+          "/img/boats/azimut-58/hero-1200.jpg",
+          1200
+        ],
+        [
+          "/img/boats/azimut-58/hero-1600.jpg",
+          1600
+        ]
+      ],
+      "hero_local_alt": "Azimut 58 Flybridge — 17.6 m Italian flybridge — luxury day charter for up to 12 guests",
+      "gallery_local": [],
+      "model_year": null
+    },
+    {
+      "slug": "bandido",
+      "name": "Bandido",
+      "tagline": "Sport-fishing yacht for Marbella offshore charters",
+      "builder": "Bandido",
+      "type": "Sport-fishing yacht",
+      "length_m": 11.5,
+      "capacity_pax": 8,
+      "departure_port": "Puerto Banús",
+      "tier": "on_request",
+      "pricing_status": "on_request",
+      "summary": "Bandido — sport-fishing rigged yacht for Marbella deep-sea charters. Outriggers, rod holders, livewell, and the range to push offshore to the productive seamounts. Quote on WhatsApp.",
+      "highlights": [
+        "Sport-fishing rig — outriggers, rods, livewell",
+        "Deep-sea offshore range",
+        "Twin diesels, planing hull",
+        "Half-day & full-day fishing charters",
+        "Skipper + mate included"
+      ],
+      "intent_keywords": [
+        "Bandido yacht Marbella",
+        "sportfishing charter Marbella",
+        "offshore fishing yacht Puerto Banús"
+      ],
+      "hero_local": "/img/boats/bandido/hero-1600.jpg",
+      "hero_local_srcset": [
+        [
+          "/img/boats/bandido/hero-600.jpg",
+          600
+        ],
+        [
+          "/img/boats/bandido/hero-900.jpg",
+          900
+        ],
+        [
+          "/img/boats/bandido/hero-1200.jpg",
+          1200
+        ],
+        [
+          "/img/boats/bandido/hero-1600.jpg",
+          1600
+        ]
+      ],
+      "hero_local_alt": "Bandido — Sport-fishing yacht for Marbella offshore charters",
+      "gallery_local": [],
+      "model_year": null
+    },
+    {
+      "slug": "canados-86",
+      "name": "Canados 86",
+      "tagline": "26 m Italian superyacht — top-tier Marbella charter",
+      "builder": "Canados",
+      "type": "Luxury motor yacht",
+      "length_m": 26,
+      "capacity_pax": 12,
+      "departure_port": "Puerto Banús",
+      "tier": "on_request",
+      "pricing_status": "on_request",
+      "summary": "Canados 86 — 26 m Italian luxury motor yacht, true superyacht-class with four cabins, full crew including chef, and the deck space and water toys to host 12 guests in genuine luxury. Quote on WhatsApp.",
+      "highlights": [
+        "26 m Italian luxury motor yacht",
+        "Four cabins for overnight charter",
+        "Captain, mate, chef + stewardess crew",
+        "Full water toys package",
+        "Cruise to Gibraltar, Tarifa, beyond"
+      ],
+      "intent_keywords": [
+        "Canados 86 Marbella",
+        "26m superyacht charter Marbella",
+        "luxury motor yacht hire Puerto Banús"
+      ],
+      "hero_local": "/img/boats/canados-86/hero-1600.jpg",
+      "hero_local_srcset": [
+        [
+          "/img/boats/canados-86/hero-600.jpg",
+          600
+        ],
+        [
+          "/img/boats/canados-86/hero-900.jpg",
+          900
+        ],
+        [
+          "/img/boats/canados-86/hero-1200.jpg",
+          1200
+        ],
+        [
+          "/img/boats/canados-86/hero-1600.jpg",
+          1600
+        ]
+      ],
+      "hero_local_alt": "Canados 86 — 26 m Italian superyacht — top-tier Marbella charter",
+      "gallery_local": [],
+      "model_year": null
+    },
+    {
+      "slug": "dubhe",
+      "name": "Dubhe",
+      "tagline": "Small day boat for short charters and quick coastal escapes",
+      "builder": "Dubhe",
+      "type": "Day boat",
+      "length_m": 8,
+      "capacity_pax": 6,
+      "departure_port": "Puerto Banús",
+      "tier": "on_request",
+      "pricing_status": "on_request",
+      "summary": "Dubhe — compact day boat for small groups (up to 6) doing 2-3 hour coastal cruises. Lower entry-price point than the bigger fleet. Quote on WhatsApp.",
+      "highlights": [
+        "Compact day-boat layout",
+        "Up to 6 guests",
+        "Short charters & coastal cruises",
+        "Lower-cost entry to Marbella boating",
+        "Skipper included"
+      ],
+      "intent_keywords": [
+        "Dubhe boat Marbella",
+        "small day boat rental Marbella",
+        "cheap boat charter Puerto Banús"
+      ],
+      "hero_local": "/img/boats/dubhe/hero-1600.jpg",
+      "hero_local_srcset": [
+        [
+          "/img/boats/dubhe/hero-600.jpg",
+          600
+        ],
+        [
+          "/img/boats/dubhe/hero-900.jpg",
+          900
+        ],
+        [
+          "/img/boats/dubhe/hero-1200.jpg",
+          1200
+        ],
+        [
+          "/img/boats/dubhe/hero-1600.jpg",
+          1600
+        ]
+      ],
+      "hero_local_alt": "Dubhe — Small day boat for short charters and quick coastal escapes",
+      "gallery_local": [],
+      "model_year": null
+    },
+    {
+      "slug": "fairline-targa-12m",
+      "name": "Fairline Targa 12m",
+      "tagline": "12 m British sport yacht — sleek lines, fast cruise, 10 guests",
+      "builder": "Fairline",
+      "type": "Sport yacht",
+      "length_m": 12,
+      "capacity_pax": 10,
+      "departure_port": "Puerto Banús",
+      "tier": "on_request",
+      "pricing_status": "on_request",
+      "summary": "Fairline Targa 12 m — British sport yacht with retractable hardtop, sleek lines and the speed to outpace most of the Costa del Sol fleet. 10 guests, twin cabins, twin diesels. Quote on WhatsApp.",
+      "highlights": [
+        "British Fairline design",
+        "Retractable hardtop sport yacht",
+        "10 guests, twin cabins",
+        "26-knot cruising speed",
+        "Modern saloon with panoramic windows"
+      ],
+      "intent_keywords": [
+        "Fairline Targa Marbella",
+        "12m sport yacht charter Marbella",
+        "British yacht hire Puerto Banús"
+      ],
+      "hero_local": "/img/boats/fairline-targa-12m/hero-1600.jpg",
+      "hero_local_srcset": [
+        [
+          "/img/boats/fairline-targa-12m/hero-600.jpg",
+          600
+        ],
+        [
+          "/img/boats/fairline-targa-12m/hero-900.jpg",
+          900
+        ],
+        [
+          "/img/boats/fairline-targa-12m/hero-1200.jpg",
+          1200
+        ],
+        [
+          "/img/boats/fairline-targa-12m/hero-1600.jpg",
+          1600
+        ]
+      ],
+      "hero_local_alt": "Fairline Targa 12m — 12 m British sport yacht — sleek lines, fast cruise, 10 guests",
+      "gallery_local": [],
+      "model_year": null
+    },
+    {
+      "slug": "ferretti-94",
+      "name": "Ferretti 94",
+      "tagline": "29 m Ferretti — superyacht class for the most demanding Marbella charters",
+      "builder": "Ferretti",
+      "type": "Luxury motor yacht",
+      "length_m": 29,
+      "capacity_pax": 12,
+      "departure_port": "Puerto Banús",
+      "tier": "on_request",
+      "pricing_status": "on_request",
+      "summary": "Ferretti 94 — 29 m flagship Italian motor yacht, four ensuite cabins, top-tier crew including chef and stewardess. The most luxurious day-charter and weekly charter option in our Marbella fleet. Quote on WhatsApp.",
+      "highlights": [
+        "29 m Ferretti flagship",
+        "Four ensuite cabins, sleeps 8 overnight",
+        "Full crew: captain, mate, chef, stewardess",
+        "Sun deck, beach club, water toys garage",
+        "Gibraltar / weekly charter capable"
+      ],
+      "intent_keywords": [
+        "Ferretti 94 Marbella",
+        "29m luxury yacht charter Marbella",
+        "Ferretti yacht hire Puerto Banús"
+      ],
+      "hero_local": "/img/boats/ferretti-94/hero-1600.jpg",
+      "hero_local_srcset": [
+        [
+          "/img/boats/ferretti-94/hero-600.jpg",
+          600
+        ],
+        [
+          "/img/boats/ferretti-94/hero-900.jpg",
+          900
+        ],
+        [
+          "/img/boats/ferretti-94/hero-1200.jpg",
+          1200
+        ],
+        [
+          "/img/boats/ferretti-94/hero-1600.jpg",
+          1600
+        ]
+      ],
+      "hero_local_alt": "Ferretti 94 — 29 m Ferretti — superyacht class for the most demanding Marbella charters",
+      "gallery_local": [],
+      "model_year": null
+    },
+    {
+      "slug": "k80",
+      "name": "K80",
+      "tagline": "24 m motor yacht — flagship-class Marbella day charter",
+      "builder": "K Yachts",
+      "type": "Luxury motor yacht",
+      "length_m": 24,
+      "capacity_pax": 12,
+      "departure_port": "Puerto Banús",
+      "tier": "on_request",
+      "pricing_status": "on_request",
+      "summary": "K80 — 24 m motor yacht, 12-guest capacity, in the same flagship size class as our Mangusta 80 with a different design language. Quote on WhatsApp.",
+      "highlights": [
+        "24 m flagship-class yacht",
+        "12 guests for day charter",
+        "Multiple cabins for overnight",
+        "Crew of captain + deckhand",
+        "Water toys & sun-deck"
+      ],
+      "intent_keywords": [
+        "K80 yacht Marbella",
+        "24m motor yacht charter Marbella",
+        "luxury yacht hire Puerto Banús"
+      ],
+      "hero_local": "/img/boats/k80/hero-1600.jpg",
+      "hero_local_srcset": [
+        [
+          "/img/boats/k80/hero-600.jpg",
+          600
+        ],
+        [
+          "/img/boats/k80/hero-900.jpg",
+          900
+        ],
+        [
+          "/img/boats/k80/hero-1200.jpg",
+          1200
+        ],
+        [
+          "/img/boats/k80/hero-1600.jpg",
+          1600
+        ]
+      ],
+      "hero_local_alt": "K80 — 24 m motor yacht — flagship-class Marbella day charter",
+      "gallery_local": [],
+      "model_year": null
+    },
+    {
+      "slug": "lagoon-380",
+      "name": "Lagoon 380",
+      "tagline": "11.6 m French cruising catamaran — flat platform, 10 guests, stable for all",
+      "builder": "Lagoon",
+      "type": "Sailing catamaran",
+      "length_m": 11.6,
+      "capacity_pax": 10,
+      "departure_port": "Puerto Banús",
+      "tier": "on_request",
+      "pricing_status": "on_request",
+      "summary": "Lagoon 380 — French cruising catamaran, twin hulls, flat-deck stability, four cabins for overnight. The choice for groups who get seasick on monohulls or want a roomy platform for a full-day charter. Quote on WhatsApp.",
+      "highlights": [
+        "French Lagoon catamaran",
+        "Flat twin-hull platform — no heeling",
+        "10 guests day, 8 overnight",
+        "Four cabins + saloon",
+        "Snorkel, swim, sail charter combo"
+      ],
+      "intent_keywords": [
+        "Lagoon 380 Marbella",
+        "catamaran charter Marbella",
+        "sailing cat hire Puerto Banús"
+      ],
+      "hero_local": "/img/boats/lagoon-380/hero-1600.jpg",
+      "hero_local_srcset": [
+        [
+          "/img/boats/lagoon-380/hero-600.jpg",
+          600
+        ],
+        [
+          "/img/boats/lagoon-380/hero-900.jpg",
+          900
+        ],
+        [
+          "/img/boats/lagoon-380/hero-1200.jpg",
+          1200
+        ],
+        [
+          "/img/boats/lagoon-380/hero-1600.jpg",
+          1600
+        ]
+      ],
+      "hero_local_alt": "Lagoon 380 — 11.6 m French cruising catamaran — flat platform, 10 guests, stable for all",
+      "gallery_local": [],
+      "model_year": null
+    },
+    {
+      "slug": "mangusta-80-grey",
+      "name": "Mangusta 80 (Grey)",
+      "tagline": "24 m Mangusta sport yacht — grey hull, second fleet boat",
+      "builder": "Overmarine",
+      "type": "Luxury sport yacht",
+      "length_m": 24,
+      "capacity_pax": 12,
+      "departure_port": "Puerto Banús",
+      "tier": "on_request",
+      "pricing_status": "on_request",
+      "summary": "Mangusta 80 (Grey hull) — second 24 m Mangusta in our Marbella fleet. Same Overmarine pedigree as 'Nina' with a distinctive grey hull. Sea-Doo jet ski on the swim platform. Quote on WhatsApp.",
+      "highlights": [
+        "24 m Overmarine Mangusta sport yacht",
+        "Distinctive grey hull",
+        "Sea-Doo jet ski included",
+        "12 guests, three cabins",
+        "Captain + deckhand crew"
+      ],
+      "intent_keywords": [
+        "Mangusta 80 grey Marbella",
+        "second Mangusta Marbella",
+        "luxury yacht charter Puerto Banús"
+      ],
+      "hero_local": "/img/boats/mangusta-80-grey/hero-1600.jpg",
+      "hero_local_srcset": [
+        [
+          "/img/boats/mangusta-80-grey/hero-600.jpg",
+          600
+        ],
+        [
+          "/img/boats/mangusta-80-grey/hero-900.jpg",
+          900
+        ],
+        [
+          "/img/boats/mangusta-80-grey/hero-1200.jpg",
+          1200
+        ],
+        [
+          "/img/boats/mangusta-80-grey/hero-1600.jpg",
+          1600
+        ]
+      ],
+      "hero_local_alt": "Mangusta 80 (Grey) — 24 m Mangusta sport yacht — grey hull, second fleet boat",
+      "gallery_local": [],
+      "model_year": null
+    },
+    {
+      "slug": "mangusta-80-white",
+      "name": "Mangusta 80 (White)",
+      "tagline": "24 m Mangusta — second white-hull variant in the Marbella fleet",
+      "builder": "Overmarine",
+      "type": "Luxury sport yacht",
+      "length_m": 24,
+      "capacity_pax": 12,
+      "departure_port": "Puerto Banús",
+      "tier": "on_request",
+      "pricing_status": "on_request",
+      "summary": "Mangusta 80 (White hull variant) — additional 24 m Mangusta in our Marbella fleet, alongside 'Nina' and the grey-hull sister. Same superyacht-class scale, three cabins, water toys included. Quote on WhatsApp.",
+      "highlights": [
+        "24 m Overmarine Mangusta",
+        "White hull variant",
+        "Sea-Doo jet ski included",
+        "12 guests in luxury",
+        "Three cabins, captain + deckhand"
+      ],
+      "intent_keywords": [
+        "Mangusta 80 white Marbella",
+        "Marbella Mangusta fleet",
+        "superyacht charter Puerto Banús"
+      ],
+      "hero_local": "/img/boats/mangusta-80-white/hero-1600.jpg",
+      "hero_local_srcset": [
+        [
+          "/img/boats/mangusta-80-white/hero-600.jpg",
+          600
+        ],
+        [
+          "/img/boats/mangusta-80-white/hero-900.jpg",
+          900
+        ],
+        [
+          "/img/boats/mangusta-80-white/hero-1200.jpg",
+          1200
+        ],
+        [
+          "/img/boats/mangusta-80-white/hero-1600.jpg",
+          1600
+        ]
+      ],
+      "hero_local_alt": "Mangusta 80 (White) — 24 m Mangusta — second white-hull variant in the Marbella fleet",
+      "gallery_local": [],
+      "model_year": null
+    },
+    {
+      "slug": "mariah-sx21",
+      "name": "Mariah SX21",
+      "tagline": "6.4 m American bowrider — fast day-trip boat for small groups",
+      "builder": "Mariah",
+      "type": "Bowrider",
+      "length_m": 6.4,
+      "capacity_pax": 5,
+      "departure_port": "Puerto Banús",
+      "tier": "on_request",
+      "pricing_status": "on_request",
+      "summary": "Mariah SX21 — 6.4 m American bowrider for small groups (up to 5) doing short coastal hops and water-sports days. Lowest entry-price in our Marbella fleet. Quote on WhatsApp.",
+      "highlights": [
+        "6.4 m American bowrider",
+        "Up to 5 guests",
+        "Open layout — sport-day focus",
+        "Water-sports capable (banana, donut, wake)",
+        "Skipper included"
+      ],
+      "intent_keywords": [
+        "Mariah SX21 Marbella",
+        "small bowrider rental Marbella",
+        "cheap day boat Puerto Banús"
+      ],
+      "hero_local": "/img/boats/mariah-sx21/hero-1600.jpg",
+      "hero_local_srcset": [
+        [
+          "/img/boats/mariah-sx21/hero-600.jpg",
+          600
+        ],
+        [
+          "/img/boats/mariah-sx21/hero-900.jpg",
+          900
+        ],
+        [
+          "/img/boats/mariah-sx21/hero-1200.jpg",
+          1200
+        ],
+        [
+          "/img/boats/mariah-sx21/hero-1600.jpg",
+          1600
+        ]
+      ],
+      "hero_local_alt": "Mariah SX21 — 6.4 m American bowrider — fast day-trip boat for small groups",
+      "gallery_local": [],
+      "model_year": null
+    },
+    {
+      "slug": "pershing-46",
+      "name": "Pershing 46",
+      "tagline": "14 m Italian sport yacht — Pershing speed + design, 10 guests",
+      "builder": "Pershing",
+      "type": "Sport yacht",
+      "length_m": 14,
+      "capacity_pax": 10,
+      "departure_port": "Puerto Banús",
+      "tier": "on_request",
+      "pricing_status": "on_request",
+      "summary": "Pershing 46 — 14 m Italian high-performance sport yacht, 30+ knot top speed, sleek dark interior, dual cabins. The choice when you want speed, style and Italian-yacht swagger. Quote on WhatsApp.",
+      "highlights": [
+        "14 m Pershing sport yacht",
+        "Italian high-performance design",
+        "30+ knot top speed",
+        "10 guests, two cabins",
+        "Dark Italian interior, sport-yacht layout"
+      ],
+      "intent_keywords": [
+        "Pershing 46 Marbella",
+        "14m sport yacht charter Marbella",
+        "Italian yacht hire Puerto Banús"
+      ],
+      "hero_local": "/img/boats/pershing-46/hero-1600.jpg",
+      "hero_local_srcset": [
+        [
+          "/img/boats/pershing-46/hero-600.jpg",
+          600
+        ],
+        [
+          "/img/boats/pershing-46/hero-900.jpg",
+          900
+        ],
+        [
+          "/img/boats/pershing-46/hero-1200.jpg",
+          1200
+        ],
+        [
+          "/img/boats/pershing-46/hero-1600.jpg",
+          1600
+        ]
+      ],
+      "hero_local_alt": "Pershing 46 — 14 m Italian sport yacht — Pershing speed + design, 10 guests",
+      "gallery_local": [],
+      "model_year": null
+    },
+    {
+      "slug": "red-tide-fishing-boat",
+      "name": "Red Tide",
+      "tagline": "Dedicated sport-fishing boat for Marbella offshore charters",
+      "builder": "Custom",
+      "type": "Sport-fishing boat",
+      "length_m": 11,
+      "capacity_pax": 6,
+      "departure_port": "Puerto Banús",
+      "tier": "on_request",
+      "pricing_status": "on_request",
+      "summary": "Red Tide — purpose-built sport-fishing boat for Marbella deep-sea charters. Outriggers, rod holders, fighting chair, livewell, and a skipper + mate who know the productive offshore grounds. Quote on WhatsApp.",
+      "highlights": [
+        "Dedicated sport-fishing boat",
+        "Outriggers, fighting chair, livewell",
+        "Up to 6 anglers",
+        "Skipper + mate included",
+        "Deep-sea offshore range"
+      ],
+      "intent_keywords": [
+        "Red Tide Marbella",
+        "fishing boat charter Marbella",
+        "sportfishing Puerto Banús"
+      ],
+      "hero_local": "/img/boats/red-tide-fishing-boat/hero-1600.jpg",
+      "hero_local_srcset": [
+        [
+          "/img/boats/red-tide-fishing-boat/hero-600.jpg",
+          600
+        ],
+        [
+          "/img/boats/red-tide-fishing-boat/hero-900.jpg",
+          900
+        ],
+        [
+          "/img/boats/red-tide-fishing-boat/hero-1200.jpg",
+          1200
+        ],
+        [
+          "/img/boats/red-tide-fishing-boat/hero-1600.jpg",
+          1600
+        ]
+      ],
+      "hero_local_alt": "Red Tide — Dedicated sport-fishing boat for Marbella offshore charters",
+      "gallery_local": [],
+      "model_year": null
+    },
+    {
+      "slug": "speedboat",
+      "name": "Speedboat",
+      "tagline": "Quick-and-fun coastal speedboat for short Marbella charters",
+      "builder": "Various",
+      "type": "Speedboat",
+      "length_m": 7,
+      "capacity_pax": 6,
+      "departure_port": "Puerto Banús",
+      "tier": "on_request",
+      "pricing_status": "on_request",
+      "summary": "Speedboat option for short, fast coastal hops along the Marbella shoreline. Quote on WhatsApp for pricing on the available speedboats.",
+      "highlights": [
+        "Fast coastal speedboat",
+        "Short-hop charters",
+        "Up to 6 guests",
+        "Water-sport optional",
+        "Skipper included"
+      ],
+      "intent_keywords": [
+        "speedboat rental Marbella",
+        "fast boat charter Marbella",
+        "speed boat hire Puerto Banús"
+      ],
+      "hero_local": "/img/boats/speedboat/hero-1600.jpg",
+      "hero_local_srcset": [
+        [
+          "/img/boats/speedboat/hero-600.jpg",
+          600
+        ],
+        [
+          "/img/boats/speedboat/hero-900.jpg",
+          900
+        ],
+        [
+          "/img/boats/speedboat/hero-1200.jpg",
+          1200
+        ],
+        [
+          "/img/boats/speedboat/hero-1600.jpg",
+          1600
+        ]
+      ],
+      "hero_local_alt": "Speedboat — Quick-and-fun coastal speedboat for short Marbella charters",
+      "gallery_local": [],
+      "model_year": null
     }
   ]
 }

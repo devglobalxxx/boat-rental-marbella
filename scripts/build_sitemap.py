@@ -19,7 +19,9 @@ lines.append(url("boats", "0.95", "weekly"))  # fleet index (high-intent)
 import json as _json
 boats_cfg = _json.loads((pathlib.Path(__file__).resolve().parents[1] / "config" / "boats.json").read_text())
 for b in boats_cfg["boats"]:
-    lines.append(url(f"boats/{b['slug']}", "0.9", "weekly"))
+    # Higher priority for our 3 confirmed-price boats, slightly lower for on-request fleet
+    prio = "0.8" if b.get("pricing_status") == "on_request" else "0.9"
+    lines.append(url(f"boats/{b['slug']}", prio, "weekly"))
 lines.append(url("blog", "0.8", "weekly"))  # blog index
 for b in CONFIG["blog"]:
     lines.append(url(b["slug"], "0.7", "monthly"))

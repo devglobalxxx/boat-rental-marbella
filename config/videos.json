@@ -28,7 +28,6 @@
         "departure"
       ],
       "placement": [
-        "/boats/azimut-39/",
         "/boat-rental-puerto-banus/"
       ]
     },
@@ -98,6 +97,23 @@
       ],
       "placement": [
         "/boats/mangusta-80/"
+      ]
+    },
+    {
+      "slug": "azimut-39-cruising",
+      "drive_id": "1GE7ROcQdM_o3Z9tzo1D5JtTl1peAePRI",
+      "crop_bottom_pct": 0,
+      "title": "Azimut 39 cruising the Marbella coast",
+      "description": "Drone tracking shot of the Azimut 39 motor yacht cruising at speed along the Marbella coastline with the Sierra Blanca mountains behind.",
+      "tags": [
+        "Azimut 39",
+        "cruising",
+        "aerial",
+        "Marbella",
+        "drone"
+      ],
+      "placement": [
+        "/boats/azimut-39/"
       ]
     }
   ]

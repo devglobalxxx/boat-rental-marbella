@@ -514,6 +514,35 @@ def write_page(slug, title, meta, h1, sub, eyebrow, hero_img, hero_srcset, hero_
             "Hi%2C%20I%27d%20like%20to%20book%20a%20boat%20in%20Marbella",
             encoded
         )
+    # Hero-as-video: on boat detail pages with a video placement, replace the
+    # hero <picture>/<img> with a <video> element using the same video as the
+    # body section's video — and strip the duplicate from the body.
+    boat_videos = videos_for_url(url)
+    if boat_videos and slug.startswith("boats/"):
+        v = boat_videos[0]
+        hero_video = (
+            f'<video class="hero-video" autoplay muted loop playsinline '
+            f'preload="metadata" poster="/video/{v["slug"]}.jpg" '
+            f'aria-label="{html.escape(v["title"])}">'
+            f'<source src="/video/{v["slug"]}.mp4" type="video/mp4">'
+            f'<img src="{hero_img}" alt="{html.escape(hero_alt)}" width="1600" height="800">'
+            f'</video>'
+        )
+        # Replace the existing <picture class="hero-img-wrap">...</picture>
+        out = re.sub(
+            r'<picture class="hero-img-wrap">[\s\S]*?</picture>',
+            hero_video,
+            out,
+            count=1,
+        )
+        # Remove the now-duplicate <section class="video-section">…</section>
+        out = re.sub(
+            r'<section class="video-section">[\s\S]*?</section>',
+            "",
+            out,
+            count=1,
+        )
+
     out_path = SITE_DIR / slug / "index.html"
     out_path.parent.mkdir(parents=True, exist_ok=True)
     out_path.write_text(out)

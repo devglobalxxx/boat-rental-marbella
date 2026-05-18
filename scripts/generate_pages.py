@@ -363,7 +363,7 @@ def jsonld_for(page: dict, kind: str, data: dict) -> str:
         "@id": SITE['base_url'] + "/#org",
         "name": SITE['name'],
         "url": SITE['base_url'] + "/",
-        "logo": SITE['base_url'] + "/og-image.jpg",
+        "logo": SITE['base_url'] + "/img/logo-480.png",
         "telephone": SITE['phone_e164'],
         "email": SITE['email'],
         "areaServed": SITE['departure_ports'],

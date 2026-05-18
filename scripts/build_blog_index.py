@@ -112,7 +112,7 @@ def main():
         {
             "@context":"https://schema.org","@type":["LocalBusiness","Organization"],
             "@id": SITE['base_url']+"/#org","name":SITE['name'],
-            "url":SITE['base_url']+"/","logo":SITE['base_url']+"/og-image.jpg",
+            "url":SITE['base_url']+"/","logo": SITE['base_url'] + "/img/logo-480.png",
             "telephone":SITE['phone_e164'],"email":SITE['email'],
             "areaServed":SITE['departure_ports'],
             "sameAs":[u for u in [SITE.get('instagram_url'), SITE.get('facebook_url')] if u],

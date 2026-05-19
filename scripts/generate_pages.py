@@ -616,6 +616,7 @@ def render(page: dict, kind: str, data: dict) -> str:
         "boat-rental-no-license-marbella": "/es/alquiler-barcos-sin-licencia-marbella/",
     }
     es_alt = EN_TO_ES.get(page['slug'])
+    es_target = es_alt or "/es/"  # fallback: ES hub
     hreflang_block = ""
     if es_alt:
         hreflang_block = (
@@ -623,8 +624,12 @@ def render(page: dict, kind: str, data: dict) -> str:
             f'<link rel="alternate" hreflang="es" href="{SITE["base_url"]}{es_alt}">\n'
             f'<link rel="alternate" hreflang="x-default" href="{url}">'
         )
+    lang_switcher = f'<strong>EN</strong><span class="sep">|</span><a href="{es_target}" hreflang="es" rel="alternate">ES</a>'
+    lang_switcher_footer = f'<strong>🇬🇧 English</strong> &nbsp;·&nbsp; <a href="{es_target}" hreflang="es" rel="alternate">🇪🇸 Español</a>'
     repl = {
         "{{HREFLANG}}": hreflang_block,
+        "{{LANG_SWITCHER}}": lang_switcher,
+        "{{LANG_SWITCHER_FOOTER}}": lang_switcher_footer,
         "{{HERO_EYEBROW}}": eyebrow_html,
         "{{HERO_H1}}": html.escape(h1),
         "{{HERO_SUB}}": html.escape(sub),

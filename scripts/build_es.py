@@ -539,8 +539,11 @@ def render_es(slug, key, title, meta, h1, sub, eyebrow, body, en_alt):
         ] + ([{"@type":"ListItem","position":2,"name":h1,"item":url}] if slug else []),
     }]
 
+    en_target = en_alt or "/"
     repl = {
         "{{HREFLANG}}": "",  # injected below as hreflang block
+        "{{LANG_SWITCHER}}": f'<a href="{en_target}" hreflang="en" rel="alternate">EN</a><span class="sep">|</span><strong>ES</strong>',
+        "{{LANG_SWITCHER_FOOTER}}": f'<a href="{en_target}" hreflang="en" rel="alternate">🇬🇧 English</a> &nbsp;·&nbsp; <strong>🇪🇸 Español</strong>',
         "{{HERO_IMG}}": hero_src,
         "{{HERO_SRCSET}}": html.escape(hero_srcset),
         "{{HERO_ALT}}": html.escape(hero_alt),

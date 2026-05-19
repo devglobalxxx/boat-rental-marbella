@@ -23,6 +23,9 @@ for b in boats_cfg["boats"]:
     prio = "0.8" if b.get("pricing_status") == "on_request" else "0.9"
     lines.append(url(f"boats/{b['slug']}", prio, "weekly"))
 lines.append(url("blog", "0.8", "weekly"))  # blog index
+lines.append(url("experiences", "0.9", "weekly"))  # experiences hub
+for exp_slug in ["experiences/family-boat-days-marbella","experiences/photoshoot-yacht-marbella","experiences/bachelor-hen-parties-marbella"]:
+    lines.append(url(exp_slug, "0.85", "weekly"))
 for b in CONFIG["blog"]:
     lines.append(url(b["slug"], "0.7", "monthly"))
 # Spanish (ES) priority pages

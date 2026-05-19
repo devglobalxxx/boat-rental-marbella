@@ -589,6 +589,7 @@ def render_es(slug, key, title, meta, h1, sub, eyebrow, body, en_alt):
         '>Our Boats<':'>Nuestros barcos<',
         '>Yachts<':'>Yates<',
         '>Catamarans<':'>Catamaranes<',
+        '>Experiences<':'>Experiencias<',
         '>Puerto Banús<':'>Puerto Banús<',
         '>Blog<':'>Blog<',
         'aria-label="Menu"':'aria-label="Menú"',

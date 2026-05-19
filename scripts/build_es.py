@@ -617,7 +617,7 @@ def render_es(slug, key, title, meta, h1, sub, eyebrow, body, en_alt):
         '💬 Message on WhatsApp':'💬 Escribir por WhatsApp',
         'Avg reply &lt; 5 min · No deposit until you confirm':'Respuesta media &lt;5 min · Sin pago hasta confirmar',
         '📞 Call ':'📞 Llamar ',
-        'Browse 60+ boats on Click&amp;Boat':'Explorar 60+ barcos en Click&amp;Boat',
+        'Browse our 17-boat fleet':'Explorar nuestra flota de 17 barcos',
         '>Boats<':'>Barcos<',
         'Our fleet':'Nuestra flota',
         'Yacht charter':'Alquiler de yates',

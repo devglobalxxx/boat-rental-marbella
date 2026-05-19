@@ -116,7 +116,7 @@
   <a class="btn btn-primary" href="https://wa.me/{{WHATSAPP_E164_NOPLUS}}?text=Hi%2C%20I%27d%20like%20to%20book%20a%20boat%20in%20Marbella" rel="nofollow noopener">💬 Message on WhatsApp</a>
   <p class="book-card-micro">Avg reply &lt; 5 min · No deposit until you confirm</p>
   <button class="btn btn-secondary" type="button" data-open-book>📅 Book now</button>
-  <a class="btn btn-ghost" href="{{AFFILIATE_LINK}}" rel="sponsored nofollow noopener">Browse 60+ boats on Click&amp;Boat →</a>
+  <a class="btn btn-ghost" href="{{AFFILIATE_LINK}}" rel="sponsored nofollow noopener">Browse our 17-boat fleet →</a>
   <div class="book-card-incl">
     <strong>All charters include</strong>
     <ul>

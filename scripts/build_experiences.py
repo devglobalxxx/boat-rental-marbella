@@ -40,7 +40,7 @@ EXPERIENCES = [
     {"slug":"/blog/dolphin-watching-marbella/", "title":"Dolphin Watching", "desc":"4-hour offshore charter — bottlenose, common & striped pods 2–8 NM out.", "image":"/img/dolphins/dolphins-jumping", "widths":(600,900,1200), "tag":"Wildlife", "from":749},
     {"slug":"/blog/gibraltar-day-trip-by-boat/", "title":"Gibraltar Day Trip", "desc":"95 NM round trip from Puerto Banús past Sotogrande to the Rock and back.", "image":"/img/boats/mangusta-80/profile", "widths":(600,900,1200), "tag":"Adventure", "from":1500},
     # Tier-1 new
-    {"slug":"/experiences/wedding-yacht-marbella/", "title":"Wedding on Boat", "desc":"Civil ceremony at anchor, reception on the flybridge, photos under La Concha.", "image":"/img/customers/h04", "widths":(400,600,900), "tag":"Once in a lifetime", "from":2299},
+    {"slug":"/experiences/wedding-yacht-marbella/", "title":"Wedding on Boat", "desc":"Civil ceremony at anchor, reception on the flybridge, photos under La Concha.", "image":"/img/wedding/wedding-petals-toss", "widths":(600,900,1200), "tag":"Once in a lifetime", "from":2299},
     {"slug":"/experiences/corporate-yacht-marbella/", "title":"Corporate & Team Building", "desc":"Client hosting, team days, incentive trips — invoiced with full Spanish IVA.", "image":"/img/boats/mangusta-80/saloon", "widths":(600,900,1200), "tag":"B2B", "from":1299},
     {"slug":"/experiences/honeymoon-yacht-marbella/", "title":"Honeymoon Charter", "desc":"Private cruise + romantic dinner at anchor + sunrise breakfast onboard.", "image":"/img/boats/astondoa-40/interior", "widths":(600,900,1200), "tag":"Newlyweds", "from":1299},
     {"slug":"/experiences/snorkeling-tour-marbella/", "title":"Snorkeling Tour", "desc":"Two anchor stops at the clearest spots between Cabopino and Cala del Faro.", "image":"/img/customers/h11", "widths":(400,600,900), "tag":"All ages", "from":749},
@@ -552,7 +552,13 @@ def render_tier1(slug, title, meta, h1, sub, eyebrow, body_html_str, hero_base, 
 def render_wedding():
     body = '''<p>A wedding on a yacht in Marbella is the rarest charter we run — usually one Saturday per high-season month — and the most logistically rich. This page covers the actual playbook: which boat for the ceremony vs the reception, whether you need a registrar on board (mostly no — see below), how we coordinate the photographer's shot list, and what the day actually looks like start-to-finish.</p>
 
-<figure class="inline-img"><img src="/img/customers/h04-1200.jpg" srcset="/img/customers/h04-600.jpg 600w, /img/customers/h04-900.jpg 900w" sizes="(max-width: 880px) 100vw, 720px" alt="Wedding on a yacht in Marbella — bride at the helm in a white dress" loading="lazy" width="1200" height="800"></figure>
+<figure class="inline-img"><img src="/img/wedding/wedding-ceremony-aft-deck-1200.jpg" srcset="/img/wedding/wedding-ceremony-aft-deck-600.jpg 600w, /img/wedding/wedding-ceremony-aft-deck-900.jpg 900w, /img/wedding/wedding-ceremony-aft-deck-1200.jpg 1200w" sizes="(max-width: 880px) 100vw, 720px" alt="Wedding ceremony on the aft deck of a charter yacht at sunset off Marbella" loading="lazy" width="1200" height="800"></figure>
+
+<figure class="inline-img"><img src="/img/wedding/wedding-deck-candlelit-1200.jpg" srcset="/img/wedding/wedding-deck-candlelit-600.jpg 600w, /img/wedding/wedding-deck-candlelit-900.jpg 900w, /img/wedding/wedding-deck-candlelit-1200.jpg 1200w" sizes="(max-width: 880px) 100vw, 720px" alt="Candlelit deck dressed with rose petals for an evening wedding reception on a Marbella charter yacht" loading="lazy" width="1200" height="800"></figure>
+
+<figure class="inline-img"><img src="/img/wedding/wedding-family-sunpad-1200.jpg" srcset="/img/wedding/wedding-family-sunpad-600.jpg 600w, /img/wedding/wedding-family-sunpad-900.jpg 900w, /img/wedding/wedding-family-sunpad-1200.jpg 1200w" sizes="(max-width: 880px) 100vw, 720px" alt="Bride and groom with their family on the bow sun pad after a Marbella yacht wedding" loading="lazy" width="1200" height="800"></figure>
+
+<figure class="inline-img"><img src="/img/wedding/wedding-bride-puerto-banus-1200.jpg" srcset="/img/wedding/wedding-bride-puerto-banus-600.jpg 600w, /img/wedding/wedding-bride-puerto-banus-900.jpg 900w, /img/wedding/wedding-bride-puerto-banus-1200.jpg 1200w" sizes="(max-width: 880px) 100vw, 720px" alt="Bride on the foredeck sun pad of a charter yacht at Puerto Banús — golden-hour portrait" loading="lazy" width="1200" height="800"></figure>
 
 <h2>The legal piece (read this first)</h2>
 <p>A wedding ceremony on a Spanish-flagged charter yacht is <strong>not legally binding in Spain</strong> unless you've completed the civil paperwork ashore beforehand. What most couples do: complete the civil registration at Marbella town hall a few days earlier (treat as a paperwork formality), then do the actual ceremony on board with a celebrant, family, friends — the day everyone remembers. Religious / symbolic-only ceremonies on board are common and need no paperwork. Tell us which route you want when you enquire.</p>
@@ -609,9 +615,9 @@ def render_wedding():
         sub="Ceremony at anchor, reception under La Concha, the photo set everyone screenshots — the full Marbella yacht-wedding playbook.",
         eyebrow="Wedding · Marbella",
         body_html_str=body,
-        hero_base="/img/customers/h04",
-        hero_widths=(400,600,900),
-        hero_alt="Wedding on a yacht in Marbella",
+        hero_base="/img/wedding/wedding-petals-toss",
+        hero_widths=(600,900,1200,1600),
+        hero_alt="Wedding on a yacht in Marbella — petals tossed over the couple with La Concha mountain behind",
         audience="Wedding couples and parties",
         breadcrumb_name="Wedding on Boat",
     )

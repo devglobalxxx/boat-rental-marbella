@@ -320,16 +320,16 @@ details p{margin:.6em 0 0;color:var(--c-ink-soft)}
 .book-card-incl li::before{content:"✓";position:absolute;left:0;color:var(--c-wa);font-weight:700}
 
 /* ─── Footer ──────────────────────────── */
-.site-footer{background:var(--c-ink);color:#e0c8cf;padding:56px 0 18px;margin-top:60px}
+.site-footer{background:linear-gradient(180deg,#14cdc5 0%,#0fb8b1 100%);color:#f0fffe;padding:56px 0 18px;margin-top:60px}
 .site-footer h4,.footer-heading{color:#fff;margin:0 0 12px;font-size:.95rem;font-weight:700;letter-spacing:.02em}
-.site-footer a{color:#e0c8cf;text-decoration:none}
-.site-footer a:hover{color:var(--c-sea);text-decoration:none}
+.site-footer a{color:#fff;text-decoration:none}
+.site-footer a:hover{color:#fff;text-decoration:underline}
 .footer-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(170px,1fr));gap:32px}
 .footer-grid ul{list-style:none;padding:0;margin:0}
 .footer-grid li{margin:6px 0;font-size:.92rem}
-.footer-grid p{font-size:.92rem;line-height:1.55;color:#9eb1c3}
-.footer-legal{border-top:1px solid #5a2330;margin-top:36px;padding-top:16px;font-size:.82rem;color:#b39da4}
-.footer-legal a{color:#b39da4}
+.footer-grid p{font-size:.92rem;line-height:1.55;color:#e6fffe}
+.footer-legal{border-top:1px solid rgba(255,255,255,.28);margin-top:36px;padding-top:16px;font-size:.82rem;color:#e6fffe}
+.footer-legal a{color:#fff}
 
 /* ─── Mobile sticky CTA bar ──────────── */
 .mobile-cta{

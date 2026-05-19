@@ -104,6 +104,7 @@ FLEET_IMAGES = {
     "jetski-cruise":     _fl("/img/jet-ski/cruise", [600,900,1200],      "Solo rider cruising on a Sea-Doo jet ski rental in Marbella"),
     "jetski-marina":     _fl("/img/jet-ski/marina", [600,900,1200],      "Jet ski rental at Puerto Banús marina, Marbella"),
     "jetski-fleet":      _fl("/img/jet-ski/fleet",  [600,900,1200],      "Sea-Doo jet ski fleet ready for rental in Marbella"),
+    "dolphins-jumping":  _fl("/img/dolphins/dolphins-jumping", [600,900,1200,1600], "Dolphins jumping next to our boat off Marbella — first-party photo from a charter"),
 }
 
 # Hero override per page slug (hub = empty string)
@@ -123,7 +124,7 @@ PAGE_HERO_MAP = {
     "blog/boat-license-rules-spain": "azimut-hero",
     "blog/puerto-banus-vs-marbella-marina": "astondoa-sunset",
     "blog/kids-on-a-boat-marbella": "astondoa-hero",
-    "blog/dolphin-watching-marbella": "mangusta-aerial",
+    "blog/dolphin-watching-marbella": "dolphins-jumping",
     "blog/gibraltar-day-trip-by-boat": "mangusta-profile",
     "blog/what-to-bring-on-a-boat-charter": "astondoa-lifestyle",
     "blog/seasickness-prevention-charter": "azimut-hero",
@@ -168,7 +169,7 @@ PAGE_INLINE_MAP = {
     "blog/boat-license-rules-spain": "astondoa-hero",
     "blog/puerto-banus-vs-marbella-marina": "astondoa-lifestyle",
     "blog/kids-on-a-boat-marbella": "mangusta-sun-pad",
-    "blog/dolphin-watching-marbella": "mangusta-profile",
+    "blog/dolphin-watching-marbella": "dolphins-jumping",
     "blog/gibraltar-day-trip-by-boat": "mangusta-aerial",
     "blog/what-to-bring-on-a-boat-charter": "astondoa-interior",
     "blog/seasickness-prevention-charter": "mangusta-aerial",

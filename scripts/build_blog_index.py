@@ -29,7 +29,7 @@ BLOG_POST_IMAGE = {
     "blog/boat-license-rules-spain":                         ("/img/boats/mangusta-80/galley",       "Galley on the Mangusta 80 — Spain boat license rules"),
     "blog/puerto-banus-vs-marbella-marina":                  ("/img/boats/astondoa-40/sunset",       "Astondoa 40 at Puerto Banús sunset — marina comparison"),
     "blog/kids-on-a-boat-marbella":                          ("/img/boats/astondoa-40/hero",         "Astondoa 40 cruising calmly — boat rental with kids in Marbella"),
-    "blog/dolphin-watching-marbella":                        ("/img/boats/mangusta-80/aerial-wake",  "Mangusta 80 offshore — dolphin-watching grounds Marbella"),
+    "blog/dolphin-watching-marbella":                        ("/img/dolphins/dolphins-jumping",      "Dolphins jumping next to our boat off Marbella"),
     "blog/gibraltar-day-trip-by-boat":                       ("/img/boats/mangusta-80/profile",      "Mangusta 80 profile — Gibraltar day trip from Marbella"),
     "blog/what-to-bring-on-a-boat-charter":                  ("/img/boats/astondoa-40/lifestyle",    "Charter yacht at Puerto Banús marina — packing checklist"),
     "blog/seasickness-prevention-charter":                   ("/img/boats/azimut-39/aerial",         "Azimut 39 from above on a calm Marbella morning — seasickness guide"),

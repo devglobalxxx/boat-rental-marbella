@@ -33,3 +33,6 @@ echo "→ IndexNow ping (Bing, Yandex, Naver, Seznam)"
 # Wait briefly for CDN to serve new HTML before submitting
 sleep 8
 python3 scripts/indexnow.py --changed || true
+
+echo "→ Google Indexing API (URL_UPDATED for changed pages)"
+python3 scripts/google_index.py --changed || true

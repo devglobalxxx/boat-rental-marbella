@@ -40,7 +40,7 @@ EXPERIENCES = [
     {"slug":"/blog/dolphin-watching-marbella/", "title":"Dolphin Watching", "desc":"4-hour offshore charter — bottlenose, common & striped pods 2–8 NM out.", "image":"/img/dolphins/dolphins-jumping", "widths":(600,900,1200), "tag":"Wildlife", "from":749},
     {"slug":"/blog/gibraltar-day-trip-by-boat/", "title":"Gibraltar Day Trip", "desc":"95 NM round trip from Puerto Banús past Sotogrande to the Rock and back.", "image":"/img/boats/mangusta-80/profile", "widths":(600,900,1200), "tag":"Adventure", "from":1500},
     # Tier-1 new
-    {"slug":"/experiences/wedding-yacht-marbella/", "title":"Wedding on a Yacht", "desc":"Civil ceremony at anchor, reception on the flybridge, photos under La Concha.", "image":"/img/customers/h04", "widths":(400,600,900), "tag":"Once in a lifetime", "from":2299},
+    {"slug":"/experiences/wedding-yacht-marbella/", "title":"Wedding on Boat", "desc":"Civil ceremony at anchor, reception on the flybridge, photos under La Concha.", "image":"/img/customers/h04", "widths":(400,600,900), "tag":"Once in a lifetime", "from":2299},
     {"slug":"/experiences/corporate-yacht-marbella/", "title":"Corporate & Team Building", "desc":"Client hosting, team days, incentive trips — invoiced with full Spanish IVA.", "image":"/img/boats/mangusta-80/saloon", "widths":(600,900,1200), "tag":"B2B", "from":1299},
     {"slug":"/experiences/honeymoon-yacht-marbella/", "title":"Honeymoon Charter", "desc":"Private cruise + romantic dinner at anchor + sunrise breakfast onboard.", "image":"/img/boats/astondoa-40/interior", "widths":(600,900,1200), "tag":"Newlyweds", "from":1299},
     {"slug":"/experiences/snorkeling-tour-marbella/", "title":"Snorkeling Tour", "desc":"Two anchor stops at the clearest spots between Cabopino and Cala del Faro.", "image":"/img/customers/h11", "widths":(400,600,900), "tag":"All ages", "from":749},
@@ -603,9 +603,9 @@ def render_wedding():
 <details><summary>How many guests can come?</summary><p>Up to 12 on the Mangusta 80, 11 on the Azimut 39, 9 on the Astondoa 40. For 20–30 guests, we use two boats in tandem. For larger weddings, the ceremony happens on the boat and the reception moves ashore.</p></details>'''
     render_tier1(
         slug="experiences/wedding-yacht-marbella",
-        title="Wedding on a Yacht in Marbella: Boats, Logistics, Legal Note",
+        title="Wedding on Boat in Marbella: Boats, Logistics, Legal Note",
         meta="Wedding yacht charter Marbella — ceremony on a flybridge under La Concha, reception with cava on board, photo coordination. Astondoa 40, Azimut 39 or Mangusta 80. From €1,299.",
-        h1="Wedding on a Yacht in Marbella",
+        h1="Wedding on Boat in Marbella",
         sub="Ceremony at anchor, reception under La Concha, the photo set everyone screenshots — the full Marbella yacht-wedding playbook.",
         eyebrow="Wedding · Marbella",
         body_html_str=body,
@@ -613,7 +613,7 @@ def render_wedding():
         hero_widths=(400,600,900),
         hero_alt="Wedding on a yacht in Marbella",
         audience="Wedding couples and parties",
-        breadcrumb_name="Wedding on a Yacht",
+        breadcrumb_name="Wedding on Boat",
     )
 
 

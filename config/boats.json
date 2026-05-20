@@ -40,6 +40,23 @@
       "min_hours": 0,
       "prices": {},
       "currency": "EUR"
+    },
+    "entry": {
+      "label": "Licence-free day boat (Dubhe)",
+      "min_hours": 2,
+      "prices": {
+        "2h": 230,
+        "3h": 280,
+        "4h": 350
+      },
+      "currency": "EUR",
+      "extra_inclusions": [
+        "Self-drive after 10-minute marina briefing",
+        "Up to 5 guests",
+        "No licence required — Spanish licence-free rules apply",
+        "Daylight only, 2 NM coastal limit"
+      ],
+      "extended_note": "Fuel NOT included on the Dubhe (typically €30–€60 depending on route). All other inclusions per Spanish charter standard."
     }
   },
   "boats": [
@@ -516,21 +533,22 @@
     {
       "slug": "dubhe",
       "name": "Dubhe",
-      "tagline": "Small day boat for short charters and quick coastal escapes",
+      "tagline": "Cheapest boat available in Puerto Banús — no licence required, up to 5 people",
       "builder": "Dubhe",
       "type": "Day boat",
       "length_m": 8,
-      "capacity_pax": 6,
+      "capacity_pax": 5,
       "departure_port": "Puerto Banús",
-      "tier": "on_request",
-      "pricing_status": "on_request",
-      "summary": "Dubhe — compact day boat for small groups (up to 6) doing 2-3 hour coastal cruises. Lower entry-price point than the bigger fleet. Quote on WhatsApp.",
+      "tier": "entry",
+      "pricing_status": "published",
+      "summary": "Dubhe — licence-free day boat at Puerto Banús, the cheapest hull in our fleet. Up to 5 guests, 2-hour from €230, 3-hour €280, 4-hour €350. Fuel not included (typically €30–€60 depending on route). Self-drive after a 10-minute marina briefing, daylight only, 2 NM coastal limit per Spanish licence-free rules.",
       "highlights": [
-        "Compact day-boat layout",
-        "Up to 6 guests",
-        "Short charters & coastal cruises",
-        "Lower-cost entry to Marbella boating",
-        "Skipper included"
+        "€230 / 2h — cheapest charter in Puerto Banús",
+        "Up to 5 guests",
+        "No licence required (self-drive after briefing)",
+        "Fuel not included (€30–€60 depending on route)",
+        "Departs Puerto Banús marina",
+        "Daylight only, 2 NM coastal limit"
       ],
       "intent_keywords": [
         "Dubhe boat Marbella",
@@ -558,7 +576,12 @@
       ],
       "hero_local_alt": "Dubhe — Small day boat for short charters and quick coastal escapes",
       "gallery_local": [],
-      "model_year": null
+      "model_year": null,
+      "price_2h": 230,
+      "price_3h": 280,
+      "price_4h": 350,
+      "license_free": true,
+      "fuel_included": false
     },
     {
       "slug": "fairline-targa-12m",

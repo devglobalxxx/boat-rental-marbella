@@ -133,3 +133,138 @@ Traceback (most recent call last):
   File "/opt/homebrew/lib/python3.14/site-packages/anthropic/_base_client.py", line 1141, in request
     raise self._make_status_error_from_response(err.response) from None
 anthropic.BadRequestError: Error code: 400 - {'type': 'error', 'error': {'type': 'invalid_request_error', 'message': 'Your credit balance is too low to access the Anthropic API. Please go to Plans & Billing to upgrade or purchase credits.'}, 'request_id': 'req_011CbBViH9HRWhNAYEm4oeWk'}
+Traceback (most recent call last):
+  File "/Users/mardosoo/aiangels-blog/.claude/worktrees/heuristic-goldberg-51d681/seo_sites/boat_rental_marbella/scripts/daily_content.py", line 200, in main
+    data = generate(item)
+  File "/Users/mardosoo/aiangels-blog/.claude/worktrees/heuristic-goldberg-51d681/seo_sites/boat_rental_marbella/scripts/daily_content.py", line 133, in generate
+    raw = _call_cli(system, user) if BACKEND == "cli" else _call_api(system, user)
+          ~~~~~~~~~^^^^^^^^^^^^^^
+  File "/Users/mardosoo/aiangels-blog/.claude/worktrees/heuristic-goldberg-51d681/seo_sites/boat_rental_marbella/scripts/daily_content.py", line 60, in _call_cli
+    proc = subprocess.run(
+        ["claude", "-p", full, "--output-format", "text"],
+        capture_output=True, text=True, timeout=timeout_s,
+    )
+  File "/opt/homebrew/Cellar/python@3.14/3.14.4/Frameworks/Python.framework/Versions/3.14/lib/python3.14/subprocess.py", line 555, in run
+    with Popen(*popenargs, **kwargs) as process:
+         ~~~~~^^^^^^^^^^^^^^^^^^^^^^
+  File "/opt/homebrew/Cellar/python@3.14/3.14.4/Frameworks/Python.framework/Versions/3.14/lib/python3.14/subprocess.py", line 1039, in __init__
+    self._execute_child(args, executable, preexec_fn, close_fds,
+    ~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+                        pass_fds, cwd, env,
+                        ^^^^^^^^^^^^^^^^^^^
+    ...<5 lines>...
+                        gid, gids, uid, umask,
+                        ^^^^^^^^^^^^^^^^^^^^^^
+                        start_new_session, process_group)
+                        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/opt/homebrew/Cellar/python@3.14/3.14.4/Frameworks/Python.framework/Versions/3.14/lib/python3.14/subprocess.py", line 1990, in _execute_child
+    raise child_exception_type(errno_num, err_msg, err_filename)
+FileNotFoundError: [Errno 2] No such file or directory: 'claude'
+Traceback (most recent call last):
+  File "/Users/mardosoo/aiangels-blog/.claude/worktrees/heuristic-goldberg-51d681/seo_sites/boat_rental_marbella/scripts/daily_content.py", line 200, in main
+    data = generate(item)
+  File "/Users/mardosoo/aiangels-blog/.claude/worktrees/heuristic-goldberg-51d681/seo_sites/boat_rental_marbella/scripts/daily_content.py", line 133, in generate
+    raw = _call_cli(system, user) if BACKEND == "cli" else _call_api(system, user)
+          ~~~~~~~~~^^^^^^^^^^^^^^
+  File "/Users/mardosoo/aiangels-blog/.claude/worktrees/heuristic-goldberg-51d681/seo_sites/boat_rental_marbella/scripts/daily_content.py", line 60, in _call_cli
+    proc = subprocess.run(
+        ["claude", "-p", full, "--output-format", "text"],
+        capture_output=True, text=True, timeout=timeout_s,
+    )
+  File "/opt/homebrew/Cellar/python@3.14/3.14.4/Frameworks/Python.framework/Versions/3.14/lib/python3.14/subprocess.py", line 555, in run
+    with Popen(*popenargs, **kwargs) as process:
+         ~~~~~^^^^^^^^^^^^^^^^^^^^^^
+  File "/opt/homebrew/Cellar/python@3.14/3.14.4/Frameworks/Python.framework/Versions/3.14/lib/python3.14/subprocess.py", line 1039, in __init__
+    self._execute_child(args, executable, preexec_fn, close_fds,
+    ~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+                        pass_fds, cwd, env,
+                        ^^^^^^^^^^^^^^^^^^^
+    ...<5 lines>...
+                        gid, gids, uid, umask,
+                        ^^^^^^^^^^^^^^^^^^^^^^
+                        start_new_session, process_group)
+                        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/opt/homebrew/Cellar/python@3.14/3.14.4/Frameworks/Python.framework/Versions/3.14/lib/python3.14/subprocess.py", line 1990, in _execute_child
+    raise child_exception_type(errno_num, err_msg, err_filename)
+FileNotFoundError: [Errno 2] No such file or directory: 'claude'
+Traceback (most recent call last):
+  File "/Users/mardosoo/aiangels-blog/.claude/worktrees/heuristic-goldberg-51d681/seo_sites/boat_rental_marbella/scripts/daily_content.py", line 200, in main
+    data = generate(item)
+  File "/Users/mardosoo/aiangels-blog/.claude/worktrees/heuristic-goldberg-51d681/seo_sites/boat_rental_marbella/scripts/daily_content.py", line 133, in generate
+    raw = _call_cli(system, user) if BACKEND == "cli" else _call_api(system, user)
+          ~~~~~~~~~^^^^^^^^^^^^^^
+  File "/Users/mardosoo/aiangels-blog/.claude/worktrees/heuristic-goldberg-51d681/seo_sites/boat_rental_marbella/scripts/daily_content.py", line 60, in _call_cli
+    proc = subprocess.run(
+        ["claude", "-p", full, "--output-format", "text"],
+        capture_output=True, text=True, timeout=timeout_s,
+    )
+  File "/opt/homebrew/Cellar/python@3.14/3.14.4/Frameworks/Python.framework/Versions/3.14/lib/python3.14/subprocess.py", line 555, in run
+    with Popen(*popenargs, **kwargs) as process:
+         ~~~~~^^^^^^^^^^^^^^^^^^^^^^
+  File "/opt/homebrew/Cellar/python@3.14/3.14.4/Frameworks/Python.framework/Versions/3.14/lib/python3.14/subprocess.py", line 1039, in __init__
+    self._execute_child(args, executable, preexec_fn, close_fds,
+    ~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+                        pass_fds, cwd, env,
+                        ^^^^^^^^^^^^^^^^^^^
+    ...<5 lines>...
+                        gid, gids, uid, umask,
+                        ^^^^^^^^^^^^^^^^^^^^^^
+                        start_new_session, process_group)
+                        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/opt/homebrew/Cellar/python@3.14/3.14.4/Frameworks/Python.framework/Versions/3.14/lib/python3.14/subprocess.py", line 1990, in _execute_child
+    raise child_exception_type(errno_num, err_msg, err_filename)
+FileNotFoundError: [Errno 2] No such file or directory: 'claude'
+Traceback (most recent call last):
+  File "/Users/mardosoo/aiangels-blog/.claude/worktrees/heuristic-goldberg-51d681/seo_sites/boat_rental_marbella/scripts/daily_content.py", line 200, in main
+    data = generate(item)
+  File "/Users/mardosoo/aiangels-blog/.claude/worktrees/heuristic-goldberg-51d681/seo_sites/boat_rental_marbella/scripts/daily_content.py", line 133, in generate
+    raw = _call_cli(system, user) if BACKEND == "cli" else _call_api(system, user)
+          ~~~~~~~~~^^^^^^^^^^^^^^
+  File "/Users/mardosoo/aiangels-blog/.claude/worktrees/heuristic-goldberg-51d681/seo_sites/boat_rental_marbella/scripts/daily_content.py", line 60, in _call_cli
+    proc = subprocess.run(
+        ["claude", "-p", full, "--output-format", "text"],
+        capture_output=True, text=True, timeout=timeout_s,
+    )
+  File "/opt/homebrew/Cellar/python@3.14/3.14.4/Frameworks/Python.framework/Versions/3.14/lib/python3.14/subprocess.py", line 555, in run
+    with Popen(*popenargs, **kwargs) as process:
+         ~~~~~^^^^^^^^^^^^^^^^^^^^^^
+  File "/opt/homebrew/Cellar/python@3.14/3.14.4/Frameworks/Python.framework/Versions/3.14/lib/python3.14/subprocess.py", line 1039, in __init__
+    self._execute_child(args, executable, preexec_fn, close_fds,
+    ~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+                        pass_fds, cwd, env,
+                        ^^^^^^^^^^^^^^^^^^^
+    ...<5 lines>...
+                        gid, gids, uid, umask,
+                        ^^^^^^^^^^^^^^^^^^^^^^
+                        start_new_session, process_group)
+                        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/opt/homebrew/Cellar/python@3.14/3.14.4/Frameworks/Python.framework/Versions/3.14/lib/python3.14/subprocess.py", line 1990, in _execute_child
+    raise child_exception_type(errno_num, err_msg, err_filename)
+FileNotFoundError: [Errno 2] No such file or directory: 'claude'
+Traceback (most recent call last):
+  File "/Users/mardosoo/aiangels-blog/.claude/worktrees/heuristic-goldberg-51d681/seo_sites/boat_rental_marbella/scripts/daily_content.py", line 200, in main
+    data = generate(item)
+  File "/Users/mardosoo/aiangels-blog/.claude/worktrees/heuristic-goldberg-51d681/seo_sites/boat_rental_marbella/scripts/daily_content.py", line 133, in generate
+    raw = _call_cli(system, user) if BACKEND == "cli" else _call_api(system, user)
+          ~~~~~~~~~^^^^^^^^^^^^^^
+  File "/Users/mardosoo/aiangels-blog/.claude/worktrees/heuristic-goldberg-51d681/seo_sites/boat_rental_marbella/scripts/daily_content.py", line 60, in _call_cli
+    proc = subprocess.run(
+        ["claude", "-p", full, "--output-format", "text"],
+        capture_output=True, text=True, timeout=timeout_s,
+    )
+  File "/opt/homebrew/Cellar/python@3.14/3.14.4/Frameworks/Python.framework/Versions/3.14/lib/python3.14/subprocess.py", line 555, in run
+    with Popen(*popenargs, **kwargs) as process:
+         ~~~~~^^^^^^^^^^^^^^^^^^^^^^
+  File "/opt/homebrew/Cellar/python@3.14/3.14.4/Frameworks/Python.framework/Versions/3.14/lib/python3.14/subprocess.py", line 1039, in __init__
+    self._execute_child(args, executable, preexec_fn, close_fds,
+    ~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+                        pass_fds, cwd, env,
+                        ^^^^^^^^^^^^^^^^^^^
+    ...<5 lines>...
+                        gid, gids, uid, umask,
+                        ^^^^^^^^^^^^^^^^^^^^^^
+                        start_new_session, process_group)
+                        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/opt/homebrew/Cellar/python@3.14/3.14.4/Frameworks/Python.framework/Versions/3.14/lib/python3.14/subprocess.py", line 1990, in _execute_child
+    raise child_exception_type(errno_num, err_msg, err_filename)
+FileNotFoundError: [Errno 2] No such file or directory: 'claude'

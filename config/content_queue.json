@@ -536,5 +536,7 @@
       "target_words": 1100,
       "consumed_at": "2026-05-19"
     }
-  ]
+  ],
+  "refill_threshold": 30,
+  "refill_batch": 30
 }

@@ -143,6 +143,67 @@ def generate(item: dict) -> dict:
         last = raw.rfind("}")
         return json.loads(raw[:last + 1])
 
+def refill_queue(queue_cfg: dict, n: int) -> list[dict]:
+    """Ask Claude (CLI) to invent N fresh blog/spoke topics, avoiding any slug
+    already in queue/consumed. Returns a list of queue-shaped dicts."""
+    seen = set()
+    for src in (queue_cfg.get("queue", []), queue_cfg.get("consumed", [])):
+        for item in src:
+            seen.add(item.get("slug"))
+    # Also avoid topics already shipped (in keyword_map)
+    km = json.loads(KEYWORD_MAP_PATH.read_text())
+    for k in ("spokes", "blog"):
+        for it in km.get(k, []):
+            seen.add(it.get("slug"))
+    # ...and any page already rendered to /site/ (covers hard-coded experiences, boats, /es/)
+    for d in (ROOT / "site").rglob("index.html"):
+        rel = d.relative_to(ROOT / "site").parent
+        if str(rel) != ".":
+            seen.add(str(rel))
+    seen_list = sorted(s for s in seen if s)
+
+    sys_p = ("You are an SEO content planner for an affiliate boat-rental site in Marbella, Spain. "
+             "Generate diverse, search-driven page topics targeting commercial + informational intent across:\n"
+             "• Boat rental + yacht charter long-tail keywords (location modifiers: Puerto Banús, Marbella Marina, Cabopino, Estepona, Sotogrande)\n"
+             "• Marbella events / festivals / season hooks (Starlite, Feria, NYE, F1 weekends, hen/stag weekends, Pride, Ironman, Andalusia Day)\n"
+             "• Boat-by-boat comparison content (Astondoa 40, Azimut 39, Mangusta 80 vs alternatives or competitors)\n"
+             "• Experiential angles (dolphin watching, sunset, snorkeling, fishing, jet ski, family days, photoshoots)\n"
+             "• Cost / price / value angles, license rules, weather/seasonality, what to bring, dietary/age policies\n"
+             "Avoid generic clickbait. Each topic should be specific enough that the page can hit 1100–1500 words.")
+    user_p = (f"Produce {n} new topics as a STRICT JSON ARRAY. Each item must be of shape:\n"
+              '{"kind": "blog" | "spoke" | "experience",\n'
+              ' "slug": "blog/<kebab-slug>" or "<kebab-slug>" or "experiences/<kebab-slug>",\n'
+              ' "primary_keyword": "natural search phrase",\n'
+              ' "title": "<60-char title with primary keyword>",\n'
+              ' "target_words": 1100}\n\n'
+              f"AVOID these slugs (already used): {json.dumps(seen_list)}\n\n"
+              "Mix: ~70% blog (informational + event hooks), ~20% experience, ~10% spoke. "
+              "Return JSON array only, no prose, no markdown fences.")
+    raw = _call_cli(sys_p, user_p, timeout_s=300)
+    raw = re.sub(r"^```(?:json)?\s*|\s*```$", "", raw, flags=re.MULTILINE).strip()
+    start = raw.find("["); end = raw.rfind("]")
+    if start < 0 or end <= start:
+        raise RuntimeError("refill: no JSON array in response")
+    arr = json.loads(raw[start:end + 1])
+    cleaned = []
+    for it in arr:
+        slug = (it.get("slug") or "").strip("/")
+        if not slug or slug in seen:
+            continue
+        if it.get("kind") not in ("blog", "spoke", "experience"):
+            continue
+        if not it.get("primary_keyword") or not it.get("title"):
+            continue
+        cleaned.append({
+            "kind": it["kind"],
+            "slug": slug,
+            "primary_keyword": it["primary_keyword"].strip(),
+            "title": it["title"].strip(),
+            "target_words": int(it.get("target_words") or 1100),
+        })
+        seen.add(slug)
+    return cleaned
+
 # ---------- file plumbing ----------
 def content_filename(slug: str) -> pathlib.Path:
     return CONTENT_DIR / (slug.replace("/", "_") + ".json")
@@ -214,6 +275,19 @@ def main():
         )
         QUEUE_PATH.write_text(json.dumps(queue_cfg, ensure_ascii=False, indent=2))
         log(f"queue: {len(queue_cfg['queue'])} remaining, {len(queue_cfg['consumed'])} consumed total")
+
+    # Auto-replenish: when the queue dips under the threshold, ask Claude to add ~30 fresh topics.
+    refill_threshold = int(queue_cfg.get("refill_threshold", 30))
+    refill_batch     = int(queue_cfg.get("refill_batch", 30))
+    if not args.dry_run and len(queue_cfg["queue"]) < refill_threshold:
+        log(f"queue under threshold ({len(queue_cfg['queue'])} < {refill_threshold}) — auto-refilling…")
+        try:
+            added = refill_queue(queue_cfg, refill_batch)
+            queue_cfg["queue"].extend(added)
+            QUEUE_PATH.write_text(json.dumps(queue_cfg, ensure_ascii=False, indent=2))
+            log(f"refill: +{len(added)} topics (queue now {len(queue_cfg['queue'])})")
+        except Exception as e:
+            log(f"refill failed: {type(e).__name__}: {str(e)[:200]}")
 
     if succeeded and not args.dry_run:
         log("running deploy.sh …")

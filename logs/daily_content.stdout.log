@@ -24,3 +24,16 @@
 [2026-05-20 10:00:02]   ✗ FAILED: FileNotFoundError: [Errno 2] No such file or directory: 'claude'
 [2026-05-20 10:00:02] === Done: 0 succeeded, 5 failed ===
 
+[2026-05-21 10:00:02] === Daily content run: 5 item(s) ===
+[2026-05-21 10:00:02] [1/5] experience · experiences/booze-cruise-marbella
+[2026-05-21 10:00:02]   ✗ FAILED: FileNotFoundError: [Errno 2] No such file or directory: 'claude'
+[2026-05-21 10:00:02] [2/5] experience · experiences/romantic-dinner-yacht-marbella
+[2026-05-21 10:00:02]   ✗ FAILED: FileNotFoundError: [Errno 2] No such file or directory: 'claude'
+[2026-05-21 10:00:02] [3/5] experience · experiences/sailing-experience-marbella
+[2026-05-21 10:00:02]   ✗ FAILED: FileNotFoundError: [Errno 2] No such file or directory: 'claude'
+[2026-05-21 10:00:02] [4/5] experience · experiences/water-sports-marbella
+[2026-05-21 10:00:02]   ✗ FAILED: FileNotFoundError: [Errno 2] No such file or directory: 'claude'
+[2026-05-21 10:00:02] [5/5] experience · experiences/seabob-experience-marbella
+[2026-05-21 10:00:02]   ✗ FAILED: FileNotFoundError: [Errno 2] No such file or directory: 'claude'
+[2026-05-21 10:00:02] === Done: 0 succeeded, 5 failed ===
+

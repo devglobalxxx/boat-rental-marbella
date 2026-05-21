@@ -4,44 +4,6 @@
   "queue": [
     {
       "kind": "experience",
-      "slug": "experiences/booze-cruise-marbella",
-      "primary_keyword": "booze cruise Marbella",
-      "title": "Booze Cruise Marbella: Private Yacht, BYO Welcomed",
-      "target_words": 1000
-    },
-    {
-      "kind": "experience",
-      "slug": "experiences/romantic-dinner-yacht-marbella",
-      "primary_keyword": "romantic dinner on a yacht Marbella",
-      "title": "Romantic Dinner on a Yacht in Marbella: Catered at Anchor",
-      "target_words": 1100
-    },
-    {
-      "kind": "experience",
-      "slug": "experiences/sailing-experience-marbella",
-      "primary_keyword": "sailing experience Marbella",
-      "title": "Sailing Experience Marbella: Half-Day on the Lagoon 380",
-      "target_words": 1100,
-      "fleet_focus": [
-        "lagoon-380"
-      ]
-    },
-    {
-      "kind": "experience",
-      "slug": "experiences/water-sports-marbella",
-      "primary_keyword": "water sports yacht Marbella",
-      "title": "Water Sports Yacht Day Marbella: Wakeboard, Banana, Donut, SUP",
-      "target_words": 1100
-    },
-    {
-      "kind": "experience",
-      "slug": "experiences/seabob-experience-marbella",
-      "primary_keyword": "Seabob experience Marbella",
-      "title": "Seabob Experience Marbella: Underwater Scooter Rental",
-      "target_words": 1000
-    },
-    {
-      "kind": "experience",
       "slug": "experiences/overnight-yacht-marbella",
       "primary_keyword": "overnight yacht Marbella",
       "title": "Overnight on a Yacht in Marbella: Stay Aboard at Puerto Banús",
@@ -123,58 +85,6 @@
       "primary_keyword": "influencer content day Marbella yacht",
       "title": "Influencer Content Day Marbella: Yacht-Based Shoot Package",
       "target_words": 1100
-    },
-    {
-      "kind": "blog",
-      "slug": "blog/ferretti-94-vs-canados-86-marbella",
-      "primary_keyword": "Ferretti 94 vs Canados 86 Marbella",
-      "title": "Ferretti 94 vs Canados 86 in Marbella: Picking the Bigger Superyacht",
-      "target_words": 1300,
-      "fleet_focus": [
-        "ferretti-94",
-        "canados-86"
-      ]
-    },
-    {
-      "kind": "blog",
-      "slug": "blog/pershing-46-vs-azimut-39",
-      "primary_keyword": "Pershing 46 vs Azimut 39 Marbella",
-      "title": "Pershing 46 vs Azimut 39: Italian Style vs Performance in Marbella",
-      "target_words": 1200,
-      "fleet_focus": [
-        "pershing-46",
-        "azimut-39"
-      ]
-    },
-    {
-      "kind": "blog",
-      "slug": "blog/lagoon-380-only-catamaran-marbella",
-      "primary_keyword": "Lagoon 380 catamaran charter Marbella",
-      "title": "Lagoon 380 — The Only Catamaran in Our Marbella Fleet",
-      "target_words": 1100,
-      "fleet_focus": [
-        "lagoon-380"
-      ]
-    },
-    {
-      "kind": "blog",
-      "slug": "blog/fairline-targa-12m-marbella",
-      "primary_keyword": "Fairline Targa 12m Marbella charter",
-      "title": "Fairline Targa 12m: British Engineering, Marbella Sun",
-      "target_words": 1100,
-      "fleet_focus": [
-        "fairline-targa-12m"
-      ]
-    },
-    {
-      "kind": "blog",
-      "slug": "blog/bandido-yacht-charter-marbella",
-      "primary_keyword": "Bandido yacht charter Marbella",
-      "title": "Bandido: Our 30m Charter Yacht — Specs, Itineraries, Photos",
-      "target_words": 1200,
-      "fleet_focus": [
-        "bandido"
-      ]
     },
     {
       "kind": "blog",
@@ -535,6 +445,106 @@
       "title": "Champagne Sunset Cruise Marbella: VIP 2-Hour Charter",
       "target_words": 1100,
       "consumed_at": "2026-05-19"
+    },
+    {
+      "kind": "blog",
+      "slug": "blog/ferretti-94-vs-canados-86-marbella",
+      "primary_keyword": "Ferretti 94 vs Canados 86 Marbella",
+      "title": "Ferretti 94 vs Canados 86 in Marbella: Picking the Bigger Superyacht",
+      "target_words": 1300,
+      "fleet_focus": [
+        "ferretti-94",
+        "canados-86"
+      ],
+      "consumed_at": "2026-05-21"
+    },
+    {
+      "kind": "blog",
+      "slug": "blog/pershing-46-vs-azimut-39",
+      "primary_keyword": "Pershing 46 vs Azimut 39 Marbella",
+      "title": "Pershing 46 vs Azimut 39: Italian Style vs Performance in Marbella",
+      "target_words": 1200,
+      "fleet_focus": [
+        "pershing-46",
+        "azimut-39"
+      ],
+      "consumed_at": "2026-05-21"
+    },
+    {
+      "kind": "blog",
+      "slug": "blog/lagoon-380-only-catamaran-marbella",
+      "primary_keyword": "Lagoon 380 catamaran charter Marbella",
+      "title": "Lagoon 380 — The Only Catamaran in Our Marbella Fleet",
+      "target_words": 1100,
+      "fleet_focus": [
+        "lagoon-380"
+      ],
+      "consumed_at": "2026-05-21"
+    },
+    {
+      "kind": "blog",
+      "slug": "blog/fairline-targa-12m-marbella",
+      "primary_keyword": "Fairline Targa 12m Marbella charter",
+      "title": "Fairline Targa 12m: British Engineering, Marbella Sun",
+      "target_words": 1100,
+      "fleet_focus": [
+        "fairline-targa-12m"
+      ],
+      "consumed_at": "2026-05-21"
+    },
+    {
+      "kind": "blog",
+      "slug": "blog/bandido-yacht-charter-marbella",
+      "primary_keyword": "Bandido yacht charter Marbella",
+      "title": "Bandido: Our 30m Charter Yacht — Specs, Itineraries, Photos",
+      "target_words": 1200,
+      "fleet_focus": [
+        "bandido"
+      ],
+      "consumed_at": "2026-05-21"
+    },
+    {
+      "kind": "experience",
+      "slug": "experiences/booze-cruise-marbella",
+      "primary_keyword": "booze cruise Marbella",
+      "title": "Booze Cruise Marbella: Private Yacht, BYO Welcomed",
+      "target_words": 1000,
+      "consumed_at": "2026-05-21"
+    },
+    {
+      "kind": "experience",
+      "slug": "experiences/romantic-dinner-yacht-marbella",
+      "primary_keyword": "romantic dinner on a yacht Marbella",
+      "title": "Romantic Dinner on a Yacht in Marbella: Catered at Anchor",
+      "target_words": 1100,
+      "consumed_at": "2026-05-21"
+    },
+    {
+      "kind": "experience",
+      "slug": "experiences/sailing-experience-marbella",
+      "primary_keyword": "sailing experience Marbella",
+      "title": "Sailing Experience Marbella: Half-Day on the Lagoon 380",
+      "target_words": 1100,
+      "fleet_focus": [
+        "lagoon-380"
+      ],
+      "consumed_at": "2026-05-21"
+    },
+    {
+      "kind": "experience",
+      "slug": "experiences/water-sports-marbella",
+      "primary_keyword": "water sports yacht Marbella",
+      "title": "Water Sports Yacht Day Marbella: Wakeboard, Banana, Donut, SUP",
+      "target_words": 1100,
+      "consumed_at": "2026-05-21"
+    },
+    {
+      "kind": "experience",
+      "slug": "experiences/seabob-experience-marbella",
+      "primary_keyword": "Seabob experience Marbella",
+      "title": "Seabob Experience Marbella: Underwater Scooter Rental",
+      "target_words": 1000,
+      "consumed_at": "2026-05-21"
     }
   ],
   "refill_threshold": 30,

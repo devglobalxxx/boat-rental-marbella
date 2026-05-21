@@ -239,17 +239,29 @@ def add_to_keyword_map(item: dict):
 def main():
     ap = argparse.ArgumentParser()
     ap.add_argument("--n", type=int, default=None, help="override items_per_day from queue config")
+    ap.add_argument("--blogs", type=int, default=None, help="how many blog items to pick (kind=blog)")
+    ap.add_argument("--landings", type=int, default=None, help="how many landing items to pick (kind in spoke,experience)")
     ap.add_argument("--dry-run", action="store_true")
     args = ap.parse_args()
 
     queue_cfg = json.loads(QUEUE_PATH.read_text())
-    n = args.n or queue_cfg.get("items_per_day", 5)
     queue = queue_cfg.get("queue", [])
     if not queue:
         log("queue empty — nothing to do.")
         return 0
-    batch = queue[:n]
-    log(f"=== Daily content run: {len(batch)} item(s) ===")
+
+    # If --blogs and --landings explicitly passed, pick balanced by kind
+    if args.blogs is not None or args.landings is not None:
+        nb = args.blogs if args.blogs is not None else 0
+        nl = args.landings if args.landings is not None else 0
+        blogs = [q for q in queue if q.get("kind") == "blog"][:nb]
+        landings = [q for q in queue if q.get("kind") in ("spoke", "experience")][:nl]
+        batch = blogs + landings
+        log(f"=== Daily content run (kind-balanced): {len(blogs)} blog + {len(landings)} landing = {len(batch)} item(s) ===")
+    else:
+        n = args.n or queue_cfg.get("items_per_day", 5)
+        batch = queue[:n]
+        log(f"=== Daily content run: {len(batch)} item(s) ===")
 
     succeeded, failed = [], []
     for i, item in enumerate(batch, 1):

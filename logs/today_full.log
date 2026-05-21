@@ -31,3 +31,6 @@
 [2026-05-21 11:56:56]   ✓ added to keyword_map.spokes
 [2026-05-21 11:56:56] queue: 62 remaining, 11 consumed total
 [2026-05-21 11:56:56] running deploy.sh …
+[2026-05-21 11:57:12] deploy.sh OK
+[2026-05-21 11:57:12] === Done: 10 succeeded, 0 failed ===
+

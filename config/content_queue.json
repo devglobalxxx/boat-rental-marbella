@@ -4,41 +4,6 @@
   "queue": [
     {
       "kind": "experience",
-      "slug": "experiences/overnight-yacht-marbella",
-      "primary_keyword": "overnight yacht Marbella",
-      "title": "Overnight on a Yacht in Marbella: Stay Aboard at Puerto Banús",
-      "target_words": 1100
-    },
-    {
-      "kind": "experience",
-      "slug": "experiences/multi-day-yacht-marbella",
-      "primary_keyword": "multi day yacht charter Marbella",
-      "title": "Multi-Day Yacht Charter Marbella: 3-Day Costa del Sol Itinerary",
-      "target_words": 1300
-    },
-    {
-      "kind": "experience",
-      "slug": "experiences/tarifa-day-trip-marbella",
-      "primary_keyword": "Tarifa day trip from Marbella by boat",
-      "title": "Tarifa Day Trip by Boat from Marbella",
-      "target_words": 1200
-    },
-    {
-      "kind": "experience",
-      "slug": "experiences/calas-marbella-tour",
-      "primary_keyword": "calas Marbella coves boat tour",
-      "title": "Calas of Marbella: Cove-Hopping Yacht Tour",
-      "target_words": 1100
-    },
-    {
-      "kind": "experience",
-      "slug": "experiences/marbella-by-night-cruise",
-      "primary_keyword": "Marbella by night yacht cruise",
-      "title": "Marbella by Night: Evening Yacht Cruise from Puerto Banús",
-      "target_words": 1000
-    },
-    {
-      "kind": "experience",
       "slug": "experiences/nye-yacht-marbella",
       "primary_keyword": "New Year's Eve yacht Marbella",
       "title": "New Year's Eve on a Yacht in Marbella",
@@ -84,41 +49,6 @@
       "slug": "experiences/influencer-content-day-marbella",
       "primary_keyword": "influencer content day Marbella yacht",
       "title": "Influencer Content Day Marbella: Yacht-Based Shoot Package",
-      "target_words": 1100
-    },
-    {
-      "kind": "blog",
-      "slug": "blog/wedding-yacht-charter-marbella",
-      "primary_keyword": "wedding yacht charter Marbella",
-      "title": "Wedding Yacht Charter Marbella: Boats, Logistics, Photo Plan",
-      "target_words": 1300
-    },
-    {
-      "kind": "blog",
-      "slug": "blog/bachelor-party-yacht-marbella",
-      "primary_keyword": "bachelor party yacht Marbella",
-      "title": "Bachelor Party Yacht Charter in Marbella: Boats, Routes & Add-ons",
-      "target_words": 1200
-    },
-    {
-      "kind": "blog",
-      "slug": "blog/birthday-yacht-charter-marbella",
-      "primary_keyword": "birthday yacht charter Marbella",
-      "title": "Birthday on a Yacht in Marbella: Best Boats for the Day",
-      "target_words": 1100
-    },
-    {
-      "kind": "blog",
-      "slug": "blog/corporate-yacht-charter-marbella",
-      "primary_keyword": "corporate yacht charter Marbella",
-      "title": "Corporate Yacht Charter Marbella: Team Days & Client Hosting",
-      "target_words": 1200
-    },
-    {
-      "kind": "blog",
-      "slug": "blog/anniversary-yacht-charter-marbella",
-      "primary_keyword": "anniversary yacht charter Marbella",
-      "title": "Anniversary Charter in Marbella: Sunset Routes & Privacy",
       "target_words": 1100
     },
     {
@@ -545,6 +475,86 @@
       "title": "Seabob Experience Marbella: Underwater Scooter Rental",
       "target_words": 1000,
       "consumed_at": "2026-05-21"
+    },
+    {
+      "kind": "blog",
+      "slug": "blog/wedding-yacht-charter-marbella",
+      "primary_keyword": "wedding yacht charter Marbella",
+      "title": "Wedding Yacht Charter Marbella: Boats, Logistics, Photo Plan",
+      "target_words": 1300,
+      "consumed_at": "2026-05-24"
+    },
+    {
+      "kind": "blog",
+      "slug": "blog/bachelor-party-yacht-marbella",
+      "primary_keyword": "bachelor party yacht Marbella",
+      "title": "Bachelor Party Yacht Charter in Marbella: Boats, Routes & Add-ons",
+      "target_words": 1200,
+      "consumed_at": "2026-05-24"
+    },
+    {
+      "kind": "blog",
+      "slug": "blog/birthday-yacht-charter-marbella",
+      "primary_keyword": "birthday yacht charter Marbella",
+      "title": "Birthday on a Yacht in Marbella: Best Boats for the Day",
+      "target_words": 1100,
+      "consumed_at": "2026-05-24"
+    },
+    {
+      "kind": "blog",
+      "slug": "blog/corporate-yacht-charter-marbella",
+      "primary_keyword": "corporate yacht charter Marbella",
+      "title": "Corporate Yacht Charter Marbella: Team Days & Client Hosting",
+      "target_words": 1200,
+      "consumed_at": "2026-05-24"
+    },
+    {
+      "kind": "blog",
+      "slug": "blog/anniversary-yacht-charter-marbella",
+      "primary_keyword": "anniversary yacht charter Marbella",
+      "title": "Anniversary Charter in Marbella: Sunset Routes & Privacy",
+      "target_words": 1100,
+      "consumed_at": "2026-05-24"
+    },
+    {
+      "kind": "experience",
+      "slug": "experiences/overnight-yacht-marbella",
+      "primary_keyword": "overnight yacht Marbella",
+      "title": "Overnight on a Yacht in Marbella: Stay Aboard at Puerto Banús",
+      "target_words": 1100,
+      "consumed_at": "2026-05-24"
+    },
+    {
+      "kind": "experience",
+      "slug": "experiences/multi-day-yacht-marbella",
+      "primary_keyword": "multi day yacht charter Marbella",
+      "title": "Multi-Day Yacht Charter Marbella: 3-Day Costa del Sol Itinerary",
+      "target_words": 1300,
+      "consumed_at": "2026-05-24"
+    },
+    {
+      "kind": "experience",
+      "slug": "experiences/tarifa-day-trip-marbella",
+      "primary_keyword": "Tarifa day trip from Marbella by boat",
+      "title": "Tarifa Day Trip by Boat from Marbella",
+      "target_words": 1200,
+      "consumed_at": "2026-05-24"
+    },
+    {
+      "kind": "experience",
+      "slug": "experiences/calas-marbella-tour",
+      "primary_keyword": "calas Marbella coves boat tour",
+      "title": "Calas of Marbella: Cove-Hopping Yacht Tour",
+      "target_words": 1100,
+      "consumed_at": "2026-05-24"
+    },
+    {
+      "kind": "experience",
+      "slug": "experiences/marbella-by-night-cruise",
+      "primary_keyword": "Marbella by night yacht cruise",
+      "title": "Marbella by Night: Evening Yacht Cruise from Puerto Banús",
+      "target_words": 1000,
+      "consumed_at": "2026-05-24"
     }
   ],
   "refill_threshold": 30,

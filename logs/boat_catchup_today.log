@@ -1,0 +1,33 @@
+[2026-05-24 14:03:13] === Daily content run (kind-balanced): 5 blog + 5 landing = 10 item(s) ===
+[2026-05-24 14:03:13] [1/10] blog · blog/wedding-yacht-charter-marbella
+[2026-05-24 14:05:04]   ✓ saved content/blog_wedding-yacht-charter-marbella.json
+[2026-05-24 14:05:04]   ✓ added to keyword_map.blog
+[2026-05-24 14:05:04] [2/10] blog · blog/bachelor-party-yacht-marbella
+[2026-05-24 14:06:46]   ✓ saved content/blog_bachelor-party-yacht-marbella.json
+[2026-05-24 14:06:46]   ✓ added to keyword_map.blog
+[2026-05-24 14:06:46] [3/10] blog · blog/birthday-yacht-charter-marbella
+[2026-05-24 14:08:28]   ✓ saved content/blog_birthday-yacht-charter-marbella.json
+[2026-05-24 14:08:28]   ✓ added to keyword_map.blog
+[2026-05-24 14:08:28] [4/10] blog · blog/corporate-yacht-charter-marbella
+[2026-05-24 14:10:01]   ✓ saved content/blog_corporate-yacht-charter-marbella.json
+[2026-05-24 14:10:01]   ✓ added to keyword_map.blog
+[2026-05-24 14:10:01] [5/10] blog · blog/anniversary-yacht-charter-marbella
+[2026-05-24 14:11:33]   ✓ saved content/blog_anniversary-yacht-charter-marbella.json
+[2026-05-24 14:11:33]   ✓ added to keyword_map.blog
+[2026-05-24 14:11:33] [6/10] experience · experiences/overnight-yacht-marbella
+[2026-05-24 14:13:08]   ✓ saved content/experiences_overnight-yacht-marbella.json
+[2026-05-24 14:13:08]   ✓ added to keyword_map.spokes
+[2026-05-24 14:13:08] [7/10] experience · experiences/multi-day-yacht-marbella
+[2026-05-24 14:15:55]   ✓ saved content/experiences_multi-day-yacht-marbella.json
+[2026-05-24 14:15:55]   ✓ added to keyword_map.spokes
+[2026-05-24 14:15:55] [8/10] experience · experiences/tarifa-day-trip-marbella
+[2026-05-24 14:17:30]   ✓ saved content/experiences_tarifa-day-trip-marbella.json
+[2026-05-24 14:17:30]   ✓ added to keyword_map.spokes
+[2026-05-24 14:17:30] [9/10] experience · experiences/calas-marbella-tour
+[2026-05-24 14:18:56]   ✓ saved content/experiences_calas-marbella-tour.json
+[2026-05-24 14:18:56]   ✓ added to keyword_map.spokes
+[2026-05-24 14:18:56] [10/10] experience · experiences/marbella-by-night-cruise
+[2026-05-24 14:20:28]   ✓ saved content/experiences_marbella-by-night-cruise.json
+[2026-05-24 14:20:28]   ✓ added to keyword_map.spokes
+[2026-05-24 14:20:28] queue: 52 remaining, 21 consumed total
+[2026-05-24 14:20:28] running deploy.sh …

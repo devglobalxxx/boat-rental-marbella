@@ -147,6 +147,41 @@
       "title": "Seabob Experience Marbella: Underwater Scooter Rental",
       "intent": "transactional",
       "target_words": 1000
+    },
+    {
+      "slug": "experiences/overnight-yacht-marbella",
+      "primary_keyword": "overnight yacht Marbella",
+      "title": "Overnight on a Yacht in Marbella: Stay Aboard at Puerto Banús",
+      "intent": "transactional",
+      "target_words": 1100
+    },
+    {
+      "slug": "experiences/multi-day-yacht-marbella",
+      "primary_keyword": "multi day yacht charter Marbella",
+      "title": "Multi-Day Yacht Charter Marbella: 3-Day Costa del Sol Itinerary",
+      "intent": "transactional",
+      "target_words": 1300
+    },
+    {
+      "slug": "experiences/tarifa-day-trip-marbella",
+      "primary_keyword": "Tarifa day trip from Marbella by boat",
+      "title": "Tarifa Day Trip by Boat from Marbella",
+      "intent": "transactional",
+      "target_words": 1200
+    },
+    {
+      "slug": "experiences/calas-marbella-tour",
+      "primary_keyword": "calas Marbella coves boat tour",
+      "title": "Calas of Marbella: Cove-Hopping Yacht Tour",
+      "intent": "transactional",
+      "target_words": 1100
+    },
+    {
+      "slug": "experiences/marbella-by-night-cruise",
+      "primary_keyword": "Marbella by night yacht cruise",
+      "title": "Marbella by Night: Evening Yacht Cruise from Puerto Banús",
+      "intent": "transactional",
+      "target_words": 1000
     }
   ],
   "blog": [
@@ -275,6 +310,41 @@
       "title": "Bandido: Our 30m Charter Yacht — Specs, Itineraries, Photos",
       "intent": "informational",
       "target_words": 1200
+    },
+    {
+      "slug": "blog/wedding-yacht-charter-marbella",
+      "primary_keyword": "wedding yacht charter Marbella",
+      "title": "Wedding Yacht Charter Marbella: Boats, Logistics, Photo Plan",
+      "intent": "informational",
+      "target_words": 1300
+    },
+    {
+      "slug": "blog/bachelor-party-yacht-marbella",
+      "primary_keyword": "bachelor party yacht Marbella",
+      "title": "Bachelor Party Yacht Charter in Marbella: Boats, Routes & Add-ons",
+      "intent": "informational",
+      "target_words": 1200
+    },
+    {
+      "slug": "blog/birthday-yacht-charter-marbella",
+      "primary_keyword": "birthday yacht charter Marbella",
+      "title": "Birthday on a Yacht in Marbella: Best Boats for the Day",
+      "intent": "informational",
+      "target_words": 1100
+    },
+    {
+      "slug": "blog/corporate-yacht-charter-marbella",
+      "primary_keyword": "corporate yacht charter Marbella",
+      "title": "Corporate Yacht Charter Marbella: Team Days & Client Hosting",
+      "intent": "informational",
+      "target_words": 1200
+    },
+    {
+      "slug": "blog/anniversary-yacht-charter-marbella",
+      "primary_keyword": "anniversary yacht charter Marbella",
+      "title": "Anniversary Charter in Marbella: Sunset Routes & Privacy",
+      "intent": "informational",
+      "target_words": 1100
     }
   ]
 }

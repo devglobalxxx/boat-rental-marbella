@@ -95,3 +95,174 @@
 [2026-05-21 11:57:12] deploy.sh OK
 [2026-05-21 11:57:12] === Done: 10 succeeded, 0 failed ===
 
+[2026-05-21 18:30:21] === Daily content run (kind-balanced): 5 blog + 5 landing = 10 item(s) ===
+[2026-05-21 18:30:21] [1/10] blog · blog/wedding-yacht-charter-marbella
+[2026-05-21 18:30:23]   ✗ FAILED: RuntimeError: claude CLI exit 1: 
+[2026-05-21 18:30:23] [2/10] blog · blog/bachelor-party-yacht-marbella
+[2026-05-21 18:30:25]   ✗ FAILED: RuntimeError: claude CLI exit 1: 
+[2026-05-21 18:30:25] [3/10] blog · blog/birthday-yacht-charter-marbella
+[2026-05-21 18:30:27]   ✗ FAILED: RuntimeError: claude CLI exit 1: 
+[2026-05-21 18:30:27] [4/10] blog · blog/corporate-yacht-charter-marbella
+[2026-05-21 18:30:28]   ✗ FAILED: RuntimeError: claude CLI exit 1: 
+[2026-05-21 18:30:28] [5/10] blog · blog/anniversary-yacht-charter-marbella
+[2026-05-21 18:30:30]   ✗ FAILED: RuntimeError: claude CLI exit 1: 
+[2026-05-21 18:30:30] [6/10] experience · experiences/overnight-yacht-marbella
+[2026-05-21 18:30:32]   ✗ FAILED: RuntimeError: claude CLI exit 1: 
+[2026-05-21 18:30:32] [7/10] experience · experiences/multi-day-yacht-marbella
+[2026-05-21 18:30:34]   ✗ FAILED: RuntimeError: claude CLI exit 1: 
+[2026-05-21 18:30:34] [8/10] experience · experiences/tarifa-day-trip-marbella
+[2026-05-21 18:30:36]   ✗ FAILED: RuntimeError: claude CLI exit 1: 
+[2026-05-21 18:30:36] [9/10] experience · experiences/calas-marbella-tour
+[2026-05-21 18:30:38]   ✗ FAILED: RuntimeError: claude CLI exit 1: 
+[2026-05-21 18:30:38] [10/10] experience · experiences/marbella-by-night-cruise
+[2026-05-21 18:30:40]   ✗ FAILED: RuntimeError: claude CLI exit 1: 
+[2026-05-21 18:30:40] === Done: 0 succeeded, 10 failed ===
+
+[2026-05-21 21:31:18] === Daily content run (kind-balanced): 5 blog + 5 landing = 10 item(s) ===
+[2026-05-21 21:31:18] [1/10] blog · blog/wedding-yacht-charter-marbella
+[2026-05-21 21:31:19]   ✗ FAILED: RuntimeError: claude CLI exit 1: 
+[2026-05-21 21:31:19] [2/10] blog · blog/bachelor-party-yacht-marbella
+[2026-05-21 21:31:21]   ✗ FAILED: RuntimeError: claude CLI exit 1: 
+[2026-05-21 21:31:21] [3/10] blog · blog/birthday-yacht-charter-marbella
+[2026-05-21 21:31:23]   ✗ FAILED: RuntimeError: claude CLI exit 1: 
+[2026-05-21 21:31:23] [4/10] blog · blog/corporate-yacht-charter-marbella
+[2026-05-21 21:31:26]   ✗ FAILED: RuntimeError: claude CLI exit 1: 
+[2026-05-21 21:31:26] [5/10] blog · blog/anniversary-yacht-charter-marbella
+[2026-05-21 21:31:27]   ✗ FAILED: RuntimeError: claude CLI exit 1: 
+[2026-05-21 21:31:27] [6/10] experience · experiences/overnight-yacht-marbella
+[2026-05-21 21:31:29]   ✗ FAILED: RuntimeError: claude CLI exit 1: 
+[2026-05-21 21:31:29] [7/10] experience · experiences/multi-day-yacht-marbella
+[2026-05-21 21:31:31]   ✗ FAILED: RuntimeError: claude CLI exit 1: 
+[2026-05-21 21:31:31] [8/10] experience · experiences/tarifa-day-trip-marbella
+[2026-05-21 21:31:33]   ✗ FAILED: RuntimeError: claude CLI exit 1: 
+[2026-05-21 21:31:33] [9/10] experience · experiences/calas-marbella-tour
+[2026-05-21 21:31:35]   ✗ FAILED: RuntimeError: claude CLI exit 1: 
+[2026-05-21 21:31:35] [10/10] experience · experiences/marbella-by-night-cruise
+[2026-05-21 21:31:37]   ✗ FAILED: RuntimeError: claude CLI exit 1: 
+[2026-05-21 21:31:37] === Done: 0 succeeded, 10 failed ===
+
+[2026-05-22 10:02:42] === Daily content run (kind-balanced): 5 blog + 5 landing = 10 item(s) ===
+[2026-05-22 10:02:42] [1/10] blog · blog/wedding-yacht-charter-marbella
+[2026-05-22 10:02:47]   ✗ FAILED: RuntimeError: claude CLI exit 1: 
+[2026-05-22 10:02:47] [2/10] blog · blog/bachelor-party-yacht-marbella
+[2026-05-22 10:02:49]   ✗ FAILED: RuntimeError: claude CLI exit 1: 
+[2026-05-22 10:02:49] [3/10] blog · blog/birthday-yacht-charter-marbella
+[2026-05-22 10:02:50]   ✗ FAILED: RuntimeError: claude CLI exit 1: 
+[2026-05-22 10:02:50] [4/10] blog · blog/corporate-yacht-charter-marbella
+[2026-05-22 10:02:52]   ✗ FAILED: RuntimeError: claude CLI exit 1: 
+[2026-05-22 10:02:52] [5/10] blog · blog/anniversary-yacht-charter-marbella
+[2026-05-22 10:02:53]   ✗ FAILED: RuntimeError: claude CLI exit 1: 
+[2026-05-22 10:02:53] [6/10] experience · experiences/overnight-yacht-marbella
+[2026-05-22 10:02:54]   ✗ FAILED: RuntimeError: claude CLI exit 1: 
+[2026-05-22 10:02:54] [7/10] experience · experiences/multi-day-yacht-marbella
+[2026-05-22 10:02:56]   ✗ FAILED: RuntimeError: claude CLI exit 1: 
+[2026-05-22 10:02:56] [8/10] experience · experiences/tarifa-day-trip-marbella
+[2026-05-22 10:02:57]   ✗ FAILED: RuntimeError: claude CLI exit 1: 
+[2026-05-22 10:02:57] [9/10] experience · experiences/calas-marbella-tour
+[2026-05-22 10:02:59]   ✗ FAILED: RuntimeError: claude CLI exit 1: 
+[2026-05-22 10:02:59] [10/10] experience · experiences/marbella-by-night-cruise
+[2026-05-22 10:03:00]   ✗ FAILED: RuntimeError: claude CLI exit 1: 
+[2026-05-22 10:03:00] === Done: 0 succeeded, 10 failed ===
+
+[2026-05-22 20:39:21] === Daily content run (kind-balanced): 5 blog + 5 landing = 10 item(s) ===
+[2026-05-22 20:39:21] [1/10] blog · blog/wedding-yacht-charter-marbella
+[2026-05-22 20:39:23]   ✗ FAILED: RuntimeError: claude CLI exit 1: 
+[2026-05-22 20:39:23] [2/10] blog · blog/bachelor-party-yacht-marbella
+[2026-05-22 20:39:25]   ✗ FAILED: RuntimeError: claude CLI exit 1: 
+[2026-05-22 20:39:25] [3/10] blog · blog/birthday-yacht-charter-marbella
+[2026-05-22 20:39:27]   ✗ FAILED: RuntimeError: claude CLI exit 1: 
+[2026-05-22 20:39:27] [4/10] blog · blog/corporate-yacht-charter-marbella
+[2026-05-22 20:39:29]   ✗ FAILED: RuntimeError: claude CLI exit 1: 
+[2026-05-22 20:39:29] [5/10] blog · blog/anniversary-yacht-charter-marbella
+[2026-05-22 20:39:31]   ✗ FAILED: RuntimeError: claude CLI exit 1: 
+[2026-05-22 20:39:31] [6/10] experience · experiences/overnight-yacht-marbella
+[2026-05-22 20:39:33]   ✗ FAILED: RuntimeError: claude CLI exit 1: 
+[2026-05-22 20:39:33] [7/10] experience · experiences/multi-day-yacht-marbella
+[2026-05-22 20:39:35]   ✗ FAILED: RuntimeError: claude CLI exit 1: 
+[2026-05-22 20:39:35] [8/10] experience · experiences/tarifa-day-trip-marbella
+[2026-05-22 20:39:37]   ✗ FAILED: RuntimeError: claude CLI exit 1: 
+[2026-05-22 20:39:37] [9/10] experience · experiences/calas-marbella-tour
+[2026-05-22 20:39:39]   ✗ FAILED: RuntimeError: claude CLI exit 1: 
+[2026-05-22 20:39:39] [10/10] experience · experiences/marbella-by-night-cruise
+[2026-05-22 20:39:41]   ✗ FAILED: RuntimeError: claude CLI exit 1: 
+[2026-05-22 20:39:41] === Done: 0 succeeded, 10 failed ===
+
+[2026-05-23 10:09:34] === Daily content run (kind-balanced): 5 blog + 5 landing = 10 item(s) ===
+[2026-05-23 10:09:34] [1/10] blog · blog/wedding-yacht-charter-marbella
+[2026-05-23 10:09:35]   ✗ FAILED: RuntimeError: claude CLI exit 1: 
+[2026-05-23 10:09:35] [2/10] blog · blog/bachelor-party-yacht-marbella
+[2026-05-23 10:09:37]   ✗ FAILED: RuntimeError: claude CLI exit 1: 
+[2026-05-23 10:09:37] [3/10] blog · blog/birthday-yacht-charter-marbella
+[2026-05-23 10:09:38]   ✗ FAILED: RuntimeError: claude CLI exit 1: 
+[2026-05-23 10:09:38] [4/10] blog · blog/corporate-yacht-charter-marbella
+[2026-05-23 10:09:39]   ✗ FAILED: RuntimeError: claude CLI exit 1: 
+[2026-05-23 10:09:39] [5/10] blog · blog/anniversary-yacht-charter-marbella
+[2026-05-23 10:09:41]   ✗ FAILED: RuntimeError: claude CLI exit 1: 
+[2026-05-23 10:09:41] [6/10] experience · experiences/overnight-yacht-marbella
+[2026-05-23 10:09:42]   ✗ FAILED: RuntimeError: claude CLI exit 1: 
+[2026-05-23 10:09:42] [7/10] experience · experiences/multi-day-yacht-marbella
+[2026-05-23 10:09:44]   ✗ FAILED: RuntimeError: claude CLI exit 1: 
+[2026-05-23 10:09:44] [8/10] experience · experiences/tarifa-day-trip-marbella
+[2026-05-23 10:09:45]   ✗ FAILED: RuntimeError: claude CLI exit 1: 
+[2026-05-23 10:09:45] [9/10] experience · experiences/calas-marbella-tour
+[2026-05-23 10:09:46]   ✗ FAILED: RuntimeError: claude CLI exit 1: 
+[2026-05-23 10:09:46] [10/10] experience · experiences/marbella-by-night-cruise
+[2026-05-23 10:09:47]   ✗ FAILED: RuntimeError: claude CLI exit 1: 
+[2026-05-23 10:09:47] === Done: 0 succeeded, 10 failed ===
+
+[2026-05-24 10:09:12] === Daily content run (kind-balanced): 5 blog + 5 landing = 10 item(s) ===
+[2026-05-24 10:09:12] [1/10] blog · blog/wedding-yacht-charter-marbella
+[2026-05-24 10:09:15]   ✗ FAILED: RuntimeError: claude CLI exit 1: 
+[2026-05-24 10:09:15] [2/10] blog · blog/bachelor-party-yacht-marbella
+[2026-05-24 10:09:17]   ✗ FAILED: RuntimeError: claude CLI exit 1: 
+[2026-05-24 10:09:17] [3/10] blog · blog/birthday-yacht-charter-marbella
+[2026-05-24 10:09:20]   ✗ FAILED: RuntimeError: claude CLI exit 1: 
+[2026-05-24 10:09:20] [4/10] blog · blog/corporate-yacht-charter-marbella
+[2026-05-24 10:09:21]   ✗ FAILED: RuntimeError: claude CLI exit 1: 
+[2026-05-24 10:09:21] [5/10] blog · blog/anniversary-yacht-charter-marbella
+[2026-05-24 10:09:23]   ✗ FAILED: RuntimeError: claude CLI exit 1: 
+[2026-05-24 10:09:23] [6/10] experience · experiences/overnight-yacht-marbella
+[2026-05-24 10:09:25]   ✗ FAILED: RuntimeError: claude CLI exit 1: 
+[2026-05-24 10:09:25] [7/10] experience · experiences/multi-day-yacht-marbella
+[2026-05-24 10:09:27]   ✗ FAILED: RuntimeError: claude CLI exit 1: 
+[2026-05-24 10:09:27] [8/10] experience · experiences/tarifa-day-trip-marbella
+[2026-05-24 10:09:30]   ✗ FAILED: RuntimeError: claude CLI exit 1: 
+[2026-05-24 10:09:30] [9/10] experience · experiences/calas-marbella-tour
+[2026-05-24 10:09:31]   ✗ FAILED: RuntimeError: claude CLI exit 1: 
+[2026-05-24 10:09:31] [10/10] experience · experiences/marbella-by-night-cruise
+[2026-05-24 10:09:32]   ✗ FAILED: RuntimeError: claude CLI exit 1: 
+[2026-05-24 10:09:32] === Done: 0 succeeded, 10 failed ===
+
+[2026-05-24 14:03:13] === Daily content run (kind-balanced): 5 blog + 5 landing = 10 item(s) ===
+[2026-05-24 14:03:13] [1/10] blog · blog/wedding-yacht-charter-marbella
+[2026-05-24 14:05:04]   ✓ saved content/blog_wedding-yacht-charter-marbella.json
+[2026-05-24 14:05:04]   ✓ added to keyword_map.blog
+[2026-05-24 14:05:04] [2/10] blog · blog/bachelor-party-yacht-marbella
+[2026-05-24 14:06:46]   ✓ saved content/blog_bachelor-party-yacht-marbella.json
+[2026-05-24 14:06:46]   ✓ added to keyword_map.blog
+[2026-05-24 14:06:46] [3/10] blog · blog/birthday-yacht-charter-marbella
+[2026-05-24 14:08:28]   ✓ saved content/blog_birthday-yacht-charter-marbella.json
+[2026-05-24 14:08:28]   ✓ added to keyword_map.blog
+[2026-05-24 14:08:28] [4/10] blog · blog/corporate-yacht-charter-marbella
+[2026-05-24 14:10:01]   ✓ saved content/blog_corporate-yacht-charter-marbella.json
+[2026-05-24 14:10:01]   ✓ added to keyword_map.blog
+[2026-05-24 14:10:01] [5/10] blog · blog/anniversary-yacht-charter-marbella
+[2026-05-24 14:11:33]   ✓ saved content/blog_anniversary-yacht-charter-marbella.json
+[2026-05-24 14:11:33]   ✓ added to keyword_map.blog
+[2026-05-24 14:11:33] [6/10] experience · experiences/overnight-yacht-marbella
+[2026-05-24 14:13:08]   ✓ saved content/experiences_overnight-yacht-marbella.json
+[2026-05-24 14:13:08]   ✓ added to keyword_map.spokes
+[2026-05-24 14:13:08] [7/10] experience · experiences/multi-day-yacht-marbella
+[2026-05-24 14:15:55]   ✓ saved content/experiences_multi-day-yacht-marbella.json
+[2026-05-24 14:15:55]   ✓ added to keyword_map.spokes
+[2026-05-24 14:15:55] [8/10] experience · experiences/tarifa-day-trip-marbella
+[2026-05-24 14:17:30]   ✓ saved content/experiences_tarifa-day-trip-marbella.json
+[2026-05-24 14:17:30]   ✓ added to keyword_map.spokes
+[2026-05-24 14:17:30] [9/10] experience · experiences/calas-marbella-tour
+[2026-05-24 14:18:56]   ✓ saved content/experiences_calas-marbella-tour.json
+[2026-05-24 14:18:56]   ✓ added to keyword_map.spokes
+[2026-05-24 14:18:56] [10/10] experience · experiences/marbella-by-night-cruise
+[2026-05-24 14:20:28]   ✓ saved content/experiences_marbella-by-night-cruise.json
+[2026-05-24 14:20:28]   ✓ added to keyword_map.spokes
+[2026-05-24 14:20:28] queue: 52 remaining, 21 consumed total
+[2026-05-24 14:20:28] running deploy.sh …

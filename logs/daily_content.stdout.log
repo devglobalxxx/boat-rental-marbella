@@ -106,3 +106,26 @@
 [2026-05-24 10:09:32]   ✗ FAILED: RuntimeError: claude CLI exit 1: 
 [2026-05-24 10:09:32] === Done: 0 succeeded, 10 failed ===
 
+[2026-05-25 10:00:05] === Daily content run (kind-balanced): 5 blog + 5 landing = 10 item(s) ===
+[2026-05-25 10:00:05] [1/10] blog · blog/proposal-on-a-yacht-marbella
+[2026-05-25 10:00:06]   ✗ FAILED: RuntimeError: claude CLI exit 1: 
+[2026-05-25 10:00:06] [2/10] blog · blog/best-beaches-by-boat-marbella
+[2026-05-25 10:00:08]   ✗ FAILED: RuntimeError: claude CLI exit 1: 
+[2026-05-25 10:00:08] [3/10] blog · blog/marbella-restaurants-by-boat
+[2026-05-25 10:00:09]   ✗ FAILED: RuntimeError: claude CLI exit 1: 
+[2026-05-25 10:00:09] [4/10] blog · blog/best-snorkel-spots-marbella
+[2026-05-25 10:00:11]   ✗ FAILED: RuntimeError: claude CLI exit 1: 
+[2026-05-25 10:00:11] [5/10] blog · blog/best-anchorages-marbella
+[2026-05-25 10:00:12]   ✗ FAILED: RuntimeError: claude CLI exit 1: 
+[2026-05-25 10:00:12] [6/10] experience · experiences/nye-yacht-marbella
+[2026-05-25 10:00:13]   ✗ FAILED: RuntimeError: claude CLI exit 1: 
+[2026-05-25 10:00:13] [7/10] experience · experiences/africa-from-marbella-by-boat
+[2026-05-25 10:00:15]   ✗ FAILED: RuntimeError: claude CLI exit 1: 
+[2026-05-25 10:00:15] [8/10] experience · experiences/sotogrande-charter-from-marbella
+[2026-05-25 10:00:16]   ✗ FAILED: RuntimeError: claude CLI exit 1: 
+[2026-05-25 10:00:16] [9/10] experience · experiences/estepona-by-boat-from-marbella
+[2026-05-25 10:00:17]   ✗ FAILED: RuntimeError: claude CLI exit 1: 
+[2026-05-25 10:00:17] [10/10] experience · experiences/pirate-boat-marbella-kids
+[2026-05-25 10:00:19]   ✗ FAILED: RuntimeError: claude CLI exit 1: 
+[2026-05-25 10:00:19] === Done: 0 succeeded, 10 failed ===
+

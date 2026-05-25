@@ -4,41 +4,6 @@
   "queue": [
     {
       "kind": "experience",
-      "slug": "experiences/nye-yacht-marbella",
-      "primary_keyword": "New Year's Eve yacht Marbella",
-      "title": "New Year's Eve on a Yacht in Marbella",
-      "target_words": 1000
-    },
-    {
-      "kind": "experience",
-      "slug": "experiences/africa-from-marbella-by-boat",
-      "primary_keyword": "see Africa from Marbella by boat",
-      "title": "See Africa from Marbella by Boat: The Day-Trip Reality",
-      "target_words": 1100
-    },
-    {
-      "kind": "experience",
-      "slug": "experiences/sotogrande-charter-from-marbella",
-      "primary_keyword": "Sotogrande yacht charter from Marbella",
-      "title": "Sotogrande Yacht Charter from Marbella: Half-Day Itinerary",
-      "target_words": 1100
-    },
-    {
-      "kind": "experience",
-      "slug": "experiences/estepona-by-boat-from-marbella",
-      "primary_keyword": "Estepona by boat from Marbella",
-      "title": "Estepona by Boat from Marbella: Day Itinerary",
-      "target_words": 1100
-    },
-    {
-      "kind": "experience",
-      "slug": "experiences/pirate-boat-marbella-kids",
-      "primary_keyword": "pirate boat Marbella kids",
-      "title": "Pirate Boat Experience Marbella: Themed Day for Kids",
-      "target_words": 1000
-    },
-    {
-      "kind": "experience",
       "slug": "experiences/dj-boat-marbella",
       "primary_keyword": "DJ boat party Marbella",
       "title": "DJ Boat Party Marbella: Sound System, Speakers, Sunset",
@@ -49,41 +14,6 @@
       "slug": "experiences/influencer-content-day-marbella",
       "primary_keyword": "influencer content day Marbella yacht",
       "title": "Influencer Content Day Marbella: Yacht-Based Shoot Package",
-      "target_words": 1100
-    },
-    {
-      "kind": "blog",
-      "slug": "blog/proposal-on-a-yacht-marbella",
-      "primary_keyword": "yacht proposal Marbella",
-      "title": "How to Propose on a Yacht in Marbella: Captain's Playbook",
-      "target_words": 1100
-    },
-    {
-      "kind": "blog",
-      "slug": "blog/best-beaches-by-boat-marbella",
-      "primary_keyword": "best beaches by boat Marbella",
-      "title": "Best Beaches Reachable by Boat from Marbella",
-      "target_words": 1300
-    },
-    {
-      "kind": "blog",
-      "slug": "blog/marbella-restaurants-by-boat",
-      "primary_keyword": "Marbella restaurants by boat",
-      "title": "Marbella Restaurants You Can Arrive at by Boat",
-      "target_words": 1200
-    },
-    {
-      "kind": "blog",
-      "slug": "blog/best-snorkel-spots-marbella",
-      "primary_keyword": "best snorkel spots Marbella",
-      "title": "Best Snorkel Spots on a Marbella Charter (Captain's Picks)",
-      "target_words": 1100
-    },
-    {
-      "kind": "blog",
-      "slug": "blog/best-anchorages-marbella",
-      "primary_keyword": "best anchorages Marbella",
-      "title": "Best Anchorages Between Estepona and Cabopino",
       "target_words": 1100
     },
     {
@@ -555,6 +485,86 @@
       "title": "Marbella by Night: Evening Yacht Cruise from Puerto Banús",
       "target_words": 1000,
       "consumed_at": "2026-05-24"
+    },
+    {
+      "kind": "blog",
+      "slug": "blog/proposal-on-a-yacht-marbella",
+      "primary_keyword": "yacht proposal Marbella",
+      "title": "How to Propose on a Yacht in Marbella: Captain's Playbook",
+      "target_words": 1100,
+      "consumed_at": "2026-05-25"
+    },
+    {
+      "kind": "blog",
+      "slug": "blog/best-beaches-by-boat-marbella",
+      "primary_keyword": "best beaches by boat Marbella",
+      "title": "Best Beaches Reachable by Boat from Marbella",
+      "target_words": 1300,
+      "consumed_at": "2026-05-25"
+    },
+    {
+      "kind": "blog",
+      "slug": "blog/marbella-restaurants-by-boat",
+      "primary_keyword": "Marbella restaurants by boat",
+      "title": "Marbella Restaurants You Can Arrive at by Boat",
+      "target_words": 1200,
+      "consumed_at": "2026-05-25"
+    },
+    {
+      "kind": "blog",
+      "slug": "blog/best-snorkel-spots-marbella",
+      "primary_keyword": "best snorkel spots Marbella",
+      "title": "Best Snorkel Spots on a Marbella Charter (Captain's Picks)",
+      "target_words": 1100,
+      "consumed_at": "2026-05-25"
+    },
+    {
+      "kind": "blog",
+      "slug": "blog/best-anchorages-marbella",
+      "primary_keyword": "best anchorages Marbella",
+      "title": "Best Anchorages Between Estepona and Cabopino",
+      "target_words": 1100,
+      "consumed_at": "2026-05-25"
+    },
+    {
+      "kind": "experience",
+      "slug": "experiences/nye-yacht-marbella",
+      "primary_keyword": "New Year's Eve yacht Marbella",
+      "title": "New Year's Eve on a Yacht in Marbella",
+      "target_words": 1000,
+      "consumed_at": "2026-05-25"
+    },
+    {
+      "kind": "experience",
+      "slug": "experiences/africa-from-marbella-by-boat",
+      "primary_keyword": "see Africa from Marbella by boat",
+      "title": "See Africa from Marbella by Boat: The Day-Trip Reality",
+      "target_words": 1100,
+      "consumed_at": "2026-05-25"
+    },
+    {
+      "kind": "experience",
+      "slug": "experiences/sotogrande-charter-from-marbella",
+      "primary_keyword": "Sotogrande yacht charter from Marbella",
+      "title": "Sotogrande Yacht Charter from Marbella: Half-Day Itinerary",
+      "target_words": 1100,
+      "consumed_at": "2026-05-25"
+    },
+    {
+      "kind": "experience",
+      "slug": "experiences/estepona-by-boat-from-marbella",
+      "primary_keyword": "Estepona by boat from Marbella",
+      "title": "Estepona by Boat from Marbella: Day Itinerary",
+      "target_words": 1100,
+      "consumed_at": "2026-05-25"
+    },
+    {
+      "kind": "experience",
+      "slug": "experiences/pirate-boat-marbella-kids",
+      "primary_keyword": "pirate boat Marbella kids",
+      "title": "Pirate Boat Experience Marbella: Themed Day for Kids",
+      "target_words": 1000,
+      "consumed_at": "2026-05-25"
     }
   ],
   "refill_threshold": 30,

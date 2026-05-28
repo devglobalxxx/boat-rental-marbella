@@ -604,6 +604,41 @@
       "title": "Marbella Polo Cup: Sotogrande Polo + Same-Day Yacht Charter Itinerary",
       "intent": "informational",
       "target_words": 1100
+    },
+    {
+      "slug": "blog/white-party-marbella-yacht",
+      "primary_keyword": "white party Marbella yacht",
+      "title": "White Party Marbella: Pre-Party Yacht Charter With Dress-Code Tips",
+      "intent": "informational",
+      "target_words": 1100
+    },
+    {
+      "slug": "blog/nikki-beach-marbella-yacht",
+      "primary_keyword": "Nikki Beach Marbella yacht",
+      "title": "Nikki Beach Marbella: Arrive by Yacht, Tender Drop, Lunch Plan",
+      "intent": "informational",
+      "target_words": 1100
+    },
+    {
+      "slug": "blog/ocean-club-marbella-yacht-arrival",
+      "primary_keyword": "Ocean Club Marbella yacht",
+      "title": "Ocean Club Marbella by Yacht: Anchor Off, Tender In, the Day That Works",
+      "intent": "informational",
+      "target_words": 1100
+    },
+    {
+      "slug": "blog/sala-by-the-sea-yacht-arrival",
+      "primary_keyword": "Sala by the Sea Marbella yacht",
+      "title": "Sala by the Sea Marbella by Yacht: How to Combine Beach Club + Sunset Cruise",
+      "intent": "informational",
+      "target_words": 1100
+    },
+    {
+      "slug": "blog/la-sala-puerto-banus-yacht",
+      "primary_keyword": "La Sala Puerto Banús yacht",
+      "title": "La Sala Puerto Banús + Sunset Charter: The Marbella Date-Night Combo",
+      "intent": "informational",
+      "target_words": 1100
     }
   ]
 }

@@ -607,3 +607,32 @@ hint: See the 'Note about fast-forwards' in 'git push --help' for details.
 [2026-05-27 18:33:03] queue under threshold (15 < 30) — auto-refilling…
 [2026-05-27 18:33:06] refill failed: RuntimeError: claude CLI exit 1: 
 [2026-05-27 18:33:06] running deploy.sh …
+[2026-05-27 18:33:08] deploy.sh exited 1: 9/boat-rental-marbella.git
+ ! [rejected]        main -> main (fetch first)
+error: failed to push some refs to 'https://github.com/mardo89/boat-rental-marbella.git'
+hint: Updates were rejected because the remote contains work that you do not
+hint: have locally. This is usually caused by another repository pushing to
+hint: the same ref. If you want to integrate the remote changes, use
+hint: 'git pull' before pushing again.
+hint: See the 'Note about fast-forwards' in 'git push --help' for details.
+
+[2026-05-28 10:00:02] === Daily content run (kind-balanced): 5 blog + 0 landing = 5 item(s) ===
+[2026-05-28 10:00:02] [1/5] blog · blog/white-party-marbella-yacht
+[2026-05-28 10:00:35]   ✓ saved content/blog_white-party-marbella-yacht.json
+[2026-05-28 10:00:35]   ✓ added to keyword_map.blog
+[2026-05-28 10:00:35] [2/5] blog · blog/nikki-beach-marbella-yacht
+[2026-05-28 10:01:10]   ✓ saved content/blog_nikki-beach-marbella-yacht.json
+[2026-05-28 10:01:10]   ✓ added to keyword_map.blog
+[2026-05-28 10:01:10] [3/5] blog · blog/ocean-club-marbella-yacht-arrival
+[2026-05-28 10:01:43]   ✓ saved content/blog_ocean-club-marbella-yacht-arrival.json
+[2026-05-28 10:01:43]   ✓ added to keyword_map.blog
+[2026-05-28 10:01:43] [4/5] blog · blog/sala-by-the-sea-yacht-arrival
+[2026-05-28 10:02:22]   ✓ saved content/blog_sala-by-the-sea-yacht-arrival.json
+[2026-05-28 10:02:22]   ✓ added to keyword_map.blog
+[2026-05-28 10:02:22] [5/5] blog · blog/la-sala-puerto-banus-yacht
+[2026-05-28 10:02:59]   ✓ saved content/blog_la-sala-puerto-banus-yacht.json
+[2026-05-28 10:02:59]   ✓ added to keyword_map.blog
+[2026-05-28 10:02:59] queue: 10 remaining, 63 consumed total
+[2026-05-28 10:02:59] queue under threshold (10 < 30) — auto-refilling…
+[2026-05-28 10:03:00] refill failed: RuntimeError: claude CLI exit 1: 
+[2026-05-28 10:03:00] running deploy.sh …

@@ -196,3 +196,32 @@ hint: the same ref. If you want to integrate the remote changes, use
 hint: 'git pull' before pushing again.
 hint: See the 'Note about fast-forwards' in 'git push --help' for details.
 
+[2026-05-29 10:00:02] === Daily content run (kind-balanced): 5 blog + 3 landing = 8 item(s) ===
+[2026-05-29 10:00:02] [1/8] blog · blog/andalusia-day-yacht
+[2026-05-29 10:00:24]   ✓ saved content/blog_andalusia-day-yacht.json
+[2026-05-29 10:00:25]   ✓ added to keyword_map.blog
+[2026-05-29 10:00:25] [2/8] blog · blog/epiphany-three-kings-marbella-boat
+[2026-05-29 10:00:48]   ✓ saved content/blog_epiphany-three-kings-marbella-boat.json
+[2026-05-29 10:00:48]   ✓ added to keyword_map.blog
+[2026-05-29 10:00:48] [3/8] blog · blog/real-madrid-final-marbella-yacht
+[2026-05-29 10:01:15]   ✓ saved content/blog_real-madrid-final-marbella-yacht.json
+[2026-05-29 10:01:15]   ✓ added to keyword_map.blog
+[2026-05-29 10:01:15] [4/8] blog · blog/eurovision-yacht-party-marbella
+[2026-05-29 10:01:39]   ✓ saved content/blog_eurovision-yacht-party-marbella.json
+[2026-05-29 10:01:39]   ✓ added to keyword_map.blog
+[2026-05-29 10:01:39] [5/8] blog · blog/vendimia-marbella-yacht
+[2026-05-29 10:02:04]   ✓ saved content/blog_vendimia-marbella-yacht.json
+[2026-05-29 10:02:04]   ✓ added to keyword_map.blog
+[2026-05-29 10:02:04] [6/8] experience · experiences/golf-and-yacht-package-marbella
+[2026-05-29 10:02:34]   ✓ saved content/experiences_golf-and-yacht-package-marbella.json
+[2026-05-29 10:02:34]   ✓ added to keyword_map.spokes
+[2026-05-29 10:02:34] [7/8] spoke · hen-party-yacht-marbella
+[2026-05-29 10:02:54]   ✓ saved content/hen-party-yacht-marbella.json
+[2026-05-29 10:02:54]   ✓ added to keyword_map.spokes
+[2026-05-29 10:02:54] [8/8] spoke · corporate-boat-hire-marbella
+[2026-05-29 10:03:16]   ✓ saved content/corporate-boat-hire-marbella.json
+[2026-05-29 10:03:16]   ✓ added to keyword_map.spokes
+[2026-05-29 10:03:16] queue: 22 remaining, 81 consumed total
+[2026-05-29 10:03:16] queue under threshold (22 < 30) — auto-refilling…
+[2026-05-29 10:03:18] refill failed: RuntimeError: claude CLI exit 1: 
+[2026-05-29 10:03:18] running deploy.sh …

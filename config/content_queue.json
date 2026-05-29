@@ -4,41 +4,6 @@
   "queue": [
     {
       "kind": "blog",
-      "slug": "blog/andalusia-day-yacht",
-      "primary_keyword": "Andalusia Day yacht Marbella",
-      "title": "Día de Andalucía 28 Feb: Quiet Early-Season Yacht Charter in Marbella",
-      "target_words": 1100
-    },
-    {
-      "kind": "blog",
-      "slug": "blog/epiphany-three-kings-marbella-boat",
-      "primary_keyword": "Three Kings Parade Marbella yacht",
-      "title": "Epiphany / Three Kings Parade Marbella: Family Boat Day Around the Holiday",
-      "target_words": 1100
-    },
-    {
-      "kind": "blog",
-      "slug": "blog/real-madrid-final-marbella-yacht",
-      "primary_keyword": "Real Madrid final yacht Marbella",
-      "title": "Champions League Final in Marbella by Yacht: Big-Screen Beach Club + Pre-Match Cruise",
-      "target_words": 1100
-    },
-    {
-      "kind": "blog",
-      "slug": "blog/eurovision-yacht-party-marbella",
-      "primary_keyword": "Eurovision yacht party Marbella",
-      "title": "Eurovision Final on a Yacht in Marbella: BYO Songbook, Sunset Cruise",
-      "target_words": 1100
-    },
-    {
-      "kind": "blog",
-      "slug": "blog/vendimia-marbella-yacht",
-      "primary_keyword": "Marbella vendimia harvest yacht",
-      "title": "Marbella Wine Harvest Weekend: Vendimia Vibes + Cava-on-Cruise",
-      "target_words": 1100
-    },
-    {
-      "kind": "blog",
       "slug": "blog/marbella-half-day-vs-full-day-charter",
       "primary_keyword": "half day vs full day yacht charter marbella",
       "title": "Half Day vs Full Day Yacht Charter Marbella: Which Wins?",
@@ -189,27 +154,6 @@
       "slug": "blog/marbella-yacht-charter-with-pets",
       "primary_keyword": "yacht charter with pets marbella",
       "title": "Yacht Charter With Pets in Marbella: Dog-Friendly Boats",
-      "target_words": 1100
-    },
-    {
-      "kind": "experience",
-      "slug": "experiences/golf-and-yacht-package-marbella",
-      "primary_keyword": "golf and yacht package marbella",
-      "title": "Golf & Yacht Package Marbella: Round + Charter Combos",
-      "target_words": 1100
-    },
-    {
-      "kind": "spoke",
-      "slug": "hen-party-yacht-marbella",
-      "primary_keyword": "hen party yacht marbella",
-      "title": "Hen Party Yacht Marbella: Boats, Packages & 2026 Prices",
-      "target_words": 1100
-    },
-    {
-      "kind": "spoke",
-      "slug": "corporate-boat-hire-marbella",
-      "primary_keyword": "corporate boat hire marbella",
-      "title": "Corporate Boat Hire Marbella: Team Days & Client Events",
       "target_words": 1100
     }
   ],
@@ -817,6 +761,70 @@
       "title": "Divorce Party Yacht Marbella: Celebrate the New Chapter",
       "target_words": 1100,
       "consumed_at": "2026-05-28"
+    },
+    {
+      "kind": "blog",
+      "slug": "blog/andalusia-day-yacht",
+      "primary_keyword": "Andalusia Day yacht Marbella",
+      "title": "Día de Andalucía 28 Feb: Quiet Early-Season Yacht Charter in Marbella",
+      "target_words": 1100,
+      "consumed_at": "2026-05-29"
+    },
+    {
+      "kind": "blog",
+      "slug": "blog/epiphany-three-kings-marbella-boat",
+      "primary_keyword": "Three Kings Parade Marbella yacht",
+      "title": "Epiphany / Three Kings Parade Marbella: Family Boat Day Around the Holiday",
+      "target_words": 1100,
+      "consumed_at": "2026-05-29"
+    },
+    {
+      "kind": "blog",
+      "slug": "blog/real-madrid-final-marbella-yacht",
+      "primary_keyword": "Real Madrid final yacht Marbella",
+      "title": "Champions League Final in Marbella by Yacht: Big-Screen Beach Club + Pre-Match Cruise",
+      "target_words": 1100,
+      "consumed_at": "2026-05-29"
+    },
+    {
+      "kind": "blog",
+      "slug": "blog/eurovision-yacht-party-marbella",
+      "primary_keyword": "Eurovision yacht party Marbella",
+      "title": "Eurovision Final on a Yacht in Marbella: BYO Songbook, Sunset Cruise",
+      "target_words": 1100,
+      "consumed_at": "2026-05-29"
+    },
+    {
+      "kind": "blog",
+      "slug": "blog/vendimia-marbella-yacht",
+      "primary_keyword": "Marbella vendimia harvest yacht",
+      "title": "Marbella Wine Harvest Weekend: Vendimia Vibes + Cava-on-Cruise",
+      "target_words": 1100,
+      "consumed_at": "2026-05-29"
+    },
+    {
+      "kind": "experience",
+      "slug": "experiences/golf-and-yacht-package-marbella",
+      "primary_keyword": "golf and yacht package marbella",
+      "title": "Golf & Yacht Package Marbella: Round + Charter Combos",
+      "target_words": 1100,
+      "consumed_at": "2026-05-29"
+    },
+    {
+      "kind": "spoke",
+      "slug": "hen-party-yacht-marbella",
+      "primary_keyword": "hen party yacht marbella",
+      "title": "Hen Party Yacht Marbella: Boats, Packages & 2026 Prices",
+      "target_words": 1100,
+      "consumed_at": "2026-05-29"
+    },
+    {
+      "kind": "spoke",
+      "slug": "corporate-boat-hire-marbella",
+      "primary_keyword": "corporate boat hire marbella",
+      "title": "Corporate Boat Hire Marbella: Team Days & Client Events",
+      "target_words": 1100,
+      "consumed_at": "2026-05-29"
     }
   ],
   "refill_threshold": 30,

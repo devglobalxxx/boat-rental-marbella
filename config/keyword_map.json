@@ -301,6 +301,27 @@
       "title": "Divorce Party Yacht Marbella: Celebrate the New Chapter",
       "intent": "transactional",
       "target_words": 1100
+    },
+    {
+      "slug": "experiences/golf-and-yacht-package-marbella",
+      "primary_keyword": "golf and yacht package marbella",
+      "title": "Golf & Yacht Package Marbella: Round + Charter Combos",
+      "intent": "transactional",
+      "target_words": 1100
+    },
+    {
+      "slug": "hen-party-yacht-marbella",
+      "primary_keyword": "hen party yacht marbella",
+      "title": "Hen Party Yacht Marbella: Boats, Packages & 2026 Prices",
+      "intent": "transactional",
+      "target_words": 1100
+    },
+    {
+      "slug": "corporate-boat-hire-marbella",
+      "primary_keyword": "corporate boat hire marbella",
+      "title": "Corporate Boat Hire Marbella: Team Days & Client Events",
+      "intent": "transactional",
+      "target_words": 1100
     }
   ],
   "blog": [
@@ -707,6 +728,41 @@
       "slug": "blog/constitution-day-marbella-yacht",
       "primary_keyword": "Constitution Day Marbella yacht",
       "title": "Constitution Day Weekend in Marbella: 6th of December Yacht Itinerary",
+      "intent": "informational",
+      "target_words": 1100
+    },
+    {
+      "slug": "blog/andalusia-day-yacht",
+      "primary_keyword": "Andalusia Day yacht Marbella",
+      "title": "Día de Andalucía 28 Feb: Quiet Early-Season Yacht Charter in Marbella",
+      "intent": "informational",
+      "target_words": 1100
+    },
+    {
+      "slug": "blog/epiphany-three-kings-marbella-boat",
+      "primary_keyword": "Three Kings Parade Marbella yacht",
+      "title": "Epiphany / Three Kings Parade Marbella: Family Boat Day Around the Holiday",
+      "intent": "informational",
+      "target_words": 1100
+    },
+    {
+      "slug": "blog/real-madrid-final-marbella-yacht",
+      "primary_keyword": "Real Madrid final yacht Marbella",
+      "title": "Champions League Final in Marbella by Yacht: Big-Screen Beach Club + Pre-Match Cruise",
+      "intent": "informational",
+      "target_words": 1100
+    },
+    {
+      "slug": "blog/eurovision-yacht-party-marbella",
+      "primary_keyword": "Eurovision yacht party Marbella",
+      "title": "Eurovision Final on a Yacht in Marbella: BYO Songbook, Sunset Cruise",
+      "intent": "informational",
+      "target_words": 1100
+    },
+    {
+      "slug": "blog/vendimia-marbella-yacht",
+      "primary_keyword": "Marbella vendimia harvest yacht",
+      "title": "Marbella Wine Harvest Weekend: Vendimia Vibes + Cava-on-Cruise",
       "intent": "informational",
       "target_words": 1100
     }

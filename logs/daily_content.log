@@ -750,3 +750,27 @@ hint: See the 'Note about fast-forwards' in 'git push --help' for details.
 [2026-05-29 10:03:16] queue under threshold (22 < 30) — auto-refilling…
 [2026-05-29 10:03:18] refill failed: RuntimeError: claude CLI exit 1: 
 [2026-05-29 10:03:18] running deploy.sh …
+[2026-05-29 10:03:19] deploy.sh exited 1: 9/boat-rental-marbella.git
+ ! [rejected]        main -> main (fetch first)
+error: failed to push some refs to 'https://github.com/mardo89/boat-rental-marbella.git'
+hint: Updates were rejected because the remote contains work that you do not
+hint: have locally. This is usually caused by another repository pushing to
+hint: the same ref. If you want to integrate the remote changes, use
+hint: 'git pull' before pushing again.
+hint: See the 'Note about fast-forwards' in 'git push --help' for details.
+
+[2026-05-29 18:50:35] === Daily content run (kind-balanced): 5 blog + 0 landing = 5 item(s) ===
+[2026-05-29 18:50:35] [1/5] blog · blog/marbella-half-day-vs-full-day-charter
+[2026-05-29 18:50:35]   ✗ FAILED: AttributeError: 'function' object has no attribute 'warning'
+[2026-05-29 18:50:35] [2/5] blog · blog/tipping-yacht-crew-marbella
+[2026-05-29 18:50:35]   ✗ FAILED: AttributeError: 'function' object has no attribute 'warning'
+[2026-05-29 18:50:35] [3/5] blog · blog/levante-vs-poniente-wind-marbella-charter
+[2026-05-29 18:50:35]   ✗ FAILED: AttributeError: 'function' object has no attribute 'warning'
+[2026-05-29 18:50:35] [4/5] blog · blog/marbella-yacht-charter-cancellation-policy
+[2026-05-29 18:50:35]   ✗ FAILED: AttributeError: 'function' object has no attribute 'warning'
+[2026-05-29 18:50:35] [5/5] blog · blog/seasickness-kids-marbella-boat
+[2026-05-29 18:50:35]   ✗ FAILED: AttributeError: 'function' object has no attribute 'warning'
+[2026-05-29 18:50:35] queue under threshold (22 < 30) — auto-refilling…
+[2026-05-29 18:51:23] refill failed: RuntimeError: claude CLI exit 1: 
+[2026-05-29 18:51:23] === Done: 0 succeeded, 5 failed ===
+

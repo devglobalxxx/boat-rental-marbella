@@ -77,7 +77,7 @@
     <h1 class="hero-title">{{HERO_H1}}</h1>
     <p class="hero-sub">{{HERO_SUB}}</p>
     <div class="hero-meta">
-      <span class="hero-price">From <strong>€{{PRICE_LOW}}</strong> · 2h skippered</span>
+      <span class="hero-price">From <strong>€{{PRICE_LOW}}</strong> · {{PRICE_LABEL}}</span>
       <span class="hero-dot">·</span>
       <span class="hero-incl">Skipper, drinks (beer · wine · cava), snacks &amp; VAT included</span>
     </div>

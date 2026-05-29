@@ -480,10 +480,14 @@ def render_boat(boat):
         jsonld=jsonld,
         breadcrumbs=f'<nav class="breadcrumbs"><a href="/">Home</a> › <a href="/boats/">Boats</a> › <span>{html.escape(name)}</span></nav>',
         wa_text=wa_text,
+        price_low=(None if is_on_request(boat) else lowest_price(boat)),
+        price_label=("Quote on WhatsApp" if is_on_request(boat) else f"{entry_duration(boat)} skippered charter"),
+        book_pitch=(f"The {name} is our flagship — minimum {entry_duration(boat)} charter, jet ski included free for the day. Longer charters and overnights quoted on WhatsApp."
+                    if boat.get("tier") == "tier_b" else None),
     )
 
 # ---------- shared writer ----------
-def write_page(slug, title, meta, h1, sub, eyebrow, hero_img, hero_srcset, hero_alt, body_html, jsonld, breadcrumbs, wa_text=None):
+def write_page(slug, title, meta, h1, sub, eyebrow, hero_img, hero_srcset, hero_alt, body_html, jsonld, breadcrumbs, wa_text=None, price_low=None, price_label=None, book_pitch=None):
     url = f"{SITE['base_url']}/{slug}/"
     wa = wa_link(wa_text or "Hi, I'd like to book a boat in Marbella")
     repl = {
@@ -502,9 +506,9 @@ def write_page(slug, title, meta, h1, sub, eyebrow, hero_img, hero_srcset, hero_
         "{{OG_TYPE}}": "website",
         "{{CSS_HREF}}": "/styles.css",
         "{{JSONLD}}": json.dumps(jsonld, ensure_ascii=False),
-        "{{PRICE_LOW}}": str(SITE['price_anchor_low_2h']),
-        "{{PRICE_LABEL}}": "2h skippered charter",
-        "{{BOOK_PITCH}}": "Instant quotes from local operators across Puerto Banús, Marbella Marina, Cabopino, Estepona &amp; Sotogrande.",
+        "{{PRICE_LOW}}": (f"{price_low:,}" if price_low else str(SITE['price_anchor_low_2h'])),
+        "{{PRICE_LABEL}}": (price_label or "2h skippered charter"),
+        "{{BOOK_PITCH}}": (html.escape(book_pitch) if book_pitch else "Instant quotes from local operators across Puerto Banús, Marbella Marina, Cabopino, Estepona &amp; Sotogrande."),
         "{{BOAT_GRID}}": "",
         "{{BREADCRUMBS}}": breadcrumbs,
         "{{BODY_HTML}}": body_html,

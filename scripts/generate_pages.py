@@ -142,18 +142,6 @@ PAGE_HERO_MAP = {
     "blog/astondoa-40-vs-smaller-yachts-marbella": "astondoa-interior",
     "blog/azimut-39-vs-smaller-yachts-marbella": "azimut-aerial",
     "blog/mangusta-80-vs-smaller-yachts-marbella": "mangusta-saloon",
-    "owners/list-your-boat-marbella": "astondoa-lifestyle",
-    "owners/peer-to-peer-boat-rental-marbella": "astondoa-hero",
-    "owners/boat-rental-insurance-spain": "azimut-hero",
-    "owners/start-boat-rental-business-marbella": "mangusta-aerial",
-    "owners/list-your-yacht-marbella": "mangusta-hero",
-    "owners/list-your-jet-ski-marbella": "jetski-fleet",
-    "owners/list-your-sailboat-marbella": "astondoa-sunset",
-    "owners/list-your-catamaran-marbella": "mangusta-sun-pad",
-    "boat-rental-estepona": "astondoa-sunset",
-    "boat-rental-malaga": "azimut-hero",
-    "boat-rental-sotogrande": "astondoa-hero",
-    "mediterranean-bareboat-charter-marbella": "astondoa-hero",
 }
 
 # Per-page book-card override (price / duration label / pitch text)
@@ -199,14 +187,6 @@ PAGE_INLINE_MAP = {
     "blog/astondoa-40-vs-smaller-yachts-marbella": "astondoa-hero",
     "blog/azimut-39-vs-smaller-yachts-marbella": "azimut-hero",
     "blog/mangusta-80-vs-smaller-yachts-marbella": "mangusta-hero",
-    "owners/list-your-boat-marbella": "astondoa-sunset",
-    "owners/peer-to-peer-boat-rental-marbella": "mangusta-aerial",
-    "owners/boat-rental-insurance-spain": "astondoa-hero",
-    "owners/start-boat-rental-business-marbella": "azimut-aerial",
-    "owners/list-your-yacht-marbella": "mangusta-profile",
-    "owners/list-your-jet-ski-marbella": "jetski-cruise",
-    "owners/list-your-sailboat-marbella": "astondoa-hero",
-    "owners/list-your-catamaran-marbella": "mangusta-hero",
 }
 
 def fleet_hero_for(slug):
@@ -373,57 +353,6 @@ Use a clear hub-and-spoke linking instinct: where natural, write phrases like "s
 Always include at least one inline link to / (the hub).
 """
 
-OWNER_SYSTEM = f"""You are an SEO copywriter producing OWNER-SUPPLY landing pages for {SITE['name']} ({SITE['domain']}).
-
-AUDIENCE: boat OWNERS in Marbella / Costa del Sol who want to rent their boat, yacht, sailboat, jet ski or catamaran out for income — NOT renters looking to book.
-
-THE OFFER (what these pages pitch)
-- Free listing on {SITE['name']} (no upfront fee).
-- Local Marbella team handles enquiries via WhatsApp ({SITE['phone_display']}) and email ({SITE['email']}).
-- Owner keeps the majority of the daily rate; commission ~15–20% per booked day (lower than Boatsetter / Click&Boat / Samboat which run 15–35%+ once their insurance load is included).
-- Bookings concentrated May–October, peak July–August.
-- Owner remains in control of calendar, captain choice, blocked-off personal-use weeks.
-- Departures from Puerto Banús, Marbella Marina, Cabopino, Estepona, Sotogrande.
-
-WRITING STYLE
-- Answer-first. Every H2 opens with a direct factual answer in 1–2 sentences, then expands.
-- Specific numbers: realistic monthly earnings (€3k–€18k/mo depending on boat size and season), commission %, insurance premium ranges (€800–€3,500/yr for charter cover in Spain), occupancy rates (35–60% in peak months).
-- British English. Honest about trade-offs: wear-and-tear, insurance gaps on personal policies, Spanish "lista 6 vs lista 7" charter-registration constraint, captain requirements.
-- No "in conclusion", no AI throat-clearing, no "unlock the potential of".
-- Reference real platforms by name when comparing (Boatsetter, GetMyBoat, Click&Boat, Samboat) — factual, not bashing.
-
-MANDATORY CONTENT BEATS (cover most of these across the body)
-- How much owners can earn (with a small table by boat type / size / season).
-- How the listing works step-by-step (submit boat → photos → calendar → bookings via WhatsApp).
-- Insurance: what a normal pleasure-use policy covers vs what charter use requires; what to ask the broker.
-- Spanish legal reality: "lista 6" (charter) vs "lista 7" (private) registration, captain requirements for >15hp / >5m, despacho paperwork.
-- Commission comparison vs Boatsetter / GetMyBoat / Click&Boat / Samboat.
-- Owner protections: damage deposit policy, captain-only options, blacklist of risky renters.
-- Why local-only beats global platforms (in-person check-in/out, fast WhatsApp triage with the marina).
-- A clear primary CTA: "List your boat — WhatsApp us" pointing at the WA link.
-
-OUTPUT FORMAT (strict JSON, no prose, no code fences):
-{{
-  "meta_description": "<150–160 chars, includes primary keyword + 1 number + an owner-side CTA verb like 'list', 'earn', 'rent out'>",
-  "summary": "<2 sentence factual summary of the page for internal-link-graph use>",
-  "key_facts": ["<5–8 short facts about listing / earnings / commission / insurance, each ≤120 chars>"],
-  "faq": [{{"q":"...","a":"..."}}, ... 6–8 Q&A pairs aimed at OWNERS, answers 30–80 words each. Include 'How much can I earn', 'What about insurance', 'How does commission compare to Boatsetter', 'Do I need lista 6'],
-  "body_html": "<full <section>/<h2>/<p>/<ul>/<table>/<details> markup, ~{{TARGET_WORDS}} words, starts with an intro <p> addressing the owner, then 5–9 H2 sections covering the beats above (include at least one <table> for an earnings or commission comparison), then a 'Frequently asked questions' H2 with <details><summary>question</summary><p>answer</p></details> blocks mirroring the faq array; never include <h1>/<html>/<head>/<body>, no inline CSS, no script>"
-}}
-
-Use markdown inline links [anchor](/slug/) — post-processed to <a>. Cross-link freely between the owner pages:
-- /owners/list-your-boat-marbella/ (main owner hub)
-- /owners/peer-to-peer-boat-rental-marbella/
-- /owners/boat-rental-insurance-spain/
-- /owners/start-boat-rental-business-marbella/
-- /owners/list-your-yacht-marbella/
-- /owners/list-your-jet-ski-marbella/
-- /owners/list-your-sailboat-marbella/
-- /owners/list-your-catamaran-marbella/
-- / (renter hub — link once as 'see the renter-side site')
-
-Use 3–6 inline links per page. Always include at least one link to /owners/list-your-boat-marbella/ (the owner hub) and one to /owners/boat-rental-insurance-spain/.
-"""
 
 def build_user_prompt(page: dict, kind: str) -> str:
     return f"""Write the page for:
@@ -510,19 +439,16 @@ def breadcrumb_html(page: dict) -> str:
     parts = ['<nav class="breadcrumbs"><a href="/">Home</a> ›']
     if page['slug'].startswith("blog/"):
         parts.append(' <a href="/blog/">Guide</a> ›')
-    elif page['slug'].startswith("owners/"):
-        parts.append(' <a href="/owners/list-your-boat-marbella/">For Owners</a> ›')
     parts.append(f' <span>{html.escape(page["title"])}</span></nav>')
     return "".join(parts)
 
 # ---------- Claude call ----------
 def generate(page: dict, kind: str) -> dict:
     prompt = build_user_prompt(page, kind)
-    sys_prompt = OWNER_SYSTEM if page.get("intent") == "owner_supply" else SYSTEM
     msg = client.messages.create(
         model=MODEL,
         max_tokens=8000,
-        system=[{"type":"text","text":sys_prompt,"cache_control":{"type":"ephemeral"}}],
+        system=[{"type":"text","text":SYSTEM,"cache_control":{"type":"ephemeral"}}],
         messages=[{"role":"user","content":prompt}],
     )
     raw = msg.content[0].text.strip()

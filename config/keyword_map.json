@@ -332,6 +332,62 @@
       "title": "Corporate Boat Hire Marbella: Team Days & Client Events",
       "intent": "transactional",
       "target_words": 1100
+    },
+    {
+      "slug": "owners/list-your-boat-marbella",
+      "primary_keyword": "rent out my boat",
+      "title": "List Your Boat in Marbella: Rent It Out & Earn from €400/day",
+      "intent": "owner_supply",
+      "target_words": 1400
+    },
+    {
+      "slug": "owners/peer-to-peer-boat-rental-marbella",
+      "primary_keyword": "peer to peer boat rental",
+      "title": "Peer-to-Peer Boat Rental Marbella: Airbnb-Style Yacht Sharing",
+      "intent": "owner_supply",
+      "target_words": 1300
+    },
+    {
+      "slug": "owners/boat-rental-insurance-spain",
+      "primary_keyword": "peer to peer boat rental insurance",
+      "title": "Boat Rental Insurance for Owners (Spain): P2P & Short-Term Cover",
+      "intent": "owner_supply",
+      "target_words": 1300
+    },
+    {
+      "slug": "owners/start-boat-rental-business-marbella",
+      "primary_keyword": "boat rental business",
+      "title": "Start a Boat Rental Business in Marbella: 2026 Owner's Guide",
+      "intent": "owner_supply",
+      "target_words": 1400
+    },
+    {
+      "slug": "owners/list-your-yacht-marbella",
+      "primary_keyword": "rent out my yacht",
+      "title": "List Your Yacht in Marbella: Charter Management & Earnings",
+      "intent": "owner_supply",
+      "target_words": 1200
+    },
+    {
+      "slug": "owners/list-your-jet-ski-marbella",
+      "primary_keyword": "rent out my jet ski",
+      "title": "List Your Jet Ski in Marbella: Rent It Out from Puerto Banús",
+      "intent": "owner_supply",
+      "target_words": 1100
+    },
+    {
+      "slug": "owners/list-your-sailboat-marbella",
+      "primary_keyword": "rent out my sailboat",
+      "title": "List Your Sailboat in Marbella: Charter Out Your Yacht",
+      "intent": "owner_supply",
+      "target_words": 1100
+    },
+    {
+      "slug": "owners/list-your-catamaran-marbella",
+      "primary_keyword": "charter my catamaran",
+      "title": "Charter Out Your Catamaran in Marbella: Owner Listing Guide",
+      "intent": "owner_supply",
+      "target_words": 1100
     }
   ],
   "blog": [

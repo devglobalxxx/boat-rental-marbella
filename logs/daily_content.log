@@ -840,3 +840,26 @@ hint: See the 'Note about fast-forwards' in 'git push --help' for details.
 [2026-05-30 15:32:03] queue under threshold (7 < 30) — auto-refilling…
 [2026-05-30 15:32:06] refill failed: RuntimeError: claude CLI exit 1: 
 [2026-05-30 15:32:06] running deploy.sh …
+[2026-05-30 15:32:21] deploy.sh OK
+[2026-05-30 15:32:21] === Done: 5 succeeded, 0 failed ===
+
+[2026-05-31 10:00:00] === Daily content run (kind-balanced): 5 blog + 0 landing = 5 item(s) ===
+[2026-05-31 10:00:00] [1/5] blog · blog/marbella-jazz-festival-yacht-charter
+[2026-05-31 10:00:22]   ✓ saved content/blog_marbella-jazz-festival-yacht-charter.json
+[2026-05-31 10:00:22]   ✓ added to keyword_map.blog
+[2026-05-31 10:00:22] [2/5] blog · blog/copa-del-rey-sailing-marbella
+[2026-05-31 10:00:44]   ✓ saved content/blog_copa-del-rey-sailing-marbella.json
+[2026-05-31 10:00:44]   ✓ added to keyword_map.blog
+[2026-05-31 10:00:44] [3/5] blog · blog/marbella-easter-week-yacht-availability
+[2026-05-31 10:01:02]   ✓ saved content/blog_marbella-easter-week-yacht-availability.json
+[2026-05-31 10:01:02]   ✓ added to keyword_map.blog
+[2026-05-31 10:01:02] [4/5] blog · blog/fishing-license-rules-marbella
+[2026-05-31 10:01:18]   ✓ saved content/blog_fishing-license-rules-marbella.json
+[2026-05-31 10:01:18]   ✓ added to keyword_map.blog
+[2026-05-31 10:01:18] [5/5] blog · blog/marbella-tuna-fishing-season-charter
+[2026-05-31 10:01:36]   ✓ saved content/blog_marbella-tuna-fishing-season-charter.json
+[2026-05-31 10:01:36]   ✓ added to keyword_map.blog
+[2026-05-31 10:01:36] queue: 2 remaining, 101 consumed total
+[2026-05-31 10:01:36] queue under threshold (2 < 30) — auto-refilling…
+[2026-05-31 10:01:37] refill failed: RuntimeError: claude CLI exit 1: 
+[2026-05-31 10:01:37] running deploy.sh …

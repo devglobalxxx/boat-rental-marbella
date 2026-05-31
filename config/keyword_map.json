@@ -880,6 +880,41 @@
       "title": "Watch Three Kings Parade Marbella from a Boat: 2026 Guide",
       "intent": "informational",
       "target_words": 1100
+    },
+    {
+      "slug": "blog/marbella-jazz-festival-yacht-charter",
+      "primary_keyword": "marbella jazz festival yacht",
+      "title": "Marbella Jazz Festival 2026: Yacht Charter Experience",
+      "intent": "informational",
+      "target_words": 1100
+    },
+    {
+      "slug": "blog/copa-del-rey-sailing-marbella",
+      "primary_keyword": "copa del rey sailing marbella charter",
+      "title": "Copa del Rey Sailing Week: Watch from a Marbella Charter",
+      "intent": "informational",
+      "target_words": 1100
+    },
+    {
+      "slug": "blog/marbella-easter-week-yacht-availability",
+      "primary_keyword": "marbella easter week yacht availability",
+      "title": "Marbella Easter Week Yacht Availability & Booking Window",
+      "intent": "informational",
+      "target_words": 1100
+    },
+    {
+      "slug": "blog/fishing-license-rules-marbella",
+      "primary_keyword": "fishing license rules marbella charter",
+      "title": "Fishing License Rules in Marbella: What Charters Must Know",
+      "intent": "informational",
+      "target_words": 1100
+    },
+    {
+      "slug": "blog/marbella-tuna-fishing-season-charter",
+      "primary_keyword": "marbella tuna fishing season charter",
+      "title": "Marbella Tuna Fishing Season: Best Boats & Months to Book",
+      "intent": "informational",
+      "target_words": 1100
     }
   ]
 }

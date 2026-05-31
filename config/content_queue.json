@@ -4,41 +4,6 @@
   "queue": [
     {
       "kind": "blog",
-      "slug": "blog/marbella-jazz-festival-yacht-charter",
-      "primary_keyword": "marbella jazz festival yacht",
-      "title": "Marbella Jazz Festival 2026: Yacht Charter Experience",
-      "target_words": 1100
-    },
-    {
-      "kind": "blog",
-      "slug": "blog/copa-del-rey-sailing-marbella",
-      "primary_keyword": "copa del rey sailing marbella charter",
-      "title": "Copa del Rey Sailing Week: Watch from a Marbella Charter",
-      "target_words": 1100
-    },
-    {
-      "kind": "blog",
-      "slug": "blog/marbella-easter-week-yacht-availability",
-      "primary_keyword": "marbella easter week yacht availability",
-      "title": "Marbella Easter Week Yacht Availability & Booking Window",
-      "target_words": 1100
-    },
-    {
-      "kind": "blog",
-      "slug": "blog/fishing-license-rules-marbella",
-      "primary_keyword": "fishing license rules marbella charter",
-      "title": "Fishing License Rules in Marbella: What Charters Must Know",
-      "target_words": 1100
-    },
-    {
-      "kind": "blog",
-      "slug": "blog/marbella-tuna-fishing-season-charter",
-      "primary_keyword": "marbella tuna fishing season charter",
-      "title": "Marbella Tuna Fishing Season: Best Boats & Months to Book",
-      "target_words": 1100
-    },
-    {
-      "kind": "blog",
       "slug": "blog/dietary-restrictions-yacht-catering-marbella",
       "primary_keyword": "dietary restrictions yacht catering marbella",
       "title": "Yacht Catering in Marbella: Vegan, Halal & Allergy Menus",
@@ -840,6 +805,46 @@
       "title": "Watch Three Kings Parade Marbella from a Boat: 2026 Guide",
       "target_words": 1100,
       "consumed_at": "2026-05-30"
+    },
+    {
+      "kind": "blog",
+      "slug": "blog/marbella-jazz-festival-yacht-charter",
+      "primary_keyword": "marbella jazz festival yacht",
+      "title": "Marbella Jazz Festival 2026: Yacht Charter Experience",
+      "target_words": 1100,
+      "consumed_at": "2026-05-31"
+    },
+    {
+      "kind": "blog",
+      "slug": "blog/copa-del-rey-sailing-marbella",
+      "primary_keyword": "copa del rey sailing marbella charter",
+      "title": "Copa del Rey Sailing Week: Watch from a Marbella Charter",
+      "target_words": 1100,
+      "consumed_at": "2026-05-31"
+    },
+    {
+      "kind": "blog",
+      "slug": "blog/marbella-easter-week-yacht-availability",
+      "primary_keyword": "marbella easter week yacht availability",
+      "title": "Marbella Easter Week Yacht Availability & Booking Window",
+      "target_words": 1100,
+      "consumed_at": "2026-05-31"
+    },
+    {
+      "kind": "blog",
+      "slug": "blog/fishing-license-rules-marbella",
+      "primary_keyword": "fishing license rules marbella charter",
+      "title": "Fishing License Rules in Marbella: What Charters Must Know",
+      "target_words": 1100,
+      "consumed_at": "2026-05-31"
+    },
+    {
+      "kind": "blog",
+      "slug": "blog/marbella-tuna-fishing-season-charter",
+      "primary_keyword": "marbella tuna fishing season charter",
+      "title": "Marbella Tuna Fishing Season: Best Boats & Months to Book",
+      "target_words": 1100,
+      "consumed_at": "2026-05-31"
     }
   ],
   "refill_threshold": 30,

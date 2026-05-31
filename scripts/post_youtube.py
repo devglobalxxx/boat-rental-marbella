@@ -241,6 +241,17 @@ def upload_via_studio(video_path: pathlib.Path, title: str,
                 "Run: python3 scripts/post_youtube.py --login-studio"
             )
 
+        # Dismiss any lingering dialog scrims from previous uploads
+        try:
+            page.evaluate("""() => {
+                document.querySelectorAll('.dialog-scrim, ytcp-uploads-dialog').forEach(el => {
+                    if (el.style) el.style.display = 'none';
+                });
+            }""")
+            page.wait_for_timeout(500)
+        except Exception:
+            pass
+
         # Open Create → Upload videos
         create = page.locator(
             "ytcp-button.ytcpAppHeaderCreateIcon, "
@@ -516,33 +527,91 @@ def _theme(folder_name: str) -> str:
             return theme
     return "Boat Charter Marbella"
 
-def generate_title(folder_name: str, file_name: str, is_short: bool) -> str:
-    theme = _theme(folder_name)
-    short_tag = " #Shorts" if is_short else ""
-    return f"{theme} | Puerto Banús{short_tag}"
+# Title variants rotated by file_id hash so each upload gets a unique title
+_TITLE_VARIANTS: dict[str, list[str]] = {
+    "Hen Party Boat Charter":           ["Hen Party Boat Charter Marbella", "Hen Do Yacht Party Puerto Banús", "Girls' Boat Trip Marbella", "Hen Party Cruise Puerto Banús", "Bachelorette Yacht Marbella"],
+    "Wedding Yacht Charter":            ["Wedding Yacht Charter Marbella", "Yacht Wedding Puerto Banús", "Luxury Boat Wedding Marbella", "Romantic Yacht Ceremony Marbella", "Wedding Charter Costa del Sol"],
+    "Romantic Proposal on a Yacht":     ["Romantic Proposal on a Yacht Marbella", "Yacht Proposal Puerto Banús", "Surprise Proposal Boat Marbella", "Romantic Cruise Marbella", "Yacht Engagement Marbella"],
+    "Sport Fishing Charter":            ["Sport Fishing Charter Marbella", "Deep Sea Fishing Puerto Banús", "Offshore Fishing Marbella", "Fishing Boat Charter Costa del Sol", "Big Game Fishing Marbella"],
+    "Fishing Boat Marbella":            ["Fishing Boat Marbella", "Sea Fishing Trip Puerto Banús", "Fishing Charter Marbella Spain", "Boat Fishing Costa del Sol", "Inshore Fishing Marbella"],
+    "Dolphin Watching Cruise":          ["Dolphin Watching Cruise Marbella", "Dolphins Puerto Banús Boat Trip", "Dolphin Safari Marbella", "Marine Wildlife Cruise Marbella", "Dolphin Spotting Costa del Sol"],
+    "Catamaran Charter Marbella":       ["Catamaran Charter Marbella", "Sailing Catamaran Puerto Banús", "Catamaran Day Trip Marbella", "Luxury Catamaran Marbella", "Lagoon 38 Charter Marbella"],
+    "Small Boat Hire Marbella":         ["Small Boat Hire Marbella", "No Licence Boat Marbella", "Mini Boat Rental Puerto Banús", "Self-Drive Boat Marbella", "Easy Boat Hire Costa del Sol"],
+    "Speedboat Rental Marbella":        ["Speedboat Rental Marbella", "Fast Boat Hire Puerto Banús", "Speed Boat Charter Marbella", "Powerboat Rental Marbella", "Speedboat Day Trip Costa del Sol"],
+    "Luxury Yacht Charter Marbella":    ["Luxury Yacht Charter Marbella", "Azimut 58 Charter Puerto Banús", "Premium Yacht Hire Marbella", "Azimut Yacht Marbella", "Luxury Motor Yacht Marbella"],
+    "Motor Yacht Charter Marbella":     ["Motor Yacht Charter Marbella", "Motor Yacht Hire Puerto Banús", "Private Yacht Charter Marbella", "Day Yacht Charter Marbella", "Motor Yacht Cruise Costa del Sol"],
+    "Superyacht Charter Marbella":      ["Superyacht Charter Marbella", "Superyacht Hire Puerto Banús", "Luxury Superyacht Marbella", "Private Superyacht Marbella", "Superyacht Day Charter Marbella"],
+    "Mangusta 80 Superyacht Marbella":  ["Mangusta 80 Superyacht Marbella", "M80 Superyacht Charter Puerto Banús", "Mangusta Yacht Hire Marbella", "M80 Charter Costa del Sol", "Superyacht M80 Marbella"],
+    "Boat Charter Puerto Banús":        ["Boat Charter Puerto Banús", "Puerto Banús Boat Rental", "Day Boat Hire Puerto Banús", "Boat Trip Puerto Banús Marbella", "Puerto Banús Private Boat"],
+    "Celebrity Boat Charter Marbella":  ["Celebrity Boat Charter Marbella", "VIP Yacht Marbella", "Exclusive Boat Charter Puerto Banús", "Celebrity Cruise Marbella", "Star-Studded Yacht Marbella"],
+    "Boat Rental Marbella":             ["Boat Rental Marbella", "Hire a Boat Marbella", "Private Boat Trip Marbella", "Day Boat Rental Puerto Banús", "Boat Tour Costa del Sol"],
+}
 
-def generate_description(folder_name: str, kw_meta: dict, is_short: bool) -> str:
+_DESC_OPENERS = [
+    "Experience the ultimate {keyword} from Puerto Banús",
+    "Book your dream {keyword} directly from Puerto Banús Marina",
+    "Your perfect {keyword} starts right here in Puerto Banús",
+    "Discover Marbella by sea with our {keyword}",
+    "Set sail on an unforgettable {keyword} from Puerto Banús",
+    "Join us for the best {keyword} on the Costa del Sol",
+    "Ready for the ultimate {keyword} experience in Marbella?",
+    "Explore the Costa del Sol on our exclusive {keyword}",
+]
+
+_DESC_HIGHLIGHTS = [
+    "Skipper, fuel, drinks & insurance all included — just bring yourself.",
+    "Everything included: skipper, fuel, snacks & full insurance.",
+    "All-inclusive: professional skipper, fuel, refreshments & insurance.",
+    "Fully crewed with skipper, fuel, drinks & insurance in the price.",
+    "Hassle-free — skipper, fuel, food & insurance are all covered.",
+]
+
+def _vid_index(file_id: str) -> int:
+    """Deterministic index from file_id for variant selection."""
+    return int(file_id[:8], 16) if all(c in '0123456789abcdefABCDEF' for c in file_id[:8]) else sum(ord(c) for c in file_id)
+
+def generate_title(folder_name: str, file_name: str, is_short: bool,
+                   file_id: str = "", seq: int = 0) -> str:
+    theme = _theme(folder_name)
+    # Use global upload sequence so each consecutive video gets a different variant
+    idx   = seq
+    variants = None
+    for key, vlist in _TITLE_VARIANTS.items():
+        if key.lower() in theme.lower() or theme.lower() in key.lower():
+            variants = vlist
+            break
+    base = variants[idx % len(variants)] if variants else f"{theme} Marbella"
+    short_tag = " #Shorts" if is_short else ""
+    return f"{base} | Puerto Banús{short_tag}"[:100]
+
+def generate_description(folder_name: str, kw_meta: dict, is_short: bool,
+                         file_id: str = "", seq: int = 0) -> str:
     keyword = kw_meta.get("keyword", "boat rental Marbella")
     landing = kw_meta.get("landing_url", SITE + "/")
     short_line = "\n#Shorts\n" if is_short else ""
+    idx     = seq
+    opener  = _DESC_OPENERS[idx % len(_DESC_OPENERS)].format(keyword=keyword)
+    highlight = _DESC_HIGHLIGHTS[idx % len(_DESC_HIGHLIGHTS)]
+    theme   = _theme(folder_name)
+
     return f"""{short_line}\
-Book your {keyword} from Puerto Banús — skipper, fuel, drinks & insurance all included.
+{opener}. {highlight}
 
 👉 {landing}
 📲 WhatsApp: https://wa.me/{WHATSAPP}
 
-From intimate sunset cruises to full-day superyacht charters, we cover the entire \
-Costa del Sol: Marbella, Estepona, Gibraltar and beyond.
+From sunset cocktail cruises to full-day private charters, we cover the entire \
+Costa del Sol — Marbella, Estepona, Gibraltar and beyond.
 
-🛥️ Fleet: small boats (no licence needed), motor yachts, catamarans, superyachts
-🐬 Activities: dolphin watching, fishing, watersports, weddings, hen parties
-📍 Departure: Puerto Banús Marina, Marbella, Spain
+🛥️ Fleet: no-licence boats, speedboats, catamarans, motor yachts & superyachts
+🐬 Activities: dolphin watching, fishing, watersports, weddings & hen parties
+📍 Base: Puerto Banús Marina, Marbella, Spain
 
 {SITE}
 
-#BoatRentalMarbella #YachtCharterMarbella #PuertoBanus #Marbella #CostaDelSol \
-#YachtLife #BoatLife #Spain #Mediterranean #Yachting #BoatCharter \
-#MarbellaSummer #LuxuryYacht #SummerVibes
+#{theme.replace(" ", "")} #BoatRentalMarbella #YachtCharterMarbella \
+#PuertoBanus #Marbella #CostaDelSol #YachtLife #BoatLife #Spain \
+#Mediterranean #Yachting #MarbellaSummer #LuxuryYacht #SummerVibes
 """
 
 def generate_tags(folder_name: str, kw_meta: dict) -> list[str]:
@@ -570,8 +639,10 @@ def daily_upload(drive, state: dict, keyword_map: dict, limit: int, dry_run: boo
         log("Nothing to upload today — all Drive videos are already on YouTube.")
         return
 
-    uploaded_today = 0
+    uploaded_today    = 0
     consecutive_errors = 0
+    # Global upload count used as variant seed (ensures unique titles across all runs)
+    total_uploaded = len(state.get("uploaded", {}))
 
     for vid in pending:
         if uploaded_today >= limit:
@@ -589,8 +660,9 @@ def daily_upload(drive, state: dict, keyword_map: dict, limit: int, dry_run: boo
         tmp_path = TMP_DIR / f"yt_upload_{file_id}{ext}"
 
         if dry_run:
+            seq = total_uploaded + uploaded_today
             log(f"[DRY-RUN] Would upload '{file_name}'")
-            log(f"[DRY-RUN]   Title: {generate_title(folder_name, file_name, False)}")
+            log(f"[DRY-RUN]   Title: {generate_title(folder_name, file_name, False, file_id, seq)}")
             uploaded_today += 1
             continue
 
@@ -599,8 +671,9 @@ def daily_upload(drive, state: dict, keyword_map: dict, limit: int, dry_run: boo
             download_drive_file(drive, file_id, tmp_path)
 
             short       = is_short_video(tmp_path, file_name)
-            title       = generate_title(folder_name, file_name, short)
-            description = generate_description(folder_name, kw_meta, short)
+            seq         = total_uploaded + uploaded_today
+            title       = generate_title(folder_name, file_name, short, file_id, seq)
+            description = generate_description(folder_name, kw_meta, short, file_id, seq)
             tags        = generate_tags(folder_name, kw_meta)
             video_type  = "Short" if short else "video"
 

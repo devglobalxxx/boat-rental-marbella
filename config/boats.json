@@ -57,6 +57,23 @@
         "Daylight only, 2 NM coastal limit"
       ],
       "extended_note": "Fuel NOT included on the Dubhe (typically €30–€60 depending on route). All other inclusions per Spanish charter standard."
+    },
+    "tier_c": {
+      "label": "Maiora 26m all-inclusive superyacht",
+      "min_hours": 6,
+      "prices": {
+        "6h": 9500,
+        "8h": 12500
+      },
+      "extended_note": "Overnight and multi-day charters quoted on WhatsApp.",
+      "extra_inclusions": [
+        "Captain + 2 crew",
+        "Food & open bar",
+        "Jet ski",
+        "8h: giant slide & inflatable swimming pool",
+        "Heated freshwater jacuzzi onboard"
+      ],
+      "currency": "EUR"
     }
   },
   "boats": [
@@ -1071,6 +1088,66 @@
       "hero_local_alt": "Speedboat — Quick-and-fun coastal speedboat for short Marbella charters",
       "gallery_local": [],
       "model_year": null
+    },
+    {
+      "slug": "maiora-26m",
+      "name": "Maiora 26m",
+      "tagline": "90 ft Italian superyacht · all-inclusive · refit 2023 · from Puerto Banús",
+      "model_year": 2023,
+      "builder": "Maiora (Fipa Group)",
+      "type": "Luxury motor yacht",
+      "length_m": 26,
+      "capacity_pax": 12,
+      "departure_port": "Puerto Banús",
+      "tier": "tier_c",
+      "highlights": [
+        "26 m / 90 ft Italian superyacht — refurbished 2023",
+        "Captain + 2 crew · food & open bar · fuel all included",
+        "Jet ski + paddleboards + snorkel + fishing gear onboard",
+        "8-hour charters: giant inflatable slide & swimming pool",
+        "Heated freshwater jacuzzi with panoramic sea views",
+        "Majestic flybridge with 360° views · 2 full bathrooms · private cabins",
+        "Perfect for corporate events, special occasions, overnight stays"
+      ],
+      "hero_pexels_id": "1320684",
+      "gallery_pexels": [
+        "1320684",
+        "1058959",
+        "1430676",
+        "2755167"
+      ],
+      "hero_local": "/img/boats/maiora-26m/hero-1600.jpg",
+      "hero_local_srcset": [
+        [
+          "/img/boats/maiora-26m/hero-600.jpg",
+          600
+        ],
+        [
+          "/img/boats/maiora-26m/hero-900.jpg",
+          900
+        ],
+        [
+          "/img/boats/maiora-26m/hero-1200.jpg",
+          1200
+        ],
+        [
+          "/img/boats/maiora-26m/hero-1600.jpg",
+          1600
+        ]
+      ],
+      "hero_local_alt": "Maiora 26m luxury yacht cruising off Marbella — Italian-built superyacht from Puerto Banús",
+      "gallery_local": [],
+      "summary": "The Maiora 26m is a 90-foot Italian-built superyacht refurbished in 2023, perfect for unforgettable private day charters and overnight stays from prestigious Puerto Banús. All-inclusive: captain & 2 crew, fuel for the full duration, food & open bar, jet ski, paddleboards and snorkel gear. 8-hour charters include a giant inflatable slide and swimming pool, plus a heated freshwater jacuzzi onboard. With a majestic flybridge offering 360° panoramic views, private cabins, 2 full bathrooms, an aft cockpit for social gatherings, and elegant interior lounges for dinners or business meetings, the Maiora 26m hosts up to 12 guests in genuine luxury. Ideal for corporate events, special occasions, family days, or simply an exclusive day at sea on the Costa del Sol. From €9,500 for a 6-hour charter.",
+      "intent_keywords": [
+        "Maiora 26m Marbella",
+        "Maiora yacht Puerto Banus",
+        "luxury superyacht charter Marbella",
+        "yacht with jacuzzi Marbella",
+        "all inclusive yacht charter Marbella",
+        "90ft yacht Marbella",
+        "corporate yacht charter Marbella",
+        "overnight yacht Marbella"
+      ]
     }
   ]
 }

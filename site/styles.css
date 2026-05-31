@@ -437,3 +437,5 @@ details p{margin:.6em 0 0;color:var(--c-ink-soft)}
 .post-author-name{color:var(--c-ink)}
 .post-author-name strong{font-weight:700}
 .post-author-role{color:var(--c-muted);font-size:.85rem;line-height:1.4}
+
+@media (max-width:768px){.hdr-fb{display:none!important;}}

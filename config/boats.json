@@ -1110,12 +1110,7 @@
         "Perfect for corporate events, special occasions, overnight stays"
       ],
       "hero_pexels_id": "1320684",
-      "gallery_pexels": [
-        "1320684",
-        "1058959",
-        "1430676",
-        "2755167"
-      ],
+      "gallery_pexels": [],
       "hero_local": "/img/boats/maiora-26m/hero-1600.jpg",
       "hero_local_srcset": [
         [
@@ -1136,7 +1131,128 @@
         ]
       ],
       "hero_local_alt": "Maiora 26m luxury yacht cruising off Marbella — Italian-built superyacht from Puerto Banús",
-      "gallery_local": [],
+      "gallery_local": [
+        {
+          "src": "/img/boats/maiora-26m/maiora-01.jpg",
+          "srcset": [
+            [
+              "/img/boats/maiora-26m/maiora-01.jpg",
+              1200
+            ]
+          ],
+          "alt": "Maiora 26m luxury yacht — photo 1"
+        },
+        {
+          "src": "/img/boats/maiora-26m/maiora-02.jpg",
+          "srcset": [
+            [
+              "/img/boats/maiora-26m/maiora-02.jpg",
+              1200
+            ]
+          ],
+          "alt": "Maiora 26m luxury yacht — photo 2"
+        },
+        {
+          "src": "/img/boats/maiora-26m/maiora-03.jpg",
+          "srcset": [
+            [
+              "/img/boats/maiora-26m/maiora-03.jpg",
+              1200
+            ]
+          ],
+          "alt": "Maiora 26m luxury yacht — photo 3"
+        },
+        {
+          "src": "/img/boats/maiora-26m/maiora-04.jpg",
+          "srcset": [
+            [
+              "/img/boats/maiora-26m/maiora-04.jpg",
+              1200
+            ]
+          ],
+          "alt": "Maiora 26m luxury yacht — photo 4"
+        },
+        {
+          "src": "/img/boats/maiora-26m/maiora-05.jpg",
+          "srcset": [
+            [
+              "/img/boats/maiora-26m/maiora-05.jpg",
+              1200
+            ]
+          ],
+          "alt": "Maiora 26m luxury yacht — photo 5"
+        },
+        {
+          "src": "/img/boats/maiora-26m/maiora-06.jpg",
+          "srcset": [
+            [
+              "/img/boats/maiora-26m/maiora-06.jpg",
+              1200
+            ]
+          ],
+          "alt": "Maiora 26m luxury yacht — photo 6"
+        },
+        {
+          "src": "/img/boats/maiora-26m/maiora-07.jpg",
+          "srcset": [
+            [
+              "/img/boats/maiora-26m/maiora-07.jpg",
+              1200
+            ]
+          ],
+          "alt": "Maiora 26m luxury yacht — photo 7"
+        },
+        {
+          "src": "/img/boats/maiora-26m/maiora-08.jpg",
+          "srcset": [
+            [
+              "/img/boats/maiora-26m/maiora-08.jpg",
+              1200
+            ]
+          ],
+          "alt": "Maiora 26m luxury yacht — photo 8"
+        },
+        {
+          "src": "/img/boats/maiora-26m/maiora-09.jpg",
+          "srcset": [
+            [
+              "/img/boats/maiora-26m/maiora-09.jpg",
+              1200
+            ]
+          ],
+          "alt": "Maiora 26m luxury yacht — photo 9"
+        },
+        {
+          "src": "/img/boats/maiora-26m/maiora-10.jpg",
+          "srcset": [
+            [
+              "/img/boats/maiora-26m/maiora-10.jpg",
+              1200
+            ]
+          ],
+          "alt": "Maiora 26m luxury yacht — photo 10"
+        },
+        {
+          "src": "/img/boats/maiora-26m/maiora-11.jpg",
+          "srcset": [
+            [
+              "/img/boats/maiora-26m/maiora-11.jpg",
+              1200
+            ]
+          ],
+          "alt": "Maiora 26m luxury yacht — photo 11"
+        },
+        {
+          "src": "/img/boats/maiora-26m/maiora-12.jpg",
+          "srcset": [
+            [
+              "/img/boats/maiora-26m/maiora-12.jpg",
+              1200
+            ]
+          ],
+          "alt": "Maiora 26m luxury yacht — photo 12"
+        }
+      ],
       "summary": "The Maiora 26m is a 90-foot Italian-built superyacht refurbished in 2023, perfect for unforgettable private day charters and overnight stays from prestigious Puerto Banús. All-inclusive: captain & 2 crew, fuel for the full duration, food & open bar, jet ski, paddleboards and snorkel gear. 8-hour charters include a giant inflatable slide and swimming pool, plus a heated freshwater jacuzzi onboard. With a majestic flybridge offering 360° panoramic views, private cabins, 2 full bathrooms, an aft cockpit for social gatherings, and elegant interior lounges for dinners or business meetings, the Maiora 26m hosts up to 12 guests in genuine luxury. Ideal for corporate events, special occasions, family days, or simply an exclusive day at sea on the Costa del Sol. From €9,500 for a 6-hour charter.",
       "intent_keywords": [
         "Maiora 26m Marbella",

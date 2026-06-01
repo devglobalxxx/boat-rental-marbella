@@ -1,22 +1,7 @@
 {
   "_doc": "Pre-curated queue of pages for the daily-content routine. scripts/daily_content.py pops the head N items each run. kind = 'blog' or 'spoke'. After consumption the item is moved to 'consumed' for audit.",
   "items_per_day": 5,
-  "queue": [
-    {
-      "kind": "blog",
-      "slug": "blog/dietary-restrictions-yacht-catering-marbella",
-      "primary_keyword": "dietary restrictions yacht catering marbella",
-      "title": "Yacht Catering in Marbella: Vegan, Halal & Allergy Menus",
-      "target_words": 1100
-    },
-    {
-      "kind": "blog",
-      "slug": "blog/marbella-yacht-charter-with-pets",
-      "primary_keyword": "yacht charter with pets marbella",
-      "title": "Yacht Charter With Pets in Marbella: Dog-Friendly Boats",
-      "target_words": 1100
-    }
-  ],
+  "queue": [],
   "consumed": [
     {
       "kind": "experience",
@@ -845,6 +830,22 @@
       "title": "Marbella Tuna Fishing Season: Best Boats & Months to Book",
       "target_words": 1100,
       "consumed_at": "2026-05-31"
+    },
+    {
+      "kind": "blog",
+      "slug": "blog/dietary-restrictions-yacht-catering-marbella",
+      "primary_keyword": "dietary restrictions yacht catering marbella",
+      "title": "Yacht Catering in Marbella: Vegan, Halal & Allergy Menus",
+      "target_words": 1100,
+      "consumed_at": "2026-06-01"
+    },
+    {
+      "kind": "blog",
+      "slug": "blog/marbella-yacht-charter-with-pets",
+      "primary_keyword": "yacht charter with pets marbella",
+      "title": "Yacht Charter With Pets in Marbella: Dog-Friendly Boats",
+      "target_words": 1100,
+      "consumed_at": "2026-06-01"
     }
   ],
   "refill_threshold": 30,

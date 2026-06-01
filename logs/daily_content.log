@@ -872,3 +872,14 @@ hint: the same ref. If you want to integrate the remote changes, use
 hint: 'git pull' before pushing again.
 hint: See the 'Note about fast-forwards' in 'git push --help' for details.
 
+[2026-06-01 10:00:03] === Daily content run (kind-balanced): 2 blog + 0 landing = 2 item(s) ===
+[2026-06-01 10:00:03] [1/2] blog · blog/dietary-restrictions-yacht-catering-marbella
+[2026-06-01 10:00:25]   ✓ saved content/blog_dietary-restrictions-yacht-catering-marbella.json
+[2026-06-01 10:00:25]   ✓ added to keyword_map.blog
+[2026-06-01 10:00:25] [2/2] blog · blog/marbella-yacht-charter-with-pets
+[2026-06-01 10:00:52]   ✓ saved content/blog_marbella-yacht-charter-with-pets.json
+[2026-06-01 10:00:52]   ✓ added to keyword_map.blog
+[2026-06-01 10:00:52] queue: 0 remaining, 103 consumed total
+[2026-06-01 10:00:52] queue under threshold (0 < 30) — auto-refilling…
+[2026-06-01 10:00:53] refill failed: RuntimeError: claude CLI exit 1: 
+[2026-06-01 10:00:53] running deploy.sh …

@@ -915,6 +915,20 @@
       "title": "Marbella Tuna Fishing Season: Best Boats & Months to Book",
       "intent": "informational",
       "target_words": 1100
+    },
+    {
+      "slug": "blog/dietary-restrictions-yacht-catering-marbella",
+      "primary_keyword": "dietary restrictions yacht catering marbella",
+      "title": "Yacht Catering in Marbella: Vegan, Halal & Allergy Menus",
+      "intent": "informational",
+      "target_words": 1100
+    },
+    {
+      "slug": "blog/marbella-yacht-charter-with-pets",
+      "primary_keyword": "yacht charter with pets marbella",
+      "title": "Yacht Charter With Pets in Marbella: Dog-Friendly Boats",
+      "intent": "informational",
+      "target_words": 1100
     }
   ]
 }

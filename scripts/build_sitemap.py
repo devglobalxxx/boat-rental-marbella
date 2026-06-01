@@ -38,6 +38,9 @@ for es_slug, prio in [("es", "0.95"), ("es/alquiler-de-yates-marbella", "0.9"),
                       ("es/alquiler-barcos-puerto-banus", "0.9"),
                       ("es/alquiler-barcos-sin-licencia-marbella", "0.9")]:
     lines.append(url(es_slug, prio, "weekly"))
+# Legal pages (EN + ES)
+for legal_slug in ["privacy", "terms", "es/privacidad", "es/terminos"]:
+    lines.append(url(legal_slug, "0.2", "yearly"))
 lines.append('</urlset>')
 (ROOT / "site" / "sitemap.xml").write_text("\n".join(lines) + "\n")
 print(f"sitemap.xml written ({1 + len(CONFIG['spokes']) + len(CONFIG['blog'])} URLs)")

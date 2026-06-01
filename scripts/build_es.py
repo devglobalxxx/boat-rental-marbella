@@ -638,8 +638,8 @@ def render_es(slug, key, title, meta, h1, sub, eyebrow, body, en_alt):
         '>Contact<':'>Contacto<',
         'Independent local guide to renting boats, yachts and catamarans on the Costa del Sol.':
             'Guía local independiente para el alquiler de barcos, yates y catamaranes en la Costa del Sol.',
-        '© 2026 Boat Rental Marbella. Independent affiliate guide — links to operators may pay commission. <a href="/">Home</a>':
-            '© 2026 Boat Rental Marbella. <a href="/es/">Inicio</a>',
+        '© 2026 Boat Rental Marbella. Independent affiliate guide — links to operators may pay commission. <a href="/">Home</a> · <a href="/privacy/">Privacy Policy</a> · <a href="/terms/">Terms &amp; Conditions</a>':
+            '© 2026 Boat Rental Marbella. <a href="/es/">Inicio</a> · <a href="/es/privacidad/">Privacidad</a> · <a href="/es/terminos/">Términos</a>',
         '💬 Book on WhatsApp':'💬 Reservar por WhatsApp',
         '📅 Book now':'📅 Reservar ahora',
         '>📅 Book<':'>📅 Reservar<',

@@ -50,7 +50,22 @@
       <a href="/boat-rental-puerto-banus/">Puerto Banús</a>
       <a href="/blog/">Blog</a>
     </nav>
-    <div class="cta-stack">
+    <div class="cta-stack" style="display:flex;align-items:center;gap:8px;">
+
+      <!-- Header Instagram icon -->
+      <a href="https://www.instagram.com/boatrentalmarbella/" target="_blank" rel="noopener" aria-label="Follow on Instagram" title="Follow @boatrentalmarbella" style="display:inline-flex;align-items:center;justify-content:center;width:36px;height:36px;padding:2px;border-radius:50%;background:linear-gradient(135deg,#fdf497 0%,#fdf497 5%,#fd5949 45%,#d6249f 60%,#285AEB 90%);text-decoration:none;flex-shrink:0;box-shadow:0 2px 10px rgba(214,36,159,0.30);transition:transform 0.15s;" onmouseover="this.style.transform='scale(1.08)'" onmouseout="this.style.transform='scale(1)'">
+        <span style="display:inline-flex;align-items:center;justify-content:center;width:100%;height:100%;border-radius:50%;background:linear-gradient(135deg,#FED576 0%,#F47133 30%,#BC3081 65%,#4C63D2 100%);">
+          <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="#fff" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="2" width="20" height="20" rx="5"/><path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"/><line x1="17.5" y1="6.5" x2="17.5" y2="6.5"/></svg>
+        </span>
+      </a>
+
+      <!-- Header Facebook icon -->
+      <a href="https://www.facebook.com/share/1JGRPkWsfv/" target="_blank" rel="noopener" aria-label="Follow on Facebook" title="Like us on Facebook" style="display:inline-flex;align-items:center;justify-content:center;width:36px;height:36px;padding:2px;border-radius:50%;background:linear-gradient(135deg,#1877f2 0%,#0866ff 50%,#0c4dc7 100%);text-decoration:none;flex-shrink:0;box-shadow:0 2px 10px rgba(24,119,242,0.30);transition:transform 0.15s;" onmouseover="this.style.transform='scale(1.08)'" onmouseout="this.style.transform='scale(1)'">
+        <span style="display:inline-flex;align-items:center;justify-content:center;width:100%;height:100%;border-radius:50%;background:linear-gradient(135deg,#1877f2 0%,#0866ff 100%);">
+          <svg width="16" height="16" viewBox="0 0 24 24" fill="#fff" aria-hidden="true"><path d="M22 12c0-5.523-4.477-10-10-10S2 6.477 2 12c0 4.991 3.657 9.128 8.438 9.879V14.89h-2.54V12h2.54V9.797c0-2.506 1.492-3.89 3.777-3.89 1.094 0 2.238.195 2.238.195v2.46H15.19c-1.243 0-1.63.771-1.63 1.562V12h2.773l-.443 2.89h-2.33v6.989C18.343 21.128 22 16.991 22 12z"/></svg>
+        </span>
+      </a>
+
       <a class="cta-wa" href="https://wa.me/358400406194?text=Hi%2C%20I%27d%20like%20to%20book%20a%20boat%20in%20Marbella" rel="nofollow noopener">
         <svg viewBox="0 0 24 24" width="16" height="16" fill="currentColor" aria-hidden="true"><path d="M17.5 14.4c-.3-.1-1.7-.8-2-.9-.3-.1-.5-.1-.6.1-.2.3-.7.9-.9 1.1-.2.2-.3.2-.6.1-.3-.1-1.2-.4-2.3-1.4-.8-.7-1.4-1.7-1.6-1.9-.2-.3 0-.4.1-.6.1-.1.3-.3.4-.5.1-.2.2-.3.3-.5.1-.2 0-.4 0-.5 0-.1-.6-1.4-.8-1.9-.2-.5-.4-.4-.6-.4-.2 0-.4 0-.5 0-.2 0-.5.1-.7.3-.2.3-.9.9-.9 2.2 0 1.3.9 2.6 1.1 2.8.1.2 1.8 2.7 4.3 3.8 1.5.6 2.1.7 2.9.5.5-.1 1.4-.6 1.6-1.1.2-.6.2-1 .1-1.1 0-.1-.2-.2-.5-.3zM12 2C6.5 2 2 6.5 2 12c0 1.8.5 3.4 1.4 4.9L2 22l5.2-1.4c1.4.8 3 1.2 4.8 1.2 5.5 0 10-4.5 10-10S17.5 2 12 2z"/></svg>
         WhatsApp
@@ -168,6 +183,7 @@
 <details><summary>Where do the tuna fishing charters depart from?</summary><p>All our charters depart from Puerto Banús, the luxury marina in Marbella. The fishing grounds are 5–10 nautical miles offshore, accessible within 20–30 minutes from port.</p></details>
 <details><summary>Can I combine tuna fishing with other activities?</summary><p>Absolutely. Many charters include time for swimming, snorkelling, or coastal sightseeing. The skipper can adjust the itinerary to balance fishing with relaxing at spots like Cabopino or Cala del Faro.</p></details>
 </section>
+{{MAP_BLOCK}}
 
 
 </article>
@@ -267,7 +283,47 @@
           <svg class="footer-icon" viewBox="0 0 24 24" width="16" height="16" aria-hidden="true" fill="currentColor"><path d="M22 12c0-5.523-4.477-10-10-10S2 6.477 2 12c0 4.991 3.657 9.128 8.438 9.879V14.89h-2.54V12h2.54V9.797c0-2.506 1.492-3.89 3.777-3.89 1.094 0 2.238.195 2.238.195v2.46H15.19c-1.243 0-1.63.771-1.63 1.562V12h2.773l-.443 2.89h-2.33v6.989C18.343 21.128 22 16.991 22 12z"/></svg>
           Facebook
         </a>
-      </p>
+
+        <!-- Phone chip — gold branded -->
+        <a href="tel:+358400406194" aria-label="Call +358 400 406 194" style="display:inline-flex;align-items:center;gap:10px;padding:2px;border-radius:50px;background:linear-gradient(135deg,#fde68a 0%,#fbbf24 35%,#c9a84e 65%,#92400e 100%);text-decoration:none;width:fit-content;box-shadow:0 4px 16px rgba(201,168,78,0.30),0 2px 8px rgba(251,191,36,0.20);">
+          <span style="display:inline-flex;align-items:center;gap:9px;padding:7px 14px;border-radius:50px;background:linear-gradient(180deg,rgba(15,17,21,0.95) 0%,rgba(15,17,21,0.92) 100%);color:#f4f4f2;font-size:13px;font-weight:700;letter-spacing:-0.01em;">
+            <span style="display:inline-flex;align-items:center;justify-content:center;width:22px;height:22px;border-radius:7px;background:linear-gradient(135deg,#fbbf24 0%,#c9a84e 100%);flex-shrink:0;">
+              <svg width="13" height="13" viewBox="0 0 24 24" fill="#fff" aria-hidden="true"><path d="M20 15.5c-1.2 0-2.5-.2-3.6-.6-.4-.1-.8 0-1.1.3l-2.2 2.2c-2.8-1.4-5.1-3.8-6.6-6.6l2.2-2.2c.3-.3.4-.7.3-1.1-.5-1.1-.7-2.4-.7-3.6 0-.6-.4-1-1-1H4c-.6 0-1 .4-1 1 0 9.4 7.6 17 17 17 .6 0 1-.4 1-1v-3.5c0-.6-.4-1-1-1z"/></svg>
+            </span>
+            +358 400 406 194
+            <span style="font-size:10px;font-weight:700;padding:2px 8px;border-radius:50px;background:linear-gradient(135deg,#fbbf24,#c9a84e);color:#07101e;text-transform:uppercase;letter-spacing:0.06em;margin-left:-2px;">Call</span>
+          </span>
+        </a>
+
+        <!-- Email chip — gold subtle -->
+        <a href="mailto:hello@boatrentalinmarbella.com" aria-label="Email us at hello@boatrentalinmarbella.com" style="display:inline-flex;align-items:center;gap:9px;padding:9px 16px;border-radius:50px;background:rgba(201,168,78,0.08);border:1px solid rgba(201,168,78,0.25);color:#c9a84e;font-size:13px;font-weight:600;text-decoration:none;width:fit-content;">
+          <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><rect x="2" y="4" width="20" height="16" rx="2"/><path d="M2 7l10 7 10-7"/></svg>
+          hello@boatrentalinmarbella.com
+        </a>
+
+        <!-- Instagram chip — full IG brand gradient -->
+        <a href="https://www.instagram.com/boatrentalmarbella/" target="_blank" rel="noopener" aria-label="Follow @boatrentalmarbella on Instagram" style="display:inline-flex;align-items:center;gap:10px;padding:2px;border-radius:50px;background:linear-gradient(135deg,#fdf497 0%,#fdf497 5%,#fd5949 45%,#d6249f 60%,#285AEB 90%);text-decoration:none;width:fit-content;box-shadow:0 4px 16px rgba(214,36,159,0.32),0 2px 8px rgba(253,89,73,0.20);">
+          <span style="display:inline-flex;align-items:center;gap:9px;padding:7px 14px;border-radius:50px;background:linear-gradient(180deg,rgba(15,17,21,0.95) 0%,rgba(15,17,21,0.92) 100%);color:#f4f4f2;font-size:13px;font-weight:700;letter-spacing:-0.01em;">
+            <span style="display:inline-flex;align-items:center;justify-content:center;width:22px;height:22px;border-radius:7px;background:linear-gradient(135deg,#FED576 0%,#F47133 30%,#BC3081 65%,#4C63D2 100%);flex-shrink:0;">
+              <svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="#fff" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="2" width="20" height="20" rx="5"/><path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"/><line x1="17.5" y1="6.5" x2="17.5" y2="6.5"/></svg>
+            </span>
+            @boatrentalmarbella
+            <span style="font-size:10px;font-weight:700;padding:2px 8px;border-radius:50px;background:linear-gradient(135deg,#fd5949,#d6249f);color:#fff;text-transform:uppercase;letter-spacing:0.06em;margin-left:-2px;">Follow</span>
+          </span>
+        </a>
+
+        <!-- Facebook chip — blue branded -->
+        <a href="https://www.facebook.com/share/1JGRPkWsfv/" target="_blank" rel="noopener" aria-label="Follow us on Facebook" style="display:inline-flex;align-items:center;gap:10px;padding:2px;border-radius:50px;background:linear-gradient(135deg,#1877f2 0%,#0866ff 50%,#0c4dc7 100%);text-decoration:none;width:fit-content;box-shadow:0 4px 16px rgba(24,119,242,0.32),0 2px 8px rgba(12,77,199,0.20);">
+          <span style="display:inline-flex;align-items:center;gap:9px;padding:7px 14px;border-radius:50px;background:linear-gradient(180deg,rgba(15,17,21,0.95) 0%,rgba(15,17,21,0.92) 100%);color:#f4f4f2;font-size:13px;font-weight:700;letter-spacing:-0.01em;">
+            <span style="display:inline-flex;align-items:center;justify-content:center;width:22px;height:22px;border-radius:7px;background:linear-gradient(135deg,#1877f2 0%,#0866ff 100%);flex-shrink:0;">
+              <svg width="13" height="13" viewBox="0 0 24 24" fill="#fff" aria-hidden="true"><path d="M22 12c0-5.523-4.477-10-10-10S2 6.477 2 12c0 4.991 3.657 9.128 8.438 9.879V14.89h-2.54V12h2.54V9.797c0-2.506 1.492-3.89 3.777-3.89 1.094 0 2.238.195 2.238.195v2.46H15.19c-1.243 0-1.63.771-1.63 1.562V12h2.773l-.443 2.89h-2.33v6.989C18.343 21.128 22 16.991 22 12z"/></svg>
+            </span>
+            Facebook
+            <span style="font-size:10px;font-weight:700;padding:2px 8px;border-radius:50px;background:linear-gradient(135deg,#1877f2,#0866ff);color:#fff;text-transform:uppercase;letter-spacing:0.06em;margin-left:-2px;">Like</span>
+          </span>
+        </a>
+
+      </div>
     </div>
   </div>
   <div class="container footer-legal">
@@ -330,6 +386,80 @@
     var msg = encodeURIComponent(lines.join('\n'));
     window.location.href = 'https://wa.me/'+waNum+'?text='+msg;
   });
+})();
+</script>
+
+<!-- ── Cash discount slide-in promo ── -->
+<div id="cashPromo" role="dialog" aria-label="Cash discount offer" aria-hidden="true" style="position:fixed;bottom:20px;right:20px;z-index:9998;max-width:340px;width:calc(100% - 40px);transform:translateY(140%);opacity:0;transition:transform 0.5s cubic-bezier(0.16, 1, 0.3, 1),opacity 0.4s;pointer-events:none;">
+  <div style="position:relative;background:linear-gradient(135deg,#1a1208 0%,#0c1828 100%);border:2px solid;border-image:linear-gradient(135deg,#fde68a,#fbbf24,#c9a84e,#92400e) 1;border-radius:18px;padding:22px 22px 20px;box-shadow:0 24px 60px rgba(201,168,78,0.32),0 8px 24px rgba(0,0,0,0.50);overflow:hidden;">
+
+    <!-- Background glow -->
+    <div aria-hidden="true" style="position:absolute;top:-30px;right:-30px;width:140px;height:140px;background:radial-gradient(circle,rgba(251,191,36,0.25) 0%,transparent 70%);pointer-events:none;"></div>
+
+    <!-- Close button -->
+    <button id="cashPromoClose" aria-label="Close promo" style="position:absolute;top:10px;right:10px;width:26px;height:26px;border-radius:50%;background:rgba(255,255,255,0.08);border:1px solid rgba(255,255,255,0.12);color:rgba(244,244,242,0.55);cursor:pointer;display:flex;align-items:center;justify-content:center;font-size:14px;line-height:1;padding:0;z-index:2;font-family:-apple-system,sans-serif;">×</button>
+
+    <!-- Eyebrow badge -->
+    <div style="display:inline-flex;align-items:center;gap:6px;padding:4px 12px;border-radius:50px;background:linear-gradient(135deg,#fbbf24,#c9a84e);color:#1a1208;font-size:10px;font-weight:800;text-transform:uppercase;letter-spacing:0.10em;margin-bottom:12px;box-shadow:0 2px 8px rgba(251,191,36,0.30);">
+      <span style="font-size:13px;">💰</span> Limited offer
+    </div>
+
+    <!-- Headline -->
+    <h3 style="font-size:22px;font-weight:800;color:#f4f4f2;margin:0 0 6px;line-height:1.15;letter-spacing:-0.02em;">
+      Pay by Cash,<br><span style="background:linear-gradient(135deg,#fde68a 0%,#fbbf24 40%,#c9a84e 100%);-webkit-background-clip:text;-webkit-text-fill-color:transparent;background-clip:text;">Get a Discount!</span>
+    </h3>
+
+    <!-- Subtext -->
+    <p style="font-size:13px;color:rgba(244,244,242,0.62);margin:0 0 16px;line-height:1.5;">
+      Skip the card fees — pay your skipper directly in cash and we'll knock <strong style="color:#fbbf24;">5% off</strong> your charter.
+    </p>
+
+    <!-- CTA buttons -->
+    <div style="display:flex;gap:8px;flex-wrap:wrap;">
+      <a href="https://wa.me/358400406194?text=Hi%2C%20I%27d%20like%20to%20book%20a%20boat%20in%20Marbella%20and%20pay%20by%20cash%20for%20the%205%25%20discount" target="_blank" rel="nofollow noopener" style="display:inline-flex;align-items:center;gap:6px;padding:10px 18px;border-radius:50px;background:linear-gradient(135deg,#25d366 0%,#128c7e 100%);color:#fff;font-size:13px;font-weight:700;text-decoration:none;box-shadow:0 4px 14px rgba(37,211,102,0.32);flex:1;justify-content:center;">
+        💬 Claim discount
+      </a>
+      <button id="cashPromoLater" style="padding:10px 16px;border-radius:50px;background:transparent;border:1px solid rgba(255,255,255,0.18);color:rgba(244,244,242,0.65);font-size:13px;font-weight:600;cursor:pointer;">Later</button>
+    </div>
+
+    <!-- Tiny print -->
+    <p style="font-size:10px;color:rgba(244,244,242,0.35);margin:10px 0 0;line-height:1.4;">
+      * 5% off charters paid in EUR cash at marina. Mention "cash discount" when booking.
+    </p>
+  </div>
+</div>
+
+<script>
+(function(){
+  var KEY = 'cashPromoDismissed';
+  var PROMO = document.getElementById('cashPromo');
+  if (!PROMO) return;
+
+  // Don't show if dismissed in last 24h
+  try {
+    var dismissed = localStorage.getItem(KEY);
+    if (dismissed && (Date.now() - parseInt(dismissed, 10)) < 86400000) return;
+  } catch(e) {}
+
+  function show() {
+    PROMO.setAttribute('aria-hidden', 'false');
+    PROMO.style.pointerEvents = 'auto';
+    PROMO.style.transform = 'translateY(0)';
+    PROMO.style.opacity = '1';
+  }
+  function hide() {
+    PROMO.style.transform = 'translateY(140%)';
+    PROMO.style.opacity = '0';
+    PROMO.style.pointerEvents = 'none';
+    PROMO.setAttribute('aria-hidden', 'true');
+    try { localStorage.setItem(KEY, String(Date.now())); } catch(e) {}
+  }
+
+  // Slide in after 4s
+  setTimeout(show, 4000);
+
+  document.getElementById('cashPromoClose').addEventListener('click', hide);
+  document.getElementById('cashPromoLater').addEventListener('click', hide);
 })();
 </script>
 

@@ -402,6 +402,58 @@ def render_boat(boat):
 <details><summary>What happens if the weather is bad?</summary><p>Skipper calls the night before. If forecast wind exceeds Force 4–5 or sea state makes the trip unsafe, you rebook or get a full refund. Light rain alone is not a cancellation reason on the Costa del Sol.</p></details>
 '''
 
+    # Jet skis are self-drive — replace the crewed-yacht body with jet-ski-accurate copy.
+    if boat.get('type') == 'Jet ski':
+        body = f'''<p class="byline"><strong>{boat["builder"]} {boat["length_m"]} m jet ski</strong> · up to {boat["capacity_pax"]} riders · departs {html.escape(boat["departure_port"])}</p>
+
+<p>{html.escape(boat["summary"])}</p>
+
+<div class="callout"><strong>Quick facts:</strong> Sea-Doo GTX &amp; GTI · up to {boat["capacity_pax"]} riders · self-drive, no licence needed · departs {html.escape(boat["departure_port"])}.<br><strong>From €{lowest_price(boat):,} for {entry_duration(boat)}</strong> — €200 each additional hour. Fuel &amp; life jackets included.</div>
+
+<h2>{"Pricing" if len(prices) == 1 else "Hourly pricing"}</h2>
+<p>Self-drive jet ski hire from Puerto Banús — the price scales with your time on the water:</p>
+<table><thead><tr><th>Duration</th><th>Price (EUR)</th></tr></thead><tbody>{price_rows}</tbody></table>
+<p><em>Each additional hour is €200. Fuel, life jackets, safety briefing, insurance and VAT (Spanish IVA 21%) included. No licence required under Spanish licence-free rules.</em></p>
+
+<h2>What makes it fun</h2>
+{highlights_html}
+
+<h2>What's included</h2>
+<ul>
+  <li><strong>Sea-Doo GTX / GTI</strong> — powerful, stable 3-seater jet skis</li>
+  <li><strong>Life jackets</strong> for every rider</li>
+  <li><strong>Safety briefing</strong> before you set off</li>
+  <li><strong>Fuel</strong> for your session</li>
+  <li><strong>Insurance &amp; VAT</strong> (Spanish IVA 21%)</li>
+  <li><strong>No licence required</strong> — self-drive under Spanish licence-free rules</li>
+</ul>
+
+<h2>Where it launches from</h2>
+<p>The jet skis launch from <a href="/boat-rental-puerto-banus/">Puerto Banús</a> — the most central pickup on the Marbella coast. Ride the Golden Mile past Marbella Club and Puente Romano, with La Concha mountain behind you.</p>
+
+<h2>How it works</h2>
+<ol>
+  <li><strong>Meet at Puerto Banús</strong> — quick check-in and a short safety briefing.</li>
+  <li><strong>Life jacket on</strong>, hop on your Sea-Doo, and you're away.</li>
+  <li><strong>Self-drive</strong> the Marbella coastline — no licence, no instructor on board.</li>
+  <li><strong>Add hours</strong> on the spot if you're having too much fun (€200/hour).</li>
+</ol>
+
+<h2>How to book</h2>
+<p>WhatsApp us with your date, time and number of riders. We confirm availability within minutes and hold your slot — no deposit until you confirm.</p>
+
+{gallery_html}
+
+{related_html}
+
+<h2>Frequently asked questions</h2>
+<details><summary>Do I need a licence?</summary><p>No. These jet skis are rented under Spanish licence-free rules — you self-drive after a short safety briefing. Bring a valid ID; minimum-age rules apply.</p></details>
+<details><summary>How many people per jet ski?</summary><p>Up to {boat["capacity_pax"]} riders on a Sea-Doo GTX/GTI depending on combined weight. Two adults is the comfortable norm.</p></details>
+<details><summary>What does it cost?</summary><p>€250 for 1 hour, €450 for 2 hours, then €200 for each additional hour. Fuel, life jackets, briefing, insurance and VAT are all included.</p></details>
+<details><summary>Is fuel included?</summary><p>Yes — fuel for your session is included. No surprise surcharge.</p></details>
+<details><summary>What if the weather is bad?</summary><p>If the sea is unsafe we'll rebook you or refund in full. Light conditions are no problem on the Costa del Sol.</p></details>
+'''
+
     # JSON-LD for boat detail: Product + AggregateOffer with per-duration offers
     offers = [
         {
@@ -467,7 +519,9 @@ def render_boat(boat):
     write_page(
         slug=f"boats/{boat['slug']}",
         title=f"{name} — {boat['builder']} {boat['length_m']}m Charter from Puerto Banús",
-        meta=(f"Charter the {name} from Puerto Banús — {boat['length_m']} m, {boat['capacity_pax']} guests, skipper + drinks + VAT included. Quote on WhatsApp."
+        meta=(f"Jet ski hire in Marbella from Puerto Banús — Sea-Doo GTX & GTI, self-drive, no licence needed. From €{lowest_price(boat):,} for {entry_duration(boat)}, €200 each extra hour. Fuel & life jackets included."
+              if boat.get('type') == 'Jet ski' else
+              f"Charter the {name} from Puerto Banús — {boat['length_m']} m, {boat['capacity_pax']} guests, skipper + drinks + VAT included. Quote on WhatsApp."
               if is_on_request(boat) else
               f"Charter the {name} from Puerto Banús — {boat['length_m']} m, {boat['capacity_pax']} guests, skipper & fuel included. From €{lowest_price(boat):,} for {entry_duration(boat)}."),
         h1=name,
@@ -481,13 +535,16 @@ def render_boat(boat):
         breadcrumbs=f'<nav class="breadcrumbs"><a href="/">Home</a> › <a href="/boats/">Boats</a> › <span>{html.escape(name)}</span></nav>',
         wa_text=wa_text,
         price_low=(None if is_on_request(boat) else lowest_price(boat)),
-        price_label=("Quote on WhatsApp" if is_on_request(boat) else f"{entry_duration(boat)} skippered charter"),
+        price_label=("Quote on WhatsApp" if is_on_request(boat)
+                     else f"{entry_duration(boat)} self-drive" if boat.get('type') == 'Jet ski'
+                     else f"{entry_duration(boat)} skippered charter"),
         book_pitch=(f"The {name} is our flagship — minimum {entry_duration(boat)} charter, jet ski included free for the day. Longer charters and overnights quoted on WhatsApp."
                     if boat.get("tier") == "tier_b" else None),
+        self_drive=(boat.get('type') == 'Jet ski'),
     )
 
 # ---------- shared writer ----------
-def write_page(slug, title, meta, h1, sub, eyebrow, hero_img, hero_srcset, hero_alt, body_html, jsonld, breadcrumbs, wa_text=None, price_low=None, price_label=None, book_pitch=None):
+def write_page(slug, title, meta, h1, sub, eyebrow, hero_img, hero_srcset, hero_alt, body_html, jsonld, breadcrumbs, wa_text=None, price_low=None, price_label=None, book_pitch=None, self_drive=False):
     url = f"{SITE['base_url']}/{slug}/"
     wa = wa_link(wa_text or "Hi, I'd like to book a boat in Marbella")
     repl = {
@@ -527,6 +584,19 @@ def write_page(slug, title, meta, h1, sub, eyebrow, hero_img, hero_srcset, hero_
     out = TEMPLATE
     for k, v in repl.items():
         out = out.replace(k, v)
+    # Self-drive (jet ski): the shared template hardcodes crewed-yacht inclusions in
+    # the hero strip, trust bar and book card. Swap them for jet-ski-accurate text —
+    # on this page only, so the 18 yacht pages are untouched.
+    if self_drive:
+        out = out.replace("Skipper, drinks (beer · wine · cava), snacks &amp; VAT included",
+                          "Self-drive · life jackets &amp; briefing · no licence needed")
+        out = out.replace("Skipper, fuel &amp; VAT included", "Self-drive — no licence needed")
+        out = out.replace("Beer, white wine &amp; cava on board", "Life jackets, fuel &amp; briefing included")
+        out = out.replace("<li>Licensed skipper &amp; fuel</li>", "<li>Fuel &amp; life jackets</li>")
+        out = out.replace("<li>Drinks: water, soft drinks, beer, white wine, cava</li>", "<li>Safety briefing before you ride</li>")
+        out = out.replace("<li>Light snacks</li>", "<li>No licence required</li>")
+        out = out.replace("<li>Snorkel gear &amp; inflatables</li>", "<li>Launches from Puerto Banús</li>")
+        out = out.replace("All charters include", "Every jet ski rental includes")
     # Override the WhatsApp deeplinks in the page-specific way for boat detail
     if wa_text:
         encoded = wa_text.replace(" ", "%20").replace("'", "%27")

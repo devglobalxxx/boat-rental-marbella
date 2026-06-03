@@ -1,6 +1,6 @@
 {
   "/": {
-    "proposed": 6,
+    "proposed": 12,
     "applied": 2,
     "applied_links": [
       {
@@ -14,7 +14,7 @@
     ]
   },
   "/yacht-charter-marbella/": {
-    "proposed": 7,
+    "proposed": 14,
     "applied": 3,
     "applied_links": [
       {
@@ -50,17 +50,17 @@
     ]
   },
   "/boat-rental-no-license-marbella/": {
-    "proposed": 6,
+    "proposed": 12,
     "applied": 0,
     "applied_links": []
   },
   "/blog/how-much-does-it-cost-to-rent-a-boat-in-marbella/": {
-    "proposed": 9,
+    "proposed": 15,
     "applied": 0,
     "applied_links": []
   },
   "/blog/boat-license-rules-spain/": {
-    "proposed": 5,
+    "proposed": 11,
     "applied": 3,
     "applied_links": [
       {
@@ -76,5 +76,105 @@
         "to": "/fishing-boat-rental-marbella/"
       }
     ]
+  },
+  "/jet-ski-marbella/": {
+    "proposed": 4,
+    "applied": 0,
+    "applied_links": []
+  },
+  "/jet-ski-puerto-banus/": {
+    "proposed": 4,
+    "applied": 0,
+    "applied_links": []
+  },
+  "/jet-ski-hire-marbella/": {
+    "proposed": 4,
+    "applied": 0,
+    "applied_links": []
+  },
+  "/jet-ski-rental-puerto-banus/": {
+    "proposed": 4,
+    "applied": 0,
+    "applied_links": []
+  },
+  "/jet-ski-rental-estepona/": {
+    "proposed": 4,
+    "applied": 0,
+    "applied_links": []
+  },
+  "/jet-ski-rental-fuengirola/": {
+    "proposed": 4,
+    "applied": 0,
+    "applied_links": []
+  },
+  "/jet-ski-rental-benalmadena/": {
+    "proposed": 4,
+    "applied": 1,
+    "applied_links": [
+      {
+        "anchor": "jet ski tours",
+        "to": "/jet-ski-tours-marbella/"
+      }
+    ]
+  },
+  "/jet-ski-tours-marbella/": {
+    "proposed": 4,
+    "applied": 0,
+    "applied_links": []
+  },
+  "/jet-ski-safari-puerto-banus/": {
+    "proposed": 4,
+    "applied": 0,
+    "applied_links": []
+  },
+  "/jet-ski-rental-costa-del-sol/": {
+    "proposed": 4,
+    "applied": 0,
+    "applied_links": []
+  },
+  "/flyboard-marbella/": {
+    "proposed": 4,
+    "applied": 0,
+    "applied_links": []
+  },
+  "/water-sports-marbella/": {
+    "proposed": 4,
+    "applied": 0,
+    "applied_links": []
+  },
+  "/jet-ski-rental-nerja/": {
+    "proposed": 4,
+    "applied": 0,
+    "applied_links": []
+  },
+  "/jet-ski-rental-malaga/": {
+    "proposed": 4,
+    "applied": 0,
+    "applied_links": []
+  },
+  "/boat-rental-puerto-banus/": {
+    "proposed": 6,
+    "applied": 0,
+    "applied_links": []
+  },
+  "/experiences/": {
+    "proposed": 7,
+    "applied": 0,
+    "applied_links": []
+  },
+  "/boat-party-marbella/": {
+    "proposed": 8,
+    "applied": 0,
+    "applied_links": []
+  },
+  "/sunset-cruise-marbella/": {
+    "proposed": 8,
+    "applied": 0,
+    "applied_links": []
+  },
+  "/fishing-boat-rental-marbella/": {
+    "proposed": 8,
+    "applied": 0,
+    "applied_links": []
   }
 }

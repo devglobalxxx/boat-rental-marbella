@@ -1,55 +1,869 @@
 {
   "graph": {
     "/": [
-      {"to":"/yacht-charter-marbella/","anchor":"motor yacht","why":"hub references yacht charter as primary spoke"},
-      {"to":"/catamaran-rental-marbella/","anchor":"sailing or power catamaran","why":"catamaran is one of three top boat types"},
-      {"to":"/boat-rental-no-license-marbella/","anchor":"5 m licence-free runabout","why":"hub names the no-license category"},
-      {"to":"/blog/best-month-to-rent-a-boat-in-marbella/","anchor":"sweet spot","why":"hub mentions seasonality"},
-      {"to":"/fishing-boat-rental-marbella/","anchor":"deep-sea fishing boat","why":"fishing is a major boat type"},
-      {"to":"/boat-rental-puerto-banus/","anchor":"Puerto Banús","why":"primary port mentioned repeatedly"}
+      {
+        "to": "/yacht-charter-marbella/",
+        "anchor": "motor yacht",
+        "why": "hub references yacht charter as primary spoke"
+      },
+      {
+        "to": "/catamaran-rental-marbella/",
+        "anchor": "sailing or power catamaran",
+        "why": "catamaran is one of three top boat types"
+      },
+      {
+        "to": "/boat-rental-no-license-marbella/",
+        "anchor": "5 m licence-free runabout",
+        "why": "hub names the no-license category"
+      },
+      {
+        "to": "/blog/best-month-to-rent-a-boat-in-marbella/",
+        "anchor": "sweet spot",
+        "why": "hub mentions seasonality"
+      },
+      {
+        "to": "/fishing-boat-rental-marbella/",
+        "anchor": "deep-sea fishing boat",
+        "why": "fishing is a major boat type"
+      },
+      {
+        "to": "/boat-rental-puerto-banus/",
+        "anchor": "Puerto Banús",
+        "why": "primary port mentioned repeatedly"
+      },
+      {
+        "to": "/jet-ski-marbella/",
+        "anchor": "jet skis in Marbella",
+        "why": "water-sports cluster inbound"
+      },
+      {
+        "to": "/jet-ski-rental-fuengirola/",
+        "anchor": "jet ski rental Fuengirola",
+        "why": "water-sports cluster inbound"
+      },
+      {
+        "to": "/jet-ski-rental-benalmadena/",
+        "anchor": "jet ski Benalmádena",
+        "why": "water-sports cluster inbound"
+      },
+      {
+        "to": "/jet-ski-tours-marbella/",
+        "anchor": "jet ski tours",
+        "why": "water-sports cluster inbound"
+      },
+      {
+        "to": "/jet-ski-safari-puerto-banus/",
+        "anchor": "jet ski safari",
+        "why": "water-sports cluster inbound"
+      },
+      {
+        "to": "/jet-ski-rental-malaga/",
+        "anchor": "jet ski rental Málaga",
+        "why": "water-sports cluster inbound"
+      }
     ],
     "/yacht-charter-marbella/": [
-      {"to":"/","anchor":"boat rental Marbella","why":"every page links back to hub"},
-      {"to":"/catamaran-rental-marbella/","anchor":"sailing yacht","why":"natural cross-link to catamarans"},
-      {"to":"/blog/how-much-does-it-cost-to-rent-a-boat-in-marbella/","anchor":"cheapest yacht charter Marbella","why":"reinforces price guide"},
-      {"to":"/luxury-yacht-rental-marbella/","anchor":"superyacht","why":"yacht charter ladder up to luxury"},
-      {"to":"/sunset-cruise-marbella/","anchor":"sunset light","why":"itinerary section references sunset"},
-      {"to":"/blog/puerto-banus-vs-marbella-marina/","anchor":"Marbella Marina","why":"reader may want port comparison"},
-      {"to":"/blog/boat-license-rules-spain/","anchor":"PNB or PER Spanish licence","why":"license context"}
+      {
+        "to": "/",
+        "anchor": "boat rental Marbella",
+        "why": "every page links back to hub"
+      },
+      {
+        "to": "/catamaran-rental-marbella/",
+        "anchor": "sailing yacht",
+        "why": "natural cross-link to catamarans"
+      },
+      {
+        "to": "/blog/how-much-does-it-cost-to-rent-a-boat-in-marbella/",
+        "anchor": "cheapest yacht charter Marbella",
+        "why": "reinforces price guide"
+      },
+      {
+        "to": "/luxury-yacht-rental-marbella/",
+        "anchor": "superyacht",
+        "why": "yacht charter ladder up to luxury"
+      },
+      {
+        "to": "/sunset-cruise-marbella/",
+        "anchor": "sunset light",
+        "why": "itinerary section references sunset"
+      },
+      {
+        "to": "/blog/puerto-banus-vs-marbella-marina/",
+        "anchor": "Marbella Marina",
+        "why": "reader may want port comparison"
+      },
+      {
+        "to": "/blog/boat-license-rules-spain/",
+        "anchor": "PNB or PER Spanish licence",
+        "why": "license context"
+      },
+      {
+        "to": "/jet-ski-rental-puerto-banus/",
+        "anchor": "jet ski rental Puerto Banús",
+        "why": "water-sports cluster inbound"
+      },
+      {
+        "to": "/jet-ski-rental-estepona/",
+        "anchor": "jet ski rental Estepona",
+        "why": "water-sports cluster inbound"
+      },
+      {
+        "to": "/jet-ski-rental-fuengirola/",
+        "anchor": "jet ski rental Fuengirola",
+        "why": "water-sports cluster inbound"
+      },
+      {
+        "to": "/jet-ski-rental-benalmadena/",
+        "anchor": "jet ski Benalmádena",
+        "why": "water-sports cluster inbound"
+      },
+      {
+        "to": "/water-sports-marbella/",
+        "anchor": "water sports Marbella",
+        "why": "water-sports cluster inbound"
+      },
+      {
+        "to": "/jet-ski-rental-nerja/",
+        "anchor": "jet ski rental Nerja",
+        "why": "water-sports cluster inbound"
+      },
+      {
+        "to": "/jet-ski-rental-malaga/",
+        "anchor": "jet ski rental Málaga",
+        "why": "water-sports cluster inbound"
+      }
     ],
     "/catamaran-rental-marbella/": [
-      {"to":"/","anchor":"boat rental Marbella","why":"hub link"},
-      {"to":"/yacht-charter-marbella/","anchor":"motor yacht","why":"compare to monohulls"},
-      {"to":"/blog/kids-on-a-boat-marbella/","anchor":"kids on board","why":"catamaran is best for families"},
-      {"to":"/sunset-cruise-marbella/","anchor":"sunset cruise","why":"catamaran sunset is popular"},
-      {"to":"/blog/best-month-to-rent-a-boat-in-marbella/","anchor":"May, June, September and October","why":"seasonality context"},
-      {"to":"/boat-party-marbella/","anchor":"boat party","why":"large groups cross-link"}
+      {
+        "to": "/",
+        "anchor": "boat rental Marbella",
+        "why": "hub link"
+      },
+      {
+        "to": "/yacht-charter-marbella/",
+        "anchor": "motor yacht",
+        "why": "compare to monohulls"
+      },
+      {
+        "to": "/blog/kids-on-a-boat-marbella/",
+        "anchor": "kids on board",
+        "why": "catamaran is best for families"
+      },
+      {
+        "to": "/sunset-cruise-marbella/",
+        "anchor": "sunset cruise",
+        "why": "catamaran sunset is popular"
+      },
+      {
+        "to": "/blog/best-month-to-rent-a-boat-in-marbella/",
+        "anchor": "May, June, September and October",
+        "why": "seasonality context"
+      },
+      {
+        "to": "/boat-party-marbella/",
+        "anchor": "boat party",
+        "why": "large groups cross-link"
+      }
     ],
     "/boat-rental-no-license-marbella/": [
-      {"to":"/","anchor":"boat rental Marbella","why":"hub link"},
-      {"to":"/blog/boat-license-rules-spain/","anchor":"Spain boat licence rules","why":"deep dive on rules"},
-      {"to":"/yacht-charter-marbella/","anchor":"crewed yacht","why":"upsell to crewed"},
-      {"to":"/blog/how-much-does-it-cost-to-rent-a-boat-in-marbella/","anchor":"how much it costs","why":"price comparison"},
-      {"to":"/sunset-cruise-marbella/","anchor":"weekday 2-hour sunset","why":"sunset alternative"},
-      {"to":"/catamaran-rental-marbella/","anchor":"catamaran","why":"comparison"}
+      {
+        "to": "/",
+        "anchor": "boat rental Marbella",
+        "why": "hub link"
+      },
+      {
+        "to": "/blog/boat-license-rules-spain/",
+        "anchor": "Spain boat licence rules",
+        "why": "deep dive on rules"
+      },
+      {
+        "to": "/yacht-charter-marbella/",
+        "anchor": "crewed yacht",
+        "why": "upsell to crewed"
+      },
+      {
+        "to": "/blog/how-much-does-it-cost-to-rent-a-boat-in-marbella/",
+        "anchor": "how much it costs",
+        "why": "price comparison"
+      },
+      {
+        "to": "/sunset-cruise-marbella/",
+        "anchor": "weekday 2-hour sunset",
+        "why": "sunset alternative"
+      },
+      {
+        "to": "/catamaran-rental-marbella/",
+        "anchor": "catamaran",
+        "why": "comparison"
+      },
+      {
+        "to": "/jet-ski-rental-estepona/",
+        "anchor": "jet ski rental Estepona",
+        "why": "water-sports cluster inbound"
+      },
+      {
+        "to": "/jet-ski-rental-fuengirola/",
+        "anchor": "jet ski rental Fuengirola",
+        "why": "water-sports cluster inbound"
+      },
+      {
+        "to": "/jet-ski-rental-benalmadena/",
+        "anchor": "jet ski Benalmádena",
+        "why": "water-sports cluster inbound"
+      },
+      {
+        "to": "/jet-ski-tours-marbella/",
+        "anchor": "jet ski tours",
+        "why": "water-sports cluster inbound"
+      },
+      {
+        "to": "/jet-ski-rental-nerja/",
+        "anchor": "jet ski rental Nerja",
+        "why": "water-sports cluster inbound"
+      },
+      {
+        "to": "/jet-ski-rental-malaga/",
+        "anchor": "jet ski rental Málaga",
+        "why": "water-sports cluster inbound"
+      }
     ],
     "/blog/how-much-does-it-cost-to-rent-a-boat-in-marbella/": [
-      {"to":"/","anchor":"boat rental Marbella","why":"hub link"},
-      {"to":"/yacht-charter-marbella/","anchor":"yacht charter","why":"price category"},
-      {"to":"/catamaran-rental-marbella/","anchor":"sail catamaran","why":"compare price band"},
-      {"to":"/fishing-boat-rental-marbella/","anchor":"fishing boat","why":"price band"},
-      {"to":"/boat-rental-no-license-marbella/","anchor":"licence-free 5 m","why":"cheapest option"},
-      {"to":"/luxury-yacht-rental-marbella/","anchor":"luxury yacht","why":"top end"},
-      {"to":"/sunset-cruise-marbella/","anchor":"sunset cruise Marbella","why":"sunset price quoted"},
-      {"to":"/boat-party-marbella/","anchor":"stag/hen weekend","why":"party pricing"},
-      {"to":"/blog/best-month-to-rent-a-boat-in-marbella/","anchor":"shoulder season","why":"timing affects price"}
+      {
+        "to": "/",
+        "anchor": "boat rental Marbella",
+        "why": "hub link"
+      },
+      {
+        "to": "/yacht-charter-marbella/",
+        "anchor": "yacht charter",
+        "why": "price category"
+      },
+      {
+        "to": "/catamaran-rental-marbella/",
+        "anchor": "sail catamaran",
+        "why": "compare price band"
+      },
+      {
+        "to": "/fishing-boat-rental-marbella/",
+        "anchor": "fishing boat",
+        "why": "price band"
+      },
+      {
+        "to": "/boat-rental-no-license-marbella/",
+        "anchor": "licence-free 5 m",
+        "why": "cheapest option"
+      },
+      {
+        "to": "/luxury-yacht-rental-marbella/",
+        "anchor": "luxury yacht",
+        "why": "top end"
+      },
+      {
+        "to": "/sunset-cruise-marbella/",
+        "anchor": "sunset cruise Marbella",
+        "why": "sunset price quoted"
+      },
+      {
+        "to": "/boat-party-marbella/",
+        "anchor": "stag/hen weekend",
+        "why": "party pricing"
+      },
+      {
+        "to": "/blog/best-month-to-rent-a-boat-in-marbella/",
+        "anchor": "shoulder season",
+        "why": "timing affects price"
+      },
+      {
+        "to": "/jet-ski-marbella/",
+        "anchor": "jet skis in Marbella",
+        "why": "guide links to jet ski booking"
+      },
+      {
+        "to": "/jet-ski-puerto-banus/",
+        "anchor": "jet ski Puerto Banús",
+        "why": "guide links to jet ski booking"
+      },
+      {
+        "to": "/jet-ski-hire-marbella/",
+        "anchor": "jet ski hire Marbella",
+        "why": "guide links to jet ski booking"
+      },
+      {
+        "to": "/jet-ski-rental-puerto-banus/",
+        "anchor": "jet ski rental Puerto Banús",
+        "why": "guide links to jet ski booking"
+      },
+      {
+        "to": "/jet-ski-rental-estepona/",
+        "anchor": "jet ski rental Estepona",
+        "why": "guide links to jet ski booking"
+      },
+      {
+        "to": "/jet-ski-rental-fuengirola/",
+        "anchor": "jet ski rental Fuengirola",
+        "why": "guide links to jet ski booking"
+      }
     ],
     "/blog/boat-license-rules-spain/": [
-      {"to":"/","anchor":"boat rental Marbella","why":"hub link"},
-      {"to":"/boat-rental-no-license-marbella/","anchor":"no-license boat rental Marbella","why":"primary action page for license-free"},
-      {"to":"/yacht-charter-marbella/","anchor":"crewed charter","why":"path for licence-less guests"},
-      {"to":"/catamaran-rental-marbella/","anchor":"catamaran","why":"another crewed option"},
-      {"to":"/fishing-boat-rental-marbella/","anchor":"fishing boat","why":"another crewed option"}
+      {
+        "to": "/",
+        "anchor": "boat rental Marbella",
+        "why": "hub link"
+      },
+      {
+        "to": "/boat-rental-no-license-marbella/",
+        "anchor": "no-license boat rental Marbella",
+        "why": "primary action page for license-free"
+      },
+      {
+        "to": "/yacht-charter-marbella/",
+        "anchor": "crewed charter",
+        "why": "path for licence-less guests"
+      },
+      {
+        "to": "/catamaran-rental-marbella/",
+        "anchor": "catamaran",
+        "why": "another crewed option"
+      },
+      {
+        "to": "/fishing-boat-rental-marbella/",
+        "anchor": "fishing boat",
+        "why": "another crewed option"
+      },
+      {
+        "to": "/jet-ski-marbella/",
+        "anchor": "jet skis in Marbella",
+        "why": "guide links to jet ski booking"
+      },
+      {
+        "to": "/jet-ski-puerto-banus/",
+        "anchor": "jet ski Puerto Banús",
+        "why": "guide links to jet ski booking"
+      },
+      {
+        "to": "/jet-ski-hire-marbella/",
+        "anchor": "jet ski hire Marbella",
+        "why": "guide links to jet ski booking"
+      },
+      {
+        "to": "/jet-ski-rental-puerto-banus/",
+        "anchor": "jet ski rental Puerto Banús",
+        "why": "guide links to jet ski booking"
+      },
+      {
+        "to": "/jet-ski-rental-estepona/",
+        "anchor": "jet ski rental Estepona",
+        "why": "guide links to jet ski booking"
+      },
+      {
+        "to": "/jet-ski-rental-fuengirola/",
+        "anchor": "jet ski rental Fuengirola",
+        "why": "guide links to jet ski booking"
+      }
+    ],
+    "/jet-ski-marbella/": [
+      {
+        "to": "/jet-ski-puerto-banus/",
+        "anchor": "jet ski Puerto Banús",
+        "why": "jet-ski topic cluster"
+      },
+      {
+        "to": "/jet-ski-hire-marbella/",
+        "anchor": "jet ski hire Marbella",
+        "why": "jet-ski topic cluster"
+      },
+      {
+        "to": "/jet-ski-rental-puerto-banus/",
+        "anchor": "jet ski rental Puerto Banús",
+        "why": "jet-ski topic cluster"
+      },
+      {
+        "to": "/jet-ski-rental-estepona/",
+        "anchor": "jet ski rental Estepona",
+        "why": "jet-ski topic cluster"
+      }
+    ],
+    "/jet-ski-puerto-banus/": [
+      {
+        "to": "/jet-ski-hire-marbella/",
+        "anchor": "jet ski hire Marbella",
+        "why": "jet-ski topic cluster"
+      },
+      {
+        "to": "/jet-ski-rental-puerto-banus/",
+        "anchor": "jet ski rental Puerto Banús",
+        "why": "jet-ski topic cluster"
+      },
+      {
+        "to": "/jet-ski-rental-estepona/",
+        "anchor": "jet ski rental Estepona",
+        "why": "jet-ski topic cluster"
+      },
+      {
+        "to": "/jet-ski-rental-fuengirola/",
+        "anchor": "jet ski rental Fuengirola",
+        "why": "jet-ski topic cluster"
+      }
+    ],
+    "/jet-ski-hire-marbella/": [
+      {
+        "to": "/jet-ski-rental-puerto-banus/",
+        "anchor": "jet ski rental Puerto Banús",
+        "why": "jet-ski topic cluster"
+      },
+      {
+        "to": "/jet-ski-rental-estepona/",
+        "anchor": "jet ski rental Estepona",
+        "why": "jet-ski topic cluster"
+      },
+      {
+        "to": "/jet-ski-rental-fuengirola/",
+        "anchor": "jet ski rental Fuengirola",
+        "why": "jet-ski topic cluster"
+      },
+      {
+        "to": "/jet-ski-rental-benalmadena/",
+        "anchor": "jet ski Benalmádena",
+        "why": "jet-ski topic cluster"
+      }
+    ],
+    "/jet-ski-rental-puerto-banus/": [
+      {
+        "to": "/jet-ski-rental-estepona/",
+        "anchor": "jet ski rental Estepona",
+        "why": "jet-ski topic cluster"
+      },
+      {
+        "to": "/jet-ski-rental-fuengirola/",
+        "anchor": "jet ski rental Fuengirola",
+        "why": "jet-ski topic cluster"
+      },
+      {
+        "to": "/jet-ski-rental-benalmadena/",
+        "anchor": "jet ski Benalmádena",
+        "why": "jet-ski topic cluster"
+      },
+      {
+        "to": "/jet-ski-tours-marbella/",
+        "anchor": "jet ski tours",
+        "why": "jet-ski topic cluster"
+      }
+    ],
+    "/jet-ski-rental-estepona/": [
+      {
+        "to": "/jet-ski-rental-fuengirola/",
+        "anchor": "jet ski rental Fuengirola",
+        "why": "jet-ski topic cluster"
+      },
+      {
+        "to": "/jet-ski-rental-benalmadena/",
+        "anchor": "jet ski Benalmádena",
+        "why": "jet-ski topic cluster"
+      },
+      {
+        "to": "/jet-ski-tours-marbella/",
+        "anchor": "jet ski tours",
+        "why": "jet-ski topic cluster"
+      },
+      {
+        "to": "/jet-ski-safari-puerto-banus/",
+        "anchor": "jet ski safari",
+        "why": "jet-ski topic cluster"
+      }
+    ],
+    "/jet-ski-rental-fuengirola/": [
+      {
+        "to": "/jet-ski-rental-benalmadena/",
+        "anchor": "jet ski Benalmádena",
+        "why": "jet-ski topic cluster"
+      },
+      {
+        "to": "/jet-ski-tours-marbella/",
+        "anchor": "jet ski tours",
+        "why": "jet-ski topic cluster"
+      },
+      {
+        "to": "/jet-ski-safari-puerto-banus/",
+        "anchor": "jet ski safari",
+        "why": "jet-ski topic cluster"
+      },
+      {
+        "to": "/jet-ski-rental-costa-del-sol/",
+        "anchor": "jet ski Costa del Sol",
+        "why": "jet-ski topic cluster"
+      }
+    ],
+    "/jet-ski-rental-benalmadena/": [
+      {
+        "to": "/jet-ski-tours-marbella/",
+        "anchor": "jet ski tours",
+        "why": "jet-ski topic cluster"
+      },
+      {
+        "to": "/jet-ski-safari-puerto-banus/",
+        "anchor": "jet ski safari",
+        "why": "jet-ski topic cluster"
+      },
+      {
+        "to": "/jet-ski-rental-costa-del-sol/",
+        "anchor": "jet ski Costa del Sol",
+        "why": "jet-ski topic cluster"
+      },
+      {
+        "to": "/flyboard-marbella/",
+        "anchor": "flyboard Marbella",
+        "why": "jet-ski topic cluster"
+      }
+    ],
+    "/jet-ski-tours-marbella/": [
+      {
+        "to": "/jet-ski-safari-puerto-banus/",
+        "anchor": "jet ski safari",
+        "why": "jet-ski topic cluster"
+      },
+      {
+        "to": "/jet-ski-rental-costa-del-sol/",
+        "anchor": "jet ski Costa del Sol",
+        "why": "jet-ski topic cluster"
+      },
+      {
+        "to": "/flyboard-marbella/",
+        "anchor": "flyboard Marbella",
+        "why": "jet-ski topic cluster"
+      },
+      {
+        "to": "/water-sports-marbella/",
+        "anchor": "water sports Marbella",
+        "why": "jet-ski topic cluster"
+      }
+    ],
+    "/jet-ski-safari-puerto-banus/": [
+      {
+        "to": "/jet-ski-rental-costa-del-sol/",
+        "anchor": "jet ski Costa del Sol",
+        "why": "jet-ski topic cluster"
+      },
+      {
+        "to": "/flyboard-marbella/",
+        "anchor": "flyboard Marbella",
+        "why": "jet-ski topic cluster"
+      },
+      {
+        "to": "/water-sports-marbella/",
+        "anchor": "water sports Marbella",
+        "why": "jet-ski topic cluster"
+      },
+      {
+        "to": "/jet-ski-rental-nerja/",
+        "anchor": "jet ski rental Nerja",
+        "why": "jet-ski topic cluster"
+      }
+    ],
+    "/jet-ski-rental-costa-del-sol/": [
+      {
+        "to": "/flyboard-marbella/",
+        "anchor": "flyboard Marbella",
+        "why": "jet-ski topic cluster"
+      },
+      {
+        "to": "/water-sports-marbella/",
+        "anchor": "water sports Marbella",
+        "why": "jet-ski topic cluster"
+      },
+      {
+        "to": "/jet-ski-rental-nerja/",
+        "anchor": "jet ski rental Nerja",
+        "why": "jet-ski topic cluster"
+      },
+      {
+        "to": "/jet-ski-rental-malaga/",
+        "anchor": "jet ski rental Málaga",
+        "why": "jet-ski topic cluster"
+      }
+    ],
+    "/flyboard-marbella/": [
+      {
+        "to": "/water-sports-marbella/",
+        "anchor": "water sports Marbella",
+        "why": "jet-ski topic cluster"
+      },
+      {
+        "to": "/jet-ski-rental-nerja/",
+        "anchor": "jet ski rental Nerja",
+        "why": "jet-ski topic cluster"
+      },
+      {
+        "to": "/jet-ski-rental-malaga/",
+        "anchor": "jet ski rental Málaga",
+        "why": "jet-ski topic cluster"
+      },
+      {
+        "to": "/jet-ski-marbella/",
+        "anchor": "jet skis in Marbella",
+        "why": "jet-ski topic cluster"
+      }
+    ],
+    "/water-sports-marbella/": [
+      {
+        "to": "/jet-ski-rental-nerja/",
+        "anchor": "jet ski rental Nerja",
+        "why": "jet-ski topic cluster"
+      },
+      {
+        "to": "/jet-ski-rental-malaga/",
+        "anchor": "jet ski rental Málaga",
+        "why": "jet-ski topic cluster"
+      },
+      {
+        "to": "/jet-ski-marbella/",
+        "anchor": "jet skis in Marbella",
+        "why": "jet-ski topic cluster"
+      },
+      {
+        "to": "/jet-ski-puerto-banus/",
+        "anchor": "jet ski Puerto Banús",
+        "why": "jet-ski topic cluster"
+      }
+    ],
+    "/jet-ski-rental-nerja/": [
+      {
+        "to": "/jet-ski-rental-malaga/",
+        "anchor": "jet ski rental Málaga",
+        "why": "jet-ski topic cluster"
+      },
+      {
+        "to": "/jet-ski-marbella/",
+        "anchor": "jet skis in Marbella",
+        "why": "jet-ski topic cluster"
+      },
+      {
+        "to": "/jet-ski-puerto-banus/",
+        "anchor": "jet ski Puerto Banús",
+        "why": "jet-ski topic cluster"
+      },
+      {
+        "to": "/jet-ski-hire-marbella/",
+        "anchor": "jet ski hire Marbella",
+        "why": "jet-ski topic cluster"
+      }
+    ],
+    "/jet-ski-rental-malaga/": [
+      {
+        "to": "/jet-ski-marbella/",
+        "anchor": "jet skis in Marbella",
+        "why": "jet-ski topic cluster"
+      },
+      {
+        "to": "/jet-ski-puerto-banus/",
+        "anchor": "jet ski Puerto Banús",
+        "why": "jet-ski topic cluster"
+      },
+      {
+        "to": "/jet-ski-hire-marbella/",
+        "anchor": "jet ski hire Marbella",
+        "why": "jet-ski topic cluster"
+      },
+      {
+        "to": "/jet-ski-rental-puerto-banus/",
+        "anchor": "jet ski rental Puerto Banús",
+        "why": "jet-ski topic cluster"
+      }
+    ],
+    "/boat-rental-puerto-banus/": [
+      {
+        "to": "/jet-ski-marbella/",
+        "anchor": "jet skis in Marbella",
+        "why": "water-sports cluster inbound"
+      },
+      {
+        "to": "/jet-ski-puerto-banus/",
+        "anchor": "jet ski Puerto Banús",
+        "why": "water-sports cluster inbound"
+      },
+      {
+        "to": "/jet-ski-rental-benalmadena/",
+        "anchor": "jet ski Benalmádena",
+        "why": "water-sports cluster inbound"
+      },
+      {
+        "to": "/jet-ski-tours-marbella/",
+        "anchor": "jet ski tours",
+        "why": "water-sports cluster inbound"
+      },
+      {
+        "to": "/jet-ski-safari-puerto-banus/",
+        "anchor": "jet ski safari",
+        "why": "water-sports cluster inbound"
+      },
+      {
+        "to": "/jet-ski-rental-costa-del-sol/",
+        "anchor": "jet ski Costa del Sol",
+        "why": "water-sports cluster inbound"
+      }
+    ],
+    "/experiences/": [
+      {
+        "to": "/jet-ski-marbella/",
+        "anchor": "jet skis in Marbella",
+        "why": "water-sports cluster inbound"
+      },
+      {
+        "to": "/jet-ski-puerto-banus/",
+        "anchor": "jet ski Puerto Banús",
+        "why": "water-sports cluster inbound"
+      },
+      {
+        "to": "/jet-ski-hire-marbella/",
+        "anchor": "jet ski hire Marbella",
+        "why": "water-sports cluster inbound"
+      },
+      {
+        "to": "/jet-ski-tours-marbella/",
+        "anchor": "jet ski tours",
+        "why": "water-sports cluster inbound"
+      },
+      {
+        "to": "/jet-ski-safari-puerto-banus/",
+        "anchor": "jet ski safari",
+        "why": "water-sports cluster inbound"
+      },
+      {
+        "to": "/jet-ski-rental-costa-del-sol/",
+        "anchor": "jet ski Costa del Sol",
+        "why": "water-sports cluster inbound"
+      },
+      {
+        "to": "/flyboard-marbella/",
+        "anchor": "flyboard Marbella",
+        "why": "water-sports cluster inbound"
+      }
+    ],
+    "/boat-party-marbella/": [
+      {
+        "to": "/jet-ski-marbella/",
+        "anchor": "jet skis in Marbella",
+        "why": "water-sports cluster inbound"
+      },
+      {
+        "to": "/jet-ski-puerto-banus/",
+        "anchor": "jet ski Puerto Banús",
+        "why": "water-sports cluster inbound"
+      },
+      {
+        "to": "/jet-ski-hire-marbella/",
+        "anchor": "jet ski hire Marbella",
+        "why": "water-sports cluster inbound"
+      },
+      {
+        "to": "/jet-ski-rental-puerto-banus/",
+        "anchor": "jet ski rental Puerto Banús",
+        "why": "water-sports cluster inbound"
+      },
+      {
+        "to": "/jet-ski-safari-puerto-banus/",
+        "anchor": "jet ski safari",
+        "why": "water-sports cluster inbound"
+      },
+      {
+        "to": "/jet-ski-rental-costa-del-sol/",
+        "anchor": "jet ski Costa del Sol",
+        "why": "water-sports cluster inbound"
+      },
+      {
+        "to": "/flyboard-marbella/",
+        "anchor": "flyboard Marbella",
+        "why": "water-sports cluster inbound"
+      },
+      {
+        "to": "/water-sports-marbella/",
+        "anchor": "water sports Marbella",
+        "why": "water-sports cluster inbound"
+      }
+    ],
+    "/sunset-cruise-marbella/": [
+      {
+        "to": "/jet-ski-puerto-banus/",
+        "anchor": "jet ski Puerto Banús",
+        "why": "water-sports cluster inbound"
+      },
+      {
+        "to": "/jet-ski-hire-marbella/",
+        "anchor": "jet ski hire Marbella",
+        "why": "water-sports cluster inbound"
+      },
+      {
+        "to": "/jet-ski-rental-puerto-banus/",
+        "anchor": "jet ski rental Puerto Banús",
+        "why": "water-sports cluster inbound"
+      },
+      {
+        "to": "/jet-ski-rental-estepona/",
+        "anchor": "jet ski rental Estepona",
+        "why": "water-sports cluster inbound"
+      },
+      {
+        "to": "/jet-ski-rental-costa-del-sol/",
+        "anchor": "jet ski Costa del Sol",
+        "why": "water-sports cluster inbound"
+      },
+      {
+        "to": "/flyboard-marbella/",
+        "anchor": "flyboard Marbella",
+        "why": "water-sports cluster inbound"
+      },
+      {
+        "to": "/water-sports-marbella/",
+        "anchor": "water sports Marbella",
+        "why": "water-sports cluster inbound"
+      },
+      {
+        "to": "/jet-ski-rental-nerja/",
+        "anchor": "jet ski rental Nerja",
+        "why": "water-sports cluster inbound"
+      }
+    ],
+    "/fishing-boat-rental-marbella/": [
+      {
+        "to": "/jet-ski-hire-marbella/",
+        "anchor": "jet ski hire Marbella",
+        "why": "water-sports cluster inbound"
+      },
+      {
+        "to": "/jet-ski-rental-puerto-banus/",
+        "anchor": "jet ski rental Puerto Banús",
+        "why": "water-sports cluster inbound"
+      },
+      {
+        "to": "/jet-ski-rental-estepona/",
+        "anchor": "jet ski rental Estepona",
+        "why": "water-sports cluster inbound"
+      },
+      {
+        "to": "/jet-ski-rental-fuengirola/",
+        "anchor": "jet ski rental Fuengirola",
+        "why": "water-sports cluster inbound"
+      },
+      {
+        "to": "/flyboard-marbella/",
+        "anchor": "flyboard Marbella",
+        "why": "water-sports cluster inbound"
+      },
+      {
+        "to": "/water-sports-marbella/",
+        "anchor": "water sports Marbella",
+        "why": "water-sports cluster inbound"
+      },
+      {
+        "to": "/jet-ski-rental-nerja/",
+        "anchor": "jet ski rental Nerja",
+        "why": "water-sports cluster inbound"
+      },
+      {
+        "to": "/jet-ski-rental-malaga/",
+        "anchor": "jet ski rental Málaga",
+        "why": "water-sports cluster inbound"
+      }
     ]
   }
 }

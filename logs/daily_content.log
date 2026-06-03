@@ -894,3 +894,50 @@ hint: See the 'Note about fast-forwards' in 'git push --help' for details.
 
 [2026-06-01 15:30:15] queue empty — nothing to do.
 [2026-06-01 18:30:03] queue empty — nothing to do.
+[2026-06-03 18:09:22] === Daily content run (kind-balanced): 0 blog + 14 landing = 14 item(s) ===
+[2026-06-03 18:09:22] [1/14] spoke · jet-ski-marbella
+[2026-06-03 18:09:38]   ✓ saved content/jet-ski-marbella.json
+[2026-06-03 18:09:38]   ✓ added to keyword_map.spokes
+[2026-06-03 18:09:38] [2/14] spoke · jet-ski-puerto-banus
+[2026-06-03 18:09:57]   ✓ saved content/jet-ski-puerto-banus.json
+[2026-06-03 18:09:57]   ✓ added to keyword_map.spokes
+[2026-06-03 18:09:57] [3/14] spoke · jet-ski-hire-marbella
+[2026-06-03 18:10:14]   ✓ saved content/jet-ski-hire-marbella.json
+[2026-06-03 18:10:14]   ✓ added to keyword_map.spokes
+[2026-06-03 18:10:14] [4/14] spoke · jet-ski-rental-puerto-banus
+[2026-06-03 18:10:33]   ✓ saved content/jet-ski-rental-puerto-banus.json
+[2026-06-03 18:10:33]   ✓ added to keyword_map.spokes
+[2026-06-03 18:10:33] [5/14] spoke · jet-ski-rental-estepona
+[2026-06-03 18:10:49]   ✓ saved content/jet-ski-rental-estepona.json
+[2026-06-03 18:10:49]   ✓ added to keyword_map.spokes
+[2026-06-03 18:10:49] [6/14] spoke · jet-ski-rental-fuengirola
+[2026-06-03 18:11:09]   ✓ saved content/jet-ski-rental-fuengirola.json
+[2026-06-03 18:11:09]   ✓ added to keyword_map.spokes
+[2026-06-03 18:11:09] [7/14] spoke · jet-ski-rental-benalmadena
+[2026-06-03 18:11:27]   ✓ saved content/jet-ski-rental-benalmadena.json
+[2026-06-03 18:11:27]   ✓ added to keyword_map.spokes
+[2026-06-03 18:11:27] [8/14] spoke · jet-ski-tours-marbella
+[2026-06-03 18:11:52]   ✓ saved content/jet-ski-tours-marbella.json
+[2026-06-03 18:11:52]   ✓ added to keyword_map.spokes
+[2026-06-03 18:11:52] [9/14] spoke · jet-ski-safari-puerto-banus
+[2026-06-03 18:12:13]   ✓ saved content/jet-ski-safari-puerto-banus.json
+[2026-06-03 18:12:13]   ✓ added to keyword_map.spokes
+[2026-06-03 18:12:13] [10/14] spoke · jet-ski-rental-costa-del-sol
+[2026-06-03 18:12:35]   ✓ saved content/jet-ski-rental-costa-del-sol.json
+[2026-06-03 18:12:35]   ✓ added to keyword_map.spokes
+[2026-06-03 18:12:35] [11/14] spoke · flyboard-marbella
+[2026-06-03 18:12:55]   ✓ saved content/flyboard-marbella.json
+[2026-06-03 18:12:55]   ✓ added to keyword_map.spokes
+[2026-06-03 18:12:55] [12/14] spoke · water-sports-marbella
+[2026-06-03 18:13:18]   ✓ saved content/water-sports-marbella.json
+[2026-06-03 18:13:18]   ✓ added to keyword_map.spokes
+[2026-06-03 18:13:18] [13/14] spoke · jet-ski-rental-nerja
+[2026-06-03 18:13:33]   ✓ saved content/jet-ski-rental-nerja.json
+[2026-06-03 18:13:33]   ✓ added to keyword_map.spokes
+[2026-06-03 18:13:33] [14/14] spoke · jet-ski-rental-malaga
+[2026-06-03 18:13:52]   ✓ saved content/jet-ski-rental-malaga.json
+[2026-06-03 18:13:52]   ✓ added to keyword_map.spokes
+[2026-06-03 18:13:52] queue: 0 remaining, 117 consumed total
+[2026-06-03 18:13:52] queue under threshold (0 < 30) — auto-refilling…
+[2026-06-03 18:13:52] refill failed: FileNotFoundError: [Errno 2] No such file or directory: 'claude'
+[2026-06-03 18:13:52] running deploy.sh …

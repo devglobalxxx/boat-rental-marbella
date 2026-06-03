@@ -64,12 +64,19 @@ def classify_field(name, ftype, placeholder, label):
     return None
 
 def build_message(rec, lang):
-    # reuse the outreach plain-text body (concierge version) with working URL
+    # reuse the outreach plain-text body (concierge version) with working URL,
+    # but STRIP the email-only "— You're receiving this… reply STOP" footer —
+    # it makes no sense submitted through a web contact form.
     _, _, body = outreach.render(
         {"domain": rec["domain"], "company": rec.get("company",""), "city": rec.get("city",""), "country": rec.get("country","")},
         force_lang=lang,
     )
-    return body
+    lines = []
+    for ln in body.splitlines():
+        if ln.startswith("— ") or ln.startswith("-- "):
+            break
+        lines.append(ln)
+    return "\n".join(lines).rstrip() + "\n"
 
 def submit_form(con, rec):
     domain = rec["domain"]; url = rec["form_url"]
@@ -145,8 +152,7 @@ def submit_form(con, rec):
         record(con, domain, url, "failed", fields=mapped, error=f"{type(e).__name__}: {e}")
         return "failed"
 
-def candidates(con, limit=None):
-    suppressed = outreach.hard_suppressed_emails(con)
+def candidates(con, limit=None, shard=None, shards=None):
     cur = con.execute("""
         SELECT domain, company, city, country, contact_form
         FROM leads WHERE contact_form IS NOT NULL AND contact_form != ''
@@ -155,6 +161,9 @@ def candidates(con, limit=None):
     out = []
     for domain, company, city, country, form in cur:
         if already_done(con, domain): continue
+        if domain in outreach.COMPETITOR_DOMAINS: continue
+        if any(domain.endswith("." + c) for c in outreach.COMPETITOR_DOMAINS): continue
+        if shards and (hash(domain) % shards) != shard: continue
         out.append({"domain": domain, "company": company or "", "city": city or "",
                     "country": country or "", "form_url": form})
         if limit and len(out) >= limit: break
@@ -167,6 +176,8 @@ def main():
     ap.add_argument("--all", action="store_true")
     ap.add_argument("--sleep", type=float, default=4.0)
     ap.add_argument("--stats", action="store_true")
+    ap.add_argument("--shard", type=int)
+    ap.add_argument("--shards", type=int)
     args = ap.parse_args()
     con = store.connect(); ensure_schema(con)
 
@@ -176,8 +187,9 @@ def main():
             print(f"  {s:<12} {n}")
         return
 
-    recs = candidates(con, limit=None if args.all else args.limit)
-    print(f"Form candidates: {len(recs)}")
+    recs = candidates(con, limit=None if args.all else args.limit,
+                      shard=args.shard, shards=args.shards)
+    print(f"Form candidates: {len(recs)}" + (f" (shard {args.shard}/{args.shards})" if args.shards else ""))
     if args.dry_run:
         for r in recs[:5]:
             lang = outreach.pick_lang(r["country"])

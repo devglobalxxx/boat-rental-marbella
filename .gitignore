@@ -3,3 +3,7 @@ __pycache__/
 .DS_Store
 .env
 .indexnow_key
+
+# BoatHire24 lead pipeline (do not let deploy git operations manage these)
+data/scraper/
+scripts/scraper/

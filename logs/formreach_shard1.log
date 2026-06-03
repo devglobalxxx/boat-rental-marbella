@@ -1,0 +1,56 @@
+/Users/master/Library/Python/3.9/lib/python/site-packages/urllib3/__init__.py:35: NotOpenSSLWarning: urllib3 v2 only supports OpenSSL 1.1.1+, currently the 'ssl' module is compiled with 'LibreSSL 2.8.3'. See: https://github.com/urllib3/urllib3/issues/3020
+  warnings.warn(
+Form candidates: 51 (shard 1/20)
+  [   1/51] cartagenadreams.com                    → captcha
+  [   2/51] realyachtcharter.com                   → js_form
+  [   3/51] mallorcaboathire.com                   → js_form
+  [   4/51] marine-project.com                     → failed
+  [   5/51] yachtrentalhvar.com                    → js_form
+  [   6/51] larnacanapacruises.com                 → failed
+  [   7/51] rentchicagoboats.com                   → captcha
+  [   8/51] rentayatesacapulco.com                 → js_form
+  [   9/51] pangeabocas.com                        → captcha
+  [  10/51] galapagossky.com                       → captcha
+  [  11/51] rentayachtabudhabi.com                 → js_form
+  [  12/51] bookboat.com                           → js_form
+  [  13/51] sardiniaboatrentals.com                → failed
+  [  14/51] maidoftheforth.co.uk                   → submitted
+  [  15/51] tikiboatsrental.com                    → captcha
+  [  16/51] krcebutours.com                        → failed
+  [  17/51] nhatrangtour.vip                       → js_form
+  [  18/51] audaciousduo.com.au                    → captcha
+  [  19/51] hamiltonisland.com.au                  → captcha
+  [  20/51] costasolcruceros.com                   → captcha
+  [  21/51] wavepol.com                            → captcha
+  [  22/51] jetscoot.com                           → captcha
+  [  23/51] barcasamba.com                         → captcha
+  [  24/51] rentalyachtmarbella.com                → captcha
+  [  25/51] business-yachtclub.com                 → captcha
+  [  26/51] oscayachting.com                       → js_form
+  [  27/51] rivieracharters.rentals                → captcha
+  [  28/51] bahamasyachts.net                      → submitted
+  [  29/51] olhmobilityservices.com                → submitted
+  [  30/51] yachthub.vn                            → js_form
+  [  31/51] allwayscaboboats.com                   → js_form
+  [  32/51] boxbayclub.com                         → js_form
+  [  33/51] jetskivalencia.com                     → captcha
+  [  34/51] boatability.co.uk                      → captcha
+  [  35/51] boatrentalgalveston.com                → failed
+  [  36/51] luxecruises.com                        → captcha
+  [  37/51] yachtcharterbarcelona.co.uk            → js_form
+  [  38/51] charterassociation.co.uk               → captcha
+  [  39/51] decalaencala.com                       → captcha
+  [  40/51] tripster.com                           → captcha
+  [  41/51] torontoharbournauticalcentre.com       → captcha
+  [  42/51] sandiegobaycruises.com                 → captcha
+  [  43/51] theyachtlife.com.au                    → captcha
+  [  44/51] vala-charter.com                       → captcha
+  [  45/51] norfolksailing.com                     → captcha
+  [  46/51] marinajacks.com                        → failed
+  [  47/51] sotojets.es                            → js_form
+  [  48/51] laketravisboatrentals.com              → captcha
+  [  49/51] heritagecoastcharters.com              → captcha
+  [  50/51] cobhguide.ie                           → captcha
+  [  51/51] miniport.co.uk                         → captcha
+
+Done. {'captcha': 29, 'js_form': 13, 'failed': 6, 'submitted': 3}

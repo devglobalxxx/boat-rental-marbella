@@ -894,6 +894,7 @@ hint: See the 'Note about fast-forwards' in 'git push --help' for details.
 
 [2026-06-01 15:30:15] queue empty — nothing to do.
 [2026-06-01 18:30:03] queue empty — nothing to do.
+<<<<<<< HEAD
 [2026-06-03 18:09:22] === Daily content run (kind-balanced): 0 blog + 14 landing = 14 item(s) ===
 [2026-06-03 18:09:22] [1/14] spoke · jet-ski-marbella
 [2026-06-03 18:09:38]   ✓ saved content/jet-ski-marbella.json
@@ -944,3 +945,57 @@ hint: See the 'Note about fast-forwards' in 'git push --help' for details.
 [2026-06-03 18:14:17] deploy.sh OK
 [2026-06-03 18:14:17] === Done: 14 succeeded, 0 failed ===
 
+=======
+[2026-06-02 10:00:00] queue empty — nothing to do.
+[2026-06-02 15:50:46] queue empty — nothing to do.
+[2026-06-02 18:32:18] queue empty — nothing to do.
+[2026-06-03 10:00:04] queue empty — nothing to do.
+[2026-06-03 15:30:17] queue empty — nothing to do.
+[2026-06-03 18:30:21] queue empty — nothing to do.
+[2026-06-04 10:00:00] queue empty — nothing to do.
+[2026-06-04 16:07:41] queue empty — nothing to do.
+[2026-06-04 18:30:18] queue empty — nothing to do.
+[2026-06-05 10:00:00] queue empty — nothing to do.
+[2026-06-05 15:30:18] queue empty — nothing to do.
+[2026-06-05 18:30:19] queue empty — nothing to do.
+[2026-06-06 10:00:01] queue empty — nothing to do.
+[2026-06-07 01:33:23] queue empty — nothing to do.
+[2026-06-07 11:00:02] queue empty — nothing to do.
+[2026-06-07 17:02:19] queue empty — nothing to do.
+[2026-06-07 19:30:23] queue empty — nothing to do.
+[2026-06-07 20:21:31] queue at 0 (< 30) — pre-run refill…
+[2026-06-07 20:22:06] refill: +30 topics (queue now 30)
+[2026-06-07 20:22:06] === Daily content run: 5 item(s) ===
+[2026-06-07 20:22:06] [1/5] blog · blog/marbella-yacht-charter-august-peak-season
+[2026-06-07 20:22:06]   ✗ FAILED: AttributeError: 'function' object has no attribute 'warning'
+[2026-06-07 20:22:06] [2/5] blog · blog/puerto-banus-yacht-fuel-surcharge-explained
+[2026-06-07 20:22:06]   ✗ FAILED: AttributeError: 'function' object has no attribute 'warning'
+[2026-06-07 20:22:06] [3/5] blog · blog/marbella-yacht-charter-deposit-rules
+[2026-06-07 20:22:06]   ✗ FAILED: AttributeError: 'function' object has no attribute 'warning'
+[2026-06-07 20:22:06] [4/5] blog · blog/sotogrande-polo-season-yacht-charter
+[2026-06-07 20:22:06]   ✗ FAILED: AttributeError: 'function' object has no attribute 'warning'
+[2026-06-07 20:22:06] [5/5] blog · blog/marbella-music-festival-cala-de-mijas-yacht
+[2026-06-07 20:22:06]   ✗ FAILED: AttributeError: 'function' object has no attribute 'warning'
+[2026-06-07 20:22:06] === Done: 0 succeeded, 5 failed ===
+
+[2026-06-07 20:22:50] === Daily content run: 5 item(s) ===
+[2026-06-07 20:22:50] [1/5] blog · blog/marbella-yacht-charter-august-peak-season
+[2026-06-07 20:24:10]   ✓ saved content/blog_marbella-yacht-charter-august-peak-season.json
+[2026-06-07 20:24:10]   ✓ added to keyword_map.blog
+[2026-06-07 20:24:10] [2/5] blog · blog/puerto-banus-yacht-fuel-surcharge-explained
+[2026-06-07 20:25:36]   ✓ saved content/blog_puerto-banus-yacht-fuel-surcharge-explained.json
+[2026-06-07 20:25:36]   ✓ added to keyword_map.blog
+[2026-06-07 20:25:36] [3/5] blog · blog/marbella-yacht-charter-deposit-rules
+[2026-06-07 20:27:07]   ✓ saved content/blog_marbella-yacht-charter-deposit-rules.json
+[2026-06-07 20:27:07]   ✓ added to keyword_map.blog
+[2026-06-07 20:27:07] [4/5] blog · blog/sotogrande-polo-season-yacht-charter
+[2026-06-07 20:28:33]   ✓ saved content/blog_sotogrande-polo-season-yacht-charter.json
+[2026-06-07 20:28:33]   ✓ added to keyword_map.blog
+[2026-06-07 20:28:33] [5/5] blog · blog/marbella-music-festival-cala-de-mijas-yacht
+[2026-06-07 20:30:03]   ✓ saved content/blog_marbella-music-festival-cala-de-mijas-yacht.json
+[2026-06-07 20:30:03]   ✓ added to keyword_map.blog
+[2026-06-07 20:30:03] queue: 25 remaining, 108 consumed total
+[2026-06-07 20:30:03] queue under threshold (25 < 30) — auto-refilling…
+[2026-06-07 20:30:37] refill: +30 topics (queue now 55)
+[2026-06-07 20:30:37] running deploy.sh …
+>>>>>>> 298f22b (Daily content: +5 pages (blog/marbella-yacht-charter-august-peak-season, blog/puerto-banus-yacht-fuel-surcharge-explained, blog/marbella-yacht-charter-deposit-rules, blog/sotogrande-polo-season-yacht-charter, blog/marbella-music-festival-cala-de-mijas-yacht))

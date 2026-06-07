@@ -153,11 +153,14 @@ Return only the JSON object specified in the system message."""
 def generate(item: dict) -> dict:
     system = system_prompt()
     user = build_user_prompt(item) + "\n\nReturn the JSON object only — no prose before or after, no markdown fences."
-    # Try DeepSeek first, fall back to CLI/API
-    try:
-        raw = _call_deepseek(system, user)
-    except Exception as ds_err:
-        log.warning(f"DeepSeek failed ({ds_err}), falling back to {BACKEND}")
+    # Prefer DeepSeek when DEEPSEEK_API_KEY is present (fast, cheap); otherwise CLI/API.
+    if os.environ.get("DEEPSEEK_API_KEY", "").strip():
+        try:
+            raw = _call_deepseek(system, user)
+        except Exception as ds_err:
+            log(f"  DeepSeek failed ({type(ds_err).__name__}: {str(ds_err)[:120]}), falling back to {BACKEND}")
+            raw = _call_cli(system, user) if BACKEND == "cli" else _call_api(system, user)
+    else:
         raw = _call_cli(system, user) if BACKEND == "cli" else _call_api(system, user)
     raw = re.sub(r"^```(?:json)?\s*|\s*```$", "", raw, flags=re.MULTILINE).strip()
     # CLI may emit a status line / extra text — extract the JSON object span
@@ -274,8 +277,24 @@ def main():
 
     queue_cfg = json.loads(QUEUE_PATH.read_text())
     queue = queue_cfg.get("queue", [])
+
+    # Pre-run refill: if queue is below the threshold (including empty), generate fresh topics
+    # BEFORE consuming, so an exhausted queue self-heals on the next scheduled run.
+    refill_threshold = int(queue_cfg.get("refill_threshold", 30))
+    refill_batch     = int(queue_cfg.get("refill_batch", 30))
+    if not args.dry_run and len(queue) < refill_threshold:
+        log(f"queue at {len(queue)} (< {refill_threshold}) — pre-run refill…")
+        try:
+            added = refill_queue(queue_cfg, refill_batch)
+            queue.extend(added)
+            queue_cfg["queue"] = queue
+            QUEUE_PATH.write_text(json.dumps(queue_cfg, ensure_ascii=False, indent=2))
+            log(f"refill: +{len(added)} topics (queue now {len(queue)})")
+        except Exception as e:
+            log(f"refill failed: {type(e).__name__}: {str(e)[:200]}")
+
     if not queue:
-        log("queue empty — nothing to do.")
+        log("queue still empty after refill — nothing to do.")
         return 0
 
     # If --blogs and --landings explicitly passed, pick balanced by kind

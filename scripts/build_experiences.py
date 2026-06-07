@@ -80,6 +80,7 @@ def write_page(slug, *, title, meta, h1, sub, eyebrow, body_html_str, jsonld, br
         "{{LANG_SWITCHER}}": '<strong>EN</strong><span class="sep">|</span><a href="/es/" hreflang="es" rel="alternate">ES</a>',
         "{{LANG_SWITCHER_FOOTER}}": '<strong>🇬🇧 English</strong> &nbsp;·&nbsp; <a href="/es/" hreflang="es" rel="alternate">🇪🇸 Español</a>',
         "{{HERO_IMG}}": hero_src,
+        "{{HERO_IMG_ABS}}": (SITE['base_url'] + hero_src) if hero_src.startswith('/') else hero_src,
         "{{HERO_SRCSET}}": html.escape(hero_srcset),
         "{{HERO_ALT}}": html.escape(hero_alt),
         "{{HERO_EYEBROW}}": f'<span class="eyebrow">{html.escape(eyebrow)}</span>',

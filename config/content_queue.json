@@ -1234,118 +1234,6 @@
       "consumed_at": "2026-06-01"
     },
     {
-<<<<<<< HEAD
-      "kind": "spoke",
-      "slug": "jet-ski-marbella",
-      "primary_keyword": "jet ski marbella",
-      "title": "Jet Ski Marbella | Boat Rental Marbella",
-      "target_words": 1300,
-      "consumed_at": "2026-06-03"
-    },
-    {
-      "kind": "spoke",
-      "slug": "jet-ski-puerto-banus",
-      "primary_keyword": "jet ski puerto banus",
-      "title": "Jet Ski Puerto Banus | Boat Rental Marbella",
-      "target_words": 1300,
-      "consumed_at": "2026-06-03"
-    },
-    {
-      "kind": "spoke",
-      "slug": "jet-ski-hire-marbella",
-      "primary_keyword": "jet ski hire marbella",
-      "title": "Jet Ski Hire Marbella | Boat Rental Marbella",
-      "target_words": 1300,
-      "consumed_at": "2026-06-03"
-    },
-    {
-      "kind": "spoke",
-      "slug": "jet-ski-rental-puerto-banus",
-      "primary_keyword": "jet ski rental puerto banus",
-      "title": "Jet Ski Rental Puerto Banus | Boat Rental Marbella",
-      "target_words": 1300,
-      "consumed_at": "2026-06-03"
-    },
-    {
-      "kind": "spoke",
-      "slug": "jet-ski-rental-estepona",
-      "primary_keyword": "jet ski rental estepona",
-      "title": "Jet Ski Rental Estepona | Boat Rental Marbella",
-      "target_words": 1300,
-      "consumed_at": "2026-06-03"
-    },
-    {
-      "kind": "spoke",
-      "slug": "jet-ski-rental-fuengirola",
-      "primary_keyword": "jet ski rental fuengirola",
-      "title": "Jet Ski Rental Fuengirola | Boat Rental Marbella",
-      "target_words": 1300,
-      "consumed_at": "2026-06-03"
-    },
-    {
-      "kind": "spoke",
-      "slug": "jet-ski-rental-benalmadena",
-      "primary_keyword": "jet ski rental benalmadena",
-      "title": "Jet Ski Rental Benalmadena | Boat Rental Marbella",
-      "target_words": 1300,
-      "consumed_at": "2026-06-03"
-    },
-    {
-      "kind": "spoke",
-      "slug": "jet-ski-tours-marbella",
-      "primary_keyword": "jet ski tours marbella",
-      "title": "Jet Ski Tours Marbella | Boat Rental Marbella",
-      "target_words": 1300,
-      "consumed_at": "2026-06-03"
-    },
-    {
-      "kind": "spoke",
-      "slug": "jet-ski-safari-puerto-banus",
-      "primary_keyword": "jet ski safari puerto banus",
-      "title": "Jet Ski Safari Puerto Banus | Boat Rental Marbella",
-      "target_words": 1300,
-      "consumed_at": "2026-06-03"
-    },
-    {
-      "kind": "spoke",
-      "slug": "jet-ski-rental-costa-del-sol",
-      "primary_keyword": "jet ski rental costa del sol",
-      "title": "Jet Ski Rental Costa Del Sol | Boat Rental Marbella",
-      "target_words": 1300,
-      "consumed_at": "2026-06-03"
-    },
-    {
-      "kind": "spoke",
-      "slug": "flyboard-marbella",
-      "primary_keyword": "flyboard marbella",
-      "title": "Flyboard Marbella | Boat Rental Marbella",
-      "target_words": 1300,
-      "consumed_at": "2026-06-03"
-    },
-    {
-      "kind": "spoke",
-      "slug": "water-sports-marbella",
-      "primary_keyword": "water sports marbella",
-      "title": "Water Sports Marbella | Boat Rental Marbella",
-      "target_words": 1300,
-      "consumed_at": "2026-06-03"
-    },
-    {
-      "kind": "spoke",
-      "slug": "jet-ski-rental-nerja",
-      "primary_keyword": "jet ski rental nerja",
-      "title": "Jet Ski Rental Nerja | Boat Rental Marbella",
-      "target_words": 1300,
-      "consumed_at": "2026-06-03"
-    },
-    {
-      "kind": "spoke",
-      "slug": "jet-ski-rental-malaga",
-      "primary_keyword": "jet ski rental malaga",
-      "title": "Jet Ski Rental Malaga | Boat Rental Marbella",
-      "target_words": 1300,
-      "consumed_at": "2026-06-03"
-=======
       "kind": "blog",
       "slug": "blog/marbella-yacht-charter-august-peak-season",
       "primary_keyword": "marbella yacht charter august peak season",
@@ -1384,7 +1272,6 @@
       "title": "Cala de Mijas Music Festival: Yacht Charter from Marbella",
       "target_words": 1100,
       "consumed_at": "2026-06-07"
->>>>>>> 298f22b (Daily content: +5 pages (blog/marbella-yacht-charter-august-peak-season, blog/puerto-banus-yacht-fuel-surcharge-explained, blog/marbella-yacht-charter-deposit-rules, blog/sotogrande-polo-season-yacht-charter, blog/marbella-music-festival-cala-de-mijas-yacht))
     }
   ],
   "refill_threshold": 30,

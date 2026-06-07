@@ -74,24 +74,6 @@
         "Heated freshwater jacuzzi onboard"
       ],
       "currency": "EUR"
-    },
-    "jetski": {
-      "currency": "EUR",
-      "label": "Sea-Doo jet ski — self-drive",
-      "min_hours": 1,
-      "extra_inclusions": [
-        "Sea-Doo GTX / GTI (powerful 3-seaters)",
-        "Life jackets & safety briefing included",
-        "Self-drive — no licence needed (Spanish licence-free rules)",
-        "Fuel included",
-        "Launches from Puerto Banús"
-      ],
-      "prices": {
-        "1h": 250,
-        "2h": 450,
-        "3h": 650,
-        "4h": 850
-      }
     }
   },
   "boats": [
@@ -1282,97 +1264,6 @@
         "corporate yacht charter Marbella",
         "overnight yacht Marbella"
       ]
-    },
-    {
-      "slug": "jet-ski-seadoo",
-      "name": "Sea-Doo GTX Jet Ski",
-      "tagline": "Sea-Doo GTX & GTI jet skis — self-drive from Puerto Banús, no licence needed",
-      "builder": "Sea-Doo (BRP)",
-      "type": "Jet ski",
-      "length_m": 3.4,
-      "capacity_pax": 3,
-      "departure_port": "Puerto Banús",
-      "tier": "jetski",
-      "pricing_status": "published",
-      "summary": "Sea-Doo GTX and GTI jet skis for rent in Marbella, launching from Puerto Banús. €250 for 1 hour, €450 for 2 hours, then €200 for each additional hour. Powerful, stable 3-seater Sea-Doos with life jackets and a safety briefing included. Self-drive along the Marbella coastline and the Golden Mile — no licence required under Spanish licence-free rules.",
-      "highlights": [
-        "€250 / 1h · €450 / 2h · +€200 each extra hour",
-        "Sea-Doo GTX & GTI — stable, powerful 3-seaters",
-        "No licence required — self-drive after a short briefing",
-        "Life jackets & safety briefing included",
-        "Launches from Puerto Banús, Marbella",
-        "Ride the Marbella coastline & Golden Mile"
-      ],
-      "intent_keywords": [
-        "jet ski rental Marbella",
-        "jet ski hire Puerto Banús",
-        "Sea-Doo rental Marbella",
-        "alquiler moto de agua Marbella"
-      ],
-      "hero_local": "/img/boats/jet-ski-seadoo/hero-1600.jpg",
-      "hero_local_srcset": [
-        [
-          "/img/boats/jet-ski-seadoo/hero-600.jpg",
-          600
-        ],
-        [
-          "/img/boats/jet-ski-seadoo/hero-900.jpg",
-          900
-        ],
-        [
-          "/img/boats/jet-ski-seadoo/hero-1200.jpg",
-          1200
-        ],
-        [
-          "/img/boats/jet-ski-seadoo/hero-1600.jpg",
-          1600
-        ]
-      ],
-      "hero_local_alt": "Sea-Doo GTX jet skis riding off Marbella — Puerto Banús jet ski rental",
-      "gallery_local": [
-        {
-          "src": "/img/boats/jet-ski-seadoo/ride-1200.jpg",
-          "srcset": [
-            [
-              "/img/boats/jet-ski-seadoo/ride-600.jpg",
-              600
-            ],
-            [
-              "/img/boats/jet-ski-seadoo/ride-900.jpg",
-              900
-            ],
-            [
-              "/img/boats/jet-ski-seadoo/ride-1200.jpg",
-              1200
-            ]
-          ],
-          "alt": "Rider on a Sea-Doo GTX jet ski with La Concha mountain behind, Marbella"
-        },
-        {
-          "src": "/img/boats/jet-ski-seadoo/fun-1200.jpg",
-          "srcset": [
-            [
-              "/img/boats/jet-ski-seadoo/fun-600.jpg",
-              600
-            ],
-            [
-              "/img/boats/jet-ski-seadoo/fun-900.jpg",
-              900
-            ],
-            [
-              "/img/boats/jet-ski-seadoo/fun-1200.jpg",
-              1200
-            ]
-          ],
-          "alt": "Sea-Doo jet ski fun on the Marbella coast off Puerto Banús"
-        }
-      ],
-      "model_year": 2023,
-      "price_2h": 450,
-      "price_3h": 650,
-      "price_4h": 850,
-      "license_free": true,
-      "fuel_included": true
     }
   ]
 }

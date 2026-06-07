@@ -657,6 +657,7 @@ def render(page: dict, kind: str, data: dict) -> str:
         "{{BOOK_PITCH}}": book_card_for(page['slug'])[2],
         "{{BOAT_GRID}}": BOAT_GRID,
         "{{HERO_IMG}}": hero_img,
+        "{{HERO_IMG_ABS}}": (SITE['base_url'] + hero_img) if hero_img.startswith('/') else hero_img,
         "{{OG_IMG}}": (SITE['base_url'] + hero_img) if hero_img.startswith('/') else hero_img,
         "{{HERO_SRCSET}}": html.escape(hero_srcset),
         "{{HERO_ALT}}": html.escape(hero_alt),

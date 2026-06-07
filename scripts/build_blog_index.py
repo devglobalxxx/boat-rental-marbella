@@ -165,6 +165,7 @@ def main():
         "{{LANG_SWITCHER}}": '<strong>EN</strong><span class="sep">|</span><a href="/es/" hreflang="es" rel="alternate">ES</a>',
         "{{LANG_SWITCHER_FOOTER}}": '<strong>🇬🇧 English</strong> &nbsp;·&nbsp; <a href="/es/" hreflang="es" rel="alternate">🇪🇸 Español</a>',
         "{{HERO_IMG}}": INDEX_HERO_IMG,
+        "{{HERO_IMG_ABS}}": SITE['base_url'] + INDEX_HERO_IMG,
         "{{HERO_SRCSET}}": html.escape(hero_srcset),
         "{{HERO_ALT}}": html.escape(INDEX_HERO_ALT),
         "{{HERO_EYEBROW}}": '<span class="eyebrow">Guides · Marbella</span>',

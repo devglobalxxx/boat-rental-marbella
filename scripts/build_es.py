@@ -545,6 +545,7 @@ def render_es(slug, key, title, meta, h1, sub, eyebrow, body, en_alt):
         "{{LANG_SWITCHER}}": f'<a href="{en_target}" hreflang="en" rel="alternate">EN</a><span class="sep">|</span><strong>ES</strong>',
         "{{LANG_SWITCHER_FOOTER}}": f'<a href="{en_target}" hreflang="en" rel="alternate">🇬🇧 English</a> &nbsp;·&nbsp; <strong>🇪🇸 Español</strong>',
         "{{HERO_IMG}}": hero_src,
+        "{{HERO_IMG_ABS}}": (SITE['base_url'] + hero_src) if hero_src.startswith('/') else hero_src,
         "{{HERO_SRCSET}}": html.escape(hero_srcset),
         "{{HERO_ALT}}": html.escape(hero_alt),
         "{{HERO_EYEBROW}}": f'<span class="eyebrow">{html.escape(eyebrow)}</span>',

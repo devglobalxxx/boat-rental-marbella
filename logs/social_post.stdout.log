@@ -1,3 +1,0 @@
-[2026-06-03 11:00:02] Starting X poster
-[2026-06-03 11:00:02] Posting 10 tweets to @boatrentalmarbs (2026-06-03)
-[2026-06-03 11:00:02] ERROR: No X session. Run: python3 scripts/post_tweet.py --login

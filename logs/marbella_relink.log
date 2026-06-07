@@ -1,100 +1,0 @@
-[load] link_graph.json
-[link] /: 1/6 applied
-[link] /yacht-charter-marbella/: 1/7 applied
-[link] /catamaran-rental-marbella/: 1/6 applied
-[link] /boat-rental-no-license-marbella/: 0/6 applied
-[link] /blog/how-much-does-it-cost-to-rent-a-boat-in-marbella/: 0/9 applied
-[link] /blog/boat-license-rules-spain/: 1/5 applied
-
-inbound counts:
-    5  /yacht-charter-marbella/
-    5  /catamaran-rental-marbella/
-    5  /
-    4  /sunset-cruise-marbella/
-    3  /boat-rental-no-license-marbella/
-    3  /blog/best-month-to-rent-a-boat-in-marbella/
-    3  /fishing-boat-rental-marbella/
-    2  /blog/how-much-does-it-cost-to-rent-a-boat-in-marbella/
-    2  /luxury-yacht-rental-marbella/
-    2  /blog/boat-license-rules-spain/
-    2  /boat-party-marbella/
-    1  /boat-rental-puerto-banus/
-    1  /blog/puerto-banus-vs-marbella-marina/
-    1  /blog/kids-on-a-boat-marbella/
-→ render
-fleet index: site/boats/index.html
-boat detail : site/boats/astondoa-40/index.html
-boat detail : site/boats/azimut-39/index.html
-boat detail : site/boats/mangusta-80/index.html
-boat detail : site/boats/azimut-58/index.html
-boat detail : site/boats/bandido/index.html
-boat detail : site/boats/canados-86/index.html
-boat detail : site/boats/dubhe/index.html
-boat detail : site/boats/fairline-targa-12m/index.html
-boat detail : site/boats/ferretti-94/index.html
-boat detail : site/boats/k80/index.html
-boat detail : site/boats/lagoon-380/index.html
-boat detail : site/boats/mangusta-80-grey/index.html
-boat detail : site/boats/mangusta-80-white/index.html
-boat detail : site/boats/mariah-sx21/index.html
-boat detail : site/boats/pershing-46/index.html
-boat detail : site/boats/red-tide-fishing-boat/index.html
-boat detail : site/boats/speedboat/index.html
-boat detail : site/boats/maiora-26m/index.html
-boat detail : site/boats/jet-ski-seadoo/index.html
-blog index: 85 posts → /Users/master/boat-rental-marbella/site/blog/index.html
-  ✓ experiences hub → /experiences/
-  ✓ /experiences/family-boat-days-marbella/
-  ✓ /experiences/photoshoot-yacht-marbella/
-  ✓ /experiences/bachelor-hen-parties-marbella/
-  ✓ /experiences/wedding-yacht-marbella/
-  ✓ /experiences/corporate-yacht-marbella/
-  ✓ /experiences/honeymoon-yacht-marbella/
-  ✓ /experiences/snorkeling-tour-marbella/
-  ✓ /experiences/birthday-yacht-marbella/
-  ✓ /experiences/proposal-yacht-marbella/
-  ✓ /experiences/anniversary-yacht-marbella/
-  ✓ es/(hub) → https://boatrentalinmarbella.com/es/
-  ✓ es/alquiler-de-yates-marbella → https://boatrentalinmarbella.com/es/alquiler-de-yates-marbella/
-  ✓ es/alquiler-barcos-puerto-banus → https://boatrentalinmarbella.com/es/alquiler-barcos-puerto-banus/
-  ✓ es/alquiler-barcos-sin-licencia-marbella → https://boatrentalinmarbella.com/es/alquiler-barcos-sin-licencia-marbella/
-sitemap.xml written (141 URLs)
-sitemap-index.xml written (URL + video)
-  ✓ hero-video → /boat-rental-puerto-banus/  (puerto-banus-bow-shot)
-  ✓ hero-video → /boat-party-marbella/  (marbella-boat-party)
-  ✓ hero-video → /blog/how-much-does-it-cost-to-rent-a-boat-in-marbella/  (drinks-on-board)
-  ✓ hero-video → /blog/what-to-bring-on-a-boat-charter/  (drinks-on-board)
-  ✓ hero-video → /  (azimut-39-cruising)
-inject_hero_video: 5 page(s) swapped
-  ✓ founder-card → /
-  ✓ founder-card → /boat-party-marbella/
-  ✓ founder-card → /luxury-yacht-rental-marbella/
-  ✓ founder-card → /yacht-charter-marbella/
-  ✓ founder-card → /fishing-boat-rental-marbella/
-  ✓ founder-card → /sunset-cruise-marbella/
-  ✓ founder-card → /boat-rental-puerto-banus/
-  ✓ founder-card → /boats/
-  ✓ founder-card → /experiences/
-  ✓ founder-card → /experiences/wedding-yacht-marbella/
-  ✓ founder-card → /experiences/proposal-yacht-marbella/
-  ✓ founder-card → /experiences/anniversary-yacht-marbella/
-  ✓ founder-card → /experiences/honeymoon-yacht-marbella/
-  ✓ founder-card → /experiences/birthday-yacht-marbella/
-  ✓ founder-card → /experiences/corporate-yacht-marbella/
-  ✓ founder-card → /experiences/family-boat-days-marbella/
-  ✓ founder-card → /experiences/bachelor-hen-parties-marbella/
-  ✓ founder-card → /experiences/photoshoot-yacht-marbella/
-inject_founder_card: 18 page(s) updated
-sitemap-video.xml: 29 page(s), 40 video embed(s)
-VideoObject JSON-LD injected on 29 page(s)
-→ commit main
-To https://github.com/mardo89/boat-rental-marbella.git
-   3b3ff35..c089438  main -> main
-→ publish gh-pages
-git push using:  origin gh-pages
-1/     114 (0) [0]2/     114 (1) [0]3/     114 (2) [0]4/     114 (3) [0]5/     114 (4) [0]6/     114 (5) [0]7/     114 (6) [0]8/     114 (7) [0]9/     114 (8) [0]10/     114 (9) [0]11/     114 (10) [0]12/     114 (11) [0]13/     114 (12) [0]14/     114 (13) [0]15/     114 (14) [0]16/     114 (15) [0]17/     114 (16) [0]18/     114 (17) [0]19/     114 (18) [0]20/     114 (19) [0]21/     114 (20) [0]22/     114 (21) [0]23/     114 (22) [0]24/     114 (23) [0]25/     114 (24) [0]26/     114 (25) [0]27/     114 (26) [0]28/     114 (27) [0]29/     114 (28) [0]30/     114 (29) [0]31/     114 (30) [0]32/     114 (31) [0]33/     114 (32) [0]34/     114 (33) [0]35/     114 (34) [0]36/     114 (35) [0]37/     114 (36) [0]38/     114 (37) [0]39/     114 (38) [0]40/     114 (39) [0]41/     114 (40) [0]42/     114 (41) [0]43/     114 (42) [0]44/     114 (43) [0]45/     114 (44) [0]46/     114 (45) [0]47/     114 (46) [0]48/     114 (47) [0]49/     114 (48) [0]50/     114 (49) [0]51/     114 (50) [0]52/     114 (51) [0]53/     114 (52) [0]54/     114 (53) [0]55/     114 (54) [0]56/     114 (55) [0]57/     114 (56) [0]58/     114 (57) [0]59/     114 (58) [0]60/     114 (59) [0]61/     114 (60) [0]62/     114 (61) [0]63/     114 (62) [0]64/     114 (63) [0]65/     114 (64) [0]66/     114 (65) [0]67/     114 (66) [0]68/     114 (67) [0]69/     114 (68) [0]70/     114 (69) [0]71/     114 (70) [0]72/     114 (71) [0]73/     114 (72) [0]74/     114 (73) [0]75/     114 (74) [0]76/     114 (75) [0]77/     114 (76) [0]78/     114 (77) [0]79/     114 (78) [0]80/     114 (79) [0]81/     114 (80) [0]82/     114 (81) [0]83/     114 (82) [0]84/     114 (83) [0]85/     114 (84) [0]86/     114 (85) [0]87/     114 (86) [0]88/     114 (87) [0]89/     114 (88) [0]90/     114 (89) [0]91/     114 (90) [0]92/     114 (91) [0]93/     114 (92) [0]94/     114 (93) [0]95/     114 (94) [0]96/     114 (95) [0]97/     114 (96) [0]98/     114 (97) [0]99/     114 (98) [0]100/     114 (99) [0]101/     114 (100) [0]102/     114 (101) [0]103/     114 (102) [0]104/     114 (103) [0]105/     114 (104) [0]106/     114 (105) [0]107/     114 (106) [0]108/     114 (107) [0]109/     114 (108) [0]110/     114 (109) [0]111/     114 (110) [0]112/     114 (111) [0]113/     114 (112) [0]114/     114 (113) [0]Everything up-to-date
-→ live at https://boatrentalinmarbella.com
-→ IndexNow ping (Bing, Yandex, Naver, Seznam)
-missing /Users/master/boat-rental-marbella/.indexnow_key — generate one with `python3 -c "import secrets; print(secrets.token_hex(16))"` and put it there + site/<key>.txt
-→ Google Indexing API (URL_UPDATED for changed pages)
-Google Indexing API: no service-account at /Users/master/.boatrentalmarbella-gsc.json — skipped (set up later; IndexNow still ran).

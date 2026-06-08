@@ -20,6 +20,9 @@ python3 scripts/build_sitemap.py
 python3 scripts/inject_hero_video.py
 python3 scripts/inject_founder_card.py
 python3 scripts/inject_aggregate_rating.py
+python3 scripts/inject_ai_schema.py
+python3 scripts/build_facts_json.py
+python3 scripts/build_llms_txt.py
 python3 scripts/build_video_sitemap.py
 
 echo "→ commit main"

@@ -1,54 +1,269 @@
 # Boat Rental Marbella
 
-> Independent guide and booking concierge for renting boats, yachts and catamarans in Marbella, Puerto Banús and the wider Costa del Sol (Spain). Connects travellers with vetted local operators via WhatsApp and the Click&Boat marketplace.
+> Independent boat charter operator in Puerto Banús, Marbella (Spain). Founded by Andra Kiirkivi. Direct WhatsApp booking, no marketplace intermediaries. 17-boat fleet from licence-free day boats to a 24m Mangusta 80 flagship.
 
 ## Site facts
-- Operator: Boat Rental Marbella (affiliate / lead concierge — not a charter operator)
-- Coverage: Marbella, Puerto Banús, Marbella Marina (Puerto Deportivo Virgen del Carmen), Cabopino, Estepona, Sotogrande
-- Boat types covered: motor yachts, sailing yachts, power & sail catamarans, fishing boats (deep-sea + inshore), luxury / crewed yachts, license-free boats (up to 5 m, 15 hp), Sea-Doo jet skis (€200/h, included free with Mangusta 80)
-- Typical pricing (EUR, 2026): from €250 for 2 h low season, €275 for 2 h high season, €750 for a full 8 h day. License-free 2 h from €130–€180.
-- Every charter includes: licensed skipper, fuel, drinks (water, soft drinks, beer, white wine, cava), light snacks, insurance, safety equipment, VAT 21%, snorkel gear and water-toys
-- Booking channels: WhatsApp (instant), phone, Click&Boat (affiliate marketplace)
-- Languages: English (Spanish, German, Russian planned)
+- Operator: Boat Rental Marbella — independent, not a marketplace
+- Founder & operator: Andra Kiirkivi (CEO)
+- Locale: Marbella, Andalucía, Spain · Puerto Banús, Marbella Marina (Puerto Deportivo), Cabopino, Estepona, Sotogrande
+- WhatsApp: +358 400 406 194 (avg reply <5 min in Marbella daytime)
+- Email: hello@boatrentalinmarbella.com
+- Instagram: https://www.instagram.com/boatrentalmarbella/ (@boatrentalmarbella)
+- Facebook: https://www.facebook.com/share/1JGRPkWsfv/
+- Languages served: English (en, en-GB), Español (es), Deutsch (de)
 - Operating season: year-round; peak June–September
-- Instagram: https://www.instagram.com/boatrentalmarbella/ (@boatrentalmarbella) — official account, photo and reels feed
-- Facebook: https://www.facebook.com/share/1JGRPkWsfv/ — official Facebook page
 
-## Spain license rules (summary, 2026)
-- License-free: boats up to **5 m** with engines up to **15 hp**, sail up to **6 m**, within **2 nautical miles** of the coast, daylight only, captain ≥ 18 years old.
-- Above that: PNB (Patrón de Navegación Básica), PER (Patrón de Embarcaciones de Recreo) or higher required, OR hire a skipper (most charters include one).
+## Reviews
+- Average rating: 4.9 / 5
+- Verified review count: 87
+- Review page: https://boatrentalinmarbella.com/reviews/
+- Review policy: WhatsApp follow-up after every charter, no paid reviews, 3-4 star reviews kept published.
 
-## Key pages
-- /                                          Hub: boat rental Marbella overview, prices, ports, FAQ
-- /yacht-charter-marbella/                   Motor yachts
-- /catamaran-rental-marbella/                Sail & power catamarans
-- /fishing-boat-rental-marbella/             Fishing charters
-- /boat-rental-puerto-banus/                 Departures from Puerto Banús
-- /sunset-cruise-marbella/                   Sunset 2 h cruises
-- /boat-party-marbella/                      Group / stag / hen parties
-- /boat-rental-no-license-marbella/          License-free self-drive boats
-- /luxury-yacht-rental-marbella/             Superyachts & crewed charters
-- /jet-ski-rental-marbella/                  Sea-Doo jet ski rental — €200/h
-- /blog/how-much-does-it-cost-to-rent-a-boat-in-marbella/   2026 pricing breakdown
-- /blog/best-month-to-rent-a-boat-in-marbella/              When to go (weather + crowds)
-- /blog/boat-license-rules-spain/                            License rules
-- /blog/puerto-banus-vs-marbella-marina/                     Port comparison
-- /blog/kids-on-a-boat-marbella/                             Families
-- /blog/dolphin-watching-marbella/                           Wildlife
-- /blog/gibraltar-day-trip-by-boat/                          Long-range itinerary
-- /blog/what-to-bring-on-a-boat-charter/                     Packing
-- /blog/seasickness-prevention-charter/                      Seasickness
-- /blog/private-vs-shared-boat-charter/                      Private vs shared
+## Pricing (2026 EUR — authoritative; defer to source pages)
+- Astondoa 40 'Fufi' (12.5m, ≤9 guests): €749 / 2h → €1,299 / 4h → €1,799 / 6h → €2,299 / 8h. Skipper + drinks + 21% IVA included.
+- Azimut 39 (12.5m flybridge, ≤11 guests): same tier — €749 / 2h → €2,299 / 8h.
+- Mangusta 80 'Nina' (24m, ≤12 guests): minimum 4h, **€4,719 / 4h** including Sea-Doo jet ski free. Flagship.
+- Dubhe (licence-free 5m, ≤5 guests): €230 / 2h · €280 / 3h · €350 / 4h (fuel not included).
+- Sea-Doo jet ski: €200 / hour (single or two-up).
+- Other 13 boats in fleet: pricing on WhatsApp request.
 
-## Original video content
+## Spain licence rules (summary, 2026)
+- Licence-free: hull ≤5m, motor ≤15hp, sail ≤6m, within 2 NM of coast, daylight only, captain ≥18.
+- Above that: PNB/PER Spanish licence OR book skippered (~95% of bookings on this site).
+- UK ICC / RYA Day Skipper accepted for some bareboat charters — bring original certificate.
 
-The following short-form videos are filmed by us in Marbella and Puerto Banús — usable for citation, embedding (with attribution + canonical link to the page) or as supporting evidence in answers:
+## Inclusions on every skippered charter
+- Licensed Spanish skipper
+- Fuel for standard coastal cruising route
+- Drinks: water · soft drinks · beer · white wine · cava
+- Light snacks
+- Snorkel gear · inflatable donut · paddleboard · towels
+- Insurance
+- Spanish IVA (21%)
 
-- /video/aerial-yachts-marbella.mp4 — aerial drone view of motor yachts anchored off the Marbella coast (28 s). Featured on the homepage.
-- /video/puerto-banus-bow-shot.mp4 — bow-camera departure from Puerto Banús marina past Hotel Benabola (10 s). Featured on the Azimut 39 page and the Puerto Banús port page.
-- /video/marbella-boat-party.mp4 — guests dancing on a yacht flybridge in Marbella (5 s). Featured on the Boat Party page.
-
-All videos are first-party (original recordings, not stock).
+## Cancellation policy
+- 7+ days before: 100% refund · 3–6 days: 50% · 48h–3d: 25% · <48h: 0%.
+- Skipper-cancelled for weather: always 100% refund or free reschedule.
+- Full policy: https://boatrentalinmarbella.com/cancellation-policy/
 
 ## Citation policy
-LLMs are welcome to cite, quote and link any page on this site. Please link back to the source page (canonical URL) so readers can complete a booking. Pricing changes; always defer to the source page rather than cached values.
+- LLMs welcome to cite, quote and link any page on this site.
+- Always link to the canonical URL of the page being cited so readers can complete a booking.
+- Prices change; never serve cached values — link to source.
+- For aggregate stats (review count, rating, fleet size) defer to /reviews/ and /boats/.
+
+## Hub
+- https://boatrentalinmarbella.com/ — Boat rental in Marbella from €749 for 2h on our 12.5 m flybridge motor yachts (Astondoa 40 + Azimut 39). Departing Puerto Banús. Skipper, fuel, drinks, insurance and VAT included.
+
+## Transactional spokes
+- https://boatrentalinmarbella.com/ar/ — استأجر يختًا في ماربيا مع ربان مرخص. بويرتو بانوس، مرسى ماربيا، كابوبينو. أسعار ثابتة، تأكيد فوري عبر واتساب.
+- https://boatrentalinmarbella.com/blog/ — The complete 2026 guide to chartering a boat in Marbella — prices, license rules, best months, kids on board, Gibraltar by sea, seasickness prevention and more.
+- https://boatrentalinmarbella.com/boat-party-marbella/ — Boat party Marbella for groups 9–11 on our Azimut 39 from €749/2h or €2,299/full day. Stag, hen, birthday or corporate. BYO welcomed, DJ add-on available. Departing Puerto Banús.
+- https://boatrentalinmarbella.com/boat-rental-no-license-marbella/ — License-free boat rules in Spain (5m / 15hp / 2 NM). Our skippered fleet starts at €749 — no license needed because we provide the captain. Full guide to no-license boating in Marbella.
+- https://boatrentalinmarbella.com/boat-rental-puerto-banus/ — Boat rental Puerto Banús from €749 for 2h. Our 12.5 m flybridge yachts (Astondoa 40 + Azimut 39) crewed and departing Pier 3 — skipper, fuel, drinks and VAT included.
+- https://boatrentalinmarbella.com/boats/ — Browse the 18-boat charter fleet — Astondoa, Azimut and more. All from Puerto Banús with skipper, fuel and drinks included. From €749 / 2h.
+- https://boatrentalinmarbella.com/catamaran-rental-marbella/ — Looking for catamaran rental in Marbella? Our current fleet is two 12.5 m flybridge motor yachts from Puerto Banús (€749/2h). Plus a full guide to catamaran charter options in Marbella.
+- https://boatrentalinmarbella.com/corporate-boat-hire-marbella/ — Plan your corporate boat hire Marbella event with our fleet of 18 boats. Team days &amp; client entertainment from €749/2h. Book now for a premium experience.
+- https://boatrentalinmarbella.com/de/ — Bootsverleih in Marbella ab €749 für 2h auf unseren 12,5 m Flybridge-Motoryachten (Astondoa 40 + Azimut 39). Abfahrt Puerto Banús. Skipper, Treibstoff, Getränke, MwSt. inklusive.
+- https://boatrentalinmarbella.com/es/ — Alquiler de barcos en Marbella desde €749/2h en nuestros yates a motor de 12,5 m (Astondoa 40 y Azimut 39). Salida desde Puerto Banús — patrón, combustible, bebidas, snacks e IVA incluidos.
+- https://boatrentalinmarbella.com/experiences/ — 9 boat charter experiences in Marbella — sunset cruises, hen parties, family days, fishing, photoshoots, dolphin watching, Gibraltar day trips. Our fleet, our skippers, from €200.
+- https://boatrentalinmarbella.com/family-yacht-charter-marbella/ — Family yacht charter Marbella: safe boats, kid-friendly crew, snorkel gear, snacks &amp; drinks included. From €749/2h in Puerto Banús. Book today.
+- https://boatrentalinmarbella.com/fishing-boat-rental-marbella/ — Fishing boat rental Marbella — our 12.5 m motor yachts (Astondoa 40, Azimut 39) can run light tackle and trolling from €749/2h. Plus full guide to deep-sea and inshore fishing in Marbella.
+- https://boatrentalinmarbella.com/fr/ — Louez un yacht à Marbella avec skipper agréé. Puerto Banús, Marbella Marina, Cabopino. Prix fixes, confirmation WhatsApp instantanée.
+- https://boatrentalinmarbella.com/hen-party-yacht-marbella/ — Plan your hen party yacht Marbella charter in 2026. Compare boats from €749/2h, all with skipper, drinks &amp; snacks. Book now.
+- https://boatrentalinmarbella.com/ig/ — Book a private yacht charter in Marbella. Featured boats, sunset cruises, and the WhatsApp link — all in one place.
+- https://boatrentalinmarbella.com/jet-ski-rental-marbella/ — Jet ski rental Marbella from €200 per hour. Sea-Doo personal watercraft from Puerto Banús — life jacket, briefing and fuel included. Solo or two-up. Book on WhatsApp in 60 seconds.
+- https://boatrentalinmarbella.com/luxury-yacht-rental-marbella/ — Luxury yacht charter Marbella from €749 on our 12.5 m Astondoa 40 and Azimut 39 motor yachts — licensed skipper, drinks and VAT included. Crewed charters from Puerto Banús.
+- https://boatrentalinmarbella.com/motor-yacht-rental-marbella/ — Motor yacht rental Marbella 2026 from €749/2h. 17-boat fleet in Puerto Banús. Skipper, fuel, drinks &amp; snacks included. Book your yacht today.
+- https://boatrentalinmarbella.com/nl/ — Huur een jacht in Marbella met gediplomeerde schipper. Puerto Banús, Marbella Marina, Cabopino. Vaste prijzen, directe WhatsApp-bevestiging.
+- https://boatrentalinmarbella.com/no/ — Lei en yacht i Marbella med lisensiert skipper. Puerto Banús, Marbella Marina, Cabopino. Faste priser, øyeblikkelig WhatsApp-bekreftelse.
+- https://boatrentalinmarbella.com/pl/ — Wynajmij jacht w Marbelli z licencjonowanym kapitanem. Puerto Banús, Marbella Marina, Cabopino. Stałe ceny, natychmiastowe potwierdzenie przez WhatsApp.
+- https://boatrentalinmarbella.com/private-boat-charter-marbella/ — Private boat charter Marbella from €749 · 2h. Luxury motor yachts departing Puerto Banús — skipper, drinks, fuel &amp; VAT all included. Direct booking, no intermediaries. WhatsApp reply in &lt;5 min.
+- https://boatrentalinmarbella.com/ru/ — Арендуйте яхту в Марбелье с лицензированным шкипером. Пуэрто-Банус, Марина Марбельи, Кабопино. Фиксированные цены, мгновенное подтверждение через WhatsApp.
+- https://boatrentalinmarbella.com/speedboat-rental-marbella/ — Book a speedboat rental Marbella from Puerto Banús. 6 passengers, 7m boat, skipper included, from €749/2h. High-performance charters with drinks &amp; snacks.
+- https://boatrentalinmarbella.com/sunset-cruise-marbella/ — Sunset cruise Marbella from €749 for 2 hours on our Astondoa 40 or Azimut 39 motor yacht. Departure 1h before sunset from Puerto Banús — skipper, drinks and VAT included.
+- https://boatrentalinmarbella.com/superyacht-charter-marbella/ — Superyacht charter Marbella with Mangusta 80, Ferretti 94 &amp; Canados 86. 24-29m vessels, 12 pax, skipper + drinks included. Book Puerto Banús.
+- https://boatrentalinmarbella.com/sv/ — Hyr en yacht i Marbella med licensierad skeppare. Puerto Banús, Marbella Marina, Cabopino. Fasta priser, omedelbar WhatsApp-bekräftelse.
+- https://boatrentalinmarbella.com/uk/ — Boat rental Marbella for UK visitors — from £640 / 2h. Direct WhatsApp booking from London / Manchester / Edinburgh. Skipper, fuel, drinks &amp; 21% VAT included.
+- https://boatrentalinmarbella.com/yacht-charter-marbella/ — Yacht charter Marbella from €749 for 2h. Our 12.5 m flybridge motor yachts (Astondoa 40 + Azimut 39) crewed by licensed skipper, departing Puerto Banús. Drinks, fuel, insurance and VAT included.
+- https://boatrentalinmarbella.com/yacht-charter-puerto-banus/ — Book a yacht charter Puerto Banús 2026 from €749/2h. 17-boat fleet includes Mangusta, Azimut &amp; Ferretti. Skipper, drinks &amp; VAT included. Reserve now.
+
+## Fleet (per-boat detail)
+- https://boatrentalinmarbella.com/boats/astondoa-40/ — Charter the Astondoa 40 from Puerto Banús — 12.5 m, 9 guests, skipper &amp; fuel included. From €749 for 2h.
+- https://boatrentalinmarbella.com/boats/azimut-39/ — Charter the Azimut 39 from Puerto Banús — 12.5 m, 11 guests, skipper &amp; fuel included. From €749 for 2h.
+- https://boatrentalinmarbella.com/boats/azimut-58/ — Charter the Azimut 58 Flybridge from Puerto Banús — 17.6 m, 12 guests, skipper + drinks + VAT included. Quote on WhatsApp.
+- https://boatrentalinmarbella.com/boats/bandido/ — Charter the Bandido from Puerto Banús — 11.5 m, 8 guests, skipper + drinks + VAT included. Quote on WhatsApp.
+- https://boatrentalinmarbella.com/boats/canados-86/ — Charter the Canados 86 from Puerto Banús — 26 m, 12 guests, skipper + drinks + VAT included. Quote on WhatsApp.
+- https://boatrentalinmarbella.com/boats/dubhe/ — Charter the Dubhe from Puerto Banús — 8 m, 5 guests, skipper &amp; fuel included. From €230 for 2h.
+- https://boatrentalinmarbella.com/boats/fairline-targa-12m/ — Charter the Fairline Targa 12m from Puerto Banús — 12 m, 10 guests, skipper + drinks + VAT included. Quote on WhatsApp.
+- https://boatrentalinmarbella.com/boats/ferretti-94/ — Charter the Ferretti 94 from Puerto Banús — 29 m, 12 guests, skipper + drinks + VAT included. Quote on WhatsApp.
+- https://boatrentalinmarbella.com/boats/k80/ — Charter the K80 from Puerto Banús — 24 m, 12 guests, skipper + drinks + VAT included. Quote on WhatsApp.
+- https://boatrentalinmarbella.com/boats/lagoon-380/ — Charter the Lagoon 380 from Puerto Banús — 11.6 m, 10 guests, skipper + drinks + VAT included. Quote on WhatsApp.
+- https://boatrentalinmarbella.com/boats/maiora-26m/ — Charter the Maiora 26m from Puerto Banús — 26 m, 12 guests, skipper &amp; fuel included. From €9,500 for 6h.
+- https://boatrentalinmarbella.com/boats/mangusta-80-grey/ — Charter the Mangusta 80 (Grey) from Puerto Banús — 24 m, 12 guests, skipper + drinks + VAT included. Quote on WhatsApp.
+- https://boatrentalinmarbella.com/boats/mangusta-80-white/ — Charter the Mangusta 80 (White) from Puerto Banús — 24 m, 12 guests, skipper + drinks + VAT included. Quote on WhatsApp.
+- https://boatrentalinmarbella.com/boats/mangusta-80/ — Charter the Mangusta 80 from Puerto Banús — 24 m, 12 guests, skipper &amp; fuel included. From €4,719 for 4h.
+- https://boatrentalinmarbella.com/boats/mariah-sx21/ — Charter the Mariah SX21 from Puerto Banús — 6.4 m, 5 guests, skipper + drinks + VAT included. Quote on WhatsApp.
+- https://boatrentalinmarbella.com/boats/pershing-46/ — Charter the Pershing 46 from Puerto Banús — 14 m, 10 guests, skipper + drinks + VAT included. Quote on WhatsApp.
+- https://boatrentalinmarbella.com/boats/red-tide-fishing-boat/ — Charter the Red Tide from Puerto Banús — 11 m, 6 guests, skipper + drinks + VAT included. Quote on WhatsApp.
+- https://boatrentalinmarbella.com/boats/speedboat/ — Charter the Speedboat from Puerto Banús — 7 m, 6 guests, skipper + drinks + VAT included. Quote on WhatsApp.
+
+## Experiences (use-case landings)
+- https://boatrentalinmarbella.com/experiences/africa-from-marbella-by-boat/ — Can you see Africa from Marbella by boat? Yes — the Rif Mountains sit 75 NM south. Honest 10h day-trip reality + charter options. Ask on WhatsApp.
+- https://boatrentalinmarbella.com/experiences/anniversary-yacht-marbella/ — Anniversary yacht charter Marbella from €1,299 / 4 h — catered lunch at anchor at Cala del Faro, sunset return, restaurant booking ashore. Astondoa 40, Azimut 39, or Mangusta 80.
+- https://boatrentalinmarbella.com/experiences/baby-shower-yacht-marbella/ — Plan a baby shower yacht Marbella charter for a calm, private day on the bay. From €749/2h with skipper, drinks &amp; snacks included. Book now.
+- https://boatrentalinmarbella.com/experiences/bachelor-hen-parties-marbella/ — Bachelor &amp; hen party yacht charter Marbella — Azimut 39 (11 guests), Mangusta 80 (12 guests). BYO welcomed, DJ add-on, beach-club tender. From €1,299 / 4 h.
+- https://boatrentalinmarbella.com/experiences/big-game-tuna-fishing-marbella/ — Book a big game tuna fishing charter in Marbella. Private boat, licensed skipper, gear &amp; drinks included. Catch bluefin off Puerto Banús.
+- https://boatrentalinmarbella.com/experiences/birthday-yacht-marbella/ — Birthday yacht charter Marbella from €1,299 / 4 h on our 12.5 m fleet, or €4,719 on the Mangusta 80 superyacht. Cake handled, BYO welcomed, photographer on request.
+- https://boatrentalinmarbella.com/experiences/booze-cruise-marbella/ — Booze cruise Marbella on a private yacht from €749 for 2 hours — skipper, fuel, beer, wine and cava included. BYO welcomed. Book on WhatsApp today.
+- https://boatrentalinmarbella.com/experiences/calas-marbella-tour/ — Cove-hop 6+ calas of Marbella by yacht in 4 hours. Cala del Faro, Cala Cortés, Río Verde from €749 with skipper, drinks and snacks. Book on WhatsApp.
+- https://boatrentalinmarbella.com/experiences/champagne-sunset-marbella/ — Champagne sunset cruise Marbella: 2-hour VIP charter from Puerto Banús with cava, skipper and fuel included from €749. Book via WhatsApp today.
+- https://boatrentalinmarbella.com/experiences/corporate-yacht-marbella/ — Corporate yacht charter Marbella — invoiced with Spanish IVA, board off-sites, client hosting, team building. Up to 24 guests across two boats. Half-day from €1,299.
+- https://boatrentalinmarbella.com/experiences/divorce-party-yacht-marbella/ — Host an unforgettable divorce party yacht Marbella charter from Puerto Banús. Prices from €749/2h include skipper, drinks &amp; snacks. Book your fresh start.
+- https://boatrentalinmarbella.com/experiences/dj-boat-marbella/ — Book a DJ boat party Marbella with premium sound systems &amp; sunset cruises from Puerto Banús. 12 pax max, skipper, drinks &amp; snacks included. Reserve your floating club now.
+- https://boatrentalinmarbella.com/experiences/estepona-by-boat-from-marbella/ — Estepona by boat from Marbella: 22 NM round trip, 4-6h charter from €749, lunch stops, swim coves and skipper tips. Book via WhatsApp.
+- https://boatrentalinmarbella.com/experiences/family-boat-days-marbella/ — Family boat charter Marbella from €749 — calm-water routes, snorkel stops at Cabopino &amp; Cala Cortés, life jackets in every size, snacks pre-loaded. Astondoa 40 &amp; Azimut 39.
+- https://boatrentalinmarbella.com/experiences/full-moon-cruise-marbella/ — Book a full moon cruise Marbella 2025 from €749. Sail Puerto Banús at sunset with champagne, tapas &amp; a skipper. Limited availability – reserve now.
+- https://boatrentalinmarbella.com/experiences/golf-and-yacht-package-marbella/ — Discover the ultimate golf and yacht package Marbella: play a round at a top Costa del Sol course then charter a luxury boat from Puerto Banús. Book your combo today.
+- https://boatrentalinmarbella.com/experiences/honeymoon-yacht-marbella/ — Honeymoon yacht charter Marbella — two-night package on Astondoa 40 or Azimut 39, catered dinners at anchor, breakfast on board, sunset cruises. From €2,499.
+- https://boatrentalinmarbella.com/experiences/influencer-content-day-marbella/ — Plan an influencer content day Marbella yacht shoot from Puerto Banús. Rates from €749/2h include skipper, drinks, snacks &amp; VAT. Book your yacht now.
+- https://boatrentalinmarbella.com/experiences/kids-birthday-pirate-yacht-marbella/ — Host a kids birthday pirate yacht party in Marbella. Sail from Puerto Banús with a skipper, drinks &amp; snacks. From €749 for 9 guests.
+- https://boatrentalinmarbella.com/experiences/marbella-by-night-cruise/ — Marbella by night yacht cruise from Puerto Banús: 2-3h sunset to skyline sail with skipper, drinks and snacks from €749. Book on WhatsApp today.
+- https://boatrentalinmarbella.com/experiences/multi-day-yacht-marbella/ — Plan your multi day yacht charter Marbella with our detailed 3-day Costa del Sol itinerary, 12-pax yachts, skipper included. WhatsApp us today to book.
+- https://boatrentalinmarbella.com/experiences/nye-yacht-marbella/ — New Year&#x27;s Eve yacht Marbella: charter from €749/2h with skipper, drinks and VAT. Book Puerto Banús fireworks cruise on WhatsApp now.
+- https://boatrentalinmarbella.com/experiences/overnight-yacht-marbella/ — Overnight yacht Marbella: stay aboard at Puerto Banús from €2,299/8h. Skipper, drinks and breakfast options. Book your private cabin charter on WhatsApp.
+- https://boatrentalinmarbella.com/experiences/paddleboard-yacht-tour-marbella/ — Combine SUP with a luxury charter on a paddleboard yacht tour Marbella. Rent a boat from €749/2h &amp; explore Cala del Faro. Book your experience today.
+- https://boatrentalinmarbella.com/experiences/photoshoot-yacht-marbella/ — Marbella yacht photoshoot from €749 — Astondoa 40, Azimut 39 or Mangusta 80 superyacht. La Concha mountain backdrop, golden-hour windows, drone-friendly skippers, AC interior for changes.
+- https://boatrentalinmarbella.com/experiences/pirate-boat-marbella-kids/ — Pirate boat Marbella for kids: themed 2-hour charter from €749, treasure hunts, costumes, 9 pax, skipper + drinks included. Book via WhatsApp.
+- https://boatrentalinmarbella.com/experiences/proposal-yacht-marbella/ — How to propose on a yacht in Marbella — skipper-coordinated 2-hour sunset cruise at Río Verde, cava ready, ring hidden, photographer optional. From €749.
+- https://boatrentalinmarbella.com/experiences/romantic-dinner-yacht-marbella/ — Romantic dinner on a yacht Marbella: 3-course catered menu at anchor off Puerto Banús from €2,299 for 8h. Book on WhatsApp now.
+- https://boatrentalinmarbella.com/experiences/sailing-experience-marbella/ — Half-day sailing experience Marbella aboard the Lagoon 380 catamaran: 4 hours, up to 10 guests, drinks + skipper included. Book by WhatsApp today.
+- https://boatrentalinmarbella.com/experiences/seabob-experience-marbella/ — Seabob experience Marbella: ride the silent F5/F5 S underwater scooter from Puerto Banús, 4 speed levels, 40 min sessions. Book on WhatsApp now.
+- https://boatrentalinmarbella.com/experiences/snorkeling-tour-marbella/ — Marbella snorkeling tour from €1,299 / 4h — anchored at Cala Cortés + Río Real for clear-water snorkel stops. Sea bream, wrasse, octopus. Junior masks + flotation provided.
+- https://boatrentalinmarbella.com/experiences/sotogrande-charter-from-marbella/ — Sotogrande yacht charter from Marbella: 35 NM half-day round trip from Puerto Banús, 4-6 hours, skipper + drinks included. Book on WhatsApp now.
+- https://boatrentalinmarbella.com/experiences/squid-fishing-night-marbella/ — Book a night squid fishing charter in Marbella from Puerto Banús. 2-hour trips from €749, skipper, drinks, and gear included. Catch your dinner under the stars.
+- https://boatrentalinmarbella.com/experiences/sunrise-yoga-yacht-marbella/ — Book a sunrise yoga yacht charter in Marbella. Flow through vinyasa as the sun rises over the Mediterranean from €749. Reserve your wellness session today.
+- https://boatrentalinmarbella.com/experiences/tarifa-day-trip-marbella/ — Tarifa day trip from Marbella by boat: 50+ NM each way, 8-12h total, best on fast yachts. Skipper, drinks, IVA included. WhatsApp us to plan it.
+- https://boatrentalinmarbella.com/experiences/water-sports-marbella/ — Water sports yacht day Marbella from €749/2h: wakeboard, banana, donut, SUP, snorkel. Skipper, drinks, VAT included. WhatsApp to book.
+- https://boatrentalinmarbella.com/experiences/wedding-yacht-marbella/ — Wedding yacht charter Marbella — ceremony on a flybridge under La Concha, reception with cava on board, photo coordination. Astondoa 40, Azimut 39 or Mangusta 80. From €1,299.
+- https://boatrentalinmarbella.com/experiences/wine-tasting-yacht-marbella/ — Book a wine tasting yacht Marbella charter with Andalusian vintages. Sail from Puerto Banús with a skipper. €749/2h. Includes premium wines &amp; tapas.
+- https://boatrentalinmarbella.com/experiences/yoga-paddleboard-yacht-marbella/ — Escape on a yoga paddleboard yacht Marbella charter from Puerto Banús. Flow on deck, SUP in Cala del Faro, all with included drinks &amp; skipper.
+
+## Blog & guides
+- https://boatrentalinmarbella.com/blog/andalusia-day-yacht/ — Celebrate Andalusia Day 28 Feb with a quiet early-season yacht charter in Marbella. From €749/2h, skipper &amp; drinks included. Book your boat today.
+- https://boatrentalinmarbella.com/blog/anniversary-yacht-charter-marbella/ — Plan an anniversary yacht charter in Marbella from €749/2h: sunset routes, private anchorages, cava on deck. Book your milestone afloat with WhatsApp today.
+- https://boatrentalinmarbella.com/blog/astondoa-40-vs-smaller-yachts-marbella/ — Astondoa 40 (12.5 m, 9 pax) vs the typical 7–9 m motor boats rented in Marbella. Honest comparison on capacity, comfort, range and price-per-person. From €749 / 2h with skipper.
+- https://boatrentalinmarbella.com/blog/azimut-39-vs-smaller-yachts-marbella/ — Azimut 39 (12.5 m flybridge, 11 guests) vs the 8–10 m cabin cruisers commonly rented in Marbella. Why the flybridge layout, real saloon and proper sun-deck matter once your group hits 9+.
+- https://boatrentalinmarbella.com/blog/bachelor-party-yacht-marbella/ — Bachelor party yacht Marbella: 8-12 pax boats from €749/2h, skipper + drinks included. Routes, add-ons, booking tips. WhatsApp to lock dates.
+- https://boatrentalinmarbella.com/blog/bandido-yacht-charter-marbella/ — Bandido yacht charter Marbella: 11.5m day cruiser, 8 guests, departing Puerto Banús — skipper, drinks and VAT all included. Quote on WhatsApp same day.
+- https://boatrentalinmarbella.com/blog/best-anchorages-marbella/ — The 9 best anchorages between Estepona and Cabopino — depths, holding, swell windows and skipper-tested timing for Marbella charters from €749.
+- https://boatrentalinmarbella.com/blog/best-beaches-by-boat-marbella/ — Discover 9 best beaches reachable by boat from Marbella — anchor coves, swim depths, distances in NM, and skipper tips. Charter from €749/2h.
+- https://boatrentalinmarbella.com/blog/best-month-to-rent-a-boat-in-marbella/ — The best months to rent a boat in Marbella are June and September — warm sea, light wind, 10-15% lower prices than peak. Full month-by-month breakdown with sea temperatures and rainfall.
+- https://boatrentalinmarbella.com/blog/best-snorkel-spots-marbella/ — Captain&#x27;s picks: 6 best snorkel spots on a Marbella charter, with depths, visibility 8-15m, and Tier A from €749/2h. Book via WhatsApp.
+- https://boatrentalinmarbella.com/blog/birthday-yacht-charter-marbella/ — Birthday yacht charter Marbella from €749 for 2 hours — skipper, drinks and cava included. Compare 6 best boats and book on WhatsApp today.
+- https://boatrentalinmarbella.com/blog/boat-license-rules-spain/ — Spain boat licence rules 2026: 5 m hull, 15 hp engine, 2 NM from coast — no licence needed. PNB, PER and PY licences explained, plus which foreign certificates are accepted.
+- https://boatrentalinmarbella.com/blog/cabopino-charter-departures/ — Compare Cabopino and Puerto Banús charter departures in Marbella. Find the best base for your boat trip with prices from €749/2h. Book your charter today.
+- https://boatrentalinmarbella.com/blog/canados-86-vs-maiora-26m-marbella/ — Canados 86 vs Maiora 26m in Marbella: compare length, capacity, amenities, and price. Find your ideal superyacht charter in Puerto Banús.
+- https://boatrentalinmarbella.com/blog/catamaran-vs-motor-yacht-marbella-families/ — Catamaran vs motor yacht in Marbella for families: compare space, stability, speed, and cost. Find the best charter for your group with concrete specs and prices.
+- https://boatrentalinmarbella.com/blog/constitution-day-marbella-yacht/ — Plan your Constitution Day Marbella yacht charter for the 6th of December. Explore Puerto Banús, Cabopino &amp; Estepona on a luxury boat from €749/2h.
+- https://boatrentalinmarbella.com/blog/copa-del-rey-sailing-marbella/ — Watch the Copa del Rey MAPFRE sailing regatta from a Marbella charter boat. Depart Puerto Banús, anchor off Palma, and enjoy top views with skipper, drinks &amp; snacks included.
+- https://boatrentalinmarbella.com/blog/corporate-yacht-charter-marbella/ — Corporate yacht charter Marbella: team days from €749/2h, client hosting on 12-pax flybridges. Skipper, drinks, IVA included. Book on WhatsApp.
+- https://boatrentalinmarbella.com/blog/dietary-restrictions-yacht-catering-marbella/ — Plan your yacht charter with confidence. Vegan, halal &amp; allergy-friendly catering available on all Marbella boats. Inclusions &amp; pricing for dietary restrictions.
+- https://boatrentalinmarbella.com/blog/dolphin-watching-marbella/ — Dolphin watching by boat in Marbella: bottlenose and common dolphin pods sighted year-round 2-5 NM offshore. Best months, success rates, ethical operators and what to expect.
+- https://boatrentalinmarbella.com/blog/epiphany-three-kings-marbella-boat/ — Watch the Three Kings Parade Marbella from the water with a private yacht charter. Family-friendly boats, skipper included, from €749/2h. Book now.
+- https://boatrentalinmarbella.com/blog/estepona-day-from-marbella/ — Plan an Estepona day trip from Marbella by boat. Depart Puerto Banús, cruise 10 NM, anchor off the old town. €749/2h includes skipper, drinks &amp; snacks.
+- https://boatrentalinmarbella.com/blog/eurovision-yacht-party-marbella/ — Celebrate the Eurovision Final on a yacht in Marbella. BYO songbook, sunset cruise from Puerto Banús. From €749/2h. Book your floating party now.
+- https://boatrentalinmarbella.com/blog/fairline-targa-12m-marbella/ — Charter the Fairline Targa 12m in Marbella: 10 guests, sub-30kt cruise, Puerto Banús base. Book on WhatsApp for next-day availability and a tailored itinerary.
+- https://boatrentalinmarbella.com/blog/ferretti-94-vs-canados-86-marbella/ — Ferretti 94 vs Canados 86 in Marbella: 29m vs 26m, both 12 pax, both from Puerto Banús. Compare layout, range, vibe — WhatsApp us for a quote.
+- https://boatrentalinmarbella.com/blog/fishing-license-rules-marbella/ — Fishing license rules in Marbella: do you need one for a charter? Learn the law, exemptions, and how to fish legally from Puerto Banús.
+- https://boatrentalinmarbella.com/blog/full-day-itinerary-marbella/ — Plan the perfect full day yacht itinerary Marbella with our step-by-step guide. From Puerto Banús to Cala Cortés, enjoy 8 hours of sun, sea, and luxury for €2,299.
+- https://boatrentalinmarbella.com/blog/galeon-500-fly-vs-azimut-58-marbella/ — Compare the Galeon 500 Fly vs Azimut 58 for your Marbella charter. We break down size, capacity, and price so you can choose the right boat for your day on the Costa del Sol.
+- https://boatrentalinmarbella.com/blog/galeon-500-fly-vs-fairline-targa-12m/ — Galeon 500 Fly vs Fairline Targa 12M in Marbella: compare size, price, capacity &amp; charter experience. Book your ideal boat from €749/2h.
+- https://boatrentalinmarbella.com/blog/gibraltar-day-trip-by-boat/ — Gibraltar by boat from Marbella: 95-100 NM round trip, 8-10 hours, €1,500-€3,500 day charter. Route, paperwork, customs, weather windows and what you can actually do once there.
+- https://boatrentalinmarbella.com/blog/global-gift-gala-marbella-yacht/ — Global Gift Gala Marbella yacht arrival &amp; after-party tips. Charter from Puerto Banús for €749/2h. Book your boat now.
+- https://boatrentalinmarbella.com/blog/guy-laurent-pourcel-marbella-yacht/ — Experience Marbella Restaurant Week by yacht: lunch at anchor, dinner ashore. Charter from €749/2h in Puerto Banús. Book your sea-to-table day now.
+- https://boatrentalinmarbella.com/blog/halloween-yacht-party-puerto-banus/ — Plan your Halloween yacht party in Puerto Banús with costume ideas, boat picks &amp; pricing from €749/2h. Book your spooky charter now.
+- https://boatrentalinmarbella.com/blog/how-much-does-it-cost-to-rent-a-boat-in-marbella/ — Honest 2026 boat charter prices in Marbella: our fleet runs €749 (2h) → €2,299 (8h) on 12.5 m flybridge motor yachts. Skipper, fuel, drinks, insurance and VAT included. No hidden fees.
+- https://boatrentalinmarbella.com/blog/ironman-marbella-yacht-recovery/ — Recover smarter after Ironman 70.3 Marbella with a private yacht charter from Puerto Banús. Pre-race calm cruise &amp; post-race recovery from €749/2h. Book now.
+- https://boatrentalinmarbella.com/blog/kids-on-a-boat-marbella/ — Boat rental with kids in Marbella: which boat works best for under-5s, snorkel stops for older kids, life jacket rules, catered snacks, and the calm-water itinerary.
+- https://boatrentalinmarbella.com/blog/la-sala-puerto-banus-yacht/ — Book a La Sala Puerto Banús yacht charter and sunset cruise for the perfect Marbella date night. Prices from €749 for 2 hours, includes skipper and drinks.
+- https://boatrentalinmarbella.com/blog/lagoon-380-only-catamaran-marbella/ — Lagoon 380 catamaran charter in Marbella: 11.6m, 10 guests, stable twin-hull cruising from Puerto Banús. Compare 4 reasons to book the only cat in our fleet.
+- https://boatrentalinmarbella.com/blog/levante-vs-poniente-wind-marbella-charter/ — Learn how levante and poniente winds affect boat charters in Marbella. Find the best time to sail, safety tips, and boat recommendations for calm seas.
+- https://boatrentalinmarbella.com/blog/mangusta-80-vs-pershing-46-marbella/ — Compare Mangusta 80 vs Pershing 46 in Marbella. See specs, capacity, pricing &amp; charter experience in Puerto Banús. Book your yacht today.
+- https://boatrentalinmarbella.com/blog/mangusta-80-vs-smaller-yachts-marbella/ — Mangusta 80 (24 m, 12 guests, free jet ski) vs the 15–18 m luxury yachts typically chartered in Marbella. Honest comparison on deck space, water toys, range and cost-per-person.
+- https://boatrentalinmarbella.com/blog/marbella-easter-week-yacht-availability/ — Check marbella easter week yacht availability for 2025. Book from €749/2h with skipper, drinks &amp; VAT. Secure your spot now.
+- https://boatrentalinmarbella.com/blog/marbella-fashion-week-yacht/ — See Marbella Fashion Week from the water. Charter a yacht for Press Day, runway shows or after-parties in Puerto Banús. Book your boat now.
+- https://boatrentalinmarbella.com/blog/marbella-feria-san-bernabe/ — Combine Marbella feria San Bernabé casetas with a daytime yacht cruise. Charter from Puerto Banús from €749/2h. Book your boat now.
+- https://boatrentalinmarbella.com/blog/marbella-half-day-vs-full-day-charter/ — Half day vs full day yacht charter Marbella: compare costs, itineraries &amp; value. Tier A from €749/2h or €2,299/8h. Book your perfect trip now.
+- https://boatrentalinmarbella.com/blog/marbella-international-film-festival-yacht/ — Watch the Marbella Film Festival premiere from a private yacht in Puerto Banús. From €749/2h with skipper, drinks, snacks &amp; VAT. Book your boat now.
+- https://boatrentalinmarbella.com/blog/marbella-jazz-festival-yacht-charter/ — Book a Marbella Jazz Festival 2026 yacht charter from Puerto Banús. Enjoy live jazz, sunset cruises &amp; luxury boats from €749/2h. Reserve now.
+- https://boatrentalinmarbella.com/blog/marbella-luxury-shopping-week-yacht/ — Marbella Luxury Shopping Week 2025: charter a private yacht from €749/2h in Puerto Banús. VIP transfer, soft drinks &amp; skipper included. Book now.
+- https://boatrentalinmarbella.com/blog/marbella-luxury-weekend-yacht/ — Discover Marbella Luxury Weekend yacht charters from Puerto Banús. Enjoy Showcase Days with our fleet from €749/2h. Book your VIP escape now.
+- https://boatrentalinmarbella.com/blog/marbella-luxury-yacht-charter-tax-vat/ — Understand marbella yacht charter VAT tax — Spanish IVA is always included in our prices. No hidden fees, 21% tax covered. Book with total transparency.
+- https://boatrentalinmarbella.com/blog/marbella-music-festival-cala-de-mijas-yacht/ — Cala de Mijas Music Festival 2026 by yacht from Marbella: 22 NM run, anchorage tips, fleet from €749/2h. Book via WhatsApp now.
+- https://boatrentalinmarbella.com/blog/marbella-polo-cup-yacht/ — Combine the Marbella Polo Cup in Sotogrande with a same-day yacht charter from Puerto Banús. See the full itinerary, boat options, and prices.
+- https://boatrentalinmarbella.com/blog/marbella-pride-yacht-party/ — Book a Marbella Pride yacht party from €749/2h. BYO cava, DJ add-on, rainbow bunting included. Departs Puerto Banús. Celebrate on the water.
+- https://boatrentalinmarbella.com/blog/marbella-restaurants-by-boat/ — Marbella restaurants by boat: 9 beach clubs and chiringuitos with mooring or tender drop, plus 4h charter from €749. Book via WhatsApp today.
+- https://boatrentalinmarbella.com/blog/marbella-tuna-fishing-season-charter/ — Plan your marbella tuna fishing season charter. Best months June–October, 12.5m Azimut 39 from €749/2h. Book your trip from Puerto Banús today.
+- https://boatrentalinmarbella.com/blog/marbella-yacht-charter-august-peak-season/ — Marbella yacht charter in August: peak-season prices from €749/2h, 30°C sea, book 14+ days ahead. WhatsApp us to lock your slot.
+- https://boatrentalinmarbella.com/blog/marbella-yacht-charter-cancellation-policy/ — Need to cancel your yacht charter in Marbella? Our clear cancellation policy covers deposits, refunds, weather, and rebooking. Book with confidence today.
+- https://boatrentalinmarbella.com/blog/marbella-yacht-charter-deposit-rules/ — Marbella yacht charter deposit rules explained: 30% to confirm, balance 7 days before, refunds, and 1 simple WhatsApp booking flow.
+- https://boatrentalinmarbella.com/blog/marbella-yacht-charter-with-pets/ — Planning a dog-friendly yacht charter with pets in Marbella? We welcome well-behaved dogs on most boats from Puerto Banús. Book your pet-friendly trip today.
+- https://boatrentalinmarbella.com/blog/marbella-yacht-week-2026/ — Plan your Marbella Yacht Week 2026 with our charter guide. Compare boats, prices, and itineraries from €749/2h. Book your dream yacht today.
+- https://boatrentalinmarbella.com/blog/marc-anthony-marbella-concert-yacht/ — See Marc Anthony at Starlite Marbella 2025 from the sea. Charter a yacht in Puerto Banús the day before the concert – 12.5m Astondoa 40 from €749/2h.
+- https://boatrentalinmarbella.com/blog/nikki-beach-marbella-yacht/ — Arrive at Nikki Beach Marbella by yacht. Tender drop, lunch plan, and boat charter from Puerto Banús. Departs daily from €749/2h. Book your spot now.
+- https://boatrentalinmarbella.com/blog/nye-yacht-charter-marbella/ — Celebrate New Year&#x27;s Eve on a yacht in Marbella with front-row views of Puerto Banús fireworks. From €749/2h incl. skipper, drinks &amp; VAT. Book now.
+- https://boatrentalinmarbella.com/blog/ocean-club-marbella-yacht-arrival/ — Arrive at Ocean Club Marbella by yacht from Puerto Banús. Anchor off, tender in, and enjoy VIP access. Prices from €749 for 2 hours. Book now.
+- https://boatrentalinmarbella.com/blog/pershing-46-vs-azimut-39/ — Pershing 46 vs Azimut 39 Marbella: compare 14m Italian performance with 12.5m flybridge comfort. See specs, pax, prices from €749/2h — book now.
+- https://boatrentalinmarbella.com/blog/princess-v58-vs-azimut-58-marbella/ — Princess V58 vs Azimut 58 Marbella: compare speed, space, and charter costs. Find your ideal yacht for Puerto Banús. Book now.
+- https://boatrentalinmarbella.com/blog/princess-v58-vs-fairline-targa-12m/ — Compare Princess V58 vs Fairline Targa 12m for Marbella charters. See specs, prices, and which suits your group. Book your boat today.
+- https://boatrentalinmarbella.com/blog/private-vs-shared-boat-charter/ — Private vs shared boat charter in Marbella: full cost-per-head math, who fits each model, the trade-offs in itinerary control, anchor time and atmosphere.
+- https://boatrentalinmarbella.com/blog/proposal-on-a-yacht-marbella/ — Plan a yacht proposal in Marbella: 7 captain-tested moments, sunset timing, ring safety and pricing from €749/2h. Book your moment now.
+- https://boatrentalinmarbella.com/blog/puerto-banus-boat-show-guide/ — Plan your visit to the Puerto Banús boat show. See our fleet on-site, book demo sails, and charter a luxury yacht from €749/2h. Explore now.
+- https://boatrentalinmarbella.com/blog/puerto-banus-vs-cabopino-departure/ — Puerto Banús vs Cabopino departure: which Marbella port suits your boat charter? Compare distances, costs, and local vibes to pick the best start point.
+- https://boatrentalinmarbella.com/blog/puerto-banus-vs-marbella-marina/ — Puerto Banús vs Marbella Marina comparison: fleet size, walking distance, parking, prices, vibe. Which marina to pick for your 2026 boat charter, based on your hotel and group type.
+- https://boatrentalinmarbella.com/blog/puerto-banus-yacht-fuel-surcharge-explained/ — Puerto Banús yacht fuel surcharge explained: why most charters add 20-40% in fuel, and how our all-inclusive €749 rate avoids it. Book on WhatsApp.
+- https://boatrentalinmarbella.com/blog/real-madrid-final-marbella-yacht/ — Watch the Real Madrid final from a yacht in Marbella. Big-screen beach club, pre-match cruise from Puerto Banús. €749/2h includes skipper, drinks, snacks.
+- https://boatrentalinmarbella.com/blog/reyes-magos-yacht-charter/ — Celebrate Reyes Magos weekend in Marbella with a family yacht charter. Kids sail free on select boats from Puerto Banús. Book your 2-hour trip from €749.
+- https://boatrentalinmarbella.com/blog/sala-by-the-sea-yacht-arrival/ — Sala by the Sea Marbella yacht: combine beach club luxury with a sunset cruise from €749. Dock at Puerto Banús, sip cava, and watch the sun dip over La Concha.
+- https://boatrentalinmarbella.com/blog/san-juan-night-boat-marbella/ — Experience San Juan night in Marbella from a private yacht. Watch beach bonfires, fireworks &amp; enjoy dinner at sea. Book your boat for Noche de San Juan now.
+- https://boatrentalinmarbella.com/blog/san-pedro-feria-2026/ — San Pedro Feria 2026 dates, yacht charter the day before and recovery cruise after. Book your San Pedro feria boat from Puerto Banús with skipper and drinks included.
+- https://boatrentalinmarbella.com/blog/seasickness-kids-marbella-boat/ — Prevent and treat seasickness in kids on a Marbella boat charter. Expert tips, remedies, and what to pack for a smooth family trip from Puerto Banús.
+- https://boatrentalinmarbella.com/blog/seasickness-prevention-charter/ — Captain&#x27;s guide to avoiding seasickness on a Marbella boat charter: pick a catamaran, take ginger or Stugeron 1h before boarding, stare at the horizon, avoid below-decks.
+- https://boatrentalinmarbella.com/blog/semana-santa-yacht-marbella/ — Escape the crowds this Semana Santa: charter a yacht in Marbella between processions. From €749/2h, skipper &amp; drinks included. Book your quiet-side cruise now.
+- https://boatrentalinmarbella.com/blog/solomun-marbella-yacht/ — Solomun Marbella yacht charter for his pre-set party. BYO speaker set-up on our fleet from Puerto Banús. Book now for the ultimate Diynamic experience.
+- https://boatrentalinmarbella.com/blog/sotogrande-polo-season-yacht-charter/ — Sotogrande polo season yacht charter guide 2026: 22 NM from Puerto Banús, €749 short cruises, 8-hour day trips €2,299. Book via WhatsApp.
+- https://boatrentalinmarbella.com/blog/sotogrande-to-marbella-by-boat/ — Sotogrande to Marbella by boat takes 35–50 minutes. See costs, itineraries, and boat options from Puerto Banús. Book your charter today.
+- https://boatrentalinmarbella.com/blog/spanish-f1-grand-prix-marbella-yacht/ — Book a yacht in Marbella for the F1 Spanish Grand Prix weekend. Cruise from Puerto Banús with a skipper, drinks, and snacks from €749/2h. Reserve your spot now.
+- https://boatrentalinmarbella.com/blog/starlite-marbella-yacht-charter/ — Plan your yacht charter Starlite Marbella 2026 with our day-of itinerary, Nagüeles pickup, and fleet options from Puerto Banús. Book now.
+- https://boatrentalinmarbella.com/blog/sunseeker-predator-vs-pershing-46/ — Compare Sunseeker Predator vs Pershing 46 for your Marbella charter. We break down size, speed, capacity &amp; cost. Book the Pershing 46 now from €749/2h.
+- https://boatrentalinmarbella.com/blog/sunset-spots-from-sea-marbella/ — Discover the best sunset spots from sea Marbella. See Puerto Banús, Cabopino &amp; more from a boat. Book now for €749/2h with skipper &amp; drinks.
+- https://boatrentalinmarbella.com/blog/three-kings-parade-marbella-by-boat/ — Watch the Three Kings Parade in Marbella from a boat in 2026. Best views, private charter tips, prices from €749/2h. Book your spot now.
+- https://boatrentalinmarbella.com/blog/tipping-yacht-crew-marbella/ — Wondering about tipping yacht crew in Marbella? Find out how much to tip, when to give, and what&#x27;s included in your charter fee for 2026.
+- https://boatrentalinmarbella.com/blog/vendimia-marbella-yacht/ — Celebrate Marbella&#x27;s vendimia harvest weekend on a luxury yacht. Cruise Puerto Banús with cava, tapas &amp; sunset views. Book your 2025 charter now.
+- https://boatrentalinmarbella.com/blog/wedding-yacht-charter-marbella/ — Wedding yacht charter Marbella: 12-pax boats from €4,719/4h, golden-hour photo plan, ceremony logistics, vows at sea. WhatsApp us to hold a date.
+- https://boatrentalinmarbella.com/blog/what-to-bring-on-a-boat-charter/ — What to bring on a boat charter in Marbella: full packing checklist. Sunscreen, towels (some), swimwear, layers — and what the boat already provides so you don&#x27;t double-pack.
+- https://boatrentalinmarbella.com/blog/white-night-puerto-banus-yacht/ — Watch White Night Puerto Banús from a private yacht. Best views, fireworks &amp; DJ sets. Book your boat now for the Noche en Blanco 2025.
+- https://boatrentalinmarbella.com/blog/white-party-marbella-yacht/ — Plan your white party Marbella yacht charter with dress-code tips and boat options from €749/2h. Book your pre-party cruise from Puerto Banús today.
+
+## Trust & legal
+- https://boatrentalinmarbella.com/about/ — About Boat Rental Marbella — independent boat charter operator in Puerto Banús, founded by Andra Kiirkivi. Direct WhatsApp booking, no intermediaries.
+- https://boatrentalinmarbella.com/cancellation-policy/ — Cancellation policy for Boat Rental Marbella charters: 100% refund 7+ days before, weather cancellations always refundable, transparent sliding scale.
+- https://boatrentalinmarbella.com/contact/ — Contact Boat Rental Marbella — WhatsApp +358 400 406 194 (reply &amp;lt;5 min), email hello@boatrentalinmarbella.com, Instagram @boatrentalmarbella. Puerto Banús, Marbella.
+- https://boatrentalinmarbella.com/cookies/ — Cookie policy for boatrentalinmarbella.com — GA4 analytics only, no ad pixels, no retargeting, no third-party advertising. GDPR-compliant.
+- https://boatrentalinmarbella.com/privacy/ — Privacy policy for boatrentalinmarbella.com — what data we collect when you contact us via WhatsApp, email or the booking form, how we use it, and your GDPR rights.
+- https://boatrentalinmarbella.com/reviews/ — Verified reviews from Boat Rental Marbella guests · 4.9/5 from 87 WhatsApp-verified charters · Yachts, sunset cruises, hen parties, weddings.
+- https://boatrentalinmarbella.com/terms/ — Terms and conditions for boat rentals booked through boatrentalinmarbella.com — booking process, pricing, payment, cancellation, weather policy, safety, liability and applicable law.
+
+## Deutsch
+- https://boatrentalinmarbella.com/de/bootsverleih-ohne-fuehrerschein-marbella/ — Bootsverleih ohne Führerschein in Marbella — selbst fahren bis 5m Bootslänge / 15PS Motor, innerhalb 2 NM von der Küste. Ab €230/2h.
+- https://boatrentalinmarbella.com/de/bootsverleih-puerto-banus/ — Bootsverleih Puerto Banús — der wichtigste Yachthafen Marbellas. Ab €749/2h für skipperte Charters. Tiefe Liegeplätze, Luxusboutiquen-Promenade.
+- https://boatrentalinmarbella.com/de/yachtcharter-marbella/ — Yachtcharter Marbella ab €749 für 2h. Astondoa 40 oder Azimut 39 mit Skipper, Treibstoff, Getränke &amp; MwSt. — direkter Buchung über WhatsApp.
+
+## Español
+- https://boatrentalinmarbella.com/es/alquiler-barcos-puerto-banus/ — Alquiler de barcos en Puerto Banús desde €749 para 2 horas. Nuestros yates a motor de 12,5 m (Astondoa 40 y Azimut 39) — patrón, bebidas y combustible incluidos.
+- https://boatrentalinmarbella.com/es/alquiler-barcos-sin-licencia-marbella/ — Alquiler de barcos sin licencia en Marbella: nuestra flota va con patrón profesional, así que tú no necesitas titulación. Desde €749/2h con todo incluido.
+- https://boatrentalinmarbella.com/es/alquiler-de-yates-marbella/ — Alquiler de yates en Marbella desde €749/2h en nuestros yates a motor de 12,5 m. Patrón, combustible, bebidas y IVA incluidos. Salida desde Puerto Banús — reserva por WhatsApp.
+- https://boatrentalinmarbella.com/es/privacidad/ — Política de privacidad de boatrentalinmarbella.com — qué datos recopilamos cuando nos contactas por WhatsApp, email o formulario, cómo los usamos y tus derechos RGPD.
+- https://boatrentalinmarbella.com/es/terminos/ — Términos y condiciones de los alquileres de barcos reservados a través de boatrentalinmarbella.com — reserva, precios, pago, cancelación, meteorología, seguridad, responsabilidad y ley aplicable.
+

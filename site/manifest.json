@@ -1,0 +1,38 @@
+{
+  "name": "Boat Rental Marbella",
+  "short_name": "BoatRentalMarbella",
+  "description": "Independent boat charter operator in Puerto Banús, Marbella. Yachts, catamarans, jet skis from €230 / 2h.",
+  "start_url": "/",
+  "scope": "/",
+  "display": "standalone",
+  "background_color": "#14cdc5",
+  "theme_color": "#3f0f1c",
+  "lang": "en-GB",
+  "categories": ["travel", "lifestyle", "shopping"],
+  "icons": [
+    { "src": "/img/logo-160.png", "sizes": "160x160", "type": "image/png" },
+    { "src": "/img/logo-240.png", "sizes": "240x240", "type": "image/png" },
+    { "src": "/img/logo-320.png", "sizes": "320x320", "type": "image/png", "purpose": "any" },
+    { "src": "/img/logo-480.png", "sizes": "480x480", "type": "image/png", "purpose": "any maskable" }
+  ],
+  "shortcuts": [
+    {
+      "name": "Browse fleet",
+      "short_name": "Fleet",
+      "url": "/boats/",
+      "description": "All 17 boats with prices and capacities"
+    },
+    {
+      "name": "Book on WhatsApp",
+      "short_name": "WhatsApp",
+      "url": "https://wa.me/358400406194?text=Hi%2C%20I%27d%20like%20to%20book%20a%20boat%20in%20Marbella",
+      "description": "Message Andra directly to book — average reply under 5 minutes"
+    },
+    {
+      "name": "Reviews",
+      "short_name": "Reviews",
+      "url": "/reviews/",
+      "description": "87 verified guest reviews, 4.9 / 5"
+    }
+  ]
+}

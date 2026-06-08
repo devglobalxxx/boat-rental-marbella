@@ -1,7 +1,7 @@
 {
   "@context": "https://boatrentalinmarbella.com/api/pages.json",
   "source": "https://boatrentalinmarbella.com",
-  "count": 199,
+  "count": 209,
   "kinds": [
     "blog",
     "boat",
@@ -214,6 +214,14 @@
       "excerpt": "An Estepona day trip from Marbella by boat is one of the most rewarding excursions on the Costa del Sol. Depart from Puerto Banús, cruise 10 nautical miles southwest along the coast, and arrive at a whitewashed Andalusian town with a fraction of the crowds you’ll find in Marbella"
     },
     {
+      "url": "https://boatrentalinmarbella.com/blog/estepona-marina-vs-puerto-banus-departure/",
+      "title": "Estepona Marina vs Puerto Banús: Best Departure Point",
+      "description": "Estepona Marina vs Puerto Banús: compare departure points for your Marbella boat charter. Distances, facilities, and best boats for each base.",
+      "kind": "blog",
+      "locale": "en",
+      "excerpt": "Choosing between Estepona Marina and Puerto Banús as your departure point for a boat charter in Marbella can shape your entire day on the water. Both marinas offer unique advantages, but they cater to different preferences. This guide breaks down the key differences to help you d"
+    },
+    {
       "url": "https://boatrentalinmarbella.com/blog/eurovision-yacht-party-marbella/",
       "title": "Eurovision Final on a Yacht in Marbella: BYO Songbook, Sunset Cruise",
       "description": "Celebrate the Eurovision Final on a yacht in Marbella. BYO songbook, sunset cruise from Puerto Banús. From €749/2h. Book your floating party now.",
@@ -374,6 +382,14 @@
       "excerpt": "The Mangusta 80 — our \"Nina\" — is a 24 m Italian sport yacht in service since 2020 and the biggest yacht regularly available for day charter from Puerto Banús. This page is the honest comparison vs the 15-18 m \"luxury\" yachts most Marbella charter brokers will steer you towards, "
     },
     {
+      "url": "https://boatrentalinmarbella.com/blog/marbella-boat-charter-skipper-tipping-guide/",
+      "title": "Marbella Skipper &amp; Captain Tipping Etiquette Guide",
+      "description": "Learn marbella skipper tipping etiquette for your boat charter. Our guide covers how much to tip (€50-€200), when, and who to tip. Plan your day now.",
+      "kind": "blog",
+      "locale": "en",
+      "excerpt": "Planning a boat charter in Marbella? Understanding marbella skipper tipping etiquette ensures you enjoy a smooth, respectful experience on the water. Whether you're renting a luxury yacht from Puerto Banús or a speedboat for a day trip, knowing how much to tip, when, and who to t"
+    },
+    {
       "url": "https://boatrentalinmarbella.com/blog/marbella-easter-week-yacht-availability/",
       "title": "Marbella Easter Week Yacht Availability &amp; Booking Window",
       "description": "Check marbella easter week yacht availability for 2025. Book from €749/2h with skipper, drinks &amp; VAT. Secure your spot now.",
@@ -396,6 +412,14 @@
       "kind": "blog",
       "locale": "en",
       "excerpt": "Marbella feria San Bernabé is the city’s biggest summer party — six days of casetas, fairground rides, and live music from 11 to 16 June. But you don’t have to spend every hour on dry land. A daytime yacht charter from Puerto Banús lets you escape the midday heat, cruise the Cost"
+    },
+    {
+      "url": "https://boatrentalinmarbella.com/blog/marbella-flamenco-festival-yacht-charter/",
+      "title": "Marbella Flamenco Festival 2026: Yacht Charter Guide",
+      "description": "Book a marbella flamenco festival yacht charter for 2026. Watch flamenco from the sea on a private boat from Puerto Banús. Prices from €749/2h.",
+      "kind": "blog",
+      "locale": "en",
+      "excerpt": "Plan your marbella flamenco festival yacht charter for 2026 and watch the fiery rhythms of flamenco from the best seat in the house—your private boat. Departing from Puerto Banús, our fleet of 18 boats offers front-row sea views of performances along the Marbella coastline. Wheth"
     },
     {
       "url": "https://boatrentalinmarbella.com/blog/marbella-half-day-vs-full-day-charter/",
@@ -502,12 +526,28 @@
       "excerpt": "Planning a yacht charter in Marbella comes with excitement, but it's wise to understand the yacht charter cancellation policy Marbella before you book. Our policy is designed to be transparent and fair, covering deposits, refunds, weather issues, and rebooking options. Whether yo"
     },
     {
+      "url": "https://boatrentalinmarbella.com/blog/marbella-yacht-charter-credit-card-fees/",
+      "title": "Marbella Yacht Charter Credit Card Fees Explained",
+      "description": "Avoid surprise charges on your Marbella yacht charter. We explain credit card fees, deposit policies, and how to pay with zero surcharge. Book now.",
+      "kind": "blog",
+      "locale": "en",
+      "excerpt": "When booking a Marbella yacht charter , understanding how credit card fees work can save you money. Many operators add a surcharge for card payments, and we’re transparent about ours. This guide breaks down exactly what you’ll pay, how to avoid extra costs, and what’s included in"
+    },
+    {
       "url": "https://boatrentalinmarbella.com/blog/marbella-yacht-charter-deposit-rules/",
       "title": "Marbella Yacht Charter Deposit Rules: What to Expect",
       "description": "Marbella yacht charter deposit rules explained: 30% to confirm, balance 7 days before, refunds, and 1 simple WhatsApp booking flow.",
       "kind": "blog",
       "locale": "en",
       "excerpt": "Booking a yacht in Marbella should not feel like signing a mortgage. Our deposit rules are deliberately simple: 30% to confirm the date, 70% seven days before departure, and a full refund if the captain calls it off for weather . Everything below explains the small print in plain"
+    },
+    {
+      "url": "https://boatrentalinmarbella.com/blog/marbella-yacht-charter-october-shoulder-season/",
+      "title": "Marbella Yacht Charter in October: Shoulder Season Deals",
+      "description": "Discover Marbella yacht charter October shoulder season deals. Enjoy warm 22°C days, empty anchorages &amp; up to 12 pax boats from Puerto Banús. Book now.",
+      "kind": "blog",
+      "locale": "en",
+      "excerpt": "October is the sweet spot for a Marbella yacht charter in October — the summer crowds have gone, the sea is still 22°C, and the light is golden over La Concha. Our shoulder season deals make it the most cost-effective time to take a luxury boat out of Puerto Banús, with rates sta"
     },
     {
       "url": "https://boatrentalinmarbella.com/blog/marbella-yacht-charter-with-pets/",
@@ -1222,6 +1262,14 @@
       "excerpt": "There are few experiences as enchanting as a full moon cruise Marbella . As the sun sinks behind La Concha and the moon rises over the Mediterranean, the coastline transforms into a glittering panorama of lights and shadows. From the sleek superyachts of Puerto Banús to the quiet"
     },
     {
+      "url": "https://boatrentalinmarbella.com/experiences/girls-trip-yacht-marbella/",
+      "title": "Girls Trip Yacht Charter in Marbella",
+      "description": "Plan the ultimate girls trip yacht charter in Marbella. Depart Puerto Banús from €749/2h with drinks included. Book your boat today.",
+      "kind": "experience",
+      "locale": "en",
+      "excerpt": "Planning a girls trip to Marbella? A yacht charter from Puerto Banús is the perfect way to celebrate with friends, enjoy the Mediterranean sunshine, and create unforgettable memories. Whether it's a bachelorette party, a birthday, or just a weekend escape, our fleet offers option"
+    },
+    {
       "url": "https://boatrentalinmarbella.com/experiences/golf-and-yacht-package-marbella/",
       "title": "Golf &amp; Yacht Package Marbella: Round + Charter Combos",
       "description": "Discover the ultimate golf and yacht package Marbella: play a round at a top Costa del Sol course then charter a luxury boat from Puerto Banús. Book your combo today.",
@@ -1350,6 +1398,14 @@
       "excerpt": "A Seabob experience in Marbella turns an ordinary boat day into something genuinely different: instead of just swimming off the back of the boat, you grip a 29 kg underwater scooter, squeeze the trigger, and pull yourself through the water at up to 20 km/h. We carry the Cayago Se"
     },
     {
+      "url": "https://boatrentalinmarbella.com/experiences/seabob-snorkel-combo-marbella/",
+      "title": "Seabob + Snorkel Combo Experience in Marbella",
+      "description": "Book a Seabob snorkel combo in Marbella. Glide with a Seabob F5 then snorkel Cala del Faro. €749/2h from Puerto Banús. Reserve your slot today.",
+      "kind": "experience",
+      "locale": "en",
+      "excerpt": "Combine the thrill of an underwater scooter with the serenity of Mediterranean snorkelling on a Seabob snorkel combo Marbella charter. Departing from Puerto Banús, this 2-hour experience lets you pilot a Seabob F5 at up to 20 km/h beneath the surface, then float above seagrass me"
+    },
+    {
       "url": "https://boatrentalinmarbella.com/experiences/snorkeling-tour-marbella/",
       "title": "Snorkeling Tour Marbella: Two Anchorages, Real Marine Life",
       "description": "Marbella snorkeling tour from €1,299 / 4h — anchored at Cala Cortés + Río Real for clear-water snorkel stops. Sea bream, wrasse, octopus. Junior masks + flotation provided.",
@@ -1372,6 +1428,14 @@
       "kind": "experience",
       "locale": "en",
       "excerpt": "Experience the thrill of squid fishing night charter Marbella aboard a private motor yacht from Puerto Banús. For €749 (2 hours, up to 9 guests), you get a licensed skipper, all fishing gear, drinks, snacks, and your catch cleaned and bagged. No experience needed – just turn up a"
+    },
+    {
+      "url": "https://boatrentalinmarbella.com/experiences/sundowner-tapas-cruise-marbella/",
+      "title": "Sundowner Tapas Cruise from Puerto Banús",
+      "description": "Book a sundowner tapas cruise Marbella from Puerto Banús. Enjoy tapas, drinks, and sunset views from €749 for 2 hours on a luxury boat. Book now.",
+      "kind": "experience",
+      "locale": "en",
+      "excerpt": "There’s no better way to end a Marbella day than a sundowner tapas cruise from Puerto Banús . As the sun sinks behind La Concha, you’ll glide past the Golden Mile with a chilled glass of cava and a plate of olives, all while the Mediterranean turns to gold. Our sundowner tapas cr"
     },
     {
       "url": "https://boatrentalinmarbella.com/experiences/sunrise-yoga-yacht-marbella/",
@@ -1550,6 +1614,14 @@
       "excerpt": ""
     },
     {
+      "url": "https://boatrentalinmarbella.com/sailboat-rental-marbella/",
+      "title": "Sailboat Rental Marbella: Crewed &amp; Bareboat Options",
+      "description": "Discover sailboat rental Marbella with crewed and bareboat options. Explore the Costa del Sol from Puerto Banús. Book your sailing charter today.",
+      "kind": "spoke",
+      "locale": "en",
+      "excerpt": "Experience the freedom of the Mediterranean with a sailboat rental Marbella from Puerto Banús. Whether you prefer a crewed charter with a professional skipper or a bareboat adventure for licensed sailors, our fleet offers options for every level. Explore hidden coves, anchor off "
+    },
+    {
       "url": "https://boatrentalinmarbella.com/speedboat-rental-marbella/",
       "title": "Speedboat Rental Marbella: High-Performance Charters from Puerto Banús",
       "description": "Book a speedboat rental Marbella from Puerto Banús. 6 passengers, 7m boat, skipper included, from €749/2h. High-performance charters with drinks &amp; snacks.",
@@ -1596,6 +1668,14 @@
       "kind": "uk",
       "locale": "en-GB",
       "excerpt": "Boat Rental Marbella runs a 17-boat fleet from Puerto Banús — the marina where the UK crowd usually winds up after the Saturday flight from London or Manchester. This page covers what UK guests actually need to know: prices in £, how to get from your hotel to the marina, what the"
+    },
+    {
+      "url": "https://boatrentalinmarbella.com/weekly-yacht-rental-marbella/",
+      "title": "Weekly Yacht Rental Marbella: 7-Day Charter Guide",
+      "description": "Plan your weekly yacht rental Marbella with our 7-day charter guide. Explore Puerto Banús, Estepona &amp; Cabopino from €749/2h. Book your week today.",
+      "kind": "spoke",
+      "locale": "en",
+      "excerpt": "Planning a weekly yacht rental Marbella gives you the freedom to explore the Costa del Sol at your own pace. From the glamour of Puerto Banús to the serene coves of Cabopino, a week on the water unlocks hidden beaches, beach clubs, and sunset anchorages. Our fleet at Boat Rental "
     },
     {
       "url": "https://boatrentalinmarbella.com/yacht-charter-marbella/",

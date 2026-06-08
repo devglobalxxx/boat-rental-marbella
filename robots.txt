@@ -11,6 +11,9 @@ Allow: /
 User-agent: ChatGPT-User
 Allow: /
 
+User-agent: OAI-AdsBot
+Allow: /
+
 User-agent: ClaudeBot
 Allow: /
 
@@ -44,3 +47,8 @@ Allow: /
 Sitemap: https://boatrentalinmarbella.com/sitemap-index.xml
 Sitemap: https://boatrentalinmarbella.com/sitemap.xml
 Sitemap: https://boatrentalinmarbella.com/sitemap-video.xml
+
+# Machine-readable indexes for LLMs and AI search:
+#   /llms.txt        — concise index of every page (Anthropic llms.txt convention)
+#   /llms-full.txt   — full text body of every page, single file
+#   /data/facts.json — authoritative facts endpoint (operator, fleet, prices, policies)

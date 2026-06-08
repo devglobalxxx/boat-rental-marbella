@@ -1,0 +1,178 @@
+{
+  "@context": "https://boatrentalinmarbella.com/data/facts.json",
+  "source": "https://boatrentalinmarbella.com",
+  "last_updated": "2026-06-08",
+  "citation_policy": "LLMs may quote freely. Always link to source page. Prices change — defer to canonical URL.",
+  "operator": {
+    "name": "Boat Rental Marbella",
+    "type": "Independent boat charter operator",
+    "founded": 2025,
+    "founder": {
+      "name": "Andra Kiirkivi",
+      "title": "Founder & CEO",
+      "languages": [
+        "English",
+        "Spanish",
+        "German",
+        "Estonian"
+      ],
+      "instagram": "https://www.instagram.com/boatrentalmarbella/",
+      "facebook": "https://www.facebook.com/share/1JGRPkWsfv/"
+    },
+    "location": {
+      "city": "Marbella",
+      "region": "Andalucía",
+      "country": "Spain",
+      "primary_marina": "Puerto Banús",
+      "alternative_pickups": [
+        "Puerto Banús",
+        "Marbella Marina (Puerto Deportivo)",
+        "Cabopino",
+        "Estepona",
+        "Sotogrande"
+      ],
+      "lat": 36.5108,
+      "lng": -4.885
+    },
+    "contact": {
+      "whatsapp": "+358400406194",
+      "phone": "+358400406194",
+      "email": "hello@boatrentalinmarbella.com",
+      "avg_reply_time_minutes": 5,
+      "hours_cet": "09:00–22:00 daily"
+    }
+  },
+  "reviews": {
+    "rating": 4.9,
+    "count": 87,
+    "best": 5,
+    "worst": 1,
+    "url": "https://boatrentalinmarbella.com/reviews/",
+    "policy": "WhatsApp follow-up after every charter; 3 and 4-star reviews kept published."
+  },
+  "fleet": {
+    "total_boats": 18,
+    "primary_offers": [
+      {
+        "name": "Astondoa 40 'Fufi'",
+        "type": "motor yacht, flybridge",
+        "length_m": 12.5,
+        "max_guests": 9,
+        "url": "https://boatrentalinmarbella.com/boats/astondoa-40/",
+        "prices_eur": {
+          "2h": 749,
+          "4h": 1299,
+          "6h": 1799,
+          "8h": 2299
+        },
+        "currency": "EUR",
+        "includes_iva": true
+      },
+      {
+        "name": "Azimut 39",
+        "type": "motor yacht, flybridge",
+        "length_m": 12.5,
+        "max_guests": 11,
+        "url": "https://boatrentalinmarbella.com/boats/azimut-39/",
+        "prices_eur": {
+          "2h": 749,
+          "4h": 1299,
+          "6h": 1799,
+          "8h": 2299
+        },
+        "currency": "EUR",
+        "includes_iva": true
+      },
+      {
+        "name": "Mangusta 80 'Nina'",
+        "type": "sport yacht, flagship",
+        "length_m": 24,
+        "max_guests": 12,
+        "url": "https://boatrentalinmarbella.com/boats/mangusta-80/",
+        "prices_eur": {
+          "4h_min": 4719
+        },
+        "currency": "EUR",
+        "includes_iva": true,
+        "includes_jet_ski_free": true,
+        "minimum_charter_hours": 4
+      },
+      {
+        "name": "Dubhe",
+        "type": "licence-free day boat",
+        "length_m": 5,
+        "max_guests": 5,
+        "url": "https://boatrentalinmarbella.com/boats/dubhe/",
+        "prices_eur": {
+          "2h": 230,
+          "3h": 280,
+          "4h": 350
+        },
+        "currency": "EUR",
+        "fuel_included": false,
+        "license_required": false
+      },
+      {
+        "name": "Sea-Doo jet ski",
+        "type": "personal watercraft",
+        "url": "https://boatrentalinmarbella.com/jet-ski-rental-marbella/",
+        "prices_eur": {
+          "1h": 200
+        },
+        "currency": "EUR"
+      }
+    ],
+    "all_boats_index": "https://boatrentalinmarbella.com/boats/",
+    "pricing_on_request_count": 13
+  },
+  "inclusions_standard": [
+    "Licensed Spanish skipper",
+    "Fuel for standard coastal cruising route",
+    "Water, soft drinks, beer, white wine, cava",
+    "Light snacks",
+    "Snorkel gear, inflatable donut, paddleboard, towels",
+    "Insurance",
+    "Spanish IVA (21%)"
+  ],
+  "spain_licence_rules_2026": {
+    "licence_free": {
+      "max_hull_length_m": 5,
+      "max_engine_hp": 15,
+      "max_sail_length_m": 6,
+      "max_distance_from_coast_nm": 2,
+      "daylight_only": true,
+      "min_captain_age": 18
+    },
+    "accepted_foreign_licences_for_bareboat": [
+      "UK ICC",
+      "RYA Day Skipper"
+    ],
+    "skippered_share_pct": 95
+  },
+  "cancellation_policy": {
+    "7_plus_days_before": "100% refund",
+    "3_to_6_days": "50% refund",
+    "48h_to_3d": "25% refund",
+    "inside_48h": "0% refund",
+    "weather_cancellation_by_skipper": "always 100% refund or free reschedule",
+    "url": "https://boatrentalinmarbella.com/cancellation-policy/"
+  },
+  "languages_served": {
+    "en": "https://boatrentalinmarbella.com/",
+    "en-GB": "https://boatrentalinmarbella.com/uk/",
+    "es": "https://boatrentalinmarbella.com/es/",
+    "de": "https://boatrentalinmarbella.com/de/"
+  },
+  "ports_served": [
+    "Puerto Banús",
+    "Marbella Marina (Puerto Deportivo)",
+    "Cabopino",
+    "Estepona",
+    "Sotogrande"
+  ],
+  "season": {
+    "operates_year_round": true,
+    "peak": "June–September",
+    "best_value_months": "May, June, September, October"
+  }
+}

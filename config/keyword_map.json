@@ -402,6 +402,41 @@
       "title": "Sundowner Tapas Cruise from Puerto Banús",
       "intent": "transactional",
       "target_words": 1100
+    },
+    {
+      "slug": "experiences/grandparents-yacht-day-marbella",
+      "primary_keyword": "grandparents yacht day Marbella",
+      "title": "Multi-Generational Grandparents Yacht Day Marbella",
+      "intent": "transactional",
+      "target_words": 1100
+    },
+    {
+      "slug": "experiences/teen-birthday-yacht-marbella",
+      "primary_keyword": "teen birthday yacht Marbella",
+      "title": "Teen Birthday Yacht Charter in Marbella",
+      "intent": "transactional",
+      "target_words": 1100
+    },
+    {
+      "slug": "experiences/sketching-art-yacht-marbella",
+      "primary_keyword": "sketching art yacht Marbella",
+      "title": "Plein-Air Sketching Yacht Charter in Marbella",
+      "intent": "transactional",
+      "target_words": 1100
+    },
+    {
+      "slug": "experiences/dawn-dolphin-cruise-marbella",
+      "primary_keyword": "dawn dolphin cruise Marbella",
+      "title": "Dawn Dolphin Watching Cruise from Marbella",
+      "intent": "transactional",
+      "target_words": 1100
+    },
+    {
+      "slug": "day-charter-marbella",
+      "primary_keyword": "day charter Marbella",
+      "title": "Day Charter Marbella: All-Inclusive Yacht Hire",
+      "intent": "transactional",
+      "target_words": 1100
     }
   ],
   "blog": [
@@ -1102,6 +1137,41 @@
       "slug": "blog/marbella-boat-charter-skipper-tipping-guide",
       "primary_keyword": "marbella skipper tipping etiquette",
       "title": "Marbella Skipper & Captain Tipping Etiquette Guide",
+      "intent": "informational",
+      "target_words": 1100
+    },
+    {
+      "slug": "blog/marbella-yacht-charter-rainy-day-policy",
+      "primary_keyword": "marbella yacht charter rain policy",
+      "title": "Marbella Yacht Charter Rain Policy: Refunds & Reschedules",
+      "intent": "informational",
+      "target_words": 1100
+    },
+    {
+      "slug": "blog/marbella-international-fireworks-yacht",
+      "primary_keyword": "marbella fireworks yacht viewing",
+      "title": "Marbella Summer Fireworks: Best Yacht Viewing Spots",
+      "intent": "informational",
+      "target_words": 1100
+    },
+    {
+      "slug": "blog/marbella-yacht-charter-pregnant-guests",
+      "primary_keyword": "marbella yacht charter pregnancy safety",
+      "title": "Marbella Yacht Charter With Pregnant Guests: Safety Tips",
+      "intent": "informational",
+      "target_words": 1100
+    },
+    {
+      "slug": "blog/marbella-yacht-charter-wheelchair-accessibility",
+      "primary_keyword": "marbella yacht charter wheelchair accessible",
+      "title": "Wheelchair-Accessible Yacht Charter in Marbella",
+      "intent": "informational",
+      "target_words": 1100
+    },
+    {
+      "slug": "blog/marbella-stag-do-yacht-budget-breakdown",
+      "primary_keyword": "marbella stag do yacht budget",
+      "title": "Marbella Stag Do Yacht Budget: Real 2026 Breakdown",
       "intent": "informational",
       "target_words": 1100
     }

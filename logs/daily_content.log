@@ -1033,3 +1033,38 @@ hint: See the 'Note about fast-forwards' in 'git push --help' for details.
 [2026-06-08 20:30:58] deploy.sh OK
 [2026-06-08 20:30:58] === Done: 10 succeeded, 0 failed ===
 
+[2026-06-08 21:30:03] === Daily content run (kind-balanced): 5 blog + 5 landing = 10 item(s) ===
+[2026-06-08 21:30:03] [1/10] blog · blog/marbella-yacht-charter-rainy-day-policy
+[2026-06-08 21:30:42]   ✓ saved content/blog_marbella-yacht-charter-rainy-day-policy.json
+[2026-06-08 21:30:42]   ✓ added to keyword_map.blog
+[2026-06-08 21:30:42] [2/10] blog · blog/marbella-international-fireworks-yacht
+[2026-06-08 21:31:17]   ✓ saved content/blog_marbella-international-fireworks-yacht.json
+[2026-06-08 21:31:17]   ✓ added to keyword_map.blog
+[2026-06-08 21:31:17] [3/10] blog · blog/marbella-yacht-charter-pregnant-guests
+[2026-06-08 21:31:55]   ✓ saved content/blog_marbella-yacht-charter-pregnant-guests.json
+[2026-06-08 21:31:55]   ✓ added to keyword_map.blog
+[2026-06-08 21:31:55] [4/10] blog · blog/marbella-yacht-charter-wheelchair-accessibility
+[2026-06-08 21:32:27]   ✓ saved content/blog_marbella-yacht-charter-wheelchair-accessibility.json
+[2026-06-08 21:32:27]   ✓ added to keyword_map.blog
+[2026-06-08 21:32:27] [5/10] blog · blog/marbella-stag-do-yacht-budget-breakdown
+[2026-06-08 21:33:09]   ✓ saved content/blog_marbella-stag-do-yacht-budget-breakdown.json
+[2026-06-08 21:33:09]   ✓ added to keyword_map.blog
+[2026-06-08 21:33:09] [6/10] experience · experiences/grandparents-yacht-day-marbella
+[2026-06-08 21:33:53]   ✓ saved content/experiences_grandparents-yacht-day-marbella.json
+[2026-06-08 21:33:53]   ✓ added to keyword_map.spokes
+[2026-06-08 21:33:53] [7/10] experience · experiences/teen-birthday-yacht-marbella
+[2026-06-08 21:34:27]   ✓ saved content/experiences_teen-birthday-yacht-marbella.json
+[2026-06-08 21:34:27]   ✓ added to keyword_map.spokes
+[2026-06-08 21:34:27] [8/10] experience · experiences/sketching-art-yacht-marbella
+[2026-06-08 21:35:07]   ✓ saved content/experiences_sketching-art-yacht-marbella.json
+[2026-06-08 21:35:07]   ✓ added to keyword_map.spokes
+[2026-06-08 21:35:07] [9/10] experience · experiences/dawn-dolphin-cruise-marbella
+[2026-06-08 21:35:43]   ✓ saved content/experiences_dawn-dolphin-cruise-marbella.json
+[2026-06-08 21:35:43]   ✓ added to keyword_map.spokes
+[2026-06-08 21:35:43] [10/10] spoke · day-charter-marbella
+[2026-06-08 21:36:19]   ✓ saved content/day-charter-marbella.json
+[2026-06-08 21:36:19]   ✓ added to keyword_map.spokes
+[2026-06-08 21:36:19] queue: 25 remaining, 138 consumed total
+[2026-06-08 21:36:19] queue under threshold (25 < 30) — auto-refilling…
+[2026-06-08 21:36:22] refill failed: RuntimeError: claude CLI exit 1: 
+[2026-06-08 21:36:22] running deploy.sh …

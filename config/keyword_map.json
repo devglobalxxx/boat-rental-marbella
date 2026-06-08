@@ -332,6 +332,41 @@
       "title": "Corporate Boat Hire Marbella: Team Days & Client Events",
       "intent": "transactional",
       "target_words": 1100
+    },
+    {
+      "slug": "experiences/squid-fishing-night-marbella",
+      "primary_keyword": "squid fishing night charter marbella",
+      "title": "Night Squid Fishing Charter in Marbella",
+      "intent": "transactional",
+      "target_words": 1100
+    },
+    {
+      "slug": "experiences/big-game-tuna-fishing-marbella",
+      "primary_keyword": "big game tuna fishing marbella",
+      "title": "Big Game Tuna Fishing Charter Marbella",
+      "intent": "transactional",
+      "target_words": 1100
+    },
+    {
+      "slug": "experiences/yoga-paddleboard-yacht-marbella",
+      "primary_keyword": "yoga paddleboard yacht marbella",
+      "title": "Yoga & Paddleboard Yacht Experience Marbella",
+      "intent": "transactional",
+      "target_words": 1100
+    },
+    {
+      "slug": "experiences/full-moon-cruise-marbella",
+      "primary_keyword": "full moon cruise marbella",
+      "title": "Full Moon Night Cruise Marbella",
+      "intent": "transactional",
+      "target_words": 1100
+    },
+    {
+      "slug": "experiences/kids-birthday-pirate-yacht-marbella",
+      "primary_keyword": "kids birthday pirate yacht marbella",
+      "title": "Kids Birthday Pirate Yacht Party in Marbella",
+      "intent": "transactional",
+      "target_words": 1100
     }
   ],
   "blog": [
@@ -962,6 +997,41 @@
       "slug": "blog/marbella-music-festival-cala-de-mijas-yacht",
       "primary_keyword": "cala de mijas music festival yacht marbella",
       "title": "Cala de Mijas Music Festival: Yacht Charter from Marbella",
+      "intent": "informational",
+      "target_words": 1100
+    },
+    {
+      "slug": "blog/princess-v58-vs-fairline-targa-12m",
+      "primary_keyword": "princess v58 vs fairline targa 12m",
+      "title": "Princess V58 vs Fairline Targa 12m: Marbella Compared",
+      "intent": "informational",
+      "target_words": 1100
+    },
+    {
+      "slug": "blog/mangusta-80-vs-pershing-46-marbella",
+      "primary_keyword": "mangusta 80 vs pershing 46 marbella",
+      "title": "Mangusta 80 vs Pershing 46: Marbella Yacht Showdown",
+      "intent": "informational",
+      "target_words": 1100
+    },
+    {
+      "slug": "blog/canados-86-vs-maiora-26m-marbella",
+      "primary_keyword": "canados 86 vs maiora 26m marbella",
+      "title": "Canados 86 vs Maiora 26m: Marbella Superyacht Compared",
+      "intent": "informational",
+      "target_words": 1100
+    },
+    {
+      "slug": "blog/galeon-500-fly-vs-azimut-58-marbella",
+      "primary_keyword": "galeon 500 fly vs azimut 58 marbella",
+      "title": "Galeon 500 Fly vs Azimut 58: Marbella Charter Compared",
+      "intent": "informational",
+      "target_words": 1100
+    },
+    {
+      "slug": "blog/marbella-luxury-yacht-charter-tax-vat",
+      "primary_keyword": "marbella yacht charter VAT tax",
+      "title": "Marbella Yacht Charter VAT & Tax: What You'll Pay",
       "intent": "informational",
       "target_words": 1100
     }

@@ -955,3 +955,36 @@ hint: the same ref. If you want to integrate the remote changes, use
 hint: 'git pull' before pushing again.
 hint: See the 'Note about fast-forwards' in 'git push --help' for details.
 
+[2026-06-08 11:00:01] === Daily content run (kind-balanced): 5 blog + 5 landing = 10 item(s) ===
+[2026-06-08 11:00:01] [1/10] blog · blog/princess-v58-vs-fairline-targa-12m
+[2026-06-08 11:00:22]   ✓ saved content/blog_princess-v58-vs-fairline-targa-12m.json
+[2026-06-08 11:00:22]   ✓ added to keyword_map.blog
+[2026-06-08 11:00:22] [2/10] blog · blog/mangusta-80-vs-pershing-46-marbella
+[2026-06-08 11:01:41]   ✓ saved content/blog_mangusta-80-vs-pershing-46-marbella.json
+[2026-06-08 11:01:41]   ✓ added to keyword_map.blog
+[2026-06-08 11:01:41] [3/10] blog · blog/canados-86-vs-maiora-26m-marbella
+[2026-06-08 11:02:03]   ✓ saved content/blog_canados-86-vs-maiora-26m-marbella.json
+[2026-06-08 11:02:03]   ✓ added to keyword_map.blog
+[2026-06-08 11:02:03] [4/10] blog · blog/galeon-500-fly-vs-azimut-58-marbella
+[2026-06-08 11:02:21]   ✓ saved content/blog_galeon-500-fly-vs-azimut-58-marbella.json
+[2026-06-08 11:02:21]   ✓ added to keyword_map.blog
+[2026-06-08 11:02:21] [5/10] blog · blog/marbella-luxury-yacht-charter-tax-vat
+[2026-06-08 11:02:47]   ✓ saved content/blog_marbella-luxury-yacht-charter-tax-vat.json
+[2026-06-08 11:02:47]   ✓ added to keyword_map.blog
+[2026-06-08 11:02:47] [6/10] experience · experiences/squid-fishing-night-marbella
+[2026-06-08 11:03:10]   ✓ saved content/experiences_squid-fishing-night-marbella.json
+[2026-06-08 11:03:10]   ✓ added to keyword_map.spokes
+[2026-06-08 11:03:10] [7/10] experience · experiences/big-game-tuna-fishing-marbella
+[2026-06-08 11:03:31]   ✓ saved content/experiences_big-game-tuna-fishing-marbella.json
+[2026-06-08 11:03:31]   ✓ added to keyword_map.spokes
+[2026-06-08 11:03:31] [8/10] experience · experiences/yoga-paddleboard-yacht-marbella
+[2026-06-08 11:04:00]   ✓ saved content/experiences_yoga-paddleboard-yacht-marbella.json
+[2026-06-08 11:04:00]   ✓ added to keyword_map.spokes
+[2026-06-08 11:04:00] [9/10] experience · experiences/full-moon-cruise-marbella
+[2026-06-08 11:04:23]   ✓ saved content/experiences_full-moon-cruise-marbella.json
+[2026-06-08 11:04:23]   ✓ added to keyword_map.spokes
+[2026-06-08 11:04:23] [10/10] experience · experiences/kids-birthday-pirate-yacht-marbella
+[2026-06-08 11:04:48]   ✓ saved content/experiences_kids-birthday-pirate-yacht-marbella.json
+[2026-06-08 11:04:48]   ✓ added to keyword_map.spokes
+[2026-06-08 11:04:48] queue: 45 remaining, 118 consumed total
+[2026-06-08 11:04:48] running deploy.sh …

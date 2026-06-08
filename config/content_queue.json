@@ -4,41 +4,6 @@
   "queue": [
     {
       "kind": "blog",
-      "slug": "blog/princess-v58-vs-fairline-targa-12m",
-      "primary_keyword": "princess v58 vs fairline targa 12m",
-      "title": "Princess V58 vs Fairline Targa 12m: Marbella Compared",
-      "target_words": 1100
-    },
-    {
-      "kind": "blog",
-      "slug": "blog/mangusta-80-vs-pershing-46-marbella",
-      "primary_keyword": "mangusta 80 vs pershing 46 marbella",
-      "title": "Mangusta 80 vs Pershing 46: Marbella Yacht Showdown",
-      "target_words": 1100
-    },
-    {
-      "kind": "blog",
-      "slug": "blog/canados-86-vs-maiora-26m-marbella",
-      "primary_keyword": "canados 86 vs maiora 26m marbella",
-      "title": "Canados 86 vs Maiora 26m: Marbella Superyacht Compared",
-      "target_words": 1100
-    },
-    {
-      "kind": "blog",
-      "slug": "blog/galeon-500-fly-vs-azimut-58-marbella",
-      "primary_keyword": "galeon 500 fly vs azimut 58 marbella",
-      "title": "Galeon 500 Fly vs Azimut 58: Marbella Charter Compared",
-      "target_words": 1100
-    },
-    {
-      "kind": "blog",
-      "slug": "blog/marbella-luxury-yacht-charter-tax-vat",
-      "primary_keyword": "marbella yacht charter VAT tax",
-      "title": "Marbella Yacht Charter VAT & Tax: What You'll Pay",
-      "target_words": 1100
-    },
-    {
-      "kind": "blog",
       "slug": "blog/estepona-marina-vs-puerto-banus-departure",
       "primary_keyword": "estepona marina vs puerto banus departure",
       "title": "Estepona Marina vs Puerto Banús: Best Departure Point",
@@ -119,41 +84,6 @@
       "slug": "blog/marbella-yacht-charter-airport-transfer",
       "primary_keyword": "marbella yacht charter airport transfer",
       "title": "Marbella Yacht Charter + Malaga Airport Transfer Guide",
-      "target_words": 1100
-    },
-    {
-      "kind": "experience",
-      "slug": "experiences/squid-fishing-night-marbella",
-      "primary_keyword": "squid fishing night charter marbella",
-      "title": "Night Squid Fishing Charter in Marbella",
-      "target_words": 1100
-    },
-    {
-      "kind": "experience",
-      "slug": "experiences/big-game-tuna-fishing-marbella",
-      "primary_keyword": "big game tuna fishing marbella",
-      "title": "Big Game Tuna Fishing Charter Marbella",
-      "target_words": 1100
-    },
-    {
-      "kind": "experience",
-      "slug": "experiences/yoga-paddleboard-yacht-marbella",
-      "primary_keyword": "yoga paddleboard yacht marbella",
-      "title": "Yoga & Paddleboard Yacht Experience Marbella",
-      "target_words": 1100
-    },
-    {
-      "kind": "experience",
-      "slug": "experiences/full-moon-cruise-marbella",
-      "primary_keyword": "full moon cruise marbella",
-      "title": "Full Moon Night Cruise Marbella",
-      "target_words": 1100
-    },
-    {
-      "kind": "experience",
-      "slug": "experiences/kids-birthday-pirate-yacht-marbella",
-      "primary_keyword": "kids birthday pirate yacht marbella",
-      "title": "Kids Birthday Pirate Yacht Party in Marbella",
       "target_words": 1100
     },
     {
@@ -1272,6 +1202,86 @@
       "title": "Cala de Mijas Music Festival: Yacht Charter from Marbella",
       "target_words": 1100,
       "consumed_at": "2026-06-07"
+    },
+    {
+      "kind": "blog",
+      "slug": "blog/princess-v58-vs-fairline-targa-12m",
+      "primary_keyword": "princess v58 vs fairline targa 12m",
+      "title": "Princess V58 vs Fairline Targa 12m: Marbella Compared",
+      "target_words": 1100,
+      "consumed_at": "2026-06-08"
+    },
+    {
+      "kind": "blog",
+      "slug": "blog/mangusta-80-vs-pershing-46-marbella",
+      "primary_keyword": "mangusta 80 vs pershing 46 marbella",
+      "title": "Mangusta 80 vs Pershing 46: Marbella Yacht Showdown",
+      "target_words": 1100,
+      "consumed_at": "2026-06-08"
+    },
+    {
+      "kind": "blog",
+      "slug": "blog/canados-86-vs-maiora-26m-marbella",
+      "primary_keyword": "canados 86 vs maiora 26m marbella",
+      "title": "Canados 86 vs Maiora 26m: Marbella Superyacht Compared",
+      "target_words": 1100,
+      "consumed_at": "2026-06-08"
+    },
+    {
+      "kind": "blog",
+      "slug": "blog/galeon-500-fly-vs-azimut-58-marbella",
+      "primary_keyword": "galeon 500 fly vs azimut 58 marbella",
+      "title": "Galeon 500 Fly vs Azimut 58: Marbella Charter Compared",
+      "target_words": 1100,
+      "consumed_at": "2026-06-08"
+    },
+    {
+      "kind": "blog",
+      "slug": "blog/marbella-luxury-yacht-charter-tax-vat",
+      "primary_keyword": "marbella yacht charter VAT tax",
+      "title": "Marbella Yacht Charter VAT & Tax: What You'll Pay",
+      "target_words": 1100,
+      "consumed_at": "2026-06-08"
+    },
+    {
+      "kind": "experience",
+      "slug": "experiences/squid-fishing-night-marbella",
+      "primary_keyword": "squid fishing night charter marbella",
+      "title": "Night Squid Fishing Charter in Marbella",
+      "target_words": 1100,
+      "consumed_at": "2026-06-08"
+    },
+    {
+      "kind": "experience",
+      "slug": "experiences/big-game-tuna-fishing-marbella",
+      "primary_keyword": "big game tuna fishing marbella",
+      "title": "Big Game Tuna Fishing Charter Marbella",
+      "target_words": 1100,
+      "consumed_at": "2026-06-08"
+    },
+    {
+      "kind": "experience",
+      "slug": "experiences/yoga-paddleboard-yacht-marbella",
+      "primary_keyword": "yoga paddleboard yacht marbella",
+      "title": "Yoga & Paddleboard Yacht Experience Marbella",
+      "target_words": 1100,
+      "consumed_at": "2026-06-08"
+    },
+    {
+      "kind": "experience",
+      "slug": "experiences/full-moon-cruise-marbella",
+      "primary_keyword": "full moon cruise marbella",
+      "title": "Full Moon Night Cruise Marbella",
+      "target_words": 1100,
+      "consumed_at": "2026-06-08"
+    },
+    {
+      "kind": "experience",
+      "slug": "experiences/kids-birthday-pirate-yacht-marbella",
+      "primary_keyword": "kids birthday pirate yacht marbella",
+      "title": "Kids Birthday Pirate Yacht Party in Marbella",
+      "target_words": 1100,
+      "consumed_at": "2026-06-08"
     }
   ],
   "refill_threshold": 30,

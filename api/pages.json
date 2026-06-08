@@ -1,7 +1,7 @@
 {
   "@context": "https://boatrentalinmarbella.com/api/pages.json",
   "source": "https://boatrentalinmarbella.com",
-  "count": 209,
+  "count": 210,
   "kinds": [
     "blog",
     "boat",
@@ -936,7 +936,7 @@
     {
       "url": "https://boatrentalinmarbella.com/boats/",
       "title": "Our Marbella Boat Charter Fleet — Yachts &amp;amp; Catamarans",
-      "description": "Browse the 18-boat charter fleet — Astondoa, Azimut and more. All from Puerto Banús with skipper, fuel and drinks included. From €749 / 2h.",
+      "description": "Browse the 19-boat charter fleet — Astondoa, Azimut and more. All from Puerto Banús with skipper, fuel and drinks included. From €749 / 2h.",
       "kind": "spoke",
       "locale": "en",
       "excerpt": "Every charter from the fleet departs Puerto Banús with a licensed skipper, fuel, drinks, snorkel gear and water toys included — no surprise extras at the dock. Pick a boat below for full specs, photos and the hourly price grid, or message us on WhatsApp and we will match a boat t"
@@ -1020,6 +1020,14 @@
       "kind": "boat",
       "locale": "en",
       "excerpt": "Speedboat option for short, fast coastal hops along the Marbella shoreline. Quote on WhatsApp for pricing on the available speedboats."
+    },
+    {
+      "url": "https://boatrentalinmarbella.com/boats/sunseeker-predator-58/",
+      "title": "Sunseeker Predator 58 — Sunseeker 17.6m Charter from Puerto Banús",
+      "description": "Charter the Sunseeker Predator 58 from Puerto Banús — 17.6 m, 11 guests, skipper &amp; fuel included. From €2,999 for 4h.",
+      "kind": "boat",
+      "locale": "en",
+      "excerpt": "Sunseeker Predator 58 — 17.6 m British-built sport yacht, sharp hull lines, twin diesels with 30-knot top speed. 11 guests for day charter, 3 cabins for overnight. Verified-owner Marbella charter from Puerto Banús. €2,999 / 4h."
     },
     {
       "url": "https://boatrentalinmarbella.com/cancellation-policy/",

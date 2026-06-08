@@ -345,3 +345,12 @@ hint: See the 'Note about fast-forwards' in 'git push --help' for details.
 [2026-06-08 11:04:48]   ✓ added to keyword_map.spokes
 [2026-06-08 11:04:48] queue: 45 remaining, 118 consumed total
 [2026-06-08 11:04:48] running deploy.sh …
+[2026-06-08 11:04:54] deploy.sh exited 1: [0]
+To https://github.com/mardo89/boat-rental-marbella.git
+ ! [rejected]        c2f54976863e4ac96b886c2efe7118da973cbd76 -> gh-pages (non-fast-forward)
+error: failed to push some refs to 'https://github.com/mardo89/boat-rental-marbella.git'
+hint: Updates were rejected because a pushed branch tip is behind its remote
+hint: counterpart. If you want to integrate the remote changes, use 'git pull'
+hint: before pushing again.
+hint: See the 'Note about fast-forwards' in 'git push --help' for details.
+

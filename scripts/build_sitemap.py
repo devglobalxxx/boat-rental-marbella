@@ -38,6 +38,17 @@ for es_slug, prio in [("es", "0.95"), ("es/alquiler-de-yates-marbella", "0.9"),
                       ("es/alquiler-barcos-puerto-banus", "0.9"),
                       ("es/alquiler-barcos-sin-licencia-marbella", "0.9")]:
     lines.append(url(es_slug, prio, "weekly"))
+# German (DE) priority pages
+for de_slug, prio in [("de", "0.95"), ("de/yachtcharter-marbella", "0.9"),
+                      ("de/bootsverleih-puerto-banus", "0.9"),
+                      ("de/bootsverleih-ohne-fuehrerschein-marbella", "0.9")]:
+    lines.append(url(de_slug, prio, "weekly"))
+# UK landing
+lines.append(url("uk", "0.9", "weekly"))
+# Trust + legal
+for trust_slug, prio in [("reviews", "0.85"), ("about", "0.7"), ("contact", "0.7"),
+                          ("cancellation-policy", "0.5"), ("cookies", "0.4")]:
+    lines.append(url(trust_slug, prio, "monthly"))
 # Legal pages (EN + ES)
 for legal_slug in ["privacy", "terms", "es/privacidad", "es/terminos"]:
     lines.append(url(legal_slug, "0.2", "yearly"))

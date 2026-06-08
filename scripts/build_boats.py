@@ -492,8 +492,8 @@ def write_page(slug, title, meta, h1, sub, eyebrow, hero_img, hero_srcset, hero_
     wa = wa_link(wa_text or "Hi, I'd like to book a boat in Marbella")
     repl = {
         "{{HREFLANG}}": "",
-        "{{LANG_SWITCHER}}": '<strong>EN</strong><span class="sep">|</span><a href="/es/" hreflang="es" rel="alternate">ES</a>',
-        "{{LANG_SWITCHER_FOOTER}}": '<strong>🇬🇧 English</strong> &nbsp;·&nbsp; <a href="/es/" hreflang="es" rel="alternate">🇪🇸 Español</a>',
+        "{{LANG_SWITCHER}}": '<strong>EN</strong><span class="sep">|</span><a href="/es/" hreflang="es" rel="alternate">ES</a><span class="sep">|</span><a href="/de/" hreflang="de" rel="alternate">DE</a>',
+        "{{LANG_SWITCHER_FOOTER}}": '<strong>🇬🇧 English</strong> &nbsp;·&nbsp; <a href="/es/" hreflang="es" rel="alternate">🇪🇸 Español</a> &nbsp;·&nbsp; <a href="/de/" hreflang="de" rel="alternate">🇩🇪 Deutsch</a>',
         "{{HERO_IMG}}": hero_img,
         "{{HERO_IMG_ABS}}": (SITE['base_url'] + hero_img) if hero_img.startswith('/') else hero_img,
         "{{HERO_SRCSET}}": html.escape(hero_srcset),

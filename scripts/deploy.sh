@@ -13,9 +13,13 @@ python3 scripts/build_boats.py
 python3 scripts/build_blog_index.py
 python3 scripts/build_experiences.py
 python3 scripts/build_es.py
+python3 scripts/build_de.py
+python3 scripts/build_uk.py
+python3 scripts/build_trust_pages.py
 python3 scripts/build_sitemap.py
 python3 scripts/inject_hero_video.py
 python3 scripts/inject_founder_card.py
+python3 scripts/inject_aggregate_rating.py
 python3 scripts/build_video_sitemap.py
 
 echo "→ commit main"

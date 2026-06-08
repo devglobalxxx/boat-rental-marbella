@@ -643,8 +643,8 @@ def render(page: dict, kind: str, data: dict) -> str:
             f'<link rel="alternate" hreflang="es" href="{SITE["base_url"]}{es_alt}">\n'
             f'<link rel="alternate" hreflang="x-default" href="{url}">'
         )
-    lang_switcher = f'<strong>EN</strong><span class="sep">|</span><a href="{es_target}" hreflang="es" rel="alternate">ES</a>'
-    lang_switcher_footer = f'<strong>🇬🇧 English</strong> &nbsp;·&nbsp; <a href="{es_target}" hreflang="es" rel="alternate">🇪🇸 Español</a>'
+    lang_switcher = f'<strong>EN</strong><span class="sep">|</span><a href="{es_target}" hreflang="es" rel="alternate">ES</a><span class="sep">|</span><a href="/de/" hreflang="de" rel="alternate">DE</a>'
+    lang_switcher_footer = f'<strong>🇬🇧 English</strong> &nbsp;·&nbsp; <a href="{es_target}" hreflang="es" rel="alternate">🇪🇸 Español</a> &nbsp;·&nbsp; <a href="/de/" hreflang="de" rel="alternate">🇩🇪 Deutsch</a>'
     repl = {
         "{{HREFLANG}}": hreflang_block,
         "{{LANG_SWITCHER}}": lang_switcher,

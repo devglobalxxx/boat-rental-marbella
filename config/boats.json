@@ -74,6 +74,16 @@
         "Heated freshwater jacuzzi onboard"
       ],
       "currency": "EUR"
+    },
+    "tier_predator58": {
+      "label": "Sunseeker Predator 58 — sport yacht",
+      "min_hours": 4,
+      "prices": {
+        "4h": 2999,
+        "6h": 3699,
+        "8h": 4399
+      },
+      "currency": "EUR"
     }
   },
   "boats": [
@@ -452,6 +462,39 @@
       "hero_local_alt": "Azimut 58 Flybridge — 17.6 m Italian flybridge — luxury day charter for up to 12 guests",
       "gallery_local": [],
       "model_year": null
+    },
+    {
+      "slug": "sunseeker-predator-58",
+      "name": "Sunseeker Predator 58",
+      "tagline": "17.6 m British sport yacht — sleek hull, 11-guest day charter from Puerto Banús",
+      "builder": "Sunseeker",
+      "type": "Sport yacht",
+      "length_m": 17.6,
+      "capacity_pax": 11,
+      "cabins": 3,
+      "model_year": 2018,
+      "departure_port": "Puerto Banús",
+      "tier": "tier_predator58",
+      "pricing_status": "fixed",
+      "summary": "Sunseeker Predator 58 — 17.6 m British-built sport yacht, sharp hull lines, twin diesels with 30-knot top speed. 11 guests for day charter, 3 cabins for overnight. Verified-owner Marbella charter from Puerto Banús. €2,999 / 4h.",
+      "highlights": [
+        "17.6 m British Sunseeker sport yacht (2018 model)",
+        "11 guests on board for day charter",
+        "3 cabins for overnight charters",
+        "Twin diesels — 30 knots top speed, 22-24 cruise",
+        "Departing Puerto Banús · verified owner",
+        "Skipper + fuel + 21% IVA always included"
+      ],
+      "intent_keywords": [
+        "Sunseeker Predator 58 Marbella",
+        "Sunseeker yacht charter Puerto Banús",
+        "17m sport yacht rental Marbella",
+        "British yacht charter Marbella"
+      ],
+      "hero_local": null,
+      "hero_local_alt": "Sunseeker Predator 58 sport yacht at sea — Marbella charter from Puerto Banús",
+      "hero_pexels_id": "163236",
+      "gallery_local": []
     },
     {
       "slug": "bandido",

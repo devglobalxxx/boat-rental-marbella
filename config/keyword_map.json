@@ -367,6 +367,41 @@
       "title": "Kids Birthday Pirate Yacht Party in Marbella",
       "intent": "transactional",
       "target_words": 1100
+    },
+    {
+      "slug": "experiences/girls-trip-yacht-marbella",
+      "primary_keyword": "girls trip yacht marbella",
+      "title": "Girls Trip Yacht Charter in Marbella",
+      "intent": "transactional",
+      "target_words": 1100
+    },
+    {
+      "slug": "weekly-yacht-rental-marbella",
+      "primary_keyword": "weekly yacht rental marbella",
+      "title": "Weekly Yacht Rental Marbella: 7-Day Charter Guide",
+      "intent": "transactional",
+      "target_words": 1100
+    },
+    {
+      "slug": "sailboat-rental-marbella",
+      "primary_keyword": "sailboat rental marbella",
+      "title": "Sailboat Rental Marbella: Crewed & Bareboat Options",
+      "intent": "transactional",
+      "target_words": 1100
+    },
+    {
+      "slug": "experiences/seabob-snorkel-combo-marbella",
+      "primary_keyword": "Seabob snorkel combo Marbella",
+      "title": "Seabob + Snorkel Combo Experience in Marbella",
+      "intent": "transactional",
+      "target_words": 1100
+    },
+    {
+      "slug": "experiences/sundowner-tapas-cruise-marbella",
+      "primary_keyword": "sundowner tapas cruise Marbella",
+      "title": "Sundowner Tapas Cruise from Puerto Banús",
+      "intent": "transactional",
+      "target_words": 1100
     }
   ],
   "blog": [
@@ -1032,6 +1067,41 @@
       "slug": "blog/marbella-luxury-yacht-charter-tax-vat",
       "primary_keyword": "marbella yacht charter VAT tax",
       "title": "Marbella Yacht Charter VAT & Tax: What You'll Pay",
+      "intent": "informational",
+      "target_words": 1100
+    },
+    {
+      "slug": "blog/estepona-marina-vs-puerto-banus-departure",
+      "primary_keyword": "estepona marina vs puerto banus departure",
+      "title": "Estepona Marina vs Puerto Banús: Best Departure Point",
+      "intent": "informational",
+      "target_words": 1100
+    },
+    {
+      "slug": "blog/marbella-yacht-charter-october-shoulder-season",
+      "primary_keyword": "marbella yacht charter october shoulder season",
+      "title": "Marbella Yacht Charter in October: Shoulder Season Deals",
+      "intent": "informational",
+      "target_words": 1100
+    },
+    {
+      "slug": "blog/marbella-flamenco-festival-yacht-charter",
+      "primary_keyword": "marbella flamenco festival yacht charter",
+      "title": "Marbella Flamenco Festival 2026: Yacht Charter Guide",
+      "intent": "informational",
+      "target_words": 1100
+    },
+    {
+      "slug": "blog/marbella-yacht-charter-credit-card-fees",
+      "primary_keyword": "marbella yacht charter credit card fees",
+      "title": "Marbella Yacht Charter Credit Card Fees Explained",
+      "intent": "informational",
+      "target_words": 1100
+    },
+    {
+      "slug": "blog/marbella-boat-charter-skipper-tipping-guide",
+      "primary_keyword": "marbella skipper tipping etiquette",
+      "title": "Marbella Skipper & Captain Tipping Etiquette Guide",
       "intent": "informational",
       "target_words": 1100
     }

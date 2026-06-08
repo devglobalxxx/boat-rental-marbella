@@ -997,3 +997,36 @@ hint: counterpart. If you want to integrate the remote changes, use 'git pull'
 hint: before pushing again.
 hint: See the 'Note about fast-forwards' in 'git push --help' for details.
 
+[2026-06-08 20:24:37] === Daily content run (kind-balanced): 5 blog + 5 landing = 10 item(s) ===
+[2026-06-08 20:24:37] [1/10] blog · blog/estepona-marina-vs-puerto-banus-departure
+[2026-06-08 20:25:08]   ✓ saved content/blog_estepona-marina-vs-puerto-banus-departure.json
+[2026-06-08 20:25:08]   ✓ added to keyword_map.blog
+[2026-06-08 20:25:08] [2/10] blog · blog/marbella-yacht-charter-october-shoulder-season
+[2026-06-08 20:25:57]   ✓ saved content/blog_marbella-yacht-charter-october-shoulder-season.json
+[2026-06-08 20:25:57]   ✓ added to keyword_map.blog
+[2026-06-08 20:25:57] [3/10] blog · blog/marbella-flamenco-festival-yacht-charter
+[2026-06-08 20:26:37]   ✓ saved content/blog_marbella-flamenco-festival-yacht-charter.json
+[2026-06-08 20:26:37]   ✓ added to keyword_map.blog
+[2026-06-08 20:26:37] [4/10] blog · blog/marbella-yacht-charter-credit-card-fees
+[2026-06-08 20:27:05]   ✓ saved content/blog_marbella-yacht-charter-credit-card-fees.json
+[2026-06-08 20:27:05]   ✓ added to keyword_map.blog
+[2026-06-08 20:27:05] [5/10] blog · blog/marbella-boat-charter-skipper-tipping-guide
+[2026-06-08 20:27:43]   ✓ saved content/blog_marbella-boat-charter-skipper-tipping-guide.json
+[2026-06-08 20:27:43]   ✓ added to keyword_map.blog
+[2026-06-08 20:27:43] [6/10] experience · experiences/girls-trip-yacht-marbella
+[2026-06-08 20:28:17]   ✓ saved content/experiences_girls-trip-yacht-marbella.json
+[2026-06-08 20:28:17]   ✓ added to keyword_map.spokes
+[2026-06-08 20:28:17] [7/10] spoke · weekly-yacht-rental-marbella
+[2026-06-08 20:28:55]   ✓ saved content/weekly-yacht-rental-marbella.json
+[2026-06-08 20:28:55]   ✓ added to keyword_map.spokes
+[2026-06-08 20:28:55] [8/10] spoke · sailboat-rental-marbella
+[2026-06-08 20:29:26]   ✓ saved content/sailboat-rental-marbella.json
+[2026-06-08 20:29:26]   ✓ added to keyword_map.spokes
+[2026-06-08 20:29:26] [9/10] experience · experiences/seabob-snorkel-combo-marbella
+[2026-06-08 20:30:06]   ✓ saved content/experiences_seabob-snorkel-combo-marbella.json
+[2026-06-08 20:30:06]   ✓ added to keyword_map.spokes
+[2026-06-08 20:30:06] [10/10] experience · experiences/sundowner-tapas-cruise-marbella
+[2026-06-08 20:30:38]   ✓ saved content/experiences_sundowner-tapas-cruise-marbella.json
+[2026-06-08 20:30:38]   ✓ added to keyword_map.spokes
+[2026-06-08 20:30:38] queue: 35 remaining, 128 consumed total
+[2026-06-08 20:30:38] running deploy.sh …

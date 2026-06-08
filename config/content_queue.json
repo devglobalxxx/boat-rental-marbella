@@ -4,41 +4,6 @@
   "queue": [
     {
       "kind": "blog",
-      "slug": "blog/estepona-marina-vs-puerto-banus-departure",
-      "primary_keyword": "estepona marina vs puerto banus departure",
-      "title": "Estepona Marina vs Puerto Banús: Best Departure Point",
-      "target_words": 1100
-    },
-    {
-      "kind": "blog",
-      "slug": "blog/marbella-yacht-charter-october-shoulder-season",
-      "primary_keyword": "marbella yacht charter october shoulder season",
-      "title": "Marbella Yacht Charter in October: Shoulder Season Deals",
-      "target_words": 1100
-    },
-    {
-      "kind": "blog",
-      "slug": "blog/marbella-flamenco-festival-yacht-charter",
-      "primary_keyword": "marbella flamenco festival yacht charter",
-      "title": "Marbella Flamenco Festival 2026: Yacht Charter Guide",
-      "target_words": 1100
-    },
-    {
-      "kind": "blog",
-      "slug": "blog/marbella-yacht-charter-credit-card-fees",
-      "primary_keyword": "marbella yacht charter credit card fees",
-      "title": "Marbella Yacht Charter Credit Card Fees Explained",
-      "target_words": 1100
-    },
-    {
-      "kind": "blog",
-      "slug": "blog/marbella-boat-charter-skipper-tipping-guide",
-      "primary_keyword": "marbella skipper tipping etiquette",
-      "title": "Marbella Skipper & Captain Tipping Etiquette Guide",
-      "target_words": 1100
-    },
-    {
-      "kind": "blog",
       "slug": "blog/marbella-yacht-charter-rainy-day-policy",
       "primary_keyword": "marbella yacht charter rain policy",
       "title": "Marbella Yacht Charter Rain Policy: Refunds & Reschedules",
@@ -84,27 +49,6 @@
       "slug": "blog/marbella-yacht-charter-airport-transfer",
       "primary_keyword": "marbella yacht charter airport transfer",
       "title": "Marbella Yacht Charter + Malaga Airport Transfer Guide",
-      "target_words": 1100
-    },
-    {
-      "kind": "experience",
-      "slug": "experiences/girls-trip-yacht-marbella",
-      "primary_keyword": "girls trip yacht marbella",
-      "title": "Girls Trip Yacht Charter in Marbella",
-      "target_words": 1100
-    },
-    {
-      "kind": "spoke",
-      "slug": "weekly-yacht-rental-marbella",
-      "primary_keyword": "weekly yacht rental marbella",
-      "title": "Weekly Yacht Rental Marbella: 7-Day Charter Guide",
-      "target_words": 1100
-    },
-    {
-      "kind": "spoke",
-      "slug": "sailboat-rental-marbella",
-      "primary_keyword": "sailboat rental marbella",
-      "title": "Sailboat Rental Marbella: Crewed & Bareboat Options",
       "target_words": 1100
     },
     {
@@ -259,20 +203,6 @@
       "slug": "blog/marbella-international-jewellery-week-yacht",
       "primary_keyword": "Marbella jewellery week yacht",
       "title": "Marbella Jewellery Week 2026 Yacht Charter Guide",
-      "target_words": 1100
-    },
-    {
-      "kind": "experience",
-      "slug": "experiences/seabob-snorkel-combo-marbella",
-      "primary_keyword": "Seabob snorkel combo Marbella",
-      "title": "Seabob + Snorkel Combo Experience in Marbella",
-      "target_words": 1100
-    },
-    {
-      "kind": "experience",
-      "slug": "experiences/sundowner-tapas-cruise-marbella",
-      "primary_keyword": "sundowner tapas cruise Marbella",
-      "title": "Sundowner Tapas Cruise from Puerto Banús",
       "target_words": 1100
     },
     {
@@ -1280,6 +1210,86 @@
       "slug": "experiences/kids-birthday-pirate-yacht-marbella",
       "primary_keyword": "kids birthday pirate yacht marbella",
       "title": "Kids Birthday Pirate Yacht Party in Marbella",
+      "target_words": 1100,
+      "consumed_at": "2026-06-08"
+    },
+    {
+      "kind": "blog",
+      "slug": "blog/estepona-marina-vs-puerto-banus-departure",
+      "primary_keyword": "estepona marina vs puerto banus departure",
+      "title": "Estepona Marina vs Puerto Banús: Best Departure Point",
+      "target_words": 1100,
+      "consumed_at": "2026-06-08"
+    },
+    {
+      "kind": "blog",
+      "slug": "blog/marbella-yacht-charter-october-shoulder-season",
+      "primary_keyword": "marbella yacht charter october shoulder season",
+      "title": "Marbella Yacht Charter in October: Shoulder Season Deals",
+      "target_words": 1100,
+      "consumed_at": "2026-06-08"
+    },
+    {
+      "kind": "blog",
+      "slug": "blog/marbella-flamenco-festival-yacht-charter",
+      "primary_keyword": "marbella flamenco festival yacht charter",
+      "title": "Marbella Flamenco Festival 2026: Yacht Charter Guide",
+      "target_words": 1100,
+      "consumed_at": "2026-06-08"
+    },
+    {
+      "kind": "blog",
+      "slug": "blog/marbella-yacht-charter-credit-card-fees",
+      "primary_keyword": "marbella yacht charter credit card fees",
+      "title": "Marbella Yacht Charter Credit Card Fees Explained",
+      "target_words": 1100,
+      "consumed_at": "2026-06-08"
+    },
+    {
+      "kind": "blog",
+      "slug": "blog/marbella-boat-charter-skipper-tipping-guide",
+      "primary_keyword": "marbella skipper tipping etiquette",
+      "title": "Marbella Skipper & Captain Tipping Etiquette Guide",
+      "target_words": 1100,
+      "consumed_at": "2026-06-08"
+    },
+    {
+      "kind": "experience",
+      "slug": "experiences/girls-trip-yacht-marbella",
+      "primary_keyword": "girls trip yacht marbella",
+      "title": "Girls Trip Yacht Charter in Marbella",
+      "target_words": 1100,
+      "consumed_at": "2026-06-08"
+    },
+    {
+      "kind": "spoke",
+      "slug": "weekly-yacht-rental-marbella",
+      "primary_keyword": "weekly yacht rental marbella",
+      "title": "Weekly Yacht Rental Marbella: 7-Day Charter Guide",
+      "target_words": 1100,
+      "consumed_at": "2026-06-08"
+    },
+    {
+      "kind": "spoke",
+      "slug": "sailboat-rental-marbella",
+      "primary_keyword": "sailboat rental marbella",
+      "title": "Sailboat Rental Marbella: Crewed & Bareboat Options",
+      "target_words": 1100,
+      "consumed_at": "2026-06-08"
+    },
+    {
+      "kind": "experience",
+      "slug": "experiences/seabob-snorkel-combo-marbella",
+      "primary_keyword": "Seabob snorkel combo Marbella",
+      "title": "Seabob + Snorkel Combo Experience in Marbella",
+      "target_words": 1100,
+      "consumed_at": "2026-06-08"
+    },
+    {
+      "kind": "experience",
+      "slug": "experiences/sundowner-tapas-cruise-marbella",
+      "primary_keyword": "sundowner tapas cruise Marbella",
+      "title": "Sundowner Tapas Cruise from Puerto Banús",
       "target_words": 1100,
       "consumed_at": "2026-06-08"
     }

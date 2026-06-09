@@ -4,41 +4,6 @@
   "queue": [
     {
       "kind": "blog",
-      "slug": "blog/cabopino-vs-estepona-marina-departure",
-      "primary_keyword": "Cabopino vs Estepona marina departure",
-      "title": "Cabopino vs Estepona Marina: Best Charter Departure",
-      "target_words": 1100
-    },
-    {
-      "kind": "blog",
-      "slug": "blog/marbella-yacht-charter-group-size-limits",
-      "primary_keyword": "Marbella yacht charter group size limits",
-      "title": "Marbella Yacht Charter Group Size Rules Explained",
-      "target_words": 1100
-    },
-    {
-      "kind": "blog",
-      "slug": "blog/sotogrande-marina-vs-puerto-banus",
-      "primary_keyword": "Sotogrande marina vs Puerto Banus",
-      "title": "Sotogrande vs Puerto Banus: Marina Comparison 2026",
-      "target_words": 1100
-    },
-    {
-      "kind": "blog",
-      "slug": "blog/marbella-padel-master-yacht-weekend",
-      "primary_keyword": "Marbella Padel Master yacht weekend",
-      "title": "Marbella Padel Master 2026: Yacht Weekend Plan",
-      "target_words": 1100
-    },
-    {
-      "kind": "blog",
-      "slug": "blog/marbella-yacht-charter-minimum-age",
-      "primary_keyword": "Marbella yacht charter minimum age",
-      "title": "Marbella Yacht Charter Minimum Age Policy 2026",
-      "target_words": 1100
-    },
-    {
-      "kind": "blog",
       "slug": "blog/marbella-yacht-charter-payment-methods",
       "primary_keyword": "Marbella yacht charter payment methods",
       "title": "Yacht Charter Marbella: Accepted Payment Methods",
@@ -1714,6 +1679,46 @@
       "slug": "overnight-yacht-rental-marbella",
       "primary_keyword": "overnight yacht rental Marbella",
       "title": "Overnight Yacht Rental Marbella: Sleep Aboard Guide",
+      "target_words": 1100,
+      "consumed_at": "2026-06-09"
+    },
+    {
+      "kind": "blog",
+      "slug": "blog/cabopino-vs-estepona-marina-departure",
+      "primary_keyword": "Cabopino vs Estepona marina departure",
+      "title": "Cabopino vs Estepona Marina: Best Charter Departure",
+      "target_words": 1100,
+      "consumed_at": "2026-06-09"
+    },
+    {
+      "kind": "blog",
+      "slug": "blog/marbella-yacht-charter-group-size-limits",
+      "primary_keyword": "Marbella yacht charter group size limits",
+      "title": "Marbella Yacht Charter Group Size Rules Explained",
+      "target_words": 1100,
+      "consumed_at": "2026-06-09"
+    },
+    {
+      "kind": "blog",
+      "slug": "blog/sotogrande-marina-vs-puerto-banus",
+      "primary_keyword": "Sotogrande marina vs Puerto Banus",
+      "title": "Sotogrande vs Puerto Banus: Marina Comparison 2026",
+      "target_words": 1100,
+      "consumed_at": "2026-06-09"
+    },
+    {
+      "kind": "blog",
+      "slug": "blog/marbella-padel-master-yacht-weekend",
+      "primary_keyword": "Marbella Padel Master yacht weekend",
+      "title": "Marbella Padel Master 2026: Yacht Weekend Plan",
+      "target_words": 1100,
+      "consumed_at": "2026-06-09"
+    },
+    {
+      "kind": "blog",
+      "slug": "blog/marbella-yacht-charter-minimum-age",
+      "primary_keyword": "Marbella yacht charter minimum age",
+      "title": "Marbella Yacht Charter Minimum Age Policy 2026",
       "target_words": 1100,
       "consumed_at": "2026-06-09"
     }

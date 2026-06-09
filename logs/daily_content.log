@@ -1099,3 +1099,21 @@ hint: See the 'Note about fast-forwards' in 'git push --help' for details.
 [2026-06-09 10:02:39] deploy.sh OK
 [2026-06-09 10:02:39] === Done: 6 succeeded, 0 failed ===
 
+[2026-06-09 15:30:01] === Daily content run (kind-balanced): 5 blog + 0 landing = 5 item(s) ===
+[2026-06-09 15:30:01] [1/5] blog · blog/cabopino-vs-estepona-marina-departure
+[2026-06-09 15:30:26]   ✓ saved content/blog_cabopino-vs-estepona-marina-departure.json
+[2026-06-09 15:30:26]   ✓ added to keyword_map.blog
+[2026-06-09 15:30:26] [2/5] blog · blog/marbella-yacht-charter-group-size-limits
+[2026-06-09 15:30:52]   ✓ saved content/blog_marbella-yacht-charter-group-size-limits.json
+[2026-06-09 15:30:52]   ✓ added to keyword_map.blog
+[2026-06-09 15:30:52] [3/5] blog · blog/sotogrande-marina-vs-puerto-banus
+[2026-06-09 15:31:17]   ✓ saved content/blog_sotogrande-marina-vs-puerto-banus.json
+[2026-06-09 15:31:17]   ✓ added to keyword_map.blog
+[2026-06-09 15:31:17] [4/5] blog · blog/marbella-padel-master-yacht-weekend
+[2026-06-09 15:31:46]   ✓ saved content/blog_marbella-padel-master-yacht-weekend.json
+[2026-06-09 15:31:46]   ✓ added to keyword_map.blog
+[2026-06-09 15:31:46] [5/5] blog · blog/marbella-yacht-charter-minimum-age
+[2026-06-09 15:32:10]   ✓ saved content/blog_marbella-yacht-charter-minimum-age.json
+[2026-06-09 15:32:10]   ✓ added to keyword_map.blog
+[2026-06-09 15:32:10] queue: 54 remaining, 149 consumed total
+[2026-06-09 15:32:10] running deploy.sh …

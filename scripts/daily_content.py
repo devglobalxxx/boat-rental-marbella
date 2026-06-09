@@ -210,7 +210,11 @@ def refill_queue(queue_cfg: dict, n: int) -> list[dict]:
               f"AVOID these slugs (already used): {json.dumps(seen_list)}\n\n"
               "Mix: ~70% blog (informational + event hooks), ~20% experience, ~10% spoke. "
               "Return JSON array only, no prose, no markdown fences.")
-    raw = _call_cli(sys_p, user_p, timeout_s=300)
+    # Prefer DeepSeek for refill too (CLI fails under launchd because Keychain isn't reachable)
+    if os.environ.get("DEEPSEEK_API_KEY", "").strip():
+        raw = _call_deepseek(sys_p, user_p)
+    else:
+        raw = _call_cli(sys_p, user_p, timeout_s=300)
     raw = re.sub(r"^```(?:json)?\s*|\s*```$", "", raw, flags=re.MULTILINE).strip()
     start = raw.find("["); end = raw.rfind("]")
     if start < 0 or end <= start:

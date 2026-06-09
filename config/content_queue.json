@@ -134,6 +134,414 @@
       "primary_keyword": "Marbella jewellery week yacht",
       "title": "Marbella Jewellery Week 2026 Yacht Charter Guide",
       "target_words": 1100
+    },
+    {
+      "kind": "blog",
+      "slug": "blog/astondoa-40-review-marbella",
+      "primary_keyword": "Astondoa 40 'Fufi' Marbella review",
+      "title": "Astondoa 40 'Fufi' Charter Review: What It's Like Onboard in Marbella",
+      "target_words": 1200,
+      "fleet_focus": [
+        "astondoa-40"
+      ]
+    },
+    {
+      "kind": "blog",
+      "slug": "blog/azimut-39-review-marbella",
+      "primary_keyword": "Azimut 39 Marbella review",
+      "title": "Azimut 39 Charter Review: What It's Like Onboard in Marbella",
+      "target_words": 1200,
+      "fleet_focus": [
+        "azimut-39"
+      ]
+    },
+    {
+      "kind": "blog",
+      "slug": "blog/azimut-58-review-marbella",
+      "primary_keyword": "Azimut 58 Flybridge Marbella review",
+      "title": "Azimut 58 Flybridge Charter Review: What It's Like Onboard in Marbella",
+      "target_words": 1200,
+      "fleet_focus": [
+        "azimut-58"
+      ]
+    },
+    {
+      "kind": "blog",
+      "slug": "blog/mangusta-80-review-marbella",
+      "primary_keyword": "Mangusta 80 'Nina' Marbella review",
+      "title": "Mangusta 80 'Nina' Charter Review: What It's Like Onboard in Marbella",
+      "target_words": 1200,
+      "fleet_focus": [
+        "mangusta-80"
+      ]
+    },
+    {
+      "kind": "blog",
+      "slug": "blog/bandido-review-marbella",
+      "primary_keyword": "Bandido Marbella review",
+      "title": "Bandido Charter Review: What It's Like Onboard in Marbella",
+      "target_words": 1200,
+      "fleet_focus": [
+        "bandido"
+      ]
+    },
+    {
+      "kind": "blog",
+      "slug": "blog/canados-86-review-marbella",
+      "primary_keyword": "Canados 86 Marbella review",
+      "title": "Canados 86 Charter Review: What It's Like Onboard in Marbella",
+      "target_words": 1200,
+      "fleet_focus": [
+        "canados-86"
+      ]
+    },
+    {
+      "kind": "blog",
+      "slug": "blog/fairline-targa-12m-review-marbella",
+      "primary_keyword": "Fairline Targa 12m Marbella review",
+      "title": "Fairline Targa 12m Charter Review: What It's Like Onboard in Marbella",
+      "target_words": 1200,
+      "fleet_focus": [
+        "fairline-targa-12m"
+      ]
+    },
+    {
+      "kind": "blog",
+      "slug": "blog/ferretti-94-review-marbella",
+      "primary_keyword": "Ferretti 94 Marbella review",
+      "title": "Ferretti 94 Charter Review: What It's Like Onboard in Marbella",
+      "target_words": 1200,
+      "fleet_focus": [
+        "ferretti-94"
+      ]
+    },
+    {
+      "kind": "blog",
+      "slug": "blog/k80-review-marbella",
+      "primary_keyword": "K80 Marbella review",
+      "title": "K80 Charter Review: What It's Like Onboard in Marbella",
+      "target_words": 1200,
+      "fleet_focus": [
+        "k80"
+      ]
+    },
+    {
+      "kind": "blog",
+      "slug": "blog/lagoon-380-review-marbella",
+      "primary_keyword": "Lagoon 380 catamaran Marbella review",
+      "title": "Lagoon 380 catamaran Charter Review: What It's Like Onboard in Marbella",
+      "target_words": 1200,
+      "fleet_focus": [
+        "lagoon-380"
+      ]
+    },
+    {
+      "kind": "blog",
+      "slug": "blog/maiora-26m-review-marbella",
+      "primary_keyword": "Maiora 26m Marbella review",
+      "title": "Maiora 26m Charter Review: What It's Like Onboard in Marbella",
+      "target_words": 1200,
+      "fleet_focus": [
+        "maiora-26m"
+      ]
+    },
+    {
+      "kind": "blog",
+      "slug": "blog/mariah-sx21-review-marbella",
+      "primary_keyword": "Mariah SX21 Marbella review",
+      "title": "Mariah SX21 Charter Review: What It's Like Onboard in Marbella",
+      "target_words": 1200,
+      "fleet_focus": [
+        "mariah-sx21"
+      ]
+    },
+    {
+      "kind": "blog",
+      "slug": "blog/pershing-46-review-marbella",
+      "primary_keyword": "Pershing 46 Marbella review",
+      "title": "Pershing 46 Charter Review: What It's Like Onboard in Marbella",
+      "target_words": 1200,
+      "fleet_focus": [
+        "pershing-46"
+      ]
+    },
+    {
+      "kind": "blog",
+      "slug": "blog/dubhe-review-marbella",
+      "primary_keyword": "Dubhe (licence-free) Marbella review",
+      "title": "Dubhe (licence-free) Charter Review: What It's Like Onboard in Marbella",
+      "target_words": 1200,
+      "fleet_focus": [
+        "dubhe"
+      ]
+    },
+    {
+      "kind": "blog",
+      "slug": "blog/red-tide-fishing-boat-review-marbella",
+      "primary_keyword": "Red Tide fishing boat Marbella review",
+      "title": "Red Tide fishing boat Charter Review: What It's Like Onboard in Marbella",
+      "target_words": 1200,
+      "fleet_focus": [
+        "red-tide-fishing-boat"
+      ]
+    },
+    {
+      "kind": "blog",
+      "slug": "blog/speedboat-review-marbella",
+      "primary_keyword": "Speedboat Marbella review",
+      "title": "Speedboat Charter Review: What It's Like Onboard in Marbella",
+      "target_words": 1200,
+      "fleet_focus": [
+        "speedboat"
+      ]
+    },
+    {
+      "kind": "blog",
+      "slug": "blog/astondoa-40-best-for",
+      "primary_keyword": "Astondoa 40 'Fufi' best for",
+      "title": "Astondoa 40 'Fufi': Best Boat in Marbella for Couples and small groups (up to 9)",
+      "target_words": 1100,
+      "fleet_focus": [
+        "astondoa-40"
+      ]
+    },
+    {
+      "kind": "blog",
+      "slug": "blog/azimut-39-best-for",
+      "primary_keyword": "Azimut 39 best for",
+      "title": "Azimut 39: Best Boat in Marbella for Groups of 10-11 wanting a flybridge",
+      "target_words": 1100,
+      "fleet_focus": [
+        "azimut-39"
+      ]
+    },
+    {
+      "kind": "blog",
+      "slug": "blog/azimut-58-best-for",
+      "primary_keyword": "Azimut 58 Flybridge best for",
+      "title": "Azimut 58 Flybridge: Best Boat in Marbella for Luxury day charter or 3-cabin overnight",
+      "target_words": 1100,
+      "fleet_focus": [
+        "azimut-58"
+      ]
+    },
+    {
+      "kind": "blog",
+      "slug": "blog/mangusta-80-best-for",
+      "primary_keyword": "Mangusta 80 'Nina' best for",
+      "title": "Mangusta 80 'Nina': Best Boat in Marbella for 12-guest flagship day with jet ski",
+      "target_words": 1100,
+      "fleet_focus": [
+        "mangusta-80"
+      ]
+    },
+    {
+      "kind": "blog",
+      "slug": "blog/bandido-best-for",
+      "primary_keyword": "Bandido best for",
+      "title": "Bandido: Best Boat in Marbella for Stag and hen weekends",
+      "target_words": 1100,
+      "fleet_focus": [
+        "bandido"
+      ]
+    },
+    {
+      "kind": "blog",
+      "slug": "blog/canados-86-best-for",
+      "primary_keyword": "Canados 86 best for",
+      "title": "Canados 86: Best Boat in Marbella for Corporate retreats and large groups",
+      "target_words": 1100,
+      "fleet_focus": [
+        "canados-86"
+      ]
+    },
+    {
+      "kind": "blog",
+      "slug": "blog/fairline-targa-12m-best-for",
+      "primary_keyword": "Fairline Targa 12m best for",
+      "title": "Fairline Targa 12m: Best Boat in Marbella for Fast coastal day cruising",
+      "target_words": 1100,
+      "fleet_focus": [
+        "fairline-targa-12m"
+      ]
+    },
+    {
+      "kind": "blog",
+      "slug": "blog/ferretti-94-best-for",
+      "primary_keyword": "Ferretti 94 best for",
+      "title": "Ferretti 94: Best Boat in Marbella for Ultra-luxury weeklong charter",
+      "target_words": 1100,
+      "fleet_focus": [
+        "ferretti-94"
+      ]
+    },
+    {
+      "kind": "blog",
+      "slug": "blog/k80-best-for",
+      "primary_keyword": "K80 best for",
+      "title": "K80: Best Boat in Marbella for Value flybridge for 10+ guests",
+      "target_words": 1100,
+      "fleet_focus": [
+        "k80"
+      ]
+    },
+    {
+      "kind": "blog",
+      "slug": "blog/lagoon-380-best-for",
+      "primary_keyword": "Lagoon 380 catamaran best for",
+      "title": "Lagoon 380 catamaran: Best Boat in Marbella for Sailing-day catamaran with kids",
+      "target_words": 1100,
+      "fleet_focus": [
+        "lagoon-380"
+      ]
+    },
+    {
+      "kind": "blog",
+      "slug": "blog/maiora-26m-best-for",
+      "primary_keyword": "Maiora 26m best for",
+      "title": "Maiora 26m: Best Boat in Marbella for Long-range sotogrande or gibraltar runs",
+      "target_words": 1100,
+      "fleet_focus": [
+        "maiora-26m"
+      ]
+    },
+    {
+      "kind": "blog",
+      "slug": "blog/mariah-sx21-best-for",
+      "primary_keyword": "Mariah SX21 best for",
+      "title": "Mariah SX21: Best Boat in Marbella for Quick 2-hour sunset zip",
+      "target_words": 1100,
+      "fleet_focus": [
+        "mariah-sx21"
+      ]
+    },
+    {
+      "kind": "blog",
+      "slug": "blog/pershing-46-best-for",
+      "primary_keyword": "Pershing 46 best for",
+      "title": "Pershing 46: Best Boat in Marbella for Performance sport-yacht style",
+      "target_words": 1100,
+      "fleet_focus": [
+        "pershing-46"
+      ]
+    },
+    {
+      "kind": "blog",
+      "slug": "blog/dubhe-best-for",
+      "primary_keyword": "Dubhe (licence-free) best for",
+      "title": "Dubhe (licence-free): Best Boat in Marbella for Licence-free self-drive afternoon",
+      "target_words": 1100,
+      "fleet_focus": [
+        "dubhe"
+      ]
+    },
+    {
+      "kind": "blog",
+      "slug": "blog/red-tide-fishing-boat-best-for",
+      "primary_keyword": "Red Tide fishing boat best for",
+      "title": "Red Tide fishing boat: Best Boat in Marbella for Serious offshore sport fishing",
+      "target_words": 1100,
+      "fleet_focus": [
+        "red-tide-fishing-boat"
+      ]
+    },
+    {
+      "kind": "blog",
+      "slug": "blog/speedboat-best-for",
+      "primary_keyword": "Speedboat best for",
+      "title": "Speedboat: Best Boat in Marbella for Tow-sports and watersports day",
+      "target_words": 1100,
+      "fleet_focus": [
+        "speedboat"
+      ]
+    },
+    {
+      "kind": "blog",
+      "slug": "blog/astondoa-40-vs-azimut-39-marbella",
+      "primary_keyword": "astondoa 40 vs azimut 39",
+      "title": "Astondoa 40 vs Azimut 39: Which 12.5m Yacht to Charter in Marbella",
+      "target_words": 1300,
+      "fleet_focus": [
+        "astondoa-40",
+        "azimut-39"
+      ]
+    },
+    {
+      "kind": "blog",
+      "slug": "blog/azimut-39-vs-azimut-58-marbella",
+      "primary_keyword": "azimut 39 vs azimut 58",
+      "title": "Azimut 39 vs Azimut 58: When to Upgrade in Marbella",
+      "target_words": 1300,
+      "fleet_focus": [
+        "azimut-39",
+        "azimut-58"
+      ]
+    },
+    {
+      "kind": "blog",
+      "slug": "blog/mangusta-80-vs-ferretti-94-marbella",
+      "primary_keyword": "mangusta 80 vs ferretti 94",
+      "title": "Mangusta 80 vs Ferretti 94: Top Luxury Yachts in Marbella",
+      "target_words": 1300,
+      "fleet_focus": [
+        "mangusta-80",
+        "ferretti-94"
+      ]
+    },
+    {
+      "kind": "blog",
+      "slug": "blog/mangusta-80-vs-canados-86-marbella",
+      "primary_keyword": "mangusta 80 vs canados 86",
+      "title": "Mangusta 80 vs Canados 86: Which Marbella Flagship",
+      "target_words": 1300,
+      "fleet_focus": [
+        "mangusta-80",
+        "canados-86"
+      ]
+    },
+    {
+      "kind": "blog",
+      "slug": "blog/dubhe-vs-mariah-sx21-marbella",
+      "primary_keyword": "dubhe vs mariah sx21",
+      "title": "Dubhe vs Mariah SX21: Cheapest Boat Hire in Puerto Banús",
+      "target_words": 1300,
+      "fleet_focus": [
+        "dubhe",
+        "mariah-sx21"
+      ]
+    },
+    {
+      "kind": "blog",
+      "slug": "blog/lagoon-380-vs-azimut-58-marbella",
+      "primary_keyword": "catamaran vs flybridge in marbella",
+      "title": "Catamaran vs Flybridge in Marbella: Lagoon 380 vs Azimut 58",
+      "target_words": 1300,
+      "fleet_focus": [
+        "lagoon-380",
+        "azimut-58"
+      ]
+    },
+    {
+      "kind": "blog",
+      "slug": "blog/astondoa-40-vs-fairline-targa-12m-marbella",
+      "primary_keyword": "astondoa 40 vs fairline targa 12m in marbella",
+      "title": "Astondoa 40 vs Fairline Targa 12m in Marbella",
+      "target_words": 1300,
+      "fleet_focus": [
+        "astondoa-40",
+        "fairline-targa-12m"
+      ]
+    },
+    {
+      "kind": "blog",
+      "slug": "blog/pershing-46-vs-fairline-targa-12m-marbella",
+      "primary_keyword": "pershing 46 vs fairline targa 12m",
+      "title": "Pershing 46 vs Fairline Targa 12m: Sport Yachts Compared",
+      "target_words": 1300,
+      "fleet_focus": [
+        "pershing-46",
+        "fairline-targa-12m"
+      ]
     }
   ],
   "consumed": [

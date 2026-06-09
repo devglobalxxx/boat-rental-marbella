@@ -1,7 +1,7 @@
 {
   "@context": "https://boatrentalinmarbella.com/api/pages.json",
   "source": "https://boatrentalinmarbella.com",
-  "count": 226,
+  "count": 225,
   "kinds": [
     "blog",
     "boat",
@@ -1100,14 +1100,6 @@
       "kind": "boat",
       "locale": "en",
       "excerpt": "Speedboat option for short, fast coastal hops along the Marbella shoreline. Quote on WhatsApp for pricing on the available speedboats."
-    },
-    {
-      "url": "https://boatrentalinmarbella.com/boats/sunseeker-predator-58/",
-      "title": "Sunseeker Predator 58 — Sunseeker 17.6m Charter from Puerto Banús",
-      "description": "Charter the Sunseeker Predator 58 from Puerto Banús — 17.6 m, 11 guests, skipper &amp; fuel included. From €2,999 for 4h.",
-      "kind": "boat",
-      "locale": "en",
-      "excerpt": "Sunseeker Predator 58 — 17.6 m British-built sport yacht, sharp hull lines, twin diesels with 30-knot top speed. 11 guests for day charter, 3 cabins for overnight. Verified-owner Marbella charter from Puerto Banús. €2,999 / 4h."
     },
     {
       "url": "https://boatrentalinmarbella.com/cancellation-policy/",

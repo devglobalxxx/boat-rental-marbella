@@ -1117,3 +1117,24 @@ hint: See the 'Note about fast-forwards' in 'git push --help' for details.
 [2026-06-09 15:32:10]   ✓ added to keyword_map.blog
 [2026-06-09 15:32:10] queue: 54 remaining, 149 consumed total
 [2026-06-09 15:32:10] running deploy.sh …
+[2026-06-09 15:32:28] deploy.sh OK
+[2026-06-09 15:32:28] === Done: 5 succeeded, 0 failed ===
+
+[2026-06-09 18:30:14] === Daily content run (kind-balanced): 5 blog + 0 landing = 5 item(s) ===
+[2026-06-09 18:30:14] [1/5] blog · blog/marbella-yacht-charter-payment-methods
+[2026-06-09 18:30:35]   ✓ saved content/blog_marbella-yacht-charter-payment-methods.json
+[2026-06-09 18:30:35]   ✓ added to keyword_map.blog
+[2026-06-09 18:30:35] [2/5] blog · blog/marbella-luxury-car-show-yacht
+[2026-06-09 18:31:01]   ✓ saved content/blog_marbella-luxury-car-show-yacht.json
+[2026-06-09 18:31:01]   ✓ added to keyword_map.blog
+[2026-06-09 18:31:01] [3/5] blog · blog/azimut-58-vs-sunseeker-predator-marbella
+[2026-06-09 18:31:30]   ✓ saved content/blog_azimut-58-vs-sunseeker-predator-marbella.json
+[2026-06-09 18:31:30]   ✓ added to keyword_map.blog
+[2026-06-09 18:31:30] [4/5] blog · blog/marbella-art-fair-yacht-charter
+[2026-06-09 18:31:53]   ✓ saved content/blog_marbella-art-fair-yacht-charter.json
+[2026-06-09 18:31:53]   ✓ added to keyword_map.blog
+[2026-06-09 18:31:53] [5/5] blog · blog/marbella-yacht-charter-toilet-facilities
+[2026-06-09 18:32:23]   ✓ saved content/blog_marbella-yacht-charter-toilet-facilities.json
+[2026-06-09 18:32:23]   ✓ added to keyword_map.blog
+[2026-06-09 18:32:23] queue: 49 remaining, 154 consumed total
+[2026-06-09 18:32:23] running deploy.sh …

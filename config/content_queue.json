@@ -4,41 +4,6 @@
   "queue": [
     {
       "kind": "blog",
-      "slug": "blog/marbella-yacht-charter-payment-methods",
-      "primary_keyword": "Marbella yacht charter payment methods",
-      "title": "Yacht Charter Marbella: Accepted Payment Methods",
-      "target_words": 1100
-    },
-    {
-      "kind": "blog",
-      "slug": "blog/marbella-luxury-car-show-yacht",
-      "primary_keyword": "Marbella luxury car show yacht",
-      "title": "Marbella Luxury Car Show 2026: Yacht Pairing Guide",
-      "target_words": 1100
-    },
-    {
-      "kind": "blog",
-      "slug": "blog/azimut-58-vs-sunseeker-predator-marbella",
-      "primary_keyword": "Azimut 58 vs Sunseeker Predator Marbella",
-      "title": "Azimut 58 vs Sunseeker Predator 60: Marbella Pick",
-      "target_words": 1100
-    },
-    {
-      "kind": "blog",
-      "slug": "blog/marbella-art-fair-yacht-charter",
-      "primary_keyword": "Marbella art fair yacht charter",
-      "title": "Marbella Art Fair 2026: Yacht Charter Add-On",
-      "target_words": 1100
-    },
-    {
-      "kind": "blog",
-      "slug": "blog/marbella-yacht-charter-toilet-facilities",
-      "primary_keyword": "Marbella yacht charter toilet facilities",
-      "title": "Yacht Charter Marbella: Toilets & Onboard Heads",
-      "target_words": 1100
-    },
-    {
-      "kind": "blog",
       "slug": "blog/marbella-yacht-charter-sea-conditions-forecast",
       "primary_keyword": "Marbella yacht charter sea conditions",
       "title": "Reading Sea Conditions for Marbella Yacht Charters",
@@ -1719,6 +1684,46 @@
       "slug": "blog/marbella-yacht-charter-minimum-age",
       "primary_keyword": "Marbella yacht charter minimum age",
       "title": "Marbella Yacht Charter Minimum Age Policy 2026",
+      "target_words": 1100,
+      "consumed_at": "2026-06-09"
+    },
+    {
+      "kind": "blog",
+      "slug": "blog/marbella-yacht-charter-payment-methods",
+      "primary_keyword": "Marbella yacht charter payment methods",
+      "title": "Yacht Charter Marbella: Accepted Payment Methods",
+      "target_words": 1100,
+      "consumed_at": "2026-06-09"
+    },
+    {
+      "kind": "blog",
+      "slug": "blog/marbella-luxury-car-show-yacht",
+      "primary_keyword": "Marbella luxury car show yacht",
+      "title": "Marbella Luxury Car Show 2026: Yacht Pairing Guide",
+      "target_words": 1100,
+      "consumed_at": "2026-06-09"
+    },
+    {
+      "kind": "blog",
+      "slug": "blog/azimut-58-vs-sunseeker-predator-marbella",
+      "primary_keyword": "Azimut 58 vs Sunseeker Predator Marbella",
+      "title": "Azimut 58 vs Sunseeker Predator 60: Marbella Pick",
+      "target_words": 1100,
+      "consumed_at": "2026-06-09"
+    },
+    {
+      "kind": "blog",
+      "slug": "blog/marbella-art-fair-yacht-charter",
+      "primary_keyword": "Marbella art fair yacht charter",
+      "title": "Marbella Art Fair 2026: Yacht Charter Add-On",
+      "target_words": 1100,
+      "consumed_at": "2026-06-09"
+    },
+    {
+      "kind": "blog",
+      "slug": "blog/marbella-yacht-charter-toilet-facilities",
+      "primary_keyword": "Marbella yacht charter toilet facilities",
+      "title": "Yacht Charter Marbella: Toilets & Onboard Heads",
       "target_words": 1100,
       "consumed_at": "2026-06-09"
     }

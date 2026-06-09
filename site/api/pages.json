@@ -1,7 +1,7 @@
 {
   "@context": "https://boatrentalinmarbella.com/api/pages.json",
   "source": "https://boatrentalinmarbella.com",
-  "count": 230,
+  "count": 235,
   "kinds": [
     "blog",
     "boat",
@@ -68,6 +68,14 @@
       "kind": "blog",
       "locale": "en",
       "excerpt": "The Azimut 39 is a 12.5 m Italian flybridge motor yacht — and it's specifically positioned in the Marbella charter market as the bigger-group, flybridge-led alternative to the 9-11 m cabin cruisers most operators carry. This page lays out, point by point, what an extra 1-2 metres"
+    },
+    {
+      "url": "https://boatrentalinmarbella.com/blog/azimut-58-vs-sunseeker-predator-marbella/",
+      "title": "Azimut 58 vs Sunseeker Predator 60: Marbella Pick",
+      "description": "Azimut 58 vs Sunseeker Predator Marbella: compare size, speed, capacity &amp; price for your Marbella boat charter. Book the Azimut 58 Flybridge today.",
+      "kind": "blog",
+      "locale": "en",
+      "excerpt": "Choosing between the Azimut 58 Flybridge and the Sunseeker Predator 60 for a Marbella boat charter? Both are stunning 55-60ft yachts that turn heads in Puerto Banús, but they offer very different experiences. The Azimut 58 is a flybridge cruiser with a raised helm and upper deck,"
     },
     {
       "url": "https://boatrentalinmarbella.com/blog/bachelor-party-yacht-marbella/",
@@ -390,6 +398,14 @@
       "excerpt": "The Mangusta 80 — our \"Nina\" — is a 24 m Italian sport yacht in service since 2020 and the biggest yacht regularly available for day charter from Puerto Banús. This page is the honest comparison vs the 15-18 m \"luxury\" yachts most Marbella charter brokers will steer you towards, "
     },
     {
+      "url": "https://boatrentalinmarbella.com/blog/marbella-art-fair-yacht-charter/",
+      "title": "Marbella Art Fair 2026: Yacht Charter Add-On",
+      "description": "Marbella Art Fair 2026: enhance your visit with a yacht charter from Puerto Banús. Book a luxury boat for 2–12 guests, drinks &amp; skipper included.",
+      "kind": "blog",
+      "locale": "en",
+      "excerpt": "The Marbella Art Fair 2026 returns to the Marbella Exhibition Centre from 3–7 June , bringing together galleries, collectors, and contemporary art from across Europe. For visitors who want to elevate the experience, combining the fair with a yacht charter from Puerto Banús offers"
+    },
+    {
       "url": "https://boatrentalinmarbella.com/blog/marbella-boat-charter-skipper-tipping-guide/",
       "title": "Marbella Skipper &amp; Captain Tipping Etiquette Guide",
       "description": "Learn marbella skipper tipping etiquette for your boat charter. Our guide covers how much to tip (€50-€200), when, and who to tip. Plan your day now.",
@@ -468,6 +484,14 @@
       "kind": "blog",
       "locale": "en",
       "excerpt": "The Marbella Jazz Festival 2026 returns to the Costa del Sol, transforming Puerto Banús and Marbella Marina into open-air jazz venues. For the ultimate experience, combine world-class music with a private Marbella Jazz Festival yacht charter. Drift offshore, sip cava, and listen "
+    },
+    {
+      "url": "https://boatrentalinmarbella.com/blog/marbella-luxury-car-show-yacht/",
+      "title": "Marbella Luxury Car Show 2026: Yacht Pairing Guide",
+      "description": "Pair supercars with yachts at the Marbella Luxury Car Show 2026. See which of our 19 boats matches each marque – from €749/2h. Book your charter now.",
+      "kind": "blog",
+      "locale": "en",
+      "excerpt": "The Marbella Luxury Car Show 2026 returns to Puerto Banús from 28–31 May, bringing together the world’s most exclusive supercars, hypercars, and classic collectibles. But the experience doesn’t end on the tarmac – with our fleet of 19 yachts departing from the same marina, you ca"
     },
     {
       "url": "https://boatrentalinmarbella.com/blog/marbella-luxury-shopping-week-yacht/",
@@ -630,6 +654,14 @@
       "excerpt": "October is the sweet spot for a Marbella yacht charter in October — the summer crowds have gone, the sea is still 22°C, and the light is golden over La Concha. Our shoulder season deals make it the most cost-effective time to take a luxury boat out of Puerto Banús, with rates sta"
     },
     {
+      "url": "https://boatrentalinmarbella.com/blog/marbella-yacht-charter-payment-methods/",
+      "title": "Yacht Charter Marbella: Accepted Payment Methods",
+      "description": "Learn which payment methods we accept for your Marbella yacht charter. Secure deposit, bank transfer, or card – book your boat from Puerto Banús today.",
+      "kind": "blog",
+      "locale": "en",
+      "excerpt": "When you're ready to book a Marbella yacht charter , knowing the payment methods and terms upfront makes the process smooth and stress-free. We keep it simple: a clear deposit structure, secure payment options, and transparent pricing with no surprises. Whether you're reserving a"
+    },
+    {
       "url": "https://boatrentalinmarbella.com/blog/marbella-yacht-charter-pregnant-guests/",
       "title": "Marbella Yacht Charter With Pregnant Guests: Safety Tips",
       "description": "Plan a safe Marbella yacht charter with pregnant guests. Get expert tips on seasickness, sun protection, and boat selection for a comfortable cruise from Puerto Banús.",
@@ -644,6 +676,14 @@
       "kind": "blog",
       "locale": "en",
       "excerpt": "Planning a boat day on the Costa del Sol means hoping for blue skies, but the Mediterranean can throw a curveball. Our Marbella yacht charter rain policy is designed to give you peace of mind: if we cancel due to unsafe weather, you get a full refund or a free reschedule. No fees"
+    },
+    {
+      "url": "https://boatrentalinmarbella.com/blog/marbella-yacht-charter-toilet-facilities/",
+      "title": "Yacht Charter Marbella: Toilets &amp; Onboard Heads",
+      "description": "Wondering about Marbella yacht charter toilet facilities? Our guide covers onboard heads, pump-out rules, and real specs for 17 boats from Puerto Banús.",
+      "kind": "blog",
+      "locale": "en",
+      "excerpt": "When booking a Marbella yacht charter , one practical question often comes up: where do you go to the toilet? This guide covers everything you need to know about onboard heads (marine toilets), how many each boat has, how waste is handled, and what to expect from our fleet depart"
     },
     {
       "url": "https://boatrentalinmarbella.com/blog/marbella-yacht-charter-wheelchair-accessibility/",

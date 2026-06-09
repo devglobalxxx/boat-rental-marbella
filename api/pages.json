@@ -1,7 +1,7 @@
 {
   "@context": "https://boatrentalinmarbella.com/api/pages.json",
   "source": "https://boatrentalinmarbella.com",
-  "count": 225,
+  "count": 230,
   "kinds": [
     "blog",
     "boat",
@@ -140,6 +140,14 @@
       "kind": "blog",
       "locale": "en",
       "excerpt": "When planning a boat charter in Marbella, one of the first decisions is where to set sail. Most visitors choose between Cabopino, a quiet marina east of Marbella, and Puerto Banús, the glitzy superyacht hub west of the city. This guide compares both departure points for your Cabo"
+    },
+    {
+      "url": "https://boatrentalinmarbella.com/blog/cabopino-vs-estepona-marina-departure/",
+      "title": "Cabopino vs Estepona Marina: Best Charter Departure",
+      "description": "Cabopino vs Estepona marina departure: which is best for your boat charter? Compare distances, facilities, and nearby hotspots to choose your perfect launch point.",
+      "kind": "blog",
+      "locale": "en",
+      "excerpt": "Choosing between Cabopino and Estepona Marina for your boat charter departure in Marbella depends on where you're staying and what you want to explore. Cabopino, 10 km east of Marbella, offers quick access to Cala del Faro and quiet sand-dune beaches. Estepona, 20 km west, puts y"
     },
     {
       "url": "https://boatrentalinmarbella.com/blog/canados-86-vs-maiora-26m-marbella/",
@@ -494,6 +502,14 @@
       "excerpt": "Cala de Mijas Music Festival turns a quiet stretch of Costa del Sol beach into one of the busiest weekends of the Andalucian summer — and the easiest way to attend without traffic, parking battles or queues is to arrive by sea. From Puerto Banús the run is roughly 22 nautical mil"
     },
     {
+      "url": "https://boatrentalinmarbella.com/blog/marbella-padel-master-yacht-weekend/",
+      "title": "Marbella Padel Master 2026: Yacht Weekend Plan",
+      "description": "Plan your Marbella Padel Master 2026 weekend with a luxury yacht charter from Puerto Banús. Watch matches, cruise the coast, and celebrate onboard.",
+      "kind": "blog",
+      "locale": "en",
+      "excerpt": "The Marbella Padel Master 2026 is one of the standout events on the international padel calendar, drawing top-ranked players and thousands of fans to the Costa del Sol. If you're planning a weekend around the tournament, adding a yacht charter from Puerto Banús transforms the exp"
+    },
+    {
       "url": "https://boatrentalinmarbella.com/blog/marbella-polo-cup-yacht/",
       "title": "Marbella Polo Cup: Sotogrande Polo + Same-Day Yacht Charter Itinerary",
       "description": "Combine the Marbella Polo Cup in Sotogrande with a same-day yacht charter from Puerto Banús. See the full itinerary, boat options, and prices.",
@@ -588,6 +604,22 @@
       "kind": "blog",
       "locale": "en",
       "excerpt": "Booking a yacht in Marbella should not feel like signing a mortgage. Our deposit rules are deliberately simple: 30% to confirm the date, 70% seven days before departure, and a full refund if the captain calls it off for weather . Everything below explains the small print in plain"
+    },
+    {
+      "url": "https://boatrentalinmarbella.com/blog/marbella-yacht-charter-group-size-limits/",
+      "title": "Marbella Yacht Charter Group Size Rules Explained",
+      "description": "Discover Marbella yacht charter group size limits for boats from Puerto Banús. Capacity ranges from 5 to 12 guests. Check rules and book your ideal yacht today.",
+      "kind": "blog",
+      "locale": "en",
+      "excerpt": "When planning a Marbella yacht charter , one of the first questions is: how many people can come aboard? The answer depends on the boat's certified capacity—not on how many seats you think it has. Every vessel in our fleet at Boat Rental Marbella has a strict guest limit set by S"
+    },
+    {
+      "url": "https://boatrentalinmarbella.com/blog/marbella-yacht-charter-minimum-age/",
+      "title": "Marbella Yacht Charter Minimum Age Policy 2026",
+      "description": "Discover the Marbella yacht charter minimum age policy for 2026. Guests must be 18+ to book; children welcome on board. Check individual boat limits.",
+      "kind": "blog",
+      "locale": "en",
+      "excerpt": "Planning a yacht charter in Marbella with family or friends? One of the first things to check is the Marbella yacht charter minimum age policy. Whether you're celebrating a milestone birthday or taking the kids out for a day on the Costa del Sol, we've got clear rules to keep eve"
     },
     {
       "url": "https://boatrentalinmarbella.com/blog/marbella-yacht-charter-october-shoulder-season/",
@@ -812,6 +844,14 @@
       "kind": "blog",
       "locale": "en",
       "excerpt": "Solomun's annual pre-set party in Marbella is the highlight of the Costa del Sol summer. For the full Diynamic experience, nothing beats a Solomun Marbella yacht charter from Puerto Banús. With our BYO speaker set-up, you can curate your own soundtrack while cruising the Mediterr"
+    },
+    {
+      "url": "https://boatrentalinmarbella.com/blog/sotogrande-marina-vs-puerto-banus/",
+      "title": "Sotogrande vs Puerto Banus: Marina Comparison 2026",
+      "description": "Sotogrande marina vs Puerto Banus: compare facilities, dining, and boat charter access in 2026. Find which Costa del Sol port suits your yacht trip best.",
+      "kind": "blog",
+      "locale": "en",
+      "excerpt": "Choosing between Sotogrande marina vs Puerto Banus for your Costa del Sol yacht charter in 2026? Both ports are excellent, but they serve different tastes. Puerto Banús is the glitzy, non-stop social hub with 915 berths, designer shops, and world-class dining. Sotogrande is a qui"
     },
     {
       "url": "https://boatrentalinmarbella.com/blog/sotogrande-polo-season-yacht-charter/",

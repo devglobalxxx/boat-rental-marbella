@@ -1068,3 +1068,31 @@ hint: See the 'Note about fast-forwards' in 'git push --help' for details.
 [2026-06-08 21:36:19] queue under threshold (25 < 30) — auto-refilling…
 [2026-06-08 21:36:22] refill failed: RuntimeError: claude CLI exit 1: 
 [2026-06-08 21:36:22] running deploy.sh …
+[2026-06-08 21:36:40] deploy.sh OK
+[2026-06-08 21:36:40] === Done: 10 succeeded, 0 failed ===
+
+[2026-06-09 10:00:02] queue at 25 (< 30) — pre-run refill…
+[2026-06-09 10:00:04] refill failed: RuntimeError: claude CLI exit 1: 
+[2026-06-09 10:00:04] === Daily content run (kind-balanced): 5 blog + 1 landing = 6 item(s) ===
+[2026-06-09 10:00:04] [1/6] blog · blog/marbella-hen-party-yacht-budget-breakdown
+[2026-06-09 10:00:27]   ✓ saved content/blog_marbella-hen-party-yacht-budget-breakdown.json
+[2026-06-09 10:00:27]   ✓ added to keyword_map.blog
+[2026-06-09 10:00:27] [2/6] blog · blog/marbella-yacht-charter-airport-transfer
+[2026-06-09 10:00:52]   ✓ saved content/blog_marbella-yacht-charter-airport-transfer.json
+[2026-06-09 10:00:52]   ✓ added to keyword_map.blog
+[2026-06-09 10:00:52] [3/6] blog · blog/marbella-tennis-open-yacht-charter
+[2026-06-09 10:01:16]   ✓ saved content/blog_marbella-tennis-open-yacht-charter.json
+[2026-06-09 10:01:16]   ✓ added to keyword_map.blog
+[2026-06-09 10:01:16] [4/6] blog · blog/sunseeker-manhattan-66-vs-princess-v58
+[2026-06-09 10:01:34]   ✓ saved content/blog_sunseeker-manhattan-66-vs-princess-v58.json
+[2026-06-09 10:01:34]   ✓ added to keyword_map.blog
+[2026-06-09 10:01:34] [5/6] blog · blog/marbella-yacht-charter-currency-exchange
+[2026-06-09 10:01:54]   ✓ saved content/blog_marbella-yacht-charter-currency-exchange.json
+[2026-06-09 10:01:54]   ✓ added to keyword_map.blog
+[2026-06-09 10:01:54] [6/6] spoke · overnight-yacht-rental-marbella
+[2026-06-09 10:02:20]   ✓ saved content/overnight-yacht-rental-marbella.json
+[2026-06-09 10:02:20]   ✓ added to keyword_map.spokes
+[2026-06-09 10:02:20] queue: 19 remaining, 144 consumed total
+[2026-06-09 10:02:20] queue under threshold (19 < 30) — auto-refilling…
+[2026-06-09 10:02:22] refill failed: RuntimeError: claude CLI exit 1: 
+[2026-06-09 10:02:22] running deploy.sh …

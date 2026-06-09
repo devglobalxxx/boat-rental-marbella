@@ -437,6 +437,13 @@
       "title": "Day Charter Marbella: All-Inclusive Yacht Hire",
       "intent": "transactional",
       "target_words": 1100
+    },
+    {
+      "slug": "overnight-yacht-rental-marbella",
+      "primary_keyword": "overnight yacht rental Marbella",
+      "title": "Overnight Yacht Rental Marbella: Sleep Aboard Guide",
+      "intent": "transactional",
+      "target_words": 1100
     }
   ],
   "blog": [
@@ -1172,6 +1179,41 @@
       "slug": "blog/marbella-stag-do-yacht-budget-breakdown",
       "primary_keyword": "marbella stag do yacht budget",
       "title": "Marbella Stag Do Yacht Budget: Real 2026 Breakdown",
+      "intent": "informational",
+      "target_words": 1100
+    },
+    {
+      "slug": "blog/marbella-hen-party-yacht-budget-breakdown",
+      "primary_keyword": "marbella hen party yacht budget",
+      "title": "Marbella Hen Party Yacht Budget: Real 2026 Breakdown",
+      "intent": "informational",
+      "target_words": 1100
+    },
+    {
+      "slug": "blog/marbella-yacht-charter-airport-transfer",
+      "primary_keyword": "marbella yacht charter airport transfer",
+      "title": "Marbella Yacht Charter + Malaga Airport Transfer Guide",
+      "intent": "informational",
+      "target_words": 1100
+    },
+    {
+      "slug": "blog/marbella-tennis-open-yacht-charter",
+      "primary_keyword": "Marbella Tennis Open yacht charter",
+      "title": "Marbella Tennis Open 2026: Yacht Charter Guide",
+      "intent": "informational",
+      "target_words": 1100
+    },
+    {
+      "slug": "blog/sunseeker-manhattan-66-vs-princess-v58",
+      "primary_keyword": "Sunseeker Manhattan 66 vs Princess V58",
+      "title": "Sunseeker Manhattan 66 vs Princess V58 Marbella",
+      "intent": "informational",
+      "target_words": 1100
+    },
+    {
+      "slug": "blog/marbella-yacht-charter-currency-exchange",
+      "primary_keyword": "Marbella yacht charter currency exchange",
+      "title": "Marbella Yacht Charter: Cash, Cards & Currency Tips",
       "intent": "informational",
       "target_words": 1100
     }

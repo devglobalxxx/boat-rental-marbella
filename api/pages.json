@@ -1,7 +1,7 @@
 {
   "@context": "https://boatrentalinmarbella.com/api/pages.json",
   "source": "https://boatrentalinmarbella.com",
-  "count": 220,
+  "count": 226,
   "kinds": [
     "blog",
     "boat",
@@ -430,6 +430,14 @@
       "excerpt": "Deciding between a half day vs full day yacht charter Marbella comes down to how you want to spend your time on the Costa del Sol. Half-day trips (2–4 hours) are perfect for a quick celebration, sunset cruise, or a taster session. Full-day charters (6–8 hours) unlock the coastlin"
     },
     {
+      "url": "https://boatrentalinmarbella.com/blog/marbella-hen-party-yacht-budget-breakdown/",
+      "title": "Marbella Hen Party Yacht Budget: Real 2026 Breakdown",
+      "description": "Plan your Marbella hen party yacht budget for 2026. Real costs from €749/2h on Astondoa 40. Includes skipper, drinks, and VAT. Book now.",
+      "kind": "blog",
+      "locale": "en",
+      "excerpt": "Planning a Marbella hen party and wondering about the real costs? For 2026, our transparent pricing means no hidden fees, no surprises. A 2-hour charter on the Astondoa 40 or Azimut 39 starts at just €749, including skipper, drinks, and taxes. Here's exactly what you need to budg"
+    },
+    {
       "url": "https://boatrentalinmarbella.com/blog/marbella-international-film-festival-yacht/",
       "title": "Marbella International Film Festival: Premiere-Day Yacht Charter Playbook",
       "description": "Watch the Marbella Film Festival premiere from a private yacht in Puerto Banús. From €749/2h with skipper, drinks, snacks &amp; VAT. Book your boat now.",
@@ -518,12 +526,28 @@
       "excerpt": "Planning a stag do in Marbella and wondering what a yacht actually costs in 2026? Here’s the real breakdown: no fluff, no hidden fees. Whether you’re splitting €749 for a 2-hour party on an Astondoa 40 or going all-in on a €4,719 Mangusta 80 with a jet ski, this guide gives you c"
     },
     {
+      "url": "https://boatrentalinmarbella.com/blog/marbella-tennis-open-yacht-charter/",
+      "title": "Marbella Tennis Open 2026: Yacht Charter Guide",
+      "description": "Plan your Marbella Tennis Open 2026 with a private yacht charter from Puerto Banús. Watch matches, cruise the coast, and enjoy VIP sunsets from €749.",
+      "kind": "blog",
+      "locale": "en",
+      "excerpt": "The Marbella Tennis Open 2026 brings top-level ATP Challenger action to the Puente Romano Tennis Club on the Golden Mile. For visitors who want more than baseline hospitality, a private yacht charter from Puerto Banús turns a day of tennis into a full Mediterranean experience. He"
+    },
+    {
       "url": "https://boatrentalinmarbella.com/blog/marbella-tuna-fishing-season-charter/",
       "title": "Marbella Tuna Fishing Season: Best Boats &amp; Months to Book",
       "description": "Plan your marbella tuna fishing season charter. Best months June–October, 12.5m Azimut 39 from €749/2h. Book your trip from Puerto Banús today.",
       "kind": "blog",
       "locale": "en",
       "excerpt": "Marbella is one of the top destinations for bluefin tuna fishing in the Mediterranean, and knowing the marbella tuna fishing season charter details is key to a successful trip. The season runs from June to October, with August and September offering the highest catch rates. Wheth"
+    },
+    {
+      "url": "https://boatrentalinmarbella.com/blog/marbella-yacht-charter-airport-transfer/",
+      "title": "Marbella Yacht Charter + Malaga Airport Transfer Guide",
+      "description": "Plan your marbella yacht charter airport transfer with ease. Puerto Banús is 45 km from Málaga AGP. Book a private taxi or our 12-pax Mangusta 80.",
+      "kind": "blog",
+      "locale": "en",
+      "excerpt": "Landing at Málaga Airport (AGP) and heading straight to a Marbella yacht charter is one of the smoothest transitions on the Costa del Sol. The airport is just 45 km from Puerto Banús — roughly a 40-minute drive. This guide covers every transfer option, from private taxis to renta"
     },
     {
       "url": "https://boatrentalinmarbella.com/blog/marbella-yacht-charter-august-peak-season/",
@@ -548,6 +572,14 @@
       "kind": "blog",
       "locale": "en",
       "excerpt": "When booking a Marbella yacht charter , understanding how credit card fees work can save you money. Many operators add a surcharge for card payments, and we’re transparent about ours. This guide breaks down exactly what you’ll pay, how to avoid extra costs, and what’s included in"
+    },
+    {
+      "url": "https://boatrentalinmarbella.com/blog/marbella-yacht-charter-currency-exchange/",
+      "title": "Marbella Yacht Charter: Cash, Cards &amp; Currency Tips",
+      "description": "Plan your Marbella yacht charter with our currency exchange tips. Cash vs card at Puerto Banús. Avoid hidden fees &amp; enjoy a smooth booking.",
+      "kind": "blog",
+      "locale": "en",
+      "excerpt": "Whether you're chartering an Astondoa 40 for a sunset cruise or a Mangusta 80 for a full day on the Mediterranean, knowing how to handle money in Marbella makes the experience smoother. This guide covers cash vs card, where to exchange currency, and how to avoid fees so you can f"
     },
     {
       "url": "https://boatrentalinmarbella.com/blog/marbella-yacht-charter-deposit-rules/",
@@ -812,6 +844,14 @@
       "kind": "blog",
       "locale": "en",
       "excerpt": "Starlite Marbella is the summer's highlight on the Costa del Sol, drawing world-class acts to the Nagüeles quarry every July and August. For 2026, combining a yacht charter Starlite Marbella day with a concert evening is the ultimate way to experience the coast. This guide covers"
+    },
+    {
+      "url": "https://boatrentalinmarbella.com/blog/sunseeker-manhattan-66-vs-princess-v58/",
+      "title": "Sunseeker Manhattan 66 vs Princess V58 Marbella",
+      "description": "Compare Sunseeker Manhattan 66 vs Princess V58 for Marbella charter. See specs, prices, and which suits your group. Book your ideal boat today.",
+      "kind": "blog",
+      "locale": "en",
+      "excerpt": "When choosing a luxury motor yacht for a day on the Costa del Sol, two names often come up: the Sunseeker Manhattan 66 and the Princess V58 . Both are exceptional boats that depart from Puerto Banús, but they cater to different tastes. This guide breaks down the key differences t"
     },
     {
       "url": "https://boatrentalinmarbella.com/blog/sunseeker-predator-vs-pershing-46/",
@@ -1660,6 +1700,14 @@
       "kind": "spoke",
       "locale": "en",
       "excerpt": ""
+    },
+    {
+      "url": "https://boatrentalinmarbella.com/overnight-yacht-rental-marbella/",
+      "title": "Overnight Yacht Rental Marbella: Sleep Aboard Guide",
+      "description": "Book an overnight yacht rental Marbella and sleep aboard in Puerto Banús. Prices from €2,299 for 8 hours. Speak to our team today.",
+      "kind": "spoke",
+      "locale": "en",
+      "excerpt": "Sleeping aboard a yacht in Marbella is the ultimate way to experience the Costa del Sol after dark. With overnight yacht rental Marbella , you can anchor in a quiet cove or stay dockside at Puerto Banús, wake up to sea views, and enjoy a morning swim before heading back. Our flee"
     },
     {
       "url": "https://boatrentalinmarbella.com/pl/",

@@ -1,7 +1,7 @@
 {
   "@context": "https://boatrentalinmarbella.com/api/pages.json",
   "source": "https://boatrentalinmarbella.com",
-  "count": 245,
+  "count": 250,
   "kinds": [
     "blog",
     "boat",
@@ -70,12 +70,28 @@
       "excerpt": "The Astondoa 40 is a 12.5 m Spanish-built motor yacht — our \"Fufi\" out of Puerto Banús. It sits in a specific niche on the Marbella charter market: bigger than the sport boats and RIBs most casual renters end up on, smaller and more accessible than the 18+ m luxury yachts. This p"
     },
     {
+      "url": "https://boatrentalinmarbella.com/blog/azimut-39-review-marbella/",
+      "title": "Azimut 39 Charter Review: What It&#x27;s Like Onboard in Marbella",
+      "description": "Read an honest Azimut 39 Marbella review: onboard experience, specs, charter cost from €749/2h, and why this 12.5m flybridge is a Puerto Banús favourite.",
+      "kind": "blog",
+      "locale": "en",
+      "excerpt": "If you're looking for a Azimut 39 Marbella review that cuts through the marketing fluff, you've found it. I spent a full afternoon onboard this 12.5m flybridge cruiser, departing from Puerto Banús, and here's exactly what it's like—the good, the practical, and the details that ma"
+    },
+    {
       "url": "https://boatrentalinmarbella.com/blog/azimut-39-vs-smaller-yachts-marbella/",
       "title": "Azimut 39 vs Smaller Motor Yachts in Marbella: 11 Guests, Real Flybridge",
       "description": "Azimut 39 (12.5 m flybridge, 11 guests) vs the 8–10 m cabin cruisers commonly rented in Marbella. Why the flybridge layout, real saloon and proper sun-deck matter once your group hits 9+.",
       "kind": "blog",
       "locale": "en",
       "excerpt": "The Azimut 39 is a 12.5 m Italian flybridge motor yacht — and it's specifically positioned in the Marbella charter market as the bigger-group, flybridge-led alternative to the 9-11 m cabin cruisers most operators carry. This page lays out, point by point, what an extra 1-2 metres"
+    },
+    {
+      "url": "https://boatrentalinmarbella.com/blog/azimut-58-review-marbella/",
+      "title": "Azimut 58 Flybridge Charter Review: What It&#x27;s Like Onboard in Marbella",
+      "description": "Read our honest Azimut 58 Flybridge Marbella review: 17.6m, 12 pax, Puerto Banús departure. Discover onboard experience, inclusions, and why this flybridge is a top choice.",
+      "kind": "blog",
+      "locale": "en",
+      "excerpt": "If you're searching for an Azimut 58 Flybridge Marbella review that cuts through the marketing fluff, you've found it. We've spent time onboard this 17.6m flybridge motor yacht, and here's exactly what it's like — from the moment you step aboard at Puerto Banús to the final glass"
     },
     {
       "url": "https://boatrentalinmarbella.com/blog/azimut-58-vs-sunseeker-predator-marbella/",
@@ -92,6 +108,14 @@
       "kind": "blog",
       "locale": "en",
       "excerpt": "A bachelor party yacht in Marbella beats a club table on almost every metric: more space, better photos, swimming between drinks, and a skipper who actually knows where the calm water is. For a group of 8-12 lads departing Puerto Banús, you are looking at €749 for two hours on a "
+    },
+    {
+      "url": "https://boatrentalinmarbella.com/blog/bandido-review-marbella/",
+      "title": "Bandido Charter Review: What It&#x27;s Like Onboard in Marbella",
+      "description": "Honest Bandido Marbella review: 11.5m speedboat for 8 guests from Puerto Banús. What&#x27;s onboard, how it handles, and what €749/2h gets you.",
+      "kind": "blog",
+      "locale": "en",
+      "excerpt": "If you're looking for a fast, social day on the water in Marbella without the formality of a superyacht, the Bandido might be exactly what you need. This 11.5m speedboat seats up to 8 guests and departs from Puerto Banús. In this Bandido Marbella review, I'll walk you through wha"
     },
     {
       "url": "https://boatrentalinmarbella.com/blog/bandido-yacht-charter-marbella/",
@@ -164,6 +188,14 @@
       "kind": "blog",
       "locale": "en",
       "excerpt": "Choosing between Cabopino and Estepona Marina for your boat charter departure in Marbella depends on where you're staying and what you want to explore. Cabopino, 10 km east of Marbella, offers quick access to Cala del Faro and quiet sand-dune beaches. Estepona, 20 km west, puts y"
+    },
+    {
+      "url": "https://boatrentalinmarbella.com/blog/canados-86-review-marbella/",
+      "title": "Canados 86 Charter Review: What It&#x27;s Like Onboard in Marbella",
+      "description": "Read our honest Canados 86 Marbella review. See what it’s like onboard this 26m flybridge yacht in Puerto Banús, with deck-by-deck detail, pricing, and booking info.",
+      "kind": "blog",
+      "locale": "en",
+      "excerpt": "If you’re looking at a Canados 86 Marbella review , you’ve likely already spotted the numbers: 26 metres, 12 guests, flybridge. But what’s it actually like to spend a day onboard? This review covers the real experience – deck by deck – from stepping aboard in Puerto Banús to anch"
     },
     {
       "url": "https://boatrentalinmarbella.com/blog/canados-86-vs-maiora-26m-marbella/",
@@ -388,6 +420,14 @@
       "kind": "blog",
       "locale": "en",
       "excerpt": "When planning a boat charter in Marbella, the wind direction can make or break your day on the water. The two dominant winds — levante and poniente — create very different sea conditions. Understanding them helps you choose the right boat, time, and itinerary. This guide explains"
+    },
+    {
+      "url": "https://boatrentalinmarbella.com/blog/mangusta-80-review-marbella/",
+      "title": "Mangusta 80 &#x27;Nina&#x27; Charter Review: What It&#x27;s Like Onboard in Marbella",
+      "description": "Read our honest Mangusta 80 &#x27;Nina&#x27; charter review in Marbella. 24m, 12 pax, from €4,719 for 4h with jet ski. Real onboard experience in Puerto Banús.",
+      "kind": "blog",
+      "locale": "en",
+      "excerpt": "If you are searching for a Mangusta 80 'Nina' Marbella review that tells you what it is really like onboard, you have found it. I spent a full day on this 24-metre open yacht out of Puerto Banús, and here is the honest, no-fluff breakdown: how it feels, what you get, and whether "
     },
     {
       "url": "https://boatrentalinmarbella.com/blog/mangusta-80-vs-pershing-46-marbella/",

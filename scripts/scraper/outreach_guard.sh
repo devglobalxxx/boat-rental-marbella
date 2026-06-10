@@ -9,18 +9,26 @@
 #   scan     : every invocation — poll Gmail, suppress opt-outs, auto-onboard
 #              "interested" leads, and re-sync the leads Google Sheet. Cheap + idempotent.
 #   followup : at most once per calendar day — drip-capped send (<=400/day, oldest first,
-#              suppression-checked) of follow-ups that are now due, then re-sync the sheet.
+#              suppression-checked) of follow-ups now due, then re-sync the sheet.
+#   cold     : at most once per calendar day — drip-capped cold outreach (<=400/day) to
+#              new, never-contacted providers worldwide, then re-sync the sheet.
 export PATH="/usr/local/bin:/opt/homebrew/bin:/usr/bin:/bin"
 DIR="$(cd "$(dirname "$0")" && pwd)"
 cd /Users/master/boat-rental-marbella || exit 1
 mkdir -p logs
-MARK="logs/.followup_last_run"
 TODAY="$(date +%F)"
+FMARK="logs/.followup_last_run"
+CMARK="logs/.cold_last_run"
 
 # Always: keep replies / opt-outs / the sheet fresh.
 /bin/bash "$DIR/cron.sh" scan
 
-# Once per day: send any follow-ups that have come due.
-if [ "$(cat "$MARK" 2>/dev/null)" != "$TODAY" ]; then
-  /bin/bash "$DIR/cron.sh" followup && echo "$TODAY" > "$MARK"
+# Once per day: send follow-ups that have come due.
+if [ "$(cat "$FMARK" 2>/dev/null)" != "$TODAY" ]; then
+  /bin/bash "$DIR/cron.sh" followup && echo "$TODAY" > "$FMARK"
+fi
+
+# Once per day: cold outreach to new, never-contacted providers.
+if [ "$(cat "$CMARK" 2>/dev/null)" != "$TODAY" ]; then
+  /bin/bash "$DIR/cron.sh" cold && echo "$TODAY" > "$CMARK"
 fi

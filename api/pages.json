@@ -1,7 +1,7 @@
 {
   "@context": "https://boatrentalinmarbella.com/api/pages.json",
   "source": "https://boatrentalinmarbella.com",
-  "count": 240,
+  "count": 245,
   "kinds": [
     "blog",
     "boat",
@@ -52,6 +52,14 @@
       "kind": "blog",
       "locale": "en",
       "excerpt": "An anniversary yacht charter in Marbella is the most low-friction way to mark a milestone date without organising a party. You board at Puerto Banús, the skipper handles everything, and within ten minutes you are anchored somewhere quiet with cava poured and the Sierra Blanca beh"
+    },
+    {
+      "url": "https://boatrentalinmarbella.com/blog/astondoa-40-review-marbella/",
+      "title": "Astondoa 40 &#x27;Fufi&#x27; Charter Review: What It&#x27;s Like Onboard in Marbella",
+      "description": "Honest Astondoa 40 &#x27;Fufi&#x27; Marbella review: onboard experience, specs, pricing from €749/2h, and why this 12.5m cruiser is perfect for Puerto Banús day charters.",
+      "kind": "blog",
+      "locale": "en",
+      "excerpt": "If you're looking for a no-nonsense day boat in Marbella, the Astondoa 40 'Fufi' delivers exactly what it promises: a comfortable, stylish, and affordable way to explore the Costa del Sol coastline. Based in Puerto Banús, this 12.5-metre cruiser is one of our most popular choices"
     },
     {
       "url": "https://boatrentalinmarbella.com/blog/astondoa-40-vs-smaller-yachts-marbella/",
@@ -486,6 +494,14 @@
       "excerpt": "Every summer, the sky above Marbella erupts in colour during the Marbella International Fireworks Competition . While you can watch from the beach or a chiringuito, the best seats are on the water. A private yacht gives you an unobstructed view, a chilled drink in hand, and zero "
     },
     {
+      "url": "https://boatrentalinmarbella.com/blog/marbella-international-jewellery-week-yacht/",
+      "title": "Marbella Jewellery Week 2026 Yacht Charter Guide",
+      "description": "Navigate Marbella Jewellery Week 2026 in style with a private yacht charter from Puerto Banús. Browse our fleet, compare prices, and book your day on the water.",
+      "kind": "blog",
+      "locale": "en",
+      "excerpt": "Marbella Jewellery Week 2026 (MJW) is the Costa del Sol's premier showcase for fine jewellery, watches, and luxury accessories. Held in the heart of Puerto Banús, the event attracts collectors, designers, and buyers from across Europe. If you're planning to attend, combining the "
+    },
+    {
       "url": "https://boatrentalinmarbella.com/blog/marbella-jazz-festival-yacht-charter/",
       "title": "Marbella Jazz Festival 2026: Yacht Charter Experience",
       "description": "Book a Marbella Jazz Festival 2026 yacht charter from Puerto Banús. Enjoy live jazz, sunset cruises &amp; luxury boats from €749/2h. Reserve now.",
@@ -678,6 +694,14 @@
       "excerpt": "October is the sweet spot for a Marbella yacht charter in October — the summer crowds have gone, the sea is still 22°C, and the light is golden over La Concha. Our shoulder season deals make it the most cost-effective time to take a luxury boat out of Puerto Banús, with rates sta"
     },
     {
+      "url": "https://boatrentalinmarbella.com/blog/marbella-yacht-charter-paella-onboard/",
+      "title": "Authentic Paella Onboard: Marbella Yacht Catering",
+      "description": "Enjoy authentic paella onboard your Marbella yacht charter. Our Puerto Banús fleet offers Spanish cuisine with a licensed skipper. Book now.",
+      "kind": "blog",
+      "locale": "en",
+      "excerpt": "There are few pleasures that rival eating authentic Spanish paella while anchored in a quiet cove off the Marbella coast. On a paella onboard Marbella yacht charter , you combine the finest Mediterranean ingredients with the relaxed luxury of a private boat. Whether you choose a "
+    },
+    {
       "url": "https://boatrentalinmarbella.com/blog/marbella-yacht-charter-payment-methods/",
       "title": "Yacht Charter Marbella: Accepted Payment Methods",
       "description": "Learn which payment methods we accept for your Marbella yacht charter. Secure deposit, bank transfer, or card – book your boat from Puerto Banús today.",
@@ -702,6 +726,14 @@
       "excerpt": "Planning a boat day on the Costa del Sol means hoping for blue skies, but the Mediterranean can throw a curveball. Our Marbella yacht charter rain policy is designed to give you peace of mind: if we cancel due to unsafe weather, you get a full refund or a free reschedule. No fees"
     },
     {
+      "url": "https://boatrentalinmarbella.com/blog/marbella-yacht-charter-rosé-wine-pairing/",
+      "title": "Best Rosé Wines for Your Marbella Yacht Charter",
+      "description": "Discover the best rosé wines for your Marbella yacht charter. Expert pairing tips for sun, sea, and luxury cruising from Puerto Banús.",
+      "kind": "blog",
+      "locale": "en",
+      "excerpt": "Sun, sea, and a chilled glass of rosé—few things capture the essence of a Marbella yacht charter quite like it. Whether you're cruising past the Golden Mile or anchored off Cala Cortés, the right wine pairing elevates the experience. This guide covers the best rosé wines for your"
+    },
+    {
       "url": "https://boatrentalinmarbella.com/blog/marbella-yacht-charter-sea-conditions-forecast/",
       "title": "Reading Sea Conditions for Marbella Yacht Charters",
       "description": "Learn to read sea conditions for your Marbella yacht charter. Get wind, swell &amp; tide tips for Puerto Banús departures. Book with confidence today.",
@@ -724,6 +756,14 @@
       "kind": "blog",
       "locale": "en",
       "excerpt": "One of the most common questions we get from guests is: Are towels and linens included on a Marbella yacht charter? The short answer is yes—towels are provided on every Boat Rental Marbella charter, but bed linens are not. This guide explains exactly what you can expect, so you c"
+    },
+    {
+      "url": "https://boatrentalinmarbella.com/blog/marbella-yacht-charter-vs-gibraltar-rental/",
+      "title": "Renting a Yacht in Marbella vs Gibraltar Compared",
+      "description": "Compare Marbella vs Gibraltar yacht rental: Puerto Banús luxury, VAT included, vs Gibraltar&#x27;s duty-free fuel. See prices, distances, and pick the best for your charter.",
+      "kind": "blog",
+      "locale": "en",
+      "excerpt": "When planning a yacht charter on the Costa del Sol, two destinations often come up: Marbella vs Gibraltar yacht rental . Both offer access to the Mediterranean, but the experience, costs, and logistics differ significantly. Whether you're after luxury, value, or convenience, this"
     },
     {
       "url": "https://boatrentalinmarbella.com/blog/marbella-yacht-charter-wheelchair-accessibility/",

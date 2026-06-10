@@ -400,3 +400,12 @@ hint: See the 'Note about fast-forwards' in 'git push --help' for details.
 [2026-06-10 10:02:55]   ✓ added to keyword_map.blog
 [2026-06-10 10:02:55] queue: 44 remaining, 159 consumed total
 [2026-06-10 10:02:55] running deploy.sh …
+[2026-06-10 10:02:57] deploy.sh exited 1: 9/boat-rental-marbella.git
+ ! [rejected]        main -> main (fetch first)
+error: failed to push some refs to 'https://github.com/mardo89/boat-rental-marbella.git'
+hint: Updates were rejected because the remote contains work that you do not
+hint: have locally. This is usually caused by another repository pushing to
+hint: the same ref. If you want to integrate the remote changes, use
+hint: 'git pull' before pushing again.
+hint: See the 'Note about fast-forwards' in 'git push --help' for details.
+

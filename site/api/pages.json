@@ -1,7 +1,7 @@
 {
   "@context": "https://boatrentalinmarbella.com/api/pages.json",
   "source": "https://boatrentalinmarbella.com",
-  "count": 235,
+  "count": 240,
   "kinds": [
     "blog",
     "boat",
@@ -446,6 +446,14 @@
       "excerpt": "Plan your marbella flamenco festival yacht charter for 2026 and watch the fiery rhythms of flamenco from the best seat in the house—your private boat. Departing from Puerto Banús, our fleet of 18 boats offers front-row sea views of performances along the Marbella coastline. Wheth"
     },
     {
+      "url": "https://boatrentalinmarbella.com/blog/marbella-half-day-morning-vs-afternoon/",
+      "title": "Half-Day Charter Marbella: Morning vs Afternoon",
+      "description": "Deciding between a Marbella half day morning vs afternoon charter? Compare sea conditions, light, dining, and sunset options for your 4-hour boat trip from Puerto Banús.",
+      "kind": "blog",
+      "locale": "en",
+      "excerpt": "Choosing between a morning and afternoon half-day charter in Marbella can shape your entire experience on the water. Both slots offer distinct advantages—from calm seas and cooler air in the morning to golden light and warmer water in the afternoon. Whether you're planning a fami"
+    },
+    {
       "url": "https://boatrentalinmarbella.com/blog/marbella-half-day-vs-full-day-charter/",
       "title": "Half Day vs Full Day Yacht Charter Marbella: Which Wins?",
       "description": "Half day vs full day yacht charter Marbella: compare costs, itineraries &amp; value. Tier A from €749/2h or €2,299/8h. Book your perfect trip now.",
@@ -638,12 +646,28 @@
       "excerpt": "When planning a Marbella yacht charter , one of the first questions is: how many people can come aboard? The answer depends on the boat's certified capacity—not on how many seats you think it has. Every vessel in our fleet at Boat Rental Marbella has a strict guest limit set by S"
     },
     {
+      "url": "https://boatrentalinmarbella.com/blog/marbella-yacht-charter-late-arrival-policy/",
+      "title": "Marbella Yacht Charter Late Arrival Policy Explained",
+      "description": "Understand the Marbella yacht charter late arrival policy. Learn what happens if you&#x27;re late, cancellation terms, and how to avoid losing your deposit. Book with confidence.",
+      "kind": "blog",
+      "locale": "en",
+      "excerpt": "Planning a Marbella yacht charter means sun, sea, and luxury — but what happens if you're running late? Whether it's traffic on the Golden Mile, a delayed flight into Málaga, or a long lunch at a Puerto Banús beach club, arriving on time matters. Our late arrival policy is design"
+    },
+    {
       "url": "https://boatrentalinmarbella.com/blog/marbella-yacht-charter-minimum-age/",
       "title": "Marbella Yacht Charter Minimum Age Policy 2026",
       "description": "Discover the Marbella yacht charter minimum age policy for 2026. Guests must be 18+ to book; children welcome on board. Check individual boat limits.",
       "kind": "blog",
       "locale": "en",
       "excerpt": "Planning a yacht charter in Marbella with family or friends? One of the first things to check is the Marbella yacht charter minimum age policy. Whether you're celebrating a milestone birthday or taking the kids out for a day on the Costa del Sol, we've got clear rules to keep eve"
+    },
+    {
+      "url": "https://boatrentalinmarbella.com/blog/marbella-yacht-charter-noise-curfew/",
+      "title": "Yacht Charter Marbella: Music &amp; Noise Curfew Rules",
+      "description": "Learn Marbella yacht charter noise curfew rules. Puerto Banús enforces 23:00 quiet hours. Plan your party charter with our fleet. Book now.",
+      "kind": "blog",
+      "locale": "en",
+      "excerpt": "Planning a yacht charter in Marbella with music and dancing? You need to know the local noise curfew rules. Puerto Banús, the main departure point for our fleet, enforces quiet hours from 23:00 to 09:00. This means loud parties must wrap up by 23:00, or you risk fines. In this gu"
     },
     {
       "url": "https://boatrentalinmarbella.com/blog/marbella-yacht-charter-october-shoulder-season/",
@@ -678,12 +702,28 @@
       "excerpt": "Planning a boat day on the Costa del Sol means hoping for blue skies, but the Mediterranean can throw a curveball. Our Marbella yacht charter rain policy is designed to give you peace of mind: if we cancel due to unsafe weather, you get a full refund or a free reschedule. No fees"
     },
     {
+      "url": "https://boatrentalinmarbella.com/blog/marbella-yacht-charter-sea-conditions-forecast/",
+      "title": "Reading Sea Conditions for Marbella Yacht Charters",
+      "description": "Learn to read sea conditions for your Marbella yacht charter. Get wind, swell &amp; tide tips for Puerto Banús departures. Book with confidence today.",
+      "kind": "blog",
+      "locale": "en",
+      "excerpt": "When you book a Marbella yacht charter , understanding sea conditions is key to a safe and enjoyable day on the water. The Mediterranean off Puerto Banús can change from glassy calm to choppy within hours, especially during summer afternoons. This guide explains how to read wind,"
+    },
+    {
       "url": "https://boatrentalinmarbella.com/blog/marbella-yacht-charter-toilet-facilities/",
       "title": "Yacht Charter Marbella: Toilets &amp; Onboard Heads",
       "description": "Wondering about Marbella yacht charter toilet facilities? Our guide covers onboard heads, pump-out rules, and real specs for 17 boats from Puerto Banús.",
       "kind": "blog",
       "locale": "en",
       "excerpt": "When booking a Marbella yacht charter , one practical question often comes up: where do you go to the toilet? This guide covers everything you need to know about onboard heads (marine toilets), how many each boat has, how waste is handled, and what to expect from our fleet depart"
+    },
+    {
+      "url": "https://boatrentalinmarbella.com/blog/marbella-yacht-charter-towel-policy/",
+      "title": "Marbella Yacht Charter: Towels &amp; Linens Included?",
+      "description": "Find out if towels &amp; linens are included on your Marbella yacht charter. We cover what&#x27;s provided, what to pack, and tips for a comfortable day at sea.",
+      "kind": "blog",
+      "locale": "en",
+      "excerpt": "One of the most common questions we get from guests is: Are towels and linens included on a Marbella yacht charter? The short answer is yes—towels are provided on every Boat Rental Marbella charter, but bed linens are not. This guide explains exactly what you can expect, so you c"
     },
     {
       "url": "https://boatrentalinmarbella.com/blog/marbella-yacht-charter-wheelchair-accessibility/",

@@ -1286,6 +1286,41 @@
       "title": "Yacht Charter Marbella: Toilets & Onboard Heads",
       "intent": "informational",
       "target_words": 1100
+    },
+    {
+      "slug": "blog/marbella-yacht-charter-sea-conditions-forecast",
+      "primary_keyword": "Marbella yacht charter sea conditions",
+      "title": "Reading Sea Conditions for Marbella Yacht Charters",
+      "intent": "informational",
+      "target_words": 1100
+    },
+    {
+      "slug": "blog/marbella-yacht-charter-late-arrival-policy",
+      "primary_keyword": "Marbella yacht charter late arrival",
+      "title": "Marbella Yacht Charter Late Arrival Policy Explained",
+      "intent": "informational",
+      "target_words": 1100
+    },
+    {
+      "slug": "blog/marbella-yacht-charter-noise-curfew",
+      "primary_keyword": "Marbella yacht charter noise curfew",
+      "title": "Yacht Charter Marbella: Music & Noise Curfew Rules",
+      "intent": "informational",
+      "target_words": 1100
+    },
+    {
+      "slug": "blog/marbella-half-day-morning-vs-afternoon",
+      "primary_keyword": "Marbella half day morning vs afternoon",
+      "title": "Half-Day Charter Marbella: Morning vs Afternoon",
+      "intent": "informational",
+      "target_words": 1100
+    },
+    {
+      "slug": "blog/marbella-yacht-charter-towel-policy",
+      "primary_keyword": "Marbella yacht charter towels included",
+      "title": "Marbella Yacht Charter: Towels & Linens Included?",
+      "intent": "informational",
+      "target_words": 1100
     }
   ]
 }

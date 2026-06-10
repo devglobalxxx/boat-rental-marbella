@@ -382,3 +382,21 @@ hint: See the 'Note about fast-forwards' in 'git push --help' for details.
 [2026-06-09 10:02:39] deploy.sh OK
 [2026-06-09 10:02:39] === Done: 6 succeeded, 0 failed ===
 
+[2026-06-10 10:00:00] === Daily content run (kind-balanced): 5 blog + 0 landing = 5 item(s) ===
+[2026-06-10 10:00:00] [1/5] blog · blog/marbella-yacht-charter-sea-conditions-forecast
+[2026-06-10 10:00:42]   ✓ saved content/blog_marbella-yacht-charter-sea-conditions-forecast.json
+[2026-06-10 10:00:42]   ✓ added to keyword_map.blog
+[2026-06-10 10:00:42] [2/5] blog · blog/marbella-yacht-charter-late-arrival-policy
+[2026-06-10 10:01:17]   ✓ saved content/blog_marbella-yacht-charter-late-arrival-policy.json
+[2026-06-10 10:01:17]   ✓ added to keyword_map.blog
+[2026-06-10 10:01:17] [3/5] blog · blog/marbella-yacht-charter-noise-curfew
+[2026-06-10 10:01:51]   ✓ saved content/blog_marbella-yacht-charter-noise-curfew.json
+[2026-06-10 10:01:51]   ✓ added to keyword_map.blog
+[2026-06-10 10:01:51] [4/5] blog · blog/marbella-half-day-morning-vs-afternoon
+[2026-06-10 10:02:24]   ✓ saved content/blog_marbella-half-day-morning-vs-afternoon.json
+[2026-06-10 10:02:24]   ✓ added to keyword_map.blog
+[2026-06-10 10:02:24] [5/5] blog · blog/marbella-yacht-charter-towel-policy
+[2026-06-10 10:02:55]   ✓ saved content/blog_marbella-yacht-charter-towel-policy.json
+[2026-06-10 10:02:55]   ✓ added to keyword_map.blog
+[2026-06-10 10:02:55] queue: 44 remaining, 159 consumed total
+[2026-06-10 10:02:55] running deploy.sh …

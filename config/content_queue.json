@@ -4,56 +4,6 @@
   "queue": [
     {
       "kind": "blog",
-      "slug": "blog/azimut-39-review-marbella",
-      "primary_keyword": "Azimut 39 Marbella review",
-      "title": "Azimut 39 Charter Review: What It's Like Onboard in Marbella",
-      "target_words": 1200,
-      "fleet_focus": [
-        "azimut-39"
-      ]
-    },
-    {
-      "kind": "blog",
-      "slug": "blog/azimut-58-review-marbella",
-      "primary_keyword": "Azimut 58 Flybridge Marbella review",
-      "title": "Azimut 58 Flybridge Charter Review: What It's Like Onboard in Marbella",
-      "target_words": 1200,
-      "fleet_focus": [
-        "azimut-58"
-      ]
-    },
-    {
-      "kind": "blog",
-      "slug": "blog/mangusta-80-review-marbella",
-      "primary_keyword": "Mangusta 80 'Nina' Marbella review",
-      "title": "Mangusta 80 'Nina' Charter Review: What It's Like Onboard in Marbella",
-      "target_words": 1200,
-      "fleet_focus": [
-        "mangusta-80"
-      ]
-    },
-    {
-      "kind": "blog",
-      "slug": "blog/bandido-review-marbella",
-      "primary_keyword": "Bandido Marbella review",
-      "title": "Bandido Charter Review: What It's Like Onboard in Marbella",
-      "target_words": 1200,
-      "fleet_focus": [
-        "bandido"
-      ]
-    },
-    {
-      "kind": "blog",
-      "slug": "blog/canados-86-review-marbella",
-      "primary_keyword": "Canados 86 Marbella review",
-      "title": "Canados 86 Charter Review: What It's Like Onboard in Marbella",
-      "target_words": 1200,
-      "fleet_focus": [
-        "canados-86"
-      ]
-    },
-    {
-      "kind": "blog",
       "slug": "blog/fairline-targa-12m-review-marbella",
       "primary_keyword": "Fairline Targa 12m Marbella review",
       "title": "Fairline Targa 12m Charter Review: What It's Like Onboard in Marbella",
@@ -1734,6 +1684,61 @@
       "target_words": 1200,
       "fleet_focus": [
         "astondoa-40"
+      ],
+      "consumed_at": "2026-06-10"
+    },
+    {
+      "kind": "blog",
+      "slug": "blog/azimut-39-review-marbella",
+      "primary_keyword": "Azimut 39 Marbella review",
+      "title": "Azimut 39 Charter Review: What It's Like Onboard in Marbella",
+      "target_words": 1200,
+      "fleet_focus": [
+        "azimut-39"
+      ],
+      "consumed_at": "2026-06-10"
+    },
+    {
+      "kind": "blog",
+      "slug": "blog/azimut-58-review-marbella",
+      "primary_keyword": "Azimut 58 Flybridge Marbella review",
+      "title": "Azimut 58 Flybridge Charter Review: What It's Like Onboard in Marbella",
+      "target_words": 1200,
+      "fleet_focus": [
+        "azimut-58"
+      ],
+      "consumed_at": "2026-06-10"
+    },
+    {
+      "kind": "blog",
+      "slug": "blog/mangusta-80-review-marbella",
+      "primary_keyword": "Mangusta 80 'Nina' Marbella review",
+      "title": "Mangusta 80 'Nina' Charter Review: What It's Like Onboard in Marbella",
+      "target_words": 1200,
+      "fleet_focus": [
+        "mangusta-80"
+      ],
+      "consumed_at": "2026-06-10"
+    },
+    {
+      "kind": "blog",
+      "slug": "blog/bandido-review-marbella",
+      "primary_keyword": "Bandido Marbella review",
+      "title": "Bandido Charter Review: What It's Like Onboard in Marbella",
+      "target_words": 1200,
+      "fleet_focus": [
+        "bandido"
+      ],
+      "consumed_at": "2026-06-10"
+    },
+    {
+      "kind": "blog",
+      "slug": "blog/canados-86-review-marbella",
+      "primary_keyword": "Canados 86 Marbella review",
+      "title": "Canados 86 Charter Review: What It's Like Onboard in Marbella",
+      "target_words": 1200,
+      "fleet_focus": [
+        "canados-86"
       ],
       "consumed_at": "2026-06-10"
     }

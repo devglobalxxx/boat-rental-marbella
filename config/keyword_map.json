@@ -1356,6 +1356,41 @@
       "title": "Astondoa 40 'Fufi' Charter Review: What It's Like Onboard in Marbella",
       "intent": "informational",
       "target_words": 1200
+    },
+    {
+      "slug": "blog/azimut-39-review-marbella",
+      "primary_keyword": "Azimut 39 Marbella review",
+      "title": "Azimut 39 Charter Review: What It's Like Onboard in Marbella",
+      "intent": "informational",
+      "target_words": 1200
+    },
+    {
+      "slug": "blog/azimut-58-review-marbella",
+      "primary_keyword": "Azimut 58 Flybridge Marbella review",
+      "title": "Azimut 58 Flybridge Charter Review: What It's Like Onboard in Marbella",
+      "intent": "informational",
+      "target_words": 1200
+    },
+    {
+      "slug": "blog/mangusta-80-review-marbella",
+      "primary_keyword": "Mangusta 80 'Nina' Marbella review",
+      "title": "Mangusta 80 'Nina' Charter Review: What It's Like Onboard in Marbella",
+      "intent": "informational",
+      "target_words": 1200
+    },
+    {
+      "slug": "blog/bandido-review-marbella",
+      "primary_keyword": "Bandido Marbella review",
+      "title": "Bandido Charter Review: What It's Like Onboard in Marbella",
+      "intent": "informational",
+      "target_words": 1200
+    },
+    {
+      "slug": "blog/canados-86-review-marbella",
+      "primary_keyword": "Canados 86 Marbella review",
+      "title": "Canados 86 Charter Review: What It's Like Onboard in Marbella",
+      "intent": "informational",
+      "target_words": 1200
     }
   ]
 }

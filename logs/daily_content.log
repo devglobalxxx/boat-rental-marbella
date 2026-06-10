@@ -1192,3 +1192,30 @@ hint: See the 'Note about fast-forwards' in 'git push --help' for details.
 [2026-06-10 15:49:30]   ✓ added to keyword_map.blog
 [2026-06-10 15:49:30] queue: 39 remaining, 164 consumed total
 [2026-06-10 15:49:30] running deploy.sh …
+[2026-06-10 15:49:32] deploy.sh exited 1: 9/boat-rental-marbella.git
+ ! [rejected]        main -> main (fetch first)
+error: failed to push some refs to 'https://github.com/mardo89/boat-rental-marbella.git'
+hint: Updates were rejected because the remote contains work that you do not
+hint: have locally. This is usually caused by another repository pushing to
+hint: the same ref. If you want to integrate the remote changes, use
+hint: 'git pull' before pushing again.
+hint: See the 'Note about fast-forwards' in 'git push --help' for details.
+
+[2026-06-10 18:30:10] === Daily content run (kind-balanced): 5 blog + 0 landing = 5 item(s) ===
+[2026-06-10 18:30:10] [1/5] blog · blog/azimut-39-review-marbella
+[2026-06-10 18:30:44]   ✓ saved content/blog_azimut-39-review-marbella.json
+[2026-06-10 18:30:44]   ✓ added to keyword_map.blog
+[2026-06-10 18:30:44] [2/5] blog · blog/azimut-58-review-marbella
+[2026-06-10 18:31:16]   ✓ saved content/blog_azimut-58-review-marbella.json
+[2026-06-10 18:31:16]   ✓ added to keyword_map.blog
+[2026-06-10 18:31:16] [3/5] blog · blog/mangusta-80-review-marbella
+[2026-06-10 18:31:57]   ✓ saved content/blog_mangusta-80-review-marbella.json
+[2026-06-10 18:31:57]   ✓ added to keyword_map.blog
+[2026-06-10 18:31:57] [4/5] blog · blog/bandido-review-marbella
+[2026-06-10 18:32:32]   ✓ saved content/blog_bandido-review-marbella.json
+[2026-06-10 18:32:32]   ✓ added to keyword_map.blog
+[2026-06-10 18:32:32] [5/5] blog · blog/canados-86-review-marbella
+[2026-06-10 18:33:12]   ✓ saved content/blog_canados-86-review-marbella.json
+[2026-06-10 18:33:12]   ✓ added to keyword_map.blog
+[2026-06-10 18:33:12] queue: 34 remaining, 169 consumed total
+[2026-06-10 18:33:12] running deploy.sh …

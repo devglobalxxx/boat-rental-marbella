@@ -1,7 +1,7 @@
 {
   "@context": "https://boatrentalinmarbella.com/api/pages.json",
   "source": "https://boatrentalinmarbella.com",
-  "count": 250,
+  "count": 255,
   "kinds": [
     "blog",
     "boat",
@@ -294,6 +294,22 @@
       "excerpt": "The Fairline Targa 12m is the British sportscruiser answer to Marbella's flat morning seas: 12 metres of hardtop hull, up to 10 guests, and a 22-26 knot cruise that turns the Puerto Banús-to-Estepona coast into an easy half-day. This guide covers what the boat actually is, what t"
     },
     {
+      "url": "https://boatrentalinmarbella.com/blog/fairline-targa-12m-review-marbella/",
+      "title": "Fairline Targa 12m Charter Review: What It&#x27;s Like Onboard in Marbella",
+      "description": "Honest Fairline Targa 12m Marbella review: onboard experience, specs, pricing, and what to expect on a charter from Puerto Banús. Book yours today.",
+      "kind": "blog",
+      "locale": "en",
+      "excerpt": "If you’re looking for a sporty, well-built motorboat for a day on the Costa del Sol, the Fairline Targa 12m is a solid contender. This Boat Rental Marbella review gives you a real-world look at what it’s like onboard — from the cockpit layout to the ride quality — so you can deci"
+    },
+    {
+      "url": "https://boatrentalinmarbella.com/blog/ferretti-94-review-marbella/",
+      "title": "Ferretti 94 Charter Review: What It&#x27;s Like Onboard in Marbella",
+      "description": "Read our honest Ferretti 94 charter review in Marbella. 29m, 12 guests, from Puerto Banús. See what it&#x27;s really like onboard and book your day.",
+      "kind": "blog",
+      "locale": "en",
+      "excerpt": "If you are looking for the ultimate day on the water in Marbella, the Ferretti 94 is the flagship of our fleet. At 29 metres (95 feet), it is the largest yacht we offer, and it delivers a genuine superyacht experience without the superyacht price tag. This is our honest review of"
+    },
+    {
       "url": "https://boatrentalinmarbella.com/blog/ferretti-94-vs-canados-86-marbella/",
       "title": "Ferretti 94 vs Canados 86 in Marbella: Picking the Bigger Superyacht",
       "description": "Ferretti 94 vs Canados 86 in Marbella: 29m vs 26m, both 12 pax, both from Puerto Banús. Compare layout, range, vibe — WhatsApp us for a quote.",
@@ -390,6 +406,14 @@
       "excerpt": "Completing an Ironman 70.3 is a monumental achievement — 1.9 km swim, 90 km bike and 21.1 km run under the Andalusian sun. After crossing the finish line in Marbella, your body deserves more than a protein shake. A private yacht charter from Puerto Banús offers the ultimate recov"
     },
     {
+      "url": "https://boatrentalinmarbella.com/blog/k80-review-marbella/",
+      "title": "K80 Charter Review: What It&#x27;s Like Onboard in Marbella",
+      "description": "Read our honest K80 Marbella review: 24m yacht, 12 guests, jet ski included. What it&#x27;s really like onboard in Puerto Banús. Book your charter today.",
+      "kind": "blog",
+      "locale": "en",
+      "excerpt": "If you're looking for a luxury yacht charter in Marbella that balances space, performance, and onboard fun, the K80 is a standout choice. This 24-metre motor yacht departs from Puerto Banús and can take up to 12 guests for a full day on the Costa del Sol. In this K80 Marbella rev"
+    },
+    {
       "url": "https://boatrentalinmarbella.com/blog/kids-on-a-boat-marbella/",
       "title": "Boat Rental With Kids in Marbella: Safety, Snacks &amp; Itineraries",
       "description": "Boat rental with kids in Marbella: which boat works best for under-5s, snorkel stops for older kids, life jacket rules, catered snacks, and the calm-water itinerary.",
@@ -414,12 +438,28 @@
       "excerpt": "The Lagoon 380 is the only sailing catamaran in our Marbella fleet — an 11.6-metre twin-hull built for 10 guests, departing Puerto Banús alongside our 16 motor yachts and speedboats. If you want to actually sail the Costa del Sol rather than burn diesel across it, this is the boa"
     },
     {
+      "url": "https://boatrentalinmarbella.com/blog/lagoon-380-review-marbella/",
+      "title": "Lagoon 380 catamaran Charter Review: What It&#x27;s Like Onboard in Marbella",
+      "description": "Honest Lagoon 380 catamaran Marbella review: space, speed, comfort &amp; real charter experience. Capacity 10 pax, departs Puerto Banús. Book now.",
+      "kind": "blog",
+      "locale": "en",
+      "excerpt": "If you’re searching for a Lagoon 380 catamaran Marbella review that tells you what it’s really like onboard, you’ve landed in the right place. This 11.6-metre catamaran, departing from Puerto Banús, is one of the most popular choices for groups who want space, stability, and a pr"
+    },
+    {
       "url": "https://boatrentalinmarbella.com/blog/levante-vs-poniente-wind-marbella-charter/",
       "title": "Levante vs Poniente: How Marbella Winds Affect Your Charter",
       "description": "Learn how levante and poniente winds affect boat charters in Marbella. Find the best time to sail, safety tips, and boat recommendations for calm seas.",
       "kind": "blog",
       "locale": "en",
       "excerpt": "When planning a boat charter in Marbella, the wind direction can make or break your day on the water. The two dominant winds — levante and poniente — create very different sea conditions. Understanding them helps you choose the right boat, time, and itinerary. This guide explains"
+    },
+    {
+      "url": "https://boatrentalinmarbella.com/blog/maiora-26m-review-marbella/",
+      "title": "Maiora 26m Charter Review: What It&#x27;s Like Onboard in Marbella",
+      "description": "Honest Maiora 26m Marbella review: 12 guests, 29m, Puerto Banús. Deck layout, comfort, price &amp; what it&#x27;s really like onboard. Check availability.",
+      "kind": "blog",
+      "locale": "en",
+      "excerpt": "If you are looking for a Maiora 26m Marbella review that cuts through the marketing and tells you what it is really like onboard, you have come to the right place. This 29-metre flybridge motor yacht is one of the largest in our fleet at Boat Rental Marbella , and it delivers a n"
     },
     {
       "url": "https://boatrentalinmarbella.com/blog/mangusta-80-review-marbella/",

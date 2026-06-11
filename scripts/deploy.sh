@@ -23,10 +23,17 @@ python3 scripts/inject_aggregate_rating.py
 python3 scripts/inject_ai_schema.py
 python3 scripts/inject_howto_event_schema.py
 python3 scripts/inject_ga.py
+python3 scripts/inject_hreflang.py
+python3 scripts/fix_links.py
+python3 scripts/build_sitemap_page.py
+python3 scripts/inject_webp.py
 python3 scripts/build_facts_json.py
 python3 scripts/build_search_endpoint.py
 python3 scripts/build_llms_txt.py
 python3 scripts/build_video_sitemap.py
+
+echo "→ consistency gate"
+python3 scripts/check_consistency.py
 
 echo "→ commit main"
 git add -A

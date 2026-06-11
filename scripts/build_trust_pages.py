@@ -19,6 +19,7 @@ ROOT = pathlib.Path(__file__).resolve().parents[1]
 TEMPLATE = (ROOT / "templates" / "page.html.template").read_text()
 SITE = json.loads((ROOT / "config" / "keyword_map.json").read_text())["site"]
 REVIEWS = json.loads((ROOT / "config" / "reviews.json").read_text())
+FLEET_N = len(json.loads((ROOT / "config" / "boats.json").read_text())["boats"])
 SITE_DIR = ROOT / "site"
 
 WA_NO_PLUS = SITE["whatsapp_e164"].lstrip("+")
@@ -235,7 +236,7 @@ def render_about():
 <p>Marbella charter listings on the big marketplaces (Click&amp;Boat, Samboat, GetMyBoat) are noisy and the per-boat experience varies wildly. We built Boat Rental Marbella to be the opposite: a small, accountable fleet, transparent inclusive pricing, and a single human contact (Andra) who actually replies. If something goes wrong before, during, or after your charter, you message her — not a ticketing system.</p>
 
 <h2>Our fleet</h2>
-<p>17-boat fleet across three tiers:</p>
+<p>{FLEET_N}-boat fleet across three tiers:</p>
 <ul>
   <li><strong>Day boats &amp; jet skis</strong> — Sea-Doo jet skis from €200/hour, Dubhe licence-free from €230/2h.</li>
   <li><strong>Mid-fleet flybridge yachts</strong> — <a href="/boats/astondoa-40/">Astondoa 40 'Fufi'</a> and <a href="/boats/azimut-39/">Azimut 39</a> at €749/2h → €2,299/8h.</li>

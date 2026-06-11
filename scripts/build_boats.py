@@ -513,6 +513,7 @@ def write_page(slug, title, meta, h1, sub, eyebrow, hero_img, hero_srcset, hero_
         "{{BOAT_GRID}}": "",
         "{{BREADCRUMBS}}": breadcrumbs,
         "{{BODY_HTML}}": body_html,
+        "{{MAP_BLOCK}}": "",
         "{{VIDEO_SECTION}}": video_section_html(videos_for_url(url)),
         "{{GUESTS_SECTION}}": guests_section_html(guests_for_url(url)),
         "{{WHATSAPP_E164_NOPLUS}}": SITE['whatsapp_e164'].lstrip("+"),

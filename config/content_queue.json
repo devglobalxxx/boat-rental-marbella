@@ -4,56 +4,6 @@
   "queue": [
     {
       "kind": "blog",
-      "slug": "blog/fairline-targa-12m-review-marbella",
-      "primary_keyword": "Fairline Targa 12m Marbella review",
-      "title": "Fairline Targa 12m Charter Review: What It's Like Onboard in Marbella",
-      "target_words": 1200,
-      "fleet_focus": [
-        "fairline-targa-12m"
-      ]
-    },
-    {
-      "kind": "blog",
-      "slug": "blog/ferretti-94-review-marbella",
-      "primary_keyword": "Ferretti 94 Marbella review",
-      "title": "Ferretti 94 Charter Review: What It's Like Onboard in Marbella",
-      "target_words": 1200,
-      "fleet_focus": [
-        "ferretti-94"
-      ]
-    },
-    {
-      "kind": "blog",
-      "slug": "blog/k80-review-marbella",
-      "primary_keyword": "K80 Marbella review",
-      "title": "K80 Charter Review: What It's Like Onboard in Marbella",
-      "target_words": 1200,
-      "fleet_focus": [
-        "k80"
-      ]
-    },
-    {
-      "kind": "blog",
-      "slug": "blog/lagoon-380-review-marbella",
-      "primary_keyword": "Lagoon 380 catamaran Marbella review",
-      "title": "Lagoon 380 catamaran Charter Review: What It's Like Onboard in Marbella",
-      "target_words": 1200,
-      "fleet_focus": [
-        "lagoon-380"
-      ]
-    },
-    {
-      "kind": "blog",
-      "slug": "blog/maiora-26m-review-marbella",
-      "primary_keyword": "Maiora 26m Marbella review",
-      "title": "Maiora 26m Charter Review: What It's Like Onboard in Marbella",
-      "target_words": 1200,
-      "fleet_focus": [
-        "maiora-26m"
-      ]
-    },
-    {
-      "kind": "blog",
       "slug": "blog/mariah-sx21-review-marbella",
       "primary_keyword": "Mariah SX21 Marbella review",
       "title": "Mariah SX21 Charter Review: What It's Like Onboard in Marbella",
@@ -349,6 +299,216 @@
         "pershing-46",
         "fairline-targa-12m"
       ]
+    },
+    {
+      "kind": "blog",
+      "slug": "blog/marbella-yacht-charter-christmas-new-year",
+      "primary_keyword": "marbella yacht charter christmas new year",
+      "title": "Marbella Yacht Charter for Christmas and New Year: Festive Cruises",
+      "target_words": 1200
+    },
+    {
+      "kind": "blog",
+      "slug": "blog/puerto-banus-yacht-rental-winter-season",
+      "primary_keyword": "puerto banus yacht rental winter",
+      "title": "Puerto Banus Yacht Rental in Winter: Why Off-Season Works",
+      "target_words": 1100
+    },
+    {
+      "kind": "blog",
+      "slug": "blog/estepona-boat-charter-departure-guide",
+      "primary_keyword": "estepona boat charter departure",
+      "title": "Estepona Boat Charter Departure: What to Know Before You Go",
+      "target_words": 1150
+    },
+    {
+      "kind": "blog",
+      "slug": "blog/sotogrande-yacht-charter-polo-season",
+      "primary_keyword": "sotogrande yacht charter polo season",
+      "title": "Sotogrande Yacht Charter During Polo Season: A Luxury Combo",
+      "target_words": 1100
+    },
+    {
+      "kind": "blog",
+      "slug": "blog/cabopino-boat-rental-family-day",
+      "primary_keyword": "cabopino boat rental family",
+      "title": "Cabopino Boat Rental for Families: Calm Waters and Easy Access",
+      "target_words": 1100
+    },
+    {
+      "kind": "blog",
+      "slug": "blog/marbella-yacht-charter-f1-grand-prix",
+      "primary_keyword": "marbella yacht charter f1 grand prix",
+      "title": "Marbella Yacht Charter for the F1 Grand Prix: Race Weekend at Sea",
+      "target_words": 1200
+    },
+    {
+      "kind": "blog",
+      "slug": "blog/marbella-yacht-charter-starlite-festival",
+      "primary_keyword": "marbella yacht charter starlite festival",
+      "title": "Marbella Yacht Charter and Starlite Festival: Evening Cruise Tips",
+      "target_words": 1150
+    },
+    {
+      "kind": "blog",
+      "slug": "blog/marbella-hen-stag-weekend-yacht-cost",
+      "primary_keyword": "marbella hen stag weekend yacht cost",
+      "title": "Marbella Hen and Stag Weekend Yacht Cost: Budget Breakdown",
+      "target_words": 1200
+    },
+    {
+      "kind": "blog",
+      "slug": "blog/marbella-yacht-charter-ironman-recovery",
+      "primary_keyword": "marbella yacht charter ironman recovery",
+      "title": "Marbella Yacht Charter for Ironman Recovery: Post-Race Relaxation",
+      "target_words": 1100
+    },
+    {
+      "kind": "blog",
+      "slug": "blog/marbella-yacht-charter-pride-celebration",
+      "primary_keyword": "marbella yacht charter pride",
+      "title": "Marbella Yacht Charter for Pride: Celebrate on the Water",
+      "target_words": 1100
+    },
+    {
+      "kind": "blog",
+      "slug": "blog/marbella-boat-rental-dolphin-watching-season",
+      "primary_keyword": "marbella boat rental dolphin watching season",
+      "title": "Marbella Boat Rental for Dolphin Watching: Best Times and Spots",
+      "target_words": 1150
+    },
+    {
+      "kind": "blog",
+      "slug": "blog/marbella-sunset-cruise-romantic-dinner",
+      "primary_keyword": "marbella sunset cruise romantic dinner",
+      "title": "Marbella Sunset Cruise with Romantic Dinner: A Perfect Evening",
+      "target_words": 1100
+    },
+    {
+      "kind": "blog",
+      "slug": "blog/marbella-snorkeling-tour-by-boat",
+      "primary_keyword": "marbella snorkeling tour by boat",
+      "title": "Marbella Snorkeling Tour by Boat: Best Coves and Gear Tips",
+      "target_words": 1100
+    },
+    {
+      "kind": "blog",
+      "slug": "blog/marbella-fishing-charter-cost",
+      "primary_keyword": "marbella fishing charter cost",
+      "title": "Marbella Fishing Charter Cost: What to Expect for a Day Out",
+      "target_words": 1100
+    },
+    {
+      "kind": "blog",
+      "slug": "blog/marbella-jet-ski-rental-with-boat-charter",
+      "primary_keyword": "marbella jet ski rental with boat charter",
+      "title": "Marbella Jet Ski Rental with Boat Charter: Combo Packages",
+      "target_words": 1100
+    },
+    {
+      "kind": "blog",
+      "slug": "blog/marbella-yacht-charter-photoshoot-tips",
+      "primary_keyword": "marbella yacht charter photoshoot",
+      "title": "Marbella Yacht Charter for Photoshoots: Lighting and Backdrops",
+      "target_words": 1150
+    },
+    {
+      "kind": "blog",
+      "slug": "blog/marbella-boat-charter-group-size-limits",
+      "primary_keyword": "marbella boat charter group size",
+      "title": "Marbella Boat Charter Group Size Limits: Capacity Rules Explained",
+      "target_words": 1100
+    },
+    {
+      "kind": "blog",
+      "slug": "blog/marbella-yacht-charter-weather-conditions",
+      "primary_keyword": "marbella yacht charter weather conditions",
+      "title": "Marbella Yacht Charter Weather Conditions: When to Reschedule",
+      "target_words": 1100
+    },
+    {
+      "kind": "blog",
+      "slug": "blog/marbella-boat-rental-what-to-bring",
+      "primary_keyword": "marbella boat rental what to bring",
+      "title": "Marbella Boat Rental: What to Bring for a Perfect Day at Sea",
+      "target_words": 1100
+    },
+    {
+      "kind": "blog",
+      "slug": "blog/marbella-yacht-charter-dietary-restrictions",
+      "primary_keyword": "marbella yacht charter dietary restrictions",
+      "title": "Marbella Yacht Charter Dietary Restrictions: Catering for All Needs",
+      "target_words": 1100
+    },
+    {
+      "kind": "blog",
+      "slug": "blog/marbella-yacht-charter-minimum-age-policy",
+      "primary_keyword": "marbella yacht charter minimum age",
+      "title": "Marbella Yacht Charter Minimum Age Policy: Who Can Sail",
+      "target_words": 1100
+    },
+    {
+      "kind": "blog",
+      "slug": "blog/astondoa-40-vs-mangusta-80-marbella",
+      "primary_keyword": "astondoa 40 vs mangusta 80 marbella",
+      "title": "Astondoa 40 vs Mangusta 80 in Marbella: Which Suits Your Trip",
+      "target_words": 1200
+    },
+    {
+      "kind": "blog",
+      "slug": "blog/azimut-39-vs-pershing-46-marbella",
+      "primary_keyword": "azimut 39 vs pershing 46 marbella",
+      "title": "Azimut 39 vs Pershing 46 in Marbella: Size and Performance",
+      "target_words": 1150
+    },
+    {
+      "kind": "experience",
+      "slug": "experiences/marbella-sunset-tapas-cruise",
+      "primary_keyword": "marbella sunset tapas cruise",
+      "title": "Marbella Sunset Tapas Cruise: Evening Flavors on the Sea",
+      "target_words": 1100
+    },
+    {
+      "kind": "experience",
+      "slug": "experiences/marbella-family-boat-day-snorkeling",
+      "primary_keyword": "marbella family boat day snorkeling",
+      "title": "Marbella Family Boat Day with Snorkeling: Kid-Friendly Fun",
+      "target_words": 1150
+    },
+    {
+      "kind": "experience",
+      "slug": "experiences/marbella-birthday-yacht-party-decorations",
+      "primary_keyword": "marbella birthday yacht party decorations",
+      "title": "Marbella Birthday Yacht Party: Custom Decorations and Themes",
+      "target_words": 1100
+    },
+    {
+      "kind": "experience",
+      "slug": "experiences/marbella-wine-tasting-yacht-cruise",
+      "primary_keyword": "marbella wine tasting yacht cruise",
+      "title": "Marbella Wine Tasting Yacht Cruise: Sip and Sail",
+      "target_words": 1100
+    },
+    {
+      "kind": "experience",
+      "slug": "experiences/marbella-full-day-yoga-retreat-at-sea",
+      "primary_keyword": "marbella full day yoga retreat at sea",
+      "title": "Marbella Full-Day Yoga Retreat at Sea: Wellness on the Water",
+      "target_words": 1200
+    },
+    {
+      "kind": "spoke",
+      "slug": "boat-rental-no-license-marbella-prices",
+      "primary_keyword": "boat rental no license marbella prices",
+      "title": "Boat Rental No License Marbella: Prices and Options",
+      "target_words": 1100
+    },
+    {
+      "kind": "spoke",
+      "slug": "catamaran-rental-marbella-family",
+      "primary_keyword": "catamaran rental marbella family",
+      "title": "Catamaran Rental Marbella for Families: Spacious and Stable",
+      "target_words": 1100
     }
   ],
   "consumed": [
@@ -1741,6 +1901,61 @@
         "canados-86"
       ],
       "consumed_at": "2026-06-10"
+    },
+    {
+      "kind": "blog",
+      "slug": "blog/fairline-targa-12m-review-marbella",
+      "primary_keyword": "Fairline Targa 12m Marbella review",
+      "title": "Fairline Targa 12m Charter Review: What It's Like Onboard in Marbella",
+      "target_words": 1200,
+      "fleet_focus": [
+        "fairline-targa-12m"
+      ],
+      "consumed_at": "2026-06-11"
+    },
+    {
+      "kind": "blog",
+      "slug": "blog/ferretti-94-review-marbella",
+      "primary_keyword": "Ferretti 94 Marbella review",
+      "title": "Ferretti 94 Charter Review: What It's Like Onboard in Marbella",
+      "target_words": 1200,
+      "fleet_focus": [
+        "ferretti-94"
+      ],
+      "consumed_at": "2026-06-11"
+    },
+    {
+      "kind": "blog",
+      "slug": "blog/k80-review-marbella",
+      "primary_keyword": "K80 Marbella review",
+      "title": "K80 Charter Review: What It's Like Onboard in Marbella",
+      "target_words": 1200,
+      "fleet_focus": [
+        "k80"
+      ],
+      "consumed_at": "2026-06-11"
+    },
+    {
+      "kind": "blog",
+      "slug": "blog/lagoon-380-review-marbella",
+      "primary_keyword": "Lagoon 380 catamaran Marbella review",
+      "title": "Lagoon 380 catamaran Charter Review: What It's Like Onboard in Marbella",
+      "target_words": 1200,
+      "fleet_focus": [
+        "lagoon-380"
+      ],
+      "consumed_at": "2026-06-11"
+    },
+    {
+      "kind": "blog",
+      "slug": "blog/maiora-26m-review-marbella",
+      "primary_keyword": "Maiora 26m Marbella review",
+      "title": "Maiora 26m Charter Review: What It's Like Onboard in Marbella",
+      "target_words": 1200,
+      "fleet_focus": [
+        "maiora-26m"
+      ],
+      "consumed_at": "2026-06-11"
     }
   ],
   "refill_threshold": 30,

@@ -1219,3 +1219,32 @@ hint: See the 'Note about fast-forwards' in 'git push --help' for details.
 [2026-06-10 18:33:12]   ✓ added to keyword_map.blog
 [2026-06-10 18:33:12] queue: 34 remaining, 169 consumed total
 [2026-06-10 18:33:12] running deploy.sh …
+[2026-06-10 18:33:14] deploy.sh exited 1: 9/boat-rental-marbella.git
+ ! [rejected]        main -> main (fetch first)
+error: failed to push some refs to 'https://github.com/mardo89/boat-rental-marbella.git'
+hint: Updates were rejected because the remote contains work that you do not
+hint: have locally. This is usually caused by another repository pushing to
+hint: the same ref. If you want to integrate the remote changes, use
+hint: 'git pull' before pushing again.
+hint: See the 'Note about fast-forwards' in 'git push --help' for details.
+
+[2026-06-11 10:00:00] === Daily content run (kind-balanced): 5 blog + 0 landing = 5 item(s) ===
+[2026-06-11 10:00:00] [1/5] blog · blog/fairline-targa-12m-review-marbella
+[2026-06-11 10:00:36]   ✓ saved content/blog_fairline-targa-12m-review-marbella.json
+[2026-06-11 10:00:36]   ✓ added to keyword_map.blog
+[2026-06-11 10:00:36] [2/5] blog · blog/ferretti-94-review-marbella
+[2026-06-11 10:01:09]   ✓ saved content/blog_ferretti-94-review-marbella.json
+[2026-06-11 10:01:09]   ✓ added to keyword_map.blog
+[2026-06-11 10:01:09] [3/5] blog · blog/k80-review-marbella
+[2026-06-11 10:01:34]   ✓ saved content/blog_k80-review-marbella.json
+[2026-06-11 10:01:34]   ✓ added to keyword_map.blog
+[2026-06-11 10:01:34] [4/5] blog · blog/lagoon-380-review-marbella
+[2026-06-11 10:02:11]   ✓ saved content/blog_lagoon-380-review-marbella.json
+[2026-06-11 10:02:11]   ✓ added to keyword_map.blog
+[2026-06-11 10:02:11] [5/5] blog · blog/maiora-26m-review-marbella
+[2026-06-11 10:02:50]   ✓ saved content/blog_maiora-26m-review-marbella.json
+[2026-06-11 10:02:50]   ✓ added to keyword_map.blog
+[2026-06-11 10:02:50] queue: 29 remaining, 174 consumed total
+[2026-06-11 10:02:50] queue under threshold (29 < 30) — auto-refilling…
+[2026-06-11 10:03:09] refill: +30 topics (queue now 59)
+[2026-06-11 10:03:09] running deploy.sh …

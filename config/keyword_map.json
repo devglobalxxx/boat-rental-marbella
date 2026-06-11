@@ -1391,6 +1391,41 @@
       "title": "Canados 86 Charter Review: What It's Like Onboard in Marbella",
       "intent": "informational",
       "target_words": 1200
+    },
+    {
+      "slug": "blog/fairline-targa-12m-review-marbella",
+      "primary_keyword": "Fairline Targa 12m Marbella review",
+      "title": "Fairline Targa 12m Charter Review: What It's Like Onboard in Marbella",
+      "intent": "informational",
+      "target_words": 1200
+    },
+    {
+      "slug": "blog/ferretti-94-review-marbella",
+      "primary_keyword": "Ferretti 94 Marbella review",
+      "title": "Ferretti 94 Charter Review: What It's Like Onboard in Marbella",
+      "intent": "informational",
+      "target_words": 1200
+    },
+    {
+      "slug": "blog/k80-review-marbella",
+      "primary_keyword": "K80 Marbella review",
+      "title": "K80 Charter Review: What It's Like Onboard in Marbella",
+      "intent": "informational",
+      "target_words": 1200
+    },
+    {
+      "slug": "blog/lagoon-380-review-marbella",
+      "primary_keyword": "Lagoon 380 catamaran Marbella review",
+      "title": "Lagoon 380 catamaran Charter Review: What It's Like Onboard in Marbella",
+      "intent": "informational",
+      "target_words": 1200
+    },
+    {
+      "slug": "blog/maiora-26m-review-marbella",
+      "primary_keyword": "Maiora 26m Marbella review",
+      "title": "Maiora 26m Charter Review: What It's Like Onboard in Marbella",
+      "intent": "informational",
+      "target_words": 1200
     }
   ]
 }

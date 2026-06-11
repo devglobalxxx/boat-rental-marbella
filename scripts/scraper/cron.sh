@@ -27,5 +27,19 @@ case "$1" in
     /usr/bin/python3 -m scripts.scraper.sync_outreach_sheet >> logs/cron.log 2>&1
     echo "[$TS] cold-send done" >> logs/cron.log
     ;;
-  *) echo "usage: $0 {scan|followup|cold}"; exit 2 ;;
+  maps)
+    echo "[$TS] maps-seed start" >> logs/cron.log
+    # Discover new operators worldwide (Google Maps Places). Runs until the daily API
+    # quota is hit; url-dedup resumes from the next city on the following day.
+    /usr/bin/python3 -m scripts.scraper.seed_maps --queries 10 >> logs/cron.log 2>&1
+    echo "[$TS] maps-seed done" >> logs/cron.log
+    ;;
+  enrich)
+    echo "[$TS] enrich start" >> logs/cron.log
+    # Find email / contact-form / IG for 1/7 of the email-less leads each day (cycles weekly).
+    /usr/bin/python3 -m scripts.scraper.enrich_chunk --shard "$(date +%w)" --shards 7 --workers 8 >> logs/cron.log 2>&1
+    /usr/bin/python3 -m scripts.scraper.sync_outreach_sheet >> logs/cron.log 2>&1
+    echo "[$TS] enrich done" >> logs/cron.log
+    ;;
+  *) echo "usage: $0 {scan|followup|cold|maps|enrich}"; exit 2 ;;
 esac

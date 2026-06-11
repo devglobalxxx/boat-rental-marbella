@@ -1,7 +1,7 @@
 {
   "@context": "https://boatrentalinmarbella.com/api/pages.json",
   "source": "https://boatrentalinmarbella.com",
-  "count": 256,
+  "count": 255,
   "kinds": [
     "blog",
     "boat",
@@ -235,7 +235,7 @@
       "description": "Corporate yacht charter Marbella: team days from €749/2h, client hosting on 12-pax flybridges. Skipper, drinks, IVA included. Book on WhatsApp.",
       "kind": "blog",
       "locale": "en",
-      "excerpt": "A corporate yacht charter in Marbella does three things a hotel meeting room cannot: it removes phones from the conversation, it impresses clients without feeling try-hard, and it gives a team a shared memory that lasts longer than a slide deck. Our fleet of 18 boats departs Puer"
+      "excerpt": "A corporate yacht charter in Marbella does three things a hotel meeting room cannot: it removes phones from the conversation, it impresses clients without feeling try-hard, and it gives a team a shared memory that lasts longer than a slide deck. Our fleet of 17 boats departs Puer"
     },
     {
       "url": "https://boatrentalinmarbella.com/blog/dietary-restrictions-yacht-catering-marbella/",
@@ -824,7 +824,7 @@
     {
       "url": "https://boatrentalinmarbella.com/blog/marbella-yacht-charter-toilet-facilities/",
       "title": "Yacht Charter Marbella: Toilets &amp; Onboard Heads",
-      "description": "Wondering about Marbella yacht charter toilet facilities? Our guide covers onboard heads, pump-out rules, and real specs for 18 boats from Puerto Banús.",
+      "description": "Wondering about Marbella yacht charter toilet facilities? Our guide covers onboard heads, pump-out rules, and real specs for 17 boats from Puerto Banús.",
       "kind": "blog",
       "locale": "en",
       "excerpt": "When booking a Marbella yacht charter , one practical question often comes up: where do you go to the toilet? This guide covers everything you need to know about onboard heads (marine toilets), how many each boat has, how waste is handled, and what to expect from our fleet depart"
@@ -1911,11 +1911,11 @@
     },
     {
       "url": "https://boatrentalinmarbella.com/motor-yacht-rental-marbella/",
-      "title": "Motor Yacht Rental Marbella 2026: From €749 on Our 18-Boat Fleet",
-      "description": "Motor yacht rental Marbella 2026 from €749/2h. 18-boat fleet in Puerto Banús. Skipper, fuel, drinks &amp; snacks included. Book your yacht today.",
+      "title": "Motor Yacht Rental Marbella 2026: From €749 on Our 17-Boat Fleet",
+      "description": "Motor yacht rental Marbella 2026 from €749/2h. 17-boat fleet in Puerto Banús. Skipper, fuel, drinks &amp; snacks included. Book your yacht today.",
       "kind": "spoke",
       "locale": "en",
-      "excerpt": "Motor yacht rental Marbella 2026 starts at €749 for 2 hours on our 18-boat fleet, all departing from Puerto Banús. Every charter includes a licensed skipper, fuel, drinks, snacks, and Spanish IVA – no hidden costs. Whether you want a fast 2-hour spin past the Golden Mile or a ful"
+      "excerpt": "Motor yacht rental Marbella 2026 starts at €749 for 2 hours on our 17-boat fleet, all departing from Puerto Banús. Every charter includes a licensed skipper, fuel, drinks, snacks, and Spanish IVA – no hidden costs. Whether you want a fast 2-hour spin past the Golden Mile or a ful"
     },
     {
       "url": "https://boatrentalinmarbella.com/nl/",
@@ -1990,14 +1990,6 @@
       "excerpt": "Experience the freedom of the Mediterranean with a sailboat rental Marbella from Puerto Banús. Whether you prefer a crewed charter with a professional skipper or a bareboat adventure for licensed sailors, our fleet offers options for every level. Explore hidden coves, anchor off "
     },
     {
-      "url": "https://boatrentalinmarbella.com/site-map/",
-      "title": "Site Map — every page on Boat Rental Marbella",
-      "description": "Full directory of all 254 pages on Boat Rental Marbella — charter types, fleet, experiences, guides, languages and policies.",
-      "kind": "spoke",
-      "locale": "en",
-      "excerpt": "Every page on Boat Rental Marbella, grouped by section. Looking for something specific? Message us on WhatsApp and ask."
-    },
-    {
       "url": "https://boatrentalinmarbella.com/speedboat-rental-marbella/",
       "title": "Speedboat Rental Marbella: High-Performance Charters from Puerto Banús",
       "description": "Book a speedboat rental Marbella from Puerto Banús. 6 passengers, 7m boat, skipper included, from €749/2h. High-performance charters with drinks &amp; snacks.",
@@ -2043,7 +2035,7 @@
       "description": "Boat rental Marbella for UK visitors — from £640 / 2h. Direct WhatsApp booking from London / Manchester / Edinburgh. Skipper, fuel, drinks &amp; 21% VAT included.",
       "kind": "uk",
       "locale": "en-GB",
-      "excerpt": "Boat Rental Marbella runs a 18-boat fleet from Puerto Banús — the marina where the UK crowd usually winds up after the Saturday flight from London or Manchester. This page covers what UK guests actually need to know: prices in £, how to get from your hotel to the marina, what the"
+      "excerpt": "Boat Rental Marbella runs a 17-boat fleet from Puerto Banús — the marina where the UK crowd usually winds up after the Saturday flight from London or Manchester. This page covers what UK guests actually need to know: prices in £, how to get from your hotel to the marina, what the"
     },
     {
       "url": "https://boatrentalinmarbella.com/weekly-yacht-rental-marbella/",
@@ -2063,8 +2055,8 @@
     },
     {
       "url": "https://boatrentalinmarbella.com/yacht-charter-puerto-banus/",
-      "title": "Yacht Charter Puerto Banús 2026: 18-Boat Fleet From €749",
-      "description": "Book a yacht charter Puerto Banús 2026 from €749/2h. 18-boat fleet includes Mangusta, Azimut &amp; Ferretti. Skipper, drinks &amp; VAT included. Reserve now.",
+      "title": "Yacht Charter Puerto Banús 2026: 17-Boat Fleet From €749",
+      "description": "Book a yacht charter Puerto Banús 2026 from €749/2h. 17-boat fleet includes Mangusta, Azimut &amp; Ferretti. Skipper, drinks &amp; VAT included. Reserve now.",
       "kind": "spoke",
       "locale": "en",
       "excerpt": "Puerto Banús is the undisputed centre of Marbella’s yachting scene, and a yacht charter Puerto Banús in 2026 gives you access to a fleet of 17 vessels ranging from €749 for two hours to €4,719 for a four-hour superyacht experience. Every charter includes a licensed skipper, fuel,"

@@ -90,7 +90,6 @@
 
 <section class="hero">
   <picture class="hero-img-wrap">
-    <source type="image/webp" srcset="/img/dolphins/dolphins-jumping-600.webp 600w, /img/dolphins/dolphins-jumping-900.webp 900w, /img/dolphins/dolphins-jumping-1200.webp 1200w, /img/dolphins/dolphins-jumping-1600.webp 1600w" sizes="100vw">
     <img
       src="/img/dolphins/dolphins-jumping-1600.jpg"
       srcset="/img/dolphins/dolphins-jumping-600.jpg 600w, /img/dolphins/dolphins-jumping-900.jpg 900w, /img/dolphins/dolphins-jumping-1200.jpg 1200w, /img/dolphins/dolphins-jumping-1600.jpg 1600w"
@@ -191,15 +190,12 @@
 <details><summary>Can I swim with dolphins?</summary><p>No — Spanish marine law prohibits swimming with cetaceans, and reputable Marbella charters strictly follow this. Wild dolphins are observed from the boat at a respectful distance. Operators offering swim-with-dolphins are either illegal or in captive-dolphin facilities (none in Marbella).</p></details>
 <details><summary>What's the minimum boat trip length to see dolphins?</summary><p>Four hours minimum gives you decent odds (offshore run + scanning time + return). Two-hour coastal cruises rarely encounter dolphins because the pods feed in deeper water 2-8 NM offshore. Half-day (4-5 hour) dolphin-focused charters from Marbella have ~80% sighting rate.</p></details>
 
-
+{{MAP_BLOCK}}
 
 
 </article>
 
 <aside class="book-card">
-  <a class="book-card-rating" href="/reviews/" aria-label="Read 87 verified reviews, average 4.9 out of 5">
-    <span class="stars" aria-hidden="true">★★★★★</span> <strong>4.9</strong> · 87 verified reviews
-  </a>
   <div class="book-card-price">
     From <strong>€749</strong>
     <span class="book-card-sub">2h skippered charter</span>
@@ -208,7 +204,7 @@
   <a class="btn btn-primary" href="https://wa.me/358400406194?text=Hi%2C%20I%27d%20like%20to%20book%20a%20boat%20in%20Marbella" rel="nofollow noopener">💬 Message on WhatsApp</a>
   <p class="book-card-micro">Avg reply &lt; 5 min · No deposit until you confirm</p>
   <button class="btn btn-secondary" type="button" data-open-book>📅 Book now</button>
-  <a class="book-card-fleet-link" href="/boats/">Browse the full fleet →</a>
+  <a class="btn btn-ghost" href="https://www.clickandboat.com/?utm_source=boatrentalmarbella&utm_medium=affiliate" rel="sponsored nofollow noopener">Browse our 17-boat fleet →</a>
   <div class="book-card-incl">
     <strong>All charters include</strong>
     <ul>
@@ -338,8 +334,7 @@
     </div>
   </div>
   <div class="container footer-legal">
-    <p>© 2026 Boat Rental Marbella. Independent operator from Puerto Banús. <a href="/">Home</a> · <a href="/about/">About</a> · <a href="/contact/">Contact</a> · <a href="/reviews/">Reviews</a> · <a href="/cancellation-policy/">Cancellation</a> · <a href="/privacy/">Privacy</a> · <a href="/cookies/">Cookies</a> · <a href="/terms/">Terms</a> · <a href="/site-map/">Site map</a></p>
-    <p style="margin-top:6px;font-size:.8rem">Languages: <a href="/">EN</a> · <a href="/uk/">UK</a> · <a href="/es/">ES</a> · <a href="/de/">DE</a> · <a href="/fr/">FR</a> · <a href="/nl/">NL</a> · <a href="/no/">NO</a> · <a href="/pl/">PL</a> · <a href="/ru/">RU</a> · <a href="/sv/">SV</a> · <a href="/ar/">AR</a></p>
+    <p>© 2026 Boat Rental Marbella. Independent operator from Puerto Banús. <a href="/">Home</a> · <a href="/about/">About</a> · <a href="/contact/">Contact</a> · <a href="/reviews/">Reviews</a> · <a href="/cancellation-policy/">Cancellation</a> · <a href="/privacy/">Privacy</a> · <a href="/cookies/">Cookies</a> · <a href="/terms/">Terms</a></p>
   </div>
 </footer>
 
@@ -357,32 +352,19 @@
     <p class="modal-sub">Send your details — we'll reply on WhatsApp within 5 minutes with available boats &amp; final price.</p>
     <form id="bookForm" novalidate>
       <label>Your name
-        <input type="text" name="name" required autocomplete="name" placeholder="e.g. Sophie">
+        <input type="text" name="name" required autocomplete="name" placeholder="e.g. Mardo Soo">
       </label>
-      <div class="modal-row">
-        <label>Date
-          <input type="date" name="date" autocomplete="off">
-        </label>
-        <label>Guests
-          <input type="number" name="guests" min="1" max="12" inputmode="numeric" placeholder="6">
-        </label>
-      </div>
-      <label>Boat (optional)
-        <select name="boat">
-          <option value="">Recommend me a boat</option>
-          <option>Astondoa 40 'Fufi' — €749 / 2h · 9 guests</option>
-          <option>Azimut 39 — €749 / 2h · 11 guests</option>
-          <option>Mangusta 80 — €4,719 / 4h · 12 guests + jet ski</option>
-          <option>Dubhe (licence-free) — €230 / 2h · 5 guests</option>
-          <option>Jet ski — €200 / h</option>
-          <option>Another boat from the fleet</option>
-        </select>
+      <label>Your WhatsApp number
+        <input type="tel" name="whatsapp" required autocomplete="tel" placeholder="+34 600 123 456" inputmode="tel">
       </label>
-      <label>Anything else?
-        <textarea name="notes" rows="2" placeholder="Sunset preferred, one birthday on board…"></textarea>
+      <label>Budget per charter (€)
+        <input type="text" name="budget" inputmode="numeric" placeholder="e.g. 1500">
       </label>
-      <button class="btn btn-primary" type="submit">💬 Continue in WhatsApp</button>
-      <p class="modal-micro">Opens WhatsApp with your message pre-filled — you send it from your own number. Average reply under 5 minutes.</p>
+      <label>Anything else? (date, group size, boat preference)
+        <textarea name="notes" rows="2" placeholder="6 guests, 8 August, around 4 hours…"></textarea>
+      </label>
+      <button class="btn btn-primary" type="submit">💬 Send to WhatsApp</button>
+      <p class="modal-micro">Opens WhatsApp with your details pre-filled. We reply with boat options + cotización.</p>
     </form>
   </div>
 </div>
@@ -401,28 +383,15 @@
     e.preventDefault();
     var f = e.target;
     var name = (f.name.value||'').trim();
-    var date = (f.date.value||'').trim();
-    var guests = (f.guests.value||'').trim();
-    var boat = (f.boat.value||'').trim();
+    var wa = (f.whatsapp.value||'').trim();
+    var budget = (f.budget.value||'').trim();
     var notes = (f.notes.value||'').trim();
-    var nameInput = f.querySelector('input[name=name]');
-    if(!name){ nameInput.setAttribute('aria-invalid','true'); nameInput.style.borderColor='#d9534f'; nameInput.focus(); return; }
-    var lines = ['Hi, I\'d like to book a boat in Marbella. — '+name];
-    if(date) lines.push('Date: '+date);
-    if(guests) lines.push('Guests: '+guests);
-    if(boat) lines.push('Boat: '+boat);
-    if(notes) lines.push(notes);
+    if(!name || !wa){ alert('Please fill in your name and WhatsApp number'); return; }
+    var lines = ['Hi, I\'d like to book a boat in Marbella.', '', 'Name: '+name, 'WhatsApp: '+wa];
+    if(budget) lines.push('Budget: €'+budget);
+    if(notes) lines.push('Notes: '+notes);
     var msg = encodeURIComponent(lines.join('\n'));
     window.location.href = 'https://wa.me/'+waNum+'?text='+msg;
-  });
-  // Focus trap inside the modal while open
-  modal.addEventListener('keydown', function(e){
-    if(e.key !== 'Tab' || modal.hidden) return;
-    var els = modal.querySelectorAll('button, input, select, textarea, a[href]');
-    if(!els.length) return;
-    var first = els[0], last = els[els.length-1];
-    if(e.shiftKey && document.activeElement === first){ e.preventDefault(); last.focus(); }
-    else if(!e.shiftKey && document.activeElement === last){ e.preventDefault(); first.focus(); }
   });
 })();
 </script>

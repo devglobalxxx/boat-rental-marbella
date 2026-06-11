@@ -12,7 +12,6 @@ ROOT = pathlib.Path(__file__).resolve().parents[1]
 TEMPLATE = (ROOT / "templates" / "page.html.template").read_text()
 SITE = json.loads((ROOT / "config" / "keyword_map.json").read_text())["site"]
 REVIEWS = json.loads((ROOT / "config" / "reviews.json").read_text())
-FLEET_N = len(json.loads((ROOT / "config" / "boats.json").read_text())["boats"])
 SITE_DIR = ROOT / "site"
 
 WA_NO_PLUS = SITE["whatsapp_e164"].lstrip("+")
@@ -36,7 +35,7 @@ def render_uk():
     body = f'''
 <p class="byline">UK visitors guide · {agg["review_count"]} verified charters · {agg["rating_value"]}★</p>
 
-<p>Boat Rental Marbella runs a {FLEET_N}-boat fleet from Puerto Banús — the marina where the UK crowd usually winds up after the Saturday flight from London or Manchester. This page covers what UK guests actually need to know: prices in £, how to get from your hotel to the marina, what the day looks like, and how to book without a booking platform.</p>
+<p>Boat Rental Marbella runs a 17-boat fleet from Puerto Banús — the marina where the UK crowd usually winds up after the Saturday flight from London or Manchester. This page covers what UK guests actually need to know: prices in £, how to get from your hotel to the marina, what the day looks like, and how to book without a booking platform.</p>
 
 <h2>Pricing in £ (live €→£ at booking)</h2>
 <table>
@@ -88,7 +87,7 @@ def render_uk():
 <details><summary>UK travel insurance — does it cover yacht charter?</summary><p>Standard UK travel insurance often excludes private yacht charter. Look for policies with "watersports / cruise" cover or buy a specific add-on. Recommended for any booking over £1,500.</p></details>
 
 <h2>Continue browsing</h2>
-<p>Same content, original UK English: <a href="/">boat rental Marbella hub</a> · <a href="/yacht-charter-marbella/">yacht charter</a> · <a href="/luxury-yacht-rental-marbella/">luxury yachts</a> · <a href="/boat-party-marbella/">boat parties (stag, hen, birthday)</a> · <a href="/sunset-cruise-marbella/">sunset cruise</a> · <a href="/jet-ski-rental-marbella/">jet ski</a> · <a href="/boats/">our {FLEET_N}-boat fleet</a>.</p>
+<p>Same content, original UK English: <a href="/">boat rental Marbella hub</a> · <a href="/yacht-charter-marbella/">yacht charter</a> · <a href="/luxury-yacht-rental-marbella/">luxury yachts</a> · <a href="/boat-party-marbella/">boat parties (stag, hen, birthday)</a> · <a href="/sunset-cruise-marbella/">sunset cruise</a> · <a href="/jet-ski-rental-marbella/">jet ski</a> · <a href="/boats/">our 17-boat fleet</a>.</p>
 
 <p>Ready to book? Tap <strong>WhatsApp</strong> at the top right or message <a href="{WA_LINK}">Andra directly</a>. Average reply under 5 minutes in Marbella daytime.</p>
 '''

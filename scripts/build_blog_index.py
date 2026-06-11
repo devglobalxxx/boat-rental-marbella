@@ -62,46 +62,17 @@ def load_blog_posts():
         })
     return posts
 
-# Rotating pool of real fleet images for posts without an explicit mapping —
-# keyword-routed first, then deterministic rotation so cards stay stable.
-FALLBACK_POOL = [
-    ("/img/boats/astondoa-40/hero", "Astondoa 40 'Fufi' cruising in Marbella"),
-    ("/img/boats/azimut-39/hero", "Azimut 39 motor yacht cruising past La Concha, Marbella"),
-    ("/img/boats/mangusta-80/hero", "Mangusta 80 — flagship charter yacht in Marbella"),
-    ("/img/boats/astondoa-40/sunset", "Charter yacht at Puerto Banús sunset"),
-    ("/img/boats/mangusta-80/sun-pad", "Sun pad on the Mangusta 80 foredeck"),
-    ("/img/boats/azimut-39/aerial", "Azimut 39 from above — Marbella charter"),
-    ("/img/boats/astondoa-40/lifestyle", "Guests on the bow at Puerto Banús"),
-    ("/img/boats/mangusta-80/aerial-wake", "Mangusta 80 with wake — Costa del Sol"),
-    ("/img/boats/mangusta-80/profile", "Mangusta 80 profile at anchor"),
-    ("/img/boats/astondoa-40/interior", "Saloon interior — Marbella charter yacht"),
-]
-KEYWORD_IMAGE = [
-    ("jet-ski", ("/img/jet-ski/hero", "Sea-Doo jet ski rental Marbella")),
-    ("jet_ski", ("/img/jet-ski/hero", "Sea-Doo jet ski rental Marbella")),
-    ("jetski", ("/img/jet-ski/hero", "Sea-Doo jet ski rental Marbella")),
-    ("fishing", ("/img/fishing/big-catch-marbella", "Big catch on our Marbella fishing charter")),
-    ("dolphin", ("/img/dolphins/dolphins-jumping", "Dolphins jumping next to our boat off Marbella")),
-    ("hen", ("/img/hen-party/hen-party-group-puerto-banus", "Hen party group at Puerto Banús")),
-    ("stag", ("/img/hen-party/hen-party-dolphin-watching", "Group on the bow — Marbella party charter")),
-    ("propos", ("/img/proposal/proposal-moment", "Proposal on a yacht in Marbella")),
-    ("wedding", ("/img/wedding/wedding-petals-toss", "Wedding on a yacht in Marbella")),
-    ("party", ("/img/hen-party/hen-party-group-puerto-banus", "Group party charter at Puerto Banús")),
-]
-
-def fallback_image(slug_key: str):
-    low = slug_key.lower()
-    for kw, mapping in KEYWORD_IMAGE:
-        if kw in low:
-            return mapping
-    return FALLBACK_POOL[sum(ord(c) for c in slug_key) % len(FALLBACK_POOL)]
-
 def render_post_card(post):
     slug_key = post["slug"].strip("/")
-    mapping = BLOG_POST_IMAGE.get(slug_key) or fallback_image(slug_key)
-    base, alt = mapping
-    src = f"{base}-900.jpg"
-    srcset = ", ".join(f"{base}-{w}.jpg {w}w" for w in (600, 900))
+    mapping = BLOG_POST_IMAGE.get(slug_key)
+    if mapping:
+        base, alt = mapping
+        src = f"{base}-900.jpg"
+        srcset = ", ".join(f"{base}-{w}.jpg {w}w" for w in (600, 900, 1200))
+    else:
+        src = post["hero"] or "https://picsum.photos/seed/" + slug_key + "/600/375"
+        srcset = ", ".join(f"{pexels(src, w)} {w}w" for w in (400, 600, 900))
+        alt = post["hero_alt"]
     return f'''<a href="{post["slug"]}" class="boat-card">
   <div class="boat-card-img">
     <img src="{src}" srcset="{srcset}" sizes="(max-width: 600px) 100vw, 360px" alt="{html.escape(alt)}" loading="lazy" width="600" height="375">
@@ -212,7 +183,6 @@ def main():
         "{{BOAT_GRID}}": "",
         "{{BREADCRUMBS}}": '<nav class="breadcrumbs"><a href="/">Home</a> › <span>Guide</span></nav>',
         "{{BODY_HTML}}": body,
-        "{{MAP_BLOCK}}": "",
         "{{VIDEO_SECTION}}": "",
         "{{GUESTS_SECTION}}": "",
         "{{WHATSAPP_E164_NOPLUS}}": SITE['whatsapp_e164'].lstrip("+"),

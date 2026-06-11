@@ -98,7 +98,6 @@ def write_page(slug, *, title, meta, h1, sub, eyebrow, body_html_str, jsonld, br
         "{{BOAT_GRID}}": "",
         "{{BREADCRUMBS}}": breadcrumbs,
         "{{BODY_HTML}}": body_html_str,
-        "{{MAP_BLOCK}}": "",
         "{{VIDEO_SECTION}}": "",
         "{{GUESTS_SECTION}}": "",
         "{{WHATSAPP_E164_NOPLUS}}": SITE['whatsapp_e164'].lstrip("+"),

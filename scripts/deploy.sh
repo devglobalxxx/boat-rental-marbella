@@ -28,6 +28,9 @@ python3 scripts/build_search_endpoint.py
 python3 scripts/build_llms_txt.py
 python3 scripts/build_video_sitemap.py
 
+echo "→ consistency gate"
+python3 scripts/check_consistency.py
+
 echo "→ commit main"
 git add -A
 if git diff --cached --quiet; then

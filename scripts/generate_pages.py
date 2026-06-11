@@ -669,6 +669,7 @@ def render(page: dict, kind: str, data: dict) -> str:
         "{{JSONLD}}": jsonld_for(page, kind, data),
         "{{BREADCRUMBS}}": breadcrumb_html(page),
         "{{BODY_HTML}}": body,
+        "{{MAP_BLOCK}}": "",
         "{{VIDEO_SECTION}}": video_section_html(videos_for_slug(page['slug'])),
         "{{GUESTS_SECTION}}": guests_section_html(guests_for_slug(page['slug'])),
         "{{WHATSAPP_E164_NOPLUS}}": SITE['whatsapp_e164'].lstrip("+"),

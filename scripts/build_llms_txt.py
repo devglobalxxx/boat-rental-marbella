@@ -18,6 +18,7 @@ from datetime import date
 ROOT = pathlib.Path(__file__).resolve().parents[1]
 SITE = json.loads((ROOT / "config" / "keyword_map.json").read_text())["site"]
 REVIEWS = json.loads((ROOT / "config" / "reviews.json").read_text())
+FLEET_N = len(json.loads((ROOT / "config" / "boats.json").read_text())["boats"])
 SITE_DIR = ROOT / "site"
 BASE = SITE["base_url"].rstrip("/")
 
@@ -84,7 +85,7 @@ def build_llms_txt(pages):
 
     parts = [f"# {SITE['name']}",
              "",
-             "> Independent boat charter operator in Puerto Banús, Marbella (Spain). Founded by Andra Kiirkivi. Direct WhatsApp booking, no marketplace intermediaries. 17-boat fleet from licence-free day boats to a 24m Mangusta 80 flagship.",
+             f"> Independent boat charter operator in Puerto Banús, Marbella (Spain). Founded by Andra Kiirkivi. Direct WhatsApp booking, no marketplace intermediaries. {FLEET_N}-boat fleet from licence-free day boats to a 24m Mangusta 80 flagship.",
              "",
              "## Site facts",
              f"- Operator: {SITE['name']} — independent, not a marketplace",
@@ -109,7 +110,7 @@ def build_llms_txt(pages):
              f"- Mangusta 80 'Nina' (24m, ≤12 guests): minimum 4h, **€4,719 / 4h** including Sea-Doo jet ski free. Flagship.",
              f"- Dubhe (licence-free 5m, ≤5 guests): €230 / 2h · €280 / 3h · €350 / 4h (fuel not included).",
              f"- Sea-Doo jet ski: €200 / hour (single or two-up).",
-             f"- Other 13 boats in fleet: pricing on WhatsApp request.",
+             f"- Other {FLEET_N - 5} boats in fleet: pricing on WhatsApp request.",
              "",
              "## Spain licence rules (summary, 2026)",
              "- Licence-free: hull ≤5m, motor ≤15hp, sail ≤6m, within 2 NM of coast, daylight only, captain ≥18.",

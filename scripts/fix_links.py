@@ -73,6 +73,10 @@ def resolve(href: str) -> str | None:
     """Return corrected href, or None if already valid / external."""
     if not href.startswith("/") or href.startswith("//"):
         return None
+    # NEVER touch asset URLs (stylesheets, icons, manifest, images, feeds…)
+    last = href.rstrip("/").split("/")[-1]
+    if "." in last:
+        return None
     h = href if href.endswith("/") else href + "/"
     if h in VALID:
         return None

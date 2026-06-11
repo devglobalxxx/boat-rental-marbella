@@ -16,6 +16,17 @@ BOATS = json.loads((ROOT / "config" / "boats.json").read_text())
 FLEET_N = len(BOATS["boats"])
 errors = []
 
+# 0. stylesheet must be linked on every page (guards against link-rewriter regressions)
+css_missing = []
+for f in SITE.rglob("index.html"):
+    s = f.read_text(errors="ignore")
+    has_external = re.search(r'<link rel="stylesheet" href="(?:https://boatrentalinmarbella\.com)?/styles[a-z-]*\.css"', s)
+    has_inline = "<style" in s
+    if not has_external and not has_inline:
+        css_missing.append(str(f.relative_to(SITE)))
+if css_missing:
+    errors.append(f"{len(css_missing)} pages missing /styles.css link, e.g. {css_missing[:3]}")
+
 # 1. unreplaced template tokens
 token_pages = []
 for f in SITE.rglob("index.html"):

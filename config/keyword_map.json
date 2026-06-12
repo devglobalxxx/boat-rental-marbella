@@ -1545,6 +1545,41 @@
       "title": "Bandido: Best Boat in Marbella for Stag and hen weekends",
       "intent": "informational",
       "target_words": 1100
+    },
+    {
+      "slug": "blog/canados-86-best-for",
+      "primary_keyword": "Canados 86 best for",
+      "title": "Canados 86: Best Boat in Marbella for Corporate retreats and large groups",
+      "intent": "informational",
+      "target_words": 1100
+    },
+    {
+      "slug": "blog/fairline-targa-12m-best-for",
+      "primary_keyword": "Fairline Targa 12m best for",
+      "title": "Fairline Targa 12m: Best Boat in Marbella for Fast coastal day cruising",
+      "intent": "informational",
+      "target_words": 1100
+    },
+    {
+      "slug": "blog/ferretti-94-best-for",
+      "primary_keyword": "Ferretti 94 best for",
+      "title": "Ferretti 94: Best Boat in Marbella for Ultra-luxury weeklong charter",
+      "intent": "informational",
+      "target_words": 1100
+    },
+    {
+      "slug": "blog/k80-best-for",
+      "primary_keyword": "K80 best for",
+      "title": "K80: Best Boat in Marbella for Value flybridge for 10+ guests",
+      "intent": "informational",
+      "target_words": 1100
+    },
+    {
+      "slug": "blog/lagoon-380-best-for",
+      "primary_keyword": "Lagoon 380 catamaran best for",
+      "title": "Lagoon 380 catamaran: Best Boat in Marbella for Sailing-day catamaran with kids",
+      "intent": "informational",
+      "target_words": 1100
     }
   ]
 }

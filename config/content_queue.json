@@ -4,56 +4,6 @@
   "queue": [
     {
       "kind": "blog",
-      "slug": "blog/canados-86-best-for",
-      "primary_keyword": "Canados 86 best for",
-      "title": "Canados 86: Best Boat in Marbella for Corporate retreats and large groups",
-      "target_words": 1100,
-      "fleet_focus": [
-        "canados-86"
-      ]
-    },
-    {
-      "kind": "blog",
-      "slug": "blog/fairline-targa-12m-best-for",
-      "primary_keyword": "Fairline Targa 12m best for",
-      "title": "Fairline Targa 12m: Best Boat in Marbella for Fast coastal day cruising",
-      "target_words": 1100,
-      "fleet_focus": [
-        "fairline-targa-12m"
-      ]
-    },
-    {
-      "kind": "blog",
-      "slug": "blog/ferretti-94-best-for",
-      "primary_keyword": "Ferretti 94 best for",
-      "title": "Ferretti 94: Best Boat in Marbella for Ultra-luxury weeklong charter",
-      "target_words": 1100,
-      "fleet_focus": [
-        "ferretti-94"
-      ]
-    },
-    {
-      "kind": "blog",
-      "slug": "blog/k80-best-for",
-      "primary_keyword": "K80 best for",
-      "title": "K80: Best Boat in Marbella for Value flybridge for 10+ guests",
-      "target_words": 1100,
-      "fleet_focus": [
-        "k80"
-      ]
-    },
-    {
-      "kind": "blog",
-      "slug": "blog/lagoon-380-best-for",
-      "primary_keyword": "Lagoon 380 catamaran best for",
-      "title": "Lagoon 380 catamaran: Best Boat in Marbella for Sailing-day catamaran with kids",
-      "target_words": 1100,
-      "fleet_focus": [
-        "lagoon-380"
-      ]
-    },
-    {
-      "kind": "blog",
       "slug": "blog/maiora-26m-best-for",
       "primary_keyword": "Maiora 26m best for",
       "title": "Maiora 26m: Best Boat in Marbella for Long-range sotogrande or gibraltar runs",
@@ -1972,6 +1922,61 @@
       "primary_keyword": "catamaran rental marbella family",
       "title": "Catamaran Rental Marbella for Families: Spacious and Stable",
       "target_words": 1100,
+      "consumed_at": "2026-06-12"
+    },
+    {
+      "kind": "blog",
+      "slug": "blog/canados-86-best-for",
+      "primary_keyword": "Canados 86 best for",
+      "title": "Canados 86: Best Boat in Marbella for Corporate retreats and large groups",
+      "target_words": 1100,
+      "fleet_focus": [
+        "canados-86"
+      ],
+      "consumed_at": "2026-06-12"
+    },
+    {
+      "kind": "blog",
+      "slug": "blog/fairline-targa-12m-best-for",
+      "primary_keyword": "Fairline Targa 12m best for",
+      "title": "Fairline Targa 12m: Best Boat in Marbella for Fast coastal day cruising",
+      "target_words": 1100,
+      "fleet_focus": [
+        "fairline-targa-12m"
+      ],
+      "consumed_at": "2026-06-12"
+    },
+    {
+      "kind": "blog",
+      "slug": "blog/ferretti-94-best-for",
+      "primary_keyword": "Ferretti 94 best for",
+      "title": "Ferretti 94: Best Boat in Marbella for Ultra-luxury weeklong charter",
+      "target_words": 1100,
+      "fleet_focus": [
+        "ferretti-94"
+      ],
+      "consumed_at": "2026-06-12"
+    },
+    {
+      "kind": "blog",
+      "slug": "blog/k80-best-for",
+      "primary_keyword": "K80 best for",
+      "title": "K80: Best Boat in Marbella for Value flybridge for 10+ guests",
+      "target_words": 1100,
+      "fleet_focus": [
+        "k80"
+      ],
+      "consumed_at": "2026-06-12"
+    },
+    {
+      "kind": "blog",
+      "slug": "blog/lagoon-380-best-for",
+      "primary_keyword": "Lagoon 380 catamaran best for",
+      "title": "Lagoon 380 catamaran: Best Boat in Marbella for Sailing-day catamaran with kids",
+      "target_words": 1100,
+      "fleet_focus": [
+        "lagoon-380"
+      ],
       "consumed_at": "2026-06-12"
     }
   ],

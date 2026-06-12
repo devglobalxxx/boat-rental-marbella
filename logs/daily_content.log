@@ -1308,3 +1308,24 @@ hint: See the 'Note about fast-forwards' in 'git push --help' for details.
 [2026-06-12 15:53:59]   ✓ added to keyword_map.spokes
 [2026-06-12 15:53:59] queue: 42 remaining, 191 consumed total
 [2026-06-12 15:53:59] running deploy.sh …
+[2026-06-12 15:54:18] deploy.sh OK
+[2026-06-12 15:54:18] === Done: 7 succeeded, 0 failed ===
+
+[2026-06-12 18:30:11] === Daily content run (kind-balanced): 5 blog + 0 landing = 5 item(s) ===
+[2026-06-12 18:30:11] [1/5] blog · blog/canados-86-best-for
+[2026-06-12 18:30:33]   ✓ saved content/blog_canados-86-best-for.json
+[2026-06-12 18:30:33]   ✓ added to keyword_map.blog
+[2026-06-12 18:30:33] [2/5] blog · blog/fairline-targa-12m-best-for
+[2026-06-12 18:31:00]   ✓ saved content/blog_fairline-targa-12m-best-for.json
+[2026-06-12 18:31:00]   ✓ added to keyword_map.blog
+[2026-06-12 18:31:00] [3/5] blog · blog/ferretti-94-best-for
+[2026-06-12 18:31:29]   ✓ saved content/blog_ferretti-94-best-for.json
+[2026-06-12 18:31:29]   ✓ added to keyword_map.blog
+[2026-06-12 18:31:29] [4/5] blog · blog/k80-best-for
+[2026-06-12 18:31:51]   ✓ saved content/blog_k80-best-for.json
+[2026-06-12 18:31:51]   ✓ added to keyword_map.blog
+[2026-06-12 18:31:51] [5/5] blog · blog/lagoon-380-best-for
+[2026-06-12 18:32:14]   ✓ saved content/blog_lagoon-380-best-for.json
+[2026-06-12 18:32:15]   ✓ added to keyword_map.blog
+[2026-06-12 18:32:15] queue: 37 remaining, 196 consumed total
+[2026-06-12 18:32:15] running deploy.sh …

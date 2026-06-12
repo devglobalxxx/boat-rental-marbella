@@ -4,56 +4,6 @@
   "queue": [
     {
       "kind": "blog",
-      "slug": "blog/astondoa-40-best-for",
-      "primary_keyword": "Astondoa 40 'Fufi' best for",
-      "title": "Astondoa 40 'Fufi': Best Boat in Marbella for Couples and small groups (up to 9)",
-      "target_words": 1100,
-      "fleet_focus": [
-        "astondoa-40"
-      ]
-    },
-    {
-      "kind": "blog",
-      "slug": "blog/azimut-39-best-for",
-      "primary_keyword": "Azimut 39 best for",
-      "title": "Azimut 39: Best Boat in Marbella for Groups of 10-11 wanting a flybridge",
-      "target_words": 1100,
-      "fleet_focus": [
-        "azimut-39"
-      ]
-    },
-    {
-      "kind": "blog",
-      "slug": "blog/azimut-58-best-for",
-      "primary_keyword": "Azimut 58 Flybridge best for",
-      "title": "Azimut 58 Flybridge: Best Boat in Marbella for Luxury day charter or 3-cabin overnight",
-      "target_words": 1100,
-      "fleet_focus": [
-        "azimut-58"
-      ]
-    },
-    {
-      "kind": "blog",
-      "slug": "blog/mangusta-80-best-for",
-      "primary_keyword": "Mangusta 80 'Nina' best for",
-      "title": "Mangusta 80 'Nina': Best Boat in Marbella for 12-guest flagship day with jet ski",
-      "target_words": 1100,
-      "fleet_focus": [
-        "mangusta-80"
-      ]
-    },
-    {
-      "kind": "blog",
-      "slug": "blog/bandido-best-for",
-      "primary_keyword": "Bandido best for",
-      "title": "Bandido: Best Boat in Marbella for Stag and hen weekends",
-      "target_words": 1100,
-      "fleet_focus": [
-        "bandido"
-      ]
-    },
-    {
-      "kind": "blog",
       "slug": "blog/canados-86-best-for",
       "primary_keyword": "Canados 86 best for",
       "title": "Canados 86: Best Boat in Marbella for Corporate retreats and large groups",
@@ -410,20 +360,6 @@
       "primary_keyword": "azimut 39 vs pershing 46 marbella",
       "title": "Azimut 39 vs Pershing 46 in Marbella: Size and Performance",
       "target_words": 1150
-    },
-    {
-      "kind": "spoke",
-      "slug": "boat-rental-no-license-marbella-prices",
-      "primary_keyword": "boat rental no license marbella prices",
-      "title": "Boat Rental No License Marbella: Prices and Options",
-      "target_words": 1100
-    },
-    {
-      "kind": "spoke",
-      "slug": "catamaran-rental-marbella-family",
-      "primary_keyword": "catamaran rental marbella family",
-      "title": "Catamaran Rental Marbella for Families: Spacious and Stable",
-      "target_words": 1100
     }
   ],
   "consumed": [
@@ -1965,6 +1901,77 @@
       "primary_keyword": "marbella full day yoga retreat at sea",
       "title": "Marbella Full-Day Yoga Retreat at Sea: Wellness on the Water",
       "target_words": 1200,
+      "consumed_at": "2026-06-12"
+    },
+    {
+      "kind": "blog",
+      "slug": "blog/astondoa-40-best-for",
+      "primary_keyword": "Astondoa 40 'Fufi' best for",
+      "title": "Astondoa 40 'Fufi': Best Boat in Marbella for Couples and small groups (up to 9)",
+      "target_words": 1100,
+      "fleet_focus": [
+        "astondoa-40"
+      ],
+      "consumed_at": "2026-06-12"
+    },
+    {
+      "kind": "blog",
+      "slug": "blog/azimut-39-best-for",
+      "primary_keyword": "Azimut 39 best for",
+      "title": "Azimut 39: Best Boat in Marbella for Groups of 10-11 wanting a flybridge",
+      "target_words": 1100,
+      "fleet_focus": [
+        "azimut-39"
+      ],
+      "consumed_at": "2026-06-12"
+    },
+    {
+      "kind": "blog",
+      "slug": "blog/azimut-58-best-for",
+      "primary_keyword": "Azimut 58 Flybridge best for",
+      "title": "Azimut 58 Flybridge: Best Boat in Marbella for Luxury day charter or 3-cabin overnight",
+      "target_words": 1100,
+      "fleet_focus": [
+        "azimut-58"
+      ],
+      "consumed_at": "2026-06-12"
+    },
+    {
+      "kind": "blog",
+      "slug": "blog/mangusta-80-best-for",
+      "primary_keyword": "Mangusta 80 'Nina' best for",
+      "title": "Mangusta 80 'Nina': Best Boat in Marbella for 12-guest flagship day with jet ski",
+      "target_words": 1100,
+      "fleet_focus": [
+        "mangusta-80"
+      ],
+      "consumed_at": "2026-06-12"
+    },
+    {
+      "kind": "blog",
+      "slug": "blog/bandido-best-for",
+      "primary_keyword": "Bandido best for",
+      "title": "Bandido: Best Boat in Marbella for Stag and hen weekends",
+      "target_words": 1100,
+      "fleet_focus": [
+        "bandido"
+      ],
+      "consumed_at": "2026-06-12"
+    },
+    {
+      "kind": "spoke",
+      "slug": "boat-rental-no-license-marbella-prices",
+      "primary_keyword": "boat rental no license marbella prices",
+      "title": "Boat Rental No License Marbella: Prices and Options",
+      "target_words": 1100,
+      "consumed_at": "2026-06-12"
+    },
+    {
+      "kind": "spoke",
+      "slug": "catamaran-rental-marbella-family",
+      "primary_keyword": "catamaran rental marbella family",
+      "title": "Catamaran Rental Marbella for Families: Spacious and Stable",
+      "target_words": 1100,
       "consumed_at": "2026-06-12"
     }
   ],

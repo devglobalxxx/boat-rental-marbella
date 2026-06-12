@@ -479,6 +479,20 @@
       "title": "Marbella Full-Day Yoga Retreat at Sea: Wellness on the Water",
       "intent": "transactional",
       "target_words": 1200
+    },
+    {
+      "slug": "boat-rental-no-license-marbella-prices",
+      "primary_keyword": "boat rental no license marbella prices",
+      "title": "Boat Rental No License Marbella: Prices and Options",
+      "intent": "transactional",
+      "target_words": 1100
+    },
+    {
+      "slug": "catamaran-rental-marbella-family",
+      "primary_keyword": "catamaran rental marbella family",
+      "title": "Catamaran Rental Marbella for Families: Spacious and Stable",
+      "intent": "transactional",
+      "target_words": 1100
     }
   ],
   "blog": [
@@ -1496,6 +1510,41 @@
       "title": "Speedboat Charter Review: What It's Like Onboard in Marbella",
       "intent": "informational",
       "target_words": 1200
+    },
+    {
+      "slug": "blog/astondoa-40-best-for",
+      "primary_keyword": "Astondoa 40 'Fufi' best for",
+      "title": "Astondoa 40 'Fufi': Best Boat in Marbella for Couples and small groups (up to 9)",
+      "intent": "informational",
+      "target_words": 1100
+    },
+    {
+      "slug": "blog/azimut-39-best-for",
+      "primary_keyword": "Azimut 39 best for",
+      "title": "Azimut 39: Best Boat in Marbella for Groups of 10-11 wanting a flybridge",
+      "intent": "informational",
+      "target_words": 1100
+    },
+    {
+      "slug": "blog/azimut-58-best-for",
+      "primary_keyword": "Azimut 58 Flybridge best for",
+      "title": "Azimut 58 Flybridge: Best Boat in Marbella for Luxury day charter or 3-cabin overnight",
+      "intent": "informational",
+      "target_words": 1100
+    },
+    {
+      "slug": "blog/mangusta-80-best-for",
+      "primary_keyword": "Mangusta 80 'Nina' best for",
+      "title": "Mangusta 80 'Nina': Best Boat in Marbella for 12-guest flagship day with jet ski",
+      "intent": "informational",
+      "target_words": 1100
+    },
+    {
+      "slug": "blog/bandido-best-for",
+      "primary_keyword": "Bandido best for",
+      "title": "Bandido: Best Boat in Marbella for Stag and hen weekends",
+      "intent": "informational",
+      "target_words": 1100
     }
   ]
 }

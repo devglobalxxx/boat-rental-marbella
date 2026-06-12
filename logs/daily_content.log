@@ -1281,3 +1281,30 @@ hint: See the 'Note about fast-forwards' in 'git push --help' for details.
 [2026-06-12 10:04:43]   ✓ added to keyword_map.spokes
 [2026-06-12 10:04:43] queue: 49 remaining, 184 consumed total
 [2026-06-12 10:04:43] running deploy.sh …
+[2026-06-12 10:05:02] deploy.sh OK
+[2026-06-12 10:05:02] === Done: 10 succeeded, 0 failed ===
+
+[2026-06-12 15:50:47] === Daily content run (kind-balanced): 5 blog + 2 landing = 7 item(s) ===
+[2026-06-12 15:50:47] [1/7] blog · blog/astondoa-40-best-for
+[2026-06-12 15:51:16]   ✓ saved content/blog_astondoa-40-best-for.json
+[2026-06-12 15:51:16]   ✓ added to keyword_map.blog
+[2026-06-12 15:51:16] [2/7] blog · blog/azimut-39-best-for
+[2026-06-12 15:51:42]   ✓ saved content/blog_azimut-39-best-for.json
+[2026-06-12 15:51:42]   ✓ added to keyword_map.blog
+[2026-06-12 15:51:42] [3/7] blog · blog/azimut-58-best-for
+[2026-06-12 15:52:11]   ✓ saved content/blog_azimut-58-best-for.json
+[2026-06-12 15:52:11]   ✓ added to keyword_map.blog
+[2026-06-12 15:52:11] [4/7] blog · blog/mangusta-80-best-for
+[2026-06-12 15:52:35]   ✓ saved content/blog_mangusta-80-best-for.json
+[2026-06-12 15:52:35]   ✓ added to keyword_map.blog
+[2026-06-12 15:52:35] [5/7] blog · blog/bandido-best-for
+[2026-06-12 15:53:00]   ✓ saved content/blog_bandido-best-for.json
+[2026-06-12 15:53:00]   ✓ added to keyword_map.blog
+[2026-06-12 15:53:00] [6/7] spoke · boat-rental-no-license-marbella-prices
+[2026-06-12 15:53:29]   ✓ saved content/boat-rental-no-license-marbella-prices.json
+[2026-06-12 15:53:29]   ✓ added to keyword_map.spokes
+[2026-06-12 15:53:29] [7/7] spoke · catamaran-rental-marbella-family
+[2026-06-12 15:53:59]   ✓ saved content/catamaran-rental-marbella-family.json
+[2026-06-12 15:53:59]   ✓ added to keyword_map.spokes
+[2026-06-12 15:53:59] queue: 42 remaining, 191 consumed total
+[2026-06-12 15:53:59] running deploy.sh …

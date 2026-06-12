@@ -34,18 +34,22 @@ def log(msg: str):
 
 # ---------- env ----------
 def load_env():
-    if os.environ.get("ANTHROPIC_API_KEY"):
-        return
+    """Load ALL key=value pairs from .env (DEEPSEEK_API_KEY, ANTHROPIC_API_KEY, etc.)."""
     for p in [
         ROOT / ".env",
+        pathlib.Path.home() / ".env",
         ROOT.parent.parent / ".env",
         pathlib.Path.home() / "aiangels-blog" / ".env",
     ]:
         if p.exists():
             for line in p.read_text().splitlines():
-                if line.startswith("ANTHROPIC_API_KEY="):
-                    os.environ["ANTHROPIC_API_KEY"] = line.split("=", 1)[1].strip().strip('"').strip("'")
-                    return
+                line = line.strip()
+                if not line or line.startswith("#") or "=" not in line:
+                    continue
+                k, _, v = line.partition("=")
+                k = k.strip()
+                if k and k not in os.environ:
+                    os.environ[k] = v.strip().strip('"').strip("'")
 
 load_env()
 

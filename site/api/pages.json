@@ -1,7 +1,7 @@
 {
   "@context": "https://boatrentalinmarbella.com/api/pages.json",
   "source": "https://boatrentalinmarbella.com",
-  "count": 256,
+  "count": 266,
   "kinds": [
     "blog",
     "boat",
@@ -252,6 +252,14 @@
       "kind": "blog",
       "locale": "en",
       "excerpt": "The waters between Marbella and the Strait of Gibraltar are some of the most dolphin-dense in the entire Mediterranean. Common, bottlenose and striped dolphins all live here year-round, and pilot whales pass through seasonally. A 4-hour charter heading offshore has roughly an 80%"
+    },
+    {
+      "url": "https://boatrentalinmarbella.com/blog/dubhe-review-marbella/",
+      "title": "Dubhe (licence-free) Charter Review: What It&#x27;s Like Onboard in Marbella",
+      "description": "Read our honest Dubhe (licence-free) Marbella review: 8m, 5 pax, departs Puerto Banús. See what it&#x27;s like onboard, pricing &amp; how to book.",
+      "kind": "blog",
+      "locale": "en",
+      "excerpt": "If you are looking for a small, simple, and licence-free boat in Marbella, the Dubhe is worth a close look. At 8 metres long and carrying a maximum of 5 passengers, it is the most compact and accessible vessel in our fleet at Boat Rental Marbella . This honest review covers what "
     },
     {
       "url": "https://boatrentalinmarbella.com/blog/epiphany-three-kings-marbella-boat/",
@@ -878,6 +886,14 @@
       "excerpt": "Marc Anthony returns to Starlite Marbella in August 2025, and there is no better way to start the weekend than with a yacht charter from Puerto Banús the day before the concert. Combine a day on the Mediterranean with an evening of salsa-infused hits – the perfect Marbella double"
     },
     {
+      "url": "https://boatrentalinmarbella.com/blog/mariah-sx21-review-marbella/",
+      "title": "Mariah SX21 Charter Review: What It&#x27;s Like Onboard in Marbella",
+      "description": "Read our honest Mariah SX21 Marbella review: 6.4m bowrider for 5 guests, 180hp outboard, departs Puerto Banús. Speeds, inclusions &amp; booking tips inside.",
+      "kind": "blog",
+      "locale": "en",
+      "excerpt": "The Mariah SX21 is the smallest boat in our Marbella fleet, but it punches well above its length. At 6.4 metres with a single 180hp outboard, this open bowrider seats up to 5 guests (including skipper) and departs from Puerto Banús. It is not a superyacht – it is a nimble, fast, "
+    },
+    {
       "url": "https://boatrentalinmarbella.com/blog/nikki-beach-marbella-yacht/",
       "title": "Nikki Beach Marbella: Arrive by Yacht, Tender Drop, Lunch Plan",
       "description": "Arrive at Nikki Beach Marbella by yacht. Tender drop, lunch plan, and boat charter from Puerto Banús. Departs daily from €749/2h. Book your spot now.",
@@ -900,6 +916,14 @@
       "kind": "blog",
       "locale": "en",
       "excerpt": "Arriving at Ocean Club Marbella by yacht is the most stylish and practical way to visit this iconic beach club. Instead of queuing for taxis or walking along the Golden Mile, you anchor off the beach and take the tender ashore. It's seamless, VIP, and surprisingly affordable — pr"
+    },
+    {
+      "url": "https://boatrentalinmarbella.com/blog/pershing-46-review-marbella/",
+      "title": "Pershing 46 Charter Review: What It&#x27;s Like Onboard in Marbella",
+      "description": "Read our honest Pershing 46 Marbella review: speed, comfort, and onboard experience from Puerto Banús. Specs, pricing, and what to expect.",
+      "kind": "blog",
+      "locale": "en",
+      "excerpt": "If you’re looking for a sporty, stylish, and fast boat to explore the Marbella coast, the Pershing 46 is a standout choice. Built by the Italian yard known for combining performance with luxury, this 14-metre flybridge cruiser offers a genuine thrill behind the wheel without sacr"
     },
     {
       "url": "https://boatrentalinmarbella.com/blog/pershing-46-vs-azimut-39/",
@@ -980,6 +1004,14 @@
       "kind": "blog",
       "locale": "en",
       "excerpt": "The Champions League final is one of the biggest nights in football, and watching it from Marbella adds a layer of Mediterranean luxury. Whether you are a Real Madrid fan hoping for another trophy or just want a memorable evening, combining a yacht cruise from Puerto Banús with a"
+    },
+    {
+      "url": "https://boatrentalinmarbella.com/blog/red-tide-fishing-boat-review-marbella/",
+      "title": "Red Tide fishing boat Charter Review: What It&#x27;s Like Onboard in Marbella",
+      "description": "Read our honest Red Tide fishing boat Marbella review: 11m, 6 pax, departs Puerto Banús. Find out what it&#x27;s like onboard and how to book.",
+      "kind": "blog",
+      "locale": "en",
+      "excerpt": "If you're looking for a practical, no-fuss fishing boat in Marbella, the Red Tide might be exactly what you need. At 11 metres long and licensed for up to 6 passengers, this boat is built for small-group angling trips or relaxed coastal cruising. It departs from Puerto Banús , pu"
     },
     {
       "url": "https://boatrentalinmarbella.com/blog/reyes-magos-yacht-charter/",
@@ -1076,6 +1108,14 @@
       "kind": "blog",
       "locale": "en",
       "excerpt": "The F1 Spanish Grand Prix weekend is one of the busiest on the Costa del Sol calendar. While the race itself takes place at the Circuit de Barcelona-Catalunya, many fans choose to base themselves in Marbella and drive up for the day — or simply enjoy the coastal lifestyle before "
+    },
+    {
+      "url": "https://boatrentalinmarbella.com/blog/speedboat-review-marbella/",
+      "title": "Speedboat Charter Review: What It&#x27;s Like Onboard in Marbella",
+      "description": "Honest speedboat Marbella review: what it&#x27;s like onboard our 7m speedboat in Puerto Banús. € pricing, top speed, swim stops &amp; who it suits best.",
+      "kind": "blog",
+      "locale": "en",
+      "excerpt": "If you’re looking for a fast, fun, and affordable way to get on the water in Marbella, our 7m speedboat might be exactly what you need. This is a straight-talking review of what it’s actually like onboard – no fluff, just the facts from a real charter experience. We’ll cover the "
     },
     {
       "url": "https://boatrentalinmarbella.com/blog/starlite-marbella-yacht-charter/",
@@ -1654,12 +1694,52 @@
       "excerpt": "Looking for a kids birthday pirate yacht party in Marbella that combines adventure with luxury? You've found it. Sail from Puerto Banús on a private yacht, complete with a licensed skipper, drinks, snacks, and optional pirate-themed extras. Whether you choose the Astondoa 40 (12."
     },
     {
+      "url": "https://boatrentalinmarbella.com/experiences/marbella-birthday-yacht-party-decorations/",
+      "title": "Marbella Birthday Yacht Party: Custom Decorations and Themes",
+      "description": "Plan a marbella birthday yacht party with custom decorations and themes. Hire a 12m yacht from €749/2h. Book your celebration today.",
+      "kind": "experience",
+      "locale": "en",
+      "excerpt": "Celebrate your next birthday in style with a private yacht party in Marbella. Whether you want a quiet sunset cruise with close friends or a full-blown themed bash on the water, our fleet of luxury boats departing from Puerto Banús offers the perfect setting. With custom decorati"
+    },
+    {
       "url": "https://boatrentalinmarbella.com/experiences/marbella-by-night-cruise/",
       "title": "Marbella by Night: Evening Yacht Cruise from Puerto Banús",
       "description": "Marbella by night yacht cruise from Puerto Banús: 2-3h sunset to skyline sail with skipper, drinks and snacks from €749. Book on WhatsApp today.",
       "kind": "experience",
       "locale": "en",
       "excerpt": "A Marbella by night yacht cruise from Puerto Banús is the most relaxed way to see the Costa del Sol's skyline — La Concha mountain turning pink behind you, the Golden Mile villas firing up their pool lights, and the marina's superyachts blazing as you slip back to the pontoon. Ch"
+    },
+    {
+      "url": "https://boatrentalinmarbella.com/experiences/marbella-family-boat-day-snorkeling/",
+      "title": "Marbella Family Boat Day with Snorkeling: Kid-Friendly Fun",
+      "description": "Plan a marbella family boat day snorkeling trip from Puerto Banús. Kid-friendly charter with skipper, drinks &amp; snacks from €749/2h. Book your family adventure today.",
+      "kind": "experience",
+      "locale": "en",
+      "excerpt": "Looking for a marbella family boat day snorkeling adventure that everyone will remember? From the glamorous Puerto Banús, you can set sail on a private charter designed with families in mind. Our boats come with a licensed skipper, all drinks and snacks included, and snorkeling g"
+    },
+    {
+      "url": "https://boatrentalinmarbella.com/experiences/marbella-full-day-yoga-retreat-at-sea/",
+      "title": "Marbella Full-Day Yoga Retreat at Sea: Wellness on the Water",
+      "description": "Book a marbella full day yoga retreat at sea with yoga, paddleboarding, and lunch aboard a Mangusta 80. €4,719 for 12 guests from Puerto Banús.",
+      "kind": "experience",
+      "locale": "en",
+      "excerpt": "Escape the crowds and find your centre on a marbella full day yoga retreat at sea . This exclusive wellness experience combines a morning yoga session on the deck of a luxury motor yacht, paddleboarding in crystal-clear coves, and a Mediterranean lunch—all from the glamorous sett"
+    },
+    {
+      "url": "https://boatrentalinmarbella.com/experiences/marbella-sunset-tapas-cruise/",
+      "title": "Marbella Sunset Tapas Cruise: Evening Flavors on the Sea",
+      "description": "Book a Marbella sunset tapas cruise from Puerto Banús. Enjoy Spanish flavours, drinks &amp; sea views from €749/2h. Reserve your evening charter now.",
+      "kind": "experience",
+      "locale": "en",
+      "excerpt": "As the sun drops behind La Concha and the Mediterranean turns gold, few experiences rival a Marbella sunset tapas cruise . Departing from Puerto Banús, you'll sip chilled cava, share Spanish tapas, and watch the coastline fade into dusk – all from a private motor yacht. Whether y"
+    },
+    {
+      "url": "https://boatrentalinmarbella.com/experiences/marbella-wine-tasting-yacht-cruise/",
+      "title": "Marbella Wine Tasting Yacht Cruise: Sip and Sail",
+      "description": "Book a Marbella wine tasting yacht cruise from Puerto Banús. Sip fine Spanish wines on a private boat with skipper, snacks &amp; drinks included from €749.",
+      "kind": "experience",
+      "locale": "en",
+      "excerpt": "Marbella is one of Europe's finest destinations for a wine tasting yacht cruise . Departing from the glamorous Puerto Banús, you can sip chilled Albariño and Rioja while cruising the Costa del Sol's golden coastline. Our private charters include a licensed skipper, a curated sele"
     },
     {
       "url": "https://boatrentalinmarbella.com/experiences/multi-day-yacht-marbella/",
@@ -1992,7 +2072,7 @@
     {
       "url": "https://boatrentalinmarbella.com/site-map/",
       "title": "Site Map — every page on Boat Rental Marbella",
-      "description": "Full directory of all 254 pages on Boat Rental Marbella — charter types, fleet, experiences, guides, languages and policies.",
+      "description": "Full directory of all 264 pages on Boat Rental Marbella — charter types, fleet, experiences, guides, languages and policies.",
       "kind": "spoke",
       "locale": "en",
       "excerpt": "Every page on Boat Rental Marbella, grouped by section. Looking for something specific? Message us on WhatsApp and ask."
@@ -2059,7 +2139,7 @@
       "description": "Yacht charter Marbella from €749 for 2h. Our 12.5 m flybridge motor yachts (Astondoa 40 + Azimut 39) crewed by licensed skipper, departing Puerto Banús. Drinks, fuel, insurance and VAT included.",
       "kind": "spoke",
       "locale": "en",
-      "excerpt": "Yacht charter in Marbella means stepping onto a 10-to-25-metre crewed motor yacht at Puerto Banús (occasionally Marbella Marina), being handed a cold drink, and being driven up the Golden Mile coastline by a licensed skipper who knows where the wind drops in the afternoon. Prices"
+      "excerpt": "Yacht charter in Marbella means stepping onto a 10-to-25-metre crewed motor yacht at Puerto Banús (occasionally Marbella Marina ), being handed a cold drink, and being driven up the Golden Mile coastline by a licensed skipper who knows where the wind drops in the afternoon. Price"
     },
     {
       "url": "https://boatrentalinmarbella.com/yacht-charter-puerto-banus/",

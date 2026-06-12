@@ -1248,3 +1248,36 @@ hint: See the 'Note about fast-forwards' in 'git push --help' for details.
 [2026-06-11 10:02:50] queue under threshold (29 < 30) — auto-refilling…
 [2026-06-11 10:03:09] refill: +30 topics (queue now 59)
 [2026-06-11 10:03:09] running deploy.sh …
+[2026-06-12 10:00:00] === Daily content run (kind-balanced): 5 blog + 5 landing = 10 item(s) ===
+[2026-06-12 10:00:00] [1/10] blog · blog/mariah-sx21-review-marbella
+[2026-06-12 10:00:33]   ✓ saved content/blog_mariah-sx21-review-marbella.json
+[2026-06-12 10:00:33]   ✓ added to keyword_map.blog
+[2026-06-12 10:00:33] [2/10] blog · blog/pershing-46-review-marbella
+[2026-06-12 10:01:04]   ✓ saved content/blog_pershing-46-review-marbella.json
+[2026-06-12 10:01:04]   ✓ added to keyword_map.blog
+[2026-06-12 10:01:04] [3/10] blog · blog/dubhe-review-marbella
+[2026-06-12 10:01:30]   ✓ saved content/blog_dubhe-review-marbella.json
+[2026-06-12 10:01:30]   ✓ added to keyword_map.blog
+[2026-06-12 10:01:30] [4/10] blog · blog/red-tide-fishing-boat-review-marbella
+[2026-06-12 10:01:57]   ✓ saved content/blog_red-tide-fishing-boat-review-marbella.json
+[2026-06-12 10:01:57]   ✓ added to keyword_map.blog
+[2026-06-12 10:01:57] [5/10] blog · blog/speedboat-review-marbella
+[2026-06-12 10:02:26]   ✓ saved content/blog_speedboat-review-marbella.json
+[2026-06-12 10:02:26]   ✓ added to keyword_map.blog
+[2026-06-12 10:02:26] [6/10] experience · experiences/marbella-sunset-tapas-cruise
+[2026-06-12 10:02:52]   ✓ saved content/experiences_marbella-sunset-tapas-cruise.json
+[2026-06-12 10:02:52]   ✓ added to keyword_map.spokes
+[2026-06-12 10:02:52] [7/10] experience · experiences/marbella-family-boat-day-snorkeling
+[2026-06-12 10:03:22]   ✓ saved content/experiences_marbella-family-boat-day-snorkeling.json
+[2026-06-12 10:03:22]   ✓ added to keyword_map.spokes
+[2026-06-12 10:03:22] [8/10] experience · experiences/marbella-birthday-yacht-party-decorations
+[2026-06-12 10:03:46]   ✓ saved content/experiences_marbella-birthday-yacht-party-decorations.json
+[2026-06-12 10:03:46]   ✓ added to keyword_map.spokes
+[2026-06-12 10:03:46] [9/10] experience · experiences/marbella-wine-tasting-yacht-cruise
+[2026-06-12 10:04:15]   ✓ saved content/experiences_marbella-wine-tasting-yacht-cruise.json
+[2026-06-12 10:04:15]   ✓ added to keyword_map.spokes
+[2026-06-12 10:04:15] [10/10] experience · experiences/marbella-full-day-yoga-retreat-at-sea
+[2026-06-12 10:04:43]   ✓ saved content/experiences_marbella-full-day-yoga-retreat-at-sea.json
+[2026-06-12 10:04:43]   ✓ added to keyword_map.spokes
+[2026-06-12 10:04:43] queue: 49 remaining, 184 consumed total
+[2026-06-12 10:04:43] running deploy.sh …

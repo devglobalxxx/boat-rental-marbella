@@ -444,6 +444,41 @@
       "title": "Overnight Yacht Rental Marbella: Sleep Aboard Guide",
       "intent": "transactional",
       "target_words": 1100
+    },
+    {
+      "slug": "experiences/marbella-sunset-tapas-cruise",
+      "primary_keyword": "marbella sunset tapas cruise",
+      "title": "Marbella Sunset Tapas Cruise: Evening Flavors on the Sea",
+      "intent": "transactional",
+      "target_words": 1100
+    },
+    {
+      "slug": "experiences/marbella-family-boat-day-snorkeling",
+      "primary_keyword": "marbella family boat day snorkeling",
+      "title": "Marbella Family Boat Day with Snorkeling: Kid-Friendly Fun",
+      "intent": "transactional",
+      "target_words": 1150
+    },
+    {
+      "slug": "experiences/marbella-birthday-yacht-party-decorations",
+      "primary_keyword": "marbella birthday yacht party decorations",
+      "title": "Marbella Birthday Yacht Party: Custom Decorations and Themes",
+      "intent": "transactional",
+      "target_words": 1100
+    },
+    {
+      "slug": "experiences/marbella-wine-tasting-yacht-cruise",
+      "primary_keyword": "marbella wine tasting yacht cruise",
+      "title": "Marbella Wine Tasting Yacht Cruise: Sip and Sail",
+      "intent": "transactional",
+      "target_words": 1100
+    },
+    {
+      "slug": "experiences/marbella-full-day-yoga-retreat-at-sea",
+      "primary_keyword": "marbella full day yoga retreat at sea",
+      "title": "Marbella Full-Day Yoga Retreat at Sea: Wellness on the Water",
+      "intent": "transactional",
+      "target_words": 1200
     }
   ],
   "blog": [
@@ -1424,6 +1459,41 @@
       "slug": "blog/maiora-26m-review-marbella",
       "primary_keyword": "Maiora 26m Marbella review",
       "title": "Maiora 26m Charter Review: What It's Like Onboard in Marbella",
+      "intent": "informational",
+      "target_words": 1200
+    },
+    {
+      "slug": "blog/mariah-sx21-review-marbella",
+      "primary_keyword": "Mariah SX21 Marbella review",
+      "title": "Mariah SX21 Charter Review: What It's Like Onboard in Marbella",
+      "intent": "informational",
+      "target_words": 1200
+    },
+    {
+      "slug": "blog/pershing-46-review-marbella",
+      "primary_keyword": "Pershing 46 Marbella review",
+      "title": "Pershing 46 Charter Review: What It's Like Onboard in Marbella",
+      "intent": "informational",
+      "target_words": 1200
+    },
+    {
+      "slug": "blog/dubhe-review-marbella",
+      "primary_keyword": "Dubhe (licence-free) Marbella review",
+      "title": "Dubhe (licence-free) Charter Review: What It's Like Onboard in Marbella",
+      "intent": "informational",
+      "target_words": 1200
+    },
+    {
+      "slug": "blog/red-tide-fishing-boat-review-marbella",
+      "primary_keyword": "Red Tide fishing boat Marbella review",
+      "title": "Red Tide fishing boat Charter Review: What It's Like Onboard in Marbella",
+      "intent": "informational",
+      "target_words": 1200
+    },
+    {
+      "slug": "blog/speedboat-review-marbella",
+      "primary_keyword": "Speedboat Marbella review",
+      "title": "Speedboat Charter Review: What It's Like Onboard in Marbella",
       "intent": "informational",
       "target_words": 1200
     }

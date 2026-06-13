@@ -493,6 +493,41 @@
       "title": "Catamaran Rental Marbella for Families: Spacious and Stable",
       "intent": "transactional",
       "target_words": 1100
+    },
+    {
+      "slug": "experiences/marbella-sunset-photoshoot-yacht",
+      "primary_keyword": "Marbella sunset photoshoot yacht",
+      "title": "Marbella Sunset Photoshoot on a Yacht",
+      "intent": "transactional",
+      "target_words": 1100
+    },
+    {
+      "slug": "experiences/marbella-jet-ski-and-boat-combo",
+      "primary_keyword": "Marbella jet ski and boat rental combo",
+      "title": "Marbella Jet Ski and Boat Combo: Thrills on the Water",
+      "intent": "transactional",
+      "target_words": 1100
+    },
+    {
+      "slug": "experiences/marbella-family-boat-day-paddleboarding",
+      "primary_keyword": "Marbella family boat day paddleboarding",
+      "title": "Marbella Family Boat Day with Paddleboarding and Snorkeling",
+      "intent": "transactional",
+      "target_words": 1200
+    },
+    {
+      "slug": "experiences/marbella-fishing-charter-half-day",
+      "primary_keyword": "Marbella half day fishing charter",
+      "title": "Marbella Half-Day Fishing Charter: Catch and Release",
+      "intent": "transactional",
+      "target_words": 1100
+    },
+    {
+      "slug": "experiences/marbella-booze-cruise-hen-party",
+      "primary_keyword": "Marbella booze cruise hen party",
+      "title": "Marbella Booze Cruise for Hen Parties: Fun on the Sea",
+      "intent": "transactional",
+      "target_words": 1100
     }
   ],
   "blog": [
@@ -1650,6 +1685,34 @@
       "title": "Mangusta 80 vs Canados 86: Which Marbella Flagship",
       "intent": "informational",
       "target_words": 1300
+    },
+    {
+      "slug": "blog/lagoon-380-vs-azimut-58-marbella",
+      "primary_keyword": "catamaran vs flybridge in marbella",
+      "title": "Catamaran vs Flybridge in Marbella: Lagoon 380 vs Azimut 58",
+      "intent": "informational",
+      "target_words": 1300
+    },
+    {
+      "slug": "blog/astondoa-40-vs-fairline-targa-12m-marbella",
+      "primary_keyword": "astondoa 40 vs fairline targa 12m in marbella",
+      "title": "Astondoa 40 vs Fairline Targa 12m in Marbella",
+      "intent": "informational",
+      "target_words": 1300
+    },
+    {
+      "slug": "blog/pershing-46-vs-fairline-targa-12m-marbella",
+      "primary_keyword": "pershing 46 vs fairline targa 12m",
+      "title": "Pershing 46 vs Fairline Targa 12m: Sport Yachts Compared",
+      "intent": "informational",
+      "target_words": 1300
+    },
+    {
+      "slug": "blog/marbella-yacht-charter-christmas-new-year",
+      "primary_keyword": "marbella yacht charter christmas new year",
+      "title": "Marbella Yacht Charter for Christmas and New Year: Festive Cruises",
+      "intent": "informational",
+      "target_words": 1200
     }
   ]
 }

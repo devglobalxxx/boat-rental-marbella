@@ -15,46 +15,6 @@
     },
     {
       "kind": "blog",
-      "slug": "blog/lagoon-380-vs-azimut-58-marbella",
-      "primary_keyword": "catamaran vs flybridge in marbella",
-      "title": "Catamaran vs Flybridge in Marbella: Lagoon 380 vs Azimut 58",
-      "target_words": 1300,
-      "fleet_focus": [
-        "lagoon-380",
-        "azimut-58"
-      ]
-    },
-    {
-      "kind": "blog",
-      "slug": "blog/astondoa-40-vs-fairline-targa-12m-marbella",
-      "primary_keyword": "astondoa 40 vs fairline targa 12m in marbella",
-      "title": "Astondoa 40 vs Fairline Targa 12m in Marbella",
-      "target_words": 1300,
-      "fleet_focus": [
-        "astondoa-40",
-        "fairline-targa-12m"
-      ]
-    },
-    {
-      "kind": "blog",
-      "slug": "blog/pershing-46-vs-fairline-targa-12m-marbella",
-      "primary_keyword": "pershing 46 vs fairline targa 12m",
-      "title": "Pershing 46 vs Fairline Targa 12m: Sport Yachts Compared",
-      "target_words": 1300,
-      "fleet_focus": [
-        "pershing-46",
-        "fairline-targa-12m"
-      ]
-    },
-    {
-      "kind": "blog",
-      "slug": "blog/marbella-yacht-charter-christmas-new-year",
-      "primary_keyword": "marbella yacht charter christmas new year",
-      "title": "Marbella Yacht Charter for Christmas and New Year: Festive Cruises",
-      "target_words": 1200
-    },
-    {
-      "kind": "blog",
       "slug": "blog/puerto-banus-yacht-rental-winter-season",
       "primary_keyword": "puerto banus yacht rental winter",
       "title": "Puerto Banus Yacht Rental in Winter: Why Off-Season Works",
@@ -338,41 +298,6 @@
       "slug": "blog/marbella-yacht-charter-dietary-restrictions-catering",
       "primary_keyword": "dietary restrictions yacht catering Marbella",
       "title": "Dietary Restrictions on Yacht Catering in Marbella: What You Need to Know",
-      "target_words": 1100
-    },
-    {
-      "kind": "experience",
-      "slug": "experiences/marbella-sunset-photoshoot-yacht",
-      "primary_keyword": "Marbella sunset photoshoot yacht",
-      "title": "Marbella Sunset Photoshoot on a Yacht",
-      "target_words": 1100
-    },
-    {
-      "kind": "experience",
-      "slug": "experiences/marbella-jet-ski-and-boat-combo",
-      "primary_keyword": "Marbella jet ski and boat rental combo",
-      "title": "Marbella Jet Ski and Boat Combo: Thrills on the Water",
-      "target_words": 1100
-    },
-    {
-      "kind": "experience",
-      "slug": "experiences/marbella-family-boat-day-paddleboarding",
-      "primary_keyword": "Marbella family boat day paddleboarding",
-      "title": "Marbella Family Boat Day with Paddleboarding and Snorkeling",
-      "target_words": 1200
-    },
-    {
-      "kind": "experience",
-      "slug": "experiences/marbella-fishing-charter-half-day",
-      "primary_keyword": "Marbella half day fishing charter",
-      "title": "Marbella Half-Day Fishing Charter: Catch and Release",
-      "target_words": 1100
-    },
-    {
-      "kind": "experience",
-      "slug": "experiences/marbella-booze-cruise-hen-party",
-      "primary_keyword": "Marbella booze cruise hen party",
-      "title": "Marbella Booze Cruise for Hen Parties: Fun on the Sea",
       "target_words": 1100
     },
     {
@@ -2183,6 +2108,90 @@
         "mangusta-80",
         "canados-86"
       ],
+      "consumed_at": "2026-06-13"
+    },
+    {
+      "kind": "blog",
+      "slug": "blog/lagoon-380-vs-azimut-58-marbella",
+      "primary_keyword": "catamaran vs flybridge in marbella",
+      "title": "Catamaran vs Flybridge in Marbella: Lagoon 380 vs Azimut 58",
+      "target_words": 1300,
+      "fleet_focus": [
+        "lagoon-380",
+        "azimut-58"
+      ],
+      "consumed_at": "2026-06-13"
+    },
+    {
+      "kind": "blog",
+      "slug": "blog/astondoa-40-vs-fairline-targa-12m-marbella",
+      "primary_keyword": "astondoa 40 vs fairline targa 12m in marbella",
+      "title": "Astondoa 40 vs Fairline Targa 12m in Marbella",
+      "target_words": 1300,
+      "fleet_focus": [
+        "astondoa-40",
+        "fairline-targa-12m"
+      ],
+      "consumed_at": "2026-06-13"
+    },
+    {
+      "kind": "blog",
+      "slug": "blog/pershing-46-vs-fairline-targa-12m-marbella",
+      "primary_keyword": "pershing 46 vs fairline targa 12m",
+      "title": "Pershing 46 vs Fairline Targa 12m: Sport Yachts Compared",
+      "target_words": 1300,
+      "fleet_focus": [
+        "pershing-46",
+        "fairline-targa-12m"
+      ],
+      "consumed_at": "2026-06-13"
+    },
+    {
+      "kind": "blog",
+      "slug": "blog/marbella-yacht-charter-christmas-new-year",
+      "primary_keyword": "marbella yacht charter christmas new year",
+      "title": "Marbella Yacht Charter for Christmas and New Year: Festive Cruises",
+      "target_words": 1200,
+      "consumed_at": "2026-06-13"
+    },
+    {
+      "kind": "experience",
+      "slug": "experiences/marbella-sunset-photoshoot-yacht",
+      "primary_keyword": "Marbella sunset photoshoot yacht",
+      "title": "Marbella Sunset Photoshoot on a Yacht",
+      "target_words": 1100,
+      "consumed_at": "2026-06-13"
+    },
+    {
+      "kind": "experience",
+      "slug": "experiences/marbella-jet-ski-and-boat-combo",
+      "primary_keyword": "Marbella jet ski and boat rental combo",
+      "title": "Marbella Jet Ski and Boat Combo: Thrills on the Water",
+      "target_words": 1100,
+      "consumed_at": "2026-06-13"
+    },
+    {
+      "kind": "experience",
+      "slug": "experiences/marbella-family-boat-day-paddleboarding",
+      "primary_keyword": "Marbella family boat day paddleboarding",
+      "title": "Marbella Family Boat Day with Paddleboarding and Snorkeling",
+      "target_words": 1200,
+      "consumed_at": "2026-06-13"
+    },
+    {
+      "kind": "experience",
+      "slug": "experiences/marbella-fishing-charter-half-day",
+      "primary_keyword": "Marbella half day fishing charter",
+      "title": "Marbella Half-Day Fishing Charter: Catch and Release",
+      "target_words": 1100,
+      "consumed_at": "2026-06-13"
+    },
+    {
+      "kind": "experience",
+      "slug": "experiences/marbella-booze-cruise-hen-party",
+      "primary_keyword": "Marbella booze cruise hen party",
+      "title": "Marbella Booze Cruise for Hen Parties: Fun on the Sea",
+      "target_words": 1100,
       "consumed_at": "2026-06-13"
     }
   ],

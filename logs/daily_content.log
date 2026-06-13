@@ -1373,3 +1373,39 @@ hint: See the 'Note about fast-forwards' in 'git push --help' for details.
 [2026-06-13 15:45:24] queue under threshold (27 < 30) — auto-refilling…
 [2026-06-13 15:45:41] refill: +28 topics (queue now 55)
 [2026-06-13 15:45:41] running deploy.sh …
+[2026-06-13 15:45:59] deploy.sh OK
+[2026-06-13 15:45:59] === Done: 5 succeeded, 0 failed ===
+
+[2026-06-13 19:44:36] === Daily content run (kind-balanced): 5 blog + 5 landing = 10 item(s) ===
+[2026-06-13 19:44:36] [1/10] blog · blog/dubhe-vs-mariah-sx21-marbella
+[2026-06-13 19:44:36]   DeepSeek failed (ConnectionError: HTTPSConnectionPool(host='api.deepseek.com', port=443): Max retries exceeded with url: /chat/completions (Caused by Name), falling back to cli
+[2026-06-13 19:44:47]   ✗ FAILED: RuntimeError: claude CLI exit 1: 
+[2026-06-13 19:44:47] [2/10] blog · blog/lagoon-380-vs-azimut-58-marbella
+[2026-06-13 19:45:18]   ✓ saved content/blog_lagoon-380-vs-azimut-58-marbella.json
+[2026-06-13 19:45:18]   ✓ added to keyword_map.blog
+[2026-06-13 19:45:18] [3/10] blog · blog/astondoa-40-vs-fairline-targa-12m-marbella
+[2026-06-13 19:45:43]   ✓ saved content/blog_astondoa-40-vs-fairline-targa-12m-marbella.json
+[2026-06-13 19:45:43]   ✓ added to keyword_map.blog
+[2026-06-13 19:45:43] [4/10] blog · blog/pershing-46-vs-fairline-targa-12m-marbella
+[2026-06-13 19:46:10]   ✓ saved content/blog_pershing-46-vs-fairline-targa-12m-marbella.json
+[2026-06-13 19:46:10]   ✓ added to keyword_map.blog
+[2026-06-13 19:46:10] [5/10] blog · blog/marbella-yacht-charter-christmas-new-year
+[2026-06-13 19:46:42]   ✓ saved content/blog_marbella-yacht-charter-christmas-new-year.json
+[2026-06-13 19:46:42]   ✓ added to keyword_map.blog
+[2026-06-13 19:46:42] [6/10] experience · experiences/marbella-sunset-photoshoot-yacht
+[2026-06-13 19:47:08]   ✓ saved content/experiences_marbella-sunset-photoshoot-yacht.json
+[2026-06-13 19:47:08]   ✓ added to keyword_map.spokes
+[2026-06-13 19:47:08] [7/10] experience · experiences/marbella-jet-ski-and-boat-combo
+[2026-06-13 19:47:28]   ✓ saved content/experiences_marbella-jet-ski-and-boat-combo.json
+[2026-06-13 19:47:28]   ✓ added to keyword_map.spokes
+[2026-06-13 19:47:28] [8/10] experience · experiences/marbella-family-boat-day-paddleboarding
+[2026-06-13 19:47:54]   ✓ saved content/experiences_marbella-family-boat-day-paddleboarding.json
+[2026-06-13 19:47:54]   ✓ added to keyword_map.spokes
+[2026-06-13 19:47:54] [9/10] experience · experiences/marbella-fishing-charter-half-day
+[2026-06-13 19:48:14]   ✓ saved content/experiences_marbella-fishing-charter-half-day.json
+[2026-06-13 19:48:14]   ✓ added to keyword_map.spokes
+[2026-06-13 19:48:14] [10/10] experience · experiences/marbella-booze-cruise-hen-party
+[2026-06-13 19:48:40]   ✓ saved content/experiences_marbella-booze-cruise-hen-party.json
+[2026-06-13 19:48:40]   ✓ added to keyword_map.spokes
+[2026-06-13 19:48:40] queue: 46 remaining, 215 consumed total
+[2026-06-13 19:48:40] running deploy.sh …

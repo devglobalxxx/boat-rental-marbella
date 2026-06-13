@@ -162,12 +162,30 @@ def gen_article_nodes(title: str, links: list, hero: str) -> list:
         f'  bold: {{"tag":"b","children":["text"]}}  list: {{"tag":"ul","children":[{{"tag":"li","children":["item"]}}]}}\n'
         f"Start with the img node. Use the EXACT href URLs and anchor texts given above. Output the JSON array only."
     )
-    raw = generate(sys_p, user_p)
-    raw = re.sub(r"^```(?:json)?\s*|\s*```$", "", raw, flags=re.MULTILINE).strip()
-    s, e = raw.find("["), raw.rfind("]")
-    if s < 0 or e <= s:
-        raise RuntimeError("no JSON array in article output")
-    nodes = json.loads(raw[s:e + 1])
+    nodes = None
+    for attempt in range(3):
+        raw = generate(sys_p, user_p)
+        raw = re.sub(r"^```(?:json)?\s*|\s*```$", "", raw, flags=re.MULTILINE).strip()
+        s, e = raw.find("["), raw.rfind("]")
+        if s < 0 or e <= s:
+            log(f"  attempt {attempt+1}: no JSON array, retrying")
+            continue
+        blob = raw[s:e + 1]
+        try:
+            nodes = json.loads(blob)
+            break
+        except json.JSONDecodeError:
+            # Lenient repair: drop trailing commas, collapse stray newlines inside strings
+            repaired = re.sub(r",\s*([\]}])", r"\1", blob)
+            try:
+                nodes = json.loads(repaired)
+                log(f"  attempt {attempt+1}: parsed after repair")
+                break
+            except json.JSONDecodeError:
+                log(f"  attempt {attempt+1}: JSON parse failed, retrying")
+                continue
+    if nodes is None:
+        raise RuntimeError("article JSON unparseable after 3 attempts")
     # Guarantee hero image first
     if not (nodes and isinstance(nodes[0], dict) and nodes[0].get("tag") == "img"):
         nodes.insert(0, {"tag": "img", "attrs": {"src": hero}})

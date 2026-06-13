@@ -1,7 +1,7 @@
 {
   "@context": "https://boatrentalinmarbella.com/api/pages.json",
   "source": "https://boatrentalinmarbella.com",
-  "count": 288,
+  "count": 297,
   "kinds": [
     "blog",
     "boat",
@@ -76,6 +76,14 @@
       "kind": "blog",
       "locale": "en",
       "excerpt": "Choosing between the Astondoa 40 and the Azimut 39 for a yacht charter in Marbella can feel like splitting hairs. Both are 12.5-metre motor yachts, both depart from Puerto Banús, and both fall into our Tier A pricing — starting at €749 for two hours. But small differences in pass"
+    },
+    {
+      "url": "https://boatrentalinmarbella.com/blog/astondoa-40-vs-fairline-targa-12m-marbella/",
+      "title": "Astondoa 40 vs Fairline Targa 12m in Marbella",
+      "description": "Compare Astondoa 40 vs Fairline Targa 12m in Marbella – specs, capacity, pricing, and which boat suits your charter. Book your day on the water now.",
+      "kind": "blog",
+      "locale": "en",
+      "excerpt": "Choosing between the Astondoa 40 and the Fairline Targa 12m in Marbella comes down to your priorities: comfort versus sportiness, fixed pricing versus bespoke quotes, and group size. Both boats depart from Puerto Banús , the epicentre of Marbella’s charter scene, and include a li"
     },
     {
       "url": "https://boatrentalinmarbella.com/blog/astondoa-40-vs-smaller-yachts-marbella/",
@@ -550,6 +558,14 @@
       "excerpt": "If you’re searching for a Lagoon 380 catamaran Marbella review that tells you what it’s really like onboard, you’ve landed in the right place. This 11.6-metre catamaran, departing from Puerto Banús, is one of the most popular choices for groups who want space, stability, and a pr"
     },
     {
+      "url": "https://boatrentalinmarbella.com/blog/lagoon-380-vs-azimut-58-marbella/",
+      "title": "Catamaran vs Flybridge in Marbella: Lagoon 380 vs Azimut 58",
+      "description": "Catamaran vs flybridge in Marbella: Lagoon 380 vs Azimut 58. Compare space, stability, speed &amp; price. Book your charter from Puerto Banús today.",
+      "kind": "blog",
+      "locale": "en",
+      "excerpt": "Choosing between a catamaran and a flybridge for your Marbella boat charter often comes down to how you want to spend the day. The Lagoon 380 (11.6m, 10 pax) and the Azimut 58 Flybridge (17.6m, 12 pax) represent two very different philosophies: stability and space vs speed and st"
+    },
+    {
       "url": "https://boatrentalinmarbella.com/blog/levante-vs-poniente-wind-marbella-charter/",
       "title": "Levante vs Poniente: How Marbella Winds Affect Your Charter",
       "description": "Learn how levante and poniente winds affect boat charters in Marbella. Find the best time to sail, safety tips, and boat recommendations for calm seas.",
@@ -846,6 +862,14 @@
       "excerpt": "Planning a yacht charter in Marbella comes with excitement, but it's wise to understand the yacht charter cancellation policy Marbella before you book. Our policy is designed to be transparent and fair, covering deposits, refunds, weather issues, and rebooking options. Whether yo"
     },
     {
+      "url": "https://boatrentalinmarbella.com/blog/marbella-yacht-charter-christmas-new-year/",
+      "title": "Marbella Yacht Charter for Christmas and New Year: Festive Cruises",
+      "description": "Book a Marbella yacht charter for Christmas and New Year. Celebrate the festive season with a luxury cruise from Puerto Banús. Prices from €749/2h.",
+      "kind": "blog",
+      "locale": "en",
+      "excerpt": "Celebrate the festive season in style with a Marbella yacht charter for Christmas and New Year . From a serene Christmas Day cruise along the Costa del Sol to a glamorous New Year's Eve party in Puerto Banús, our fleet offers the perfect setting for unforgettable celebrations. Wi"
+    },
+    {
       "url": "https://boatrentalinmarbella.com/blog/marbella-yacht-charter-credit-card-fees/",
       "title": "Marbella Yacht Charter Credit Card Fees Explained",
       "description": "Avoid surprise charges on your Marbella yacht charter. We explain credit card fees, deposit policies, and how to pay with zero surcharge. Book now.",
@@ -1076,6 +1100,14 @@
       "kind": "blog",
       "locale": "en",
       "excerpt": "If you are choosing between the Pershing 46 and the Azimut 39 for a day on the water in Marbella, you are really choosing between two flavours of Italian yacht design: one tuned for performance, the other tuned for sociable comfort. Both leave from Puerto Banús, both come with a "
+    },
+    {
+      "url": "https://boatrentalinmarbella.com/blog/pershing-46-vs-fairline-targa-12m-marbella/",
+      "title": "Pershing 46 vs Fairline Targa 12m: Sport Yachts Compared",
+      "description": "Pershing 46 vs Fairline Targa 12m side-by-side: length, pax, speed, and price for Marbella charters. Compare both sport yachts and book your day at sea.",
+      "kind": "blog",
+      "locale": "en",
+      "excerpt": "If you're looking for a sporty, open-cockpit day boat in Marbella, two names come up again and again: the Pershing 46 and the Fairline Targa 12m . Both are fast, stylish, and available for charter from Puerto Banús . But which one suits your day at sea better? This side-by-side c"
     },
     {
       "url": "https://boatrentalinmarbella.com/blog/princess-v58-vs-azimut-58-marbella/",
@@ -1878,12 +1910,28 @@
       "excerpt": "Celebrate your next birthday in style with a private yacht party in Marbella. Whether you want a quiet sunset cruise with close friends or a full-blown themed bash on the water, our fleet of luxury boats departing from Puerto Banús offers the perfect setting. With custom decorati"
     },
     {
+      "url": "https://boatrentalinmarbella.com/experiences/marbella-booze-cruise-hen-party/",
+      "title": "Marbella Booze Cruise for Hen Parties: Fun on the Sea",
+      "description": "Book a Marbella booze cruise hen party from Puerto Banús. Private charter, open bar, DJ-friendly, from €749/2h. Celebrate on the sea with your crew.",
+      "kind": "experience",
+      "locale": "en",
+      "excerpt": "Planning a Marbella booze cruise hen party ? You've found the right fleet. From Puerto Banús, we offer private charters with open bar, skipper, and enough space for your whole crew. Whether you want a 2-hour sunset spin or a full-day party with a jet ski, our boats are ready. No "
+    },
+    {
       "url": "https://boatrentalinmarbella.com/experiences/marbella-by-night-cruise/",
       "title": "Marbella by Night: Evening Yacht Cruise from Puerto Banús",
       "description": "Marbella by night yacht cruise from Puerto Banús: 2-3h sunset to skyline sail with skipper, drinks and snacks from €749. Book on WhatsApp today.",
       "kind": "experience",
       "locale": "en",
       "excerpt": "A Marbella by night yacht cruise from Puerto Banús is the most relaxed way to see the Costa del Sol's skyline — La Concha mountain turning pink behind you, the Golden Mile villas firing up their pool lights, and the marina's superyachts blazing as you slip back to the pontoon. Ch"
+    },
+    {
+      "url": "https://boatrentalinmarbella.com/experiences/marbella-family-boat-day-paddleboarding/",
+      "title": "Marbella Family Boat Day with Paddleboarding and Snorkeling",
+      "description": "Book a Marbella family boat day with paddleboarding and snorkeling. From €749 for 2h on our Astondoa 40. Licensed skipper, drinks, snacks included.",
+      "kind": "experience",
+      "locale": "en",
+      "excerpt": "Spend a day on the water with your family, paddleboarding along the Costa del Sol and snorkeling in crystal-clear coves. Our Marbella family boat day with paddleboarding and snorkeling departs from Puerto Banús, with boats sized from 6.4m to 29m. All charters include a licensed s"
     },
     {
       "url": "https://boatrentalinmarbella.com/experiences/marbella-family-boat-day-snorkeling/",
@@ -1894,12 +1942,36 @@
       "excerpt": "Looking for a marbella family boat day snorkeling adventure that everyone will remember? From the glamorous Puerto Banús, you can set sail on a private charter designed with families in mind. Our boats come with a licensed skipper, all drinks and snacks included, and snorkeling g"
     },
     {
+      "url": "https://boatrentalinmarbella.com/experiences/marbella-fishing-charter-half-day/",
+      "title": "Marbella Half-Day Fishing Charter: Catch and Release",
+      "description": "Book a Marbella half day fishing charter from Puerto Banús. Catch and release with licensed skipper, drinks &amp; snacks included. Prices from €749.",
+      "kind": "experience",
+      "locale": "en",
+      "excerpt": "Escape the Marbella sun with a Marbella half day fishing charter from Puerto Banús. Whether you're a seasoned angler or a first-timer, our catch-and-release trips offer a sustainable way to enjoy the Mediterranean. With a licensed skipper, cold drinks, and snacks included, you ju"
+    },
+    {
       "url": "https://boatrentalinmarbella.com/experiences/marbella-full-day-yoga-retreat-at-sea/",
       "title": "Marbella Full-Day Yoga Retreat at Sea: Wellness on the Water",
       "description": "Book a marbella full day yoga retreat at sea with yoga, paddleboarding, and lunch aboard a Mangusta 80. €4,719 for 12 guests from Puerto Banús.",
       "kind": "experience",
       "locale": "en",
       "excerpt": "Escape the crowds and find your centre on a marbella full day yoga retreat at sea . This exclusive wellness experience combines a morning yoga session on the deck of a luxury motor yacht, paddleboarding in crystal-clear coves, and a Mediterranean lunch—all from the glamorous sett"
+    },
+    {
+      "url": "https://boatrentalinmarbella.com/experiences/marbella-jet-ski-and-boat-combo/",
+      "title": "Marbella Jet Ski and Boat Combo: Thrills on the Water",
+      "description": "Book a Marbella jet ski and boat rental combo for adrenaline on the water. Our Mangusta 80 charter includes a jet ski free. Depart Puerto Banús.",
+      "kind": "experience",
+      "locale": "en",
+      "excerpt": "For those who want speed on the water without giving up luxury, a Marbella jet ski and boat rental combo is the perfect day out. Our Mangusta 80 (24m) charter includes a jet ski free, so you can blast across the Mediterranean then lounge on a spacious flybridge. Departing from Pu"
+    },
+    {
+      "url": "https://boatrentalinmarbella.com/experiences/marbella-sunset-photoshoot-yacht/",
+      "title": "Marbella Sunset Photoshoot on a Yacht",
+      "description": "Book a Marbella sunset photoshoot yacht charter from Puerto Banús. Rates from €749/2h with skipper, drinks &amp; VAT included. Reserve now.",
+      "kind": "experience",
+      "locale": "en",
+      "excerpt": "Capture the golden hour on the Costa del Sol with a Marbella sunset photoshoot yacht charter from Puerto Banús. Whether you are celebrating an engagement, a milestone birthday, or simply want professional portraits with the Mediterranean as your backdrop, our fleet offers the per"
     },
     {
       "url": "https://boatrentalinmarbella.com/experiences/marbella-sunset-tapas-cruise/",
@@ -2248,7 +2320,7 @@
     {
       "url": "https://boatrentalinmarbella.com/site-map/",
       "title": "Site Map — every page on Boat Rental Marbella",
-      "description": "Full directory of all 286 pages on Boat Rental Marbella — charter types, fleet, experiences, guides, languages and policies.",
+      "description": "Full directory of all 295 pages on Boat Rental Marbella — charter types, fleet, experiences, guides, languages and policies.",
       "kind": "spoke",
       "locale": "en",
       "excerpt": "Every page on Boat Rental Marbella, grouped by section. Looking for something specific? Message us on WhatsApp and ask."

@@ -1,0 +1,38 @@
+{
+  "_doc": "Real boatrentalinmarbella.com pages + varied natural anchor texts. telegraph_publish.py picks 3-5 per article so every backlink is contextual and the anchor profile stays natural (no over-optimisation). Hub always linked once.",
+  "base_url": "https://boatrentalinmarbella.com",
+  "hub": {
+    "url": "https://boatrentalinmarbella.com/",
+    "anchors": ["boat rental in Marbella", "Boat Rental Marbella", "book a boat in Marbella", "charter a boat in Marbella", "Marbella boat charter"]
+  },
+  "targets": [
+    {"url": "https://boatrentalinmarbella.com/yacht-charter-marbella/", "anchors": ["yacht charter in Marbella", "Marbella yacht charter", "charter a yacht"]},
+    {"url": "https://boatrentalinmarbella.com/boat-rental-puerto-banus/", "anchors": ["boat rental in Puerto Banús", "Puerto Banús boat hire", "charter from Puerto Banús"]},
+    {"url": "https://boatrentalinmarbella.com/sunset-cruise-marbella/", "anchors": ["sunset cruise in Marbella", "Marbella sunset cruise", "evening cruise"]},
+    {"url": "https://boatrentalinmarbella.com/boat-party-marbella/", "anchors": ["boat party in Marbella", "group charter for parties", "stag and hen boat charter"]},
+    {"url": "https://boatrentalinmarbella.com/fishing-boat-rental-marbella/", "anchors": ["fishing charter in Marbella", "Marbella fishing trip", "deep-sea fishing charter"]},
+    {"url": "https://boatrentalinmarbella.com/catamaran-rental-marbella/", "anchors": ["catamaran rental in Marbella", "Marbella catamaran charter"]},
+    {"url": "https://boatrentalinmarbella.com/luxury-yacht-rental-marbella/", "anchors": ["luxury yacht rental in Marbella", "luxury yacht charter"]},
+    {"url": "https://boatrentalinmarbella.com/jet-ski-rental-marbella/", "anchors": ["jet ski rental in Marbella", "Sea-Doo jet ski hire"]},
+    {"url": "https://boatrentalinmarbella.com/boat-rental-no-license-marbella/", "anchors": ["licence-free boat rental in Marbella", "self-drive boat hire", "boat rental with no licence"]},
+    {"url": "https://boatrentalinmarbella.com/boats/", "anchors": ["our 18-boat fleet", "the full Marbella fleet", "browse the fleet"]},
+    {"url": "https://boatrentalinmarbella.com/boats/astondoa-40/", "anchors": ["the Astondoa 40 'Fufi'", "Astondoa 40 charter"]},
+    {"url": "https://boatrentalinmarbella.com/boats/azimut-39/", "anchors": ["the Azimut 39", "Azimut 39 flybridge charter"]},
+    {"url": "https://boatrentalinmarbella.com/boats/mangusta-80/", "anchors": ["the Mangusta 80 flagship", "Mangusta 80 superyacht charter"]},
+    {"url": "https://boatrentalinmarbella.com/boats/dubhe/", "anchors": ["the licence-free Dubhe", "cheapest boat in Puerto Banús"]},
+    {"url": "https://boatrentalinmarbella.com/experiences/", "anchors": ["all our Marbella experiences", "charter experiences in Marbella"]},
+    {"url": "https://boatrentalinmarbella.com/experiences/wedding-yacht-marbella/", "anchors": ["a wedding on a boat in Marbella", "yacht wedding charter"]},
+    {"url": "https://boatrentalinmarbella.com/experiences/proposal-yacht-marbella/", "anchors": ["a yacht proposal in Marbella", "proposal cruise"]},
+    {"url": "https://boatrentalinmarbella.com/reviews/", "anchors": ["read our guest reviews", "87 verified charter reviews"]},
+    {"url": "https://boatrentalinmarbella.com/blog/", "anchors": ["the Marbella charter guide", "our boat-rental blog"]}
+  ],
+  "hero_images": [
+    "https://boatrentalinmarbella.com/img/boats/mangusta-80/hero-1600.jpg",
+    "https://boatrentalinmarbella.com/img/boats/azimut-39/hero-1600.jpg",
+    "https://boatrentalinmarbella.com/img/boats/astondoa-40/hero-1600.jpg",
+    "https://boatrentalinmarbella.com/img/boats/astondoa-40/sunset-1600.jpg",
+    "https://boatrentalinmarbella.com/img/dolphins/dolphins-jumping-1600.jpg",
+    "https://boatrentalinmarbella.com/img/hen-party/hen-party-group-puerto-banus-1600.jpg",
+    "https://boatrentalinmarbella.com/img/proposal/proposal-moment-1600.jpg"
+  ]
+}

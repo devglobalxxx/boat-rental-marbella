@@ -1615,6 +1615,41 @@
       "title": "Red Tide fishing boat: Best Boat in Marbella for Serious offshore sport fishing",
       "intent": "informational",
       "target_words": 1100
+    },
+    {
+      "slug": "blog/speedboat-best-for",
+      "primary_keyword": "Speedboat best for",
+      "title": "Speedboat: Best Boat in Marbella for Tow-sports and watersports day",
+      "intent": "informational",
+      "target_words": 1100
+    },
+    {
+      "slug": "blog/astondoa-40-vs-azimut-39-marbella",
+      "primary_keyword": "astondoa 40 vs azimut 39",
+      "title": "Astondoa 40 vs Azimut 39: Which 12.5m Yacht to Charter in Marbella",
+      "intent": "informational",
+      "target_words": 1300
+    },
+    {
+      "slug": "blog/azimut-39-vs-azimut-58-marbella",
+      "primary_keyword": "azimut 39 vs azimut 58",
+      "title": "Azimut 39 vs Azimut 58: When to Upgrade in Marbella",
+      "intent": "informational",
+      "target_words": 1300
+    },
+    {
+      "slug": "blog/mangusta-80-vs-ferretti-94-marbella",
+      "primary_keyword": "mangusta 80 vs ferretti 94",
+      "title": "Mangusta 80 vs Ferretti 94: Top Luxury Yachts in Marbella",
+      "intent": "informational",
+      "target_words": 1300
+    },
+    {
+      "slug": "blog/mangusta-80-vs-canados-86-marbella",
+      "primary_keyword": "mangusta 80 vs canados 86",
+      "title": "Mangusta 80 vs Canados 86: Which Marbella Flagship",
+      "intent": "informational",
+      "target_words": 1300
     }
   ]
 }

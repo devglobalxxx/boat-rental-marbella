@@ -483,3 +483,6 @@ hint: See the 'Note about fast-forwards' in 'git push --help' for details.
 [2026-06-13 10:02:21]   ✓ added to keyword_map.blog
 [2026-06-13 10:02:21] queue: 32 remaining, 201 consumed total
 [2026-06-13 10:02:21] running deploy.sh …
+[2026-06-13 10:02:41] deploy.sh OK
+[2026-06-13 10:02:41] === Done: 5 succeeded, 0 failed ===
+

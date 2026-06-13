@@ -1350,3 +1350,26 @@ hint: See the 'Note about fast-forwards' in 'git push --help' for details.
 [2026-06-13 10:02:21]   ✓ added to keyword_map.blog
 [2026-06-13 10:02:21] queue: 32 remaining, 201 consumed total
 [2026-06-13 10:02:21] running deploy.sh …
+[2026-06-13 10:02:41] deploy.sh OK
+[2026-06-13 10:02:41] === Done: 5 succeeded, 0 failed ===
+
+[2026-06-13 15:43:23] === Daily content run (kind-balanced): 5 blog + 0 landing = 5 item(s) ===
+[2026-06-13 15:43:23] [1/5] blog · blog/speedboat-best-for
+[2026-06-13 15:43:47]   ✓ saved content/blog_speedboat-best-for.json
+[2026-06-13 15:43:48]   ✓ added to keyword_map.blog
+[2026-06-13 15:43:48] [2/5] blog · blog/astondoa-40-vs-azimut-39-marbella
+[2026-06-13 15:44:10]   ✓ saved content/blog_astondoa-40-vs-azimut-39-marbella.json
+[2026-06-13 15:44:10]   ✓ added to keyword_map.blog
+[2026-06-13 15:44:10] [3/5] blog · blog/azimut-39-vs-azimut-58-marbella
+[2026-06-13 15:44:36]   ✓ saved content/blog_azimut-39-vs-azimut-58-marbella.json
+[2026-06-13 15:44:36]   ✓ added to keyword_map.blog
+[2026-06-13 15:44:36] [4/5] blog · blog/mangusta-80-vs-ferretti-94-marbella
+[2026-06-13 15:44:58]   ✓ saved content/blog_mangusta-80-vs-ferretti-94-marbella.json
+[2026-06-13 15:44:58]   ✓ added to keyword_map.blog
+[2026-06-13 15:44:58] [5/5] blog · blog/mangusta-80-vs-canados-86-marbella
+[2026-06-13 15:45:24]   ✓ saved content/blog_mangusta-80-vs-canados-86-marbella.json
+[2026-06-13 15:45:24]   ✓ added to keyword_map.blog
+[2026-06-13 15:45:24] queue: 27 remaining, 206 consumed total
+[2026-06-13 15:45:24] queue under threshold (27 < 30) — auto-refilling…
+[2026-06-13 15:45:41] refill: +28 topics (queue now 55)
+[2026-06-13 15:45:41] running deploy.sh …

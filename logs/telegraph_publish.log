@@ -1,0 +1,18 @@
+[2026-06-13 13:45:30] === Telegraph run: target 1 article(s) · 0 previously published ===
+[2026-06-13 13:45:32] created Telegraph account, token cached
+[2026-06-13 13:45:32] [1/1] Sailing into Sunset: A Private Catamaran Charter from Marbella
+[2026-06-13 13:45:50]   ✓ published https://telegra.ph/Sailing-into-Sunset-A-Private-Catamaran-Charter-from-Marbella-06-13 (5 backlinks)
+[2026-06-13 13:45:50] === Done: 1/1 published. Ledger total: 1 ===
+
+[2026-06-13 13:48:28] === Telegraph run: target 2 article(s) · 1 previously published ===
+[2026-06-13 13:48:31] [1/2] Chartering a Gulet for a Week: Marbella to Estepona Itinerary
+[2026-06-13 13:48:51]   ✓ published https://telegra.ph/Chartering-a-Gulet-for-a-Week-Marbella-to-Estepona-Itinerary-06-13 (5 backlinks)
+[2026-06-13 13:48:51] [2/2] Family-Friendly Catamaran Charter Activities on the Costa del Sol
+[2026-06-13 13:49:13]   ✗ FAILED: JSONDecodeError: Expecting ',' delimiter: line 17 column 1 (char 6198)
+[2026-06-13 13:49:13] === Done: 1/2 published. Ledger total: 2 ===
+
+[2026-06-13 13:49:41] === Telegraph run: target 1 article(s) · 2 previously published ===
+[2026-06-13 13:49:43] [1/1] Marbella to Cala del Moral: A Day Charter with Hidden Coves
+[2026-06-13 13:50:03]   ✓ published https://telegra.ph/Marbella-to-Cala-del-Moral-A-Day-Charter-with-Hidden-Coves-06-13 (5 backlinks)
+[2026-06-13 13:50:04] === Done: 1/1 published. Ledger total: 3 ===
+

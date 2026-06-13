@@ -4,56 +4,6 @@
   "queue": [
     {
       "kind": "blog",
-      "slug": "blog/maiora-26m-best-for",
-      "primary_keyword": "Maiora 26m best for",
-      "title": "Maiora 26m: Best Boat in Marbella for Long-range sotogrande or gibraltar runs",
-      "target_words": 1100,
-      "fleet_focus": [
-        "maiora-26m"
-      ]
-    },
-    {
-      "kind": "blog",
-      "slug": "blog/mariah-sx21-best-for",
-      "primary_keyword": "Mariah SX21 best for",
-      "title": "Mariah SX21: Best Boat in Marbella for Quick 2-hour sunset zip",
-      "target_words": 1100,
-      "fleet_focus": [
-        "mariah-sx21"
-      ]
-    },
-    {
-      "kind": "blog",
-      "slug": "blog/pershing-46-best-for",
-      "primary_keyword": "Pershing 46 best for",
-      "title": "Pershing 46: Best Boat in Marbella for Performance sport-yacht style",
-      "target_words": 1100,
-      "fleet_focus": [
-        "pershing-46"
-      ]
-    },
-    {
-      "kind": "blog",
-      "slug": "blog/dubhe-best-for",
-      "primary_keyword": "Dubhe (licence-free) best for",
-      "title": "Dubhe (licence-free): Best Boat in Marbella for Licence-free self-drive afternoon",
-      "target_words": 1100,
-      "fleet_focus": [
-        "dubhe"
-      ]
-    },
-    {
-      "kind": "blog",
-      "slug": "blog/red-tide-fishing-boat-best-for",
-      "primary_keyword": "Red Tide fishing boat best for",
-      "title": "Red Tide fishing boat: Best Boat in Marbella for Serious offshore sport fishing",
-      "target_words": 1100,
-      "fleet_focus": [
-        "red-tide-fishing-boat"
-      ]
-    },
-    {
-      "kind": "blog",
       "slug": "blog/speedboat-best-for",
       "primary_keyword": "Speedboat best for",
       "title": "Speedboat: Best Boat in Marbella for Tow-sports and watersports day",
@@ -1978,6 +1928,61 @@
         "lagoon-380"
       ],
       "consumed_at": "2026-06-12"
+    },
+    {
+      "kind": "blog",
+      "slug": "blog/maiora-26m-best-for",
+      "primary_keyword": "Maiora 26m best for",
+      "title": "Maiora 26m: Best Boat in Marbella for Long-range sotogrande or gibraltar runs",
+      "target_words": 1100,
+      "fleet_focus": [
+        "maiora-26m"
+      ],
+      "consumed_at": "2026-06-13"
+    },
+    {
+      "kind": "blog",
+      "slug": "blog/mariah-sx21-best-for",
+      "primary_keyword": "Mariah SX21 best for",
+      "title": "Mariah SX21: Best Boat in Marbella for Quick 2-hour sunset zip",
+      "target_words": 1100,
+      "fleet_focus": [
+        "mariah-sx21"
+      ],
+      "consumed_at": "2026-06-13"
+    },
+    {
+      "kind": "blog",
+      "slug": "blog/pershing-46-best-for",
+      "primary_keyword": "Pershing 46 best for",
+      "title": "Pershing 46: Best Boat in Marbella for Performance sport-yacht style",
+      "target_words": 1100,
+      "fleet_focus": [
+        "pershing-46"
+      ],
+      "consumed_at": "2026-06-13"
+    },
+    {
+      "kind": "blog",
+      "slug": "blog/dubhe-best-for",
+      "primary_keyword": "Dubhe (licence-free) best for",
+      "title": "Dubhe (licence-free): Best Boat in Marbella for Licence-free self-drive afternoon",
+      "target_words": 1100,
+      "fleet_focus": [
+        "dubhe"
+      ],
+      "consumed_at": "2026-06-13"
+    },
+    {
+      "kind": "blog",
+      "slug": "blog/red-tide-fishing-boat-best-for",
+      "primary_keyword": "Red Tide fishing boat best for",
+      "title": "Red Tide fishing boat: Best Boat in Marbella for Serious offshore sport fishing",
+      "target_words": 1100,
+      "fleet_focus": [
+        "red-tide-fishing-boat"
+      ],
+      "consumed_at": "2026-06-13"
     }
   ],
   "refill_threshold": 30,

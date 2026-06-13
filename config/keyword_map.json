@@ -1580,6 +1580,41 @@
       "title": "Lagoon 380 catamaran: Best Boat in Marbella for Sailing-day catamaran with kids",
       "intent": "informational",
       "target_words": 1100
+    },
+    {
+      "slug": "blog/maiora-26m-best-for",
+      "primary_keyword": "Maiora 26m best for",
+      "title": "Maiora 26m: Best Boat in Marbella for Long-range sotogrande or gibraltar runs",
+      "intent": "informational",
+      "target_words": 1100
+    },
+    {
+      "slug": "blog/mariah-sx21-best-for",
+      "primary_keyword": "Mariah SX21 best for",
+      "title": "Mariah SX21: Best Boat in Marbella for Quick 2-hour sunset zip",
+      "intent": "informational",
+      "target_words": 1100
+    },
+    {
+      "slug": "blog/pershing-46-best-for",
+      "primary_keyword": "Pershing 46 best for",
+      "title": "Pershing 46: Best Boat in Marbella for Performance sport-yacht style",
+      "intent": "informational",
+      "target_words": 1100
+    },
+    {
+      "slug": "blog/dubhe-best-for",
+      "primary_keyword": "Dubhe (licence-free) best for",
+      "title": "Dubhe (licence-free): Best Boat in Marbella for Licence-free self-drive afternoon",
+      "intent": "informational",
+      "target_words": 1100
+    },
+    {
+      "slug": "blog/red-tide-fishing-boat-best-for",
+      "primary_keyword": "Red Tide fishing boat best for",
+      "title": "Red Tide fishing boat: Best Boat in Marbella for Serious offshore sport fishing",
+      "intent": "informational",
+      "target_words": 1100
     }
   ]
 }

@@ -4,3 +4,4 @@ __pycache__/
 .env
 .indexnow_key
 .telegraph_token
+.telegraph_tokens.json

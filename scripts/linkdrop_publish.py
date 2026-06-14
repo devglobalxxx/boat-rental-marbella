@@ -4,7 +4,7 @@
 Platforms (adapters):
   - telegraph   → api.telegra.ph (pages also live on graph.org). Anonymous, rotates accounts.
   - rentry      → rentry.co anonymous CSRF API (markdown).
-  - justpaste   → justpaste.it API (needs JUSTPASTE_TOKEN; skipped if absent).
+  (justpaste.it removed — only graph.org + rentry.co.)
 
 Each post:
   - UNIQUE topic from a large combinatorial space (subject × angle × modifier), LLM-written fresh.
@@ -40,7 +40,7 @@ def log(msg: str):
 
 # ---------- env ----------
 def load_env():
-    want = ("DEEPSEEK_API_KEY", "JUSTPASTE_TOKEN")
+    want = ("DEEPSEEK_API_KEY",)
     for p in [ROOT / ".env", ROOT.parent.parent / ".env", pathlib.Path.home() / "aiangels-blog" / ".env"]:
         if p.exists():
             for line in p.read_text().splitlines():
@@ -263,29 +263,8 @@ def post_rentry(title, md, links, rng) -> str:
         raise RuntimeError(f"rentry: {r}")
     return r["url"]
 
-# --- justpaste.it (token-gated) ---
-def post_justpaste(title, md, links, rng) -> str:
-    import requests as _req
-    tok = os.environ.get("JUSTPASTE_TOKEN", "").strip()
-    if not tok:
-        raise RuntimeError("JUSTPASTE_TOKEN not set (register at justpaste.it → settings → API)")
-    # markdown → simple HTML
-    html_body = md
-    html_body = re.sub(r"^## (.+)$", r"<h2>\1</h2>", html_body, flags=re.M)
-    html_body = re.sub(r"^# (.+)$", r"<h1>\1</h1>", html_body, flags=re.M)
-    html_body = re.sub(r"\[([^\]]+)\]\(([^)]+)\)", r'<a href="\2">\1</a>', html_body)
-    html_body = "".join(f"<p>{b.strip()}</p>" if not b.strip().startswith("<h") else b.strip()
-                        for b in re.split(r"\n\s*\n", html_body) if b.strip())
-    r = _req.post("https://justpaste.it/api/1.0/create-article",
-                  headers={"Authorization": f"Bearer {tok}", "Content-Type": "application/json"},
-                  json={"articleTitle": title, "articleContent": f"<h1>{title}</h1>{html_body}"},
-                  timeout=60).json()
-    url = r.get("articleUrl") or r.get("url")
-    if not url:
-        raise RuntimeError(f"justpaste: {r}")
-    return url
-
-ADAPTERS = {"telegraph": post_telegraph, "rentry": post_rentry, "justpaste": post_justpaste}
+# Active platforms: graph.org/telegra.ph + rentry.co only.
+ADAPTERS = {"telegraph": post_telegraph, "rentry": post_rentry}
 
 # ============================================================
 def run_platform(platform: str, n: int, throttle: float, dry: bool) -> int:
@@ -329,18 +308,14 @@ def run_platform(platform: str, n: int, throttle: float, dry: bool) -> int:
 
 def main():
     ap = argparse.ArgumentParser()
-    ap.add_argument("--platform", default="all", help="telegraph | rentry | justpaste | all")
-    ap.add_argument("--n", type=int, default=50, help="target posts per platform per day")
-    ap.add_argument("--throttle", type=float, default=6.0, help="seconds between posts")
+    ap.add_argument("--platform", default="all", help="telegraph | rentry | all")
+    ap.add_argument("--n", type=int, default=15, help="target posts per platform per day")
+    ap.add_argument("--throttle", type=float, default=9.0, help="seconds between posts")
     ap.add_argument("--dry-run", action="store_true")
     args = ap.parse_args()
     plats = list(ADAPTERS) if args.platform == "all" else [args.platform]
     total = 0
     for p in plats:
-        # justpaste auto-skips if no token
-        if p == "justpaste" and not os.environ.get("JUSTPASTE_TOKEN", "").strip():
-            log(f"[justpaste] skipped — no JUSTPASTE_TOKEN")
-            continue
         total += run_platform(p, args.n, args.throttle, args.dry_run)
     log(f"ALL DONE: {total} posts across {len(plats)} platform(s)\n")
     return 0 if total or args.dry_run else 1

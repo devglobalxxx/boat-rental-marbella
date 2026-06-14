@@ -41,7 +41,17 @@ for es_slug, prio in [("es", "0.95"), ("es/alquiler-de-yates-marbella", "0.9"),
 # German (DE) priority pages
 for de_slug, prio in [("de", "0.95"), ("de/yachtcharter-marbella", "0.9"),
                       ("de/bootsverleih-puerto-banus", "0.9"),
-                      ("de/bootsverleih-ohne-fuehrerschein-marbella", "0.9")]:
+                      ("de/bootsverleih-ohne-fuehrerschein-marbella", "0.9"),
+                      ("de/katamaran-mieten-marbella", "0.9"), ("de/angelboot-mieten-marbella", "0.85"),
+                      ("de/sonnenuntergang-bootstour-marbella", "0.9"), ("de/bootsparty-marbella", "0.85"),
+                      ("de/luxusyacht-mieten-marbella", "0.9"), ("de/jetski-mieten-marbella", "0.85"),
+                      ("de/privat-bootscharter-marbella", "0.85"), ("de/speedboot-mieten-marbella", "0.85"),
+                      ("de/segelboot-mieten-marbella", "0.85"), ("de/motoryacht-mieten-marbella", "0.9"),
+                      ("de/yachtcharter-puerto-banus", "0.9"), ("de/familien-yachtcharter-marbella", "0.85"),
+                      ("de/superyacht-charter-marbella", "0.85"), ("de/tagescharter-marbella", "0.85"),
+                      ("de/blog/was-kostet-bootsverleih-marbella", "0.7"),
+                      ("de/blog/beste-reisezeit-boot-marbella", "0.7"),
+                      ("de/blog/bootsfuehrerschein-spanien", "0.7")]:
     lines.append(url(de_slug, prio, "weekly"))
 # UK landing
 lines.append(url("uk", "0.9", "weekly"))

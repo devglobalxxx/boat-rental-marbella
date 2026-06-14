@@ -1776,6 +1776,41 @@
       "title": "Cabopino Boat Rental for Families: Calm Waters and Easy Access",
       "intent": "informational",
       "target_words": 1100
+    },
+    {
+      "slug": "blog/marbella-yacht-charter-f1-grand-prix",
+      "primary_keyword": "marbella yacht charter f1 grand prix",
+      "title": "Marbella Yacht Charter for the F1 Grand Prix: Race Weekend at Sea",
+      "intent": "informational",
+      "target_words": 1200
+    },
+    {
+      "slug": "blog/marbella-yacht-charter-starlite-festival",
+      "primary_keyword": "marbella yacht charter starlite festival",
+      "title": "Marbella Yacht Charter and Starlite Festival: Evening Cruise Tips",
+      "intent": "informational",
+      "target_words": 1150
+    },
+    {
+      "slug": "blog/marbella-hen-stag-weekend-yacht-cost",
+      "primary_keyword": "marbella hen stag weekend yacht cost",
+      "title": "Marbella Hen and Stag Weekend Yacht Cost: Budget Breakdown",
+      "intent": "informational",
+      "target_words": 1200
+    },
+    {
+      "slug": "blog/marbella-yacht-charter-ironman-recovery",
+      "primary_keyword": "marbella yacht charter ironman recovery",
+      "title": "Marbella Yacht Charter for Ironman Recovery: Post-Race Relaxation",
+      "intent": "informational",
+      "target_words": 1100
+    },
+    {
+      "slug": "blog/marbella-yacht-charter-pride-celebration",
+      "primary_keyword": "marbella yacht charter pride",
+      "title": "Marbella Yacht Charter for Pride: Celebrate on the Water",
+      "intent": "informational",
+      "target_words": 1100
     }
   ]
 }

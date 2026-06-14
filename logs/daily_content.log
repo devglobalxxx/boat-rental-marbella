@@ -1442,3 +1442,24 @@ hint: See the 'Note about fast-forwards' in 'git push --help' for details.
 [2026-06-14 10:04:24]   ✓ added to keyword_map.spokes
 [2026-06-14 10:04:24] queue: 37 remaining, 224 consumed total
 [2026-06-14 10:04:24] running deploy.sh …
+[2026-06-14 10:04:42] deploy.sh OK
+[2026-06-14 10:04:42] === Done: 9 succeeded, 0 failed ===
+
+[2026-06-14 15:42:23] === Daily content run (kind-balanced): 5 blog + 0 landing = 5 item(s) ===
+[2026-06-14 15:42:23] [1/5] blog · blog/marbella-yacht-charter-f1-grand-prix
+[2026-06-14 15:42:53]   ✓ saved content/blog_marbella-yacht-charter-f1-grand-prix.json
+[2026-06-14 15:42:53]   ✓ added to keyword_map.blog
+[2026-06-14 15:42:53] [2/5] blog · blog/marbella-yacht-charter-starlite-festival
+[2026-06-14 15:43:16]   ✓ saved content/blog_marbella-yacht-charter-starlite-festival.json
+[2026-06-14 15:43:16]   ✓ added to keyword_map.blog
+[2026-06-14 15:43:16] [3/5] blog · blog/marbella-hen-stag-weekend-yacht-cost
+[2026-06-14 15:43:48]   ✓ saved content/blog_marbella-hen-stag-weekend-yacht-cost.json
+[2026-06-14 15:43:48]   ✓ added to keyword_map.blog
+[2026-06-14 15:43:48] [4/5] blog · blog/marbella-yacht-charter-ironman-recovery
+[2026-06-14 15:44:15]   ✓ saved content/blog_marbella-yacht-charter-ironman-recovery.json
+[2026-06-14 15:44:15]   ✓ added to keyword_map.blog
+[2026-06-14 15:44:15] [5/5] blog · blog/marbella-yacht-charter-pride-celebration
+[2026-06-14 15:44:42]   ✓ saved content/blog_marbella-yacht-charter-pride-celebration.json
+[2026-06-14 15:44:42]   ✓ added to keyword_map.blog
+[2026-06-14 15:44:42] queue: 32 remaining, 229 consumed total
+[2026-06-14 15:44:42] running deploy.sh …

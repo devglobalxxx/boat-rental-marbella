@@ -36,6 +36,24 @@ SPOKE_CLUSTERS = [
     {"en": "/yacht-charter-marbella/", "es": "/es/alquiler-de-yates-marbella/", "de": "/de/yachtcharter-marbella/"},
     {"en": "/boat-rental-puerto-banus/", "es": "/es/alquiler-barcos-puerto-banus/", "de": "/de/bootsverleih-puerto-banus/"},
     {"en": "/boat-rental-no-license-marbella/", "es": "/es/alquiler-barcos-sin-licencia-marbella/", "de": "/de/bootsverleih-ohne-fuehrerschein-marbella/"},
+    # DE expansion (P0): EN ↔ DE pairs for the German commercial + guide build-out
+    {"en": "/catamaran-rental-marbella/", "de": "/de/katamaran-mieten-marbella/"},
+    {"en": "/fishing-boat-rental-marbella/", "de": "/de/angelboot-mieten-marbella/"},
+    {"en": "/sunset-cruise-marbella/", "de": "/de/sonnenuntergang-bootstour-marbella/"},
+    {"en": "/boat-party-marbella/", "de": "/de/bootsparty-marbella/"},
+    {"en": "/luxury-yacht-rental-marbella/", "de": "/de/luxusyacht-mieten-marbella/"},
+    {"en": "/jet-ski-rental-marbella/", "de": "/de/jetski-mieten-marbella/"},
+    {"en": "/private-boat-charter-marbella/", "de": "/de/privat-bootscharter-marbella/"},
+    {"en": "/speedboat-rental-marbella/", "de": "/de/speedboot-mieten-marbella/"},
+    {"en": "/sailboat-rental-marbella/", "de": "/de/segelboot-mieten-marbella/"},
+    {"en": "/motor-yacht-rental-marbella/", "de": "/de/motoryacht-mieten-marbella/"},
+    {"en": "/yacht-charter-puerto-banus/", "de": "/de/yachtcharter-puerto-banus/"},
+    {"en": "/family-yacht-charter-marbella/", "de": "/de/familien-yachtcharter-marbella/"},
+    {"en": "/superyacht-charter-marbella/", "de": "/de/superyacht-charter-marbella/"},
+    {"en": "/day-charter-marbella/", "de": "/de/tagescharter-marbella/"},
+    {"en": "/blog/how-much-does-it-cost-to-rent-a-boat-in-marbella/", "de": "/de/blog/was-kostet-bootsverleih-marbella/"},
+    {"en": "/blog/best-month-to-rent-a-boat-in-marbella/", "de": "/de/blog/beste-reisezeit-boot-marbella/"},
+    {"en": "/blog/boat-license-rules-spain/", "de": "/de/blog/bootsfuehrerschein-spanien/"},
 ]
 
 HREFLANG_RE = re.compile(r'<link rel="alternate" hreflang="[^"]*" href="[^"]*">\s*')

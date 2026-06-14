@@ -4,45 +4,6 @@
   "queue": [
     {
       "kind": "blog",
-      "slug": "blog/dubhe-vs-mariah-sx21-marbella",
-      "primary_keyword": "dubhe vs mariah sx21",
-      "title": "Dubhe vs Mariah SX21: Cheapest Boat Hire in Puerto Banús",
-      "target_words": 1300,
-      "fleet_focus": [
-        "dubhe",
-        "mariah-sx21"
-      ]
-    },
-    {
-      "kind": "blog",
-      "slug": "blog/puerto-banus-yacht-rental-winter-season",
-      "primary_keyword": "puerto banus yacht rental winter",
-      "title": "Puerto Banus Yacht Rental in Winter: Why Off-Season Works",
-      "target_words": 1100
-    },
-    {
-      "kind": "blog",
-      "slug": "blog/estepona-boat-charter-departure-guide",
-      "primary_keyword": "estepona boat charter departure",
-      "title": "Estepona Boat Charter Departure: What to Know Before You Go",
-      "target_words": 1150
-    },
-    {
-      "kind": "blog",
-      "slug": "blog/sotogrande-yacht-charter-polo-season",
-      "primary_keyword": "sotogrande yacht charter polo season",
-      "title": "Sotogrande Yacht Charter During Polo Season: A Luxury Combo",
-      "target_words": 1100
-    },
-    {
-      "kind": "blog",
-      "slug": "blog/cabopino-boat-rental-family-day",
-      "primary_keyword": "cabopino boat rental family",
-      "title": "Cabopino Boat Rental for Families: Calm Waters and Easy Access",
-      "target_words": 1100
-    },
-    {
-      "kind": "blog",
       "slug": "blog/marbella-yacht-charter-f1-grand-prix",
       "primary_keyword": "marbella yacht charter f1 grand prix",
       "title": "Marbella Yacht Charter for the F1 Grand Prix: Race Weekend at Sea",
@@ -298,34 +259,6 @@
       "slug": "blog/marbella-yacht-charter-dietary-restrictions-catering",
       "primary_keyword": "dietary restrictions yacht catering Marbella",
       "title": "Dietary Restrictions on Yacht Catering in Marbella: What You Need to Know",
-      "target_words": 1100
-    },
-    {
-      "kind": "spoke",
-      "slug": "marbella-yacht-charter-license-requirements",
-      "primary_keyword": "Marbella yacht charter license requirements",
-      "title": "Marbella Yacht Charter License Requirements: Do You Need One?",
-      "target_words": 1100
-    },
-    {
-      "kind": "spoke",
-      "slug": "marbella-boat-rental-group-size-limits",
-      "primary_keyword": "Marbella boat rental group size limits",
-      "title": "Marbella Boat Rental Group Size Limits: What Fits Your Party",
-      "target_words": 1100
-    },
-    {
-      "kind": "spoke",
-      "slug": "marbella-yacht-charter-cancellation-policy",
-      "primary_keyword": "Marbella yacht charter cancellation policy",
-      "title": "Marbella Yacht Charter Cancellation Policy: What You Should Know",
-      "target_words": 1100
-    },
-    {
-      "kind": "spoke",
-      "slug": "marbella-yacht-charter-payment-methods",
-      "primary_keyword": "Marbella yacht charter payment methods",
-      "title": "Marbella Yacht Charter Payment Methods: Cards, Cash, and Deposits",
       "target_words": 1100
     }
   ],
@@ -2193,6 +2126,82 @@
       "title": "Marbella Booze Cruise for Hen Parties: Fun on the Sea",
       "target_words": 1100,
       "consumed_at": "2026-06-13"
+    },
+    {
+      "kind": "blog",
+      "slug": "blog/dubhe-vs-mariah-sx21-marbella",
+      "primary_keyword": "dubhe vs mariah sx21",
+      "title": "Dubhe vs Mariah SX21: Cheapest Boat Hire in Puerto Banús",
+      "target_words": 1300,
+      "fleet_focus": [
+        "dubhe",
+        "mariah-sx21"
+      ],
+      "consumed_at": "2026-06-14"
+    },
+    {
+      "kind": "blog",
+      "slug": "blog/puerto-banus-yacht-rental-winter-season",
+      "primary_keyword": "puerto banus yacht rental winter",
+      "title": "Puerto Banus Yacht Rental in Winter: Why Off-Season Works",
+      "target_words": 1100,
+      "consumed_at": "2026-06-14"
+    },
+    {
+      "kind": "blog",
+      "slug": "blog/estepona-boat-charter-departure-guide",
+      "primary_keyword": "estepona boat charter departure",
+      "title": "Estepona Boat Charter Departure: What to Know Before You Go",
+      "target_words": 1150,
+      "consumed_at": "2026-06-14"
+    },
+    {
+      "kind": "blog",
+      "slug": "blog/sotogrande-yacht-charter-polo-season",
+      "primary_keyword": "sotogrande yacht charter polo season",
+      "title": "Sotogrande Yacht Charter During Polo Season: A Luxury Combo",
+      "target_words": 1100,
+      "consumed_at": "2026-06-14"
+    },
+    {
+      "kind": "blog",
+      "slug": "blog/cabopino-boat-rental-family-day",
+      "primary_keyword": "cabopino boat rental family",
+      "title": "Cabopino Boat Rental for Families: Calm Waters and Easy Access",
+      "target_words": 1100,
+      "consumed_at": "2026-06-14"
+    },
+    {
+      "kind": "spoke",
+      "slug": "marbella-yacht-charter-license-requirements",
+      "primary_keyword": "Marbella yacht charter license requirements",
+      "title": "Marbella Yacht Charter License Requirements: Do You Need One?",
+      "target_words": 1100,
+      "consumed_at": "2026-06-14"
+    },
+    {
+      "kind": "spoke",
+      "slug": "marbella-boat-rental-group-size-limits",
+      "primary_keyword": "Marbella boat rental group size limits",
+      "title": "Marbella Boat Rental Group Size Limits: What Fits Your Party",
+      "target_words": 1100,
+      "consumed_at": "2026-06-14"
+    },
+    {
+      "kind": "spoke",
+      "slug": "marbella-yacht-charter-cancellation-policy",
+      "primary_keyword": "Marbella yacht charter cancellation policy",
+      "title": "Marbella Yacht Charter Cancellation Policy: What You Should Know",
+      "target_words": 1100,
+      "consumed_at": "2026-06-14"
+    },
+    {
+      "kind": "spoke",
+      "slug": "marbella-yacht-charter-payment-methods",
+      "primary_keyword": "Marbella yacht charter payment methods",
+      "title": "Marbella Yacht Charter Payment Methods: Cards, Cash, and Deposits",
+      "target_words": 1100,
+      "consumed_at": "2026-06-14"
     }
   ],
   "refill_threshold": 30,

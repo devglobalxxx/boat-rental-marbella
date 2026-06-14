@@ -486,3 +486,33 @@ hint: See the 'Note about fast-forwards' in 'git push --help' for details.
 [2026-06-13 10:02:41] deploy.sh OK
 [2026-06-13 10:02:41] === Done: 5 succeeded, 0 failed ===
 
+[2026-06-14 10:00:01] === Daily content run (kind-balanced): 5 blog + 4 landing = 9 item(s) ===
+[2026-06-14 10:00:01] [1/9] blog · blog/dubhe-vs-mariah-sx21-marbella
+[2026-06-14 10:00:26]   ✓ saved content/blog_dubhe-vs-mariah-sx21-marbella.json
+[2026-06-14 10:00:26]   ✓ added to keyword_map.blog
+[2026-06-14 10:00:26] [2/9] blog · blog/puerto-banus-yacht-rental-winter-season
+[2026-06-14 10:00:59]   ✓ saved content/blog_puerto-banus-yacht-rental-winter-season.json
+[2026-06-14 10:00:59]   ✓ added to keyword_map.blog
+[2026-06-14 10:00:59] [3/9] blog · blog/estepona-boat-charter-departure-guide
+[2026-06-14 10:01:28]   ✓ saved content/blog_estepona-boat-charter-departure-guide.json
+[2026-06-14 10:01:28]   ✓ added to keyword_map.blog
+[2026-06-14 10:01:28] [4/9] blog · blog/sotogrande-yacht-charter-polo-season
+[2026-06-14 10:02:02]   ✓ saved content/blog_sotogrande-yacht-charter-polo-season.json
+[2026-06-14 10:02:02]   ✓ added to keyword_map.blog
+[2026-06-14 10:02:02] [5/9] blog · blog/cabopino-boat-rental-family-day
+[2026-06-14 10:02:37]   ✓ saved content/blog_cabopino-boat-rental-family-day.json
+[2026-06-14 10:02:37]   ✓ added to keyword_map.blog
+[2026-06-14 10:02:37] [6/9] spoke · marbella-yacht-charter-license-requirements
+[2026-06-14 10:03:05]   ✓ saved content/marbella-yacht-charter-license-requirements.json
+[2026-06-14 10:03:05]   ✓ added to keyword_map.spokes
+[2026-06-14 10:03:05] [7/9] spoke · marbella-boat-rental-group-size-limits
+[2026-06-14 10:03:36]   ✓ saved content/marbella-boat-rental-group-size-limits.json
+[2026-06-14 10:03:36]   ✓ added to keyword_map.spokes
+[2026-06-14 10:03:36] [8/9] spoke · marbella-yacht-charter-cancellation-policy
+[2026-06-14 10:04:02]   ✓ saved content/marbella-yacht-charter-cancellation-policy.json
+[2026-06-14 10:04:02]   ✓ added to keyword_map.spokes
+[2026-06-14 10:04:02] [9/9] spoke · marbella-yacht-charter-payment-methods
+[2026-06-14 10:04:24]   ✓ saved content/marbella-yacht-charter-payment-methods.json
+[2026-06-14 10:04:24]   ✓ added to keyword_map.spokes
+[2026-06-14 10:04:24] queue: 37 remaining, 224 consumed total
+[2026-06-14 10:04:24] running deploy.sh …

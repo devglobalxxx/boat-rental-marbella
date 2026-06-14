@@ -1463,3 +1463,26 @@ hint: See the 'Note about fast-forwards' in 'git push --help' for details.
 [2026-06-14 15:44:42]   ✓ added to keyword_map.blog
 [2026-06-14 15:44:42] queue: 32 remaining, 229 consumed total
 [2026-06-14 15:44:42] running deploy.sh …
+[2026-06-14 15:45:01] deploy.sh OK
+[2026-06-14 15:45:01] === Done: 5 succeeded, 0 failed ===
+
+[2026-06-14 18:30:11] === Daily content run (kind-balanced): 5 blog + 0 landing = 5 item(s) ===
+[2026-06-14 18:30:11] [1/5] blog · blog/marbella-boat-rental-dolphin-watching-season
+[2026-06-14 18:30:43]   ✓ saved content/blog_marbella-boat-rental-dolphin-watching-season.json
+[2026-06-14 18:30:43]   ✓ added to keyword_map.blog
+[2026-06-14 18:30:43] [2/5] blog · blog/marbella-sunset-cruise-romantic-dinner
+[2026-06-14 18:31:12]   ✓ saved content/blog_marbella-sunset-cruise-romantic-dinner.json
+[2026-06-14 18:31:12]   ✓ added to keyword_map.blog
+[2026-06-14 18:31:12] [3/5] blog · blog/marbella-snorkeling-tour-by-boat
+[2026-06-14 18:31:44]   ✓ saved content/blog_marbella-snorkeling-tour-by-boat.json
+[2026-06-14 18:31:44]   ✓ added to keyword_map.blog
+[2026-06-14 18:31:44] [4/5] blog · blog/marbella-fishing-charter-cost
+[2026-06-14 18:32:14]   ✓ saved content/blog_marbella-fishing-charter-cost.json
+[2026-06-14 18:32:14]   ✓ added to keyword_map.blog
+[2026-06-14 18:32:14] [5/5] blog · blog/marbella-jet-ski-rental-with-boat-charter
+[2026-06-14 18:32:48]   ✓ saved content/blog_marbella-jet-ski-rental-with-boat-charter.json
+[2026-06-14 18:32:48]   ✓ added to keyword_map.blog
+[2026-06-14 18:32:48] queue: 27 remaining, 234 consumed total
+[2026-06-14 18:32:48] queue under threshold (27 < 30) — auto-refilling…
+[2026-06-14 18:33:06] refill: +25 topics (queue now 52)
+[2026-06-14 18:33:06] running deploy.sh …

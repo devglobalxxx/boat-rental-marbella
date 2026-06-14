@@ -1811,6 +1811,41 @@
       "title": "Marbella Yacht Charter for Pride: Celebrate on the Water",
       "intent": "informational",
       "target_words": 1100
+    },
+    {
+      "slug": "blog/marbella-boat-rental-dolphin-watching-season",
+      "primary_keyword": "marbella boat rental dolphin watching season",
+      "title": "Marbella Boat Rental for Dolphin Watching: Best Times and Spots",
+      "intent": "informational",
+      "target_words": 1150
+    },
+    {
+      "slug": "blog/marbella-sunset-cruise-romantic-dinner",
+      "primary_keyword": "marbella sunset cruise romantic dinner",
+      "title": "Marbella Sunset Cruise with Romantic Dinner: A Perfect Evening",
+      "intent": "informational",
+      "target_words": 1100
+    },
+    {
+      "slug": "blog/marbella-snorkeling-tour-by-boat",
+      "primary_keyword": "marbella snorkeling tour by boat",
+      "title": "Marbella Snorkeling Tour by Boat: Best Coves and Gear Tips",
+      "intent": "informational",
+      "target_words": 1100
+    },
+    {
+      "slug": "blog/marbella-fishing-charter-cost",
+      "primary_keyword": "marbella fishing charter cost",
+      "title": "Marbella Fishing Charter Cost: What to Expect for a Day Out",
+      "intent": "informational",
+      "target_words": 1100
+    },
+    {
+      "slug": "blog/marbella-jet-ski-rental-with-boat-charter",
+      "primary_keyword": "marbella jet ski rental with boat charter",
+      "title": "Marbella Jet Ski Rental with Boat Charter: Combo Packages",
+      "intent": "informational",
+      "target_words": 1100
     }
   ]
 }

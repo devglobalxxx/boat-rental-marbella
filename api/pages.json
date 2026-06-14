@@ -1,7 +1,7 @@
 {
   "@context": "https://boatrentalinmarbella.com/api/pages.json",
   "source": "https://boatrentalinmarbella.com",
-  "count": 297,
+  "count": 306,
   "kinds": [
     "blog",
     "boat",
@@ -230,6 +230,14 @@
       "excerpt": "You can rent a small boat in Spain — including Marbella — with no licence at all, as long as you stay within a clearly-defined set of limits. For anything bigger, Spain operates a tiered licence system (PNB → PER → PY → CY) that's mirrored across the Mediterranean. This page cove"
     },
     {
+      "url": "https://boatrentalinmarbella.com/blog/cabopino-boat-rental-family-day/",
+      "title": "Cabopino Boat Rental for Families: Calm Waters and Easy Access",
+      "description": "Discover Cabopino boat rental for family days on Costa del Sol. Calm coves, kid-friendly mangroves &amp; easy access from Marbella. Book your family charter today.",
+      "kind": "blog",
+      "locale": "en",
+      "excerpt": "If you are searching for a cabopino boat rental family day that combines calm waters, easy access, and genuine relaxation, you have found the right guide. Cabopino — the sandy cove just east of Marbella — is a hidden gem for parents who want their children to swim safely without "
+    },
+    {
       "url": "https://boatrentalinmarbella.com/blog/cabopino-charter-departures/",
       "title": "Charter Departures from Cabopino vs Puerto Banús",
       "description": "Compare Cabopino and Puerto Banús charter departures in Marbella. Find the best base for your boat trip with prices from €749/2h. Book your charter today.",
@@ -334,12 +342,28 @@
       "excerpt": "If you are looking for a small, simple, and licence-free boat in Marbella, the Dubhe is worth a close look. At 8 metres long and carrying a maximum of 5 passengers, it is the most compact and accessible vessel in our fleet at Boat Rental Marbella . This honest review covers what "
     },
     {
+      "url": "https://boatrentalinmarbella.com/blog/dubhe-vs-mariah-sx21-marbella/",
+      "title": "Dubhe vs Mariah SX21: Cheapest Boat Hire in Puerto Banús",
+      "description": "Dubhe vs Mariah SX21: which is the cheapest boat hire in Puerto Banús? Compare 5-pax, 8m vs 6.4m boats at €749/2h. Book your budget charter today.",
+      "kind": "blog",
+      "locale": "en",
+      "excerpt": "Looking for the cheapest boat hire in Puerto Banús? The Dubhe and Mariah SX21 are our two most affordable options, both starting at €749 for 2 hours. This guide compares the 8m Dubhe against the 6.4m Mariah SX21 — two very different boats at the same price. Whether you're a coupl"
+    },
+    {
       "url": "https://boatrentalinmarbella.com/blog/epiphany-three-kings-marbella-boat/",
       "title": "Epiphany / Three Kings Parade Marbella: Family Boat Day Around the Holiday",
       "description": "Watch the Three Kings Parade Marbella from the water with a private yacht charter. Family-friendly boats, skipper included, from €749/2h. Book now.",
       "kind": "blog",
       "locale": "en",
       "excerpt": "The Three Kings Parade (Cabalgata de Reyes) on 5 January is one of Marbella’s most cherished family traditions. While thousands line the Golden Mile, a private yacht charter from Puerto Banús offers a front-row seat on the water — with no crowds, unlimited drinks, and the freedom"
+    },
+    {
+      "url": "https://boatrentalinmarbella.com/blog/estepona-boat-charter-departure-guide/",
+      "title": "Estepona Boat Charter Departure: What to Know Before You Go",
+      "description": "Plan your Estepona boat charter departure with our guide. Learn about marinas, distances, what to bring, and how to book from Puerto Banús. Start your trip.",
+      "kind": "blog",
+      "locale": "en",
+      "excerpt": "Planning an Estepona boat charter departure from Puerto Banús is straightforward, but a few details can make your day smoother. This guide covers marinas, distances, what to bring, and how to book — so you can focus on enjoying the Mediterranean. Explore our full fleet of boats i"
     },
     {
       "url": "https://boatrentalinmarbella.com/blog/estepona-day-from-marbella/",
@@ -1174,6 +1198,14 @@
       "excerpt": "The advertised price for a Puerto Banús yacht charter and the figure you actually pay at the pontoon are often two different numbers, and the gap is usually called a fuel surcharge . In 2026, with marine diesel hovering around €1.55-€1.85 per litre on the Costa del Sol, that surc"
     },
     {
+      "url": "https://boatrentalinmarbella.com/blog/puerto-banus-yacht-rental-winter-season/",
+      "title": "Puerto Banus Yacht Rental in Winter: Why Off-Season Works",
+      "description": "Discover why winter is the smart season for Puerto Banus yacht rental. Enjoy calm seas, lower rates, and guaranteed berths. Book your off-peak charter today.",
+      "kind": "blog",
+      "locale": "en",
+      "excerpt": "Most visitors assume Puerto Banus yacht rental is a summer-only affair. The reality is different: winter offers calm seas, empty anchorages, and a more relaxed pace. With daytime temperatures hovering around 15–20°C and the Mediterranean often glassy, off-season charters deliver "
+    },
+    {
       "url": "https://boatrentalinmarbella.com/blog/real-madrid-final-marbella-yacht/",
       "title": "Champions League Final in Marbella by Yacht: Big-Screen Beach Club + Pre-Match Cruise",
       "description": "Watch the Real Madrid final from a yacht in Marbella. Big-screen beach club, pre-match cruise from Puerto Banús. €749/2h includes skipper, drinks, snacks.",
@@ -1284,6 +1316,14 @@
       "kind": "blog",
       "locale": "en",
       "excerpt": "The route from Sotogrande to Marbella by boat is one of the most scenic coastal trips on the Costa del Sol. Covering 18 nautical miles (33 km) of Mediterranean coastline, it takes just 35–50 minutes between the two marinas. Whether you're heading to Sotogrande for polo, golf, or "
+    },
+    {
+      "url": "https://boatrentalinmarbella.com/blog/sotogrande-yacht-charter-polo-season/",
+      "title": "Sotogrande Yacht Charter During Polo Season: A Luxury Combo",
+      "description": "Book a sotogrande yacht charter during polo season for the ultimate luxury combo. Depart Puerto Banús on a Mangusta 80 from €4,719 with jet ski included.",
+      "kind": "blog",
+      "locale": "en",
+      "excerpt": "Combine the adrenaline of top-tier polo with the calm of a Mediterranean cruise: a sotogrande yacht charter during polo season is the ultimate luxury combo for Marbella visitors. Depart from Puerto Banús on a Mangusta 80, Azimut 58, or another premium vessel, and within 45 minute"
     },
     {
       "url": "https://boatrentalinmarbella.com/blog/spanish-f1-grand-prix-marbella-yacht/",
@@ -2238,6 +2278,38 @@
       "excerpt": "Luxury yacht rental in Marbella means stepping onto an 18-to-30-metre crewed yacht at Puerto Banús, being greeted by a stewardess with a chilled glass, and handing the day over to a professional crew while you and your guests do nothing but enjoy it. Day charters start at €2,400 "
     },
     {
+      "url": "https://boatrentalinmarbella.com/marbella-boat-rental-group-size-limits/",
+      "title": "Marbella Boat Rental Group Size Limits: What Fits Your Party",
+      "description": "Discover Marbella boat rental group size limits for your party. From 5 to 12 guests, find your perfect vessel departing Puerto Banús. Book now.",
+      "kind": "spoke",
+      "locale": "en",
+      "excerpt": "Choosing the right boat for your Marbella getaway starts with one simple question: how many people are in your party? Our fleet at Boat Rental Marbella ranges from intimate 5-person speedboats to spacious 12-guest luxury yachts, all departing from Puerto Banús. Understanding Marb"
+    },
+    {
+      "url": "https://boatrentalinmarbella.com/marbella-yacht-charter-cancellation-policy/",
+      "title": "Marbella Yacht Charter Cancellation Policy: What You Should Know",
+      "description": "Learn the Marbella yacht charter cancellation policy: refund terms, weather clauses, and deposit rules. Book with confidence for your Puerto Banús trip.",
+      "kind": "spoke",
+      "locale": "en",
+      "excerpt": "Booking a Marbella yacht charter cancellation policy is straightforward, but knowing the rules can save you money and stress. Whether you're planning a sunset cruise on an Astondoa 40 or a full-day adventure on a Mangusta 80, our cancellation terms protect both parties. This guid"
+    },
+    {
+      "url": "https://boatrentalinmarbella.com/marbella-yacht-charter-license-requirements/",
+      "title": "Marbella Yacht Charter License Requirements: Do You Need One?",
+      "description": "Do you need a licence to charter a yacht in Marbella? Find out the Marbella yacht charter license requirements, plus boat specs, prices, and inclusions.",
+      "kind": "spoke",
+      "locale": "en",
+      "excerpt": "Planning a yacht charter in Marbella and wondering about the Marbella yacht charter license requirements ? You don't need one. All our charters include a fully licensed skipper who takes care of everything—navigation, mooring, safety, and even the drinks. You just show up, relax,"
+    },
+    {
+      "url": "https://boatrentalinmarbella.com/marbella-yacht-charter-payment-methods/",
+      "title": "Marbella Yacht Charter Payment Methods: Cards, Cash, and Deposits",
+      "description": "Learn the Marbella yacht charter payment methods we accept: credit/debit cards, bank transfer, and cash deposit. Clear terms, no hidden fees.",
+      "kind": "spoke",
+      "locale": "en",
+      "excerpt": "When booking a Marbella yacht charter , knowing how and when to pay is just as important as choosing the right boat. We keep things straightforward: no hidden fees, no surprises. Whether you prefer card, bank transfer, or cash, here is exactly how our payment process works."
+    },
+    {
       "url": "https://boatrentalinmarbella.com/motor-yacht-rental-marbella/",
       "title": "Motor Yacht Rental Marbella 2026: From €749 on Our 18-Boat Fleet",
       "description": "Motor yacht rental Marbella 2026 from €749/2h. 18-boat fleet in Puerto Banús. Skipper, fuel, drinks &amp; snacks included. Book your yacht today.",
@@ -2320,7 +2392,7 @@
     {
       "url": "https://boatrentalinmarbella.com/site-map/",
       "title": "Site Map — every page on Boat Rental Marbella",
-      "description": "Full directory of all 295 pages on Boat Rental Marbella — charter types, fleet, experiences, guides, languages and policies.",
+      "description": "Full directory of all 304 pages on Boat Rental Marbella — charter types, fleet, experiences, guides, languages and policies.",
       "kind": "spoke",
       "locale": "en",
       "excerpt": "Every page on Boat Rental Marbella, grouped by section. Looking for something specific? Message us on WhatsApp and ask."

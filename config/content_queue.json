@@ -4,41 +4,6 @@
   "queue": [
     {
       "kind": "blog",
-      "slug": "blog/marbella-hen-party-yacht-activities",
-      "primary_keyword": "Marbella hen party yacht activities",
-      "title": "Top Hen Party Yacht Activities in Marbella for 2026",
-      "target_words": 1100
-    },
-    {
-      "kind": "blog",
-      "slug": "blog/mangusta-80-vs-sunseeker-predator-74-marbella",
-      "primary_keyword": "Mangusta 80 vs Sunseeker Predator 74 Marbella",
-      "title": "Mangusta 80 vs Sunseeker Predator 74: Which Superyacht Wins in Marbella?",
-      "target_words": 1400
-    },
-    {
-      "kind": "blog",
-      "slug": "blog/azimut-39-vs-fairline-targa-12m-marbella-comparison",
-      "primary_keyword": "Azimut 39 vs Fairline Targa 12M Marbella",
-      "title": "Azimut 39 vs Fairline Targa 12M: Marbella Boat Showdown",
-      "target_words": 1300
-    },
-    {
-      "kind": "blog",
-      "slug": "blog/marbella-snorkeling-spots-by-boat",
-      "primary_keyword": "best snorkeling spots Marbella by boat",
-      "title": "5 Best Snorkeling Spots in Marbella Accessible Only by Boat",
-      "target_words": 1200
-    },
-    {
-      "kind": "blog",
-      "slug": "blog/marbella-dolphin-watching-best-time-of-day",
-      "primary_keyword": "best time for dolphin watching Marbella",
-      "title": "Best Time of Day for Dolphin Watching in Marbella",
-      "target_words": 1100
-    },
-    {
-      "kind": "blog",
       "slug": "blog/marbella-fishing-charter-tuna-season",
       "primary_keyword": "Marbella tuna fishing season charter",
       "title": "Marbella Tuna Fishing Season: When to Book Your Charter",
@@ -2399,6 +2364,46 @@
       "primary_keyword": "Puerto Banus stag weekend yacht rental",
       "title": "Puerto Banus Stag Weekend: Ultimate Yacht Rental Guide",
       "target_words": 1300,
+      "consumed_at": "2026-06-15"
+    },
+    {
+      "kind": "blog",
+      "slug": "blog/marbella-hen-party-yacht-activities",
+      "primary_keyword": "Marbella hen party yacht activities",
+      "title": "Top Hen Party Yacht Activities in Marbella for 2026",
+      "target_words": 1100,
+      "consumed_at": "2026-06-15"
+    },
+    {
+      "kind": "blog",
+      "slug": "blog/mangusta-80-vs-sunseeker-predator-74-marbella",
+      "primary_keyword": "Mangusta 80 vs Sunseeker Predator 74 Marbella",
+      "title": "Mangusta 80 vs Sunseeker Predator 74: Which Superyacht Wins in Marbella?",
+      "target_words": 1400,
+      "consumed_at": "2026-06-15"
+    },
+    {
+      "kind": "blog",
+      "slug": "blog/azimut-39-vs-fairline-targa-12m-marbella-comparison",
+      "primary_keyword": "Azimut 39 vs Fairline Targa 12M Marbella",
+      "title": "Azimut 39 vs Fairline Targa 12M: Marbella Boat Showdown",
+      "target_words": 1300,
+      "consumed_at": "2026-06-15"
+    },
+    {
+      "kind": "blog",
+      "slug": "blog/marbella-snorkeling-spots-by-boat",
+      "primary_keyword": "best snorkeling spots Marbella by boat",
+      "title": "5 Best Snorkeling Spots in Marbella Accessible Only by Boat",
+      "target_words": 1200,
+      "consumed_at": "2026-06-15"
+    },
+    {
+      "kind": "blog",
+      "slug": "blog/marbella-dolphin-watching-best-time-of-day",
+      "primary_keyword": "best time for dolphin watching Marbella",
+      "title": "Best Time of Day for Dolphin Watching in Marbella",
+      "target_words": 1100,
       "consumed_at": "2026-06-15"
     }
   ],

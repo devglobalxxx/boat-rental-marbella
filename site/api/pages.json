@@ -1,7 +1,7 @@
 {
   "@context": "https://boatrentalinmarbella.com/api/pages.json",
   "source": "https://boatrentalinmarbella.com",
-  "count": 333,
+  "count": 341,
   "kinds": [
     "blog",
     "boat",
@@ -36,6 +36,22 @@
       "kind": "spoke",
       "locale": "en",
       "excerpt": ""
+    },
+    {
+      "url": "https://boatrentalinmarbella.com/astondoa-40-vs-pershing-46-marbella-comparison/",
+      "title": "Astondoa 40 vs Pershing 46: Which Yacht Suits Your Marbella Charter?",
+      "description": "Compare Astondoa 40 vs Pershing 46 for your Marbella charter. See specs, capacity, pricing, and which suits your group. Book now.",
+      "kind": "spoke",
+      "locale": "en",
+      "excerpt": "Choosing between the Astondoa 40 and Pershing 46 for your Marbella charter? Both depart from Puerto Banús and offer premium experiences, but they suit different budgets and group sizes. This comparison breaks down the key differences in size, capacity, pricing, and inclusions to "
+    },
+    {
+      "url": "https://boatrentalinmarbella.com/azimut-58-vs-sunseeker-predator-74-marbella/",
+      "title": "Azimut 58 vs Sunseeker Predator 74: Marbella Yacht Showdown",
+      "description": "Azimut 58 vs Sunseeker Predator 74 Marbella: compare size, speed, price &amp; luxury. Which yacht suits your charter? Book your day from Puerto Banús.",
+      "kind": "spoke",
+      "locale": "en",
+      "excerpt": "Choosing between the Azimut 58 Flybridge and the Sunseeker Predator 74 for your Marbella yacht charter? Both are luxury powerboats, but they cater to different tastes. The Azimut 58 (17.6m, 12 pax) is a flybridge cruiser perfect for lounging and socialising, while the Predator 74"
     },
     {
       "url": "https://boatrentalinmarbella.com/blog/andalusia-day-yacht/",
@@ -670,6 +686,14 @@
       "excerpt": "The Marbella Art Fair 2026 returns to the Marbella Exhibition Centre from 3–7 June , bringing together galleries, collectors, and contemporary art from across Europe. For visitors who want to elevate the experience, combining the fair with a yacht charter from Puerto Banús offers"
     },
     {
+      "url": "https://boatrentalinmarbella.com/blog/marbella-boat-charter-group-size-limits/",
+      "title": "Marbella Boat Charter Group Size Limits: Capacity Rules Explained",
+      "description": "Discover Marbella boat charter group size limits: capacity rules for 5–12 passengers. Find your perfect yacht at Puerto Banús. Book now.",
+      "kind": "blog",
+      "locale": "en",
+      "excerpt": "Planning a Marbella boat charter with friends or family? One of the first things to check is your group size . Every boat has a strict maximum passenger capacity, set by Spanish maritime law and the vessel's licence. Exceeding it isn't just inconvenient – it's illegal and unsafe."
+    },
+    {
       "url": "https://boatrentalinmarbella.com/blog/marbella-boat-charter-skipper-tipping-guide/",
       "title": "Marbella Skipper &amp; Captain Tipping Etiquette Guide",
       "description": "Learn marbella skipper tipping etiquette for your boat charter. Our guide covers how much to tip (€50-€200), when, and who to tip. Plan your day now.",
@@ -684,6 +708,14 @@
       "kind": "blog",
       "locale": "en",
       "excerpt": "Marbella's coastline is a natural highway for dolphins, and a private boat rental from Puerto Banús is the best way to see them up close. The marbella boat rental dolphin watching season runs from April to October, with peak sightings in the warm summer months. Whether you choose"
+    },
+    {
+      "url": "https://boatrentalinmarbella.com/blog/marbella-boat-rental-what-to-bring/",
+      "title": "Marbella Boat Rental: What to Bring for a Perfect Day at Sea",
+      "description": "Plan your marbella boat rental with our essential packing list. From sun protection to snacks, discover what to bring for a perfect day at sea in Marbella.",
+      "kind": "blog",
+      "locale": "en",
+      "excerpt": "A marbella boat rental promises a day of sun, sea, and stunning coastline – but what you pack can make or break the experience. Whether you're heading out on a Mangusta 80 or a cosy Speedboat , being prepared means more time relaxing and less time worrying. Here's your no-fluff p"
     },
     {
       "url": "https://boatrentalinmarbella.com/blog/marbella-easter-week-yacht-availability/",
@@ -966,6 +998,14 @@
       "excerpt": "Booking a yacht in Marbella should not feel like signing a mortgage. Our deposit rules are deliberately simple: 30% to confirm the date, 70% seven days before departure, and a full refund if the captain calls it off for weather . Everything below explains the small print in plain"
     },
     {
+      "url": "https://boatrentalinmarbella.com/blog/marbella-yacht-charter-dietary-restrictions/",
+      "title": "Marbella Yacht Charter Dietary Restrictions: Catering for All Needs",
+      "description": "Plan your Marbella yacht charter with confidence. We cater for dietary restrictions including gluten-free, vegan, halal, and allergies. Confirm needs 48h prior.",
+      "kind": "blog",
+      "locale": "en",
+      "excerpt": "When booking a Marbella yacht charter dietary restrictions are straightforward to manage on our fleet. Whether you need gluten-free snacks, vegan meals, halal provisions, or allergy-safe options, we can accommodate most needs with 48 hours' notice. All our charters include a lice"
+    },
+    {
       "url": "https://boatrentalinmarbella.com/blog/marbella-yacht-charter-f1-grand-prix/",
       "title": "Marbella Yacht Charter for the F1 Grand Prix: Race Weekend at Sea",
       "description": "Book a Marbella yacht charter for the F1 Grand Prix weekend. Watch the race from the sea, anchor near Puerto Banús, and enjoy VIP views from €749. Check availability now.",
@@ -1038,6 +1078,14 @@
       "excerpt": "When you're ready to book a Marbella yacht charter , knowing the payment methods and terms upfront makes the process smooth and stress-free. We keep it simple: a clear deposit structure, secure payment options, and transparent pricing with no surprises. Whether you're reserving a"
     },
     {
+      "url": "https://boatrentalinmarbella.com/blog/marbella-yacht-charter-photoshoot-tips/",
+      "title": "Marbella Yacht Charter for Photoshoots: Lighting and Backdrops",
+      "description": "Plan a marbella yacht charter photoshoot in Puerto Banús with tips on golden-hour light, coastal backdrops, and our fleet of 12 boats from €749/2h.",
+      "kind": "blog",
+      "locale": "en",
+      "excerpt": "Marbella yacht charter photoshoot opportunities are abundant thanks to 300+ sunny days, a fleet of 12 well-maintained boats, and a coastline that shifts from luxury marina to wild coves in under 20 nautical miles. Whether you are shooting editorial fashion, product campaigns, or "
+    },
+    {
       "url": "https://boatrentalinmarbella.com/blog/marbella-yacht-charter-pregnant-guests/",
       "title": "Marbella Yacht Charter With Pregnant Guests: Safety Tips",
       "description": "Plan a safe Marbella yacht charter with pregnant guests. Get expert tips on seasickness, sun protection, and boat selection for a comfortable cruise from Puerto Banús.",
@@ -1108,6 +1156,14 @@
       "kind": "blog",
       "locale": "en",
       "excerpt": "When planning a yacht charter on the Costa del Sol, two destinations often come up: Marbella vs Gibraltar yacht rental . Both offer access to the Mediterranean, but the experience, costs, and logistics differ significantly. Whether you're after luxury, value, or convenience, this"
+    },
+    {
+      "url": "https://boatrentalinmarbella.com/blog/marbella-yacht-charter-weather-conditions/",
+      "title": "Marbella Yacht Charter Weather Conditions: When to Reschedule",
+      "description": "Learn about Marbella yacht charter weather conditions and when to reschedule. Get 300+ sunny days, wind limits, and skipper advice for a safe trip.",
+      "kind": "blog",
+      "locale": "en",
+      "excerpt": "Planning a Marbella yacht charter means banking on the Costa del Sol’s famous sunshine — but even here, the weather can throw a curveball. Understanding Marbella yacht charter weather conditions helps you know when to sail and when to reschedule. With 300+ sunny days a year, most"
     },
     {
       "url": "https://boatrentalinmarbella.com/blog/marbella-yacht-charter-wheelchair-accessibility/",
@@ -2494,6 +2550,14 @@
       "excerpt": "Luxury yacht rental in Marbella means stepping onto an 18-to-30-metre crewed yacht at Puerto Banús, being greeted by a stewardess with a chilled glass, and handing the day over to a professional crew while you and your guests do nothing but enjoy it. Day charters start at €2,400 "
     },
     {
+      "url": "https://boatrentalinmarbella.com/mangusta-80-vs-ferretti-94-marbella-comparison/",
+      "title": "Mangusta 80 vs Ferretti 94: Which Luxury Yacht for Marbella?",
+      "description": "Mangusta 80 vs Ferretti 94 Marbella comparison: 24m vs 29m, 12 pax each, €4,719/4h vs price on request. Which luxury yacht suits your charter?",
+      "kind": "spoke",
+      "locale": "en",
+      "excerpt": "Choosing between the Mangusta 80 and the Ferretti 94 for your Marbella yacht charter is a matter of style, space, and budget. Both vessels depart from Puerto Banús and carry up to 12 guests, but they differ significantly in size, price, and onboard experience. In this Mangusta 80"
+    },
+    {
       "url": "https://boatrentalinmarbella.com/marbella-boat-rental-group-size-limits/",
       "title": "Marbella Boat Rental Group Size Limits: What Fits Your Party",
       "description": "Discover Marbella boat rental group size limits for your party. From 5 to 12 guests, find your perfect vessel departing Puerto Banús. Book now.",
@@ -2608,7 +2672,7 @@
     {
       "url": "https://boatrentalinmarbella.com/site-map/",
       "title": "Site Map — every page on Boat Rental Marbella",
-      "description": "Full directory of all 331 pages on Boat Rental Marbella — charter types, fleet, experiences, guides, languages and policies.",
+      "description": "Full directory of all 339 pages on Boat Rental Marbella — charter types, fleet, experiences, guides, languages and policies.",
       "kind": "spoke",
       "locale": "en",
       "excerpt": "Every page on Boat Rental Marbella, grouped by section. Looking for something specific? Message us on WhatsApp and ask."

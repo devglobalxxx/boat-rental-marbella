@@ -519,3 +519,30 @@ hint: See the 'Note about fast-forwards' in 'git push --help' for details.
 [2026-06-14 10:04:42] deploy.sh OK
 [2026-06-14 10:04:42] === Done: 9 succeeded, 0 failed ===
 
+[2026-06-15 10:00:04] === Daily content run (kind-balanced): 5 blog + 3 landing = 8 item(s) ===
+[2026-06-15 10:00:04] [1/8] blog · blog/marbella-yacht-charter-photoshoot-tips
+[2026-06-15 10:00:39]   ✓ saved content/blog_marbella-yacht-charter-photoshoot-tips.json
+[2026-06-15 10:00:39]   ✓ added to keyword_map.blog
+[2026-06-15 10:00:39] [2/8] blog · blog/marbella-boat-charter-group-size-limits
+[2026-06-15 10:01:10]   ✓ saved content/blog_marbella-boat-charter-group-size-limits.json
+[2026-06-15 10:01:10]   ✓ added to keyword_map.blog
+[2026-06-15 10:01:10] [3/8] blog · blog/marbella-yacht-charter-weather-conditions
+[2026-06-15 10:01:39]   ✓ saved content/blog_marbella-yacht-charter-weather-conditions.json
+[2026-06-15 10:01:39]   ✓ added to keyword_map.blog
+[2026-06-15 10:01:39] [4/8] blog · blog/marbella-boat-rental-what-to-bring
+[2026-06-15 10:02:12]   ✓ saved content/blog_marbella-boat-rental-what-to-bring.json
+[2026-06-15 10:02:12]   ✓ added to keyword_map.blog
+[2026-06-15 10:02:12] [5/8] blog · blog/marbella-yacht-charter-dietary-restrictions
+[2026-06-15 10:02:41]   ✓ saved content/blog_marbella-yacht-charter-dietary-restrictions.json
+[2026-06-15 10:02:41]   ✓ added to keyword_map.blog
+[2026-06-15 10:02:41] [6/8] spoke · astondoa-40-vs-pershing-46-marbella-comparison
+[2026-06-15 10:03:03]   ✓ saved content/astondoa-40-vs-pershing-46-marbella-comparison.json
+[2026-06-15 10:03:03]   ✓ added to keyword_map.spokes
+[2026-06-15 10:03:03] [7/8] spoke · azimut-58-vs-sunseeker-predator-74-marbella
+[2026-06-15 10:03:28]   ✓ saved content/azimut-58-vs-sunseeker-predator-74-marbella.json
+[2026-06-15 10:03:28]   ✓ added to keyword_map.spokes
+[2026-06-15 10:03:28] [8/8] spoke · mangusta-80-vs-ferretti-94-marbella-comparison
+[2026-06-15 10:03:56]   ✓ saved content/mangusta-80-vs-ferretti-94-marbella-comparison.json
+[2026-06-15 10:03:56]   ✓ added to keyword_map.spokes
+[2026-06-15 10:03:56] queue: 44 remaining, 242 consumed total
+[2026-06-15 10:03:56] running deploy.sh …

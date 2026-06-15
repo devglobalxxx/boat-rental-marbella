@@ -1516,3 +1516,24 @@ hint: See the 'Note about fast-forwards' in 'git push --help' for details.
 [2026-06-15 10:03:56]   ✓ added to keyword_map.spokes
 [2026-06-15 10:03:56] queue: 44 remaining, 242 consumed total
 [2026-06-15 10:03:56] running deploy.sh …
+[2026-06-15 10:04:18] deploy.sh OK
+[2026-06-15 10:04:18] === Done: 8 succeeded, 0 failed ===
+
+[2026-06-15 15:42:44] === Daily content run (kind-balanced): 5 blog + 0 landing = 5 item(s) ===
+[2026-06-15 15:42:44] [1/5] blog · blog/marbella-yacht-charter-minimum-age-policy
+[2026-06-15 15:43:11]   ✓ saved content/blog_marbella-yacht-charter-minimum-age-policy.json
+[2026-06-15 15:43:12]   ✓ added to keyword_map.blog
+[2026-06-15 15:43:12] [2/5] blog · blog/astondoa-40-vs-mangusta-80-marbella
+[2026-06-15 15:43:34]   ✓ saved content/blog_astondoa-40-vs-mangusta-80-marbella.json
+[2026-06-15 15:43:34]   ✓ added to keyword_map.blog
+[2026-06-15 15:43:34] [3/5] blog · blog/azimut-39-vs-pershing-46-marbella
+[2026-06-15 15:43:56]   ✓ saved content/blog_azimut-39-vs-pershing-46-marbella.json
+[2026-06-15 15:43:56]   ✓ added to keyword_map.blog
+[2026-06-15 15:43:56] [4/5] blog · blog/marbella-yacht-charter-new-years-eve-fireworks
+[2026-06-15 15:44:29]   ✓ saved content/blog_marbella-yacht-charter-new-years-eve-fireworks.json
+[2026-06-15 15:44:29]   ✓ added to keyword_map.blog
+[2026-06-15 15:44:29] [5/5] blog · blog/puerto-banus-yacht-rental-stag-weekend-guide
+[2026-06-15 15:44:59]   ✓ saved content/blog_puerto-banus-yacht-rental-stag-weekend-guide.json
+[2026-06-15 15:44:59]   ✓ added to keyword_map.blog
+[2026-06-15 15:44:59] queue: 39 remaining, 247 consumed total
+[2026-06-15 15:44:59] running deploy.sh …

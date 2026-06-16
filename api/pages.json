@@ -1,7 +1,7 @@
 {
   "@context": "https://boatrentalinmarbella.com/api/pages.json",
   "source": "https://boatrentalinmarbella.com",
-  "count": 356,
+  "count": 366,
   "kinds": [
     "blog",
     "boat",
@@ -60,6 +60,14 @@
       "kind": "blog",
       "locale": "en",
       "excerpt": "Día de Andalucía (28 February) is one of the best-kept secrets for a yacht charter in Marbella. While the summer months bring crowds and high prices, this early-season date offers calm seas, mild 17°C weather, and significantly lighter traffic on the water. Whether you're a local"
+    },
+    {
+      "url": "https://boatrentalinmarbella.com/blog/andalusia-day-yacht-charter-marbella/",
+      "title": "Celebrate Andalusia Day on a Yacht in Marbella",
+      "description": "Celebrate Andalusia Day on a luxury yacht charter in Marbella. Explore the Costa del Sol from Puerto Banús with a skipper, drinks &amp; snacks included. Book now.",
+      "kind": "blog",
+      "locale": "en",
+      "excerpt": "Andalusia Day (28 February) is a public holiday that brings the Costa del Sol to life with regional pride, flamenco, and local festivities. What better way to celebrate than with an Andalusia Day yacht charter Marbella ? Escape the crowds and enjoy the Mediterranean from the deck"
     },
     {
       "url": "https://boatrentalinmarbella.com/blog/anniversary-yacht-charter-marbella/",
@@ -278,6 +286,14 @@
       "excerpt": "If you are searching for a cabopino boat rental family day that combines calm waters, easy access, and genuine relaxation, you have found the right guide. Cabopino — the sandy cove just east of Marbella — is a hidden gem for parents who want their children to swim safely without "
     },
     {
+      "url": "https://boatrentalinmarbella.com/blog/cabopino-boat-rental-family-snorkeling/",
+      "title": "Cabopino Family Day: Boat Rental for Snorkeling and Beaches",
+      "description": "Book a Cabopino family snorkeling boat rental from Marbella. Explore hidden coves, clear waters, and sandy beaches with skipper, drinks, and snacks included.",
+      "kind": "blog",
+      "locale": "en",
+      "excerpt": "If you’re after a Cabopino family snorkeling boat rental that combines calm coves, sandy beaches, and zero hassle, you’ve found it. Departing from Puerto Banús, our fleet takes you east to Cabopino’s protected dunes and clear Mediterranean waters in under 30 minutes. Every charte"
+    },
+    {
       "url": "https://boatrentalinmarbella.com/blog/cabopino-charter-departures/",
       "title": "Charter Departures from Cabopino vs Puerto Banús",
       "description": "Compare Cabopino and Puerto Banús charter departures in Marbella. Find the best base for your boat trip with prices from €749/2h. Book your charter today.",
@@ -404,6 +420,14 @@
       "kind": "blog",
       "locale": "en",
       "excerpt": "Planning an Estepona boat charter departure from Puerto Banús is straightforward, but a few details can make your day smoother. This guide covers marinas, distances, what to bring, and how to book — so you can focus on enjoying the Mediterranean. Explore our full fleet of boats i"
+    },
+    {
+      "url": "https://boatrentalinmarbella.com/blog/estepona-boat-charter-sunset-cruise/",
+      "title": "Estepona Sunset Cruise: Best Boat Charter Options",
+      "description": "Book an Estepona sunset cruise boat charter from Puerto Banús. Prices from €749/2h with skipper, drinks &amp; snacks included. Reserve your evening on the water.",
+      "kind": "blog",
+      "locale": "en",
+      "excerpt": "An Estepona sunset cruise boat charter offers one of the Costa del Sol's most memorable experiences. Departing from Puerto Banús, just 15 minutes from Estepona's old town, our private charters let you watch the sun dip below the Mediterranean from the comfort of a luxury yacht. W"
     },
     {
       "url": "https://boatrentalinmarbella.com/blog/estepona-day-from-marbella/",
@@ -740,6 +764,14 @@
       "kind": "blog",
       "locale": "en",
       "excerpt": "Marbella's coastline is a natural highway for dolphins, and a private boat rental from Puerto Banús is the best way to see them up close. The marbella boat rental dolphin watching season runs from April to October, with peak sightings in the warm summer months. Whether you choose"
+    },
+    {
+      "url": "https://boatrentalinmarbella.com/blog/marbella-boat-rental-no-license-cost-breakdown/",
+      "title": "Boat Rental No License Marbella: Full Cost Breakdown 2026",
+      "description": "Transparent boat rental no license Marbella cost breakdown for 2026. See prices from €749/2h, what&#x27;s included &amp; which boats need no license. Book now.",
+      "kind": "blog",
+      "locale": "en",
+      "excerpt": "Thinking about a boat rental no license Marbella cost for 2026? You’re in the right place. Marbella’s coastline – from Puerto Banús to Estepona – is best explored by boat, and you don’t need a single piece of paper to charter one. Every boat in our fleet comes with a licensed ski"
     },
     {
       "url": "https://boatrentalinmarbella.com/blog/marbella-boat-rental-what-to-bring/",
@@ -1276,6 +1308,14 @@
       "kind": "blog",
       "locale": "en",
       "excerpt": "Planning a Marbella yacht charter means banking on the Costa del Sol’s famous sunshine — but even here, the weather can throw a curveball. Understanding Marbella yacht charter weather conditions helps you know when to sail and when to reschedule. With 300+ sunny days a year, most"
+    },
+    {
+      "url": "https://boatrentalinmarbella.com/blog/marbella-yacht-charter-weather-october/",
+      "title": "Is October a Good Month for Yacht Charter in Marbella?",
+      "description": "Is October a good month for yacht charter in Marbella? Discover October weather, sea temps, pricing, and top boats for a late-season Mediterranean escape.",
+      "kind": "blog",
+      "locale": "en",
+      "excerpt": "October in Marbella delivers a sweet spot: warm enough for swimming, calm seas, and significantly fewer crowds than July or August. If you're wondering whether a Marbella yacht charter weather October works for a late-season holiday, the short answer is yes — with average air tem"
     },
     {
       "url": "https://boatrentalinmarbella.com/blog/marbella-yacht-charter-wheelchair-accessibility/",
@@ -2358,6 +2398,22 @@
       "excerpt": "A Marbella by night yacht cruise from Puerto Banús is the most relaxed way to see the Costa del Sol's skyline — La Concha mountain turning pink behind you, the Golden Mile villas firing up their pool lights, and the marina's superyachts blazing as you slip back to the pontoon. Ch"
     },
     {
+      "url": "https://boatrentalinmarbella.com/experiences/marbella-cocktail-mixing-yacht/",
+      "title": "Marbella Cocktail Mixing Yacht Experience: Shake It at Sea",
+      "description": "Book a cocktail mixing yacht experience Marbella on a luxury charter from Puerto Banús. Shake, stir &amp; sip at sea with a pro mixologist. From €749/2h.",
+      "kind": "experience",
+      "locale": "en",
+      "excerpt": "Imagine shaking a perfect margarita while the Mediterranean sparkles below you. Our cocktail mixing yacht experience Marbella turns that vision into reality. Depart from Puerto Banús on a private yacht equipped with a professional mixologist, premium spirits, and all the tools yo"
+    },
+    {
+      "url": "https://boatrentalinmarbella.com/experiences/marbella-dolphin-watching-sunset-combo/",
+      "title": "Marbella Dolphin Watching and Sunset Cruise Combo",
+      "description": "Book a dolphin watching sunset cruise Marbella combo. Spot wild dolphins off the Costa del Sol then watch the sun sink behind La Concha from your private charter.",
+      "kind": "experience",
+      "locale": "en",
+      "excerpt": "Combine two of Marbella's best experiences into one evening: a dolphin watching sunset cruise. You'll spend the first part of your charter scanning the Mediterranean for wild dolphins, then anchor off the coast to watch the sun sink behind La Concha. It's a private charter, so th"
+    },
+    {
       "url": "https://boatrentalinmarbella.com/experiences/marbella-family-boat-day-paddleboarding/",
       "title": "Marbella Family Boat Day with Paddleboarding and Snorkeling",
       "description": "Book a Marbella family boat day with paddleboarding and snorkeling. From €749 for 2h on our Astondoa 40. Licensed skipper, drinks, snacks included.",
@@ -2374,12 +2430,28 @@
       "excerpt": "Looking for a marbella family boat day snorkeling adventure that everyone will remember? From the glamorous Puerto Banús, you can set sail on a private charter designed with families in mind. Our boats come with a licensed skipper, all drinks and snacks included, and snorkeling g"
     },
     {
+      "url": "https://boatrentalinmarbella.com/experiences/marbella-family-paddleboarding-boat-day/",
+      "title": "Marbella Family Paddleboarding and Boat Day: Fun for All Ages",
+      "description": "Plan a family paddleboarding boat day Marbella adventure from Puerto Banús. Private charter, SUP gear, kids welcome. Book your 4-hour trip today.",
+      "kind": "experience",
+      "locale": "en",
+      "excerpt": "Looking for a family paddleboarding boat day Marbella that keeps everyone happy from toddler to grandparent? You have found it. Depart from Puerto Banús on a private charter with SUP boards included, a relaxed skipper, and calm coves perfect for first-timers. No crowds, no queuin"
+    },
+    {
       "url": "https://boatrentalinmarbella.com/experiences/marbella-fishing-charter-half-day/",
       "title": "Marbella Half-Day Fishing Charter: Catch and Release",
       "description": "Book a Marbella half day fishing charter from Puerto Banús. Catch and release with licensed skipper, drinks &amp; snacks included. Prices from €749.",
       "kind": "experience",
       "locale": "en",
       "excerpt": "Escape the Marbella sun with a Marbella half day fishing charter from Puerto Banús. Whether you're a seasoned angler or a first-timer, our catch-and-release trips offer a sustainable way to enjoy the Mediterranean. With a licensed skipper, cold drinks, and snacks included, you ju"
+    },
+    {
+      "url": "https://boatrentalinmarbella.com/experiences/marbella-full-day-island-hopping/",
+      "title": "Marbella Full-Day Island Hopping Boat Tour: Explore Coastal Gems",
+      "description": "Discover the best island hopping boat tour Marbella offers. Visit Cala del Faro &amp; Cala Cortés on a full-day charter from Puerto Banús. Book now!",
+      "kind": "experience",
+      "locale": "en",
+      "excerpt": "Escape the Costa del Sol crowds and spend a full day exploring the Mediterranean's hidden corners on an island hopping boat tour Marbella . Departing from Puerto Banús, you'll cruise along the coast to secluded coves, swim in crystal-clear waters, and lunch at a beach club or on "
     },
     {
       "url": "https://boatrentalinmarbella.com/experiences/marbella-full-day-yoga-retreat-at-sea/",
@@ -2396,6 +2468,14 @@
       "kind": "experience",
       "locale": "en",
       "excerpt": "For those who want speed on the water without giving up luxury, a Marbella jet ski and boat rental combo is the perfect day out. Our Mangusta 80 (24m) charter includes a jet ski free, so you can blast across the Mediterranean then lounge on a spacious flybridge. Departing from Pu"
+    },
+    {
+      "url": "https://boatrentalinmarbella.com/experiences/marbella-sunrise-fishing-charter/",
+      "title": "Marbella Sunrise Fishing Charter: Catch the Dawn Catch",
+      "description": "Book a sunrise fishing charter Marbella and reel in the dawn catch from Puerto Banús. Licensed skipper, gear, drinks &amp; snacks included. 5-12 pax.",
+      "kind": "experience",
+      "locale": "en",
+      "excerpt": "There's something primal about casting a line as the sun lifts over La Concha. A sunrise fishing charter Marbella gets you on the water before the jet skis and day-trippers, when the sea is glassy and the fish are hungry. Departing from Puerto Banús, our 4-hour trip combines the "
     },
     {
       "url": "https://boatrentalinmarbella.com/experiences/marbella-sunset-photoshoot-yacht/",
@@ -2792,7 +2872,7 @@
     {
       "url": "https://boatrentalinmarbella.com/site-map/",
       "title": "Site Map — every page on Boat Rental Marbella",
-      "description": "Full directory of all 354 pages on Boat Rental Marbella — charter types, fleet, experiences, guides, languages and policies.",
+      "description": "Full directory of all 364 pages on Boat Rental Marbella — charter types, fleet, experiences, guides, languages and policies.",
       "kind": "spoke",
       "locale": "en",
       "excerpt": "Every page on Boat Rental Marbella, grouped by section. Looking for something specific? Message us on WhatsApp and ask."

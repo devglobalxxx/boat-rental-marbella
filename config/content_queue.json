@@ -4,41 +4,6 @@
   "queue": [
     {
       "kind": "blog",
-      "slug": "blog/andalusia-day-yacht-charter-marbella",
-      "primary_keyword": "Andalusia Day yacht charter Marbella",
-      "title": "Celebrate Andalusia Day on a Yacht in Marbella",
-      "target_words": 1100
-    },
-    {
-      "kind": "blog",
-      "slug": "blog/cabopino-boat-rental-family-snorkeling",
-      "primary_keyword": "Cabopino family snorkeling boat rental",
-      "title": "Cabopino Family Day: Boat Rental for Snorkeling and Beaches",
-      "target_words": 1150
-    },
-    {
-      "kind": "blog",
-      "slug": "blog/estepona-boat-charter-sunset-cruise",
-      "primary_keyword": "Estepona sunset cruise boat charter",
-      "title": "Estepona Sunset Cruise: Best Boat Charter Options",
-      "target_words": 1100
-    },
-    {
-      "kind": "blog",
-      "slug": "blog/marbella-yacht-charter-weather-october",
-      "primary_keyword": "Marbella yacht charter weather October",
-      "title": "Is October a Good Month for Yacht Charter in Marbella?",
-      "target_words": 1100
-    },
-    {
-      "kind": "blog",
-      "slug": "blog/marbella-boat-rental-no-license-cost-breakdown",
-      "primary_keyword": "boat rental no license Marbella cost",
-      "title": "Boat Rental No License Marbella: Full Cost Breakdown 2026",
-      "target_words": 1200
-    },
-    {
-      "kind": "blog",
       "slug": "blog/marbella-yacht-charter-what-to-bring-checklist",
       "primary_keyword": "what to bring on a yacht charter Marbella",
       "title": "What to Bring on a Yacht Charter in Marbella: Complete Checklist",
@@ -351,41 +316,6 @@
       "primary_keyword": "Gibraltar National Day yacht charter Marbella",
       "title": "Gibraltar National Day Yacht Charter in Marbella: A Cross-Border Celebration",
       "target_words": 1100
-    },
-    {
-      "kind": "experience",
-      "slug": "experiences/marbella-sunrise-fishing-charter",
-      "primary_keyword": "sunrise fishing charter Marbella",
-      "title": "Marbella Sunrise Fishing Charter: Catch the Dawn Catch",
-      "target_words": 1200
-    },
-    {
-      "kind": "experience",
-      "slug": "experiences/marbella-full-day-island-hopping",
-      "primary_keyword": "island hopping boat tour Marbella",
-      "title": "Marbella Full-Day Island Hopping Boat Tour: Explore Coastal Gems",
-      "target_words": 1300
-    },
-    {
-      "kind": "experience",
-      "slug": "experiences/marbella-cocktail-mixing-yacht",
-      "primary_keyword": "cocktail mixing yacht experience Marbella",
-      "title": "Marbella Cocktail Mixing Yacht Experience: Shake It at Sea",
-      "target_words": 1150
-    },
-    {
-      "kind": "experience",
-      "slug": "experiences/marbella-dolphin-watching-sunset-combo",
-      "primary_keyword": "dolphin watching sunset cruise Marbella",
-      "title": "Marbella Dolphin Watching and Sunset Cruise Combo",
-      "target_words": 1200
-    },
-    {
-      "kind": "experience",
-      "slug": "experiences/marbella-family-paddleboarding-boat-day",
-      "primary_keyword": "family paddleboarding boat day Marbella",
-      "title": "Marbella Family Paddleboarding and Boat Day: Fun for All Ages",
-      "target_words": 1150
     },
     {
       "kind": "spoke",
@@ -2619,6 +2549,86 @@
       "primary_keyword": "Marbella Pride yacht party",
       "title": "Marbella Pride 2026: The Ultimate Yacht Party Experience",
       "target_words": 1200,
+      "consumed_at": "2026-06-16"
+    },
+    {
+      "kind": "blog",
+      "slug": "blog/andalusia-day-yacht-charter-marbella",
+      "primary_keyword": "Andalusia Day yacht charter Marbella",
+      "title": "Celebrate Andalusia Day on a Yacht in Marbella",
+      "target_words": 1100,
+      "consumed_at": "2026-06-16"
+    },
+    {
+      "kind": "blog",
+      "slug": "blog/cabopino-boat-rental-family-snorkeling",
+      "primary_keyword": "Cabopino family snorkeling boat rental",
+      "title": "Cabopino Family Day: Boat Rental for Snorkeling and Beaches",
+      "target_words": 1150,
+      "consumed_at": "2026-06-16"
+    },
+    {
+      "kind": "blog",
+      "slug": "blog/estepona-boat-charter-sunset-cruise",
+      "primary_keyword": "Estepona sunset cruise boat charter",
+      "title": "Estepona Sunset Cruise: Best Boat Charter Options",
+      "target_words": 1100,
+      "consumed_at": "2026-06-16"
+    },
+    {
+      "kind": "blog",
+      "slug": "blog/marbella-yacht-charter-weather-october",
+      "primary_keyword": "Marbella yacht charter weather October",
+      "title": "Is October a Good Month for Yacht Charter in Marbella?",
+      "target_words": 1100,
+      "consumed_at": "2026-06-16"
+    },
+    {
+      "kind": "blog",
+      "slug": "blog/marbella-boat-rental-no-license-cost-breakdown",
+      "primary_keyword": "boat rental no license Marbella cost",
+      "title": "Boat Rental No License Marbella: Full Cost Breakdown 2026",
+      "target_words": 1200,
+      "consumed_at": "2026-06-16"
+    },
+    {
+      "kind": "experience",
+      "slug": "experiences/marbella-sunrise-fishing-charter",
+      "primary_keyword": "sunrise fishing charter Marbella",
+      "title": "Marbella Sunrise Fishing Charter: Catch the Dawn Catch",
+      "target_words": 1200,
+      "consumed_at": "2026-06-16"
+    },
+    {
+      "kind": "experience",
+      "slug": "experiences/marbella-full-day-island-hopping",
+      "primary_keyword": "island hopping boat tour Marbella",
+      "title": "Marbella Full-Day Island Hopping Boat Tour: Explore Coastal Gems",
+      "target_words": 1300,
+      "consumed_at": "2026-06-16"
+    },
+    {
+      "kind": "experience",
+      "slug": "experiences/marbella-cocktail-mixing-yacht",
+      "primary_keyword": "cocktail mixing yacht experience Marbella",
+      "title": "Marbella Cocktail Mixing Yacht Experience: Shake It at Sea",
+      "target_words": 1150,
+      "consumed_at": "2026-06-16"
+    },
+    {
+      "kind": "experience",
+      "slug": "experiences/marbella-dolphin-watching-sunset-combo",
+      "primary_keyword": "dolphin watching sunset cruise Marbella",
+      "title": "Marbella Dolphin Watching and Sunset Cruise Combo",
+      "target_words": 1200,
+      "consumed_at": "2026-06-16"
+    },
+    {
+      "kind": "experience",
+      "slug": "experiences/marbella-family-paddleboarding-boat-day",
+      "primary_keyword": "family paddleboarding boat day Marbella",
+      "title": "Marbella Family Paddleboarding and Boat Day: Fun for All Ages",
+      "target_words": 1150,
       "consumed_at": "2026-06-16"
     }
   ],

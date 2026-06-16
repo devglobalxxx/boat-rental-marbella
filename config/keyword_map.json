@@ -577,6 +577,41 @@
       "title": "Mangusta 80 vs Ferretti 94: Which Luxury Yacht for Marbella?",
       "intent": "transactional",
       "target_words": 1100
+    },
+    {
+      "slug": "experiences/marbella-sunrise-fishing-charter",
+      "primary_keyword": "sunrise fishing charter Marbella",
+      "title": "Marbella Sunrise Fishing Charter: Catch the Dawn Catch",
+      "intent": "transactional",
+      "target_words": 1200
+    },
+    {
+      "slug": "experiences/marbella-full-day-island-hopping",
+      "primary_keyword": "island hopping boat tour Marbella",
+      "title": "Marbella Full-Day Island Hopping Boat Tour: Explore Coastal Gems",
+      "intent": "transactional",
+      "target_words": 1300
+    },
+    {
+      "slug": "experiences/marbella-cocktail-mixing-yacht",
+      "primary_keyword": "cocktail mixing yacht experience Marbella",
+      "title": "Marbella Cocktail Mixing Yacht Experience: Shake It at Sea",
+      "intent": "transactional",
+      "target_words": 1150
+    },
+    {
+      "slug": "experiences/marbella-dolphin-watching-sunset-combo",
+      "primary_keyword": "dolphin watching sunset cruise Marbella",
+      "title": "Marbella Dolphin Watching and Sunset Cruise Combo",
+      "intent": "transactional",
+      "target_words": 1200
+    },
+    {
+      "slug": "experiences/marbella-family-paddleboarding-boat-day",
+      "primary_keyword": "family paddleboarding boat day Marbella",
+      "title": "Marbella Family Paddleboarding and Boat Day: Fun for All Ages",
+      "intent": "transactional",
+      "target_words": 1150
     }
   ],
   "blog": [
@@ -2005,6 +2040,41 @@
       "slug": "blog/marbella-pride-yacht-party-2026",
       "primary_keyword": "Marbella Pride yacht party",
       "title": "Marbella Pride 2026: The Ultimate Yacht Party Experience",
+      "intent": "informational",
+      "target_words": 1200
+    },
+    {
+      "slug": "blog/andalusia-day-yacht-charter-marbella",
+      "primary_keyword": "Andalusia Day yacht charter Marbella",
+      "title": "Celebrate Andalusia Day on a Yacht in Marbella",
+      "intent": "informational",
+      "target_words": 1100
+    },
+    {
+      "slug": "blog/cabopino-boat-rental-family-snorkeling",
+      "primary_keyword": "Cabopino family snorkeling boat rental",
+      "title": "Cabopino Family Day: Boat Rental for Snorkeling and Beaches",
+      "intent": "informational",
+      "target_words": 1150
+    },
+    {
+      "slug": "blog/estepona-boat-charter-sunset-cruise",
+      "primary_keyword": "Estepona sunset cruise boat charter",
+      "title": "Estepona Sunset Cruise: Best Boat Charter Options",
+      "intent": "informational",
+      "target_words": 1100
+    },
+    {
+      "slug": "blog/marbella-yacht-charter-weather-october",
+      "primary_keyword": "Marbella yacht charter weather October",
+      "title": "Is October a Good Month for Yacht Charter in Marbella?",
+      "intent": "informational",
+      "target_words": 1100
+    },
+    {
+      "slug": "blog/marbella-boat-rental-no-license-cost-breakdown",
+      "primary_keyword": "boat rental no license Marbella cost",
+      "title": "Boat Rental No License Marbella: Full Cost Breakdown 2026",
       "intent": "informational",
       "target_words": 1200
     }

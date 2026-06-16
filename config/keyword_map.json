@@ -1972,6 +1972,41 @@
       "title": "Best Time of Day for Dolphin Watching in Marbella",
       "intent": "informational",
       "target_words": 1100
+    },
+    {
+      "slug": "blog/marbella-fishing-charter-tuna-season",
+      "primary_keyword": "Marbella tuna fishing season charter",
+      "title": "Marbella Tuna Fishing Season: When to Book Your Charter",
+      "intent": "informational",
+      "target_words": 1150
+    },
+    {
+      "slug": "blog/marbella-yacht-charter-starlite-festival-2026",
+      "primary_keyword": "Marbella Starlite Festival yacht charter",
+      "title": "Starlite Festival 2026: Yacht Charter Tips for Marbella's Top Concert Series",
+      "intent": "informational",
+      "target_words": 1250
+    },
+    {
+      "slug": "blog/marbella-feria-san-bernabe-boat-party",
+      "primary_keyword": "Marbella Feria San Bernabe boat party",
+      "title": "Marbella Feria San Bernabe: Celebrate from a Yacht",
+      "intent": "informational",
+      "target_words": 1100
+    },
+    {
+      "slug": "blog/marbella-ironman-yacht-recovery-charter",
+      "primary_keyword": "Marbella Ironman recovery yacht charter",
+      "title": "Post-Race Relaxation: Yacht Charter for Marbella Ironman Recovery",
+      "intent": "informational",
+      "target_words": 1100
+    },
+    {
+      "slug": "blog/marbella-pride-yacht-party-2026",
+      "primary_keyword": "Marbella Pride yacht party",
+      "title": "Marbella Pride 2026: The Ultimate Yacht Party Experience",
+      "intent": "informational",
+      "target_words": 1200
     }
   ]
 }

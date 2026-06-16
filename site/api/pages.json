@@ -1,7 +1,7 @@
 {
   "@context": "https://boatrentalinmarbella.com/api/pages.json",
   "source": "https://boatrentalinmarbella.com",
-  "count": 351,
+  "count": 356,
   "kinds": [
     "blog",
     "boat",
@@ -782,12 +782,28 @@
       "excerpt": "Marbella feria San Bernabé is the city’s biggest summer party — six days of casetas, fairground rides, and live music from 11 to 16 June. But you don’t have to spend every hour on dry land. A daytime yacht charter from Puerto Banús lets you escape the midday heat, cruise the Cost"
     },
     {
+      "url": "https://boatrentalinmarbella.com/blog/marbella-feria-san-bernabe-boat-party/",
+      "title": "Marbella Feria San Bernabe: Celebrate from a Yacht",
+      "description": "Celebrate Marbella Feria San Bernabe from a yacht. Book a boat party in Puerto Banús with skipper, drinks &amp; snacks included. From €749/2h.",
+      "kind": "blog",
+      "locale": "en",
+      "excerpt": "Marbella’s Feria San Bernabe is the town’s biggest annual party — a week of flamenco, fairground rides, and late-night casetas. But the best seat in town isn’t on the fairground: it’s on the water. A Marbella Feria San Bernabe boat party lets you celebrate with your own group, aw"
+    },
+    {
       "url": "https://boatrentalinmarbella.com/blog/marbella-fishing-charter-cost/",
       "title": "Marbella Fishing Charter Cost: What to Expect for a Day Out",
       "description": "Marbella fishing charter cost from €749 for 2h on a 12m boat. Skipper, drinks &amp; VAT included. See what a day out costs with our fleet in Puerto Banús.",
       "kind": "blog",
       "locale": "en",
       "excerpt": "If you're searching for \"marbella fishing charter cost\", you want straight numbers – not fluff. A day out on the water with us starts at €749 for 2 hours on a 12-metre Astondoa 40 or Azimut 39, and goes up to €2,299 for a full 8-hour day . That price includes everything: a licens"
+    },
+    {
+      "url": "https://boatrentalinmarbella.com/blog/marbella-fishing-charter-tuna-season/",
+      "title": "Marbella Tuna Fishing Season: When to Book Your Charter",
+      "description": "Plan your Marbella tuna fishing season charter with expert timing tips. Bluefin run June–October. Book your boat from Puerto Banús today.",
+      "kind": "blog",
+      "locale": "en",
+      "excerpt": "Marbella's tuna fishing season offers some of the best bluefin action in the Mediterranean. From June to October, the warm waters off Puerto Banús attract trophy-sized Atlantic bluefin tuna, drawing anglers from across Europe. Whether you're a seasoned fisherman or a first-timer,"
     },
     {
       "url": "https://boatrentalinmarbella.com/blog/marbella-flamenco-festival-yacht-charter/",
@@ -860,6 +876,14 @@
       "kind": "blog",
       "locale": "en",
       "excerpt": "Marbella Jewellery Week 2026 (MJW) is the Costa del Sol's premier showcase for fine jewellery, watches, and luxury accessories. Held in the heart of Puerto Banús, the event attracts collectors, designers, and buyers from across Europe. If you're planning to attend, combining the "
+    },
+    {
+      "url": "https://boatrentalinmarbella.com/blog/marbella-ironman-yacht-recovery-charter/",
+      "title": "Post-Race Relaxation: Yacht Charter for Marbella Ironman Recovery",
+      "description": "Recover from Marbella Ironman with a private yacht charter. Sail the Costa del Sol, soothe muscles in the sun, and celebrate with crew. Book your post-race relaxation.",
+      "kind": "blog",
+      "locale": "en",
+      "excerpt": "Crossing the Marbella Ironman finish line is a monumental achievement. After months of training, your body deserves more than a quick stretch and a protein shake. A private yacht charter from Puerto Banús offers the ultimate post-race recovery: gentle sea breezes, a swim in the M"
     },
     {
       "url": "https://boatrentalinmarbella.com/blog/marbella-jazz-festival-yacht-charter/",
@@ -940,6 +964,14 @@
       "kind": "blog",
       "locale": "en",
       "excerpt": "Celebrate Marbella Pride in style with a private yacht party from €749 for two hours. Departing from Puerto Banús, your group can BYO cava, enjoy rainbow bunting, and add a DJ for the ultimate floating fiesta. All charters include a licensed skipper, fuel, drinks, snacks, and ins"
+    },
+    {
+      "url": "https://boatrentalinmarbella.com/blog/marbella-pride-yacht-party-2026/",
+      "title": "Marbella Pride 2026: The Ultimate Yacht Party Experience",
+      "description": "Celebrate Marbella Pride 2026 with a luxury yacht party from Puerto Banús. 12 pax, open bar, and stunning Costa del Sol views. Book your charter today.",
+      "kind": "blog",
+      "locale": "en",
+      "excerpt": "Marbella Pride 2026 is set to be the biggest celebration of diversity and freedom on the Costa del Sol. From colourful parades in Puerto Banús to vibrant parties along the Golden Mile, the energy is electric. But for the ultimate Pride experience, nothing beats celebrating on the"
     },
     {
       "url": "https://boatrentalinmarbella.com/blog/marbella-restaurants-by-boat/",
@@ -1204,6 +1236,14 @@
       "kind": "blog",
       "locale": "en",
       "excerpt": "The Starlite Festival in Marbella is one of Europe's most glamorous summer events, drawing top artists and celebrities to the Nagüeles quarry. Combining a Marbella yacht charter with a Starlite evening creates a seamless luxury experience: cruise the Costa del Sol at sunset, anch"
+    },
+    {
+      "url": "https://boatrentalinmarbella.com/blog/marbella-yacht-charter-starlite-festival-2026/",
+      "title": "Starlite Festival 2026: Yacht Charter Tips for Marbella&#x27;s Top Concert Series",
+      "description": "Plan your Marbella Starlite Festival 2026 yacht charter. Find boats from €749, departure from Puerto Banús, and tips for combining concerts with a day at sea.",
+      "kind": "blog",
+      "locale": "en",
+      "excerpt": "Starlite Festival 2026 returns to Marbella from July to August, bringing world-class music to the Cantera de Nagüeles. For concert-goers who want to elevate their experience, combining a night of live music with a daytime or sunset yacht charter from Puerto Banús is a smart move."
     },
     {
       "url": "https://boatrentalinmarbella.com/blog/marbella-yacht-charter-toilet-facilities/",
@@ -2752,7 +2792,7 @@
     {
       "url": "https://boatrentalinmarbella.com/site-map/",
       "title": "Site Map — every page on Boat Rental Marbella",
-      "description": "Full directory of all 349 pages on Boat Rental Marbella — charter types, fleet, experiences, guides, languages and policies.",
+      "description": "Full directory of all 354 pages on Boat Rental Marbella — charter types, fleet, experiences, guides, languages and policies.",
       "kind": "spoke",
       "locale": "en",
       "excerpt": "Every page on Boat Rental Marbella, grouped by section. Looking for something specific? Message us on WhatsApp and ask."

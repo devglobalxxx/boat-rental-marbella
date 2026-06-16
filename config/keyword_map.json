@@ -612,6 +612,34 @@
       "title": "Marbella Family Paddleboarding and Boat Day: Fun for All Ages",
       "intent": "transactional",
       "target_words": 1150
+    },
+    {
+      "slug": "marbella-yacht-charter-weather-may",
+      "primary_keyword": "Marbella yacht charter weather May",
+      "title": "Marbella Yacht Charter Weather in May: What to Expect",
+      "intent": "transactional",
+      "target_words": 1100
+    },
+    {
+      "slug": "marbella-yacht-charter-weather-june",
+      "primary_keyword": "Marbella yacht charter weather June",
+      "title": "Marbella Yacht Charter Weather in June: Perfect Summer Sailing",
+      "intent": "transactional",
+      "target_words": 1100
+    },
+    {
+      "slug": "marbella-yacht-charter-weather-july",
+      "primary_keyword": "Marbella yacht charter weather July",
+      "title": "Marbella Yacht Charter Weather in July: Peak Season Heat",
+      "intent": "transactional",
+      "target_words": 1100
+    },
+    {
+      "slug": "marbella-yacht-charter-weather-august",
+      "primary_keyword": "Marbella yacht charter weather August",
+      "title": "Marbella Yacht Charter Weather in August: Hottest Month Guide",
+      "intent": "transactional",
+      "target_words": 1100
     }
   ],
   "blog": [
@@ -2077,6 +2105,34 @@
       "title": "Boat Rental No License Marbella: Full Cost Breakdown 2026",
       "intent": "informational",
       "target_words": 1200
+    },
+    {
+      "slug": "blog/marbella-yacht-charter-dietary-restrictions-catering",
+      "primary_keyword": "dietary restrictions yacht catering Marbella",
+      "title": "Dietary Restrictions on Yacht Catering in Marbella: What You Need to Know",
+      "intent": "informational",
+      "target_words": 1100
+    },
+    {
+      "slug": "blog/marbella-yacht-charter-september-weather-guide",
+      "primary_keyword": "Marbella yacht charter September weather",
+      "title": "Marbella Yacht Charter in September: Weather, Sea Conditions & Tips",
+      "intent": "informational",
+      "target_words": 1200
+    },
+    {
+      "slug": "blog/puerto-banus-vs-estepona-marina-yacht-departure",
+      "primary_keyword": "Puerto Banus vs Estepona marina yacht departure",
+      "title": "Puerto Banús vs Estepona Marina: Which Yacht Departure Is Best?",
+      "intent": "informational",
+      "target_words": 1300
+    },
+    {
+      "slug": "blog/marbella-yacht-charter-july-peak-season-tips",
+      "primary_keyword": "Marbella yacht charter July peak season",
+      "title": "Marbella Yacht Charter in July: Peak Season Tips & Availability",
+      "intent": "informational",
+      "target_words": 1150
     }
   ]
 }

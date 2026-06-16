@@ -1617,3 +1617,36 @@ hint: See the 'Note about fast-forwards' in 'git push --help' for details.
 [2026-06-16 15:34:22]   ✓ added to keyword_map.spokes
 [2026-06-16 15:34:22] queue: 49 remaining, 267 consumed total
 [2026-06-16 15:34:22] running deploy.sh …
+[2026-06-16 15:34:50] deploy.sh OK
+[2026-06-16 15:34:50] === Done: 10 succeeded, 0 failed ===
+
+[2026-06-16 18:46:08] === Daily content run (kind-balanced): 5 blog + 4 landing = 9 item(s) ===
+[2026-06-16 18:46:08] [1/9] blog · blog/marbella-yacht-charter-what-to-bring-checklist
+[2026-06-16 18:46:08]   DeepSeek failed (ConnectionError: HTTPSConnectionPool(host='api.deepseek.com', port=443): Max retries exceeded with url: /chat/completions (Caused by Name), falling back to cli
+[2026-06-16 18:46:19]   ✗ FAILED: RuntimeError: claude CLI exit 1: 
+[2026-06-16 18:46:19] [2/9] blog · blog/marbella-yacht-charter-dietary-restrictions-catering
+[2026-06-16 18:46:52]   ✓ saved content/blog_marbella-yacht-charter-dietary-restrictions-catering.json
+[2026-06-16 18:46:52]   ✓ added to keyword_map.blog
+[2026-06-16 18:46:52] [3/9] blog · blog/marbella-yacht-charter-september-weather-guide
+[2026-06-16 18:47:24]   ✓ saved content/blog_marbella-yacht-charter-september-weather-guide.json
+[2026-06-16 18:47:24]   ✓ added to keyword_map.blog
+[2026-06-16 18:47:24] [4/9] blog · blog/puerto-banus-vs-estepona-marina-yacht-departure
+[2026-06-16 18:47:56]   ✓ saved content/blog_puerto-banus-vs-estepona-marina-yacht-departure.json
+[2026-06-16 18:47:56]   ✓ added to keyword_map.blog
+[2026-06-16 18:47:56] [5/9] blog · blog/marbella-yacht-charter-july-peak-season-tips
+[2026-06-16 18:48:26]   ✓ saved content/blog_marbella-yacht-charter-july-peak-season-tips.json
+[2026-06-16 18:48:26]   ✓ added to keyword_map.blog
+[2026-06-16 18:48:26] [6/9] spoke · marbella-yacht-charter-weather-may
+[2026-06-16 18:48:55]   ✓ saved content/marbella-yacht-charter-weather-may.json
+[2026-06-16 18:48:55]   ✓ added to keyword_map.spokes
+[2026-06-16 18:48:55] [7/9] spoke · marbella-yacht-charter-weather-june
+[2026-06-16 18:49:26]   ✓ saved content/marbella-yacht-charter-weather-june.json
+[2026-06-16 18:49:26]   ✓ added to keyword_map.spokes
+[2026-06-16 18:49:26] [8/9] spoke · marbella-yacht-charter-weather-july
+[2026-06-16 18:49:57]   ✓ saved content/marbella-yacht-charter-weather-july.json
+[2026-06-16 18:49:57]   ✓ added to keyword_map.spokes
+[2026-06-16 18:49:57] [9/9] spoke · marbella-yacht-charter-weather-august
+[2026-06-16 18:50:26]   ✓ saved content/marbella-yacht-charter-weather-august.json
+[2026-06-16 18:50:26]   ✓ added to keyword_map.spokes
+[2026-06-16 18:50:26] queue: 41 remaining, 275 consumed total
+[2026-06-16 18:50:26] running deploy.sh …

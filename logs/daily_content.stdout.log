@@ -572,3 +572,21 @@ hint: See the 'Note about fast-forwards' in 'git push --help' for details.
 [2026-06-16 10:02:45] deploy.sh OK
 [2026-06-16 10:02:45] === Done: 5 succeeded, 0 failed ===
 
+[2026-06-17 10:00:00] === Daily content run (kind-balanced): 5 blog + 0 landing = 5 item(s) ===
+[2026-06-17 10:00:00] [1/5] blog · blog/marbella-yacht-charter-what-to-bring-checklist
+[2026-06-17 10:00:29]   ✓ saved content/blog_marbella-yacht-charter-what-to-bring-checklist.json
+[2026-06-17 10:00:29]   ✓ added to keyword_map.blog
+[2026-06-17 10:00:29] [2/5] blog · blog/marbella-yacht-charter-dolphin-watching-snorkeling-combo
+[2026-06-17 10:01:06]   ✓ saved content/blog_marbella-yacht-charter-dolphin-watching-snorkeling-combo.json
+[2026-06-17 10:01:06]   ✓ added to keyword_map.blog
+[2026-06-17 10:01:06] [3/5] blog · blog/marbella-yacht-charter-stag-weekend-itinerary
+[2026-06-17 10:01:50]   ✓ saved content/blog_marbella-yacht-charter-stag-weekend-itinerary.json
+[2026-06-17 10:01:50]   ✓ added to keyword_map.blog
+[2026-06-17 10:01:50] [4/5] blog · blog/marbella-yacht-charter-hen-party-activities
+[2026-06-17 10:02:24]   ✓ saved content/blog_marbella-yacht-charter-hen-party-activities.json
+[2026-06-17 10:02:24]   ✓ added to keyword_map.blog
+[2026-06-17 10:02:24] [5/5] blog · blog/marbella-fishing-charter-license-rules-2026
+[2026-06-17 10:02:52]   ✓ saved content/blog_marbella-fishing-charter-license-rules-2026.json
+[2026-06-17 10:02:52]   ✓ added to keyword_map.blog
+[2026-06-17 10:02:52] queue: 36 remaining, 280 consumed total
+[2026-06-17 10:02:52] running deploy.sh …

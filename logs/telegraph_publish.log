@@ -45,3 +45,13 @@
 [2026-06-16 13:31:33]   ✓ published https://telegra.ph/The-Marbella-Marina-Hop-Lunch-at-Three-Different-Clubs-by-Water-06-16 (5 backlinks)
 [2026-06-16 13:31:33] === Done: 3/3 published. Ledger total: 12 ===
 
+[2026-06-17 13:39:25] === Telegraph run: target 3 article(s) · 12 previously published ===
+[2026-06-17 13:39:28] [1/3] The Perfect Week: A Gulet Charter from Marbella to Cabo de Gata
+[2026-06-17 13:39:51]   ✓ published https://telegra.ph/The-Perfect-Week-A-Gulet-Charter-from-Marbella-to-Cabo-de-Gata-06-17 (5 backlinks)
+[2026-06-17 13:39:51] [2/3] Splash and Sip: A Jet Ski and Yacht Combo Day from Puerto Banús
+[2026-06-17 13:40:12]   ✓ published https://telegra.ph/Splash-and-Sip-A-Jet-Ski-and-Yacht-Combo-Day-from-Puerto-Banús-06-17 (5 backlinks)
+[2026-06-17 13:40:12] [3/3] Tracing Roman Ruins: A Cultural Boat Charter to Marbella’s Hidden Coast
+[2026-06-17 14:32:18]   DeepSeek failed (ConnectionError: HTTPSConnectionPool(host='api.deepseek.com', port=443): Read timed out.), falling back to claude CLI
+[2026-06-17 14:33:13]   ✓ published https://telegra.ph/Tracing-Roman-Ruins-A-Cultural-Boat-Charter-to-Marbellas-Hidden-Coast-06-17 (5 backlinks)
+[2026-06-17 14:33:13] === Done: 3/3 published. Ledger total: 15 ===
+

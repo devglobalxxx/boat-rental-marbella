@@ -2364,6 +2364,41 @@
       "title": "Hispanic Day Yacht Charter in Marbella: Celebrate Culture at Sea",
       "intent": "informational",
       "target_words": 1150
+    },
+    {
+      "slug": "blog/marbella-yacht-charter-all-saints-day",
+      "primary_keyword": "All Saints' Day yacht charter Marbella",
+      "title": "All Saints' Day Yacht Charter in Marbella: A Peaceful Autumn Escape",
+      "intent": "informational",
+      "target_words": 1100
+    },
+    {
+      "slug": "blog/marbella-yacht-charter-spanish-constitution-day",
+      "primary_keyword": "Spanish Constitution Day yacht charter Marbella",
+      "title": "Spanish Constitution Day Yacht Charter in Marbella: A Long Weekend at Sea",
+      "intent": "informational",
+      "target_words": 1150
+    },
+    {
+      "slug": "blog/marbella-yacht-charter-immaculate-conception",
+      "primary_keyword": "Immaculate Conception yacht charter Marbella",
+      "title": "Immaculate Conception Yacht Charter in Marbella: A Festive Day Afloat",
+      "intent": "informational",
+      "target_words": 1100
+    },
+    {
+      "slug": "blog/marbella-yacht-charter-boxing-day",
+      "primary_keyword": "Boxing Day yacht charter Marbella",
+      "title": "Boxing Day Yacht Charter in Marbella: A Relaxed Post-Christmas Cruise",
+      "intent": "informational",
+      "target_words": 1100
+    },
+    {
+      "slug": "blog/marbella-yacht-charter-new-years-day",
+      "primary_keyword": "New Year's Day yacht charter Marbella",
+      "title": "New Year's Day Yacht Charter in Marbella: Start the Year at Sea",
+      "intent": "informational",
+      "target_words": 1150
     }
   ]
 }

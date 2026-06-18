@@ -640,6 +640,41 @@
       "title": "Marbella Yacht Charter Weather in August: Hottest Month Guide",
       "intent": "transactional",
       "target_words": 1100
+    },
+    {
+      "slug": "experiences/marbella-sunset-snorkeling-combo",
+      "primary_keyword": "marbella sunset snorkeling combo",
+      "title": "Marbella Sunset Snorkeling Combo: Swim, Snorkel & Watch the Sunset",
+      "intent": "transactional",
+      "target_words": 1100
+    },
+    {
+      "slug": "experiences/marbella-dolphin-watching-brunch-cruise",
+      "primary_keyword": "marbella dolphin watching brunch cruise",
+      "title": "Marbella Dolphin Watching Brunch Cruise: Morning Dolphins & Gourmet Bites",
+      "intent": "transactional",
+      "target_words": 1150
+    },
+    {
+      "slug": "experiences/marbella-jet-ski-and-snorkel-combo",
+      "primary_keyword": "marbella jet ski and snorkel combo",
+      "title": "Marbella Jet Ski and Snorkel Combo: Adrenaline Meets Underwater Exploration",
+      "intent": "transactional",
+      "target_words": 1100
+    },
+    {
+      "slug": "experiences/marbella-fishing-and-sunset-combo",
+      "primary_keyword": "marbella fishing and sunset combo",
+      "title": "Marbella Fishing and Sunset Combo: Catch Dinner & Cruise into Dusk",
+      "intent": "transactional",
+      "target_words": 1150
+    },
+    {
+      "slug": "experiences/marbella-full-moon-yoga-cruise",
+      "primary_keyword": "marbella full moon yoga cruise",
+      "title": "Marbella Full Moon Yoga Cruise: Stretch, Breathe & Sail Under the Moon",
+      "intent": "transactional",
+      "target_words": 1100
     }
   ],
   "blog": [
@@ -2238,6 +2273,41 @@
       "title": "What to Bring on a Marbella Yacht Charter: 2026 Checklist",
       "intent": "informational",
       "target_words": 1100
+    },
+    {
+      "slug": "blog/marbella-yacht-charter-dietary-restrictions-catering-guide",
+      "primary_keyword": "Marbella yacht charter dietary restrictions catering",
+      "title": "Dietary Restrictions on Marbella Yacht Charters: Catering Guide",
+      "intent": "informational",
+      "target_words": 1150
+    },
+    {
+      "slug": "blog/marbella-yacht-charter-minimum-age-policy-2026",
+      "primary_keyword": "Marbella yacht charter minimum age policy",
+      "title": "Marbella Yacht Charter Minimum Age Policy: What to Know in 2026",
+      "intent": "informational",
+      "target_words": 1100
+    },
+    {
+      "slug": "blog/marbella-yacht-charter-weather-october-shoulder-season",
+      "primary_keyword": "Marbella yacht charter October shoulder season",
+      "title": "Marbella Yacht Charter in October: Shoulder Season Weather & Deals",
+      "intent": "informational",
+      "target_words": 1200
+    },
+    {
+      "slug": "blog/marbella-yacht-charter-paella-onboard-experience",
+      "primary_keyword": "Marbella yacht charter paella onboard",
+      "title": "Enjoy Authentic Paella Onboard: Marbella Yacht Charter Dining",
+      "intent": "informational",
+      "target_words": 1150
+    },
+    {
+      "slug": "blog/marbella-yacht-charter-photoshoot-tips-locations",
+      "primary_keyword": "Marbella yacht charter photoshoot tips",
+      "title": "Marbella Yacht Charter Photoshoot: Tips & Best Locations",
+      "intent": "informational",
+      "target_words": 1200
     }
   ]
 }

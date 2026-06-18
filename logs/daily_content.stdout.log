@@ -593,3 +593,36 @@ hint: See the 'Note about fast-forwards' in 'git push --help' for details.
 [2026-06-17 10:03:13] deploy.sh OK
 [2026-06-17 10:03:13] === Done: 5 succeeded, 0 failed ===
 
+[2026-06-18 10:00:05] === Daily content run (kind-balanced): 5 blog + 5 landing = 10 item(s) ===
+[2026-06-18 10:00:05] [1/10] blog · blog/marbella-yacht-charter-dietary-restrictions-catering-guide
+[2026-06-18 10:00:37]   ✓ saved content/blog_marbella-yacht-charter-dietary-restrictions-catering-guide.json
+[2026-06-18 10:00:37]   ✓ added to keyword_map.blog
+[2026-06-18 10:00:37] [2/10] blog · blog/marbella-yacht-charter-minimum-age-policy-2026
+[2026-06-18 10:01:05]   ✓ saved content/blog_marbella-yacht-charter-minimum-age-policy-2026.json
+[2026-06-18 10:01:05]   ✓ added to keyword_map.blog
+[2026-06-18 10:01:05] [3/10] blog · blog/marbella-yacht-charter-weather-october-shoulder-season
+[2026-06-18 10:01:42]   ✓ saved content/blog_marbella-yacht-charter-weather-october-shoulder-season.json
+[2026-06-18 10:01:42]   ✓ added to keyword_map.blog
+[2026-06-18 10:01:42] [4/10] blog · blog/marbella-yacht-charter-paella-onboard-experience
+[2026-06-18 10:02:19]   ✓ saved content/blog_marbella-yacht-charter-paella-onboard-experience.json
+[2026-06-18 10:02:19]   ✓ added to keyword_map.blog
+[2026-06-18 10:02:19] [5/10] blog · blog/marbella-yacht-charter-photoshoot-tips-locations
+[2026-06-18 10:02:47]   ✓ saved content/blog_marbella-yacht-charter-photoshoot-tips-locations.json
+[2026-06-18 10:02:47]   ✓ added to keyword_map.blog
+[2026-06-18 10:02:47] [6/10] experience · experiences/marbella-sunset-snorkeling-combo
+[2026-06-18 10:03:18]   ✓ saved content/experiences_marbella-sunset-snorkeling-combo.json
+[2026-06-18 10:03:18]   ✓ added to keyword_map.spokes
+[2026-06-18 10:03:18] [7/10] experience · experiences/marbella-dolphin-watching-brunch-cruise
+[2026-06-18 10:03:51]   ✓ saved content/experiences_marbella-dolphin-watching-brunch-cruise.json
+[2026-06-18 10:03:51]   ✓ added to keyword_map.spokes
+[2026-06-18 10:03:51] [8/10] experience · experiences/marbella-jet-ski-and-snorkel-combo
+[2026-06-18 10:04:23]   ✓ saved content/experiences_marbella-jet-ski-and-snorkel-combo.json
+[2026-06-18 10:04:23]   ✓ added to keyword_map.spokes
+[2026-06-18 10:04:23] [9/10] experience · experiences/marbella-fishing-and-sunset-combo
+[2026-06-18 10:04:52]   ✓ saved content/experiences_marbella-fishing-and-sunset-combo.json
+[2026-06-18 10:04:52]   ✓ added to keyword_map.spokes
+[2026-06-18 10:04:52] [10/10] experience · experiences/marbella-full-moon-yoga-cruise
+[2026-06-18 10:05:23]   ✓ saved content/experiences_marbella-full-moon-yoga-cruise.json
+[2026-06-18 10:05:23]   ✓ added to keyword_map.spokes
+[2026-06-18 10:05:23] queue: 46 remaining, 300 consumed total
+[2026-06-18 10:05:23] running deploy.sh …

@@ -1751,3 +1751,33 @@ hint: See the 'Note about fast-forwards' in 'git push --help' for details.
 [2026-06-18 10:05:23]   ✓ added to keyword_map.spokes
 [2026-06-18 10:05:23] queue: 46 remaining, 300 consumed total
 [2026-06-18 10:05:23] running deploy.sh …
+[2026-06-18 10:05:45] deploy.sh OK
+[2026-06-18 10:05:45] === Done: 10 succeeded, 0 failed ===
+
+[2026-06-18 17:32:03] === Daily content run (kind-balanced): 5 blog + 3 landing = 8 item(s) ===
+[2026-06-18 17:32:03] [1/8] blog · blog/marbella-yacht-charter-valentines-day
+[2026-06-18 17:32:29]   ✓ saved content/blog_marbella-yacht-charter-valentines-day.json
+[2026-06-18 17:32:29]   ✓ added to keyword_map.blog
+[2026-06-18 17:32:29] [2/8] blog · blog/marbella-yacht-charter-carnival-celebration
+[2026-06-18 17:32:54]   ✓ saved content/blog_marbella-yacht-charter-carnival-celebration.json
+[2026-06-18 17:32:54]   ✓ added to keyword_map.blog
+[2026-06-18 17:32:54] [3/8] blog · blog/marbella-yacht-charter-mothers-day
+[2026-06-18 17:33:20]   ✓ saved content/blog_marbella-yacht-charter-mothers-day.json
+[2026-06-18 17:33:20]   ✓ added to keyword_map.blog
+[2026-06-18 17:33:20] [4/8] blog · blog/marbella-yacht-charter-corpus-christi
+[2026-06-18 17:33:45]   ✓ saved content/blog_marbella-yacht-charter-corpus-christi.json
+[2026-06-18 17:33:45]   ✓ added to keyword_map.blog
+[2026-06-18 17:33:45] [5/8] blog · blog/marbella-yacht-charter-hispanic-day
+[2026-06-18 17:34:15]   ✓ saved content/blog_marbella-yacht-charter-hispanic-day.json
+[2026-06-18 17:34:15]   ✓ added to keyword_map.blog
+[2026-06-18 17:34:15] [6/8] spoke · marbella-yacht-charter-vs-nice
+[2026-06-18 17:34:42]   ✓ saved content/marbella-yacht-charter-vs-nice.json
+[2026-06-18 17:34:42]   ✓ added to keyword_map.spokes
+[2026-06-18 17:34:42] [7/8] spoke · marbella-yacht-charter-vs-ibiza
+[2026-06-18 17:35:09]   ✓ saved content/marbella-yacht-charter-vs-ibiza.json
+[2026-06-18 17:35:09]   ✓ added to keyword_map.spokes
+[2026-06-18 17:35:09] [8/8] spoke · puerto-banus-vs-marbella-marina-boat-rental
+[2026-06-18 17:35:32]   ✓ saved content/puerto-banus-vs-marbella-marina-boat-rental.json
+[2026-06-18 17:35:32]   ✓ added to keyword_map.spokes
+[2026-06-18 17:35:32] queue: 38 remaining, 308 consumed total
+[2026-06-18 17:35:32] running deploy.sh …

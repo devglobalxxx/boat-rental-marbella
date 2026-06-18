@@ -4,41 +4,6 @@
   "queue": [
     {
       "kind": "blog",
-      "slug": "blog/marbella-yacht-charter-valentines-day",
-      "primary_keyword": "Valentine's Day yacht charter Marbella",
-      "title": "Valentine's Day Yacht Charter in Marbella: A Romantic Escape at Sea",
-      "target_words": 1200
-    },
-    {
-      "kind": "blog",
-      "slug": "blog/marbella-yacht-charter-carnival-celebration",
-      "primary_keyword": "Carnival yacht charter Marbella",
-      "title": "Carnival at Sea: Marbella Yacht Charter for a Festive Day",
-      "target_words": 1150
-    },
-    {
-      "kind": "blog",
-      "slug": "blog/marbella-yacht-charter-mothers-day",
-      "primary_keyword": "Mother's Day yacht charter Marbella",
-      "title": "Mother's Day Yacht Charter in Marbella: A Luxurious Family Tribute",
-      "target_words": 1100
-    },
-    {
-      "kind": "blog",
-      "slug": "blog/marbella-yacht-charter-corpus-christi",
-      "primary_keyword": "Corpus Christi yacht charter Marbella",
-      "title": "Corpus Christi Yacht Charter in Marbella: A Unique Holiday Afloat",
-      "target_words": 1100
-    },
-    {
-      "kind": "blog",
-      "slug": "blog/marbella-yacht-charter-hispanic-day",
-      "primary_keyword": "Hispanic Day yacht charter Marbella",
-      "title": "Hispanic Day Yacht Charter in Marbella: Celebrate Culture at Sea",
-      "target_words": 1150
-    },
-    {
-      "kind": "blog",
       "slug": "blog/marbella-yacht-charter-all-saints-day",
       "primary_keyword": "All Saints' Day yacht charter Marbella",
       "title": "All Saints' Day Yacht Charter in Marbella: A Peaceful Autumn Escape",
@@ -302,27 +267,6 @@
       "primary_keyword": "marbella yacht charter f1 grand prix 2026",
       "title": "Marbella Yacht Charter F1 Grand Prix 2026: Watch the Race from the Sea",
       "target_words": 1150
-    },
-    {
-      "kind": "spoke",
-      "slug": "marbella-yacht-charter-vs-nice",
-      "primary_keyword": "marbella yacht charter vs nice",
-      "title": "Marbella Yacht Charter vs Nice: Which Mediterranean Destination Wins?",
-      "target_words": 1200
-    },
-    {
-      "kind": "spoke",
-      "slug": "marbella-yacht-charter-vs-ibiza",
-      "primary_keyword": "marbella yacht charter vs ibiza",
-      "title": "Marbella Yacht Charter vs Ibiza: Cost, Vibe & Experience Compared",
-      "target_words": 1250
-    },
-    {
-      "kind": "spoke",
-      "slug": "puerto-banus-vs-marbella-marina-boat-rental",
-      "primary_keyword": "puerto banus vs marbella marina boat rental",
-      "title": "Puerto Banus vs Marbella Marina Boat Rental: Which Departure Point Is Best?",
-      "target_words": 1100
     }
   ],
   "consumed": [
@@ -2871,6 +2815,70 @@
       "slug": "experiences/marbella-full-moon-yoga-cruise",
       "primary_keyword": "marbella full moon yoga cruise",
       "title": "Marbella Full Moon Yoga Cruise: Stretch, Breathe & Sail Under the Moon",
+      "target_words": 1100,
+      "consumed_at": "2026-06-18"
+    },
+    {
+      "kind": "blog",
+      "slug": "blog/marbella-yacht-charter-valentines-day",
+      "primary_keyword": "Valentine's Day yacht charter Marbella",
+      "title": "Valentine's Day Yacht Charter in Marbella: A Romantic Escape at Sea",
+      "target_words": 1200,
+      "consumed_at": "2026-06-18"
+    },
+    {
+      "kind": "blog",
+      "slug": "blog/marbella-yacht-charter-carnival-celebration",
+      "primary_keyword": "Carnival yacht charter Marbella",
+      "title": "Carnival at Sea: Marbella Yacht Charter for a Festive Day",
+      "target_words": 1150,
+      "consumed_at": "2026-06-18"
+    },
+    {
+      "kind": "blog",
+      "slug": "blog/marbella-yacht-charter-mothers-day",
+      "primary_keyword": "Mother's Day yacht charter Marbella",
+      "title": "Mother's Day Yacht Charter in Marbella: A Luxurious Family Tribute",
+      "target_words": 1100,
+      "consumed_at": "2026-06-18"
+    },
+    {
+      "kind": "blog",
+      "slug": "blog/marbella-yacht-charter-corpus-christi",
+      "primary_keyword": "Corpus Christi yacht charter Marbella",
+      "title": "Corpus Christi Yacht Charter in Marbella: A Unique Holiday Afloat",
+      "target_words": 1100,
+      "consumed_at": "2026-06-18"
+    },
+    {
+      "kind": "blog",
+      "slug": "blog/marbella-yacht-charter-hispanic-day",
+      "primary_keyword": "Hispanic Day yacht charter Marbella",
+      "title": "Hispanic Day Yacht Charter in Marbella: Celebrate Culture at Sea",
+      "target_words": 1150,
+      "consumed_at": "2026-06-18"
+    },
+    {
+      "kind": "spoke",
+      "slug": "marbella-yacht-charter-vs-nice",
+      "primary_keyword": "marbella yacht charter vs nice",
+      "title": "Marbella Yacht Charter vs Nice: Which Mediterranean Destination Wins?",
+      "target_words": 1200,
+      "consumed_at": "2026-06-18"
+    },
+    {
+      "kind": "spoke",
+      "slug": "marbella-yacht-charter-vs-ibiza",
+      "primary_keyword": "marbella yacht charter vs ibiza",
+      "title": "Marbella Yacht Charter vs Ibiza: Cost, Vibe & Experience Compared",
+      "target_words": 1250,
+      "consumed_at": "2026-06-18"
+    },
+    {
+      "kind": "spoke",
+      "slug": "puerto-banus-vs-marbella-marina-boat-rental",
+      "primary_keyword": "puerto banus vs marbella marina boat rental",
+      "title": "Puerto Banus vs Marbella Marina Boat Rental: Which Departure Point Is Best?",
       "target_words": 1100,
       "consumed_at": "2026-06-18"
     }

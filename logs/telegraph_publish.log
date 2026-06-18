@@ -55,3 +55,13 @@
 [2026-06-17 14:33:13]   ✓ published https://telegra.ph/Tracing-Roman-Ruins-A-Cultural-Boat-Charter-to-Marbellas-Hidden-Coast-06-17 (5 backlinks)
 [2026-06-17 14:33:13] === Done: 3/3 published. Ledger total: 15 ===
 
+[2026-06-18 13:30:03] === Telegraph run: target 3 article(s) · 15 previously published ===
+[2026-06-18 13:30:03]   DeepSeek failed (ConnectionError: HTTPSConnectionPool(host='api.deepseek.com', port=443): Max retries exceeded with url: /chat/completions (Caused by Name), falling back to claude CLI
+[2026-06-18 13:32:35] [1/3] Anchoring Off La Concha: A Hiker's Boat Charter Adventure
+[2026-06-18 13:32:59]   ✓ published https://telegra.ph/Anchoring-Off-La-Concha-A-Hikers-Boat-Charter-Adventure-06-18 (5 backlinks)
+[2026-06-18 13:32:59] [2/3] Olive Harvest by Sea: Autumn Charter from Marbella to Frigiliana
+[2026-06-18 13:33:18]   ✓ published https://telegra.ph/Olive-Harvest-by-Sea-Autumn-Charter-from-Marbella-to-Frigiliana-06-18 (5 backlinks)
+[2026-06-18 13:33:18] [3/3] Inside a Sunseeker Predator: Test-Driving Puerto Banús's Iconic Yacht
+[2026-06-18 13:33:38]   ✓ published https://telegra.ph/Inside-a-Sunseeker-Predator-Test-Driving-Puerto-Banúss-Iconic-Yacht-06-18 (1 backlinks)
+[2026-06-18 13:33:38] === Done: 3/3 published. Ledger total: 18 ===
+

@@ -626,3 +626,6 @@ hint: See the 'Note about fast-forwards' in 'git push --help' for details.
 [2026-06-18 10:05:23]   ✓ added to keyword_map.spokes
 [2026-06-18 10:05:23] queue: 46 remaining, 300 consumed total
 [2026-06-18 10:05:23] running deploy.sh …
+[2026-06-18 10:05:45] deploy.sh OK
+[2026-06-18 10:05:45] === Done: 10 succeeded, 0 failed ===
+

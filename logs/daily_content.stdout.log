@@ -629,3 +629,23 @@ hint: See the 'Note about fast-forwards' in 'git push --help' for details.
 [2026-06-18 10:05:45] deploy.sh OK
 [2026-06-18 10:05:45] === Done: 10 succeeded, 0 failed ===
 
+[2026-06-19 10:00:00] === Daily content run (kind-balanced): 5 blog + 0 landing = 5 item(s) ===
+[2026-06-19 10:00:00] [1/5] blog · blog/marbella-yacht-charter-st-patricks-day
+[2026-06-19 10:00:25]   ✓ saved content/blog_marbella-yacht-charter-st-patricks-day.json
+[2026-06-19 10:00:25]   ✓ added to keyword_map.blog
+[2026-06-19 10:00:25] [2/5] blog · blog/marbella-yacht-charter-easter-monday
+[2026-06-19 10:00:52]   ✓ saved content/blog_marbella-yacht-charter-easter-monday.json
+[2026-06-19 10:00:52]   ✓ added to keyword_map.blog
+[2026-06-19 10:00:52] [3/5] blog · blog/marbella-yacht-charter-labour-day
+[2026-06-19 10:01:21]   ✓ saved content/blog_marbella-yacht-charter-labour-day.json
+[2026-06-19 10:01:21]   ✓ added to keyword_map.blog
+[2026-06-19 10:01:21] [4/5] blog · blog/marbella-yacht-charter-assumption-day
+[2026-06-19 10:02:01]   ✓ saved content/blog_marbella-yacht-charter-assumption-day.json
+[2026-06-19 10:02:01]   ✓ added to keyword_map.blog
+[2026-06-19 10:02:01] [5/5] blog · blog/marbella-yacht-charter-christmas-eve
+[2026-06-19 10:02:35]   ✓ saved content/blog_marbella-yacht-charter-christmas-eve.json
+[2026-06-19 10:02:35]   ✓ added to keyword_map.blog
+[2026-06-19 10:02:35] queue: 28 remaining, 318 consumed total
+[2026-06-19 10:02:35] queue under threshold (28 < 30) — auto-refilling…
+[2026-06-19 10:02:54] refill: +26 topics (queue now 54)
+[2026-06-19 10:02:54] running deploy.sh …

@@ -2399,6 +2399,41 @@
       "title": "New Year's Day Yacht Charter in Marbella: Start the Year at Sea",
       "intent": "informational",
       "target_words": 1150
+    },
+    {
+      "slug": "blog/marbella-yacht-charter-st-patricks-day",
+      "primary_keyword": "St. Patrick's Day yacht charter Marbella",
+      "title": "St. Patrick's Day Yacht Charter in Marbella: A Green Celebration at Sea",
+      "intent": "informational",
+      "target_words": 1100
+    },
+    {
+      "slug": "blog/marbella-yacht-charter-easter-monday",
+      "primary_keyword": "Easter Monday yacht charter Marbella",
+      "title": "Easter Monday Yacht Charter in Marbella: A Sunny Holiday Escape",
+      "intent": "informational",
+      "target_words": 1100
+    },
+    {
+      "slug": "blog/marbella-yacht-charter-labour-day",
+      "primary_keyword": "Labour Day yacht charter Marbella",
+      "title": "Labour Day Yacht Charter in Marbella: A May Day Adventure at Sea",
+      "intent": "informational",
+      "target_words": 1100
+    },
+    {
+      "slug": "blog/marbella-yacht-charter-assumption-day",
+      "primary_keyword": "Assumption Day yacht charter Marbella",
+      "title": "Assumption Day Yacht Charter in Marbella: A Mid-August Maritime Retreat",
+      "intent": "informational",
+      "target_words": 1150
+    },
+    {
+      "slug": "blog/marbella-yacht-charter-christmas-eve",
+      "primary_keyword": "Christmas Eve yacht charter Marbella",
+      "title": "Christmas Eve Yacht Charter in Marbella: A Magical Night on the Water",
+      "intent": "informational",
+      "target_words": 1200
     }
   ]
 }

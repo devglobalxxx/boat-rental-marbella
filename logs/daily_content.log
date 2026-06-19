@@ -1861,3 +1861,24 @@ hint: See the 'Note about fast-forwards' in 'git push --help' for details.
 [2026-06-19 15:34:59]   ✓ added to keyword_map.spokes
 [2026-06-19 15:34:59] queue: 44 remaining, 328 consumed total
 [2026-06-19 15:34:59] running deploy.sh …
+[2026-06-19 15:35:18] deploy.sh OK
+[2026-06-19 15:35:18] === Done: 10 succeeded, 0 failed ===
+
+[2026-06-19 18:30:08] === Daily content run (kind-balanced): 5 blog + 0 landing = 5 item(s) ===
+[2026-06-19 18:30:08] [1/5] blog · blog/marbella-yacht-charter-gibraltar-national-day
+[2026-06-19 18:30:31]   ✓ saved content/blog_marbella-yacht-charter-gibraltar-national-day.json
+[2026-06-19 18:30:31]   ✓ added to keyword_map.blog
+[2026-06-19 18:30:31] [2/5] blog · blog/marbella-yacht-charter-weather-april
+[2026-06-19 18:30:58]   ✓ saved content/blog_marbella-yacht-charter-weather-april.json
+[2026-06-19 18:30:58]   ✓ added to keyword_map.blog
+[2026-06-19 18:30:58] [3/5] blog · blog/marbella-yacht-charter-weather-november
+[2026-06-19 18:31:24]   ✓ saved content/blog_marbella-yacht-charter-weather-november.json
+[2026-06-19 18:31:24]   ✓ added to keyword_map.blog
+[2026-06-19 18:31:24] [4/5] blog · blog/marbella-yacht-charter-weather-december
+[2026-06-19 18:31:51]   ✓ saved content/blog_marbella-yacht-charter-weather-december.json
+[2026-06-19 18:31:51]   ✓ added to keyword_map.blog
+[2026-06-19 18:31:51] [5/5] blog · blog/puerto-banus-yacht-rental-cost-breakdown
+[2026-06-19 18:32:17]   ✓ saved content/blog_puerto-banus-yacht-rental-cost-breakdown.json
+[2026-06-19 18:32:17]   ✓ added to keyword_map.blog
+[2026-06-19 18:32:17] queue: 39 remaining, 333 consumed total
+[2026-06-19 18:32:17] running deploy.sh …

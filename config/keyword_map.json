@@ -2504,6 +2504,41 @@
       "title": "Málaga Fair Yacht Charter in Marbella: A Fiesta from the Sea",
       "intent": "informational",
       "target_words": 1100
+    },
+    {
+      "slug": "blog/marbella-yacht-charter-gibraltar-national-day",
+      "primary_keyword": "Gibraltar National Day yacht charter Marbella",
+      "title": "Gibraltar National Day Yacht Charter in Marbella: A Cross-Border Celebration",
+      "intent": "informational",
+      "target_words": 1100
+    },
+    {
+      "slug": "blog/marbella-yacht-charter-weather-april",
+      "primary_keyword": "marbella yacht charter weather april",
+      "title": "Marbella Yacht Charter Weather in April: Conditions, Tips & Best Times",
+      "intent": "informational",
+      "target_words": 1200
+    },
+    {
+      "slug": "blog/marbella-yacht-charter-weather-november",
+      "primary_keyword": "marbella yacht charter weather november",
+      "title": "Marbella Yacht Charter Weather in November: What to Expect & How to Plan",
+      "intent": "informational",
+      "target_words": 1150
+    },
+    {
+      "slug": "blog/marbella-yacht-charter-weather-december",
+      "primary_keyword": "marbella yacht charter weather december",
+      "title": "Marbella Yacht Charter Weather in December: Winter Cruising Guide",
+      "intent": "informational",
+      "target_words": 1100
+    },
+    {
+      "slug": "blog/puerto-banus-yacht-rental-cost-breakdown",
+      "primary_keyword": "puerto banus yacht rental cost breakdown",
+      "title": "Puerto Banus Yacht Rental Cost Breakdown: Prices, Fees & Hidden Charges",
+      "intent": "informational",
+      "target_words": 1300
     }
   ]
 }

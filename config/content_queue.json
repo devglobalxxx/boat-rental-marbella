@@ -4,41 +4,6 @@
   "queue": [
     {
       "kind": "blog",
-      "slug": "blog/marbella-yacht-charter-gibraltar-national-day",
-      "primary_keyword": "Gibraltar National Day yacht charter Marbella",
-      "title": "Gibraltar National Day Yacht Charter in Marbella: A Cross-Border Celebration",
-      "target_words": 1100
-    },
-    {
-      "kind": "blog",
-      "slug": "blog/marbella-yacht-charter-weather-april",
-      "primary_keyword": "marbella yacht charter weather april",
-      "title": "Marbella Yacht Charter Weather in April: Conditions, Tips & Best Times",
-      "target_words": 1200
-    },
-    {
-      "kind": "blog",
-      "slug": "blog/marbella-yacht-charter-weather-november",
-      "primary_keyword": "marbella yacht charter weather november",
-      "title": "Marbella Yacht Charter Weather in November: What to Expect & How to Plan",
-      "target_words": 1150
-    },
-    {
-      "kind": "blog",
-      "slug": "blog/marbella-yacht-charter-weather-december",
-      "primary_keyword": "marbella yacht charter weather december",
-      "title": "Marbella Yacht Charter Weather in December: Winter Cruising Guide",
-      "target_words": 1100
-    },
-    {
-      "kind": "blog",
-      "slug": "blog/puerto-banus-yacht-rental-cost-breakdown",
-      "primary_keyword": "puerto banus yacht rental cost breakdown",
-      "title": "Puerto Banus Yacht Rental Cost Breakdown: Prices, Fees & Hidden Charges",
-      "target_words": 1300
-    },
-    {
-      "kind": "blog",
       "slug": "blog/sotogrande-yacht-charter-group-size",
       "primary_keyword": "sotogrande yacht charter group size",
       "title": "Sotogrande Yacht Charter Group Size Limits: Maximum Guests by Boat Type",
@@ -3082,6 +3047,46 @@
       "primary_keyword": "marbella vs estepona boat rental",
       "title": "Marbella vs Estepona Boat Rental: Which Marina Should You Choose?",
       "target_words": 1150,
+      "consumed_at": "2026-06-19"
+    },
+    {
+      "kind": "blog",
+      "slug": "blog/marbella-yacht-charter-gibraltar-national-day",
+      "primary_keyword": "Gibraltar National Day yacht charter Marbella",
+      "title": "Gibraltar National Day Yacht Charter in Marbella: A Cross-Border Celebration",
+      "target_words": 1100,
+      "consumed_at": "2026-06-19"
+    },
+    {
+      "kind": "blog",
+      "slug": "blog/marbella-yacht-charter-weather-april",
+      "primary_keyword": "marbella yacht charter weather april",
+      "title": "Marbella Yacht Charter Weather in April: Conditions, Tips & Best Times",
+      "target_words": 1200,
+      "consumed_at": "2026-06-19"
+    },
+    {
+      "kind": "blog",
+      "slug": "blog/marbella-yacht-charter-weather-november",
+      "primary_keyword": "marbella yacht charter weather november",
+      "title": "Marbella Yacht Charter Weather in November: What to Expect & How to Plan",
+      "target_words": 1150,
+      "consumed_at": "2026-06-19"
+    },
+    {
+      "kind": "blog",
+      "slug": "blog/marbella-yacht-charter-weather-december",
+      "primary_keyword": "marbella yacht charter weather december",
+      "title": "Marbella Yacht Charter Weather in December: Winter Cruising Guide",
+      "target_words": 1100,
+      "consumed_at": "2026-06-19"
+    },
+    {
+      "kind": "blog",
+      "slug": "blog/puerto-banus-yacht-rental-cost-breakdown",
+      "primary_keyword": "puerto banus yacht rental cost breakdown",
+      "title": "Puerto Banus Yacht Rental Cost Breakdown: Prices, Fees & Hidden Charges",
+      "target_words": 1300,
       "consumed_at": "2026-06-19"
     }
   ],

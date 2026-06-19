@@ -1825,3 +1825,39 @@ hint: See the 'Note about fast-forwards' in 'git push --help' for details.
 [2026-06-19 10:02:35] queue under threshold (28 < 30) — auto-refilling…
 [2026-06-19 10:02:54] refill: +26 topics (queue now 54)
 [2026-06-19 10:02:54] running deploy.sh …
+[2026-06-19 10:03:15] deploy.sh OK
+[2026-06-19 10:03:15] === Done: 5 succeeded, 0 failed ===
+
+[2026-06-19 15:30:00] === Daily content run (kind-balanced): 5 blog + 5 landing = 10 item(s) ===
+[2026-06-19 15:30:00] [1/10] blog · blog/marbella-yacht-charter-san-juan
+[2026-06-19 15:30:29]   ✓ saved content/blog_marbella-yacht-charter-san-juan.json
+[2026-06-19 15:30:29]   ✓ added to keyword_map.blog
+[2026-06-19 15:30:29] [2/10] blog · blog/marbella-yacht-charter-virgen-del-carmen
+[2026-06-19 15:30:59]   ✓ saved content/blog_marbella-yacht-charter-virgen-del-carmen.json
+[2026-06-19 15:30:59]   ✓ added to keyword_map.blog
+[2026-06-19 15:30:59] [3/10] blog · blog/marbella-yacht-charter-world-cup-final
+[2026-06-19 15:31:30]   ✓ saved content/blog_marbella-yacht-charter-world-cup-final.json
+[2026-06-19 15:31:30]   ✓ added to keyword_map.blog
+[2026-06-19 15:31:30] [4/10] blog · blog/marbella-yacht-charter-super-bowl
+[2026-06-19 15:32:02]   ✓ saved content/blog_marbella-yacht-charter-super-bowl.json
+[2026-06-19 15:32:02]   ✓ added to keyword_map.blog
+[2026-06-19 15:32:02] [5/10] blog · blog/marbella-yacht-charter-malaga-fair
+[2026-06-19 15:32:28]   ✓ saved content/blog_marbella-yacht-charter-malaga-fair.json
+[2026-06-19 15:32:28]   ✓ added to keyword_map.blog
+[2026-06-19 15:32:28] [6/10] experience · experiences/marbella-family-snorkeling-paddleboard-combo
+[2026-06-19 15:32:53]   ✓ saved content/experiences_marbella-family-snorkeling-paddleboard-combo.json
+[2026-06-19 15:32:53]   ✓ added to keyword_map.spokes
+[2026-06-19 15:32:53] [7/10] experience · experiences/marbella-sunset-tapas-and-wine-cruise
+[2026-06-19 15:33:25]   ✓ saved content/experiences_marbella-sunset-tapas-and-wine-cruise.json
+[2026-06-19 15:33:25]   ✓ added to keyword_map.spokes
+[2026-06-19 15:33:25] [8/10] spoke · marbella-boat-rental-vs-gibraltar
+[2026-06-19 15:33:59]   ✓ saved content/marbella-boat-rental-vs-gibraltar.json
+[2026-06-19 15:33:59]   ✓ added to keyword_map.spokes
+[2026-06-19 15:33:59] [9/10] spoke · marbella-yacht-charter-vs-malaga
+[2026-06-19 15:34:31]   ✓ saved content/marbella-yacht-charter-vs-malaga.json
+[2026-06-19 15:34:31]   ✓ added to keyword_map.spokes
+[2026-06-19 15:34:31] [10/10] spoke · marbella-boat-rental-vs-estepona
+[2026-06-19 15:34:59]   ✓ saved content/marbella-boat-rental-vs-estepona.json
+[2026-06-19 15:34:59]   ✓ added to keyword_map.spokes
+[2026-06-19 15:34:59] queue: 44 remaining, 328 consumed total
+[2026-06-19 15:34:59] running deploy.sh …

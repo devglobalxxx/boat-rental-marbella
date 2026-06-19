@@ -696,6 +696,41 @@
       "title": "Puerto Banus vs Marbella Marina Boat Rental: Which Departure Point Is Best?",
       "intent": "transactional",
       "target_words": 1100
+    },
+    {
+      "slug": "experiences/marbella-family-snorkeling-paddleboard-combo",
+      "primary_keyword": "marbella family snorkeling paddleboard boat",
+      "title": "Marbella Family Snorkeling & Paddleboard Boat Combo Experience",
+      "intent": "transactional",
+      "target_words": 1200
+    },
+    {
+      "slug": "experiences/marbella-sunset-tapas-and-wine-cruise",
+      "primary_keyword": "marbella sunset tapas wine cruise",
+      "title": "Marbella Sunset Tapas and Wine Cruise on a Private Yacht",
+      "intent": "transactional",
+      "target_words": 1150
+    },
+    {
+      "slug": "marbella-boat-rental-vs-gibraltar",
+      "primary_keyword": "marbella vs gibraltar boat rental",
+      "title": "Marbella vs Gibraltar Boat Rental: Which Is Better for Your Trip?",
+      "intent": "transactional",
+      "target_words": 1100
+    },
+    {
+      "slug": "marbella-yacht-charter-vs-malaga",
+      "primary_keyword": "marbella vs malaga yacht charter",
+      "title": "Marbella vs Málaga Yacht Charter: Pros, Cons & Best Options",
+      "intent": "transactional",
+      "target_words": 1100
+    },
+    {
+      "slug": "marbella-boat-rental-vs-estepona",
+      "primary_keyword": "marbella vs estepona boat rental",
+      "title": "Marbella vs Estepona Boat Rental: Which Marina Should You Choose?",
+      "intent": "transactional",
+      "target_words": 1150
     }
   ],
   "blog": [
@@ -2434,6 +2469,41 @@
       "title": "Christmas Eve Yacht Charter in Marbella: A Magical Night on the Water",
       "intent": "informational",
       "target_words": 1200
+    },
+    {
+      "slug": "blog/marbella-yacht-charter-san-juan",
+      "primary_keyword": "San Juan yacht charter Marbella",
+      "title": "San Juan Yacht Charter in Marbella: Celebrate the Summer Solstice at Sea",
+      "intent": "informational",
+      "target_words": 1150
+    },
+    {
+      "slug": "blog/marbella-yacht-charter-virgen-del-carmen",
+      "primary_keyword": "Virgen del Carmen yacht charter Marbella",
+      "title": "Virgen del Carmen Yacht Charter in Marbella: A Nautical Tradition",
+      "intent": "informational",
+      "target_words": 1100
+    },
+    {
+      "slug": "blog/marbella-yacht-charter-world-cup-final",
+      "primary_keyword": "World Cup final yacht charter Marbella",
+      "title": "World Cup Final Yacht Charter in Marbella: Watch the Match at Sea",
+      "intent": "informational",
+      "target_words": 1150
+    },
+    {
+      "slug": "blog/marbella-yacht-charter-super-bowl",
+      "primary_keyword": "Super Bowl yacht charter Marbella",
+      "title": "Super Bowl Yacht Charter in Marbella: A Luxury Viewing Party at Sea",
+      "intent": "informational",
+      "target_words": 1150
+    },
+    {
+      "slug": "blog/marbella-yacht-charter-malaga-fair",
+      "primary_keyword": "Málaga Fair yacht charter Marbella",
+      "title": "Málaga Fair Yacht Charter in Marbella: A Fiesta from the Sea",
+      "intent": "informational",
+      "target_words": 1100
     }
   ]
 }

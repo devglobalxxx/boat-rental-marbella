@@ -1903,3 +1903,26 @@ hint: See the 'Note about fast-forwards' in 'git push --help' for details.
 [2026-06-20 10:02:49]   ✓ added to keyword_map.blog
 [2026-06-20 10:02:49] queue: 34 remaining, 338 consumed total
 [2026-06-20 10:02:49] running deploy.sh …
+[2026-06-20 10:03:10] deploy.sh OK
+[2026-06-20 10:03:10] === Done: 5 succeeded, 0 failed ===
+
+[2026-06-20 16:59:38] === Daily content run (kind-balanced): 5 blog + 0 landing = 5 item(s) ===
+[2026-06-20 16:59:38] [1/5] blog · blog/marbella-yacht-charter-hen-party-catering
+[2026-06-20 17:00:06]   ✓ saved content/blog_marbella-yacht-charter-hen-party-catering.json
+[2026-06-20 17:00:06]   ✓ added to keyword_map.blog
+[2026-06-20 17:00:06] [2/5] blog · blog/marbella-boat-charter-photoshoot-locations
+[2026-06-20 17:00:29]   ✓ saved content/blog_marbella-boat-charter-photoshoot-locations.json
+[2026-06-20 17:00:29]   ✓ added to keyword_map.blog
+[2026-06-20 17:00:29] [3/5] blog · blog/marbella-yacht-charter-family-day-itinerary
+[2026-06-20 17:01:01]   ✓ saved content/blog_marbella-yacht-charter-family-day-itinerary.json
+[2026-06-20 17:01:01]   ✓ added to keyword_map.blog
+[2026-06-20 17:01:01] [4/5] blog · blog/marbella-yacht-charter-dolphin-watching-tips
+[2026-06-20 17:01:30]   ✓ saved content/blog_marbella-yacht-charter-dolphin-watching-tips.json
+[2026-06-20 17:01:30]   ✓ added to keyword_map.blog
+[2026-06-20 17:01:30] [5/5] blog · blog/marbella-boat-rental-what-to-bring-food
+[2026-06-20 17:02:01]   ✓ saved content/blog_marbella-boat-rental-what-to-bring-food.json
+[2026-06-20 17:02:01]   ✓ added to keyword_map.blog
+[2026-06-20 17:02:01] queue: 29 remaining, 343 consumed total
+[2026-06-20 17:02:01] queue under threshold (29 < 30) — auto-refilling…
+[2026-06-20 17:02:20] refill: +6 topics (queue now 35)
+[2026-06-20 17:02:20] running deploy.sh …

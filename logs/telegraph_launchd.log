@@ -56,3 +56,6 @@
 [2026-06-19 13:31:08]   ✓ published https://telegra.ph/Sunset-Speedboat-Tour-Puerto-Banús-to-Cabopinos-Dunes-06-19 (5 backlinks)
 [2026-06-19 13:31:08] === Done: 3/3 published. Ledger total: 21 ===
 
+[2026-06-20 13:55:52] === Telegraph run: target 3 article(s) · 21 previously published ===
+[2026-06-20 13:55:52]   DeepSeek failed (ConnectionError: HTTPSConnectionPool(host='api.deepseek.com', port=443): Max retries exceeded with url: /chat/completions (Caused by Name), falling back to claude CLI
+[2026-06-20 13:59:04] topic generation failed: claude CLI exit 1: 

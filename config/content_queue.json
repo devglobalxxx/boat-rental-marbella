@@ -4,41 +4,6 @@
   "queue": [
     {
       "kind": "blog",
-      "slug": "blog/marbella-yacht-charter-hen-party-catering",
-      "primary_keyword": "marbella yacht charter hen party catering",
-      "title": "Marbella Yacht Charter Hen Party Catering: Menu Ideas & Dietary Options",
-      "target_words": 1150
-    },
-    {
-      "kind": "blog",
-      "slug": "blog/marbella-boat-charter-photoshoot-locations",
-      "primary_keyword": "marbella boat charter photoshoot locations",
-      "title": "Marbella Boat Charter Photoshoot Locations: Best Backdrops from the Sea",
-      "target_words": 1100
-    },
-    {
-      "kind": "blog",
-      "slug": "blog/marbella-yacht-charter-family-day-itinerary",
-      "primary_keyword": "marbella yacht charter family day itinerary",
-      "title": "Marbella Yacht Charter Family Day Itinerary: Snorkeling, Lunch & Fun",
-      "target_words": 1200
-    },
-    {
-      "kind": "blog",
-      "slug": "blog/marbella-yacht-charter-dolphin-watching-tips",
-      "primary_keyword": "marbella yacht charter dolphin watching tips",
-      "title": "Marbella Yacht Charter Dolphin Watching Tips: Best Spots & Seasons",
-      "target_words": 1150
-    },
-    {
-      "kind": "blog",
-      "slug": "blog/marbella-boat-rental-what-to-bring-food",
-      "primary_keyword": "marbella boat rental what to bring food",
-      "title": "Marbella Boat Rental: What to Bring Food & Drinks Onboard – Complete Guide",
-      "target_words": 1100
-    },
-    {
-      "kind": "blog",
       "slug": "blog/marbella-yacht-charter-age-policy-kids",
       "primary_keyword": "marbella yacht charter age policy kids",
       "title": "Marbella Yacht Charter Age Policy for Kids: Minimum Ages & Safety Rules",
@@ -238,6 +203,48 @@
       "slug": "blog/marbella-yacht-charter-feria-2027",
       "primary_keyword": "marbella feria yacht charter 2027",
       "title": "Celebrate Marbella Feria 2027 with a Boat Charter Party",
+      "target_words": 1100
+    },
+    {
+      "kind": "blog",
+      "slug": "blog/marbella-yacht-charter-st-patricks-day-2027",
+      "primary_keyword": "St Patrick's Day yacht charter Marbella 2027",
+      "title": "St Patrick's Day Yacht Charter Marbella 2027: Best Boats & Routes",
+      "target_words": 1200
+    },
+    {
+      "kind": "blog",
+      "slug": "blog/marbella-boat-rental-weather-march",
+      "primary_keyword": "Marbella boat rental weather March",
+      "title": "Marbella Boat Rental in March: Weather, Sea Conditions & Tips",
+      "target_words": 1100
+    },
+    {
+      "kind": "blog",
+      "slug": "blog/marbella-yacht-charter-new-years-eve-2027",
+      "primary_keyword": "New Year's Eve yacht charter Marbella 2027",
+      "title": "New Year's Eve 2027: Yacht Charter in Marbella with Fireworks",
+      "target_words": 1200
+    },
+    {
+      "kind": "blog",
+      "slug": "blog/marbella-boat-rental-weather-november",
+      "primary_keyword": "Marbella boat rental weather November",
+      "title": "Marbella Boat Rental in November: Weather, Sea & Charter Tips",
+      "target_words": 1100
+    },
+    {
+      "kind": "blog",
+      "slug": "blog/marbella-yacht-charter-weather-january",
+      "primary_keyword": "Marbella yacht charter weather January",
+      "title": "Marbella Yacht Charter in January: Weather, Events & Best Boats",
+      "target_words": 1100
+    },
+    {
+      "kind": "blog",
+      "slug": "blog/marbella-boat-rental-weather-february",
+      "primary_keyword": "Marbella boat rental weather February",
+      "title": "Marbella Boat Rental in February: Weather, Sea Conditions & Tips",
       "target_words": 1100
     }
   ],
@@ -3092,6 +3099,46 @@
       "primary_keyword": "marbella yacht charter stag weekend activities",
       "title": "Marbella Yacht Charter Stag Weekend Activities: Top Onboard Fun & Extras",
       "target_words": 1200,
+      "consumed_at": "2026-06-20"
+    },
+    {
+      "kind": "blog",
+      "slug": "blog/marbella-yacht-charter-hen-party-catering",
+      "primary_keyword": "marbella yacht charter hen party catering",
+      "title": "Marbella Yacht Charter Hen Party Catering: Menu Ideas & Dietary Options",
+      "target_words": 1150,
+      "consumed_at": "2026-06-20"
+    },
+    {
+      "kind": "blog",
+      "slug": "blog/marbella-boat-charter-photoshoot-locations",
+      "primary_keyword": "marbella boat charter photoshoot locations",
+      "title": "Marbella Boat Charter Photoshoot Locations: Best Backdrops from the Sea",
+      "target_words": 1100,
+      "consumed_at": "2026-06-20"
+    },
+    {
+      "kind": "blog",
+      "slug": "blog/marbella-yacht-charter-family-day-itinerary",
+      "primary_keyword": "marbella yacht charter family day itinerary",
+      "title": "Marbella Yacht Charter Family Day Itinerary: Snorkeling, Lunch & Fun",
+      "target_words": 1200,
+      "consumed_at": "2026-06-20"
+    },
+    {
+      "kind": "blog",
+      "slug": "blog/marbella-yacht-charter-dolphin-watching-tips",
+      "primary_keyword": "marbella yacht charter dolphin watching tips",
+      "title": "Marbella Yacht Charter Dolphin Watching Tips: Best Spots & Seasons",
+      "target_words": 1150,
+      "consumed_at": "2026-06-20"
+    },
+    {
+      "kind": "blog",
+      "slug": "blog/marbella-boat-rental-what-to-bring-food",
+      "primary_keyword": "marbella boat rental what to bring food",
+      "title": "Marbella Boat Rental: What to Bring Food & Drinks Onboard – Complete Guide",
+      "target_words": 1100,
       "consumed_at": "2026-06-20"
     }
   ],

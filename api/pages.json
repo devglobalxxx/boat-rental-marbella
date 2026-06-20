@@ -1,7 +1,7 @@
 {
   "@context": "https://boatrentalinmarbella.com/api/pages.json",
   "source": "https://boatrentalinmarbella.com",
-  "count": 432,
+  "count": 437,
   "kinds": [
     "blog",
     "boat",
@@ -294,6 +294,14 @@
       "excerpt": "If you’re after a Cabopino family snorkeling boat rental that combines calm coves, sandy beaches, and zero hassle, you’ve found it. Departing from Puerto Banús, our fleet takes you east to Cabopino’s protected dunes and clear Mediterranean waters in under 30 minutes. Every charte"
     },
     {
+      "url": "https://boatrentalinmarbella.com/blog/cabopino-boat-rental-sunset-cruise/",
+      "title": "Cabopino Boat Rental for Sunset Cruise: Best Routes &amp; Tips",
+      "description": "Book a Cabopino boat rental sunset cruise from Puerto Banús. Explore best routes, costs from €749/2h, and tips for an unforgettable evening on the Costa del Sol.",
+      "kind": "blog",
+      "locale": "en",
+      "excerpt": "Imagine gliding across the Mediterranean as the sky turns shades of orange and pink, with the Sierra Blanca mountains as your backdrop. A Cabopino boat rental sunset cruise offers exactly that – a private, unforgettable evening on the water. Departing from Puerto Banús, just 10 m"
+    },
+    {
       "url": "https://boatrentalinmarbella.com/blog/cabopino-charter-departures/",
       "title": "Charter Departures from Cabopino vs Puerto Banús",
       "description": "Compare Cabopino and Puerto Banús charter departures in Marbella. Find the best base for your boat trip with prices from €749/2h. Book your charter today.",
@@ -420,6 +428,14 @@
       "kind": "blog",
       "locale": "en",
       "excerpt": "Planning an Estepona boat charter departure from Puerto Banús is straightforward, but a few details can make your day smoother. This guide covers marinas, distances, what to bring, and how to book — so you can focus on enjoying the Mediterranean. Explore our full fleet of boats i"
+    },
+    {
+      "url": "https://boatrentalinmarbella.com/blog/estepona-boat-charter-fishing-trip/",
+      "title": "Estepona Boat Charter for Fishing Trip: Species, Seasons &amp; Licenses",
+      "description": "Plan an Estepona boat charter fishing trip: target species by season, license rules, and the best charter boats from Puerto Banús. Book your trip today.",
+      "kind": "blog",
+      "locale": "en",
+      "excerpt": "Estepona’s coastline offers some of the best inshore and offshore fishing on the Costa del Sol. Whether you’re after sea bass in the rocky shallows or bluefin tuna in the deep blue, an Estepona boat charter fishing trip puts you on the water with a licensed skipper and a fully eq"
     },
     {
       "url": "https://boatrentalinmarbella.com/blog/estepona-boat-charter-sunset-cruise/",
@@ -772,6 +788,14 @@
       "kind": "blog",
       "locale": "en",
       "excerpt": "Thinking about a boat rental no license Marbella cost for 2026? You’re in the right place. Marbella’s coastline – from Puerto Banús to Estepona – is best explored by boat, and you don’t need a single piece of paper to charter one. Every boat in our fleet comes with a licensed ski"
+    },
+    {
+      "url": "https://boatrentalinmarbella.com/blog/marbella-boat-rental-wedding-reception/",
+      "title": "Marbella Boat Rental for Wedding Reception: Venue Guide &amp; Package Ideas",
+      "description": "Plan a marbella boat rental wedding reception with our venue guide. Charter from €749/2h for up to 12 guests. Book your floating celebration today.",
+      "kind": "blog",
+      "locale": "en",
+      "excerpt": "Imagine exchanging vows with the Mediterranean Sea as your backdrop, followed by a reception on the deck of a luxury yacht. A marbella boat rental wedding reception offers an unforgettable setting for your special day. Whether you're planning an intimate gathering or a lavish par"
     },
     {
       "url": "https://boatrentalinmarbella.com/blog/marbella-boat-rental-what-to-bring/",
@@ -1542,6 +1566,14 @@
       "excerpt": "St. Patrick's Day in Marbella is a celebration of green, good cheer, and the Mediterranean. This March 17th, skip the crowded pubs and take your party to sea. A St. Patrick's Day yacht charter in Marbella offers a unique way to enjoy the holiday with friends, family, or colleague"
     },
     {
+      "url": "https://boatrentalinmarbella.com/blog/marbella-yacht-charter-stag-weekend-activities/",
+      "title": "Marbella Yacht Charter Stag Weekend Activities: Top Onboard Fun &amp; Extras",
+      "description": "Discover top marbella yacht charter stag weekend activities with onboard fun &amp; extras. Jet skis, BBQs, and more from €749. Book your ultimate party today.",
+      "kind": "blog",
+      "locale": "en",
+      "excerpt": "Planning a stag do in Marbella? A marbella yacht charter stag weekend activities package is the ultimate way to celebrate. From jet skis and DJ decks to gourmet BBQs and sunset cocktails, our fleet departs Puerto Banús with everything included. Start at €749 for 2 hours and upgra"
+    },
+    {
       "url": "https://boatrentalinmarbella.com/blog/marbella-yacht-charter-stag-weekend-itinerary/",
       "title": "Ultimate Stag Weekend Yacht Charter Itinerary in Marbella",
       "description": "Plan the ultimate Marbella stag weekend yacht charter itinerary. 12-hour luxury boat trip from Puerto Banús with jet skis, lunch, and nightlife. Book now.",
@@ -2004,6 +2036,14 @@
       "kind": "blog",
       "locale": "en",
       "excerpt": "The route from Sotogrande to Marbella by boat is one of the most scenic coastal trips on the Costa del Sol. Covering 18 nautical miles (33 km) of Mediterranean coastline, it takes just 35–50 minutes between the two marinas. Whether you're heading to Sotogrande for polo, golf, or "
+    },
+    {
+      "url": "https://boatrentalinmarbella.com/blog/sotogrande-yacht-charter-group-size/",
+      "title": "Sotogrande Yacht Charter Group Size Limits: Maximum Guests by Boat Type",
+      "description": "Sotogrande yacht charter group size limits explained. Maximum guests per boat from 5 to 12 pax. Find your perfect fit for a day on the Costa del Sol.",
+      "kind": "blog",
+      "locale": "en",
+      "excerpt": "Planning a Sotogrande yacht charter with friends or family? One of the first things you need to know is how many guests your chosen boat can hold. Group size limits vary by vessel, from intimate 5-person speedboats to spacious 12-person luxury yachts. All our boats depart from Pu"
     },
     {
       "url": "https://boatrentalinmarbella.com/blog/sotogrande-yacht-charter-polo-season/",
@@ -3400,7 +3440,7 @@
     {
       "url": "https://boatrentalinmarbella.com/site-map/",
       "title": "Site Map — every page on Boat Rental Marbella",
-      "description": "Full directory of all 430 pages on Boat Rental Marbella — charter types, fleet, experiences, guides, languages and policies.",
+      "description": "Full directory of all 435 pages on Boat Rental Marbella — charter types, fleet, experiences, guides, languages and policies.",
       "kind": "spoke",
       "locale": "en",
       "excerpt": "Every page on Boat Rental Marbella, grouped by section. Looking for something specific? Message us on WhatsApp and ask."

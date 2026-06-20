@@ -1882,3 +1882,24 @@ hint: See the 'Note about fast-forwards' in 'git push --help' for details.
 [2026-06-19 18:32:17]   ✓ added to keyword_map.blog
 [2026-06-19 18:32:17] queue: 39 remaining, 333 consumed total
 [2026-06-19 18:32:17] running deploy.sh …
+[2026-06-19 18:32:37] deploy.sh OK
+[2026-06-19 18:32:37] === Done: 5 succeeded, 0 failed ===
+
+[2026-06-20 10:00:01] === Daily content run (kind-balanced): 5 blog + 0 landing = 5 item(s) ===
+[2026-06-20 10:00:01] [1/5] blog · blog/sotogrande-yacht-charter-group-size
+[2026-06-20 10:00:38]   ✓ saved content/blog_sotogrande-yacht-charter-group-size.json
+[2026-06-20 10:00:38]   ✓ added to keyword_map.blog
+[2026-06-20 10:00:38] [2/5] blog · blog/cabopino-boat-rental-sunset-cruise
+[2026-06-20 10:01:09]   ✓ saved content/blog_cabopino-boat-rental-sunset-cruise.json
+[2026-06-20 10:01:09]   ✓ added to keyword_map.blog
+[2026-06-20 10:01:09] [3/5] blog · blog/estepona-boat-charter-fishing-trip
+[2026-06-20 10:01:46]   ✓ saved content/blog_estepona-boat-charter-fishing-trip.json
+[2026-06-20 10:01:46]   ✓ added to keyword_map.blog
+[2026-06-20 10:01:46] [4/5] blog · blog/marbella-boat-rental-wedding-reception
+[2026-06-20 10:02:18]   ✓ saved content/blog_marbella-boat-rental-wedding-reception.json
+[2026-06-20 10:02:18]   ✓ added to keyword_map.blog
+[2026-06-20 10:02:18] [5/5] blog · blog/marbella-yacht-charter-stag-weekend-activities
+[2026-06-20 10:02:49]   ✓ saved content/blog_marbella-yacht-charter-stag-weekend-activities.json
+[2026-06-20 10:02:49]   ✓ added to keyword_map.blog
+[2026-06-20 10:02:49] queue: 34 remaining, 338 consumed total
+[2026-06-20 10:02:49] running deploy.sh …

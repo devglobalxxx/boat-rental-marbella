@@ -1,7 +1,7 @@
 {
   "@context": "https://boatrentalinmarbella.com/api/pages.json",
   "source": "https://boatrentalinmarbella.com",
-  "count": 442,
+  "count": 447,
   "kinds": [
     "blog",
     "boat",
@@ -100,6 +100,14 @@
       "kind": "blog",
       "locale": "en",
       "excerpt": "Choosing between the Astondoa 40 and the Azimut 39 for a yacht charter in Marbella can feel like splitting hairs. Both are 12.5-metre motor yachts, both depart from Puerto Banús, and both fall into our Tier A pricing — starting at €749 for two hours. But small differences in pass"
+    },
+    {
+      "url": "https://boatrentalinmarbella.com/blog/astondoa-40-vs-azimut-39-vs-mangusta-80-marbella/",
+      "title": "Astondoa 40 vs Azimut 39 vs Mangusta 80 in Marbella: Side-by-Side Comparison",
+      "description": "Astondoa 40 vs Azimut 39 vs Mangusta 80 in Marbella: compare length, pax, price, and inclusions. Find your perfect charter boat in Puerto Banús.",
+      "kind": "blog",
+      "locale": "en",
+      "excerpt": "Choosing between the Astondoa 40 , Azimut 39 , and Mangusta 80 in Marbella can feel overwhelming. All three depart from Puerto Banús, include a skipper and drinks, and offer a premium day on the water. But they differ in size, capacity, and price. This side-by-side comparison bre"
     },
     {
       "url": "https://boatrentalinmarbella.com/blog/astondoa-40-vs-fairline-targa-12m-marbella/",
@@ -1118,6 +1126,14 @@
       "excerpt": "Marbella is one of the top destinations for bluefin tuna fishing in the Mediterranean, and knowing the marbella tuna fishing season charter details is key to a successful trip. The season runs from June to October, with August and September offering the highest catch rates. Wheth"
     },
     {
+      "url": "https://boatrentalinmarbella.com/blog/marbella-yacht-charter-age-policy-kids/",
+      "title": "Marbella Yacht Charter Age Policy for Kids: Minimum Ages &amp; Safety Rules",
+      "description": "Learn the minimum age policy for kids on a Marbella yacht charter. Safety rules, life jackets &amp; requirements for children on boats in Puerto Banús.",
+      "kind": "blog",
+      "locale": "en",
+      "excerpt": "Planning a family day on the water in Marbella? Knowing the Marbella yacht charter age policy for kids is essential before you book. Whether you're cruising from Puerto Banús with toddlers or teenagers, we set clear safety rules and provide the right equipment so everyone enjoys "
+    },
+    {
       "url": "https://boatrentalinmarbella.com/blog/marbella-yacht-charter-airport-transfer/",
       "title": "Marbella Yacht Charter + Malaga Airport Transfer Guide",
       "description": "Plan your marbella yacht charter airport transfer with ease. Puerto Banús is 45 km from Málaga AGP. Book a private taxi or our 12-pax Mangusta 80.",
@@ -1310,6 +1326,14 @@
       "excerpt": "Planning a marbella yacht charter family day itinerary that balances snorkeling, lunch, and fun is simpler than you think. From Puerto Banús, our Astondoa 40 (12.5m, 9 pax) or Azimut 39 (12.5m, 11 pax) offer all-inclusive pricing from €749 for 2 hours to €2,299 for a full 8-hour "
     },
     {
+      "url": "https://boatrentalinmarbella.com/blog/marbella-yacht-charter-feria-2026/",
+      "title": "Marbella Yacht Charter Feria 2026: Celebrate San Bernabé from the Sea",
+      "description": "Book a marbella yacht charter feria 2026 for San Bernabé. Watch fireworks &amp; parades from the sea. Prices from €749/2h. Enquire via WhatsApp.",
+      "kind": "blog",
+      "locale": "en",
+      "excerpt": "Planning your marbella yacht charter feria 2026 is the smartest way to celebrate San Bernabé without the crowds. Each June, Marbella transforms into a whirlwind of flamenco dresses, fairground lights, and nightly fireworks over the Mediterranean. Instead of jostling for a spot on"
+    },
+    {
       "url": "https://boatrentalinmarbella.com/blog/marbella-yacht-charter-gibraltar-national-day/",
       "title": "Gibraltar National Day Yacht Charter in Marbella: A Cross-Border Celebration",
       "description": "Celebrate Gibraltar National Day 2025 with a luxury yacht charter from Marbella. Cruise to Gibraltar, watch the fireworks from the sea, and enjoy premium onboard service. Book now.",
@@ -1452,6 +1476,14 @@
       "kind": "blog",
       "locale": "en",
       "excerpt": "Forget the hangover and the leftovers—start the new year with a New Year's Day yacht charter in Marbella . While most people are nursing a coffee, you can be cruising the Costa del Sol aboard a luxury motor yacht, with the Mediterranean sun on your face and a glass of cava in han"
+    },
+    {
+      "url": "https://boatrentalinmarbella.com/blog/marbella-yacht-charter-new-years-eve-2026/",
+      "title": "Marbella Yacht Charter New Year&#x27;s Eve 2026: Fireworks, Dinner &amp; Party Ideas",
+      "description": "Ring in 2026 with a Marbella yacht charter New Year&#x27;s Eve. Watch fireworks from Puerto Banús, enjoy dinner &amp; party at sea. Book your luxury boat now.",
+      "kind": "blog",
+      "locale": "en",
+      "excerpt": "Ring in 2026 with a Marbella yacht charter New Year's Eve celebration that blends luxury, fireworks, and the Mediterranean Sea. From the glittering lights of Puerto Banús to the midnight fireworks, a private yacht offers an unforgettable way to welcome the new year. Our fleet of "
     },
     {
       "url": "https://boatrentalinmarbella.com/blog/marbella-yacht-charter-new-years-eve-fireworks/",
@@ -1620,6 +1652,14 @@
       "kind": "blog",
       "locale": "en",
       "excerpt": "Marbella is the undisputed king of stag weekends in Europe, and nothing says “best man’s triumph” like a private yacht charter from Puerto Banús. This Marbella stag weekend yacht charter itinerary packs 12 hours of sun, speed, and style aboard the Mangusta 80 — a 24-metre open sp"
+    },
+    {
+      "url": "https://boatrentalinmarbella.com/blog/marbella-yacht-charter-starlite-2026/",
+      "title": "Marbella Yacht Charter Starlite 2026: Concert Nights &amp; VIP Sea Transfers",
+      "description": "Plan your Marbella yacht charter Starlite 2026 experience with VIP sea transfers from Puerto Banús. Book now for concert nights &amp; luxury cruising from €749/2h.",
+      "kind": "blog",
+      "locale": "en",
+      "excerpt": "Plan your Marbella yacht charter Starlite 2026 experience and combine world-class concerts with VIP sea transfers from Puerto Banús. The Starlite Festival, held annually in Marbella's Auditorio, draws international headliners and a glamorous crowd. With our fleet of 18 boats, you"
     },
     {
       "url": "https://boatrentalinmarbella.com/blog/marbella-yacht-charter-starlite-festival/",
@@ -3480,7 +3520,7 @@
     {
       "url": "https://boatrentalinmarbella.com/site-map/",
       "title": "Site Map — every page on Boat Rental Marbella",
-      "description": "Full directory of all 440 pages on Boat Rental Marbella — charter types, fleet, experiences, guides, languages and policies.",
+      "description": "Full directory of all 445 pages on Boat Rental Marbella — charter types, fleet, experiences, guides, languages and policies.",
       "kind": "spoke",
       "locale": "en",
       "excerpt": "Every page on Boat Rental Marbella, grouped by section. Looking for something specific? Message us on WhatsApp and ask."

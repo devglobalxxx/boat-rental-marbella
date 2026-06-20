@@ -1926,3 +1926,24 @@ hint: See the 'Note about fast-forwards' in 'git push --help' for details.
 [2026-06-20 17:02:01] queue under threshold (29 < 30) — auto-refilling…
 [2026-06-20 17:02:20] refill: +6 topics (queue now 35)
 [2026-06-20 17:02:20] running deploy.sh …
+[2026-06-20 17:02:39] deploy.sh OK
+[2026-06-20 17:02:39] === Done: 5 succeeded, 0 failed ===
+
+[2026-06-20 18:30:23] === Daily content run (kind-balanced): 5 blog + 0 landing = 5 item(s) ===
+[2026-06-20 18:30:23] [1/5] blog · blog/marbella-yacht-charter-age-policy-kids
+[2026-06-20 18:30:49]   ✓ saved content/blog_marbella-yacht-charter-age-policy-kids.json
+[2026-06-20 18:30:49]   ✓ added to keyword_map.blog
+[2026-06-20 18:30:49] [2/5] blog · blog/astondoa-40-vs-azimut-39-vs-mangusta-80-marbella
+[2026-06-20 18:31:13]   ✓ saved content/blog_astondoa-40-vs-azimut-39-vs-mangusta-80-marbella.json
+[2026-06-20 18:31:13]   ✓ added to keyword_map.blog
+[2026-06-20 18:31:13] [3/5] blog · blog/marbella-yacht-charter-new-years-eve-2026
+[2026-06-20 18:31:39]   ✓ saved content/blog_marbella-yacht-charter-new-years-eve-2026.json
+[2026-06-20 18:31:39]   ✓ added to keyword_map.blog
+[2026-06-20 18:31:39] [4/5] blog · blog/marbella-yacht-charter-starlite-2026
+[2026-06-20 18:32:04]   ✓ saved content/blog_marbella-yacht-charter-starlite-2026.json
+[2026-06-20 18:32:04]   ✓ added to keyword_map.blog
+[2026-06-20 18:32:04] [5/5] blog · blog/marbella-yacht-charter-feria-2026
+[2026-06-20 18:32:27]   ✓ saved content/blog_marbella-yacht-charter-feria-2026.json
+[2026-06-20 18:32:27]   ✓ added to keyword_map.blog
+[2026-06-20 18:32:27] queue: 30 remaining, 348 consumed total
+[2026-06-20 18:32:27] running deploy.sh …

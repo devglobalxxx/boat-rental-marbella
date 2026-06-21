@@ -4,41 +4,6 @@
   "queue": [
     {
       "kind": "blog",
-      "slug": "blog/marbella-yacht-charter-ironman-2026",
-      "primary_keyword": "marbella yacht charter ironman 2026",
-      "title": "Marbella Yacht Charter Ironman 2026: Recovery Cruises & Spectator Views",
-      "target_words": 1100
-    },
-    {
-      "kind": "blog",
-      "slug": "blog/marbella-yacht-charter-pride-2026",
-      "primary_keyword": "marbella yacht charter pride 2026",
-      "title": "Marbella Yacht Charter Pride 2026: Parade, Party & Inclusive Cruises",
-      "target_words": 1200
-    },
-    {
-      "kind": "blog",
-      "slug": "blog/marbella-yacht-charter-f1-grand-prix-2026",
-      "primary_keyword": "marbella yacht charter f1 grand prix 2026",
-      "title": "Marbella Yacht Charter F1 Grand Prix 2026: Watch the Race from the Sea",
-      "target_words": 1150
-    },
-    {
-      "kind": "blog",
-      "slug": "blog/marbella-yacht-charter-weather-september",
-      "primary_keyword": "marbella yacht charter weather september",
-      "title": "Marbella Yacht Charter in September: Weather, Tips & Best Boats",
-      "target_words": 1200
-    },
-    {
-      "kind": "blog",
-      "slug": "blog/marbella-boat-rental-sotogrande-vs-cabopino",
-      "primary_keyword": "sotogrande vs cabopino boat rental marbella",
-      "title": "Sotogrande vs Cabopino: Which Boat Rental Departure Is Best for You?",
-      "target_words": 1300
-    },
-    {
-      "kind": "blog",
       "slug": "blog/marbella-yacht-charter-f1-grand-prix-2027",
       "primary_keyword": "marbella yacht charter f1 grand prix 2027",
       "title": "Book a Marbella Yacht Charter for the 2027 F1 Grand Prix Weekend",
@@ -210,6 +175,167 @@
       "slug": "blog/marbella-boat-rental-weather-february",
       "primary_keyword": "Marbella boat rental weather February",
       "title": "Marbella Boat Rental in February: Weather, Sea Conditions & Tips",
+      "target_words": 1100
+    },
+    {
+      "kind": "blog",
+      "slug": "blog/marbella-yacht-charter-halloween-party-ideas",
+      "primary_keyword": "Halloween yacht party Marbella",
+      "title": "Halloween Yacht Party in Marbella: Spooky Ideas for Your Charter",
+      "target_words": 1100
+    },
+    {
+      "kind": "blog",
+      "slug": "blog/astondoa-40-vs-sunseeker-manhattan-66-marbella-comparison",
+      "primary_keyword": "Astondoa 40 vs Sunseeker Manhattan 66 Marbella",
+      "title": "Astondoa 40 vs Sunseeker Manhattan 66: Which Yacht Suits Your Marbella Charter?",
+      "target_words": 1100
+    },
+    {
+      "kind": "blog",
+      "slug": "blog/marbella-boat-rental-weather-january-guide",
+      "primary_keyword": "Marbella boat rental weather January",
+      "title": "Marbella Boat Rental in January: Weather, Tips, and Best Yachts",
+      "target_words": 1100
+    },
+    {
+      "kind": "blog",
+      "slug": "blog/puerto-banus-yacht-charter-cost-per-person-breakdown",
+      "primary_keyword": "Puerto Banus yacht charter cost per person",
+      "title": "Puerto Banus Yacht Charter Cost Per Person: A Complete Breakdown",
+      "target_words": 1100
+    },
+    {
+      "kind": "blog",
+      "slug": "blog/estepona-boat-rental-snorkeling-spots-guide",
+      "primary_keyword": "Estepona boat rental snorkeling spots",
+      "title": "Estepona Boat Rental: Best Snorkeling Spots Accessible by Yacht",
+      "target_words": 1100
+    },
+    {
+      "kind": "blog",
+      "slug": "blog/marbella-yacht-charter-feria-2028-preview",
+      "primary_keyword": "Marbella Feria 2028 yacht charter",
+      "title": "Marbella Feria 2028: Plan Your Yacht Charter for the Big Celebration",
+      "target_words": 1100
+    },
+    {
+      "kind": "blog",
+      "slug": "blog/mangusta-80-vs-pershing-46-cost-comparison-marbella",
+      "primary_keyword": "Mangusta 80 vs Pershing 46 cost Marbella",
+      "title": "Mangusta 80 vs Pershing 46: Cost Comparison for Marbella Charters",
+      "target_words": 1100
+    },
+    {
+      "kind": "blog",
+      "slug": "blog/marbella-boat-rental-no-license-prices-2026",
+      "primary_keyword": "Marbella boat rental no license prices 2026",
+      "title": "Marbella Boat Rental No License Prices 2026: What to Expect",
+      "target_words": 1100
+    },
+    {
+      "kind": "blog",
+      "slug": "blog/sotogrande-yacht-charter-polo-season-guide",
+      "primary_keyword": "Sotogrande yacht charter polo season",
+      "title": "Sotogrande Yacht Charter During Polo Season: A Complete Guide",
+      "target_words": 1100
+    },
+    {
+      "kind": "blog",
+      "slug": "blog/marbella-boat-charter-stag-weekend-budget-breakdown",
+      "primary_keyword": "Marbella stag weekend yacht budget",
+      "title": "Marbella Stag Weekend Yacht Charter: Budget Breakdown for Groups",
+      "target_words": 1100
+    },
+    {
+      "kind": "blog",
+      "slug": "blog/marbella-sunset-cruise-romantic-proposal-ideas",
+      "primary_keyword": "Marbella sunset cruise proposal ideas",
+      "title": "Marbella Sunset Cruise Proposal: Romantic Ideas for a Yes",
+      "target_words": 1100
+    },
+    {
+      "kind": "blog",
+      "slug": "blog/marbella-yacht-charter-hen-party-catering-guide",
+      "primary_keyword": "Marbella hen party yacht catering",
+      "title": "Marbella Hen Party Yacht Catering: Menus, Costs, and Tips",
+      "target_words": 1100
+    },
+    {
+      "kind": "blog",
+      "slug": "blog/marbella-yacht-charter-ironman-2028-recovery",
+      "primary_keyword": "Marbella Ironman 2028 yacht recovery",
+      "title": "Marbella Ironman 2028: Yacht Recovery Charters for Athletes",
+      "target_words": 1100
+    },
+    {
+      "kind": "blog",
+      "slug": "blog/marbella-yacht-charter-starlite-2028-guide",
+      "primary_keyword": "Starlite 2028 Marbella yacht charter",
+      "title": "Starlite 2028 Marbella: Yacht Charter Guide for Concert Nights",
+      "target_words": 1100
+    },
+    {
+      "kind": "blog",
+      "slug": "blog/marbella-yacht-charter-f1-grand-prix-2028",
+      "primary_keyword": "F1 Grand Prix 2028 Marbella yacht charter",
+      "title": "F1 Grand Prix 2028: Marbella Yacht Charter for Race Weekend",
+      "target_words": 1100
+    },
+    {
+      "kind": "blog",
+      "slug": "blog/marbella-yacht-charter-weather-february-guide",
+      "primary_keyword": "Marbella yacht charter weather February",
+      "title": "Marbella Yacht Charter in February: Weather, Tips, and Deals",
+      "target_words": 1100
+    },
+    {
+      "kind": "blog",
+      "slug": "blog/marbella-yacht-charter-new-years-eve-2028-fireworks",
+      "primary_keyword": "New Year's Eve 2028 Marbella yacht fireworks",
+      "title": "New Year's Eve 2028 Marbella: Yacht Charter with Fireworks Views",
+      "target_words": 1100
+    },
+    {
+      "kind": "blog",
+      "slug": "blog/marbella-yacht-charter-pride-2028-celebration",
+      "primary_keyword": "Marbella Pride 2028 yacht charter",
+      "title": "Marbella Pride 2028: Yacht Charter for the Ultimate Celebration",
+      "target_words": 1100
+    },
+    {
+      "kind": "experience",
+      "slug": "experiences/marbella-sunset-tapas-cruise-romantic",
+      "primary_keyword": "Marbella sunset tapas cruise romantic",
+      "title": "Marbella Sunset Tapas Cruise: A Romantic Evening on the Sea",
+      "target_words": 1100
+    },
+    {
+      "kind": "experience",
+      "slug": "experiences/marbella-family-boat-day-paddleboarding-snorkeling",
+      "primary_keyword": "Marbella family boat day paddleboarding snorkeling",
+      "title": "Marbella Family Boat Day: Paddleboarding and Snorkeling Adventure",
+      "target_words": 1100
+    },
+    {
+      "kind": "experience",
+      "slug": "experiences/marbella-jet-ski-and-boat-combo-adventure",
+      "primary_keyword": "Marbella jet ski and boat combo",
+      "title": "Marbella Jet Ski and Boat Combo: Thrills on the Costa del Sol",
+      "target_words": 1100
+    },
+    {
+      "kind": "experience",
+      "slug": "experiences/marbella-photoshoot-yacht-sunset-session",
+      "primary_keyword": "Marbella photoshoot yacht sunset",
+      "title": "Marbella Photoshoot Yacht: Capture Stunning Sunset Moments",
+      "target_words": 1100
+    },
+    {
+      "kind": "spoke",
+      "slug": "marbella-boat-rental-vs-ibiza",
+      "primary_keyword": "Marbella boat rental vs Ibiza",
+      "title": "Marbella Boat Rental vs Ibiza: Which Destination Is Right for You?",
       "target_words": 1100
     }
   ],
@@ -3145,6 +3271,46 @@
       "title": "Marbella Yacht Charter Feria 2026: Celebrate San Bernabé from the Sea",
       "target_words": 1150,
       "consumed_at": "2026-06-20"
+    },
+    {
+      "kind": "blog",
+      "slug": "blog/marbella-yacht-charter-ironman-2026",
+      "primary_keyword": "marbella yacht charter ironman 2026",
+      "title": "Marbella Yacht Charter Ironman 2026: Recovery Cruises & Spectator Views",
+      "target_words": 1100,
+      "consumed_at": "2026-06-21"
+    },
+    {
+      "kind": "blog",
+      "slug": "blog/marbella-yacht-charter-pride-2026",
+      "primary_keyword": "marbella yacht charter pride 2026",
+      "title": "Marbella Yacht Charter Pride 2026: Parade, Party & Inclusive Cruises",
+      "target_words": 1200,
+      "consumed_at": "2026-06-21"
+    },
+    {
+      "kind": "blog",
+      "slug": "blog/marbella-yacht-charter-f1-grand-prix-2026",
+      "primary_keyword": "marbella yacht charter f1 grand prix 2026",
+      "title": "Marbella Yacht Charter F1 Grand Prix 2026: Watch the Race from the Sea",
+      "target_words": 1150,
+      "consumed_at": "2026-06-21"
+    },
+    {
+      "kind": "blog",
+      "slug": "blog/marbella-yacht-charter-weather-september",
+      "primary_keyword": "marbella yacht charter weather september",
+      "title": "Marbella Yacht Charter in September: Weather, Tips & Best Boats",
+      "target_words": 1200,
+      "consumed_at": "2026-06-21"
+    },
+    {
+      "kind": "blog",
+      "slug": "blog/marbella-boat-rental-sotogrande-vs-cabopino",
+      "primary_keyword": "sotogrande vs cabopino boat rental marbella",
+      "title": "Sotogrande vs Cabopino: Which Boat Rental Departure Is Best for You?",
+      "target_words": 1300,
+      "consumed_at": "2026-06-21"
     }
   ],
   "refill_threshold": 30,

@@ -1947,3 +1947,26 @@ hint: See the 'Note about fast-forwards' in 'git push --help' for details.
 [2026-06-20 18:32:27]   ✓ added to keyword_map.blog
 [2026-06-20 18:32:27] queue: 30 remaining, 348 consumed total
 [2026-06-20 18:32:27] running deploy.sh …
+[2026-06-20 18:32:47] deploy.sh OK
+[2026-06-20 18:32:47] === Done: 5 succeeded, 0 failed ===
+
+[2026-06-21 10:00:02] === Daily content run (kind-balanced): 5 blog + 0 landing = 5 item(s) ===
+[2026-06-21 10:00:02] [1/5] blog · blog/marbella-yacht-charter-ironman-2026
+[2026-06-21 10:00:37]   ✓ saved content/blog_marbella-yacht-charter-ironman-2026.json
+[2026-06-21 10:00:37]   ✓ added to keyword_map.blog
+[2026-06-21 10:00:37] [2/5] blog · blog/marbella-yacht-charter-pride-2026
+[2026-06-21 10:01:06]   ✓ saved content/blog_marbella-yacht-charter-pride-2026.json
+[2026-06-21 10:01:06]   ✓ added to keyword_map.blog
+[2026-06-21 10:01:06] [3/5] blog · blog/marbella-yacht-charter-f1-grand-prix-2026
+[2026-06-21 10:01:41]   ✓ saved content/blog_marbella-yacht-charter-f1-grand-prix-2026.json
+[2026-06-21 10:01:41]   ✓ added to keyword_map.blog
+[2026-06-21 10:01:41] [4/5] blog · blog/marbella-yacht-charter-weather-september
+[2026-06-21 10:02:11]   ✓ saved content/blog_marbella-yacht-charter-weather-september.json
+[2026-06-21 10:02:11]   ✓ added to keyword_map.blog
+[2026-06-21 10:02:11] [5/5] blog · blog/marbella-boat-rental-sotogrande-vs-cabopino
+[2026-06-21 10:02:40]   ✓ saved content/blog_marbella-boat-rental-sotogrande-vs-cabopino.json
+[2026-06-21 10:02:40]   ✓ added to keyword_map.blog
+[2026-06-21 10:02:40] queue: 25 remaining, 353 consumed total
+[2026-06-21 10:02:40] queue under threshold (25 < 30) — auto-refilling…
+[2026-06-21 10:03:00] refill: +23 topics (queue now 48)
+[2026-06-21 10:03:00] running deploy.sh …

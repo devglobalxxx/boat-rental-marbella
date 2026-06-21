@@ -1970,3 +1970,39 @@ hint: See the 'Note about fast-forwards' in 'git push --help' for details.
 [2026-06-21 10:02:40] queue under threshold (25 < 30) — auto-refilling…
 [2026-06-21 10:03:00] refill: +23 topics (queue now 48)
 [2026-06-21 10:03:00] running deploy.sh …
+[2026-06-21 10:03:21] deploy.sh OK
+[2026-06-21 10:03:21] === Done: 5 succeeded, 0 failed ===
+
+[2026-06-21 17:00:01] === Daily content run (kind-balanced): 5 blog + 5 landing = 10 item(s) ===
+[2026-06-21 17:00:01] [1/10] blog · blog/marbella-yacht-charter-f1-grand-prix-2027
+[2026-06-21 17:00:20]   ✓ saved content/blog_marbella-yacht-charter-f1-grand-prix-2027.json
+[2026-06-21 17:00:20]   ✓ added to keyword_map.blog
+[2026-06-21 17:00:20] [2/10] blog · blog/marbella-boat-rental-hen-party-catering-ideas
+[2026-06-21 17:00:51]   ✓ saved content/blog_marbella-boat-rental-hen-party-catering-ideas.json
+[2026-06-21 17:00:51]   ✓ added to keyword_map.blog
+[2026-06-21 17:00:51] [3/10] blog · blog/marbella-snorkeling-tour-puerto-banus
+[2026-06-21 17:01:21]   ✓ saved content/blog_marbella-snorkeling-tour-puerto-banus.json
+[2026-06-21 17:01:21]   ✓ added to keyword_map.blog
+[2026-06-21 17:01:21] [4/10] blog · blog/marbella-yacht-charter-pride-2027
+[2026-06-21 17:01:47]   ✓ saved content/blog_marbella-yacht-charter-pride-2027.json
+[2026-06-21 17:01:47]   ✓ added to keyword_map.blog
+[2026-06-21 17:01:47] [5/10] blog · blog/astondoa-40-vs-pershing-46-cost-comparison
+[2026-06-21 17:02:09]   ✓ saved content/blog_astondoa-40-vs-pershing-46-cost-comparison.json
+[2026-06-21 17:02:09]   ✓ added to keyword_map.blog
+[2026-06-21 17:02:09] [6/10] experience · experiences/marbella-sunset-tapas-cruise-romantic
+[2026-06-21 17:02:33]   ✓ saved content/experiences_marbella-sunset-tapas-cruise-romantic.json
+[2026-06-21 17:02:33]   ✓ added to keyword_map.spokes
+[2026-06-21 17:02:33] [7/10] experience · experiences/marbella-family-boat-day-paddleboarding-snorkeling
+[2026-06-21 17:02:59]   ✓ saved content/experiences_marbella-family-boat-day-paddleboarding-snorkeling.json
+[2026-06-21 17:02:59]   ✓ added to keyword_map.spokes
+[2026-06-21 17:02:59] [8/10] experience · experiences/marbella-jet-ski-and-boat-combo-adventure
+[2026-06-21 17:03:24]   ✓ saved content/experiences_marbella-jet-ski-and-boat-combo-adventure.json
+[2026-06-21 17:03:24]   ✓ added to keyword_map.spokes
+[2026-06-21 17:03:24] [9/10] experience · experiences/marbella-photoshoot-yacht-sunset-session
+[2026-06-21 17:03:52]   ✓ saved content/experiences_marbella-photoshoot-yacht-sunset-session.json
+[2026-06-21 17:03:52]   ✓ added to keyword_map.spokes
+[2026-06-21 17:03:52] [10/10] spoke · marbella-boat-rental-vs-ibiza
+[2026-06-21 17:04:20]   ✓ saved content/marbella-boat-rental-vs-ibiza.json
+[2026-06-21 17:04:20]   ✓ added to keyword_map.spokes
+[2026-06-21 17:04:20] queue: 38 remaining, 363 consumed total
+[2026-06-21 17:04:20] running deploy.sh …

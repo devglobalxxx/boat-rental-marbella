@@ -2006,3 +2006,24 @@ hint: See the 'Note about fast-forwards' in 'git push --help' for details.
 [2026-06-21 17:04:20]   ✓ added to keyword_map.spokes
 [2026-06-21 17:04:20] queue: 38 remaining, 363 consumed total
 [2026-06-21 17:04:20] running deploy.sh …
+[2026-06-21 17:04:40] deploy.sh OK
+[2026-06-21 17:04:40] === Done: 10 succeeded, 0 failed ===
+
+[2026-06-21 18:30:05] === Daily content run (kind-balanced): 5 blog + 0 landing = 5 item(s) ===
+[2026-06-21 18:30:05] [1/5] blog · blog/marbella-boat-rental-family-day-cabopino
+[2026-06-21 18:30:37]   ✓ saved content/blog_marbella-boat-rental-family-day-cabopino.json
+[2026-06-21 18:30:37]   ✓ added to keyword_map.blog
+[2026-06-21 18:30:37] [2/5] blog · blog/marbella-yacht-charter-what-to-bring-food
+[2026-06-21 18:31:12]   ✓ saved content/blog_marbella-yacht-charter-what-to-bring-food.json
+[2026-06-21 18:31:12]   ✓ added to keyword_map.blog
+[2026-06-21 18:31:12] [3/5] blog · blog/marbella-fishing-charter-cost-breakdown
+[2026-06-21 18:31:36]   ✓ saved content/blog_marbella-fishing-charter-cost-breakdown.json
+[2026-06-21 18:31:36]   ✓ added to keyword_map.blog
+[2026-06-21 18:31:36] [4/5] blog · blog/marbella-boat-rental-stag-weekend-activities
+[2026-06-21 18:32:07]   ✓ saved content/blog_marbella-boat-rental-stag-weekend-activities.json
+[2026-06-21 18:32:07]   ✓ added to keyword_map.blog
+[2026-06-21 18:32:07] [5/5] blog · blog/marbella-yacht-charter-dolphin-watching-season
+[2026-06-21 18:32:37]   ✓ saved content/blog_marbella-yacht-charter-dolphin-watching-season.json
+[2026-06-21 18:32:37]   ✓ added to keyword_map.blog
+[2026-06-21 18:32:37] queue: 33 remaining, 368 consumed total
+[2026-06-21 18:32:37] running deploy.sh …

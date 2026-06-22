@@ -2050,3 +2050,27 @@ hint: See the 'Note about fast-forwards' in 'git push --help' for details.
 [2026-06-22 10:02:27] queue under threshold (28 < 30) — auto-refilling…
 [2026-06-22 10:02:43] refill: +22 topics (queue now 50)
 [2026-06-22 10:02:43] running deploy.sh …
+[2026-06-22 10:03:05] deploy.sh OK
+[2026-06-22 10:03:05] === Done: 5 succeeded, 0 failed ===
+
+[2026-06-22 16:42:58] === Daily content run (kind-balanced): 5 blog + 1 landing = 6 item(s) ===
+[2026-06-22 16:42:58] [1/6] blog · blog/marbella-boat-rental-what-to-bring-checklist
+[2026-06-22 16:43:32]   ✓ saved content/blog_marbella-boat-rental-what-to-bring-checklist.json
+[2026-06-22 16:43:32]   ✓ added to keyword_map.blog
+[2026-06-22 16:43:32] [2/6] blog · blog/marbella-yacht-charter-age-policy
+[2026-06-22 16:43:54]   ✓ saved content/blog_marbella-yacht-charter-age-policy.json
+[2026-06-22 16:43:54]   ✓ added to keyword_map.blog
+[2026-06-22 16:43:54] [3/6] blog · blog/marbella-boat-rental-weather-june
+[2026-06-22 16:44:30]   ✓ saved content/blog_marbella-boat-rental-weather-june.json
+[2026-06-22 16:44:30]   ✓ added to keyword_map.blog
+[2026-06-22 16:44:30] [4/6] blog · blog/marbella-yacht-charter-feria-2027
+[2026-06-22 16:44:54]   ✓ saved content/blog_marbella-yacht-charter-feria-2027.json
+[2026-06-22 16:44:54]   ✓ added to keyword_map.blog
+[2026-06-22 16:44:54] [5/6] blog · blog/marbella-yacht-charter-st-patricks-day-2027
+[2026-06-22 16:45:20]   ✓ saved content/blog_marbella-yacht-charter-st-patricks-day-2027.json
+[2026-06-22 16:45:20]   ✓ added to keyword_map.blog
+[2026-06-22 16:45:20] [6/6] spoke · marbella-boat-rental-weather-june-guide
+[2026-06-22 16:45:50]   ✓ saved content/marbella-boat-rental-weather-june-guide.json
+[2026-06-22 16:45:50]   ✓ added to keyword_map.spokes
+[2026-06-22 16:45:50] queue: 44 remaining, 379 consumed total
+[2026-06-22 16:45:50] running deploy.sh …

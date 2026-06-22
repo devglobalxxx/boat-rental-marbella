@@ -2074,3 +2074,24 @@ hint: See the 'Note about fast-forwards' in 'git push --help' for details.
 [2026-06-22 16:45:50]   ✓ added to keyword_map.spokes
 [2026-06-22 16:45:50] queue: 44 remaining, 379 consumed total
 [2026-06-22 16:45:50] running deploy.sh …
+[2026-06-22 16:46:10] deploy.sh OK
+[2026-06-22 16:46:10] === Done: 6 succeeded, 0 failed ===
+
+[2026-06-22 18:30:08] === Daily content run (kind-balanced): 5 blog + 0 landing = 5 item(s) ===
+[2026-06-22 18:30:08] [1/5] blog · blog/marbella-boat-rental-weather-march
+[2026-06-22 18:30:40]   ✓ saved content/blog_marbella-boat-rental-weather-march.json
+[2026-06-22 18:30:40]   ✓ added to keyword_map.blog
+[2026-06-22 18:30:40] [2/5] blog · blog/marbella-yacht-charter-new-years-eve-2027
+[2026-06-22 18:31:08]   ✓ saved content/blog_marbella-yacht-charter-new-years-eve-2027.json
+[2026-06-22 18:31:08]   ✓ added to keyword_map.blog
+[2026-06-22 18:31:08] [3/5] blog · blog/marbella-boat-rental-weather-november
+[2026-06-22 18:31:35]   ✓ saved content/blog_marbella-boat-rental-weather-november.json
+[2026-06-22 18:31:35]   ✓ added to keyword_map.blog
+[2026-06-22 18:31:35] [4/5] blog · blog/marbella-yacht-charter-weather-january
+[2026-06-22 18:32:07]   ✓ saved content/blog_marbella-yacht-charter-weather-january.json
+[2026-06-22 18:32:07]   ✓ added to keyword_map.blog
+[2026-06-22 18:32:07] [5/5] blog · blog/marbella-boat-rental-weather-february
+[2026-06-22 18:32:43]   ✓ saved content/blog_marbella-boat-rental-weather-february.json
+[2026-06-22 18:32:43]   ✓ added to keyword_map.blog
+[2026-06-22 18:32:43] queue: 39 remaining, 384 consumed total
+[2026-06-22 18:32:43] running deploy.sh …

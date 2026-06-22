@@ -2861,6 +2861,41 @@
       "title": "St Patrick's Day Yacht Charter Marbella 2027: Best Boats & Routes",
       "intent": "informational",
       "target_words": 1200
+    },
+    {
+      "slug": "blog/marbella-boat-rental-weather-march",
+      "primary_keyword": "Marbella boat rental weather March",
+      "title": "Marbella Boat Rental in March: Weather, Sea Conditions & Tips",
+      "intent": "informational",
+      "target_words": 1100
+    },
+    {
+      "slug": "blog/marbella-yacht-charter-new-years-eve-2027",
+      "primary_keyword": "New Year's Eve yacht charter Marbella 2027",
+      "title": "New Year's Eve 2027: Yacht Charter in Marbella with Fireworks",
+      "intent": "informational",
+      "target_words": 1200
+    },
+    {
+      "slug": "blog/marbella-boat-rental-weather-november",
+      "primary_keyword": "Marbella boat rental weather November",
+      "title": "Marbella Boat Rental in November: Weather, Sea & Charter Tips",
+      "intent": "informational",
+      "target_words": 1100
+    },
+    {
+      "slug": "blog/marbella-yacht-charter-weather-january",
+      "primary_keyword": "Marbella yacht charter weather January",
+      "title": "Marbella Yacht Charter in January: Weather, Events & Best Boats",
+      "intent": "informational",
+      "target_words": 1100
+    },
+    {
+      "slug": "blog/marbella-boat-rental-weather-february",
+      "primary_keyword": "Marbella boat rental weather February",
+      "title": "Marbella Boat Rental in February: Weather, Sea Conditions & Tips",
+      "intent": "informational",
+      "target_words": 1100
     }
   ]
 }

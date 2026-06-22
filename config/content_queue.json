@@ -4,41 +4,6 @@
   "queue": [
     {
       "kind": "blog",
-      "slug": "blog/marbella-boat-rental-weather-march",
-      "primary_keyword": "Marbella boat rental weather March",
-      "title": "Marbella Boat Rental in March: Weather, Sea Conditions & Tips",
-      "target_words": 1100
-    },
-    {
-      "kind": "blog",
-      "slug": "blog/marbella-yacht-charter-new-years-eve-2027",
-      "primary_keyword": "New Year's Eve yacht charter Marbella 2027",
-      "title": "New Year's Eve 2027: Yacht Charter in Marbella with Fireworks",
-      "target_words": 1200
-    },
-    {
-      "kind": "blog",
-      "slug": "blog/marbella-boat-rental-weather-november",
-      "primary_keyword": "Marbella boat rental weather November",
-      "title": "Marbella Boat Rental in November: Weather, Sea & Charter Tips",
-      "target_words": 1100
-    },
-    {
-      "kind": "blog",
-      "slug": "blog/marbella-yacht-charter-weather-january",
-      "primary_keyword": "Marbella yacht charter weather January",
-      "title": "Marbella Yacht Charter in January: Weather, Events & Best Boats",
-      "target_words": 1100
-    },
-    {
-      "kind": "blog",
-      "slug": "blog/marbella-boat-rental-weather-february",
-      "primary_keyword": "Marbella boat rental weather February",
-      "title": "Marbella Boat Rental in February: Weather, Sea Conditions & Tips",
-      "target_words": 1100
-    },
-    {
-      "kind": "blog",
       "slug": "blog/marbella-yacht-charter-halloween-party-ideas",
       "primary_keyword": "Halloween yacht party Marbella",
       "title": "Halloween Yacht Party in Marbella: Spooky Ideas for Your Charter",
@@ -3489,6 +3454,46 @@
       "slug": "marbella-boat-rental-weather-june-guide",
       "primary_keyword": "marbella boat rental weather june",
       "title": "Marbella Boat Rental Weather in June",
+      "target_words": 1100,
+      "consumed_at": "2026-06-22"
+    },
+    {
+      "kind": "blog",
+      "slug": "blog/marbella-boat-rental-weather-march",
+      "primary_keyword": "Marbella boat rental weather March",
+      "title": "Marbella Boat Rental in March: Weather, Sea Conditions & Tips",
+      "target_words": 1100,
+      "consumed_at": "2026-06-22"
+    },
+    {
+      "kind": "blog",
+      "slug": "blog/marbella-yacht-charter-new-years-eve-2027",
+      "primary_keyword": "New Year's Eve yacht charter Marbella 2027",
+      "title": "New Year's Eve 2027: Yacht Charter in Marbella with Fireworks",
+      "target_words": 1200,
+      "consumed_at": "2026-06-22"
+    },
+    {
+      "kind": "blog",
+      "slug": "blog/marbella-boat-rental-weather-november",
+      "primary_keyword": "Marbella boat rental weather November",
+      "title": "Marbella Boat Rental in November: Weather, Sea & Charter Tips",
+      "target_words": 1100,
+      "consumed_at": "2026-06-22"
+    },
+    {
+      "kind": "blog",
+      "slug": "blog/marbella-yacht-charter-weather-january",
+      "primary_keyword": "Marbella yacht charter weather January",
+      "title": "Marbella Yacht Charter in January: Weather, Events & Best Boats",
+      "target_words": 1100,
+      "consumed_at": "2026-06-22"
+    },
+    {
+      "kind": "blog",
+      "slug": "blog/marbella-boat-rental-weather-february",
+      "primary_keyword": "Marbella boat rental weather February",
+      "title": "Marbella Boat Rental in February: Weather, Sea Conditions & Tips",
       "target_words": 1100,
       "consumed_at": "2026-06-22"
     }

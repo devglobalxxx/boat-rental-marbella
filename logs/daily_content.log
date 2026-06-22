@@ -2027,3 +2027,26 @@ hint: See the 'Note about fast-forwards' in 'git push --help' for details.
 [2026-06-21 18:32:37]   ✓ added to keyword_map.blog
 [2026-06-21 18:32:37] queue: 33 remaining, 368 consumed total
 [2026-06-21 18:32:37] running deploy.sh …
+[2026-06-21 18:32:58] deploy.sh OK
+[2026-06-21 18:32:58] === Done: 5 succeeded, 0 failed ===
+
+[2026-06-22 10:00:03] === Daily content run (kind-balanced): 5 blog + 0 landing = 5 item(s) ===
+[2026-06-22 10:00:03] [1/5] blog · blog/marbella-boat-rental-group-size-limits-2026
+[2026-06-22 10:00:29]   ✓ saved content/blog_marbella-boat-rental-group-size-limits-2026.json
+[2026-06-22 10:00:29]   ✓ added to keyword_map.blog
+[2026-06-22 10:00:29] [2/5] blog · blog/marbella-sunset-cruise-photoshoot-locations
+[2026-06-22 10:01:04]   ✓ saved content/blog_marbella-sunset-cruise-photoshoot-locations.json
+[2026-06-22 10:01:04]   ✓ added to keyword_map.blog
+[2026-06-22 10:01:04] [3/5] blog · blog/marbella-yacht-charter-ironman-2027
+[2026-06-22 10:01:32]   ✓ saved content/blog_marbella-yacht-charter-ironman-2027.json
+[2026-06-22 10:01:32]   ✓ added to keyword_map.blog
+[2026-06-22 10:01:32] [4/5] blog · blog/marbella-boat-rental-no-license-cost-2026
+[2026-06-22 10:01:58]   ✓ saved content/blog_marbella-boat-rental-no-license-cost-2026.json
+[2026-06-22 10:01:58]   ✓ added to keyword_map.blog
+[2026-06-22 10:01:58] [5/5] blog · blog/marbella-yacht-charter-starlite-2027
+[2026-06-22 10:02:27]   ✓ saved content/blog_marbella-yacht-charter-starlite-2027.json
+[2026-06-22 10:02:27]   ✓ added to keyword_map.blog
+[2026-06-22 10:02:27] queue: 28 remaining, 373 consumed total
+[2026-06-22 10:02:27] queue under threshold (28 < 30) — auto-refilling…
+[2026-06-22 10:02:43] refill: +22 topics (queue now 50)
+[2026-06-22 10:02:43] running deploy.sh …

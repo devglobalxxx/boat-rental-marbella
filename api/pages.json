@@ -1,7 +1,7 @@
 {
   "@context": "https://boatrentalinmarbella.com/api/pages.json",
   "source": "https://boatrentalinmarbella.com",
-  "count": 467,
+  "count": 472,
   "kinds": [
     "blog",
     "boat",
@@ -814,12 +814,28 @@
       "excerpt": "Planning a family boat day from Cabopino is one of the best ways to enjoy the Costa del Sol with kids. Cabopino’s sandy beach, protected dunes and clear waters make it an ideal base for a half-day or full-day charter. Our fleet departs from nearby Puerto Banús (just 5 minutes by "
     },
     {
+      "url": "https://boatrentalinmarbella.com/blog/marbella-boat-rental-group-size-limits-2026/",
+      "title": "Marbella Boat Rental Group Size Limits 2026: What You Need to Know",
+      "description": "Discover Marbella boat rental group size limits 2026 for Puerto Banús charters. Max 12 pax on most yachts—book your 8-hour trip from €2,299.",
+      "kind": "blog",
+      "locale": "en",
+      "excerpt": "Planning a group charter in Marbella for 2026? Understanding the Marbella boat rental group size limits 2026 is essential to ensure your party fits comfortably and legally. Our fleet from Puerto Banús has strict passenger capacities—from 5 to 12 people—depending on the yacht. Thi"
+    },
+    {
       "url": "https://boatrentalinmarbella.com/blog/marbella-boat-rental-hen-party-catering-ideas/",
       "title": "Best Catering Ideas for a Marbella Hen Party Boat Rental",
       "description": "Discover the best marbella hen party boat catering ideas for your charter in Puerto Banús. From tapas to BBQ, we cover menus, drinks, and tips for 5–12 guests.",
       "kind": "blog",
       "locale": "en",
       "excerpt": "Planning a marbella hen party boat catering ideas session? You’re in the right place. A boat charter from Puerto Banús is a brilliant way to celebrate, but the food and drink can make or break the day. Our fleet of 18 boats accommodates 5 to 12 guests, and while every charter inc"
+    },
+    {
+      "url": "https://boatrentalinmarbella.com/blog/marbella-boat-rental-no-license-cost-2026/",
+      "title": "Marbella Boat Rental No License: 2026 Cost Breakdown &amp; Options",
+      "description": "Discover marbella boat rental no license cost 2026: €749/2h for a skipper-led charter. Compare boats, inclusions, and hidden fees. Book your day on the water.",
+      "kind": "blog",
+      "locale": "en",
+      "excerpt": "Planning a marbella boat rental no license cost 2026 trip? You're in the right place. All our charters include a licensed skipper, so you don't need any boating experience or license. Prices start at €749 for 2 hours on an Astondoa 40 or Azimut 39, with fuel, drinks, and snacks i"
     },
     {
       "url": "https://boatrentalinmarbella.com/blog/marbella-boat-rental-no-license-cost-breakdown/",
@@ -1150,6 +1166,14 @@
       "excerpt": "Planning a stag do in Marbella and wondering what a yacht actually costs in 2026? Here’s the real breakdown: no fluff, no hidden fees. Whether you’re splitting €749 for a 2-hour party on an Astondoa 40 or going all-in on a €4,719 Mangusta 80 with a jet ski, this guide gives you c"
     },
     {
+      "url": "https://boatrentalinmarbella.com/blog/marbella-sunset-cruise-photoshoot-locations/",
+      "title": "Best Photoshoot Locations on a Marbella Sunset Cruise",
+      "description": "Discover the best photoshoot locations on a Marbella sunset cruise. From Puerto Banús to Cala Cortés, find golden-hour spots for stunning photos. Book now.",
+      "kind": "blog",
+      "locale": "en",
+      "excerpt": "Marbella's coastline is a photographer's dream during golden hour, and a sunset cruise offers access to backdrops you simply can't reach from land. Whether you're planning a couple's shoot, a family portrait session, or influencer content, the light between 19:30 and 21:30 (June–"
+    },
+    {
       "url": "https://boatrentalinmarbella.com/blog/marbella-sunset-cruise-romantic-dinner/",
       "title": "Marbella Sunset Cruise with Romantic Dinner: A Perfect Evening",
       "description": "Experience a marbella sunset cruise romantic dinner in Puerto Banús. Sail at 7 PM, dine under the stars. Book your evening charter from €749. Plan your perfect evening now.",
@@ -1478,6 +1502,14 @@
       "excerpt": "Ironman Marbella 2026 is one of the most demanding endurance events on the Costa del Sol. Whether you are an athlete recovering after the finish line or a supporter wanting the best view of the swim and bike course, a Marbella yacht charter Ironman 2026 offers a unique way to exp"
     },
     {
+      "url": "https://boatrentalinmarbella.com/blog/marbella-yacht-charter-ironman-2027/",
+      "title": "Recover in Style: Book a Marbella Yacht Charter for Ironman 2027",
+      "description": "Book a Marbella Ironman yacht charter 2027 for post-race recovery. Relax on a luxury boat from Puerto Banús with crew, drinks &amp; snacks included.",
+      "kind": "blog",
+      "locale": "en",
+      "excerpt": "Finishing an Ironman is one of the toughest achievements in sport. After months of training, a brutal swim, a 180 km bike leg, and a full marathon, you deserve more than a finisher's medal — you deserve a proper celebration. A Marbella Ironman yacht charter 2027 offers the perfec"
+    },
+    {
       "url": "https://boatrentalinmarbella.com/blog/marbella-yacht-charter-ironman-recovery/",
       "title": "Marbella Yacht Charter for Ironman Recovery: Post-Race Relaxation",
       "description": "Marbella yacht charter for Ironman recovery: post-race relaxation on the Costa del Sol. Charter a boat from Puerto Banús for up to 12 guests. Book now.",
@@ -1764,6 +1796,14 @@
       "kind": "blog",
       "locale": "en",
       "excerpt": "Plan your Marbella yacht charter Starlite 2026 experience and combine world-class concerts with VIP sea transfers from Puerto Banús. The Starlite Festival, held annually in Marbella's Auditorio, draws international headliners and a glamorous crowd. With our fleet of 18 boats, you"
+    },
+    {
+      "url": "https://boatrentalinmarbella.com/blog/marbella-yacht-charter-starlite-2027/",
+      "title": "Experience Starlite 2027 with a Luxury Marbella Yacht Charter",
+      "description": "Book a Starlite Marbella yacht charter 2027 with our fleet departing Puerto Banús. Combine concert nights with luxury cruising from €749/2h. Enquire now.",
+      "kind": "blog",
+      "locale": "en",
+      "excerpt": "Starlite Marbella is one of Europe's most glamorous summer festivals, drawing world-class artists to the Cantera de Nagüeles each July and August. For 2027, you can elevate the experience by pairing a concert night with a luxury Starlite Marbella yacht charter 2027 from Puerto Ba"
     },
     {
       "url": "https://boatrentalinmarbella.com/blog/marbella-yacht-charter-starlite-festival/",
@@ -3680,7 +3720,7 @@
     {
       "url": "https://boatrentalinmarbella.com/site-map/",
       "title": "Site Map — every page on Boat Rental Marbella",
-      "description": "Full directory of all 465 pages on Boat Rental Marbella — charter types, fleet, experiences, guides, languages and policies.",
+      "description": "Full directory of all 470 pages on Boat Rental Marbella — charter types, fleet, experiences, guides, languages and policies.",
       "kind": "spoke",
       "locale": "en",
       "excerpt": "Every page on Boat Rental Marbella, grouped by section. Looking for something specific? Message us on WhatsApp and ask."

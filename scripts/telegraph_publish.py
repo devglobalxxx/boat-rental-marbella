@@ -17,7 +17,7 @@ Usage:
     python3 scripts/telegraph_publish.py --dry-run  # generate, don't publish
 """
 from __future__ import annotations
-import argparse, json, os, pathlib, re, subprocess, sys, datetime, urllib.request
+import argparse, json, os, pathlib, re, subprocess, sys, time, datetime, urllib.request
 
 ROOT = pathlib.Path(__file__).resolve().parents[1]
 CFG = json.loads((ROOT / "config" / "telegraph_link_targets.json").read_text())
@@ -71,11 +71,18 @@ def _call_cli(system: str, user: str, timeout_s: int = 600) -> str:
     return proc.stdout.strip()
 
 def generate(system: str, user: str) -> str:
+    # DeepSeek is the real backend under launchd (claude CLI can't reach Keychain auth there).
+    # Transient network errors are common, so retry DeepSeek with backoff before the CLI fallback.
     if os.environ.get("DEEPSEEK_API_KEY", "").strip():
-        try:
-            return _call_deepseek(system, user)
-        except Exception as e:
-            log(f"  DeepSeek failed ({type(e).__name__}: {str(e)[:120]}), falling back to claude CLI")
+        last = None
+        for attempt in range(4):
+            try:
+                return _call_deepseek(system, user)
+            except Exception as e:
+                last = e
+                log(f"  DeepSeek attempt {attempt+1}/4 failed ({type(e).__name__}: {str(e)[:90]})")
+                time.sleep(3 * (attempt + 1))
+        log(f"  DeepSeek exhausted, trying claude CLI (often fails under launchd)")
     return _call_cli(system, user)
 
 # ---------- telegraph ----------

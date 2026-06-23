@@ -71,11 +71,15 @@ def _cli(system, user, timeout_s=300):
     return p.stdout.strip()
 
 def generate(system, user, max_tokens=2000):
+    # Retry DeepSeek on transient network errors before the (launchd-broken) CLI fallback.
     if os.environ.get("DEEPSEEK_API_KEY", "").strip():
-        try:
-            return _deepseek(system, user, max_tokens)
-        except Exception as e:
-            log(f"  DeepSeek failed ({str(e)[:80]}), trying CLI")
+        for attempt in range(4):
+            try:
+                return _deepseek(system, user, max_tokens)
+            except Exception as e:
+                log(f"  DeepSeek attempt {attempt+1}/4 failed ({str(e)[:80]})")
+                time.sleep(3 * (attempt + 1))
+        log("  DeepSeek exhausted, trying CLI")
     return _cli(system, user)
 
 # ---------- link targets (from live sitemap) ----------

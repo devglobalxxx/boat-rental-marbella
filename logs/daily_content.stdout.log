@@ -719,3 +719,21 @@ hint: See the 'Note about fast-forwards' in 'git push --help' for details.
 [2026-06-22 10:03:05] deploy.sh OK
 [2026-06-22 10:03:05] === Done: 5 succeeded, 0 failed ===
 
+[2026-06-23 10:00:04] === Daily content run (kind-balanced): 5 blog + 0 landing = 5 item(s) ===
+[2026-06-23 10:00:04] [1/5] blog · blog/marbella-yacht-charter-halloween-party-ideas
+[2026-06-23 10:00:30]   ✓ saved content/blog_marbella-yacht-charter-halloween-party-ideas.json
+[2026-06-23 10:00:30]   ✓ added to keyword_map.blog
+[2026-06-23 10:00:30] [2/5] blog · blog/astondoa-40-vs-sunseeker-manhattan-66-marbella-comparison
+[2026-06-23 10:00:58]   ✓ saved content/blog_astondoa-40-vs-sunseeker-manhattan-66-marbella-comparison.json
+[2026-06-23 10:00:58]   ✓ added to keyword_map.blog
+[2026-06-23 10:00:58] [3/5] blog · blog/marbella-boat-rental-weather-january-guide
+[2026-06-23 10:01:35]   ✓ saved content/blog_marbella-boat-rental-weather-january-guide.json
+[2026-06-23 10:01:35]   ✓ added to keyword_map.blog
+[2026-06-23 10:01:35] [4/5] blog · blog/puerto-banus-yacht-charter-cost-per-person-breakdown
+[2026-06-23 10:02:06]   ✓ saved content/blog_puerto-banus-yacht-charter-cost-per-person-breakdown.json
+[2026-06-23 10:02:06]   ✓ added to keyword_map.blog
+[2026-06-23 10:02:06] [5/5] blog · blog/estepona-boat-rental-snorkeling-spots-guide
+[2026-06-23 10:02:34]   ✓ saved content/blog_estepona-boat-rental-snorkeling-spots-guide.json
+[2026-06-23 10:02:34]   ✓ added to keyword_map.blog
+[2026-06-23 10:02:34] queue: 34 remaining, 389 consumed total
+[2026-06-23 10:02:34] running deploy.sh …

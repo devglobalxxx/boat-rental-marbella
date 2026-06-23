@@ -4,41 +4,6 @@
   "queue": [
     {
       "kind": "blog",
-      "slug": "blog/marbella-yacht-charter-halloween-party-ideas",
-      "primary_keyword": "Halloween yacht party Marbella",
-      "title": "Halloween Yacht Party in Marbella: Spooky Ideas for Your Charter",
-      "target_words": 1100
-    },
-    {
-      "kind": "blog",
-      "slug": "blog/astondoa-40-vs-sunseeker-manhattan-66-marbella-comparison",
-      "primary_keyword": "Astondoa 40 vs Sunseeker Manhattan 66 Marbella",
-      "title": "Astondoa 40 vs Sunseeker Manhattan 66: Which Yacht Suits Your Marbella Charter?",
-      "target_words": 1100
-    },
-    {
-      "kind": "blog",
-      "slug": "blog/marbella-boat-rental-weather-january-guide",
-      "primary_keyword": "Marbella boat rental weather January",
-      "title": "Marbella Boat Rental in January: Weather, Tips, and Best Yachts",
-      "target_words": 1100
-    },
-    {
-      "kind": "blog",
-      "slug": "blog/puerto-banus-yacht-charter-cost-per-person-breakdown",
-      "primary_keyword": "Puerto Banus yacht charter cost per person",
-      "title": "Puerto Banus Yacht Charter Cost Per Person: A Complete Breakdown",
-      "target_words": 1100
-    },
-    {
-      "kind": "blog",
-      "slug": "blog/estepona-boat-rental-snorkeling-spots-guide",
-      "primary_keyword": "Estepona boat rental snorkeling spots",
-      "title": "Estepona Boat Rental: Best Snorkeling Spots Accessible by Yacht",
-      "target_words": 1100
-    },
-    {
-      "kind": "blog",
       "slug": "blog/marbella-yacht-charter-feria-2028-preview",
       "primary_keyword": "Marbella Feria 2028 yacht charter",
       "title": "Marbella Feria 2028: Plan Your Yacht Charter for the Big Celebration",
@@ -3496,6 +3461,46 @@
       "title": "Marbella Boat Rental in February: Weather, Sea Conditions & Tips",
       "target_words": 1100,
       "consumed_at": "2026-06-22"
+    },
+    {
+      "kind": "blog",
+      "slug": "blog/marbella-yacht-charter-halloween-party-ideas",
+      "primary_keyword": "Halloween yacht party Marbella",
+      "title": "Halloween Yacht Party in Marbella: Spooky Ideas for Your Charter",
+      "target_words": 1100,
+      "consumed_at": "2026-06-23"
+    },
+    {
+      "kind": "blog",
+      "slug": "blog/astondoa-40-vs-sunseeker-manhattan-66-marbella-comparison",
+      "primary_keyword": "Astondoa 40 vs Sunseeker Manhattan 66 Marbella",
+      "title": "Astondoa 40 vs Sunseeker Manhattan 66: Which Yacht Suits Your Marbella Charter?",
+      "target_words": 1100,
+      "consumed_at": "2026-06-23"
+    },
+    {
+      "kind": "blog",
+      "slug": "blog/marbella-boat-rental-weather-january-guide",
+      "primary_keyword": "Marbella boat rental weather January",
+      "title": "Marbella Boat Rental in January: Weather, Tips, and Best Yachts",
+      "target_words": 1100,
+      "consumed_at": "2026-06-23"
+    },
+    {
+      "kind": "blog",
+      "slug": "blog/puerto-banus-yacht-charter-cost-per-person-breakdown",
+      "primary_keyword": "Puerto Banus yacht charter cost per person",
+      "title": "Puerto Banus Yacht Charter Cost Per Person: A Complete Breakdown",
+      "target_words": 1100,
+      "consumed_at": "2026-06-23"
+    },
+    {
+      "kind": "blog",
+      "slug": "blog/estepona-boat-rental-snorkeling-spots-guide",
+      "primary_keyword": "Estepona boat rental snorkeling spots",
+      "title": "Estepona Boat Rental: Best Snorkeling Spots Accessible by Yacht",
+      "target_words": 1100,
+      "consumed_at": "2026-06-23"
     }
   ],
   "refill_threshold": 30,

@@ -1,7 +1,7 @@
 {
   "@context": "https://boatrentalinmarbella.com/api/pages.json",
   "source": "https://boatrentalinmarbella.com",
-  "count": 483,
+  "count": 488,
   "kinds": [
     "blog",
     "boat",
@@ -140,6 +140,14 @@
       "kind": "blog",
       "locale": "en",
       "excerpt": "The Astondoa 40 is a 12.5 m Spanish-built motor yacht — our \"Fufi\" out of Puerto Banús. It sits in a specific niche on the Marbella charter market: bigger than the sport boats and RIBs most casual renters end up on, smaller and more accessible than the 18+ m luxury yachts. This p"
+    },
+    {
+      "url": "https://boatrentalinmarbella.com/blog/astondoa-40-vs-sunseeker-manhattan-66-marbella-comparison/",
+      "title": "Astondoa 40 vs Sunseeker Manhattan 66: Which Yacht Suits Your Marbella Charter?",
+      "description": "Compare Astondoa 40 vs Sunseeker Manhattan 66 for your Marbella charter. See price, capacity, and features to decide which yacht suits your day on the Costa del Sol.",
+      "kind": "blog",
+      "locale": "en",
+      "excerpt": "Choosing between the Astondoa 40 and the Sunseeker Manhattan 66 for your Marbella charter comes down to budget, group size, and the experience you want. The Astondoa 40 is a sleek 12.5-metre sport cruiser from our fleet, perfect for intimate days at sea. The Sunseeker Manhattan 6"
     },
     {
       "url": "https://boatrentalinmarbella.com/blog/azimut-39-best-for/",
@@ -460,6 +468,14 @@
       "kind": "blog",
       "locale": "en",
       "excerpt": "An Estepona sunset cruise boat charter offers one of the Costa del Sol's most memorable experiences. Departing from Puerto Banús, just 15 minutes from Estepona's old town, our private charters let you watch the sun dip below the Mediterranean from the comfort of a luxury yacht. W"
+    },
+    {
+      "url": "https://boatrentalinmarbella.com/blog/estepona-boat-rental-snorkeling-spots-guide/",
+      "title": "Estepona Boat Rental: Best Snorkeling Spots Accessible by Yacht",
+      "description": "Discover the best snorkeling spots near Estepona accessible by yacht. Rent a boat from Puerto Banús and explore Cala del Faro, Cala Cortés &amp; more. Book now.",
+      "kind": "blog",
+      "locale": "en",
+      "excerpt": "Estepona’s coastline hides some of the Costa del Sol’s best snorkeling spots – clear water, rocky coves, and marine life that thrives away from the busy beaches. With a private yacht charter from Puerto Banús, you can reach these spots in under 30 minutes. This guide covers the t"
     },
     {
       "url": "https://boatrentalinmarbella.com/blog/estepona-day-from-marbella/",
@@ -868,6 +884,14 @@
       "kind": "blog",
       "locale": "en",
       "excerpt": "Thinking about a Marbella boat rental in February ? You might picture summer heat and crowded coves, but winter on the Costa del Sol offers a different kind of magic. With average air temperatures of 13–18°C, fewer crowds, and a calm sea if you pick the right window, February is "
+    },
+    {
+      "url": "https://boatrentalinmarbella.com/blog/marbella-boat-rental-weather-january-guide/",
+      "title": "Marbella Boat Rental in January: Weather, Tips, and Best Yachts",
+      "description": "Plan your Marbella boat rental in January: 16°C highs, 7h sun, calm seas. Best yachts, tips &amp; pricing for a winter charter from Puerto Banús.",
+      "kind": "blog",
+      "locale": "en",
+      "excerpt": "Thinking about a Marbella boat rental in January ? You might wonder if winter is a good time to charter a yacht on the Costa del Sol. The answer is yes – with mild daytime highs of 16°C, seven hours of sunshine, and calm Mediterranean seas, January offers a peaceful alternative t"
     },
     {
       "url": "https://boatrentalinmarbella.com/blog/marbella-boat-rental-weather-june/",
@@ -1516,6 +1540,14 @@
       "kind": "blog",
       "locale": "en",
       "excerpt": "When planning a Marbella yacht charter , one of the first questions is: how many people can come aboard? The answer depends on the boat's certified capacity—not on how many seats you think it has. Every vessel in our fleet at Boat Rental Marbella has a strict guest limit set by S"
+    },
+    {
+      "url": "https://boatrentalinmarbella.com/blog/marbella-yacht-charter-halloween-party-ideas/",
+      "title": "Halloween Yacht Party in Marbella: Spooky Ideas for Your Charter",
+      "description": "Plan a Halloween yacht party in Marbella with spooky decor, themed catering, and fleet options from €749. Book your charter today.",
+      "kind": "blog",
+      "locale": "en",
+      "excerpt": "Halloween on the Costa del Sol doesn't have to mean crowded clubs or predictable house parties. A Halloween yacht party in Marbella offers a unique blend of luxury, privacy, and spooky coastal vibes. Whether you want a twilight cruise past Puerto Banús, a themed swim stop at Cala"
     },
     {
       "url": "https://boatrentalinmarbella.com/blog/marbella-yacht-charter-hen-party-activities/",
@@ -2212,6 +2244,14 @@
       "kind": "blog",
       "locale": "en",
       "excerpt": "Marbella has two operational charter marinas — Puerto Banús (the famous one) and Marbella Marina, officially Puerto Deportivo Virgen del Carmen. They're 7 km apart and run different fleets despite sitting on the same coastline. This page covers when to pick which, based on the bo"
+    },
+    {
+      "url": "https://boatrentalinmarbella.com/blog/puerto-banus-yacht-charter-cost-per-person-breakdown/",
+      "title": "Puerto Banus Yacht Charter Cost Per Person: A Complete Breakdown",
+      "description": "Discover the real Puerto Banus yacht charter cost per person. From €749 for 9 guests to €4,719 for 12 with jet ski. Full breakdown inside.",
+      "kind": "blog",
+      "locale": "en",
+      "excerpt": "Understanding the Puerto Banus yacht charter cost per person is the first step to planning a stress-free day on the water. Unlike many holiday expenses, boat hire in Marbella is charged per vessel, not per head – so the more friends you bring, the less each person pays. In this c"
     },
     {
       "url": "https://boatrentalinmarbella.com/blog/puerto-banus-yacht-fuel-surcharge-explained/",
@@ -3808,7 +3848,7 @@
     {
       "url": "https://boatrentalinmarbella.com/site-map/",
       "title": "Site Map — every page on Boat Rental Marbella",
-      "description": "Full directory of all 481 pages on Boat Rental Marbella — charter types, fleet, experiences, guides, languages and policies.",
+      "description": "Full directory of all 486 pages on Boat Rental Marbella — charter types, fleet, experiences, guides, languages and policies.",
       "kind": "spoke",
       "locale": "en",
       "excerpt": "Every page on Boat Rental Marbella, grouped by section. Looking for something specific? Message us on WhatsApp and ask."

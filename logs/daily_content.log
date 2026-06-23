@@ -2139,3 +2139,33 @@ hint: See the 'Note about fast-forwards' in 'git push --help' for details.
 [2026-06-23 17:39:12] queue under threshold (29 < 30) — auto-refilling…
 [2026-06-23 17:39:31] refill: +23 topics (queue now 52)
 [2026-06-23 17:39:31] running deploy.sh …
+[2026-06-23 17:39:51] deploy.sh OK
+[2026-06-23 17:39:51] === Done: 5 succeeded, 0 failed ===
+
+[2026-06-23 18:30:07] === Daily content run (kind-balanced): 5 blog + 3 landing = 8 item(s) ===
+[2026-06-23 18:30:07] [1/8] blog · blog/marbella-sunset-cruise-romantic-proposal-ideas
+[2026-06-23 18:30:29]   ✓ saved content/blog_marbella-sunset-cruise-romantic-proposal-ideas.json
+[2026-06-23 18:30:29]   ✓ added to keyword_map.blog
+[2026-06-23 18:30:29] [2/8] blog · blog/marbella-yacht-charter-hen-party-catering-guide
+[2026-06-23 18:30:51]   ✓ saved content/blog_marbella-yacht-charter-hen-party-catering-guide.json
+[2026-06-23 18:30:51]   ✓ added to keyword_map.blog
+[2026-06-23 18:30:51] [3/8] blog · blog/marbella-yacht-charter-ironman-2028-recovery
+[2026-06-23 18:31:16]   ✓ saved content/blog_marbella-yacht-charter-ironman-2028-recovery.json
+[2026-06-23 18:31:16]   ✓ added to keyword_map.blog
+[2026-06-23 18:31:16] [4/8] blog · blog/marbella-yacht-charter-starlite-2028-guide
+[2026-06-23 18:31:41]   ✓ saved content/blog_marbella-yacht-charter-starlite-2028-guide.json
+[2026-06-23 18:31:41]   ✓ added to keyword_map.blog
+[2026-06-23 18:31:41] [5/8] blog · blog/marbella-yacht-charter-f1-grand-prix-2028
+[2026-06-23 18:32:05]   ✓ saved content/blog_marbella-yacht-charter-f1-grand-prix-2028.json
+[2026-06-23 18:32:05]   ✓ added to keyword_map.blog
+[2026-06-23 18:32:05] [6/8] experience · experiences/marbella-fishing-and-sunset-combo-charter
+[2026-06-23 18:32:31]   ✓ saved content/experiences_marbella-fishing-and-sunset-combo-charter.json
+[2026-06-23 18:32:31]   ✓ added to keyword_map.spokes
+[2026-06-23 18:32:31] [7/8] experience · experiences/marbella-sunset-photoshoot-yacht-session
+[2026-06-23 18:32:58]   ✓ saved content/experiences_marbella-sunset-photoshoot-yacht-session.json
+[2026-06-23 18:32:58]   ✓ added to keyword_map.spokes
+[2026-06-23 18:32:58] [8/8] spoke · marbella-boat-rental-vs-malaga
+[2026-06-23 18:33:25]   ✓ saved content/marbella-boat-rental-vs-malaga.json
+[2026-06-23 18:33:25]   ✓ added to keyword_map.spokes
+[2026-06-23 18:33:25] queue: 44 remaining, 402 consumed total
+[2026-06-23 18:33:25] running deploy.sh …

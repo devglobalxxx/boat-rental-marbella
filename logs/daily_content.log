@@ -2116,3 +2116,26 @@ hint: See the 'Note about fast-forwards' in 'git push --help' for details.
 [2026-06-23 10:02:34]   ✓ added to keyword_map.blog
 [2026-06-23 10:02:34] queue: 34 remaining, 389 consumed total
 [2026-06-23 10:02:34] running deploy.sh …
+[2026-06-23 10:02:55] deploy.sh OK
+[2026-06-23 10:02:55] === Done: 5 succeeded, 0 failed ===
+
+[2026-06-23 17:37:10] === Daily content run (kind-balanced): 5 blog + 0 landing = 5 item(s) ===
+[2026-06-23 17:37:10] [1/5] blog · blog/marbella-yacht-charter-feria-2028-preview
+[2026-06-23 17:37:40]   ✓ saved content/blog_marbella-yacht-charter-feria-2028-preview.json
+[2026-06-23 17:37:40]   ✓ added to keyword_map.blog
+[2026-06-23 17:37:40] [2/5] blog · blog/mangusta-80-vs-pershing-46-cost-comparison-marbella
+[2026-06-23 17:38:02]   ✓ saved content/blog_mangusta-80-vs-pershing-46-cost-comparison-marbella.json
+[2026-06-23 17:38:02]   ✓ added to keyword_map.blog
+[2026-06-23 17:38:02] [3/5] blog · blog/marbella-boat-rental-no-license-prices-2026
+[2026-06-23 17:38:24]   ✓ saved content/blog_marbella-boat-rental-no-license-prices-2026.json
+[2026-06-23 17:38:24]   ✓ added to keyword_map.blog
+[2026-06-23 17:38:24] [4/5] blog · blog/sotogrande-yacht-charter-polo-season-guide
+[2026-06-23 17:38:46]   ✓ saved content/blog_sotogrande-yacht-charter-polo-season-guide.json
+[2026-06-23 17:38:46]   ✓ added to keyword_map.blog
+[2026-06-23 17:38:46] [5/5] blog · blog/marbella-boat-charter-stag-weekend-budget-breakdown
+[2026-06-23 17:39:12]   ✓ saved content/blog_marbella-boat-charter-stag-weekend-budget-breakdown.json
+[2026-06-23 17:39:12]   ✓ added to keyword_map.blog
+[2026-06-23 17:39:12] queue: 29 remaining, 394 consumed total
+[2026-06-23 17:39:12] queue under threshold (29 < 30) — auto-refilling…
+[2026-06-23 17:39:31] refill: +23 topics (queue now 52)
+[2026-06-23 17:39:31] running deploy.sh …

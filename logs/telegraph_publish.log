@@ -90,3 +90,21 @@
 [2026-06-22 14:11:21] === Telegraph run: target 3 article(s) · 23 previously published ===
 [2026-06-22 14:11:21]   DeepSeek failed (ConnectionError: HTTPSConnectionPool(host='api.deepseek.com', port=443): Max retries exceeded with url: /chat/completions (Caused by Name), falling back to claude CLI
 [2026-06-22 15:36:18] topic generation failed: claude CLI exit 1: 
+[2026-06-23 11:23:49] === Telegraph run: target 3 article(s) · 23 previously published ===
+[2026-06-23 11:23:52] [1/3] The Best Beach Clubs Reachable Only by Boat in Marbella
+[2026-06-23 11:24:15]   attempt 1: JSON parse failed, retrying
+[2026-06-23 11:24:39]   attempt 2: JSON parse failed, retrying
+[2026-06-23 11:24:59]   ✓ published https://telegra.ph/The-Best-Beach-Clubs-Reachable-Only-by-Boat-in-Marbella-06-23 (6 backlinks)
+[2026-06-23 11:24:59] [2/3] Chartering a Classic Wooden Motor Yacht for a Marbella Wedding
+[2026-06-23 11:25:17]   ✓ published https://telegra.ph/Chartering-a-Classic-Wooden-Motor-Yacht-for-a-Marbella-Wedding-06-23 (5 backlinks)
+[2026-06-23 11:25:17] [3/3] A Week-Long Catamaran Itinerary from Marbella to Almería's Beaches
+[2026-06-23 11:25:39]   ✓ published https://telegra.ph/A-Week-Long-Catamaran-Itinerary-from-Marbella-to-Almerías-Beaches-06-23 (6 backlinks)
+[2026-06-23 11:25:39] === Done: 3/3 published. Ledger total: 26 ===
+
+[2026-06-23 14:13:38] === Telegraph run: target 3 article(s) · 26 previously published ===
+[2026-06-23 14:13:39]   DeepSeek attempt 1/4 failed (ConnectionError: HTTPSConnectionPool(host='api.deepseek.com', port=443): Max retries exceeded with url: /ch)
+[2026-06-23 14:13:42]   DeepSeek attempt 2/4 failed (ConnectionError: HTTPSConnectionPool(host='api.deepseek.com', port=443): Max retries exceeded with url: /ch)
+[2026-06-23 14:13:48]   DeepSeek attempt 3/4 failed (ConnectionError: HTTPSConnectionPool(host='api.deepseek.com', port=443): Max retries exceeded with url: /ch)
+[2026-06-23 14:13:57]   DeepSeek attempt 4/4 failed (ConnectionError: HTTPSConnectionPool(host='api.deepseek.com', port=443): Max retries exceeded with url: /ch)
+[2026-06-23 14:14:09]   DeepSeek exhausted, trying claude CLI (often fails under launchd)
+[2026-06-23 17:13:46] topic generation failed: claude CLI exit 1: 

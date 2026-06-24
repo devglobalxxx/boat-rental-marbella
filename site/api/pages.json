@@ -1,7 +1,7 @@
 {
   "@context": "https://boatrentalinmarbella.com/api/pages.json",
   "source": "https://boatrentalinmarbella.com",
-  "count": 507,
+  "count": 512,
   "kinds": [
     "blog",
     "boat",
@@ -830,6 +830,14 @@
       "excerpt": "Planning a stag weekend in Marbella and want to hit the water without blowing your budget? A yacht charter is the ultimate group activity, combining sun, sea, and celebration along the Costa del Sol. This breakdown covers costs, boat options, and what's included, so your crew can"
     },
     {
+      "url": "https://boatrentalinmarbella.com/blog/marbella-boat-rental-cost-per-person/",
+      "title": "Marbella Boat Rental Cost Per Person: Shared Charter Prices",
+      "description": "Discover the real Marbella boat rental cost per person for shared charters in Puerto Banús. From €83/person/hour with drinks &amp; skipper included. Book now.",
+      "kind": "blog",
+      "locale": "en",
+      "excerpt": "If you're planning a trip to the Costa del Sol and want to experience the Mediterranean from the water without breaking the bank, understanding the Marbella boat rental cost per person is the first step. Shared charters are the most affordable way to enjoy a luxury yacht, with pr"
+    },
+    {
       "url": "https://boatrentalinmarbella.com/blog/marbella-boat-rental-dolphin-watching-season/",
       "title": "Marbella Boat Rental for Dolphin Watching: Best Times and Spots",
       "description": "Discover the best marbella boat rental dolphin watching season. Spot striped dolphins off Puerto Banús from April to October. Book your charter today.",
@@ -1582,6 +1590,14 @@
       "excerpt": "Marbella Feria 2028 is set to be the Costa del Sol’s most vibrant summer celebration, and there’s no better way to experience it than from the deck of a private yacht. Whether you want front-row seats to the nightly fireworks, a floating party base, or a peaceful escape from the "
     },
     {
+      "url": "https://boatrentalinmarbella.com/blog/marbella-yacht-charter-fishing-license-rules/",
+      "title": "Marbella Yacht Charter Fishing License Rules: What You Need",
+      "description": "Learn marbella yacht charter fishing license rules for private trips. No Spanish license needed for rod-and-line fishing on our boats from Puerto Banús. Book now.",
+      "kind": "blog",
+      "locale": "en",
+      "excerpt": "Planning a marbella yacht charter fishing license rules trip? Good news: for private rod-and-line fishing from a licensed charter boat in Marbella, you typically do not need a Spanish recreational fishing license. Our skippers handle the legal side, so you can relax and focus on "
+    },
+    {
       "url": "https://boatrentalinmarbella.com/blog/marbella-yacht-charter-gibraltar-national-day/",
       "title": "Gibraltar National Day Yacht Charter in Marbella: A Cross-Border Celebration",
       "description": "Celebrate Gibraltar National Day 2025 with a luxury yacht charter from Marbella. Cruise to Gibraltar, watch the fireworks from the sea, and enjoy premium onboard service. Book now.",
@@ -2126,6 +2142,14 @@
       "excerpt": "January in Marbella offers a different kind of yachting experience: cooler air, clearer skies, and emptier seas. While summer crowds have gone, the Mediterranean still delivers calm waters and plenty of winter sun. If you're considering a Marbella yacht charter in January , this "
     },
     {
+      "url": "https://boatrentalinmarbella.com/blog/marbella-yacht-charter-weather-may-guide/",
+      "title": "Marbella Yacht Charter Weather in May: Spring Sailing Conditions",
+      "description": "Discover marbella yacht charter weather may: 20-25°C, 10-12 knots wind, 18-20°C sea temp. Book your spring sailing trip in Puerto Banús today.",
+      "kind": "blog",
+      "locale": "en",
+      "excerpt": "May is one of the best months for a marbella yacht charter weather may guide: temperatures are warm, seas are calm, and the spring sunshine makes every trip memorable. Whether you’re planning a family day out or a corporate escape, the conditions in May offer reliable sailing wit"
+    },
+    {
       "url": "https://boatrentalinmarbella.com/blog/marbella-yacht-charter-weather-november/",
       "title": "Marbella Yacht Charter Weather in November: What to Expect &amp; How to Plan",
       "description": "Plan your Marbella yacht charter in November with confidence. Expect 18°C highs, calm seas &amp; 6h sun. Book with us for a smooth experience.",
@@ -2188,6 +2212,14 @@
       "kind": "blog",
       "locale": "en",
       "excerpt": "Deciding what to eat on a yacht charter in Marbella can make the difference between a good day and a great one. With the Mediterranean sun, the Costa del Sol coastline, and a chilled glass of cava in hand, the right food elevates the whole experience. Every charter from Boat Rent"
+    },
+    {
+      "url": "https://boatrentalinmarbella.com/blog/marbella-yacht-charter-what-to-wear/",
+      "title": "What to Wear on a Yacht Charter in Marbella: Dress Code Guide",
+      "description": "Wondering what to wear on a yacht charter Marbella? Our dress code guide covers daytime chic, evening glam, and practical essentials for Puerto Banús.",
+      "kind": "blog",
+      "locale": "en",
+      "excerpt": "Planning a day on the water in Marbella and wondering what to wear on a yacht charter Marbella style? Whether you're cruising from Puerto Banús to Cabopino or anchoring off the Golden Mile, dressing right makes the experience more comfortable and enjoyable. The Mediterranean sun,"
     },
     {
       "url": "https://boatrentalinmarbella.com/blog/marbella-yacht-charter-wheelchair-accessibility/",
@@ -2364,6 +2396,14 @@
       "kind": "blog",
       "locale": "en",
       "excerpt": "Marbella has two operational charter marinas — Puerto Banús (the famous one) and Marbella Marina, officially Puerto Deportivo Virgen del Carmen. They're 7 km apart and run different fleets despite sitting on the same coastline. This page covers when to pick which, based on the bo"
+    },
+    {
+      "url": "https://boatrentalinmarbella.com/blog/puerto-banus-yacht-charter-cost-per-person/",
+      "title": "Puerto Banús Yacht Charter Cost Per Person: Budget Breakdown",
+      "description": "Puerto Banús yacht charter cost per person breakdown: from €83/person on a 2-hour trip to €192/person for 8 hours. Compare boats, inclusions, and hidden fees.",
+      "kind": "blog",
+      "locale": "en",
+      "excerpt": "Planning a group day on the water in Marbella? The Puerto Banús yacht charter cost per person is the smartest way to budget. Instead of guessing, we break down exactly what you’ll pay per head — from €83 for a quick spin to €192 for a full-day luxury escape. No hidden fees, no su"
     },
     {
       "url": "https://boatrentalinmarbella.com/blog/puerto-banus-yacht-charter-cost-per-person-breakdown/",
@@ -4000,7 +4040,7 @@
     {
       "url": "https://boatrentalinmarbella.com/site-map/",
       "title": "Site Map — every page on Boat Rental Marbella",
-      "description": "Full directory of all 505 pages on Boat Rental Marbella — charter types, fleet, experiences, guides, languages and policies.",
+      "description": "Full directory of all 510 pages on Boat Rental Marbella — charter types, fleet, experiences, guides, languages and policies.",
       "kind": "spoke",
       "locale": "en",
       "excerpt": "Every page on Boat Rental Marbella, grouped by section. Looking for something specific? Message us on WhatsApp and ask."

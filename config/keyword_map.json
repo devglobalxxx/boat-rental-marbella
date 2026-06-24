@@ -3064,6 +3064,41 @@
       "title": "Marbella Boat Rental Weather in September: Late Summer Sailing",
       "intent": "informational",
       "target_words": 1100
+    },
+    {
+      "slug": "blog/marbella-yacht-charter-weather-may-guide",
+      "primary_keyword": "marbella yacht charter weather may",
+      "title": "Marbella Yacht Charter Weather in May: Spring Sailing Conditions",
+      "intent": "informational",
+      "target_words": 1100
+    },
+    {
+      "slug": "blog/marbella-yacht-charter-what-to-wear",
+      "primary_keyword": "what to wear on a yacht charter marbella",
+      "title": "What to Wear on a Yacht Charter in Marbella: Dress Code Guide",
+      "intent": "informational",
+      "target_words": 1100
+    },
+    {
+      "slug": "blog/puerto-banus-yacht-charter-cost-per-person",
+      "primary_keyword": "puerto banus yacht charter cost per person",
+      "title": "Puerto Banús Yacht Charter Cost Per Person: Budget Breakdown",
+      "intent": "informational",
+      "target_words": 1200
+    },
+    {
+      "slug": "blog/marbella-boat-rental-cost-per-person",
+      "primary_keyword": "marbella boat rental cost per person",
+      "title": "Marbella Boat Rental Cost Per Person: Shared Charter Prices",
+      "intent": "informational",
+      "target_words": 1100
+    },
+    {
+      "slug": "blog/marbella-yacht-charter-fishing-license-rules",
+      "primary_keyword": "marbella yacht charter fishing license rules",
+      "title": "Marbella Yacht Charter Fishing License Rules: What You Need",
+      "intent": "informational",
+      "target_words": 1100
     }
   ]
 }

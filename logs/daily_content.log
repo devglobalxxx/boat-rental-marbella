@@ -2211,3 +2211,24 @@ hint: See the 'Note about fast-forwards' in 'git push --help' for details.
 [2026-06-24 17:37:00]   ✓ added to keyword_map.blog
 [2026-06-24 17:37:00] queue: 38 remaining, 408 consumed total
 [2026-06-24 17:37:00] running deploy.sh …
+[2026-06-24 17:37:20] deploy.sh OK
+[2026-06-24 17:37:20] === Done: 5 succeeded, 0 failed ===
+
+[2026-06-24 20:30:07] === Daily content run (kind-balanced): 5 blog + 0 landing = 5 item(s) ===
+[2026-06-24 20:30:07] [1/5] blog · blog/marbella-yacht-charter-weather-may-guide
+[2026-06-24 20:30:33]   ✓ saved content/blog_marbella-yacht-charter-weather-may-guide.json
+[2026-06-24 20:30:33]   ✓ added to keyword_map.blog
+[2026-06-24 20:30:33] [2/5] blog · blog/marbella-yacht-charter-what-to-wear
+[2026-06-24 20:31:12]   ✓ saved content/blog_marbella-yacht-charter-what-to-wear.json
+[2026-06-24 20:31:12]   ✓ added to keyword_map.blog
+[2026-06-24 20:31:12] [3/5] blog · blog/puerto-banus-yacht-charter-cost-per-person
+[2026-06-24 20:31:45]   ✓ saved content/blog_puerto-banus-yacht-charter-cost-per-person.json
+[2026-06-24 20:31:45]   ✓ added to keyword_map.blog
+[2026-06-24 20:31:45] [4/5] blog · blog/marbella-boat-rental-cost-per-person
+[2026-06-24 20:32:16]   ✓ saved content/blog_marbella-boat-rental-cost-per-person.json
+[2026-06-24 20:32:16]   ✓ added to keyword_map.blog
+[2026-06-24 20:32:16] [5/5] blog · blog/marbella-yacht-charter-fishing-license-rules
+[2026-06-24 20:32:45]   ✓ saved content/blog_marbella-yacht-charter-fishing-license-rules.json
+[2026-06-24 20:32:45]   ✓ added to keyword_map.blog
+[2026-06-24 20:32:45] queue: 33 remaining, 413 consumed total
+[2026-06-24 20:32:45] running deploy.sh …

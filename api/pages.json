@@ -1,7 +1,7 @@
 {
   "@context": "https://boatrentalinmarbella.com/api/pages.json",
   "source": "https://boatrentalinmarbella.com",
-  "count": 501,
+  "count": 502,
   "kinds": [
     "blog",
     "boat",
@@ -900,6 +900,14 @@
       "kind": "blog",
       "locale": "en",
       "excerpt": "Planning a marbella stag weekend boat activities package is the ultimate way to celebrate the groom-to-be. With our fleet departing from Puerto Banús, you get luxury yachts, included drinks, and a licensed skipper—no hidden costs. Whether you want jet ski thrills, swimming in cry"
+    },
+    {
+      "url": "https://boatrentalinmarbella.com/blog/marbella-boat-rental-weather-august-guide/",
+      "title": "Marbella Boat Rental Weather in August: What to Expect",
+      "description": "Plan your marbella boat rental weather august: 30°C, light breezes, calm seas. Book now for the best charter experience on the Costa del Sol.",
+      "kind": "blog",
+      "locale": "en",
+      "excerpt": "August in Marbella delivers the quintessential Mediterranean summer: brilliant blue skies, temperatures hovering around 30°C, and a gentle breeze that keeps the air fresh. For anyone planning a marbella boat rental weather august is near-perfect: calm seas, minimal rain, and long"
     },
     {
       "url": "https://boatrentalinmarbella.com/blog/marbella-boat-rental-weather-february/",
@@ -3952,7 +3960,7 @@
     {
       "url": "https://boatrentalinmarbella.com/site-map/",
       "title": "Site Map — every page on Boat Rental Marbella",
-      "description": "Full directory of all 499 pages on Boat Rental Marbella — charter types, fleet, experiences, guides, languages and policies.",
+      "description": "Full directory of all 500 pages on Boat Rental Marbella — charter types, fleet, experiences, guides, languages and policies.",
       "kind": "spoke",
       "locale": "en",
       "excerpt": "Every page on Boat Rental Marbella, grouped by section. Looking for something specific? Message us on WhatsApp and ask."

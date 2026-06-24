@@ -2190,3 +2190,24 @@ hint: See the 'Note about fast-forwards' in 'git push --help' for details.
 [2026-06-24 16:28:45]   ✓ added to keyword_map.blog
 [2026-06-24 16:28:45] queue: 43 remaining, 403 consumed total
 [2026-06-24 16:28:45] running deploy.sh …
+[2026-06-24 16:29:06] deploy.sh OK
+[2026-06-24 16:29:06] === Done: 1 succeeded, 4 failed ===
+
+[2026-06-24 17:34:29] === Daily content run (kind-balanced): 5 blog + 0 landing = 5 item(s) ===
+[2026-06-24 17:34:29] [1/5] blog · blog/marbella-yacht-charter-weather-february-guide
+[2026-06-24 17:34:58]   ✓ saved content/blog_marbella-yacht-charter-weather-february-guide.json
+[2026-06-24 17:34:58]   ✓ added to keyword_map.blog
+[2026-06-24 17:34:58] [2/5] blog · blog/marbella-yacht-charter-new-years-eve-2028-fireworks
+[2026-06-24 17:35:27]   ✓ saved content/blog_marbella-yacht-charter-new-years-eve-2028-fireworks.json
+[2026-06-24 17:35:27]   ✓ added to keyword_map.blog
+[2026-06-24 17:35:27] [3/5] blog · blog/marbella-yacht-charter-pride-2028-celebration
+[2026-06-24 17:35:55]   ✓ saved content/blog_marbella-yacht-charter-pride-2028-celebration.json
+[2026-06-24 17:35:55]   ✓ added to keyword_map.blog
+[2026-06-24 17:35:55] [4/5] blog · blog/marbella-yacht-charter-what-to-eat-onboard
+[2026-06-24 17:36:33]   ✓ saved content/blog_marbella-yacht-charter-what-to-eat-onboard.json
+[2026-06-24 17:36:33]   ✓ added to keyword_map.blog
+[2026-06-24 17:36:33] [5/5] blog · blog/marbella-boat-rental-weather-september-guide
+[2026-06-24 17:37:00]   ✓ saved content/blog_marbella-boat-rental-weather-september-guide.json
+[2026-06-24 17:37:00]   ✓ added to keyword_map.blog
+[2026-06-24 17:37:00] queue: 38 remaining, 408 consumed total
+[2026-06-24 17:37:00] running deploy.sh …

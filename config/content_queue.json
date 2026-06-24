@@ -4,41 +4,6 @@
   "queue": [
     {
       "kind": "blog",
-      "slug": "blog/marbella-yacht-charter-weather-february-guide",
-      "primary_keyword": "Marbella yacht charter weather February",
-      "title": "Marbella Yacht Charter in February: Weather, Tips, and Deals",
-      "target_words": 1100
-    },
-    {
-      "kind": "blog",
-      "slug": "blog/marbella-yacht-charter-new-years-eve-2028-fireworks",
-      "primary_keyword": "New Year's Eve 2028 Marbella yacht fireworks",
-      "title": "New Year's Eve 2028 Marbella: Yacht Charter with Fireworks Views",
-      "target_words": 1100
-    },
-    {
-      "kind": "blog",
-      "slug": "blog/marbella-yacht-charter-pride-2028-celebration",
-      "primary_keyword": "Marbella Pride 2028 yacht charter",
-      "title": "Marbella Pride 2028: Yacht Charter for the Ultimate Celebration",
-      "target_words": 1100
-    },
-    {
-      "kind": "blog",
-      "slug": "blog/marbella-yacht-charter-what-to-eat-onboard",
-      "primary_keyword": "what to eat on a yacht charter marbella",
-      "title": "What to Eat on a Yacht Charter in Marbella: Onboard Menu Ideas",
-      "target_words": 1200
-    },
-    {
-      "kind": "blog",
-      "slug": "blog/marbella-boat-rental-weather-september-guide",
-      "primary_keyword": "marbella boat rental weather september",
-      "title": "Marbella Boat Rental Weather in September: Late Summer Sailing",
-      "target_words": 1100
-    },
-    {
-      "kind": "blog",
       "slug": "blog/marbella-yacht-charter-weather-may-guide",
       "primary_keyword": "marbella yacht charter weather may",
       "title": "Marbella Yacht Charter Weather in May: Spring Sailing Conditions",
@@ -3674,6 +3639,46 @@
       "slug": "blog/marbella-boat-rental-weather-august-guide",
       "primary_keyword": "marbella boat rental weather august",
       "title": "Marbella Boat Rental Weather in August: What to Expect",
+      "target_words": 1100,
+      "consumed_at": "2026-06-24"
+    },
+    {
+      "kind": "blog",
+      "slug": "blog/marbella-yacht-charter-weather-february-guide",
+      "primary_keyword": "Marbella yacht charter weather February",
+      "title": "Marbella Yacht Charter in February: Weather, Tips, and Deals",
+      "target_words": 1100,
+      "consumed_at": "2026-06-24"
+    },
+    {
+      "kind": "blog",
+      "slug": "blog/marbella-yacht-charter-new-years-eve-2028-fireworks",
+      "primary_keyword": "New Year's Eve 2028 Marbella yacht fireworks",
+      "title": "New Year's Eve 2028 Marbella: Yacht Charter with Fireworks Views",
+      "target_words": 1100,
+      "consumed_at": "2026-06-24"
+    },
+    {
+      "kind": "blog",
+      "slug": "blog/marbella-yacht-charter-pride-2028-celebration",
+      "primary_keyword": "Marbella Pride 2028 yacht charter",
+      "title": "Marbella Pride 2028: Yacht Charter for the Ultimate Celebration",
+      "target_words": 1100,
+      "consumed_at": "2026-06-24"
+    },
+    {
+      "kind": "blog",
+      "slug": "blog/marbella-yacht-charter-what-to-eat-onboard",
+      "primary_keyword": "what to eat on a yacht charter marbella",
+      "title": "What to Eat on a Yacht Charter in Marbella: Onboard Menu Ideas",
+      "target_words": 1200,
+      "consumed_at": "2026-06-24"
+    },
+    {
+      "kind": "blog",
+      "slug": "blog/marbella-boat-rental-weather-september-guide",
+      "primary_keyword": "marbella boat rental weather september",
+      "title": "Marbella Boat Rental Weather in September: Late Summer Sailing",
       "target_words": 1100,
       "consumed_at": "2026-06-24"
     }

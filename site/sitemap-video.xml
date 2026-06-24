@@ -210,26 +210,6 @@
     </video:video>
   </url>
   <url>
-    <loc>https://boatrentalinmarbella.com/boats/mangusta-80-white/</loc>
-    <video:video>
-      <video:thumbnail_loc>https://boatrentalinmarbella.com/video/mangusta-80-white-stern.jpg</video:thumbnail_loc>
-      <video:title>Mangusta 80 (White) — stern with Sea-Doo jet ski</video:title>
-      <video:description>Stern view of our Mangusta 80 &#x27;Nina&#x27; in Puerto Banús showing the Sea-Doo jet ski mounted on the swim platform — free for guests during the charter.</video:description>
-      <video:content_loc>https://boatrentalinmarbella.com/video/mangusta-80-white-stern.mp4</video:content_loc>
-      <video:duration>15</video:duration>
-      <video:family_friendly>yes</video:family_friendly>
-      <video:requires_subscription>no</video:requires_subscription>
-      <video:live>no</video:live>
-      <video:publication_date>2026-06-24</video:publication_date>
-      <video:tag>Mangusta 80</video:tag>
-      <video:tag>white</video:tag>
-      <video:tag>jet ski</video:tag>
-      <video:tag>Sea-Doo</video:tag>
-      <video:tag>Puerto Banús</video:tag>
-      <video:tag>Marbella</video:tag>
-    </video:video>
-  </url>
-  <url>
     <loc>https://boatrentalinmarbella.com/boats/mangusta-80/</loc>
     <video:video>
       <video:thumbnail_loc>https://boatrentalinmarbella.com/video/mangusta-fruit-platter.jpg</video:thumbnail_loc>

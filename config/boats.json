@@ -74,6 +74,86 @@
         "Heated freshwater jacuzzi onboard"
       ],
       "currency": "EUR"
+    },
+    "tier_sunseeker_predator_58": {
+      "label": "Sunseeker Predator 58 — Marbella charter",
+      "min_hours": 4,
+      "prices": {
+        "4h": 2999
+      },
+      "currency": "EUR"
+    },
+    "tier_fairline_targa_43": {
+      "label": "Fairline Targa 43 — Marbella charter",
+      "min_hours": 4,
+      "prices": {
+        "4h": 1400
+      },
+      "currency": "EUR"
+    },
+    "tier_princess_f70": {
+      "label": "Princess F70 — Marbella charter",
+      "min_hours": 2,
+      "prices": {
+        "2h": 3799
+      },
+      "currency": "EUR"
+    },
+    "tier_prestige_500": {
+      "label": "Prestige 500 — Marbella charter",
+      "min_hours": 4,
+      "prices": {
+        "4h": 2999
+      },
+      "currency": "EUR"
+    },
+    "tier_princess_v58": {
+      "label": "Princess V58 — Marbella charter",
+      "min_hours": 4,
+      "prices": {
+        "4h": 2999
+      },
+      "currency": "EUR"
+    },
+    "tier_sunseeker_63": {
+      "label": "Sunseeker 63 — Marbella charter",
+      "min_hours": 2,
+      "prices": {
+        "2h": 1999
+      },
+      "currency": "EUR"
+    },
+    "tier_sunseeker_68_sport": {
+      "label": "Sunseeker 68 Sport — Marbella charter",
+      "min_hours": 4,
+      "prices": {
+        "4h": 6500
+      },
+      "currency": "EUR"
+    },
+    "tier_sunseeker_predator_72": {
+      "label": "Sunseeker Predator 72 — Marbella charter",
+      "min_hours": 4,
+      "prices": {
+        "4h": 5000
+      },
+      "currency": "EUR"
+    },
+    "tier_azimut_58_white": {
+      "label": "Azimut 58 (White) — Marbella charter",
+      "min_hours": 2,
+      "prices": {
+        "2h": 2200
+      },
+      "currency": "EUR"
+    },
+    "tier_mefasa_90": {
+      "label": "Mefasa 90 — Marbella charter",
+      "min_hours": 4,
+      "prices": {
+        "4h": 7300
+      },
+      "currency": "EUR"
     }
   },
   "boats": [
@@ -855,53 +935,6 @@
       "model_year": null
     },
     {
-      "slug": "mangusta-80-white",
-      "name": "Mangusta 80 (White)",
-      "tagline": "24 m Mangusta — second white-hull variant in the Marbella fleet",
-      "builder": "Overmarine",
-      "type": "Luxury sport yacht",
-      "length_m": 24,
-      "capacity_pax": 12,
-      "departure_port": "Puerto Banús",
-      "tier": "on_request",
-      "pricing_status": "on_request",
-      "summary": "Mangusta 80 (White hull variant) — additional 24 m Mangusta in our Marbella fleet, alongside 'Nina' and the grey-hull sister. Same superyacht-class scale, three cabins, water toys included. Quote on WhatsApp.",
-      "highlights": [
-        "24 m Overmarine Mangusta",
-        "White hull variant",
-        "Sea-Doo jet ski included",
-        "12 guests in luxury",
-        "Three cabins, captain + deckhand"
-      ],
-      "intent_keywords": [
-        "Mangusta 80 white Marbella",
-        "Marbella Mangusta fleet",
-        "superyacht charter Puerto Banús"
-      ],
-      "hero_local": "/img/boats/mangusta-80-white/hero-1600.jpg",
-      "hero_local_srcset": [
-        [
-          "/img/boats/mangusta-80-white/hero-600.jpg",
-          600
-        ],
-        [
-          "/img/boats/mangusta-80-white/hero-900.jpg",
-          900
-        ],
-        [
-          "/img/boats/mangusta-80-white/hero-1200.jpg",
-          1200
-        ],
-        [
-          "/img/boats/mangusta-80-white/hero-1600.jpg",
-          1600
-        ]
-      ],
-      "hero_local_alt": "Mangusta 80 (White) — 24 m Mangusta — second white-hull variant in the Marbella fleet",
-      "gallery_local": [],
-      "model_year": null
-    },
-    {
       "slug": "mariah-sx21",
       "name": "Mariah SX21",
       "tagline": "6.4 m American bowrider — fast day-trip boat for small groups",
@@ -1264,6 +1297,457 @@
         "corporate yacht charter Marbella",
         "overnight yacht Marbella"
       ]
+    },
+    {
+      "slug": "sunseeker-predator-58",
+      "name": "Sunseeker Predator 58",
+      "tagline": "17.6 m Sunseeker sport yacht — up to 11 guests, from €2,999 / 4h",
+      "builder": "Sunseeker",
+      "type": "Sport yacht",
+      "length_m": 17.6,
+      "capacity_pax": 11,
+      "departure_port": "Puerto Banús",
+      "tier": "tier_sunseeker_predator_58",
+      "pricing_status": "fixed",
+      "summary": "Sunseeker Predator 58 — 17.6 m sport yacht from Sunseeker, up to 11 guests for a day charter out of Puerto Banús. Skipper, fuel, drinks and 21% IVA included. From €2,999 for 4 hours.",
+      "highlights": [
+        "17.6 m Sunseeker sport yacht",
+        "Up to 11 guests on board",
+        "Departing Puerto Banús · skipper, fuel & 21% IVA included",
+        "From €2,999 for 4h"
+      ],
+      "intent_keywords": [
+        "Sunseeker Predator 58 Marbella",
+        "Sunseeker Predator 58 charter Puerto Banús",
+        "Sunseeker yacht charter Marbella"
+      ],
+      "hero_local": "/img/boats/sunseeker-predator-58/hero-1600.jpg",
+      "hero_local_srcset": [
+        [
+          "/img/boats/sunseeker-predator-58/hero-600.jpg",
+          600
+        ],
+        [
+          "/img/boats/sunseeker-predator-58/hero-900.jpg",
+          900
+        ],
+        [
+          "/img/boats/sunseeker-predator-58/hero-1200.jpg",
+          1200
+        ],
+        [
+          "/img/boats/sunseeker-predator-58/hero-1600.jpg",
+          1600
+        ]
+      ],
+      "hero_local_alt": "Sunseeker Predator 58 — 17.6 m Sunseeker sport yacht charter in Marbella, Puerto Banús",
+      "gallery_local": [],
+      "model_year": 2018
+    },
+    {
+      "slug": "fairline-targa-43",
+      "name": "Fairline Targa 43",
+      "tagline": "14.4 m Fairline sport motor yacht — up to 11 guests, from €1,400 / 4h",
+      "builder": "Fairline",
+      "type": "Sport motor yacht",
+      "length_m": 14.4,
+      "capacity_pax": 11,
+      "departure_port": "Puerto Banús",
+      "tier": "tier_fairline_targa_43",
+      "pricing_status": "fixed",
+      "summary": "Fairline Targa 43 — 14.4 m sport motor yacht from Fairline, up to 11 guests for a day charter out of Puerto Banús. Skipper, fuel, drinks and 21% IVA included. From €1,400 for 4 hours.",
+      "highlights": [
+        "14.4 m Fairline sport motor yacht",
+        "Up to 11 guests on board",
+        "Departing Puerto Banús · skipper, fuel & 21% IVA included",
+        "From €1,400 for 4h"
+      ],
+      "intent_keywords": [
+        "Fairline Targa 43 Marbella",
+        "Fairline Targa 43 charter Puerto Banús",
+        "Fairline yacht charter Marbella"
+      ],
+      "hero_local": "/img/boats/fairline-targa-43/hero-1600.jpg",
+      "hero_local_srcset": [
+        [
+          "/img/boats/fairline-targa-43/hero-600.jpg",
+          600
+        ],
+        [
+          "/img/boats/fairline-targa-43/hero-900.jpg",
+          900
+        ],
+        [
+          "/img/boats/fairline-targa-43/hero-1200.jpg",
+          1200
+        ],
+        [
+          "/img/boats/fairline-targa-43/hero-1600.jpg",
+          1600
+        ]
+      ],
+      "hero_local_alt": "Fairline Targa 43 — 14.4 m Fairline sport motor yacht charter in Marbella, Puerto Banús",
+      "gallery_local": []
+    },
+    {
+      "slug": "princess-f70",
+      "name": "Princess F70",
+      "tagline": "21.8 m Princess flybridge motor yacht — up to 12 guests, from €3,799 / 2h",
+      "builder": "Princess",
+      "type": "Flybridge motor yacht",
+      "length_m": 21.8,
+      "capacity_pax": 12,
+      "departure_port": "Puerto Banús",
+      "tier": "tier_princess_f70",
+      "pricing_status": "fixed",
+      "summary": "Princess F70 — 21.8 m flybridge motor yacht from Princess, up to 12 guests for a day charter out of Puerto Banús. Skipper, fuel, drinks and 21% IVA included. From €3,799 for 2 hours.",
+      "highlights": [
+        "21.8 m Princess flybridge motor yacht",
+        "Up to 12 guests on board",
+        "Departing Puerto Banús · skipper, fuel & 21% IVA included",
+        "From €3,799 for 2h"
+      ],
+      "intent_keywords": [
+        "Princess F70 Marbella",
+        "Princess F70 charter Puerto Banús",
+        "Princess yacht charter Marbella"
+      ],
+      "hero_local": "/img/boats/princess-f70/hero-1600.jpg",
+      "hero_local_srcset": [
+        [
+          "/img/boats/princess-f70/hero-600.jpg",
+          600
+        ],
+        [
+          "/img/boats/princess-f70/hero-900.jpg",
+          900
+        ],
+        [
+          "/img/boats/princess-f70/hero-1200.jpg",
+          1200
+        ],
+        [
+          "/img/boats/princess-f70/hero-1600.jpg",
+          1600
+        ]
+      ],
+      "hero_local_alt": "Princess F70 — 21.8 m Princess flybridge motor yacht charter in Marbella, Puerto Banús",
+      "gallery_local": []
+    },
+    {
+      "slug": "prestige-500",
+      "name": "Prestige 500",
+      "tagline": "16 m Prestige flybridge motor yacht — up to 12 guests, from €2,999 / 4h",
+      "builder": "Prestige",
+      "type": "Flybridge motor yacht",
+      "length_m": 16.0,
+      "capacity_pax": 12,
+      "departure_port": "Puerto Banús",
+      "tier": "tier_prestige_500",
+      "pricing_status": "fixed",
+      "summary": "Prestige 500 — 16 m flybridge motor yacht from Prestige, up to 12 guests for a day charter out of Puerto Banús. Skipper, fuel, drinks and 21% IVA included. From €2,999 for 4 hours.",
+      "highlights": [
+        "16 m Prestige flybridge motor yacht",
+        "Up to 12 guests on board",
+        "Departing Puerto Banús · skipper, fuel & 21% IVA included",
+        "From €2,999 for 4h"
+      ],
+      "intent_keywords": [
+        "Prestige 500 Marbella",
+        "Prestige 500 charter Puerto Banús",
+        "Prestige yacht charter Marbella"
+      ],
+      "hero_local": "/img/boats/prestige-500/hero-1600.jpg",
+      "hero_local_srcset": [
+        [
+          "/img/boats/prestige-500/hero-600.jpg",
+          600
+        ],
+        [
+          "/img/boats/prestige-500/hero-900.jpg",
+          900
+        ],
+        [
+          "/img/boats/prestige-500/hero-1200.jpg",
+          1200
+        ],
+        [
+          "/img/boats/prestige-500/hero-1600.jpg",
+          1600
+        ]
+      ],
+      "hero_local_alt": "Prestige 500 — 16 m Prestige flybridge motor yacht charter in Marbella, Puerto Banús",
+      "gallery_local": []
+    },
+    {
+      "slug": "princess-v58",
+      "name": "Princess V58",
+      "tagline": "18.2 m Princess sport motor yacht — up to 12 guests, from €2,999 / 4h",
+      "builder": "Princess",
+      "type": "Sport motor yacht",
+      "length_m": 18.2,
+      "capacity_pax": 12,
+      "departure_port": "Puerto Banús",
+      "tier": "tier_princess_v58",
+      "pricing_status": "fixed",
+      "summary": "Princess V58 — 18.2 m sport motor yacht from Princess, up to 12 guests for a day charter out of Puerto Banús. Skipper, fuel, drinks and 21% IVA included. From €2,999 for 4 hours.",
+      "highlights": [
+        "18.2 m Princess sport motor yacht",
+        "Up to 12 guests on board",
+        "Departing Puerto Banús · skipper, fuel & 21% IVA included",
+        "From €2,999 for 4h"
+      ],
+      "intent_keywords": [
+        "Princess V58 Marbella",
+        "Princess V58 charter Puerto Banús",
+        "Princess yacht charter Marbella"
+      ],
+      "hero_local": "/img/boats/princess-v58/hero-1600.jpg",
+      "hero_local_srcset": [
+        [
+          "/img/boats/princess-v58/hero-600.jpg",
+          600
+        ],
+        [
+          "/img/boats/princess-v58/hero-900.jpg",
+          900
+        ],
+        [
+          "/img/boats/princess-v58/hero-1200.jpg",
+          1200
+        ],
+        [
+          "/img/boats/princess-v58/hero-1600.jpg",
+          1600
+        ]
+      ],
+      "hero_local_alt": "Princess V58 — 18.2 m Princess sport motor yacht charter in Marbella, Puerto Banús",
+      "gallery_local": []
+    },
+    {
+      "slug": "sunseeker-63",
+      "name": "Sunseeker 63",
+      "tagline": "19 m Sunseeker motor yacht — up to 10 guests, from €1,999 / 2h",
+      "builder": "Sunseeker",
+      "type": "Motor yacht",
+      "length_m": 19.0,
+      "capacity_pax": 10,
+      "departure_port": "Puerto Banús",
+      "tier": "tier_sunseeker_63",
+      "pricing_status": "fixed",
+      "summary": "Sunseeker 63 — 19 m motor yacht from Sunseeker, up to 10 guests for a day charter out of Puerto Banús. Skipper, fuel, drinks and 21% IVA included. From €1,999 for 2 hours.",
+      "highlights": [
+        "19 m Sunseeker motor yacht",
+        "Up to 10 guests on board",
+        "Departing Puerto Banús · skipper, fuel & 21% IVA included",
+        "From €1,999 for 2h"
+      ],
+      "intent_keywords": [
+        "Sunseeker 63 Marbella",
+        "Sunseeker 63 charter Puerto Banús",
+        "Sunseeker yacht charter Marbella"
+      ],
+      "hero_local": "/img/boats/sunseeker-63/hero-1600.jpg",
+      "hero_local_srcset": [
+        [
+          "/img/boats/sunseeker-63/hero-600.jpg",
+          600
+        ],
+        [
+          "/img/boats/sunseeker-63/hero-900.jpg",
+          900
+        ],
+        [
+          "/img/boats/sunseeker-63/hero-1200.jpg",
+          1200
+        ],
+        [
+          "/img/boats/sunseeker-63/hero-1600.jpg",
+          1600
+        ]
+      ],
+      "hero_local_alt": "Sunseeker 63 — 19 m Sunseeker motor yacht charter in Marbella, Puerto Banús",
+      "gallery_local": []
+    },
+    {
+      "slug": "sunseeker-68-sport",
+      "name": "Sunseeker 68 Sport",
+      "tagline": "21 m Sunseeker sport yacht — up to 12 guests, from €6,500 / 4h",
+      "builder": "Sunseeker",
+      "type": "Sport yacht",
+      "length_m": 21.0,
+      "capacity_pax": 12,
+      "departure_port": "Puerto Banús",
+      "tier": "tier_sunseeker_68_sport",
+      "pricing_status": "fixed",
+      "summary": "Sunseeker 68 Sport — 21 m sport yacht from Sunseeker, up to 12 guests for a day charter out of Puerto Banús. Skipper, fuel, drinks and 21% IVA included. From €6,500 for 4 hours.",
+      "highlights": [
+        "21 m Sunseeker sport yacht",
+        "Up to 12 guests on board",
+        "Departing Puerto Banús · skipper, fuel & 21% IVA included",
+        "From €6,500 for 4h"
+      ],
+      "intent_keywords": [
+        "Sunseeker 68 Sport Marbella",
+        "Sunseeker 68 Sport charter Puerto Banús",
+        "Sunseeker yacht charter Marbella"
+      ],
+      "hero_local": "/img/boats/sunseeker-68-sport/hero-1600.jpg",
+      "hero_local_srcset": [
+        [
+          "/img/boats/sunseeker-68-sport/hero-600.jpg",
+          600
+        ],
+        [
+          "/img/boats/sunseeker-68-sport/hero-900.jpg",
+          900
+        ],
+        [
+          "/img/boats/sunseeker-68-sport/hero-1200.jpg",
+          1200
+        ],
+        [
+          "/img/boats/sunseeker-68-sport/hero-1600.jpg",
+          1600
+        ]
+      ],
+      "hero_local_alt": "Sunseeker 68 Sport — 21 m Sunseeker sport yacht charter in Marbella, Puerto Banús",
+      "gallery_local": []
+    },
+    {
+      "slug": "sunseeker-predator-72",
+      "name": "Sunseeker Predator 72",
+      "tagline": "22.1 m Sunseeker sport yacht — up to 11 guests, from €5,000 / 4h",
+      "builder": "Sunseeker",
+      "type": "Sport yacht",
+      "length_m": 22.1,
+      "capacity_pax": 11,
+      "departure_port": "Puerto Banús",
+      "tier": "tier_sunseeker_predator_72",
+      "pricing_status": "fixed",
+      "summary": "Sunseeker Predator 72 — 22.1 m sport yacht from Sunseeker, up to 11 guests for a day charter out of Puerto Banús. Skipper, fuel, drinks and 21% IVA included. From €5,000 for 4 hours.",
+      "highlights": [
+        "22.1 m Sunseeker sport yacht",
+        "Up to 11 guests on board",
+        "Departing Puerto Banús · skipper, fuel & 21% IVA included",
+        "From €5,000 for 4h"
+      ],
+      "intent_keywords": [
+        "Sunseeker Predator 72 Marbella",
+        "Sunseeker Predator 72 charter Puerto Banús",
+        "Sunseeker yacht charter Marbella"
+      ],
+      "hero_local": "/img/boats/sunseeker-predator-72/hero-1600.jpg",
+      "hero_local_srcset": [
+        [
+          "/img/boats/sunseeker-predator-72/hero-600.jpg",
+          600
+        ],
+        [
+          "/img/boats/sunseeker-predator-72/hero-900.jpg",
+          900
+        ],
+        [
+          "/img/boats/sunseeker-predator-72/hero-1200.jpg",
+          1200
+        ],
+        [
+          "/img/boats/sunseeker-predator-72/hero-1600.jpg",
+          1600
+        ]
+      ],
+      "hero_local_alt": "Sunseeker Predator 72 — 22.1 m Sunseeker sport yacht charter in Marbella, Puerto Banús",
+      "gallery_local": []
+    },
+    {
+      "slug": "azimut-58-white",
+      "name": "Azimut 58 (White)",
+      "tagline": "17.6 m Azimut flybridge motor yacht — up to 10 guests, from €2,200 / 2h",
+      "builder": "Azimut",
+      "type": "Flybridge motor yacht",
+      "length_m": 17.6,
+      "capacity_pax": 10,
+      "departure_port": "Puerto Banús",
+      "tier": "tier_azimut_58_white",
+      "pricing_status": "fixed",
+      "summary": "Azimut 58 (White) — 17.6 m flybridge motor yacht from Azimut, up to 10 guests for a day charter out of Puerto Banús. Skipper, fuel, drinks and 21% IVA included. From €2,200 for 2 hours.",
+      "highlights": [
+        "17.6 m Azimut flybridge motor yacht",
+        "Up to 10 guests on board",
+        "Departing Puerto Banús · skipper, fuel & 21% IVA included",
+        "From €2,200 for 2h"
+      ],
+      "intent_keywords": [
+        "Azimut 58 (White) Marbella",
+        "Azimut 58 (White) charter Puerto Banús",
+        "Azimut yacht charter Marbella"
+      ],
+      "hero_local": "/img/boats/azimut-58-white/hero-1600.jpg",
+      "hero_local_srcset": [
+        [
+          "/img/boats/azimut-58-white/hero-600.jpg",
+          600
+        ],
+        [
+          "/img/boats/azimut-58-white/hero-900.jpg",
+          900
+        ],
+        [
+          "/img/boats/azimut-58-white/hero-1200.jpg",
+          1200
+        ],
+        [
+          "/img/boats/azimut-58-white/hero-1600.jpg",
+          1600
+        ]
+      ],
+      "hero_local_alt": "Azimut 58 (White) — 17.6 m Azimut flybridge motor yacht charter in Marbella, Puerto Banús",
+      "gallery_local": []
+    },
+    {
+      "slug": "mefasa-90",
+      "name": "Mefasa 90",
+      "tagline": "29 m Mefasa motor yacht — up to 12 guests, from €7,300 / 4h",
+      "builder": "Mefasa",
+      "type": "Motor yacht",
+      "length_m": 29.0,
+      "capacity_pax": 12,
+      "departure_port": "Puerto Banús",
+      "tier": "tier_mefasa_90",
+      "pricing_status": "fixed",
+      "summary": "Mefasa 90 — 29 m motor yacht from Mefasa, up to 12 guests for a day charter out of Puerto Banús. Skipper, fuel, drinks and 21% IVA included. From €7,300 for 4 hours.",
+      "highlights": [
+        "29 m Mefasa motor yacht",
+        "Up to 12 guests on board",
+        "Departing Puerto Banús · skipper, fuel & 21% IVA included",
+        "From €7,300 for 4h"
+      ],
+      "intent_keywords": [
+        "Mefasa 90 Marbella",
+        "Mefasa 90 charter Puerto Banús",
+        "Mefasa yacht charter Marbella"
+      ],
+      "hero_local": "/img/boats/mefasa-90/hero-1600.jpg",
+      "hero_local_srcset": [
+        [
+          "/img/boats/mefasa-90/hero-600.jpg",
+          600
+        ],
+        [
+          "/img/boats/mefasa-90/hero-900.jpg",
+          900
+        ],
+        [
+          "/img/boats/mefasa-90/hero-1200.jpg",
+          1200
+        ],
+        [
+          "/img/boats/mefasa-90/hero-1600.jpg",
+          1600
+        ]
+      ],
+      "hero_local_alt": "Mefasa 90 — 29 m Mefasa motor yacht charter in Marbella, Puerto Banús",
+      "gallery_local": []
     }
   ]
 }

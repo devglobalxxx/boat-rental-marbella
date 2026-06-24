@@ -44,7 +44,9 @@ else
 fi
 
 echo "→ publish gh-pages"
-git subtree push --prefix=site origin gh-pages
+# subtree split + force-push so DELETIONS propagate (plain `subtree push` can't remove files).
+GHPAGES_SHA=$(git subtree split --prefix=site HEAD | tail -1)
+git push origin "${GHPAGES_SHA}:refs/heads/gh-pages" --force
 
 echo "→ live at https://boatrentalinmarbella.com"
 

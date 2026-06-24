@@ -570,7 +570,22 @@ def write_page(slug, title, meta, h1, sub, eyebrow, hero_img, hero_srcset, hero_
     out_path.parent.mkdir(parents=True, exist_ok=True)
     out_path.write_text(out)
 
+def prune_stale():
+    """Remove rendered boat pages + images for boats no longer in config (config = source of truth)."""
+    import shutil
+    keep = {b["slug"] for b in BOATS_CFG["boats"]}
+    pruned = []
+    for base in (SITE_DIR / "boats", SITE_DIR / "img" / "boats"):
+        if not base.exists():
+            continue
+        for d in base.iterdir():
+            if d.is_dir() and d.name not in keep:
+                shutil.rmtree(d); pruned.append(d.name)
+    if pruned:
+        print(f"pruned stale boat dirs: {sorted(set(pruned))}")
+
 def main():
+    prune_stale()
     render_index()
     print(f"fleet index: site/boats/index.html")
     for b in BOATS_CFG["boats"]:

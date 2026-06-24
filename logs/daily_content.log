@@ -2169,3 +2169,24 @@ hint: See the 'Note about fast-forwards' in 'git push --help' for details.
 [2026-06-23 18:33:25]   ✓ added to keyword_map.spokes
 [2026-06-23 18:33:25] queue: 44 remaining, 402 consumed total
 [2026-06-23 18:33:25] running deploy.sh …
+[2026-06-23 18:33:44] deploy.sh OK
+[2026-06-23 18:33:44] === Done: 8 succeeded, 0 failed ===
+
+[2026-06-24 10:52:49] === Daily content run (kind-balanced): 5 blog + 0 landing = 5 item(s) ===
+[2026-06-24 10:52:49] [1/5] blog · blog/marbella-yacht-charter-weather-february-guide
+[2026-06-24 10:52:49]   DeepSeek failed (ConnectionError: HTTPSConnectionPool(host='api.deepseek.com', port=443): Max retries exceeded with url: /chat/completions (Caused by Name), falling back to cli
+[2026-06-24 11:56:27]   ✗ FAILED: RuntimeError: claude CLI exit 1: 
+[2026-06-24 11:56:27] [2/5] blog · blog/marbella-yacht-charter-new-years-eve-2028-fireworks
+[2026-06-24 11:56:28]   DeepSeek failed (ConnectionError: HTTPSConnectionPool(host='api.deepseek.com', port=443): Max retries exceeded with url: /chat/completions (Caused by Name), falling back to cli
+[2026-06-24 13:14:17]   ✗ FAILED: RuntimeError: claude CLI exit 1: 
+[2026-06-24 13:14:17] [3/5] blog · blog/marbella-yacht-charter-pride-2028-celebration
+[2026-06-24 13:14:17]   DeepSeek failed (ConnectionError: HTTPSConnectionPool(host='api.deepseek.com', port=443): Max retries exceeded with url: /chat/completions (Caused by Name), falling back to cli
+[2026-06-24 15:59:37]   ✗ FAILED: RuntimeError: claude CLI exit 1: 
+[2026-06-24 15:59:37] [4/5] blog · blog/marbella-yacht-charter-what-to-eat-onboard
+[2026-06-24 15:59:37]   DeepSeek failed (ConnectionError: HTTPSConnectionPool(host='api.deepseek.com', port=443): Max retries exceeded with url: /chat/completions (Caused by Name), falling back to cli
+[2026-06-24 16:28:25]   ✗ FAILED: RuntimeError: claude CLI exit 1: 
+[2026-06-24 16:28:25] [5/5] blog · blog/marbella-boat-rental-weather-august-guide
+[2026-06-24 16:28:45]   ✓ saved content/blog_marbella-boat-rental-weather-august-guide.json
+[2026-06-24 16:28:45]   ✓ added to keyword_map.blog
+[2026-06-24 16:28:45] queue: 43 remaining, 403 consumed total
+[2026-06-24 16:28:45] running deploy.sh …

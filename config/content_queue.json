@@ -32,13 +32,6 @@
     },
     {
       "kind": "blog",
-      "slug": "blog/marbella-boat-rental-weather-august-guide",
-      "primary_keyword": "marbella boat rental weather august",
-      "title": "Marbella Boat Rental Weather in August: What to Expect",
-      "target_words": 1100
-    },
-    {
-      "kind": "blog",
       "slug": "blog/marbella-boat-rental-weather-september-guide",
       "primary_keyword": "marbella boat rental weather september",
       "title": "Marbella Boat Rental Weather in September: Late Summer Sailing",
@@ -3675,6 +3668,14 @@
       "title": "Marbella vs Málaga Boat Rental: Pros, Cons & Best Choices",
       "target_words": 1100,
       "consumed_at": "2026-06-23"
+    },
+    {
+      "kind": "blog",
+      "slug": "blog/marbella-boat-rental-weather-august-guide",
+      "primary_keyword": "marbella boat rental weather august",
+      "title": "Marbella Boat Rental Weather in August: What to Expect",
+      "target_words": 1100,
+      "consumed_at": "2026-06-24"
     }
   ],
   "refill_threshold": 30,

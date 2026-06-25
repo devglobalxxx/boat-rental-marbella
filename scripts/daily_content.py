@@ -14,7 +14,7 @@ Triggered by ~/Library/LaunchAgents/com.boatrentalmarbella.daily-content.plist a
 Requires: ANTHROPIC_API_KEY env var with non-zero credit balance.
 """
 from __future__ import annotations
-import argparse, json, os, pathlib, re, sys, subprocess, datetime, traceback
+import argparse, json, os, pathlib, re, sys, subprocess, datetime, traceback, time
 
 ROOT = pathlib.Path(__file__).resolve().parents[1]
 QUEUE_PATH = ROOT / "config" / "content_queue.json"
@@ -157,12 +157,18 @@ Return only the JSON object specified in the system message."""
 def generate(item: dict) -> dict:
     system = system_prompt()
     user = build_user_prompt(item) + "\n\nReturn the JSON object only — no prose before or after, no markdown fences."
-    # Prefer DeepSeek when DEEPSEEK_API_KEY is present (fast, cheap); otherwise CLI/API.
+    # DeepSeek with retry (transient network errors are common; the CLI fallback
+    # fails under launchd because Keychain auth is unreachable, so retry first).
     if os.environ.get("DEEPSEEK_API_KEY", "").strip():
-        try:
-            raw = _call_deepseek(system, user)
-        except Exception as ds_err:
-            log(f"  DeepSeek failed ({type(ds_err).__name__}: {str(ds_err)[:120]}), falling back to {BACKEND}")
+        raw = None
+        for attempt in range(4):
+            try:
+                raw = _call_deepseek(system, user); break
+            except Exception as ds_err:
+                log(f"  DeepSeek attempt {attempt+1}/4 failed ({type(ds_err).__name__}: {str(ds_err)[:90]})")
+                time.sleep(3 * (attempt + 1))
+        if raw is None:
+            log(f"  DeepSeek exhausted, falling back to {BACKEND}")
             raw = _call_cli(system, user) if BACKEND == "cli" else _call_api(system, user)
     else:
         raw = _call_cli(system, user) if BACKEND == "cli" else _call_api(system, user)
@@ -214,9 +220,17 @@ def refill_queue(queue_cfg: dict, n: int) -> list[dict]:
               f"AVOID these slugs (already used): {json.dumps(seen_list)}\n\n"
               "Mix: ~70% blog (informational + event hooks), ~20% experience, ~10% spoke. "
               "Return JSON array only, no prose, no markdown fences.")
-    # Prefer DeepSeek for refill too (CLI fails under launchd because Keychain isn't reachable)
+    # DeepSeek with retry for refill too (CLI fails under launchd — Keychain unreachable)
     if os.environ.get("DEEPSEEK_API_KEY", "").strip():
-        raw = _call_deepseek(sys_p, user_p)
+        raw = None
+        for attempt in range(4):
+            try:
+                raw = _call_deepseek(sys_p, user_p); break
+            except Exception as e:
+                log(f"  refill DeepSeek attempt {attempt+1}/4 failed ({str(e)[:80]})")
+                time.sleep(3 * (attempt + 1))
+        if raw is None:
+            raw = _call_cli(sys_p, user_p, timeout_s=300)
     else:
         raw = _call_cli(sys_p, user_p, timeout_s=300)
     raw = re.sub(r"^```(?:json)?\s*|\s*```$", "", raw, flags=re.MULTILINE).strip()

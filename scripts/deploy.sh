@@ -23,10 +23,16 @@ python3 scripts/inject_aggregate_rating.py
 python3 scripts/inject_ai_schema.py
 python3 scripts/inject_howto_event_schema.py
 python3 scripts/inject_ga.py
+python3 scripts/inject_hreflang.py
+python3 scripts/build_sitemap_page.py
+python3 scripts/inject_webp.py
 python3 scripts/build_facts_json.py
 python3 scripts/build_search_endpoint.py
 python3 scripts/build_llms_txt.py
 python3 scripts/build_video_sitemap.py
+
+echo "→ consistency gate"
+python3 scripts/check_consistency.py
 
 echo "→ commit main"
 git add -A
@@ -38,7 +44,9 @@ else
 fi
 
 echo "→ publish gh-pages"
-git subtree push --prefix=site origin gh-pages
+# subtree split + force-push so DELETIONS propagate (plain `subtree push` can't remove files).
+GHPAGES_SHA=$(git subtree split --prefix=site HEAD | tail -1)
+git push origin "${GHPAGES_SHA}:refs/heads/gh-pages" --force
 
 echo "→ live at https://boatrentalinmarbella.com"
 

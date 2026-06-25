@@ -26,6 +26,14 @@ def already_has_hero_video(s: str) -> bool:
 def swap(path: pathlib.Path, video: dict):
     s = path.read_text()
     if already_has_hero_video(s):
+        # Retro-fit the pause toggle onto pages whose hero video predates it
+        if 'hero-video-toggle' not in s:
+            toggle = ('<button class="hero-video-toggle" type="button" aria-label="Pause background video" '
+                      'onclick="var v=this.previousElementSibling;if(v.paused){v.play();this.textContent=\'⏸\';this.setAttribute(\'aria-label\',\'Pause background video\')}else{v.pause();this.textContent=\'▶\';this.setAttribute(\'aria-label\',\'Play background video\')}">⏸</button>')
+            new = re.sub(r'(<video class="hero-video"[\s\S]*?</video>)', r'\1' + toggle, s, count=1)
+            if new != s:
+                path.write_text(new)
+                return True
         return False
     if 'class="hero-img-wrap"' not in s:
         return False
@@ -36,6 +44,8 @@ def swap(path: pathlib.Path, video: dict):
         f'aria-label="{title}">'
         f'<source src="/video/{video["slug"]}.mp4" type="video/mp4">'
         f'</video>'
+        f'<button class="hero-video-toggle" type="button" aria-label="Pause background video" '
+        f'onclick="var v=this.previousElementSibling;if(v.paused){{v.play();this.textContent=\'⏸\';this.setAttribute(\'aria-label\',\'Pause background video\')}}else{{v.pause();this.textContent=\'▶\';this.setAttribute(\'aria-label\',\'Play background video\')}}">⏸</button>'
     )
     new = re.sub(
         r'<picture class="hero-img-wrap">[\s\S]*?</picture>',

@@ -958,53 +958,6 @@
       "model_year": null
     },
     {
-      "slug": "mangusta-80-white",
-      "name": "Mangusta 80 (White)",
-      "tagline": "24 m Mangusta — second white-hull variant in the Marbella fleet",
-      "builder": "Overmarine",
-      "type": "Luxury sport yacht",
-      "length_m": 24,
-      "capacity_pax": 12,
-      "departure_port": "Puerto Banús",
-      "tier": "on_request",
-      "pricing_status": "on_request",
-      "summary": "Mangusta 80 (White hull variant) — additional 24 m Mangusta in our Marbella fleet, alongside 'Nina' and the grey-hull sister. Same superyacht-class scale, three cabins, water toys included. Quote on WhatsApp.",
-      "highlights": [
-        "24 m Overmarine Mangusta",
-        "White hull variant",
-        "Sea-Doo jet ski included",
-        "12 guests in luxury",
-        "Three cabins, captain + deckhand"
-      ],
-      "intent_keywords": [
-        "Mangusta 80 white Marbella",
-        "Marbella Mangusta fleet",
-        "superyacht charter Puerto Banús"
-      ],
-      "hero_local": "/img/boats/mangusta-80-white/hero-1600.jpg",
-      "hero_local_srcset": [
-        [
-          "/img/boats/mangusta-80-white/hero-600.jpg",
-          600
-        ],
-        [
-          "/img/boats/mangusta-80-white/hero-900.jpg",
-          900
-        ],
-        [
-          "/img/boats/mangusta-80-white/hero-1200.jpg",
-          1200
-        ],
-        [
-          "/img/boats/mangusta-80-white/hero-1600.jpg",
-          1600
-        ]
-      ],
-      "hero_local_alt": "Mangusta 80 (White) — 24 m Mangusta — second white-hull variant in the Marbella fleet",
-      "gallery_local": [],
-      "model_year": null
-    },
-    {
       "slug": "mariah-sx21",
       "name": "Mariah SX21",
       "tagline": "6.4 m American bowrider — fast day-trip boat for small groups",

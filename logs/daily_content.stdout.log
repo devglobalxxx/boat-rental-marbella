@@ -382,3 +382,402 @@ hint: See the 'Note about fast-forwards' in 'git push --help' for details.
 [2026-06-09 10:02:39] deploy.sh OK
 [2026-06-09 10:02:39] === Done: 6 succeeded, 0 failed ===
 
+[2026-06-10 10:00:00] === Daily content run (kind-balanced): 5 blog + 0 landing = 5 item(s) ===
+[2026-06-10 10:00:00] [1/5] blog · blog/marbella-yacht-charter-sea-conditions-forecast
+[2026-06-10 10:00:42]   ✓ saved content/blog_marbella-yacht-charter-sea-conditions-forecast.json
+[2026-06-10 10:00:42]   ✓ added to keyword_map.blog
+[2026-06-10 10:00:42] [2/5] blog · blog/marbella-yacht-charter-late-arrival-policy
+[2026-06-10 10:01:17]   ✓ saved content/blog_marbella-yacht-charter-late-arrival-policy.json
+[2026-06-10 10:01:17]   ✓ added to keyword_map.blog
+[2026-06-10 10:01:17] [3/5] blog · blog/marbella-yacht-charter-noise-curfew
+[2026-06-10 10:01:51]   ✓ saved content/blog_marbella-yacht-charter-noise-curfew.json
+[2026-06-10 10:01:51]   ✓ added to keyword_map.blog
+[2026-06-10 10:01:51] [4/5] blog · blog/marbella-half-day-morning-vs-afternoon
+[2026-06-10 10:02:24]   ✓ saved content/blog_marbella-half-day-morning-vs-afternoon.json
+[2026-06-10 10:02:24]   ✓ added to keyword_map.blog
+[2026-06-10 10:02:24] [5/5] blog · blog/marbella-yacht-charter-towel-policy
+[2026-06-10 10:02:55]   ✓ saved content/blog_marbella-yacht-charter-towel-policy.json
+[2026-06-10 10:02:55]   ✓ added to keyword_map.blog
+[2026-06-10 10:02:55] queue: 44 remaining, 159 consumed total
+[2026-06-10 10:02:55] running deploy.sh …
+[2026-06-10 10:02:57] deploy.sh exited 1: 9/boat-rental-marbella.git
+ ! [rejected]        main -> main (fetch first)
+error: failed to push some refs to 'https://github.com/mardo89/boat-rental-marbella.git'
+hint: Updates were rejected because the remote contains work that you do not
+hint: have locally. This is usually caused by another repository pushing to
+hint: the same ref. If you want to integrate the remote changes, use
+hint: 'git pull' before pushing again.
+hint: See the 'Note about fast-forwards' in 'git push --help' for details.
+
+[2026-06-11 10:00:00] === Daily content run (kind-balanced): 5 blog + 0 landing = 5 item(s) ===
+[2026-06-11 10:00:00] [1/5] blog · blog/fairline-targa-12m-review-marbella
+[2026-06-11 10:00:36]   ✓ saved content/blog_fairline-targa-12m-review-marbella.json
+[2026-06-11 10:00:36]   ✓ added to keyword_map.blog
+[2026-06-11 10:00:36] [2/5] blog · blog/ferretti-94-review-marbella
+[2026-06-11 10:01:09]   ✓ saved content/blog_ferretti-94-review-marbella.json
+[2026-06-11 10:01:09]   ✓ added to keyword_map.blog
+[2026-06-11 10:01:09] [3/5] blog · blog/k80-review-marbella
+[2026-06-11 10:01:34]   ✓ saved content/blog_k80-review-marbella.json
+[2026-06-11 10:01:34]   ✓ added to keyword_map.blog
+[2026-06-11 10:01:34] [4/5] blog · blog/lagoon-380-review-marbella
+[2026-06-11 10:02:11]   ✓ saved content/blog_lagoon-380-review-marbella.json
+[2026-06-11 10:02:11]   ✓ added to keyword_map.blog
+[2026-06-11 10:02:11] [5/5] blog · blog/maiora-26m-review-marbella
+[2026-06-11 10:02:50]   ✓ saved content/blog_maiora-26m-review-marbella.json
+[2026-06-11 10:02:50]   ✓ added to keyword_map.blog
+[2026-06-11 10:02:50] queue: 29 remaining, 174 consumed total
+[2026-06-11 10:02:50] queue under threshold (29 < 30) — auto-refilling…
+[2026-06-11 10:03:09] refill: +30 topics (queue now 59)
+[2026-06-11 10:03:09] running deploy.sh …
+[2026-06-12 10:00:00] === Daily content run (kind-balanced): 5 blog + 5 landing = 10 item(s) ===
+[2026-06-12 10:00:00] [1/10] blog · blog/mariah-sx21-review-marbella
+[2026-06-12 10:00:33]   ✓ saved content/blog_mariah-sx21-review-marbella.json
+[2026-06-12 10:00:33]   ✓ added to keyword_map.blog
+[2026-06-12 10:00:33] [2/10] blog · blog/pershing-46-review-marbella
+[2026-06-12 10:01:04]   ✓ saved content/blog_pershing-46-review-marbella.json
+[2026-06-12 10:01:04]   ✓ added to keyword_map.blog
+[2026-06-12 10:01:04] [3/10] blog · blog/dubhe-review-marbella
+[2026-06-12 10:01:30]   ✓ saved content/blog_dubhe-review-marbella.json
+[2026-06-12 10:01:30]   ✓ added to keyword_map.blog
+[2026-06-12 10:01:30] [4/10] blog · blog/red-tide-fishing-boat-review-marbella
+[2026-06-12 10:01:57]   ✓ saved content/blog_red-tide-fishing-boat-review-marbella.json
+[2026-06-12 10:01:57]   ✓ added to keyword_map.blog
+[2026-06-12 10:01:57] [5/10] blog · blog/speedboat-review-marbella
+[2026-06-12 10:02:26]   ✓ saved content/blog_speedboat-review-marbella.json
+[2026-06-12 10:02:26]   ✓ added to keyword_map.blog
+[2026-06-12 10:02:26] [6/10] experience · experiences/marbella-sunset-tapas-cruise
+[2026-06-12 10:02:52]   ✓ saved content/experiences_marbella-sunset-tapas-cruise.json
+[2026-06-12 10:02:52]   ✓ added to keyword_map.spokes
+[2026-06-12 10:02:52] [7/10] experience · experiences/marbella-family-boat-day-snorkeling
+[2026-06-12 10:03:22]   ✓ saved content/experiences_marbella-family-boat-day-snorkeling.json
+[2026-06-12 10:03:22]   ✓ added to keyword_map.spokes
+[2026-06-12 10:03:22] [8/10] experience · experiences/marbella-birthday-yacht-party-decorations
+[2026-06-12 10:03:46]   ✓ saved content/experiences_marbella-birthday-yacht-party-decorations.json
+[2026-06-12 10:03:46]   ✓ added to keyword_map.spokes
+[2026-06-12 10:03:46] [9/10] experience · experiences/marbella-wine-tasting-yacht-cruise
+[2026-06-12 10:04:15]   ✓ saved content/experiences_marbella-wine-tasting-yacht-cruise.json
+[2026-06-12 10:04:15]   ✓ added to keyword_map.spokes
+[2026-06-12 10:04:15] [10/10] experience · experiences/marbella-full-day-yoga-retreat-at-sea
+[2026-06-12 10:04:43]   ✓ saved content/experiences_marbella-full-day-yoga-retreat-at-sea.json
+[2026-06-12 10:04:43]   ✓ added to keyword_map.spokes
+[2026-06-12 10:04:43] queue: 49 remaining, 184 consumed total
+[2026-06-12 10:04:43] running deploy.sh …
+[2026-06-12 10:05:02] deploy.sh OK
+[2026-06-12 10:05:02] === Done: 10 succeeded, 0 failed ===
+
+[2026-06-13 10:00:04] === Daily content run (kind-balanced): 5 blog + 0 landing = 5 item(s) ===
+[2026-06-13 10:00:04] [1/5] blog · blog/maiora-26m-best-for
+[2026-06-13 10:00:40]   ✓ saved content/blog_maiora-26m-best-for.json
+[2026-06-13 10:00:40]   ✓ added to keyword_map.blog
+[2026-06-13 10:00:40] [2/5] blog · blog/mariah-sx21-best-for
+[2026-06-13 10:01:07]   ✓ saved content/blog_mariah-sx21-best-for.json
+[2026-06-13 10:01:07]   ✓ added to keyword_map.blog
+[2026-06-13 10:01:07] [3/5] blog · blog/pershing-46-best-for
+[2026-06-13 10:01:36]   ✓ saved content/blog_pershing-46-best-for.json
+[2026-06-13 10:01:36]   ✓ added to keyword_map.blog
+[2026-06-13 10:01:36] [4/5] blog · blog/dubhe-best-for
+[2026-06-13 10:01:59]   ✓ saved content/blog_dubhe-best-for.json
+[2026-06-13 10:01:59]   ✓ added to keyword_map.blog
+[2026-06-13 10:01:59] [5/5] blog · blog/red-tide-fishing-boat-best-for
+[2026-06-13 10:02:21]   ✓ saved content/blog_red-tide-fishing-boat-best-for.json
+[2026-06-13 10:02:21]   ✓ added to keyword_map.blog
+[2026-06-13 10:02:21] queue: 32 remaining, 201 consumed total
+[2026-06-13 10:02:21] running deploy.sh …
+[2026-06-13 10:02:41] deploy.sh OK
+[2026-06-13 10:02:41] === Done: 5 succeeded, 0 failed ===
+
+[2026-06-14 10:00:01] === Daily content run (kind-balanced): 5 blog + 4 landing = 9 item(s) ===
+[2026-06-14 10:00:01] [1/9] blog · blog/dubhe-vs-mariah-sx21-marbella
+[2026-06-14 10:00:26]   ✓ saved content/blog_dubhe-vs-mariah-sx21-marbella.json
+[2026-06-14 10:00:26]   ✓ added to keyword_map.blog
+[2026-06-14 10:00:26] [2/9] blog · blog/puerto-banus-yacht-rental-winter-season
+[2026-06-14 10:00:59]   ✓ saved content/blog_puerto-banus-yacht-rental-winter-season.json
+[2026-06-14 10:00:59]   ✓ added to keyword_map.blog
+[2026-06-14 10:00:59] [3/9] blog · blog/estepona-boat-charter-departure-guide
+[2026-06-14 10:01:28]   ✓ saved content/blog_estepona-boat-charter-departure-guide.json
+[2026-06-14 10:01:28]   ✓ added to keyword_map.blog
+[2026-06-14 10:01:28] [4/9] blog · blog/sotogrande-yacht-charter-polo-season
+[2026-06-14 10:02:02]   ✓ saved content/blog_sotogrande-yacht-charter-polo-season.json
+[2026-06-14 10:02:02]   ✓ added to keyword_map.blog
+[2026-06-14 10:02:02] [5/9] blog · blog/cabopino-boat-rental-family-day
+[2026-06-14 10:02:37]   ✓ saved content/blog_cabopino-boat-rental-family-day.json
+[2026-06-14 10:02:37]   ✓ added to keyword_map.blog
+[2026-06-14 10:02:37] [6/9] spoke · marbella-yacht-charter-license-requirements
+[2026-06-14 10:03:05]   ✓ saved content/marbella-yacht-charter-license-requirements.json
+[2026-06-14 10:03:05]   ✓ added to keyword_map.spokes
+[2026-06-14 10:03:05] [7/9] spoke · marbella-boat-rental-group-size-limits
+[2026-06-14 10:03:36]   ✓ saved content/marbella-boat-rental-group-size-limits.json
+[2026-06-14 10:03:36]   ✓ added to keyword_map.spokes
+[2026-06-14 10:03:36] [8/9] spoke · marbella-yacht-charter-cancellation-policy
+[2026-06-14 10:04:02]   ✓ saved content/marbella-yacht-charter-cancellation-policy.json
+[2026-06-14 10:04:02]   ✓ added to keyword_map.spokes
+[2026-06-14 10:04:02] [9/9] spoke · marbella-yacht-charter-payment-methods
+[2026-06-14 10:04:24]   ✓ saved content/marbella-yacht-charter-payment-methods.json
+[2026-06-14 10:04:24]   ✓ added to keyword_map.spokes
+[2026-06-14 10:04:24] queue: 37 remaining, 224 consumed total
+[2026-06-14 10:04:24] running deploy.sh …
+[2026-06-14 10:04:42] deploy.sh OK
+[2026-06-14 10:04:42] === Done: 9 succeeded, 0 failed ===
+
+[2026-06-15 10:00:04] === Daily content run (kind-balanced): 5 blog + 3 landing = 8 item(s) ===
+[2026-06-15 10:00:04] [1/8] blog · blog/marbella-yacht-charter-photoshoot-tips
+[2026-06-15 10:00:39]   ✓ saved content/blog_marbella-yacht-charter-photoshoot-tips.json
+[2026-06-15 10:00:39]   ✓ added to keyword_map.blog
+[2026-06-15 10:00:39] [2/8] blog · blog/marbella-boat-charter-group-size-limits
+[2026-06-15 10:01:10]   ✓ saved content/blog_marbella-boat-charter-group-size-limits.json
+[2026-06-15 10:01:10]   ✓ added to keyword_map.blog
+[2026-06-15 10:01:10] [3/8] blog · blog/marbella-yacht-charter-weather-conditions
+[2026-06-15 10:01:39]   ✓ saved content/blog_marbella-yacht-charter-weather-conditions.json
+[2026-06-15 10:01:39]   ✓ added to keyword_map.blog
+[2026-06-15 10:01:39] [4/8] blog · blog/marbella-boat-rental-what-to-bring
+[2026-06-15 10:02:12]   ✓ saved content/blog_marbella-boat-rental-what-to-bring.json
+[2026-06-15 10:02:12]   ✓ added to keyword_map.blog
+[2026-06-15 10:02:12] [5/8] blog · blog/marbella-yacht-charter-dietary-restrictions
+[2026-06-15 10:02:41]   ✓ saved content/blog_marbella-yacht-charter-dietary-restrictions.json
+[2026-06-15 10:02:41]   ✓ added to keyword_map.blog
+[2026-06-15 10:02:41] [6/8] spoke · astondoa-40-vs-pershing-46-marbella-comparison
+[2026-06-15 10:03:03]   ✓ saved content/astondoa-40-vs-pershing-46-marbella-comparison.json
+[2026-06-15 10:03:03]   ✓ added to keyword_map.spokes
+[2026-06-15 10:03:03] [7/8] spoke · azimut-58-vs-sunseeker-predator-74-marbella
+[2026-06-15 10:03:28]   ✓ saved content/azimut-58-vs-sunseeker-predator-74-marbella.json
+[2026-06-15 10:03:28]   ✓ added to keyword_map.spokes
+[2026-06-15 10:03:28] [8/8] spoke · mangusta-80-vs-ferretti-94-marbella-comparison
+[2026-06-15 10:03:56]   ✓ saved content/mangusta-80-vs-ferretti-94-marbella-comparison.json
+[2026-06-15 10:03:56]   ✓ added to keyword_map.spokes
+[2026-06-15 10:03:56] queue: 44 remaining, 242 consumed total
+[2026-06-15 10:03:56] running deploy.sh …
+[2026-06-15 10:04:18] deploy.sh OK
+[2026-06-15 10:04:18] === Done: 8 succeeded, 0 failed ===
+
+[2026-06-16 10:00:00] === Daily content run (kind-balanced): 5 blog + 0 landing = 5 item(s) ===
+[2026-06-16 10:00:00] [1/5] blog · blog/marbella-fishing-charter-tuna-season
+[2026-06-16 10:00:22]   ✓ saved content/blog_marbella-fishing-charter-tuna-season.json
+[2026-06-16 10:00:22]   ✓ added to keyword_map.blog
+[2026-06-16 10:00:22] [2/5] blog · blog/marbella-yacht-charter-starlite-festival-2026
+[2026-06-16 10:00:47]   ✓ saved content/blog_marbella-yacht-charter-starlite-festival-2026.json
+[2026-06-16 10:00:47]   ✓ added to keyword_map.blog
+[2026-06-16 10:00:47] [3/5] blog · blog/marbella-feria-san-bernabe-boat-party
+[2026-06-16 10:01:14]   ✓ saved content/blog_marbella-feria-san-bernabe-boat-party.json
+[2026-06-16 10:01:14]   ✓ added to keyword_map.blog
+[2026-06-16 10:01:14] [4/5] blog · blog/marbella-ironman-yacht-recovery-charter
+[2026-06-16 10:01:38]   ✓ saved content/blog_marbella-ironman-yacht-recovery-charter.json
+[2026-06-16 10:01:38]   ✓ added to keyword_map.blog
+[2026-06-16 10:01:38] [5/5] blog · blog/marbella-pride-yacht-party-2026
+[2026-06-16 10:02:03]   ✓ saved content/blog_marbella-pride-yacht-party-2026.json
+[2026-06-16 10:02:03]   ✓ added to keyword_map.blog
+[2026-06-16 10:02:03] queue: 29 remaining, 257 consumed total
+[2026-06-16 10:02:03] queue under threshold (29 < 30) — auto-refilling…
+[2026-06-16 10:02:18] refill: +30 topics (queue now 59)
+[2026-06-16 10:02:18] running deploy.sh …
+[2026-06-16 10:02:45] deploy.sh OK
+[2026-06-16 10:02:45] === Done: 5 succeeded, 0 failed ===
+
+[2026-06-17 10:00:00] === Daily content run (kind-balanced): 5 blog + 0 landing = 5 item(s) ===
+[2026-06-17 10:00:00] [1/5] blog · blog/marbella-yacht-charter-what-to-bring-checklist
+[2026-06-17 10:00:29]   ✓ saved content/blog_marbella-yacht-charter-what-to-bring-checklist.json
+[2026-06-17 10:00:29]   ✓ added to keyword_map.blog
+[2026-06-17 10:00:29] [2/5] blog · blog/marbella-yacht-charter-dolphin-watching-snorkeling-combo
+[2026-06-17 10:01:06]   ✓ saved content/blog_marbella-yacht-charter-dolphin-watching-snorkeling-combo.json
+[2026-06-17 10:01:06]   ✓ added to keyword_map.blog
+[2026-06-17 10:01:06] [3/5] blog · blog/marbella-yacht-charter-stag-weekend-itinerary
+[2026-06-17 10:01:50]   ✓ saved content/blog_marbella-yacht-charter-stag-weekend-itinerary.json
+[2026-06-17 10:01:50]   ✓ added to keyword_map.blog
+[2026-06-17 10:01:50] [4/5] blog · blog/marbella-yacht-charter-hen-party-activities
+[2026-06-17 10:02:24]   ✓ saved content/blog_marbella-yacht-charter-hen-party-activities.json
+[2026-06-17 10:02:24]   ✓ added to keyword_map.blog
+[2026-06-17 10:02:24] [5/5] blog · blog/marbella-fishing-charter-license-rules-2026
+[2026-06-17 10:02:52]   ✓ saved content/blog_marbella-fishing-charter-license-rules-2026.json
+[2026-06-17 10:02:52]   ✓ added to keyword_map.blog
+[2026-06-17 10:02:52] queue: 36 remaining, 280 consumed total
+[2026-06-17 10:02:52] running deploy.sh …
+[2026-06-17 10:03:13] deploy.sh OK
+[2026-06-17 10:03:13] === Done: 5 succeeded, 0 failed ===
+
+[2026-06-18 10:00:05] === Daily content run (kind-balanced): 5 blog + 5 landing = 10 item(s) ===
+[2026-06-18 10:00:05] [1/10] blog · blog/marbella-yacht-charter-dietary-restrictions-catering-guide
+[2026-06-18 10:00:37]   ✓ saved content/blog_marbella-yacht-charter-dietary-restrictions-catering-guide.json
+[2026-06-18 10:00:37]   ✓ added to keyword_map.blog
+[2026-06-18 10:00:37] [2/10] blog · blog/marbella-yacht-charter-minimum-age-policy-2026
+[2026-06-18 10:01:05]   ✓ saved content/blog_marbella-yacht-charter-minimum-age-policy-2026.json
+[2026-06-18 10:01:05]   ✓ added to keyword_map.blog
+[2026-06-18 10:01:05] [3/10] blog · blog/marbella-yacht-charter-weather-october-shoulder-season
+[2026-06-18 10:01:42]   ✓ saved content/blog_marbella-yacht-charter-weather-october-shoulder-season.json
+[2026-06-18 10:01:42]   ✓ added to keyword_map.blog
+[2026-06-18 10:01:42] [4/10] blog · blog/marbella-yacht-charter-paella-onboard-experience
+[2026-06-18 10:02:19]   ✓ saved content/blog_marbella-yacht-charter-paella-onboard-experience.json
+[2026-06-18 10:02:19]   ✓ added to keyword_map.blog
+[2026-06-18 10:02:19] [5/10] blog · blog/marbella-yacht-charter-photoshoot-tips-locations
+[2026-06-18 10:02:47]   ✓ saved content/blog_marbella-yacht-charter-photoshoot-tips-locations.json
+[2026-06-18 10:02:47]   ✓ added to keyword_map.blog
+[2026-06-18 10:02:47] [6/10] experience · experiences/marbella-sunset-snorkeling-combo
+[2026-06-18 10:03:18]   ✓ saved content/experiences_marbella-sunset-snorkeling-combo.json
+[2026-06-18 10:03:18]   ✓ added to keyword_map.spokes
+[2026-06-18 10:03:18] [7/10] experience · experiences/marbella-dolphin-watching-brunch-cruise
+[2026-06-18 10:03:51]   ✓ saved content/experiences_marbella-dolphin-watching-brunch-cruise.json
+[2026-06-18 10:03:51]   ✓ added to keyword_map.spokes
+[2026-06-18 10:03:51] [8/10] experience · experiences/marbella-jet-ski-and-snorkel-combo
+[2026-06-18 10:04:23]   ✓ saved content/experiences_marbella-jet-ski-and-snorkel-combo.json
+[2026-06-18 10:04:23]   ✓ added to keyword_map.spokes
+[2026-06-18 10:04:23] [9/10] experience · experiences/marbella-fishing-and-sunset-combo
+[2026-06-18 10:04:52]   ✓ saved content/experiences_marbella-fishing-and-sunset-combo.json
+[2026-06-18 10:04:52]   ✓ added to keyword_map.spokes
+[2026-06-18 10:04:52] [10/10] experience · experiences/marbella-full-moon-yoga-cruise
+[2026-06-18 10:05:23]   ✓ saved content/experiences_marbella-full-moon-yoga-cruise.json
+[2026-06-18 10:05:23]   ✓ added to keyword_map.spokes
+[2026-06-18 10:05:23] queue: 46 remaining, 300 consumed total
+[2026-06-18 10:05:23] running deploy.sh …
+[2026-06-18 10:05:45] deploy.sh OK
+[2026-06-18 10:05:45] === Done: 10 succeeded, 0 failed ===
+
+[2026-06-19 10:00:00] === Daily content run (kind-balanced): 5 blog + 0 landing = 5 item(s) ===
+[2026-06-19 10:00:00] [1/5] blog · blog/marbella-yacht-charter-st-patricks-day
+[2026-06-19 10:00:25]   ✓ saved content/blog_marbella-yacht-charter-st-patricks-day.json
+[2026-06-19 10:00:25]   ✓ added to keyword_map.blog
+[2026-06-19 10:00:25] [2/5] blog · blog/marbella-yacht-charter-easter-monday
+[2026-06-19 10:00:52]   ✓ saved content/blog_marbella-yacht-charter-easter-monday.json
+[2026-06-19 10:00:52]   ✓ added to keyword_map.blog
+[2026-06-19 10:00:52] [3/5] blog · blog/marbella-yacht-charter-labour-day
+[2026-06-19 10:01:21]   ✓ saved content/blog_marbella-yacht-charter-labour-day.json
+[2026-06-19 10:01:21]   ✓ added to keyword_map.blog
+[2026-06-19 10:01:21] [4/5] blog · blog/marbella-yacht-charter-assumption-day
+[2026-06-19 10:02:01]   ✓ saved content/blog_marbella-yacht-charter-assumption-day.json
+[2026-06-19 10:02:01]   ✓ added to keyword_map.blog
+[2026-06-19 10:02:01] [5/5] blog · blog/marbella-yacht-charter-christmas-eve
+[2026-06-19 10:02:35]   ✓ saved content/blog_marbella-yacht-charter-christmas-eve.json
+[2026-06-19 10:02:35]   ✓ added to keyword_map.blog
+[2026-06-19 10:02:35] queue: 28 remaining, 318 consumed total
+[2026-06-19 10:02:35] queue under threshold (28 < 30) — auto-refilling…
+[2026-06-19 10:02:54] refill: +26 topics (queue now 54)
+[2026-06-19 10:02:54] running deploy.sh …
+[2026-06-19 10:03:15] deploy.sh OK
+[2026-06-19 10:03:15] === Done: 5 succeeded, 0 failed ===
+
+[2026-06-20 10:00:01] === Daily content run (kind-balanced): 5 blog + 0 landing = 5 item(s) ===
+[2026-06-20 10:00:01] [1/5] blog · blog/sotogrande-yacht-charter-group-size
+[2026-06-20 10:00:38]   ✓ saved content/blog_sotogrande-yacht-charter-group-size.json
+[2026-06-20 10:00:38]   ✓ added to keyword_map.blog
+[2026-06-20 10:00:38] [2/5] blog · blog/cabopino-boat-rental-sunset-cruise
+[2026-06-20 10:01:09]   ✓ saved content/blog_cabopino-boat-rental-sunset-cruise.json
+[2026-06-20 10:01:09]   ✓ added to keyword_map.blog
+[2026-06-20 10:01:09] [3/5] blog · blog/estepona-boat-charter-fishing-trip
+[2026-06-20 10:01:46]   ✓ saved content/blog_estepona-boat-charter-fishing-trip.json
+[2026-06-20 10:01:46]   ✓ added to keyword_map.blog
+[2026-06-20 10:01:46] [4/5] blog · blog/marbella-boat-rental-wedding-reception
+[2026-06-20 10:02:18]   ✓ saved content/blog_marbella-boat-rental-wedding-reception.json
+[2026-06-20 10:02:18]   ✓ added to keyword_map.blog
+[2026-06-20 10:02:18] [5/5] blog · blog/marbella-yacht-charter-stag-weekend-activities
+[2026-06-20 10:02:49]   ✓ saved content/blog_marbella-yacht-charter-stag-weekend-activities.json
+[2026-06-20 10:02:49]   ✓ added to keyword_map.blog
+[2026-06-20 10:02:49] queue: 34 remaining, 338 consumed total
+[2026-06-20 10:02:49] running deploy.sh …
+[2026-06-20 10:03:10] deploy.sh OK
+[2026-06-20 10:03:10] === Done: 5 succeeded, 0 failed ===
+
+[2026-06-21 10:00:02] === Daily content run (kind-balanced): 5 blog + 0 landing = 5 item(s) ===
+[2026-06-21 10:00:02] [1/5] blog · blog/marbella-yacht-charter-ironman-2026
+[2026-06-21 10:00:37]   ✓ saved content/blog_marbella-yacht-charter-ironman-2026.json
+[2026-06-21 10:00:37]   ✓ added to keyword_map.blog
+[2026-06-21 10:00:37] [2/5] blog · blog/marbella-yacht-charter-pride-2026
+[2026-06-21 10:01:06]   ✓ saved content/blog_marbella-yacht-charter-pride-2026.json
+[2026-06-21 10:01:06]   ✓ added to keyword_map.blog
+[2026-06-21 10:01:06] [3/5] blog · blog/marbella-yacht-charter-f1-grand-prix-2026
+[2026-06-21 10:01:41]   ✓ saved content/blog_marbella-yacht-charter-f1-grand-prix-2026.json
+[2026-06-21 10:01:41]   ✓ added to keyword_map.blog
+[2026-06-21 10:01:41] [4/5] blog · blog/marbella-yacht-charter-weather-september
+[2026-06-21 10:02:11]   ✓ saved content/blog_marbella-yacht-charter-weather-september.json
+[2026-06-21 10:02:11]   ✓ added to keyword_map.blog
+[2026-06-21 10:02:11] [5/5] blog · blog/marbella-boat-rental-sotogrande-vs-cabopino
+[2026-06-21 10:02:40]   ✓ saved content/blog_marbella-boat-rental-sotogrande-vs-cabopino.json
+[2026-06-21 10:02:40]   ✓ added to keyword_map.blog
+[2026-06-21 10:02:40] queue: 25 remaining, 353 consumed total
+[2026-06-21 10:02:40] queue under threshold (25 < 30) — auto-refilling…
+[2026-06-21 10:03:00] refill: +23 topics (queue now 48)
+[2026-06-21 10:03:00] running deploy.sh …
+[2026-06-21 10:03:21] deploy.sh OK
+[2026-06-21 10:03:21] === Done: 5 succeeded, 0 failed ===
+
+[2026-06-22 10:00:03] === Daily content run (kind-balanced): 5 blog + 0 landing = 5 item(s) ===
+[2026-06-22 10:00:03] [1/5] blog · blog/marbella-boat-rental-group-size-limits-2026
+[2026-06-22 10:00:29]   ✓ saved content/blog_marbella-boat-rental-group-size-limits-2026.json
+[2026-06-22 10:00:29]   ✓ added to keyword_map.blog
+[2026-06-22 10:00:29] [2/5] blog · blog/marbella-sunset-cruise-photoshoot-locations
+[2026-06-22 10:01:04]   ✓ saved content/blog_marbella-sunset-cruise-photoshoot-locations.json
+[2026-06-22 10:01:04]   ✓ added to keyword_map.blog
+[2026-06-22 10:01:04] [3/5] blog · blog/marbella-yacht-charter-ironman-2027
+[2026-06-22 10:01:32]   ✓ saved content/blog_marbella-yacht-charter-ironman-2027.json
+[2026-06-22 10:01:32]   ✓ added to keyword_map.blog
+[2026-06-22 10:01:32] [4/5] blog · blog/marbella-boat-rental-no-license-cost-2026
+[2026-06-22 10:01:58]   ✓ saved content/blog_marbella-boat-rental-no-license-cost-2026.json
+[2026-06-22 10:01:58]   ✓ added to keyword_map.blog
+[2026-06-22 10:01:58] [5/5] blog · blog/marbella-yacht-charter-starlite-2027
+[2026-06-22 10:02:27]   ✓ saved content/blog_marbella-yacht-charter-starlite-2027.json
+[2026-06-22 10:02:27]   ✓ added to keyword_map.blog
+[2026-06-22 10:02:27] queue: 28 remaining, 373 consumed total
+[2026-06-22 10:02:27] queue under threshold (28 < 30) — auto-refilling…
+[2026-06-22 10:02:43] refill: +22 topics (queue now 50)
+[2026-06-22 10:02:43] running deploy.sh …
+[2026-06-22 10:03:05] deploy.sh OK
+[2026-06-22 10:03:05] === Done: 5 succeeded, 0 failed ===
+
+[2026-06-23 10:00:04] === Daily content run (kind-balanced): 5 blog + 0 landing = 5 item(s) ===
+[2026-06-23 10:00:04] [1/5] blog · blog/marbella-yacht-charter-halloween-party-ideas
+[2026-06-23 10:00:30]   ✓ saved content/blog_marbella-yacht-charter-halloween-party-ideas.json
+[2026-06-23 10:00:30]   ✓ added to keyword_map.blog
+[2026-06-23 10:00:30] [2/5] blog · blog/astondoa-40-vs-sunseeker-manhattan-66-marbella-comparison
+[2026-06-23 10:00:58]   ✓ saved content/blog_astondoa-40-vs-sunseeker-manhattan-66-marbella-comparison.json
+[2026-06-23 10:00:58]   ✓ added to keyword_map.blog
+[2026-06-23 10:00:58] [3/5] blog · blog/marbella-boat-rental-weather-january-guide
+[2026-06-23 10:01:35]   ✓ saved content/blog_marbella-boat-rental-weather-january-guide.json
+[2026-06-23 10:01:35]   ✓ added to keyword_map.blog
+[2026-06-23 10:01:35] [4/5] blog · blog/puerto-banus-yacht-charter-cost-per-person-breakdown
+[2026-06-23 10:02:06]   ✓ saved content/blog_puerto-banus-yacht-charter-cost-per-person-breakdown.json
+[2026-06-23 10:02:06]   ✓ added to keyword_map.blog
+[2026-06-23 10:02:06] [5/5] blog · blog/estepona-boat-rental-snorkeling-spots-guide
+[2026-06-23 10:02:34]   ✓ saved content/blog_estepona-boat-rental-snorkeling-spots-guide.json
+[2026-06-23 10:02:34]   ✓ added to keyword_map.blog
+[2026-06-23 10:02:34] queue: 34 remaining, 389 consumed total
+[2026-06-23 10:02:34] running deploy.sh …
+[2026-06-23 10:02:55] deploy.sh OK
+[2026-06-23 10:02:55] === Done: 5 succeeded, 0 failed ===
+
+[2026-06-24 10:52:49] === Daily content run (kind-balanced): 5 blog + 0 landing = 5 item(s) ===
+[2026-06-24 10:52:49] [1/5] blog · blog/marbella-yacht-charter-weather-february-guide
+[2026-06-24 10:52:49]   DeepSeek failed (ConnectionError: HTTPSConnectionPool(host='api.deepseek.com', port=443): Max retries exceeded with url: /chat/completions (Caused by Name), falling back to cli
+[2026-06-24 11:56:27]   ✗ FAILED: RuntimeError: claude CLI exit 1: 
+[2026-06-24 11:56:27] [2/5] blog · blog/marbella-yacht-charter-new-years-eve-2028-fireworks
+[2026-06-24 11:56:28]   DeepSeek failed (ConnectionError: HTTPSConnectionPool(host='api.deepseek.com', port=443): Max retries exceeded with url: /chat/completions (Caused by Name), falling back to cli
+[2026-06-24 13:14:17]   ✗ FAILED: RuntimeError: claude CLI exit 1: 
+[2026-06-24 13:14:17] [3/5] blog · blog/marbella-yacht-charter-pride-2028-celebration
+[2026-06-24 13:14:17]   DeepSeek failed (ConnectionError: HTTPSConnectionPool(host='api.deepseek.com', port=443): Max retries exceeded with url: /chat/completions (Caused by Name), falling back to cli
+[2026-06-24 15:59:37]   ✗ FAILED: RuntimeError: claude CLI exit 1: 
+[2026-06-24 15:59:37] [4/5] blog · blog/marbella-yacht-charter-what-to-eat-onboard
+[2026-06-24 15:59:37]   DeepSeek failed (ConnectionError: HTTPSConnectionPool(host='api.deepseek.com', port=443): Max retries exceeded with url: /chat/completions (Caused by Name), falling back to cli
+[2026-06-24 16:28:25]   ✗ FAILED: RuntimeError: claude CLI exit 1: 
+[2026-06-24 16:28:25] [5/5] blog · blog/marbella-boat-rental-weather-august-guide
+[2026-06-24 16:28:45]   ✓ saved content/blog_marbella-boat-rental-weather-august-guide.json
+[2026-06-24 16:28:45]   ✓ added to keyword_map.blog
+[2026-06-24 16:28:45] queue: 43 remaining, 403 consumed total
+[2026-06-24 16:28:45] running deploy.sh …
+[2026-06-24 16:29:06] deploy.sh OK
+[2026-06-24 16:29:06] === Done: 1 succeeded, 4 failed ===
+
+[2026-06-25 09:00:03] === Daily content run (kind-balanced): 5 blog + 0 landing = 5 item(s) ===
+[2026-06-25 09:00:03] [1/5] blog · blog/marbella-boat-rental-for-large-groups
+[2026-06-25 09:00:30]   ✓ saved content/blog_marbella-boat-rental-for-large-groups.json
+[2026-06-25 09:00:30]   ✓ added to keyword_map.blog
+[2026-06-25 09:00:30] [2/5] blog · blog/marbella-yacht-charter-seasickness-prevention
+[2026-06-25 09:00:56]   ✓ saved content/blog_marbella-yacht-charter-seasickness-prevention.json
+[2026-06-25 09:00:56]   ✓ added to keyword_map.blog
+[2026-06-25 09:00:56] [3/5] blog · blog/marbella-yacht-charter-sunset-time-guide
+[2026-06-25 09:01:21]   ✓ saved content/blog_marbella-yacht-charter-sunset-time-guide.json
+[2026-06-25 09:01:21]   ✓ added to keyword_map.blog
+[2026-06-25 09:01:21] [4/5] blog · blog/marbella-boat-rental-with-catering
+[2026-06-25 09:01:48]   ✓ saved content/blog_marbella-boat-rental-with-catering.json
+[2026-06-25 09:01:48]   ✓ added to keyword_map.blog
+[2026-06-25 09:01:48] [5/5] blog · blog/marbella-yacht-charter-stag-weekend-budget
+[2026-06-25 09:02:19]   ✓ saved content/blog_marbella-yacht-charter-stag-weekend-budget.json
+[2026-06-25 09:02:19]   ✓ added to keyword_map.blog
+[2026-06-25 09:02:20] queue: 28 remaining, 418 consumed total
+[2026-06-25 09:02:20] queue under threshold (28 < 30) — auto-refilling…
+[2026-06-25 09:02:36] refill: +28 topics (queue now 56)
+[2026-06-25 09:02:36] running deploy.sh …

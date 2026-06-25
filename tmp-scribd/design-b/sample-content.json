@@ -1,0 +1,52 @@
+{
+  "doc_type": "spec",
+  "title": "Astondoa 40 “Fufi”",
+  "subtitle": "Spanish-built 12.5 m motor yacht — at home in Puerto Banús. Skipper, fuel, drinks and snacks included on every charter.",
+  "author": "Boat Rental In Marbella · BoatHire24",
+  "date": "June 2026",
+  "cover_image": "/Users/master/boat-rental-marbella/site/img/boats/astondoa-40/hero-1600.jpg",
+  "spec_table": [
+    ["Builder", "Astondoa (Cádiz, Spain)"],
+    ["Type", "Motor yacht — flybridge"],
+    ["Length", "12.5 m"],
+    ["Guests", "Up to 9"],
+    ["Departure port", "Puerto Banús, Marbella"],
+    ["Minimum charter", "2 hours"],
+    ["Skipper", "Licensed skipper included"],
+    ["Cabins", "Two private cabins"]
+  ],
+  "sections": [
+    {
+      "heading": "Overview",
+      "html": "<p>The Astondoa 40 — known as <strong>“Fufi”</strong> — is the Spanish equivalent of the classic Mediterranean motor yacht. Built in Cádiz by Astondoa, fitted out in teak and cream leather, and at home anchoring off the Golden Mile for a long lunch.</p><p>At 12.5 metres with room for <strong>nine guests</strong>, she sits in the sweet spot for families and small groups: big enough for shade, a saloon and two private cabins, small enough to feel like your own boat. Every charter sails with a licensed skipper, and fuel is included in the price.</p>",
+      "image": "/Users/master/boat-rental-marbella/site/img/boats/astondoa-40/lifestyle-1200.jpg",
+      "image_caption": "Guests relaxing on the bow of the Astondoa 40 at Puerto Banús marina"
+    },
+    {
+      "heading": "On-board highlights",
+      "html": "<ul><li>Flybridge with shaded bimini and second helm</li><li>Cream-leather saloon with table-for-six and AC</li><li>Two private cabins for overnight charter</li><li>Spanish-built (Astondoa, Cádiz) — local provenance</li><li>Snorkel gear, inflatable donut &amp; paddleboard on board</li></ul>",
+      "image": "/Users/master/boat-rental-marbella/site/img/boats/astondoa-40/interior-1200.jpg",
+      "image_caption": "Cream-leather saloon with table-for-six and teak finish"
+    },
+    {
+      "heading": "Pricing & inclusions",
+      "html": "<p>The Astondoa 40 charters by the hour from Puerto Banús, with a <strong>2-hour minimum</strong>. All prices are total — not per person — and include VAT.</p><table><thead><tr><th>Duration</th><th class=\"num\">Price (EUR)</th></tr></thead><tbody><tr><td>2 hours</td><td class=\"num\">€749</td></tr><tr><td>3 hours</td><td class=\"num\">€1,049</td></tr><tr><td>4 hours</td><td class=\"num\">€1,299</td></tr><tr><td>5 hours</td><td class=\"num\">€1,549</td></tr><tr><td>6 hours</td><td class=\"num\">€1,799</td></tr><tr><td>7 hours</td><td class=\"num\">€2,099</td></tr><tr><td>8 hours</td><td class=\"num\">€2,299</td></tr></tbody></table><p><strong>Every charter includes:</strong></p><ul><li>Licensed skipper</li><li>Fuel</li><li>Drinks (water, soft drinks, beer, white wine, cava)</li><li>Light snacks</li><li>Insurance</li><li>Safety equipment</li><li>VAT (21%)</li></ul>",
+      "image": null,
+      "image_caption": null
+    },
+    {
+      "heading": "Departure & booking info",
+      "html": "<p>The Astondoa 40 departs from <strong>Puerto Banús</strong>, Marbella’s flagship marina. Exact berth details are sent with your booking confirmation — plan to arrive about 15 minutes before departure so the skipper can run the welcome briefing and get you under way on time.</p><p>Popular routes include a swim-stop anchorage off the Golden Mile, a coastal cruise towards Cabopino, or a sunset loop back into Puerto Banús. Your skipper will tailor the route to the day’s conditions and your group’s plans.</p>",
+      "image": "/Users/master/boat-rental-marbella/site/img/boats/astondoa-40/sunset-1200.jpg",
+      "image_caption": "Arriving back at Puerto Banús marina at sunset"
+    }
+  ],
+  "callout": {
+    "heading": "Book the Astondoa 40",
+    "html": "<p>Check live availability and book the Astondoa 40 online at <a href=\"https://boatrentalinmarbella.com/boats/astondoa-40/\">boatrentalinmarbella.com</a>. Own a boat? List it free on <a href=\"https://boathire24.com\">BoatHire24</a> and start earning from charters worldwide.</p>"
+  },
+  "links": {
+    "primary": "https://boathire24.com",
+    "boat_url": "https://boatrentalinmarbella.com/boats/astondoa-40/"
+  }
+}

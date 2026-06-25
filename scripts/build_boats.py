@@ -345,7 +345,8 @@ def render_boat(boat):
   </div>
 </section>'''
 
-    body = f'''<p class="byline"><strong>{boat["builder"]} {boat["length_m"]} m motor yacht</strong> · {boat["capacity_pax"]} guests · departs {html.escape(boat["departure_port"])}</p>
+    type_label = (boat.get("type") or "Motor yacht").lower()
+    body = f'''<p class="byline"><strong>{boat["builder"]} {boat["length_m"]} m {type_label}</strong> · {boat["capacity_pax"]} guests · departs {html.escape(boat["departure_port"])}</p>
 
 <p>{html.escape(boat["summary"])}</p>
 
@@ -395,7 +396,7 @@ def render_boat(boat):
 {related_html}
 
 <h2>Frequently asked questions</h2>
-<details><summary>How many guests can the {name} carry?</summary><p>{boat["capacity_pax"]} guests for day charter. Overnight capacity is lower — typically 4–6 in cabins on a {boat["length_m"]} m yacht.</p></details>
+<details><summary>How many guests can the {name} carry?</summary><p>{boat["capacity_pax"]} guests for day charter.{(" Overnight capacity is lower — typically 4–6 in cabins on a " + str(boat["length_m"]) + " m yacht.") if type_label != "jet ski" else ""}</p></details>
 <details><summary>Is the skipper included?</summary><p>Yes — every charter on the {name} comes with a licensed Spanish skipper. The captain handles navigation, anchoring and route planning. You and your group are guests for the day.</p></details>
 <details><summary>What's included in the price?</summary><p>Skipper, fuel for the standard coastal route, drinks (water and soft drinks), Spanish IVA (VAT) and insurance. Catered lunch and alcohol are extras you can add when booking.</p></details>
 <details><summary>Can we go further than the standard route?</summary><p>Yes — longer or further itineraries (Gibraltar day trip, Estepona-Sotogrande loop) are bookable. A fuel surcharge applies for itineraries beyond the standard 12–15 NM coastal cruise. We will quote it before you commit.</p></details>

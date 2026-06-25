@@ -1,0 +1,490 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<title>Day-Charter Pricing on the Costa del Sol</title>
+<style>
+:root {
+  --navy:      #0e2438;
+  --navy-deep: #08182a;
+  --gold:      #b9924b;
+  --gold-dark: #8a6c33;
+  --gold-light:#d4b06a;
+  --gold-pale: #e8d8af;
+  --ivory:     #f7f2e6;
+  --paper:     #fdfbf5;
+  --ink:       #22303e;
+  --muted:     #5d6a76;
+  --hairline:  #d9cdaf;
+  --row-tint:  #f5efdf;
+}
+* { -webkit-print-color-adjust: exact; print-color-adjust: exact;
+    box-sizing: border-box; }
+@page { size: A4; margin: 0; }
+html, body { margin: 0; padding: 0; }
+body {
+  background: var(--paper);
+  color: var(--ink);
+  font-family: Georgia, 'Palatino Linotype', Palatino, 'Times New Roman', serif;
+  font-size: 10.5pt;
+  line-height: 1.62;
+}
+.display { font-family: Didot, 'Didot LT STD', 'Playfair Display', Georgia,
+           'Times New Roman', serif; }
+.caps { font-family: Optima, 'Avenir Next', 'Gill Sans', 'Trebuchet MS',
+        sans-serif; text-transform: uppercase; }
+
+/* ---------------- Cover ---------------- */
+.cover {
+  position: relative;
+  width: 210mm; height: 297mm;
+  overflow: hidden;
+  background: var(--navy-deep);
+  page-break-after: always;
+}
+.cover-img {
+  position: absolute; inset: 0;
+  width: 100%; height: 100%;
+  object-fit: cover;
+  object-position: 24% center;  /* centres the yacht's full profile in the A4 crop */
+}
+.cover-veil {
+  position: absolute; inset: 0;
+  background:
+    linear-gradient(to top, rgba(11,26,46,0.92),
+                    rgba(11,26,46,0.86) 30%, transparent 55%),
+    linear-gradient(180deg,
+      rgba(8,24,42,0.62) 0%,
+      rgba(8,24,42,0.20) 26%,
+      rgba(8,24,42,0.12) 50%,
+      rgba(8,24,42,0.00) 62%);
+}
+.cover-veil.no-img {
+  background:
+    radial-gradient(120mm 90mm at 50% 26%, rgba(185,146,75,0.20), transparent 70%),
+    linear-gradient(180deg, #122c46 0%, #0a1d33 55%, #071426 100%);
+}
+.cover-top {
+  position: absolute; top: 13mm; left: 16mm; right: 16mm;
+  display: flex; align-items: center; justify-content: space-between;
+}
+.brand-lockup { display: flex; align-items: center; gap: 4.5mm; }
+.logo-chip {
+  background: #ffffff;
+  border: 1px solid var(--gold);
+  border-radius: 1.2mm;
+  padding: 2mm;
+  line-height: 0;
+}
+.logo-chip img { display: block; height: 13mm; width: 13mm;
+                 object-fit: cover; border-radius: 0.7mm; }
+.brand-name {
+  color: var(--ivory); font-size: 13pt; letter-spacing: 0.30em;
+  line-height: 1.25;
+}
+.brand-tag {
+  color: var(--gold-pale); font-size: 6.4pt; letter-spacing: 0.26em;
+  margin-top: 1mm;
+}
+.doc-type-flag {
+  text-align: right;
+  color: var(--gold-light);
+  font-size: 7.5pt; letter-spacing: 0.34em;
+  border-top: 0.7pt solid var(--gold);
+  border-bottom: 0.7pt solid var(--gold);
+  padding: 2.2mm 0 2mm 0;
+}
+.cover-main {
+  position: absolute; left: 16mm; right: 16mm; bottom: 34mm;
+}
+.cover-rule {
+  display: flex; align-items: center; gap: 4mm;
+  margin-bottom: 5mm;
+}
+.cover-rule .line { flex: 0 0 22mm; height: 0; border-top: 0.8pt solid var(--gold); }
+.cover-rule .word {
+  color: var(--gold-light); font-size: 8pt; letter-spacing: 0.42em;
+  white-space: nowrap;
+  text-shadow: 0 1px 5px rgba(5,14,26,0.65);
+}
+.cover-title {
+  color: #fdfaf2;
+  font-size: 44pt; line-height: 1.05;
+  font-weight: 600;
+  margin: 0 0 4mm 0;
+  text-shadow: 0 1px 8px rgba(5,14,26,0.55);
+}
+.cover-subtitle {
+  color: var(--gold-pale);
+  font-style: italic;
+  font-size: 13pt; line-height: 1.45;
+  margin: 0 0 7mm 0;
+  max-width: 150mm;
+  text-shadow: 0 1px 6px rgba(5,14,26,0.6);
+}
+.cover-meta {
+  color: rgba(247,242,230,0.92);
+  font-size: 7.6pt; letter-spacing: 0.22em;
+}
+.cover-meta .dot { color: var(--gold-light); padding: 0 2.2mm; }
+.fleet-strip {
+  margin-top: 8mm;
+  display: flex; align-items: center; gap: 4mm;
+}
+.fleet-strip .logo-chip img { height: 9mm; width: auto; }
+.fleet-label {
+  color: rgba(247,242,230,0.85); font-size: 6.6pt; letter-spacing: 0.30em;
+}
+
+/* ------------- Repeating footer ------------- */
+.runfoot {
+  position: fixed; left: 0; right: 0; bottom: 0;
+  height: 12mm;
+  background: var(--ivory);
+  border-top: 1pt solid var(--gold);
+  display: flex; align-items: center; justify-content: space-between;
+  padding: 0 16mm;
+  font-size: 6.8pt; letter-spacing: 0.12em;
+  color: var(--navy);
+}
+.runfoot b { letter-spacing: 0.22em; font-weight: 600; }
+.runfoot .gold { color: var(--gold-dark); }
+.runfoot a { color: var(--navy); text-decoration: none; }
+
+/* ------------- Paged content scaffold ------------- */
+table.paged { width: 100%; border-collapse: collapse; }
+table.paged > thead td { height: 15mm; padding: 0; }
+table.paged > tfoot td { height: 17mm; padding: 0; }
+table.paged > tbody > tr > td { padding: 0 18mm; }
+
+/* ------------- Sections ------------- */
+.sec { margin: 0 0 8mm 0; }
+.sec-head {
+  break-after: avoid-page; page-break-after: avoid;
+  break-inside: avoid; page-break-inside: avoid;
+  margin: 0 0 4.5mm 0;
+}
+.sec-kicker {
+  color: var(--gold-dark); font-size: 7pt; letter-spacing: 0.38em;
+  margin-bottom: 1.6mm;
+}
+.sec-head h2 {
+  color: var(--navy);
+  font-size: 18.5pt; font-weight: 400; line-height: 1.2;
+  margin: 0 0 2.6mm 0;
+}
+.sec-head .rules { position: relative; height: 2.4mm; }
+.sec-head .rules .thin {
+  position: absolute; left: 0; right: 0; top: 1mm;
+  border-top: 0.6pt solid var(--hairline);
+}
+.sec-head .rules .thick {
+  position: absolute; left: 0; top: 0; width: 26mm;
+  border-top: 2.2pt solid var(--gold);
+}
+.sec-body p { margin: 0 0 3.4mm 0; }
+.sec-body p:last-child { margin-bottom: 0; }
+.sec-body ol { margin: 0 0 3.4mm 0; padding-left: 5.5mm; }
+.sec-body ul { margin: 0 0 3.4mm 0; padding-left: 1mm; }
+.sec-body li { margin-bottom: 1.6mm; break-inside: avoid; page-break-inside: avoid;
+               -webkit-column-break-inside: avoid; }
+.sec-body ul.cols2 { columns: 2; column-gap: 9mm;
+                     break-inside: avoid; page-break-inside: avoid; }
+.sec-body ul > li {
+  list-style: none;
+  padding-left: 1.1em; text-indent: -1.1em;  /* hanging indent: wraps align under text */
+}
+.sec-body ul > li::before {
+  content: "\2726";            /* four-pointed star, brass compass point */
+  display: inline-block; width: 1.44em; text-indent: 0;
+  color: var(--gold); font-size: 8pt;       /* 1.44em @8pt == 1.1em @10.5pt */
+}
+.sec-body a { color: var(--navy); text-decoration: none;
+              border-bottom: 0.6pt solid var(--gold); }
+.sec-body strong { color: var(--navy); }
+
+/* generic tables inside section html */
+.sec-body table {
+  width: 100%; border-collapse: collapse;
+  margin: 1mm 0 4mm 0;
+  break-inside: avoid; page-break-inside: avoid;
+  font-size: 9.8pt;
+}
+.sec-body th {
+  background: var(--navy); color: var(--ivory);
+  font-family: Optima, 'Avenir Next', 'Gill Sans', 'Trebuchet MS', sans-serif;
+  text-transform: uppercase; letter-spacing: 0.16em;
+  font-size: 7.4pt; font-weight: 500;
+  text-align: left; padding: 2.6mm 3.5mm;
+  border-bottom: 1.4pt solid var(--gold);
+}
+.sec-body td {
+  padding: 2.2mm 3.5mm;
+  border-bottom: 0.6pt solid var(--hairline);
+  color: var(--ink);
+}
+.sec-body td, .sec-body th { font-variant-numeric: tabular-nums; }
+.sec-body td:not(:first-child),
+.sec-body th:not(:first-child) { text-align: right; }
+.sec-body tr:nth-child(even) td { background: var(--row-tint); }
+.sec-body td:first-child { color: var(--navy); }
+.sec-body tr.best td { background: rgba(212,175,55,0.12); }
+.sec-body tr.best td:first-child { color: var(--navy); font-weight: 600; }
+.best-tag {
+  display: inline-block;
+  font-family: Optima, 'Avenir Next', 'Gill Sans', 'Trebuchet MS', sans-serif;
+  font-variant-caps: small-caps; text-transform: lowercase;
+  font-size: 7.6pt; font-weight: 600; letter-spacing: 0.14em;
+  color: var(--gold-dark);
+  border: 0.6pt solid var(--gold);
+  border-radius: 1mm;
+  padding: 0.2mm 1.6mm;
+  margin-left: 2.2mm;
+  white-space: nowrap;
+  vertical-align: 0.2mm;
+}
+
+/* ------------- Figures ------------- */
+figure.plate {
+  break-inside: avoid; page-break-inside: avoid;
+  margin: 5mm 0 2mm 0;
+  background: #ffffff;
+  border: 0.7pt solid var(--gold-light);
+  padding: 2.6mm;
+}
+figure.plate img {
+  display: block; width: 100%; height: 78mm; object-fit: cover;
+}
+figure.plate figcaption {
+  text-align: center;
+  font-style: italic;
+  font-size: 8.4pt; color: var(--muted);
+  padding: 2.4mm 2mm 0.6mm 2mm;
+}
+figure.plate figcaption::before {
+  content: "\25C6\00a0"; color: var(--gold); font-size: 6pt;
+}
+
+/* ------------- Spec table (2-column grid: two lbl/val pairs per row) ------------- */
+.spec-block { margin: 0 0 8mm 0; }
+table.spec {
+  width: 100%; border-collapse: collapse;
+  border-top: 1.6pt solid var(--navy);
+  border-bottom: 1.6pt solid var(--navy);
+}
+table.spec td { padding: 1.7mm 1.5mm; border-bottom: 0.6pt solid var(--hairline);
+                vertical-align: top; }
+table.spec tr:last-child td { border-bottom: none; }
+table.spec td.lbl {
+  width: 21%;
+  font-family: Optima, 'Avenir Next', 'Gill Sans', 'Trebuchet MS', sans-serif;
+  text-transform: uppercase; letter-spacing: 0.16em;
+  font-size: 7.2pt; color: var(--gold-dark);
+  padding-top: 2.3mm;
+}
+table.spec td.val { width: 29%; color: var(--navy); font-size: 9.8pt; }
+table.spec td.lbl:nth-child(3) {
+  border-left: 0.6pt solid var(--hairline);
+  padding-left: 4mm;
+}
+table.spec td.val:nth-child(2) { padding-right: 4mm; }
+
+/* ------------- Callout ------------- */
+.callout {
+  break-inside: avoid; page-break-inside: avoid;
+  margin: 8mm 0 4mm 0;
+  background: var(--navy);
+  border: 1pt solid var(--gold);
+  outline: 0.6pt solid var(--gold);
+  outline-offset: -2.2mm;
+  color: var(--ivory);
+  padding: 8mm 9mm 7mm 9mm;
+}
+.callout h3 {
+  color: var(--gold-light);
+  font-size: 15pt; font-weight: 400;
+  margin: 0 0 3mm 0;
+}
+.callout p { margin: 0 0 2.8mm 0; line-height: 1.6; color: #efe7d3; }
+.callout a { color: var(--gold-light); text-decoration: none; }
+.callout ul { margin: 0 0 2.8mm 0; padding-left: 1mm; }
+.callout ul > li { list-style: none; margin-bottom: 1.4mm;
+                   padding-left: 1.1em; text-indent: -1.1em;
+                   break-inside: avoid; page-break-inside: avoid; }
+.callout ul > li::before {
+  content: "\2726"; display: inline-block; width: 1.44em; text-indent: 0;
+  color: var(--gold-light); font-size: 8pt;
+}
+.callout .linksrow {
+  margin-top: 4.5mm; padding-top: 3.6mm;
+  border-top: 0.6pt solid rgba(212,176,106,0.55);
+  font-size: 7.6pt; letter-spacing: 0.16em;
+  color: var(--gold-pale);
+}
+.callout .linksrow span.sep { padding: 0 2.6mm; color: var(--gold); }
+
+.endmark {
+  display: flex; align-items: center; justify-content: center; gap: 3.5mm;
+  margin: 7mm 0 0 0;
+}
+.endmark .line { width: 14mm; height: 0; border-top: 0.6pt solid var(--gold); }
+.endmark svg { display: block; }
+</style>
+</head>
+<body>
+
+<div class="cover">
+  <img class="cover-img" src="file:///Users/master/boat-rental-marbella/site/img/boats/mangusta-80/hero-1200.jpg" alt="">
+  <div class="cover-veil"></div>
+  <div class="cover-top">
+    <div class="brand-lockup">
+      <span class="logo-chip"><img src="file:///Users/master/boat-rental-platform/public/brand-logo.jpg" alt="BoatHire24"></span>
+      <div>
+        <div class="brand-name caps display">BoatHire24</div>
+        <div class="brand-tag caps">Rent boats worldwide <span class="gold">|</span> list your boat free</div>
+      </div>
+    </div>
+    <div class="doc-type-flag caps">June 2026</div>
+  </div>
+  <div class="cover-main">
+    <div class="cover-rule">
+      <span class="line"></span>
+      <span class="word caps">Research Report</span>
+    </div>
+    <h1 class="cover-title display">Day-Charter Pricing on the Costa del Sol</h1>
+    <p class="cover-subtitle display">A 2026 Market Study of skippered boat-charter rates departing Puerto Banus, from licence-free day boats to 26-metre superyachts</p>
+    <div class="cover-meta caps">BoatHire24 Research</div>
+    
+  </div>
+</div>
+<table class="paged">
+  <thead><tr><td></td></tr></thead>
+  <tbody><tr><td>
+
+<div class="sec">
+  <div class="sec-head">
+    <div class="sec-kicker caps">Section 01</div>
+    <h2 class="display">Abstract</h2>
+    <div class="rules"><span class="thick"></span><span class="thin"></span></div>
+  </div>
+  <div class="sec-body"><p>This study examines the published and on-request pricing of private day charters on the Marbella stretch of the Costa del Sol for the 2026 season, using a single operator fleet departing Puerto Banus as its primary dataset. The Costa del Sol is one of the most heavily trafficked charter markets in the western Mediterranean, yet its pricing is poorly documented in the open literature. Aggregator platforms quote headline figures stripped of inclusions, and operators rarely publish a full duration grid. We address that gap.</p><p>Our analysis rests on a real, advertised price ladder. A 12.5-metre flybridge motor yacht charters from <strong>EUR 749 for two hours</strong> to <strong>EUR 2,299 for a full eight-hour day</strong>, all-inclusive of a licensed skipper, fuel, drinks, snacks, insurance and Spanish VAT at 21 per cent. Above that tier sits a 24-metre Italian sport yacht at <strong>EUR 4,719 for four hours</strong>, and a 26-metre all-inclusive superyacht at <strong>EUR 9,500 for six hours, rising to EUR 12,500 for eight</strong>. At the entry point, a licence-free day boat opens the market at <strong>EUR 230 for two hours</strong>.</p><p>From these anchor points we derive the effective marginal cost of each additional hour, the per-guest economics that govern how groups actually buy charter, and the structural reasons the Costa del Sol sits below the French Riviera while charging only a modest premium over Mallorca and Ibiza. We find that the headline rate is a weak guide to true cost: the binding variables are charter duration, group size and a handful of genuinely optional extras. Every figure cited traces to operator data or the Spanish VAT regime described herein; no rate has been estimated or invented.</p></div>
+  
+</div>
+
+<div class="sec">
+  <div class="sec-head">
+    <div class="sec-kicker caps">Section 02</div>
+    <h2 class="display">Market Context and Method</h2>
+    <div class="rules"><span class="thick"></span><span class="thin"></span></div>
+  </div>
+  <div class="sec-body"><p>Marbella and its marquee marina, Puerto Banus, anchor a charter market that runs roughly forty kilometres of coast from Estepona in the west to Cabopino in the east, with longer itineraries reaching Sotogrande, Gibraltar and the Strait of Tarifa. The competitive field is crowded. A 2026 review of the leading organic search results for boat rental in Marbella found that aggregator platforms occupied around five of the top ten positions, with one aggregator alone listing some sixty boats from roughly USD 110 per hour. Beneath the aggregators sit a smaller number of direct operators who own or manage hulls and crew them.</p><p>This structure matters for pricing. Aggregators compete on inventory depth and on headline per-hour figures that frequently exclude fuel, crew gratuity or VAT, so the advertised number understates the true cost of a day at sea. Direct operators, by contrast, tend to quote an all-inclusive rate. The single most useful thing a prospective charterer can do is establish which model they are reading before comparing two numbers, because a EUR 110-per-hour aggregator teaser and a EUR 374-per-hour all-inclusive operator rate can describe an almost identical day on the water once fuel, skipper, drinks and tax are added back.</p><p>Our method is deliberately narrow. Rather than scrape a wide but shallow sample of aggregator teasers, we take one well-documented operator fleet based at Puerto Banus and treat its full duration-by-tier price grid as the spine of the analysis. Where a competitor benchmark exists in the public record, we cite it. The aim is a clean read on how charter is actually priced and sold on this coast, not a survey of marketing copy. The reference fleet spans the full breadth of the market, from an eight-metre licence-free day boat to 26-metre and 29-metre superyachts, so the pricing structure it reveals is representative rather than a single boutique segment.</p></div>
+  
+</div>
+
+<div class="sec">
+  <div class="sec-head">
+    <div class="sec-kicker caps">Section 03</div>
+    <h2 class="display">The Core Price Ladder: 12.5-Metre Motor Yachts</h2>
+    <div class="rules"><span class="thick"></span><span class="thin"></span></div>
+  </div>
+  <div class="sec-body"><p>The workhorse of the Marbella day-charter market is the 12.5-metre flybridge motor yacht. In the reference fleet this tier comprises a Spanish-built Astondoa 40 and an Italian-built Azimut 39, both berthed at Puerto Banus and both priced on an identical published ladder. The Astondoa is built in Cadiz, giving it genuine local provenance on this coast, while the Azimut carries the modern flybridge lines for which the Italian yard is known. The grid below is the centre of gravity for the entire study, and every higher and lower tier is best understood as a departure from it.</p><table><thead><tr><th>Duration</th><th>Price (EUR)</th><th>Indicative itinerary</th></tr></thead><tbody><tr><td>2 hours</td><td>749</td><td>Golden Mile spin, one swim stop</td></tr><tr><td>3 hours</td><td>1,049</td><td>Longer anchor or sunset extension</td></tr><tr><td>4 hours</td><td>1,299</td><td>Half-day lunch and swim</td></tr><tr><td>5 hours</td><td>1,549</td><td>Reach Estepona or Cabopino</td></tr><tr><td>6 hours</td><td>1,799</td><td>Two swim stops, paddleboard</td></tr><tr><td>7 hours</td><td>2,099</td><td>Sotogrande or Rio Real run</td></tr><tr><td>8 hours</td><td>2,299</td><td>Full day, all inclusions</td></tr></tbody></table><p>Two structural features deserve comment. First, the operator holds this grid flat across the season: there is no August uplift and no surcharge for the levante, the strong easterly wind that periodically blows along this coast. The two-hour rate in calm May is the same EUR 749 as a peak Saturday in August. Second, every figure on the grid already contains a licensed skipper, fuel for standard coastal cruising, soft drinks and water, light snacks, snorkel gear, at least one inflatable, insurance and Spanish VAT at 21 per cent. The headline is the all-in price for the boat, not a base rate awaiting extras.</p></div>
+  <figure class="plate"><img src="file:///Users/master/boat-rental-marbella/site/img/boats/astondoa-40/hero-1200.jpg" alt=""><figcaption>The 12.5-metre Astondoa 40, a Spanish-built flybridge motor yacht at the centre of the Marbella day-charter ladder.</figcaption></figure>
+</div>
+
+<div class="sec">
+  <div class="sec-head">
+    <div class="sec-kicker caps">Section 04</div>
+    <h2 class="display">Marginal Pricing: What Each Extra Hour Costs</h2>
+    <div class="rules"><span class="thick"></span><span class="thin"></span></div>
+  </div>
+  <div class="sec-body"><p>Reading the grid as a curve rather than a list reveals how the operator has structured the offer. The two-hour minimum carries a clear fixed-cost loading: it captures the crew's preparation, the marina turnaround and the standard inclusions, so the per-hour figure at two hours is high at roughly EUR 375. As the charter lengthens, that fixed cost spreads across more hours and the marginal cost of each additional hour settles into a tight band.</p><table><thead><tr><th>Step</th><th>Added cost (EUR)</th><th>EUR per added hour</th></tr></thead><tbody><tr><td>2h to 3h</td><td>300</td><td>300</td></tr><tr><td>3h to 4h</td><td>250</td><td>250</td></tr><tr><td>4h to 5h</td><td>250</td><td>250</td></tr><tr><td>5h to 6h</td><td>250</td><td>250</td></tr><tr><td>6h to 7h</td><td>300</td><td>300</td></tr><tr><td>7h to 8h</td><td>200</td><td>200</td></tr></tbody></table><p>The pattern is instructive. After the first step, the marginal hour costs between EUR 200 and EUR 300, against an average blended cost that falls from EUR 375 per hour at two hours to roughly EUR 287 per hour across a full eight-hour day. In plain terms, the longer you charter, the cheaper each hour becomes, and the final hour of an eight-hour day is the cheapest of all at EUR 200. This is why the full-day booking is the strongest value on the ladder and why a group weighing four hours against six should note that the two extra hours cost EUR 500 in total, less than the price of the first two hours alone. Duration, not negotiation, is the lever that moves the per-hour cost. The practical reading for a charterer is that the question is rarely whether a longer charter is worth it in absolute terms, but whether the group will use the time. On this coast the answer is usually yes, because the cruising grounds reward a longer day: a six-hour charter comfortably reaches a second anchorage and a proper swim, where a two-hour spin is essentially a single stop and a return.</p></div>
+  
+</div>
+
+<div class="sec">
+  <div class="sec-head">
+    <div class="sec-kicker caps">Section 05</div>
+    <h2 class="display">Per-Guest Economics and How Groups Actually Buy</h2>
+    <div class="rules"><span class="thick"></span><span class="thin"></span></div>
+  </div>
+  <div class="sec-body"><p>Charter is almost never bought by the individual; it is bought by a group splitting a single hull rate. This changes the economics entirely, because the boat price is fixed while the divisor is not. The 12.5-metre yachts in the reference fleet carry up to nine guests on the Astondoa and up to eleven on the Azimut, and the per-person figures fall sharply as the boat fills.</p><p>Consider the two-hour rate of EUR 749. Split across a couple it is around EUR 375 each, a genuine premium experience. Split across a full Azimut of eleven guests it is under EUR 70 each, which is competitive with a beach-club day bed on the Golden Mile and arguably better value given that the day bed does not move. The same arithmetic governs the full-day rate: EUR 2,299 across eleven guests works out near EUR 209 each for eight hours afloat, while a family of six on a six-hour charter at EUR 1,799 pays roughly EUR 300 per head for a full day with multiple anchor stops.</p><p>This is the single most important insight for a charterer trying to control cost. The published rate is a property of the boat, but the experienced cost is a property of the group. Filling the boat is the most powerful discount available on this coast, and it is one the operator actively encourages because a full boat is no more expensive to run than a half-empty one. The pattern aligns neatly with who actually charters here: families taking a relaxed six-hour day with swim stops, groups marking a celebration such as a stag or hen party who fill the boat to nine or eleven and split the full-day rate, and couples taking a short sunset spin where the higher per-head figure buys exclusivity. Choosing the right size of hull matters in the same way: four guests on a sunset spin do not need a 24-metre flagship, and a correctly sized 12.5-metre yacht delivers the same coastline at a fraction of the price.</p></div>
+  
+</div>
+
+<div class="sec">
+  <div class="sec-head">
+    <div class="sec-kicker caps">Section 06</div>
+    <h2 class="display">The Entry Tier: Licence-Free Day Boats</h2>
+    <div class="rules"><span class="thick"></span><span class="thin"></span></div>
+  </div>
+  <div class="sec-body"><p>At the opposite end of the market from the flagships sits the licence-free day boat, which opens chartering to guests with no boating qualification and the smallest budgets. In the reference fleet this is an eight-metre day boat carrying up to five guests, self-driven after a ten-minute marina briefing under Spanish licence-free rules, restricted to daylight hours and a two-nautical-mile coastal limit. Its published ladder is the lowest in the fleet.</p><table><thead><tr><th>Duration</th><th>Price (EUR)</th><th>Notes</th></tr></thead><tbody><tr><td>2 hours</td><td>230</td><td>Cheapest hull in the fleet</td></tr><tr><td>3 hours</td><td>280</td><td>Self-drive after briefing</td></tr><tr><td>4 hours</td><td>350</td><td>Up to 5 guests, 2 NM limit</td></tr></tbody></table><p>This tier carries one important divergence from the all-inclusive model that governs the skippered fleet: fuel is not included on the licence-free boat, and runs typically EUR 30 to EUR 60 depending on the route chosen. Every other standard inclusion applies. The marginal pricing is gentle, with each additional hour costing only EUR 50, reflecting the absence of a paid skipper whose time would otherwise dominate the cost structure. The entry tier exists precisely because removing the skipper removes the single largest line item, which is why a licence-free two-hour outing at EUR 230 sits so far below the EUR 749 skippered equivalent. The trade is autonomy and a tight coastal limit in exchange for a price roughly a third of the crewed alternative. For a small group content to potter along the Marbella shoreline within sight of the coast, it is the most economical way onto the water on the Costa del Sol.</p></div>
+  
+</div>
+
+<div class="sec">
+  <div class="sec-head">
+    <div class="sec-kicker caps">Section 07</div>
+    <h2 class="display">The Luxury Tiers: Mangusta 80 and Maiora 26m</h2>
+    <div class="rules"><span class="thick"></span><span class="thin"></span></div>
+  </div>
+  <div class="sec-body"><p>Above the core motor-yacht ladder the market steps up in discrete jumps rather than a smooth curve, because each larger hull brings a different crew complement, a different inventory of water toys and a different class of build. Two vessels in the reference fleet carry published rates at this level and illustrate the economics of the top of the market.</p><p>The Mangusta 80, known on the dock as Nina, is a 24-metre open-style sport yacht built by Overmarine and in the charter fleet since 2020. Overmarine launched the Mangusta line in the 1980s and built its reputation on fast, open-superstructure sport yachts that became a fixture of Mediterranean marinas, and the 80-foot model carries that signature silhouette with a full-beam sun pad and an aft swim platform. It charters from <strong>EUR 4,719 for four hours</strong>, a four-hour minimum, for up to twelve guests, fully crewed with captain and deckhand, and it includes a Sea-Doo jet ski free for guests to use throughout the day. The Maiora 26m, a 90-foot Italian superyacht from the Fipa Group refurbished in 2023, sits above it again, chartering from <strong>EUR 9,500 for six hours and EUR 12,500 for eight</strong>.</p><table><thead><tr><th>Vessel</th><th>Length</th><th>Duration</th><th>Price (EUR)</th></tr></thead><tbody><tr><td>Mangusta 80 (Nina)</td><td>24 m</td><td>4 hours (min)</td><td>4,719</td></tr><tr><td>Maiora 26m</td><td>26 m</td><td>6 hours</td><td>9,500</td></tr><tr><td>Maiora 26m</td><td>26 m</td><td>8 hours</td><td>12,500</td></tr></tbody></table><p>The Maiora's premium buys a heavier crewed and provisioned product. Its rate is all-inclusive of a captain plus two crew, fuel for the full duration, food and an open bar, a jet ski, paddleboards and snorkel gear, with eight-hour charters adding a giant inflatable slide and swimming pool, and a heated freshwater jacuzzi aboard. The marginal step on the Maiora from six to eight hours is EUR 3,000, or EUR 1,500 per added hour, an order of magnitude above the EUR 200 to EUR 300 of the core fleet. That gap is not a markup on the same product; it reflects the larger crew, full catering and open bar that the superyacht tier carries and the smaller fleet motor yacht does not. Buyers at this level are purchasing a hosted event, a corporate day or a special occasion, not simply boat time, and the Maiora's flybridge, private cabins and elegant interior lounges are configured for exactly that.</p></div>
+  <figure class="plate"><img src="file:///Users/master/boat-rental-marbella/site/img/boats/maiora-26m/hero-1200.jpg" alt=""><figcaption>The 26-metre Maiora, a 90-foot Italian superyacht refurbished in 2023, anchors the top of the published price ladder at EUR 9,500 for six hours.</figcaption></figure>
+</div>
+
+<div class="sec">
+  <div class="sec-head">
+    <div class="sec-kicker caps">Section 08</div>
+    <h2 class="display">Inclusions, VAT and the True Cost of a Day</h2>
+    <div class="rules"><span class="thick"></span><span class="thin"></span></div>
+  </div>
+  <div class="sec-body"><p>A recurring error in charter comparison is to treat the headline rate as the final cost. On the all-inclusive operator model studied here, the headline genuinely is the final cost for a standard day, because Spanish VAT and the core services are already inside it. Understanding exactly what is bundled, and what is not, is essential to reading any quote on this coast.</p><p>Spanish IVA, the local VAT, applies to recreational charter at 21 per cent and is calculated on the whole charter fee including the boat, skipper, fuel and included extras. The reference operator quotes every rate inclusive of this tax, so the EUR 749 two-hour figure and the EUR 4,719 four-hour Mangusta figure both already contain the 21 per cent. There is no separate line added at checkout, and critically for this region there is no tourist tax or municipal charter surcharge of the kind levied in some other Spanish jurisdictions. EU businesses holding a valid VAT number may in certain conditions reclaim the IVA under Spanish reverse-charge rules; non-EU residents generally cannot.</p><p>The standard bundle, covered by that VAT-inclusive price, is consistent across the skippered fleet:</p><ul><li>Licensed skipper for the full charter duration</li><li>Fuel for standard coastal cruising</li><li>Drinks: water, soft drinks, beer, white wine and cava</li><li>Light snacks</li><li>Insurance and safety equipment</li><li>Spanish VAT at 21 per cent, already included</li></ul><p>Where additional cost can arise is in genuinely optional choices, and these are the variables a charterer controls. A catered lunch on board runs roughly EUR 25 per head for a charcuterie platter to EUR 60 for a full hot lunch. Berthing at a stopover marina such as Sotogrande or Estepona for a lunch break adds a berth fee of EUR 30 to EUR 80 depending on yacht size. Asking the skipper to run the yacht hard at 25-plus knots all day can attract a fuel surcharge of EUR 100 to EUR 300. A skipper gratuity is customary though not mandatory, conventionally EUR 20 to EUR 50 for a half-day or around 10 per cent on a luxury yacht. None of these is hidden; each is a decision the guest makes, and a charterer who declines the catered lunch and cruises at displacement speed pays precisely the advertised rate. On the payment side, the standard convention is a 50 per cent deposit to secure the date with the balance settled on the morning of the charter, and weather cancellations are fully refundable.</p></div>
+  
+</div>
+
+<div class="sec">
+  <div class="sec-head">
+    <div class="sec-kicker caps">Section 09</div>
+    <h2 class="display">Seasonality, Booking Channel and Regional Position</h2>
+    <div class="rules"><span class="thick"></span><span class="thin"></span></div>
+  </div>
+  <div class="sec-body"><p>Although the reference operator holds its grid flat year-round, the wider market does flex, and three levers move the effective price a charterer pays. The first is timing. A weekday in the shoulder months of May, June or October typically runs 10 to 15 per cent below a peak August Saturday for the same class of boat, and frequently arrives with calmer seas and easier availability. Demand peaks across June to September; April and May offer calm water and thin crowds; October retains warm sea temperatures with relaxed weekday booking; and winter from November to March sees limited operation that is best confirmed in advance.</p><p>The second lever is the booking channel. Marketplace and aggregator bookings can add a platform commission of 10 to 15 per cent on top of the operator's direct price. Contacting a local operator directly, typically by WhatsApp on this coast, removes that layer. Combining direct booking with shoulder-season weekday timing can compound into savings exceeding 25 per cent on an identical boat and crew.</p><p>The third lever is regional position. The Costa del Sol is not the most expensive charter coast in the western Mediterranean. Public price anchors for comparable two-hour skippered charters from competing Marbella operators sit around EUR 250 to EUR 275, with full-day figures near EUR 750 on smaller hulls, confirming that this is a competitively priced market rather than a luxury outlier and that headline figures vary widely with boat size and what is bundled. Licence-free boats and standard 10-to-12-metre yachts price very similarly to Mallorca and Ibiza day rates and sit somewhat below the French Riviera. Where Marbella does carry a premium it is modest and localised: Puerto Banus, the most prestigious berth on the coast, commands roughly a 10 per cent brand premium over the neighbouring Marbella Marina for the same boat. That premium buys address and atmosphere rather than a materially different day at sea.</p></div>
+  
+</div>
+
+<div class="sec">
+  <div class="sec-head">
+    <div class="sec-kicker caps">Section 10</div>
+    <h2 class="display">Conclusion</h2>
+    <div class="rules"><span class="thick"></span><span class="thin"></span></div>
+  </div>
+  <div class="sec-body"><p>The day-charter market on the Costa del Sol in 2026 is more legible than its fragmented, aggregator-dominated search results suggest. Priced through a single transparent operator fleet, it resolves into a clear ladder. A 12.5-metre motor yacht runs from EUR 749 for two hours to EUR 2,299 for a full day, all-inclusive of skipper, fuel, drinks, insurance and 21 per cent VAT. A licence-free day boat opens the market at EUR 230. A 24-metre Mangusta sport yacht charters from EUR 4,719 for four hours, and a 26-metre Maiora superyacht from EUR 9,500 for six hours to EUR 12,500 for eight, the latter a fully hosted product with a crew of three, catering and an open bar.</p><p>Three findings stand out. First, marginal pricing favours duration: each added hour on the core fleet costs only EUR 200 to EUR 300, so the full-day booking is the clearest value and the eight-hour rate the cheapest per hour on the ladder. Second, per-guest economics favour filling the boat: the rate is fixed to the hull, so a full boat can bring the per-person cost below a Golden Mile day bed, and group size is the most powerful discount on the coast. Third, the headline rate is honest because VAT and core services are bundled inside it, leaving only a small set of genuinely optional extras for the charterer to control.</p><p>For the prospective charterer the practical guidance is therefore simple. Choose the right size of hull for the group, book a long enough charter to exploit the falling marginal cost, fill the boat to drive down the per-person figure, and book direct in the shoulder season to capture the channel and timing discounts. Do those four things and the Costa del Sol delivers a premium day on the water, from the Golden Mile to Estepona, Cabopino and beyond, at a price that compares favourably with anywhere in the western Mediterranean.</p></div>
+  
+</div>
+
+<div class="sec">
+  <div class="sec-head">
+    <div class="sec-kicker caps">Section 11</div>
+    <h2 class="display">References</h2>
+    <div class="rules"><span class="thick"></span><span class="thin"></span></div>
+  </div>
+  <div class="sec-body"><ul><li><a href="https://boatrentalinmarbella.com/blog/how-much-does-it-cost-to-rent-a-boat-in-marbella.html">https://boatrentalinmarbella.com/blog/how-much-does-it-cost-to-rent-a-boat-in-marbella.html</a></li><li><a href="https://boatrentalinmarbella.com/blog/marbella-luxury-yacht-charter-tax-vat.html">https://boatrentalinmarbella.com/blog/marbella-luxury-yacht-charter-tax-vat.html</a></li><li><a href="https://boatrentalinmarbella.com/blog/best-month-to-rent-a-boat-in-marbella.html">https://boatrentalinmarbella.com/blog/best-month-to-rent-a-boat-in-marbella.html</a></li><li><a href="https://boatrentalinmarbella.com/blog/full-day-itinerary-marbella.html">https://boatrentalinmarbella.com/blog/full-day-itinerary-marbella.html</a></li><li><a href="https://boatrentalinmarbella.com">https://boatrentalinmarbella.com</a></li><li><a href="https://boathire24.com">https://boathire24.com</a></li></ul></div>
+  
+</div>
+
+<div class="callout">
+  <h3 class="display">About this study</h3>
+  <p>This market study was prepared by BoatHire24 Research using live operator pricing data. For full charter rates, the complete Marbella fleet and direct booking, see boatrentalinmarbella.com. To list a boat or find charter inventory worldwide, visit boathire24.com.</p>
+  <div class="linksrow caps"><a href="https://boathire24.com">https://boathire24.com</a><span class="sep">&#9670;</span><a href="https://boatrentalinmarbella.com">https://boatrentalinmarbella.com</a></div>
+</div>
+<div class="endmark"><span class="line"></span><svg width="14" height="14" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg" aria-hidden="true"><path fill="#b9924b" d="M17 15l1.55 1.55c-.96 1.69-3.33 3.04-5.55 3.37V11h3V9h-3V7.82C14.16 7.4 15 6.3 15 5c0-1.65-1.35-3-3-3S9 3.35 9 5c0 1.3.84 2.4 2 2.82V9H8v2h3v8.92c-2.22-.33-4.59-1.68-5.55-3.37L7 15l-4-3v3c0 3.88 4.92 7 9 7s9-3.12 9-7v-3l-4 3zM12 4c.55 0 1 .45 1 1s-.45 1-1 1-1-.45-1-1 .45-1 1-1z"/></svg><span class="line"></span></div>
+  </td></tr></tbody>
+  <tfoot><tr><td></td></tr></tfoot>
+</table>
+
+<div class="runfoot caps">
+  <span><b>boathire24.com</b> <span class="gold">&#9670;</span> rent boats worldwide
+    <span class="gold">&#9670;</span> list your boat free</span>
+  <span class="gold caps">boatrentalinmarbella.com</span>
+</div>
+</body>
+</html>

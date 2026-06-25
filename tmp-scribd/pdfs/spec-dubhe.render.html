@@ -1,0 +1,493 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<title>Dubhe</title>
+<style>
+:root {
+  --navy:      #0e2438;
+  --navy-deep: #08182a;
+  --gold:      #b9924b;
+  --gold-dark: #8a6c33;
+  --gold-light:#d4b06a;
+  --gold-pale: #e8d8af;
+  --ivory:     #f7f2e6;
+  --paper:     #fdfbf5;
+  --ink:       #22303e;
+  --muted:     #5d6a76;
+  --hairline:  #d9cdaf;
+  --row-tint:  #f5efdf;
+}
+* { -webkit-print-color-adjust: exact; print-color-adjust: exact;
+    box-sizing: border-box; }
+@page { size: A4; margin: 0; }
+html, body { margin: 0; padding: 0; }
+body {
+  background: var(--paper);
+  color: var(--ink);
+  font-family: Georgia, 'Palatino Linotype', Palatino, 'Times New Roman', serif;
+  font-size: 10.5pt;
+  line-height: 1.62;
+}
+.display { font-family: Didot, 'Didot LT STD', 'Playfair Display', Georgia,
+           'Times New Roman', serif; }
+.caps { font-family: Optima, 'Avenir Next', 'Gill Sans', 'Trebuchet MS',
+        sans-serif; text-transform: uppercase; }
+
+/* ---------------- Cover ---------------- */
+.cover {
+  position: relative;
+  width: 210mm; height: 297mm;
+  overflow: hidden;
+  background: var(--navy-deep);
+  page-break-after: always;
+}
+.cover-img {
+  position: absolute; inset: 0;
+  width: 100%; height: 100%;
+  object-fit: cover;
+  object-position: 24% center;  /* centres the yacht's full profile in the A4 crop */
+}
+.cover-veil {
+  position: absolute; inset: 0;
+  background:
+    linear-gradient(to top, rgba(11,26,46,0.92),
+                    rgba(11,26,46,0.86) 30%, transparent 55%),
+    linear-gradient(180deg,
+      rgba(8,24,42,0.62) 0%,
+      rgba(8,24,42,0.20) 26%,
+      rgba(8,24,42,0.12) 50%,
+      rgba(8,24,42,0.00) 62%);
+}
+.cover-veil.no-img {
+  background:
+    radial-gradient(120mm 90mm at 50% 26%, rgba(185,146,75,0.20), transparent 70%),
+    linear-gradient(180deg, #122c46 0%, #0a1d33 55%, #071426 100%);
+}
+.cover-top {
+  position: absolute; top: 13mm; left: 16mm; right: 16mm;
+  display: flex; align-items: center; justify-content: space-between;
+}
+.brand-lockup { display: flex; align-items: center; gap: 4.5mm; }
+.logo-chip {
+  background: #ffffff;
+  border: 1px solid var(--gold);
+  border-radius: 1.2mm;
+  padding: 2mm;
+  line-height: 0;
+}
+.logo-chip img { display: block; height: 13mm; width: 13mm;
+                 object-fit: cover; border-radius: 0.7mm; }
+.brand-name {
+  color: var(--ivory); font-size: 13pt; letter-spacing: 0.30em;
+  line-height: 1.25;
+}
+.brand-tag {
+  color: var(--gold-pale); font-size: 6.4pt; letter-spacing: 0.26em;
+  margin-top: 1mm;
+}
+.doc-type-flag {
+  text-align: right;
+  color: var(--gold-light);
+  font-size: 7.5pt; letter-spacing: 0.34em;
+  border-top: 0.7pt solid var(--gold);
+  border-bottom: 0.7pt solid var(--gold);
+  padding: 2.2mm 0 2mm 0;
+}
+.cover-main {
+  position: absolute; left: 16mm; right: 16mm; bottom: 34mm;
+}
+.cover-rule {
+  display: flex; align-items: center; gap: 4mm;
+  margin-bottom: 5mm;
+}
+.cover-rule .line { flex: 0 0 22mm; height: 0; border-top: 0.8pt solid var(--gold); }
+.cover-rule .word {
+  color: var(--gold-light); font-size: 8pt; letter-spacing: 0.42em;
+  white-space: nowrap;
+  text-shadow: 0 1px 5px rgba(5,14,26,0.65);
+}
+.cover-title {
+  color: #fdfaf2;
+  font-size: 44pt; line-height: 1.05;
+  font-weight: 600;
+  margin: 0 0 4mm 0;
+  text-shadow: 0 1px 8px rgba(5,14,26,0.55);
+}
+.cover-subtitle {
+  color: var(--gold-pale);
+  font-style: italic;
+  font-size: 13pt; line-height: 1.45;
+  margin: 0 0 7mm 0;
+  max-width: 150mm;
+  text-shadow: 0 1px 6px rgba(5,14,26,0.6);
+}
+.cover-meta {
+  color: rgba(247,242,230,0.92);
+  font-size: 7.6pt; letter-spacing: 0.22em;
+}
+.cover-meta .dot { color: var(--gold-light); padding: 0 2.2mm; }
+.fleet-strip {
+  margin-top: 8mm;
+  display: flex; align-items: center; gap: 4mm;
+}
+.fleet-strip .logo-chip img { height: 9mm; width: auto; }
+.fleet-label {
+  color: rgba(247,242,230,0.85); font-size: 6.6pt; letter-spacing: 0.30em;
+}
+
+/* ------------- Repeating footer ------------- */
+.runfoot {
+  position: fixed; left: 0; right: 0; bottom: 0;
+  height: 12mm;
+  background: var(--ivory);
+  border-top: 1pt solid var(--gold);
+  display: flex; align-items: center; justify-content: space-between;
+  padding: 0 16mm;
+  font-size: 6.8pt; letter-spacing: 0.12em;
+  color: var(--navy);
+}
+.runfoot b { letter-spacing: 0.22em; font-weight: 600; }
+.runfoot .gold { color: var(--gold-dark); }
+.runfoot a { color: var(--navy); text-decoration: none; }
+
+/* ------------- Paged content scaffold ------------- */
+table.paged { width: 100%; border-collapse: collapse; }
+table.paged > thead td { height: 15mm; padding: 0; }
+table.paged > tfoot td { height: 17mm; padding: 0; }
+table.paged > tbody > tr > td { padding: 0 18mm; }
+
+/* ------------- Sections ------------- */
+.sec { margin: 0 0 8mm 0; }
+.sec-head {
+  break-after: avoid-page; page-break-after: avoid;
+  break-inside: avoid; page-break-inside: avoid;
+  margin: 0 0 4.5mm 0;
+}
+.sec-kicker {
+  color: var(--gold-dark); font-size: 7pt; letter-spacing: 0.38em;
+  margin-bottom: 1.6mm;
+}
+.sec-head h2 {
+  color: var(--navy);
+  font-size: 18.5pt; font-weight: 400; line-height: 1.2;
+  margin: 0 0 2.6mm 0;
+}
+.sec-head .rules { position: relative; height: 2.4mm; }
+.sec-head .rules .thin {
+  position: absolute; left: 0; right: 0; top: 1mm;
+  border-top: 0.6pt solid var(--hairline);
+}
+.sec-head .rules .thick {
+  position: absolute; left: 0; top: 0; width: 26mm;
+  border-top: 2.2pt solid var(--gold);
+}
+.sec-body p { margin: 0 0 3.4mm 0; }
+.sec-body p:last-child { margin-bottom: 0; }
+.sec-body ol { margin: 0 0 3.4mm 0; padding-left: 5.5mm; }
+.sec-body ul { margin: 0 0 3.4mm 0; padding-left: 1mm; }
+.sec-body li { margin-bottom: 1.6mm; break-inside: avoid; page-break-inside: avoid;
+               -webkit-column-break-inside: avoid; }
+.sec-body ul.cols2 { columns: 2; column-gap: 9mm;
+                     break-inside: avoid; page-break-inside: avoid; }
+.sec-body ul > li {
+  list-style: none;
+  padding-left: 1.1em; text-indent: -1.1em;  /* hanging indent: wraps align under text */
+}
+.sec-body ul > li::before {
+  content: "\2726";            /* four-pointed star, brass compass point */
+  display: inline-block; width: 1.44em; text-indent: 0;
+  color: var(--gold); font-size: 8pt;       /* 1.44em @8pt == 1.1em @10.5pt */
+}
+.sec-body a { color: var(--navy); text-decoration: none;
+              border-bottom: 0.6pt solid var(--gold); }
+.sec-body strong { color: var(--navy); }
+
+/* generic tables inside section html */
+.sec-body table {
+  width: 100%; border-collapse: collapse;
+  margin: 1mm 0 4mm 0;
+  break-inside: avoid; page-break-inside: avoid;
+  font-size: 9.8pt;
+}
+.sec-body th {
+  background: var(--navy); color: var(--ivory);
+  font-family: Optima, 'Avenir Next', 'Gill Sans', 'Trebuchet MS', sans-serif;
+  text-transform: uppercase; letter-spacing: 0.16em;
+  font-size: 7.4pt; font-weight: 500;
+  text-align: left; padding: 2.6mm 3.5mm;
+  border-bottom: 1.4pt solid var(--gold);
+}
+.sec-body td {
+  padding: 2.2mm 3.5mm;
+  border-bottom: 0.6pt solid var(--hairline);
+  color: var(--ink);
+}
+.sec-body td, .sec-body th { font-variant-numeric: tabular-nums; }
+.sec-body td:not(:first-child),
+.sec-body th:not(:first-child) { text-align: right; }
+.sec-body tr:nth-child(even) td { background: var(--row-tint); }
+.sec-body td:first-child { color: var(--navy); }
+.sec-body tr.best td { background: rgba(212,175,55,0.12); }
+.sec-body tr.best td:first-child { color: var(--navy); font-weight: 600; }
+.best-tag {
+  display: inline-block;
+  font-family: Optima, 'Avenir Next', 'Gill Sans', 'Trebuchet MS', sans-serif;
+  font-variant-caps: small-caps; text-transform: lowercase;
+  font-size: 7.6pt; font-weight: 600; letter-spacing: 0.14em;
+  color: var(--gold-dark);
+  border: 0.6pt solid var(--gold);
+  border-radius: 1mm;
+  padding: 0.2mm 1.6mm;
+  margin-left: 2.2mm;
+  white-space: nowrap;
+  vertical-align: 0.2mm;
+}
+
+/* ------------- Figures ------------- */
+figure.plate {
+  break-inside: avoid; page-break-inside: avoid;
+  margin: 5mm 0 2mm 0;
+  background: #ffffff;
+  border: 0.7pt solid var(--gold-light);
+  padding: 2.6mm;
+}
+figure.plate img {
+  display: block; width: 100%; height: 78mm; object-fit: cover;
+}
+figure.plate figcaption {
+  text-align: center;
+  font-style: italic;
+  font-size: 8.4pt; color: var(--muted);
+  padding: 2.4mm 2mm 0.6mm 2mm;
+}
+figure.plate figcaption::before {
+  content: "\25C6\00a0"; color: var(--gold); font-size: 6pt;
+}
+
+/* ------------- Spec table (2-column grid: two lbl/val pairs per row) ------------- */
+.spec-block { margin: 0 0 8mm 0; }
+table.spec {
+  width: 100%; border-collapse: collapse;
+  border-top: 1.6pt solid var(--navy);
+  border-bottom: 1.6pt solid var(--navy);
+}
+table.spec td { padding: 1.7mm 1.5mm; border-bottom: 0.6pt solid var(--hairline);
+                vertical-align: top; }
+table.spec tr:last-child td { border-bottom: none; }
+table.spec td.lbl {
+  width: 21%;
+  font-family: Optima, 'Avenir Next', 'Gill Sans', 'Trebuchet MS', sans-serif;
+  text-transform: uppercase; letter-spacing: 0.16em;
+  font-size: 7.2pt; color: var(--gold-dark);
+  padding-top: 2.3mm;
+}
+table.spec td.val { width: 29%; color: var(--navy); font-size: 9.8pt; }
+table.spec td.lbl:nth-child(3) {
+  border-left: 0.6pt solid var(--hairline);
+  padding-left: 4mm;
+}
+table.spec td.val:nth-child(2) { padding-right: 4mm; }
+
+/* ------------- Callout ------------- */
+.callout {
+  break-inside: avoid; page-break-inside: avoid;
+  margin: 8mm 0 4mm 0;
+  background: var(--navy);
+  border: 1pt solid var(--gold);
+  outline: 0.6pt solid var(--gold);
+  outline-offset: -2.2mm;
+  color: var(--ivory);
+  padding: 8mm 9mm 7mm 9mm;
+}
+.callout h3 {
+  color: var(--gold-light);
+  font-size: 15pt; font-weight: 400;
+  margin: 0 0 3mm 0;
+}
+.callout p { margin: 0 0 2.8mm 0; line-height: 1.6; color: #efe7d3; }
+.callout a { color: var(--gold-light); text-decoration: none; }
+.callout ul { margin: 0 0 2.8mm 0; padding-left: 1mm; }
+.callout ul > li { list-style: none; margin-bottom: 1.4mm;
+                   padding-left: 1.1em; text-indent: -1.1em;
+                   break-inside: avoid; page-break-inside: avoid; }
+.callout ul > li::before {
+  content: "\2726"; display: inline-block; width: 1.44em; text-indent: 0;
+  color: var(--gold-light); font-size: 8pt;
+}
+.callout .linksrow {
+  margin-top: 4.5mm; padding-top: 3.6mm;
+  border-top: 0.6pt solid rgba(212,176,106,0.55);
+  font-size: 7.6pt; letter-spacing: 0.16em;
+  color: var(--gold-pale);
+}
+.callout .linksrow span.sep { padding: 0 2.6mm; color: var(--gold); }
+
+.endmark {
+  display: flex; align-items: center; justify-content: center; gap: 3.5mm;
+  margin: 7mm 0 0 0;
+}
+.endmark .line { width: 14mm; height: 0; border-top: 0.6pt solid var(--gold); }
+.endmark svg { display: block; }
+</style>
+</head>
+<body>
+
+<div class="cover">
+  <img class="cover-img" src="file:///Users/master/boat-rental-marbella/site/img/boats/dubhe/hero-1200.jpg" alt="">
+  <div class="cover-veil"></div>
+  <div class="cover-top">
+    <div class="brand-lockup">
+      <span class="logo-chip"><img src="file:///Users/master/boat-rental-platform/public/brand-logo.jpg" alt="BoatHire24"></span>
+      <div>
+        <div class="brand-name caps display">BoatHire24</div>
+        <div class="brand-tag caps">Rent boats worldwide <span class="gold">|</span> list your boat free</div>
+      </div>
+    </div>
+    <div class="doc-type-flag caps">June 2026</div>
+  </div>
+  <div class="cover-main">
+    <div class="cover-rule">
+      <span class="line"></span>
+      <span class="word caps">Vessel Specification</span>
+    </div>
+    <h1 class="cover-title display">Dubhe</h1>
+    <p class="cover-subtitle display">The licence-free 8-metre day boat at Puerto Banus, the most affordable way to take the wheel on the Marbella coast, up to five aboard from 230 euros</p>
+    <div class="cover-meta caps">BoatHire24 Editorial</div>
+    <div class="fleet-strip"><span class="fleet-label caps">From the fleet of</span><span class="logo-chip"><img src="file:///Users/master/boat-rental-marbella/site/img/logo-640.png" alt="Boat Rental In Marbella"></span></div>
+  </div>
+</div>
+<table class="paged">
+  <thead><tr><td></td></tr></thead>
+  <tbody><tr><td>
+
+<div class="spec-block sec">
+  <div class="sec-head">
+    <div class="sec-kicker caps">Particulars</div>
+    <h2 class="display">Principal Particulars</h2>
+    <div class="rules"><span class="thick"></span><span class="thin"></span></div>
+  </div>
+  <table class="spec"><tr><td class="lbl">Vessel</td><td class="val">Dubhe</td><td class="lbl">Type</td><td class="val">Licence-free day boat</td></tr>
+<tr><td class="lbl">Length</td><td class="val">8 metres</td><td class="lbl">Guest capacity</td><td class="val">Up to 5</td></tr>
+<tr><td class="lbl">Builder / class</td><td class="val">Dubhe day boat</td><td class="lbl">Departure port</td><td class="val">Puerto Banus, Marbella</td></tr>
+<tr><td class="lbl">Operation</td><td class="val">Self-drive after 10-minute briefing</td><td class="lbl">Licence</td><td class="val">None required (Spanish licence-free rules)</td></tr>
+<tr><td class="lbl">Cruising limit</td><td class="val">Daylight only, 2 NM coastal limit</td><td class="lbl">Rate band</td><td class="val">From 230 euros (2h) to 350 euros (4h)</td></tr></table>
+</div>
+
+<div class="sec">
+  <div class="sec-head">
+    <div class="sec-kicker caps">Section 01</div>
+    <h2 class="display">Overview: the boat that lets you take the wheel</h2>
+    <div class="rules"><span class="thick"></span><span class="thin"></span></div>
+  </div>
+  <div class="sec-body"><p>Most of the hulls lined up along the quays of Puerto Banus are out of reach for the casual visitor. They need a skipper, a deposit the size of a deposit on a flat, and a phone call to a broker. The <strong>Dubhe</strong> is the opposite of all that. It is an 8-metre licence-free day boat, it carries up to five people, and after a ten-minute briefing on the pontoon you drive it yourself. No skipper sitting beside you, no licence to produce, no minimum spend that runs into four figures. A two-hour outing starts at <strong>230 euros</strong> for the whole boat, which makes the Dubhe the cheapest charter you will find anywhere in Puerto Banus.</p><p>That single fact is what makes the Dubhe stand out in our Marbella fleet. The same marina that hosts the 24-metre Mangusta and the 26-metre Maiora also hosts this modest little open boat, and in many ways the Dubhe is the more honest expression of what a day on the water can be. You are not a guest being driven about. You are at the helm, choosing your own line along the coast, easing the throttle back when you find a quiet patch of blue water, and dropping the swim ladder whenever the mood takes you. For a couple, a small family, or a group of friends who want a private boat without a private-yacht budget, it is close to perfect.</p><p>This dossier walks through everything worth knowing about the Dubhe before you book: what a licence-free day boat actually is, how the self-drive rules work on the Costa del Sol, where you can realistically go in two, three or four hours, who the boat suits, and exactly what the published rates do and do not include. Every figure quoted here comes straight from our own fleet listing, so there are no surprises waiting at the pontoon.</p></div>
+  <figure class="plate"><img src="file:///Users/master/boat-rental-marbella/site/img/boats/dubhe/hero-1200.jpg" alt=""><figcaption>The Dubhe at Puerto Banus, an 8-metre licence-free day boat you drive yourself</figcaption></figure>
+</div>
+
+<div class="sec">
+  <div class="sec-head">
+    <div class="sec-kicker caps">Section 02</div>
+    <h2 class="display">What &#x27;Dubhe&#x27; means and what a day boat is</h2>
+    <div class="rules"><span class="thick"></span><span class="thin"></span></div>
+  </div>
+  <div class="sec-body"><p>Dubhe is a name borrowed from the night sky. It belongs to one of the seven bright stars of the Plough, the asterism most people learn to find first, and it is one of the two so-called pointer stars whose line leads the eye straight to Polaris, the North Star. For centuries Dubhe was a navigator's friend: find it, follow the pointers, and you have found north. There is a quiet appropriateness in giving that name to a small self-drive boat, because for most people who step aboard, the Dubhe is their first taste of finding their own way on the water rather than being carried along by someone else.</p><p>As a vessel, the Dubhe sits in the category the Spanish call the <em>embarcacion sin titulacion</em>, the licence-free boat. These are deliberately modest craft. The category exists so that visitors and locals without a formal boat licence can still get afloat under their own steam, within strict and sensible limits. A licence-free boat is small, its engine power is capped, it is kept to daylight hours, and it must stay close to shore. The Dubhe is built precisely to that brief: 8 metres of open, easy-to-handle hull, a simple helm, plenty of seating, and a layout designed so that a first-timer can be comfortable with the controls inside ten minutes.</p><p>There is no shipyard mystique to oversell here, and we will not pretend otherwise. The Dubhe is not an Italian superyacht with a famous marque on the transom. It is a workmanlike, sun-friendly day boat whose whole reason for existing is access: it gets ordinary people out onto the same sparkling water that the superyachts enjoy, at a fraction of the cost and with none of the formality. That is its genre, and it does the job honestly.</p></div>
+  
+</div>
+
+<div class="sec">
+  <div class="sec-head">
+    <div class="sec-kicker caps">Section 03</div>
+    <h2 class="display">The licence-free class and how self-drive works</h2>
+    <div class="rules"><span class="thick"></span><span class="thin"></span></div>
+  </div>
+  <div class="sec-body"><p>Spain's licence-free framework is what makes the Dubhe possible, so it is worth understanding properly. The rules are designed to keep an inexperienced helmsman safe and close to help, and they shape everything about how the boat is used. On the Dubhe specifically, three limits apply and they are not negotiable.</p><ul><li><strong>No licence required.</strong> You do not need any boat licence, certificate or prior experience. You sign on as the responsible adult at the helm and that is enough under the licence-free regulations.</li><li><strong>Daylight only.</strong> The boat goes out and comes back within daylight hours. There is no night cruising, which keeps visibility high and the whole outing simple.</li><li><strong>A 2 nautical mile coastal limit.</strong> You stay within two nautical miles of the shore. That sounds restrictive until you look at the map: the entire Marbella coastline, all of its best beaches and swim spots, sits comfortably inside that band.</li></ul><p>The practical handover is refreshingly quick. Before you cast off, our marina team gives you a <strong>ten-minute briefing</strong> on the pontoon: how to start and stop the engine, how the throttle and steering respond, how to come alongside, what the safety gear is and where it lives, and how to drop and stow the swim ladder. Then the lines come off and the boat is yours for the booked window. There is no instructor riding along, which is exactly the freedom most people are after. You will quickly find that an 8-metre boat at gentle cruising speed in the flat morning water is far less intimidating than it sounds. Within twenty minutes most first-timers have stopped gripping the wheel and started enjoying the view.</p></div>
+  
+</div>
+
+<div class="sec">
+  <div class="sec-head">
+    <div class="sec-kicker caps">Section 04</div>
+    <h2 class="display">On board: layout, seating and the swim set-up</h2>
+    <div class="rules"><span class="thick"></span><span class="thin"></span></div>
+  </div>
+  <div class="sec-body"><p>The Dubhe keeps things simple, and that simplicity is the point. It is an open day boat, so almost all of the 8 metres is given over to people and sunshine rather than to cabins and corridors. There is a helm position with the wheel and throttle, comfortable bench and cushioned seating for the group, and open deck space to spread out towels, a cool bag and whatever you have brought for the day. Up to <strong>five guests</strong> travel aboard, which is a genuinely sociable number on a boat this size: everyone is within arm's reach, everyone can see the coast, and nobody is shut away below.</p><p>The single most important feature, and the one your day will revolve around, is the swim platform and ladder at the stern. On a licence-free boat the real luxury is not marble or teak, it is the ability to stop wherever the water looks inviting, cut the engine, and step straight off the back into the sea. The Dubhe is set up for exactly this: idle into a calm bay, drop the ladder, and the group is swimming within a minute. A bimini-style sun top can be raised for shade when the midday sun gets fierce, so there is somewhere to cool off without going in the water.</p><p>What the Dubhe deliberately does not have is just as worth knowing. There are no overnight cabins, no galley, no flybridge, no jet ski on the platform. This is not the boat for a catered lunch served by crew or for sleeping aboard. It is a daylight machine, pure and simple, and trying to make it into something grander would miss the entire point. If you want crew, cabins and water toys, the same Puerto Banus marina has yachts for that. If you want to drive your own boat to a quiet swim and back, the Dubhe is built for you.</p></div>
+  <figure class="plate"><img src="file:///Users/master/boat-rental-marbella/site/img/boats/dubhe/puerto-banus-1200.jpg" alt=""><figcaption>Side profile at Puerto Banus marina, bimini top raised, an open layout built around the swim stop</figcaption></figure>
+</div>
+
+<div class="sec">
+  <div class="sec-head">
+    <div class="sec-kicker caps">Section 05</div>
+    <h2 class="display">A day aboard: a self-drive morning from Puerto Banus</h2>
+    <div class="rules"><span class="thick"></span><span class="thin"></span></div>
+  </div>
+  <div class="sec-body"><p>Picture a typical three-hour booking on a settled summer morning. You arrive at Puerto Banus marina a little before your slot, find the Dubhe on its berth among the larger hulls, and meet the marina team for the briefing. Ten minutes later you understand the throttle, the wheel and the ladder, the safety gear is stowed where you can reach it, and the lines are off. You ease the boat out past the harbour wall, where the famous lighthouse marks the entrance, and the open coast opens up ahead.</p><p>The first stretch is the gentlest. You potter eastwards at an easy pace, keeping well inside the two-mile limit, with the Marbella skyline on one side and the unmistakable hump of La Concha mountain rising behind the town. After twenty minutes or so you reach the open water off the <strong>Golden Mile</strong>, the celebrated run of beachfront between Puerto Banus and Marbella proper. This is where most groups make their first stop. You bring the boat off the plane, idle to a gentle halt where the water is clear and calm, cut the engine, and drop the ladder. The first swim of the day, with the boat to yourself and the coast laid out behind you, is the moment everyone remembers.</p><p>From there the morning shapes itself around you. You might lift the bimini for shade and let the group dry off and snack on board, then move a little further along to a second, quieter spot for another swim. Time at gentle cruising speed and time at anchor blend together, and the three hours pass surprisingly fast. With perhaps half an hour of your window left you turn back towards the harbour, take your time on the return run, and bring the boat alongside at Puerto Banus exactly as you were shown. The whole outing has cost a fraction of a crewed charter, and the difference is that you did it yourself.</p></div>
+  
+</div>
+
+<div class="sec">
+  <div class="sec-head">
+    <div class="sec-kicker caps">Section 06</div>
+    <h2 class="display">Itineraries and cruising grounds from the marina</h2>
+    <div class="rules"><span class="thick"></span><span class="thin"></span></div>
+  </div>
+  <div class="sec-body"><p>The two-mile coastal limit shapes where the Dubhe can go, but the Marbella coast is so generously supplied with good water close to shore that the limit rarely feels like one. How far you range depends mostly on how long you have booked. Here is a realistic sense of the ground each window opens up, all of it well inside the licence-free rules.</p><ul><li><strong>The Golden Mile swim stop (best for a 2-hour booking).</strong> The strip of coast immediately east of Puerto Banus is the natural target for a short outing. Twenty minutes of gentle cruising gets you to clear, sheltered water off the Golden Mile beaches, with time for a proper swim and an unhurried return. For many groups this is the whole trip, and it is plenty.</li><li><strong>Towards Cabopino (comfortable on a 3-hour booking).</strong> With three hours you can push a little further east along the coast, taking in more of the Marbella beachfront and edging towards the prettier sands and dune-backed stretches in the direction of Cabopino, with a swim stop or two on the way. The pace stays relaxed; there is no need to hurry.</li><li><strong>The Estepona direction (a relaxed 4-hour run).</strong> A four-hour window is the longest the Dubhe offers and gives the most freedom. You can turn west instead of east and follow the coast towards Estepona, or simply spend the extra time lingering at two or three swim stops rather than covering more ground. Either way, four hours is the version of the Dubhe day that feels least rushed.</li></ul><p>Two points of geography are worth keeping in mind. First, the famous long-range runs of the Costa del Sol, out to Gibraltar or across to Tarifa, are firmly the territory of the larger crewed yachts in the fleet and sit well outside the Dubhe's daylight, two-mile brief. Do not book the Dubhe expecting to see the Rock. Second, the best of the Marbella coast genuinely is close to home: the swimming, the views of La Concha, the calm morning water off the Golden Mile, all of it is within easy reach of an 8-metre boat staying near the shore.</p></div>
+  
+</div>
+
+<div class="sec">
+  <div class="sec-head">
+    <div class="sec-kicker caps">Section 07</div>
+    <h2 class="display">Who the Dubhe suits</h2>
+    <div class="rules"><span class="thick"></span><span class="thin"></span></div>
+  </div>
+  <div class="sec-body"><p>The Dubhe is a specialist, and knowing whether you are the right guest for it will save everyone a wasted booking. It is at its best for a particular kind of day and a particular kind of group.</p><ul><li><strong>Couples and pairs</strong> who want a private boat for a few hours without the cost or formality of a crewed yacht. The Dubhe turns an ordinary afternoon into a small adventure, and you have the whole boat to yourselves.</li><li><strong>Small families</strong> with older children who can swim confidently. With up to five aboard, two parents and a couple of children fit comfortably, and the swim-stop format keeps younger crew happily entertained.</li><li><strong>Groups of friends, up to five,</strong> who like the idea of taking turns at the wheel and want a low-cost, hands-on day on the water rather than being chauffeured about.</li><li><strong>First-timers and the curious,</strong> people who have always wanted to drive a boat and want to try it somewhere safe, sheltered and forgiving. The Dubhe is an ideal first command.</li></ul><p>It is equally honest to say who the Dubhe does not suit. It is not the boat for a large celebration, a corporate event, a catered lunch with crew, an overnight stay, or a long offshore passage. Those call for one of the bigger crewed yachts at Puerto Banus, and the same team can quote you for those instead. The Dubhe is also not the right choice for anyone hoping to be looked after from the moment they step aboard, because the whole appeal is that you are the one in charge. Match yourself honestly to the boat and it delivers exactly what it promises.</p></div>
+  
+</div>
+
+<div class="sec">
+  <div class="sec-head">
+    <div class="sec-kicker caps">Section 08</div>
+    <h2 class="display">Pricing and what is included</h2>
+    <div class="rules"><span class="thick"></span><span class="thin"></span></div>
+  </div>
+  <div class="sec-body"><p>The Dubhe carries published, fixed prices, which is unusual for the fleet and part of why it is so easy to book. The rates below are for the whole boat, not per person, and cover up to five guests. The minimum booking is two hours.</p><table><thead><tr><th>Charter length</th><th>Price (whole boat)</th></tr></thead><tbody><tr><td>2 hours (minimum)</td><td>230 euros</td></tr><tr><td>3 hours</td><td>280 euros</td></tr><tr><td>4 hours</td><td>350 euros</td></tr></tbody></table><p>There is one important difference between the Dubhe and the crewed boats in our fleet, and it is worth being completely clear about it. <strong>Fuel is not included</strong> on the Dubhe. Because you are driving yourself and choosing your own route and pace, fuel is settled separately and typically runs to between <strong>30 and 60 euros</strong> depending on how far you go and how hard you push the throttle. Cruise gently and stop often, as most people do, and you stay at the lower end of that range.</p><p>Everything else follows the standard Spanish charter inclusions that apply across our fleet. On the Dubhe that practically means the following.</p><ul><li><strong>Self-drive after a 10-minute marina briefing.</strong> No skipper, the boat is yours to handle.</li><li><strong>Up to 5 guests</strong> included in the whole-boat price.</li><li><strong>Insurance</strong> and <strong>safety equipment</strong> aboard as standard.</li><li><strong>Drinks</strong> (water, soft drinks, beer, white wine and cava) and <strong>light snacks</strong>, per the fleet standard.</li><li><strong>VAT at 21 percent</strong> is already included in the published prices, so the figure you see is the figure you pay, with only the separate fuel to settle.</li></ul><p>That combination, a fixed low price, generous inclusions and only a modest fuel cost on top, is what earns the Dubhe its billing as the cheapest charter in Puerto Banus.</p></div>
+  
+</div>
+
+<div class="sec">
+  <div class="sec-head">
+    <div class="sec-kicker caps">Section 09</div>
+    <h2 class="display">Seasonality and weather windows</h2>
+    <div class="rules"><span class="thick"></span><span class="thin"></span></div>
+  </div>
+  <div class="sec-body"><p>A small open boat lives and dies by the weather, far more than a big crewed yacht does, so timing your Dubhe day well makes all the difference. The Costa del Sol earns its name with one of the sunniest climates in Europe, and the boating season is long, but not every day is a Dubhe day.</p><p>The sweet spot runs broadly from late spring through to early autumn, when the sea is warm enough to enjoy swimming and the long settled spells of high pressure give you flat, friendly water. High summer, from June through September, is the classic window: hot, reliable, and made for swim stops. The trade-off in peak season is that the popular weekend slots book up, and the marina and the coast are at their busiest, so reserving ahead is wise.</p><p>Within any given day, the mornings are usually the prize. The Mediterranean tends to be at its calmest early, before the afternoon sea breeze gets up and puts a little chop on the water. For a self-drive boat that you are handling yourself, calm water is genuinely more pleasant and more forgiving, which is why an early or mid-morning booking so often turns out to be the best of the day. If the forecast brings strong wind, the outing may need to be moved for safety, since the daylight, near-shore design of the licence-free boat assumes settled conditions. That is simply the nature of a small open boat, and planning for a calm morning rather than a blustery afternoon is the easiest way to guarantee a good day.</p></div>
+  
+</div>
+
+<div class="sec">
+  <div class="sec-head">
+    <div class="sec-kicker caps">Section 10</div>
+    <h2 class="display">Booking practicalities and frequently asked questions</h2>
+    <div class="rules"><span class="thick"></span><span class="thin"></span></div>
+  </div>
+  <div class="sec-body"><p>The Dubhe is one of the simplest boats in the fleet to book, precisely because its terms are fixed and published. A few practical answers cover almost everything a first-time guest wants to know.</p><ul><li><strong>Do I really need no licence?</strong> Correct. The Dubhe is a licence-free boat, so no boat licence or prior experience is required. You take the wheel after a 10-minute briefing, under Spain's licence-free rules.</li><li><strong>How many people can come?</strong> Up to five guests, and the price is for the whole boat, so it does not change with the size of your group up to that limit.</li><li><strong>What does it actually cost?</strong> 230 euros for 2 hours, 280 euros for 3 hours, or 350 euros for 4 hours, with a 2-hour minimum. Fuel is extra, typically 30 to 60 euros depending on your route.</li><li><strong>Is fuel included?</strong> No. Fuel is the one thing settled separately on the Dubhe, because you choose your own route and pace. All the other standard inclusions, insurance, safety gear, drinks, light snacks and VAT, apply as usual.</li><li><strong>Where does it leave from?</strong> Puerto Banus marina in Marbella, the same harbour as the rest of the fleet.</li><li><strong>Can we go out at night or far offshore?</strong> No. The Dubhe is daylight only and stays within 2 nautical miles of the coast. For night cruising or long runs to places like Gibraltar, you would want one of the larger crewed yachts.</li><li><strong>Can children come aboard?</strong> Yes, within the five-guest limit. As with any small open boat, children should be confident around water and supervised at all times, and everyone follows the safety briefing.</li><li><strong>What if the weather turns?</strong> Because it is a small open boat, the Dubhe needs settled conditions. If the forecast is poor on your day, the team will work with you on timing or alternatives for safety.</li></ul></div>
+  
+</div>
+
+<div class="callout">
+  <h3 class="display">Take the wheel from Puerto Banus</h3>
+  <p>The Dubhe is the most affordable way to get a private boat on the Marbella coast: 8 metres, up to five guests, no licence, and you at the helm. Two hours from 230 euros, three hours 280 euros, four hours 350 euros, with only the fuel to settle on top.</p><ul><li><strong>Book this boat</strong> and check live availability at boatrentalinmarbella.com.</li><li><strong>Boat owners:</strong> list your boat free and reach renters worldwide at boathire24.com.</li></ul>
+  <div class="linksrow caps"><a href="https://boathire24.com">https://boathire24.com</a><span class="sep">&#9670;</span><a href="https://boatrentalinmarbella.com/boats/dubhe/">https://boatrentalinmarbella.com/boats/dubhe/</a></div>
+</div>
+<div class="endmark"><span class="line"></span><svg width="14" height="14" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg" aria-hidden="true"><path fill="#b9924b" d="M17 15l1.55 1.55c-.96 1.69-3.33 3.04-5.55 3.37V11h3V9h-3V7.82C14.16 7.4 15 6.3 15 5c0-1.65-1.35-3-3-3S9 3.35 9 5c0 1.3.84 2.4 2 2.82V9H8v2h3v8.92c-2.22-.33-4.59-1.68-5.55-3.37L7 15l-4-3v3c0 3.88 4.92 7 9 7s9-3.12 9-7v-3l-4 3zM12 4c.55 0 1 .45 1 1s-.45 1-1 1-1-.45-1-1 .45-1 1-1z"/></svg><span class="line"></span></div>
+  </td></tr></tbody>
+  <tfoot><tr><td></td></tr></tfoot>
+</table>
+
+<div class="runfoot caps">
+  <span><b>boathire24.com</b> <span class="gold">&#9670;</span> rent boats worldwide
+    <span class="gold">&#9670;</span> list your boat free</span>
+  <span class="gold caps">boatrentalinmarbella.com/boats/dubhe</span>
+</div>
+</body>
+</html>

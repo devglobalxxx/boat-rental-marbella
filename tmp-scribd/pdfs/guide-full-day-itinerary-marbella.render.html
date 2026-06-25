@@ -1,0 +1,500 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<title>The Perfect 8-Hour Yacht Day in Marbella</title>
+<style>
+:root {
+  --navy:      #0e2438;
+  --navy-deep: #08182a;
+  --gold:      #b9924b;
+  --gold-dark: #8a6c33;
+  --gold-light:#d4b06a;
+  --gold-pale: #e8d8af;
+  --ivory:     #f7f2e6;
+  --paper:     #fdfbf5;
+  --ink:       #22303e;
+  --muted:     #5d6a76;
+  --hairline:  #d9cdaf;
+  --row-tint:  #f5efdf;
+}
+* { -webkit-print-color-adjust: exact; print-color-adjust: exact;
+    box-sizing: border-box; }
+@page { size: A4; margin: 0; }
+html, body { margin: 0; padding: 0; }
+body {
+  background: var(--paper);
+  color: var(--ink);
+  font-family: Georgia, 'Palatino Linotype', Palatino, 'Times New Roman', serif;
+  font-size: 10.5pt;
+  line-height: 1.62;
+}
+.display { font-family: Didot, 'Didot LT STD', 'Playfair Display', Georgia,
+           'Times New Roman', serif; }
+.caps { font-family: Optima, 'Avenir Next', 'Gill Sans', 'Trebuchet MS',
+        sans-serif; text-transform: uppercase; }
+
+/* ---------------- Cover ---------------- */
+.cover {
+  position: relative;
+  width: 210mm; height: 297mm;
+  overflow: hidden;
+  background: var(--navy-deep);
+  page-break-after: always;
+}
+.cover-img {
+  position: absolute; inset: 0;
+  width: 100%; height: 100%;
+  object-fit: cover;
+  object-position: 24% center;  /* centres the yacht's full profile in the A4 crop */
+}
+.cover-veil {
+  position: absolute; inset: 0;
+  background:
+    linear-gradient(to top, rgba(11,26,46,0.92),
+                    rgba(11,26,46,0.86) 30%, transparent 55%),
+    linear-gradient(180deg,
+      rgba(8,24,42,0.62) 0%,
+      rgba(8,24,42,0.20) 26%,
+      rgba(8,24,42,0.12) 50%,
+      rgba(8,24,42,0.00) 62%);
+}
+.cover-veil.no-img {
+  background:
+    radial-gradient(120mm 90mm at 50% 26%, rgba(185,146,75,0.20), transparent 70%),
+    linear-gradient(180deg, #122c46 0%, #0a1d33 55%, #071426 100%);
+}
+.cover-top {
+  position: absolute; top: 13mm; left: 16mm; right: 16mm;
+  display: flex; align-items: center; justify-content: space-between;
+}
+.brand-lockup { display: flex; align-items: center; gap: 4.5mm; }
+.logo-chip {
+  background: #ffffff;
+  border: 1px solid var(--gold);
+  border-radius: 1.2mm;
+  padding: 2mm;
+  line-height: 0;
+}
+.logo-chip img { display: block; height: 13mm; width: 13mm;
+                 object-fit: cover; border-radius: 0.7mm; }
+.brand-name {
+  color: var(--ivory); font-size: 13pt; letter-spacing: 0.30em;
+  line-height: 1.25;
+}
+.brand-tag {
+  color: var(--gold-pale); font-size: 6.4pt; letter-spacing: 0.26em;
+  margin-top: 1mm;
+}
+.doc-type-flag {
+  text-align: right;
+  color: var(--gold-light);
+  font-size: 7.5pt; letter-spacing: 0.34em;
+  border-top: 0.7pt solid var(--gold);
+  border-bottom: 0.7pt solid var(--gold);
+  padding: 2.2mm 0 2mm 0;
+}
+.cover-main {
+  position: absolute; left: 16mm; right: 16mm; bottom: 34mm;
+}
+.cover-rule {
+  display: flex; align-items: center; gap: 4mm;
+  margin-bottom: 5mm;
+}
+.cover-rule .line { flex: 0 0 22mm; height: 0; border-top: 0.8pt solid var(--gold); }
+.cover-rule .word {
+  color: var(--gold-light); font-size: 8pt; letter-spacing: 0.42em;
+  white-space: nowrap;
+  text-shadow: 0 1px 5px rgba(5,14,26,0.65);
+}
+.cover-title {
+  color: #fdfaf2;
+  font-size: 44pt; line-height: 1.05;
+  font-weight: 600;
+  margin: 0 0 4mm 0;
+  text-shadow: 0 1px 8px rgba(5,14,26,0.55);
+}
+.cover-subtitle {
+  color: var(--gold-pale);
+  font-style: italic;
+  font-size: 13pt; line-height: 1.45;
+  margin: 0 0 7mm 0;
+  max-width: 150mm;
+  text-shadow: 0 1px 6px rgba(5,14,26,0.6);
+}
+.cover-meta {
+  color: rgba(247,242,230,0.92);
+  font-size: 7.6pt; letter-spacing: 0.22em;
+}
+.cover-meta .dot { color: var(--gold-light); padding: 0 2.2mm; }
+.fleet-strip {
+  margin-top: 8mm;
+  display: flex; align-items: center; gap: 4mm;
+}
+.fleet-strip .logo-chip img { height: 9mm; width: auto; }
+.fleet-label {
+  color: rgba(247,242,230,0.85); font-size: 6.6pt; letter-spacing: 0.30em;
+}
+
+/* ------------- Repeating footer ------------- */
+.runfoot {
+  position: fixed; left: 0; right: 0; bottom: 0;
+  height: 12mm;
+  background: var(--ivory);
+  border-top: 1pt solid var(--gold);
+  display: flex; align-items: center; justify-content: space-between;
+  padding: 0 16mm;
+  font-size: 6.8pt; letter-spacing: 0.12em;
+  color: var(--navy);
+}
+.runfoot b { letter-spacing: 0.22em; font-weight: 600; }
+.runfoot .gold { color: var(--gold-dark); }
+.runfoot a { color: var(--navy); text-decoration: none; }
+
+/* ------------- Paged content scaffold ------------- */
+table.paged { width: 100%; border-collapse: collapse; }
+table.paged > thead td { height: 15mm; padding: 0; }
+table.paged > tfoot td { height: 17mm; padding: 0; }
+table.paged > tbody > tr > td { padding: 0 18mm; }
+
+/* ------------- Sections ------------- */
+.sec { margin: 0 0 8mm 0; }
+.sec-head {
+  break-after: avoid-page; page-break-after: avoid;
+  break-inside: avoid; page-break-inside: avoid;
+  margin: 0 0 4.5mm 0;
+}
+.sec-kicker {
+  color: var(--gold-dark); font-size: 7pt; letter-spacing: 0.38em;
+  margin-bottom: 1.6mm;
+}
+.sec-head h2 {
+  color: var(--navy);
+  font-size: 18.5pt; font-weight: 400; line-height: 1.2;
+  margin: 0 0 2.6mm 0;
+}
+.sec-head .rules { position: relative; height: 2.4mm; }
+.sec-head .rules .thin {
+  position: absolute; left: 0; right: 0; top: 1mm;
+  border-top: 0.6pt solid var(--hairline);
+}
+.sec-head .rules .thick {
+  position: absolute; left: 0; top: 0; width: 26mm;
+  border-top: 2.2pt solid var(--gold);
+}
+.sec-body p { margin: 0 0 3.4mm 0; }
+.sec-body p:last-child { margin-bottom: 0; }
+.sec-body ol { margin: 0 0 3.4mm 0; padding-left: 5.5mm; }
+.sec-body ul { margin: 0 0 3.4mm 0; padding-left: 1mm; }
+.sec-body li { margin-bottom: 1.6mm; break-inside: avoid; page-break-inside: avoid;
+               -webkit-column-break-inside: avoid; }
+.sec-body ul.cols2 { columns: 2; column-gap: 9mm;
+                     break-inside: avoid; page-break-inside: avoid; }
+.sec-body ul > li {
+  list-style: none;
+  padding-left: 1.1em; text-indent: -1.1em;  /* hanging indent: wraps align under text */
+}
+.sec-body ul > li::before {
+  content: "\2726";            /* four-pointed star, brass compass point */
+  display: inline-block; width: 1.44em; text-indent: 0;
+  color: var(--gold); font-size: 8pt;       /* 1.44em @8pt == 1.1em @10.5pt */
+}
+.sec-body a { color: var(--navy); text-decoration: none;
+              border-bottom: 0.6pt solid var(--gold); }
+.sec-body strong { color: var(--navy); }
+
+/* generic tables inside section html */
+.sec-body table {
+  width: 100%; border-collapse: collapse;
+  margin: 1mm 0 4mm 0;
+  break-inside: avoid; page-break-inside: avoid;
+  font-size: 9.8pt;
+}
+.sec-body th {
+  background: var(--navy); color: var(--ivory);
+  font-family: Optima, 'Avenir Next', 'Gill Sans', 'Trebuchet MS', sans-serif;
+  text-transform: uppercase; letter-spacing: 0.16em;
+  font-size: 7.4pt; font-weight: 500;
+  text-align: left; padding: 2.6mm 3.5mm;
+  border-bottom: 1.4pt solid var(--gold);
+}
+.sec-body td {
+  padding: 2.2mm 3.5mm;
+  border-bottom: 0.6pt solid var(--hairline);
+  color: var(--ink);
+}
+.sec-body td, .sec-body th { font-variant-numeric: tabular-nums; }
+.sec-body td:not(:first-child),
+.sec-body th:not(:first-child) { text-align: right; }
+.sec-body tr:nth-child(even) td { background: var(--row-tint); }
+.sec-body td:first-child { color: var(--navy); }
+.sec-body tr.best td { background: rgba(212,175,55,0.12); }
+.sec-body tr.best td:first-child { color: var(--navy); font-weight: 600; }
+.best-tag {
+  display: inline-block;
+  font-family: Optima, 'Avenir Next', 'Gill Sans', 'Trebuchet MS', sans-serif;
+  font-variant-caps: small-caps; text-transform: lowercase;
+  font-size: 7.6pt; font-weight: 600; letter-spacing: 0.14em;
+  color: var(--gold-dark);
+  border: 0.6pt solid var(--gold);
+  border-radius: 1mm;
+  padding: 0.2mm 1.6mm;
+  margin-left: 2.2mm;
+  white-space: nowrap;
+  vertical-align: 0.2mm;
+}
+
+/* ------------- Figures ------------- */
+figure.plate {
+  break-inside: avoid; page-break-inside: avoid;
+  margin: 5mm 0 2mm 0;
+  background: #ffffff;
+  border: 0.7pt solid var(--gold-light);
+  padding: 2.6mm;
+}
+figure.plate img {
+  display: block; width: 100%; height: 78mm; object-fit: cover;
+}
+figure.plate figcaption {
+  text-align: center;
+  font-style: italic;
+  font-size: 8.4pt; color: var(--muted);
+  padding: 2.4mm 2mm 0.6mm 2mm;
+}
+figure.plate figcaption::before {
+  content: "\25C6\00a0"; color: var(--gold); font-size: 6pt;
+}
+
+/* ------------- Spec table (2-column grid: two lbl/val pairs per row) ------------- */
+.spec-block { margin: 0 0 8mm 0; }
+table.spec {
+  width: 100%; border-collapse: collapse;
+  border-top: 1.6pt solid var(--navy);
+  border-bottom: 1.6pt solid var(--navy);
+}
+table.spec td { padding: 1.7mm 1.5mm; border-bottom: 0.6pt solid var(--hairline);
+                vertical-align: top; }
+table.spec tr:last-child td { border-bottom: none; }
+table.spec td.lbl {
+  width: 21%;
+  font-family: Optima, 'Avenir Next', 'Gill Sans', 'Trebuchet MS', sans-serif;
+  text-transform: uppercase; letter-spacing: 0.16em;
+  font-size: 7.2pt; color: var(--gold-dark);
+  padding-top: 2.3mm;
+}
+table.spec td.val { width: 29%; color: var(--navy); font-size: 9.8pt; }
+table.spec td.lbl:nth-child(3) {
+  border-left: 0.6pt solid var(--hairline);
+  padding-left: 4mm;
+}
+table.spec td.val:nth-child(2) { padding-right: 4mm; }
+
+/* ------------- Callout ------------- */
+.callout {
+  break-inside: avoid; page-break-inside: avoid;
+  margin: 8mm 0 4mm 0;
+  background: var(--navy);
+  border: 1pt solid var(--gold);
+  outline: 0.6pt solid var(--gold);
+  outline-offset: -2.2mm;
+  color: var(--ivory);
+  padding: 8mm 9mm 7mm 9mm;
+}
+.callout h3 {
+  color: var(--gold-light);
+  font-size: 15pt; font-weight: 400;
+  margin: 0 0 3mm 0;
+}
+.callout p { margin: 0 0 2.8mm 0; line-height: 1.6; color: #efe7d3; }
+.callout a { color: var(--gold-light); text-decoration: none; }
+.callout ul { margin: 0 0 2.8mm 0; padding-left: 1mm; }
+.callout ul > li { list-style: none; margin-bottom: 1.4mm;
+                   padding-left: 1.1em; text-indent: -1.1em;
+                   break-inside: avoid; page-break-inside: avoid; }
+.callout ul > li::before {
+  content: "\2726"; display: inline-block; width: 1.44em; text-indent: 0;
+  color: var(--gold-light); font-size: 8pt;
+}
+.callout .linksrow {
+  margin-top: 4.5mm; padding-top: 3.6mm;
+  border-top: 0.6pt solid rgba(212,176,106,0.55);
+  font-size: 7.6pt; letter-spacing: 0.16em;
+  color: var(--gold-pale);
+}
+.callout .linksrow span.sep { padding: 0 2.6mm; color: var(--gold); }
+
+.endmark {
+  display: flex; align-items: center; justify-content: center; gap: 3.5mm;
+  margin: 7mm 0 0 0;
+}
+.endmark .line { width: 14mm; height: 0; border-top: 0.6pt solid var(--gold); }
+.endmark svg { display: block; }
+</style>
+</head>
+<body>
+
+<div class="cover">
+  <img class="cover-img" src="file:///Users/master/boat-rental-marbella/site/img/boats/astondoa-40/hero-1600.jpg" alt="">
+  <div class="cover-veil"></div>
+  <div class="cover-top">
+    <div class="brand-lockup">
+      <span class="logo-chip"><img src="file:///Users/master/boat-rental-platform/public/brand-logo.jpg" alt="BoatHire24"></span>
+      <div>
+        <div class="brand-name caps display">BoatHire24</div>
+        <div class="brand-tag caps">Rent boats worldwide <span class="gold">|</span> list your boat free</div>
+      </div>
+    </div>
+    <div class="doc-type-flag caps">June 2026</div>
+  </div>
+  <div class="cover-main">
+    <div class="cover-rule">
+      <span class="line"></span>
+      <span class="word caps">Charter Guide</span>
+    </div>
+    <h1 class="cover-title display">The Perfect 8-Hour Yacht Day in Marbella</h1>
+    <p class="cover-subtitle display">A complete step-by-step full day yacht itinerary from Puerto Banús to Cala Cortés, with anchorages, timings, packing, skipper tips and everything that is already included.</p>
+    <div class="cover-meta caps">BoatHire24 Guides</div>
+    
+  </div>
+</div>
+<table class="paged">
+  <thead><tr><td></td></tr></thead>
+  <tbody><tr><td>
+
+<div class="sec">
+  <div class="sec-head">
+    <div class="sec-kicker caps">Section 01</div>
+    <h2 class="display">Why Choose an Eight-Hour Charter</h2>
+    <div class="rules"><span class="thick"></span><span class="thin"></span></div>
+  </div>
+  <div class="sec-body"><p>An eight-hour yacht charter is the ultimate way to experience Marbella's coastline. With a full day on the water you can swim in secluded coves, enjoy a leisurely lunch and soak up the Mediterranean sun without ever rushing. This step-by-step guide shows you exactly how to plan your perfect full day yacht itinerary in Marbella, from departure at Puerto Banús to the sunset return, and it folds in the practical detail that turns a good day into a faultless one: what to pack, when to go, how the skipper shapes the route, and what is already included in the price.</p><p>Eight hours is the length that changes the character of the day. A two or three hour charter is a single swim stop and a glass of cava, lovely but brief. A full day gives you time to explore well beyond the immediate Marbella shoreline. You can cruise east towards Cala Cortés or west towards Estepona, with multiple anchor stops, a proper lunch at anchor and an unhurried golden-hour cruise home. Nobody is watching the clock, and the skipper can pick the quietest, clearest water of the day rather than the nearest.</p><p>Our Tier A boats, like the <a href="https://boatrentalinmarbella.com/boat/astondoa-40/">Astondoa 40</a> at €2,299 for eight hours, or the <a href="https://boatrentalinmarbella.com/boat/azimut-39/">Azimut 39</a>, include everything you need: a licensed skipper, fuel, drinks, snacks and insurance, with no hidden costs. The number you book is the number you pay. That all-inclusive structure is part of why the full day works so well: there are no surcharges that grow with the hours, so the longest charter is also comfortably the best value per hour on the water.</p></div>
+  
+</div>
+
+<div class="sec">
+  <div class="sec-head">
+    <div class="sec-kicker caps">Section 02</div>
+    <h2 class="display">Choosing Your Boat for the Day</h2>
+    <div class="rules"><span class="thick"></span><span class="thin"></span></div>
+  </div>
+  <div class="sec-body"><p>Before you plan the route, choose the boat, because the vessel sets the tone of the whole day. The full day itinerary works beautifully across our fleet, but three boats cover the great majority of eight-hour bookings, and they suit slightly different groups.</p><p>The <strong>Astondoa 40</strong> is the quiet classic. She is a 12.5 metre Spanish-built motor yacht from Astondoa, one of the oldest yards in Spain, carrying up to nine guests with two private cabins, a cream-leather saloon and a shaded flybridge. She is built for the long lunch at anchor rather than the thrill ride, and her air-conditioned saloon is a genuine asset when the July sun is fierce. The <strong>Azimut 39</strong> is her Italian counterpart, a 12.5 metre flybridge yacht from Azimut, the Turin shipyard founded in 1969 and now one of the largest names in production motor yachting. She carries up to eleven guests, cruises at around 18 knots on twin diesels, and her defining feature is that flybridge: a second open deck with its own helm and a sunbathing pad, the best seat in the house on a clear Marbella day.</p><p>For a larger group or a bigger occasion, the <strong>Mangusta 80</strong> steps up to a different scale. She is a 24 metre Overmarine sport yacht carrying up to twelve guests, the largest yacht available for day charter in Marbella, with a captain and deckhand and a Sea-Doo jet ski included free for the day. She is a Tier B boat from €4,719 for four hours, with full-day rates quoted on WhatsApp. Whichever you pick, the day described in this guide is the same in shape; only the deck beneath you changes.</p></div>
+  <figure class="plate"><img src="file:///Users/master/boat-rental-marbella/site/img/boats/azimut-39/hero-1600.jpg" alt=""><figcaption>The Azimut 39, a Tier A flybridge yacht that carries up to eleven guests from Puerto Banús.</figcaption></figure>
+</div>
+
+<div class="sec">
+  <div class="sec-head">
+    <div class="sec-kicker caps">Section 03</div>
+    <h2 class="display">Before You Sail: How to Prepare</h2>
+    <div class="rules"><span class="thick"></span><span class="thin"></span></div>
+  </div>
+  <div class="sec-body"><p>A great day on the water is mostly made the night before. None of this is complicated, but a little preparation means you spend the eight hours relaxing rather than improvising.</p><p>First, settle the route in your own mind, then leave it flexible. Decide whether your group leans east towards Cala Cortés and the quieter natural beaches, or west towards Estepona and the open water, and tell the skipper when you book. The skipper will then adjust the plan to the wind and swell on the morning, which is exactly as it should be. The route in this guide is a starting point, not a timetable.</p><p>Second, get the timing right. Charters depart from Puerto Banús, and you should arrive at the dock about 15 minutes before departure to meet your skipper, settle bags and take the safety briefing without feeling hurried. A 10:00 start gives you the full sweep of the day and brings you home around 18:00 as the marina lights up for the evening. Mornings on this coast are typically the calmest water, so an early departure is rarely wasted.</p><p>Third, think about who is coming. Guest capacity varies by boat: the Azimut 39 takes up to 11 guests, the Astondoa 40 up to 9, and the Mangusta 80 up to 12. Confirm the final number when you book so the right boat is matched to the group. If you are travelling with young children or older relatives, a boat with an air-conditioned saloon, like the Astondoa 40 or the Azimut 39, gives everyone a cool place to retreat to in the middle of the day. Finally, in July and August we recommend booking at least a week in advance, because the best summer dates and the calmest morning slots go early.</p></div>
+  
+</div>
+
+<div class="sec">
+  <div class="sec-head">
+    <div class="sec-kicker caps">Section 04</div>
+    <h2 class="display">What to Bring for Your Full Day on the Water</h2>
+    <div class="rules"><span class="thick"></span><span class="thin"></span></div>
+  </div>
+  <div class="sec-body"><p>Everything practical is already taken care of, so your packing list is short and entirely about your own comfort across a long day in the sun. Pack light, but do not skip the sun protection or the evening layer.</p><ul><li>Swimwear and a towel for each guest</li><li>Sunscreen (SPF 50+) and sunglasses, the two things people most often forget</li><li>A hat and a light cover-up for the middle of the day</li><li>A camera or phone, ideally in a waterproof case</li><li>Any extra snacks if you have specific dietary preferences</li><li>A light jacket for the cooler evening breeze on the way home</li></ul><p>A few notes from the dock. Go barefoot or wear soft-soled shoes, because the decks on boats like the Astondoa 40 are laid in teak and hard heels mark it. If anyone in the group is prone to seasickness, the calm summer water here makes it unlikely, but it is worth taking a remedy before you board rather than once you are under way. And bring a little less than you think: storage is generous but a full day is most enjoyable when the cockpit is not buried under bags.</p><p>Everything else is provided. Every charter includes a licensed skipper, fuel, water, soft drinks, beer, white wine, cava, light snacks, insurance, safety equipment and Spanish IVA at 21 per cent. You are welcome to bring your own food aboard or to arrange catering through us, but you genuinely do not need to. Just bring your swimwear and your sunscreen.</p></div>
+  
+</div>
+
+<div class="sec">
+  <div class="sec-head">
+    <div class="sec-kicker caps">Section 05</div>
+    <h2 class="display">Step 1: Morning Departure from Puerto Banús</h2>
+    <div class="rules"><span class="thick"></span><span class="thin"></span></div>
+  </div>
+  <div class="sec-body"><p>Your day starts at Puerto Banús, Marbella's most glamorous marina, lined with the kind of yachts and sports cars that draw crowds along the quay. Arrive 15 minutes early to meet your skipper. You will be welcomed aboard with a glass of cava and a short safety briefing, bags go below, and the lines are slipped without fuss.</p><p>By 10:00 you are cruising west along the Golden Mile, the celebrated stretch of beachfront villas, beach clubs and five-star hotels between the marina and Marbella town. The views set the tone for the whole day: La Concha mountain rising behind the town, the distinctive shell-shaped limestone wall that shelters the bay and gives it its postcard, and the luxury villas of the Sierra Blanca foothills stacked up the hillside. Drinks come up from the galley, the group settles, and the noise of the marina falls away to nothing but engine and breeze.</p><p>This first half-hour is pure scene-setting, and it is the moment most groups climb to the flybridge for the first time, drinks in hand, to watch the coastline open out. There is no need to do anything except enjoy the view and let the day find its rhythm.</p></div>
+  
+</div>
+
+<div class="sec">
+  <div class="sec-head">
+    <div class="sec-kicker caps">Section 06</div>
+    <h2 class="display">Steps 2 and 3: First Swim Stop, Then On to Cala Cortés</h2>
+    <div class="rules"><span class="thick"></span><span class="thin"></span></div>
+  </div>
+  <div class="sec-body"><p>After 30 to 40 minutes you reach Cala del Faro, a rocky cove with crystal-clear water. Drop anchor and dive in. The water temperature in summer averages 24 to 26 °C, warm enough to swim for as long as you like. Alternatively, head to Cabopino's sandy beach, quieter than the central Marbella strips, where the coast is softer and more natural and the anchorages are calmer. Your skipper will recommend the best spot based on the wind and swell on the day.</p><p>This first stop is where the day really begins. The swim ladder comes off the transom, snorkel gear comes out, and on boats that carry them, the paddleboard and inflatable go over the side. There is no schedule here, only the slow rhythm of swim, sun, drink, repeat. Take your time; a full day has room for it.</p><p>When you are ready, continue east towards Cala Cortés, a stunning bay just past the Río Verde estuary. The cruise takes about 45 minutes at 20 knots. The coastline here is less developed, with pine trees running down to the shore, and it feels a world away from the bustle of Banús. Keep an eye out for dolphins, as they are common in these waters and a regular sight off the less crowded stretches. The skipper will throttle back if a pod appears, so everyone gets a proper look.</p></div>
+  
+</div>
+
+<div class="sec">
+  <div class="sec-head">
+    <div class="sec-kicker caps">Section 07</div>
+    <h2 class="display">Step 4: Lunch Anchorage at Estepona or Sotogrande</h2>
+    <div class="rules"><span class="thick"></span><span class="thin"></span></div>
+  </div>
+  <div class="sec-body"><p>If you prefer a longer cruise, head west to Estepona, about one hour from Puerto Banús. Anchor off the old town's beach and enjoy a picnic lunch onboard. The included snacks and drinks keep everyone happy, or you can bring your own food. Estepona is a handsome, less-developed town with its own charm and a coastline that feels a touch more authentic than the busy beaches closer to the marina, which makes it a rewarding turning point for a full day out.</p><p>For a more exclusive vibe, continue to Sotogrande, though that adds another 30 minutes each way and is best suited to a full eight-hour booking where the time is there to spend. Lunch at anchor is one of the quiet highlights of the day. On boats with an air-conditioned saloon, like the Astondoa 40 or the Azimut 39, you can lay the table for six in the cool out of the midday sun, or eat in the shade of the cockpit with the sea a few feet away. Either way, with the anchor down and the engines off, the boat goes still and the only sound is the water against the hull.</p></div>
+  
+</div>
+
+<div class="sec">
+  <div class="sec-head">
+    <div class="sec-kicker caps">Section 08</div>
+    <h2 class="display">Steps 5 and 6: Afternoon on the Water, Then the Sunset Cruise Home</h2>
+    <div class="rules"><span class="thick"></span><span class="thin"></span></div>
+  </div>
+  <div class="sec-body"><p>After lunch, find a calm bay for swimming, paddleboarding, or simply sunbathing on the foredeck. On a Tier B boat like the <a href="https://boatrentalinmarbella.com/boat/mangusta-80/">Mangusta 80</a>, from €4,719 for four hours, a Sea-Doo jet ski is included free and launched straight from the swim platform, which turns a relaxed cruise into an active afternoon. On the other boats you can bring your own inflatables or snorkel gear, and the Astondoa 40 carries snorkel gear, an inflatable donut and a paddleboard as standard. The skipper will position the boat for maximum comfort, tucking you out of the breeze and into the clearest water.</p><p>Around 17:00, start your return journey. The late afternoon light on the Marbella coast is spectacular, with the mountains turning gold and the sea calming down as the afternoon breeze drops away. This run home, with the marina lights beginning to show ahead, is often the quietest and most contented part of the whole day. Arrive back at Puerto Banús around 18:00, just in time to see the marina come alive for the evening. Your skipper will dock and you can disembark at your leisure, a little sun-warmed and salt-dried and entirely content.</p></div>
+  <figure class="plate"><img src="file:///Users/master/boat-rental-marbella/site/img/boats/mangusta-80/hero-1600.jpg" alt=""><figcaption>The Mangusta 80, a 24 m Tier B sport yacht with a Sea-Doo jet ski included free on every charter.</figcaption></figure>
+</div>
+
+<div class="sec">
+  <div class="sec-head">
+    <div class="sec-kicker caps">Section 09</div>
+    <h2 class="display">The Cruising Grounds in Depth</h2>
+    <div class="rules"><span class="thick"></span><span class="thin"></span></div>
+  </div>
+  <div class="sec-body"><p>Puerto Banús sits at the centre of one of the most cruisable stretches of the Spanish Mediterranean. The coast runs broadly east to west, it is well sheltered by the mountains behind it, and there is a real variety of destinations within an easy day's range. The full eight hours is what lets you use that range properly. Here is how the ground lies.</p><p><strong>The Golden Mile and the central swim stops.</strong> The default and the favourite. A short run from the marina puts you off the Golden Mile, where the water is clean, the backdrop is the best on the coast, and you are close enough that even a short charter can include a proper anchor-down swim. On a full day this is usually a first or last stop rather than the whole day.</p><p><strong>Cabopino and the east.</strong> Push east past Marbella town towards the pretty marina and dune-backed beaches around Cabopino. The coast here is softer and more natural, the anchorages quieter, and it makes a fine destination when you want to put distance between yourself and the Banús crowd. Cala Cortés, just past the Río Verde estuary, sits along this run.</p><p><strong>Estepona, Sotogrande and the west.</strong> West of Puerto Banús the coast runs towards Estepona and on to Sotogrande, open water with fewer boats and a more authentic feel. The afternoon light on this side is superb, and dolphins are a regular sight offshore.</p><p><strong>The long runs towards Gibraltar.</strong> For those with a full day and settled weather, the coast keeps unrolling southwest towards the dramatic profile of the Rock of Gibraltar, where the Mediterranean meets the Atlantic. These are bigger-water passages, very much weather-dependent and best discussed with the skipper, but they hint at the range a boat has when the day allows.</p></div>
+  
+</div>
+
+<div class="sec">
+  <div class="sec-head">
+    <div class="sec-kicker caps">Section 10</div>
+    <h2 class="display">Seasonality and the Best Time to Go</h2>
+    <div class="rules"><span class="thick"></span><span class="thin"></span></div>
+  </div>
+  <div class="sec-body"><p>The Costa del Sol earns its name, with one of the longest and most reliable charter seasons in mainland Europe. The prime window runs from late spring through to early autumn, and it is worth understanding how the months differ so you can pick your day well.</p><p><strong>High summer, July and August,</strong> brings the warmest water, the longest days and the liveliest scene, and it is also the busiest and most heavily booked period, so dates go early. This is when an air-conditioned saloon and a shaded flybridge earn their keep, giving you cool refuge from the midday heat that an open boat cannot match. Book at least a week ahead, and ask for a morning slot, which is typically the calmest water of the day.</p><p><strong>The shoulder seasons, roughly May to June and September into October,</strong> are for many people the sweet spot. The weather is reliably fine, the water stays warm well into the autumn, the light is beautiful, and the coast is noticeably calmer than in peak August. If your dates are flexible, these months often deliver the best of the day with the least of the crowds.</p><p>A word on wind, because it shapes the day more than anything else. This coast sees two prevailing regimes: the easterly Levante and the westerly Poniente. The skipper reads the forecast on the morning of your charter and chooses the route to keep you on the sheltered, calmer side of whichever wind is blowing, which is exactly why the itinerary is best treated as flexible. Mornings are generally calmest, with the breeze building through the afternoon and dropping again towards the golden-hour run home. None of this is something you need to manage yourself; it is simply why the skipper, not the schedule, has the final word.</p></div>
+  <figure class="plate"><img src="file:///Users/master/boat-rental-marbella/site/img/boats/astondoa-40/sunset-1600.jpg" alt=""><figcaption>Arriving back at Puerto Banús at sunset after a full eight hours aboard.</figcaption></figure>
+</div>
+
+<div class="sec">
+  <div class="sec-head">
+    <div class="sec-kicker caps">Section 11</div>
+    <h2 class="display">Booking, Logistics and What Is Included</h2>
+    <div class="rules"><span class="thick"></span><span class="thin"></span></div>
+  </div>
+  <div class="sec-body"><p>Booking an eight-hour charter is deliberately simple. Browse the full fleet and choose the boat that fits your group, then confirm your date, group size and any route preferences. For Tier A boats, prices are fixed at €2,299 for the full eight-hour day; for other boats, contact us via WhatsApp for a custom quote. We recommend booking at least a week in advance during July and August.</p><p>The pricing is genuinely all-inclusive in the Spanish charter tradition, which is unusual and worth understanding. The two costs that most often appear as surprises on a charter elsewhere, fuel and a qualified skipper, are both already inside the rate here. So is Spanish VAT at 21 per cent. The number you are quoted is the number you pay. Here is what every charter includes as standard:</p><table><thead><tr><th>Included as standard</th><th>Detail</th></tr><tr><td>Licensed skipper</td><td>A professional at the helm for the whole charter; no licence needed</td></tr><tr><td>Fuel</td><td>Included, with no surcharge on the published rate</td></tr><tr><td>Drinks</td><td>Water, soft drinks, beer, white wine and cava</td></tr><tr><td>Light snacks</td><td>To keep the group going through the day</td></tr><tr><td>Insurance</td><td>Full charter cover</td></tr><tr><td>Safety equipment</td><td>To current standards</td></tr><tr><td>VAT (21%)</td><td>Already included in every published price</td></tr></tbody></table><p>A few practical points to close. No licence or experience is required of you, because every charter runs with a skipper, so you simply turn up and enjoy the day. Departures are from Puerto Banús, easily reached from Marbella, the wider Costa del Sol and Málaga. The skipper can adjust the route to the weather, the sea conditions and your preferences, with popular stops including Cala del Faro, Cabopino and Estepona. And safety is always the priority: if conditions are unsafe on your charter day, we will reschedule or offer a full refund. The skipper will advise you before departure.</p></div>
+  
+</div>
+
+<div class="sec">
+  <div class="sec-head">
+    <div class="sec-kicker caps">Section 12</div>
+    <h2 class="display">Frequently Asked Questions</h2>
+    <div class="rules"><span class="thick"></span><span class="thin"></span></div>
+  </div>
+  <div class="sec-body"><p><strong>What is included in an eight-hour yacht charter in Marbella?</strong><br>Every charter includes a licensed skipper, fuel, water, soft drinks, beer, white wine, cava, light snacks, insurance, safety equipment and Spanish IVA at 21 per cent. Just bring your swimwear and sunscreen.</p><p><strong>How much does a full day yacht itinerary in Marbella cost?</strong><br>For Tier A boats, the Astondoa 40 or the Azimut 39, an eight-hour charter costs €2,299. Tier B boats like the Mangusta 80 start at €4,719 for four hours. Other boats are priced on request via WhatsApp.</p><p><strong>Where does the yacht depart from?</strong><br>All our yachts depart from Puerto Banús, the iconic marina in Marbella. You will meet the skipper at the dock, usually 15 minutes before departure.</p><p><strong>Can we customise the eight-hour itinerary?</strong><br>Yes. The skipper can adjust the route based on weather, sea conditions and your preferences. Popular stops include Cala del Faro, Cabopino and Estepona. Just let us know when booking.</p><p><strong>What is the maximum number of guests on a full day charter?</strong><br>Guest capacity varies by boat: the Azimut 39 takes up to 11 guests, the Astondoa 40 up to 9, and the Mangusta 80 up to 12. Check individual boat pages for exact limits.</p><p><strong>Do we need to bring food or drinks?</strong><br>No. All charters include water, soft drinks, beer, white wine, cava and light snacks. You are welcome to bring your own food or arrange catering through us.</p><p><strong>What happens if the weather is bad on our charter day?</strong><br>Safety is our priority. If conditions are unsafe, we will reschedule or offer a full refund. The skipper will advise you before departure.</p><p><strong>How do I book a full day yacht itinerary in Marbella?</strong><br>Contact us via WhatsApp or the booking form on our website. Provide your preferred date, group size and any special requests, and we will confirm availability and send payment details.</p></div>
+  
+</div>
+
+<div class="callout">
+  <h3 class="display">Read More and Book Your Day</h3>
+  <p>You can find more charter guides and book this exact eight-hour itinerary at <a href="https://boatrentalinmarbella.com">boatrentalinmarbella.com</a>, where you can check availability, photographs and routes for the whole fleet. Boat owners: list your boat free of charge at <a href="https://boathire24.com">boathire24.com</a> and start taking bookings from renters worldwide, with no subscription and no listing fee.</p>
+  <div class="linksrow caps"><a href="https://boathire24.com">https://boathire24.com</a><span class="sep">&#9670;</span><a href="https://boatrentalinmarbella.com/blog/full-day-itinerary-marbella.html">https://boatrentalinmarbella.com/blog/full-day-itinerary-marbella.html</a></div>
+</div>
+<div class="endmark"><span class="line"></span><svg width="14" height="14" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg" aria-hidden="true"><path fill="#b9924b" d="M17 15l1.55 1.55c-.96 1.69-3.33 3.04-5.55 3.37V11h3V9h-3V7.82C14.16 7.4 15 6.3 15 5c0-1.65-1.35-3-3-3S9 3.35 9 5c0 1.3.84 2.4 2 2.82V9H8v2h3v8.92c-2.22-.33-4.59-1.68-5.55-3.37L7 15l-4-3v3c0 3.88 4.92 7 9 7s9-3.12 9-7v-3l-4 3zM12 4c.55 0 1 .45 1 1s-.45 1-1 1-1-.45-1-1 .45-1 1-1z"/></svg><span class="line"></span></div>
+  </td></tr></tbody>
+  <tfoot><tr><td></td></tr></tfoot>
+</table>
+
+<div class="runfoot caps">
+  <span><b>boathire24.com</b> <span class="gold">&#9670;</span> rent boats worldwide
+    <span class="gold">&#9670;</span> list your boat free</span>
+  <span class="gold caps">boatrentalinmarbella.com/blog/full-day-itinerary-marbella.html</span>
+</div>
+</body>
+</html>

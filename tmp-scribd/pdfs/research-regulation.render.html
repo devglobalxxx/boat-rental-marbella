@@ -1,0 +1,510 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<title>Recreational Boat Licensing and Charter Regulation in Spain: A 2026 Review</title>
+<style>
+:root {
+  --navy:      #0e2438;
+  --navy-deep: #08182a;
+  --gold:      #b9924b;
+  --gold-dark: #8a6c33;
+  --gold-light:#d4b06a;
+  --gold-pale: #e8d8af;
+  --ivory:     #f7f2e6;
+  --paper:     #fdfbf5;
+  --ink:       #22303e;
+  --muted:     #5d6a76;
+  --hairline:  #d9cdaf;
+  --row-tint:  #f5efdf;
+}
+* { -webkit-print-color-adjust: exact; print-color-adjust: exact;
+    box-sizing: border-box; }
+@page { size: A4; margin: 0; }
+html, body { margin: 0; padding: 0; }
+body {
+  background: var(--paper);
+  color: var(--ink);
+  font-family: Georgia, 'Palatino Linotype', Palatino, 'Times New Roman', serif;
+  font-size: 10.5pt;
+  line-height: 1.62;
+}
+.display { font-family: Didot, 'Didot LT STD', 'Playfair Display', Georgia,
+           'Times New Roman', serif; }
+.caps { font-family: Optima, 'Avenir Next', 'Gill Sans', 'Trebuchet MS',
+        sans-serif; text-transform: uppercase; }
+
+/* ---------------- Cover ---------------- */
+.cover {
+  position: relative;
+  width: 210mm; height: 297mm;
+  overflow: hidden;
+  background: var(--navy-deep);
+  page-break-after: always;
+}
+.cover-img {
+  position: absolute; inset: 0;
+  width: 100%; height: 100%;
+  object-fit: cover;
+  object-position: 24% center;  /* centres the yacht's full profile in the A4 crop */
+}
+.cover-veil {
+  position: absolute; inset: 0;
+  background:
+    linear-gradient(to top, rgba(11,26,46,0.92),
+                    rgba(11,26,46,0.86) 30%, transparent 55%),
+    linear-gradient(180deg,
+      rgba(8,24,42,0.62) 0%,
+      rgba(8,24,42,0.20) 26%,
+      rgba(8,24,42,0.12) 50%,
+      rgba(8,24,42,0.00) 62%);
+}
+.cover-veil.no-img {
+  background:
+    radial-gradient(120mm 90mm at 50% 26%, rgba(185,146,75,0.20), transparent 70%),
+    linear-gradient(180deg, #122c46 0%, #0a1d33 55%, #071426 100%);
+}
+.cover-top {
+  position: absolute; top: 13mm; left: 16mm; right: 16mm;
+  display: flex; align-items: center; justify-content: space-between;
+}
+.brand-lockup { display: flex; align-items: center; gap: 4.5mm; }
+.logo-chip {
+  background: #ffffff;
+  border: 1px solid var(--gold);
+  border-radius: 1.2mm;
+  padding: 2mm;
+  line-height: 0;
+}
+.logo-chip img { display: block; height: 13mm; width: 13mm;
+                 object-fit: cover; border-radius: 0.7mm; }
+.brand-name {
+  color: var(--ivory); font-size: 13pt; letter-spacing: 0.30em;
+  line-height: 1.25;
+}
+.brand-tag {
+  color: var(--gold-pale); font-size: 6.4pt; letter-spacing: 0.26em;
+  margin-top: 1mm;
+}
+.doc-type-flag {
+  text-align: right;
+  color: var(--gold-light);
+  font-size: 7.5pt; letter-spacing: 0.34em;
+  border-top: 0.7pt solid var(--gold);
+  border-bottom: 0.7pt solid var(--gold);
+  padding: 2.2mm 0 2mm 0;
+}
+.cover-main {
+  position: absolute; left: 16mm; right: 16mm; bottom: 34mm;
+}
+.cover-rule {
+  display: flex; align-items: center; gap: 4mm;
+  margin-bottom: 5mm;
+}
+.cover-rule .line { flex: 0 0 22mm; height: 0; border-top: 0.8pt solid var(--gold); }
+.cover-rule .word {
+  color: var(--gold-light); font-size: 8pt; letter-spacing: 0.42em;
+  white-space: nowrap;
+  text-shadow: 0 1px 5px rgba(5,14,26,0.65);
+}
+.cover-title {
+  color: #fdfaf2;
+  font-size: 44pt; line-height: 1.05;
+  font-weight: 600;
+  margin: 0 0 4mm 0;
+  text-shadow: 0 1px 8px rgba(5,14,26,0.55);
+}
+.cover-subtitle {
+  color: var(--gold-pale);
+  font-style: italic;
+  font-size: 13pt; line-height: 1.45;
+  margin: 0 0 7mm 0;
+  max-width: 150mm;
+  text-shadow: 0 1px 6px rgba(5,14,26,0.6);
+}
+.cover-meta {
+  color: rgba(247,242,230,0.92);
+  font-size: 7.6pt; letter-spacing: 0.22em;
+}
+.cover-meta .dot { color: var(--gold-light); padding: 0 2.2mm; }
+.fleet-strip {
+  margin-top: 8mm;
+  display: flex; align-items: center; gap: 4mm;
+}
+.fleet-strip .logo-chip img { height: 9mm; width: auto; }
+.fleet-label {
+  color: rgba(247,242,230,0.85); font-size: 6.6pt; letter-spacing: 0.30em;
+}
+
+/* ------------- Repeating footer ------------- */
+.runfoot {
+  position: fixed; left: 0; right: 0; bottom: 0;
+  height: 12mm;
+  background: var(--ivory);
+  border-top: 1pt solid var(--gold);
+  display: flex; align-items: center; justify-content: space-between;
+  padding: 0 16mm;
+  font-size: 6.8pt; letter-spacing: 0.12em;
+  color: var(--navy);
+}
+.runfoot b { letter-spacing: 0.22em; font-weight: 600; }
+.runfoot .gold { color: var(--gold-dark); }
+.runfoot a { color: var(--navy); text-decoration: none; }
+
+/* ------------- Paged content scaffold ------------- */
+table.paged { width: 100%; border-collapse: collapse; }
+table.paged > thead td { height: 15mm; padding: 0; }
+table.paged > tfoot td { height: 17mm; padding: 0; }
+table.paged > tbody > tr > td { padding: 0 18mm; }
+
+/* ------------- Sections ------------- */
+.sec { margin: 0 0 8mm 0; }
+.sec-head {
+  break-after: avoid-page; page-break-after: avoid;
+  break-inside: avoid; page-break-inside: avoid;
+  margin: 0 0 4.5mm 0;
+}
+.sec-kicker {
+  color: var(--gold-dark); font-size: 7pt; letter-spacing: 0.38em;
+  margin-bottom: 1.6mm;
+}
+.sec-head h2 {
+  color: var(--navy);
+  font-size: 18.5pt; font-weight: 400; line-height: 1.2;
+  margin: 0 0 2.6mm 0;
+}
+.sec-head .rules { position: relative; height: 2.4mm; }
+.sec-head .rules .thin {
+  position: absolute; left: 0; right: 0; top: 1mm;
+  border-top: 0.6pt solid var(--hairline);
+}
+.sec-head .rules .thick {
+  position: absolute; left: 0; top: 0; width: 26mm;
+  border-top: 2.2pt solid var(--gold);
+}
+.sec-body p { margin: 0 0 3.4mm 0; }
+.sec-body p:last-child { margin-bottom: 0; }
+.sec-body ol { margin: 0 0 3.4mm 0; padding-left: 5.5mm; }
+.sec-body ul { margin: 0 0 3.4mm 0; padding-left: 1mm; }
+.sec-body li { margin-bottom: 1.6mm; break-inside: avoid; page-break-inside: avoid;
+               -webkit-column-break-inside: avoid; }
+.sec-body ul.cols2 { columns: 2; column-gap: 9mm;
+                     break-inside: avoid; page-break-inside: avoid; }
+.sec-body ul > li {
+  list-style: none;
+  padding-left: 1.1em; text-indent: -1.1em;  /* hanging indent: wraps align under text */
+}
+.sec-body ul > li::before {
+  content: "\2726";            /* four-pointed star, brass compass point */
+  display: inline-block; width: 1.44em; text-indent: 0;
+  color: var(--gold); font-size: 8pt;       /* 1.44em @8pt == 1.1em @10.5pt */
+}
+.sec-body a { color: var(--navy); text-decoration: none;
+              border-bottom: 0.6pt solid var(--gold); }
+.sec-body strong { color: var(--navy); }
+
+/* generic tables inside section html */
+.sec-body table {
+  width: 100%; border-collapse: collapse;
+  margin: 1mm 0 4mm 0;
+  break-inside: avoid; page-break-inside: avoid;
+  font-size: 9.8pt;
+}
+.sec-body th {
+  background: var(--navy); color: var(--ivory);
+  font-family: Optima, 'Avenir Next', 'Gill Sans', 'Trebuchet MS', sans-serif;
+  text-transform: uppercase; letter-spacing: 0.16em;
+  font-size: 7.4pt; font-weight: 500;
+  text-align: left; padding: 2.6mm 3.5mm;
+  border-bottom: 1.4pt solid var(--gold);
+}
+.sec-body td {
+  padding: 2.2mm 3.5mm;
+  border-bottom: 0.6pt solid var(--hairline);
+  color: var(--ink);
+}
+.sec-body td, .sec-body th { font-variant-numeric: tabular-nums; }
+.sec-body td:not(:first-child),
+.sec-body th:not(:first-child) { text-align: right; }
+.sec-body tr:nth-child(even) td { background: var(--row-tint); }
+.sec-body td:first-child { color: var(--navy); }
+.sec-body tr.best td { background: rgba(212,175,55,0.12); }
+.sec-body tr.best td:first-child { color: var(--navy); font-weight: 600; }
+.best-tag {
+  display: inline-block;
+  font-family: Optima, 'Avenir Next', 'Gill Sans', 'Trebuchet MS', sans-serif;
+  font-variant-caps: small-caps; text-transform: lowercase;
+  font-size: 7.6pt; font-weight: 600; letter-spacing: 0.14em;
+  color: var(--gold-dark);
+  border: 0.6pt solid var(--gold);
+  border-radius: 1mm;
+  padding: 0.2mm 1.6mm;
+  margin-left: 2.2mm;
+  white-space: nowrap;
+  vertical-align: 0.2mm;
+}
+
+/* ------------- Figures ------------- */
+figure.plate {
+  break-inside: avoid; page-break-inside: avoid;
+  margin: 5mm 0 2mm 0;
+  background: #ffffff;
+  border: 0.7pt solid var(--gold-light);
+  padding: 2.6mm;
+}
+figure.plate img {
+  display: block; width: 100%; height: 78mm; object-fit: cover;
+}
+figure.plate figcaption {
+  text-align: center;
+  font-style: italic;
+  font-size: 8.4pt; color: var(--muted);
+  padding: 2.4mm 2mm 0.6mm 2mm;
+}
+figure.plate figcaption::before {
+  content: "\25C6\00a0"; color: var(--gold); font-size: 6pt;
+}
+
+/* ------------- Spec table (2-column grid: two lbl/val pairs per row) ------------- */
+.spec-block { margin: 0 0 8mm 0; }
+table.spec {
+  width: 100%; border-collapse: collapse;
+  border-top: 1.6pt solid var(--navy);
+  border-bottom: 1.6pt solid var(--navy);
+}
+table.spec td { padding: 1.7mm 1.5mm; border-bottom: 0.6pt solid var(--hairline);
+                vertical-align: top; }
+table.spec tr:last-child td { border-bottom: none; }
+table.spec td.lbl {
+  width: 21%;
+  font-family: Optima, 'Avenir Next', 'Gill Sans', 'Trebuchet MS', sans-serif;
+  text-transform: uppercase; letter-spacing: 0.16em;
+  font-size: 7.2pt; color: var(--gold-dark);
+  padding-top: 2.3mm;
+}
+table.spec td.val { width: 29%; color: var(--navy); font-size: 9.8pt; }
+table.spec td.lbl:nth-child(3) {
+  border-left: 0.6pt solid var(--hairline);
+  padding-left: 4mm;
+}
+table.spec td.val:nth-child(2) { padding-right: 4mm; }
+
+/* ------------- Callout ------------- */
+.callout {
+  break-inside: avoid; page-break-inside: avoid;
+  margin: 8mm 0 4mm 0;
+  background: var(--navy);
+  border: 1pt solid var(--gold);
+  outline: 0.6pt solid var(--gold);
+  outline-offset: -2.2mm;
+  color: var(--ivory);
+  padding: 8mm 9mm 7mm 9mm;
+}
+.callout h3 {
+  color: var(--gold-light);
+  font-size: 15pt; font-weight: 400;
+  margin: 0 0 3mm 0;
+}
+.callout p { margin: 0 0 2.8mm 0; line-height: 1.6; color: #efe7d3; }
+.callout a { color: var(--gold-light); text-decoration: none; }
+.callout ul { margin: 0 0 2.8mm 0; padding-left: 1mm; }
+.callout ul > li { list-style: none; margin-bottom: 1.4mm;
+                   padding-left: 1.1em; text-indent: -1.1em;
+                   break-inside: avoid; page-break-inside: avoid; }
+.callout ul > li::before {
+  content: "\2726"; display: inline-block; width: 1.44em; text-indent: 0;
+  color: var(--gold-light); font-size: 8pt;
+}
+.callout .linksrow {
+  margin-top: 4.5mm; padding-top: 3.6mm;
+  border-top: 0.6pt solid rgba(212,176,106,0.55);
+  font-size: 7.6pt; letter-spacing: 0.16em;
+  color: var(--gold-pale);
+}
+.callout .linksrow span.sep { padding: 0 2.6mm; color: var(--gold); }
+
+.endmark {
+  display: flex; align-items: center; justify-content: center; gap: 3.5mm;
+  margin: 7mm 0 0 0;
+}
+.endmark .line { width: 14mm; height: 0; border-top: 0.6pt solid var(--gold); }
+.endmark svg { display: block; }
+</style>
+</head>
+<body>
+
+<div class="cover">
+  <img class="cover-img" src="file:///Users/master/boat-rental-marbella/site/img/boats/ferretti-94/hero-1200.jpg" alt="">
+  <div class="cover-veil"></div>
+  <div class="cover-top">
+    <div class="brand-lockup">
+      <span class="logo-chip"><img src="file:///Users/master/boat-rental-platform/public/brand-logo.jpg" alt="BoatHire24"></span>
+      <div>
+        <div class="brand-name caps display">BoatHire24</div>
+        <div class="brand-tag caps">Rent boats worldwide <span class="gold">|</span> list your boat free</div>
+      </div>
+    </div>
+    <div class="doc-type-flag caps">June 2026</div>
+  </div>
+  <div class="cover-main">
+    <div class="cover-rule">
+      <span class="line"></span>
+      <span class="word caps">Research Report</span>
+    </div>
+    <h1 class="cover-title display">Recreational Boat Licensing and Charter Regulation in Spain: A 2026 Review</h1>
+    <p class="cover-subtitle display">How licence-free thresholds, the Spanish titulación ladder, foreign certificate recognition, fishing permits and value added tax shape the day-charter market on the Costa del Sol</p>
+    <div class="cover-meta caps">BoatHire24 Research</div>
+    
+  </div>
+</div>
+<table class="paged">
+  <thead><tr><td></td></tr></thead>
+  <tbody><tr><td>
+
+<div class="sec">
+  <div class="sec-head">
+    <div class="sec-kicker caps">Section 01</div>
+    <h2 class="display">Abstract</h2>
+    <div class="rules"><span class="thick"></span><span class="thin"></span></div>
+  </div>
+  <div class="sec-body"><p>This review examines the regulatory framework governing recreational boating and commercial day chartering in Spain as it stands in 2026, with particular reference to the Costa del Sol and the marinas around Marbella. The Spanish system rests on a clear distinction between vessels that may be operated without any certificate of competence and those that fall under a tiered ladder of recreational qualifications. The licence-free regime is tightly bounded: a motor boat hull of up to <strong>5 metres</strong>, an engine of up to <strong>15 horsepower</strong>, a maximum range of <strong>2 nautical miles</strong> from the coast, daylight operation only, and a helm operator aged at least <strong>18</strong>. Everything above those limits requires a Spanish <em>titulación</em> or a recognised foreign certificate carrying the International Certificate of Competence stamp.</p><p>We argue that this two-track structure, far from being a barrier, is precisely what makes the crewed day-charter model so dominant in Marbella. Because a licensed skipper carries the qualification on behalf of the guest, the overwhelming majority of visitors never engage with the licensing ladder at all. The paper synthesises the licence-free thresholds, the five-rung Spanish qualification system, the rules on foreign certificate recognition, the separate and frequently misunderstood fishing licence regime administered by the Junta de Andalucia, and the treatment of value added tax on charter fees. Throughout, concrete figures are drawn from primary regulatory guidance and from the published pricing and fleet data of an active Marbella charter operator. Our central finding is that legal certainty, transparent tax treatment and the crewed-charter default combine to make Spain one of the most accessible recreational boating jurisdictions in the Mediterranean for the casual visitor.</p></div>
+  
+</div>
+
+<div class="sec">
+  <div class="sec-head">
+    <div class="sec-kicker caps">Section 02</div>
+    <h2 class="display">Introduction and Scope</h2>
+    <div class="rules"><span class="thick"></span><span class="thin"></span></div>
+  </div>
+  <div class="sec-body"><p>Spain is among the most visited boating destinations in Europe, and the stretch of coast running from Estepona through the Golden Mile to Cabopino sits at the centre of that activity. The waters off Marbella are sheltered, the season is long, and the marinas at Puerto Banus, Marbella Marina and Cabopino place a substantial fleet within easy reach of millions of annual visitors. Yet the rules that determine who may take a vessel to sea, and on what terms, are not always well understood by the people most affected by them. This review sets out to map that framework clearly.</p><p>Our scope is deliberately practical. We are concerned with recreational boating and with the commercial day-charter trade that serves visitors, rather than with merchant shipping, fishing as an industry, or long-distance cruising. We address five interlocking regulatory questions. First, what may a person operate with no certificate at all. Second, what does the Spanish recreational qualification ladder look like and where does the standard charter sit upon it. Third, which foreign certificates does Spain accept, and on what conditions. Fourth, what separate permit regime governs recreational fishing in Andalusia. And fifth, how is value added tax applied to charter fees, and what is and is not included in an advertised price.</p><p>The analysis is grounded in primary guidance, including Royal Decree 875/2014, which codifies the recreational titles and the licence-free thresholds, and in the published operating practice of a working Marbella operator whose fleet, pricing and inclusions are used here as a representative case study. Where a number appears in this paper it is traceable to that underlying data. Contextual material on shipyards, cruising grounds and the rhythm of a charter day is offered as general background and is never presented as a regulatory fact.</p></div>
+  
+</div>
+
+<div class="sec">
+  <div class="sec-head">
+    <div class="sec-kicker caps">Section 03</div>
+    <h2 class="display">The Licence-Free Regime</h2>
+    <div class="rules"><span class="thick"></span><span class="thin"></span></div>
+  </div>
+  <div class="sec-body"><p>The foundation of Spanish recreational boating is the set of conditions under which no certificate of competence is required at all. These conditions are codified in Royal Decree 875/2014 and they apply simultaneously and without exception. A failure to satisfy any single one of them removes the vessel from the licence-free category entirely.</p><table><thead><tr><th>Condition</th><th>Limit</th></tr></thead><tbody><tr><td>Hull length, motor boat</td><td>Up to 5 metres</td></tr><tr><td>Hull length, sail-only boat</td><td>Up to 6 metres</td></tr><tr><td>Engine power fitted</td><td>Up to 15 hp</td></tr><tr><td>Distance from coast</td><td>Up to 2 nautical miles</td></tr><tr><td>Time of operation</td><td>Daylight hours only</td></tr><tr><td>Minimum helm age</td><td>18 years</td></tr><tr><td>Helm blood alcohol</td><td>0.03 per cent maximum</td></tr></tbody></table><p>Two features of this table deserve emphasis. The engine limit refers to the power actually fitted, not to the power for which the hull is rated. A five metre runabout that has been fitted with a twenty horsepower outboard is not licence-free, even though the hull dimension would otherwise qualify. Equally, the two nautical mile range, which corresponds to roughly 3.7 kilometres, is generous enough that a coastline remains plainly visible, but it firmly excludes any offshore passage.</p><p>In practical terms, the regime allows a visitor with no nautical background to take a small runabout out of a Marbella marina and motor along the shore towards Cabopino for a swim, returning before sunset, entirely lawfully and with nothing more than a passport. What it does not permit is the next step up: a six metre boat, a more powerful engine, a night return, or a run to the horizon. For those, a qualification is required.</p></div>
+  
+</div>
+
+<div class="sec">
+  <div class="sec-head">
+    <div class="sec-kicker caps">Section 04</div>
+    <h2 class="display">The Spanish Recreational Qualification Ladder</h2>
+    <div class="rules"><span class="thick"></span><span class="thin"></span></div>
+  </div>
+  <div class="sec-body"><p>Above the licence-free threshold, Spain operates a tiered system of recreational titles. Each rung unlocks a larger vessel and a greater permitted distance from the coast. The ladder is mirrored, in broad terms, across much of the Mediterranean, which is part of why a qualification earned in Spain travels well.</p><table><thead><tr><th>Title</th><th>Max length</th><th>Max distance</th><th>Notes</th></tr></thead><tbody><tr><td>LN, Licencia de Navegacion</td><td>6 m</td><td>2 NM</td><td>Engine up to 40 hp; jet skis under 60 hp</td></tr><tr><td>PNB, Patron de Navegacion Basica</td><td>8 m</td><td>5 NM</td><td>Day and night; 4 hours practical</td></tr><tr><td>PER, Patron de Embarcaciones de Recreo</td><td>15 m</td><td>12 NM</td><td>Standard charter licence; island crossings</td></tr><tr><td>PY, Patron de Yate</td><td>24 m</td><td>60 NM</td><td>Includes celestial navigation theory</td></tr><tr><td>CY, Capitan de Yate</td><td>Unlimited</td><td>Unlimited</td><td>Top of the recreational ladder</td></tr></tbody></table><p>The pivotal rung for the charter trade is the PER, the Patron de Embarcaciones de Recreo. It permits the operation of vessels up to 15 metres and up to 12 nautical miles offshore, together with crossings to nearby islands such as the Balearics. The published guidance is unambiguous that essentially every standard yacht charter in Marbella falls within the scope of the PER. Earning it requires theory study, sixteen hours of practical training and eight hours of radio instruction, with a typical study period of four to eight weeks. The entry-level LN, by contrast, can be obtained over a single weekend and notably also governs the operation of jet skis below sixty horsepower, which are explicitly excluded from the fifteen horsepower licence-free rule.</p><p>The upper rungs, the PY and CY, exist for owners and crew of larger yachts. The Patron de Yate extends to 24 metres and 60 nautical miles and reintroduces celestial navigation into the syllabus, while the Capitan de Yate carries no upper limit on either size or distance. For the casual visitor neither is relevant, but their existence completes a coherent ladder that runs from a weekend course to genuinely unlimited command.</p></div>
+  
+</div>
+
+<div class="sec">
+  <div class="sec-head">
+    <div class="sec-kicker caps">Section 05</div>
+    <h2 class="display">Recognition of Foreign Certificates</h2>
+    <div class="rules"><span class="thick"></span><span class="thin"></span></div>
+  </div>
+  <div class="sec-body"><p>Because Marbella draws an international clientele, the recognition of foreign certificates is a question of real economic importance. The mechanism that makes cross-border recognition work is the International Certificate of Competence, or ICC, a stamp issued under Resolution 40 of the United Nations Economic Commission for Europe. Spain recognises any qualifying certificate that carries the ICC overlay from a recognised authority.</p><p>The certificates most commonly presented in Marbella are well established. The British RYA Day Skipper, when accompanied by the ICC, is treated as broadly equivalent to the PER for charter purposes and is the qualification most frequently seen from visiting UK skippers. The higher RYA Coastal Skipper and Yachtmaster awards, again with the ICC, extend to larger vessels and offshore work. From the United States, the ASA 104 and 106 certificates are accepted with the ICC overlay, and some charter companies additionally accept ASA without the ICC for boats under fifteen metres. The German SBF See covers vessels up to fifteen metres with the appropriate stamp, and certificates issued by the Croatian, Dutch or French authorities are fully interoperable.</p><p>Two procedural points are decisive at the dock. First, recognition depends on the ICC stamp itself: a national certificate without the overlay may not be accepted. Second, charter companies invariably ask to see the original certificate at boarding rather than a photocopy or a photograph on a phone. A useful and frequently reassuring detail is that RYA certificates do not expire, and neither does the ICC stamp. Provided the original document is produced, a qualification earned years earlier remains valid indefinitely in Spanish waters.</p></div>
+  <figure class="plate"><img src="file:///Users/master/boat-rental-marbella/site/img/boats/pershing-46/hero-1200.jpg" alt=""><figcaption>The Pershing 46, a 14 metre sport yacht, sits within the 15 metre PER limit that governs the standard Marbella charter</figcaption></figure>
+</div>
+
+<div class="sec">
+  <div class="sec-head">
+    <div class="sec-kicker caps">Section 06</div>
+    <h2 class="display">The Crewed Charter Default</h2>
+    <div class="rules"><span class="thick"></span><span class="thin"></span></div>
+  </div>
+  <div class="sec-body"><p>The single most important practical fact about chartering in Marbella is that the dominant model removes the licensing question from the guest entirely. On a crewed charter, the skipper holds the qualification, and the guest needs no certificate of any kind. Published operator guidance indicates that this crewed arrangement accounts for roughly ninety-five per cent of bookings in the area, and it is easy to see why. A visitor on a short holiday is unlikely to wish to spend four to eight weeks studying for the PER, nor to navigate the recognition of a foreign certificate, when a licensed professional can simply take the helm.</p><p>This default reshapes how the regulatory framework is experienced. For the great majority of charter guests, the licence-free thresholds and the qualification ladder are not obstacles to be cleared but background facts that the operator manages on their behalf. The guest's only personal regulatory obligation is the minimum booking age, to which we turn below. The result is a market in which a family, a group of friends or a celebration party can book a substantial yacht and step aboard with nothing more than identification, leaving competence, navigation and compliance to the crew.</p></div>
+  
+</div>
+
+<div class="sec">
+  <div class="sec-head">
+    <div class="sec-kicker caps">Section 07</div>
+    <h2 class="display">Passenger Capacity and the Minimum Age Rule</h2>
+    <div class="rules"><span class="thick"></span><span class="thin"></span></div>
+  </div>
+  <div class="sec-body"><p>Two further rules bear directly on who may book and who may travel. The first is the minimum booking age. The lead booker for any private charter must be at least 18 years old on the day of departure, and a valid passport or national identity card is required at check-in. There is, by contrast, no minimum age for passengers: children of any age are welcome aboard when accompanied by a responsible adult, life jackets are carried in sizes down to infant, and there is no upper age limit for guests. A person under 18 cannot be the lead booker, but may travel when a parent or guardian makes the booking and is present throughout.</p><p>The second rule is passenger capacity, which is fixed for each vessel by Spanish maritime regulation and which counts children and infants towards the total. The representative fleet illustrates the range, from compact day boats to substantial flybridge and planing yachts.</p><table><thead><tr><th>Vessel</th><th>Length</th><th>Max passengers</th></tr></thead><tbody><tr><td>Dubhe</td><td>8 m</td><td>5</td></tr><tr><td>Mariah SX21</td><td>6.4 m</td><td>5</td></tr><tr><td>Speedboat</td><td>7 m</td><td>6</td></tr><tr><td>Bandido</td><td>11.5 m</td><td>8</td></tr><tr><td>Astondoa 40</td><td>12.5 m</td><td>9</td></tr><tr><td>Fairline Targa 12m</td><td>12 m</td><td>10</td></tr><tr><td>Lagoon 380</td><td>11.6 m</td><td>10</td></tr><tr><td>Pershing 46</td><td>14 m</td><td>10</td></tr><tr><td>Azimut 39</td><td>12.5 m</td><td>11</td></tr><tr><td>Mangusta 80</td><td>24 m</td><td>12</td></tr><tr><td>Azimut 58 Flybridge</td><td>17.6 m</td><td>12</td></tr><tr><td>Ferretti 94</td><td>29 m</td><td>12</td></tr></tbody></table><p>The pattern is instructive. Passenger capacity does not rise indefinitely with length, because Spanish rules cap private charter parties at twelve regardless of how large the yacht becomes. A 29 metre Ferretti 94 and a 24 metre Mangusta 80 both carry the same maximum of twelve guests as the considerably smaller Azimut 58. For the visitor this means the choice between these larger vessels is driven by space, comfort and prestige rather than by headcount, while the smaller day boats such as the Dubhe and the Mariah SX21 self-select for couples and small families.</p></div>
+  
+</div>
+
+<div class="sec">
+  <div class="sec-head">
+    <div class="sec-kicker caps">Section 08</div>
+    <h2 class="display">Builders, the Fleet and the Cruising Grounds</h2>
+    <div class="rules"><span class="thick"></span><span class="thin"></span></div>
+  </div>
+  <div class="sec-body"><p>The vessels named in the capacity table are not generic hulls; they carry some of the most recognised names in European yacht building, and a brief orientation helps explain the character of a Marbella charter. The Italian builders dominate. Azimut, founded in Turin in the 1960s, is among the largest production builders of motor yachts in the world and lends its name here to both the Azimut 39 and the larger Azimut 58 Flybridge. Ferretti, also Italian and the anchor of a wider group, is represented by the flagship Ferretti 94, the longest vessel in the fleet at 29 metres. Pershing, part of the same Ferretti orbit, built its reputation on sharp, fast, low-profile sport yachts, a character the Pershing 46 carries into the Marbella fleet. Mangusta, the open-yacht marque of Overmarine, gives its name to the 24 metre Mangusta 80, while Astondoa is one of Spain's own long-established shipyards. The single sailing multihull, the Lagoon 380, comes from the world's best known cruising catamaran builder.</p><p>These boats operate over one of the most agreeable stretches of the Mediterranean. The home marinas at Puerto Banus, Marbella Marina and Cabopino open directly onto a coast that runs west past the Golden Mile towards Estepona and Gibraltar, and east towards Cabopino's dunes. A typical day charter follows the shoreline at an unhurried pace, pausing at sheltered coves such as Cala del Faro or Cala Cortes for swimming and snorkelling, with the skipper free to adjust the itinerary towards calm, shallow water for families or towards a longer coastal run for a group seeking the open sea. The published guidance describes exactly this flexibility: skippers can steer towards calm coves for young children or hug the coast to avoid choppy water for elderly guests.</p><p>The season is long and the weather windows are generous. The waters here are at their most settled through the late spring and summer, and the sheltered aspect of the bay means that even when there is a breeze offshore the inshore cruising grounds frequently remain comfortable. A charter day aboard one of these yachts is, in practice, a slow procession along a familiar and beautiful coast, anchored by a swim stop or two, rather than a navigational challenge, which is precisely why the crewed model suits the destination so well.</p></div>
+  <figure class="plate"><img src="file:///Users/master/boat-rental-marbella/site/img/boats/mangusta-80/hero-1200.jpg" alt=""><figcaption>The 24 metre Mangusta 80, the open-yacht marque of Overmarine, cruising the Costa del Sol; a four hour charter is advertised at 4,719 euros including IVA</figcaption></figure>
+</div>
+
+<div class="sec">
+  <div class="sec-head">
+    <div class="sec-kicker caps">Section 09</div>
+    <h2 class="display">Value Added Tax and Charter Pricing</h2>
+    <div class="rules"><span class="thick"></span><span class="thin"></span></div>
+  </div>
+  <div class="sec-body"><p>The fiscal treatment of charter fees in Spain is straightforward and, in the operator practice examined here, transparent. Recreational boat charters are subject to Spanish value added tax, known as IVA, at the standard rate of <strong>21 per cent</strong>. This applies to any private charter departing a Spanish port, including those from Puerto Banus, Marbella Marina and Cabopino, and it is calculated on the total charter fee including the vessel, the skipper, fuel and any included extras.</p><p>The operator case study advertises all prices inclusive of the 21 per cent IVA, so that the figure quoted is the figure paid. The entry-level rates illustrate the model: a two hour charter aboard the Astondoa 40 or the Azimut 39 is advertised at <strong>749 euros</strong>, tax included, while a four hour charter aboard the Mangusta 80 is advertised at <strong>4,719 euros</strong>, again with IVA already incorporated and with a jet ski included at no extra charge. Larger or more bespoke vessels such as the Ferretti 94 and the Canados 86 are quoted on request, with the tax built into the bespoke figure.</p><table><thead><tr><th>Vessel</th><th>Price (IVA included)</th><th>Duration</th></tr></thead><tbody><tr><td>Astondoa 40</td><td>749 euros</td><td>2 hours</td></tr><tr><td>Azimut 39</td><td>749 euros</td><td>2 hours</td></tr><tr><td>Mangusta 80</td><td>4,719 euros</td><td>4 hours (minimum)</td></tr><tr><td>Ferretti 94 / Canados 86</td><td>On request</td><td>On request</td></tr></tbody></table><p>What the price covers is as significant as the rate itself. Every charter in the case study includes a licensed skipper, fuel for the entire trip, a selection of drinks comprising water, soft drinks, beer, white wine and cava, light snacks, insurance and safety equipment, and the IVA. There are no separate port fees, cleaning charges or fuel surcharges. Crucially for the destination, Marbella and the wider Costa del Sol impose no tourist tax, no municipal surcharge and no environmental levy on charters, in contrast with the Balearic Islands. The 21 per cent IVA is therefore the only tax a guest pays. EU businesses holding a valid VAT number may in some circumstances reclaim the IVA under Spanish reverse-charge rules, typically where the charter is used for corporate entertainment, whereas non-EU residents generally cannot reclaim a consumption tax.</p></div>
+  
+</div>
+
+<div class="sec">
+  <div class="sec-head">
+    <div class="sec-kicker caps">Section 10</div>
+    <h2 class="display">Recreational Fishing: A Separate Regime</h2>
+    <div class="rules"><span class="thick"></span><span class="thin"></span></div>
+  </div>
+  <div class="sec-body"><p>A point of frequent confusion is that the right to take a charter to sea is wholly distinct from the right to fish from it. Recreational fishing in Andalusia is governed not by maritime competence rules but by a permit system administered by the Junta de Andalucia, and the two should never be conflated. Every person aged 14 or over who fishes recreationally in Andalusian waters, whether from the shore, a kayak or a charter boat, must hold a valid personal fishing licence. The licence is personal and non-transferable; there is no boat-wide permit that covers all passengers, and the presence of a licensed skipper does not exempt the anglers.</p><table><thead><tr><th>Permit</th><th>Approximate cost</th></tr></thead><tbody><tr><td>Daily licence</td><td>6 euros</td></tr><tr><td>Monthly licence</td><td>about 12 euros</td></tr><tr><td>Annual licence</td><td>about 25 euros</td></tr></tbody></table><p>The cost is modest, and the annual licence, covering all inland and coastal waters in the region, represents the best value for anyone fishing more than a few times a year. Applications can be completed online through the Junta de Andalucia portal in about ten minutes, requiring identification and a digital photograph, or processed at local fishing shops in Marbella for a small fee. Children under 14 are generally exempt but must be supervised by an adult who holds a valid licence, and a reduced-fee licence is available for teenagers aged 14 to 17. Spearfishing requires a separate and specific licence that the standard recreational permit does not cover, and it is prohibited within certain protected areas.</p><p>Enforcement is real. Fishing without a valid licence is an administrative offence with fines starting at around <strong>300 euros</strong> and rising to as much as <strong>3,000 euros</strong> for serious violations such as the use of prohibited gear. The Guardia Civil and the environmental police, Seprona, conduct random inspections at sea and in ports including Puerto Banus. It is worth noting that the charter fleet examined here is not equipped for fishing in any case: the vessels carry no rod holders, bait wells or fish finders, no gear or permits are supplied, and guests who wish to fish are directed towards specialised fishing charters.</p></div>
+  
+</div>
+
+<div class="sec">
+  <div class="sec-head">
+    <div class="sec-kicker caps">Section 11</div>
+    <h2 class="display">Enforcement and Compliance Culture</h2>
+    <div class="rules"><span class="thick"></span><span class="thin"></span></div>
+  </div>
+  <div class="sec-body"><p>Regulation on paper means little without enforcement, and the Spanish authorities maintain an active presence in the busy summer waters of the Costa del Sol. The Guardia Civil del Mar and the Servicio Maritimo run random checks during the high season, with the corridor from Puerto Banus to Cabopino described as a regular patrol zone. These checks cover the captain's identification, the relevant licence where one is required, the safety equipment carried, and confirmation that the vessel is registered to a legitimate charter operator.</p><p>The penalties are calibrated to deter the most common abuse, which is the operation of an over-specified engine on a vessel marketed as licence-free. Published guidance puts the fine for this offence at upwards of 600 euros to the operator, accompanied by an immediate ban from the helm for the guest. It is precisely this enforcement risk that explains why reputable Marbella operators are strict about the fifteen horsepower limit and decline to let guests exceed it, however willing the guest might be. The compliance culture, in other words, is shaped from the top down: the operator absorbs the regulatory burden, and the guest experiences a smooth and lawful day on the water.</p><p>Read together with the fishing regime, the picture is one of a jurisdiction that is permissive in design but firm in enforcement. The thresholds are clear, the qualification ladder is coherent, foreign certificates are recognised on transparent terms, the tax is single and disclosed, and the agencies that police the rules are visible and active. For the operator this demands discipline; for the guest it produces certainty.</p></div>
+  
+</div>
+
+<div class="sec">
+  <div class="sec-head">
+    <div class="sec-kicker caps">Section 12</div>
+    <h2 class="display">Conclusion</h2>
+    <div class="rules"><span class="thick"></span><span class="thin"></span></div>
+  </div>
+  <div class="sec-body"><p>The Spanish framework for recreational boating and day chartering, viewed as a whole, is best understood as a system designed to keep casual access easy while keeping commercial operators accountable. The licence-free regime offers a genuine and well-bounded entry point: a 5 metre hull, a 15 horsepower engine, 2 nautical miles, daylight and an adult at the helm. Above that, the five-rung ladder from the weekend LN through the workhorse PER to the unlimited CY provides a coherent path for anyone who wishes to take command, and the recognition of foreign certificates bearing the ICC stamp ensures that a qualification earned abroad is not wasted.</p><p>Yet the defining feature of the Marbella market is that most visitors never touch any of this. With crewed charters accounting for the large majority of bookings, the licensing question is carried by the skipper, and the guest's only personal obligation is to be 18 to book and to bring identification. The tax position reinforces the same ease: a single, disclosed 21 per cent IVA, no tourist levy, and an advertised price that already includes the skipper, fuel, drinks, snacks, insurance and the tax itself. The separate fishing regime, modest in cost but firmly enforced, is the one area where the casual visitor must take a deliberate step of their own.</p><p>Our conclusion is that Spain, and the Costa del Sol in particular, has arrived at an unusually well-balanced regulatory equilibrium. Legal certainty, transparent pricing and a crewed-charter default combine to make the region one of the most accessible recreational boating destinations in the Mediterranean. For the family, the group of friends or the celebration party planning a day at sea, the practical message is simple: the rules are real, they are enforced, and an established operator manages almost all of them on your behalf.</p></div>
+  
+</div>
+
+<div class="sec">
+  <div class="sec-head">
+    <div class="sec-kicker caps">Section 13</div>
+    <h2 class="display">References</h2>
+    <div class="rules"><span class="thick"></span><span class="thin"></span></div>
+  </div>
+  <div class="sec-body"><ul><li><a href="https://boatrentalinmarbella.com/blog/boat-license-rules-spain.html">https://boatrentalinmarbella.com/blog/boat-license-rules-spain.html</a></li><li><a href="https://boatrentalinmarbella.com/blog/fishing-license-rules-marbella.html">https://boatrentalinmarbella.com/blog/fishing-license-rules-marbella.html</a></li><li><a href="https://boatrentalinmarbella.com/blog/marbella-luxury-yacht-charter-tax-vat.html">https://boatrentalinmarbella.com/blog/marbella-luxury-yacht-charter-tax-vat.html</a></li><li><a href="https://boatrentalinmarbella.com/blog/marbella-yacht-charter-minimum-age.html">https://boatrentalinmarbella.com/blog/marbella-yacht-charter-minimum-age.html</a></li><li><a href="https://boatrentalinmarbella.com">https://boatrentalinmarbella.com</a></li><li><a href="https://boathire24.com">https://boathire24.com</a></li></ul></div>
+  
+</div>
+
+<div class="callout">
+  <h3 class="display">Charter the Marbella Fleet</h3>
+  <p>Charter data, the full fleet and live availability for the vessels discussed in this review are accessible via boatrentalinmarbella.com, where every advertised price already includes the skipper, fuel, drinks, snacks, insurance and 21 per cent Spanish IVA.</p><p>To list a boat or to find charters anywhere in the world, visit boathire24.com.</p>
+  <div class="linksrow caps"><a href="https://boathire24.com">https://boathire24.com</a><span class="sep">&#9670;</span><a href="https://boatrentalinmarbella.com">https://boatrentalinmarbella.com</a></div>
+</div>
+<div class="endmark"><span class="line"></span><svg width="14" height="14" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg" aria-hidden="true"><path fill="#b9924b" d="M17 15l1.55 1.55c-.96 1.69-3.33 3.04-5.55 3.37V11h3V9h-3V7.82C14.16 7.4 15 6.3 15 5c0-1.65-1.35-3-3-3S9 3.35 9 5c0 1.3.84 2.4 2 2.82V9H8v2h3v8.92c-2.22-.33-4.59-1.68-5.55-3.37L7 15l-4-3v3c0 3.88 4.92 7 9 7s9-3.12 9-7v-3l-4 3zM12 4c.55 0 1 .45 1 1s-.45 1-1 1-1-.45-1-1 .45-1 1-1z"/></svg><span class="line"></span></div>
+  </td></tr></tbody>
+  <tfoot><tr><td></td></tr></tfoot>
+</table>
+
+<div class="runfoot caps">
+  <span><b>boathire24.com</b> <span class="gold">&#9670;</span> rent boats worldwide
+    <span class="gold">&#9670;</span> list your boat free</span>
+  <span class="gold caps">boatrentalinmarbella.com</span>
+</div>
+</body>
+</html>

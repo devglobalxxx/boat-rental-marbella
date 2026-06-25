@@ -1,0 +1,652 @@
+[
+ {
+  "id": "d0461ab1-3541-4066-933d-226255837513",
+  "name": "Mefasa 90",
+  "tagline": "Private Mefasa 90 charter \u00b7 Puerto Ban\u00fas, Marbella",
+  "description": "The Mefasa 90 is a 29 m superyacht for unforgettable days on the Costa del Sol \u2014 vast deck spaces, a jacuzzi, a beach club and elegant interiors across multiple cabins. Crewed private charters for up to 12 guests with all-inclusive luxury from Puerto Ban\u00fas, Marbella \u2014 the ultimate way to experience Marbella by sea.",
+  "type": "motor_yacht",
+  "length_m": 29,
+  "capacity": 12,
+  "cabins": 4,
+  "builder": "Mefasa",
+  "model_year": 2012,
+  "location": {
+   "city": "Marbella",
+   "country": "Spain"
+  },
+  "departure_port": "Puerto Ban\u00fas, Marbella",
+  "includes": {
+   "skipper": true,
+   "fuel": true,
+   "drinks": false
+  },
+  "min_hours": 4,
+  "cancellation_policy": "strict",
+  "features": [
+   "Air conditioning",
+   "Bluetooth sound system",
+   "Swim platform & ladder",
+   "Fresh-water shower",
+   "Snorkelling gear",
+   "Cooler & ice",
+   "Sun pads",
+   "Beach towels",
+   "Paddleboard (SUP)",
+   "Bimini / shade",
+   "Fridge",
+   "Tender / dinghy",
+   "Flybridge",
+   "Inflatable sea toys",
+   "En-suite cabins",
+   "Jacuzzi",
+   "Beach club",
+   "Professional crew",
+   "Multiple guest cabins"
+  ],
+  "images": [
+   "https://xluprzxpuoryiwvxhfgw.supabase.co/storage/v1/object/public/boat-images/mefasa-90/hero.jpg?v=6"
+  ],
+  "pricing": [
+   {
+    "duration_hours": 4,
+    "price": 7300,
+    "currency": "EUR"
+   },
+   {
+    "duration_hours": 8,
+    "price": 12000,
+    "currency": "EUR"
+   },
+   {
+    "duration_hours": 6,
+    "price": 10000,
+    "currency": "EUR"
+   }
+  ],
+  "url": "https://boathire24.com/boats/mefasa-90"
+ },
+ {
+  "id": "6eb643db-61a7-4e2b-a0f0-4a22185f2c9d",
+  "name": "Sunseeker Predator 72",
+  "tagline": "Private Sunseeker Predator 72 charter \u00b7 Puerto Ban\u00fas, Marbella",
+  "description": "The Sunseeker Predator 72 is a 22.1 m thoroughbred sport yacht \u2014 striking lines, blistering performance and a sunken beach-club stern. Four cabins, sprawling sun terraces and a glamorous cockpit make her a statement charter for up to 11 guests. Skippered, from Puerto Ban\u00fas, Marbella.",
+  "type": "motor_yacht",
+  "length_m": 22.1,
+  "capacity": 11,
+  "cabins": 4,
+  "builder": "Sunseeker",
+  "model_year": 2018,
+  "location": {
+   "city": "Marbella",
+   "country": "Spain"
+  },
+  "departure_port": "Puerto Ban\u00fas, Marbella",
+  "includes": {
+   "skipper": true,
+   "fuel": true,
+   "drinks": false
+  },
+  "min_hours": 4,
+  "cancellation_policy": "strict",
+  "features": [
+   "Air conditioning",
+   "Bluetooth sound system",
+   "Swim platform & ladder",
+   "Fresh-water shower",
+   "Snorkelling gear",
+   "Cooler & ice",
+   "Sun pads",
+   "Beach towels",
+   "Paddleboard (SUP)",
+   "Bimini / shade",
+   "Fridge",
+   "Tender / dinghy",
+   "Flybridge",
+   "Inflatable sea toys",
+   "En-suite cabins",
+   "Sunken beach-club stern"
+  ],
+  "images": [
+   "https://xluprzxpuoryiwvxhfgw.supabase.co/storage/v1/object/public/boat-images/sunseeker-predator-72/1.jpg?v=real",
+   "https://xluprzxpuoryiwvxhfgw.supabase.co/storage/v1/object/public/boat-images/sunseeker-predator-72/2.jpg?v=real",
+   "https://xluprzxpuoryiwvxhfgw.supabase.co/storage/v1/object/public/boat-images/sunseeker-predator-72/3.jpg?v=real",
+   "https://xluprzxpuoryiwvxhfgw.supabase.co/storage/v1/object/public/boat-images/sunseeker-predator-72/4.jpg?v=real",
+   "https://xluprzxpuoryiwvxhfgw.supabase.co/storage/v1/object/public/boat-images/sunseeker-predator-72/5.jpg?v=real",
+   "https://xluprzxpuoryiwvxhfgw.supabase.co/storage/v1/object/public/boat-images/sunseeker-predator-72/6.jpg?v=real",
+   "https://xluprzxpuoryiwvxhfgw.supabase.co/storage/v1/object/public/boat-images/sunseeker-predator-72/7.jpg?v=real"
+  ],
+  "pricing": [
+   {
+    "duration_hours": 6,
+    "price": 6500,
+    "currency": "EUR"
+   },
+   {
+    "duration_hours": 4,
+    "price": 5000,
+    "currency": "EUR"
+   },
+   {
+    "duration_hours": 8,
+    "price": 8000,
+    "currency": "EUR"
+   }
+  ],
+  "url": "https://boathire24.com/boats/sunseeker-predator-72"
+ },
+ {
+  "id": "f4dbe7b1-88c4-46d2-95c8-0fef9e0147a3",
+  "name": "Princess F70",
+  "tagline": "Private Princess F70 charter \u00b7 Puerto Ban\u00fas, Marbella",
+  "description": "The Princess F70 is a 21.8 m flybridge flagship \u2014 a huge flybridge with bar and sunbeds, a full-beam owner's suite and four cabins for overnight comfort. The ultimate platform for celebrations, family days and multi-day cruising for up to 12 guests. Private skippered charters from Marbella.",
+  "type": "motor_yacht",
+  "length_m": 21.8,
+  "capacity": 12,
+  "cabins": 4,
+  "builder": "Princess",
+  "model_year": 2020,
+  "location": {
+   "city": "Marbella",
+   "country": "Spain"
+  },
+  "departure_port": "Puerto Ban\u00fas, Marbella",
+  "includes": {
+   "skipper": true,
+   "fuel": true,
+   "drinks": false
+  },
+  "min_hours": 2,
+  "cancellation_policy": "strict",
+  "features": [
+   "Bluetooth sound system",
+   "Snorkelling gear",
+   "Air conditioning",
+   "Fresh-water shower",
+   "Sun pads",
+   "Swim platform & ladder",
+   "Cooler & ice",
+   "Beach towels",
+   "Paddleboard (SUP)",
+   "Bimini / shade",
+   "Fridge",
+   "Tender / dinghy",
+   "Flybridge",
+   "Inflatable sea toys",
+   "En-suite cabins"
+  ],
+  "images": [
+   "https://xluprzxpuoryiwvxhfgw.supabase.co/storage/v1/object/public/boat-images/princess-f70/0.jpg?v=f70",
+   "https://xluprzxpuoryiwvxhfgw.supabase.co/storage/v1/object/public/boat-images/princess-f70/1.jpg?v=f70",
+   "https://xluprzxpuoryiwvxhfgw.supabase.co/storage/v1/object/public/boat-images/princess-f70/2.jpg?v=f70",
+   "https://xluprzxpuoryiwvxhfgw.supabase.co/storage/v1/object/public/boat-images/princess-f70/3.jpg?v=f70"
+  ],
+  "pricing": [
+   {
+    "duration_hours": 4,
+    "price": 6399,
+    "currency": "EUR"
+   },
+   {
+    "duration_hours": 8,
+    "price": 10999,
+    "currency": "EUR"
+   },
+   {
+    "duration_hours": 2,
+    "price": 3799,
+    "currency": "EUR"
+   },
+   {
+    "duration_hours": 6,
+    "price": 8899,
+    "currency": "EUR"
+   }
+  ],
+  "url": "https://boathire24.com/boats/princess-f70"
+ },
+ {
+  "id": "0d9eda17-e699-444c-ac5e-2c20b4b665d7",
+  "name": "Sunseeker 68 Sport",
+  "tagline": "Private Sunseeker 68 Sport charter \u00b7 Puerto Ban\u00fas, Marbella",
+  "description": "The Sunseeker 68 Sport is a 21 m luxury sport yacht \u2014 commanding presence, a vast foredeck lounge and a beach-club swim platform. Three sumptuous cabins make her equally suited to a glamorous day charter or an overnight escape along the Costa del Sol. Skippered, up to 12 guests, from Puerto Ban\u00fas.",
+  "type": "motor_yacht",
+  "length_m": 21,
+  "capacity": 12,
+  "cabins": 3,
+  "builder": "Sunseeker",
+  "model_year": 2019,
+  "location": {
+   "city": "Marbella",
+   "country": "Spain"
+  },
+  "departure_port": "Puerto Ban\u00fas, Marbella",
+  "includes": {
+   "skipper": true,
+   "fuel": true,
+   "drinks": false
+  },
+  "min_hours": 4,
+  "cancellation_policy": "strict",
+  "features": [
+   "Bluetooth sound system",
+   "Snorkelling gear",
+   "Bimini / shade",
+   "Flybridge",
+   "En-suite cabins",
+   "Air conditioning",
+   "Fresh-water shower",
+   "Sun pads",
+   "Paddleboard (SUP)",
+   "Tender / dinghy",
+   "Swim platform & ladder",
+   "Cooler & ice",
+   "Beach towels",
+   "Fridge",
+   "Inflatable sea toys"
+  ],
+  "images": [
+   "https://xluprzxpuoryiwvxhfgw.supabase.co/storage/v1/object/public/boat-images/sunseeker-68-sport/1.jpg?v=real",
+   "https://xluprzxpuoryiwvxhfgw.supabase.co/storage/v1/object/public/boat-images/sunseeker-68-sport/2.jpg?v=real",
+   "https://xluprzxpuoryiwvxhfgw.supabase.co/storage/v1/object/public/boat-images/sunseeker-68-sport/3.jpg?v=real",
+   "https://xluprzxpuoryiwvxhfgw.supabase.co/storage/v1/object/public/boat-images/sunseeker-68-sport/4.jpg?v=real",
+   "https://xluprzxpuoryiwvxhfgw.supabase.co/storage/v1/object/public/boat-images/sunseeker-68-sport/5.jpg?v=real",
+   "https://xluprzxpuoryiwvxhfgw.supabase.co/storage/v1/object/public/boat-images/sunseeker-68-sport/6.jpg?v=real",
+   "https://xluprzxpuoryiwvxhfgw.supabase.co/storage/v1/object/public/boat-images/sunseeker-68-sport/7.jpg?v=real"
+  ],
+  "pricing": [
+   {
+    "duration_hours": 4,
+    "price": 6500,
+    "currency": "EUR"
+   },
+   {
+    "duration_hours": 8,
+    "price": 10500,
+    "currency": "EUR"
+   },
+   {
+    "duration_hours": 6,
+    "price": 8500,
+    "currency": "EUR"
+   }
+  ],
+  "url": "https://boathire24.com/boats/sunseeker-68-sport"
+ },
+ {
+  "id": "5bc69de9-95ed-4ef0-9d33-75488fcba5d3",
+  "name": "Sunseeker 63",
+  "tagline": "Private Sunseeker 63 charter \u00b7 Puerto Ban\u00fas, Marbella",
+  "description": "The Sunseeker 63 is a 19 m flagship-feel sport yacht with sleek Sunseeker DNA \u2014 expansive sun terraces, a generous cockpit and three luxurious cabins. Built for show-stopping days on the water, swim breaks in hidden coves and golden-hour cruising for up to 10 guests. Private skippered charters from Marbella.",
+  "type": "motor_yacht",
+  "length_m": 19,
+  "capacity": 10,
+  "cabins": 3,
+  "builder": "Sunseeker",
+  "model_year": 2018,
+  "location": {
+   "city": "Marbella",
+   "country": "Spain"
+  },
+  "departure_port": "Puerto Ban\u00fas, Marbella",
+  "includes": {
+   "skipper": true,
+   "fuel": true,
+   "drinks": false
+  },
+  "min_hours": 2,
+  "cancellation_policy": "strict",
+  "features": [
+   "Swim platform & ladder",
+   "Cooler & ice",
+   "Paddleboard (SUP)",
+   "Tender / dinghy",
+   "En-suite cabins",
+   "Air conditioning",
+   "Fresh-water shower",
+   "Sun pads",
+   "Bimini / shade",
+   "Flybridge",
+   "Bluetooth sound system",
+   "Snorkelling gear",
+   "Beach towels",
+   "Fridge",
+   "Inflatable sea toys"
+  ],
+  "images": [
+   "https://xluprzxpuoryiwvxhfgw.supabase.co/storage/v1/object/public/boat-images/sunseeker-63/0.jpg?v=s63",
+   "https://xluprzxpuoryiwvxhfgw.supabase.co/storage/v1/object/public/boat-images/sunseeker-63/1.jpg?v=s63",
+   "https://xluprzxpuoryiwvxhfgw.supabase.co/storage/v1/object/public/boat-images/sunseeker-63/2.jpg?v=s63"
+  ],
+  "pricing": [
+   {
+    "duration_hours": 2,
+    "price": 1999,
+    "currency": "EUR"
+   },
+   {
+    "duration_hours": 6,
+    "price": 3899,
+    "currency": "EUR"
+   },
+   {
+    "duration_hours": 4,
+    "price": 2999,
+    "currency": "EUR"
+   },
+   {
+    "duration_hours": 8,
+    "price": 4799,
+    "currency": "EUR"
+   }
+  ],
+  "url": "https://boathire24.com/boats/sunseeker-63"
+ },
+ {
+  "id": "b7ada346-ed36-4e82-82f8-f5dce2d26e99",
+  "name": "Princess V58",
+  "tagline": "Private Princess V58 charter \u00b7 Puerto Ban\u00fas, Marbella",
+  "description": "The Princess V58 is an 18.2 m British sports yacht blending performance with refined comfort \u2014 sweeping sunpads, a spacious cockpit and three elegant cabins below. Perfect for high-style day charters, swim stops and sundowner cruises for up to 12 guests. Skippered, from Marbella / Puerto Ban\u00fas.",
+  "type": "motor_yacht",
+  "length_m": 18.2,
+  "capacity": 12,
+  "cabins": 3,
+  "builder": "Princess",
+  "model_year": 2017,
+  "location": {
+   "city": "Marbella",
+   "country": "Spain"
+  },
+  "departure_port": "Puerto Ban\u00fas, Marbella",
+  "includes": {
+   "skipper": true,
+   "fuel": true,
+   "drinks": false
+  },
+  "min_hours": 4,
+  "cancellation_policy": "strict",
+  "features": [
+   "Bluetooth sound system",
+   "Snorkelling gear",
+   "Beach towels",
+   "Fridge",
+   "Swim platform & ladder",
+   "Cooler & ice",
+   "Paddleboard (SUP)",
+   "En-suite cabins",
+   "Air conditioning",
+   "Fresh-water shower",
+   "Sun pads",
+   "Bimini / shade",
+   "Inflatable sea toys"
+  ],
+  "images": [
+   "https://xluprzxpuoryiwvxhfgw.supabase.co/storage/v1/object/public/boat-images/princess-v58/1.jpg?v=real",
+   "https://xluprzxpuoryiwvxhfgw.supabase.co/storage/v1/object/public/boat-images/princess-v58/2.jpg?v=real",
+   "https://xluprzxpuoryiwvxhfgw.supabase.co/storage/v1/object/public/boat-images/princess-v58/3.jpg?v=real",
+   "https://xluprzxpuoryiwvxhfgw.supabase.co/storage/v1/object/public/boat-images/princess-v58/4.jpg?v=real",
+   "https://xluprzxpuoryiwvxhfgw.supabase.co/storage/v1/object/public/boat-images/princess-v58/5.jpg?v=real",
+   "https://xluprzxpuoryiwvxhfgw.supabase.co/storage/v1/object/public/boat-images/princess-v58/6.jpg?v=real",
+   "https://xluprzxpuoryiwvxhfgw.supabase.co/storage/v1/object/public/boat-images/princess-v58/7.jpg?v=real"
+  ],
+  "pricing": [
+   {
+    "duration_hours": 4,
+    "price": 2999,
+    "currency": "EUR"
+   },
+   {
+    "duration_hours": 6,
+    "price": 4399,
+    "currency": "EUR"
+   },
+   {
+    "duration_hours": 8,
+    "price": 5499,
+    "currency": "EUR"
+   }
+  ],
+  "url": "https://boathire24.com/boats/princess-v58"
+ },
+ {
+  "id": "9370eaec-a454-4f7f-8549-dcf85c5e4e1e",
+  "name": "Sunseeker Predator 58",
+  "tagline": "Private Sunseeker Predator 58 charter \u00b7 Puerto Ban\u00fas, Marbella",
+  "description": "The Sunseeker Predator 58 is a 17.6 m British performance sport yacht \u2014 low, muscular lines, a retractable hardtop and serious pace. Big sunpads, a social cockpit and a swim platform make her a favourite for fast coastal runs and glamorous days at anchor for up to 11 guests. Skippered private charters from Puerto Ban\u00fas.",
+  "type": "motor_yacht",
+  "length_m": 17.6,
+  "capacity": 11,
+  "cabins": 3,
+  "builder": "Sunseeker",
+  "model_year": 2018,
+  "location": {
+   "city": "Marbella",
+   "country": "Spain"
+  },
+  "departure_port": "Puerto Ban\u00fas, Marbella",
+  "includes": {
+   "skipper": true,
+   "fuel": true,
+   "drinks": false
+  },
+  "min_hours": 4,
+  "cancellation_policy": "strict",
+  "features": [
+   "Air conditioning",
+   "Fresh-water shower",
+   "Sun pads",
+   "Bimini / shade",
+   "En-suite cabins",
+   "Bluetooth sound system",
+   "Snorkelling gear",
+   "Beach towels",
+   "Fridge",
+   "Swim platform & ladder",
+   "Cooler & ice",
+   "Paddleboard (SUP)",
+   "Retractable hardtop"
+  ],
+  "images": [
+   "https://xluprzxpuoryiwvxhfgw.supabase.co/storage/v1/object/public/boat-images/sunseeker-predator-72/hero.jpg?v=4"
+  ],
+  "pricing": [
+   {
+    "duration_hours": 4,
+    "price": 2999,
+    "currency": "EUR"
+   },
+   {
+    "duration_hours": 6,
+    "price": 3699,
+    "currency": "EUR"
+   },
+   {
+    "duration_hours": 8,
+    "price": 4399,
+    "currency": "EUR"
+   }
+  ],
+  "url": "https://boathire24.com/boats/sunseeker-predator-58"
+ },
+ {
+  "id": "eb16a94e-4d15-4ec4-9508-78eca547c710",
+  "name": "Prestige 500",
+  "tagline": "Private Prestige 500 charter \u00b7 Puerto Ban\u00fas, Marbella",
+  "description": "The Prestige 500 is a 16 m flybridge motor yacht designed around space and light \u2014 a vast flybridge, full-beam owner's cabin and an easy indoor-outdoor flow. Perfect for relaxed family days, celebrations and sunset cruises for up to 12 guests. Private skippered charters from Marbella, fuel and captain included.",
+  "type": "motor_yacht",
+  "length_m": 16,
+  "capacity": 12,
+  "cabins": 3,
+  "builder": "Prestige",
+  "model_year": 2018,
+  "location": {
+   "city": "Marbella",
+   "country": "Spain"
+  },
+  "departure_port": "Puerto Ban\u00fas, Marbella",
+  "includes": {
+   "skipper": true,
+   "fuel": true,
+   "drinks": false
+  },
+  "min_hours": 4,
+  "cancellation_policy": "strict",
+  "features": [
+   "Swim platform & ladder",
+   "Cooler & ice",
+   "Paddleboard (SUP)",
+   "Flybridge",
+   "Air conditioning",
+   "Fresh-water shower",
+   "Sun pads",
+   "Bimini / shade",
+   "Tender / dinghy",
+   "Bluetooth sound system",
+   "Snorkelling gear",
+   "Beach towels",
+   "Fridge"
+  ],
+  "images": [
+   "https://xluprzxpuoryiwvxhfgw.supabase.co/storage/v1/object/public/boat-images/prestige-500/1.jpg?v=real",
+   "https://xluprzxpuoryiwvxhfgw.supabase.co/storage/v1/object/public/boat-images/prestige-500/2.jpg?v=real",
+   "https://xluprzxpuoryiwvxhfgw.supabase.co/storage/v1/object/public/boat-images/prestige-500/3.jpg?v=real",
+   "https://xluprzxpuoryiwvxhfgw.supabase.co/storage/v1/object/public/boat-images/prestige-500/4.jpg?v=real",
+   "https://xluprzxpuoryiwvxhfgw.supabase.co/storage/v1/object/public/boat-images/prestige-500/5.jpg?v=real",
+   "https://xluprzxpuoryiwvxhfgw.supabase.co/storage/v1/object/public/boat-images/prestige-500/6.jpg?v=real",
+   "https://xluprzxpuoryiwvxhfgw.supabase.co/storage/v1/object/public/boat-images/prestige-500/7.jpg?v=real"
+  ],
+  "pricing": [
+   {
+    "duration_hours": 4,
+    "price": 2999,
+    "currency": "EUR"
+   },
+   {
+    "duration_hours": 6,
+    "price": 4199,
+    "currency": "EUR"
+   },
+   {
+    "duration_hours": 8,
+    "price": 5799,
+    "currency": "EUR"
+   }
+  ],
+  "url": "https://boathire24.com/boats/prestige-500"
+ },
+ {
+  "id": "802660bc-3958-4d2e-8479-ba000a3ab70f",
+  "name": "Fairline Targa 43",
+  "tagline": "Private Fairline Targa 43 charter \u00b7 Puerto Ban\u00fas, Marbella",
+  "description": "Charter the Fairline Targa 43 \u2014 a sleek 14.4 m British sports cruiser built for fast, stylish days on the Costa del Sol. A huge sun-soaked cockpit, bathing platform and sociable layout host up to 11 guests for coastal cruising, swim stops and sundowners. Skippered private day charters from Puerto Ban\u00fas, Marbella \u2014 fuel and captain included.",
+  "type": "motor_yacht",
+  "length_m": 14.4,
+  "capacity": 11,
+  "cabins": 2,
+  "builder": "Fairline",
+  "model_year": 2019,
+  "location": {
+   "city": "Marbella",
+   "country": "Spain"
+  },
+  "departure_port": "Puerto Ban\u00fas, Marbella",
+  "includes": {
+   "skipper": true,
+   "fuel": true,
+   "drinks": false
+  },
+  "min_hours": 4,
+  "cancellation_policy": "strict",
+  "features": [
+   "Air conditioning",
+   "Bluetooth sound system",
+   "Swim platform & ladder",
+   "Fresh-water shower",
+   "Snorkelling gear",
+   "Cooler & ice",
+   "Sun pads",
+   "Beach towels",
+   "Paddleboard (SUP)",
+   "Bimini / shade",
+   "Retractable sunroof"
+  ],
+  "images": [
+   "https://xluprzxpuoryiwvxhfgw.supabase.co/storage/v1/object/public/boat-images/fairline-targa-43/1.jpg?v=real",
+   "https://xluprzxpuoryiwvxhfgw.supabase.co/storage/v1/object/public/boat-images/fairline-targa-43/2.jpg?v=real",
+   "https://xluprzxpuoryiwvxhfgw.supabase.co/storage/v1/object/public/boat-images/fairline-targa-43/3.jpg?v=real",
+   "https://xluprzxpuoryiwvxhfgw.supabase.co/storage/v1/object/public/boat-images/fairline-targa-43/4.jpg?v=real",
+   "https://xluprzxpuoryiwvxhfgw.supabase.co/storage/v1/object/public/boat-images/fairline-targa-43/5.jpg?v=real"
+  ],
+  "pricing": [
+   {
+    "duration_hours": 4,
+    "price": 1400,
+    "currency": "EUR"
+   },
+   {
+    "duration_hours": 6,
+    "price": 1850,
+    "currency": "EUR"
+   },
+   {
+    "duration_hours": 8,
+    "price": 2350,
+    "currency": "EUR"
+   }
+  ],
+  "url": "https://boathire24.com/boats/fairline-targa-43"
+ },
+ {
+  "id": "98077982-157e-45a8-a5f6-9cf11415cca7",
+  "name": "Sea-Doo GTX Jet Ski",
+  "tagline": "Sea-Doo GTX & GTI jet skis \u2014 self-drive from Puerto Ban\u00fas, no licence needed",
+  "description": "Sea-Doo GTX and GTI jet skis for rent in Marbella, launching from Puerto Ban\u00fas. Self-drive the Marbella coast on powerful 3-seater Sea-Doos \u2014 life jackets and a safety briefing included. No licence required under Spanish licence-free rules. \u20ac250 for 1 hour, \u20ac450 for 2 hours, then \u20ac200 each additional hour.",
+  "type": "jet_ski",
+  "length_m": 3.4,
+  "capacity": 3,
+  "cabins": null,
+  "builder": "Sea-Doo (BRP)",
+  "model_year": 2023,
+  "location": {
+   "city": "Marbella",
+   "country": "Spain"
+  },
+  "departure_port": "Puerto Ban\u00fas",
+  "includes": {
+   "skipper": false,
+   "fuel": true,
+   "drinks": false
+  },
+  "min_hours": 1,
+  "cancellation_policy": "strict",
+  "features": [],
+  "images": [
+   "https://xluprzxpuoryiwvxhfgw.supabase.co/storage/v1/object/public/boat-images/sea-doo-gtx-jet-ski-1780425852198/j3.jpg",
+   "https://xluprzxpuoryiwvxhfgw.supabase.co/storage/v1/object/public/boat-images/sea-doo-gtx-jet-ski-1780425852198/j5.jpg",
+   "https://xluprzxpuoryiwvxhfgw.supabase.co/storage/v1/object/public/boat-images/sea-doo-gtx-jet-ski-1780425852198/j1.jpg",
+   "https://xluprzxpuoryiwvxhfgw.supabase.co/storage/v1/object/public/boat-images/sea-doo-gtx-jet-ski-1780425852198/j7.jpg"
+  ],
+  "pricing": [
+   {
+    "duration_hours": 1,
+    "price": 250,
+    "currency": "EUR"
+   },
+   {
+    "duration_hours": 2,
+    "price": 450,
+    "currency": "EUR"
+   },
+   {
+    "duration_hours": 3,
+    "price": 650,
+    "currency": "EUR"
+   },
+   {
+    "duration_hours": 4,
+    "price": 850,
+    "currency": "EUR"
+   }
+  ],
+  "url": "https://boathire24.com/boats/sea-doo-gtx-jet-ski-1780425852198"
+ }
+]

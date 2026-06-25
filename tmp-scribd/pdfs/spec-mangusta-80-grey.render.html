@@ -1,0 +1,524 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<title>Mangusta 80: Grey Hull</title>
+<style>
+:root {
+  --navy:      #0e2438;
+  --navy-deep: #08182a;
+  --gold:      #b9924b;
+  --gold-dark: #8a6c33;
+  --gold-light:#d4b06a;
+  --gold-pale: #e8d8af;
+  --ivory:     #f7f2e6;
+  --paper:     #fdfbf5;
+  --ink:       #22303e;
+  --muted:     #5d6a76;
+  --hairline:  #d9cdaf;
+  --row-tint:  #f5efdf;
+}
+* { -webkit-print-color-adjust: exact; print-color-adjust: exact;
+    box-sizing: border-box; }
+@page { size: A4; margin: 0; }
+html, body { margin: 0; padding: 0; }
+body {
+  background: var(--paper);
+  color: var(--ink);
+  font-family: Georgia, 'Palatino Linotype', Palatino, 'Times New Roman', serif;
+  font-size: 10.5pt;
+  line-height: 1.62;
+}
+.display { font-family: Didot, 'Didot LT STD', 'Playfair Display', Georgia,
+           'Times New Roman', serif; }
+.caps { font-family: Optima, 'Avenir Next', 'Gill Sans', 'Trebuchet MS',
+        sans-serif; text-transform: uppercase; }
+
+/* ---------------- Cover ---------------- */
+.cover {
+  position: relative;
+  width: 210mm; height: 297mm;
+  overflow: hidden;
+  background: var(--navy-deep);
+  page-break-after: always;
+}
+.cover-img {
+  position: absolute; inset: 0;
+  width: 100%; height: 100%;
+  object-fit: cover;
+  object-position: 24% center;  /* centres the yacht's full profile in the A4 crop */
+}
+.cover-veil {
+  position: absolute; inset: 0;
+  background:
+    linear-gradient(to top, rgba(11,26,46,0.92),
+                    rgba(11,26,46,0.86) 30%, transparent 55%),
+    linear-gradient(180deg,
+      rgba(8,24,42,0.62) 0%,
+      rgba(8,24,42,0.20) 26%,
+      rgba(8,24,42,0.12) 50%,
+      rgba(8,24,42,0.00) 62%);
+}
+.cover-veil.no-img {
+  background:
+    radial-gradient(120mm 90mm at 50% 26%, rgba(185,146,75,0.20), transparent 70%),
+    linear-gradient(180deg, #122c46 0%, #0a1d33 55%, #071426 100%);
+}
+.cover-top {
+  position: absolute; top: 13mm; left: 16mm; right: 16mm;
+  display: flex; align-items: center; justify-content: space-between;
+}
+.brand-lockup { display: flex; align-items: center; gap: 4.5mm; }
+.logo-chip {
+  background: #ffffff;
+  border: 1px solid var(--gold);
+  border-radius: 1.2mm;
+  padding: 2mm;
+  line-height: 0;
+}
+.logo-chip img { display: block; height: 13mm; width: 13mm;
+                 object-fit: cover; border-radius: 0.7mm; }
+.brand-name {
+  color: var(--ivory); font-size: 13pt; letter-spacing: 0.30em;
+  line-height: 1.25;
+}
+.brand-tag {
+  color: var(--gold-pale); font-size: 6.4pt; letter-spacing: 0.26em;
+  margin-top: 1mm;
+}
+.doc-type-flag {
+  text-align: right;
+  color: var(--gold-light);
+  font-size: 7.5pt; letter-spacing: 0.34em;
+  border-top: 0.7pt solid var(--gold);
+  border-bottom: 0.7pt solid var(--gold);
+  padding: 2.2mm 0 2mm 0;
+}
+.cover-main {
+  position: absolute; left: 16mm; right: 16mm; bottom: 34mm;
+}
+.cover-rule {
+  display: flex; align-items: center; gap: 4mm;
+  margin-bottom: 5mm;
+}
+.cover-rule .line { flex: 0 0 22mm; height: 0; border-top: 0.8pt solid var(--gold); }
+.cover-rule .word {
+  color: var(--gold-light); font-size: 8pt; letter-spacing: 0.42em;
+  white-space: nowrap;
+  text-shadow: 0 1px 5px rgba(5,14,26,0.65);
+}
+.cover-title {
+  color: #fdfaf2;
+  font-size: 44pt; line-height: 1.05;
+  font-weight: 600;
+  margin: 0 0 4mm 0;
+  text-shadow: 0 1px 8px rgba(5,14,26,0.55);
+}
+.cover-subtitle {
+  color: var(--gold-pale);
+  font-style: italic;
+  font-size: 13pt; line-height: 1.45;
+  margin: 0 0 7mm 0;
+  max-width: 150mm;
+  text-shadow: 0 1px 6px rgba(5,14,26,0.6);
+}
+.cover-meta {
+  color: rgba(247,242,230,0.92);
+  font-size: 7.6pt; letter-spacing: 0.22em;
+}
+.cover-meta .dot { color: var(--gold-light); padding: 0 2.2mm; }
+.fleet-strip {
+  margin-top: 8mm;
+  display: flex; align-items: center; gap: 4mm;
+}
+.fleet-strip .logo-chip img { height: 9mm; width: auto; }
+.fleet-label {
+  color: rgba(247,242,230,0.85); font-size: 6.6pt; letter-spacing: 0.30em;
+}
+
+/* ------------- Repeating footer ------------- */
+.runfoot {
+  position: fixed; left: 0; right: 0; bottom: 0;
+  height: 12mm;
+  background: var(--ivory);
+  border-top: 1pt solid var(--gold);
+  display: flex; align-items: center; justify-content: space-between;
+  padding: 0 16mm;
+  font-size: 6.8pt; letter-spacing: 0.12em;
+  color: var(--navy);
+}
+.runfoot b { letter-spacing: 0.22em; font-weight: 600; }
+.runfoot .gold { color: var(--gold-dark); }
+.runfoot a { color: var(--navy); text-decoration: none; }
+
+/* ------------- Paged content scaffold ------------- */
+table.paged { width: 100%; border-collapse: collapse; }
+table.paged > thead td { height: 15mm; padding: 0; }
+table.paged > tfoot td { height: 17mm; padding: 0; }
+table.paged > tbody > tr > td { padding: 0 18mm; }
+
+/* ------------- Sections ------------- */
+.sec { margin: 0 0 8mm 0; }
+.sec-head {
+  break-after: avoid-page; page-break-after: avoid;
+  break-inside: avoid; page-break-inside: avoid;
+  margin: 0 0 4.5mm 0;
+}
+.sec-kicker {
+  color: var(--gold-dark); font-size: 7pt; letter-spacing: 0.38em;
+  margin-bottom: 1.6mm;
+}
+.sec-head h2 {
+  color: var(--navy);
+  font-size: 18.5pt; font-weight: 400; line-height: 1.2;
+  margin: 0 0 2.6mm 0;
+}
+.sec-head .rules { position: relative; height: 2.4mm; }
+.sec-head .rules .thin {
+  position: absolute; left: 0; right: 0; top: 1mm;
+  border-top: 0.6pt solid var(--hairline);
+}
+.sec-head .rules .thick {
+  position: absolute; left: 0; top: 0; width: 26mm;
+  border-top: 2.2pt solid var(--gold);
+}
+.sec-body p { margin: 0 0 3.4mm 0; }
+.sec-body p:last-child { margin-bottom: 0; }
+.sec-body ol { margin: 0 0 3.4mm 0; padding-left: 5.5mm; }
+.sec-body ul { margin: 0 0 3.4mm 0; padding-left: 1mm; }
+.sec-body li { margin-bottom: 1.6mm; break-inside: avoid; page-break-inside: avoid;
+               -webkit-column-break-inside: avoid; }
+.sec-body ul.cols2 { columns: 2; column-gap: 9mm;
+                     break-inside: avoid; page-break-inside: avoid; }
+.sec-body ul > li {
+  list-style: none;
+  padding-left: 1.1em; text-indent: -1.1em;  /* hanging indent: wraps align under text */
+}
+.sec-body ul > li::before {
+  content: "\2726";            /* four-pointed star, brass compass point */
+  display: inline-block; width: 1.44em; text-indent: 0;
+  color: var(--gold); font-size: 8pt;       /* 1.44em @8pt == 1.1em @10.5pt */
+}
+.sec-body a { color: var(--navy); text-decoration: none;
+              border-bottom: 0.6pt solid var(--gold); }
+.sec-body strong { color: var(--navy); }
+
+/* generic tables inside section html */
+.sec-body table {
+  width: 100%; border-collapse: collapse;
+  margin: 1mm 0 4mm 0;
+  break-inside: avoid; page-break-inside: avoid;
+  font-size: 9.8pt;
+}
+.sec-body th {
+  background: var(--navy); color: var(--ivory);
+  font-family: Optima, 'Avenir Next', 'Gill Sans', 'Trebuchet MS', sans-serif;
+  text-transform: uppercase; letter-spacing: 0.16em;
+  font-size: 7.4pt; font-weight: 500;
+  text-align: left; padding: 2.6mm 3.5mm;
+  border-bottom: 1.4pt solid var(--gold);
+}
+.sec-body td {
+  padding: 2.2mm 3.5mm;
+  border-bottom: 0.6pt solid var(--hairline);
+  color: var(--ink);
+}
+.sec-body td, .sec-body th { font-variant-numeric: tabular-nums; }
+.sec-body td:not(:first-child),
+.sec-body th:not(:first-child) { text-align: right; }
+.sec-body tr:nth-child(even) td { background: var(--row-tint); }
+.sec-body td:first-child { color: var(--navy); }
+.sec-body tr.best td { background: rgba(212,175,55,0.12); }
+.sec-body tr.best td:first-child { color: var(--navy); font-weight: 600; }
+.best-tag {
+  display: inline-block;
+  font-family: Optima, 'Avenir Next', 'Gill Sans', 'Trebuchet MS', sans-serif;
+  font-variant-caps: small-caps; text-transform: lowercase;
+  font-size: 7.6pt; font-weight: 600; letter-spacing: 0.14em;
+  color: var(--gold-dark);
+  border: 0.6pt solid var(--gold);
+  border-radius: 1mm;
+  padding: 0.2mm 1.6mm;
+  margin-left: 2.2mm;
+  white-space: nowrap;
+  vertical-align: 0.2mm;
+}
+
+/* ------------- Figures ------------- */
+figure.plate {
+  break-inside: avoid; page-break-inside: avoid;
+  margin: 5mm 0 2mm 0;
+  background: #ffffff;
+  border: 0.7pt solid var(--gold-light);
+  padding: 2.6mm;
+}
+figure.plate img {
+  display: block; width: 100%; height: 78mm; object-fit: cover;
+}
+figure.plate figcaption {
+  text-align: center;
+  font-style: italic;
+  font-size: 8.4pt; color: var(--muted);
+  padding: 2.4mm 2mm 0.6mm 2mm;
+}
+figure.plate figcaption::before {
+  content: "\25C6\00a0"; color: var(--gold); font-size: 6pt;
+}
+
+/* ------------- Spec table (2-column grid: two lbl/val pairs per row) ------------- */
+.spec-block { margin: 0 0 8mm 0; }
+table.spec {
+  width: 100%; border-collapse: collapse;
+  border-top: 1.6pt solid var(--navy);
+  border-bottom: 1.6pt solid var(--navy);
+}
+table.spec td { padding: 1.7mm 1.5mm; border-bottom: 0.6pt solid var(--hairline);
+                vertical-align: top; }
+table.spec tr:last-child td { border-bottom: none; }
+table.spec td.lbl {
+  width: 21%;
+  font-family: Optima, 'Avenir Next', 'Gill Sans', 'Trebuchet MS', sans-serif;
+  text-transform: uppercase; letter-spacing: 0.16em;
+  font-size: 7.2pt; color: var(--gold-dark);
+  padding-top: 2.3mm;
+}
+table.spec td.val { width: 29%; color: var(--navy); font-size: 9.8pt; }
+table.spec td.lbl:nth-child(3) {
+  border-left: 0.6pt solid var(--hairline);
+  padding-left: 4mm;
+}
+table.spec td.val:nth-child(2) { padding-right: 4mm; }
+
+/* ------------- Callout ------------- */
+.callout {
+  break-inside: avoid; page-break-inside: avoid;
+  margin: 8mm 0 4mm 0;
+  background: var(--navy);
+  border: 1pt solid var(--gold);
+  outline: 0.6pt solid var(--gold);
+  outline-offset: -2.2mm;
+  color: var(--ivory);
+  padding: 8mm 9mm 7mm 9mm;
+}
+.callout h3 {
+  color: var(--gold-light);
+  font-size: 15pt; font-weight: 400;
+  margin: 0 0 3mm 0;
+}
+.callout p { margin: 0 0 2.8mm 0; line-height: 1.6; color: #efe7d3; }
+.callout a { color: var(--gold-light); text-decoration: none; }
+.callout ul { margin: 0 0 2.8mm 0; padding-left: 1mm; }
+.callout ul > li { list-style: none; margin-bottom: 1.4mm;
+                   padding-left: 1.1em; text-indent: -1.1em;
+                   break-inside: avoid; page-break-inside: avoid; }
+.callout ul > li::before {
+  content: "\2726"; display: inline-block; width: 1.44em; text-indent: 0;
+  color: var(--gold-light); font-size: 8pt;
+}
+.callout .linksrow {
+  margin-top: 4.5mm; padding-top: 3.6mm;
+  border-top: 0.6pt solid rgba(212,176,106,0.55);
+  font-size: 7.6pt; letter-spacing: 0.16em;
+  color: var(--gold-pale);
+}
+.callout .linksrow span.sep { padding: 0 2.6mm; color: var(--gold); }
+
+.endmark {
+  display: flex; align-items: center; justify-content: center; gap: 3.5mm;
+  margin: 7mm 0 0 0;
+}
+.endmark .line { width: 14mm; height: 0; border-top: 0.6pt solid var(--gold); }
+.endmark svg { display: block; }
+</style>
+</head>
+<body>
+
+<div class="cover">
+  <img class="cover-img" src="file:///Users/master/boat-rental-marbella/site/img/boats/mangusta-80-grey/hero-1200.jpg" alt="">
+  <div class="cover-veil"></div>
+  <div class="cover-top">
+    <div class="brand-lockup">
+      <span class="logo-chip"><img src="file:///Users/master/boat-rental-platform/public/brand-logo.jpg" alt="BoatHire24"></span>
+      <div>
+        <div class="brand-name caps display">BoatHire24</div>
+        <div class="brand-tag caps">Rent boats worldwide <span class="gold">|</span> list your boat free</div>
+      </div>
+    </div>
+    <div class="doc-type-flag caps">June 2026</div>
+  </div>
+  <div class="cover-main">
+    <div class="cover-rule">
+      <span class="line"></span>
+      <span class="word caps">Vessel Specification</span>
+    </div>
+    <h1 class="cover-title display">Mangusta 80: Grey Hull</h1>
+    <p class="cover-subtitle display">A 24 metre Overmarine sport yacht, the second Mangusta in the Marbella fleet, with a Sea-Doo jet ski waiting on the swim platform and a captain and deckhand on every charter from Puerto Banús.</p>
+    <div class="cover-meta caps">BoatHire24 × Boat Rental In Marbella</div>
+    <div class="fleet-strip"><span class="fleet-label caps">From the fleet of</span><span class="logo-chip"><img src="file:///Users/master/boat-rental-marbella/site/img/logo-640.png" alt="Boat Rental In Marbella"></span></div>
+  </div>
+</div>
+<table class="paged">
+  <thead><tr><td></td></tr></thead>
+  <tbody><tr><td>
+
+<div class="spec-block sec">
+  <div class="sec-head">
+    <div class="sec-kicker caps">Particulars</div>
+    <h2 class="display">Principal Particulars</h2>
+    <div class="rules"><span class="thick"></span><span class="thin"></span></div>
+  </div>
+  <table class="spec"><tr><td class="lbl">Vessel</td><td class="val">Mangusta 80 (Grey hull)</td><td class="lbl">Builder</td><td class="val">Overmarine, Mangusta line, Italy</td></tr>
+<tr><td class="lbl">Type</td><td class="val">Luxury open sport yacht</td><td class="lbl">Length overall</td><td class="val">24 m (80 ft)</td></tr>
+<tr><td class="lbl">Guest capacity</td><td class="val">12 guests for day charter</td><td class="lbl">Cabins</td><td class="val">Three cabins below deck</td></tr>
+<tr><td class="lbl">Crew</td><td class="val">Captain and deckhand, included</td><td class="lbl">Water toy</td><td class="val">Sea-Doo jet ski, included</td></tr>
+<tr><td class="lbl">Home port</td><td class="val">Puerto Banús, Marbella</td><td class="lbl">Model year</td><td class="val">Not specified</td></tr>
+<tr><td class="lbl">Minimum charter</td><td class="val">On request</td><td class="lbl">Rate band</td><td class="val">Quote on WhatsApp via the website</td></tr></table>
+</div>
+
+<div class="sec">
+  <div class="sec-head">
+    <div class="sec-kicker caps">Section 01</div>
+    <h2 class="display">Overview: The Grey-Hull Mangusta</h2>
+    <div class="rules"><span class="thick"></span><span class="thin"></span></div>
+  </div>
+  <div class="sec-body"><p>The <strong>Mangusta 80 (Grey)</strong> is the second 24 metre Mangusta in our Marbella fleet, a sister to the original boat known on the dock as <em>Nina</em>. Where the first carries the classic white profile, this one wears a distinctive grey hull that sets it apart on the water and at the berth. It is the same Overmarine pedigree, the same flagship scale, and the same open-style sport-yacht silhouette that made the Mangusta name famous around the Mediterranean.</p><p>At 24 metres, or 80 feet, this is firmly in superyacht territory by the standards of a day charter on the Costa del Sol. She carries up to <strong>twelve guests</strong> for the day in genuine comfort, with three cabins below deck, a captain and deckhand on board, and a Sea-Doo jet ski sitting ready on the aft swim platform. For a group that wants to charter something with real presence, without stepping up to a full multi-day yacht programme, the grey Mangusta hits a rare sweet spot.</p><p>What makes her stand out in the fleet is not just the size. It is the combination of a recognisable Italian marque, a hull colour that photographs beautifully against the deep blue of the Marbella coast, and an on-board jet ski that turns a swim stop into something the whole group remembers. She departs from <strong>Puerto Banús</strong>, the most prestigious marina on this stretch of coast, and pricing is quoted directly on WhatsApp through the website so that every charter is matched to its length, date and group.</p></div>
+  <figure class="plate"><img src="file:///Users/master/boat-rental-marbella/site/img/boats/mangusta-80-grey/hero-1600.jpg" alt=""><figcaption>The grey-hull Mangusta 80, the second 24 metre Mangusta in the Marbella fleet</figcaption></figure>
+</div>
+
+<div class="sec">
+  <div class="sec-head">
+    <div class="sec-kicker caps">Section 02</div>
+    <h2 class="display">The Builder: Overmarine and the Mangusta Marque</h2>
+    <div class="rules"><span class="thick"></span><span class="thin"></span></div>
+  </div>
+  <div class="sec-body"><p>The Mangusta name belongs to <strong>Overmarine</strong>, an Italian shipyard founded by the Balducci family that has built large, fast, open-style yachts in Italy for decades. Mangusta is not a single model so much as a marque, a whole line of yachts that the yard launched to define a particular idea: the maxi open. The concept paired the long, low, aggressive profile of a sport boat with the volume and luxury of a much larger motor yacht, and it found an audience almost immediately among owners who wanted speed and style in equal measure.</p><p>Overmarine built its reputation on a few things that the grey hull in our fleet shares. The first is the open superstructure, a flowing deck-house that keeps the sheer line low and unbroken rather than stacking a tall flybridge on top. The second is a serious turn of speed, historically delivered through water-jet propulsion that let these yachts cruise far faster than the displacement and semi-displacement boats they sat alongside in the marina. The third is Italian fit-out, the leather, the lacquer and the joinery that you expect from a yard operating at this level.</p><p>Over the years the Mangusta line has spanned a wide range of sizes, from yachts in the 70 and 80 foot bracket up to genuine 50 metre-plus superyachts, and the marque became a familiar sight in the glamour ports of the Mediterranean, from the Côte d'Azur to the Balearics. A Mangusta at the dock is instantly readable, and that recognition is part of what you are chartering. When the grey hull idles out of Puerto Banús, people on the quay know exactly what they are looking at.</p></div>
+  <figure class="plate"><img src="file:///Users/master/boat-rental-marbella/site/img/boats/mangusta-80/profile-1200.jpg" alt=""><figcaption>The unmistakable Overmarine sport-yacht silhouette, shared across the Mangusta 80 line</figcaption></figure>
+</div>
+
+<div class="sec">
+  <div class="sec-head">
+    <div class="sec-kicker caps">Section 03</div>
+    <h2 class="display">The Model and the Design</h2>
+    <div class="rules"><span class="thick"></span><span class="thin"></span></div>
+  </div>
+  <div class="sec-body"><p>The 80 foot Mangusta sits in the sweet spot of the range. It is large enough to deliver the full open-yacht experience, with a wide saloon, proper cabins and a generous aft deck, yet compact enough to remain agile and manageable for day work along a single coastline. The class is known for a low, planted stance on the water, a long foredeck that lends itself to a full-beam sun pad, and an aft cockpit that flows down to a broad swim platform at the waterline.</p><p>The defining feature of the type is the way it blurs the line between sport boat and motor yacht. From the helm it feels like a much smaller, sportier vessel. From the deck it feels like a superyacht. That duality is exactly what makes it such a good charter platform. Guests get the wow of stepping aboard something genuinely large, while the boat still has the manners to nip from anchorage to anchorage without it feeling like a slow procession.</p><p>The open layout also means the social spaces are connected. On a tall flybridge yacht the group tends to fragment between decks. On an open Mangusta the saloon, the cockpit and the foredeck sun pad all sit close together, so a party of twelve stays together rather than splitting up. For a celebration or a family day, that connectedness matters more than most people expect when they first step aboard.</p></div>
+  
+</div>
+
+<div class="sec">
+  <div class="sec-head">
+    <div class="sec-kicker caps">Section 04</div>
+    <h2 class="display">Speed, Sea-Keeping and the Feel Underway</h2>
+    <div class="rules"><span class="thick"></span><span class="thin"></span></div>
+  </div>
+  <div class="sec-body"><p>One of the quiet pleasures of an open Mangusta is how it behaves underway. The whole point of the maxi-open concept was to give a yacht of this volume the manners of a sport boat, and that character carries through to the way the grey hull crosses the water. Where a tall, heavy flybridge cruiser tends to wallow and lumber, the long, low Mangusta hull settles onto its lines and tracks cleanly, so the run between anchorages feels purposeful rather than ponderous.</p><p>That matters more than it sounds for a day on the Costa del Sol. The local coast can pick up a short, choppy sea in the afternoon when the breeze fills in, and a hull with a fine entry and a planing attitude handles that far better than a slab-sided boat. Guests feel it as a smoother, drier ride, and the captain feels it as a yacht that responds rather than fights. The low centre of gravity of the open layout also keeps the motion gentle, which is part of why this type suits a mixed group that includes people who are not natural sailors.</p><p>At anchor, the same hull form pays off again. The broad beam carried well aft gives the boat a stable, planted feel when she is sitting still and loaded with guests moving between the swim platform, the cockpit and the foredeck. Nobody is lurching about as people climb in and out of the water. It is the kind of detail you never think about when it works, and the whole reason a flagship-scale yacht feels so relaxed to spend a long day on.</p></div>
+  <figure class="plate"><img src="file:///Users/master/boat-rental-marbella/site/img/boats/mangusta-80/aerial-wake-1200.jpg" alt=""><figcaption>The 24 metre Mangusta hull underway, wake spreading cleanly behind the open sport-yacht form</figcaption></figure>
+</div>
+
+<div class="sec">
+  <div class="sec-head">
+    <div class="sec-kicker caps">Section 05</div>
+    <h2 class="display">On Board: Layout, Saloon, Deck and Cabins</h2>
+    <div class="rules"><span class="thick"></span><span class="thin"></span></div>
+  </div>
+  <div class="sec-body"><p>Step aboard the grey Mangusta and the spaces unfold in the order you use them through the day. At the stern, the broad swim platform is the heart of the boat at anchor. It is where you board, where the Sea-Doo jet ski lives, and where guests slip in and out of the water all afternoon.</p><ul><li><strong>Swim platform and water toy:</strong> the Sea-Doo jet ski is included and free for guests to use throughout the charter, launched straight off the aft platform.</li><li><strong>Aft cockpit:</strong> the main social deck, shaded and set up for lounging, drinks and a casual lunch within easy reach of the water.</li><li><strong>Full-beam sun pad:</strong> the long foredeck carries a generous sun pad that runs the width of the boat, the prime spot for sunbathing at anchor.</li><li><strong>Air-conditioned saloon:</strong> step inside to leather seating and a cool, calm interior for the hottest part of the day or a quieter moment out of the sun.</li><li><strong>Three cabins below:</strong> the grey hull has three cabins below deck, the kind of accommodation that makes longer and overnight charters possible when quoted accordingly.</li></ul><p>The flow from water to cockpit to foredeck is what makes a day on this boat feel effortless. Nobody has to negotiate steep companionways to get from a swim to a sunbathe, and the crew can keep drinks moving without anyone having to leave their spot.</p></div>
+  <figure class="plate"><img src="file:///Users/master/boat-rental-marbella/site/img/boats/mangusta-80/saloon-1200.jpg" alt=""><figcaption>The air-conditioned main-deck saloon, finished in leather, on the Mangusta 80 line</figcaption></figure>
+</div>
+
+<div class="sec">
+  <div class="sec-head">
+    <div class="sec-kicker caps">Section 06</div>
+    <h2 class="display">A Day Aboard from Puerto Banús</h2>
+    <div class="rules"><span class="thick"></span><span class="thin"></span></div>
+  </div>
+  <div class="sec-body"><p>Here is how a typical day charter unfolds. You arrive at the berth in Puerto Banús a little before your departure time, where the captain and deckhand meet you at the passerelle for a short welcome and safety briefing. Boarding is straightforward from the pontoon, bags go below, and within a few minutes the lines are slipped and the grey hull eases out past the breakwater.</p><p>The first leg is usually a gentle cruise along the coast while the group settles in, finds their spots on the sun pad and in the cockpit, and the first drinks come out. Marbella opens up to port, with the unmistakable bulk of La Concha mountain rising behind the town and the villas of the Golden Mile lining the shore.</p><p>Mid-morning to early afternoon is anchor time. The captain finds a calm spot in the lee of the coast, the swim ladder goes down, and the Sea-Doo comes off the platform. This is the centrepiece of the day, taking turns on the jet ski, swimming off the back of the boat, and laying out lunch in the cockpit. There is no rush. A shorter charter still gives you a proper swim stop, while a longer booking lets you move between two or three anchorages and stretch the afternoon out.</p><p>As the day winds down, the boat cruises back toward Puerto Banús, often timed so the light is at its best on the run home. You step ashore back at the marina with the kind of glow that only a full day on the water gives you. The crew handle everything in between, so the only decisions you make all day are which beach to anchor off and who gets the jet ski next.</p></div>
+  <figure class="plate"><img src="file:///Users/master/boat-rental-marbella/site/img/boats/mangusta-80/sun-pad-1200.jpg" alt=""><figcaption>The full-beam foredeck sun pad, the prime spot at anchor on the Mangusta 80</figcaption></figure>
+</div>
+
+<div class="sec">
+  <div class="sec-head">
+    <div class="sec-kicker caps">Section 07</div>
+    <h2 class="display">Itineraries and Cruising Grounds</h2>
+    <div class="rules"><span class="thick"></span><span class="thin"></span></div>
+  </div>
+  <div class="sec-body"><p>From Puerto Banús the coastline opens up in both directions, and the grey Mangusta has the legs to reach the best of it comfortably within a day charter. The classic itineraries build naturally around the length of your booking.</p><ul><li><strong>The Golden Mile swim stop:</strong> the short hop east toward Marbella, anchoring off the Golden Mile where the water is calm and the backdrop of La Concha and the beachfront villas is at its most striking. Ideal for a shorter charter focused on swimming and the jet ski.</li><li><strong>Cabopino:</strong> a longer run east past Marbella toward the dunes and pine-backed beaches around Cabopino, one of the prettier stretches of natural coast on this part of the Costa del Sol. A good half-day target.</li><li><strong>Estepona:</strong> heading west, the cruise toward Estepona trades the glamour of Banús for a quieter, more relaxed shoreline, the kind of run that suits a full-day charter with a long lunch at anchor.</li><li><strong>Longer runs toward Gibraltar:</strong> with more hours on the clock, the coast continues west toward the Strait, with the Rock of Gibraltar and the open water of the Strait of Gibraltar within reach for the most ambitious full-day plans.</li></ul><p>Because the open Mangusta cruises with genuine pace, distances that would feel like a slog on a slower boat become an easy part of the day. The captain will tailor the route on the day to the weather and the sea state, always aiming for the calmest, prettiest water for your swim stops.</p></div>
+  
+</div>
+
+<div class="sec">
+  <div class="sec-head">
+    <div class="sec-kicker caps">Section 08</div>
+    <h2 class="display">Who This Boat Suits</h2>
+    <div class="rules"><span class="thick"></span><span class="thin"></span></div>
+  </div>
+  <div class="sec-body"><p>The grey Mangusta is built for groups who want scale and a sense of occasion. With capacity for <strong>twelve guests</strong> on a day charter, it is a natural fit for a particular set of bookings.</p><p><strong>Celebrations and milestone days.</strong> Birthdays, hen and stag gatherings, anniversaries and the kind of day where the boat itself is the event. A 24 metre yacht with a jet ski off the back makes a statement that smaller boats simply cannot.</p><p><strong>Families and multi-generational groups.</strong> The connected layout, the shaded cockpit, the air-conditioned saloon and the safe, broad swim platform make it comfortable for a mix of ages, from grandparents who want shade and a comfortable seat to teenagers who want the jet ski all afternoon.</p><p><strong>Friends and corporate groups.</strong> For a group of friends splitting the cost, twelve people aboard a flagship Mangusta works out as a genuinely memorable day. It also reads well as a corporate or VIP day on the water, with the presence and the service level to match a serious occasion.</p><p>If your group is smaller, the wider fleet offers boats sized accordingly, but when you want the biggest day-charter experience available from Puerto Banús with the Italian-yacht name to go with it, this is the boat.</p></div>
+  
+</div>
+
+<div class="sec">
+  <div class="sec-head">
+    <div class="sec-kicker caps">Section 09</div>
+    <h2 class="display">The Grey Hull Within the Marbella Fleet</h2>
+    <div class="rules"><span class="thick"></span><span class="thin"></span></div>
+  </div>
+  <div class="sec-body"><p>It is worth understanding where the grey Mangusta sits among the boats we run from Puerto Banús, because the fleet is built so that there is a right-sized boat for every group and occasion. At the entry end sit smaller day boats and a licence-free option for self-drive coastal pottering, then a band of twelve and a half metre motor yachts for nine to eleven guests, and a tier of larger sport and flybridge yachts above that.</p><p>The 24 metre Mangustas occupy the flagship band. There are three of them in the fleet: the original white-profile boat known as <em>Nina</em>, a white-hull variant, and this grey hull. All three share the same Overmarine pedigree, the same 80 foot length, the same twelve-guest day capacity and the same Sea-Doo jet ski on the swim platform. Choosing between them comes down to availability for your date and, for many guests, the look of the hull. The grey finish gives this boat a more understated, contemporary presence than the classic white, which is part of its appeal for groups who want the scale without the most obvious livery.</p><p>Above the Mangustas, the fleet runs to even larger Italian superyachts in the 26 to 29 metre range with full crew including a chef, for groups whose plans justify them. But for a day charter, the 24 metre Mangusta is the boat that most people picture when they imagine the biggest, most photogenic day out that Puerto Banús has to offer, and the grey hull delivers exactly that with a character all of its own.</p></div>
+  
+</div>
+
+<div class="sec">
+  <div class="sec-head">
+    <div class="sec-kicker caps">Section 10</div>
+    <h2 class="display">Pricing and Inclusions</h2>
+    <div class="rules"><span class="thick"></span><span class="thin"></span></div>
+  </div>
+  <div class="sec-body"><p>The grey-hull Mangusta is priced <strong>on request</strong>, with a competitive Marbella rate quoted directly on WhatsApp through the website. Because a 24 metre crewed charter is shaped by length, date, group size and route, a tailored quote always works out better than a fixed shelf price. Send your dates and party size and you will get a clear, all-in figure back.</p><p>Whatever the charter length, the boat comes with the same standard of crewing and the same inclusions that apply across the fleet. The headline is that the rate is a per-charter figure, not per person, and it is genuinely all-inclusive.</p><table><tr><th>Item</th><th>Status</th></tr><tr><td>Pricing</td><td>On request, quote on WhatsApp</td></tr><tr><td>Crew (captain + deckhand)</td><td>Included</td></tr><tr><td>Sea-Doo jet ski</td><td>Included</td></tr><tr><td>Fuel</td><td>Included</td></tr><tr><td>Drinks &amp; light snacks</td><td>Included</td></tr><tr><td>Insurance &amp; safety equipment</td><td>Included</td></tr><tr><td>VAT (21%)</td><td>Included</td></tr></table><p><strong>Every charter across the fleet includes:</strong></p><ul class="cols2"><li>Licensed skipper</li><li>Fuel</li><li>Drinks (water, soft drinks, beer, white wine, cava)</li><li>Light snacks</li><li>Insurance</li><li>Safety equipment</li><li>VAT (21%)</li></ul><p>On the grey Mangusta specifically, the captain and deckhand crew and the Sea-Doo jet ski are part of the package, so the price you are quoted is the price you pay for a fully crewed flagship day on the water.</p></div>
+  <figure class="plate"><img src="file:///Users/master/boat-rental-marbella/site/img/boats/mangusta-80/galley-1200.jpg" alt=""><figcaption>The on-board galley on the Mangusta 80 line, set up for catered days at sea</figcaption></figure>
+</div>
+
+<div class="sec">
+  <div class="sec-head">
+    <div class="sec-kicker caps">Section 11</div>
+    <h2 class="display">Seasonality and Booking Practicalities</h2>
+    <div class="rules"><span class="thick"></span><span class="thin"></span></div>
+  </div>
+  <div class="sec-body"><p>The Marbella charter season runs long, but the rhythm of the year is worth understanding when you plan. The high summer months, from roughly June through September, bring the warmest water, the longest days and the liveliest scene in Puerto Banús, and they are also the busiest, so the flagship boats book up well ahead for weekends and peak dates.</p><p>The shoulder months on either side, late spring and early autumn, are quietly some of the best times to take a 24 metre yacht out. The sea is settled, the light is beautiful, the coast is less crowded, and availability is easier to secure. A warm day in May or October on the grey Mangusta, with the jet ski off the back and a long lunch at anchor, is hard to beat.</p><p>A few practicalities make the day run smoothly. Arrive at the Puerto Banús berth a little before your departure time so the briefing does not eat into your water hours. Bring swimwear, towels, plenty of sunscreen, sunglasses and a layer for the cooler run home, and wear soft-soled shoes or go barefoot on deck. Drinks and light snacks are already aboard, and for longer charters you are welcome to bring your own food. Because pricing and availability are handled directly on WhatsApp, the fastest way to lock in a date is simply to message with your preferred day and group size, and the team will confirm the boat and send your tailored quote.</p></div>
+  
+</div>
+
+<div class="sec">
+  <div class="sec-head">
+    <div class="sec-kicker caps">Section 12</div>
+    <h2 class="display">Frequently Asked Questions</h2>
+    <div class="rules"><span class="thick"></span><span class="thin"></span></div>
+  </div>
+  <div class="sec-body"><p><strong>How big is the boat and how many guests can it carry?</strong><br>It is a 24 metre, or 80 foot, Overmarine Mangusta sport yacht, and it carries up to twelve guests for a day charter.</p><p><strong>Is the jet ski really included?</strong><br>Yes. A Sea-Doo jet ski is part of the charter and free for guests to use throughout the day, launched off the aft swim platform.</p><p><strong>Who crews the boat?</strong><br>The grey Mangusta runs with a captain and a deckhand, both included in the charter. You do not need any boating experience or a licence of your own.</p><p><strong>How is it different from the other Mangusta in the fleet?</strong><br>It is the second 24 metre Mangusta, sister to the original white-profile boat known as Nina. The headline difference is the distinctive grey hull. Both share the same Overmarine pedigree and flagship scale.</p><p><strong>What does the price include?</strong><br>The rate is per charter and all-inclusive: captain and deckhand, fuel, drinks, light snacks, insurance, safety equipment and VAT at twenty-one per cent. The jet ski is included too.</p><p><strong>How much does it cost and how do I get a quote?</strong><br>Pricing is on request, quoted directly on WhatsApp through the website at a competitive Marbella rate. Send your dates and group size for a tailored, all-in figure.</p><p><strong>Where does it depart from?</strong><br>From Puerto Banús, Marbella, the most prestigious marina on this stretch of the Costa del Sol.</p><p><strong>Can we do a full day or an overnight charter?</strong><br>Yes. The boat has three cabins below deck, and longer charters including full days are arranged and quoted on request via WhatsApp.</p></div>
+  
+</div>
+
+<div class="sec">
+  <div class="sec-head">
+    <div class="sec-kicker caps">Section 13</div>
+    <h2 class="display">Book the Grey Mangusta</h2>
+    <div class="rules"><span class="thick"></span><span class="thin"></span></div>
+  </div>
+  <div class="sec-body"><p>The grey-hull Mangusta 80 is the second flagship in our Marbella fleet, a 24 metre Italian sport yacht with a captain, a deckhand and a Sea-Doo jet ski on every charter, departing from Puerto Banús. It is the boat to book when you want the largest day-charter experience on the coast with a marque name to match.</p><p>To check availability and secure your date, message on WhatsApp through the website for a tailored, all-inclusive quote. Tell the team your preferred day, the length of charter you are after and how many guests are joining, and they will confirm the boat and the price.</p></div>
+  
+</div>
+
+<div class="callout">
+  <h3 class="display">Reserve the Mangusta 80 (Grey)</h3>
+  <p>Check availability and book this 24 metre Mangusta for a Marbella day charter at <strong>boatrentalinmarbella.com</strong>, where pricing is quoted directly on WhatsApp and every charter comes fully crewed with the jet ski included.</p><p>Boat owner? <strong>List your boat free</strong> on BoatHire24 and reach renters worldwide, with no subscription and no listing fee.</p>
+  <div class="linksrow caps"><a href="https://boathire24.com">https://boathire24.com</a><span class="sep">&#9670;</span><a href="https://boatrentalinmarbella.com/boats/mangusta-80-grey/">https://boatrentalinmarbella.com/boats/mangusta-80-grey/</a></div>
+</div>
+<div class="endmark"><span class="line"></span><svg width="14" height="14" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg" aria-hidden="true"><path fill="#b9924b" d="M17 15l1.55 1.55c-.96 1.69-3.33 3.04-5.55 3.37V11h3V9h-3V7.82C14.16 7.4 15 6.3 15 5c0-1.65-1.35-3-3-3S9 3.35 9 5c0 1.3.84 2.4 2 2.82V9H8v2h3v8.92c-2.22-.33-4.59-1.68-5.55-3.37L7 15l-4-3v3c0 3.88 4.92 7 9 7s9-3.12 9-7v-3l-4 3zM12 4c.55 0 1 .45 1 1s-.45 1-1 1-1-.45-1-1 .45-1 1-1z"/></svg><span class="line"></span></div>
+  </td></tr></tbody>
+  <tfoot><tr><td></td></tr></tfoot>
+</table>
+
+<div class="runfoot caps">
+  <span><b>boathire24.com</b> <span class="gold">&#9670;</span> rent boats worldwide
+    <span class="gold">&#9670;</span> list your boat free</span>
+  <span class="gold caps">boatrentalinmarbella.com/boats/mangusta-80-grey</span>
+</div>
+</body>
+</html>

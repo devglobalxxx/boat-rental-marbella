@@ -3,3 +3,14 @@ __pycache__/
 .DS_Store
 .env
 .indexnow_key
+config/telegraph_account.json
+config/telegraph_state.json
+config/scraper_sheet.json
+config/livejournal_account.json
+config/livejournal_state.json
+config/graph_org_state.json
+config/rentry_state.json
+config/llm_key.json
+config/backlink_topics_used.json
+config/graph_org_account.json
+config/backlink_images_used.json

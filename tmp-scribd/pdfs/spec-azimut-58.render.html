@@ -1,0 +1,494 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<title>Azimut 58 Flybridge</title>
+<style>
+:root {
+  --navy:      #0e2438;
+  --navy-deep: #08182a;
+  --gold:      #b9924b;
+  --gold-dark: #8a6c33;
+  --gold-light:#d4b06a;
+  --gold-pale: #e8d8af;
+  --ivory:     #f7f2e6;
+  --paper:     #fdfbf5;
+  --ink:       #22303e;
+  --muted:     #5d6a76;
+  --hairline:  #d9cdaf;
+  --row-tint:  #f5efdf;
+}
+* { -webkit-print-color-adjust: exact; print-color-adjust: exact;
+    box-sizing: border-box; }
+@page { size: A4; margin: 0; }
+html, body { margin: 0; padding: 0; }
+body {
+  background: var(--paper);
+  color: var(--ink);
+  font-family: Georgia, 'Palatino Linotype', Palatino, 'Times New Roman', serif;
+  font-size: 10.5pt;
+  line-height: 1.62;
+}
+.display { font-family: Didot, 'Didot LT STD', 'Playfair Display', Georgia,
+           'Times New Roman', serif; }
+.caps { font-family: Optima, 'Avenir Next', 'Gill Sans', 'Trebuchet MS',
+        sans-serif; text-transform: uppercase; }
+
+/* ---------------- Cover ---------------- */
+.cover {
+  position: relative;
+  width: 210mm; height: 297mm;
+  overflow: hidden;
+  background: var(--navy-deep);
+  page-break-after: always;
+}
+.cover-img {
+  position: absolute; inset: 0;
+  width: 100%; height: 100%;
+  object-fit: cover;
+  object-position: 24% center;  /* centres the yacht's full profile in the A4 crop */
+}
+.cover-veil {
+  position: absolute; inset: 0;
+  background:
+    linear-gradient(to top, rgba(11,26,46,0.92),
+                    rgba(11,26,46,0.86) 30%, transparent 55%),
+    linear-gradient(180deg,
+      rgba(8,24,42,0.62) 0%,
+      rgba(8,24,42,0.20) 26%,
+      rgba(8,24,42,0.12) 50%,
+      rgba(8,24,42,0.00) 62%);
+}
+.cover-veil.no-img {
+  background:
+    radial-gradient(120mm 90mm at 50% 26%, rgba(185,146,75,0.20), transparent 70%),
+    linear-gradient(180deg, #122c46 0%, #0a1d33 55%, #071426 100%);
+}
+.cover-top {
+  position: absolute; top: 13mm; left: 16mm; right: 16mm;
+  display: flex; align-items: center; justify-content: space-between;
+}
+.brand-lockup { display: flex; align-items: center; gap: 4.5mm; }
+.logo-chip {
+  background: #ffffff;
+  border: 1px solid var(--gold);
+  border-radius: 1.2mm;
+  padding: 2mm;
+  line-height: 0;
+}
+.logo-chip img { display: block; height: 13mm; width: 13mm;
+                 object-fit: cover; border-radius: 0.7mm; }
+.brand-name {
+  color: var(--ivory); font-size: 13pt; letter-spacing: 0.30em;
+  line-height: 1.25;
+}
+.brand-tag {
+  color: var(--gold-pale); font-size: 6.4pt; letter-spacing: 0.26em;
+  margin-top: 1mm;
+}
+.doc-type-flag {
+  text-align: right;
+  color: var(--gold-light);
+  font-size: 7.5pt; letter-spacing: 0.34em;
+  border-top: 0.7pt solid var(--gold);
+  border-bottom: 0.7pt solid var(--gold);
+  padding: 2.2mm 0 2mm 0;
+}
+.cover-main {
+  position: absolute; left: 16mm; right: 16mm; bottom: 34mm;
+}
+.cover-rule {
+  display: flex; align-items: center; gap: 4mm;
+  margin-bottom: 5mm;
+}
+.cover-rule .line { flex: 0 0 22mm; height: 0; border-top: 0.8pt solid var(--gold); }
+.cover-rule .word {
+  color: var(--gold-light); font-size: 8pt; letter-spacing: 0.42em;
+  white-space: nowrap;
+  text-shadow: 0 1px 5px rgba(5,14,26,0.65);
+}
+.cover-title {
+  color: #fdfaf2;
+  font-size: 44pt; line-height: 1.05;
+  font-weight: 600;
+  margin: 0 0 4mm 0;
+  text-shadow: 0 1px 8px rgba(5,14,26,0.55);
+}
+.cover-subtitle {
+  color: var(--gold-pale);
+  font-style: italic;
+  font-size: 13pt; line-height: 1.45;
+  margin: 0 0 7mm 0;
+  max-width: 150mm;
+  text-shadow: 0 1px 6px rgba(5,14,26,0.6);
+}
+.cover-meta {
+  color: rgba(247,242,230,0.92);
+  font-size: 7.6pt; letter-spacing: 0.22em;
+}
+.cover-meta .dot { color: var(--gold-light); padding: 0 2.2mm; }
+.fleet-strip {
+  margin-top: 8mm;
+  display: flex; align-items: center; gap: 4mm;
+}
+.fleet-strip .logo-chip img { height: 9mm; width: auto; }
+.fleet-label {
+  color: rgba(247,242,230,0.85); font-size: 6.6pt; letter-spacing: 0.30em;
+}
+
+/* ------------- Repeating footer ------------- */
+.runfoot {
+  position: fixed; left: 0; right: 0; bottom: 0;
+  height: 12mm;
+  background: var(--ivory);
+  border-top: 1pt solid var(--gold);
+  display: flex; align-items: center; justify-content: space-between;
+  padding: 0 16mm;
+  font-size: 6.8pt; letter-spacing: 0.12em;
+  color: var(--navy);
+}
+.runfoot b { letter-spacing: 0.22em; font-weight: 600; }
+.runfoot .gold { color: var(--gold-dark); }
+.runfoot a { color: var(--navy); text-decoration: none; }
+
+/* ------------- Paged content scaffold ------------- */
+table.paged { width: 100%; border-collapse: collapse; }
+table.paged > thead td { height: 15mm; padding: 0; }
+table.paged > tfoot td { height: 17mm; padding: 0; }
+table.paged > tbody > tr > td { padding: 0 18mm; }
+
+/* ------------- Sections ------------- */
+.sec { margin: 0 0 8mm 0; }
+.sec-head {
+  break-after: avoid-page; page-break-after: avoid;
+  break-inside: avoid; page-break-inside: avoid;
+  margin: 0 0 4.5mm 0;
+}
+.sec-kicker {
+  color: var(--gold-dark); font-size: 7pt; letter-spacing: 0.38em;
+  margin-bottom: 1.6mm;
+}
+.sec-head h2 {
+  color: var(--navy);
+  font-size: 18.5pt; font-weight: 400; line-height: 1.2;
+  margin: 0 0 2.6mm 0;
+}
+.sec-head .rules { position: relative; height: 2.4mm; }
+.sec-head .rules .thin {
+  position: absolute; left: 0; right: 0; top: 1mm;
+  border-top: 0.6pt solid var(--hairline);
+}
+.sec-head .rules .thick {
+  position: absolute; left: 0; top: 0; width: 26mm;
+  border-top: 2.2pt solid var(--gold);
+}
+.sec-body p { margin: 0 0 3.4mm 0; }
+.sec-body p:last-child { margin-bottom: 0; }
+.sec-body ol { margin: 0 0 3.4mm 0; padding-left: 5.5mm; }
+.sec-body ul { margin: 0 0 3.4mm 0; padding-left: 1mm; }
+.sec-body li { margin-bottom: 1.6mm; break-inside: avoid; page-break-inside: avoid;
+               -webkit-column-break-inside: avoid; }
+.sec-body ul.cols2 { columns: 2; column-gap: 9mm;
+                     break-inside: avoid; page-break-inside: avoid; }
+.sec-body ul > li {
+  list-style: none;
+  padding-left: 1.1em; text-indent: -1.1em;  /* hanging indent: wraps align under text */
+}
+.sec-body ul > li::before {
+  content: "\2726";            /* four-pointed star, brass compass point */
+  display: inline-block; width: 1.44em; text-indent: 0;
+  color: var(--gold); font-size: 8pt;       /* 1.44em @8pt == 1.1em @10.5pt */
+}
+.sec-body a { color: var(--navy); text-decoration: none;
+              border-bottom: 0.6pt solid var(--gold); }
+.sec-body strong { color: var(--navy); }
+
+/* generic tables inside section html */
+.sec-body table {
+  width: 100%; border-collapse: collapse;
+  margin: 1mm 0 4mm 0;
+  break-inside: avoid; page-break-inside: avoid;
+  font-size: 9.8pt;
+}
+.sec-body th {
+  background: var(--navy); color: var(--ivory);
+  font-family: Optima, 'Avenir Next', 'Gill Sans', 'Trebuchet MS', sans-serif;
+  text-transform: uppercase; letter-spacing: 0.16em;
+  font-size: 7.4pt; font-weight: 500;
+  text-align: left; padding: 2.6mm 3.5mm;
+  border-bottom: 1.4pt solid var(--gold);
+}
+.sec-body td {
+  padding: 2.2mm 3.5mm;
+  border-bottom: 0.6pt solid var(--hairline);
+  color: var(--ink);
+}
+.sec-body td, .sec-body th { font-variant-numeric: tabular-nums; }
+.sec-body td:not(:first-child),
+.sec-body th:not(:first-child) { text-align: right; }
+.sec-body tr:nth-child(even) td { background: var(--row-tint); }
+.sec-body td:first-child { color: var(--navy); }
+.sec-body tr.best td { background: rgba(212,175,55,0.12); }
+.sec-body tr.best td:first-child { color: var(--navy); font-weight: 600; }
+.best-tag {
+  display: inline-block;
+  font-family: Optima, 'Avenir Next', 'Gill Sans', 'Trebuchet MS', sans-serif;
+  font-variant-caps: small-caps; text-transform: lowercase;
+  font-size: 7.6pt; font-weight: 600; letter-spacing: 0.14em;
+  color: var(--gold-dark);
+  border: 0.6pt solid var(--gold);
+  border-radius: 1mm;
+  padding: 0.2mm 1.6mm;
+  margin-left: 2.2mm;
+  white-space: nowrap;
+  vertical-align: 0.2mm;
+}
+
+/* ------------- Figures ------------- */
+figure.plate {
+  break-inside: avoid; page-break-inside: avoid;
+  margin: 5mm 0 2mm 0;
+  background: #ffffff;
+  border: 0.7pt solid var(--gold-light);
+  padding: 2.6mm;
+}
+figure.plate img {
+  display: block; width: 100%; height: 78mm; object-fit: cover;
+}
+figure.plate figcaption {
+  text-align: center;
+  font-style: italic;
+  font-size: 8.4pt; color: var(--muted);
+  padding: 2.4mm 2mm 0.6mm 2mm;
+}
+figure.plate figcaption::before {
+  content: "\25C6\00a0"; color: var(--gold); font-size: 6pt;
+}
+
+/* ------------- Spec table (2-column grid: two lbl/val pairs per row) ------------- */
+.spec-block { margin: 0 0 8mm 0; }
+table.spec {
+  width: 100%; border-collapse: collapse;
+  border-top: 1.6pt solid var(--navy);
+  border-bottom: 1.6pt solid var(--navy);
+}
+table.spec td { padding: 1.7mm 1.5mm; border-bottom: 0.6pt solid var(--hairline);
+                vertical-align: top; }
+table.spec tr:last-child td { border-bottom: none; }
+table.spec td.lbl {
+  width: 21%;
+  font-family: Optima, 'Avenir Next', 'Gill Sans', 'Trebuchet MS', sans-serif;
+  text-transform: uppercase; letter-spacing: 0.16em;
+  font-size: 7.2pt; color: var(--gold-dark);
+  padding-top: 2.3mm;
+}
+table.spec td.val { width: 29%; color: var(--navy); font-size: 9.8pt; }
+table.spec td.lbl:nth-child(3) {
+  border-left: 0.6pt solid var(--hairline);
+  padding-left: 4mm;
+}
+table.spec td.val:nth-child(2) { padding-right: 4mm; }
+
+/* ------------- Callout ------------- */
+.callout {
+  break-inside: avoid; page-break-inside: avoid;
+  margin: 8mm 0 4mm 0;
+  background: var(--navy);
+  border: 1pt solid var(--gold);
+  outline: 0.6pt solid var(--gold);
+  outline-offset: -2.2mm;
+  color: var(--ivory);
+  padding: 8mm 9mm 7mm 9mm;
+}
+.callout h3 {
+  color: var(--gold-light);
+  font-size: 15pt; font-weight: 400;
+  margin: 0 0 3mm 0;
+}
+.callout p { margin: 0 0 2.8mm 0; line-height: 1.6; color: #efe7d3; }
+.callout a { color: var(--gold-light); text-decoration: none; }
+.callout ul { margin: 0 0 2.8mm 0; padding-left: 1mm; }
+.callout ul > li { list-style: none; margin-bottom: 1.4mm;
+                   padding-left: 1.1em; text-indent: -1.1em;
+                   break-inside: avoid; page-break-inside: avoid; }
+.callout ul > li::before {
+  content: "\2726"; display: inline-block; width: 1.44em; text-indent: 0;
+  color: var(--gold-light); font-size: 8pt;
+}
+.callout .linksrow {
+  margin-top: 4.5mm; padding-top: 3.6mm;
+  border-top: 0.6pt solid rgba(212,176,106,0.55);
+  font-size: 7.6pt; letter-spacing: 0.16em;
+  color: var(--gold-pale);
+}
+.callout .linksrow span.sep { padding: 0 2.6mm; color: var(--gold); }
+
+.endmark {
+  display: flex; align-items: center; justify-content: center; gap: 3.5mm;
+  margin: 7mm 0 0 0;
+}
+.endmark .line { width: 14mm; height: 0; border-top: 0.6pt solid var(--gold); }
+.endmark svg { display: block; }
+</style>
+</head>
+<body>
+
+<div class="cover">
+  <img class="cover-img" src="file:///Users/master/boat-rental-marbella/site/img/boats/azimut-58/hero-1200.jpg" alt="">
+  <div class="cover-veil"></div>
+  <div class="cover-top">
+    <div class="brand-lockup">
+      <span class="logo-chip"><img src="file:///Users/master/boat-rental-platform/public/brand-logo.jpg" alt="BoatHire24"></span>
+      <div>
+        <div class="brand-name caps display">BoatHire24</div>
+        <div class="brand-tag caps">Rent boats worldwide <span class="gold">|</span> list your boat free</div>
+      </div>
+    </div>
+    <div class="doc-type-flag caps">June 2026</div>
+  </div>
+  <div class="cover-main">
+    <div class="cover-rule">
+      <span class="line"></span>
+      <span class="word caps">Vessel Specification</span>
+    </div>
+    <h1 class="cover-title display">Azimut 58 Flybridge</h1>
+    <p class="cover-subtitle display">A 17.6 m Italian flybridge motor yacht for up to 12 guests, chartering from Puerto Banús with skipper, fuel and drinks included. An editorial dossier on one of the Marbella fleet&#x27;s most quietly capable yachts.</p>
+    <div class="cover-meta caps">BoatHire24 × Boat Rental In Marbella</div>
+    <div class="fleet-strip"><span class="fleet-label caps">From the fleet of</span><span class="logo-chip"><img src="file:///Users/master/boat-rental-marbella/site/img/logo-640.png" alt="Boat Rental In Marbella"></span></div>
+  </div>
+</div>
+<table class="paged">
+  <thead><tr><td></td></tr></thead>
+  <tbody><tr><td>
+
+<div class="spec-block sec">
+  <div class="sec-head">
+    <div class="sec-kicker caps">Particulars</div>
+    <h2 class="display">Principal Particulars</h2>
+    <div class="rules"><span class="thick"></span><span class="thin"></span></div>
+  </div>
+  <table class="spec"><tr><td class="lbl">Vessel</td><td class="val">Azimut 58 Flybridge</td><td class="lbl">Builder</td><td class="val">Azimut Yachts (Italy)</td></tr>
+<tr><td class="lbl">Type</td><td class="val">Flybridge motor yacht</td><td class="lbl">Length overall</td><td class="val">17.6 m (approx. 58 ft)</td></tr>
+<tr><td class="lbl">Guest capacity</td><td class="val">12 guests (day) · 6 overnight</td><td class="lbl">Cabins</td><td class="val">Three cabins</td></tr>
+<tr><td class="lbl">Cruising speed</td><td class="val">22–24 knots (twin diesel)</td><td class="lbl">Departure port</td><td class="val">Puerto Banús, Marbella</td></tr>
+<tr><td class="lbl">Crew</td><td class="val">Licensed skipper, included</td><td class="lbl">Minimum charter</td><td class="val">Quoted with the charter</td></tr>
+<tr><td class="lbl">Rate band</td><td class="val">On request, quoted on WhatsApp</td><td class="lbl"></td><td class="val"></td></tr></table>
+</div>
+
+<div class="sec">
+  <div class="sec-head">
+    <div class="sec-kicker caps">Section 01</div>
+    <h2 class="display">Overview: The Step-Up Yacht in the Marbella Fleet</h2>
+    <div class="rules"><span class="thick"></span><span class="thin"></span></div>
+  </div>
+  <div class="sec-body"><p>The <strong>Azimut 58 Flybridge</strong> occupies a particular place in our Marbella fleet, and it is worth being precise about it. At <strong>17.6 metres</strong> she sits above the popular 12.5 metre day boats such as the Astondoa 40 and the Azimut 39, yet below the 24 to 29 metre superyacht class of the Mangusta 80, the Maiora and the Ferretti 94. That middle ground is exactly where a great many groups want to be: a yacht with real presence and a proper upper deck, the range to cruise the full length of the Costa del Sol coastline, and three cabins for those who fancy turning a day charter into an overnight, without stepping into full crewed-superyacht territory and the budget that comes with it.</p><p>She carries up to <strong>12 guests for a day charter</strong> and sleeps <strong>six overnight</strong>, which makes her one of the most versatile hulls we offer. A group of friends celebrating a milestone, an extended family wanting space for grandparents and small children alike, a corporate party that needs both a sociable aft deck and a quiet air-conditioned saloon for a conversation: the 58 handles all of them comfortably. The defining feature is the <strong>flybridge</strong>, the raised upper deck with its own helm and a generous sun-pad, which transforms the experience of a Marbella charter. From up there the view stretches across Puerto Banús, along the Golden Mile, and on a clear day all the way to the silhouette of La Concha mountain rising behind the town.</p><p>As with every yacht in the fleet, the day is designed to be turn-up-and-go. A <strong>licensed skipper, fuel, drinks, light snacks, insurance, safety equipment and VAT</strong> are all included, so there are no hidden extras to negotiate at the pontoon. Because she is one of our larger and more in-demand hulls, the Azimut 58 is priced on request: you tell us the date, the duration and the size of your group, and we quote a competitive Marbella rate on WhatsApp through the website. That is the only number you will ever be asked to think about.</p></div>
+  <figure class="plate"><img src="file:///Users/master/boat-rental-marbella/site/img/boats/azimut-58/hero-1600.jpg" alt=""><figcaption>The Azimut 58 Flybridge: 17.6 m of Italian design for up to 12 guests, chartering from Puerto Banús</figcaption></figure>
+</div>
+
+<div class="sec">
+  <div class="sec-head">
+    <div class="sec-kicker caps">Section 02</div>
+    <h2 class="display">The Builder &amp; the Marque: Azimut Yachts</h2>
+    <div class="rules"><span class="thick"></span><span class="thin"></span></div>
+  </div>
+  <div class="sec-body"><p>To understand the 58, it helps to understand the name on her hull. <strong>Azimut Yachts</strong> is one of the most recognisable marques in the entire pleasure-boat world, and one of the reasons we are glad to have more than one Azimut in the Marbella fleet. The company was founded in Italy in 1969 by Paolo Vassallo, and within a few years it had grown from a small charter and brokerage operation into a fully fledged builder of its own motor yachts. By the late 1980s Azimut had absorbed the historic Benetti shipyard, and the combined <em>Azimut Benetti Group</em> went on to become one of the largest privately owned yacht-building groups on the planet, building everything from sub-40-foot day cruisers to megayachts well over 100 metres.</p><p>What made Azimut famous, and what you feel the moment you step aboard the 58, is a particular Italian design language. The marque has long worked with celebrated naval architects and stylists, and is closely associated with the studio of Stefano Righini for exterior lines and Achille Salvagni for several of its interiors. The result is a house style built around large areas of glass, low and confident profiles, and a sense of light and openness below decks that older motor yachts simply did not have. The signature reverse-sheer line and the broad hull windows that you see across the Azimut range are not styling for its own sake: they bring the sea closer and flood the saloon and cabins with daylight.</p><p>Azimut is also a genuinely prolific builder, which matters for a charter operator. These are not one-off custom hulls but well-developed series-production yachts, supported by a global dealer and service network, designed to be lived aboard and used hard in exactly the kind of warm-water, high-sunshine cruising that the Costa del Sol offers. The 58 is a product of that pedigree: a yacht engineered to be sociable, comfortable and reliable in Mediterranean conditions, which is precisely what you want under you on a charter day out of Puerto Banús.</p></div>
+  
+</div>
+
+<div class="sec">
+  <div class="sec-head">
+    <div class="sec-kicker caps">Section 03</div>
+    <h2 class="display">The Model &amp; the Design: What a 58-Foot Flybridge Is Made For</h2>
+    <div class="rules"><span class="thick"></span><span class="thin"></span></div>
+  </div>
+  <div class="sec-body"><p>The <strong>flybridge</strong> is the heart of this class of yacht, and it is the single feature that most sets the Azimut 58 apart from the smaller day boats in our fleet. A flybridge is a second, raised deck set above the main saloon, typically reached by a few steps up from the cockpit. On the 58 it carries a <strong>secondary helm station</strong>, so the skipper can drive from up top in fine weather with an unobstructed view over the bow, and a large <strong>sun-pad</strong> where guests can stretch out in the breeze, well clear of the busier aft deck below. On a hot Andalusian afternoon, the flybridge is where everyone gravitates.</p><p>The 58-foot size class is, in many ways, the sweet spot of the modern motor-yacht market. A yacht of this length is large enough to have a proper three-cabin layout below, a full-beam saloon at main-deck level, a real galley and a sociable cockpit, yet she is still light and powerful enough on her <strong>twin diesel engines</strong> to hold a brisk <strong>22 to 24 knot cruise</strong>. That speed is not about thrills, although the run home into the sunset is undeniably good fun. It is about range and choice: at that pace, the difference between staying close to Marbella and pushing west to Estepona or Sotogrande, or east to Cabopino and beyond, becomes a matter of a comfortable hour rather than a long slog. The whole coast opens up.</p><p>Design-wise, expect the Azimut hallmarks throughout. Large hull and superstructure windows keep the interior bright and connected to the water. The lines are low and modern rather than tall and boxy, which both looks the part in Puerto Banús and helps the yacht sit comfortably at speed. And the deck flow is arranged the way Italian builders do so well, leading you naturally from the bathing platform at the stern, up through the cockpit and saloon, and out onto the foredeck and the flybridge, so that a group of twelve never feels crowded into a single space.</p></div>
+  
+</div>
+
+<div class="sec">
+  <div class="sec-head">
+    <div class="sec-kicker caps">Section 04</div>
+    <h2 class="display">On Board: Layout, Saloon, Decks &amp; Cabins</h2>
+    <div class="rules"><span class="thick"></span><span class="thin"></span></div>
+  </div>
+  <div class="sec-body"><p>Step aboard at the stern and the journey through the yacht begins at the <strong>bathing platform and aft swim area</strong>, the social hub of any Mediterranean charter and the launch point for swimming, snorkelling and simply sitting with your feet in the water. From there a few steps lead up into the <strong>cockpit</strong>, a shaded outdoor lounge and dining space that is where most of the day actually happens: long lunches at anchor, drinks in the late afternoon, the gathering point when everyone comes back aboard from a swim.</p><p>Inside, the <strong>main-deck saloon</strong> is the air-conditioned heart of the yacht. Wrapped in the panoramic glazing that Azimut is known for, it offers a cool, comfortable retreat from the midday sun, with seating, a dining area and the calm you appreciate on a long day out. It is also the part of the yacht that makes the 58 work for occasions that are not purely about sunbathing: a relaxed business lunch, a family celebration with older guests, a place to regroup if the breeze gets up.</p><p>Below decks, the <strong>three cabins</strong> are what lift the 58 above a pure day boat. For a day charter they give you private space to change, somewhere to put bags and valuables, and proper bathrooms aboard. For those who want more, they make a genuine <strong>overnight charter for up to six guests</strong> possible, whether that is a single night at anchor in a quiet cove or a short coastal cruise over a weekend. Up top, the <strong>flybridge</strong> with its sun-pad and secondary helm gives you the high, breezy vantage point that no single-deck boat can offer. The summary of what stands out on board reads as follows:</p><ul><li>17.6 m Italian flybridge yacht with real on-deck space for twelve</li><li>Sun-pad upper deck plus a secondary helm station on the flybridge</li><li>Three cabins for overnight charter and day-charter privacy</li><li>12 guests for a day charter, sleeping six overnight</li><li>Twin diesel engines with a 22 to 24 knot cruising speed</li></ul></div>
+  
+</div>
+
+<div class="sec">
+  <div class="sec-head">
+    <div class="sec-kicker caps">Section 05</div>
+    <h2 class="display">A Day Aboard: From Puerto Banús to the Open Sea</h2>
+    <div class="rules"><span class="thick"></span><span class="thin"></span></div>
+  </div>
+  <div class="sec-body"><p>Here is how a typical day charter unfolds, so you can picture it before you book. You arrive at <strong>Puerto Banús</strong>, the most famous marina on the Costa del Sol, a place where the superyachts moored stern-to along the quay are themselves part of the spectacle. Your skipper meets you at the berth a little before your departure time for a warm welcome and a short, plain-English safety briefing. There is no paperwork drama and nothing to organise: the drinks are already chilling, the fuel is in the tanks, and the only decision left is where you would like to go.</p><p>Lines off, and the yacht idles out through the marina entrance past the line of moored hulls before the skipper opens her up into the bay. Within minutes Puerto Banús shrinks behind you and the coastline reveals itself: the long sweep of beach, the white villas of the Golden Mile, and the unmistakable peak of La Concha standing over Marbella. Many groups head first for a <strong>swim stop off the Golden Mile</strong>, where the skipper finds a calm patch of water, drops anchor, and the bathing platform becomes the centre of the day. People swim, float, climb back aboard for a drink, and the cockpit fills up for a long lunch at anchor.</p><p>From there the day is yours. Some groups stay put and make a leisurely afternoon of it, alternating swims with sunbathing on the flybridge sun-pad. Others ask the skipper to cruise on, perhaps east towards <strong>Cabopino</strong> with its dunes and pretty little marina, or west along the coast towards <strong>Estepona</strong>. The 22 to 24 knot cruise makes these moves painless. As the afternoon softens, the run back into Puerto Banús in the low golden light is, for many guests, the highlight of the whole day. By the time the lines go back on at the berth, nobody is in a hurry to step off.</p></div>
+  
+</div>
+
+<div class="sec">
+  <div class="sec-head">
+    <div class="sec-kicker caps">Section 06</div>
+    <h2 class="display">Itineraries &amp; Cruising Grounds From Puerto Banús</h2>
+    <div class="rules"><span class="thick"></span><span class="thin"></span></div>
+  </div>
+  <div class="sec-body"><p>One of the real advantages of a fast 17.6 metre yacht is that almost the whole western Costa del Sol comes within easy reach of a day charter. Puerto Banús sits roughly in the middle of a beautiful stretch of coast, with options in both directions. Here are the routes our skippers know best.</p><ul><li><strong>The Golden Mile swim stop.</strong> The classic short outing. A gentle cruise east of the marina to the calm water off Marbella's Golden Mile, anchor down, and a few hours of swimming, snorkelling and lunch with La Concha mountain as the backdrop. Ideal for a shorter charter or as the anchor point for a longer day.</li><li><strong>East to Cabopino.</strong> A longer run that takes you past Marbella town and its beaches to the dunes and the small, characterful marina at Cabopino. Lovely water for swimming along the way, and a good half-day objective with time to anchor, eat and explore.</li><li><strong>West to Estepona.</strong> The coast in the other direction, towards the lower-key resort town of Estepona, with quieter anchorages and a slightly wilder feel. A relaxed full-day cruise that trades the buzz of Banús for space and calm.</li><li><strong>The longer runs.</strong> With her speed and three cabins, the 58 is capable of more ambitious days: a push along the Sotogrande coast, or, for those planning ahead, longer passages towards Gibraltar and the Strait, where the Mediterranean meets the Atlantic and, in season, the chance of dolphins. These are best discussed when you enquire so the skipper can plan timings and fuel.</li></ul><p>Every one of these is a real place on a real coast, and your skipper will tailor the route to the conditions on the day, the wind and sea state, and what your group most wants from the time on the water. There is no fixed script: the itinerary is a conversation, not a timetable.</p></div>
+  
+</div>
+
+<div class="sec">
+  <div class="sec-head">
+    <div class="sec-kicker caps">Section 07</div>
+    <h2 class="display">Who This Boat Suits</h2>
+    <div class="rules"><span class="thick"></span><span class="thin"></span></div>
+  </div>
+  <div class="sec-body"><p>The Azimut 58 is at her best with a particular kind of group, and it is worth being honest about who that is so you book the right yacht. She is, first and foremost, a yacht for <strong>medium to large groups who want space and a bit of grandeur without going all the way to a crewed superyacht</strong>. With a day capacity of 12, she comfortably hosts a party of friends, an extended family, or a work group, and the combination of a sociable aft cockpit, a cool saloon and a breezy flybridge means different people can do different things at the same time.</p><p>She suits <strong>celebrations</strong> particularly well: birthdays, hen and stag days done with a touch of class, anniversaries, graduations, and the kind of milestone where you want the day itself to be the gift. The flybridge sun-pad and the swim platform make her a natural for a sunshine-and-cava sort of occasion. Equally, the three cabins and the air-conditioned saloon mean she works for <strong>families</strong> with a wide age range, where grandparents want shade and a comfortable seat and the children want to be in and out of the water all day.</p><p>For those thinking beyond a single day, the 58 is one of the more accessible <strong>overnight options</strong> in the fleet, sleeping six in three cabins, which opens up the possibility of a night at anchor or a short coastal mini-cruise. And because she is quick, she is a good fit for groups who want to actually <strong>go somewhere</strong>, to cover ground along the coast, rather than simply circle off the marina. If your group is small, two or four people, one of our smaller day boats may suit your budget better, and if you need full chef-and-crew superyacht service the larger hulls are the answer. But for the broad middle, the 58 is hard to beat.</p></div>
+  
+</div>
+
+<div class="sec">
+  <div class="sec-head">
+    <div class="sec-kicker caps">Section 08</div>
+    <h2 class="display">Pricing &amp; Inclusions</h2>
+    <div class="rules"><span class="thick"></span><span class="thin"></span></div>
+  </div>
+  <div class="sec-body"><p>The Azimut 58 is one of our premium hulls and is priced <strong>on request</strong> rather than from a fixed published table. There is a simple reason for this: a yacht of this size and demand is quoted to the specifics of your charter, the date, the season, the duration and the size of your group, so that you get a fair and competitive Marbella rate rather than a one-size-fits-all sticker price. You enquire through the website, and we quote on <strong>WhatsApp</strong>, usually very quickly.</p><p>What does not change is what is included. Like every yacht in the fleet, the 58 charters all-inclusive, so the price you are quoted is the price you pay, with the day's essentials already covered:</p><ul><li>Licensed skipper</li><li>Fuel</li><li>Drinks (water, soft drinks, beer, white wine, cava)</li><li>Light snacks</li><li>Insurance</li><li>Safety equipment</li><li>VAT (21%)</li></ul><p>For clarity, here is how the 58 sits relative to the rest of the fleet, so you can see the spectrum she belongs to. All figures below are drawn from our published fleet data; the 58's own rate is confirmed on enquiry.</p><table><tr><th>Yacht</th><th>Length</th><th>Guests</th><th>How priced</th></tr><tr><td>Azimut 39</td><td>12.5 m</td><td>11</td><td>From €749 / 2h</td></tr><tr><td>Azimut 58 Flybridge</td><td>17.6 m</td><td>12</td><td>On request (WhatsApp)</td></tr><tr><td>Mangusta 80</td><td>24 m</td><td>12</td><td>From €4,719 / 4h</td></tr><tr><td>Maiora 26m</td><td>26 m</td><td>12</td><td>From €9,500 / 6h</td></tr></table><p>The point of the comparison is not the numbers in isolation but the position: the 58 is the natural step up from the 12.5 metre day boats, with markedly more space, range and overnight capability, while remaining a more attainable proposition than the fully crewed superyachts above her.</p></div>
+  
+</div>
+
+<div class="sec">
+  <div class="sec-head">
+    <div class="sec-kicker caps">Section 09</div>
+    <h2 class="display">Seasonality &amp; Booking Practicalities</h2>
+    <div class="rules"><span class="thick"></span><span class="thin"></span></div>
+  </div>
+  <div class="sec-body"><p>The Costa del Sol earns its name. The charter season runs broadly from spring into autumn, and the Marbella coast enjoys some of the most reliable sunshine in Europe. <strong>July and August</strong> are the peak: the warmest sea, the longest days, the liveliest atmosphere in Puerto Banús, and, inevitably, the highest demand. If you have your heart set on a summer weekend, and especially a morning departure, it pays to enquire early, as the best slots on the larger yachts go first.</p><p>For many regular charterers the <strong>shoulder months are the secret</strong>. Late May, June and September often deliver beautiful warm days, calm mornings and water that is plenty warm enough for swimming, with a more relaxed feel on the water and easier availability. A flybridge yacht such as the 58 is wonderful in these conditions: warm sun without the fierce midsummer heat, and the upper deck a genuine pleasure rather than a sun-trap to be endured. The Mediterranean here is generally calmest in the mornings, with a sea breeze that can build through the afternoon, which is one reason morning and early-afternoon departures are so popular and why your skipper may shape the route around the day's wind.</p><p>On the practical side, departures are from <strong>Puerto Banús</strong>. Your skipper meets you at the berth around fifteen minutes before departure for the welcome and briefing, and boarding from the pontoon is straightforward. Bring swimwear, towels, sunscreen, sunglasses and a layer for the breeze; soft-soled shoes or bare feet are best on deck. Drinks and light snacks are aboard, and you are welcome to bring your own food, which many groups do for longer charters. Because the 58 is priced and confirmed on enquiry, the booking flow is simple: enquire with your date and group size, receive a quote on WhatsApp, confirm, and turn up ready for the water.</p></div>
+  
+</div>
+
+<div class="sec">
+  <div class="sec-head">
+    <div class="sec-kicker caps">Section 10</div>
+    <h2 class="display">Frequently Asked Questions</h2>
+    <div class="rules"><span class="thick"></span><span class="thin"></span></div>
+  </div>
+  <div class="sec-body"><p><strong>How many people can the Azimut 58 carry?</strong> Up to <strong>12 guests for a day charter</strong>, plus your licensed skipper. For overnight charters she sleeps <strong>six</strong> across her three cabins.</p><p><strong>How big is she, and how fast?</strong> She is <strong>17.6 metres</strong> long, an Italian-built Azimut flybridge motor yacht, and she cruises at <strong>22 to 24 knots</strong> on twin diesel engines. That is enough speed to reach the full length of the local coast comfortably within a day charter.</p><p><strong>What is included in the price?</strong> Every charter includes a <strong>licensed skipper, fuel, drinks (water, soft drinks, beer, white wine and cava), light snacks, insurance, safety equipment and VAT at 21%</strong>. It is an all-inclusive rate, so there are no surprise extras at the pontoon.</p><p><strong>Why is there no price list for this boat?</strong> The 58 is one of our premium, in-demand hulls and is quoted <strong>on request</strong> to the specifics of your date, duration and group, so you get a competitive rate rather than a fixed figure. You simply enquire through the website and we quote on WhatsApp.</p><p><strong>Where does she depart from?</strong> From <strong>Puerto Banús</strong>, the landmark marina just west of Marbella, with easy access to the Golden Mile, Cabopino, Estepona and the wider Costa del Sol.</p><p><strong>Can we do an overnight or a longer cruise?</strong> Yes. With three cabins sleeping six, the 58 is well suited to a night at anchor or a short coastal cruise. Longer runs, including towards Sotogrande and Gibraltar, are best planned when you enquire so the skipper can arrange timings and fuel.</p><p><strong>Do we need a boat licence?</strong> No. The 58 is fully crewed with a licensed skipper, so there is nothing for you to organise. You turn up and enjoy the day.</p><p><strong>What should we bring?</strong> Swimwear, towels, sunscreen, sunglasses and a light layer for the breeze. Drinks and light snacks are already aboard, and you are welcome to bring your own food, especially for longer charters.</p></div>
+  
+</div>
+
+<div class="callout">
+  <h3 class="display">Book the Azimut 58 Flybridge</h3>
+  <p>Check availability, photos and routes, and request your quote for this yacht at <a href="https://boatrentalinmarbella.com/boats/azimut-58/"><strong>boatrentalinmarbella.com</strong></a>. Tell us your date, duration and group size, and we will come straight back on WhatsApp with a competitive Marbella rate.</p><p>Boat owners: list your boat free at <a href="https://boathire24.com"><strong>boathire24.com</strong></a> and reach renters worldwide, with no subscription and no listing fee.</p>
+  <div class="linksrow caps"><a href="https://boathire24.com">https://boathire24.com</a><span class="sep">&#9670;</span><a href="https://boatrentalinmarbella.com/boats/azimut-58/">https://boatrentalinmarbella.com/boats/azimut-58/</a></div>
+</div>
+<div class="endmark"><span class="line"></span><svg width="14" height="14" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg" aria-hidden="true"><path fill="#b9924b" d="M17 15l1.55 1.55c-.96 1.69-3.33 3.04-5.55 3.37V11h3V9h-3V7.82C14.16 7.4 15 6.3 15 5c0-1.65-1.35-3-3-3S9 3.35 9 5c0 1.3.84 2.4 2 2.82V9H8v2h3v8.92c-2.22-.33-4.59-1.68-5.55-3.37L7 15l-4-3v3c0 3.88 4.92 7 9 7s9-3.12 9-7v-3l-4 3zM12 4c.55 0 1 .45 1 1s-.45 1-1 1-1-.45-1-1 .45-1 1-1z"/></svg><span class="line"></span></div>
+  </td></tr></tbody>
+  <tfoot><tr><td></td></tr></tfoot>
+</table>
+
+<div class="runfoot caps">
+  <span><b>boathire24.com</b> <span class="gold">&#9670;</span> rent boats worldwide
+    <span class="gold">&#9670;</span> list your boat free</span>
+  <span class="gold caps">boatrentalinmarbella.com/boats/azimut-58</span>
+</div>
+</body>
+</html>

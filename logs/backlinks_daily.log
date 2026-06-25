@@ -1,0 +1,836 @@
+================ backlinks drip 2026-06-20 10:20:55 ================
+graph.org pending before: 0
+--- graph.org (x20, staggered 35s) ---
+FAILED seed-graph_org-073: <urlopen error [Errno 8] nodename nor servname provided, or not known>
+
+published; 3 left in backlog
+FAILED seed-graph_org-073: <urlopen error [Errno 8] nodename nor servname provided, or not known>
+
+published; 3 left in backlog
+FAILED seed-graph_org-073: <urlopen error [Errno 8] nodename nor servname provided, or not known>
+
+published; 3 left in backlog
+FAILED seed-graph_org-073: <urlopen error [Errno 8] nodename nor servname provided, or not known>
+
+published; 3 left in backlog
+FAILED seed-graph_org-073: <urlopen error [Errno 8] nodename nor servname provided, or not known>
+
+published; 3 left in backlog
+FAILED seed-graph_org-073: <urlopen error [Errno 8] nodename nor servname provided, or not known>
+
+published; 3 left in backlog
+FAILED seed-graph_org-073: <urlopen error [Errno 8] nodename nor servname provided, or not known>
+
+published; 3 left in backlog
+FAILED seed-graph_org-073: <urlopen error [Errno 8] nodename nor servname provided, or not known>
+
+published; 3 left in backlog
+FAILED seed-graph_org-073: <urlopen error [Errno 8] nodename nor servname provided, or not known>
+
+published; 3 left in backlog
+FAILED seed-graph_org-073: <urlopen error [Errno 8] nodename nor servname provided, or not known>
+
+published; 3 left in backlog
+FAILED seed-graph_org-073: <urlopen error [Errno 8] nodename nor servname provided, or not known>
+
+published; 3 left in backlog
+FAILED seed-graph_org-073: <urlopen error [Errno 8] nodename nor servname provided, or not known>
+
+published; 3 left in backlog
+FAILED seed-graph_org-073: <urlopen error [Errno 8] nodename nor servname provided, or not known>
+
+published; 3 left in backlog
+FAILED seed-graph_org-073: <urlopen error [Errno 8] nodename nor servname provided, or not known>
+
+published; 3 left in backlog
+PUBLISHED seed-graph_org-073 -> https://graph.org/Boat-Rental-in-Cadiz-Best-Boats-and-Prices-Guide-06-21
+
+published; 2 left in backlog
+PUBLISHED seed-graph_org-074 -> https://graph.org/Boat-Rental-in-Cartagena-Costs-Seasons-and-Tips-2026-06-21
+
+published; 1 left in backlog
+PUBLISHED seed-graph_org-077 -> https://graph.org/Catamaran-Charter-Wedding-in-Marbella-Costs--Tips-2026-06-21
+
+published; 0 left in backlog
+graph.org backlog empty/all published. Add articles to content/graph_org/.
+graph.org backlog empty/all published. Add articles to content/graph_org/.
+graph.org backlog empty/all published. Add articles to content/graph_org/.
+rentry.co pending before: -3
+--- rentry.co (x20, staggered 35s) ---
+rentry backlog empty/all published. Add articles to content/rentry/.
+rentry backlog empty/all published. Add articles to content/rentry/.
+rentry backlog empty/all published. Add articles to content/rentry/.
+rentry backlog empty/all published. Add articles to content/rentry/.
+rentry backlog empty/all published. Add articles to content/rentry/.
+rentry backlog empty/all published. Add articles to content/rentry/.
+rentry backlog empty/all published. Add articles to content/rentry/.
+rentry backlog empty/all published. Add articles to content/rentry/.
+rentry backlog empty/all published. Add articles to content/rentry/.
+rentry backlog empty/all published. Add articles to content/rentry/.
+rentry backlog empty/all published. Add articles to content/rentry/.
+rentry backlog empty/all published. Add articles to content/rentry/.
+rentry backlog empty/all published. Add articles to content/rentry/.
+rentry backlog empty/all published. Add articles to content/rentry/.
+rentry backlog empty/all published. Add articles to content/rentry/.
+rentry backlog empty/all published. Add articles to content/rentry/.
+rentry backlog empty/all published. Add articles to content/rentry/.
+rentry backlog empty/all published. Add articles to content/rentry/.
+rentry backlog empty/all published. Add articles to content/rentry/.
+rentry backlog empty/all published. Add articles to content/rentry/.
+--- telegra.ph (x3, staggered 35s) ---
+PUBLISHED 003-yacht-rental-cost-guide -> https://telegra.ph/How-Much-Does-It-Cost-to-Rent-a-Yacht-A-Worldwide-Price-Guide-06-21
+
+1 published; 27 left in backlog
+PUBLISHED 004-family-boat-day -> https://telegra.ph/The-Best-Boats-to-Rent-for-a-Family-Day-on-the-Water-06-21
+
+1 published; 26 left in backlog
+PUBLISHED 005-bachelorette-boat-party -> https://telegra.ph/How-to-Rent-a-Boat-for-a-Bachelorette-or-Stag-Party-06-21
+
+1 published; 25 left in backlog
+--- LiveJournal (x3, staggered 35s) ---
+POSTED 004-rent-a-boat-thailand -> https://boathire24.livejournal.com/1036.html
+
+posted; 26 left in backlog
+POSTED 005-rent-a-boat-mexico -> https://boathire24.livejournal.com/1410.html
+
+posted; 25 left in backlog
+POSTED 006-rent-a-boat-french-riviera -> https://boathire24.livejournal.com/1684.html
+
+posted; 24 left in backlog
+refilling graph.org (+30)...
+  reject idx=0 Cape Town: ['only 1 question headings (need >=2)']
+  reject idx=5 Marbella: ['word count 616 not in 650-1000', 'only 1 question headings (need >=2)']
+  reject idx=7 Marbella: ['only 1 question headings (need >=2)']
+  reject idx=11 Costa Rica Guanacaste: ['only 1 question headings (need >=2)']
+  reject idx=12 Datca: ['only 1 question headings (need >=2)']
+  reject idx=15 Marbella: ['word count 611 not in 650-1000']
+  reject idx=25 Genoa: ['word count 649 not in 650-1000']
+  reject idx=28 Hawaii Oahu: ['word count 575 not in 650-1000', 'only 1 question headings (need >=2)']
+  reject idx=30 Inle Lake: ['only 1 question headings (need >=2)']
+  reject idx=31 Jeddah: ['only 1 question headings (need >=2)']
+  reject idx=32 Marbella: ['only 1 question headings (need >=2)']
+  reject idx=38 Kiel Fjord: ['only 1 question headings (need >=2)']
+  reject idx=39 Krabi: ['only 1 question headings (need >=2)']
+  reject idx=41 Lake Iseo: ['only 1 question headings (need >=2)']
+  OK gen-178202531600-catamaran-charter-in-benalmadena.json  (Benalmadena, 3 links, 1 imgs)
+  OK gen-178202533701-catamaran-charter-sunset-in-fuengirola.json  (Fuengirola, 3 links, 2 imgs)
+  OK gen-178202535602-catamaran-charter-weddings-in-marbella.json  (Marbella, 4 links, 1 imgs)
+  OK gen-178202537903-catamaran-charter-group-in-puerto-banus.json  (Puerto Banus, 2 links, 2 imgs)
+  OK gen-178202541204-catamaran-hire-hourly-in-puerto-banus.json  (Puerto Banus, 3 links, 2 imgs)
+  OK gen-178202545105-catamaran-rental-sunset-in-puerto-banus.json  (Puerto Banus, 2 links, 2 imgs)
+  OK gen-178202547006-cheap-catamaran-hire-in-puerto-banus.json  (Puerto Banus, 3 links, 1 imgs)
+  OK gen-178202548807-a-day-on-the-water-in-cook-islands.json  (Cook Islands, 3 links, 2 imgs)
+  OK gen-178202554508-dolphin-watching-boat-rental-in-benalmadena.json  (Benalmadena, 3 links, 1 imgs)
+  OK gen-178202556509-dolphin-watching-catamaran-hire-in-puerto-banus.json  (Puerto Banus, 3 links, 2 imgs)
+  OK gen-178202559810-dolphin-watching-boat-hire-in-marbella.json  (Marbella, 2 links, 2 imgs)
+  OK gen-178202561511-dolphin-watching-romantic-boat-hire-in-marbella.json  (Marbella, 3 links, 1 imgs)
+  OK gen-178202563712-dolphin-watching-boat-hire-in-marbella.json  (Marbella, 3 links, 2 imgs)
+  OK gen-178202565613-dolphin-watching-boat-hire-in-puerto-banus.json  (Puerto Banus, 4 links, 1 imgs)
+  OK gen-178202567414-renting-a-yacht-in-dominican-republic.json  (Dominican Republic, 2 links, 2 imgs)
+  OK gen-178202569115-the-best-boats-to-charter-in-essaouira.json  (Essaouira, 3 links, 1 imgs)
+  OK gen-178202571216-fishing-charter-full-day-in-benalmadena.json  (Benalmadena, 3 links, 2 imgs)
+  OK gen-178202573117-fishing-charter-half-day-in-marbella.json  (Marbella, 4 links, 1 imgs)
+  OK gen-178202575018-renting-a-yacht-in-fort-lauderdale.json  (Fort Lauderdale, 2 links, 2 imgs)
+  OK gen-178202578619-a-day-on-the-water-in-great-barrier-reef.json  (Great Barrier Reef, 3 links, 2 imgs)
+  OK gen-178202580320-boat-rental-costs-in-halifax.json  (Halifax, 4 links, 1 imgs)
+  OK gen-178202583621-the-best-boats-to-charter-in-hong-kong.json  (Hong Kong, 3 links, 1 imgs)
+  OK gen-178202590122-jet-ski-rental-in-benalmadena.json  (Benalmadena, 3 links, 1 imgs)
+  OK gen-178202592123-jet-ski-rental-in-fort-lauderdale.json  (Fort Lauderdale, 3 links, 2 imgs)
+  OK gen-178202594124-jet-ski-rental-in-malaga.json  (Malaga, 4 links, 1 imgs)
+  OK gen-178202596025-jet-ski-rental-in-puerto-banus.json  (Puerto Banus, 2 links, 2 imgs)
+  OK gen-178202597626-jet-ski-in-santorini.json  (Santorini, 3 links, 1 imgs)
+  OK gen-178202602927-boat-hire-in-lake-bled.json  (Lake Bled, 2 links, 2 imgs)
+  OK gen-178202606328-a-day-on-the-water-in-lake-tahoe.json  (Lake Tahoe, 3 links, 2 imgs)
+  OK gen-178202607829-boat-rental-costs-in-lake-victoria-ke.json  (Lake Victoria Ke, 4 links, 1 imgs)
+graph_org: generated 30/30 into /Users/master/boat-rental-marbella/content/graph_org
+refilling rentry.co (+30)...
+  reject idx=4 Marbella: ['word count 610 not in 650-1000']
+  reject idx=22 Tenerife: ['only 1 question headings (need >=2)']
+  reject idx=26 Xiamen: ['word count 603 not in 650-1000']
+  reject idx=27 Capri: ['only 1 question headings (need >=2)']
+  reject idx=28 Maldives: ['only 1 question headings (need >=2)']
+  reject idx=32 Nice: ['only 1 question headings (need >=2)']
+  OK gen-178202609200-private-boat-charter-fishing-in-marbella.json  (Marbella, 2 links, 2 imgs)
+  OK gen-178202610901-private-boat-hire-hen-do-in-marbella.json  (Marbella, 3 links, 1 imgs)
+  OK gen-178202612802-private-boat-party-in-marbella.json  (Marbella, 3 links, 2 imgs)
+  OK gen-178202614703-private-catamaran-hire-sunset-in-puerto-banus.json  (Puerto Banus, 4 links, 1 imgs)
+  OK gen-178202617504-private-yacht-hire-sunset-in-marbella.json  (Marbella, 3 links, 1 imgs)
+  OK gen-178202619505-boat-rental-birthday-in-puerto-banus.json  (Puerto Banus, 3 links, 2 imgs)
+  OK gen-178202620806-boat-rental-in-puerto-banus.json  (Puerto Banus, 4 links, 1 imgs)
+  OK gen-178202622607-boat-rental-tips-for-puget-sound.json  (Puget Sound, 2 links, 2 imgs)
+  OK gen-178202624408-rent-speedboat-in-san-diego.json  (San Diego, 3 links, 1 imgs)
+  OK gen-178202626109-a-budget-guide-to-renting-a-boat-in-rio-de-janei.json  (Rio De Janeiro, 3 links, 2 imgs)
+  OK gen-178202627610-alternative-in-samboat.json  (Samboat, 4 links, 1 imgs)
+  OK gen-178202629111-boat-hire-in-santorini.json  (Santorini, 2 links, 2 imgs)
+  OK gen-178202630712-how-to-choose-a-boat-to-rent-in-seychelles.json  (Seychelles, 3 links, 1 imgs)
+  OK gen-178202632313-a-budget-guide-to-renting-a-boat-in-sitges.json  (Sitges, 3 links, 2 imgs)
+  OK gen-178202633714-speedboat-hire-licence-in-benalmadena-marina-no.json  (Benalmadena Marina No, 4 links, 1 imgs)
+  OK gen-178202635315-speedboat-hire-in-marbella.json  (Marbella, 2 links, 2 imgs)
+  OK gen-178202636716-speedboat-hire-licence-in-puerto-banus-no.json  (Puerto Banus No, 3 links, 1 imgs)
+  OK gen-178202638417-speedboat-rental-in-fuengirola-marina.json  (Fuengirola Marina, 3 links, 2 imgs)
+  OK gen-178202639918-speedboat-rental-hourly-in-puerto-banus.json  (Puerto Banus, 4 links, 1 imgs)
+  OK gen-178202641719-boat-rental-tips-for-st-petersburg.json  (St Petersburg, 2 links, 2 imgs)
+  OK gen-178202643320-how-to-choose-a-boat-to-rent-in-sydney.json  (Sydney, 3 links, 1 imgs)
+  OK gen-178202646721-things-to-do-by-boat-in-trapani.json  (Trapani, 4 links, 1 imgs)
+  OK gen-178202648322-boat-rental-tips-for-valencia.json  (Valencia, 2 links, 2 imgs)
+  OK gen-178202649723-how-to-choose-a-boat-to-rent-in-vigo.json  (Vigo, 3 links, 1 imgs)
+  OK gen-178202655624-yacht-charter-prices-in-marbella.json  (Marbella, 3 links, 1 imgs)
+  OK gen-178202657325-yacht-hire-in-marbella.json  (Marbella, 3 links, 2 imgs)
+  OK gen-178202658826-yacht-rental-in-dubai.json  (Dubai, 4 links, 1 imgs)
+  OK gen-178202662127-how-to-choose-a-boat-to-rent-in-zakynthos.json  (Zakynthos, 3 links, 1 imgs)
+  OK gen-178202663628-affordable-yacht-charter-in-marbella.json  (Marbella, 3 links, 2 imgs)
+  OK gen-178202665229-things-to-do-by-boat-in-amazon-manaus.json  (Amazon Manaus, 4 links, 1 imgs)
+rentry: generated 30/30 into /Users/master/boat-rental-marbella/content/rentry
+--- backlog levels ---
+graph.org: 56 published / 83 in backlog / 27 pending
+rentry.co: 43 published / 70 in backlog / 27 pending
+Telegraph: 6 published / 31 in backlog / 25 pending
+LiveJournal: 6 posted / 30 in backlog / 24 pending
+================ backlinks drip 2026-06-22 09:35:42 ================
+graph.org pending before: 27
+--- graph.org (x20, staggered 35s) ---
+FAILED gen-178202531600-catamaran-charter-in-benalmadena: <urlopen error [Errno 8] nodename nor servname provided, or not known>
+
+published; 30 left in backlog
+PUBLISHED gen-178202531600-catamaran-charter-in-benalmadena -> https://graph.org/Benalmadena-Catamaran-Charter-Costs-Seasons--Best-Boats-for-2026-06-22
+
+published; 29 left in backlog
+FAILED gen-178202533701-catamaran-charter-sunset-in-fuengirola: <urlopen error [Errno 8] nodename nor servname provided, or not known>
+
+published; 29 left in backlog
+FAILED gen-178202533701-catamaran-charter-sunset-in-fuengirola: <urlopen error [Errno 8] nodename nor servname provided, or not known>
+
+published; 29 left in backlog
+FAILED gen-178202533701-catamaran-charter-sunset-in-fuengirola: <urlopen error [Errno 8] nodename nor servname provided, or not known>
+
+published; 29 left in backlog
+FAILED gen-178202533701-catamaran-charter-sunset-in-fuengirola: <urlopen error [Errno 8] nodename nor servname provided, or not known>
+
+published; 29 left in backlog
+FAILED gen-178202533701-catamaran-charter-sunset-in-fuengirola: <urlopen error [Errno 8] nodename nor servname provided, or not known>
+
+published; 29 left in backlog
+FAILED gen-178202533701-catamaran-charter-sunset-in-fuengirola: <urlopen error [Errno 8] nodename nor servname provided, or not known>
+
+published; 29 left in backlog
+FAILED gen-178202533701-catamaran-charter-sunset-in-fuengirola: <urlopen error [Errno 8] nodename nor servname provided, or not known>
+
+published; 29 left in backlog
+FAILED gen-178202533701-catamaran-charter-sunset-in-fuengirola: <urlopen error [Errno 8] nodename nor servname provided, or not known>
+
+published; 29 left in backlog
+FAILED gen-178202533701-catamaran-charter-sunset-in-fuengirola: <urlopen error [Errno 8] nodename nor servname provided, or not known>
+
+published; 29 left in backlog
+FAILED gen-178202533701-catamaran-charter-sunset-in-fuengirola: <urlopen error [Errno 8] nodename nor servname provided, or not known>
+
+published; 29 left in backlog
+FAILED gen-178202533701-catamaran-charter-sunset-in-fuengirola: <urlopen error [Errno 8] nodename nor servname provided, or not known>
+
+published; 29 left in backlog
+PUBLISHED gen-178202533701-catamaran-charter-sunset-in-fuengirola -> https://graph.org/Fuengirola-Catamaran-Charter-Sunset-Prices--Tips-for-2026-06-23
+
+published; 28 left in backlog
+PUBLISHED gen-178202535602-catamaran-charter-weddings-in-marbella -> https://graph.org/Marbella-Catamaran-Charter-Weddings-Costs-Seasons-and-Tips-for-2026-06-23
+
+published; 27 left in backlog
+PUBLISHED gen-178202537903-catamaran-charter-group-in-puerto-banus -> https://graph.org/Puerto-Banus-Catamaran-Charter-Group-Costs-and-2026-Tips-06-23
+
+published; 26 left in backlog
+PUBLISHED gen-178202541204-catamaran-hire-hourly-in-puerto-banus -> https://graph.org/Puerto-Banus-Catamaran-Hire-Hourly-Rates-and-2026-Guide-06-23
+
+published; 25 left in backlog
+PUBLISHED gen-178202545105-catamaran-rental-sunset-in-puerto-banus -> https://graph.org/Puerto-Banus-Catamaran-Sunset-Costs-Tips-and-Boat-Hire-for-2026-06-23
+
+published; 24 left in backlog
+PUBLISHED gen-178202547006-cheap-catamaran-hire-in-puerto-banus -> https://graph.org/Puerto-Banus-Cheap-Catamaran-Hire-2026-Guide-to-Costs-and-Boats-06-23
+
+published; 23 left in backlog
+PUBLISHED gen-178202548807-a-day-on-the-water-in-cook-islands -> https://graph.org/Boat-Rental-in-Cook-Islands-a-Day-on-the-Water-Guide-2026-06-23
+
+published; 22 left in backlog
+rentry.co pending before: 27
+--- rentry.co (x20, staggered 35s) ---
+PUBLISHED gen-178202609200-private-boat-charter-fishing-in-marbella -> https://rentry.co/rkgaiy83
+
+published; 29 left in backlog
+PUBLISHED gen-178202610901-private-boat-hire-hen-do-in-marbella -> https://rentry.co/ytkkbu7c
+
+published; 28 left in backlog
+PUBLISHED gen-178202612802-private-boat-party-in-marbella -> https://rentry.co/p6x8nza8
+
+published; 27 left in backlog
+PUBLISHED gen-178202614703-private-catamaran-hire-sunset-in-puerto-banus -> https://rentry.co/m7hz3wfc
+
+published; 26 left in backlog
+PUBLISHED gen-178202617504-private-yacht-hire-sunset-in-marbella -> https://rentry.co/3q42scrh
+
+published; 25 left in backlog
+PUBLISHED gen-178202619505-boat-rental-birthday-in-puerto-banus -> https://rentry.co/9zyzf7h2
+
+published; 24 left in backlog
+PUBLISHED gen-178202620806-boat-rental-in-puerto-banus -> https://rentry.co/6weesxbz
+
+published; 23 left in backlog
+PUBLISHED gen-178202622607-boat-rental-tips-for-puget-sound -> https://rentry.co/zd966doy
+
+published; 22 left in backlog
+PUBLISHED gen-178202624408-rent-speedboat-in-san-diego -> https://rentry.co/n38cdv6f
+
+published; 21 left in backlog
+PUBLISHED gen-178202626109-a-budget-guide-to-renting-a-boat-in-rio-de-janei -> https://rentry.co/6kv3mdc9
+
+published; 20 left in backlog
+PUBLISHED gen-178202627610-alternative-in-samboat -> https://rentry.co/ovnkra6a
+
+published; 19 left in backlog
+PUBLISHED gen-178202629111-boat-hire-in-santorini -> https://rentry.co/49iaybh7
+
+published; 18 left in backlog
+PUBLISHED gen-178202630712-how-to-choose-a-boat-to-rent-in-seychelles -> https://rentry.co/pp68ni6r
+
+published; 17 left in backlog
+PUBLISHED gen-178202632313-a-budget-guide-to-renting-a-boat-in-sitges -> https://rentry.co/3nhbp3rh
+
+published; 16 left in backlog
+PUBLISHED gen-178202633714-speedboat-hire-licence-in-benalmadena-marina-no -> https://rentry.co/unksickm
+
+published; 15 left in backlog
+PUBLISHED gen-178202635315-speedboat-hire-in-marbella -> https://rentry.co/66b4f8af
+
+published; 14 left in backlog
+PUBLISHED gen-178202636716-speedboat-hire-licence-in-puerto-banus-no -> https://rentry.co/guqz6u55
+
+published; 13 left in backlog
+PUBLISHED gen-178202638417-speedboat-rental-in-fuengirola-marina -> https://rentry.co/qikdtr3a
+
+published; 12 left in backlog
+PUBLISHED gen-178202639918-speedboat-rental-hourly-in-puerto-banus -> https://rentry.co/7h6mhfqc
+
+published; 11 left in backlog
+PUBLISHED gen-178202641719-boat-rental-tips-for-st-petersburg -> https://rentry.co/yiwcxcmz
+
+published; 10 left in backlog
+--- telegra.ph (x3, staggered 35s) ---
+PUBLISHED 006-whats-included-boat-rental -> https://telegra.ph/What-Is-Actually-Included-When-You-Rent-a-Boat-06-23
+
+1 published; 24 left in backlog
+PUBLISHED 007-licence-free-boat-rental -> https://telegra.ph/Licence-Free-Boat-Rentals-What-They-Are-and-How-to-Hire-One-06-23
+
+1 published; 23 left in backlog
+PUBLISHED 008-rent-a-boat-mediterranean -> https://telegra.ph/How-to-Rent-a-Boat-in-the-Mediterranean-A-Practical-Guide-06-23
+
+1 published; 22 left in backlog
+--- LiveJournal (x3, staggered 35s) ---
+POSTED 007-rent-a-boat-mallorca -> https://boathire24.livejournal.com/2031.html
+
+posted; 23 left in backlog
+POSTED 008-rent-a-boat-montenegro -> https://boathire24.livejournal.com/2120.html
+
+posted; 22 left in backlog
+POSTED 009-rent-a-boat-bahamas -> https://boathire24.livejournal.com/2548.html
+
+posted; 21 left in backlog
+refilling graph.org (+30)...
+  reject idx=14 Tromsoe: ['word count 622 not in 650-1000']
+  reject idx=26 Amsterdam Canals: ['word count 603 not in 650-1000']
+  reject idx=35 Key West: ['only 1 question headings (need >=2)']
+  OK gen-178219745400-renting-a-yacht-in-reykjavik.json  (Reykjavik, 2 links, 2 imgs)
+  OK gen-178219747301-the-best-boats-to-charter-in-sabah-borneo.json  (Sabah Borneo, 3 links, 1 imgs)
+  OK gen-178219749202-a-day-on-the-water-in-san-blas.json  (San Blas, 3 links, 2 imgs)
+  OK gen-178219751503-boat-rental-costs-in-sardinia.json  (Sardinia, 4 links, 1 imgs)
+  OK gen-178219753804-renting-a-yacht-in-siargao.json  (Siargao, 2 links, 2 imgs)
+  OK gen-178219755905-speedboat-hire-licence-in-marbella-no.json  (Marbella No, 4 links, 1 imgs)
+  OK gen-178219757606-speedboat-rental-hourly-in-marbella-port.json  (Marbella Port, 3 links, 1 imgs)
+  OK gen-178219759907-a-day-on-the-water-in-sporades.json  (Sporades, 3 links, 2 imgs)
+  OK gen-178219762308-boat-rental-costs-in-stockholm.json  (Stockholm, 4 links, 1 imgs)
+  OK gen-178219764109-renting-a-yacht-in-tahiti.json  (Tahiti, 2 links, 2 imgs)
+  OK gen-178219766410-the-best-boats-to-charter-in-tioman-island.json  (Tioman Island, 3 links, 1 imgs)
+  OK gen-178219770311-boat-rental-costs-in-varna.json  (Varna, 4 links, 1 imgs)
+  OK gen-178219772712-renting-a-yacht-in-walvis-bay.json  (Walvis Bay, 2 links, 2 imgs)
+  OK gen-178219774613-yacht-charter-in-estepona.json  (Estepona, 3 links, 2 imgs)
+  OK gen-178219776614-yacht-charter-new-years-eve-in-marbella.json  (Marbella, 4 links, 1 imgs)
+  OK gen-178219778315-yacht-charter-wedding-in-puerto-banus.json  (Puerto Banus, 2 links, 2 imgs)
+  OK gen-178219780316-yacht-rental-in-bali.json  (Bali, 3 links, 1 imgs)
+  OK gen-178219782517-yacht-rental-in-marina-del-rey.json  (Marina Del Rey, 3 links, 2 imgs)
+  OK gen-178219784318-yacht-rental-hen-do-in-puerto-banus.json  (Puerto Banus, 4 links, 1 imgs)
+  OK gen-178219786019-renting-a-yacht-in-aarhus.json  (Aarhus, 2 links, 2 imgs)
+  OK gen-178219788020-the-best-boats-to-charter-in-aland-islands.json  (Aland Islands, 3 links, 1 imgs)
+  OK gen-178219791421-boat-rental-costs-in-aruba.json  (Aruba, 4 links, 1 imgs)
+  OK gen-178219793422-renting-a-yacht-in-bahamas.json  (Bahamas, 2 links, 2 imgs)
+  OK gen-178219794923-the-best-boats-to-charter-in-belgrade-danube.json  (Belgrade Danube, 3 links, 1 imgs)
+  OK gen-178219797124-boat-hire-in-cannes-france.json  (Cannes France, 3 links, 2 imgs)
+  OK gen-178219799125-boat-hire-in-cannes.json  (Cannes, 4 links, 1 imgs)
+  OK gen-178219801326-boat-rental-in-amalfi.json  (Amalfi, 2 links, 2 imgs)
+  OK gen-178219803127-boat-rental-in-bodrum.json  (Bodrum, 3 links, 1 imgs)
+  OK gen-178219805028-boat-rental-in-estepona-port.json  (Estepona Port, 3 links, 2 imgs)
+  OK gen-178219809029-boat-rental-in-marbella.json  (Marbella, 2 links, 2 imgs)
+graph_org: generated 30/30 into /Users/master/boat-rental-marbella/content/graph_org
+refilling rentry.co (+30)...
+  reject idx=9 Barcelona: ['h3 count 9 not in 4-8']
+  reject idx=13 Naples: ['only 1 question headings (need >=2)']
+  reject idx=15 Kas: ['only 1 question headings (need >=2)']
+  reject idx=20 Lake Titicaca: ['title length 39 not in 40-75']
+  reject idx=21 Lakshadweep: ['word count 622 not in 650-1000']
+  reject idx=22 Lipno Reservoir: ['only 1 question headings (need >=2)']
+  reject idx=29 Marbella: ['only 1 question headings (need >=2)']
+  reject idx=33 Marsa Alam: ['title length 77 not in 40-75']
+  OK gen-178219811000-fishing-charter-half-day-in-estepona.json  (Estepona, 2 links, 2 imgs)
+  OK gen-178219812901-fishing-charter-half-day-in-puerto-banus.json  (Puerto Banus, 3 links, 1 imgs)
+  OK gen-178219814902-a-budget-guide-to-renting-a-boat-in-galapagos.json  (Galapagos, 3 links, 2 imgs)
+  OK gen-178219816803-things-to-do-by-boat-in-goa.json  (Goa, 4 links, 1 imgs)
+  OK gen-178219818904-boat-rental-tips-for-guadeloupe.json  (Guadeloupe, 2 links, 2 imgs)
+  OK gen-178219820805-how-to-choose-a-boat-to-rent-in-hardangerfjord.json  (Hardangerfjord, 3 links, 1 imgs)
+  OK gen-178219822406-things-to-do-by-boat-in-hurghada.json  (Hurghada, 4 links, 1 imgs)
+  OK gen-178219824607-boat-rental-tips-for-isle.json  (Isle, 2 links, 2 imgs)
+  OK gen-178219828608-jet-ski-in-nice.json  (Nice, 3 links, 2 imgs)
+  OK gen-178219830309-jet-ski-rental-in-dallas.json  (Dallas, 4 links, 1 imgs)
+  OK gen-178219832010-jet-ski-rental-in-key-west.json  (Key West, 2 links, 2 imgs)
+  OK gen-178219835611-jet-ski-rental-in-tampa.json  (Tampa, 3 links, 2 imgs)
+  OK gen-178219838912-boat-rental-tips-for-koh-tao.json  (Koh Tao, 2 links, 2 imgs)
+  OK gen-178219840513-how-to-choose-a-boat-to-rent-in-lake-atitlan.json  (Lake Atitlan, 3 links, 1 imgs)
+  OK gen-178219842514-a-budget-guide-to-renting-a-boat-in-lake-como.json  (Lake Como, 3 links, 2 imgs)
+  OK gen-178219844315-things-to-do-by-boat-in-lake-maggiore.json  (Lake Maggiore, 4 links, 1 imgs)
+  OK gen-178219852016-things-to-do-by-boat-in-loch-lomond.json  (Loch Lomond, 4 links, 1 imgs)
+  OK gen-178219853817-boat-rental-tips-for-los-roques.json  (Los Roques, 2 links, 2 imgs)
+  OK gen-178219856018-luxury-catamaran-hire-day-in-marbella.json  (Marbella, 3 links, 1 imgs)
+  OK gen-178219858219-luxury-motor-yacht-rental-weekend-in-marbella.json  (Marbella, 4 links, 1 imgs)
+  OK gen-178219860120-luxury-yacht-charter-weekend-in-marbella.json  (Marbella, 2 links, 2 imgs)
+  OK gen-178219863921-luxury-yacht-rental-weekend-in-puerto-banus.json  (Puerto Banus, 3 links, 2 imgs)
+  OK gen-178219865722-boat-rental-birthday-party-in-marbella.json  (Marbella, 4 links, 1 imgs)
+  OK gen-178219867423-boat-rental-in-marbella.json  (Marbella, 2 links, 2 imgs)
+  OK gen-178219870524-a-budget-guide-to-renting-a-boat-in-mekong-delta.json  (Mekong Delta, 3 links, 2 imgs)
+  OK gen-178219872125-things-to-do-by-boat-in-mombasa.json  (Mombasa, 4 links, 1 imgs)
+  OK gen-178219873626-motor-yacht-hire-in-marbella.json  (Marbella, 2 links, 2 imgs)
+  OK gen-178219875127-motor-yacht-hire-party-in-puerto-banus.json  (Puerto Banus, 3 links, 1 imgs)
+  OK gen-178219876528-a-budget-guide-to-renting-a-boat-in-mumbai-harbo.json  (Mumbai Harbour, 3 links, 2 imgs)
+  OK gen-178219878329-things-to-do-by-boat-in-naples.json  (Naples, 4 links, 1 imgs)
+rentry: generated 30/30 into /Users/master/boat-rental-marbella/content/rentry
+--- backlog levels ---
+graph.org: 64 published / 113 in backlog / 49 pending
+rentry.co: 63 published / 100 in backlog / 37 pending
+Telegraph: 9 published / 31 in backlog / 22 pending
+LiveJournal: 9 posted / 30 in backlog / 21 pending
+================ backlinks drip 2026-06-24 10:15:17 ================
+graph.org pending before: 49
+--- graph.org (x20, staggered 35s) ---
+FAILED gen-178202554508-dolphin-watching-boat-rental-in-benalmadena: <urlopen error [Errno 8] nodename nor servname provided, or not known>
+
+published; 52 left in backlog
+FAILED gen-178202554508-dolphin-watching-boat-rental-in-benalmadena: <urlopen error [Errno 8] nodename nor servname provided, or not known>
+
+published; 52 left in backlog
+FAILED gen-178202554508-dolphin-watching-boat-rental-in-benalmadena: <urlopen error [Errno 8] nodename nor servname provided, or not known>
+
+published; 52 left in backlog
+FAILED gen-178202554508-dolphin-watching-boat-rental-in-benalmadena: <urlopen error [Errno 8] nodename nor servname provided, or not known>
+
+published; 52 left in backlog
+FAILED gen-178202554508-dolphin-watching-boat-rental-in-benalmadena: <urlopen error [Errno 8] nodename nor servname provided, or not known>
+
+published; 52 left in backlog
+PUBLISHED gen-178202554508-dolphin-watching-boat-rental-in-benalmadena -> https://graph.org/Benalmadena-Dolphin-Watching-Boat-Rental-Costs-Tips--Best-Boats-06-24
+
+published; 51 left in backlog
+PUBLISHED gen-178202556509-dolphin-watching-catamaran-hire-in-puerto-banus -> https://graph.org/Puerto-Banus-Dolphin-Watching-Catamaran-Hire-Costs-and-Tips-2026-06-24
+
+published; 50 left in backlog
+PUBLISHED gen-178202559810-dolphin-watching-boat-hire-in-marbella -> https://graph.org/Dolphin-Watching-Boat-Hire-in-Marbella-2026-Costs--Tips-06-24
+
+published; 49 left in backlog
+PUBLISHED gen-178202561511-dolphin-watching-romantic-boat-hire-in-marbella -> https://graph.org/Marbella-Dolphin-Watching-Romantic-Boat-Hire-Guide-2026-06-24
+
+published; 48 left in backlog
+PUBLISHED gen-178202563712-dolphin-watching-boat-hire-in-marbella -> https://graph.org/Marbella-Dolphin-Watching-Boat-Hire-Costs-Seasons--2026-Tips-06-24
+
+published; 47 left in backlog
+PUBLISHED gen-178202565613-dolphin-watching-boat-hire-in-puerto-banus -> https://graph.org/Puerto-Banus-Dolphin-Watching-Boat-Hire-2026-Guide-and-Costs-06-24
+
+published; 46 left in backlog
+PUBLISHED gen-178202567414-renting-a-yacht-in-dominican-republic -> https://graph.org/Boat-Rental-in-Dominican-Republic-Prices-and-Tips-for-2026-06-24
+
+published; 45 left in backlog
+PUBLISHED gen-178202569115-the-best-boats-to-charter-in-essaouira -> https://graph.org/Boat-Rental-in-Essaouira-Costs-Seasons-and-Best-Boats-for-2026-06-24
+
+published; 44 left in backlog
+PUBLISHED gen-178202571216-fishing-charter-full-day-in-benalmadena -> https://graph.org/Benalmadena-Fishing-Charter-Full-Day-Costs--Tips-for-2026-06-24
+
+published; 43 left in backlog
+PUBLISHED gen-178202573117-fishing-charter-half-day-in-marbella -> https://graph.org/Marbella-Fishing-Charter-Half-Day-Costs-Boats--Tips-for-2026-06-24
+
+published; 42 left in backlog
+PUBLISHED gen-178202575018-renting-a-yacht-in-fort-lauderdale -> https://graph.org/Boat-Rental-in-Fort-Lauderdale-Costs-Tips-and-What-to-Know-in-2026-06-24
+
+published; 41 left in backlog
+PUBLISHED gen-178202578619-a-day-on-the-water-in-great-barrier-reef -> https://graph.org/Boat-Rental-in-Great-Barrier-Reef-A-2026-Day-on-the-Water-06-24
+
+published; 40 left in backlog
+PUBLISHED gen-178202580320-boat-rental-costs-in-halifax -> https://graph.org/Boat-Rental-in-Halifax-Costs-and-Choices-for-2026-06-24
+
+published; 39 left in backlog
+PUBLISHED gen-178202583621-the-best-boats-to-charter-in-hong-kong -> https://graph.org/Boat-Rental-in-Hong-Kong-Best-Charter-Choices-for-2026-06-24
+
+published; 38 left in backlog
+PUBLISHED gen-178202590122-jet-ski-rental-in-benalmadena -> https://graph.org/Jet-Ski-Rental-in-Benalmadena-2026-Prices-Tips--Best-Spots-06-24
+
+published; 37 left in backlog
+rentry.co pending before: 37
+--- rentry.co (x20, staggered 35s) ---
+PUBLISHED gen-178202643320-how-to-choose-a-boat-to-rent-in-sydney -> https://rentry.co/2vt6azqb
+
+published; 39 left in backlog
+PUBLISHED gen-178202646721-things-to-do-by-boat-in-trapani -> https://rentry.co/zmzr58m6
+
+published; 38 left in backlog
+PUBLISHED gen-178202648322-boat-rental-tips-for-valencia -> https://rentry.co/q8hy5sii
+
+published; 37 left in backlog
+PUBLISHED gen-178202649723-how-to-choose-a-boat-to-rent-in-vigo -> https://rentry.co/sq8oruwx
+
+published; 36 left in backlog
+PUBLISHED gen-178202655624-yacht-charter-prices-in-marbella -> https://rentry.co/bqba6o4n
+
+published; 35 left in backlog
+PUBLISHED gen-178202657325-yacht-hire-in-marbella -> https://rentry.co/hwemic8h
+
+published; 34 left in backlog
+PUBLISHED gen-178202658826-yacht-rental-in-dubai -> https://rentry.co/64dcueiw
+
+published; 33 left in backlog
+PUBLISHED gen-178202662127-how-to-choose-a-boat-to-rent-in-zakynthos -> https://rentry.co/s6rp564b
+
+published; 32 left in backlog
+PUBLISHED gen-178202663628-affordable-yacht-charter-in-marbella -> https://rentry.co/y3vabq29
+
+published; 31 left in backlog
+PUBLISHED gen-178202665229-things-to-do-by-boat-in-amazon-manaus -> https://rentry.co/y5xh5af3
+
+published; 30 left in backlog
+PUBLISHED gen-178219811000-fishing-charter-half-day-in-estepona -> https://rentry.co/d8czrn3y
+
+published; 29 left in backlog
+PUBLISHED gen-178219812901-fishing-charter-half-day-in-puerto-banus -> https://rentry.co/6gevatvu
+
+published; 28 left in backlog
+PUBLISHED gen-178219814902-a-budget-guide-to-renting-a-boat-in-galapagos -> https://rentry.co/wmi4na97
+
+published; 27 left in backlog
+PUBLISHED gen-178219816803-things-to-do-by-boat-in-goa -> https://rentry.co/8ti939ve
+
+published; 26 left in backlog
+PUBLISHED gen-178219818904-boat-rental-tips-for-guadeloupe -> https://rentry.co/tmitwhqy
+
+published; 25 left in backlog
+PUBLISHED gen-178219820805-how-to-choose-a-boat-to-rent-in-hardangerfjord -> https://rentry.co/s8uqdphh
+
+published; 24 left in backlog
+PUBLISHED gen-178219822406-things-to-do-by-boat-in-hurghada -> https://rentry.co/i2btg6x2
+
+published; 23 left in backlog
+PUBLISHED gen-178219824607-boat-rental-tips-for-isle -> https://rentry.co/wk8qgdag
+
+published; 22 left in backlog
+PUBLISHED gen-178219828608-jet-ski-in-nice -> https://rentry.co/bhymsa5e
+
+published; 21 left in backlog
+PUBLISHED gen-178219830309-jet-ski-rental-in-dallas -> https://rentry.co/9ziwomme
+
+published; 20 left in backlog
+--- telegra.ph (x3, staggered 35s) ---
+PUBLISHED 009-rent-a-boat-caribbean -> https://telegra.ph/How-to-Rent-a-Boat-in-the-Caribbean-A-Practical-Guide-for-Travellers-06-24
+
+1 published; 21 left in backlog
+PUBLISHED 010-rent-a-boat-dubai -> https://telegra.ph/How-to-Rent-a-Boat-in-Dubai-A-Practical-Guide-for-Visitors-06-24
+
+1 published; 20 left in backlog
+PUBLISHED 011-rent-a-boat-greece -> https://telegra.ph/How-to-Rent-a-Boat-in-Greece-A-Practical-Guide-for-First-Time-Visitors-06-24
+
+1 published; 19 left in backlog
+--- LiveJournal (x3, staggered 35s) ---
+POSTED 010-rent-a-boat-amalfi -> https://boathire24.livejournal.com/2754.html
+
+posted; 20 left in backlog
+POSTED 011-rent-a-boat-santorini -> https://boathire24.livejournal.com/2847.html
+
+posted; 19 left in backlog
+POSTED 012-rent-a-boat-dubrovnik -> https://boathire24.livejournal.com/3098.html
+
+posted; 18 left in backlog
+refilling rentry.co (+30)...
+  reject idx=5 Marbella: ['only 1 question headings (need >=2)']
+  reject idx=8 Marbella: ['word count 592 not in 650-1000', 'only 1 question headings (need >=2)']
+  reject idx=9 Marbella: ['only 1 question headings (need >=2)']
+  reject idx=17 Sanya: ['word count 627 not in 650-1000']
+  reject idx=23 Marbella No: ['only 1 question headings (need >=2)']
+  reject idx=28 Trincomalee: ['only 1 question headings (need >=2)']
+  reject idx=34 Mykonos: ['word count 628 not in 650-1000']
+  OK gen-178231017900-boat-rental-tips-for-naples.json  (Naples, 2 links, 2 imgs)
+  OK gen-178231019701-how-to-choose-a-boat-to-rent-in-norfolk-broads.json  (Norfolk Broads, 3 links, 1 imgs)
+  OK gen-178231021802-a-budget-guide-to-renting-a-boat-in-oslo-fjord.json  (Oslo Fjord, 3 links, 2 imgs)
+  OK gen-178231023903-things-to-do-by-boat-in-paris-seine.json  (Paris Seine, 4 links, 1 imgs)
+  OK gen-178231025904-boat-rental-tips-for-piran.json  (Piran, 2 links, 2 imgs)
+  OK gen-178231029705-private-boat-hire-in-marbella.json  (Marbella, 3 links, 2 imgs)
+  OK gen-178231031606-private-catamaran-charter-group-in-marbella.json  (Marbella, 4 links, 1 imgs)
+  OK gen-178231037107-private-yacht-hire-wedding-in-marbella.json  (Marbella, 3 links, 2 imgs)
+  OK gen-178231039208-boat-rental-dolphin-watching-in-puerto-banus.json  (Puerto Banus, 4 links, 1 imgs)
+  OK gen-178231041409-boat-rental-snorkeling-in-puerto-banus.json  (Puerto Banus, 2 links, 2 imgs)
+  OK gen-178231043010-how-to-choose-a-boat-to-rent-in-pula.json  (Pula, 3 links, 1 imgs)
+  OK gen-178231044811-rent-catamaran-in-marbella-port.json  (Marbella Port, 3 links, 2 imgs)
+  OK gen-178231046812-things-to-do-by-boat-in-rostock.json  (Rostock, 4 links, 1 imgs)
+  OK gen-178231048713-boat-rental-tips-for-samoa.json  (Samoa, 2 links, 2 imgs)
+  OK gen-178231052214-a-budget-guide-to-renting-a-boat-in-shannon-rive.json  (Shannon River, 3 links, 2 imgs)
+  OK gen-178231053915-things-to-do-by-boat-in-sochi.json  (Sochi, 4 links, 1 imgs)
+  OK gen-178231055716-speedboat-hire-licence-in-benalmadena-no.json  (Benalmadena No, 2 links, 2 imgs)
+  OK gen-178231057217-speedboat-hire-hourly-in-marbella.json  (Marbella, 3 links, 1 imgs)
+  OK gen-178231060618-speedboat-rental-licence-in-puerto-banus-no.json  (Puerto Banus No, 2 links, 2 imgs)
+  OK gen-178231062219-how-to-choose-a-boat-to-rent-in-st-vincent.json  (St Vincent, 3 links, 1 imgs)
+  OK gen-178231064120-a-budget-guide-to-renting-a-boat-in-sydney-harbo.json  (Sydney Harbour, 3 links, 2 imgs)
+  OK gen-178231065521-things-to-do-by-boat-in-thessaloniki.json  (Thessaloniki, 4 links, 1 imgs)
+  OK gen-178231069022-how-to-choose-a-boat-to-rent-in-vancouver.json  (Vancouver, 3 links, 1 imgs)
+  OK gen-178231071323-a-budget-guide-to-renting-a-boat-in-vlora.json  (Vlora, 3 links, 2 imgs)
+  OK gen-178231073224-yacht-charter-in-amalfi.json  (Amalfi, 4 links, 1 imgs)
+  OK gen-178231075025-yacht-charter-in-corfu.json  (Corfu, 2 links, 2 imgs)
+  OK gen-178231077026-yacht-charter-in-mallorca.json  (Mallorca, 3 links, 1 imgs)
+  OK gen-178231080627-yacht-hire-in-puerto-banus.json  (Puerto Banus, 4 links, 1 imgs)
+  OK gen-178231082628-yacht-rental-in-fuengirola.json  (Fuengirola, 2 links, 2 imgs)
+  OK gen-178231084829-yacht-rental-in-phuket.json  (Phuket, 3 links, 1 imgs)
+rentry: generated 30/30 into /Users/master/boat-rental-marbella/content/rentry
+--- backlog levels ---
+graph.org: 79 published / 113 in backlog / 34 pending
+rentry.co: 83 published / 130 in backlog / 47 pending
+Telegraph: 12 published / 31 in backlog / 19 pending
+LiveJournal: 12 posted / 30 in backlog / 18 pending
+================ backlinks drip 2026-06-25 08:30:00 ================
+graph.org pending before: 34
+--- graph.org (x20, staggered 35s) ---
+PUBLISHED gen-178202592123-jet-ski-rental-in-fort-lauderdale -> https://graph.org/Jet-Ski-Rental-in-Fort-Lauderdale-2026-Costs-Routes-and-Tips-06-25
+
+published; 36 left in backlog
+PUBLISHED gen-178202594124-jet-ski-rental-in-malaga -> https://graph.org/Malaga-Jet-Ski-Rental-Costs-Licences-and-Top-Spots-for-2026-06-25
+
+published; 35 left in backlog
+PUBLISHED gen-178202596025-jet-ski-rental-in-puerto-banus -> https://graph.org/Puerto-Banus-Jet-Ski-Rental-Guide-to-Costs-Licences-and-Best-Routes-06-25
+
+published; 34 left in backlog
+PUBLISHED gen-178202597626-jet-ski-in-santorini -> https://graph.org/Jet-Ski-in-Santorini-Costs-Seasons-and-Tips-for-2026-06-25
+
+published; 33 left in backlog
+PUBLISHED gen-178202602927-boat-hire-in-lake-bled -> https://graph.org/Boat-Hire-in-Lake-Bled-Costs-Choices-and-2026-Tips-06-25
+
+published; 32 left in backlog
+PUBLISHED gen-178202606328-a-day-on-the-water-in-lake-tahoe -> https://graph.org/Boat-Rental-in-Lake-Tahoe-A-Day-on-the-Water-in-2026-06-25
+
+published; 31 left in backlog
+PUBLISHED gen-178202607829-boat-rental-costs-in-lake-victoria-ke -> https://graph.org/Boat-Rental-Costs-in-Lake-Victoria-Ke-A-2026-Guide-06-25
+
+published; 30 left in backlog
+PUBLISHED gen-178219745400-renting-a-yacht-in-reykjavik -> https://graph.org/Boat-Rental-in-Reykjavik-Costs-Seasons--Tips-for-2026-06-25
+
+published; 29 left in backlog
+PUBLISHED gen-178219747301-the-best-boats-to-charter-in-sabah-borneo -> https://graph.org/Sabah-Borneo-Boat-Rental-Costs-Boats-and-When-to-Go-in-2026-06-25
+
+published; 28 left in backlog
+PUBLISHED gen-178219749202-a-day-on-the-water-in-san-blas -> https://graph.org/San-Blas-Boat-Rental-Costs-Seasons-and-Tips-for-2026-06-25
+
+published; 27 left in backlog
+PUBLISHED gen-178219751503-boat-rental-costs-in-sardinia -> https://graph.org/Boat-Rental-in-Sardinia-Costs-and-Tips-for-2026-06-25
+
+published; 26 left in backlog
+PUBLISHED gen-178219753804-renting-a-yacht-in-siargao -> https://graph.org/Boat-Rental-in-Siargao-Costs-and-Tips-for-2026-06-25
+
+published; 25 left in backlog
+PUBLISHED gen-178219755905-speedboat-hire-licence-in-marbella-no -> https://graph.org/Marbella-No-Speedboat-Hire-Licence-Costs-and-Tips-2026-06-25
+
+published; 24 left in backlog
+PUBLISHED gen-178219757606-speedboat-rental-hourly-in-marbella-port -> https://graph.org/Speedboat-Rental-Hourly-in-Marbella-Port-Costs-and-Tips-for-2026-06-25
+
+published; 23 left in backlog
+PUBLISHED gen-178219759907-a-day-on-the-water-in-sporades -> https://graph.org/Boat-Rental-in-Sporades-A-Day-on-the-Water-in-2026-06-25
+
+published; 22 left in backlog
+PUBLISHED gen-178219762308-boat-rental-costs-in-stockholm -> https://graph.org/Boat-Rental-in-Stockholm-Costs-Tips-and-Best-Boats-for-2026-06-25
+
+published; 21 left in backlog
+PUBLISHED gen-178219764109-renting-a-yacht-in-tahiti -> https://graph.org/Boat-Rental-in-Tahiti-Costs-Seasons--Tips-for-2026-06-25
+
+published; 20 left in backlog
+PUBLISHED gen-178219766410-the-best-boats-to-charter-in-tioman-island -> https://graph.org/Tioman-Island-Boat-Rental-Costs-and-Guide-2026-06-25
+
+published; 19 left in backlog
+PUBLISHED gen-178219770311-boat-rental-costs-in-varna -> https://graph.org/Boat-Rental-in-Varna-Costs-A-2026-Guide-to-Prices-and-Options-06-25
+
+published; 18 left in backlog
+PUBLISHED gen-178219772712-renting-a-yacht-in-walvis-bay -> https://graph.org/Walvis-Bay-Boat-Rental-Guide-Costs-Seasons--Tips-for-2026-06-25
+
+published; 17 left in backlog
+rentry.co pending before: 47
+--- rentry.co (x20, staggered 35s) ---
+PUBLISHED gen-178219832010-jet-ski-rental-in-key-west -> https://rentry.co/69d2b5pc
+
+published; 49 left in backlog
+PUBLISHED gen-178219835611-jet-ski-rental-in-tampa -> https://rentry.co/6hqu9r2v
+
+published; 48 left in backlog
+PUBLISHED gen-178219838912-boat-rental-tips-for-koh-tao -> https://rentry.co/53duq8nq
+
+published; 47 left in backlog
+PUBLISHED gen-178219840513-how-to-choose-a-boat-to-rent-in-lake-atitlan -> https://rentry.co/64tr6ebp
+
+published; 46 left in backlog
+PUBLISHED gen-178219842514-a-budget-guide-to-renting-a-boat-in-lake-como -> https://rentry.co/utdr9kan
+
+published; 45 left in backlog
+PUBLISHED gen-178219844315-things-to-do-by-boat-in-lake-maggiore -> https://rentry.co/72s3sgxd
+
+published; 44 left in backlog
+PUBLISHED gen-178219852016-things-to-do-by-boat-in-loch-lomond -> https://rentry.co/5k7fg7px
+
+published; 43 left in backlog
+PUBLISHED gen-178219853817-boat-rental-tips-for-los-roques -> https://rentry.co/7a8ucqib
+
+published; 42 left in backlog
+PUBLISHED gen-178219856018-luxury-catamaran-hire-day-in-marbella -> https://rentry.co/nvn647gb
+
+published; 41 left in backlog
+PUBLISHED gen-178219858219-luxury-motor-yacht-rental-weekend-in-marbella -> https://rentry.co/h3ncng36
+
+published; 40 left in backlog
+PUBLISHED gen-178219860120-luxury-yacht-charter-weekend-in-marbella -> https://rentry.co/ut47d655
+
+published; 39 left in backlog
+PUBLISHED gen-178219863921-luxury-yacht-rental-weekend-in-puerto-banus -> https://rentry.co/vgc58et7
+
+published; 38 left in backlog
+PUBLISHED gen-178219865722-boat-rental-birthday-party-in-marbella -> https://rentry.co/q2omkg44
+
+published; 37 left in backlog
+PUBLISHED gen-178219867423-boat-rental-in-marbella -> https://rentry.co/nihmskbc
+
+published; 36 left in backlog
+PUBLISHED gen-178219870524-a-budget-guide-to-renting-a-boat-in-mekong-delta -> https://rentry.co/o2fm5crd
+
+published; 35 left in backlog
+PUBLISHED gen-178219872125-things-to-do-by-boat-in-mombasa -> https://rentry.co/vygcxnap
+
+published; 34 left in backlog
+PUBLISHED gen-178219873626-motor-yacht-hire-in-marbella -> https://rentry.co/w6ygf9io
+
+published; 33 left in backlog
+PUBLISHED gen-178219875127-motor-yacht-hire-party-in-puerto-banus -> https://rentry.co/gd37y8k9
+
+published; 32 left in backlog
+PUBLISHED gen-178219876528-a-budget-guide-to-renting-a-boat-in-mumbai-harbo -> https://rentry.co/g4s4rbun
+
+published; 31 left in backlog
+PUBLISHED gen-178219878329-things-to-do-by-boat-in-naples -> https://rentry.co/vkv7yeu8
+
+published; 30 left in backlog
+--- telegra.ph (x3, staggered 35s) ---
+PUBLISHED 012-rent-a-boat-croatia -> https://telegra.ph/How-to-Rent-a-Boat-in-Croatia-A-Practical-Guide-for-Visitors-06-25
+
+1 published; 18 left in backlog
+PUBLISHED 013-rent-a-boat-miami -> https://telegra.ph/How-to-Rent-a-Boat-in-Miami-A-Practical-Guide-for-Visitors-06-25
+
+1 published; 17 left in backlog
+PUBLISHED 014-rent-a-boat-ibiza -> https://telegra.ph/How-to-Rent-a-Boat-in-Ibiza-A-Practical-Guide-for-Visitors-06-25
+
+1 published; 16 left in backlog
+--- LiveJournal (x3, staggered 35s) ---
+POSTED 013-rent-a-boat-maldives -> https://boathire24.livejournal.com/3506.html
+
+posted; 17 left in backlog
+POSTED 014-rent-a-boat-cote-dazur -> https://boathire24.livejournal.com/3701.html
+
+posted; 16 left in backlog
+POSTED 015-price-your-boat-listing -> https://boathire24.livejournal.com/4002.html
+
+posted; 15 left in backlog
+refilling graph.org (+30)...
+  reject idx=0 Neom: ['only 1 question headings (need >=2)']
+  reject idx=3 Patagonia Arg: ['only 1 question headings (need >=2)']
+  reject idx=4 Pontoon: ['no <blockquote>']
+  reject idx=11 Puerto Banus: ['word count 612 not in 650-1000']
+  reject idx=12 Puerto Banus: ['word count 599 not in 650-1000', 'only 1 question headings (need >=2)']
+  reject idx=13 Queenstown Nz: ['word count 630 not in 650-1000']
+  reject idx=24 Split: ['word count 643 not in 650-1000']
+  reject idx=28 Trinidad: ['word count 640 not in 650-1000']
+  reject idx=31 Athens: ['only 1 question headings (need >=2)']
+  reject idx=39 Airbnb: ['word count 633 not in 650-1000']
+  OK gen-178236693400-the-best-boats-to-charter-in-north-male-atoll.json  (North Male Atoll, 3 links, 1 imgs)
+  OK gen-178236695001-a-day-on-the-water-in-outer-banks.json  (Outer Banks, 3 links, 2 imgs)
+  OK gen-178236699402-private-boat-charter-wedding-in-marbella.json  (Marbella, 3 links, 1 imgs)
+  OK gen-178236701103-private-boat-hire-stag-do-in-marbella.json  (Marbella, 3 links, 2 imgs)
+  OK gen-178236702604-private-catamaran-charter-sunset-in-marbella.json  (Marbella, 4 links, 1 imgs)
+  OK gen-178236704205-private-yacht-charter-in-marbella.json  (Marbella, 2 links, 2 imgs)
+  OK gen-178236705606-private-yacht-charter-hen-in-puerto-banus.json  (Puerto Banus, 3 links, 1 imgs)
+  OK gen-178236707307-private-yacht-hire-in-puerto-banus.json  (Puerto Banus, 3 links, 2 imgs)
+  OK gen-178236712908-a-day-on-the-water-in-reunion.json  (Reunion, 3 links, 2 imgs)
+  OK gen-178236714409-boat-rental-costs-in-rovinj.json  (Rovinj, 4 links, 1 imgs)
+  OK gen-178236716010-renting-a-yacht-in-san-andres.json  (San Andres, 2 links, 2 imgs)
+  OK gen-178236717411-the-best-boats-to-charter-in-saranda.json  (Saranda, 3 links, 1 imgs)
+  OK gen-178236719112-a-day-on-the-water-in-sharm-el-sheikh.json  (Sharm El Sheikh, 3 links, 2 imgs)
+  OK gen-178236720513-boat-rental-costs-in-south-ari-atoll.json  (South Ari Atoll, 4 links, 1 imgs)
+  OK gen-178236722014-speedboat-hire-in-estepona.json  (Estepona, 2 links, 2 imgs)
+  OK gen-178236723615-speedboat-hire-hourly-in-marbella.json  (Marbella, 3 links, 1 imgs)
+  OK gen-178236725316-speedboat-rental-in-benalmadena-marina.json  (Benalmadena Marina, 3 links, 2 imgs)
+  OK gen-178236726817-speedboat-rental-in-marbella-port.json  (Marbella Port, 4 links, 1 imgs)
+  OK gen-178236730218-boat-rental-in-business-marbella.json  (Business Marbella, 3 links, 1 imgs)
+  OK gen-178236732119-a-day-on-the-water-in-szczecin.json  (Szczecin, 3 links, 2 imgs)
+  OK gen-178236734020-boat-rental-costs-in-thousand-islands.json  (Thousand Islands, 4 links, 1 imgs)
+  OK gen-178236737321-the-best-boats-to-charter-in-vanuatu.json  (Vanuatu, 3 links, 1 imgs)
+  OK gen-178236738822-a-day-on-the-water-in-volga-river.json  (Volga River, 3 links, 2 imgs)
+  OK gen-178236742123-yacht-charter-in-dubrovnik.json  (Dubrovnik, 2 links, 2 imgs)
+  OK gen-178236743724-yacht-charter-in-malta.json  (Malta, 3 links, 1 imgs)
+  OK gen-178236745625-yacht-charter-in-puerto-banus.json  (Puerto Banus, 3 links, 2 imgs)
+  OK gen-178236747426-yacht-rental-in-fuengirola-port.json  (Fuengirola Port, 2 links, 2 imgs)
+  OK gen-178236749027-yacht-rental-in-puerto-banus.json  (Puerto Banus, 3 links, 1 imgs)
+  OK gen-178236750528-a-day-on-the-water-in-zeeland.json  (Zeeland, 3 links, 2 imgs)
+  OK gen-178236753629-renting-a-yacht-in-amsterdam.json  (Amsterdam, 2 links, 2 imgs)
+graph_org: generated 30/30 into /Users/master/boat-rental-marbella/content/graph_org
+refilling rentry.co (+30)...
+  reject idx=2 Antalya: ['only 1 question headings (need >=2)']
+  reject idx=3 Auckland: ['word count 627 not in 650-1000']
+  reject idx=13 Puerto Banus: ['word count 608 not in 650-1000']
+  reject idx=14 Split: ['word count 606 not in 650-1000', 'only 1 question headings (need >=2)']
+  reject idx=19 Capri: ['only 1 question headings (need >=2)']
+  reject idx=25 Benalmadena: ['link count 1 not in 2-4']
+  reject idx=26 Marbella: ['title length 77 not in 40-75']
+  reject idx=27 Cayman Islands: ['link count 5 not in 2-4', 'duplicate link URLs']
+  reject idx=32 Estepona: ['only 0 question headings (need >=2)']
+  reject idx=34 Puerto Banus: ['only 1 question headings (need >=2)']
+  OK gen-178236755300-boat-rental-tips-for-accra.json  (Accra, 2 links, 2 imgs)
+  OK gen-178236757001-how-to-choose-a-boat-to-rent-in-alicante.json  (Alicante, 3 links, 1 imgs)
+  OK gen-178236761202-boat-rental-tips-for-barbados.json  (Barbados, 2 links, 2 imgs)
+  OK gen-178236762703-how-to-choose-a-boat-to-rent-in-berlin-spree.json  (Berlin Spree, 3 links, 1 imgs)
+  OK gen-178236764404-boat-hire-in-estepona-port.json  (Estepona Port, 3 links, 2 imgs)
+  OK gen-178236766105-boat-hire-hourly-in-marbella-port.json  (Marbella Port, 4 links, 1 imgs)
+  OK gen-178236767906-boat-rental-in-athens.json  (Athens, 2 links, 2 imgs)
+  OK gen-178236769207-boat-rental-in-capri.json  (Capri, 3 links, 1 imgs)
+  OK gen-178236770808-boat-rental-in-fort-lauderdale.json  (Fort Lauderdale, 3 links, 2 imgs)
+  OK gen-178236772209-boat-rental-in-lake.json  (Lake, 4 links, 1 imgs)
+  OK gen-178236773810-boat-rental-group-in-marbella-port.json  (Marbella Port, 2 links, 2 imgs)
+  OK gen-178236777811-things-to-do-by-boat-in-boracay.json  (Boracay, 4 links, 1 imgs)
+  OK gen-178236779112-boat-rental-tips-for-brighton.json  (Brighton, 2 links, 2 imgs)
+  OK gen-178236780713-how-to-choose-a-boat-to-rent-in-budapest-danube.json  (Budapest Danube, 3 links, 1 imgs)
+  OK gen-178236782314-a-budget-guide-to-renting-a-boat-in-cabo-frio.json  (Cabo Frio, 3 links, 2 imgs)
+  OK gen-178236785515-catamaran-charter-in-cancun.json  (Cancun, 2 links, 2 imgs)
+  OK gen-178236787016-catamaran-charter-in-ibiza.json  (Ibiza, 3 links, 1 imgs)
+  OK gen-178236788717-catamaran-charter-sunset-in-marbella.json  (Marbella, 3 links, 2 imgs)
+  OK gen-178236790218-catamaran-charter-sunset-in-puerto-banus.json  (Puerto Banus, 4 links, 1 imgs)
+  OK gen-178236791819-catamaran-hire-birthday-in-marbella.json  (Marbella, 2 links, 2 imgs)
+  OK gen-178236797620-boat-rental-tips-for-chesapeake-bay.json  (Chesapeake Bay, 2 links, 2 imgs)
+  OK gen-178236799021-how-to-choose-a-boat-to-rent-in-copenhagen.json  (Copenhagen, 3 links, 1 imgs)
+  OK gen-178236800522-a-budget-guide-to-renting-a-boat-in-cuba-havana.json  (Cuba Havana, 3 links, 2 imgs)
+  OK gen-178236802023-things-to-do-by-boat-in-djerba.json  (Djerba, 4 links, 1 imgs)
+  OK gen-178236804924-dolphin-watching-cheap-boat-hire-in-marbella.json  (Marbella, 3 links, 1 imgs)
+  OK gen-178236807625-dolphin-watching-boat-hire-in-puerto-banus.json  (Puerto Banus, 4 links, 1 imgs)
+  OK gen-178236808926-dolphin-watching-romantic-boat-hire-in-puerto-ba.json  (Puerto Banus, 2 links, 2 imgs)
+  OK gen-178236810227-dolphin-watching-boat-hire-in-puerto-banus.json  (Puerto Banus, 3 links, 1 imgs)
+  OK gen-178236811728-dolphin-watching-boat-hire-in-marbella.json  (Marbella, 3 links, 2 imgs)
+  OK gen-178236813029-things-to-do-by-boat-in-dubai.json  (Dubai, 4 links, 1 imgs)
+rentry: generated 30/30 into /Users/master/boat-rental-marbella/content/rentry
+--- backlog levels ---
+graph.org: 99 published / 143 in backlog / 44 pending
+rentry.co: 103 published / 160 in backlog / 57 pending
+Telegraph: 15 published / 31 in backlog / 16 pending
+LiveJournal: 15 posted / 30 in backlog / 15 pending

@@ -1,0 +1,361 @@
+#!/usr/bin/env python3
+import json, re, pathlib
+
+IMG = "/Users/master/boat-rental-marbella/site/img/boats/azimut-39"
+
+doc = {
+    "doc_type": "spec",
+    "title": "Azimut 39",
+    "subtitle": "An Italian-built 12.5 metre flybridge motor yacht for up to eleven guests, chartering from Puerto Banus with skipper, fuel and drinks included. A full dossier on this vessel and her cruising grounds.",
+    "author": "BoatHire24 × Boat Rental In Marbella",
+    "date": "June 2026",
+    "cover_image": f"{IMG}/hero-1200.jpg",
+    "spec_table": [
+        ["Vessel", "Azimut 39"],
+        ["Builder", "Azimut (Italy)"],
+        ["Type", "Motor yacht — flybridge"],
+        ["Length overall", "12.5 m"],
+        ["Guest capacity", "11 guests"],
+        ["Cabins", "2 cabins + convertible saloon"],
+        ["Cruising speed", "18 knots (twin diesel)"],
+        ["Departure port", "Puerto Banus, Marbella"],
+        ["Crew", "Licensed skipper — included"],
+        ["Model year", "Not disclosed"],
+        ["Minimum charter", "2 hours"],
+        ["Rate band", "Tier A — 12.5 m motor yacht"],
+    ],
+    "sections": [
+        {
+            "heading": "A Flybridge Yacht Built for the Marbella Coast",
+            "html": (
+                "<p>The <strong>Azimut 39</strong> is one of those boats that does its talking the moment "
+                "she comes off the berth. She is a <strong>12.5 metre flybridge motor yacht</strong> built by "
+                "<strong>Azimut</strong>, the Italian shipyard whose name has become shorthand for a certain kind "
+                "of Mediterranean glamour, and she carries up to <strong>eleven guests</strong> out of "
+                "<strong>Puerto Banus</strong>. On a coast that has no shortage of pretty boats, she stands out "
+                "for a specific reason: she gives you a proper upper deck. The flybridge is the heart of the "
+                "Azimut experience and the single feature most groups remember once the day is over.</p>"
+                "<p>Where many day yachts of this size offer one level of living space, the Azimut 39 stacks the "
+                "experience. Down below and at cockpit level you have a large saloon wrapped in panoramic windows "
+                "and a shaded aft deck, and up top you have a second helm and a generous sunbathing pad with the "
+                "whole of the Marbella shoreline laid out in front of you. It means the boat works for two kinds of "
+                "guest at once: those who want sun, a drink and a view, and those who want shade, comfort and the "
+                "chance to step away from the heat of the afternoon. Few boats in the fleet split that difference "
+                "as neatly.</p>"
+                "<p>She is also, by design, an easy boat to charter. Every rate on the Azimut 39 already includes a "
+                "<strong>licensed skipper</strong>, <strong>fuel</strong>, a selection of <strong>drinks</strong>, "
+                "<strong>light snacks</strong>, insurance, safety equipment and Spanish VAT at 21 per cent. There "
+                "are no hidden extras to negotiate at the pontoon and nothing to arrange yourself beyond turning up "
+                "with swimwear and sunscreen. That combination of Italian styling, a real flybridge and a genuinely "
+                "all-inclusive rate is what makes her a popular pick for groups who want the upper sun-deck day "
+                "without stepping up to a superyacht budget.</p>"
+            ),
+            "image": f"{IMG}/hero-900.jpg",
+            "image_caption": "The Azimut 39 on the water off Marbella, La Concha rising behind",
+        },
+        {
+            "heading": "Azimut: The Marque Behind the Boat",
+            "html": (
+                "<p>To understand why the Azimut 39 looks and feels the way she does, it helps to know a little "
+                "about the yard that builds her. <strong>Azimut</strong> is one of the best known names in "
+                "production motor yachting, an Italian company founded in Turin in 1969 that grew from a small "
+                "charter and brokerage operation into a builder with a presence in marinas right across the "
+                "Mediterranean. Today the wider Azimut Benetti group is among the largest privately held "
+                "shipbuilding businesses in the world, and the Azimut brand sits at the heart of it, turning out "
+                "everything from compact flybridge cruisers like this one up to large ocean-going yachts.</p>"
+                "<p>What Azimut became famous for is design. The yard built its reputation on a willingness to "
+                "treat a motor yacht as a piece of styling as much as a piece of engineering, and over the decades "
+                "it has worked with some of Italy's most respected naval architects and interior designers. The "
+                "result is a recognisable house language: clean horizontal lines, large areas of glass, light and "
+                "airy interiors, and a confident, slightly sporty stance on the water. When people talk about a "
+                "boat looking unmistakably Italian, an Azimut is very often the shape they have in mind.</p>"
+                "<p>That heritage matters on a charter day in a very practical way. A yard with this much experience "
+                "in production yachts has spent fifty years refining how people actually live aboard for a few hours "
+                "or a few days: where the sun falls on the deck, how guests move between the cockpit and the "
+                "flybridge, how to get the most usable space out of a hull of a given length. The Azimut 39 is the "
+                "small end of that tradition, but she carries the same thinking. She feels like a boat that was "
+                "designed around the people on board rather than around a spec sheet, and that is exactly what you "
+                "want from a vessel you are taking out for a celebration.</p>"
+            ),
+            "image": None,
+            "image_caption": None,
+        },
+        {
+            "heading": "The Flybridge Class and What It Is Known For",
+            "html": (
+                "<p>The Azimut 39 belongs to a category that does a great deal of the work on the Costa del Sol: "
+                "the <em>flybridge motor yacht</em>. The defining feature is in the name. A flybridge is a second, "
+                "open deck built above the main saloon, usually with a duplicate set of helm controls and a large "
+                "expanse of seating and sunpads. It is the highest point on the boat that you can comfortably sit, "
+                "and on a clear Marbella day it is the best seat in the house.</p>"
+                "<p>Flybridge yachts earned their popularity in the Mediterranean for reasons that are obvious the "
+                "moment you climb the steps. The upper deck catches the breeze, lifts you clear of the spray and "
+                "gives you an unbroken horizon in every direction, from the white towers of Puerto Banus to the "
+                "bulk of La Concha mountain behind the town and, on the clearest days, the silhouette of Gibraltar "
+                "and the North African coast to the west. It is a vantage point that turns a simple coastal cruise "
+                "into something that feels genuinely special.</p>"
+                "<p>The class is also prized for how it separates a group without dividing it. While some guests "
+                "stretch out on the flybridge sunpad, others can sit in the shade of the aft cockpit, and a third "
+                "group can be in the water off the swim platform, all of them part of the same day. The "
+                "<strong>second helm</strong> on the Azimut 39's flybridge is a small detail with a big effect: it "
+                "means the skipper can run the boat from up top in good weather, sitting among the guests rather "
+                "than below them, which gives the whole day a relaxed, social feel. This is the layout that took "
+                "the flybridge yacht from a practical cruising tool to the default choice for celebrations along "
+                "this stretch of coast, and the Azimut 39 is a clean, well-proportioned example of it.</p>"
+            ),
+            "image": None,
+            "image_caption": None,
+        },
+        {
+            "heading": "On Board: Layout, Saloon, Cabins and Deck",
+            "html": (
+                "<p>Step aboard and the Azimut 39 organises herself around two simple ideas: sun on the flybridge "
+                "and shade in the saloon. Here is what the vessel offers, drawn from her own specification.</p>"
+                "<ul>"
+                "<li><strong>Flybridge with a second helm and a sunbathing pad</strong> — the upper deck "
+                "where most of the day is spent, with controls so the skipper can run the boat from up top.</li>"
+                "<li><strong>Sleek Italian styling</strong> — Azimut's signature reverse sheer line, the "
+                "detail that gives the boat her modern, purposeful profile.</li>"
+                "<li><strong>A large saloon with panoramic windows</strong> — an air-conditioned, shaded "
+                "space wrapped in glass, ideal for a cooler hour in the middle of the afternoon or a sheltered "
+                "lunch.</li>"
+                "<li><strong>Two cabins plus a convertible saloon</strong> — enough to sleep guests aboard, "
+                "which makes the boat suitable for the occasional overnight as well as day charters.</li>"
+                "<li><strong>Twin diesel engines with an 18-knot cruise</strong> — the power to reach a swim "
+                "stop quickly and to range further along the coast on a full day.</li>"
+                "</ul>"
+                "<p>The flow between these spaces is what makes the boat work. The aft cockpit is the natural "
+                "gathering point as you leave the marina, shaded and close to the water. From there a few steps "
+                "take you up to the flybridge or down into the saloon, so guests can drift between sun, shade and "
+                "the sea throughout the day without ever feeling penned in. The <strong>panoramic windows</strong> "
+                "in the saloon are a particular highlight: they keep the interior bright and connected to the view "
+                "even when you have stepped inside out of the midday heat, which is something older enclosed boats "
+                "rarely manage.</p>"
+                "<p>The two cabins and convertible saloon are worth a word for what they make possible. Most "
+                "charters on the Azimut 39 are day trips, but the sleeping accommodation means she is equally "
+                "comfortable for a longer outing, a sunset-to-late-evening charter, or a short overnight away from "
+                "the marina. It is a quiet flexibility that a pure open day-boat cannot offer, and it widens the "
+                "range of occasions the boat can take on.</p>"
+            ),
+            "image": f"{IMG}/aerial-1200.jpg",
+            "image_caption": "The Azimut 39 from above — flybridge, cockpit and swim platform",
+        },
+        {
+            "heading": "A Day Aboard from Puerto Banus",
+            "html": (
+                "<p>The best way to understand the Azimut 39 is to walk through a typical charter day, the kind of "
+                "outing most groups book. Your skipper meets you at the berth in <strong>Puerto Banus</strong> a "
+                "little before the agreed departure time for a short, friendly welcome and a safety briefing. "
+                "Boarding is straightforward from the pontoon, the drinks are already chilling on board, and within "
+                "a few minutes you are easing out past the breakwater with the marina's famous line of yachts to "
+                "one side and the open Mediterranean ahead.</p>"
+                "<p>Once clear of the harbour, the skipper brings the twin diesels up to a comfortable cruise and "
+                "the boat settles into her stride. This is usually the moment guests climb to the flybridge for the "
+                "first time, drinks in hand, to watch the coastline open out. A short run along the shore brings you "
+                "to the first swim stop, often off the <strong>Golden Mile</strong>, the strip of coast between "
+                "Puerto Banus and Marbella town lined with the grandest villas and beach clubs on the Costa del Sol. "
+                "The skipper finds a calm spot, drops the anchor, and the boat goes quiet. This is the heart of the "
+                "day: the swim platform comes alive, some guests are in the water while others stretch out on the "
+                "flybridge sunpad, and the light snacks and drinks come out in the cockpit.</p>"
+                "<p>From there the shape of the day is yours. A two or three hour charter might be a single relaxed "
+                "swim stop and a slow cruise back in time for dinner ashore. A half day gives you room to move on "
+                "to a second anchorage, perhaps east towards Cabopino, with a longer spell at anchor in between. A "
+                "full eight-hour day stretches the whole thing out: a leisurely run west towards Estepona, a long "
+                "lunch at anchor in the saloon or cockpit, an afternoon in the water and a gentle return as the "
+                "light begins to soften. Throughout, the skipper handles the navigation, the anchoring and the "
+                "boat, so the only decisions you have to make are where to swim next and whether to be on the "
+                "flybridge or in the shade.</p>"
+            ),
+            "image": None,
+            "image_caption": None,
+        },
+        {
+            "heading": "Itineraries and Cruising Grounds",
+            "html": (
+                "<p>Puerto Banus sits in the middle of one of the most rewarding stretches of coast in the western "
+                "Mediterranean, which means the Azimut 39 has genuine choice in every direction. The right "
+                "itinerary depends on how long you have booked and what kind of day you are after, and your skipper "
+                "will tailor the route to the conditions on the day. These are the main options.</p>"
+                "<ul>"
+                "<li><strong>The Golden Mile swim stop</strong> — the classic short charter. A gentle cruise "
+                "east towards Marbella town along the coast of villas and beach clubs, with an anchor stop to swim "
+                "in the clear water close to shore. Perfect for a two to three hour outing.</li>"
+                "<li><strong>East to Cabopino</strong> — a slightly longer run towards the pretty marina and "
+                "dune-backed beaches at Cabopino, one of the nicest natural stretches on this part of the coast. A "
+                "good target for a four to five hour half day with a lunch stop along the way.</li>"
+                "<li><strong>West to Estepona</strong> — the coast opens up and quietens down as you head "
+                "west, with space to anchor away from the busiest beaches. A natural full-day destination with "
+                "plenty of time in the water.</li>"
+                "<li><strong>Longer runs towards Gibraltar</strong> — on a full eight-hour charter in settled "
+                "weather, the dramatic profile of the Rock and the Strait comes into view to the west. It is a big "
+                "day on the water and one for calm conditions, but a memorable one.</li>"
+                "</ul>"
+                "<p>What links all of these is the backdrop. Almost the entire cruise is run with <strong>La "
+                "Concha</strong>, the distinctive shell-shaped mountain above Marbella, standing over the town, and "
+                "on clear days the view stretches across the Alboran Sea towards the mountains of North Africa. The "
+                "water here is generally calm in the summer months, sheltered by the lie of the coast, which is part "
+                "of why this stretch became such a natural home for day charters in the first place. The flybridge "
+                "on the Azimut 39 is the ideal place to take it all in, and the boat's 18-knot cruise means even "
+                "the longer westward runs are comfortably within reach of a full-day charter.</p>"
+            ),
+            "image": None,
+            "image_caption": None,
+        },
+        {
+            "heading": "Who This Boat Suits",
+            "html": (
+                "<p>With a capacity of up to <strong>eleven guests</strong>, the Azimut 39 sits in the sweet spot "
+                "for a wide range of groups and occasions. She is large enough to host a real party but small enough "
+                "to feel personal, and the split between flybridge, cockpit and saloon means a mixed group is well "
+                "catered for whatever the weather and whatever people are in the mood for.</p>"
+                "<p>She is a particularly strong choice for <strong>celebrations</strong>: a birthday on the water, "
+                "a stag or hen day, an anniversary, or simply a group of friends marking the start of a holiday. "
+                "The flybridge sunpad and the social second helm give these days a relaxed, sociable centre of "
+                "gravity, and the included drinks selection of water, soft drinks, beer, white wine and cava means "
+                "the toast is already taken care of. She suits <strong>families</strong> too, with the shaded "
+                "saloon offering a cool retreat for younger or older guests while everyone else swims, and the "
+                "skipper taking the worry out of the day so parents can relax.</p>"
+                "<p>For groups deciding between boats, the Azimut 39's distinguishing feature is that flybridge. If "
+                "the upper sun-deck experience is what you are picturing — sitting up top with a drink, the "
+                "coast sliding past, the sun overhead — this is the boat that delivers it without moving into "
+                "superyacht territory. She is the Italian counterpart to the more traditional Spanish day yachts in "
+                "the same size class, and for many guests the modern lines and the extra deck are exactly what tip "
+                "the decision in her favour.</p>"
+            ),
+            "image": None,
+            "image_caption": None,
+        },
+        {
+            "heading": "Pricing and Inclusions",
+            "html": (
+                "<p>The Azimut 39 charters on the <strong>Tier A — 12.5 m motor yacht</strong> rate band. All "
+                "prices below are per charter, not per person, and they are genuinely all-inclusive. The minimum "
+                "charter is <strong>two hours</strong>.</p>"
+                "<table>"
+                "<tr><th>Duration</th><th>Rate (all-inclusive)</th></tr>"
+                "<tr><td>2 hours</td><td>€749</td></tr>"
+                "<tr><td>3 hours</td><td>€1,049</td></tr>"
+                "<tr><td>4 hours</td><td>€1,299</td></tr>"
+                "<tr><td>5 hours</td><td>€1,549</td></tr>"
+                "<tr><td>6 hours</td><td>€1,799</td></tr>"
+                "<tr><td>7 hours</td><td>€2,099</td></tr>"
+                "<tr><td>8 hours (full day)</td><td>€2,299</td></tr>"
+                "</table>"
+                "<p>Because the rate is per boat, the cost per head falls as the group grows. A full eleven guests "
+                "sharing a full-day charter brings the price per person down considerably, which is part of why the "
+                "boat works so well for celebrations. <strong>Every charter includes the following, with no extras "
+                "to settle at the marina:</strong></p>"
+                "<ul>"
+                "<li>Licensed skipper</li>"
+                "<li>Fuel</li>"
+                "<li>Drinks (water, soft drinks, beer, white wine, cava)</li>"
+                "<li>Light snacks</li>"
+                "<li>Insurance</li>"
+                "<li>Safety equipment</li>"
+                "<li>VAT (21%)</li>"
+                "</ul>"
+                "<p>It is worth dwelling on how unusual that list is. Fuel and a qualified skipper are the two costs "
+                "that most often appear as surprises on a charter elsewhere, and both are already in the price here. "
+                "Spanish VAT at 21 per cent is included as well, so the figure you see is the figure you pay. You "
+                "are welcome to bring your own food aboard for the longer charters, and the saloon and cockpit make "
+                "comfortable spaces for a proper lunch at anchor.</p>"
+            ),
+            "image": None,
+            "image_caption": None,
+        },
+        {
+            "heading": "Seasonality and Booking Practicalities",
+            "html": (
+                "<p>The Costa del Sol earns its name, with a long and reliable charter season and some of the "
+                "sunniest weather in mainland Europe. In practice the prime window runs from late spring through to "
+                "early autumn, when the sea is warm, the water is calm and the days are long. <strong>July and "
+                "August</strong> are the peak: the conditions are at their best and the demand is at its highest, so "
+                "morning slots in particular tend to book out well in advance. If your dates fall in high summer, it "
+                "is worth enquiring early to secure the time you want.</p>"
+                "<p>The shoulder months either side — May, June, September and October — are a quiet "
+                "secret. The weather is still very much made for the water, the light is beautiful, the sea is warm "
+                "from the summer, and the coast is noticeably calmer than at the height of the season. For groups "
+                "with flexible dates, these months often offer the most relaxed version of the same day. As with all "
+                "open-water charters, the skipper has the final word on routing and timing based on the conditions "
+                "on the morning of your trip, which is part of what keeps the day safe and comfortable.</p>"
+                "<p>Booking the Azimut 39 is deliberately simple. Departures are from <strong>Puerto Banus</strong>, "
+                "and your skipper meets you at the berth around fifteen minutes before the agreed time for the "
+                "welcome and briefing. The essentials to bring are few: swimwear, towels, sunscreen and sunglasses, "
+                "and soft-soled shoes or bare feet for the deck. Everything else — the drinks, the snacks, the "
+                "safety equipment and the skipper — is already aboard. Availability, photographs and routes can "
+                "be checked and the boat reserved at "
+                "<a href=\"https://boatrentalinmarbella.com/boats/azimut-39/\">boatrentalinmarbella.com</a>, with "
+                "longer or bespoke charters quoted directly over WhatsApp.</p>"
+            ),
+            "image": None,
+            "image_caption": None,
+        },
+        {
+            "heading": "Frequently Asked Questions",
+            "html": (
+                "<p><strong>How many guests can the Azimut 39 carry?</strong><br>"
+                "Up to eleven guests, in addition to the licensed skipper who runs the boat.</p>"
+                "<p><strong>Where does the boat depart from?</strong><br>"
+                "All charters leave from Puerto Banus in Marbella. Your skipper meets you at the berth shortly "
+                "before departure.</p>"
+                "<p><strong>Is a skipper included, or do I need a licence?</strong><br>"
+                "A licensed skipper is included in every rate, so no licence or boating experience is needed on your "
+                "part. The skipper handles the navigation, the anchoring and the boat throughout the day.</p>"
+                "<p><strong>What is included in the price?</strong><br>"
+                "Every charter includes the skipper, fuel, drinks (water, soft drinks, beer, white wine and cava), "
+                "light snacks, insurance, safety equipment and VAT at 21 per cent. The prices are per boat and "
+                "all-inclusive, with no extras to settle at the marina.</p>"
+                "<p><strong>What does it cost?</strong><br>"
+                "The Azimut 39 is on the Tier A rate band. Charters start at €749 for two hours and run to "
+                "€2,299 for a full eight-hour day, with the minimum charter being two hours. Because the rate is "
+                "per boat, the cost per person falls as the group grows.</p>"
+                "<p><strong>What is the flybridge and why does it matter?</strong><br>"
+                "The flybridge is the open upper deck above the saloon, with a second set of helm controls and a "
+                "sunbathing pad. It is the highest comfortable seat on the boat and the best vantage point for the "
+                "coastal views, and it is the feature that most distinguishes the Azimut 39 from single-deck day "
+                "yachts of the same size.</p>"
+                "<p><strong>Can the boat be used overnight?</strong><br>"
+                "Yes. She has two cabins plus a convertible saloon, so she is suitable for the occasional overnight "
+                "as well as day charters. Longer and bespoke charters are quoted over WhatsApp.</p>"
+                "<p><strong>When is the best time to book?</strong><br>"
+                "July and August offer the warmest, calmest conditions but book up fastest, especially morning "
+                "slots. The shoulder months of May, June, September and October offer much the same weather with a "
+                "calmer, quieter coast. Enquire early for high-summer dates.</p>"
+            ),
+            "image": None,
+            "image_caption": None,
+        },
+    ],
+    "callout": {
+        "heading": "Book the Azimut 39",
+        "html": (
+            "<p>Check availability, photographs and routes, and reserve this boat at "
+            "<a href=\"https://boatrentalinmarbella.com/boats/azimut-39/\"><strong>boatrentalinmarbella.com</strong></a>. "
+            "Longer and bespoke charters are quoted directly over WhatsApp.</p>"
+            "<p>Boat owners: list your boat free at "
+            "<a href=\"https://boathire24.com\"><strong>boathire24.com</strong></a> and reach renters worldwide, "
+            "with no subscription and no listing fee.</p>"
+        ),
+    },
+    "links": {
+        "primary": "https://boathire24.com",
+        "boat_url": "https://boatrentalinmarbella.com/boats/azimut-39/",
+    },
+}
+
+out = pathlib.Path("/Users/master/boat-rental-marbella/tmp-scribd/content/spec-azimut-39.json")
+out.write_text(json.dumps(doc, indent=2, ensure_ascii=False), encoding="utf-8")
+
+# Word count across section.html, tags stripped
+def strip_tags(s):
+    s = re.sub(r"<[^>]+>", " ", s)
+    s = s.replace("&amp;", "&").replace("&euro;", "€").replace("&nbsp;", " ")
+    return s
+
+words = 0
+for sec in doc["sections"]:
+    text = strip_tags(sec["html"])
+    words += len(text.split())
+
+print("WORDS:", words)
+print("WROTE:", out)

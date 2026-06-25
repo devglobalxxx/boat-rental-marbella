@@ -1,0 +1,502 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<title>Bandido</title>
+<style>
+:root {
+  --navy:      #0e2438;
+  --navy-deep: #08182a;
+  --gold:      #b9924b;
+  --gold-dark: #8a6c33;
+  --gold-light:#d4b06a;
+  --gold-pale: #e8d8af;
+  --ivory:     #f7f2e6;
+  --paper:     #fdfbf5;
+  --ink:       #22303e;
+  --muted:     #5d6a76;
+  --hairline:  #d9cdaf;
+  --row-tint:  #f5efdf;
+}
+* { -webkit-print-color-adjust: exact; print-color-adjust: exact;
+    box-sizing: border-box; }
+@page { size: A4; margin: 0; }
+html, body { margin: 0; padding: 0; }
+body {
+  background: var(--paper);
+  color: var(--ink);
+  font-family: Georgia, 'Palatino Linotype', Palatino, 'Times New Roman', serif;
+  font-size: 10.5pt;
+  line-height: 1.62;
+}
+.display { font-family: Didot, 'Didot LT STD', 'Playfair Display', Georgia,
+           'Times New Roman', serif; }
+.caps { font-family: Optima, 'Avenir Next', 'Gill Sans', 'Trebuchet MS',
+        sans-serif; text-transform: uppercase; }
+
+/* ---------------- Cover ---------------- */
+.cover {
+  position: relative;
+  width: 210mm; height: 297mm;
+  overflow: hidden;
+  background: var(--navy-deep);
+  page-break-after: always;
+}
+.cover-img {
+  position: absolute; inset: 0;
+  width: 100%; height: 100%;
+  object-fit: cover;
+  object-position: 24% center;  /* centres the yacht's full profile in the A4 crop */
+}
+.cover-veil {
+  position: absolute; inset: 0;
+  background:
+    linear-gradient(to top, rgba(11,26,46,0.92),
+                    rgba(11,26,46,0.86) 30%, transparent 55%),
+    linear-gradient(180deg,
+      rgba(8,24,42,0.62) 0%,
+      rgba(8,24,42,0.20) 26%,
+      rgba(8,24,42,0.12) 50%,
+      rgba(8,24,42,0.00) 62%);
+}
+.cover-veil.no-img {
+  background:
+    radial-gradient(120mm 90mm at 50% 26%, rgba(185,146,75,0.20), transparent 70%),
+    linear-gradient(180deg, #122c46 0%, #0a1d33 55%, #071426 100%);
+}
+.cover-top {
+  position: absolute; top: 13mm; left: 16mm; right: 16mm;
+  display: flex; align-items: center; justify-content: space-between;
+}
+.brand-lockup { display: flex; align-items: center; gap: 4.5mm; }
+.logo-chip {
+  background: #ffffff;
+  border: 1px solid var(--gold);
+  border-radius: 1.2mm;
+  padding: 2mm;
+  line-height: 0;
+}
+.logo-chip img { display: block; height: 13mm; width: 13mm;
+                 object-fit: cover; border-radius: 0.7mm; }
+.brand-name {
+  color: var(--ivory); font-size: 13pt; letter-spacing: 0.30em;
+  line-height: 1.25;
+}
+.brand-tag {
+  color: var(--gold-pale); font-size: 6.4pt; letter-spacing: 0.26em;
+  margin-top: 1mm;
+}
+.doc-type-flag {
+  text-align: right;
+  color: var(--gold-light);
+  font-size: 7.5pt; letter-spacing: 0.34em;
+  border-top: 0.7pt solid var(--gold);
+  border-bottom: 0.7pt solid var(--gold);
+  padding: 2.2mm 0 2mm 0;
+}
+.cover-main {
+  position: absolute; left: 16mm; right: 16mm; bottom: 34mm;
+}
+.cover-rule {
+  display: flex; align-items: center; gap: 4mm;
+  margin-bottom: 5mm;
+}
+.cover-rule .line { flex: 0 0 22mm; height: 0; border-top: 0.8pt solid var(--gold); }
+.cover-rule .word {
+  color: var(--gold-light); font-size: 8pt; letter-spacing: 0.42em;
+  white-space: nowrap;
+  text-shadow: 0 1px 5px rgba(5,14,26,0.65);
+}
+.cover-title {
+  color: #fdfaf2;
+  font-size: 44pt; line-height: 1.05;
+  font-weight: 600;
+  margin: 0 0 4mm 0;
+  text-shadow: 0 1px 8px rgba(5,14,26,0.55);
+}
+.cover-subtitle {
+  color: var(--gold-pale);
+  font-style: italic;
+  font-size: 13pt; line-height: 1.45;
+  margin: 0 0 7mm 0;
+  max-width: 150mm;
+  text-shadow: 0 1px 6px rgba(5,14,26,0.6);
+}
+.cover-meta {
+  color: rgba(247,242,230,0.92);
+  font-size: 7.6pt; letter-spacing: 0.22em;
+}
+.cover-meta .dot { color: var(--gold-light); padding: 0 2.2mm; }
+.fleet-strip {
+  margin-top: 8mm;
+  display: flex; align-items: center; gap: 4mm;
+}
+.fleet-strip .logo-chip img { height: 9mm; width: auto; }
+.fleet-label {
+  color: rgba(247,242,230,0.85); font-size: 6.6pt; letter-spacing: 0.30em;
+}
+
+/* ------------- Repeating footer ------------- */
+.runfoot {
+  position: fixed; left: 0; right: 0; bottom: 0;
+  height: 12mm;
+  background: var(--ivory);
+  border-top: 1pt solid var(--gold);
+  display: flex; align-items: center; justify-content: space-between;
+  padding: 0 16mm;
+  font-size: 6.8pt; letter-spacing: 0.12em;
+  color: var(--navy);
+}
+.runfoot b { letter-spacing: 0.22em; font-weight: 600; }
+.runfoot .gold { color: var(--gold-dark); }
+.runfoot a { color: var(--navy); text-decoration: none; }
+
+/* ------------- Paged content scaffold ------------- */
+table.paged { width: 100%; border-collapse: collapse; }
+table.paged > thead td { height: 15mm; padding: 0; }
+table.paged > tfoot td { height: 17mm; padding: 0; }
+table.paged > tbody > tr > td { padding: 0 18mm; }
+
+/* ------------- Sections ------------- */
+.sec { margin: 0 0 8mm 0; }
+.sec-head {
+  break-after: avoid-page; page-break-after: avoid;
+  break-inside: avoid; page-break-inside: avoid;
+  margin: 0 0 4.5mm 0;
+}
+.sec-kicker {
+  color: var(--gold-dark); font-size: 7pt; letter-spacing: 0.38em;
+  margin-bottom: 1.6mm;
+}
+.sec-head h2 {
+  color: var(--navy);
+  font-size: 18.5pt; font-weight: 400; line-height: 1.2;
+  margin: 0 0 2.6mm 0;
+}
+.sec-head .rules { position: relative; height: 2.4mm; }
+.sec-head .rules .thin {
+  position: absolute; left: 0; right: 0; top: 1mm;
+  border-top: 0.6pt solid var(--hairline);
+}
+.sec-head .rules .thick {
+  position: absolute; left: 0; top: 0; width: 26mm;
+  border-top: 2.2pt solid var(--gold);
+}
+.sec-body p { margin: 0 0 3.4mm 0; }
+.sec-body p:last-child { margin-bottom: 0; }
+.sec-body ol { margin: 0 0 3.4mm 0; padding-left: 5.5mm; }
+.sec-body ul { margin: 0 0 3.4mm 0; padding-left: 1mm; }
+.sec-body li { margin-bottom: 1.6mm; break-inside: avoid; page-break-inside: avoid;
+               -webkit-column-break-inside: avoid; }
+.sec-body ul.cols2 { columns: 2; column-gap: 9mm;
+                     break-inside: avoid; page-break-inside: avoid; }
+.sec-body ul > li {
+  list-style: none;
+  padding-left: 1.1em; text-indent: -1.1em;  /* hanging indent: wraps align under text */
+}
+.sec-body ul > li::before {
+  content: "\2726";            /* four-pointed star, brass compass point */
+  display: inline-block; width: 1.44em; text-indent: 0;
+  color: var(--gold); font-size: 8pt;       /* 1.44em @8pt == 1.1em @10.5pt */
+}
+.sec-body a { color: var(--navy); text-decoration: none;
+              border-bottom: 0.6pt solid var(--gold); }
+.sec-body strong { color: var(--navy); }
+
+/* generic tables inside section html */
+.sec-body table {
+  width: 100%; border-collapse: collapse;
+  margin: 1mm 0 4mm 0;
+  break-inside: avoid; page-break-inside: avoid;
+  font-size: 9.8pt;
+}
+.sec-body th {
+  background: var(--navy); color: var(--ivory);
+  font-family: Optima, 'Avenir Next', 'Gill Sans', 'Trebuchet MS', sans-serif;
+  text-transform: uppercase; letter-spacing: 0.16em;
+  font-size: 7.4pt; font-weight: 500;
+  text-align: left; padding: 2.6mm 3.5mm;
+  border-bottom: 1.4pt solid var(--gold);
+}
+.sec-body td {
+  padding: 2.2mm 3.5mm;
+  border-bottom: 0.6pt solid var(--hairline);
+  color: var(--ink);
+}
+.sec-body td, .sec-body th { font-variant-numeric: tabular-nums; }
+.sec-body td:not(:first-child),
+.sec-body th:not(:first-child) { text-align: right; }
+.sec-body tr:nth-child(even) td { background: var(--row-tint); }
+.sec-body td:first-child { color: var(--navy); }
+.sec-body tr.best td { background: rgba(212,175,55,0.12); }
+.sec-body tr.best td:first-child { color: var(--navy); font-weight: 600; }
+.best-tag {
+  display: inline-block;
+  font-family: Optima, 'Avenir Next', 'Gill Sans', 'Trebuchet MS', sans-serif;
+  font-variant-caps: small-caps; text-transform: lowercase;
+  font-size: 7.6pt; font-weight: 600; letter-spacing: 0.14em;
+  color: var(--gold-dark);
+  border: 0.6pt solid var(--gold);
+  border-radius: 1mm;
+  padding: 0.2mm 1.6mm;
+  margin-left: 2.2mm;
+  white-space: nowrap;
+  vertical-align: 0.2mm;
+}
+
+/* ------------- Figures ------------- */
+figure.plate {
+  break-inside: avoid; page-break-inside: avoid;
+  margin: 5mm 0 2mm 0;
+  background: #ffffff;
+  border: 0.7pt solid var(--gold-light);
+  padding: 2.6mm;
+}
+figure.plate img {
+  display: block; width: 100%; height: 78mm; object-fit: cover;
+}
+figure.plate figcaption {
+  text-align: center;
+  font-style: italic;
+  font-size: 8.4pt; color: var(--muted);
+  padding: 2.4mm 2mm 0.6mm 2mm;
+}
+figure.plate figcaption::before {
+  content: "\25C6\00a0"; color: var(--gold); font-size: 6pt;
+}
+
+/* ------------- Spec table (2-column grid: two lbl/val pairs per row) ------------- */
+.spec-block { margin: 0 0 8mm 0; }
+table.spec {
+  width: 100%; border-collapse: collapse;
+  border-top: 1.6pt solid var(--navy);
+  border-bottom: 1.6pt solid var(--navy);
+}
+table.spec td { padding: 1.7mm 1.5mm; border-bottom: 0.6pt solid var(--hairline);
+                vertical-align: top; }
+table.spec tr:last-child td { border-bottom: none; }
+table.spec td.lbl {
+  width: 21%;
+  font-family: Optima, 'Avenir Next', 'Gill Sans', 'Trebuchet MS', sans-serif;
+  text-transform: uppercase; letter-spacing: 0.16em;
+  font-size: 7.2pt; color: var(--gold-dark);
+  padding-top: 2.3mm;
+}
+table.spec td.val { width: 29%; color: var(--navy); font-size: 9.8pt; }
+table.spec td.lbl:nth-child(3) {
+  border-left: 0.6pt solid var(--hairline);
+  padding-left: 4mm;
+}
+table.spec td.val:nth-child(2) { padding-right: 4mm; }
+
+/* ------------- Callout ------------- */
+.callout {
+  break-inside: avoid; page-break-inside: avoid;
+  margin: 8mm 0 4mm 0;
+  background: var(--navy);
+  border: 1pt solid var(--gold);
+  outline: 0.6pt solid var(--gold);
+  outline-offset: -2.2mm;
+  color: var(--ivory);
+  padding: 8mm 9mm 7mm 9mm;
+}
+.callout h3 {
+  color: var(--gold-light);
+  font-size: 15pt; font-weight: 400;
+  margin: 0 0 3mm 0;
+}
+.callout p { margin: 0 0 2.8mm 0; line-height: 1.6; color: #efe7d3; }
+.callout a { color: var(--gold-light); text-decoration: none; }
+.callout ul { margin: 0 0 2.8mm 0; padding-left: 1mm; }
+.callout ul > li { list-style: none; margin-bottom: 1.4mm;
+                   padding-left: 1.1em; text-indent: -1.1em;
+                   break-inside: avoid; page-break-inside: avoid; }
+.callout ul > li::before {
+  content: "\2726"; display: inline-block; width: 1.44em; text-indent: 0;
+  color: var(--gold-light); font-size: 8pt;
+}
+.callout .linksrow {
+  margin-top: 4.5mm; padding-top: 3.6mm;
+  border-top: 0.6pt solid rgba(212,176,106,0.55);
+  font-size: 7.6pt; letter-spacing: 0.16em;
+  color: var(--gold-pale);
+}
+.callout .linksrow span.sep { padding: 0 2.6mm; color: var(--gold); }
+
+.endmark {
+  display: flex; align-items: center; justify-content: center; gap: 3.5mm;
+  margin: 7mm 0 0 0;
+}
+.endmark .line { width: 14mm; height: 0; border-top: 0.6pt solid var(--gold); }
+.endmark svg { display: block; }
+</style>
+</head>
+<body>
+
+<div class="cover">
+  <img class="cover-img" src="file:///Users/master/boat-rental-marbella/site/img/boats/bandido/hero-1200.jpg" alt="">
+  <div class="cover-veil"></div>
+  <div class="cover-top">
+    <div class="brand-lockup">
+      <span class="logo-chip"><img src="file:///Users/master/boat-rental-platform/public/brand-logo.jpg" alt="BoatHire24"></span>
+      <div>
+        <div class="brand-name caps display">BoatHire24</div>
+        <div class="brand-tag caps">Rent boats worldwide <span class="gold">|</span> list your boat free</div>
+      </div>
+    </div>
+    <div class="doc-type-flag caps">June 2026</div>
+  </div>
+  <div class="cover-main">
+    <div class="cover-rule">
+      <span class="line"></span>
+      <span class="word caps">Vessel Specification</span>
+    </div>
+    <h1 class="cover-title display">Bandido</h1>
+    <p class="cover-subtitle display">A sport-fishing yacht built for the offshore grounds beyond Marbella, departing Puerto Banus</p>
+    <div class="cover-meta caps">BoatHire24</div>
+    <div class="fleet-strip"><span class="fleet-label caps">From the fleet of</span><span class="logo-chip"><img src="file:///Users/master/boat-rental-marbella/site/img/logo-640.png" alt="Boat Rental In Marbella"></span></div>
+  </div>
+</div>
+<table class="paged">
+  <thead><tr><td></td></tr></thead>
+  <tbody><tr><td>
+
+<div class="spec-block sec">
+  <div class="sec-head">
+    <div class="sec-kicker caps">Particulars</div>
+    <h2 class="display">Principal Particulars</h2>
+    <div class="rules"><span class="thick"></span><span class="thin"></span></div>
+  </div>
+  <table class="spec"><tr><td class="lbl">Length overall</td><td class="val">11.5 m</td><td class="lbl">Guest capacity</td><td class="val">8 guests</td></tr>
+<tr><td class="lbl">Vessel type</td><td class="val">Sport-fishing yacht</td><td class="lbl">Builder</td><td class="val">Bandido</td></tr>
+<tr><td class="lbl">Departure port</td><td class="val">Puerto Banus, Marbella</td><td class="lbl">Model year</td><td class="val">On request</td></tr>
+<tr><td class="lbl">Crew</td><td class="val">Skipper plus mate</td><td class="lbl">Rate band</td><td class="val">Quote on WhatsApp</td></tr></table>
+</div>
+
+<div class="sec">
+  <div class="sec-head">
+    <div class="sec-kicker caps">Section 01</div>
+    <h2 class="display">A different kind of Marbella charter</h2>
+    <div class="rules"><span class="thick"></span><span class="thin"></span></div>
+  </div>
+  <div class="sec-body"><p><strong>Bandido</strong> is the boat in the Boat Rental In Marbella fleet that does not pretend to be a beach club afloat. While the rest of the line-up is built around long lunches at anchor off the Golden Mile, Bandido is rigged for a single purpose, and rigged properly: getting a small group out to the deep water beyond the bay and putting them onto fish. She is an 11.5 metre sport-fishing yacht, set up to carry up to eight guests, departing from Puerto Banus with a licensed skipper and a working mate aboard.</p><p>That focus is what makes her stand out. Plenty of operators on the Costa del Sol will sell you a fishing trip on a cruiser with a couple of rod holders screwed to the transom as an afterthought. Bandido is the opposite. The hull, the layout and the rig were all chosen with the offshore grounds in mind, so the boat works with you rather than against you when the rods go down. The result is a charter that suits the angler who actually wants to fish, the family who wants their children to feel a fish pull line for the first time, and the group of friends who want a day on the water that has a bit more shape to it than drifting and swimming.</p><p>She is also, frankly, one of the more characterful boats on the dock. The name fits the breed. Sport-fishing yachts have always carried a slightly piratical romance about them, the sense that they go where the soft-furnished cruisers will not. Bandido leans into that. You step aboard knowing the day has a target, and that the crew intend to find it.</p><p>What follows is a full dossier on this specific vessel: who builds boats like her and why the type earned its reputation, what is aboard, what a day actually looks like from the moment you meet the crew at the berth, where she ranges along this coast, who the boat suits, and exactly what is and is not included when you charter her. Every hard figure here comes from the boat's own record. Everything else is the context that turns a spec sheet into a day you will remember.</p></div>
+  <figure class="plate"><img src="file:///Users/master/boat-rental-marbella/site/img/fishing/big-catch-marbella-1200.jpg" alt=""><figcaption>The point of the exercise: a quality fish brought to the boat off Marbella</figcaption></figure>
+</div>
+
+<div class="sec">
+  <div class="sec-head">
+    <div class="sec-kicker caps">Section 02</div>
+    <h2 class="display">The builder and the breed</h2>
+    <div class="rules"><span class="thick"></span><span class="thin"></span></div>
+  </div>
+  <div class="sec-body"><p>To understand Bandido it helps to understand the breed she belongs to. The sport-fisher, or sport-fishing yacht, is one of the oldest distinct lineages in pleasure boating, and it grew up around a very specific problem. Game fish live offshore, often a long way offshore, and they hold in deep, sometimes lumpy water. To reach them in a single day and still have the comfort and the deck space to fight a big fish, you need a particular kind of boat: fast enough to cover ground, sea-kindly enough to make the run in comfort, and laid out around an open working cockpit rather than a sun-pad.</p><p>The classic answer evolved on the sport-fishing coasts of the world, where charter skippers needed boats that could run out to the canyons and seamounts at first light, fish hard all day and be home by evening. That heritage shaped every detail of the type: the raised bow for punching through a head sea, the broad transom and low freeboard aft for working a fish boatside, the flying bridge or raised helm so the skipper can read the water and watch the spread of lines, and the outriggers that fan the trolled baits wide of the wake. A true sport-fisher is a tool, and like all good tools it wears its function openly.</p><p>Bandido sits squarely in that tradition. She is a builder's sport-fishing yacht rather than a converted cruiser, which is the distinction that matters when the wind gets up and the fish are two hours out. The hull is a planing design driven by twin diesels, so she gets up and goes, and settles into an efficient cruise that makes distant marks a realistic proposition even on a half-day ticket. The layout keeps the working area clear and the freeboard sensible, so the mate can do his job and a guest can fight a fish without climbing over the furniture. None of this is glamorous on paper. All of it is the difference between a boat that looks like a fishing boat and a boat that fishes.</p></div>
+  
+</div>
+
+<div class="sec">
+  <div class="sec-head">
+    <div class="sec-kicker caps">Section 03</div>
+    <h2 class="display">What the class is known for</h2>
+    <div class="rules"><span class="thick"></span><span class="thin"></span></div>
+  </div>
+  <div class="sec-body"><p>If you have only ever been on a leisure cruiser, the first thing you notice about a sport-fishing yacht is how purposeful she feels. There is a logic to where everything sits, and that logic is the day's fishing.</p><p>The defining features of the class are worth spelling out, because they explain why Bandido is built the way she is:</p><ul><li><strong>The cockpit is the heart of the boat.</strong> On a cruiser the action is up top on the sun-pad. On a sport-fisher it is down aft in the open cockpit, where the rods are worked, the fish is landed and the crew operate. Space, footing and a clear arc to swing a rod all matter more here than upholstery.</li><li><strong>Outriggers spread the spread.</strong> Those long poles that fold up against the superstructure are not decoration. Lowered, they carry trolled lines out wide of the boat so several baits can be worked at once without tangling, and so the pattern looks natural to a fish following the wake.</li><li><strong>Rod holders everywhere.</strong> A proper sport-fisher carries holders in the gunwales, around the cockpit and often in a rocket launcher behind the helm, so a full trolling spread can be set and tended quickly.</li><li><strong>A livewell keeps bait fresh.</strong> Live or freshly rigged bait out-fishes everything, and a circulating well aboard keeps it that way through the day.</li><li><strong>Speed and range are designed in.</strong> Twin diesels and a planing hull are not about thrills, they are about reaching grounds that a slower boat simply cannot fish and still get home.</li></ul><p>Bandido carries this kit as standard. The outriggers, the spread of rods and the livewell are part of the boat, not extras you have to ask for. That is the practical meaning of the phrase <em>ready to fish on arrival</em>: you are not waiting for a crew to bolt on tackle, you are stepping onto a boat that is already a fishing platform.</p></div>
+  
+</div>
+
+<div class="sec">
+  <div class="sec-head">
+    <div class="sec-kicker caps">Section 04</div>
+    <h2 class="display">On board: layout and fishing rig</h2>
+    <div class="rules"><span class="thick"></span><span class="thin"></span></div>
+  </div>
+  <div class="sec-body"><p>Bandido is an 11.5 metre boat, which is a well-judged size for this kind of work. She is big enough to take a sea comfortably and to carry eight guests with room to move, yet compact enough to be nimble around a hooked fish and economical on the run out. That balance is one of the reasons she earns her place in the fleet rather than simply being the biggest boat on offer.</p><p>The working layout follows the sport-fishing template. The open aft cockpit is the centre of operations, kept clear so the mate can set and clear lines and so guests have safe footing when a rod loads up. The helm is positioned to give the skipper a commanding view of the water and the trolled spread, which is how a good captain reads where the fish are likely to be and reacts the instant a line goes off. The outriggers fold neatly clear of the deck on the run and drop into place once the boat slows to trolling speed.</p><p>The headline equipment, all of it carried as standard, breaks down like this:</p><ul><li><strong>Outriggers</strong> to carry a wide, natural trolling spread</li><li><strong>A full complement of rods</strong> matched to the kind of fishing this coast offers</li><li><strong>A livewell</strong> to keep bait fresh and lively through the day</li><li><strong>Twin diesels and a planing hull</strong> for fast, efficient runs to the offshore marks</li><li><strong>A skipper and a mate</strong> aboard every charter to handle navigation, tactics and tackle</li></ul><p>What you will not find on Bandido is the spread of inflatable water toys that come with the leisure boats in the fleet, and that is by design. This is a fishing boat. The trade-off is a deck set up to do one thing extremely well rather than a dozen things adequately. For the guests this boat is aimed at, that is exactly the right trade.</p></div>
+  <figure class="plate"><img src="file:///Users/master/boat-rental-marbella/site/img/fishing/family-fishing-marbella-1200.jpg" alt=""><figcaption>Eight guests can fish aboard Bandido, families very much included</figcaption></figure>
+</div>
+
+<div class="sec">
+  <div class="sec-head">
+    <div class="sec-kicker caps">Section 05</div>
+    <h2 class="display">A day aboard, from Puerto Banus</h2>
+    <div class="rules"><span class="thick"></span><span class="thin"></span></div>
+  </div>
+  <div class="sec-body"><p>The best way to understand Bandido is to walk through a day on her. Offshore fishing rewards an early start, so a full-day charter typically begins not long after first light, while the sea is at its calmest and the bite is often at its most reliable. You meet your skipper and mate at the berth in Puerto Banus, the marina does its early-morning bustle around you, and within a few minutes you are easing out past the breakwater with the town still half-asleep behind you.</p><p>Clearing the harbour, the skipper pushes the throttles forward and Bandido lifts onto the plane. The run offshore is part of the pleasure of the day. La Concha mountain stands over Marbella behind you, the coast slides away, and the water changes colour as the bottom drops off. Somewhere out here are the marks the skipper has in mind, and local knowledge is doing real work now, because the difference between an empty patch of sea and a productive one can be a few hundred metres of depth and structure.</p><p>Arriving on the grounds, the boat slows and the cockpit comes alive. The mate drops the outriggers, sets the rods and lays out a trolling spread, and the livewell earns its keep. Then comes the part everyone is there for: the wait, the watching of the lines, and the moment a reel screams off and the cockpit snaps to attention. The mate clears the other lines, a guest takes the rod, the skipper works the boat, and for a few minutes nothing else in the world matters. No fishing experience is required to be the one in the chair. That is what the crew are for.</p><p>Between runs there is time to take in where you are. Cold drinks come out of the cooler, there are light snacks aboard, and the conversation turns, as it always does on a fishing boat, to the one that got away and the one still to come. As the day eases off, the skipper turns Bandido back towards Puerto Banus, the marina lifting out of the haze ahead, and you come in with the satisfied tiredness that only a day on the open water gives you. A half-day charter follows the same rhythm in a shorter compass, with the skipper choosing nearer marks so the fishing time is not eaten up by the run.</p></div>
+  
+</div>
+
+<div class="sec">
+  <div class="sec-head">
+    <div class="sec-kicker caps">Section 06</div>
+    <h2 class="display">Cruising and fishing grounds</h2>
+    <div class="rules"><span class="thick"></span><span class="thin"></span></div>
+  </div>
+  <div class="sec-body"><p>Puerto Banus is one of the best-placed departure points on the whole Costa del Sol, and that geography is a large part of what Bandido offers. From here the coast and the deeper water are both within easy reach, and the skipper can shape the day around conditions and the kind of fishing you are after.</p><p>The grounds break down roughly like this:</p><ul><li><strong>The inshore stretch</strong> along Marbella, the Golden Mile and round towards <strong>Cabopino</strong> to the east is the gentler water, useful for a shorter session, for younger or first-time anglers, and for days when the wind keeps the offshore marks out of reach. It is also the prettiest run, hugging the famous coastline with the mountains behind.</li><li><strong>West towards Estepona</strong> opens up more coast and more options, with the skipper able to work the water along the way as conditions suggest.</li><li><strong>The offshore grounds</strong> are where a sport-fishing yacht like Bandido truly comes into her own. With twin diesels and the range to push well off the beach, she can reach the deeper marks and the productive structure that the inshore boats never see. This is the deep-sea fishing the boat was built for, and it is the reason to choose her over a general charter boat.</li><li><strong>The far western horizon</strong> runs down towards Gibraltar and the mouth of the Strait, some of the most famous water in the western Mediterranean, where the Atlantic and the Mediterranean meet and the marine life is correspondingly rich. Longer runs in this direction are a serious undertaking and are shaped entirely around sea state, season and what is feeding, but they show the kind of ambition the boat is capable of.</li></ul><p>Where exactly you go on the day is the skipper's call, made on the morning with the latest conditions in hand. That is the advantage of chartering a crewed boat with local knowledge rather than simply hiring a hull: the people aboard know this water, and they will spend your charter where the fishing is best, not where the brochure says it should be.</p></div>
+  
+</div>
+
+<div class="sec">
+  <div class="sec-head">
+    <div class="sec-kicker caps">Section 07</div>
+    <h2 class="display">Who this boat suits</h2>
+    <div class="rules"><span class="thick"></span><span class="thin"></span></div>
+  </div>
+  <div class="sec-body"><p>Bandido is a specialist, and like all specialists she is brilliant for the right group and beside the point for the wrong one. Knowing which you are saves everyone a misjudged booking.</p><p>She suits, above all, <strong>anglers</strong>, from the experienced hand who wants a serious offshore session to the keen amateur who has fished from a pier and wants to step up to the real thing. The boat, the rig and the crew are all built around that person, and they will get the most out of her.</p><p>She suits <strong>families</strong> remarkably well, more than her hard-bitten reputation might suggest. A fishing trip gives children something to do and something to feel, and the crew are used to making the day work for younger guests, choosing nearer water and shorter sessions so the excitement of a fish on the line is not lost in a long run. For many families this is the most memorable day of a Marbella holiday, precisely because it is active rather than passive.</p><p>She suits <strong>groups of friends</strong> who want a day with a bit of grit to it: a stag morning, a reunion, a corporate group that has had enough of sun-pads and wants a shared challenge. Up to eight guests can come aboard, and the shared drama of a hooked fish does more for group spirit than any number of cocktails at anchor.</p><p>Who she does not suit is the group whose day is really about swimming off a flat platform, sunbathing on a foredeck pad and a long catered lunch at anchor. That is a wonderful day, but it is a different boat. The fleet has plenty of those, and the team will happily point you to the right one. Bandido is for the day where the point is the fish.</p></div>
+  
+</div>
+
+<div class="sec">
+  <div class="sec-head">
+    <div class="sec-kicker caps">Section 08</div>
+    <h2 class="display">Pricing and what is included</h2>
+    <div class="rules"><span class="thick"></span><span class="thin"></span></div>
+  </div>
+  <div class="sec-body"><p>Bandido is priced individually for each charter rather than from a fixed published rate, because offshore fishing trips genuinely vary in duration, distance and how the boat is fished. A short inshore session and a full-day offshore run are different propositions, and a single sticker price would do justice to neither. Quotes are provided on WhatsApp via the website at competitive Marbella rates. You send your preferred date, your group size and whether you want a half-day or full-day trip, and you receive a firm price for the whole boat, the figure you actually pay.</p><p>That firm figure matters because of what comes with it. Every confirmed charter in the fleet includes the standard inclusions below, so there is no fuel surcharge waiting at the dock, no VAT bolted on at the end, and no separate crew fee. The price is the price.</p><table><tr><th>Included in every charter</th><th>Status</th></tr><tr><td>Licensed skipper</td><td>Included</td></tr><tr><td>Mate aboard for tackle and tactics</td><td>Included</td></tr><tr><td>Fuel</td><td>Included</td></tr><tr><td>Drinks (water, soft drinks, beer, white wine, cava)</td><td>Included</td></tr><tr><td>Light snacks</td><td>Included</td></tr><tr><td>Insurance</td><td>Included</td></tr><tr><td>Safety equipment</td><td>Included</td></tr><tr><td>VAT (21%)</td><td>Included</td></tr></table><p>Fuel deserves a particular mention on a fishing boat, because a planing hull running offshore burns it, and an operator who leaves fuel off the quoted price can spring an unwelcome bill at the end of the day. On Bandido fuel is included, which is part of why the quote you are given is the whole story. The fishing rig itself, the outriggers, the rods and the livewell, comes with the boat at no extra charge, so there is no tackle hire to negotiate either.</p></div>
+  
+</div>
+
+<div class="sec">
+  <div class="sec-head">
+    <div class="sec-kicker caps">Section 09</div>
+    <h2 class="display">Seasonality and booking practicalities</h2>
+    <div class="rules"><span class="thick"></span><span class="thin"></span></div>
+  </div>
+  <div class="sec-body"><p>The Costa del Sol has one of the kindest climates in Europe, and the fishing season here is correspondingly long. The high summer months of July and August bring the warmest seas, the calmest mornings and, inevitably, the heaviest demand, so dates in that window book out earliest and are worth confirming well ahead. The shoulder seasons of late spring and early autumn are a quiet secret: warm enough to be a pleasure, often calmer and less crowded, and frequently excellent fishing.</p><p>A few practicalities make for a better day:</p><ul><li><strong>Start early.</strong> Offshore fishing rewards the first light of the morning, when the sea tends to be flattest and the bite most reliable. The crew will suggest a departure time, and on a fishing charter it pays to take their advice.</li><li><strong>Watch the wind, not the calendar.</strong> How far offshore Bandido can comfortably range on any given day is governed by sea state. The skipper makes that call on the morning, and a sensible plan flexes with the conditions rather than forcing a long run into a lumpy sea.</li><li><strong>Come as you are.</strong> No fishing experience is required and no licence is needed on a crewed charter, because the boat and its skipper carry the necessary permissions. The crew handle the navigation, the bait and the tactics. You bring sun protection, soft-soled shoes and an appetite for the day.</li><li><strong>Book the whole boat.</strong> A charter is exclusive to your group, up to eight guests, so the day is yours to shape with the crew.</li></ul><p>Because Bandido is a single boat with a focused following, her calendar in peak season fills faster than a general day-cruiser's. If you have a date in mind, particularly in summer or over a holiday weekend, it is well worth getting the quote and the booking confirmed early rather than leaving it to chance.</p></div>
+  
+</div>
+
+<div class="sec">
+  <div class="sec-head">
+    <div class="sec-kicker caps">Section 10</div>
+    <h2 class="display">Frequently asked questions</h2>
+    <div class="rules"><span class="thick"></span><span class="thin"></span></div>
+  </div>
+  <div class="sec-body"><p><strong>How many people can come aboard?</strong> Up to eight guests. The charter is exclusive to your group, so the boat and crew are yours for the booked period.</p><p><strong>Do I need a fishing licence or any experience?</strong> No. Bandido is a fully crewed charter with a licensed skipper and a mate aboard, who carry the necessary permissions and handle everything on the water. Complete beginners are welcome, and the crew will guide you through it.</p><p><strong>Where does Bandido leave from?</strong> Puerto Banus, Marbella's best-connected marina, with good road access, parking, restaurants and hotels close by. Your skipper and mate meet you at the berth.</p><p><strong>What kind of fishing is it?</strong> Sport-fishing, with the option to range from the gentler inshore water along Marbella and Cabopino out to the deeper offshore grounds the boat was built to reach. The skipper chooses the grounds on the day based on conditions and what you are after.</p><p><strong>Half-day or full-day, which should I pick?</strong> A full day lets the skipper run to the more distant offshore marks and fish them properly. A half-day is ideal for families, first-timers or anyone who wants a taste of it, with the skipper choosing nearer water so the fishing time is not spent on the run. Tell the team your group and they will advise.</p><p><strong>Is fuel really included?</strong> Yes. Fuel, the skipper, the mate, drinks, light snacks, insurance, safety equipment and VAT are all included in the quoted price. On a planing fishing boat that runs offshore, an all-in fuel-included quote is a real advantage.</p><p><strong>What is the tackle situation?</strong> The boat comes rigged and ready: outriggers, a full complement of rods and a livewell are all aboard as standard, at no extra charge. You step onto a working fishing platform.</p><p><strong>How do I get a price and book?</strong> Visit the boat's page and request a quote on WhatsApp with your date, group size and preferred trip length. The team replies quickly with pricing and a suggested plan for the day.</p></div>
+  
+</div>
+
+<div class="sec">
+  <div class="sec-head">
+    <div class="sec-kicker caps">Section 11</div>
+    <h2 class="display">Booking Bandido</h2>
+    <div class="rules"><span class="thick"></span><span class="thin"></span></div>
+  </div>
+  <div class="sec-body"><p>Bandido is the boat to choose when you want your day on the water to have a target. She is a true sport-fishing yacht, 11.5 metres of purpose-built fishing platform, crewed by a skipper and a mate, departing Puerto Banus for the inshore coast or the offshore grounds depending on the day and your appetite. Up to eight guests, all the fishing kit aboard as standard, and an all-inclusive price with fuel, drinks, insurance and VAT covered.</p><p>To check a date and get a firm quote, visit the boat's page and message the team on WhatsApp with your preferred day, your group size and whether you are after a half-day taste or a full day offshore. They reply quickly with pricing and a plan, and they know this water, so their advice on timing and grounds is worth having. Peak-summer dates go first, so the earlier you ask, the better your chances of the day you want.</p></div>
+  
+</div>
+
+<div class="callout">
+  <h3 class="display">Book This Boat</h3>
+  <p>Book Bandido and the rest of the Marbella fleet at <a href="https://boatrentalinmarbella.com/boats/bandido/">boatrentalinmarbella.com</a>, with quotes on WhatsApp at competitive local rates.</p><p><strong>Boat owners:</strong> list your boat free at <a href="https://boathire24.com">boathire24.com</a> and reach charter guests worldwide.</p>
+  <div class="linksrow caps"><a href="https://boathire24.com">https://boathire24.com</a><span class="sep">&#9670;</span><a href="https://boatrentalinmarbella.com/boats/bandido/">https://boatrentalinmarbella.com/boats/bandido/</a></div>
+</div>
+<div class="endmark"><span class="line"></span><svg width="14" height="14" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg" aria-hidden="true"><path fill="#b9924b" d="M17 15l1.55 1.55c-.96 1.69-3.33 3.04-5.55 3.37V11h3V9h-3V7.82C14.16 7.4 15 6.3 15 5c0-1.65-1.35-3-3-3S9 3.35 9 5c0 1.3.84 2.4 2 2.82V9H8v2h3v8.92c-2.22-.33-4.59-1.68-5.55-3.37L7 15l-4-3v3c0 3.88 4.92 7 9 7s9-3.12 9-7v-3l-4 3zM12 4c.55 0 1 .45 1 1s-.45 1-1 1-1-.45-1-1 .45-1 1-1z"/></svg><span class="line"></span></div>
+  </td></tr></tbody>
+  <tfoot><tr><td></td></tr></tfoot>
+</table>
+
+<div class="runfoot caps">
+  <span><b>boathire24.com</b> <span class="gold">&#9670;</span> rent boats worldwide
+    <span class="gold">&#9670;</span> list your boat free</span>
+  <span class="gold caps">boatrentalinmarbella.com/boats/bandido</span>
+</div>
+</body>
+</html>

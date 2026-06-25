@@ -1,0 +1,502 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<title>K80</title>
+<style>
+:root {
+  --navy:      #0e2438;
+  --navy-deep: #08182a;
+  --gold:      #b9924b;
+  --gold-dark: #8a6c33;
+  --gold-light:#d4b06a;
+  --gold-pale: #e8d8af;
+  --ivory:     #f7f2e6;
+  --paper:     #fdfbf5;
+  --ink:       #22303e;
+  --muted:     #5d6a76;
+  --hairline:  #d9cdaf;
+  --row-tint:  #f5efdf;
+}
+* { -webkit-print-color-adjust: exact; print-color-adjust: exact;
+    box-sizing: border-box; }
+@page { size: A4; margin: 0; }
+html, body { margin: 0; padding: 0; }
+body {
+  background: var(--paper);
+  color: var(--ink);
+  font-family: Georgia, 'Palatino Linotype', Palatino, 'Times New Roman', serif;
+  font-size: 10.5pt;
+  line-height: 1.62;
+}
+.display { font-family: Didot, 'Didot LT STD', 'Playfair Display', Georgia,
+           'Times New Roman', serif; }
+.caps { font-family: Optima, 'Avenir Next', 'Gill Sans', 'Trebuchet MS',
+        sans-serif; text-transform: uppercase; }
+
+/* ---------------- Cover ---------------- */
+.cover {
+  position: relative;
+  width: 210mm; height: 297mm;
+  overflow: hidden;
+  background: var(--navy-deep);
+  page-break-after: always;
+}
+.cover-img {
+  position: absolute; inset: 0;
+  width: 100%; height: 100%;
+  object-fit: cover;
+  object-position: 24% center;  /* centres the yacht's full profile in the A4 crop */
+}
+.cover-veil {
+  position: absolute; inset: 0;
+  background:
+    linear-gradient(to top, rgba(11,26,46,0.92),
+                    rgba(11,26,46,0.86) 30%, transparent 55%),
+    linear-gradient(180deg,
+      rgba(8,24,42,0.62) 0%,
+      rgba(8,24,42,0.20) 26%,
+      rgba(8,24,42,0.12) 50%,
+      rgba(8,24,42,0.00) 62%);
+}
+.cover-veil.no-img {
+  background:
+    radial-gradient(120mm 90mm at 50% 26%, rgba(185,146,75,0.20), transparent 70%),
+    linear-gradient(180deg, #122c46 0%, #0a1d33 55%, #071426 100%);
+}
+.cover-top {
+  position: absolute; top: 13mm; left: 16mm; right: 16mm;
+  display: flex; align-items: center; justify-content: space-between;
+}
+.brand-lockup { display: flex; align-items: center; gap: 4.5mm; }
+.logo-chip {
+  background: #ffffff;
+  border: 1px solid var(--gold);
+  border-radius: 1.2mm;
+  padding: 2mm;
+  line-height: 0;
+}
+.logo-chip img { display: block; height: 13mm; width: 13mm;
+                 object-fit: cover; border-radius: 0.7mm; }
+.brand-name {
+  color: var(--ivory); font-size: 13pt; letter-spacing: 0.30em;
+  line-height: 1.25;
+}
+.brand-tag {
+  color: var(--gold-pale); font-size: 6.4pt; letter-spacing: 0.26em;
+  margin-top: 1mm;
+}
+.doc-type-flag {
+  text-align: right;
+  color: var(--gold-light);
+  font-size: 7.5pt; letter-spacing: 0.34em;
+  border-top: 0.7pt solid var(--gold);
+  border-bottom: 0.7pt solid var(--gold);
+  padding: 2.2mm 0 2mm 0;
+}
+.cover-main {
+  position: absolute; left: 16mm; right: 16mm; bottom: 34mm;
+}
+.cover-rule {
+  display: flex; align-items: center; gap: 4mm;
+  margin-bottom: 5mm;
+}
+.cover-rule .line { flex: 0 0 22mm; height: 0; border-top: 0.8pt solid var(--gold); }
+.cover-rule .word {
+  color: var(--gold-light); font-size: 8pt; letter-spacing: 0.42em;
+  white-space: nowrap;
+  text-shadow: 0 1px 5px rgba(5,14,26,0.65);
+}
+.cover-title {
+  color: #fdfaf2;
+  font-size: 44pt; line-height: 1.05;
+  font-weight: 600;
+  margin: 0 0 4mm 0;
+  text-shadow: 0 1px 8px rgba(5,14,26,0.55);
+}
+.cover-subtitle {
+  color: var(--gold-pale);
+  font-style: italic;
+  font-size: 13pt; line-height: 1.45;
+  margin: 0 0 7mm 0;
+  max-width: 150mm;
+  text-shadow: 0 1px 6px rgba(5,14,26,0.6);
+}
+.cover-meta {
+  color: rgba(247,242,230,0.92);
+  font-size: 7.6pt; letter-spacing: 0.22em;
+}
+.cover-meta .dot { color: var(--gold-light); padding: 0 2.2mm; }
+.fleet-strip {
+  margin-top: 8mm;
+  display: flex; align-items: center; gap: 4mm;
+}
+.fleet-strip .logo-chip img { height: 9mm; width: auto; }
+.fleet-label {
+  color: rgba(247,242,230,0.85); font-size: 6.6pt; letter-spacing: 0.30em;
+}
+
+/* ------------- Repeating footer ------------- */
+.runfoot {
+  position: fixed; left: 0; right: 0; bottom: 0;
+  height: 12mm;
+  background: var(--ivory);
+  border-top: 1pt solid var(--gold);
+  display: flex; align-items: center; justify-content: space-between;
+  padding: 0 16mm;
+  font-size: 6.8pt; letter-spacing: 0.12em;
+  color: var(--navy);
+}
+.runfoot b { letter-spacing: 0.22em; font-weight: 600; }
+.runfoot .gold { color: var(--gold-dark); }
+.runfoot a { color: var(--navy); text-decoration: none; }
+
+/* ------------- Paged content scaffold ------------- */
+table.paged { width: 100%; border-collapse: collapse; }
+table.paged > thead td { height: 15mm; padding: 0; }
+table.paged > tfoot td { height: 17mm; padding: 0; }
+table.paged > tbody > tr > td { padding: 0 18mm; }
+
+/* ------------- Sections ------------- */
+.sec { margin: 0 0 8mm 0; }
+.sec-head {
+  break-after: avoid-page; page-break-after: avoid;
+  break-inside: avoid; page-break-inside: avoid;
+  margin: 0 0 4.5mm 0;
+}
+.sec-kicker {
+  color: var(--gold-dark); font-size: 7pt; letter-spacing: 0.38em;
+  margin-bottom: 1.6mm;
+}
+.sec-head h2 {
+  color: var(--navy);
+  font-size: 18.5pt; font-weight: 400; line-height: 1.2;
+  margin: 0 0 2.6mm 0;
+}
+.sec-head .rules { position: relative; height: 2.4mm; }
+.sec-head .rules .thin {
+  position: absolute; left: 0; right: 0; top: 1mm;
+  border-top: 0.6pt solid var(--hairline);
+}
+.sec-head .rules .thick {
+  position: absolute; left: 0; top: 0; width: 26mm;
+  border-top: 2.2pt solid var(--gold);
+}
+.sec-body p { margin: 0 0 3.4mm 0; }
+.sec-body p:last-child { margin-bottom: 0; }
+.sec-body ol { margin: 0 0 3.4mm 0; padding-left: 5.5mm; }
+.sec-body ul { margin: 0 0 3.4mm 0; padding-left: 1mm; }
+.sec-body li { margin-bottom: 1.6mm; break-inside: avoid; page-break-inside: avoid;
+               -webkit-column-break-inside: avoid; }
+.sec-body ul.cols2 { columns: 2; column-gap: 9mm;
+                     break-inside: avoid; page-break-inside: avoid; }
+.sec-body ul > li {
+  list-style: none;
+  padding-left: 1.1em; text-indent: -1.1em;  /* hanging indent: wraps align under text */
+}
+.sec-body ul > li::before {
+  content: "\2726";            /* four-pointed star, brass compass point */
+  display: inline-block; width: 1.44em; text-indent: 0;
+  color: var(--gold); font-size: 8pt;       /* 1.44em @8pt == 1.1em @10.5pt */
+}
+.sec-body a { color: var(--navy); text-decoration: none;
+              border-bottom: 0.6pt solid var(--gold); }
+.sec-body strong { color: var(--navy); }
+
+/* generic tables inside section html */
+.sec-body table {
+  width: 100%; border-collapse: collapse;
+  margin: 1mm 0 4mm 0;
+  break-inside: avoid; page-break-inside: avoid;
+  font-size: 9.8pt;
+}
+.sec-body th {
+  background: var(--navy); color: var(--ivory);
+  font-family: Optima, 'Avenir Next', 'Gill Sans', 'Trebuchet MS', sans-serif;
+  text-transform: uppercase; letter-spacing: 0.16em;
+  font-size: 7.4pt; font-weight: 500;
+  text-align: left; padding: 2.6mm 3.5mm;
+  border-bottom: 1.4pt solid var(--gold);
+}
+.sec-body td {
+  padding: 2.2mm 3.5mm;
+  border-bottom: 0.6pt solid var(--hairline);
+  color: var(--ink);
+}
+.sec-body td, .sec-body th { font-variant-numeric: tabular-nums; }
+.sec-body td:not(:first-child),
+.sec-body th:not(:first-child) { text-align: right; }
+.sec-body tr:nth-child(even) td { background: var(--row-tint); }
+.sec-body td:first-child { color: var(--navy); }
+.sec-body tr.best td { background: rgba(212,175,55,0.12); }
+.sec-body tr.best td:first-child { color: var(--navy); font-weight: 600; }
+.best-tag {
+  display: inline-block;
+  font-family: Optima, 'Avenir Next', 'Gill Sans', 'Trebuchet MS', sans-serif;
+  font-variant-caps: small-caps; text-transform: lowercase;
+  font-size: 7.6pt; font-weight: 600; letter-spacing: 0.14em;
+  color: var(--gold-dark);
+  border: 0.6pt solid var(--gold);
+  border-radius: 1mm;
+  padding: 0.2mm 1.6mm;
+  margin-left: 2.2mm;
+  white-space: nowrap;
+  vertical-align: 0.2mm;
+}
+
+/* ------------- Figures ------------- */
+figure.plate {
+  break-inside: avoid; page-break-inside: avoid;
+  margin: 5mm 0 2mm 0;
+  background: #ffffff;
+  border: 0.7pt solid var(--gold-light);
+  padding: 2.6mm;
+}
+figure.plate img {
+  display: block; width: 100%; height: 78mm; object-fit: cover;
+}
+figure.plate figcaption {
+  text-align: center;
+  font-style: italic;
+  font-size: 8.4pt; color: var(--muted);
+  padding: 2.4mm 2mm 0.6mm 2mm;
+}
+figure.plate figcaption::before {
+  content: "\25C6\00a0"; color: var(--gold); font-size: 6pt;
+}
+
+/* ------------- Spec table (2-column grid: two lbl/val pairs per row) ------------- */
+.spec-block { margin: 0 0 8mm 0; }
+table.spec {
+  width: 100%; border-collapse: collapse;
+  border-top: 1.6pt solid var(--navy);
+  border-bottom: 1.6pt solid var(--navy);
+}
+table.spec td { padding: 1.7mm 1.5mm; border-bottom: 0.6pt solid var(--hairline);
+                vertical-align: top; }
+table.spec tr:last-child td { border-bottom: none; }
+table.spec td.lbl {
+  width: 21%;
+  font-family: Optima, 'Avenir Next', 'Gill Sans', 'Trebuchet MS', sans-serif;
+  text-transform: uppercase; letter-spacing: 0.16em;
+  font-size: 7.2pt; color: var(--gold-dark);
+  padding-top: 2.3mm;
+}
+table.spec td.val { width: 29%; color: var(--navy); font-size: 9.8pt; }
+table.spec td.lbl:nth-child(3) {
+  border-left: 0.6pt solid var(--hairline);
+  padding-left: 4mm;
+}
+table.spec td.val:nth-child(2) { padding-right: 4mm; }
+
+/* ------------- Callout ------------- */
+.callout {
+  break-inside: avoid; page-break-inside: avoid;
+  margin: 8mm 0 4mm 0;
+  background: var(--navy);
+  border: 1pt solid var(--gold);
+  outline: 0.6pt solid var(--gold);
+  outline-offset: -2.2mm;
+  color: var(--ivory);
+  padding: 8mm 9mm 7mm 9mm;
+}
+.callout h3 {
+  color: var(--gold-light);
+  font-size: 15pt; font-weight: 400;
+  margin: 0 0 3mm 0;
+}
+.callout p { margin: 0 0 2.8mm 0; line-height: 1.6; color: #efe7d3; }
+.callout a { color: var(--gold-light); text-decoration: none; }
+.callout ul { margin: 0 0 2.8mm 0; padding-left: 1mm; }
+.callout ul > li { list-style: none; margin-bottom: 1.4mm;
+                   padding-left: 1.1em; text-indent: -1.1em;
+                   break-inside: avoid; page-break-inside: avoid; }
+.callout ul > li::before {
+  content: "\2726"; display: inline-block; width: 1.44em; text-indent: 0;
+  color: var(--gold-light); font-size: 8pt;
+}
+.callout .linksrow {
+  margin-top: 4.5mm; padding-top: 3.6mm;
+  border-top: 0.6pt solid rgba(212,176,106,0.55);
+  font-size: 7.6pt; letter-spacing: 0.16em;
+  color: var(--gold-pale);
+}
+.callout .linksrow span.sep { padding: 0 2.6mm; color: var(--gold); }
+
+.endmark {
+  display: flex; align-items: center; justify-content: center; gap: 3.5mm;
+  margin: 7mm 0 0 0;
+}
+.endmark .line { width: 14mm; height: 0; border-top: 0.6pt solid var(--gold); }
+.endmark svg { display: block; }
+</style>
+</head>
+<body>
+
+<div class="cover">
+  <img class="cover-img" src="file:///Users/master/boat-rental-marbella/site/img/boats/k80/hero-1200.jpg" alt="">
+  <div class="cover-veil"></div>
+  <div class="cover-top">
+    <div class="brand-lockup">
+      <span class="logo-chip"><img src="file:///Users/master/boat-rental-platform/public/brand-logo.jpg" alt="BoatHire24"></span>
+      <div>
+        <div class="brand-name caps display">BoatHire24</div>
+        <div class="brand-tag caps">Rent boats worldwide <span class="gold">|</span> list your boat free</div>
+      </div>
+    </div>
+    <div class="doc-type-flag caps">June 2026</div>
+  </div>
+  <div class="cover-main">
+    <div class="cover-rule">
+      <span class="line"></span>
+      <span class="word caps">Vessel Specification</span>
+    </div>
+    <h1 class="cover-title display">K80</h1>
+    <p class="cover-subtitle display">A flagship-class 24 metre motor yacht for day charter from Puerto Banús, Marbella. An editorial profile of the vessel, her cruising grounds and a day aboard.</p>
+    <div class="cover-meta caps">BoatHire24 Fleet Desk</div>
+    <div class="fleet-strip"><span class="fleet-label caps">From the fleet of</span><span class="logo-chip"><img src="file:///Users/master/boat-rental-marbella/site/img/logo-640.png" alt="Boat Rental In Marbella"></span></div>
+  </div>
+</div>
+<table class="paged">
+  <thead><tr><td></td></tr></thead>
+  <tbody><tr><td>
+
+<div class="spec-block sec">
+  <div class="sec-head">
+    <div class="sec-kicker caps">Particulars</div>
+    <h2 class="display">Principal Particulars</h2>
+    <div class="rules"><span class="thick"></span><span class="thin"></span></div>
+  </div>
+  <table class="spec"><tr><td class="lbl">Length overall</td><td class="val">24 m</td><td class="lbl">Guest capacity</td><td class="val">12 guests</td></tr>
+<tr><td class="lbl">Type</td><td class="val">Luxury motor yacht</td><td class="lbl">Builder</td><td class="val">K Yachts</td></tr>
+<tr><td class="lbl">Departure port</td><td class="val">Puerto Banús, Marbella</td><td class="lbl">Crew</td><td class="val">Captain and deckhand</td></tr>
+<tr><td class="lbl">Cabins</td><td class="val">Multiple, overnight on request</td><td class="lbl">Rate band</td><td class="val">On request via WhatsApp</td></tr></table>
+</div>
+
+<div class="sec">
+  <div class="sec-head">
+    <div class="sec-kicker caps">Section 01</div>
+    <h2 class="display">An Introduction to the K80</h2>
+    <div class="rules"><span class="thick"></span><span class="thin"></span></div>
+  </div>
+  <div class="sec-body"><p>The <strong>K80</strong> is a 24 metre luxury motor yacht and one of the most substantial vessels offered for day charter anywhere on the Marbella coast. She is built by K Yachts, departs from Puerto Banús, and carries up to twelve guests for a day along the Costa del Sol. In a fleet that already runs to flagship motor yachts and superyachts, she occupies a deliberate place at the very top of the range, alongside our Mangusta 80, while bringing a markedly different character of her own.</p><p>What sets the K80 apart is not a single headline feature but the way her scale changes the experience of a day on the water. At twenty-four metres she has the volume to give a group of friends room to spread out, to set a long table for lunch, to sunbathe on a broad foredeck while others swim, and to retreat into air-conditioned shade when the afternoon sun is at its strongest. She has the presence of a private yacht rather than a hire boat, and she is run with the relaxed, all-inclusive approach that defines the rest of the fleet: a professional crew, drinks and snacks aboard, fuel and insurance handled, and a single tailored quote arranged before you step on.</p><p>She is, in short, a yacht for occasions that deserve something out of the ordinary. Multiple cabins below deck mean she can be discussed for overnight and longer arrangements as well as single days, which is unusual among the day boats working out of Puerto Banús. For a milestone birthday, a family gathering or a day of corporate hospitality, the K80 gives you a flagship-class platform without the commitment of ownership, and a crew who make the whole day effortless.</p><p>This dossier sets out who she is, where she sails, and what a day aboard actually looks like. Every concrete figure here comes from her fleet record. The colour around those figures, the cruising grounds, the rhythm of a charter day, the seasons, is offered as honest context to help you picture the experience before you book.</p></div>
+  <figure class="plate"><img src="file:///Users/master/boat-rental-marbella/site/img/boats/k80/hero-1200.jpg" alt=""><figcaption>The K80, a 24 m flagship-class motor yacht, on her home water off Puerto Banús</figcaption></figure>
+</div>
+
+<div class="sec">
+  <div class="sec-head">
+    <div class="sec-kicker caps">Section 02</div>
+    <h2 class="display">The Builder and the Marque</h2>
+    <div class="rules"><span class="thick"></span><span class="thin"></span></div>
+  </div>
+  <div class="sec-body"><p>The K80 is built by <strong>K Yachts</strong>, the name carried on her hull and the marque under which she sails in our fleet. A yacht of this size is rarely the product of a single hand. Vessels in the twenty-four metre class are the result of a long collaboration between a naval architect who shapes the hull and its behaviour at sea, an exterior designer who gives the yacht its profile and the lines you notice from the quay, and an interior team who turn raw volume into cabins, a saloon and the spaces where guests actually spend their day.</p><p>It helps to understand what that scale represents in yacht-building terms. A twenty-four metre motor yacht sits right on the threshold that the industry treats as the start of the superyacht category, the point at which a vessel stops being a large pleasure boat and becomes a small ship with the systems to match: generators, climate control throughout, fresh-water makers on longer passages, stabilisation to keep her steady at anchor, and the tankage to cruise for a full day without thinking about it. Building at this length is a different discipline from building a sports cruiser. The margins for error in weight, balance and finish are smaller, and the engineering that guests never see, the wiring, the plumbing, the sound insulation, is where a great deal of the work goes.</p><p>The Mediterranean, and the stretch of coast between Gibraltar and Marbella in particular, has long been one of the world's great proving grounds for motor yachts of this kind. The combination of reliable summer weather, deep natural anchorages and a clientele who expect the best has drawn the finest yards and designers to these waters for decades. A yacht that works here has to look the part against serious company and behave well in the short, choppy sea that the Levante and Poniente winds can throw up. The K80 was conceived for exactly this environment, and she carries herself accordingly.</p></div>
+  
+</div>
+
+<div class="sec">
+  <div class="sec-head">
+    <div class="sec-kicker caps">Section 03</div>
+    <h2 class="display">The Model and Her Design</h2>
+    <div class="rules"><span class="thick"></span><span class="thin"></span></div>
+  </div>
+  <div class="sec-body"><p>The K80 belongs to the flagship motor-yacht class, the segment around the twenty-four metre mark that the charter market prizes above almost any other. There is a reason this size is so sought after. It is large enough to deliver genuine superyacht volume, with multiple decks, full standing headroom below and cabins worthy of the name, yet still compact enough to slip into a berth at Puerto Banús and to run an agile day charter along the coast rather than only long passages.</p><p>Yachts of this class are known for a particular set of qualities. The first is a flybridge or upper helm and sun area that lifts guests above the water, giving the long views of the coast and the open horizon that make a day at sea feel expansive. The second is a broad main deck and foredeck that turn into sun-lounging and dining space the moment the yacht drops anchor. The third is a low, sociable aft deck close to the water, the natural gathering point of any charter, where lunch is served, swimmers come and go from the bathing platform, and the afternoon slips away. A yacht in this segment is designed so that twelve people can be aboard and never feel crowded, with quiet corners for those who want them and open space for those who do not.</p><p>The other hallmark of the class is the balance between the two halves of a charter. Underway, a yacht like the K80 should hold a comfortable cruising pace and ride cleanly, so the run between anchorages is part of the pleasure rather than a means to an end. At rest, she should sit steady and quiet, a stable platform for swimming, eating and simply being still on the water. The design choices that achieve both at once, the hull form, the weight distribution, the layout of the decks, are precisely what define a good motor yacht of this length, and they are what the K80 is built around.</p></div>
+  
+</div>
+
+<div class="sec">
+  <div class="sec-head">
+    <div class="sec-kicker caps">Section 04</div>
+    <h2 class="display">On Board: Decks, Cabins and Toys</h2>
+    <div class="rules"><span class="thick"></span><span class="thin"></span></div>
+  </div>
+  <div class="sec-body"><p>The K80's published highlights set out what you can expect across the yacht. They are worth reading as a picture of how a day aboard is organised, from the sun deck down to the water toys at the stern.</p><ul><li><strong>A 24 m flagship-class hull</strong>, placing her among the largest day-charter yachts working the Marbella coast and giving her the volume to host twelve guests in comfort.</li><li><strong>Capacity for 12 guests</strong> on a day charter, the standard upper limit for a yacht of this class along the Costa del Sol.</li><li><strong>Multiple cabins</strong> below deck, which open the door to overnight and longer charters as well as single days out, arranged on request.</li><li><strong>A professional crew</strong> of captain and deckhand aboard throughout, so the yacht is handled, anchored and served by people whose job is to make the day run smoothly.</li><li><strong>Water toys and a generous sun deck</strong>, the two features that turn a cruise into a full day at anchor, with somewhere to swim from and somewhere to lie in the sun afterwards.</li></ul><p>In practice these elements work together. The sun deck and foredeck become the social heart of the yacht when she is at anchor in a quiet bay, while the cabins below provide shade, changing space and the privacy that a long day calls for. The crew move between handling the yacht and looking after guests, so the rhythm of the day, swim, eat, cruise, swim again, happens without anyone having to organise it. The water toys give the swimming stops their energy, and the bathing platform at the stern makes getting in and out of the sea easy for everyone from confident swimmers to children.</p></div>
+  <figure class="plate"><img src="file:///Users/master/boat-rental-marbella/site/img/boats/k80/hero-1600.jpg" alt=""><figcaption>Twenty-four metres of flagship-class motor yacht, with a sun deck and water toys aboard</figcaption></figure>
+</div>
+
+<div class="sec">
+  <div class="sec-head">
+    <div class="sec-kicker caps">Section 05</div>
+    <h2 class="display">A Day Aboard from Puerto Banús</h2>
+    <div class="rules"><span class="thick"></span><span class="thin"></span></div>
+  </div>
+  <div class="sec-body"><p>The best way to understand the K80 is to walk through a typical day charter, the kind of full day that a group of friends or a family might book in high summer. The picture below is a realistic composite of how these days unfold from Puerto Banús. The exact timings are flexible and are agreed with the crew on the day to suit the weather and what you want from your time aboard.</p><p>You arrive at Puerto Banús in the late morning. The marina is an easy meeting point, with parking, cafés and the beach all within a few minutes' walk, and the K80 is one of the more commanding silhouettes on the quay. The captain and deckhand greet you, take any provisions you have brought, run through the safety basics, and you settle in with a cold drink as the lines come off. Within minutes the harbour mouth is behind you and the whole of the Bay of Marbella opens up ahead.</p><p>The crew ease the yacht eastward along the Golden Mile, the famous stretch of coast between Puerto Banús and Marbella town lined with villas, beach clubs and palm-fringed gardens. After a short run the engines come down to a murmur and the K80 settles at anchor in clear water off the coast. The deckhand sets out the water toys, the bathing platform comes alive, and the first long swim of the day begins. Some guests are in the sea straight away, others stretch out on the sun deck with a glass of cava, and the day finds its pace.</p><p>Around the middle of the day, lunch is served aboard. Light snacks and the full range of included drinks, water, soft drinks, beer, white wine and cava, keep the table going, and many groups bring or arrange catering for something more substantial. After lunch the captain might lift the anchor and run a little further along the coast to a second, quieter spot, so the afternoon swim happens somewhere new. As the sun begins to soften, the K80 turns for home, cruising slowly back along the Golden Mile with the coastline glowing gold and Puerto Banús drawing closer. You step back onto the quay relaxed, a little sun-kissed, and already talking about the next time.</p></div>
+  
+</div>
+
+<div class="sec">
+  <div class="sec-head">
+    <div class="sec-kicker caps">Section 06</div>
+    <h2 class="display">Itineraries and Cruising Grounds</h2>
+    <div class="rules"><span class="thick"></span><span class="thin"></span></div>
+  </div>
+  <div class="sec-body"><p>Puerto Banús sits in the middle of one of the most rewarding cruising coasts in the western Mediterranean, with options in both directions and the whole of the Strait of Gibraltar within reach for a longer day. Because the K80 is quoted by arrangement, her routes are shaped around your group rather than a fixed timetable, and the crew choose anchorages on the day to match the wind and sea. These are the cruising grounds that open up from her home port.</p><ul><li><strong>The Golden Mile and a swim stop off Marbella.</strong> The shortest and most popular run, east from Puerto Banús along the villa-lined Golden Mile to anchor in clear water within sight of the coast. Ideal for a relaxed half day built around swimming and lunch rather than long passages.</li><li><strong>Cabopino and the dunes.</strong> Further east lies the pretty marina of Cabopino, set beside the protected Artola dunes and some of the cleanest beaches on this coast. The water here is often a little quieter, making it a fine choice for a second anchorage on a full day.</li><li><strong>Estepona to the west.</strong> Heading the other way, the coast towards Estepona is greener and less built up, with a string of bays that reward a longer cruise. A run west and back makes a satisfying full day with a swim stop at the turn.</li><li><strong>Longer runs towards Gibraltar.</strong> On a calm day and a longer charter, the dramatic profile of Gibraltar and the mouth of the Strait come within range, with the Rock rising at the western end of the bay and the coast of Africa visible across the water. These are best discussed as full-day or extended itineraries.</li></ul><p>Whichever direction you choose, the principle is the same. The K80 is at her best on a day built around one or two unhurried anchorages, with the cruising between them treated as part of the pleasure rather than a sprint from A to B. The crew will steer you towards the sheltered side of the coast depending on whether the day's wind is a Levante from the east or a Poniente from the west, so the swimming stops stay calm and comfortable.</p></div>
+  
+</div>
+
+<div class="sec">
+  <div class="sec-head">
+    <div class="sec-kicker caps">Section 07</div>
+    <h2 class="display">Who the K80 Suits</h2>
+    <div class="rules"><span class="thick"></span><span class="thin"></span></div>
+  </div>
+  <div class="sec-body"><p>A yacht is only the right yacht if she fits the occasion, and the K80's particular strength is scale. With capacity for twelve guests and the volume of a twenty-four metre hull, she is built for groups who want room to enjoy themselves rather than to sit shoulder to shoulder.</p><p>She suits <strong>celebrations</strong> above all. A milestone birthday, an anniversary, a hen or stag day with a sense of occasion, a graduation or simply a reunion of friends who want a day they will remember, all of these come alive on a yacht of this size, where there is space to gather around a table, to dance on the aft deck and to find a quiet corner when you want one. For <strong>families</strong> she works equally well, with the cabins and shade below for younger children and grandparents to escape the midday sun, the bathing platform making the sea easy and safe to reach, and the water toys keeping older children happy for hours.</p><p>She is also a natural choice for <strong>corporate and hospitality days</strong>, where the presence of a flagship yacht and the ease of an all-inclusive, crewed charter make an impression that an ordinary venue cannot. Clients are looked after by a professional crew, the day runs to a relaxed schedule, and the setting does the talking. And because she has multiple cabins, she is one of the few day boats on this coast that can be turned to <strong>overnight and multi-day plans</strong> for those who want to extend the experience beyond a single afternoon. If your group is smaller and your budget more contained, the fleet has plenty of other options, but when the occasion calls for something at the top of the range, the K80 is exactly that.</p></div>
+  
+</div>
+
+<div class="sec">
+  <div class="sec-head">
+    <div class="sec-kicker caps">Section 08</div>
+    <h2 class="display">Pricing and What Is Included</h2>
+    <div class="rules"><span class="thick"></span><span class="thin"></span></div>
+  </div>
+  <div class="sec-body"><p>The K80 is priced <strong>on request</strong> at competitive Marbella rates. Rather than a fixed published tariff, every charter is quoted individually so the figure reflects your group size, the route you have in mind and the length of your day. You tell us the date and the party, and a tailored quote comes straight back over WhatsApp through her page at <a href="https://boatrentalinmarbella.com/boats/k80/">boatrentalinmarbella.com</a>, usually the same day.</p><table><tr><th>Charter</th><th>Rate</th></tr><tr class="best"><td>Half day and full day<span class="best-tag">Best value</span></td><td>Quoted on WhatsApp</td></tr><tr><td>Overnight and multi-day</td><td>Quoted on WhatsApp</td></tr></table><p>What does not change is what comes as standard. Every charter in the fleet is run on the same all-inclusive basis, so the quote you receive already covers the things that matter, with no surprises waiting at the quay. Included as standard:</p><ul><li>Licensed skipper</li><li>Fuel</li><li>Drinks (water, soft drinks, beer, white wine, cava)</li><li>Light snacks</li><li>Insurance</li><li>Safety equipment</li><li>VAT (21%)</li></ul><p>This all-inclusive approach is worth dwelling on, because it is not the norm everywhere. The fuel for the day is in the price, so a longer cruise costs you nothing extra in running costs. The crew, the insurance and the safety equipment are all covered. Even the Spanish VAT at twenty-one per cent is already accounted for in your quote rather than added at the end. What you see is what you pay, and the only thing left to decide is where you want to drop anchor.</p></div>
+  
+</div>
+
+<div class="sec">
+  <div class="sec-head">
+    <div class="sec-kicker caps">Section 09</div>
+    <h2 class="display">Seasonality and Booking Practicalities</h2>
+    <div class="rules"><span class="thick"></span><span class="thin"></span></div>
+  </div>
+  <div class="sec-body"><p>The charter season on this coast runs broadly from spring into autumn, and the K80 rewards a little thought about when you sail. The high summer of July and August brings the warmest sea, the longest days and the liveliest atmosphere in Puerto Banús, and it is also when demand is at its peak. Popular summer weekends on a flagship yacht of this kind are reserved well in advance, so for July and August an early enquiry is sensible if you have a fixed date in mind.</p><p>The shoulder months either side, May, June and September into early October, are quietly the connoisseur's choice. The weather is still reliably warm, the sea has the day-long calm that makes for easy swimming, the coast is less crowded and availability is better. Many regular guests prefer these weeks precisely because the experience feels less rushed and the same yacht is easier to secure on the date you want.</p><p>A word on the weather itself. This stretch of coast is shaped by two prevailing winds, the Levante from the east and the Poniente from the west, and the captain plans the day around whichever is blowing, working the sheltered side of the coast so your swim stops stay calm. On the rare day when conditions are genuinely unsuitable, the crew will always put safety and your comfort first. Booking is straightforward: go to <a href="https://boatrentalinmarbella.com/boats/k80/">boatrentalinmarbella.com/boats/k80</a>, open a WhatsApp conversation from the page, and share your date, group size and anything special you have planned. The team will confirm availability and send your tailored quote.</p></div>
+  
+</div>
+
+<div class="sec">
+  <div class="sec-head">
+    <div class="sec-kicker caps">Section 10</div>
+    <h2 class="display">Frequently Asked Questions</h2>
+    <div class="rules"><span class="thick"></span><span class="thin"></span></div>
+  </div>
+  <div class="sec-body"><p><strong>How many guests can the K80 take?</strong><br>Up to twelve guests on a day charter, which is the standard upper limit for a yacht of this flagship class on the Costa del Sol.</p><p><strong>Where does she depart from?</strong><br>From Puerto Banús, Marbella's best-known marina, with parking, restaurants and the beach all within a few minutes' walk of the berth.</p><p><strong>Is a skipper included, or do I drive?</strong><br>The K80 is fully crewed. A licensed captain and a deckhand are aboard throughout your charter, so the yacht is handled, anchored and served for you. There is nothing to drive and no licence required.</p><p><strong>What is included in the price?</strong><br>Every charter includes a licensed skipper, fuel, drinks (water, soft drinks, beer, white wine and cava), light snacks, insurance, safety equipment and Spanish VAT at twenty-one per cent. It is a genuinely all-inclusive arrangement.</p><p><strong>How much does she cost?</strong><br>The K80 is priced on request at competitive Marbella rates. Charters are quoted individually by date, group size, route and duration, and your figure is sent over WhatsApp through the boat's page, usually the same day.</p><p><strong>Can she be chartered overnight?</strong><br>Yes. She has multiple cabins below deck, so overnight and multi-day charters can be discussed alongside single days, which is unusual among Marbella day boats. Ask for a quote when you enquire.</p><p><strong>What is there to do on board?</strong><br>The K80 carries water toys and a generous sun deck, so a day is built around swimming from the bathing platform, lounging in the sun, lunch aboard and unhurried cruising between anchorages.</p><p><strong>When is the best time to sail?</strong><br>July and August are warmest and busiest, while May, June and September offer reliably warm weather with calmer seas and easier availability. Book early for peak summer weekends.</p></div>
+  
+</div>
+
+<div class="sec">
+  <div class="sec-head">
+    <div class="sec-kicker caps">Section 11</div>
+    <h2 class="display">Booking the K80</h2>
+    <div class="rules"><span class="thick"></span><span class="thin"></span></div>
+  </div>
+  <div class="sec-body"><p>The K80 is a flagship-class day charter for the days that deserve one, a twenty-four metre motor yacht crewed, all-inclusive and ready to sail from Puerto Banús for up to twelve guests. Whether you are planning a celebration, a family day on the water or a piece of corporate hospitality with real presence, she gives you the scale and the ease that smaller boats cannot.</p><p>To book, visit her page at <a href="https://boatrentalinmarbella.com/boats/k80/">boatrentalinmarbella.com/boats/k80</a> and start a WhatsApp conversation from there. Share your date, your group size and any special requests, and the team will confirm availability and send a tailored quote, usually the same day. For peak summer dates it is well worth enquiring early.</p></div>
+  
+</div>
+
+<div class="callout">
+  <h3 class="display">Charter the K80</h3>
+  <p>Book this boat at <a href="https://boatrentalinmarbella.com/boats/k80/">boatrentalinmarbella.com</a>, with tailored quotes arranged over WhatsApp.</p><p><strong>Boat owners:</strong> list your boat free at <a href="https://boathire24.com">boathire24.com</a> and reach charter guests worldwide.</p>
+  <div class="linksrow caps"><a href="https://boathire24.com">https://boathire24.com</a><span class="sep">&#9670;</span><a href="https://boatrentalinmarbella.com/boats/k80/">https://boatrentalinmarbella.com/boats/k80/</a></div>
+</div>
+<div class="endmark"><span class="line"></span><svg width="14" height="14" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg" aria-hidden="true"><path fill="#b9924b" d="M17 15l1.55 1.55c-.96 1.69-3.33 3.04-5.55 3.37V11h3V9h-3V7.82C14.16 7.4 15 6.3 15 5c0-1.65-1.35-3-3-3S9 3.35 9 5c0 1.3.84 2.4 2 2.82V9H8v2h3v8.92c-2.22-.33-4.59-1.68-5.55-3.37L7 15l-4-3v3c0 3.88 4.92 7 9 7s9-3.12 9-7v-3l-4 3zM12 4c.55 0 1 .45 1 1s-.45 1-1 1-1-.45-1-1 .45-1 1-1z"/></svg><span class="line"></span></div>
+  </td></tr></tbody>
+  <tfoot><tr><td></td></tr></tfoot>
+</table>
+
+<div class="runfoot caps">
+  <span><b>boathire24.com</b> <span class="gold">&#9670;</span> rent boats worldwide
+    <span class="gold">&#9670;</span> list your boat free</span>
+  <span class="gold caps">boatrentalinmarbella.com/boats/k80</span>
+</div>
+</body>
+</html>

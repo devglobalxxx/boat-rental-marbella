@@ -82,3 +82,2020 @@
 [2026-05-30 18:21:43]   Uploaded: https://youtube.com/shorts/ueIl9j1UafU
 [2026-05-30 18:21:43] Done. Uploaded 6 video(s) today.
 [2026-05-30 18:21:43] Done. Uploaded 6 video(s) today.
+[2026-06-10 11:37:17] Starting YouTube uploader
+[2026-06-10 11:37:17] Starting YouTube uploader
+[2026-06-11 09:47:11] Starting YouTube uploader
+[2026-06-11 09:47:12] Scanning Drive for videos (folder 1qEQPlq6084s7eaq2wqTtoTjN5t2yvFlS) …
+[2026-06-11 09:47:30] Found 138 video files in Drive
+[2026-06-11 09:47:30] 127 videos not yet uploaded to YouTube
+[2026-06-11 09:47:30] Next: 'a5db2e2c483b4ba2828f53c34ed20414.mov' (5 MB) from folder 'BOATRENTALMARBELLA SOCIAL'
+[2026-06-11 09:47:30]   Downloading from Drive …
+[2026-06-11 09:47:32]   Uploading as Short: 'VIP Yacht Marbella | Puerto Banús #Shorts'
+[2026-06-11 09:47:55]   File attached: yt_upload_1ePFNRzqXagG7puQveLibr6GPvXghJqah.mov
+[2026-06-11 09:48:47]   ERROR uploading 'a5db2e2c483b4ba2828f53c34ed20414.mov': Locator.click: Timeout 30000ms exceeded.
+Call log:
+  - waiting for locator("#description-textarea #textbox").first
+    - locator resolved to <div id="textbox" slot="input" tabindex="0" role="textbox" aria-invalid="false" aria-disabled="false" aria-required="false" contenteditable="true" class="style-scope ytcp-social-suggestions-textbox" aria-label="Rääkige vaatajatele oma videost (kanali mainimiseks sisestage @)"></div>
+  - attempting click action
+    - waiting for element to be visible, enabled and stable
+    - element is visible, enabled and stable
+    - scrolling into view if needed
+    - done scrolling
+    - <yt-formatted-string id="display-name" class="style-scope ytcp-hashtag-suggestion">#boatrentalmarbella</yt-formatted-string> from <ytcp-social-suggestions-dropdown>…</ytcp-social-suggestions-dropdown> subtree intercepts pointer events
+  - retrying click action
+    - waiting for element to be visible, enabled and stable
+    - element is visible, enabled and stable
+    - scrolling into view if needed
+    - done scrolling
+    - <yt-formatted-string id="hashtag-info" class="style-scope ytcp-hashtag-suggestion">87 tuh videot • 24 tuh kanalit</yt-formatted-string> from <ytcp-social-suggestions-dropdown>…</ytcp-social-suggestions-dropdown> subtree intercepts pointer events
+  - retrying click action
+    - waiting 20ms
+    - waiting for element to be visible, enabled and stable
+    - element is visible, enabled and stable
+    - scrolling into view if needed
+    - done scrolling
+    - <yt-formatted-string id="hashtag-info" class="style-scope ytcp-hashtag-suggestion">87 tuh videot • 24 tuh kanalit</yt-formatted-string> from <ytcp-social-suggestions-dropdown>…</ytcp-social-suggestions-dropdown> subtree intercepts pointer events
+  - retrying click action
+    - waiting 100ms
+    - waiting for element to be visible, enabled and stable
+    - element is visible, enabled and stable
+    - scrolling into view if needed
+    - done scrolling
+    - <tp-yt-paper-dialog id="dialog" role="dialog" tabindex="-1" no-auto-focus="" no-overlap="false" style-target="host" vertical-align="top" dynamic-align="false" horizontal-align="left" aria-label="Suggestions" no-cancel-on-outside-click="false" class="style-scope ytcp-social-suggestions-dropdown">…</tp-yt-paper-dialog> from <ytcp-social-suggestions-dropdown>…</ytcp-social-suggestions-dropdown> subtree intercepts pointer events
+  - retrying click action
+    - waiting 100ms
+    14 × waiting for element to be visible, enabled and stable
+       - element is visible, enabled and stable
+       - scrolling into view if needed
+       - done scrolling
+       - <yt-formatted-string id="display-name" class="style-scope ytcp-hashtag-suggestion">#shortsvideo</yt-formatted-string> from <ytcp-social-suggestions-dropdown>…</ytcp-social-suggestions-dropdown> subtree intercepts pointer events
+     - retrying click action
+       - waiting 500ms
+       - waiting for element to be visible, enabled and stable
+       - element is visible, enabled and stable
+       - scrolling into view if needed
+       - done scrolling
+       - <ytcp-hashtag-suggestion role="option" id="social-suggestion-6" class="style-scope ytcp-social-suggestions-dropdown" aria-label="#shortsindia4 mln videot • 861 tuh kanalit">…</ytcp-hashtag-suggestion> from <ytcp-social-suggestions-dropdown>…</ytcp-social-suggestions-dropdown> subtree intercepts pointer events
+     - retrying click action
+       - waiting 500ms
+       - waiting for element to be visible, enabled and stable
+       - element is visible, enabled and stable
+       - scrolling into view if needed
+       - done scrolling
+       - <ytcp-hashtag-suggestion role="option" id="social-suggestion-6" class="style-scope ytcp-social-suggestions-dropdown" aria-label="#shortsindia4 mln videot • 861 tuh kanalit">…</ytcp-hashtag-suggestion> from <ytcp-social-suggestions-dropdown>…</ytcp-social-suggestions-dropdown> subtree intercepts pointer events
+     - retrying click action
+       - waiting 500ms
+       - waiting for element to be visible, enabled and stable
+       - element is visible, enabled and stable
+       - scrolling into view if needed
+       - done scrolling
+       - <yt-formatted-string id="display-name" class="style-scope ytcp-hashtag-suggestion">#shortsvideo</yt-formatted-string> from <ytcp-social-suggestions-dropdown>…</ytcp-social-suggestions-dropdown> subtree intercepts pointer events
+     - retrying click action
+       - waiting 500ms
+    - waiting for element to be visible, enabled and stable
+    - element is visible, enabled and stable
+    - scrolling into view if needed
+    - done scrolling
+    - <yt-formatted-string id="display-name" class="style-scope ytcp-hashtag-suggestion">#shortsvideo</yt-formatted-string> from <ytcp-social-suggestions-dropdown>…</ytcp-social-suggestions-dropdown> subtree intercepts pointer events
+  - retrying click action
+    - waiting 500ms
+    - waiting for element to be visible, enabled and stable
+    - element is visible, enabled and stable
+    - scrolling into view if needed
+    - done scrolling
+    - <ytcp-hashtag-suggestion role="option" id="social-suggestion-6" class="style-scope ytcp-social-suggestions-dropdown" aria-label="#shortsindia4 mln videot • 861 tuh kanalit">…</ytcp-hashtag-suggestion> from <ytcp-social-suggestions-dropdown>…</ytcp-social-suggestions-dropdown> subtree intercepts pointer events
+  - retrying click action
+    - waiting 500ms
+
+[2026-06-11 09:48:47] Next: '7d21b32fa95d48289816f99004a49b17.mov' (4 MB) from folder 'BOATRENTALMARBELLA SOCIAL'
+[2026-06-11 09:48:47]   Downloading from Drive …
+[2026-06-11 09:48:50]   Uploading as Short: 'VIP Yacht Marbella | Puerto Banús #Shorts'
+[2026-06-11 09:49:04]   File attached: yt_upload_1AWGrgaOQAalUyjysy3kMO5f1ET91kqyL.mov
+[2026-06-11 09:49:43]   ERROR uploading '7d21b32fa95d48289816f99004a49b17.mov': Locator.click: Timeout 30000ms exceeded.
+Call log:
+  - waiting for locator("#description-textarea #textbox").first
+    - locator resolved to <div id="textbox" slot="input" tabindex="0" role="textbox" aria-invalid="false" aria-disabled="false" aria-required="false" contenteditable="true" class="style-scope ytcp-social-suggestions-textbox" aria-label="Rääkige vaatajatele oma videost (kanali mainimiseks sisestage @)"></div>
+  - attempting click action
+    - waiting for element to be visible, enabled and stable
+    - element is visible, enabled and stable
+    - scrolling into view if needed
+    - done scrolling
+    - <yt-formatted-string id="display-name" class="style-scope ytcp-hashtag-suggestion">#boatrentalmarbella</yt-formatted-string> from <ytcp-social-suggestions-dropdown>…</ytcp-social-suggestions-dropdown> subtree intercepts pointer events
+  - retrying click action
+    - waiting for element to be visible, enabled and stable
+    - element is visible, enabled and stable
+    - scrolling into view if needed
+    - done scrolling
+    - <yt-formatted-string id="hashtag-info" class="style-scope ytcp-hashtag-suggestion">87 tuh videot • 24 tuh kanalit</yt-formatted-string> from <ytcp-social-suggestions-dropdown>…</ytcp-social-suggestions-dropdown> subtree intercepts pointer events
+  - retrying click action
+    - waiting 20ms
+    - waiting for element to be visible, enabled and stable
+    - element is visible, enabled and stable
+    - scrolling into view if needed
+    - done scrolling
+    - <yt-formatted-string id="hashtag-info" class="style-scope ytcp-hashtag-suggestion">87 tuh videot • 24 tuh kanalit</yt-formatted-string> from <ytcp-social-suggestions-dropdown>…</ytcp-social-suggestions-dropdown> subtree intercepts pointer events
+  - retrying click action
+    - waiting 100ms
+    - waiting for element to be visible, enabled and stable
+    - element is visible, enabled and stable
+    - scrolling into view if needed
+    - done scrolling
+    - <tp-yt-paper-dialog id="dialog" role="dialog" tabindex="-1" no-auto-focus="" no-overlap="false" style-target="host" vertical-align="top" dynamic-align="false" horizontal-align="left" aria-label="Suggestions" no-cancel-on-outside-click="false" class="style-scope ytcp-social-suggestions-dropdown">…</tp-yt-paper-dialog> from <ytcp-social-suggestions-dropdown>…</ytcp-social-suggestions-dropdown> subtree intercepts pointer events
+  - retrying click action
+    - waiting 100ms
+    14 × waiting for element to be visible, enabled and stable
+       - element is visible, enabled and stable
+       - scrolling into view if needed
+       - done scrolling
+       - <yt-formatted-string id="display-name" class="style-scope ytcp-hashtag-suggestion">#shortsvideo</yt-formatted-string> from <ytcp-social-suggestions-dropdown>…</ytcp-social-suggestions-dropdown> subtree intercepts pointer events
+     - retrying click action
+       - waiting 500ms
+       - waiting for element to be visible, enabled and stable
+       - element is visible, enabled and stable
+       - scrolling into view if needed
+       - done scrolling
+       - <ytcp-hashtag-suggestion role="option" id="social-suggestion-6" class="style-scope ytcp-social-suggestions-dropdown" aria-label="#shortsindia4 mln videot • 861 tuh kanalit">…</ytcp-hashtag-suggestion> from <ytcp-social-suggestions-dropdown>…</ytcp-social-suggestions-dropdown> subtree intercepts pointer events
+     - retrying click action
+       - waiting 500ms
+       - waiting for element to be visible, enabled and stable
+       - element is visible, enabled and stable
+       - scrolling into view if needed
+       - done scrolling
+       - <ytcp-hashtag-suggestion role="option" id="social-suggestion-6" class="style-scope ytcp-social-suggestions-dropdown" aria-label="#shortsindia4 mln videot • 861 tuh kanalit">…</ytcp-hashtag-suggestion> from <ytcp-social-suggestions-dropdown>…</ytcp-social-suggestions-dropdown> subtree intercepts pointer events
+     - retrying click action
+       - waiting 500ms
+       - waiting for element to be visible, enabled and stable
+       - element is visible, enabled and stable
+       - scrolling into view if needed
+       - done scrolling
+       - <yt-formatted-string id="display-name" class="style-scope ytcp-hashtag-suggestion">#shortsvideo</yt-formatted-string> from <ytcp-social-suggestions-dropdown>…</ytcp-social-suggestions-dropdown> subtree intercepts pointer events
+     - retrying click action
+       - waiting 500ms
+    - waiting for element to be visible, enabled and stable
+    - element is visible, enabled and stable
+    - scrolling into view if needed
+    - done scrolling
+    - <yt-formatted-string id="display-name" class="style-scope ytcp-hashtag-suggestion">#shortsvideo</yt-formatted-string> from <ytcp-social-suggestions-dropdown>…</ytcp-social-suggestions-dropdown> subtree intercepts pointer events
+  - retrying click action
+    - waiting 500ms
+    - waiting for element to be visible, enabled and stable
+    - element is visible, enabled and stable
+    - scrolling into view if needed
+    - done scrolling
+    - <ytcp-hashtag-suggestion role="option" id="social-suggestion-6" class="style-scope ytcp-social-suggestions-dropdown" aria-label="#shortsindia4 mln videot • 861 tuh kanalit">…</ytcp-hashtag-suggestion> from <ytcp-social-suggestions-dropdown>…</ytcp-social-suggestions-dropdown> subtree intercepts pointer events
+  - retrying click action
+    - waiting 500ms
+
+[2026-06-11 09:49:43] Next: 'BoatRentalMarbella Reel.mp4' (7 MB) from folder 'BOATRENTALMARBELLA SOCIAL'
+[2026-06-11 09:49:43]   Downloading from Drive …
+[2026-06-11 09:49:45]   Uploading as Short: 'VIP Yacht Marbella | Puerto Banús #Shorts'
+[2026-06-11 09:50:00]   File attached: yt_upload_1prVbDWGuvcy1cSnghinnogfFciMTpO7O.mp4
+[2026-06-11 09:50:38]   ERROR uploading 'BoatRentalMarbella Reel.mp4': Locator.click: Timeout 30000ms exceeded.
+Call log:
+  - waiting for locator("#description-textarea #textbox").first
+    - locator resolved to <div id="textbox" slot="input" tabindex="0" role="textbox" aria-invalid="false" aria-disabled="false" aria-required="false" contenteditable="true" class="style-scope ytcp-social-suggestions-textbox" aria-label="Rääkige vaatajatele oma videost (kanali mainimiseks sisestage @)"></div>
+  - attempting click action
+    - waiting for element to be visible, enabled and stable
+    - element is visible, enabled and stable
+    - scrolling into view if needed
+    - done scrolling
+    - <yt-formatted-string id="display-name" class="style-scope ytcp-hashtag-suggestion">#boatrentalmarbella</yt-formatted-string> from <ytcp-social-suggestions-dropdown>…</ytcp-social-suggestions-dropdown> subtree intercepts pointer events
+  - retrying click action
+    - waiting for element to be visible, enabled and stable
+    - element is visible, enabled and stable
+    - scrolling into view if needed
+    - done scrolling
+    - <yt-formatted-string id="hashtag-info" class="style-scope ytcp-hashtag-suggestion">87 tuh videot • 24 tuh kanalit</yt-formatted-string> from <ytcp-social-suggestions-dropdown>…</ytcp-social-suggestions-dropdown> subtree intercepts pointer events
+  - retrying click action
+    - waiting 20ms
+    - waiting for element to be visible, enabled and stable
+    - element is visible, enabled and stable
+    - scrolling into view if needed
+    - done scrolling
+    - <yt-formatted-string id="hashtag-info" class="style-scope ytcp-hashtag-suggestion">87 tuh videot • 24 tuh kanalit</yt-formatted-string> from <ytcp-social-suggestions-dropdown>…</ytcp-social-suggestions-dropdown> subtree intercepts pointer events
+  - retrying click action
+    - waiting 100ms
+    - waiting for element to be visible, enabled and stable
+    - element is visible, enabled and stable
+    - scrolling into view if needed
+    - done scrolling
+    - <tp-yt-paper-dialog id="dialog" role="dialog" tabindex="-1" no-auto-focus="" no-overlap="false" style-target="host" vertical-align="top" dynamic-align="false" horizontal-align="left" aria-label="Suggestions" no-cancel-on-outside-click="false" class="style-scope ytcp-social-suggestions-dropdown">…</tp-yt-paper-dialog> from <ytcp-social-suggestions-dropdown>…</ytcp-social-suggestions-dropdown> subtree intercepts pointer events
+  - retrying click action
+    - waiting 100ms
+    14 × waiting for element to be visible, enabled and stable
+       - element is visible, enabled and stable
+       - scrolling into view if needed
+       - done scrolling
+       - <yt-formatted-string id="display-name" class="style-scope ytcp-hashtag-suggestion">#shortsvideo</yt-formatted-string> from <ytcp-social-suggestions-dropdown>…</ytcp-social-suggestions-dropdown> subtree intercepts pointer events
+     - retrying click action
+       - waiting 500ms
+       - waiting for element to be visible, enabled and stable
+       - element is visible, enabled and stable
+       - scrolling into view if needed
+       - done scrolling
+       - <ytcp-hashtag-suggestion role="option" id="social-suggestion-6" class="style-scope ytcp-social-suggestions-dropdown" aria-label="#shortsindia4 mln videot • 861 tuh kanalit">…</ytcp-hashtag-suggestion> from <ytcp-social-suggestions-dropdown>…</ytcp-social-suggestions-dropdown> subtree intercepts pointer events
+     - retrying click action
+       - waiting 500ms
+       - waiting for element to be visible, enabled and stable
+       - element is visible, enabled and stable
+       - scrolling into view if needed
+       - done scrolling
+       - <ytcp-hashtag-suggestion role="option" id="social-suggestion-6" class="style-scope ytcp-social-suggestions-dropdown" aria-label="#shortsindia4 mln videot • 861 tuh kanalit">…</ytcp-hashtag-suggestion> from <ytcp-social-suggestions-dropdown>…</ytcp-social-suggestions-dropdown> subtree intercepts pointer events
+     - retrying click action
+       - waiting 500ms
+       - waiting for element to be visible, enabled and stable
+       - element is visible, enabled and stable
+       - scrolling into view if needed
+       - done scrolling
+       - <yt-formatted-string id="display-name" class="style-scope ytcp-hashtag-suggestion">#shortsvideo</yt-formatted-string> from <ytcp-social-suggestions-dropdown>…</ytcp-social-suggestions-dropdown> subtree intercepts pointer events
+     - retrying click action
+       - waiting 500ms
+    - waiting for element to be visible, enabled and stable
+    - element is visible, enabled and stable
+    - scrolling into view if needed
+    - done scrolling
+    - <yt-formatted-string id="display-name" class="style-scope ytcp-hashtag-suggestion">#shortsvideo</yt-formatted-string> from <ytcp-social-suggestions-dropdown>…</ytcp-social-suggestions-dropdown> subtree intercepts pointer events
+  - retrying click action
+    - waiting 500ms
+    - waiting for element to be visible, enabled and stable
+    - element is visible, enabled and stable
+    - scrolling into view if needed
+    - done scrolling
+    - <ytcp-hashtag-suggestion role="option" id="social-suggestion-6" class="style-scope ytcp-social-suggestions-dropdown" aria-label="#shortsindia4 mln videot • 861 tuh kanalit">…</ytcp-hashtag-suggestion> from <ytcp-social-suggestions-dropdown>…</ytcp-social-suggestions-dropdown> subtree intercepts pointer events
+  - retrying click action
+    - waiting 500ms
+
+[2026-06-11 09:50:38]   3 consecutive errors — stopping to avoid cycling all videos.
+[2026-06-11 09:50:38] Done. Uploaded 0 video(s) today.
+[2026-06-11 09:57:29] Starting YouTube uploader
+[2026-06-11 09:57:29] Scanning Drive for videos (folder 1qEQPlq6084s7eaq2wqTtoTjN5t2yvFlS) …
+[2026-06-11 09:57:46] Found 138 video files in Drive
+[2026-06-11 09:57:46] 127 videos not yet uploaded to YouTube
+[2026-06-11 09:57:46] Next: 'a5db2e2c483b4ba2828f53c34ed20414.mov' (5 MB) from folder 'BOATRENTALMARBELLA SOCIAL'
+[2026-06-11 09:57:46]   Downloading from Drive …
+[2026-06-11 09:57:48]   Uploading as Short: 'VIP Yacht Marbella | Puerto Banús #Shorts'
+[2026-06-11 09:58:03]   File attached: yt_upload_1ePFNRzqXagG7puQveLibr6GPvXghJqah.mov
+[2026-06-11 09:59:01]   ERROR uploading 'a5db2e2c483b4ba2828f53c34ed20414.mov': Locator.click: Timeout 30000ms exceeded.
+Call log:
+  - waiting for locator("#description-textarea #textbox").first
+    - locator resolved to <div id="textbox" slot="input" tabindex="0" role="textbox" aria-invalid="false" aria-disabled="false" aria-required="false" contenteditable="true" class="style-scope ytcp-social-suggestions-textbox" aria-label="Rääkige vaatajatele oma videost (kanali mainimiseks sisestage @)"></div>
+  - attempting click action
+    - waiting for element to be visible, enabled and stable
+    - element is visible, enabled and stable
+    - scrolling into view if needed
+    - done scrolling
+    - <yt-formatted-string id="display-name" class="style-scope ytcp-hashtag-suggestion">#boatrentalmarbella</yt-formatted-string> from <ytcp-social-suggestions-dropdown>…</ytcp-social-suggestions-dropdown> subtree intercepts pointer events
+  - retrying click action
+    - waiting for element to be visible, enabled and stable
+    - element is visible, enabled and stable
+    - scrolling into view if needed
+    - done scrolling
+    - <yt-formatted-string id="hashtag-info" class="style-scope ytcp-hashtag-suggestion">87 tuh videot • 24 tuh kanalit</yt-formatted-string> from <ytcp-social-suggestions-dropdown>…</ytcp-social-suggestions-dropdown> subtree intercepts pointer events
+  - retrying click action
+    - waiting 20ms
+    - waiting for element to be visible, enabled and stable
+    - element is visible, enabled and stable
+    - scrolling into view if needed
+    - done scrolling
+    - <yt-formatted-string id="hashtag-info" class="style-scope ytcp-hashtag-suggestion">87 tuh videot • 24 tuh kanalit</yt-formatted-string> from <ytcp-social-suggestions-dropdown>…</ytcp-social-suggestions-dropdown> subtree intercepts pointer events
+  - retrying click action
+    - waiting 100ms
+    - waiting for element to be visible, enabled and stable
+    - element is visible, enabled and stable
+    - scrolling into view if needed
+    - done scrolling
+    - <tp-yt-paper-dialog id="dialog" role="dialog" tabindex="-1" no-auto-focus="" no-overlap="false" style-target="host" vertical-align="top" dynamic-align="false" horizontal-align="left" aria-label="Suggestions" no-cancel-on-outside-click="false" class="style-scope ytcp-social-suggestions-dropdown">…</tp-yt-paper-dialog> from <ytcp-social-suggestions-dropdown>…</ytcp-social-suggestions-dropdown> subtree intercepts pointer events
+  - retrying click action
+    - waiting 100ms
+    14 × waiting for element to be visible, enabled and stable
+       - element is visible, enabled and stable
+       - scrolling into view if needed
+       - done scrolling
+       - <yt-formatted-string id="display-name" class="style-scope ytcp-hashtag-suggestion">#shortsvideo</yt-formatted-string> from <ytcp-social-suggestions-dropdown>…</ytcp-social-suggestions-dropdown> subtree intercepts pointer events
+     - retrying click action
+       - waiting 500ms
+       - waiting for element to be visible, enabled and stable
+       - element is visible, enabled and stable
+       - scrolling into view if needed
+       - done scrolling
+       - <ytcp-hashtag-suggestion role="option" id="social-suggestion-6" class="style-scope ytcp-social-suggestions-dropdown" aria-label="#shortsindia4 mln videot • 861 tuh kanalit">…</ytcp-hashtag-suggestion> from <ytcp-social-suggestions-dropdown>…</ytcp-social-suggestions-dropdown> subtree intercepts pointer events
+     - retrying click action
+       - waiting 500ms
+       - waiting for element to be visible, enabled and stable
+       - element is visible, enabled and stable
+       - scrolling into view if needed
+       - done scrolling
+       - <ytcp-hashtag-suggestion role="option" id="social-suggestion-6" class="style-scope ytcp-social-suggestions-dropdown" aria-label="#shortsindia4 mln videot • 861 tuh kanalit">…</ytcp-hashtag-suggestion> from <ytcp-social-suggestions-dropdown>…</ytcp-social-suggestions-dropdown> subtree intercepts pointer events
+     - retrying click action
+       - waiting 500ms
+       - waiting for element to be visible, enabled and stable
+       - element is visible, enabled and stable
+       - scrolling into view if needed
+       - done scrolling
+       - <yt-formatted-string id="display-name" class="style-scope ytcp-hashtag-suggestion">#shortsvideo</yt-formatted-string> from <ytcp-social-suggestions-dropdown>…</ytcp-social-suggestions-dropdown> subtree intercepts pointer events
+     - retrying click action
+       - waiting 500ms
+    - waiting for element to be visible, enabled and stable
+    - element is visible, enabled and stable
+    - scrolling into view if needed
+    - done scrolling
+    - <yt-formatted-string id="display-name" class="style-scope ytcp-hashtag-suggestion">#shortsvideo</yt-formatted-string> from <ytcp-social-suggestions-dropdown>…</ytcp-social-suggestions-dropdown> subtree intercepts pointer events
+  - retrying click action
+    - waiting 500ms
+    - waiting for element to be visible, enabled and stable
+    - element is visible, enabled and stable
+    - scrolling into view if needed
+    - done scrolling
+    - <ytcp-hashtag-suggestion role="option" id="social-suggestion-6" class="style-scope ytcp-social-suggestions-dropdown" aria-label="#shortsindia4 mln videot • 861 tuh kanalit">…</ytcp-hashtag-suggestion> from <ytcp-social-suggestions-dropdown>…</ytcp-social-suggestions-dropdown> subtree intercepts pointer events
+  - retrying click action
+    - waiting 500ms
+
+[2026-06-11 09:59:01] Next: '7d21b32fa95d48289816f99004a49b17.mov' (4 MB) from folder 'BOATRENTALMARBELLA SOCIAL'
+[2026-06-11 09:59:01]   Downloading from Drive …
+[2026-06-11 09:59:03]   Uploading as Short: 'VIP Yacht Marbella | Puerto Banús #Shorts'
+[2026-06-11 09:59:17]   File attached: yt_upload_1AWGrgaOQAalUyjysy3kMO5f1ET91kqyL.mov
+[2026-06-11 09:59:55]   ERROR uploading '7d21b32fa95d48289816f99004a49b17.mov': Locator.click: Timeout 30000ms exceeded.
+Call log:
+  - waiting for locator("#description-textarea #textbox").first
+    - locator resolved to <div id="textbox" slot="input" tabindex="0" role="textbox" aria-invalid="false" aria-disabled="false" aria-required="false" contenteditable="true" class="style-scope ytcp-social-suggestions-textbox" aria-label="Rääkige vaatajatele oma videost (kanali mainimiseks sisestage @)"></div>
+  - attempting click action
+    - waiting for element to be visible, enabled and stable
+    - element is visible, enabled and stable
+    - scrolling into view if needed
+    - done scrolling
+    - <yt-formatted-string id="display-name" class="style-scope ytcp-hashtag-suggestion">#boatrentalmarbella</yt-formatted-string> from <ytcp-social-suggestions-dropdown>…</ytcp-social-suggestions-dropdown> subtree intercepts pointer events
+  - retrying click action
+    - waiting for element to be visible, enabled and stable
+    - element is visible, enabled and stable
+    - scrolling into view if needed
+    - done scrolling
+    - <yt-formatted-string id="hashtag-info" class="style-scope ytcp-hashtag-suggestion">87 tuh videot • 24 tuh kanalit</yt-formatted-string> from <ytcp-social-suggestions-dropdown>…</ytcp-social-suggestions-dropdown> subtree intercepts pointer events
+  - retrying click action
+    - waiting 20ms
+    - waiting for element to be visible, enabled and stable
+    - element is visible, enabled and stable
+    - scrolling into view if needed
+    - done scrolling
+    - <yt-formatted-string id="hashtag-info" class="style-scope ytcp-hashtag-suggestion">87 tuh videot • 24 tuh kanalit</yt-formatted-string> from <ytcp-social-suggestions-dropdown>…</ytcp-social-suggestions-dropdown> subtree intercepts pointer events
+  - retrying click action
+    - waiting 100ms
+    - waiting for element to be visible, enabled and stable
+    - element is visible, enabled and stable
+    - scrolling into view if needed
+    - done scrolling
+    - <tp-yt-paper-dialog id="dialog" role="dialog" tabindex="-1" no-auto-focus="" no-overlap="false" style-target="host" vertical-align="top" dynamic-align="false" horizontal-align="left" aria-label="Suggestions" no-cancel-on-outside-click="false" class="style-scope ytcp-social-suggestions-dropdown">…</tp-yt-paper-dialog> from <ytcp-social-suggestions-dropdown>…</ytcp-social-suggestions-dropdown> subtree intercepts pointer events
+  - retrying click action
+    - waiting 100ms
+    14 × waiting for element to be visible, enabled and stable
+       - element is visible, enabled and stable
+       - scrolling into view if needed
+       - done scrolling
+       - <yt-formatted-string id="display-name" class="style-scope ytcp-hashtag-suggestion">#shortsvideo</yt-formatted-string> from <ytcp-social-suggestions-dropdown>…</ytcp-social-suggestions-dropdown> subtree intercepts pointer events
+     - retrying click action
+       - waiting 500ms
+       - waiting for element to be visible, enabled and stable
+       - element is visible, enabled and stable
+       - scrolling into view if needed
+       - done scrolling
+       - <ytcp-hashtag-suggestion role="option" id="social-suggestion-6" class="style-scope ytcp-social-suggestions-dropdown" aria-label="#shortsindia4 mln videot • 861 tuh kanalit">…</ytcp-hashtag-suggestion> from <ytcp-social-suggestions-dropdown>…</ytcp-social-suggestions-dropdown> subtree intercepts pointer events
+     - retrying click action
+       - waiting 500ms
+       - waiting for element to be visible, enabled and stable
+       - element is visible, enabled and stable
+       - scrolling into view if needed
+       - done scrolling
+       - <ytcp-hashtag-suggestion role="option" id="social-suggestion-6" class="style-scope ytcp-social-suggestions-dropdown" aria-label="#shortsindia4 mln videot • 861 tuh kanalit">…</ytcp-hashtag-suggestion> from <ytcp-social-suggestions-dropdown>…</ytcp-social-suggestions-dropdown> subtree intercepts pointer events
+     - retrying click action
+       - waiting 500ms
+       - waiting for element to be visible, enabled and stable
+       - element is visible, enabled and stable
+       - scrolling into view if needed
+       - done scrolling
+       - <yt-formatted-string id="display-name" class="style-scope ytcp-hashtag-suggestion">#shortsvideo</yt-formatted-string> from <ytcp-social-suggestions-dropdown>…</ytcp-social-suggestions-dropdown> subtree intercepts pointer events
+     - retrying click action
+       - waiting 500ms
+    - waiting for element to be visible, enabled and stable
+    - element is visible, enabled and stable
+    - scrolling into view if needed
+    - done scrolling
+    - <yt-formatted-string id="display-name" class="style-scope ytcp-hashtag-suggestion">#shortsvideo</yt-formatted-string> from <ytcp-social-suggestions-dropdown>…</ytcp-social-suggestions-dropdown> subtree intercepts pointer events
+  - retrying click action
+    - waiting 500ms
+    - waiting for element to be visible, enabled and stable
+    - element is visible, enabled and stable
+    - scrolling into view if needed
+    - done scrolling
+    - <ytcp-hashtag-suggestion role="option" id="social-suggestion-6" class="style-scope ytcp-social-suggestions-dropdown" aria-label="#shortsindia4 mln videot • 861 tuh kanalit">…</ytcp-hashtag-suggestion> from <ytcp-social-suggestions-dropdown>…</ytcp-social-suggestions-dropdown> subtree intercepts pointer events
+  - retrying click action
+    - waiting 500ms
+
+[2026-06-11 09:59:55] Next: 'BoatRentalMarbella Reel.mp4' (7 MB) from folder 'BOATRENTALMARBELLA SOCIAL'
+[2026-06-11 09:59:55]   Downloading from Drive …
+[2026-06-11 09:59:57]   Uploading as Short: 'VIP Yacht Marbella | Puerto Banús #Shorts'
+[2026-06-11 10:00:44]   ERROR uploading 'BoatRentalMarbella Reel.mp4': Locator.click: Timeout 15000ms exceeded.
+Call log:
+  - waiting for locator("ytcp-button.ytcpAppHeaderCreateIcon, button[aria-label='Create'], button[aria-label='Looge']").first
+    - locator resolved to <ytcp-button tabindex="-1" type="outline" aria-disabled="false" button-style="default" icon-alignment="start" icon="yt-sys-icons:video_call" class="ytcpAppHeaderCreateIcon">…</ytcp-button>
+  - attempting click action
+    2 × waiting for element to be visible, enabled and stable
+      - element is visible, enabled and stable
+      - scrolling into view if needed
+      - done scrolling
+      - <tp-yt-iron-overlay-backdrop opened="" class="opened">…</tp-yt-iron-overlay-backdrop> intercepts pointer events
+    - retrying click action
+    - waiting 20ms
+    2 × waiting for element to be visible, enabled and stable
+      - element is visible, enabled and stable
+      - scrolling into view if needed
+      - done scrolling
+      - <tp-yt-iron-overlay-backdrop opened="" class="opened">…</tp-yt-iron-overlay-backdrop> intercepts pointer events
+    - retrying click action
+      - waiting 100ms
+    29 × waiting for element to be visible, enabled and stable
+       - element is visible, enabled and stable
+       - scrolling into view if needed
+       - done scrolling
+       - <tp-yt-iron-overlay-backdrop opened="" class="opened">…</tp-yt-iron-overlay-backdrop> intercepts pointer events
+     - retrying click action
+       - waiting 500ms
+
+[2026-06-11 10:00:44]   3 consecutive errors — stopping to avoid cycling all videos.
+[2026-06-11 10:00:44] Done. Uploaded 0 video(s) today.
+[2026-06-11 10:06:22] Starting YouTube uploader
+[2026-06-11 10:06:22] Scanning Drive for videos (folder 1qEQPlq6084s7eaq2wqTtoTjN5t2yvFlS) …
+[2026-06-11 10:06:51] Found 138 video files in Drive
+[2026-06-11 10:06:51] 127 videos not yet uploaded to YouTube
+[2026-06-11 10:06:51] Next: 'a5db2e2c483b4ba2828f53c34ed20414.mov' (5 MB) from folder 'BOATRENTALMARBELLA SOCIAL'
+[2026-06-11 10:06:51]   Downloading from Drive …
+[2026-06-11 10:06:53]   Uploading as Short: 'VIP Yacht Marbella | Puerto Banús #Shorts'
+[2026-06-11 10:07:08]   File attached: yt_upload_1ePFNRzqXagG7puQveLibr6GPvXghJqah.mov
+[2026-06-11 10:07:46]   ERROR uploading 'a5db2e2c483b4ba2828f53c34ed20414.mov': Locator.click: Timeout 30000ms exceeded.
+Call log:
+  - waiting for locator("#description-textarea #textbox").first
+    - locator resolved to <div id="textbox" slot="input" tabindex="0" role="textbox" aria-invalid="false" aria-disabled="false" aria-required="false" contenteditable="true" class="style-scope ytcp-social-suggestions-textbox" aria-label="Rääkige vaatajatele oma videost (kanali mainimiseks sisestage @)"></div>
+  - attempting click action
+    - waiting for element to be visible, enabled and stable
+    - element is visible, enabled and stable
+    - scrolling into view if needed
+    - done scrolling
+    - <yt-formatted-string id="display-name" class="style-scope ytcp-hashtag-suggestion">#boatrentalmarbella</yt-formatted-string> from <ytcp-social-suggestions-dropdown>…</ytcp-social-suggestions-dropdown> subtree intercepts pointer events
+  - retrying click action
+    - waiting for element to be visible, enabled and stable
+    - element is visible, enabled and stable
+    - scrolling into view if needed
+    - done scrolling
+    - <yt-formatted-string id="hashtag-info" class="style-scope ytcp-hashtag-suggestion">87 tuh videot • 24 tuh kanalit</yt-formatted-string> from <ytcp-social-suggestions-dropdown>…</ytcp-social-suggestions-dropdown> subtree intercepts pointer events
+  - retrying click action
+    - waiting 20ms
+    - waiting for element to be visible, enabled and stable
+    - element is visible, enabled and stable
+    - scrolling into view if needed
+    - done scrolling
+    - <yt-formatted-string id="hashtag-info" class="style-scope ytcp-hashtag-suggestion">87 tuh videot • 24 tuh kanalit</yt-formatted-string> from <ytcp-social-suggestions-dropdown>…</ytcp-social-suggestions-dropdown> subtree intercepts pointer events
+  - retrying click action
+    - waiting 100ms
+    - waiting for element to be visible, enabled and stable
+    - element is visible, enabled and stable
+    - scrolling into view if needed
+    - done scrolling
+    - <tp-yt-paper-dialog id="dialog" role="dialog" tabindex="-1" no-auto-focus="" no-overlap="false" style-target="host" vertical-align="top" dynamic-align="false" horizontal-align="left" aria-label="Suggestions" no-cancel-on-outside-click="false" class="style-scope ytcp-social-suggestions-dropdown">…</tp-yt-paper-dialog> from <ytcp-social-suggestions-dropdown>…</ytcp-social-suggestions-dropdown> subtree intercepts pointer events
+  - retrying click action
+    - waiting 100ms
+    14 × waiting for element to be visible, enabled and stable
+       - element is visible, enabled and stable
+       - scrolling into view if needed
+       - done scrolling
+       - <yt-formatted-string id="display-name" class="style-scope ytcp-hashtag-suggestion">#shortsvideo</yt-formatted-string> from <ytcp-social-suggestions-dropdown>…</ytcp-social-suggestions-dropdown> subtree intercepts pointer events
+     - retrying click action
+       - waiting 500ms
+       - waiting for element to be visible, enabled and stable
+       - element is visible, enabled and stable
+       - scrolling into view if needed
+       - done scrolling
+       - <ytcp-hashtag-suggestion role="option" id="social-suggestion-6" class="style-scope ytcp-social-suggestions-dropdown" aria-label="#shortsindia4 mln videot • 861 tuh kanalit">…</ytcp-hashtag-suggestion> from <ytcp-social-suggestions-dropdown>…</ytcp-social-suggestions-dropdown> subtree intercepts pointer events
+     - retrying click action
+       - waiting 500ms
+       - waiting for element to be visible, enabled and stable
+       - element is visible, enabled and stable
+       - scrolling into view if needed
+       - done scrolling
+       - <ytcp-hashtag-suggestion role="option" id="social-suggestion-6" class="style-scope ytcp-social-suggestions-dropdown" aria-label="#shortsindia4 mln videot • 861 tuh kanalit">…</ytcp-hashtag-suggestion> from <ytcp-social-suggestions-dropdown>…</ytcp-social-suggestions-dropdown> subtree intercepts pointer events
+     - retrying click action
+       - waiting 500ms
+       - waiting for element to be visible, enabled and stable
+       - element is visible, enabled and stable
+       - scrolling into view if needed
+       - done scrolling
+       - <yt-formatted-string id="display-name" class="style-scope ytcp-hashtag-suggestion">#shortsvideo</yt-formatted-string> from <ytcp-social-suggestions-dropdown>…</ytcp-social-suggestions-dropdown> subtree intercepts pointer events
+     - retrying click action
+       - waiting 500ms
+    - waiting for element to be visible, enabled and stable
+    - element is visible, enabled and stable
+    - scrolling into view if needed
+    - done scrolling
+    - <yt-formatted-string id="display-name" class="style-scope ytcp-hashtag-suggestion">#shortsvideo</yt-formatted-string> from <ytcp-social-suggestions-dropdown>…</ytcp-social-suggestions-dropdown> subtree intercepts pointer events
+  - retrying click action
+    - waiting 500ms
+    - waiting for element to be visible, enabled and stable
+    - element is visible, enabled and stable
+    - scrolling into view if needed
+    - done scrolling
+    - <ytcp-hashtag-suggestion role="option" id="social-suggestion-6" class="style-scope ytcp-social-suggestions-dropdown" aria-label="#shortsindia4 mln videot • 861 tuh kanalit">…</ytcp-hashtag-suggestion> from <ytcp-social-suggestions-dropdown>…</ytcp-social-suggestions-dropdown> subtree intercepts pointer events
+  - retrying click action
+    - waiting 500ms
+
+[2026-06-11 10:07:46] Next: '7d21b32fa95d48289816f99004a49b17.mov' (4 MB) from folder 'BOATRENTALMARBELLA SOCIAL'
+[2026-06-11 10:07:46]   Downloading from Drive …
+[2026-06-11 10:07:48]   Uploading as Short: 'VIP Yacht Marbella | Puerto Banús #Shorts'
+[2026-06-11 10:08:03]   File attached: yt_upload_1AWGrgaOQAalUyjysy3kMO5f1ET91kqyL.mov
+[2026-06-11 10:08:41]   ERROR uploading '7d21b32fa95d48289816f99004a49b17.mov': Locator.click: Timeout 30000ms exceeded.
+Call log:
+  - waiting for locator("#description-textarea #textbox").first
+    - locator resolved to <div id="textbox" slot="input" tabindex="0" role="textbox" aria-invalid="false" aria-disabled="false" aria-required="false" contenteditable="true" class="style-scope ytcp-social-suggestions-textbox" aria-label="Rääkige vaatajatele oma videost (kanali mainimiseks sisestage @)"></div>
+  - attempting click action
+    - waiting for element to be visible, enabled and stable
+    - element is visible, enabled and stable
+    - scrolling into view if needed
+    - done scrolling
+    - <yt-formatted-string id="display-name" class="style-scope ytcp-hashtag-suggestion">#boatrentalmarbella</yt-formatted-string> from <ytcp-social-suggestions-dropdown>…</ytcp-social-suggestions-dropdown> subtree intercepts pointer events
+  - retrying click action
+    - waiting for element to be visible, enabled and stable
+    - element is visible, enabled and stable
+    - scrolling into view if needed
+    - done scrolling
+    - <yt-formatted-string id="hashtag-info" class="style-scope ytcp-hashtag-suggestion">87 tuh videot • 24 tuh kanalit</yt-formatted-string> from <ytcp-social-suggestions-dropdown>…</ytcp-social-suggestions-dropdown> subtree intercepts pointer events
+  - retrying click action
+    - waiting 20ms
+    - waiting for element to be visible, enabled and stable
+    - element is visible, enabled and stable
+    - scrolling into view if needed
+    - done scrolling
+    - <yt-formatted-string id="hashtag-info" class="style-scope ytcp-hashtag-suggestion">87 tuh videot • 24 tuh kanalit</yt-formatted-string> from <ytcp-social-suggestions-dropdown>…</ytcp-social-suggestions-dropdown> subtree intercepts pointer events
+  - retrying click action
+    - waiting 100ms
+    - waiting for element to be visible, enabled and stable
+    - element is visible, enabled and stable
+    - scrolling into view if needed
+    - done scrolling
+    - <tp-yt-paper-dialog id="dialog" role="dialog" tabindex="-1" no-auto-focus="" no-overlap="false" style-target="host" vertical-align="top" dynamic-align="false" horizontal-align="left" aria-label="Suggestions" no-cancel-on-outside-click="false" class="style-scope ytcp-social-suggestions-dropdown">…</tp-yt-paper-dialog> from <ytcp-social-suggestions-dropdown>…</ytcp-social-suggestions-dropdown> subtree intercepts pointer events
+  - retrying click action
+    - waiting 100ms
+    14 × waiting for element to be visible, enabled and stable
+       - element is visible, enabled and stable
+       - scrolling into view if needed
+       - done scrolling
+       - <yt-formatted-string id="display-name" class="style-scope ytcp-hashtag-suggestion">#shortsvideo</yt-formatted-string> from <ytcp-social-suggestions-dropdown>…</ytcp-social-suggestions-dropdown> subtree intercepts pointer events
+     - retrying click action
+       - waiting 500ms
+       - waiting for element to be visible, enabled and stable
+       - element is visible, enabled and stable
+       - scrolling into view if needed
+       - done scrolling
+       - <ytcp-hashtag-suggestion role="option" id="social-suggestion-6" class="style-scope ytcp-social-suggestions-dropdown" aria-label="#shortsindia4 mln videot • 861 tuh kanalit">…</ytcp-hashtag-suggestion> from <ytcp-social-suggestions-dropdown>…</ytcp-social-suggestions-dropdown> subtree intercepts pointer events
+     - retrying click action
+       - waiting 500ms
+       - waiting for element to be visible, enabled and stable
+       - element is visible, enabled and stable
+       - scrolling into view if needed
+       - done scrolling
+       - <ytcp-hashtag-suggestion role="option" id="social-suggestion-6" class="style-scope ytcp-social-suggestions-dropdown" aria-label="#shortsindia4 mln videot • 861 tuh kanalit">…</ytcp-hashtag-suggestion> from <ytcp-social-suggestions-dropdown>…</ytcp-social-suggestions-dropdown> subtree intercepts pointer events
+     - retrying click action
+       - waiting 500ms
+       - waiting for element to be visible, enabled and stable
+       - element is visible, enabled and stable
+       - scrolling into view if needed
+       - done scrolling
+       - <yt-formatted-string id="display-name" class="style-scope ytcp-hashtag-suggestion">#shortsvideo</yt-formatted-string> from <ytcp-social-suggestions-dropdown>…</ytcp-social-suggestions-dropdown> subtree intercepts pointer events
+     - retrying click action
+       - waiting 500ms
+    - waiting for element to be visible, enabled and stable
+    - element is visible, enabled and stable
+    - scrolling into view if needed
+    - done scrolling
+    - <yt-formatted-string id="display-name" class="style-scope ytcp-hashtag-suggestion">#shortsvideo</yt-formatted-string> from <ytcp-social-suggestions-dropdown>…</ytcp-social-suggestions-dropdown> subtree intercepts pointer events
+  - retrying click action
+    - waiting 500ms
+    - waiting for element to be visible, enabled and stable
+    - element is visible, enabled and stable
+    - scrolling into view if needed
+    - done scrolling
+    - <ytcp-hashtag-suggestion role="option" id="social-suggestion-6" class="style-scope ytcp-social-suggestions-dropdown" aria-label="#shortsindia4 mln videot • 861 tuh kanalit">…</ytcp-hashtag-suggestion> from <ytcp-social-suggestions-dropdown>…</ytcp-social-suggestions-dropdown> subtree intercepts pointer events
+  - retrying click action
+    - waiting 500ms
+
+[2026-06-11 10:08:41] Next: 'BoatRentalMarbella Reel.mp4' (7 MB) from folder 'BOATRENTALMARBELLA SOCIAL'
+[2026-06-11 10:08:41]   Downloading from Drive …
+[2026-06-11 10:08:44]   Uploading as Short: 'VIP Yacht Marbella | Puerto Banús #Shorts'
+[2026-06-11 10:08:45] Starting YouTube uploader
+[2026-06-11 10:08:45] Scanning Drive for videos (folder 1qEQPlq6084s7eaq2wqTtoTjN5t2yvFlS) …
+[2026-06-11 10:08:57]   File attached: yt_upload_1prVbDWGuvcy1cSnghinnogfFciMTpO7O.mp4
+[2026-06-11 10:09:08] Found 138 video files in Drive
+[2026-06-11 10:09:08] 127 videos not yet uploaded to YouTube
+[2026-06-11 10:09:08] Next: 'a5db2e2c483b4ba2828f53c34ed20414.mov' (5 MB) from folder 'BOATRENTALMARBELLA SOCIAL'
+[2026-06-11 10:09:08]   Downloading from Drive …
+[2026-06-11 10:09:10]   Uploading as Short: 'VIP Yacht Marbella | Puerto Banús #Shorts'
+[2026-06-11 10:09:23]   File attached: yt_upload_1ePFNRzqXagG7puQveLibr6GPvXghJqah.mov
+[2026-06-11 10:09:45]   ERROR uploading 'BoatRentalMarbella Reel.mp4': Locator.click: Timeout 30000ms exceeded.
+Call log:
+  - waiting for locator("#description-textarea #textbox").first
+    - locator resolved to <div id="textbox" slot="input" tabindex="0" role="textbox" aria-invalid="false" aria-disabled="false" aria-required="false" contenteditable="true" class="style-scope ytcp-social-suggestions-textbox" aria-label="Rääkige vaatajatele oma videost (kanali mainimiseks sisestage @)"></div>
+  - attempting click action
+    - waiting for element to be visible, enabled and stable
+    - element is visible, enabled and stable
+    - scrolling into view if needed
+    - done scrolling
+    - <yt-formatted-string id="display-name" class="style-scope ytcp-hashtag-suggestion">#boatrentalmarbella</yt-formatted-string> from <ytcp-social-suggestions-dropdown>…</ytcp-social-suggestions-dropdown> subtree intercepts pointer events
+  - retrying click action
+    - waiting for element to be visible, enabled and stable
+    - element is visible, enabled and stable
+    - scrolling into view if needed
+    - done scrolling
+    - <yt-formatted-string id="hashtag-info" class="style-scope ytcp-hashtag-suggestion">87 tuh videot • 24 tuh kanalit</yt-formatted-string> from <ytcp-social-suggestions-dropdown>…</ytcp-social-suggestions-dropdown> subtree intercepts pointer events
+  - retrying click action
+    - waiting 20ms
+    - waiting for element to be visible, enabled and stable
+    - element is visible, enabled and stable
+    - scrolling into view if needed
+    - done scrolling
+    - <yt-formatted-string id="hashtag-info" class="style-scope ytcp-hashtag-suggestion">87 tuh videot • 24 tuh kanalit</yt-formatted-string> from <ytcp-social-suggestions-dropdown>…</ytcp-social-suggestions-dropdown> subtree intercepts pointer events
+  - retrying click action
+    - waiting 100ms
+    - waiting for element to be visible, enabled and stable
+    - element is visible, enabled and stable
+    - scrolling into view if needed
+    - done scrolling
+    - <tp-yt-paper-dialog id="dialog" role="dialog" tabindex="-1" no-auto-focus="" no-overlap="false" style-target="host" vertical-align="top" dynamic-align="false" horizontal-align="left" aria-label="Suggestions" no-cancel-on-outside-click="false" class="style-scope ytcp-social-suggestions-dropdown">…</tp-yt-paper-dialog> from <ytcp-social-suggestions-dropdown>…</ytcp-social-suggestions-dropdown> subtree intercepts pointer events
+  - retrying click action
+    - waiting 100ms
+    14 × waiting for element to be visible, enabled and stable
+       - element is visible, enabled and stable
+       - scrolling into view if needed
+       - done scrolling
+       - <yt-formatted-string id="display-name" class="style-scope ytcp-hashtag-suggestion">#shortsvideo</yt-formatted-string> from <ytcp-social-suggestions-dropdown>…</ytcp-social-suggestions-dropdown> subtree intercepts pointer events
+     - retrying click action
+       - waiting 500ms
+       - waiting for element to be visible, enabled and stable
+       - element is visible, enabled and stable
+       - scrolling into view if needed
+       - done scrolling
+       - <ytcp-hashtag-suggestion role="option" id="social-suggestion-6" class="style-scope ytcp-social-suggestions-dropdown" aria-label="#shortsindia4 mln videot • 861 tuh kanalit">…</ytcp-hashtag-suggestion> from <ytcp-social-suggestions-dropdown>…</ytcp-social-suggestions-dropdown> subtree intercepts pointer events
+     - retrying click action
+       - waiting 500ms
+       - waiting for element to be visible, enabled and stable
+       - element is visible, enabled and stable
+       - scrolling into view if needed
+       - done scrolling
+       - <ytcp-hashtag-suggestion role="option" id="social-suggestion-6" class="style-scope ytcp-social-suggestions-dropdown" aria-label="#shortsindia4 mln videot • 861 tuh kanalit">…</ytcp-hashtag-suggestion> from <ytcp-social-suggestions-dropdown>…</ytcp-social-suggestions-dropdown> subtree intercepts pointer events
+     - retrying click action
+       - waiting 500ms
+       - waiting for element to be visible, enabled and stable
+       - element is visible, enabled and stable
+       - scrolling into view if needed
+       - done scrolling
+       - <yt-formatted-string id="display-name" class="style-scope ytcp-hashtag-suggestion">#shortsvideo</yt-formatted-string> from <ytcp-social-suggestions-dropdown>…</ytcp-social-suggestions-dropdown> subtree intercepts pointer events
+     - retrying click action
+       - waiting 500ms
+    - waiting for element to be visible, enabled and stable
+    - element is visible, enabled and stable
+    - scrolling into view if needed
+    - done scrolling
+    - <yt-formatted-string id="display-name" class="style-scope ytcp-hashtag-suggestion">#shortsvideo</yt-formatted-string> from <ytcp-social-suggestions-dropdown>…</ytcp-social-suggestions-dropdown> subtree intercepts pointer events
+  - retrying click action
+    - waiting 500ms
+    - waiting for element to be visible, enabled and stable
+    - element is visible, enabled and stable
+    - scrolling into view if needed
+    - done scrolling
+    - <ytcp-hashtag-suggestion role="option" id="social-suggestion-6" class="style-scope ytcp-social-suggestions-dropdown" aria-label="#shortsindia4 mln videot • 861 tuh kanalit">…</ytcp-hashtag-suggestion> from <ytcp-social-suggestions-dropdown>…</ytcp-social-suggestions-dropdown> subtree intercepts pointer events
+  - retrying click action
+    - waiting 500ms
+
+[2026-06-11 10:09:45]   3 consecutive errors — stopping to avoid cycling all videos.
+[2026-06-11 10:09:45] Done. Uploaded 0 video(s) today.
+[2026-06-11 10:09:47]   Uploaded: (no URL captured)
+[2026-06-11 10:09:52] Next: '7d21b32fa95d48289816f99004a49b17.mov' (4 MB) from folder 'BOATRENTALMARBELLA SOCIAL'
+[2026-06-11 10:09:52]   Downloading from Drive …
+[2026-06-11 10:09:54]   Uploading as Short: 'Exclusive Boat Charter Puerto Banús | Puerto Banús #Shorts'
+[2026-06-11 10:10:07]   File attached: yt_upload_1AWGrgaOQAalUyjysy3kMO5f1ET91kqyL.mov
+[2026-06-11 10:10:39]   Uploaded: (no URL captured)
+[2026-06-11 10:10:44] Next: 'BoatRentalMarbella Reel.mp4' (7 MB) from folder 'BOATRENTALMARBELLA SOCIAL'
+[2026-06-11 10:10:44]   Downloading from Drive …
+[2026-06-11 10:10:46]   Uploading as Short: 'Celebrity Cruise Marbella | Puerto Banús #Shorts'
+[2026-06-11 10:11:00]   File attached: yt_upload_1prVbDWGuvcy1cSnghinnogfFciMTpO7O.mp4
+[2026-06-11 10:11:31]   Uploaded: (no URL captured)
+[2026-06-11 10:11:36] Next: 'c6f4be87981b439a9b4cec5a72366177.mov' (12 MB) from folder 'BOATHIRE24.com'
+[2026-06-11 10:11:36]   Downloading from Drive …
+[2026-06-11 10:11:40]   Uploading as Short: 'Star-Studded Yacht Marbella | Puerto Banús #Shorts'
+[2026-06-11 10:11:54]   File attached: yt_upload_1YgdFY7waqRfOXMgoASyvDWH7sKKEca9S.mov
+[2026-06-11 11:30:00] Starting YouTube uploader
+[2026-06-11 11:30:00] Starting YouTube uploader
+[2026-06-11 11:30:01] Scanning Drive for videos (folder 1qEQPlq6084s7eaq2wqTtoTjN5t2yvFlS) …
+[2026-06-11 11:30:01] Scanning Drive for videos (folder 1qEQPlq6084s7eaq2wqTtoTjN5t2yvFlS) …
+[2026-06-11 11:30:18] Found 138 video files in Drive
+[2026-06-11 11:30:18] Found 138 video files in Drive
+[2026-06-11 11:30:18] 124 videos not yet uploaded to YouTube
+[2026-06-11 11:30:18] 124 videos not yet uploaded to YouTube
+[2026-06-11 11:30:18] Next: 'c6f4be87981b439a9b4cec5a72366177.mov' (12 MB) from folder 'BOATHIRE24.com'
+[2026-06-11 11:30:18] Next: 'c6f4be87981b439a9b4cec5a72366177.mov' (12 MB) from folder 'BOATHIRE24.com'
+[2026-06-11 11:30:18]   Downloading from Drive …
+[2026-06-11 11:30:18]   Downloading from Drive …
+  downloading … 65%  downloading … 100%
+[2026-06-11 11:30:36]   Uploading as Short: 'Star-Studded Yacht Marbella | Puerto Banús #Shorts'
+[2026-06-11 11:30:36]   Uploading as Short: 'Star-Studded Yacht Marbella | Puerto Banús #Shorts'
+[2026-06-11 11:31:24]   ERROR uploading 'c6f4be87981b439a9b4cec5a72366177.mov': Locator.click: Timeout 15000ms exceeded.
+Call log:
+  - waiting for locator("ytcp-button.ytcpAppHeaderCreateIcon, button[aria-label='Create'], button[aria-label='Looge']").first
+    - locator resolved to <ytcp-button tabindex="-1" type="outline" aria-disabled="false" button-style="default" icon-alignment="start" icon="yt-sys-icons:video_call" class="ytcpAppHeaderCreateIcon">…</ytcp-button>
+  - attempting click action
+    2 × waiting for element to be visible, enabled and stable
+      - element is visible, enabled and stable
+      - scrolling into view if needed
+      - done scrolling
+      - <tp-yt-iron-overlay-backdrop opened="" class="opened">…</tp-yt-iron-overlay-backdrop> intercepts pointer events
+    - retrying click action
+    - waiting 20ms
+    2 × waiting for element to be visible, enabled and stable
+      - element is visible, enabled and stable
+      - scrolling into view if needed
+      - done scrolling
+      - <tp-yt-iron-overlay-backdrop opened="" class="opened">…</tp-yt-iron-overlay-backdrop> intercepts pointer events
+    - retrying click action
+      - waiting 100ms
+    26 × waiting for element to be visible, enabled and stable
+       - element is visible, enabled and stable
+       - scrolling into view if needed
+       - done scrolling
+       - <tp-yt-iron-overlay-backdrop opened="" class="opened">…</tp-yt-iron-overlay-backdrop> intercepts pointer events
+     - retrying click action
+       - waiting 500ms
+
+[2026-06-11 11:31:24]   ERROR uploading 'c6f4be87981b439a9b4cec5a72366177.mov': Locator.click: Timeout 15000ms exceeded.
+Call log:
+  - waiting for locator("ytcp-button.ytcpAppHeaderCreateIcon, button[aria-label='Create'], button[aria-label='Looge']").first
+    - locator resolved to <ytcp-button tabindex="-1" type="outline" aria-disabled="false" button-style="default" icon-alignment="start" icon="yt-sys-icons:video_call" class="ytcpAppHeaderCreateIcon">…</ytcp-button>
+  - attempting click action
+    2 × waiting for element to be visible, enabled and stable
+      - element is visible, enabled and stable
+      - scrolling into view if needed
+      - done scrolling
+      - <tp-yt-iron-overlay-backdrop opened="" class="opened">…</tp-yt-iron-overlay-backdrop> intercepts pointer events
+    - retrying click action
+    - waiting 20ms
+    2 × waiting for element to be visible, enabled and stable
+      - element is visible, enabled and stable
+      - scrolling into view if needed
+      - done scrolling
+      - <tp-yt-iron-overlay-backdrop opened="" class="opened">…</tp-yt-iron-overlay-backdrop> intercepts pointer events
+    - retrying click action
+      - waiting 100ms
+    26 × waiting for element to be visible, enabled and stable
+       - element is visible, enabled and stable
+       - scrolling into view if needed
+       - done scrolling
+       - <tp-yt-iron-overlay-backdrop opened="" class="opened">…</tp-yt-iron-overlay-backdrop> intercepts pointer events
+     - retrying click action
+       - waiting 500ms
+
+[2026-06-11 11:31:24] Next: 'BoatHire24 Reel.mp4' (8 MB) from folder 'BOATHIRE24.com'
+[2026-06-11 11:31:24] Next: 'BoatHire24 Reel.mp4' (8 MB) from folder 'BOATHIRE24.com'
+[2026-06-11 11:31:24]   Downloading from Drive …
+[2026-06-11 11:31:24]   Downloading from Drive …
+  downloading … 97%  downloading … 100%
+[2026-06-11 11:31:27]   Uploading as Short: 'Star-Studded Yacht Marbella | Puerto Banús #Shorts'
+[2026-06-11 11:31:27]   Uploading as Short: 'Star-Studded Yacht Marbella | Puerto Banús #Shorts'
+[2026-06-11 11:31:39]   File attached: yt_upload_1aJBDGW_KSydra-OCtVsMKnOBwajGU3e4.mp4
+[2026-06-11 11:31:39]   File attached: yt_upload_1aJBDGW_KSydra-OCtVsMKnOBwajGU3e4.mp4
+[2026-06-11 11:32:16]   ERROR uploading 'BoatHire24 Reel.mp4': Locator.click: Timeout 30000ms exceeded.
+Call log:
+  - waiting for locator("#title-textarea #textbox").first
+    - locator resolved to <div id="textbox" slot="input" tabindex="0" role="textbox" aria-required="true" aria-invalid="false" aria-disabled="false" contenteditable="true" class="style-scope ytcp-social-suggestions-textbox" aria-label="Lisage videot kirjeldav pealkiri (kanali mainimiseks sisestage @)">yt upload 1aJBDGW KSydra OCtVsMKnOBwajGU3e4</div>
+  - attempting click action
+    2 × waiting for element to be visible, enabled and stable
+      - element is visible, enabled and stable
+      - scrolling into view if needed
+      - done scrolling
+      - <tp-yt-iron-overlay-backdrop opened="" class="opened">…</tp-yt-iron-overlay-backdrop> intercepts pointer events
+    - retrying click action
+    - waiting 20ms
+    2 × waiting for element to be visible, enabled and stable
+      - element is visible, enabled and stable
+      - scrolling into view if needed
+      - done scrolling
+      - <tp-yt-iron-overlay-backdrop opened="" class="opened">…</tp-yt-iron-overlay-backdrop> intercepts pointer events
+    - retrying click action
+      - waiting 100ms
+    53 × waiting for element to be visible, enabled and stable
+       - element is visible, enabled and stable
+       - scrolling into view if needed
+       - done scrolling
+       - <tp-yt-iron-overlay-backdrop opened="" class="opened">…</tp-yt-iron-overlay-backdrop> intercepts pointer events
+     - retrying click action
+       - waiting 500ms
+
+[2026-06-11 11:32:16]   ERROR uploading 'BoatHire24 Reel.mp4': Locator.click: Timeout 30000ms exceeded.
+Call log:
+  - waiting for locator("#title-textarea #textbox").first
+    - locator resolved to <div id="textbox" slot="input" tabindex="0" role="textbox" aria-required="true" aria-invalid="false" aria-disabled="false" contenteditable="true" class="style-scope ytcp-social-suggestions-textbox" aria-label="Lisage videot kirjeldav pealkiri (kanali mainimiseks sisestage @)">yt upload 1aJBDGW KSydra OCtVsMKnOBwajGU3e4</div>
+  - attempting click action
+    2 × waiting for element to be visible, enabled and stable
+      - element is visible, enabled and stable
+      - scrolling into view if needed
+      - done scrolling
+      - <tp-yt-iron-overlay-backdrop opened="" class="opened">…</tp-yt-iron-overlay-backdrop> intercepts pointer events
+    - retrying click action
+    - waiting 20ms
+    2 × waiting for element to be visible, enabled and stable
+      - element is visible, enabled and stable
+      - scrolling into view if needed
+      - done scrolling
+      - <tp-yt-iron-overlay-backdrop opened="" class="opened">…</tp-yt-iron-overlay-backdrop> intercepts pointer events
+    - retrying click action
+      - waiting 100ms
+    53 × waiting for element to be visible, enabled and stable
+       - element is visible, enabled and stable
+       - scrolling into view if needed
+       - done scrolling
+       - <tp-yt-iron-overlay-backdrop opened="" class="opened">…</tp-yt-iron-overlay-backdrop> intercepts pointer events
+     - retrying click action
+       - waiting 500ms
+
+[2026-06-11 11:32:16] Next: 'a5db2e2c483b4ba2828f53c34ed20414.mov' (5 MB) from folder 'BOATHIRE24.com'
+[2026-06-11 11:32:16] Next: 'a5db2e2c483b4ba2828f53c34ed20414.mov' (5 MB) from folder 'BOATHIRE24.com'
+[2026-06-11 11:32:16]   Downloading from Drive …
+[2026-06-11 11:32:16]   Downloading from Drive …
+  downloading … 100%
+[2026-06-11 11:32:18]   Uploading as Short: 'Star-Studded Yacht Marbella | Puerto Banús #Shorts'
+[2026-06-11 11:32:18]   Uploading as Short: 'Star-Studded Yacht Marbella | Puerto Banús #Shorts'
+[2026-06-11 11:33:05]   ERROR uploading 'a5db2e2c483b4ba2828f53c34ed20414.mov': Locator.click: Timeout 15000ms exceeded.
+Call log:
+  - waiting for locator("ytcp-button.ytcpAppHeaderCreateIcon, button[aria-label='Create'], button[aria-label='Looge']").first
+    - locator resolved to <ytcp-button tabindex="-1" type="outline" aria-disabled="false" button-style="default" icon-alignment="start" icon="yt-sys-icons:video_call" class="ytcpAppHeaderCreateIcon">…</ytcp-button>
+  - attempting click action
+    2 × waiting for element to be visible, enabled and stable
+      - element is visible, enabled and stable
+      - scrolling into view if needed
+      - done scrolling
+      - <tp-yt-iron-overlay-backdrop opened="" class="opened">…</tp-yt-iron-overlay-backdrop> intercepts pointer events
+    - retrying click action
+    - waiting 20ms
+    2 × waiting for element to be visible, enabled and stable
+      - element is visible, enabled and stable
+      - scrolling into view if needed
+      - done scrolling
+      - <tp-yt-iron-overlay-backdrop opened="" class="opened">…</tp-yt-iron-overlay-backdrop> intercepts pointer events
+    - retrying click action
+      - waiting 100ms
+    26 × waiting for element to be visible, enabled and stable
+       - element is visible, enabled and stable
+       - scrolling into view if needed
+       - done scrolling
+       - <tp-yt-iron-overlay-backdrop opened="" class="opened">…</tp-yt-iron-overlay-backdrop> intercepts pointer events
+     - retrying click action
+       - waiting 500ms
+
+[2026-06-11 11:33:05]   ERROR uploading 'a5db2e2c483b4ba2828f53c34ed20414.mov': Locator.click: Timeout 15000ms exceeded.
+Call log:
+  - waiting for locator("ytcp-button.ytcpAppHeaderCreateIcon, button[aria-label='Create'], button[aria-label='Looge']").first
+    - locator resolved to <ytcp-button tabindex="-1" type="outline" aria-disabled="false" button-style="default" icon-alignment="start" icon="yt-sys-icons:video_call" class="ytcpAppHeaderCreateIcon">…</ytcp-button>
+  - attempting click action
+    2 × waiting for element to be visible, enabled and stable
+      - element is visible, enabled and stable
+      - scrolling into view if needed
+      - done scrolling
+      - <tp-yt-iron-overlay-backdrop opened="" class="opened">…</tp-yt-iron-overlay-backdrop> intercepts pointer events
+    - retrying click action
+    - waiting 20ms
+    2 × waiting for element to be visible, enabled and stable
+      - element is visible, enabled and stable
+      - scrolling into view if needed
+      - done scrolling
+      - <tp-yt-iron-overlay-backdrop opened="" class="opened">…</tp-yt-iron-overlay-backdrop> intercepts pointer events
+    - retrying click action
+      - waiting 100ms
+    26 × waiting for element to be visible, enabled and stable
+       - element is visible, enabled and stable
+       - scrolling into view if needed
+       - done scrolling
+       - <tp-yt-iron-overlay-backdrop opened="" class="opened">…</tp-yt-iron-overlay-backdrop> intercepts pointer events
+     - retrying click action
+       - waiting 500ms
+
+[2026-06-11 11:33:05]   3 consecutive errors — stopping to avoid cycling all videos.
+[2026-06-11 11:33:05]   3 consecutive errors — stopping to avoid cycling all videos.
+[2026-06-11 11:33:05] Done. Uploaded 0 video(s) today.
+[2026-06-11 11:33:05] Done. Uploaded 0 video(s) today.
+[2026-06-12 10:16:55] Starting YouTube uploader
+[2026-06-12 10:16:56] Scanning Drive for videos (folder 1qEQPlq6084s7eaq2wqTtoTjN5t2yvFlS) …
+[2026-06-12 10:17:13] Found 138 video files in Drive
+[2026-06-12 10:17:13] 124 videos not yet uploaded to YouTube
+[2026-06-12 10:17:13] Next: 'c6f4be87981b439a9b4cec5a72366177.mov' (12 MB) from folder 'BOATHIRE24.com'
+[2026-06-12 10:17:13]   Downloading from Drive …
+[2026-06-12 10:17:17]   Uploading as Short: 'Star-Studded Yacht Marbella | Puerto Banús #Shorts'
+[2026-06-12 10:17:33]   File attached: yt_upload_1YgdFY7waqRfOXMgoASyvDWH7sKKEca9S.mov
+[2026-06-12 10:18:20]   ERROR uploading 'c6f4be87981b439a9b4cec5a72366177.mov': Page.wait_for_selector: Timeout 30000ms exceeded.
+Call log:
+  - waiting for locator("#title-textarea, ytcp-mention-textbox") to be visible
+    50 × locator resolved to hidden <ytcp-social-suggestions-textbox required="" tabindex="-1" label="Pealkiri" in-video-editor="" id="title-textarea" is-new-line-forbidden="" error-tip-position="bottom" class="style-scope ytcp-video-title">…</ytcp-social-suggestions-textbox>
+
+[2026-06-12 10:18:20] Next: 'BoatHire24 Reel.mp4' (8 MB) from folder 'BOATHIRE24.com'
+[2026-06-12 10:18:20]   Downloading from Drive …
+[2026-06-12 10:18:24]   Uploading as Short: 'Star-Studded Yacht Marbella | Puerto Banús #Shorts'
+[2026-06-12 10:18:46]   File attached: yt_upload_1aJBDGW_KSydra-OCtVsMKnOBwajGU3e4.mp4
+[2026-06-12 10:19:30] Starting YouTube uploader
+[2026-06-12 10:19:30] Scanning Drive for videos (folder 1qEQPlq6084s7eaq2wqTtoTjN5t2yvFlS) …
+[2026-06-12 10:19:47] Found 138 video files in Drive
+[2026-06-12 10:19:47] 124 videos not yet uploaded to YouTube
+[2026-06-12 10:19:47] Next: 'c6f4be87981b439a9b4cec5a72366177.mov' (12 MB) from folder 'BOATHIRE24.com'
+[2026-06-12 10:19:47]   Downloading from Drive …
+[2026-06-12 10:19:51]   Uploading as Short: 'Star-Studded Yacht Marbella | Puerto Banús #Shorts'
+[2026-06-12 10:20:14]   File attached: yt_upload_1YgdFY7waqRfOXMgoASyvDWH7sKKEca9S.mov
+[2026-06-12 10:20:39]   Uploaded: (no URL captured)
+[2026-06-12 10:20:44] Next: 'BoatHire24 Reel.mp4' (8 MB) from folder 'BOATHIRE24.com'
+[2026-06-12 10:20:44]   Downloading from Drive …
+[2026-06-12 10:20:47]   Uploading as Short: 'Celebrity Boat Charter Marbella | Puerto Banús #Shorts'
+[2026-06-12 10:21:06]   File attached: yt_upload_1aJBDGW_KSydra-OCtVsMKnOBwajGU3e4.mp4
+[2026-06-12 10:21:34]   Uploaded: (no URL captured)
+[2026-06-12 10:21:39] Next: 'a5db2e2c483b4ba2828f53c34ed20414.mov' (5 MB) from folder 'BOATHIRE24.com'
+[2026-06-12 10:21:39]   Downloading from Drive …
+[2026-06-12 10:21:41]   Uploading as Short: 'VIP Yacht Marbella | Puerto Banús #Shorts'
+[2026-06-12 10:21:58]   File attached: yt_upload_1mHl-dTLCWTFhL6otwfw9Rnq_Zhfc2uYL.mov
+[2026-06-12 10:22:27]   Uploaded: (no URL captured)
+[2026-06-12 10:22:32] Next: 'c85b65464d5248f897dbaf00449e0e80.mov' (3 MB) from folder 'BOATHIRE24.com'
+[2026-06-12 10:22:32]   Downloading from Drive …
+[2026-06-12 10:22:35]   Uploading as Short: 'Exclusive Boat Charter Puerto Banús | Puerto Banús #Shorts'
+[2026-06-12 10:22:52]   File attached: yt_upload_1jVFMy0QtHwBnWkrEWlrD1HC9C6ydQLeu.mov
+[2026-06-12 10:23:20]   Uploaded: (no URL captured)
+[2026-06-12 10:23:25] Next: 'da73f714d4d0416b8d499d365c240893.mov' (1 MB) from folder 'BOATHIRE24.com'
+[2026-06-12 10:23:25]   Downloading from Drive …
+[2026-06-12 10:23:27]   Uploading as video: 'Celebrity Cruise Marbella | Puerto Banús'
+[2026-06-12 10:23:42]   File attached: yt_upload_1gJQfMqlU_VmNy3iuPqSWLSOA-PwpdTD5.mov
+[2026-06-12 10:24:13]   Uploaded: (no URL captured)
+[2026-06-12 10:24:18] Next: '4a398784c6834cf3966fd1d369225e07.mov' (6 MB) from folder '_root_'
+[2026-06-12 10:24:18]   Downloading from Drive …
+[2026-06-12 10:24:21]   Uploading as Short: 'Star-Studded Yacht Marbella | Puerto Banús #Shorts'
+[2026-06-12 10:24:36]   File attached: yt_upload_1jttuoS7GfIPw1ebq998J5mOmv2I2pQme.mov
+[2026-06-12 10:25:08]   Uploaded: (no URL captured)
+[2026-06-12 10:25:08] Done. Uploaded 6 video(s) today.
+[2026-06-12 11:30:00] Starting YouTube uploader
+[2026-06-12 11:30:00] Starting YouTube uploader
+[2026-06-12 11:30:00] Scanning Drive for videos (folder 1qEQPlq6084s7eaq2wqTtoTjN5t2yvFlS) …
+[2026-06-12 11:30:00] Scanning Drive for videos (folder 1qEQPlq6084s7eaq2wqTtoTjN5t2yvFlS) …
+[2026-06-12 11:30:22] Found 138 video files in Drive
+[2026-06-12 11:30:22] Found 138 video files in Drive
+[2026-06-12 11:30:22] 118 videos not yet uploaded to YouTube
+[2026-06-12 11:30:22] 118 videos not yet uploaded to YouTube
+[2026-06-12 11:30:22] Next: 'DJI_20251115141304_0011_D.MP4' (253 MB) from folder 'JETCAR'
+[2026-06-12 11:30:22] Next: 'DJI_20251115141304_0011_D.MP4' (253 MB) from folder 'JETCAR'
+[2026-06-12 11:30:22]   Downloading from Drive …
+[2026-06-12 11:30:22]   Downloading from Drive …
+  downloading … 3%  downloading … 6%  downloading … 9%  downloading … 12%  downloading … 15%  downloading … 18%  downloading … 22%  downloading … 25%  downloading … 28%  downloading … 31%  downloading … 34%  downloading … 37%  downloading … 41%  downloading … 44%  downloading … 47%  downloading … 50%  downloading … 53%  downloading … 56%  downloading … 59%  downloading … 63%  downloading … 66%  downloading … 69%  downloading … 72%  downloading … 75%  downloading … 78%  downloading … 82%  downloading … 85%  downloading … 88%  downloading … 91%  downloading … 94%  downloading … 97%  downloading … 100%
+[2026-06-12 11:31:20]   Uploading as video: 'Celebrity Boat Charter Marbella | Puerto Banús'
+[2026-06-12 11:31:20]   Uploading as video: 'Celebrity Boat Charter Marbella | Puerto Banús'
+[2026-06-12 11:31:33]   File attached: yt_upload_1MEVX166TulLRDZ9t66WOCSsdDAmrZ0-s.MP4
+[2026-06-12 11:31:33]   File attached: yt_upload_1MEVX166TulLRDZ9t66WOCSsdDAmrZ0-s.MP4
+[2026-06-12 11:32:06]   Uploaded: (no URL captured)
+[2026-06-12 11:32:06]   Uploaded: (no URL captured)
+[2026-06-12 11:32:11] Next: 'DJI_20251115141338_0012_D.MP4' (247 MB) from folder 'JETCAR'
+[2026-06-12 11:32:11] Next: 'DJI_20251115141338_0012_D.MP4' (247 MB) from folder 'JETCAR'
+[2026-06-12 11:32:11]   Downloading from Drive …
+[2026-06-12 11:32:11]   Downloading from Drive …
+  downloading … 3%  downloading … 6%  downloading … 9%  downloading … 12%  downloading … 16%  downloading … 19%  downloading … 22%  downloading … 25%  downloading … 29%  downloading … 32%  downloading … 35%  downloading … 38%  downloading … 42%  downloading … 45%  downloading … 48%  downloading … 51%  downloading … 55%  downloading … 58%  downloading … 61%  downloading … 64%  downloading … 67%  downloading … 71%  downloading … 74%  downloading … 77%  downloading … 80%  downloading … 84%  downloading … 87%  downloading … 90%  downloading … 93%  downloading … 97%  downloading … 100%
+[2026-06-12 11:32:57]   Uploading as video: 'VIP Yacht Marbella | Puerto Banús'
+[2026-06-12 11:32:57]   Uploading as video: 'VIP Yacht Marbella | Puerto Banús'
+[2026-06-12 11:33:09]   File attached: yt_upload_1bjaKS-R5iRQfXSfRrr3txm-m4twBqRIR.MP4
+[2026-06-12 11:33:09]   File attached: yt_upload_1bjaKS-R5iRQfXSfRrr3txm-m4twBqRIR.MP4
+[2026-06-12 11:33:44]   Uploaded: (no URL captured)
+[2026-06-12 11:33:44]   Uploaded: (no URL captured)
+[2026-06-12 11:33:49] Next: 'DJI_20251115141231_0010_D.MP4' (242 MB) from folder 'JETCAR'
+[2026-06-12 11:33:49] Next: 'DJI_20251115141231_0010_D.MP4' (242 MB) from folder 'JETCAR'
+[2026-06-12 11:33:49]   Downloading from Drive …
+[2026-06-12 11:33:49]   Downloading from Drive …
+  downloading … 3%  downloading … 6%  downloading … 9%  downloading … 13%  downloading … 16%  downloading … 19%  downloading … 23%  downloading … 26%  downloading … 29%  downloading … 33%  downloading … 36%  downloading … 39%  downloading … 42%  downloading … 46%  downloading … 49%  downloading … 52%  downloading … 56%  downloading … 59%  downloading … 62%  downloading … 66%  downloading … 69%  downloading … 72%  downloading … 76%  downloading … 79%  downloading … 82%  downloading … 85%  downloading … 89%  downloading … 92%  downloading … 95%  downloading … 99%  downloading … 100%
+[2026-06-12 11:34:35]   Uploading as video: 'Exclusive Boat Charter Puerto Banús | Puerto Banús'
+[2026-06-12 11:34:35]   Uploading as video: 'Exclusive Boat Charter Puerto Banús | Puerto Banús'
+[2026-06-12 11:34:47]   File attached: yt_upload_1orPntjPtHofLSDMx9DAh42mYJU3F5l-0.MP4
+[2026-06-12 11:34:47]   File attached: yt_upload_1orPntjPtHofLSDMx9DAh42mYJU3F5l-0.MP4
+[2026-06-12 11:35:22]   Uploaded: (no URL captured)
+[2026-06-12 11:35:22]   Uploaded: (no URL captured)
+[2026-06-12 11:35:27] Next: 'DJI_20251115141159_0009_D.MP4' (241 MB) from folder 'JETCAR'
+[2026-06-12 11:35:27] Next: 'DJI_20251115141159_0009_D.MP4' (241 MB) from folder 'JETCAR'
+[2026-06-12 11:35:27]   Downloading from Drive …
+[2026-06-12 11:35:27]   Downloading from Drive …
+  downloading … 3%  downloading … 6%  downloading … 9%  downloading … 13%  downloading … 16%  downloading … 19%  downloading … 23%  downloading … 26%  downloading … 29%  downloading … 33%  downloading … 36%  downloading … 39%  downloading … 43%  downloading … 46%  downloading … 49%  downloading … 53%  downloading … 56%  downloading … 59%  downloading … 62%  downloading … 66%  downloading … 69%  downloading … 72%  downloading … 76%  downloading … 79%  downloading … 82%  downloading … 86%  downloading … 89%  downloading … 92%  downloading … 96%  downloading … 99%  downloading … 100%
+[2026-06-12 11:36:14]   Uploading as video: 'Celebrity Cruise Marbella | Puerto Banús'
+[2026-06-12 11:36:14]   Uploading as video: 'Celebrity Cruise Marbella | Puerto Banús'
+[2026-06-12 11:36:26]   File attached: yt_upload_1ZgcnpYPrvj21VrQn4MqbR5BjELQVvLVz.MP4
+[2026-06-12 11:36:26]   File attached: yt_upload_1ZgcnpYPrvj21VrQn4MqbR5BjELQVvLVz.MP4
+[2026-06-12 11:37:02]   Uploaded: (no URL captured)
+[2026-06-12 11:37:02]   Uploaded: (no URL captured)
+[2026-06-12 11:37:07] Next: 'a5db2e2c483b4ba2828f53c34ed20414.mov' (5 MB) from folder 'MAIORA 26M'
+[2026-06-12 11:37:07] Next: 'a5db2e2c483b4ba2828f53c34ed20414.mov' (5 MB) from folder 'MAIORA 26M'
+[2026-06-12 11:37:07]   Downloading from Drive …
+[2026-06-12 11:37:07]   Downloading from Drive …
+  downloading … 100%
+[2026-06-12 11:37:08]   Uploading as Short: 'Star-Studded Yacht Marbella | Puerto Banús #Shorts'
+[2026-06-12 11:37:08]   Uploading as Short: 'Star-Studded Yacht Marbella | Puerto Banús #Shorts'
+[2026-06-12 11:37:20]   File attached: yt_upload_1EQpKQ_X7WMmaKZztxxYl6by5lEiRQWbH.mov
+[2026-06-12 11:37:20]   File attached: yt_upload_1EQpKQ_X7WMmaKZztxxYl6by5lEiRQWbH.mov
+[2026-06-12 11:37:55]   Uploaded: (no URL captured)
+[2026-06-12 11:37:55]   Uploaded: (no URL captured)
+[2026-06-12 11:38:00] Next: 'BoatHire24 Reel.mp4' (8 MB) from folder 'POSTERS'
+[2026-06-12 11:38:00] Next: 'BoatHire24 Reel.mp4' (8 MB) from folder 'POSTERS'
+[2026-06-12 11:38:00]   Downloading from Drive …
+[2026-06-12 11:38:00]   Downloading from Drive …
+  downloading … 97%  downloading … 100%
+[2026-06-12 11:38:03]   Uploading as Short: 'Speedboat Rental Marbella | Puerto Banús #Shorts'
+[2026-06-12 11:38:03]   Uploading as Short: 'Speedboat Rental Marbella | Puerto Banús #Shorts'
+[2026-06-12 11:38:14]   File attached: yt_upload_1FY0IwIh3pQTCTbqWQxJkJcP_wsq7Vpm_.mp4
+[2026-06-12 11:38:14]   File attached: yt_upload_1FY0IwIh3pQTCTbqWQxJkJcP_wsq7Vpm_.mp4
+[2026-06-12 11:38:49]   Uploaded: (no URL captured)
+[2026-06-12 11:38:49]   Uploaded: (no URL captured)
+[2026-06-12 11:38:49] Done. Uploaded 6 video(s) today.
+[2026-06-12 11:38:49] Done. Uploaded 6 video(s) today.
+[2026-06-13 09:56:21] Starting YouTube uploader
+[2026-06-13 09:56:21] Scanning Drive for videos (folder 1qEQPlq6084s7eaq2wqTtoTjN5t2yvFlS) …
+[2026-06-13 09:56:39] Found 138 video files in Drive
+[2026-06-13 09:56:39] 112 videos not yet uploaded to YouTube
+[2026-06-13 09:56:39] Next: 'a5db2e2c483b4ba2828f53c34ed20414.mov' (5 MB) from folder 'POSTERS'
+[2026-06-13 09:56:39]   Downloading from Drive …
+[2026-06-13 09:56:42]   Uploading as Short: 'Fast Boat Hire Puerto Banús | Puerto Banús #Shorts'
+[2026-06-13 09:56:56]   File attached: yt_upload_1iOxNCqC1xtpuMlZqI0RfBt1jO-AOoQxJ.mov
+[2026-06-13 09:57:35]   Uploaded: (no URL captured)
+[2026-06-13 09:57:40] Next: '7d21b32fa95d48289816f99004a49b17.mov' (4 MB) from folder 'POSTERS'
+[2026-06-13 09:57:40]   Downloading from Drive …
+[2026-06-13 09:57:42]   Uploading as Short: 'Speed Boat Charter Marbella | Puerto Banús #Shorts'
+[2026-06-13 09:57:57]   File attached: yt_upload_1HK5AGD87OsvwnqXcqWw2Q-xax57YYpEq.mov
+[2026-06-13 09:58:29]   Uploaded: (no URL captured)
+[2026-06-13 09:58:34] Next: 'RPReplay_Final1714482492.mov' (119 MB) from folder 'WALK THROUGH VIDEO'
+[2026-06-13 09:58:34]   Downloading from Drive …
+[2026-06-13 09:59:02]   Uploading as video: 'Celebrity Cruise Marbella | Puerto Banús'
+[2026-06-13 09:59:16]   File attached: yt_upload_1PVHaVl0HcJ5ik3Ns5f5DCDjRt8cIeJM6.mov
+[2026-06-13 09:59:49]   Uploaded: (no URL captured)
+[2026-06-13 09:59:54] Next: 'b4f95b27ca054229bc04158b4de42d20.mov' (77 MB) from folder 'WALK THROUGH VIDEO'
+[2026-06-13 09:59:54]   Downloading from Drive …
+[2026-06-13 10:00:21]   Uploading as Short: 'Star-Studded Yacht Marbella | Puerto Banús #Shorts'
+[2026-06-13 10:00:35]   File attached: yt_upload_1lw8z1Cp-HHcaSNMTIsrnY2kh8WoteSq5.mov
+[2026-06-13 10:01:09]   Uploaded: (no URL captured)
+[2026-06-13 10:01:14] Next: '6e0b37718a4246f2878173d7b46b0956.mov' (77 MB) from folder 'WALK THROUGH VIDEO'
+[2026-06-13 10:01:14]   Downloading from Drive …
+[2026-06-13 10:01:41]   Uploading as Short: 'Celebrity Boat Charter Marbella | Puerto Banús #Shorts'
+[2026-06-13 10:01:59]   File attached: yt_upload_1ZkC914OWqmsiACEowOcMBrsH_MrMUgoP.mov
+[2026-06-13 10:02:28]   Uploaded: (no URL captured)
+[2026-06-13 10:02:33] Next: 'd4f775f2e34943ef9f9104366ab19120.mov' (71 MB) from folder 'WALK THROUGH VIDEO'
+[2026-06-13 10:02:33]   Downloading from Drive …
+[2026-06-13 10:02:57]   Uploading as Short: 'VIP Yacht Marbella | Puerto Banús #Shorts'
+[2026-06-13 10:03:11]   File attached: yt_upload_1mq3MrRuim8mO_ymAXucm8k3PWaRAxT6Q.mov
+[2026-06-13 10:03:43]   Uploaded: (no URL captured)
+[2026-06-13 10:03:43] Done. Uploaded 6 video(s) today.
+[2026-06-13 11:30:01] Starting YouTube uploader
+[2026-06-13 11:30:01] Starting YouTube uploader
+[2026-06-13 11:30:02] Scanning Drive for videos (folder 1qEQPlq6084s7eaq2wqTtoTjN5t2yvFlS) …
+[2026-06-13 11:30:02] Scanning Drive for videos (folder 1qEQPlq6084s7eaq2wqTtoTjN5t2yvFlS) …
+[2026-06-13 11:30:20] Found 138 video files in Drive
+[2026-06-13 11:30:20] Found 138 video files in Drive
+[2026-06-13 11:30:20] 106 videos not yet uploaded to YouTube
+[2026-06-13 11:30:20] 106 videos not yet uploaded to YouTube
+[2026-06-13 11:30:20] Next: '26ce30c0c700414fa599daa2e2ee2ba8.mov' (47 MB) from folder 'WALK THROUGH VIDEO'
+[2026-06-13 11:30:20] Next: '26ce30c0c700414fa599daa2e2ee2ba8.mov' (47 MB) from folder 'WALK THROUGH VIDEO'
+[2026-06-13 11:30:20]   Downloading from Drive …
+[2026-06-13 11:30:20]   Downloading from Drive …
+  downloading … 16%  downloading … 33%  downloading … 50%  downloading … 67%  downloading … 84%  downloading … 100%
+[2026-06-13 11:30:35]   Uploading as Short: 'Exclusive Boat Charter Puerto Banús | Puerto Banús #Shorts'
+[2026-06-13 11:30:35]   Uploading as Short: 'Exclusive Boat Charter Puerto Banús | Puerto Banús #Shorts'
+[2026-06-13 11:30:47]   File attached: yt_upload_1krmc5C17YBKuUQf1Uz-LRGtet1nHHPu6.mov
+[2026-06-13 11:30:47]   File attached: yt_upload_1krmc5C17YBKuUQf1Uz-LRGtet1nHHPu6.mov
+[2026-06-13 11:31:23]   Uploaded: (no URL captured)
+[2026-06-13 11:31:23]   Uploaded: (no URL captured)
+[2026-06-13 11:31:28] Next: 'IMG_1652.MOV' (46 MB) from folder 'WALK THROUGH VIDEO'
+[2026-06-13 11:31:28] Next: 'IMG_1652.MOV' (46 MB) from folder 'WALK THROUGH VIDEO'
+[2026-06-13 11:31:28]   Downloading from Drive …
+[2026-06-13 11:31:28]   Downloading from Drive …
+  downloading … 17%  downloading … 34%  downloading … 51%  downloading … 68%  downloading … 85%  downloading … 100%
+[2026-06-13 11:31:44]   Uploading as video: 'Celebrity Cruise Marbella | Puerto Banús'
+[2026-06-13 11:31:44]   Uploading as video: 'Celebrity Cruise Marbella | Puerto Banús'
+[2026-06-13 11:31:56]   File attached: yt_upload_1uqP58QXV98yZ6OsSSn367X2dadJukWzh.MOV
+[2026-06-13 11:31:56]   File attached: yt_upload_1uqP58QXV98yZ6OsSSn367X2dadJukWzh.MOV
+[2026-06-13 11:32:30]   Uploaded: (no URL captured)
+[2026-06-13 11:32:30]   Uploaded: (no URL captured)
+[2026-06-13 11:32:35] Next: 'd87e026e5a1a47dba0db070d7ff1d60e.mov' (37 MB) from folder 'WALK THROUGH VIDEO'
+[2026-06-13 11:32:35] Next: 'd87e026e5a1a47dba0db070d7ff1d60e.mov' (37 MB) from folder 'WALK THROUGH VIDEO'
+[2026-06-13 11:32:35]   Downloading from Drive …
+[2026-06-13 11:32:35]   Downloading from Drive …
+  downloading … 21%  downloading … 42%  downloading … 63%  downloading … 85%  downloading … 100%
+[2026-06-13 11:32:46]   Uploading as Short: 'Star-Studded Yacht Marbella | Puerto Banús #Shorts'
+[2026-06-13 11:32:46]   Uploading as Short: 'Star-Studded Yacht Marbella | Puerto Banús #Shorts'
+[2026-06-13 11:32:58]   File attached: yt_upload_12bPWpbrS5U-GgN7zEuKjSNnQI_5ttsdn.mov
+[2026-06-13 11:32:58]   File attached: yt_upload_12bPWpbrS5U-GgN7zEuKjSNnQI_5ttsdn.mov
+[2026-06-13 11:33:34]   Uploaded: (no URL captured)
+[2026-06-13 11:33:34]   Uploaded: (no URL captured)
+[2026-06-13 11:33:39] Next: '47a2f1769883481d88f4b8b3ff878238.mov' (32 MB) from folder 'WALK THROUGH VIDEO'
+[2026-06-13 11:33:39] Next: '47a2f1769883481d88f4b8b3ff878238.mov' (32 MB) from folder 'WALK THROUGH VIDEO'
+[2026-06-13 11:33:39]   Downloading from Drive …
+[2026-06-13 11:33:39]   Downloading from Drive …
+  downloading … 24%  downloading … 49%  downloading … 74%  downloading … 99%  downloading … 100%
+[2026-06-13 11:33:50]   Uploading as Short: 'Celebrity Boat Charter Marbella | Puerto Banús #Shorts'
+[2026-06-13 11:33:50]   Uploading as Short: 'Celebrity Boat Charter Marbella | Puerto Banús #Shorts'
+[2026-06-13 11:34:03]   File attached: yt_upload_1x4ulufEbbJCfYr2_CkIncJRaDvbB5SlZ.mov
+[2026-06-13 11:34:03]   File attached: yt_upload_1x4ulufEbbJCfYr2_CkIncJRaDvbB5SlZ.mov
+[2026-06-13 11:34:36]   Uploaded: (no URL captured)
+[2026-06-13 11:34:36]   Uploaded: (no URL captured)
+[2026-06-13 11:34:41] Next: '3f7c5d3dfbab4a268967b73809116808.mov' (31 MB) from folder 'WALK THROUGH VIDEO'
+[2026-06-13 11:34:41] Next: '3f7c5d3dfbab4a268967b73809116808.mov' (31 MB) from folder 'WALK THROUGH VIDEO'
+[2026-06-13 11:34:41]   Downloading from Drive …
+[2026-06-13 11:34:41]   Downloading from Drive …
+  downloading … 25%  downloading … 51%  downloading … 77%  downloading … 100%
+[2026-06-13 11:34:50]   Uploading as Short: 'VIP Yacht Marbella | Puerto Banús #Shorts'
+[2026-06-13 11:34:50]   Uploading as Short: 'VIP Yacht Marbella | Puerto Banús #Shorts'
+[2026-06-13 11:35:02]   File attached: yt_upload_1JyQWbmS53PLMdtxx17TibI5xndVMPlhS.mov
+[2026-06-13 11:35:02]   File attached: yt_upload_1JyQWbmS53PLMdtxx17TibI5xndVMPlhS.mov
+[2026-06-13 11:35:37]   Uploaded: (no URL captured)
+[2026-06-13 11:35:37]   Uploaded: (no URL captured)
+[2026-06-13 11:35:42] Next: '66dc1521fdc24e8b97609ccb001da454.mov' (28 MB) from folder 'WALK THROUGH VIDEO'
+[2026-06-13 11:35:42] Next: '66dc1521fdc24e8b97609ccb001da454.mov' (28 MB) from folder 'WALK THROUGH VIDEO'
+[2026-06-13 11:35:42]   Downloading from Drive …
+[2026-06-13 11:35:42]   Downloading from Drive …
+  downloading … 27%  downloading … 55%  downloading … 83%  downloading … 100%
+[2026-06-13 11:35:52]   Uploading as Short: 'Exclusive Boat Charter Puerto Banús | Puerto Banús #Shorts'
+[2026-06-13 11:35:52]   Uploading as Short: 'Exclusive Boat Charter Puerto Banús | Puerto Banús #Shorts'
+[2026-06-13 11:36:04]   File attached: yt_upload_1l9xOxboHGeQq_vbc-MSKTardKD25QlHi.mov
+[2026-06-13 11:36:04]   File attached: yt_upload_1l9xOxboHGeQq_vbc-MSKTardKD25QlHi.mov
+[2026-06-13 11:36:40]   Uploaded: (no URL captured)
+[2026-06-13 11:36:40]   Uploaded: (no URL captured)
+[2026-06-13 11:36:40] Done. Uploaded 6 video(s) today.
+[2026-06-13 11:36:40] Done. Uploaded 6 video(s) today.
+[2026-06-14 11:30:01] Starting YouTube uploader
+[2026-06-14 11:30:01] Starting YouTube uploader
+[2026-06-14 11:30:02] Scanning Drive for videos (folder 1qEQPlq6084s7eaq2wqTtoTjN5t2yvFlS) …
+[2026-06-14 11:30:02] Scanning Drive for videos (folder 1qEQPlq6084s7eaq2wqTtoTjN5t2yvFlS) …
+[2026-06-14 11:30:20] Found 138 video files in Drive
+[2026-06-14 11:30:20] Found 138 video files in Drive
+[2026-06-14 11:30:20] 100 videos not yet uploaded to YouTube
+[2026-06-14 11:30:20] 100 videos not yet uploaded to YouTube
+[2026-06-14 11:30:20] Next: 'RPReplay_Final1714425550.mov' (24 MB) from folder 'WALK THROUGH VIDEO'
+[2026-06-14 11:30:20] Next: 'RPReplay_Final1714425550.mov' (24 MB) from folder 'WALK THROUGH VIDEO'
+[2026-06-14 11:30:20]   Downloading from Drive …
+[2026-06-14 11:30:20]   Downloading from Drive …
+  downloading … 32%  downloading … 64%  downloading … 97%  downloading … 100%
+[2026-06-14 11:30:29]   Uploading as video: 'Celebrity Cruise Marbella | Puerto Banús'
+[2026-06-14 11:30:29]   Uploading as video: 'Celebrity Cruise Marbella | Puerto Banús'
+[2026-06-14 11:30:42]   File attached: yt_upload_1NLszF6Cql4nOGcomiTwcQxcVbmmYOgPX.mov
+[2026-06-14 11:30:42]   File attached: yt_upload_1NLszF6Cql4nOGcomiTwcQxcVbmmYOgPX.mov
+[2026-06-14 11:31:15]   Uploaded: (no URL captured)
+[2026-06-14 11:31:15]   Uploaded: (no URL captured)
+[2026-06-14 11:31:20] Next: '1f26238c0276423aa96f5098afd03baa.mov' (25 MB) from folder 'WALK THROUGH VIDEO'
+[2026-06-14 11:31:20] Next: '1f26238c0276423aa96f5098afd03baa.mov' (25 MB) from folder 'WALK THROUGH VIDEO'
+[2026-06-14 11:31:20]   Downloading from Drive …
+[2026-06-14 11:31:20]   Downloading from Drive …
+  downloading … 30%  downloading … 61%  downloading … 92%  downloading … 100%
+[2026-06-14 11:31:30]   Uploading as Short: 'Star-Studded Yacht Marbella | Puerto Banús #Shorts'
+[2026-06-14 11:31:30]   Uploading as Short: 'Star-Studded Yacht Marbella | Puerto Banús #Shorts'
+[2026-06-14 11:31:42]   File attached: yt_upload_1EXPZ_3Q5AWtnjvpSx87pWODMcC-w5ez2.mov
+[2026-06-14 11:31:42]   File attached: yt_upload_1EXPZ_3Q5AWtnjvpSx87pWODMcC-w5ez2.mov
+[2026-06-14 11:32:17]   Uploaded: (no URL captured)
+[2026-06-14 11:32:17]   Uploaded: (no URL captured)
+[2026-06-14 11:32:22] Next: '8d326fb66d014fa5bba16c88cb2cd186.mov' (10 MB) from folder 'WALK THROUGH VIDEO'
+[2026-06-14 11:32:22] Next: '8d326fb66d014fa5bba16c88cb2cd186.mov' (10 MB) from folder 'WALK THROUGH VIDEO'
+[2026-06-14 11:32:22]   Downloading from Drive …
+[2026-06-14 11:32:22]   Downloading from Drive …
+  downloading … 73%  downloading … 100%
+[2026-06-14 11:32:26]   Uploading as Short: 'Celebrity Boat Charter Marbella | Puerto Banús #Shorts'
+[2026-06-14 11:32:26]   Uploading as Short: 'Celebrity Boat Charter Marbella | Puerto Banús #Shorts'
+[2026-06-14 11:32:41]   File attached: yt_upload_1YM76F-HKzSltkDwyIjiyKsPtpUl-h8lk.mov
+[2026-06-14 11:32:41]   File attached: yt_upload_1YM76F-HKzSltkDwyIjiyKsPtpUl-h8lk.mov
+[2026-06-14 11:33:15]   Uploaded: (no URL captured)
+[2026-06-14 11:33:15]   Uploaded: (no URL captured)
+[2026-06-14 11:33:20] Next: '498382f083ba4058b47cbb820d694fd1.mov' (22 MB) from folder 'WALK THROUGH VIDEO'
+[2026-06-14 11:33:20] Next: '498382f083ba4058b47cbb820d694fd1.mov' (22 MB) from folder 'WALK THROUGH VIDEO'
+[2026-06-14 11:33:20]   Downloading from Drive …
+[2026-06-14 11:33:20]   Downloading from Drive …
+  downloading … 36%  downloading … 72%  downloading … 100%
+[2026-06-14 11:33:27]   Uploading as Short: 'VIP Yacht Marbella | Puerto Banús #Shorts'
+[2026-06-14 11:33:27]   Uploading as Short: 'VIP Yacht Marbella | Puerto Banús #Shorts'
+[2026-06-14 11:33:42]   File attached: yt_upload_1H8tZiahSy9z3wUdzhI92g1y1E2EMrgXN.mov
+[2026-06-14 11:33:42]   File attached: yt_upload_1H8tZiahSy9z3wUdzhI92g1y1E2EMrgXN.mov
+[2026-06-14 11:34:15]   Uploaded: (no URL captured)
+[2026-06-14 11:34:15]   Uploaded: (no URL captured)
+[2026-06-14 11:34:20] Next: 'd8332170df00412da9acc780412ba1dd.mov' (20 MB) from folder 'WALK THROUGH VIDEO'
+[2026-06-14 11:34:20] Next: 'd8332170df00412da9acc780412ba1dd.mov' (20 MB) from folder 'WALK THROUGH VIDEO'
+[2026-06-14 11:34:20]   Downloading from Drive …
+[2026-06-14 11:34:20]   Downloading from Drive …
+  downloading … 38%  downloading … 76%  downloading … 100%
+[2026-06-14 11:34:27]   Uploading as Short: 'Exclusive Boat Charter Puerto Banús | Puerto Banús #Shorts'
+[2026-06-14 11:34:27]   Uploading as Short: 'Exclusive Boat Charter Puerto Banús | Puerto Banús #Shorts'
+[2026-06-14 11:34:41]   File attached: yt_upload_17-yIXXSiI198AXn47QVcds9C_LoT8NMk.mov
+[2026-06-14 11:34:41]   File attached: yt_upload_17-yIXXSiI198AXn47QVcds9C_LoT8NMk.mov
+[2026-06-14 11:35:16]   Uploaded: (no URL captured)
+[2026-06-14 11:35:16]   Uploaded: (no URL captured)
+[2026-06-14 11:35:21] Next: 'Yacht rentals  Charters.mp4' (11 MB) from folder 'WALK THROUGH VIDEO'
+[2026-06-14 11:35:21] Next: 'Yacht rentals  Charters.mp4' (11 MB) from folder 'WALK THROUGH VIDEO'
+[2026-06-14 11:35:21]   Downloading from Drive …
+[2026-06-14 11:35:21]   Downloading from Drive …
+  downloading … 67%  downloading … 100%
+[2026-06-14 11:35:25]   Uploading as video: 'Celebrity Cruise Marbella | Puerto Banús'
+[2026-06-14 11:35:25]   Uploading as video: 'Celebrity Cruise Marbella | Puerto Banús'
+[2026-06-14 11:35:39]   File attached: yt_upload_1KsYLSmEK4DE97ArFpwYPRcjxvQPPqyxp.mp4
+[2026-06-14 11:35:39]   File attached: yt_upload_1KsYLSmEK4DE97ArFpwYPRcjxvQPPqyxp.mp4
+[2026-06-14 11:36:14]   Uploaded: (no URL captured)
+[2026-06-14 11:36:14]   Uploaded: (no URL captured)
+[2026-06-14 11:36:14] Done. Uploaded 6 video(s) today.
+[2026-06-14 11:36:14] Done. Uploaded 6 video(s) today.
+[2026-06-15 10:04:25] Starting YouTube uploader
+[2026-06-15 10:04:26] Scanning Drive for videos (folder 1qEQPlq6084s7eaq2wqTtoTjN5t2yvFlS) …
+[2026-06-15 10:04:43] Found 138 video files in Drive
+[2026-06-15 10:04:43] 94 videos not yet uploaded to YouTube
+[2026-06-15 10:04:43] Next: '675575d0c31a4feab4dc91e096b8a289.mov' (10 MB) from folder 'WALK THROUGH VIDEO'
+[2026-06-15 10:04:43]   Downloading from Drive …
+[2026-06-15 10:04:48]   Uploading as Short: 'Star-Studded Yacht Marbella | Puerto Banús #Shorts'
+[2026-06-15 10:05:02]   File attached: yt_upload_1A_hd9G3uMatpvvWfcX6znByq6RL9Uvl6.mov
+[2026-06-15 10:05:53]   Uploaded: https://youtube.com/shorts/X6XD1gyXMg0
+[2026-06-15 10:05:58] Next: '4a398784c6834cf3966fd1d369225e07.mov' (6 MB) from folder 'PUERTO BANÚS '
+[2026-06-15 10:05:58]   Downloading from Drive …
+[2026-06-15 10:06:00]   Uploading as Short: 'Celebrity Boat Charter Marbella | Puerto Banús #Shorts'
+[2026-06-15 10:06:14]   File attached: yt_upload_1abhrzD0CXLhJWU1BXPmwk0lahc0cxMrS.mov
+[2026-06-15 10:06:45]   Uploaded: https://youtube.com/shorts/tbWUv-BxctU
+[2026-06-15 10:06:50] Next: 'a5db2e2c483b4ba2828f53c34ed20414.mov' (5 MB) from folder 'PUERTO BANÚS '
+[2026-06-15 10:06:50]   Downloading from Drive …
+[2026-06-15 10:06:52]   Uploading as Short: 'VIP Yacht Marbella | Puerto Banús #Shorts'
+[2026-06-15 10:07:07]   File attached: yt_upload_1HtdPt7ANshs993CZfUEVyk1ptcdvaPaV.mov
+[2026-06-15 10:07:38]   Uploaded: https://youtube.com/shorts/v-8CMs-thn4
+[2026-06-15 10:07:43] Next: '7d21b32fa95d48289816f99004a49b17.mov' (4 MB) from folder 'PUERTO BANÚS '
+[2026-06-15 10:07:43]   Downloading from Drive …
+[2026-06-15 10:07:45]   Uploading as Short: 'Exclusive Boat Charter Puerto Banús | Puerto Banús #Shorts'
+[2026-06-15 10:08:06]   File attached: yt_upload_1A9VC8eLyRNKc4ii44gHHzgmjIqlvrVzV.mov
+[2026-06-15 10:08:30]   Uploaded: https://youtube.com/shorts/WKIgfTR35JM
+[2026-06-15 10:08:35] Next: 'IMG_5569.MOV' (19 MB) from folder 'PUERTO BANÚS '
+[2026-06-15 10:08:35]   Downloading from Drive …
+[2026-06-15 10:08:41]   Uploading as video: 'Celebrity Cruise Marbella | Puerto Banús'
+[2026-06-15 10:08:57]   File attached: yt_upload_1NAzrdFFjoC_CuMnp45dlHeP0YcMEeysL.MOV
+[2026-06-15 10:09:26]   Uploaded: https://youtube.com/shorts/x97qZ_WxTJ0
+[2026-06-15 10:09:31] Next: 'IMG_5565.MOV' (18 MB) from folder 'PUERTO BANÚS '
+[2026-06-15 10:09:31]   Downloading from Drive …
+[2026-06-15 10:09:39]   Uploading as video: 'Star-Studded Yacht Marbella | Puerto Banús'
+[2026-06-15 10:09:54]   File attached: yt_upload_19lWRjyulHivPyy8j8Uz3pZjOaic8cz82.MOV
+[2026-06-15 10:10:26]   Uploaded: https://youtube.com/shorts/eCyMMNtGO28
+[2026-06-15 10:10:26] Done. Uploaded 6 video(s) today.
+[2026-06-15 11:30:02] Starting YouTube uploader
+[2026-06-15 11:30:02] Starting YouTube uploader
+[2026-06-15 11:30:03] Scanning Drive for videos (folder 1qEQPlq6084s7eaq2wqTtoTjN5t2yvFlS) …
+[2026-06-15 11:30:03] Scanning Drive for videos (folder 1qEQPlq6084s7eaq2wqTtoTjN5t2yvFlS) …
+[2026-06-15 11:30:21] Found 138 video files in Drive
+[2026-06-15 11:30:21] Found 138 video files in Drive
+[2026-06-15 11:30:21] 88 videos not yet uploaded to YouTube
+[2026-06-15 11:30:21] 88 videos not yet uploaded to YouTube
+[2026-06-15 11:30:21] Next: 'IMG_5564.MOV' (13 MB) from folder 'PUERTO BANÚS '
+[2026-06-15 11:30:21] Next: 'IMG_5564.MOV' (13 MB) from folder 'PUERTO BANÚS '
+[2026-06-15 11:30:21]   Downloading from Drive …
+[2026-06-15 11:30:21]   Downloading from Drive …
+  downloading … 57%  downloading … 100%
+[2026-06-15 11:30:26]   Uploading as video: 'Celebrity Boat Charter Marbella | Puerto Banús'
+[2026-06-15 11:30:26]   Uploading as video: 'Celebrity Boat Charter Marbella | Puerto Banús'
+[2026-06-15 11:30:38]   File attached: yt_upload_1K8mvwBh4Omyr-_-tIiuDwLFcr1VjL0nq.MOV
+[2026-06-15 11:30:38]   File attached: yt_upload_1K8mvwBh4Omyr-_-tIiuDwLFcr1VjL0nq.MOV
+[2026-06-15 11:31:13]   Uploaded: https://youtube.com/shorts/nPwgf_h0_rM
+[2026-06-15 11:31:13]   Uploaded: https://youtube.com/shorts/nPwgf_h0_rM
+[2026-06-15 11:31:19] Next: 'IMG_5560.MOV' (13 MB) from folder 'PUERTO BANÚS '
+[2026-06-15 11:31:19] Next: 'IMG_5560.MOV' (13 MB) from folder 'PUERTO BANÚS '
+[2026-06-15 11:31:19]   Downloading from Drive …
+[2026-06-15 11:31:19]   Downloading from Drive …
+  downloading … 59%  downloading … 100%
+[2026-06-15 11:31:23]   Uploading as video: 'VIP Yacht Marbella | Puerto Banús'
+[2026-06-15 11:31:23]   Uploading as video: 'VIP Yacht Marbella | Puerto Banús'
+[2026-06-15 11:31:37]   File attached: yt_upload_1xzmaE6uteXhLGnrnBSKR9GpzoDYLyDi5.MOV
+[2026-06-15 11:31:37]   File attached: yt_upload_1xzmaE6uteXhLGnrnBSKR9GpzoDYLyDi5.MOV
+[2026-06-15 11:32:10]   Uploaded: https://youtube.com/shorts/W5ftySY37xQ
+[2026-06-15 11:32:10]   Uploaded: https://youtube.com/shorts/W5ftySY37xQ
+[2026-06-15 11:32:15] Next: 'IMG_7229.MOV' (11 MB) from folder 'PUERTO BANÚS '
+[2026-06-15 11:32:15] Next: 'IMG_7229.MOV' (11 MB) from folder 'PUERTO BANÚS '
+[2026-06-15 11:32:15]   Downloading from Drive …
+[2026-06-15 11:32:15]   Downloading from Drive …
+  downloading … 68%  downloading … 100%
+[2026-06-15 11:32:20]   Uploading as video: 'Exclusive Boat Charter Puerto Banús | Puerto Banús'
+[2026-06-15 11:32:20]   Uploading as video: 'Exclusive Boat Charter Puerto Banús | Puerto Banús'
+[2026-06-15 11:32:32]   File attached: yt_upload_1iJVN-XUsbA7yJsYuGhSkPz2_RW6fsiTa.MOV
+[2026-06-15 11:32:32]   File attached: yt_upload_1iJVN-XUsbA7yJsYuGhSkPz2_RW6fsiTa.MOV
+[2026-06-15 11:33:06]   Uploaded: https://youtube.com/shorts/4041Yzk8Dbw
+[2026-06-15 11:33:06]   Uploaded: https://youtube.com/shorts/4041Yzk8Dbw
+[2026-06-15 11:33:11] Next: 'c5de0545a53041b0ae5ba2b22bb9acbb.mov' (11 MB) from folder 'PUERTO BANÚS '
+[2026-06-15 11:33:11] Next: 'c5de0545a53041b0ae5ba2b22bb9acbb.mov' (11 MB) from folder 'PUERTO BANÚS '
+[2026-06-15 11:33:11]   Downloading from Drive …
+[2026-06-15 11:33:11]   Downloading from Drive …
+  downloading … 70%  downloading … 100%
+[2026-06-15 11:33:15]   Uploading as Short: 'Celebrity Cruise Marbella | Puerto Banús #Shorts'
+[2026-06-15 11:33:15]   Uploading as Short: 'Celebrity Cruise Marbella | Puerto Banús #Shorts'
+[2026-06-15 11:33:27]   File attached: yt_upload_18KXXvRujtb56g8XZ8drsPe_Ddv2x_r7F.mov
+[2026-06-15 11:33:27]   File attached: yt_upload_18KXXvRujtb56g8XZ8drsPe_Ddv2x_r7F.mov
+[2026-06-15 11:34:02]   Uploaded: https://youtube.com/shorts/sJxTvfUhCW4
+[2026-06-15 11:34:02]   Uploaded: https://youtube.com/shorts/sJxTvfUhCW4
+[2026-06-15 11:34:07] Next: '9a18d5931e514e9b8c98aedd95afcdad.mov' (10 MB) from folder 'PUERTO BANÚS '
+[2026-06-15 11:34:07] Next: '9a18d5931e514e9b8c98aedd95afcdad.mov' (10 MB) from folder 'PUERTO BANÚS '
+[2026-06-15 11:34:07]   Downloading from Drive …
+[2026-06-15 11:34:07]   Downloading from Drive …
+  downloading … 78%  downloading … 100%
+[2026-06-15 11:34:12]   Uploading as Short: 'Star-Studded Yacht Marbella | Puerto Banús #Shorts'
+[2026-06-15 11:34:12]   Uploading as Short: 'Star-Studded Yacht Marbella | Puerto Banús #Shorts'
+[2026-06-15 11:34:24]   File attached: yt_upload_1cBht7JMGBquWTTRJjGpcgJXNiENLT_V9.mov
+[2026-06-15 11:34:24]   File attached: yt_upload_1cBht7JMGBquWTTRJjGpcgJXNiENLT_V9.mov
+[2026-06-15 11:34:59]   Uploaded: https://youtube.com/shorts/pS86Z4XsGXk
+[2026-06-15 11:34:59]   Uploaded: https://youtube.com/shorts/pS86Z4XsGXk
+[2026-06-15 11:35:04] Next: 'fd335a611db94e429fb9fce46dc77515.mov' (8 MB) from folder 'PUERTO BANÚS '
+[2026-06-15 11:35:04] Next: 'fd335a611db94e429fb9fce46dc77515.mov' (8 MB) from folder 'PUERTO BANÚS '
+[2026-06-15 11:35:04]   Downloading from Drive …
+[2026-06-15 11:35:04]   Downloading from Drive …
+  downloading … 99%  downloading … 100%
+[2026-06-15 11:35:09]   Uploading as Short: 'Celebrity Boat Charter Marbella | Puerto Banús #Shorts'
+[2026-06-15 11:35:09]   Uploading as Short: 'Celebrity Boat Charter Marbella | Puerto Banús #Shorts'
+[2026-06-15 11:35:21]   File attached: yt_upload_1SwtHyP4KNEWH25GCj6tw6ogLBYIayv3q.mov
+[2026-06-15 11:35:21]   File attached: yt_upload_1SwtHyP4KNEWH25GCj6tw6ogLBYIayv3q.mov
+[2026-06-15 11:35:58]   Uploaded: https://youtube.com/shorts/RT2PQlC5x9A
+[2026-06-15 11:35:58]   Uploaded: https://youtube.com/shorts/RT2PQlC5x9A
+[2026-06-15 11:35:58] Done. Uploaded 6 video(s) today.
+[2026-06-15 11:35:58] Done. Uploaded 6 video(s) today.
+[2026-06-16 11:30:00] Starting YouTube uploader
+[2026-06-16 11:30:00] Starting YouTube uploader
+[2026-06-16 11:30:00] Scanning Drive for videos (folder 1qEQPlq6084s7eaq2wqTtoTjN5t2yvFlS) …
+[2026-06-16 11:30:00] Scanning Drive for videos (folder 1qEQPlq6084s7eaq2wqTtoTjN5t2yvFlS) …
+[2026-06-16 11:30:20] Found 138 video files in Drive
+[2026-06-16 11:30:20] Found 138 video files in Drive
+[2026-06-16 11:30:20] 82 videos not yet uploaded to YouTube
+[2026-06-16 11:30:20] 82 videos not yet uploaded to YouTube
+[2026-06-16 11:30:20] Next: 'f0a8d2af77b343058173d81f31969fcf.mov' (7 MB) from folder 'PUERTO BANÚS '
+[2026-06-16 11:30:20] Next: 'f0a8d2af77b343058173d81f31969fcf.mov' (7 MB) from folder 'PUERTO BANÚS '
+[2026-06-16 11:30:20]   Downloading from Drive …
+[2026-06-16 11:30:20]   Downloading from Drive …
+  downloading … 100%
+[2026-06-16 11:30:22]   Uploading as Short: 'VIP Yacht Marbella | Puerto Banús #Shorts'
+[2026-06-16 11:30:22]   Uploading as Short: 'VIP Yacht Marbella | Puerto Banús #Shorts'
+[2026-06-16 11:30:54]   File attached: yt_upload_14Ss6UyPqDRe_trolIz8pF1ypJFTYmZ6t.mov
+[2026-06-16 11:30:54]   File attached: yt_upload_14Ss6UyPqDRe_trolIz8pF1ypJFTYmZ6t.mov
+[2026-06-16 11:31:12]   Uploaded: https://youtube.com/shorts/jGIROjMBXQw
+[2026-06-16 11:31:12]   Uploaded: https://youtube.com/shorts/jGIROjMBXQw
+[2026-06-16 11:31:17] Next: 'cc76ec3c9e764de1a8b2eb73c34f5fed.mov' (7 MB) from folder 'PUERTO BANÚS '
+[2026-06-16 11:31:17] Next: 'cc76ec3c9e764de1a8b2eb73c34f5fed.mov' (7 MB) from folder 'PUERTO BANÚS '
+[2026-06-16 11:31:17]   Downloading from Drive …
+[2026-06-16 11:31:17]   Downloading from Drive …
+  downloading … 100%
+[2026-06-16 11:31:20]   Uploading as Short: 'Exclusive Boat Charter Puerto Banús | Puerto Banús #Shorts'
+[2026-06-16 11:31:20]   Uploading as Short: 'Exclusive Boat Charter Puerto Banús | Puerto Banús #Shorts'
+[2026-06-16 11:31:32]   File attached: yt_upload_1jasNMYGLNcG07zquiBTghppi4noPXIM_.mov
+[2026-06-16 11:31:32]   File attached: yt_upload_1jasNMYGLNcG07zquiBTghppi4noPXIM_.mov
+[2026-06-16 11:32:07]   Uploaded: https://youtube.com/shorts/JPCQe2e1l-4
+[2026-06-16 11:32:07]   Uploaded: https://youtube.com/shorts/JPCQe2e1l-4
+[2026-06-16 11:32:12] Next: '814ca1cad1c14c8aad7ee9d198e92d10.mov' (6 MB) from folder 'PUERTO BANÚS '
+[2026-06-16 11:32:12] Next: '814ca1cad1c14c8aad7ee9d198e92d10.mov' (6 MB) from folder 'PUERTO BANÚS '
+[2026-06-16 11:32:12]   Downloading from Drive …
+[2026-06-16 11:32:12]   Downloading from Drive …
+  downloading … 100%
+[2026-06-16 11:32:14]   Uploading as Short: 'Celebrity Cruise Marbella | Puerto Banús #Shorts'
+[2026-06-16 11:32:14]   Uploading as Short: 'Celebrity Cruise Marbella | Puerto Banús #Shorts'
+[2026-06-16 11:32:27]   File attached: yt_upload_1QZUIDme7GtaHfXff5MktUZ48tT4vBrLC.mov
+[2026-06-16 11:32:27]   File attached: yt_upload_1QZUIDme7GtaHfXff5MktUZ48tT4vBrLC.mov
+[2026-06-16 11:33:02]   Uploaded: https://youtube.com/shorts/sVGDx4vHUMU
+[2026-06-16 11:33:02]   Uploaded: https://youtube.com/shorts/sVGDx4vHUMU
+[2026-06-16 11:33:07] Next: 'a7d35ece1c7c42e6a7feaf3df56f3803.mov' (5 MB) from folder 'PUERTO BANÚS '
+[2026-06-16 11:33:07] Next: 'a7d35ece1c7c42e6a7feaf3df56f3803.mov' (5 MB) from folder 'PUERTO BANÚS '
+[2026-06-16 11:33:07]   Downloading from Drive …
+[2026-06-16 11:33:07]   Downloading from Drive …
+  downloading … 100%
+[2026-06-16 11:33:09]   Uploading as Short: 'Star-Studded Yacht Marbella | Puerto Banús #Shorts'
+[2026-06-16 11:33:09]   Uploading as Short: 'Star-Studded Yacht Marbella | Puerto Banús #Shorts'
+[2026-06-16 11:33:21]   File attached: yt_upload_1UKxTAS6g-XHA3DpUSljnji4ehWQh19W6.mov
+[2026-06-16 11:33:21]   File attached: yt_upload_1UKxTAS6g-XHA3DpUSljnji4ehWQh19W6.mov
+[2026-06-16 11:33:57]   Uploaded: https://youtube.com/shorts/s8qUetoxJSg
+[2026-06-16 11:33:57]   Uploaded: https://youtube.com/shorts/s8qUetoxJSg
+[2026-06-16 11:34:02] Next: 'f11689fe81d747c2aec8b240132d2382.mov' (4 MB) from folder 'PUERTO BANÚS '
+[2026-06-16 11:34:02] Next: 'f11689fe81d747c2aec8b240132d2382.mov' (4 MB) from folder 'PUERTO BANÚS '
+[2026-06-16 11:34:02]   Downloading from Drive …
+[2026-06-16 11:34:02]   Downloading from Drive …
+  downloading … 100%
+[2026-06-16 11:34:04]   Uploading as Short: 'Celebrity Boat Charter Marbella | Puerto Banús #Shorts'
+[2026-06-16 11:34:04]   Uploading as Short: 'Celebrity Boat Charter Marbella | Puerto Banús #Shorts'
+[2026-06-16 11:34:16]   File attached: yt_upload_12HHs2ZEGm7fHarRe1kl7P-RCqPWib2Ls.mov
+[2026-06-16 11:34:16]   File attached: yt_upload_12HHs2ZEGm7fHarRe1kl7P-RCqPWib2Ls.mov
+[2026-06-16 11:34:53]   Uploaded: https://youtube.com/shorts/4YPgaT9pHjI
+[2026-06-16 11:34:53]   Uploaded: https://youtube.com/shorts/4YPgaT9pHjI
+[2026-06-16 11:34:58] Next: 'b5dfd5221b52411faab3538e8218aff6.mov' (4 MB) from folder 'PUERTO BANÚS '
+[2026-06-16 11:34:58] Next: 'b5dfd5221b52411faab3538e8218aff6.mov' (4 MB) from folder 'PUERTO BANÚS '
+[2026-06-16 11:34:58]   Downloading from Drive …
+[2026-06-16 11:34:58]   Downloading from Drive …
+  downloading … 100%
+[2026-06-16 11:35:00]   Uploading as Short: 'VIP Yacht Marbella | Puerto Banús #Shorts'
+[2026-06-16 11:35:00]   Uploading as Short: 'VIP Yacht Marbella | Puerto Banús #Shorts'
+[2026-06-16 11:35:12]   File attached: yt_upload_1E89eqDoUk9hGwVZC20aaVDIsXAZ1Yilf.mov
+[2026-06-16 11:35:12]   File attached: yt_upload_1E89eqDoUk9hGwVZC20aaVDIsXAZ1Yilf.mov
+[2026-06-16 11:35:48]   Uploaded: https://youtube.com/shorts/znk6RzGeUIA
+[2026-06-16 11:35:48]   Uploaded: https://youtube.com/shorts/znk6RzGeUIA
+[2026-06-16 11:35:48] Done. Uploaded 6 video(s) today.
+[2026-06-16 11:35:48] Done. Uploaded 6 video(s) today.
+[2026-06-17 11:10:52] Starting YouTube uploader
+[2026-06-17 11:10:53] Scanning Drive for videos (folder 1qEQPlq6084s7eaq2wqTtoTjN5t2yvFlS) …
+[2026-06-17 11:11:11] Found 138 video files in Drive
+[2026-06-17 11:11:11] 76 videos not yet uploaded to YouTube
+[2026-06-17 11:11:11] Next: 'D59D92F7-E689-4DBA-A705-B02BEFAC98AF.mov' (24 MB) from folder 'HAPPY CUSTOMERS'
+[2026-06-17 11:11:11]   Downloading from Drive …
+[2026-06-17 11:11:20]   Uploading as Short: 'Day Boat Hire Puerto Banús | Puerto Banús #Shorts'
+[2026-06-17 11:12:00]   File attached: yt_upload_162ydPF8MHPjdTSNjrmPX4OoB-zzGYWvk.mov
+[2026-06-17 11:16:52]   Uploaded: https://youtube.com/shorts/96m0F7txfCA
+[2026-06-17 11:16:57] Next: 'v24044gl0000d75rkjfog65oclasc8pg.mp4' (4 MB) from folder 'HAPPY CUSTOMERS'
+[2026-06-17 11:16:57]   Downloading from Drive …
+[2026-06-17 11:17:00]   Uploading as video: 'Boat Trip Puerto Banús Marbella | Puerto Banús'
+[2026-06-17 11:17:14]   File attached: yt_upload_1QFeDIT_8BNJQYFZfpTA_gHpywGQvBswg.mp4
+[2026-06-17 11:17:45]   Uploaded: https://youtube.com/shorts/hu2TDLTq5lQ
+[2026-06-17 11:17:50] Next: '561c3ddd-e759-439e-9e02-1638cebfa5b8.mp4' (9 MB) from folder 'HAPPY CUSTOMERS'
+[2026-06-17 11:17:50]   Downloading from Drive …
+[2026-06-17 11:17:55]   Uploading as Short: 'Puerto Banús Private Boat | Puerto Banús #Shorts'
+[2026-06-17 11:18:09]   File attached: yt_upload_1VV6t2m-V_sAg0toUbh7lA8l-orSJDK_v.mp4
+[2026-06-17 11:18:41]   Uploaded: https://youtube.com/shorts/N0Ezb7hNTmU
+[2026-06-17 11:18:46] Next: 'b7f9708a-980b-4a1c-9447-39e34fe21b56.mp4' (2 MB) from folder 'HAPPY CUSTOMERS'
+[2026-06-17 11:18:46]   Downloading from Drive …
+[2026-06-17 11:18:48]   Uploading as Short: 'Boat Charter Puerto Banús | Puerto Banús #Shorts'
+[2026-06-17 11:19:04]   File attached: yt_upload_1LDfTrx9mb29bp4i2dCSAoct3p1QtoFBe.mp4
+[2026-06-17 11:19:33]   Uploaded: https://youtube.com/shorts/lKxiimSYCiU
+[2026-06-17 11:19:38] Next: '21aba281-1bed-4c0c-828e-2f05dc213f3f.mp4' (1 MB) from folder 'HAPPY CUSTOMERS'
+[2026-06-17 11:19:38]   Downloading from Drive …
+[2026-06-17 11:19:40]   Uploading as Short: 'Puerto Banús Boat Rental | Puerto Banús #Shorts'
+[2026-06-17 11:19:55]   File attached: yt_upload_1Y789tDyM-H3PNd5d3gqC5Hzwnu8NQMsV.mp4
+[2026-06-17 11:20:27]   Uploaded: https://youtube.com/shorts/9lUwLJltYeE
+[2026-06-17 11:20:32] Next: 'ee9d5256-46a6-4454-b99d-d5c69ef0d06c.mp4' (1 MB) from folder 'HAPPY CUSTOMERS'
+[2026-06-17 11:20:32]   Downloading from Drive …
+[2026-06-17 11:20:33]   Uploading as video: 'Day Boat Hire Puerto Banús | Puerto Banús'
+[2026-06-17 11:20:47]   File attached: yt_upload_1QSVtb6qIBLTWr0pJg0suWGfU9jRjvv-_.mp4
+[2026-06-17 11:21:21]   Uploaded: https://youtube.com/shorts/wYtKxO7mFXE
+[2026-06-17 11:21:21] Done. Uploaded 6 video(s) today.
+[2026-06-17 11:30:00] Starting YouTube uploader
+[2026-06-17 11:30:00] Starting YouTube uploader
+[2026-06-17 11:30:00] Scanning Drive for videos (folder 1qEQPlq6084s7eaq2wqTtoTjN5t2yvFlS) …
+[2026-06-17 11:30:00] Scanning Drive for videos (folder 1qEQPlq6084s7eaq2wqTtoTjN5t2yvFlS) …
+[2026-06-17 11:30:18] Found 138 video files in Drive
+[2026-06-17 11:30:18] Found 138 video files in Drive
+[2026-06-17 11:30:18] 70 videos not yet uploaded to YouTube
+[2026-06-17 11:30:18] 70 videos not yet uploaded to YouTube
+[2026-06-17 11:30:18] Next: '94cba292227d4c17bbbcda7c414c7d1b.mov' (0 MB) from folder 'HAPPY CUSTOMERS'
+[2026-06-17 11:30:18] Next: '94cba292227d4c17bbbcda7c414c7d1b.mov' (0 MB) from folder 'HAPPY CUSTOMERS'
+[2026-06-17 11:30:18]   Downloading from Drive …
+[2026-06-17 11:30:18]   Downloading from Drive …
+  downloading … 100%
+[2026-06-17 11:30:19]   Uploading as Short: 'Boat Trip Puerto Banús Marbella | Puerto Banús #Shorts'
+[2026-06-17 11:30:19]   Uploading as Short: 'Boat Trip Puerto Banús Marbella | Puerto Banús #Shorts'
+[2026-06-17 11:30:32]   File attached: yt_upload_1j31yPKQtlbSSEGPhkp6uOzPTSQ4YgbFM.mov
+[2026-06-17 11:30:32]   File attached: yt_upload_1j31yPKQtlbSSEGPhkp6uOzPTSQ4YgbFM.mov
+[2026-06-17 11:31:06]   Uploaded: https://youtube.com/shorts/3uoxdgyK0is
+[2026-06-17 11:31:06]   Uploaded: https://youtube.com/shorts/3uoxdgyK0is
+[2026-06-17 11:31:11] Next: 'RPReplay_Final1659079887.mp4' (37 MB) from folder 'HAPPY CUSTOMERS'
+[2026-06-17 11:31:11] Next: 'RPReplay_Final1659079887.mp4' (37 MB) from folder 'HAPPY CUSTOMERS'
+[2026-06-17 11:31:11]   Downloading from Drive …
+[2026-06-17 11:31:11]   Downloading from Drive …
+  downloading … 21%  downloading … 42%  downloading … 63%  downloading … 85%  downloading … 100%
+[2026-06-17 11:31:24]   Uploading as video: 'Puerto Banús Private Boat | Puerto Banús'
+[2026-06-17 11:31:24]   Uploading as video: 'Puerto Banús Private Boat | Puerto Banús'
+[2026-06-17 11:31:38]   File attached: yt_upload_1CCTgkgMCCqrUttkLc9Slglj1rJ4eAZZj.mp4
+[2026-06-17 11:31:38]   File attached: yt_upload_1CCTgkgMCCqrUttkLc9Slglj1rJ4eAZZj.mp4
+[2026-06-17 11:32:11]   Uploaded: https://youtube.com/shorts/LMefaaZyZU4
+[2026-06-17 11:32:11]   Uploaded: https://youtube.com/shorts/LMefaaZyZU4
+[2026-06-17 11:32:16] Next: '32c3d3b5535247d596bbcefac07e5f69.mov' (13 MB) from folder 'HAPPY CUSTOMERS'
+[2026-06-17 11:32:16] Next: '32c3d3b5535247d596bbcefac07e5f69.mov' (13 MB) from folder 'HAPPY CUSTOMERS'
+[2026-06-17 11:32:16]   Downloading from Drive …
+[2026-06-17 11:32:16]   Downloading from Drive …
+  downloading … 60%  downloading … 100%
+[2026-06-17 11:32:20]   Uploading as video: 'Boat Charter Puerto Banús | Puerto Banús'
+[2026-06-17 11:32:20]   Uploading as video: 'Boat Charter Puerto Banús | Puerto Banús'
+[2026-06-17 11:32:34]   File attached: yt_upload_1dlE_-BsFLNZ8sv7DKF_oNAxEGnKGa3Nt.mov
+[2026-06-17 11:32:34]   File attached: yt_upload_1dlE_-BsFLNZ8sv7DKF_oNAxEGnKGa3Nt.mov
+[2026-06-17 11:33:08]   Uploaded: https://youtube.com/shorts/Iluqdh7AiGA
+[2026-06-17 11:33:08]   Uploaded: https://youtube.com/shorts/Iluqdh7AiGA
+[2026-06-17 11:33:13] Next: 'cb0aca84c7f04254b20c35cf534ea240.mov' (4 MB) from folder 'HAPPY CUSTOMERS'
+[2026-06-17 11:33:13] Next: 'cb0aca84c7f04254b20c35cf534ea240.mov' (4 MB) from folder 'HAPPY CUSTOMERS'
+[2026-06-17 11:33:13]   Downloading from Drive …
+[2026-06-17 11:33:13]   Downloading from Drive …
+  downloading … 100%
+[2026-06-17 11:33:16]   Uploading as Short: 'Puerto Banús Boat Rental | Puerto Banús #Shorts'
+[2026-06-17 11:33:16]   Uploading as Short: 'Puerto Banús Boat Rental | Puerto Banús #Shorts'
+[2026-06-17 11:33:30]   File attached: yt_upload_1I5_I5RHk34iVEpq1qW1MXwYnNmFXkcXp.mov
+[2026-06-17 11:33:30]   File attached: yt_upload_1I5_I5RHk34iVEpq1qW1MXwYnNmFXkcXp.mov
+[2026-06-17 11:34:04]   Uploaded: https://youtube.com/shorts/495Emd-Q8LQ
+[2026-06-17 11:34:04]   Uploaded: https://youtube.com/shorts/495Emd-Q8LQ
+[2026-06-17 11:34:09] Next: 'cb0aca84c7f04254b20c35cf534ea240.mov' (4 MB) from folder 'HAPPY CUSTOMERS'
+[2026-06-17 11:34:09] Next: 'cb0aca84c7f04254b20c35cf534ea240.mov' (4 MB) from folder 'HAPPY CUSTOMERS'
+[2026-06-17 11:34:09]   Downloading from Drive …
+[2026-06-17 11:34:09]   Downloading from Drive …
+  downloading … 100%
+[2026-06-17 11:34:11]   Uploading as Short: 'Day Boat Hire Puerto Banús | Puerto Banús #Shorts'
+[2026-06-17 11:34:11]   Uploading as Short: 'Day Boat Hire Puerto Banús | Puerto Banús #Shorts'
+[2026-06-17 11:34:25]   File attached: yt_upload_1GlWpV5k6LkbY6Gun7I4Cx8nWj8JfDvH_.mov
+[2026-06-17 11:34:25]   File attached: yt_upload_1GlWpV5k6LkbY6Gun7I4Cx8nWj8JfDvH_.mov
+[2026-06-17 11:34:59]   ERROR uploading 'cb0aca84c7f04254b20c35cf534ea240.mov': Locator.wait_for: Timeout 15000ms exceeded.
+Call log:
+  - waiting for locator("ytcp-button#next-button").last to be visible
+    34 × locator resolved to hidden <ytcp-button hidden="" type="filled" tabindex="-1" id="next-button" aria-disabled="false" button-style="default" icon-alignment="start" class="style-scope ytcp-uploads-dialog">…</ytcp-button>
+
+[2026-06-17 11:34:59]   ERROR uploading 'cb0aca84c7f04254b20c35cf534ea240.mov': Locator.wait_for: Timeout 15000ms exceeded.
+Call log:
+  - waiting for locator("ytcp-button#next-button").last to be visible
+    34 × locator resolved to hidden <ytcp-button hidden="" type="filled" tabindex="-1" id="next-button" aria-disabled="false" button-style="default" icon-alignment="start" class="style-scope ytcp-uploads-dialog">…</ytcp-button>
+
+[2026-06-17 11:34:59] Next: '7cbb84d4-1fe6-45a3-8d6c-3284c0a84755.mp4' (11 MB) from folder 'HAPPY CUSTOMERS'
+[2026-06-17 11:34:59] Next: '7cbb84d4-1fe6-45a3-8d6c-3284c0a84755.mp4' (11 MB) from folder 'HAPPY CUSTOMERS'
+[2026-06-17 11:34:59]   Downloading from Drive …
+[2026-06-17 11:34:59]   Downloading from Drive …
+  downloading … 69%  downloading … 100%
+[2026-06-17 11:35:03]   Uploading as Short: 'Day Boat Hire Puerto Banús | Puerto Banús #Shorts'
+[2026-06-17 11:35:03]   Uploading as Short: 'Day Boat Hire Puerto Banús | Puerto Banús #Shorts'
+[2026-06-17 11:35:16]   File attached: yt_upload_1w8og70u4xGUD0rp5ZTsub9CL8cdLQsq7.mp4
+[2026-06-17 11:35:16]   File attached: yt_upload_1w8og70u4xGUD0rp5ZTsub9CL8cdLQsq7.mp4
+[2026-06-17 11:35:50]   ERROR uploading '7cbb84d4-1fe6-45a3-8d6c-3284c0a84755.mp4': Locator.wait_for: Timeout 15000ms exceeded.
+Call log:
+  - waiting for locator("ytcp-button#next-button").last to be visible
+    34 × locator resolved to hidden <ytcp-button hidden="" type="filled" tabindex="-1" id="next-button" aria-disabled="false" button-style="default" icon-alignment="start" class="style-scope ytcp-uploads-dialog">…</ytcp-button>
+
+[2026-06-17 11:35:50]   ERROR uploading '7cbb84d4-1fe6-45a3-8d6c-3284c0a84755.mp4': Locator.wait_for: Timeout 15000ms exceeded.
+Call log:
+  - waiting for locator("ytcp-button#next-button").last to be visible
+    34 × locator resolved to hidden <ytcp-button hidden="" type="filled" tabindex="-1" id="next-button" aria-disabled="false" button-style="default" icon-alignment="start" class="style-scope ytcp-uploads-dialog">…</ytcp-button>
+
+[2026-06-17 11:35:50] Next: '40c5ecc630744d6a856aebaf08bc58fb.mov' (3 MB) from folder 'HAPPY CUSTOMERS'
+[2026-06-17 11:35:50] Next: '40c5ecc630744d6a856aebaf08bc58fb.mov' (3 MB) from folder 'HAPPY CUSTOMERS'
+[2026-06-17 11:35:50]   Downloading from Drive …
+[2026-06-17 11:35:50]   Downloading from Drive …
+  downloading … 100%
+[2026-06-17 11:35:52]   Uploading as Short: 'Day Boat Hire Puerto Banús | Puerto Banús #Shorts'
+[2026-06-17 11:35:52]   Uploading as Short: 'Day Boat Hire Puerto Banús | Puerto Banús #Shorts'
+[2026-06-17 11:36:05]   File attached: yt_upload_1i_EsOAsHcpCdG4AJaZbSphSpoe9SaJjw.mov
+[2026-06-17 11:36:05]   File attached: yt_upload_1i_EsOAsHcpCdG4AJaZbSphSpoe9SaJjw.mov
+[2026-06-17 11:36:38]   ERROR uploading '40c5ecc630744d6a856aebaf08bc58fb.mov': Locator.wait_for: Timeout 15000ms exceeded.
+Call log:
+  - waiting for locator("ytcp-button#next-button").last to be visible
+    33 × locator resolved to hidden <ytcp-button hidden="" type="filled" tabindex="-1" id="next-button" aria-disabled="false" button-style="default" icon-alignment="start" class="style-scope ytcp-uploads-dialog">…</ytcp-button>
+
+[2026-06-17 11:36:38]   ERROR uploading '40c5ecc630744d6a856aebaf08bc58fb.mov': Locator.wait_for: Timeout 15000ms exceeded.
+Call log:
+  - waiting for locator("ytcp-button#next-button").last to be visible
+    33 × locator resolved to hidden <ytcp-button hidden="" type="filled" tabindex="-1" id="next-button" aria-disabled="false" button-style="default" icon-alignment="start" class="style-scope ytcp-uploads-dialog">…</ytcp-button>
+
+[2026-06-17 11:36:38]   3 consecutive errors — stopping to avoid cycling all videos.
+[2026-06-17 11:36:38]   3 consecutive errors — stopping to avoid cycling all videos.
+[2026-06-17 11:36:38] Done. Uploaded 4 video(s) today.
+[2026-06-17 11:36:38] Done. Uploaded 4 video(s) today.
+[2026-06-19 07:47:18] Starting YouTube uploader
+[2026-06-19 07:47:19] Scanning Drive for videos (folder 1qEQPlq6084s7eaq2wqTtoTjN5t2yvFlS) …
+[2026-06-19 07:47:37] Found 138 video files in Drive
+[2026-06-19 07:47:37] 66 videos not yet uploaded to YouTube
+[2026-06-19 07:47:37] Next: 'cb0aca84c7f04254b20c35cf534ea240.mov' (4 MB) from folder 'HAPPY CUSTOMERS'
+[2026-06-19 07:47:37]   Downloading from Drive …
+[2026-06-19 07:47:39]   Uploading as Short: 'Day Boat Hire Puerto Banús | Puerto Banús #Shorts'
+[2026-06-19 07:48:19]   File attached: yt_upload_1GlWpV5k6LkbY6Gun7I4Cx8nWj8JfDvH_.mov
+[2026-06-19 07:48:56]   Uploaded: https://youtube.com/shorts/xe-xkplchQk
+[2026-06-19 07:49:01] Next: '7cbb84d4-1fe6-45a3-8d6c-3284c0a84755.mp4' (11 MB) from folder 'HAPPY CUSTOMERS'
+[2026-06-19 07:49:01]   Downloading from Drive …
+[2026-06-19 07:49:06]   Uploading as Short: 'Boat Trip Puerto Banús Marbella | Puerto Banús #Shorts'
+[2026-06-19 07:49:23]   File attached: yt_upload_1w8og70u4xGUD0rp5ZTsub9CL8cdLQsq7.mp4
+[2026-06-19 07:49:42]   Uploaded: https://youtube.com/shorts/LyKSqrLwKpg
+[2026-06-19 07:49:47] Next: '40c5ecc630744d6a856aebaf08bc58fb.mov' (3 MB) from folder 'HAPPY CUSTOMERS'
+[2026-06-19 07:49:47]   Downloading from Drive …
+[2026-06-19 07:49:50]   Uploading as Short: 'Puerto Banús Private Boat | Puerto Banús #Shorts'
+[2026-06-19 07:50:04]   File attached: yt_upload_1i_EsOAsHcpCdG4AJaZbSphSpoe9SaJjw.mov
+[2026-06-19 07:50:38]   Uploaded: https://youtube.com/shorts/CgGk1wqGRaA
+[2026-06-19 07:50:43] Next: 'd87e026e5a1a47dba0db070d7ff1d60e.mov' (37 MB) from folder 'MANGUSTA80'
+[2026-06-19 07:50:43]   Downloading from Drive …
+[2026-06-19 07:50:55]   Uploading as Short: 'Celebrity Boat Charter Marbella | Puerto Banús #Shorts'
+[2026-06-19 07:51:10]   File attached: yt_upload_1wrinlb0OaZYN-QOovYpRkhLBMd5uZgBY.mov
+[2026-06-19 07:51:43]   Uploaded: https://youtube.com/shorts/3dlT2QR1HEE
+[2026-06-19 07:51:48] Next: '7f61d8b4d87a46bbb573b526ad046007.mov' (32 MB) from folder 'MANGUSTA80'
+[2026-06-19 07:51:48]   Downloading from Drive …
+[2026-06-19 07:52:03]   Uploading as Short: 'VIP Yacht Marbella | Puerto Banús #Shorts'
+[2026-06-19 07:52:17]   File attached: yt_upload_1Vx3RmTBmtQb6H9b6-trngNYpjV7GnK02.mov
+[2026-06-19 07:52:49]   Uploaded: https://youtube.com/shorts/b9PhX_0jy14
+[2026-06-19 07:52:54] Next: '4e456d52f00341979ff7dff676e1500b.mov' (25 MB) from folder 'MANGUSTA80'
+[2026-06-19 07:52:54]   Downloading from Drive …
+[2026-06-19 07:53:03]   Uploading as Short: 'Exclusive Boat Charter Puerto Banús | Puerto Banús #Shorts'
+[2026-06-19 07:53:20]   File attached: yt_upload_1f6ijz6uvmlNI1qWAQbCbdJFP-pYtW8a9.mov
+[2026-06-19 07:53:51]   Uploaded: https://youtube.com/shorts/F0LTJcr53tE
+[2026-06-19 07:53:51] Done. Uploaded 6 video(s) today.
+[2026-06-19 11:30:00] Starting YouTube uploader
+[2026-06-19 11:30:00] Starting YouTube uploader
+[2026-06-19 11:30:00] Scanning Drive for videos (folder 1qEQPlq6084s7eaq2wqTtoTjN5t2yvFlS) …
+[2026-06-19 11:30:00] Scanning Drive for videos (folder 1qEQPlq6084s7eaq2wqTtoTjN5t2yvFlS) …
+[2026-06-19 11:30:26] Found 138 video files in Drive
+[2026-06-19 11:30:26] Found 138 video files in Drive
+[2026-06-19 11:30:26] 60 videos not yet uploaded to YouTube
+[2026-06-19 11:30:26] 60 videos not yet uploaded to YouTube
+[2026-06-19 11:30:26] Next: 'IMG_4443.MOV' (19 MB) from folder 'MANGUSTA80'
+[2026-06-19 11:30:26] Next: 'IMG_4443.MOV' (19 MB) from folder 'MANGUSTA80'
+[2026-06-19 11:30:26]   Downloading from Drive …
+[2026-06-19 11:30:26]   Downloading from Drive …
+  downloading … 42%  downloading … 84%  downloading … 100%
+[2026-06-19 11:31:07]   Uploading as video: 'Celebrity Cruise Marbella | Puerto Banús'
+[2026-06-19 11:31:07]   Uploading as video: 'Celebrity Cruise Marbella | Puerto Banús'
+[2026-06-19 11:31:37]   File attached: yt_upload_1SfKU-r4_cuqiO2ChsfyqcGQIvzXAX2wM.MOV
+[2026-06-19 11:31:37]   File attached: yt_upload_1SfKU-r4_cuqiO2ChsfyqcGQIvzXAX2wM.MOV
+[2026-06-19 11:31:56]   Uploaded: https://youtube.com/shorts/9G2mrupJffY
+[2026-06-19 11:31:56]   Uploaded: https://youtube.com/shorts/9G2mrupJffY
+[2026-06-19 11:32:01] Next: '60cd03b0491243348e91d9624bbf1df6.mov' (16 MB) from folder 'MANGUSTA80'
+[2026-06-19 11:32:01] Next: '60cd03b0491243348e91d9624bbf1df6.mov' (16 MB) from folder 'MANGUSTA80'
+[2026-06-19 11:32:01]   Downloading from Drive …
+[2026-06-19 11:32:01]   Downloading from Drive …
+  downloading … 48%  downloading … 96%  downloading … 100%
+[2026-06-19 11:32:07]   Uploading as Short: 'Star-Studded Yacht Marbella | Puerto Banús #Shorts'
+[2026-06-19 11:32:07]   Uploading as Short: 'Star-Studded Yacht Marbella | Puerto Banús #Shorts'
+[2026-06-19 11:32:19]   File attached: yt_upload_15VFDfG7TUiRZygzjBPxO98zfKxOajh6h.mov
+[2026-06-19 11:32:19]   File attached: yt_upload_15VFDfG7TUiRZygzjBPxO98zfKxOajh6h.mov
+[2026-06-19 11:32:55]   Uploaded: https://youtube.com/shorts/iggedaV1rmM
+[2026-06-19 11:32:55]   Uploaded: https://youtube.com/shorts/iggedaV1rmM
+[2026-06-19 11:33:00] Next: 'IMG_4442.MOV' (13 MB) from folder 'MANGUSTA80'
+[2026-06-19 11:33:00] Next: 'IMG_4442.MOV' (13 MB) from folder 'MANGUSTA80'
+[2026-06-19 11:33:00]   Downloading from Drive …
+[2026-06-19 11:33:00]   Downloading from Drive …
+  downloading … 58%  downloading … 100%
+[2026-06-19 11:33:04]   Uploading as video: 'Celebrity Boat Charter Marbella | Puerto Banús'
+[2026-06-19 11:33:04]   Uploading as video: 'Celebrity Boat Charter Marbella | Puerto Banús'
+[2026-06-19 11:33:18]   File attached: yt_upload_1JwD9F4jgb3IAz459o8GzSBnJxsn8XDWS.MOV
+[2026-06-19 11:33:18]   File attached: yt_upload_1JwD9F4jgb3IAz459o8GzSBnJxsn8XDWS.MOV
+[2026-06-19 11:33:51]   Uploaded: https://youtube.com/shorts/BgIa9ZTP9E8
+[2026-06-19 11:33:51]   Uploaded: https://youtube.com/shorts/BgIa9ZTP9E8
+[2026-06-19 11:33:57] Next: 'IMG_4436.MOV' (21 MB) from folder 'MANGUSTA80'
+[2026-06-19 11:33:57] Next: 'IMG_4436.MOV' (21 MB) from folder 'MANGUSTA80'
+[2026-06-19 11:33:57]   Downloading from Drive …
+[2026-06-19 11:33:57]   Downloading from Drive …
+  downloading … 37%  downloading … 75%  downloading … 100%
+[2026-06-19 11:34:04]   Uploading as video: 'VIP Yacht Marbella | Puerto Banús'
+[2026-06-19 11:34:04]   Uploading as video: 'VIP Yacht Marbella | Puerto Banús'
+[2026-06-19 11:34:18]   File attached: yt_upload_1SXmjGED7OVYmz0ye--eipklnXTQMGipp.MOV
+[2026-06-19 11:34:18]   File attached: yt_upload_1SXmjGED7OVYmz0ye--eipklnXTQMGipp.MOV
+[2026-06-19 11:34:52]   Uploaded: https://youtube.com/shorts/cigx_xLf2lU
+[2026-06-19 11:34:52]   Uploaded: https://youtube.com/shorts/cigx_xLf2lU
+[2026-06-19 11:34:57] Next: '3f7c5d3dfbab4a268967b73809116808.mov' (31 MB) from folder 'MANGUSTA80'
+[2026-06-19 11:34:57] Next: '3f7c5d3dfbab4a268967b73809116808.mov' (31 MB) from folder 'MANGUSTA80'
+[2026-06-19 11:34:57]   Downloading from Drive …
+[2026-06-19 11:34:57]   Downloading from Drive …
+  downloading … 25%  downloading … 51%  downloading … 77%  downloading … 100%
+[2026-06-19 11:35:06]   Uploading as Short: 'Exclusive Boat Charter Puerto Banús | Puerto Banús #Shorts'
+[2026-06-19 11:35:06]   Uploading as Short: 'Exclusive Boat Charter Puerto Banús | Puerto Banús #Shorts'
+[2026-06-19 11:35:19]   File attached: yt_upload_1e9AXMmfRTVMgzghV6-Mw2vHj9Why2osh.mov
+[2026-06-19 11:35:19]   File attached: yt_upload_1e9AXMmfRTVMgzghV6-Mw2vHj9Why2osh.mov
+[2026-06-19 11:35:56]   ERROR uploading '3f7c5d3dfbab4a268967b73809116808.mov': Locator.wait_for: Timeout 15000ms exceeded.
+Call log:
+  - waiting for locator("ytcp-button#next-button").last to be visible
+    34 × locator resolved to hidden <ytcp-button hidden="" type="filled" tabindex="-1" id="next-button" aria-disabled="false" button-style="default" icon-alignment="start" class="style-scope ytcp-uploads-dialog">…</ytcp-button>
+
+[2026-06-19 11:35:56]   ERROR uploading '3f7c5d3dfbab4a268967b73809116808.mov': Locator.wait_for: Timeout 15000ms exceeded.
+Call log:
+  - waiting for locator("ytcp-button#next-button").last to be visible
+    34 × locator resolved to hidden <ytcp-button hidden="" type="filled" tabindex="-1" id="next-button" aria-disabled="false" button-style="default" icon-alignment="start" class="style-scope ytcp-uploads-dialog">…</ytcp-button>
+
+[2026-06-19 11:35:56] Next: '4a57002875ca4ce7ae157fad871cac8c.mov' (17 MB) from folder 'MANGUSTA80'
+[2026-06-19 11:35:56] Next: '4a57002875ca4ce7ae157fad871cac8c.mov' (17 MB) from folder 'MANGUSTA80'
+[2026-06-19 11:35:56]   Downloading from Drive …
+[2026-06-19 11:35:56]   Downloading from Drive …
+  downloading … 44%  downloading … 89%  downloading … 100%
+[2026-06-19 11:36:03]   Uploading as Short: 'Exclusive Boat Charter Puerto Banús | Puerto Banús #Shorts'
+[2026-06-19 11:36:03]   Uploading as Short: 'Exclusive Boat Charter Puerto Banús | Puerto Banús #Shorts'
+[2026-06-19 11:36:16]   File attached: yt_upload_1ej4gK-iFWLZ3rqB6baAdxGmkv0tq-1wu.mov
+[2026-06-19 11:36:16]   File attached: yt_upload_1ej4gK-iFWLZ3rqB6baAdxGmkv0tq-1wu.mov
+[2026-06-19 11:36:51]   ERROR uploading '4a57002875ca4ce7ae157fad871cac8c.mov': Locator.wait_for: Timeout 15000ms exceeded.
+Call log:
+  - waiting for locator("ytcp-button#next-button").last to be visible
+    34 × locator resolved to hidden <ytcp-button hidden="" type="filled" tabindex="-1" id="next-button" aria-disabled="false" button-style="default" icon-alignment="start" class="style-scope ytcp-uploads-dialog">…</ytcp-button>
+
+[2026-06-19 11:36:51]   ERROR uploading '4a57002875ca4ce7ae157fad871cac8c.mov': Locator.wait_for: Timeout 15000ms exceeded.
+Call log:
+  - waiting for locator("ytcp-button#next-button").last to be visible
+    34 × locator resolved to hidden <ytcp-button hidden="" type="filled" tabindex="-1" id="next-button" aria-disabled="false" button-style="default" icon-alignment="start" class="style-scope ytcp-uploads-dialog">…</ytcp-button>
+
+[2026-06-19 11:36:51] Next: '1004376a0c084066983d3e3e241542f1.mov' (8 MB) from folder 'MANGUSTA80'
+[2026-06-19 11:36:51] Next: '1004376a0c084066983d3e3e241542f1.mov' (8 MB) from folder 'MANGUSTA80'
+[2026-06-19 11:36:51]   Downloading from Drive …
+[2026-06-19 11:36:51]   Downloading from Drive …
+  downloading … 91%  downloading … 100%
+[2026-06-19 11:36:55]   Uploading as Short: 'Exclusive Boat Charter Puerto Banús | Puerto Banús #Shorts'
+[2026-06-19 11:36:55]   Uploading as Short: 'Exclusive Boat Charter Puerto Banús | Puerto Banús #Shorts'
+[2026-06-19 11:37:08]   File attached: yt_upload_1duuRxYi-x01_7nEzrc45zf8UNoRNPktq.mov
+[2026-06-19 11:37:08]   File attached: yt_upload_1duuRxYi-x01_7nEzrc45zf8UNoRNPktq.mov
+[2026-06-19 11:37:45]   ERROR uploading '1004376a0c084066983d3e3e241542f1.mov': Locator.wait_for: Timeout 15000ms exceeded.
+Call log:
+  - waiting for locator("ytcp-button#next-button").last to be visible
+    34 × locator resolved to hidden <ytcp-button hidden="" type="filled" tabindex="-1" id="next-button" aria-disabled="false" button-style="default" icon-alignment="start" class="style-scope ytcp-uploads-dialog">…</ytcp-button>
+
+[2026-06-19 11:37:45]   ERROR uploading '1004376a0c084066983d3e3e241542f1.mov': Locator.wait_for: Timeout 15000ms exceeded.
+Call log:
+  - waiting for locator("ytcp-button#next-button").last to be visible
+    34 × locator resolved to hidden <ytcp-button hidden="" type="filled" tabindex="-1" id="next-button" aria-disabled="false" button-style="default" icon-alignment="start" class="style-scope ytcp-uploads-dialog">…</ytcp-button>
+
+[2026-06-19 11:37:45]   3 consecutive errors — stopping to avoid cycling all videos.
+[2026-06-19 11:37:45]   3 consecutive errors — stopping to avoid cycling all videos.
+[2026-06-19 11:37:45] Done. Uploaded 4 video(s) today.
+[2026-06-19 11:37:45] Done. Uploaded 4 video(s) today.
+[2026-06-20 12:02:25] Starting YouTube uploader
+[2026-06-20 12:02:25] Starting YouTube uploader
+[2026-06-21 11:30:00] Starting YouTube uploader
+[2026-06-21 11:30:00] Starting YouTube uploader
+[2026-06-21 11:30:01] Scanning Drive for videos (folder 1qEQPlq6084s7eaq2wqTtoTjN5t2yvFlS) …
+[2026-06-21 11:30:01] Scanning Drive for videos (folder 1qEQPlq6084s7eaq2wqTtoTjN5t2yvFlS) …
+[2026-06-21 11:30:18] Found 138 video files in Drive
+[2026-06-21 11:30:18] Found 138 video files in Drive
+[2026-06-21 11:30:18] 56 videos not yet uploaded to YouTube
+[2026-06-21 11:30:18] 56 videos not yet uploaded to YouTube
+[2026-06-21 11:30:18] Next: '3f7c5d3dfbab4a268967b73809116808.mov' (31 MB) from folder 'MANGUSTA80'
+[2026-06-21 11:30:18] Next: '3f7c5d3dfbab4a268967b73809116808.mov' (31 MB) from folder 'MANGUSTA80'
+[2026-06-21 11:30:18]   Downloading from Drive …
+[2026-06-21 11:30:18]   Downloading from Drive …
+  downloading … 25%  downloading … 51%  downloading … 77%  downloading … 100%
+[2026-06-21 11:30:29]   Uploading as Short: 'Exclusive Boat Charter Puerto Banús | Puerto Banús #Shorts'
+[2026-06-21 11:30:29]   Uploading as Short: 'Exclusive Boat Charter Puerto Banús | Puerto Banús #Shorts'
+[2026-06-21 11:30:49]   File attached: yt_upload_1e9AXMmfRTVMgzghV6-Mw2vHj9Why2osh.mov
+[2026-06-21 11:30:49]   File attached: yt_upload_1e9AXMmfRTVMgzghV6-Mw2vHj9Why2osh.mov
+[2026-06-21 11:31:22]   Uploaded: https://youtube.com/shorts/C2WaYrpK1DY
+[2026-06-21 11:31:22]   Uploaded: https://youtube.com/shorts/C2WaYrpK1DY
+[2026-06-21 11:31:27] Next: '4a57002875ca4ce7ae157fad871cac8c.mov' (17 MB) from folder 'MANGUSTA80'
+[2026-06-21 11:31:27] Next: '4a57002875ca4ce7ae157fad871cac8c.mov' (17 MB) from folder 'MANGUSTA80'
+[2026-06-21 11:31:27]   Downloading from Drive …
+[2026-06-21 11:31:27]   Downloading from Drive …
+  downloading … 44%  downloading … 89%  downloading … 100%
+[2026-06-21 11:31:34]   Uploading as Short: 'Celebrity Cruise Marbella | Puerto Banús #Shorts'
+[2026-06-21 11:31:34]   Uploading as Short: 'Celebrity Cruise Marbella | Puerto Banús #Shorts'
+[2026-06-21 11:31:46]   File attached: yt_upload_1ej4gK-iFWLZ3rqB6baAdxGmkv0tq-1wu.mov
+[2026-06-21 11:31:46]   File attached: yt_upload_1ej4gK-iFWLZ3rqB6baAdxGmkv0tq-1wu.mov
+[2026-06-21 11:32:20]   Uploaded: https://youtube.com/shorts/IqI8BzHgNHM
+[2026-06-21 11:32:20]   Uploaded: https://youtube.com/shorts/IqI8BzHgNHM
+[2026-06-21 11:32:25] Next: '1004376a0c084066983d3e3e241542f1.mov' (8 MB) from folder 'MANGUSTA80'
+[2026-06-21 11:32:25] Next: '1004376a0c084066983d3e3e241542f1.mov' (8 MB) from folder 'MANGUSTA80'
+[2026-06-21 11:32:25]   Downloading from Drive …
+[2026-06-21 11:32:25]   Downloading from Drive …
+  downloading … 91%  downloading … 100%
+[2026-06-21 11:32:29]   Uploading as Short: 'Star-Studded Yacht Marbella | Puerto Banús #Shorts'
+[2026-06-21 11:32:29]   Uploading as Short: 'Star-Studded Yacht Marbella | Puerto Banús #Shorts'
+[2026-06-21 11:32:41]   File attached: yt_upload_1duuRxYi-x01_7nEzrc45zf8UNoRNPktq.mov
+[2026-06-21 11:32:41]   File attached: yt_upload_1duuRxYi-x01_7nEzrc45zf8UNoRNPktq.mov
+[2026-06-21 11:33:16]   Uploaded: https://youtube.com/shorts/5YrXHK6GtiE
+[2026-06-21 11:33:16]   Uploaded: https://youtube.com/shorts/5YrXHK6GtiE
+[2026-06-21 11:33:21] Next: 'f11689fe81d747c2aec8b240132d2382.mov' (4 MB) from folder '_root_'
+[2026-06-21 11:33:21] Next: 'f11689fe81d747c2aec8b240132d2382.mov' (4 MB) from folder '_root_'
+[2026-06-21 11:33:21]   Downloading from Drive …
+[2026-06-21 11:33:21]   Downloading from Drive …
+  downloading … 100%
+[2026-06-21 11:33:23]   Uploading as Short: 'Celebrity Boat Charter Marbella | Puerto Banús #Shorts'
+[2026-06-21 11:33:23]   Uploading as Short: 'Celebrity Boat Charter Marbella | Puerto Banús #Shorts'
+[2026-06-21 11:33:35]   File attached: yt_upload_1zFQHhC1fArdFN23zrYddsChAO4PCUF1P.mov
+[2026-06-21 11:33:35]   File attached: yt_upload_1zFQHhC1fArdFN23zrYddsChAO4PCUF1P.mov
+[2026-06-21 11:34:11]   Uploaded: https://youtube.com/shorts/jbraYKt3zH4
+[2026-06-21 11:34:11]   Uploaded: https://youtube.com/shorts/jbraYKt3zH4
+[2026-06-21 11:34:16] Next: '7a582e60-6beb-479d-8019-02c6e343dd8d.mp4' (2 MB) from folder '_root_'
+[2026-06-21 11:34:16] Next: '7a582e60-6beb-479d-8019-02c6e343dd8d.mp4' (2 MB) from folder '_root_'
+[2026-06-21 11:34:16]   Downloading from Drive …
+[2026-06-21 11:34:16]   Downloading from Drive …
+  downloading … 100%
+[2026-06-21 11:34:19]   Uploading as Short: 'VIP Yacht Marbella | Puerto Banús #Shorts'
+[2026-06-21 11:34:19]   Uploading as Short: 'VIP Yacht Marbella | Puerto Banús #Shorts'
+[2026-06-21 11:34:31]   File attached: yt_upload_1syxIme97ywgMROY9InYrkZm4yGTGrWuB.mp4
+[2026-06-21 11:34:31]   File attached: yt_upload_1syxIme97ywgMROY9InYrkZm4yGTGrWuB.mp4
+[2026-06-21 11:35:07]   Uploaded: https://youtube.com/shorts/xzcw-illmys
+[2026-06-21 11:35:07]   Uploaded: https://youtube.com/shorts/xzcw-illmys
+[2026-06-21 11:35:12] Next: 'RPReplay_Final1637071733.mp4' (31 MB) from folder '_root_'
+[2026-06-21 11:35:12] Next: 'RPReplay_Final1637071733.mp4' (31 MB) from folder '_root_'
+[2026-06-21 11:35:12]   Downloading from Drive …
+[2026-06-21 11:35:12]   Downloading from Drive …
+  downloading … 25%  downloading … 50%  downloading … 76%  downloading … 100%
+[2026-06-21 11:35:23]   Uploading as video: 'Exclusive Boat Charter Puerto Banús | Puerto Banús'
+[2026-06-21 11:35:23]   Uploading as video: 'Exclusive Boat Charter Puerto Banús | Puerto Banús'
+[2026-06-21 11:35:35]   File attached: yt_upload_1KaZ5e4pdIbNmwfGLraf_xxRna0Ztb0rc.mp4
+[2026-06-21 11:35:35]   File attached: yt_upload_1KaZ5e4pdIbNmwfGLraf_xxRna0Ztb0rc.mp4
+[2026-06-21 11:36:11]   Uploaded: https://youtube.com/shorts/Bvhu7_GmaWs
+[2026-06-21 11:36:11]   Uploaded: https://youtube.com/shorts/Bvhu7_GmaWs
+[2026-06-21 11:36:11] Done. Uploaded 6 video(s) today.
+[2026-06-21 11:36:11] Done. Uploaded 6 video(s) today.
+[2026-06-22 11:37:45] Starting YouTube uploader
+[2026-06-22 11:37:45] Starting YouTube uploader
+[2026-06-23 10:36:14] Starting YouTube uploader
+[2026-06-23 10:36:15] Scanning Drive for videos (folder 1qEQPlq6084s7eaq2wqTtoTjN5t2yvFlS) …
+[2026-06-23 10:36:34] Found 138 video files in Drive
+[2026-06-23 10:36:34] 50 videos not yet uploaded to YouTube
+[2026-06-23 10:36:34] Next: 'IMG_6649.MOV' (17 MB) from folder '_root_'
+[2026-06-23 10:36:34]   Downloading from Drive …
+[2026-06-23 10:36:40]   Uploading as video: 'Celebrity Cruise Marbella | Puerto Banús'
+[2026-06-23 10:36:59]   File attached: yt_upload_1_mOIzabWbStsgNlguoEauu79YOPr3KE8.MOV
+[2026-06-23 10:42:07]   Uploaded: https://youtube.com/shorts/HDstgw9qwSA
+[2026-06-23 10:42:12] Next: 'c3a05b4c5772444ca4db7100d0af9a68.mov' (7 MB) from folder '_root_'
+[2026-06-23 10:42:12]   Downloading from Drive …
+[2026-06-23 10:42:15]   Uploading as Short: 'Star-Studded Yacht Marbella | Puerto Banús #Shorts'
+[2026-06-23 10:42:33]   File attached: yt_upload_1O-vH3B3KJeXdel2dtCmJHlt1Vflprlcx.mov
+[2026-06-23 10:43:00]   Uploaded: https://youtube.com/shorts/kmS1DqltctI
+[2026-06-23 10:43:05] Next: '814ca1cad1c14c8aad7ee9d198e92d10.mov' (6 MB) from folder '_root_'
+[2026-06-23 10:43:05]   Downloading from Drive …
+[2026-06-23 10:43:08]   Uploading as Short: 'Celebrity Boat Charter Marbella | Puerto Banús #Shorts'
+[2026-06-23 10:43:22]   File attached: yt_upload_1uQk7g7FIZ91PXiwf8Iqxz33gzWPnzqZz.mov
+[2026-06-23 10:43:54]   Uploaded: https://youtube.com/shorts/QWsodDmT9Y8
+[2026-06-23 10:43:59] Next: '38c50011acc44f7c8774c789abdc4fd5.mov' (4 MB) from folder '_root_'
+[2026-06-23 10:43:59]   Downloading from Drive …
+[2026-06-23 10:44:02]   Uploading as Short: 'VIP Yacht Marbella | Puerto Banús #Shorts'
+[2026-06-23 10:44:15]   File attached: yt_upload_1YBha4gNfuoiHBLc4cvfNybeXMs-IEDZG.mov
+[2026-06-23 10:44:49]   Uploaded: https://youtube.com/shorts/NsOIy4ch5wk
+[2026-06-23 10:44:54] Next: '65655310da8442ab8dc3895e695fdf19.mov' (4 MB) from folder '_root_'
+[2026-06-23 10:44:54]   Downloading from Drive …
+[2026-06-23 10:44:56]   Uploading as Short: 'Exclusive Boat Charter Puerto Banús | Puerto Banús #Shorts'
+[2026-06-23 10:45:10]   File attached: yt_upload_1p_03eX3LLoQ6wah8RjZ-HMuZ87hk_EYq.mov
+[2026-06-23 10:45:43]   Uploaded: https://youtube.com/shorts/EJ3sVudTuT4
+[2026-06-23 10:45:48] Next: '84e5a1910d8349a69c0a9bc6264688a8.mov' (4 MB) from folder '_root_'
+[2026-06-23 10:45:48]   Downloading from Drive …
+[2026-06-23 10:45:50]   Uploading as Short: 'Celebrity Cruise Marbella | Puerto Banús #Shorts'
+[2026-06-23 10:46:06]   File attached: yt_upload_1zfetplrzlq3dT2tGw-Mkf8_h9yKtiiRH.mov
+[2026-06-23 10:46:36]   Uploaded: https://youtube.com/shorts/PIsVUU38F8s
+[2026-06-23 10:46:36] Done. Uploaded 6 video(s) today.
+[2026-06-23 11:30:00] Starting YouTube uploader
+[2026-06-23 11:30:00] Starting YouTube uploader
+[2026-06-23 11:30:00] Scanning Drive for videos (folder 1qEQPlq6084s7eaq2wqTtoTjN5t2yvFlS) …
+[2026-06-23 11:30:00] Scanning Drive for videos (folder 1qEQPlq6084s7eaq2wqTtoTjN5t2yvFlS) …
+[2026-06-23 11:30:21] Found 138 video files in Drive
+[2026-06-23 11:30:21] Found 138 video files in Drive
+[2026-06-23 11:30:21] 44 videos not yet uploaded to YouTube
+[2026-06-23 11:30:21] 44 videos not yet uploaded to YouTube
+[2026-06-23 11:30:21] Next: 'b5dfd5221b52411faab3538e8218aff6.mov' (4 MB) from folder '_root_'
+[2026-06-23 11:30:21] Next: 'b5dfd5221b52411faab3538e8218aff6.mov' (4 MB) from folder '_root_'
+[2026-06-23 11:30:21]   Downloading from Drive …
+[2026-06-23 11:30:21]   Downloading from Drive …
+  downloading … 100%
+[2026-06-23 11:30:23]   Uploading as Short: 'Star-Studded Yacht Marbella | Puerto Banús #Shorts'
+[2026-06-23 11:30:23]   Uploading as Short: 'Star-Studded Yacht Marbella | Puerto Banús #Shorts'
+[2026-06-23 11:30:54]   File attached: yt_upload_17hc_XVm1a4cQ6a_NXdZAyUz2bWHldo1K.mov
+[2026-06-23 11:30:54]   File attached: yt_upload_17hc_XVm1a4cQ6a_NXdZAyUz2bWHldo1K.mov
+[2026-06-23 11:31:12]   Uploaded: https://youtube.com/shorts/AItqJ8JklqA
+[2026-06-23 11:31:12]   Uploaded: https://youtube.com/shorts/AItqJ8JklqA
+[2026-06-23 11:31:17] Next: 'IMG_1647.MOV' (22 MB) from folder 'ASTONDOA 40'
+[2026-06-23 11:31:17] Next: 'IMG_1647.MOV' (22 MB) from folder 'ASTONDOA 40'
+[2026-06-23 11:31:17]   Downloading from Drive …
+[2026-06-23 11:31:17]   Downloading from Drive …
+  downloading … 36%  downloading … 72%  downloading … 100%
+[2026-06-23 11:31:25]   Uploading as video: 'Celebrity Boat Charter Marbella | Puerto Banús'
+[2026-06-23 11:31:25]   Uploading as video: 'Celebrity Boat Charter Marbella | Puerto Banús'
+[2026-06-23 11:31:39]   File attached: yt_upload_1J-h2Vjyw6Z21cYzoVDYgdm2zaCZXj6pZ.MOV
+[2026-06-23 11:31:39]   File attached: yt_upload_1J-h2Vjyw6Z21cYzoVDYgdm2zaCZXj6pZ.MOV
+[2026-06-23 11:32:13]   Uploaded: https://youtube.com/shorts/VS16G6Kgy-Q
+[2026-06-23 11:32:13]   Uploaded: https://youtube.com/shorts/VS16G6Kgy-Q
+[2026-06-23 11:32:18] Next: 'IMG_3190.MOV' (21 MB) from folder 'ASTONDOA 40'
+[2026-06-23 11:32:18] Next: 'IMG_3190.MOV' (21 MB) from folder 'ASTONDOA 40'
+[2026-06-23 11:32:18]   Downloading from Drive …
+[2026-06-23 11:32:18]   Downloading from Drive …
+  downloading … 37%  downloading … 74%  downloading … 100%
+[2026-06-23 11:32:25]   Uploading as video: 'VIP Yacht Marbella | Puerto Banús'
+[2026-06-23 11:32:25]   Uploading as video: 'VIP Yacht Marbella | Puerto Banús'
+[2026-06-23 11:32:38]   File attached: yt_upload_1-w4R3ubj-W7oAZLbcr7BJyzM4mr_L189.MOV
+[2026-06-23 11:32:38]   File attached: yt_upload_1-w4R3ubj-W7oAZLbcr7BJyzM4mr_L189.MOV
+[2026-06-23 11:33:13]   Uploaded: https://youtube.com/shorts/9H63vpRwlq0
+[2026-06-23 11:33:13]   Uploaded: https://youtube.com/shorts/9H63vpRwlq0
+[2026-06-23 11:33:18] Next: 'IMG_3181.MOV' (20 MB) from folder 'ASTONDOA 40'
+[2026-06-23 11:33:18] Next: 'IMG_3181.MOV' (20 MB) from folder 'ASTONDOA 40'
+[2026-06-23 11:33:18]   Downloading from Drive …
+[2026-06-23 11:33:18]   Downloading from Drive …
+  downloading … 38%  downloading … 77%  downloading … 100%
+[2026-06-23 11:33:25]   Uploading as video: 'Exclusive Boat Charter Puerto Banús | Puerto Banús'
+[2026-06-23 11:33:25]   Uploading as video: 'Exclusive Boat Charter Puerto Banús | Puerto Banús'
+[2026-06-23 11:33:37]   File attached: yt_upload_16RIbgkQ41ICTYxAdM4tldm3M2X_mntS8.MOV
+[2026-06-23 11:33:37]   File attached: yt_upload_16RIbgkQ41ICTYxAdM4tldm3M2X_mntS8.MOV
+[2026-06-23 11:34:12]   Uploaded: https://youtube.com/shorts/egidPC9uWAg
+[2026-06-23 11:34:12]   Uploaded: https://youtube.com/shorts/egidPC9uWAg
+[2026-06-23 11:34:17] Next: 'IMG_3182.MOV' (17 MB) from folder 'ASTONDOA 40'
+[2026-06-23 11:34:17] Next: 'IMG_3182.MOV' (17 MB) from folder 'ASTONDOA 40'
+[2026-06-23 11:34:17]   Downloading from Drive …
+[2026-06-23 11:34:17]   Downloading from Drive …
+  downloading … 46%  downloading … 92%  downloading … 100%
+[2026-06-23 11:34:24]   Uploading as video: 'Celebrity Cruise Marbella | Puerto Banús'
+[2026-06-23 11:34:24]   Uploading as video: 'Celebrity Cruise Marbella | Puerto Banús'
+[2026-06-23 11:34:35]   File attached: yt_upload_1Pnv31ETcCDX62nF7oOq0WZptnOJSyT3M.MOV
+[2026-06-23 11:34:35]   File attached: yt_upload_1Pnv31ETcCDX62nF7oOq0WZptnOJSyT3M.MOV
+[2026-06-23 11:35:10]   Uploaded: https://youtube.com/shorts/044GdDJDJQk
+[2026-06-23 11:35:10]   Uploaded: https://youtube.com/shorts/044GdDJDJQk
+[2026-06-23 11:35:16] Next: 'IMG_5920.MOV' (119 MB) from folder 'ASTONDOA 40'
+[2026-06-23 11:35:16] Next: 'IMG_5920.MOV' (119 MB) from folder 'ASTONDOA 40'
+[2026-06-23 11:35:16]   Downloading from Drive …
+[2026-06-23 11:35:16]   Downloading from Drive …
+  downloading … 6%  downloading … 13%  downloading … 20%  downloading … 26%  downloading … 33%  downloading … 40%  downloading … 46%  downloading … 53%  downloading … 60%  downloading … 66%  downloading … 73%  downloading … 80%  downloading … 87%  downloading … 93%  downloading … 100%
+[2026-06-23 11:35:44]   Uploading as video: 'Star-Studded Yacht Marbella | Puerto Banús'
+[2026-06-23 11:35:44]   Uploading as video: 'Star-Studded Yacht Marbella | Puerto Banús'
+[2026-06-23 11:35:57]   File attached: yt_upload_1NyE70atAlqpCSF0d6XpMb5fiKxnEBVwu.MOV
+[2026-06-23 11:35:57]   File attached: yt_upload_1NyE70atAlqpCSF0d6XpMb5fiKxnEBVwu.MOV
+[2026-06-23 11:36:33]   ERROR uploading 'IMG_5920.MOV': Locator.wait_for: Timeout 15000ms exceeded.
+Call log:
+  - waiting for locator("ytcp-button#next-button").last to be visible
+    34 × locator resolved to hidden <ytcp-button hidden="" type="filled" tabindex="-1" id="next-button" aria-disabled="false" button-style="default" icon-alignment="start" class="style-scope ytcp-uploads-dialog">…</ytcp-button>
+
+[2026-06-23 11:36:33]   ERROR uploading 'IMG_5920.MOV': Locator.wait_for: Timeout 15000ms exceeded.
+Call log:
+  - waiting for locator("ytcp-button#next-button").last to be visible
+    34 × locator resolved to hidden <ytcp-button hidden="" type="filled" tabindex="-1" id="next-button" aria-disabled="false" button-style="default" icon-alignment="start" class="style-scope ytcp-uploads-dialog">…</ytcp-button>
+
+[2026-06-23 11:36:33] Next: 'IMG_5920.MOV' (119 MB) from folder 'ASTONDOA 40'
+[2026-06-23 11:36:33] Next: 'IMG_5920.MOV' (119 MB) from folder 'ASTONDOA 40'
+[2026-06-23 11:36:33]   Downloading from Drive …
+[2026-06-23 11:36:33]   Downloading from Drive …
+  downloading … 6%  downloading … 13%  downloading … 20%  downloading … 26%  downloading … 33%  downloading … 40%  downloading … 46%  downloading … 53%  downloading … 60%  downloading … 66%  downloading … 73%  downloading … 80%  downloading … 87%  downloading … 93%  downloading … 100%
+[2026-06-23 11:36:53]   Uploading as video: 'Star-Studded Yacht Marbella | Puerto Banús'
+[2026-06-23 11:36:53]   Uploading as video: 'Star-Studded Yacht Marbella | Puerto Banús'
+[2026-06-23 11:37:07]   File attached: yt_upload_1DJDqp67uBhilUv-4kpr36T9BKFYf2aK9.MOV
+[2026-06-23 11:37:07]   File attached: yt_upload_1DJDqp67uBhilUv-4kpr36T9BKFYf2aK9.MOV
+[2026-06-23 11:37:40]   ERROR uploading 'IMG_5920.MOV': Locator.wait_for: Timeout 15000ms exceeded.
+Call log:
+  - waiting for locator("ytcp-button#next-button").last to be visible
+    34 × locator resolved to hidden <ytcp-button hidden="" type="filled" tabindex="-1" id="next-button" aria-disabled="false" button-style="default" icon-alignment="start" class="style-scope ytcp-uploads-dialog">…</ytcp-button>
+
+[2026-06-23 11:37:40]   ERROR uploading 'IMG_5920.MOV': Locator.wait_for: Timeout 15000ms exceeded.
+Call log:
+  - waiting for locator("ytcp-button#next-button").last to be visible
+    34 × locator resolved to hidden <ytcp-button hidden="" type="filled" tabindex="-1" id="next-button" aria-disabled="false" button-style="default" icon-alignment="start" class="style-scope ytcp-uploads-dialog">…</ytcp-button>
+
+[2026-06-23 11:37:40] Next: 'IMG_5916.MOV' (93 MB) from folder 'ASTONDOA 40'
+[2026-06-23 11:37:40] Next: 'IMG_5916.MOV' (93 MB) from folder 'ASTONDOA 40'
+[2026-06-23 11:37:40]   Downloading from Drive …
+[2026-06-23 11:37:40]   Downloading from Drive …
+  downloading … 8%  downloading … 17%  downloading … 25%  downloading … 34%  downloading … 42%  downloading … 51%  downloading … 59%  downloading … 68%  downloading … 76%  downloading … 85%  downloading … 94%  downloading … 100%
+[2026-06-23 11:38:18]   Uploading as video: 'Star-Studded Yacht Marbella | Puerto Banús'
+[2026-06-23 11:38:18]   Uploading as video: 'Star-Studded Yacht Marbella | Puerto Banús'
+[2026-06-23 11:38:32]   File attached: yt_upload_1ydmWApnWw01aIQ2qeVm0YBncv_Qqvbdl.MOV
+[2026-06-23 11:38:32]   File attached: yt_upload_1ydmWApnWw01aIQ2qeVm0YBncv_Qqvbdl.MOV
+[2026-06-23 11:39:05]   ERROR uploading 'IMG_5916.MOV': Locator.wait_for: Timeout 15000ms exceeded.
+Call log:
+  - waiting for locator("ytcp-button#next-button").last to be visible
+    34 × locator resolved to hidden <ytcp-button hidden="" type="filled" tabindex="-1" id="next-button" aria-disabled="false" button-style="default" icon-alignment="start" class="style-scope ytcp-uploads-dialog">…</ytcp-button>
+
+[2026-06-23 11:39:05]   ERROR uploading 'IMG_5916.MOV': Locator.wait_for: Timeout 15000ms exceeded.
+Call log:
+  - waiting for locator("ytcp-button#next-button").last to be visible
+    34 × locator resolved to hidden <ytcp-button hidden="" type="filled" tabindex="-1" id="next-button" aria-disabled="false" button-style="default" icon-alignment="start" class="style-scope ytcp-uploads-dialog">…</ytcp-button>
+
+[2026-06-23 11:39:05]   3 consecutive errors — stopping to avoid cycling all videos.
+[2026-06-23 11:39:05]   3 consecutive errors — stopping to avoid cycling all videos.
+[2026-06-23 11:39:05] Done. Uploaded 5 video(s) today.
+[2026-06-23 11:39:05] Done. Uploaded 5 video(s) today.
+[2026-06-24 11:42:23] Starting YouTube uploader
+[2026-06-24 11:42:23] Starting YouTube uploader
+[2026-06-25 10:30:00] Starting YouTube uploader
+[2026-06-25 10:30:00] Starting YouTube uploader
+[2026-06-25 10:30:00] Scanning Drive for videos (folder 1qEQPlq6084s7eaq2wqTtoTjN5t2yvFlS) …
+[2026-06-25 10:30:00] Scanning Drive for videos (folder 1qEQPlq6084s7eaq2wqTtoTjN5t2yvFlS) …
+[2026-06-25 10:30:14] Found 138 video files in Drive
+[2026-06-25 10:30:14] Found 138 video files in Drive
+[2026-06-25 10:30:14] 39 videos not yet uploaded to YouTube
+[2026-06-25 10:30:14] 39 videos not yet uploaded to YouTube
+[2026-06-25 10:30:14] Next: 'IMG_5920.MOV' (119 MB) from folder 'ASTONDOA 40'
+[2026-06-25 10:30:14] Next: 'IMG_5920.MOV' (119 MB) from folder 'ASTONDOA 40'
+[2026-06-25 10:30:14]   Downloading from Drive …
+[2026-06-25 10:30:14]   Downloading from Drive …
+  downloading … 6%  downloading … 13%  downloading … 20%  downloading … 26%  downloading … 33%  downloading … 40%  downloading … 46%  downloading … 53%  downloading … 60%  downloading … 66%  downloading … 73%  downloading … 80%  downloading … 87%  downloading … 93%  downloading … 100%
+[2026-06-25 10:30:39]   Uploading as video: 'Star-Studded Yacht Marbella | Puerto Banús'
+[2026-06-25 10:30:39]   Uploading as video: 'Star-Studded Yacht Marbella | Puerto Banús'
+[2026-06-25 10:30:51]   File attached: yt_upload_1NyE70atAlqpCSF0d6XpMb5fiKxnEBVwu.MOV
+[2026-06-25 10:30:51]   File attached: yt_upload_1NyE70atAlqpCSF0d6XpMb5fiKxnEBVwu.MOV
+[2026-06-25 10:31:26]   Uploaded: https://youtube.com/shorts/XPUcIhgul9A
+[2026-06-25 10:31:26]   Uploaded: https://youtube.com/shorts/XPUcIhgul9A
+[2026-06-25 10:31:31] Next: 'IMG_5920.MOV' (119 MB) from folder 'ASTONDOA 40'
+[2026-06-25 10:31:31] Next: 'IMG_5920.MOV' (119 MB) from folder 'ASTONDOA 40'
+[2026-06-25 10:31:31]   Downloading from Drive …
+[2026-06-25 10:31:31]   Downloading from Drive …
+  downloading … 6%  downloading … 13%  downloading … 20%  downloading … 26%  downloading … 33%  downloading … 40%  downloading … 46%  downloading … 53%  downloading … 60%  downloading … 66%  downloading … 73%  downloading … 80%  downloading … 87%  downloading … 93%  downloading … 100%
+[2026-06-25 10:31:49]   Uploading as video: 'Celebrity Boat Charter Marbella | Puerto Banús'
+[2026-06-25 10:31:49]   Uploading as video: 'Celebrity Boat Charter Marbella | Puerto Banús'
+[2026-06-25 10:32:02]   File attached: yt_upload_1DJDqp67uBhilUv-4kpr36T9BKFYf2aK9.MOV
+[2026-06-25 10:32:02]   File attached: yt_upload_1DJDqp67uBhilUv-4kpr36T9BKFYf2aK9.MOV
+[2026-06-25 10:32:37]   Uploaded: https://youtube.com/shorts/jiZsc7Bk56o
+[2026-06-25 10:32:37]   Uploaded: https://youtube.com/shorts/jiZsc7Bk56o
+[2026-06-25 10:32:42] Next: 'IMG_5916.MOV' (93 MB) from folder 'ASTONDOA 40'
+[2026-06-25 10:32:42] Next: 'IMG_5916.MOV' (93 MB) from folder 'ASTONDOA 40'
+[2026-06-25 10:32:42]   Downloading from Drive …
+[2026-06-25 10:32:42]   Downloading from Drive …
+  downloading … 8%  downloading … 17%  downloading … 25%  downloading … 34%  downloading … 42%  downloading … 51%  downloading … 59%  downloading … 68%  downloading … 76%  downloading … 85%  downloading … 94%  downloading … 100%
+[2026-06-25 10:33:18]   Uploading as video: 'VIP Yacht Marbella | Puerto Banús'
+[2026-06-25 10:33:18]   Uploading as video: 'VIP Yacht Marbella | Puerto Banús'
+[2026-06-25 10:33:30]   File attached: yt_upload_1ydmWApnWw01aIQ2qeVm0YBncv_Qqvbdl.MOV
+[2026-06-25 10:33:30]   File attached: yt_upload_1ydmWApnWw01aIQ2qeVm0YBncv_Qqvbdl.MOV
+[2026-06-25 10:34:06]   Uploaded: https://youtube.com/shorts/fqciVJUywqI
+[2026-06-25 10:34:06]   Uploaded: https://youtube.com/shorts/fqciVJUywqI
+[2026-06-25 10:34:11] Next: 'IMG_5916.MOV' (93 MB) from folder 'ASTONDOA 40'
+[2026-06-25 10:34:11] Next: 'IMG_5916.MOV' (93 MB) from folder 'ASTONDOA 40'
+[2026-06-25 10:34:11]   Downloading from Drive …
+[2026-06-25 10:34:11]   Downloading from Drive …
+  downloading … 8%  downloading … 17%  downloading … 25%  downloading … 34%  downloading … 42%  downloading … 51%  downloading … 59%  downloading … 68%  downloading … 76%  downloading … 85%  downloading … 94%  downloading … 100%
+[2026-06-25 10:34:43]   Uploading as video: 'Exclusive Boat Charter Puerto Banús | Puerto Banús'
+[2026-06-25 10:34:43]   Uploading as video: 'Exclusive Boat Charter Puerto Banús | Puerto Banús'
+[2026-06-25 10:34:56]   File attached: yt_upload_1VY03VVFirZozG0UcrLm9DCrdXHqQL3U9.MOV
+[2026-06-25 10:34:56]   File attached: yt_upload_1VY03VVFirZozG0UcrLm9DCrdXHqQL3U9.MOV
+[2026-06-25 10:35:33]   Uploaded: https://youtube.com/shorts/p-sYNABqiEg
+[2026-06-25 10:35:33]   Uploaded: https://youtube.com/shorts/p-sYNABqiEg
+[2026-06-25 10:35:38] Next: 'IMG_5918.MOV' (100 MB) from folder 'ASTONDOA 40'
+[2026-06-25 10:35:38] Next: 'IMG_5918.MOV' (100 MB) from folder 'ASTONDOA 40'
+[2026-06-25 10:35:38]   Downloading from Drive …
+[2026-06-25 10:35:38]   Downloading from Drive …
+  downloading … 7%  downloading … 15%  downloading … 23%  downloading … 31%  downloading … 39%  downloading … 47%  downloading … 55%  downloading … 63%  downloading … 71%  downloading … 79%  downloading … 87%  downloading … 95%  downloading … 100%
+[2026-06-25 10:35:56]   Uploading as video: 'Celebrity Cruise Marbella | Puerto Banús'
+[2026-06-25 10:35:56]   Uploading as video: 'Celebrity Cruise Marbella | Puerto Banús'
+[2026-06-25 10:36:08]   File attached: yt_upload_1yy1n1y95wdX1GkTEjzdMYHfLGZn8Fsdc.MOV
+[2026-06-25 10:36:08]   File attached: yt_upload_1yy1n1y95wdX1GkTEjzdMYHfLGZn8Fsdc.MOV
+[2026-06-25 10:36:43]   Uploaded: https://youtube.com/shorts/VjUCKRgDJhE
+[2026-06-25 10:36:43]   Uploaded: https://youtube.com/shorts/VjUCKRgDJhE
+[2026-06-25 10:36:48] Next: 'IMG_5919.MOV' (81 MB) from folder 'ASTONDOA 40'
+[2026-06-25 10:36:48] Next: 'IMG_5919.MOV' (81 MB) from folder 'ASTONDOA 40'
+[2026-06-25 10:36:48]   Downloading from Drive …
+[2026-06-25 10:36:48]   Downloading from Drive …
+  downloading … 9%  downloading … 19%  downloading … 29%  downloading … 39%  downloading … 48%  downloading … 58%  downloading … 68%  downloading … 78%  downloading … 88%  downloading … 97%  downloading … 100%
+[2026-06-25 10:37:19]   Uploading as video: 'Star-Studded Yacht Marbella | Puerto Banús'
+[2026-06-25 10:37:19]   Uploading as video: 'Star-Studded Yacht Marbella | Puerto Banús'
+[2026-06-25 10:37:32]   File attached: yt_upload_1ymfFcB6x4AZ3wOtrcwBsNaSrRsV_EteZ.MOV
+[2026-06-25 10:37:32]   File attached: yt_upload_1ymfFcB6x4AZ3wOtrcwBsNaSrRsV_EteZ.MOV
+[2026-06-25 10:38:09]   Uploaded: https://youtube.com/shorts/-qV29AP728k
+[2026-06-25 10:38:09]   Uploaded: https://youtube.com/shorts/-qV29AP728k
+[2026-06-25 10:38:09] Done. Uploaded 6 video(s) today.
+[2026-06-25 10:38:09] Done. Uploaded 6 video(s) today.

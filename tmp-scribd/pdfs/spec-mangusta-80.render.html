@@ -1,0 +1,502 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<title>Mangusta 80 &quot;Nina&quot;</title>
+<style>
+:root {
+  --navy:      #0e2438;
+  --navy-deep: #08182a;
+  --gold:      #b9924b;
+  --gold-dark: #8a6c33;
+  --gold-light:#d4b06a;
+  --gold-pale: #e8d8af;
+  --ivory:     #f7f2e6;
+  --paper:     #fdfbf5;
+  --ink:       #22303e;
+  --muted:     #5d6a76;
+  --hairline:  #d9cdaf;
+  --row-tint:  #f5efdf;
+}
+* { -webkit-print-color-adjust: exact; print-color-adjust: exact;
+    box-sizing: border-box; }
+@page { size: A4; margin: 0; }
+html, body { margin: 0; padding: 0; }
+body {
+  background: var(--paper);
+  color: var(--ink);
+  font-family: Georgia, 'Palatino Linotype', Palatino, 'Times New Roman', serif;
+  font-size: 10.5pt;
+  line-height: 1.62;
+}
+.display { font-family: Didot, 'Didot LT STD', 'Playfair Display', Georgia,
+           'Times New Roman', serif; }
+.caps { font-family: Optima, 'Avenir Next', 'Gill Sans', 'Trebuchet MS',
+        sans-serif; text-transform: uppercase; }
+
+/* ---------------- Cover ---------------- */
+.cover {
+  position: relative;
+  width: 210mm; height: 297mm;
+  overflow: hidden;
+  background: var(--navy-deep);
+  page-break-after: always;
+}
+.cover-img {
+  position: absolute; inset: 0;
+  width: 100%; height: 100%;
+  object-fit: cover;
+  object-position: 24% center;  /* centres the yacht's full profile in the A4 crop */
+}
+.cover-veil {
+  position: absolute; inset: 0;
+  background:
+    linear-gradient(to top, rgba(11,26,46,0.92),
+                    rgba(11,26,46,0.86) 30%, transparent 55%),
+    linear-gradient(180deg,
+      rgba(8,24,42,0.62) 0%,
+      rgba(8,24,42,0.20) 26%,
+      rgba(8,24,42,0.12) 50%,
+      rgba(8,24,42,0.00) 62%);
+}
+.cover-veil.no-img {
+  background:
+    radial-gradient(120mm 90mm at 50% 26%, rgba(185,146,75,0.20), transparent 70%),
+    linear-gradient(180deg, #122c46 0%, #0a1d33 55%, #071426 100%);
+}
+.cover-top {
+  position: absolute; top: 13mm; left: 16mm; right: 16mm;
+  display: flex; align-items: center; justify-content: space-between;
+}
+.brand-lockup { display: flex; align-items: center; gap: 4.5mm; }
+.logo-chip {
+  background: #ffffff;
+  border: 1px solid var(--gold);
+  border-radius: 1.2mm;
+  padding: 2mm;
+  line-height: 0;
+}
+.logo-chip img { display: block; height: 13mm; width: 13mm;
+                 object-fit: cover; border-radius: 0.7mm; }
+.brand-name {
+  color: var(--ivory); font-size: 13pt; letter-spacing: 0.30em;
+  line-height: 1.25;
+}
+.brand-tag {
+  color: var(--gold-pale); font-size: 6.4pt; letter-spacing: 0.26em;
+  margin-top: 1mm;
+}
+.doc-type-flag {
+  text-align: right;
+  color: var(--gold-light);
+  font-size: 7.5pt; letter-spacing: 0.34em;
+  border-top: 0.7pt solid var(--gold);
+  border-bottom: 0.7pt solid var(--gold);
+  padding: 2.2mm 0 2mm 0;
+}
+.cover-main {
+  position: absolute; left: 16mm; right: 16mm; bottom: 34mm;
+}
+.cover-rule {
+  display: flex; align-items: center; gap: 4mm;
+  margin-bottom: 5mm;
+}
+.cover-rule .line { flex: 0 0 22mm; height: 0; border-top: 0.8pt solid var(--gold); }
+.cover-rule .word {
+  color: var(--gold-light); font-size: 8pt; letter-spacing: 0.42em;
+  white-space: nowrap;
+  text-shadow: 0 1px 5px rgba(5,14,26,0.65);
+}
+.cover-title {
+  color: #fdfaf2;
+  font-size: 44pt; line-height: 1.05;
+  font-weight: 600;
+  margin: 0 0 4mm 0;
+  text-shadow: 0 1px 8px rgba(5,14,26,0.55);
+}
+.cover-subtitle {
+  color: var(--gold-pale);
+  font-style: italic;
+  font-size: 13pt; line-height: 1.45;
+  margin: 0 0 7mm 0;
+  max-width: 150mm;
+  text-shadow: 0 1px 6px rgba(5,14,26,0.6);
+}
+.cover-meta {
+  color: rgba(247,242,230,0.92);
+  font-size: 7.6pt; letter-spacing: 0.22em;
+}
+.cover-meta .dot { color: var(--gold-light); padding: 0 2.2mm; }
+.fleet-strip {
+  margin-top: 8mm;
+  display: flex; align-items: center; gap: 4mm;
+}
+.fleet-strip .logo-chip img { height: 9mm; width: auto; }
+.fleet-label {
+  color: rgba(247,242,230,0.85); font-size: 6.6pt; letter-spacing: 0.30em;
+}
+
+/* ------------- Repeating footer ------------- */
+.runfoot {
+  position: fixed; left: 0; right: 0; bottom: 0;
+  height: 12mm;
+  background: var(--ivory);
+  border-top: 1pt solid var(--gold);
+  display: flex; align-items: center; justify-content: space-between;
+  padding: 0 16mm;
+  font-size: 6.8pt; letter-spacing: 0.12em;
+  color: var(--navy);
+}
+.runfoot b { letter-spacing: 0.22em; font-weight: 600; }
+.runfoot .gold { color: var(--gold-dark); }
+.runfoot a { color: var(--navy); text-decoration: none; }
+
+/* ------------- Paged content scaffold ------------- */
+table.paged { width: 100%; border-collapse: collapse; }
+table.paged > thead td { height: 15mm; padding: 0; }
+table.paged > tfoot td { height: 17mm; padding: 0; }
+table.paged > tbody > tr > td { padding: 0 18mm; }
+
+/* ------------- Sections ------------- */
+.sec { margin: 0 0 8mm 0; }
+.sec-head {
+  break-after: avoid-page; page-break-after: avoid;
+  break-inside: avoid; page-break-inside: avoid;
+  margin: 0 0 4.5mm 0;
+}
+.sec-kicker {
+  color: var(--gold-dark); font-size: 7pt; letter-spacing: 0.38em;
+  margin-bottom: 1.6mm;
+}
+.sec-head h2 {
+  color: var(--navy);
+  font-size: 18.5pt; font-weight: 400; line-height: 1.2;
+  margin: 0 0 2.6mm 0;
+}
+.sec-head .rules { position: relative; height: 2.4mm; }
+.sec-head .rules .thin {
+  position: absolute; left: 0; right: 0; top: 1mm;
+  border-top: 0.6pt solid var(--hairline);
+}
+.sec-head .rules .thick {
+  position: absolute; left: 0; top: 0; width: 26mm;
+  border-top: 2.2pt solid var(--gold);
+}
+.sec-body p { margin: 0 0 3.4mm 0; }
+.sec-body p:last-child { margin-bottom: 0; }
+.sec-body ol { margin: 0 0 3.4mm 0; padding-left: 5.5mm; }
+.sec-body ul { margin: 0 0 3.4mm 0; padding-left: 1mm; }
+.sec-body li { margin-bottom: 1.6mm; break-inside: avoid; page-break-inside: avoid;
+               -webkit-column-break-inside: avoid; }
+.sec-body ul.cols2 { columns: 2; column-gap: 9mm;
+                     break-inside: avoid; page-break-inside: avoid; }
+.sec-body ul > li {
+  list-style: none;
+  padding-left: 1.1em; text-indent: -1.1em;  /* hanging indent: wraps align under text */
+}
+.sec-body ul > li::before {
+  content: "\2726";            /* four-pointed star, brass compass point */
+  display: inline-block; width: 1.44em; text-indent: 0;
+  color: var(--gold); font-size: 8pt;       /* 1.44em @8pt == 1.1em @10.5pt */
+}
+.sec-body a { color: var(--navy); text-decoration: none;
+              border-bottom: 0.6pt solid var(--gold); }
+.sec-body strong { color: var(--navy); }
+
+/* generic tables inside section html */
+.sec-body table {
+  width: 100%; border-collapse: collapse;
+  margin: 1mm 0 4mm 0;
+  break-inside: avoid; page-break-inside: avoid;
+  font-size: 9.8pt;
+}
+.sec-body th {
+  background: var(--navy); color: var(--ivory);
+  font-family: Optima, 'Avenir Next', 'Gill Sans', 'Trebuchet MS', sans-serif;
+  text-transform: uppercase; letter-spacing: 0.16em;
+  font-size: 7.4pt; font-weight: 500;
+  text-align: left; padding: 2.6mm 3.5mm;
+  border-bottom: 1.4pt solid var(--gold);
+}
+.sec-body td {
+  padding: 2.2mm 3.5mm;
+  border-bottom: 0.6pt solid var(--hairline);
+  color: var(--ink);
+}
+.sec-body td, .sec-body th { font-variant-numeric: tabular-nums; }
+.sec-body td:not(:first-child),
+.sec-body th:not(:first-child) { text-align: right; }
+.sec-body tr:nth-child(even) td { background: var(--row-tint); }
+.sec-body td:first-child { color: var(--navy); }
+.sec-body tr.best td { background: rgba(212,175,55,0.12); }
+.sec-body tr.best td:first-child { color: var(--navy); font-weight: 600; }
+.best-tag {
+  display: inline-block;
+  font-family: Optima, 'Avenir Next', 'Gill Sans', 'Trebuchet MS', sans-serif;
+  font-variant-caps: small-caps; text-transform: lowercase;
+  font-size: 7.6pt; font-weight: 600; letter-spacing: 0.14em;
+  color: var(--gold-dark);
+  border: 0.6pt solid var(--gold);
+  border-radius: 1mm;
+  padding: 0.2mm 1.6mm;
+  margin-left: 2.2mm;
+  white-space: nowrap;
+  vertical-align: 0.2mm;
+}
+
+/* ------------- Figures ------------- */
+figure.plate {
+  break-inside: avoid; page-break-inside: avoid;
+  margin: 5mm 0 2mm 0;
+  background: #ffffff;
+  border: 0.7pt solid var(--gold-light);
+  padding: 2.6mm;
+}
+figure.plate img {
+  display: block; width: 100%; height: 78mm; object-fit: cover;
+}
+figure.plate figcaption {
+  text-align: center;
+  font-style: italic;
+  font-size: 8.4pt; color: var(--muted);
+  padding: 2.4mm 2mm 0.6mm 2mm;
+}
+figure.plate figcaption::before {
+  content: "\25C6\00a0"; color: var(--gold); font-size: 6pt;
+}
+
+/* ------------- Spec table (2-column grid: two lbl/val pairs per row) ------------- */
+.spec-block { margin: 0 0 8mm 0; }
+table.spec {
+  width: 100%; border-collapse: collapse;
+  border-top: 1.6pt solid var(--navy);
+  border-bottom: 1.6pt solid var(--navy);
+}
+table.spec td { padding: 1.7mm 1.5mm; border-bottom: 0.6pt solid var(--hairline);
+                vertical-align: top; }
+table.spec tr:last-child td { border-bottom: none; }
+table.spec td.lbl {
+  width: 21%;
+  font-family: Optima, 'Avenir Next', 'Gill Sans', 'Trebuchet MS', sans-serif;
+  text-transform: uppercase; letter-spacing: 0.16em;
+  font-size: 7.2pt; color: var(--gold-dark);
+  padding-top: 2.3mm;
+}
+table.spec td.val { width: 29%; color: var(--navy); font-size: 9.8pt; }
+table.spec td.lbl:nth-child(3) {
+  border-left: 0.6pt solid var(--hairline);
+  padding-left: 4mm;
+}
+table.spec td.val:nth-child(2) { padding-right: 4mm; }
+
+/* ------------- Callout ------------- */
+.callout {
+  break-inside: avoid; page-break-inside: avoid;
+  margin: 8mm 0 4mm 0;
+  background: var(--navy);
+  border: 1pt solid var(--gold);
+  outline: 0.6pt solid var(--gold);
+  outline-offset: -2.2mm;
+  color: var(--ivory);
+  padding: 8mm 9mm 7mm 9mm;
+}
+.callout h3 {
+  color: var(--gold-light);
+  font-size: 15pt; font-weight: 400;
+  margin: 0 0 3mm 0;
+}
+.callout p { margin: 0 0 2.8mm 0; line-height: 1.6; color: #efe7d3; }
+.callout a { color: var(--gold-light); text-decoration: none; }
+.callout ul { margin: 0 0 2.8mm 0; padding-left: 1mm; }
+.callout ul > li { list-style: none; margin-bottom: 1.4mm;
+                   padding-left: 1.1em; text-indent: -1.1em;
+                   break-inside: avoid; page-break-inside: avoid; }
+.callout ul > li::before {
+  content: "\2726"; display: inline-block; width: 1.44em; text-indent: 0;
+  color: var(--gold-light); font-size: 8pt;
+}
+.callout .linksrow {
+  margin-top: 4.5mm; padding-top: 3.6mm;
+  border-top: 0.6pt solid rgba(212,176,106,0.55);
+  font-size: 7.6pt; letter-spacing: 0.16em;
+  color: var(--gold-pale);
+}
+.callout .linksrow span.sep { padding: 0 2.6mm; color: var(--gold); }
+
+.endmark {
+  display: flex; align-items: center; justify-content: center; gap: 3.5mm;
+  margin: 7mm 0 0 0;
+}
+.endmark .line { width: 14mm; height: 0; border-top: 0.6pt solid var(--gold); }
+.endmark svg { display: block; }
+</style>
+</head>
+<body>
+
+<div class="cover">
+  <img class="cover-img" src="file:///Users/master/boat-rental-marbella/site/img/boats/mangusta-80/hero-1200.jpg" alt="">
+  <div class="cover-veil"></div>
+  <div class="cover-top">
+    <div class="brand-lockup">
+      <span class="logo-chip"><img src="file:///Users/master/boat-rental-platform/public/brand-logo.jpg" alt="BoatHire24"></span>
+      <div>
+        <div class="brand-name caps display">BoatHire24</div>
+        <div class="brand-tag caps">Rent boats worldwide <span class="gold">|</span> list your boat free</div>
+      </div>
+    </div>
+    <div class="doc-type-flag caps">June 2026</div>
+  </div>
+  <div class="cover-main">
+    <div class="cover-rule">
+      <span class="line"></span>
+      <span class="word caps">Vessel Specification</span>
+    </div>
+    <h1 class="cover-title display">Mangusta 80 &quot;Nina&quot;</h1>
+    <p class="cover-subtitle display">A 24 m Overmarine flagship and the largest yacht you can charter for the day from Puerto Banús, Marbella</p>
+    <div class="cover-meta caps">BoatHire24</div>
+    <div class="fleet-strip"><span class="fleet-label caps">From the fleet of</span><span class="logo-chip"><img src="file:///Users/master/boat-rental-marbella/site/img/logo-640.png" alt="Boat Rental In Marbella"></span></div>
+  </div>
+</div>
+<table class="paged">
+  <thead><tr><td></td></tr></thead>
+  <tbody><tr><td>
+
+<div class="spec-block sec">
+  <div class="sec-head">
+    <div class="sec-kicker caps">Particulars</div>
+    <h2 class="display">Principal Particulars</h2>
+    <div class="rules"><span class="thick"></span><span class="thin"></span></div>
+  </div>
+  <table class="spec"><tr><td class="lbl">Length overall</td><td class="val">24 m (80 ft)</td><td class="lbl">Guest capacity</td><td class="val">12 guests</td></tr>
+<tr><td class="lbl">Type</td><td class="val">Luxury motor yacht (open sport yacht)</td><td class="lbl">Builder</td><td class="val">Overmarine (Mangusta)</td></tr>
+<tr><td class="lbl">Departure port</td><td class="val">Puerto Banús, Marbella</td><td class="lbl">Model year</td><td class="val">2020</td></tr>
+<tr><td class="lbl">Crew</td><td class="val">Captain + deckhand</td><td class="lbl">Rate band</td><td class="val">From €4,719 (4-hour minimum charter)</td></tr></table>
+</div>
+
+<div class="sec">
+  <div class="sec-head">
+    <div class="sec-kicker caps">Section 01</div>
+    <h2 class="display">Overview: the flagship of the Marbella fleet</h2>
+    <div class="rules"><span class="thick"></span><span class="thin"></span></div>
+  </div>
+  <div class="sec-body"><p>There is a moment, every charter, when guests step off the pontoon at Puerto Banús and simply stop. The Mangusta 80 known on the dock as <strong>Nina</strong> is not a boat you walk past. At twenty-four metres she is the largest yacht available for day charter anywhere in Marbella, and she carries the unmistakable Overmarine signature: a long, low, predatory profile that looks as though it is already moving while still tied to the quay.</p><p>Nina has been part of our charter fleet since 2020. She is an open-style sport yacht, which is to say her design philosophy is the opposite of a tall, boxy flybridge cruiser. Everything is drawn close to the water and stretched out lengthwise, so the eye runs the full eighty feet of her in one clean sweep. A full-beam sun pad fills the foredeck, the aft cockpit opens straight onto a broad swim platform, and an air-conditioned saloon sits amidships behind tinted glass.</p><p>What sets her apart in practical terms is the combination of three things you rarely find together on the Costa del Sol: genuine superyacht scale, a Sea-Doo jet ski carried on board and free for guests to use throughout the day, and an all-inclusive charter rate. Twelve guests, a captain and deckhand, drinks, fuel, insurance and VAT are all wrapped into one price. She is fully refit and kept in immaculate condition, the sort of vessel that photographs as well at anchor off the Golden Mile as she does cutting a wake out past the harbour wall. For a milestone birthday, a corporate day out, a family celebration or simply the best seat on the water in Marbella, she is the obvious choice and, at her size, very nearly the only one.</p></div>
+  <figure class="plate"><img src="file:///Users/master/boat-rental-marbella/site/img/boats/mangusta-80/aerial-wake-1200.jpg" alt=""><figcaption>Nina from above, her wake spreading behind the 24 m sport-yacht hull</figcaption></figure>
+</div>
+
+<div class="sec">
+  <div class="sec-head">
+    <div class="sec-kicker caps">Section 02</div>
+    <h2 class="display">The builder and the marque: Overmarine and the Mangusta name</h2>
+    <div class="rules"><span class="thick"></span><span class="thin"></span></div>
+  </div>
+  <div class="sec-body"><p>To understand why Nina looks the way she does, you have to understand the shipyard behind her. Mangusta is the flagship brand of <strong>Overmarine</strong>, an Italian builder founded in the 1980s and based on the Tuscan coast, in and around Viareggio and the Pisa hinterland that has long been the heartland of Italian yacht building. Overmarine did not invent the motor yacht, but it did something arguably more influential: it invented an entire category.</p><p>When the first Mangusta launched, the prevailing idea of a large fast yacht was a tall, white, multi-deck cruiser. Mangusta tore that template up. The marque pioneered the <em>open sport yacht</em> at superyacht length: a sleek, low, deck-saloon design driven by water jets rather than conventional propellers, capable of speeds that simply embarrassed the displacement yachts of the day. The name itself, Italian for the mongoose, was chosen for a creature famed for being fast, fearless and a match for far larger animals. It was a statement of intent, and the boats lived up to it.</p><p>Over the following decades Mangusta became one of the most recognised silhouettes on the water, a fixture of the Mediterranean glamour ports from Monaco to Porto Cervo to, of course, Puerto Banús. The yard built a reputation for two things in particular: speed, thanks to that water-jet open-yacht heritage, and a design language so consistent that a Mangusta is identifiable at a distance by almost anyone who spends time around boats. The long foredeck, the wraparound dark glass, the near-flush superstructure, these are house signatures. Owning or chartering a Mangusta has always carried a particular kind of cachet on the Costa del Sol, and Nina is a direct heir to that lineage. When guests ask why she looks faster and lower and more purposeful than the other yachts on the dock, the answer is simply this: she is a Mangusta, and looking that way is the entire point.</p></div>
+  <figure class="plate"><img src="file:///Users/master/boat-rental-marbella/site/img/boats/mangusta-80/profile-1200.jpg" alt=""><figcaption>The unmistakable Overmarine profile at anchor, low and long against the Marbella light</figcaption></figure>
+</div>
+
+<div class="sec">
+  <div class="sec-head">
+    <div class="sec-kicker caps">Section 03</div>
+    <h2 class="display">The model and the design: what the 80-foot class is known for</h2>
+    <div class="rules"><span class="thick"></span><span class="thin"></span></div>
+  </div>
+  <div class="sec-body"><p>The eighty-foot class sits at a very particular sweet spot in the Mangusta range. It is large enough to feel like a true superyacht, with the deck volume, the interior headroom and the sheer presence that the word implies, yet compact enough to remain agile, to slip in and out of Puerto Banús without fuss, and to anchor close in to the beaches where the larger displacement yachts cannot comfortably go.</p><p>Several characteristics define this class of Mangusta and you will feel all of them aboard Nina. The first is the <strong>open layout</strong>. Rather than stacking decks vertically, the design spreads living space horizontally across a single, generous main deck, so the boat reads as one continuous social environment from the bow sun pad through the saloon to the aft cockpit and swim platform. There are no awkward staircases between the action; the party, the lunch and the swimming all happen on the same level.</p><p>The second is the <strong>hull and ride</strong>. Mangusta built its name on planing performance, and a hull of this type comes alive once it is up and running, settling into a fast, flat, stable cruise that eats the short Mediterranean chop rather than slamming into it. For guests this translates into a ride that feels composed and assured even when she is moving with purpose between anchorages.</p><p>The third is the <strong>finish</strong>. Italian sport yachts of this pedigree are detailed to a standard that rewards a close look: flush deck hatches, taut stainless, fitted upholstery and a saloon that feels more like a designer apartment than a boat cabin. Nina has been fully refit, so the surfaces are tight and the materials current, not a tired hull dressed up for the brochure. The model line, in short, is known for marrying speed and scale with the kind of low, knife-edged elegance that became the Mangusta calling card. She is a thoroughbred, and she behaves like one.</p></div>
+  
+</div>
+
+<div class="sec">
+  <div class="sec-head">
+    <div class="sec-kicker caps">Section 04</div>
+    <h2 class="display">On board: layout, saloon, deck, galley and water toys</h2>
+    <div class="rules"><span class="thick"></span><span class="thin"></span></div>
+  </div>
+  <div class="sec-body"><p>Step aboard at the swim platform and the geography of the yacht reveals itself quickly. Here is how she is laid out, and what each space is for over the course of a charter.</p><ul><li><strong>The aft swim platform.</strong> Just above the waterline, this is the social heart of any day at anchor: the boarding point, the launch pad for the jet ski, the diving board and the place where the swimming, paddling and general messing about in the water all happens. On a hot Marbella afternoon, this is where you will spend most of your time.</li><li><strong>The aft cockpit.</strong> Shaded and open to the sea air, the cockpit is the natural gathering point for drinks and a relaxed lunch, with seating that flows straight out from the saloon so the indoors and outdoors become one space.</li><li><strong>The air-conditioned saloon.</strong> Amidships, behind tinted glass, sits the refit interior: leather seating, cool air and a sheltered retreat from the midday sun. It is the room you retreat to when you want shade, a quieter conversation or simply a break from the heat without going below.</li><li><strong>The chef-grade galley.</strong> Below the main deck, Nina carries a proper kitchen rather than a token kitchenette, which is what makes catered lunches on board a real possibility rather than an afterthought.</li><li><strong>The full-beam foredeck sun pad.</strong> Forward of the helm, the bow opens into one enormous sun pad that runs the full width of the yacht. This is the prime real estate of the boat, the sun-trap where the day drifts by, and it is invariably the first place guests claim once the anchor is down.</li><li><strong>The Sea-Doo jet ski.</strong> Carried on board and free for guests to use throughout the charter, the jet ski is the toy that turns a relaxed cruise into an active day on the water. It is launched from the swim platform and is, for many guests, the highlight of the whole experience.</li></ul><p>The crew, a captain and a deckhand, handle the boat, the anchor, the tender duties and the jet ski safety, leaving guests free to do nothing more strenuous than choose between the sun pad and the swim platform.</p></div>
+  <figure class="plate"><img src="file:///Users/master/boat-rental-marbella/site/img/boats/mangusta-80/saloon-1200.jpg" alt=""><figcaption>The refit main-deck saloon, leather seating and air conditioning behind tinted glass</figcaption></figure>
+</div>
+
+<div class="sec">
+  <div class="sec-head">
+    <div class="sec-kicker caps">Section 05</div>
+    <h2 class="display">A day aboard: a charter from Puerto Banús, hour by hour</h2>
+    <div class="rules"><span class="thick"></span><span class="thin"></span></div>
+  </div>
+  <div class="sec-body"><p>To picture what Nina actually delivers, it helps to walk through a realistic day. This is a four-hour charter, her minimum booking, departing from Puerto Banús on a typical summer afternoon.</p><p>You arrive at the marina a little before your slot. Puerto Banús is theatre in its own right, the superyacht berths lined with the kind of hardware that draws crowds along the quay, and Nina sits among the largest of them. The captain welcomes you aboard at the swim platform, the deckhand stows the cooler of drinks, and within a few minutes the lines are slipped. There is a particular pleasure in easing a twenty-four-metre yacht out past the harbour wall while onlookers watch from the breakwater, and Nina draws every eye on the way out.</p><p>Clear of the port, the captain brings her up onto the plane and the boat changes character entirely, settling into that fast, flat sport-yacht cruise as the Marbella coastline unrolls to port. La Concha mountain rises behind the town, the white sprawl of the Golden Mile slides past, and the noise of the marina falls away to nothing but engine and wind.</p><p>Fifteen or twenty minutes along the coast the captain finds a quiet patch of water off the beaches and drops the anchor. This is when the day really begins. The swim ladder goes down, the jet ski comes off the platform, and the group fragments happily: a few stretch out on the bow sun pad, a couple swim off the stern, someone takes the jet ski for a blast across the bay while the deckhand keeps a watchful eye. Drinks come up from the galley, water, soft drinks, a cold beer, a glass of white wine or cava, and the light snacks appear. There is no schedule here, only the slow rhythm of swim, sun, drink, repeat.</p><p>As the afternoon mellows, the captain may lift the anchor and reposition to a second spot, or simply cruise the coast at an easy pace so everyone can take in the shoreline from the water. The run back into Puerto Banús, with the late sun on the hills and the marina lights beginning to show, is often the quietest and most contented part of the day. You step back onto the pontoon a little sun-warmed and salt-tinged, having done absolutely nothing of consequence, which is precisely the point of a yacht like this.</p></div>
+  <figure class="plate"><img src="file:///Users/master/boat-rental-marbella/site/img/boats/mangusta-80/sun-pad-1200.jpg" alt=""><figcaption>The full-beam foredeck sun pad, the prime real estate of the boat at anchor</figcaption></figure>
+</div>
+
+<div class="sec">
+  <div class="sec-head">
+    <div class="sec-kicker caps">Section 06</div>
+    <h2 class="display">Itineraries and cruising grounds from Puerto Banús</h2>
+    <div class="rules"><span class="thick"></span><span class="thin"></span></div>
+  </div>
+  <div class="sec-body"><p>Nina's home port of Puerto Banús sits at the centre of one of the most rewarding stretches of coastline in southern Spain, and the cruising options fan out in both directions. Within a single day charter you have far more choice than the time will allow, which is half the fun of planning the route with the captain.</p><ul><li><strong>The Golden Mile swim stop (short hop, the classic).</strong> Just east of Puerto Banús, the Golden Mile is the strip of beachfront mansions, beach clubs and five-star hotels between the marina and Marbella town. Anchoring off here puts you in calm, clear water with the most glamorous backdrop on the coast, La Concha mountain rising behind. It is the default for a four-hour charter and for good reason: minimal transit, maximum swimming.</li><li><strong>Cabopino and the eastern beaches (medium run, eastbound).</strong> Continue east past Marbella and the coast opens into the dune-backed beaches around Cabopino, a prettier and quieter stretch of water that rewards a slightly longer charter. The little marina at Cabopino and the protected sands nearby make a fine turning point for a half-day out.</li><li><strong>Estepona and the west (medium run, westbound).</strong> Head the other way and the coast runs towards Estepona, with anchorages along the way that see fewer boats than the Banús beaches. The western light in the afternoon is superb, and this direction tends to be the quieter, more private option.</li><li><strong>The longer runs towards Gibraltar and Tarifa (full day and beyond).</strong> For a full-day charter, the coast keeps unrolling west towards the Strait of Gibraltar and Tarifa, with the Rock itself looming on the horizon and the Moroccan coast beyond. These are bigger-water passages that suit Nina's fast, stable hull perfectly, and they turn a day charter into something closer to an expedition. Full-day, overnight and multi-day itineraries of this kind are quoted on WhatsApp.</li></ul><p>Whatever the route, the captain reads the wind and swell on the day and steers you to the calmest, prettiest water available, so the itinerary is best treated as a starting point rather than a fixed plan.</p></div>
+  
+</div>
+
+<div class="sec">
+  <div class="sec-head">
+    <div class="sec-kicker caps">Section 07</div>
+    <h2 class="display">Who this boat suits</h2>
+    <div class="rules"><span class="thick"></span><span class="thin"></span></div>
+  </div>
+  <div class="sec-body"><p>Nina is a large, sociable, slightly theatrical yacht, and she is at her best when the occasion matches that energy. She suits some groups better than others, and it is worth being honest about which.</p><p><strong>Celebrations and milestone occasions.</strong> Big birthdays, hen and stag gatherings of the more glamorous kind, anniversaries, engagements: anything where the boat itself is meant to be part of the event. At twelve guests she has the scale to host a proper group without anyone feeling crowded, and arriving at, or departing from, Puerto Banús aboard the biggest yacht on the day-charter dock is an entrance in itself.</p><p><strong>Corporate days and client entertaining.</strong> The combination of a private, all-inclusive yacht, an air-conditioned saloon for shade and conversation, and the wow factor of the jet ski makes her a strong choice for entertaining clients or rewarding a team. The fixed, inclusive rate also makes budgeting straightforward, which matters for business bookings.</p><p><strong>Families and multi-generational groups.</strong> With twelve places, a stable hull, plenty of shade and a crew who handle the seamanship, Nina works well for families spanning several generations. The jet ski entertains the teenagers, the sun pad suits the adults, and the saloon gives anyone who needs a break from the sun somewhere cool to sit.</p><p><strong>Couples and small groups who want the best.</strong> You do not need twelve people to charter her. A smaller group that simply wants the most impressive boat on the water, and the space to spread out, will find she delivers on a level the smaller fleet boats cannot match. She is, quite simply, the flagship, and chartering her is a statement.</p></div>
+  <figure class="plate"><img src="file:///Users/master/boat-rental-marbella/site/img/boats/mangusta-80/galley-1200.jpg" alt=""><figcaption>The chef-grade galley below decks, the difference between a token kitchenette and a real catered lunch</figcaption></figure>
+</div>
+
+<div class="sec">
+  <div class="sec-head">
+    <div class="sec-kicker caps">Section 08</div>
+    <h2 class="display">Pricing and inclusions</h2>
+    <div class="rules"><span class="thick"></span><span class="thin"></span></div>
+  </div>
+  <div class="sec-body"><p>Nina charters from <strong>€4,719 for four hours</strong>, which is her minimum booking. Longer charters, including full-day, overnight and multi-day itineraries, are quoted individually on WhatsApp via the website, because the right price depends on the route, the season and the duration. The headline figure is genuinely all-inclusive: there are no fuel surcharges or VAT added at the end, and the jet ski is part of the package rather than an extra.</p><table><tr><th>Duration</th><th>Rate (EUR)</th></tr><tr><td>4 hours (minimum charter)</td><td>&euro;4,719</td></tr><tr class="best"><td>Full day, overnight or multi-day<span class="best-tag">Best value</span></td><td>Quoted on WhatsApp</td></tr></table><p>Every charter includes the following as standard:</p><ul><li>Licensed skipper</li><li>Fuel</li><li>Drinks (water, soft drinks, beer, white wine, cava)</li><li>Light snacks</li><li>Insurance</li><li>Safety equipment</li><li>VAT (21%)</li><li><strong>Sea-Doo jet ski, free for the day</strong>, a Mangusta 80 exclusive within the fleet</li></ul><p>It is worth dwelling on what that inclusive list means in practice. On many charters elsewhere, fuel for a yacht of this size is a significant variable cost billed separately, drinks are bought aboard at a markup, and the headline rate is only the beginning. Here the number you are quoted is the number you pay, with a captain and deckhand, a full drinks selection, snacks, all the safety and insurance cover, and the jet ski already inside it. For a vessel of this scale, that simplicity is unusual and genuinely valuable when you are comparing options.</p></div>
+  
+</div>
+
+<div class="sec">
+  <div class="sec-head">
+    <div class="sec-kicker caps">Section 09</div>
+    <h2 class="display">Seasonality and booking practicalities</h2>
+    <div class="rules"><span class="thick"></span><span class="thin"></span></div>
+  </div>
+  <div class="sec-body"><p>The Costa del Sol enjoys one of the longest charter seasons in the Mediterranean, and Nina is in demand across most of it. A little planning around the calendar goes a long way.</p><p><strong>High summer (June to September).</strong> This is peak season, with warm, settled weather, long days and the busiest social calendar in Puerto Banús. It is also when Nina's diary fills first. Weekend dates in July and August in particular are booked well ahead, so if your day is fixed, reserve early. The trade-off for the crowds is reliably swimmable water and the full Marbella spectacle at its height.</p><p><strong>Shoulder season (May and October).</strong> Often the connoisseur's choice. The sea is warm enough to swim, the light is beautiful, the coast is calmer and the marina less frantic. Availability is generally easier and the experience can feel more private, which suits couples and smaller groups especially well.</p><p><strong>Conditions and the day itself.</strong> The Costa del Sol is well sheltered for much of the year, but the Strait of Gibraltar to the west generates the wind that locals know as the levante, and on the occasional breezy day the captain will adjust the route to keep you in the calmest, most comfortable water. This is precisely why an experienced skipper is included rather than optional: reading the day and choosing the right anchorage is part of the service.</p><p><strong>Booking.</strong> Availability for a yacht of this size is limited simply because there is only one of her, so early booking is strongly recommended for weekend and high-season dates. To check a specific date or request a tailored quote for a longer charter, visit the boat page and message the team on WhatsApp directly. Replies usually arrive within the hour.</p></div>
+  
+</div>
+
+<div class="sec">
+  <div class="sec-head">
+    <div class="sec-kicker caps">Section 10</div>
+    <h2 class="display">Frequently asked questions</h2>
+    <div class="rules"><span class="thick"></span><span class="thin"></span></div>
+  </div>
+  <div class="sec-body"><p><strong>How many guests can the Mangusta 80 carry?</strong> Up to twelve guests for a day charter. That is the figure she is licensed and laid out for, and she carries it comfortably without feeling crowded.</p><p><strong>Is the jet ski really included?</strong> Yes. A Sea-Doo jet ski is carried on board and is free for guests to use throughout the charter, included in the rate rather than charged as an extra. It is one of the things that genuinely sets Nina apart in the Marbella fleet.</p><p><strong>What is included in the price?</strong> A licensed skipper, fuel, drinks (water, soft drinks, beer, white wine and cava), light snacks, insurance, safety equipment and VAT at twenty-one per cent, plus the jet ski. The quoted rate is all-inclusive, with no fuel surcharge or tax added afterwards.</p><p><strong>What is the minimum charter and the starting price?</strong> The minimum booking is four hours, from €4,719. Full-day, overnight and multi-day charters are quoted individually on WhatsApp.</p><p><strong>Where does she depart from?</strong> From Puerto Banús, Marbella's flagship marina and one of the most glamorous departure points anywhere on the Mediterranean coast.</p><p><strong>Is she really the biggest yacht you can rent in Marbella?</strong> She is the largest vessel available for day charter from Puerto Banús, at twenty-four metres. For a single day on the water, you will not find bigger.</p><p><strong>Do I need a licence or any experience?</strong> No. Nina is fully crewed by a captain and deckhand who handle the boat entirely. Guests simply turn up and enjoy the day.</p><p><strong>Can we cater a proper lunch on board?</strong> Yes. She carries a chef-grade galley below decks, which is what makes a genuine catered lunch on board possible rather than a token spread. Talk to the team when you book and they will arrange the details.</p></div>
+  
+</div>
+
+<div class="sec">
+  <div class="sec-head">
+    <div class="sec-kicker caps">Section 11</div>
+    <h2 class="display">Book this charter</h2>
+    <div class="rules"><span class="thick"></span><span class="thin"></span></div>
+  </div>
+  <div class="sec-body"><p>Nina, the Mangusta 80, is the flagship of the Marbella fleet: twenty-four metres of Overmarine sport-yacht pedigree, the largest day charter available from Puerto Banús, a Sea-Doo jet ski free for the day, and an all-inclusive rate from €4,719 for four hours. For a celebration, a corporate day or simply the best seat on the water, there is nothing else quite like her on the Costa del Sol.</p><p>To check availability, request a longer-charter quote or ask the team anything at all, visit <a href="https://boatrentalinmarbella.com/boats/mangusta-80/">boatrentalinmarbella.com/boats/mangusta-80</a> and message directly on WhatsApp from the boat page. You will normally hear back within the hour, and in high season the earlier you ask, the better your chances of the date you want.</p></div>
+  
+</div>
+
+<div class="callout">
+  <h3 class="display">Book this boat</h3>
+  <p>Charter the Mangusta 80 "Nina" at <a href="https://boatrentalinmarbella.com/boats/mangusta-80/">boatrentalinmarbella.com</a>, the largest day-charter yacht in Marbella, fully crewed and all-inclusive from €4,719.</p><p>Boat owners: list your boat free at <a href="https://boathire24.com">boathire24.com</a> and start earning from your vessel.</p>
+  <div class="linksrow caps"><a href="https://boathire24.com">https://boathire24.com</a><span class="sep">&#9670;</span><a href="https://boatrentalinmarbella.com/boats/mangusta-80/">https://boatrentalinmarbella.com/boats/mangusta-80/</a></div>
+</div>
+<div class="endmark"><span class="line"></span><svg width="14" height="14" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg" aria-hidden="true"><path fill="#b9924b" d="M17 15l1.55 1.55c-.96 1.69-3.33 3.04-5.55 3.37V11h3V9h-3V7.82C14.16 7.4 15 6.3 15 5c0-1.65-1.35-3-3-3S9 3.35 9 5c0 1.3.84 2.4 2 2.82V9H8v2h3v8.92c-2.22-.33-4.59-1.68-5.55-3.37L7 15l-4-3v3c0 3.88 4.92 7 9 7s9-3.12 9-7v-3l-4 3zM12 4c.55 0 1 .45 1 1s-.45 1-1 1-1-.45-1-1 .45-1 1-1z"/></svg><span class="line"></span></div>
+  </td></tr></tbody>
+  <tfoot><tr><td></td></tr></tfoot>
+</table>
+
+<div class="runfoot caps">
+  <span><b>boathire24.com</b> <span class="gold">&#9670;</span> rent boats worldwide
+    <span class="gold">&#9670;</span> list your boat free</span>
+  <span class="gold caps">boatrentalinmarbella.com/boats/mangusta-80</span>
+</div>
+</body>
+</html>

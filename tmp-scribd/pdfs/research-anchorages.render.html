@@ -1,0 +1,500 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<title>Anchorages of the Western Costa del Sol</title>
+<style>
+:root {
+  --navy:      #0e2438;
+  --navy-deep: #08182a;
+  --gold:      #b9924b;
+  --gold-dark: #8a6c33;
+  --gold-light:#d4b06a;
+  --gold-pale: #e8d8af;
+  --ivory:     #f7f2e6;
+  --paper:     #fdfbf5;
+  --ink:       #22303e;
+  --muted:     #5d6a76;
+  --hairline:  #d9cdaf;
+  --row-tint:  #f5efdf;
+}
+* { -webkit-print-color-adjust: exact; print-color-adjust: exact;
+    box-sizing: border-box; }
+@page { size: A4; margin: 0; }
+html, body { margin: 0; padding: 0; }
+body {
+  background: var(--paper);
+  color: var(--ink);
+  font-family: Georgia, 'Palatino Linotype', Palatino, 'Times New Roman', serif;
+  font-size: 10.5pt;
+  line-height: 1.62;
+}
+.display { font-family: Didot, 'Didot LT STD', 'Playfair Display', Georgia,
+           'Times New Roman', serif; }
+.caps { font-family: Optima, 'Avenir Next', 'Gill Sans', 'Trebuchet MS',
+        sans-serif; text-transform: uppercase; }
+
+/* ---------------- Cover ---------------- */
+.cover {
+  position: relative;
+  width: 210mm; height: 297mm;
+  overflow: hidden;
+  background: var(--navy-deep);
+  page-break-after: always;
+}
+.cover-img {
+  position: absolute; inset: 0;
+  width: 100%; height: 100%;
+  object-fit: cover;
+  object-position: 24% center;  /* centres the yacht's full profile in the A4 crop */
+}
+.cover-veil {
+  position: absolute; inset: 0;
+  background:
+    linear-gradient(to top, rgba(11,26,46,0.92),
+                    rgba(11,26,46,0.86) 30%, transparent 55%),
+    linear-gradient(180deg,
+      rgba(8,24,42,0.62) 0%,
+      rgba(8,24,42,0.20) 26%,
+      rgba(8,24,42,0.12) 50%,
+      rgba(8,24,42,0.00) 62%);
+}
+.cover-veil.no-img {
+  background:
+    radial-gradient(120mm 90mm at 50% 26%, rgba(185,146,75,0.20), transparent 70%),
+    linear-gradient(180deg, #122c46 0%, #0a1d33 55%, #071426 100%);
+}
+.cover-top {
+  position: absolute; top: 13mm; left: 16mm; right: 16mm;
+  display: flex; align-items: center; justify-content: space-between;
+}
+.brand-lockup { display: flex; align-items: center; gap: 4.5mm; }
+.logo-chip {
+  background: #ffffff;
+  border: 1px solid var(--gold);
+  border-radius: 1.2mm;
+  padding: 2mm;
+  line-height: 0;
+}
+.logo-chip img { display: block; height: 13mm; width: 13mm;
+                 object-fit: cover; border-radius: 0.7mm; }
+.brand-name {
+  color: var(--ivory); font-size: 13pt; letter-spacing: 0.30em;
+  line-height: 1.25;
+}
+.brand-tag {
+  color: var(--gold-pale); font-size: 6.4pt; letter-spacing: 0.26em;
+  margin-top: 1mm;
+}
+.doc-type-flag {
+  text-align: right;
+  color: var(--gold-light);
+  font-size: 7.5pt; letter-spacing: 0.34em;
+  border-top: 0.7pt solid var(--gold);
+  border-bottom: 0.7pt solid var(--gold);
+  padding: 2.2mm 0 2mm 0;
+}
+.cover-main {
+  position: absolute; left: 16mm; right: 16mm; bottom: 34mm;
+}
+.cover-rule {
+  display: flex; align-items: center; gap: 4mm;
+  margin-bottom: 5mm;
+}
+.cover-rule .line { flex: 0 0 22mm; height: 0; border-top: 0.8pt solid var(--gold); }
+.cover-rule .word {
+  color: var(--gold-light); font-size: 8pt; letter-spacing: 0.42em;
+  white-space: nowrap;
+  text-shadow: 0 1px 5px rgba(5,14,26,0.65);
+}
+.cover-title {
+  color: #fdfaf2;
+  font-size: 44pt; line-height: 1.05;
+  font-weight: 600;
+  margin: 0 0 4mm 0;
+  text-shadow: 0 1px 8px rgba(5,14,26,0.55);
+}
+.cover-subtitle {
+  color: var(--gold-pale);
+  font-style: italic;
+  font-size: 13pt; line-height: 1.45;
+  margin: 0 0 7mm 0;
+  max-width: 150mm;
+  text-shadow: 0 1px 6px rgba(5,14,26,0.6);
+}
+.cover-meta {
+  color: rgba(247,242,230,0.92);
+  font-size: 7.6pt; letter-spacing: 0.22em;
+}
+.cover-meta .dot { color: var(--gold-light); padding: 0 2.2mm; }
+.fleet-strip {
+  margin-top: 8mm;
+  display: flex; align-items: center; gap: 4mm;
+}
+.fleet-strip .logo-chip img { height: 9mm; width: auto; }
+.fleet-label {
+  color: rgba(247,242,230,0.85); font-size: 6.6pt; letter-spacing: 0.30em;
+}
+
+/* ------------- Repeating footer ------------- */
+.runfoot {
+  position: fixed; left: 0; right: 0; bottom: 0;
+  height: 12mm;
+  background: var(--ivory);
+  border-top: 1pt solid var(--gold);
+  display: flex; align-items: center; justify-content: space-between;
+  padding: 0 16mm;
+  font-size: 6.8pt; letter-spacing: 0.12em;
+  color: var(--navy);
+}
+.runfoot b { letter-spacing: 0.22em; font-weight: 600; }
+.runfoot .gold { color: var(--gold-dark); }
+.runfoot a { color: var(--navy); text-decoration: none; }
+
+/* ------------- Paged content scaffold ------------- */
+table.paged { width: 100%; border-collapse: collapse; }
+table.paged > thead td { height: 15mm; padding: 0; }
+table.paged > tfoot td { height: 17mm; padding: 0; }
+table.paged > tbody > tr > td { padding: 0 18mm; }
+
+/* ------------- Sections ------------- */
+.sec { margin: 0 0 8mm 0; }
+.sec-head {
+  break-after: avoid-page; page-break-after: avoid;
+  break-inside: avoid; page-break-inside: avoid;
+  margin: 0 0 4.5mm 0;
+}
+.sec-kicker {
+  color: var(--gold-dark); font-size: 7pt; letter-spacing: 0.38em;
+  margin-bottom: 1.6mm;
+}
+.sec-head h2 {
+  color: var(--navy);
+  font-size: 18.5pt; font-weight: 400; line-height: 1.2;
+  margin: 0 0 2.6mm 0;
+}
+.sec-head .rules { position: relative; height: 2.4mm; }
+.sec-head .rules .thin {
+  position: absolute; left: 0; right: 0; top: 1mm;
+  border-top: 0.6pt solid var(--hairline);
+}
+.sec-head .rules .thick {
+  position: absolute; left: 0; top: 0; width: 26mm;
+  border-top: 2.2pt solid var(--gold);
+}
+.sec-body p { margin: 0 0 3.4mm 0; }
+.sec-body p:last-child { margin-bottom: 0; }
+.sec-body ol { margin: 0 0 3.4mm 0; padding-left: 5.5mm; }
+.sec-body ul { margin: 0 0 3.4mm 0; padding-left: 1mm; }
+.sec-body li { margin-bottom: 1.6mm; break-inside: avoid; page-break-inside: avoid;
+               -webkit-column-break-inside: avoid; }
+.sec-body ul.cols2 { columns: 2; column-gap: 9mm;
+                     break-inside: avoid; page-break-inside: avoid; }
+.sec-body ul > li {
+  list-style: none;
+  padding-left: 1.1em; text-indent: -1.1em;  /* hanging indent: wraps align under text */
+}
+.sec-body ul > li::before {
+  content: "\2726";            /* four-pointed star, brass compass point */
+  display: inline-block; width: 1.44em; text-indent: 0;
+  color: var(--gold); font-size: 8pt;       /* 1.44em @8pt == 1.1em @10.5pt */
+}
+.sec-body a { color: var(--navy); text-decoration: none;
+              border-bottom: 0.6pt solid var(--gold); }
+.sec-body strong { color: var(--navy); }
+
+/* generic tables inside section html */
+.sec-body table {
+  width: 100%; border-collapse: collapse;
+  margin: 1mm 0 4mm 0;
+  break-inside: avoid; page-break-inside: avoid;
+  font-size: 9.8pt;
+}
+.sec-body th {
+  background: var(--navy); color: var(--ivory);
+  font-family: Optima, 'Avenir Next', 'Gill Sans', 'Trebuchet MS', sans-serif;
+  text-transform: uppercase; letter-spacing: 0.16em;
+  font-size: 7.4pt; font-weight: 500;
+  text-align: left; padding: 2.6mm 3.5mm;
+  border-bottom: 1.4pt solid var(--gold);
+}
+.sec-body td {
+  padding: 2.2mm 3.5mm;
+  border-bottom: 0.6pt solid var(--hairline);
+  color: var(--ink);
+}
+.sec-body td, .sec-body th { font-variant-numeric: tabular-nums; }
+.sec-body td:not(:first-child),
+.sec-body th:not(:first-child) { text-align: right; }
+.sec-body tr:nth-child(even) td { background: var(--row-tint); }
+.sec-body td:first-child { color: var(--navy); }
+.sec-body tr.best td { background: rgba(212,175,55,0.12); }
+.sec-body tr.best td:first-child { color: var(--navy); font-weight: 600; }
+.best-tag {
+  display: inline-block;
+  font-family: Optima, 'Avenir Next', 'Gill Sans', 'Trebuchet MS', sans-serif;
+  font-variant-caps: small-caps; text-transform: lowercase;
+  font-size: 7.6pt; font-weight: 600; letter-spacing: 0.14em;
+  color: var(--gold-dark);
+  border: 0.6pt solid var(--gold);
+  border-radius: 1mm;
+  padding: 0.2mm 1.6mm;
+  margin-left: 2.2mm;
+  white-space: nowrap;
+  vertical-align: 0.2mm;
+}
+
+/* ------------- Figures ------------- */
+figure.plate {
+  break-inside: avoid; page-break-inside: avoid;
+  margin: 5mm 0 2mm 0;
+  background: #ffffff;
+  border: 0.7pt solid var(--gold-light);
+  padding: 2.6mm;
+}
+figure.plate img {
+  display: block; width: 100%; height: 78mm; object-fit: cover;
+}
+figure.plate figcaption {
+  text-align: center;
+  font-style: italic;
+  font-size: 8.4pt; color: var(--muted);
+  padding: 2.4mm 2mm 0.6mm 2mm;
+}
+figure.plate figcaption::before {
+  content: "\25C6\00a0"; color: var(--gold); font-size: 6pt;
+}
+
+/* ------------- Spec table (2-column grid: two lbl/val pairs per row) ------------- */
+.spec-block { margin: 0 0 8mm 0; }
+table.spec {
+  width: 100%; border-collapse: collapse;
+  border-top: 1.6pt solid var(--navy);
+  border-bottom: 1.6pt solid var(--navy);
+}
+table.spec td { padding: 1.7mm 1.5mm; border-bottom: 0.6pt solid var(--hairline);
+                vertical-align: top; }
+table.spec tr:last-child td { border-bottom: none; }
+table.spec td.lbl {
+  width: 21%;
+  font-family: Optima, 'Avenir Next', 'Gill Sans', 'Trebuchet MS', sans-serif;
+  text-transform: uppercase; letter-spacing: 0.16em;
+  font-size: 7.2pt; color: var(--gold-dark);
+  padding-top: 2.3mm;
+}
+table.spec td.val { width: 29%; color: var(--navy); font-size: 9.8pt; }
+table.spec td.lbl:nth-child(3) {
+  border-left: 0.6pt solid var(--hairline);
+  padding-left: 4mm;
+}
+table.spec td.val:nth-child(2) { padding-right: 4mm; }
+
+/* ------------- Callout ------------- */
+.callout {
+  break-inside: avoid; page-break-inside: avoid;
+  margin: 8mm 0 4mm 0;
+  background: var(--navy);
+  border: 1pt solid var(--gold);
+  outline: 0.6pt solid var(--gold);
+  outline-offset: -2.2mm;
+  color: var(--ivory);
+  padding: 8mm 9mm 7mm 9mm;
+}
+.callout h3 {
+  color: var(--gold-light);
+  font-size: 15pt; font-weight: 400;
+  margin: 0 0 3mm 0;
+}
+.callout p { margin: 0 0 2.8mm 0; line-height: 1.6; color: #efe7d3; }
+.callout a { color: var(--gold-light); text-decoration: none; }
+.callout ul { margin: 0 0 2.8mm 0; padding-left: 1mm; }
+.callout ul > li { list-style: none; margin-bottom: 1.4mm;
+                   padding-left: 1.1em; text-indent: -1.1em;
+                   break-inside: avoid; page-break-inside: avoid; }
+.callout ul > li::before {
+  content: "\2726"; display: inline-block; width: 1.44em; text-indent: 0;
+  color: var(--gold-light); font-size: 8pt;
+}
+.callout .linksrow {
+  margin-top: 4.5mm; padding-top: 3.6mm;
+  border-top: 0.6pt solid rgba(212,176,106,0.55);
+  font-size: 7.6pt; letter-spacing: 0.16em;
+  color: var(--gold-pale);
+}
+.callout .linksrow span.sep { padding: 0 2.6mm; color: var(--gold); }
+
+.endmark {
+  display: flex; align-items: center; justify-content: center; gap: 3.5mm;
+  margin: 7mm 0 0 0;
+}
+.endmark .line { width: 14mm; height: 0; border-top: 0.6pt solid var(--gold); }
+.endmark svg { display: block; }
+</style>
+</head>
+<body>
+
+<div class="cover">
+  <img class="cover-img" src="file:///Users/master/boat-rental-marbella/site/img/boats/astondoa-40/hero-1200.jpg" alt="">
+  <div class="cover-veil"></div>
+  <div class="cover-top">
+    <div class="brand-lockup">
+      <span class="logo-chip"><img src="file:///Users/master/boat-rental-platform/public/brand-logo.jpg" alt="BoatHire24"></span>
+      <div>
+        <div class="brand-name caps display">BoatHire24</div>
+        <div class="brand-tag caps">Rent boats worldwide <span class="gold">|</span> list your boat free</div>
+      </div>
+    </div>
+    <div class="doc-type-flag caps">June 2026</div>
+  </div>
+  <div class="cover-main">
+    <div class="cover-rule">
+      <span class="line"></span>
+      <span class="word caps">Research Report</span>
+    </div>
+    <h1 class="cover-title display">Anchorages of the Western Costa del Sol</h1>
+    <p class="cover-subtitle display">A Skipper&#x27;s Field Survey of the Estepona-to-Cabopino strip, with depths, holding, weather windows and charter logistics</p>
+    <div class="cover-meta caps">BoatHire24 Research</div>
+    
+  </div>
+</div>
+<table class="paged">
+  <thead><tr><td></td></tr></thead>
+  <tbody><tr><td>
+
+<div class="sec">
+  <div class="sec-head">
+    <div class="sec-kicker caps">Section 01</div>
+    <h2 class="display">Abstract</h2>
+    <div class="rules"><span class="thick"></span><span class="thin"></span></div>
+  </div>
+  <div class="sec-body"><p>This paper surveys the working anchorages of the western Costa del Sol along the twenty-eight nautical miles of coast that separate the marina at Estepona from the small harbour at Cabopino, east of Marbella. The strip is unusual in the western Mediterranean: it carries no offshore islands and no high cliffs, yet it sustains a dense day-charter trade out of Puerto Banus, and the question of where a vessel can safely and pleasantly drop the hook is, for the working skipper, a daily one.</p><p>Our method is observational rather than hydrographic. The depths, holding notes, distances and weather windows reported here are drawn from charter logs accumulated by the operating fleet through the 2024 and 2025 seasons, expressed as the ranges a skipper actually works to rather than as chart-datum soundings. We treat each anchorage as a function of three variables that the chart alone does not capture: the nature of the seabed and the quality of holding, the clarity of the water under different conditions, and the exposure of the bay to the two prevailing winds of the coast, the westerly Poniente and the easterly Levante.</p><p>Across eight analytical sections we map the strip into three operating zones, tabulate the principal anchorages by distance and depth, examine the seabed and holding ground, set out the seasonal and diurnal weather windows that govern the choice of bay, and translate all of this into the realistic charter itineraries that the coast supports on hulls ranging from a twelve-and-a-half-metre Astondoa to a twenty-four-metre Mangusta. We argue that the strip rewards local pilotage far more than its gentle topography suggests, and that the single most valuable piece of equipment on a Costa del Sol charter is a skipper who knows which bay dies first when the wind backs.</p></div>
+  
+</div>
+
+<div class="sec">
+  <div class="sec-head">
+    <div class="sec-kicker caps">Section 02</div>
+    <h2 class="display">Geography of the Strip: Three Operating Zones</h2>
+    <div class="rules"><span class="thick"></span><span class="thin"></span></div>
+  </div>
+  <div class="sec-body"><p>The coast under survey runs broadly east to west, with Puerto Banus sitting close to its midpoint and serving as the departure marina for the fleet under study. Banus lies roughly six kilometres west of Marbella town centre; Cabopino, the eastern anchor of the survey area, sits about twelve kilometres east of the same centre. From the harbour mouth at Banus the working anchorages fan out to a maximum of around ten nautical miles to the west and eight to the east, with the longer western run to Sotogrande, near Gibraltar, extending the practical day-charter range to roughly twenty nautical miles.</p><p>For operational purposes the strip divides cleanly into three zones. <strong>West of Banus</strong>, taking in Guadalmina, San Pedro, Cala Cortes and the bays around Estepona, gives reliable shelter from the Poniente and noticeably quieter water through the peak of August. <strong>East of Banus</strong>, taking in Rio Verde, the Marbella roadstead, Cala del Faro and Cabopino, holds the cleaner sand, the sharper visibility and the more dramatic backdrop of lighthouse and protected dune. The <strong>central mile</strong>, Banus itself, is the busiest stretch of water in Andalusia between June and September and is treated by the fleet as transit rather than swimming water.</p><p>This tripartite division is not cosmetic. Because the two zones face opposite quarters, the coast offers a lee for almost any wind: when the Levante shuts down the eastern bays, the western coves remain workable, and vice versa. The practical consequence is that a charter is rarely cancelled for wind alone; it is re-routed. A skipper reading an easterly forecast at the dock simply turns the day to the west.</p></div>
+  <figure class="plate"><img src="file:///Users/master/boat-rental-marbella/site/img/boats/azimut-39/aerial-1200.jpg" alt=""><figcaption>The Azimut 39, one of the Tier A hulls worked across the survey strip, seen from the air off the Marbella coast</figcaption></figure>
+</div>
+
+<div class="sec">
+  <div class="sec-head">
+    <div class="sec-kicker caps">Section 03</div>
+    <h2 class="display">The Anchorage Inventory</h2>
+    <div class="rules"><span class="thick"></span><span class="thin"></span></div>
+  </div>
+  <div class="sec-body"><p>The table below sets out the principal working anchorages of the strip as they are flown from the Puerto Banus harbour mouth, with the approximate distance, the depth band in which the fleet sets its hook, and the wind quarter under which each bay is at its best. Distances are measured from Banus; a positive easting (E) lies toward Cabopino, a westing (W) toward Estepona. All depths are the metres of water in which the anchor is dropped, not chart soundings.</p><table><thead><tr><th>Anchorage</th><th>From Banus (NM)</th><th>Depth (m)</th><th>Best wind</th></tr></thead><tbody><tr><td>Estepona Bay</td><td>10 W</td><td>5-8</td><td>Levante</td></tr><tr><td>Guadalmina</td><td>4 W</td><td>4-6</td><td>Light any</td></tr><tr><td>Rio Verde</td><td>1.5 E</td><td>4-6</td><td>Light Poniente</td></tr><tr><td>Levante Beach</td><td>0.5 E</td><td>4-5</td><td>Light Poniente</td></tr><tr><td>Marbella roadstead</td><td>4 E</td><td>5-7</td><td>Poniente</td></tr><tr><td>Cala del Faro</td><td>2 E</td><td>5-7</td><td>Poniente</td></tr><tr><td>Cabopino / Cala Cortes</td><td>8 E</td><td>4-8</td><td>Poniente</td></tr></tbody></table><p>Two features of the inventory deserve emphasis. First, the cluster of anchorages within two nautical miles of Banus, Levante Beach at half a mile and Rio Verde at a mile and a half, means that even a short two-hour charter reaches swimmable water in well under ten minutes. Second, the depth bands are strikingly consistent: almost every bay on the strip is worked in four to eight metres, a shallow, gently shelving regime that makes for easy anchoring, visible bottom and short swims, but which also concentrates the fleet onto a narrow band of seabed where the quality of holding becomes the decisive variable.</p></div>
+  
+</div>
+
+<div class="sec">
+  <div class="sec-head">
+    <div class="sec-kicker caps">Section 04</div>
+    <h2 class="display">Seabed and Holding Ground</h2>
+    <div class="rules"><span class="thick"></span><span class="thin"></span></div>
+  </div>
+  <div class="sec-body"><p>The defining characteristic of the strip is that its best holding is sand, found reliably in the four-to-eight-metre band, and that the principal hazards to holding are weed patches and river outflow rather than rock or coral. The fleet's standing instruction is to set the hook on clean sand wherever it can be found, and the skill of the local skipper lies largely in distinguishing the sand from the weed within a single bay.</p><p>The weed is not uniformly distributed. The survey logs flag two areas in particular where holding is poorer than the chart suggests: the seabed off the Rio Verde estuary, where sand is interrupted by patches of weed, and the approaches to the Guadalmina rivermouth. The stretch directly off San Pedro beach carries more weed than the chart implies and worse holding than it looks from the surface. In each of these cases the remedy is the same: the skipper reads the bottom and drops on the sand, not on the mark a plotter would suggest.</p><p>Ground tackle is worked conservatively. The fleet's standard scope is four-to-one in settled weather and five-to-one when any breeze is forecast, which on the typical four-to-eight-metre stop translates to between twenty-five and forty metres of chain veered. The hook is set with reverse thrust and the skipper remains aboard for the duration of every swim, both to tend the set and to keep the vessel clear of the swim-zone buoy lines, which run some two hundred metres off most beaches and inside which anchoring is not permitted. This is a meaningful constraint on the strip: the swimmable sand and the legal anchoring sand do not always coincide, and the working depth band is in part a product of staying outside those lines.</p></div>
+  
+</div>
+
+<div class="sec">
+  <div class="sec-head">
+    <div class="sec-kicker caps">Section 05</div>
+    <h2 class="display">Water Clarity and the Clean Line East</h2>
+    <div class="rules"><span class="thick"></span><span class="thin"></span></div>
+  </div>
+  <div class="sec-body"><p>Visibility on the strip is better than the Costa del Sol's reputation suggests, but it is not uniform, and the survey reveals a marked spatial gradient. On a calm summer morning the central and western bays run roughly five-to-eight metres of visibility, while the eastern bays around Cabopino open up considerably further. There is, in effect, a clean line that a vessel crosses somewhere east of the Marbella roadstead, beyond which the seabed turns to white sand backed by the protected Artola dunes and visibility climbs into the eight-to-twelve-metre range, with the very best snorkelling water reading ten-to-fifteen metres on the calmest June and September mornings.</p><p>The gradient is driven by two factors that the survey data make plain. The first is river outflow: the Guadalmina and Rio Verde rivermouths, after heavy rain, drop visibility to near zero for between twenty-four and seventy-two hours, and the band of water immediately around them clears last. The second is human: the area roughly one nautical mile east of the Marbella marina sits over the municipal sewage outfall, a stretch the fleet will transit but will not anchor in. Cross east of that line and the water improves.</p><p>Visibility is also diurnal. The clearest sightlines and flattest water occur before noon, before the day's wind has had time to build and before the day-trip flotilla has stirred the bottom at the popular spots. The fleet books the morning slot, nominally nine to one, wherever the clarity matters, a scheduling choice that is itself a finding of the survey: on this coast, water clarity is as much a function of the clock as of the place.</p></div>
+  <figure class="plate"><img src="file:///Users/master/boat-rental-marbella/site/img/boats/pershing-46/hero-1200.jpg" alt=""><figcaption>A Pershing 46, the hull the fleet reaches for on the longer eastern run to the clear water off Cabopino</figcaption></figure>
+</div>
+
+<div class="sec">
+  <div class="sec-head">
+    <div class="sec-kicker caps">Section 06</div>
+    <h2 class="display">The Wind Regime: Poniente, Levante and the Daily Peak</h2>
+    <div class="rules"><span class="thick"></span><span class="thin"></span></div>
+  </div>
+  <div class="sec-body"><p>The single most important variable in anchorage selection on the western Costa del Sol is wind, and the coast is governed by two named winds. The <strong>Poniente</strong> is the westerly: lighter, warmer and the prevailing summer breeze. The <strong>Levante</strong> is the easterly: stronger and choppier, and in July and August it characteristically builds through the afternoon to peak around the middle of the day, reaching eighteen to twenty-two knots at its height.</p><p>The operative threshold across the survey logs is fifteen knots. Below that, with anything under roughly twelve knots, the whole strip is open and the skipper may anchor where he pleases. Between twelve and eighteen knots the choice narrows to the lee side, and the rule is symmetrical: a Poniente sends the fleet east to the bays that the headlands shelter from the west, while a Levante sends it west, because above fifteen knots of easterly the eastern bays, Cabopino and Cala del Faro foremost among them, become untenable, throwing up a short, steep, ugly chop on a lee shore. Above eighteen knots the fleet either tucks deep into the best-protected corners, Cala del Faro under its cliff or Estepona Bay behind Punta de la Plata, both of which hold up to around twenty knots of Levante, or it shortens the day.</p><p>The procedure that follows from this regime is a fixed part of the service. The forecast call is made at the dock on the morning of the charter, reading three numbers: wind direction, wind strength at the daily peak around three in the afternoon, and swell period. The route is then set, or re-set, accordingly, with the explicit operating principle that weather windows are not to be pushed on a charter. The guest's day is a day off, not a delivery, and the survey records no instance in which the fleet's policy is to drive into building weather to honour a planned itinerary.</p></div>
+  
+</div>
+
+<div class="sec">
+  <div class="sec-head">
+    <div class="sec-kicker caps">Section 07</div>
+    <h2 class="display">Anchorage Profiles: The Working Default and the Clear-Water Run</h2>
+    <div class="rules"><span class="thick"></span><span class="thin"></span></div>
+  </div>
+  <div class="sec-body"><p>Two anchorages carry a disproportionate share of the fleet's traffic and reward closer description. <strong>Cala del Faro</strong>, two nautical miles east of Banus and tucked beneath the Marbella lighthouse cliffs, is the working default: it is chosen on roughly nine charters in ten on a Tier A hull. It offers a sand bottom in five-to-seven metres, holding described in the logs as excellent on a Danforth pattern, and a cliff to the north that breaks any Poniente under about eighteen knots. It clears by around nine each morning, sits closest to Banus of any swimmable bay, faces west-southwest for sunset, and reaches its water in about twelve minutes at cruise, which is why it is the only stop a two-hour booking realistically supports.</p><p><strong>Cabopino and the adjoining Cala Cortes</strong>, eight nautical miles east, are the clear-water destination. The run takes about twenty-five minutes at twenty knots cruise and eats roughly an hour of the charter day round trip, which is why it is reserved for the full-day eight-hour booking rather than the half day. The reward is the strip's clearest water, eight-to-twelve metres and better, over white sand backed by the Artola dunes, the only surviving dune system on this coast, with the small Cabopino marina two minutes away should the party want lunch ashore. Anchoring is in four-to-eight metres, about three hundred metres off the beach and outside the swim-zone buoys.</p><p>Around these two poles sit the supporting cast. Rio Verde, at a mile and a half, is the quick first stop on a half day, holding in four-to-six metres of sand and weed where the skipper picks the patch; it conceals a low rock reef at four-to-six metres some six hundred metres offshore that carries the highest fish density on the survey. Levante Beach, just outside the breakwater, is the closest possible anchorage but busies with tenders and jet skis from noon. To the west, the Estepona-side roadstead under Punta de la Plata is the designated Levante backup, holding in five-to-eight metres of sand and reached in about twenty-eight minutes at twenty-two knots over the ten-mile run.</p></div>
+  <figure class="plate"><img src="file:///Users/master/boat-rental-marbella/site/img/boats/astondoa-40/lifestyle-1200.jpg" alt=""><figcaption>Time at anchor aboard the Astondoa 40, the Tier A hull most often sent to Cala del Faro</figcaption></figure>
+</div>
+
+<div class="sec">
+  <div class="sec-head">
+    <div class="sec-kicker caps">Section 08</div>
+    <h2 class="display">Translating the Survey into Charter Itineraries</h2>
+    <div class="rules"><span class="thick"></span><span class="thin"></span></div>
+  </div>
+  <div class="sec-body"><p>The practical value of a strip survey is in how many anchorages it lets a vessel string together in a day, and the answer is a strong function of charter length and hull speed. The fleet under study works two commercial tiers. <strong>Tier A</strong> comprises the Astondoa 40 and the Azimut 39, both twelve-and-a-half-metre motor yachts carrying nine and eleven guests respectively, priced at seven hundred and forty-nine euros for two hours and two thousand two hundred and ninety-nine euros for the full eight-hour day, with skipper, fuel, drinks, snacks and twenty-one per cent Spanish IVA included. <strong>Tier B</strong> is represented by the Mangusta 80, a twenty-four-metre yacht for twelve guests at four thousand seven hundred and nineteen euros for a four-hour minimum, with a jet ski included; the Mangusta covers the same ground roughly a quarter faster, opening the longer western runs.</p><p>The table below maps charter length to the anchorages a vessel can realistically work, with the appropriate hull. The eight-hour row is highlighted as the best-value full-day option.</p><table><thead><tr><th>Charter length</th><th>Anchorages realistically worked</th><th>Suggested hull</th></tr></thead><tbody><tr><td>2 hours</td><td>Rio Verde plus Cala del Faro</td><td>Astondoa 40 / Azimut 39</td></tr><tr><td>4 hours</td><td>Rio Verde, Naguelles, Cabopino</td><td>Astondoa 40 / Azimut 39</td></tr><tr><td>6 hours</td><td>Guadalmina, Cala Cortes, Cala del Cristo</td><td>Pershing 46 / Fairline Targa 12m</td></tr><tr class="best"><td>8 hours (full day)<span class="best-tag">Best value</span></td><td>Cabopino to Banus to Estepona to Sotogrande</td><td>Mangusta 80 / Canados 86</td></tr></tbody></table><p>The honest budgeting rule embedded in the logs is to plan transits at eighteen-to-twenty-two knots and to allow a minimum of forty-five minutes at each swim stop, below which the day begins to feel rushed. A two-hour charter yields one stop, almost always Cala del Faro; four hours yields two; the full eight-hour day strings a morning swim near Estepona, a lunch anchor mid-strip, and an afternoon at Cala del Faro or Cabopino. The twenty-mile western run to Sotogrande, at about seventy-five minutes underway, only repays the diesel on the full day and on a fast hull.</p></div>
+  
+</div>
+
+<div class="sec">
+  <div class="sec-head">
+    <div class="sec-kicker caps">Section 09</div>
+    <h2 class="display">A Day Aboard and Who the Coast Suits</h2>
+    <div class="rules"><span class="thick"></span><span class="thin"></span></div>
+  </div>
+  <div class="sec-body"><p>Beyond the hydrography, the survey is worth grounding in the texture of an actual charter day, because the strip's gentle character shapes the experience as much as the numbers do. A typical morning charter slips the lines at Puerto Banus, threads out through the busiest mile of water in Andalusia, and is at anchor in clear water within ten to twenty minutes. The rhythm of the day is then a sequence of swim stops, each forty-five minutes or more, broken by short transits at cruising speed, with the skipper aboard throughout and the included drinks, water, soft drinks, beer, white wine and cava, on ice between swims.</p><p>The coast suits some parties better than others, and the survey's findings sort them cleanly. <strong>Families with young children</strong> are best served by the shallow, gently shelving sand of Rio Verde, Guadalmina and Cabopino, where the bottom is visible at three-to-six metres, the swell is minimal and the swim to a floating mat is short; every hull carries lifejackets in adult and child sizes. <strong>Snorkellers and the more confident swimmers</strong> are pointed east to the boulder gardens of Cala del Faro, the steeper drop at Cala Cortes and the submerged rock fingers off Cabopino, where the Mediterranean fish life, salema, ornate wrasse, painted comber, the occasional octopus or passing barracuda, concentrates in the first two hours after sunrise. <strong>Celebrations and larger groups</strong> wanting space to spread out are matched to the wider beam of the Mangusta 80, which adds the jet ski for shuttling to shallows the mother vessel cannot reach.</p><p>What the coast does not offer is also part of the honest survey. There are no Balearic cliffs, no hidden Caribbean coves and no offshore islands; what the western Costa del Sol provides instead is a long, reliable ribbon of Blue Flag sand, a dependable lee for any wind, and water clearer than most visitors expect. The vessel, not the shore, is the destination, and the day is built around the swim platform rather than a landfall.</p></div>
+  <figure class="plate"><img src="file:///Users/master/boat-rental-marbella/site/img/boats/mangusta-80/aerial-wake-1200.jpg" alt=""><figcaption>The 24-metre Mangusta 80 under way, the Tier B hull that opens the longer western runs to Sotogrande</figcaption></figure>
+</div>
+
+<div class="sec">
+  <div class="sec-head">
+    <div class="sec-kicker caps">Section 10</div>
+    <h2 class="display">Logistics, Inclusions and the Departure Question</h2>
+    <div class="rules"><span class="thick"></span><span class="thin"></span></div>
+  </div>
+  <div class="sec-body"><p>A recurring practical question in the survey area is where to depart, and specifically whether a charter can leave from Cabopino rather than Puerto Banus. The fleet's answer is settled: all vessels depart from Puerto Banus, which serves as the primary marina for the entire fleet from the Astondoa 40 through to the Mangusta 80. Cabopino, twelve kilometres east of Marbella centre against Banus's six kilometres west, is a quieter marina with free parking and immediate access to the dune reserve, and it features in many itineraries as a destination, but it is not at present an embarkation point. The contrast is worth noting for planning: Banus offers world-class facilities, dining and nightlife but paid parking at around two euros an hour, while Cabopino offers free parking, a beach bar and a small supermarket but a more rustic setting.</p><p>The inclusions are consistent across every charter on the strip and bear restating, because they materially affect the day. Each booking carries a licensed Spanish skipper who knows these bays, all fuel for the full duration with no surcharge, water and a drinks list of soft drinks, beer, white wine and cava on ice, light snacks aboard, full insurance and safety equipment with lifejackets in all sizes, and the twenty-one per cent Spanish IVA folded into the headline price. There is, by design, no bar bill at the end. Snorkelling masks, fins and on most hulls a paddleboard are stocked; the Tier B yachts add the jet ski. Lunch ashore, where a party chooses to take it at Cabopino or a Golden Mile beach club, sits outside the charter price.</p><p>Read together, these logistics reinforce the survey's central argument. The strip is short, shallow, gentle and well provided for, and almost everything that distinguishes a good day on it from a mediocre one, the choice of bay, the reading of the wind, the timing of the clear-water window, the avoidance of the weed and the outfall, is a matter of local pilotage rather than of the chart. The coast is forgiving, but it is not self-evident, and that is precisely the gap a knowledgeable skipper fills.</p></div>
+  
+</div>
+
+<div class="sec">
+  <div class="sec-head">
+    <div class="sec-kicker caps">Section 11</div>
+    <h2 class="display">Conclusion</h2>
+    <div class="rules"><span class="thick"></span><span class="thin"></span></div>
+  </div>
+  <div class="sec-body"><p>The western Costa del Sol between Estepona and Cabopino is, on the chart, an unremarkable twenty-eight nautical miles of gently shelving sand. This survey has argued that the chart understates it. The strip carries roughly a dozen workable anchorages, almost all of them in a four-to-eight-metre band of sand, arranged so that the eastern and western zones face opposite quarters and between them provide a usable lee for nearly any wind the coast produces. Its water is clearer than the region's reputation, markedly so east of the clean line beyond the Marbella outfall, and clearest of all on a calm morning before the wind and the flotilla arrive.</p><p>Three findings recur. First, holding is a question of sand versus weed, not of rock, and is solved by local knowledge of which patch to drop on rather than by the plotter. Second, the wind regime is symmetrical and predictable enough to route around rather than to fear, with fifteen knots the threshold that flips the fleet from one zone to the other and the call made at the dock each morning. Third, the strip's value is realised through matching charter length and hull speed to the anchorages within reach, from a single Cala del Faro stop on a two-hour Tier A booking to a full eastern-and-western traverse on an eight-hour day aboard a faster Tier B yacht.</p><p>For the prospective charterer the practical conclusion is simple. The western Costa del Sol does not demand a Balearic or Caribbean imagination; it rewards a realistic one. Pick the morning slot for clarity, trust the skipper's reading of the wind, and let the route bend to the conditions. Charter data and access to the full fleet are available through boatrentalinmarbella.com, and boats can be found and listed worldwide through boathire24.com.</p></div>
+  
+</div>
+
+<div class="sec">
+  <div class="sec-head">
+    <div class="sec-kicker caps">Section 12</div>
+    <h2 class="display">References</h2>
+    <div class="rules"><span class="thick"></span><span class="thin"></span></div>
+  </div>
+  <div class="sec-body"><ul><li><a href="https://boatrentalinmarbella.com/blog/best-anchorages-marbella.html">Best Anchorages Between Estepona and Cabopino (boatrentalinmarbella.com)</a></li><li><a href="https://boatrentalinmarbella.com/blog/best-snorkel-spots-marbella.html">Best Snorkel Spots on a Marbella Charter, Captain's Picks (boatrentalinmarbella.com)</a></li><li><a href="https://boatrentalinmarbella.com/blog/best-beaches-by-boat-marbella.html">Best Beaches Reachable by Boat from Marbella (boatrentalinmarbella.com)</a></li><li><a href="https://boatrentalinmarbella.com/blog/cabopino-charter-departures.html">Charter Departures from Cabopino versus Puerto Banus (boatrentalinmarbella.com)</a></li><li><a href="https://boatrentalinmarbella.com">Boat Rental In Marbella, fleet and charter booking (boatrentalinmarbella.com)</a></li><li><a href="https://boathire24.com">BoatHire24, rent and list boats worldwide (boathire24.com)</a></li></ul></div>
+  
+</div>
+
+<div class="callout">
+  <h3 class="display">Charter the strip yourself</h3>
+  <p>Every anchorage in this survey is reachable on a day charter from Puerto Banus. Charter data, current pricing and direct access to the fleet, from the Tier A Astondoa 40 and Azimut 39 through to the 24-metre Mangusta 80, are available via boatrentalinmarbella.com, with skipper, fuel, drinks, snacks and Spanish IVA included in every quote.</p><p>To rent a boat anywhere else in the world, or to list your own boat for free, visit boathire24.com.</p>
+  <div class="linksrow caps"><a href="https://boathire24.com">https://boathire24.com</a><span class="sep">&#9670;</span><a href="https://boatrentalinmarbella.com">https://boatrentalinmarbella.com</a></div>
+</div>
+<div class="endmark"><span class="line"></span><svg width="14" height="14" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg" aria-hidden="true"><path fill="#b9924b" d="M17 15l1.55 1.55c-.96 1.69-3.33 3.04-5.55 3.37V11h3V9h-3V7.82C14.16 7.4 15 6.3 15 5c0-1.65-1.35-3-3-3S9 3.35 9 5c0 1.3.84 2.4 2 2.82V9H8v2h3v8.92c-2.22-.33-4.59-1.68-5.55-3.37L7 15l-4-3v3c0 3.88 4.92 7 9 7s9-3.12 9-7v-3l-4 3zM12 4c.55 0 1 .45 1 1s-.45 1-1 1-1-.45-1-1 .45-1 1-1z"/></svg><span class="line"></span></div>
+  </td></tr></tbody>
+  <tfoot><tr><td></td></tr></tfoot>
+</table>
+
+<div class="runfoot caps">
+  <span><b>boathire24.com</b> <span class="gold">&#9670;</span> rent boats worldwide
+    <span class="gold">&#9670;</span> list your boat free</span>
+  <span class="gold caps">boatrentalinmarbella.com</span>
+</div>
+</body>
+</html>

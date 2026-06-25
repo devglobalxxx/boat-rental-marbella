@@ -1,0 +1,57 @@
+===== buffer top-up 10:19:24 =====
+--- graph_org +28 ---
+  reject idx=400 Lake Garda: ['title length 71 not in 40-70']
+  reject idx=402 Lake Vanern: ['only 1 question headings (need >=2)']
+  reject idx=404 Marbella: ['only 1 question headings (need >=2)']
+  reject idx=405 Lofoten Islands: ['word count 644 not in 650-1000']
+  reject idx=406 Marbella: ['word count 637 not in 650-1000']
+  reject idx=407 Puerto Banus: ['word count 1030 not in 650-1000']
+  reject idx=408 Marbella: ['only 1 question headings (need >=2)']
+  reject idx=415 Masuria Lakes: ['only 1 question headings (need >=2)']
+  reject idx=416 Melbourne: ['duplicate link URLs']
+  reject idx=417 Moorea: ['word count 639 not in 650-1000', 'only 1 question headings (need >=2)']
+  reject idx=418 Marbella: ['only 1 question headings (need >=2)', 'title length 72 not in 40-70']
+  reject idx=419 Marbella: ['only 0 question headings (need >=2)', 'link count 5 not in 2-4', 'duplicate link URLs']
+  reject idx=420 Murray River: ['word count 635 not in 650-1000']
+  reject idx=421 Caledonia: ['word count 628 not in 650-1000', 'only 1 question headings (need >=2)']
+  reject idx=422 Nosy: ['only 1 question headings (need >=2)']
+  reject idx=424 Marbella: ['title length 72 not in 40-70']
+  reject idx=426 Marbella: ['only 1 question headings (need >=2)']
+  reject idx=427 Marbella: ['word count 616 not in 650-1000']
+  reject idx=428 Marbella: ['only 1 question headings (need >=2)']
+  reject idx=433 Puerto Banus: ['only 1 question headings (need >=2)']
+  reject idx=442 Marbella No: ['word count 648 not in 650-1000']
+  reject idx=444 Marbella Port: ['word count 581 not in 650-1000', 'only 1 question headings (need >=2)']
+  reject idx=445 Sporades: ['word count 636 not in 650-1000']
+  reject idx=449 Tromsoe: ['word count 642 not in 650-1000']
+  reject idx=450 Varna: ['only 1 question headings (need >=2)']
+  OK gen-178150439900-the-best-boats-to-charter-in-lake-powell.json  (Lake Powell, 3 links, 1 imgs)
+  OK gen-178150443801-boat-rental-costs-in-langkawi.json  (Langkawi, 4 links, 1 imgs)
+  OK gen-178150454802-luxury-motor-yacht-rental-weekend-in-puerto-banu.json  (Puerto Banus, 3 links, 1 imgs)
+  OK gen-178150457003-luxury-yacht-charter-day-in-puerto-banus.json  (Puerto Banus, 3 links, 2 imgs)
+  OK gen-178150458604-luxury-yacht-rental-in-marbella.json  (Marbella, 4 links, 1 imgs)
+  OK gen-178150460305-renting-a-yacht-in-mafia-island.json  (Mafia Island, 2 links, 2 imgs)
+  OK gen-178150462206-boat-rental-weekend-in-marbella.json  (Marbella, 3 links, 1 imgs)
+  OK gen-178150463807-boat-rental-stag-do-in-marbella.json  (Marbella, 3 links, 2 imgs)
+  OK gen-178150479308-boat-rental-costs-in-palau.json  (Palau, 4 links, 1 imgs)
+  OK gen-178150483009-the-best-boats-to-charter-in-porto-douro.json  (Porto Douro, 3 links, 1 imgs)
+  OK gen-178150489910-private-yacht-charter-birthday-in-marbella.json  (Marbella, 3 links, 1 imgs)
+  OK gen-178150492111-private-yacht-charter-stag-in-puerto-banus.json  (Puerto Banus, 3 links, 2 imgs)
+  OK gen-178150493712-private-yacht-hire-hen-in-puerto-banus.json  (Puerto Banus, 4 links, 1 imgs)
+  OK gen-178150495313-boat-rental-family-day-in-puerto-banus.json  (Puerto Banus, 2 links, 2 imgs)
+  OK gen-178150498414-a-day-on-the-water-in-raja-ampat.json  (Raja Ampat, 3 links, 2 imgs)
+  OK gen-178150500115-boat-rental-costs-in-reykjavik.json  (Reykjavik, 4 links, 1 imgs)
+  OK gen-178150501816-renting-a-yacht-in-sabah-borneo.json  (Sabah Borneo, 2 links, 2 imgs)
+  OK gen-178150503417-the-best-boats-to-charter-in-san-blas.json  (San Blas, 3 links, 1 imgs)
+  OK gen-178150505018-a-day-on-the-water-in-sardinia.json  (Sardinia, 3 links, 2 imgs)
+  OK gen-178150506719-boat-rental-costs-in-siargao.json  (Siargao, 4 links, 1 imgs)
+  OK gen-178150508420-speedboat-charter-in-marbella.json  (Marbella, 2 links, 2 imgs)
+  OK gen-178150510121-speedboat-hire-in-estepona-port.json  (Estepona Port, 3 links, 1 imgs)
+  OK gen-178150513222-speedboat-rental-in-estepona.json  (Estepona, 4 links, 1 imgs)
+  OK gen-178150517723-a-day-on-the-water-in-stockholm.json  (Stockholm, 3 links, 2 imgs)
+  OK gen-178150519724-boat-rental-costs-in-tahiti.json  (Tahiti, 4 links, 1 imgs)
+  OK gen-178150521525-renting-a-yacht-in-tioman-island.json  (Tioman Island, 2 links, 2 imgs)
+  OK gen-178150526126-boat-rental-costs-in-walvis-bay.json  (Walvis Bay, 4 links, 1 imgs)
+  OK gen-178150527627-yacht-charter-in-barcelona.json  (Barcelona, 2 links, 2 imgs)
+graph_org: generated 28/28 into /Users/master/boat-rental-marbella/content/graph_org
+--- rentry +18 ---

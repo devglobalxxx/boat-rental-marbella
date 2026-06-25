@@ -241,23 +241,55 @@ def upload_via_studio(video_path: pathlib.Path, title: str,
                 "Run: python3 scripts/post_youtube.py --login-studio"
             )
 
-        # Dismiss any lingering dialog scrims from previous uploads
+        # Install a PERSISTENT overlay-killer: a style tag + MutationObserver that
+        # continuously hides the hashtag "Suggestions" dropdown and leftover dialog
+        # scrims. These float over the form/Create button and intercept clicks; a
+        # one-shot hide doesn't survive between videos, so we keep killing them.
         try:
             page.evaluate("""() => {
-                document.querySelectorAll('.dialog-scrim, ytcp-uploads-dialog').forEach(el => {
-                    if (el.style) el.style.display = 'none';
-                });
+                if (!document.getElementById('yt-overlay-killer')) {
+                    const s = document.createElement('style');
+                    s.id = 'yt-overlay-killer';
+                    s.textContent = `
+                        ytcp-social-suggestions-dropdown,
+                        ytcp-social-suggestions-textbox tp-yt-iron-dropdown,
+                        tp-yt-paper-dialog[aria-label="Suggestions"],
+                        tp-yt-iron-overlay-backdrop,
+                        .dialog-scrim {
+                            display:none !important;
+                            pointer-events:none !important;
+                            visibility:hidden !important;
+                            opacity:0 !important;
+                        }`;
+                    document.documentElement.appendChild(s);
+                }
+                // NOTE: do NOT include ytcp-uploads-dialog here — that's the active upload
+                // modal containing the title/description fields; hiding it breaks the upload.
+                const kill = () => document.querySelectorAll(
+                    'ytcp-social-suggestions-dropdown, tp-yt-paper-dialog[aria-label="Suggestions"], tp-yt-iron-overlay-backdrop'
+                ).forEach(el => { try { el.style.display='none'; el.style.pointerEvents='none'; el.removeAttribute('opened'); } catch(e){} });
+                kill();
+                if (!window.__ytKiller) {
+                    window.__ytKiller = new MutationObserver(kill);
+                    window.__ytKiller.observe(document.body, {childList:true, subtree:true});
+                }
             }""")
             page.wait_for_timeout(500)
         except Exception:
             pass
 
-        # Open Create → Upload videos
+        # Open Create → Upload videos (resilient: normal click, then JS fallback)
         create = page.locator(
             "ytcp-button.ytcpAppHeaderCreateIcon, "
             "button[aria-label='Create'], button[aria-label='Looge']"
         )
-        create.first.click(timeout=15_000)
+        try:
+            create.first.click(timeout=10_000)
+        except Exception:
+            page.evaluate("""() => {
+                const b = document.querySelector("ytcp-button.ytcpAppHeaderCreateIcon, button[aria-label='Create'], button[aria-label='Looge']");
+                if (b) { (b.querySelector('button') || b).click(); }
+            }""")
         page.wait_for_timeout(1200)
 
         # JS click to bypass pointer-event interception
@@ -284,6 +316,21 @@ def upload_via_studio(video_path: pathlib.Path, title: str,
         page.wait_for_selector("#title-textarea, ytcp-mention-textbox", timeout=30_000)
         page.wait_for_timeout(2000)
 
+        # KILL the hashtag/mention "Suggestions" dropdown — it floats over the form and
+        # intercepts pointer events on the description box and Next button. Hide it globally.
+        try:
+            page.add_style_tag(content="""
+                ytcp-social-suggestions-dropdown,
+                ytcp-social-suggestions-textbox tp-yt-iron-dropdown,
+                tp-yt-paper-dialog[aria-label="Suggestions"] {
+                    display: none !important;
+                    pointer-events: none !important;
+                    visibility: hidden !important;
+                }
+            """)
+        except Exception:
+            pass
+
         # Fill title
         title_box = page.locator("#title-textarea #textbox").first
         title_box.click()
@@ -294,6 +341,13 @@ def upload_via_studio(video_path: pathlib.Path, title: str,
         desc_box = page.locator("#description-textarea #textbox").first
         desc_box.click()
         desc_box.fill(description[:5000])
+        # Typing hashtags pops a "Suggestions" dropdown that intercepts later clicks.
+        # Dismiss it: press Escape and blur the field.
+        try:
+            page.keyboard.press("Escape")
+            page.wait_for_timeout(400)
+        except Exception:
+            pass
 
         # Answer "Not made for kids" — required field
         try:
@@ -309,7 +363,23 @@ def upload_via_studio(video_path: pathlib.Path, title: str,
         for _ in range(3):
             nxt = page.locator("ytcp-button#next-button").last
             nxt.wait_for(state="visible", timeout=15_000)
-            nxt.click()
+            # Dismiss the hashtag "Suggestions" dropdown that intercepts pointer events
+            try:
+                page.evaluate("""() => {
+                    document.querySelectorAll('ytcp-social-suggestions-dropdown, tp-yt-iron-dropdown, tp-yt-paper-dialog[aria-label="Suggestions"]').forEach(d => {
+                        try { d.style.display='none'; d.removeAttribute('opened'); } catch(e){}
+                    });
+                }""")
+            except Exception:
+                pass
+            # Try a normal click; if the overlay still blocks it, JS-click the button directly
+            try:
+                nxt.click(timeout=8000)
+            except Exception:
+                page.evaluate("""() => {
+                    const b = document.querySelector('ytcp-button#next-button');
+                    if (b) { (b.querySelector('button') || b).click(); }
+                }""")
             page.wait_for_timeout(1500)
 
         # Set Public visibility

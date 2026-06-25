@@ -1,0 +1,318 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<title>Astondoa 40 — “Fufi”</title>
+<style>
+* { box-sizing: border-box; -webkit-print-color-adjust: exact; print-color-adjust: exact; }
+:root {
+  --ink: #16242e;
+  --muted: #5d6b74;
+  --sand: #f4eee1;
+  --sand-deep: #e9e0cc;
+  --hair: #d4cebf;
+  --hair-ink: #9aa6ad;
+  --sea: #0d7585;
+  --maroon: #7a2330;
+  --paper: #ffffff;
+  --serif: Georgia, 'Iowan Old Style', Palatino, 'Times New Roman', serif;
+  --sans: 'Helvetica Neue', Helvetica, Arial, sans-serif;
+}
+@page { size: A4; margin: 0; }
+html, body { margin: 0; padding: 0; background: #ffffff; }
+body { font-family: var(--serif); color: var(--ink); }
+
+/* ---------- sheets ---------- */
+.sheet {
+  position: relative;
+  width: 210mm; height: 297mm;
+  overflow: hidden;
+  background: var(--paper);
+  break-after: page; page-break-after: always;
+  display: flex; flex-direction: column;
+  padding: 0 17mm;
+}
+.runhead {
+  flex: 0 0 auto;
+  padding: 11mm 0 2.2mm;
+  border-bottom: 0.5pt solid var(--ink);
+  display: flex; justify-content: space-between; align-items: baseline;
+  font-family: var(--sans); font-size: 6.6pt; letter-spacing: 0.24em;
+  text-transform: uppercase; color: var(--ink);
+}
+.runhead .rh-right { color: var(--muted); letter-spacing: 0.2em; }
+.pagebody { flex: 1 1 auto; overflow: hidden; padding-top: 6.5mm; }
+.pagefoot {
+  flex: 0 0 auto;
+  border-top: 0.5pt solid var(--hair-ink);
+  margin-top: 2mm;
+  padding: 2.4mm 0 9mm;
+  display: flex; justify-content: space-between; align-items: baseline; gap: 6mm;
+  font-family: var(--sans); font-size: 6.4pt; letter-spacing: 0.06em;
+  color: var(--muted);
+}
+.pagefoot .ft-brand { color: var(--ink); font-weight: 700; letter-spacing: 0.18em; text-transform: uppercase; white-space: nowrap; }
+.pagefoot .ft-mid { text-align: center; flex: 1 1 auto; }
+.pagefoot .folio { white-space: nowrap; color: var(--ink); letter-spacing: 0.14em; }
+
+/* ---------- shared text ---------- */
+p { margin: 0 0 3.2mm; font-size: 9.6pt; line-height: 1.62; text-align: justify; hyphens: auto; -webkit-hyphens: auto; }
+a { color: var(--sea); text-decoration: none; border-bottom: 0.4pt solid var(--sea); }
+strong { color: var(--ink); }
+em { font-style: italic; }
+p.dropcap::first-letter {
+  float: left; font-size: 33pt; line-height: 0.84;
+  padding: 1.2mm 2.2mm 0 0; color: var(--maroon); font-weight: 700;
+}
+ul, ol { margin: 0 0 3.4mm; padding-left: 5.5mm; }
+li { font-size: 9.6pt; line-height: 1.58; margin-bottom: 1.5mm; padding-left: 1.4mm; }
+ul { list-style: none; padding-left: 1mm; }
+ul li { padding-left: 5.5mm; position: relative; }
+ul li::before { content: "—"; position: absolute; left: 0; color: var(--maroon); }
+
+blockquote {
+  margin: 6mm 4mm 6mm 0; padding: 1mm 0 1mm 6mm;
+  border-left: 2.4pt solid var(--maroon);
+  font-size: 13.5pt; line-height: 1.45; font-style: italic; color: var(--ink);
+  text-align: left;
+}
+
+table { width: 100%; border-collapse: collapse; margin: 2mm 0 4.5mm; }
+th {
+  font-family: var(--sans); font-size: 6.8pt; letter-spacing: 0.16em;
+  text-transform: uppercase; text-align: left; color: var(--ink);
+  background: var(--sand); padding: 2.2mm 3mm;
+  border-bottom: 0.9pt solid var(--ink);
+}
+td { font-size: 9.4pt; padding: 1.9mm 3mm; border-bottom: 0.4pt solid var(--hair); }
+td:last-child, th:last-child { text-align: right; }
+
+/* ---------- section heads ---------- */
+.sec-head { margin: 6mm 0 3.5mm; }
+.pagebody > .sec-head:first-child { margin-top: 1mm; }
+.kick {
+  display: flex; align-items: center; gap: 3mm; margin-bottom: 2.2mm;
+  font-family: var(--sans); font-size: 6.6pt; letter-spacing: 0.3em;
+  text-transform: uppercase; color: var(--maroon); font-weight: 700;
+}
+.kick .kickrule { flex: 1 1 auto; height: 0.5pt; background: var(--hair); }
+.sec-head h2 {
+  margin: 0; font-family: var(--serif); font-weight: 700;
+  font-size: 18.5pt; line-height: 1.12; letter-spacing: -0.01em;
+}
+
+/* ---------- figures ---------- */
+figure { margin: 4.5mm 0 5mm; }
+figure img { display: block; width: 100%; height: 76mm; object-fit: cover; }
+figcaption {
+  border-top: 0.5pt solid var(--ink);
+  margin-top: 1.8mm; padding-top: 1.6mm;
+  font-size: 8pt; font-style: italic; color: var(--muted); line-height: 1.45;
+}
+figcaption .figno {
+  font-family: var(--sans); font-style: normal; font-weight: 700;
+  font-size: 6.4pt; letter-spacing: 0.22em; color: var(--maroon);
+  text-transform: uppercase; margin-right: 2.4mm;
+}
+
+/* ---------- spec panel ---------- */
+.spec-panel { background: var(--sand); padding: 5.5mm 7mm 4mm; margin: 1mm 0 5mm; }
+.spec-panel .kick { color: var(--ink); margin-bottom: 3mm; }
+.spec-panel .kick .kickrule { background: var(--sand-deep); }
+.spec-grid { display: grid; grid-template-columns: 1fr 1fr; column-gap: 9mm; }
+.spec-row {
+  display: flex; justify-content: space-between; align-items: baseline; gap: 4mm;
+  padding: 1.7mm 0; border-bottom: 0.4pt solid var(--sand-deep);
+}
+.spec-row .sl {
+  font-family: var(--sans); font-size: 6.6pt; letter-spacing: 0.18em;
+  text-transform: uppercase; color: var(--muted); white-space: nowrap;
+}
+.spec-row .sv { font-size: 9.6pt; text-align: right; font-weight: 700; }
+
+/* ---------- callout / pull-quote CTA ---------- */
+.callout {
+  border-top: 2.6pt solid var(--ink); border-bottom: 0.6pt solid var(--ink);
+  padding: 6mm 0 6.5mm; margin: 8mm 0 4mm;
+}
+.pagebody > .callout:first-child { margin-top: 12mm; }
+.callout .kick { color: var(--maroon); }
+.callout h3 {
+  margin: 0 0 3.2mm; font-family: var(--serif); font-style: italic; font-weight: 700;
+  font-size: 22.5pt; line-height: 1.18; letter-spacing: -0.01em;
+}
+.callout p { font-size: 10pt; line-height: 1.6; text-align: left; }
+.linkrow { display: flex; flex-wrap: wrap; gap: 3mm; margin-top: 3.5mm; }
+.pill {
+  display: inline-block; border: 0.8pt solid var(--ink); border-radius: 99px;
+  padding: 1.7mm 4.5mm; font-family: var(--sans); font-size: 7.4pt;
+  letter-spacing: 0.08em; color: var(--ink); text-decoration: none;
+}
+.pill.primary { background: var(--ink); color: #fff; border-color: var(--ink); }
+.pill .pl { font-weight: 700; margin-right: 2mm; text-transform: uppercase; letter-spacing: 0.16em; font-size: 6.4pt; }
+
+/* ---------- colophon ---------- */
+.colophon {
+  margin-top: 6mm; padding-top: 3.5mm; border-top: 0.5pt solid var(--hair-ink);
+  display: flex; align-items: center; gap: 4mm;
+}
+.colophon .stamp { width: 9mm; height: 9mm; border-radius: 2mm; object-fit: cover; border: 0.4pt solid var(--hair); }
+.colophon .col-text { font-size: 8pt; font-style: italic; color: var(--muted); line-height: 1.5; }
+
+/* ---------- cover ---------- */
+.sheet.cover { padding: 0; color: #fff; }
+.cover .cov-img { position: absolute; inset: 0; width: 100%; height: 100%; object-fit: cover; }
+.cover .cov-plain { position: absolute; inset: 0; background: linear-gradient(160deg, #122836 0%, #0d3d4d 55%, #145b6b 100%); }
+.cover .scrim {
+  position: absolute; inset: 0;
+  background: linear-gradient(180deg,
+    rgba(7,18,26,0.82) 0%, rgba(7,18,26,0.30) 18%, rgba(7,18,26,0.02) 38%,
+    rgba(6,15,22,0.10) 52%, rgba(6,15,22,0.78) 74%, rgba(4,11,17,0.95) 100%);
+}
+.cover .cov-inner {
+  position: relative; height: 100%;
+  display: flex; flex-direction: column; padding: 12mm 16mm 0;
+}
+.cov-masthead { display: flex; justify-content: space-between; align-items: center; }
+.cov-brand { display: flex; align-items: center; gap: 4mm; }
+.cov-brand img { width: 13mm; height: 13mm; border-radius: 2.6mm; object-fit: cover; }
+.cov-brand .bw { font-family: var(--sans); }
+.cov-brand .bw .b1 { font-size: 12.5pt; font-weight: 700; letter-spacing: 0.3em; }
+.cov-brand .bw .b2 { font-size: 5.8pt; letter-spacing: 0.34em; text-transform: uppercase; opacity: 0.85; margin-top: 1.2mm; }
+.cov-date {
+  font-family: var(--sans); font-size: 7pt; letter-spacing: 0.3em;
+  text-transform: uppercase; text-align: right; opacity: 0.92;
+}
+.cov-title-block { margin-top: auto; padding-bottom: 7mm; }
+.cov-kick {
+  display: flex; align-items: center; gap: 3.5mm;
+  font-family: var(--sans); font-size: 7.4pt; letter-spacing: 0.42em;
+  text-transform: uppercase; font-weight: 700; color: #ffe9c4;
+}
+.cov-kick::before { content: ""; width: 14mm; height: 1.6pt; background: #ffe9c4; }
+.cov-title {
+  margin: 4.5mm 0 0; font-family: var(--serif); font-weight: 700;
+  font-size: 42pt; line-height: 1.02; letter-spacing: -0.015em;
+  text-shadow: 0 1px 14px rgba(0,0,0,0.45); max-width: 165mm;
+}
+.cov-sub {
+  margin: 4.5mm 0 0; font-style: italic; font-size: 13pt; line-height: 1.5;
+  max-width: 150mm; color: rgba(255,255,255,0.94);
+}
+.cov-byline {
+  margin-top: 5mm; font-family: var(--sans); font-size: 6.8pt;
+  letter-spacing: 0.26em; text-transform: uppercase; color: rgba(255,255,255,0.85);
+}
+.cov-fleet {
+  margin-top: 6mm; padding-top: 3.5mm; border-top: 0.5pt solid rgba(255,255,255,0.45);
+  display: flex; align-items: center; gap: 3.5mm;
+}
+.cov-fleet img { width: 8.5mm; height: 8.5mm; border-radius: 1.8mm; object-fit: cover; }
+.cov-fleet span {
+  font-family: var(--sans); font-size: 6.6pt; letter-spacing: 0.24em;
+  text-transform: uppercase; color: rgba(255,255,255,0.9);
+}
+.cov-foot {
+  position: relative;
+  border-top: 0.5pt solid rgba(255,255,255,0.5);
+  display: flex; justify-content: space-between; align-items: baseline; gap: 6mm;
+  padding: 2.6mm 0 9mm;
+  font-family: var(--sans); font-size: 6.4pt; letter-spacing: 0.06em;
+  color: rgba(255,255,255,0.92);
+}
+.cov-foot .ft-brand { font-weight: 700; letter-spacing: 0.18em; text-transform: uppercase; }
+</style>
+</head>
+<body>
+
+<section class="sheet cover">
+  <img class="cov-img" src="file:///Users/master/boat-rental-marbella/site/img/boats/astondoa-40/hero-1600.jpg" alt="">
+  <div class="scrim"></div>
+  <div class="cov-inner">
+    <div class="cov-masthead">
+      <div class="cov-brand"><img src="file:///Users/master/boat-rental-platform/public/brand-logo.jpg" alt="BoatHire24">
+        <div class="bw"><div class="b1">BOATHIRE24</div>
+        <div class="b2">Rent boats worldwide · List your boat free</div></div>
+      </div>
+      <div class="cov-date">June 2026</div>
+    </div>
+    <div class="cov-title-block">
+      <div class="cov-kick">Fleet Spec Sheet</div>
+      <h1 class="cov-title">Astondoa 40 — “Fufi”</h1>
+      <p class="cov-sub">Spanish-built 12.5 m motor yacht — at home in Puerto Banús, anchored off the Golden Mile for a long lunch.</p>
+      <div class="cov-byline">BoatHire24 Fleet Desk × Boat Rental In Marbella · June 2026</div>
+      <div class="cov-fleet"><img src="file:///Users/master/boat-rental-marbella/site/img/logo-640.png" alt="Boat Rental In Marbella"><span>From the fleet of Boat Rental In Marbella · Puerto Ban&uacute;s</span></div>
+    </div>
+    <div class="cov-foot"><span class="ft-brand">BoatHire24</span>
+      <span class="ft-mid">boathire24.com — rent boats worldwide | list your boat free &nbsp;·&nbsp; https://boatrentalinmarbella.com/boats/astondoa-40/</span></div>
+  </div>
+</section>
+<div id="pages"></div>
+<div id="flow" style="position:absolute; left:-9999mm; top:0; width:176mm; visibility:hidden;"><div class="blk spec-panel"><div class="kick"><span>At a glance</span><span class="kickrule"></span></div><div class="spec-grid"><div class="spec-row"><span class="sl">Builder</span><span class="sv">Astondoa, Cádiz — Spain</span></div><div class="spec-row"><span class="sl">Type</span><span class="sv">Motor yacht</span></div><div class="spec-row"><span class="sl">Length</span><span class="sv">12.5 m (40 ft)</span></div><div class="spec-row"><span class="sl">Guests</span><span class="sv">Up to 9</span></div><div class="spec-row"><span class="sl">Cabins</span><span class="sv">2 private cabins</span></div><div class="spec-row"><span class="sl">Home port</span><span class="sv">Puerto Banús, Marbella</span></div><div class="spec-row"><span class="sl">Charter style</span><span class="sv">Skippered — fuel included</span></div><div class="spec-row"><span class="sl">Minimum charter</span><span class="sv">2 hours</span></div></div></div><div class="blk sec-head kn"><div class="kick"><span class="kickno">No. 01</span><span class="kickrule"></span></div><h2>Overview</h2></div><figure class="blk"><img src="file:///Users/master/boat-rental-marbella/site/img/boats/astondoa-40/lifestyle-1200.jpg" alt=""><figcaption><span class="figno">Fig. 01</span>Guests relaxing on the bow of the Astondoa 40 at Puerto Banús marina.</figcaption></figure><div class="blk"><p class="dropcap">Astondoa 40 — known to her crew as <em>“Fufi”</em> — is the Spanish equivalent of the classic Mediterranean motor yacht. Built in Cádiz by Astondoa, fitted out in teak and cream leather, she is never more at home than anchoring off the Golden Mile for a long lunch while La Concha rises behind the bay.</p></div><div class="blk"><p>At 12.5 metres she carries up to nine guests with a licensed skipper at the helm and fuel in the tanks — both included in every charter. With a shaded flybridge above and two private cabins below, she is equally suited to a two-hour swim stop or a full day along the Marbella coast.</p></div><div class="blk sec-head kn"><div class="kick"><span class="kickno">No. 02</span><span class="kickrule"></span></div><h2>On-board highlights</h2></div><figure class="blk"><img src="file:///Users/master/boat-rental-marbella/site/img/boats/astondoa-40/interior-1200.jpg" alt=""><figcaption><span class="figno">Fig. 02</span>The saloon — cream leather, teak finish and a table that seats six out of the sun.</figcaption></figure><div class="blk"><p>Fufi’s layout splits the day neatly between sun and shade: the flybridge for the cruise out, the saloon’s table-for-six when lunch arrives, and the bathing platform for everything in between.</p></div><div class="blk"><ul><li><strong>Flybridge</strong> with shaded bimini and second helm</li><li><strong>Cream-leather saloon</strong> with table-for-six and air conditioning</li><li><strong>Two private cabins</strong> for overnight charter</li><li><strong>Spanish-built</strong> (Astondoa, Cádiz) — local provenance</li><li><strong>Toys on board:</strong> snorkel gear, inflatable donut &amp; paddleboard</li></ul></div><div class="blk sec-head kn"><div class="kick"><span class="kickno">No. 03</span><span class="kickrule"></span></div><h2>Pricing &amp; inclusions</h2></div><div class="blk"><p>Rates below are all-in for the boat, not per person — minimum charter 2 hours. Every booking includes the items listed under the table; there are no fuel surcharges and VAT is already inside the price.</p></div><div class="blk"><table><thead><tr><th>Duration</th><th>Rate (all-in)</th></tr></thead><tbody><tr><td>2 hours</td><td>€749</td></tr><tr><td>3 hours</td><td>€1,049</td></tr><tr><td>4 hours</td><td>€1,299</td></tr><tr><td>5 hours</td><td>€1,549</td></tr><tr><td>6 hours</td><td>€1,799</td></tr><tr><td>7 hours</td><td>€2,099</td></tr><tr><td>8 hours</td><td>€2,299</td></tr></tbody></table></div><div class="blk"><p><strong>Included in every charter:</strong></p></div><div class="blk"><ul><li>Licensed skipper</li><li>Fuel</li><li>Drinks (water, soft drinks, beer, white wine, cava)</li><li>Light snacks</li><li>Insurance</li><li>Safety equipment</li><li>VAT (21%)</li></ul></div><div class="blk sec-head kn"><div class="kick"><span class="kickno">No. 04</span><span class="kickrule"></span></div><h2>Departure information</h2></div><figure class="blk"><img src="file:///Users/master/boat-rental-marbella/site/img/boats/astondoa-40/sunset-1200.jpg" alt=""><figcaption><span class="figno">Fig. 03</span>Arriving back into Puerto Banús at sunset — the last charter slot of the day.</figcaption></figure><div class="blk"><p>Fufi departs from <strong>Puerto Banús</strong>, Marbella’s flagship marina — the exact berth is confirmed with your booking. Classic routes run east along the Golden Mile toward Marbella’s old town, or simply drop anchor off the beach clubs for swimming, paddleboarding and lunch on board.</p></div><div class="blk"><p>Half-day charters typically leave mid-morning or mid-afternoon; for sunset cruising, ask for the last slot of the day. Availability and instant booking at <a href="https://boatrentalinmarbella.com/boats/astondoa-40/">boatrentalinmarbella.com/boats/astondoa-40</a>.</p></div><div class="blk callout"><div class="kick"><span>The invitation</span><span class="kickrule"></span></div><h3>Nine guests, one skipper, the Golden Mile off the bow.</h3><p>Check live availability for the Astondoa 40 and the rest of the Marbella fleet, or — if you own a boat anywhere in the world — list it on BoatHire24 for free and start earning from charter days you are not using.</p><div class="linkrow"><a class="pill primary" href="https://boathire24.com"><span class="pl">Book / List</span>https://boathire24.com</a><a class="pill" href="https://boatrentalinmarbella.com/boats/astondoa-40/"><span class="pl">This boat</span>https://boatrentalinmarbella.com/boats/astondoa-40/</a></div></div><div class="blk colophon"><img class="stamp" src="file:///Users/master/boat-rental-platform/public/brand-logo.jpg" alt=""><img class="stamp" src="file:///Users/master/boat-rental-marbella/site/img/logo-640.png" alt=""><div class="col-text">Published by <strong>BoatHire24</strong> — rent boats worldwide, list your boat free. BoatHire24 Fleet Desk × Boat Rental In Marbella · June 2026</div></div></div>
+
+<template id="sheet-tpl">
+  <section class="sheet">
+    <div class="runhead"><span>BoatHire24 — Fleet Spec Sheet</span><span class="rh-right">Astondoa 40 — “Fufi”</span></div>
+    <div class="pagebody"></div>
+    <div class="pagefoot"><span class="ft-brand">BoatHire24</span><span class="ft-mid">boathire24.com — rent boats worldwide | list your boat free &nbsp;·&nbsp; https://boatrentalinmarbella.com/boats/astondoa-40/</span><span class="folio"></span></div>
+  </section>
+</template>
+<script>
+document.addEventListener('DOMContentLoaded', function () {
+  var flow = document.getElementById('flow');
+  var pages = document.getElementById('pages');
+  var tpl = document.getElementById('sheet-tpl');
+
+  function newPage() {
+    var frag = tpl.content.cloneNode(true);
+    var s = frag.firstElementChild;
+    pages.appendChild(s);
+    return s.querySelector('.pagebody');
+  }
+  function over(b) { return b.scrollHeight > b.clientHeight + 1; }
+
+  var blocks = Array.prototype.slice.call(flow.children);
+  var body = newPage();
+  for (var i = 0; i < blocks.length; i++) {
+    var blk = blocks[i];
+    body.appendChild(blk);
+    if (over(body) && body.children.length > 1) {
+      body = newPage();
+      body.appendChild(blk);
+    }
+    /* keep headings (.kn) attached to the block that follows them */
+    if (blk.classList.contains('kn') && i + 1 < blocks.length) {
+      var nb = blocks[i + 1];
+      body.appendChild(nb);
+      var orphaned = over(body);
+      body.removeChild(nb);
+      if (orphaned && body.children.length > 1) {
+        body = newPage();
+        body.appendChild(blk);
+      }
+    }
+  }
+  flow.parentNode.removeChild(flow);
+
+  var sheets = document.querySelectorAll('.sheet');
+  for (var j = 0; j < sheets.length; j++) {
+    var f = sheets[j].querySelector('.folio');
+    if (f) f.textContent = (j + 1) + ' / ' + sheets.length;
+    if (j === sheets.length - 1) {
+      sheets[j].style.breakAfter = 'auto';
+      sheets[j].style.pageBreakAfter = 'auto';
+    }
+  }
+
+  /* pin the colophon to the foot of the closing page */
+  var col = document.querySelector('.pagebody .colophon');
+  if (col) {
+    var lastBody = col.parentNode;
+    lastBody.style.display = 'flex';
+    lastBody.style.flexDirection = 'column';
+    col.style.marginTop = 'auto';
+  }
+});
+</script>
+</body>
+</html>

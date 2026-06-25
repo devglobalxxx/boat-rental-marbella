@@ -1,0 +1,503 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<title>Ferretti 94: The Marbella Flagship Dossier</title>
+<style>
+:root {
+  --navy:      #0e2438;
+  --navy-deep: #08182a;
+  --gold:      #b9924b;
+  --gold-dark: #8a6c33;
+  --gold-light:#d4b06a;
+  --gold-pale: #e8d8af;
+  --ivory:     #f7f2e6;
+  --paper:     #fdfbf5;
+  --ink:       #22303e;
+  --muted:     #5d6a76;
+  --hairline:  #d9cdaf;
+  --row-tint:  #f5efdf;
+}
+* { -webkit-print-color-adjust: exact; print-color-adjust: exact;
+    box-sizing: border-box; }
+@page { size: A4; margin: 0; }
+html, body { margin: 0; padding: 0; }
+body {
+  background: var(--paper);
+  color: var(--ink);
+  font-family: Georgia, 'Palatino Linotype', Palatino, 'Times New Roman', serif;
+  font-size: 10.5pt;
+  line-height: 1.62;
+}
+.display { font-family: Didot, 'Didot LT STD', 'Playfair Display', Georgia,
+           'Times New Roman', serif; }
+.caps { font-family: Optima, 'Avenir Next', 'Gill Sans', 'Trebuchet MS',
+        sans-serif; text-transform: uppercase; }
+
+/* ---------------- Cover ---------------- */
+.cover {
+  position: relative;
+  width: 210mm; height: 297mm;
+  overflow: hidden;
+  background: var(--navy-deep);
+  page-break-after: always;
+}
+.cover-img {
+  position: absolute; inset: 0;
+  width: 100%; height: 100%;
+  object-fit: cover;
+  object-position: 24% center;  /* centres the yacht's full profile in the A4 crop */
+}
+.cover-veil {
+  position: absolute; inset: 0;
+  background:
+    linear-gradient(to top, rgba(11,26,46,0.92),
+                    rgba(11,26,46,0.86) 30%, transparent 55%),
+    linear-gradient(180deg,
+      rgba(8,24,42,0.62) 0%,
+      rgba(8,24,42,0.20) 26%,
+      rgba(8,24,42,0.12) 50%,
+      rgba(8,24,42,0.00) 62%);
+}
+.cover-veil.no-img {
+  background:
+    radial-gradient(120mm 90mm at 50% 26%, rgba(185,146,75,0.20), transparent 70%),
+    linear-gradient(180deg, #122c46 0%, #0a1d33 55%, #071426 100%);
+}
+.cover-top {
+  position: absolute; top: 13mm; left: 16mm; right: 16mm;
+  display: flex; align-items: center; justify-content: space-between;
+}
+.brand-lockup { display: flex; align-items: center; gap: 4.5mm; }
+.logo-chip {
+  background: #ffffff;
+  border: 1px solid var(--gold);
+  border-radius: 1.2mm;
+  padding: 2mm;
+  line-height: 0;
+}
+.logo-chip img { display: block; height: 13mm; width: 13mm;
+                 object-fit: cover; border-radius: 0.7mm; }
+.brand-name {
+  color: var(--ivory); font-size: 13pt; letter-spacing: 0.30em;
+  line-height: 1.25;
+}
+.brand-tag {
+  color: var(--gold-pale); font-size: 6.4pt; letter-spacing: 0.26em;
+  margin-top: 1mm;
+}
+.doc-type-flag {
+  text-align: right;
+  color: var(--gold-light);
+  font-size: 7.5pt; letter-spacing: 0.34em;
+  border-top: 0.7pt solid var(--gold);
+  border-bottom: 0.7pt solid var(--gold);
+  padding: 2.2mm 0 2mm 0;
+}
+.cover-main {
+  position: absolute; left: 16mm; right: 16mm; bottom: 34mm;
+}
+.cover-rule {
+  display: flex; align-items: center; gap: 4mm;
+  margin-bottom: 5mm;
+}
+.cover-rule .line { flex: 0 0 22mm; height: 0; border-top: 0.8pt solid var(--gold); }
+.cover-rule .word {
+  color: var(--gold-light); font-size: 8pt; letter-spacing: 0.42em;
+  white-space: nowrap;
+  text-shadow: 0 1px 5px rgba(5,14,26,0.65);
+}
+.cover-title {
+  color: #fdfaf2;
+  font-size: 44pt; line-height: 1.05;
+  font-weight: 600;
+  margin: 0 0 4mm 0;
+  text-shadow: 0 1px 8px rgba(5,14,26,0.55);
+}
+.cover-subtitle {
+  color: var(--gold-pale);
+  font-style: italic;
+  font-size: 13pt; line-height: 1.45;
+  margin: 0 0 7mm 0;
+  max-width: 150mm;
+  text-shadow: 0 1px 6px rgba(5,14,26,0.6);
+}
+.cover-meta {
+  color: rgba(247,242,230,0.92);
+  font-size: 7.6pt; letter-spacing: 0.22em;
+}
+.cover-meta .dot { color: var(--gold-light); padding: 0 2.2mm; }
+.fleet-strip {
+  margin-top: 8mm;
+  display: flex; align-items: center; gap: 4mm;
+}
+.fleet-strip .logo-chip img { height: 9mm; width: auto; }
+.fleet-label {
+  color: rgba(247,242,230,0.85); font-size: 6.6pt; letter-spacing: 0.30em;
+}
+
+/* ------------- Repeating footer ------------- */
+.runfoot {
+  position: fixed; left: 0; right: 0; bottom: 0;
+  height: 12mm;
+  background: var(--ivory);
+  border-top: 1pt solid var(--gold);
+  display: flex; align-items: center; justify-content: space-between;
+  padding: 0 16mm;
+  font-size: 6.8pt; letter-spacing: 0.12em;
+  color: var(--navy);
+}
+.runfoot b { letter-spacing: 0.22em; font-weight: 600; }
+.runfoot .gold { color: var(--gold-dark); }
+.runfoot a { color: var(--navy); text-decoration: none; }
+
+/* ------------- Paged content scaffold ------------- */
+table.paged { width: 100%; border-collapse: collapse; }
+table.paged > thead td { height: 15mm; padding: 0; }
+table.paged > tfoot td { height: 17mm; padding: 0; }
+table.paged > tbody > tr > td { padding: 0 18mm; }
+
+/* ------------- Sections ------------- */
+.sec { margin: 0 0 8mm 0; }
+.sec-head {
+  break-after: avoid-page; page-break-after: avoid;
+  break-inside: avoid; page-break-inside: avoid;
+  margin: 0 0 4.5mm 0;
+}
+.sec-kicker {
+  color: var(--gold-dark); font-size: 7pt; letter-spacing: 0.38em;
+  margin-bottom: 1.6mm;
+}
+.sec-head h2 {
+  color: var(--navy);
+  font-size: 18.5pt; font-weight: 400; line-height: 1.2;
+  margin: 0 0 2.6mm 0;
+}
+.sec-head .rules { position: relative; height: 2.4mm; }
+.sec-head .rules .thin {
+  position: absolute; left: 0; right: 0; top: 1mm;
+  border-top: 0.6pt solid var(--hairline);
+}
+.sec-head .rules .thick {
+  position: absolute; left: 0; top: 0; width: 26mm;
+  border-top: 2.2pt solid var(--gold);
+}
+.sec-body p { margin: 0 0 3.4mm 0; }
+.sec-body p:last-child { margin-bottom: 0; }
+.sec-body ol { margin: 0 0 3.4mm 0; padding-left: 5.5mm; }
+.sec-body ul { margin: 0 0 3.4mm 0; padding-left: 1mm; }
+.sec-body li { margin-bottom: 1.6mm; break-inside: avoid; page-break-inside: avoid;
+               -webkit-column-break-inside: avoid; }
+.sec-body ul.cols2 { columns: 2; column-gap: 9mm;
+                     break-inside: avoid; page-break-inside: avoid; }
+.sec-body ul > li {
+  list-style: none;
+  padding-left: 1.1em; text-indent: -1.1em;  /* hanging indent: wraps align under text */
+}
+.sec-body ul > li::before {
+  content: "\2726";            /* four-pointed star, brass compass point */
+  display: inline-block; width: 1.44em; text-indent: 0;
+  color: var(--gold); font-size: 8pt;       /* 1.44em @8pt == 1.1em @10.5pt */
+}
+.sec-body a { color: var(--navy); text-decoration: none;
+              border-bottom: 0.6pt solid var(--gold); }
+.sec-body strong { color: var(--navy); }
+
+/* generic tables inside section html */
+.sec-body table {
+  width: 100%; border-collapse: collapse;
+  margin: 1mm 0 4mm 0;
+  break-inside: avoid; page-break-inside: avoid;
+  font-size: 9.8pt;
+}
+.sec-body th {
+  background: var(--navy); color: var(--ivory);
+  font-family: Optima, 'Avenir Next', 'Gill Sans', 'Trebuchet MS', sans-serif;
+  text-transform: uppercase; letter-spacing: 0.16em;
+  font-size: 7.4pt; font-weight: 500;
+  text-align: left; padding: 2.6mm 3.5mm;
+  border-bottom: 1.4pt solid var(--gold);
+}
+.sec-body td {
+  padding: 2.2mm 3.5mm;
+  border-bottom: 0.6pt solid var(--hairline);
+  color: var(--ink);
+}
+.sec-body td, .sec-body th { font-variant-numeric: tabular-nums; }
+.sec-body td:not(:first-child),
+.sec-body th:not(:first-child) { text-align: right; }
+.sec-body tr:nth-child(even) td { background: var(--row-tint); }
+.sec-body td:first-child { color: var(--navy); }
+.sec-body tr.best td { background: rgba(212,175,55,0.12); }
+.sec-body tr.best td:first-child { color: var(--navy); font-weight: 600; }
+.best-tag {
+  display: inline-block;
+  font-family: Optima, 'Avenir Next', 'Gill Sans', 'Trebuchet MS', sans-serif;
+  font-variant-caps: small-caps; text-transform: lowercase;
+  font-size: 7.6pt; font-weight: 600; letter-spacing: 0.14em;
+  color: var(--gold-dark);
+  border: 0.6pt solid var(--gold);
+  border-radius: 1mm;
+  padding: 0.2mm 1.6mm;
+  margin-left: 2.2mm;
+  white-space: nowrap;
+  vertical-align: 0.2mm;
+}
+
+/* ------------- Figures ------------- */
+figure.plate {
+  break-inside: avoid; page-break-inside: avoid;
+  margin: 5mm 0 2mm 0;
+  background: #ffffff;
+  border: 0.7pt solid var(--gold-light);
+  padding: 2.6mm;
+}
+figure.plate img {
+  display: block; width: 100%; height: 78mm; object-fit: cover;
+}
+figure.plate figcaption {
+  text-align: center;
+  font-style: italic;
+  font-size: 8.4pt; color: var(--muted);
+  padding: 2.4mm 2mm 0.6mm 2mm;
+}
+figure.plate figcaption::before {
+  content: "\25C6\00a0"; color: var(--gold); font-size: 6pt;
+}
+
+/* ------------- Spec table (2-column grid: two lbl/val pairs per row) ------------- */
+.spec-block { margin: 0 0 8mm 0; }
+table.spec {
+  width: 100%; border-collapse: collapse;
+  border-top: 1.6pt solid var(--navy);
+  border-bottom: 1.6pt solid var(--navy);
+}
+table.spec td { padding: 1.7mm 1.5mm; border-bottom: 0.6pt solid var(--hairline);
+                vertical-align: top; }
+table.spec tr:last-child td { border-bottom: none; }
+table.spec td.lbl {
+  width: 21%;
+  font-family: Optima, 'Avenir Next', 'Gill Sans', 'Trebuchet MS', sans-serif;
+  text-transform: uppercase; letter-spacing: 0.16em;
+  font-size: 7.2pt; color: var(--gold-dark);
+  padding-top: 2.3mm;
+}
+table.spec td.val { width: 29%; color: var(--navy); font-size: 9.8pt; }
+table.spec td.lbl:nth-child(3) {
+  border-left: 0.6pt solid var(--hairline);
+  padding-left: 4mm;
+}
+table.spec td.val:nth-child(2) { padding-right: 4mm; }
+
+/* ------------- Callout ------------- */
+.callout {
+  break-inside: avoid; page-break-inside: avoid;
+  margin: 8mm 0 4mm 0;
+  background: var(--navy);
+  border: 1pt solid var(--gold);
+  outline: 0.6pt solid var(--gold);
+  outline-offset: -2.2mm;
+  color: var(--ivory);
+  padding: 8mm 9mm 7mm 9mm;
+}
+.callout h3 {
+  color: var(--gold-light);
+  font-size: 15pt; font-weight: 400;
+  margin: 0 0 3mm 0;
+}
+.callout p { margin: 0 0 2.8mm 0; line-height: 1.6; color: #efe7d3; }
+.callout a { color: var(--gold-light); text-decoration: none; }
+.callout ul { margin: 0 0 2.8mm 0; padding-left: 1mm; }
+.callout ul > li { list-style: none; margin-bottom: 1.4mm;
+                   padding-left: 1.1em; text-indent: -1.1em;
+                   break-inside: avoid; page-break-inside: avoid; }
+.callout ul > li::before {
+  content: "\2726"; display: inline-block; width: 1.44em; text-indent: 0;
+  color: var(--gold-light); font-size: 8pt;
+}
+.callout .linksrow {
+  margin-top: 4.5mm; padding-top: 3.6mm;
+  border-top: 0.6pt solid rgba(212,176,106,0.55);
+  font-size: 7.6pt; letter-spacing: 0.16em;
+  color: var(--gold-pale);
+}
+.callout .linksrow span.sep { padding: 0 2.6mm; color: var(--gold); }
+
+.endmark {
+  display: flex; align-items: center; justify-content: center; gap: 3.5mm;
+  margin: 7mm 0 0 0;
+}
+.endmark .line { width: 14mm; height: 0; border-top: 0.6pt solid var(--gold); }
+.endmark svg { display: block; }
+</style>
+</head>
+<body>
+
+<div class="cover">
+  <img class="cover-img" src="file:///Users/master/boat-rental-marbella/site/img/boats/ferretti-94/hero-1200.jpg" alt="">
+  <div class="cover-veil"></div>
+  <div class="cover-top">
+    <div class="brand-lockup">
+      <span class="logo-chip"><img src="file:///Users/master/boat-rental-platform/public/brand-logo.jpg" alt="BoatHire24"></span>
+      <div>
+        <div class="brand-name caps display">BoatHire24</div>
+        <div class="brand-tag caps">Rent boats worldwide <span class="gold">|</span> list your boat free</div>
+      </div>
+    </div>
+    <div class="doc-type-flag caps">June 2026</div>
+  </div>
+  <div class="cover-main">
+    <div class="cover-rule">
+      <span class="line"></span>
+      <span class="word caps">Vessel Specification</span>
+    </div>
+    <h1 class="cover-title display">Ferretti 94: The Marbella Flagship Dossier</h1>
+    <p class="cover-subtitle display">A 29 metre Ferretti motor yacht, fully crewed, chartering from Puerto Banús on the Costa del Sol</p>
+    <div class="cover-meta caps">BoatHire24 × Boat Rental In Marbella</div>
+    <div class="fleet-strip"><span class="fleet-label caps">From the fleet of</span><span class="logo-chip"><img src="file:///Users/master/boat-rental-marbella/site/img/logo-640.png" alt="Boat Rental In Marbella"></span></div>
+  </div>
+</div>
+<table class="paged">
+  <thead><tr><td></td></tr></thead>
+  <tbody><tr><td>
+
+<div class="spec-block sec">
+  <div class="sec-head">
+    <div class="sec-kicker caps">Particulars</div>
+    <h2 class="display">Principal Particulars</h2>
+    <div class="rules"><span class="thick"></span><span class="thin"></span></div>
+  </div>
+  <table class="spec"><tr><td class="lbl">Vessel</td><td class="val">Ferretti 94</td><td class="lbl">Builder</td><td class="val">Ferretti (Italy)</td></tr>
+<tr><td class="lbl">Type</td><td class="val">Luxury motor yacht</td><td class="lbl">Length overall</td><td class="val">29 m (94 ft)</td></tr>
+<tr><td class="lbl">Guest capacity</td><td class="val">12 guests for day charter</td><td class="lbl">Cabins</td><td class="val">Four ensuite cabins, sleeps 8 overnight</td></tr>
+<tr><td class="lbl">Crew</td><td class="val">Captain, mate, chef and stewardess</td><td class="lbl">Departure port</td><td class="val">Puerto Banús, Marbella</td></tr>
+<tr><td class="lbl">Model year</td><td class="val">Not specified</td><td class="lbl">Rate band</td><td class="val">On request, quoted on WhatsApp via the website</td></tr></table>
+</div>
+
+<div class="sec">
+  <div class="sec-head">
+    <div class="sec-kicker caps">Section 01</div>
+    <h2 class="display">1. Overview: The Flagship of the Marbella Fleet</h2>
+    <div class="rules"><span class="thick"></span><span class="thin"></span></div>
+  </div>
+  <div class="sec-body"><p>The <strong>Ferretti 94</strong> is the superyacht-class option in our Marbella fleet, a <strong>29 metre</strong> flagship from Italy's Ferretti shipyard built for the most demanding charters on the Costa del Sol. Most boats that work this coast trade on the simple pleasures of sunshine, a swim stop and a cold drink at anchor. The Ferretti 94 offers all of that and then adds the things that separate a genuine superyacht from a large day boat: scale, privacy, range and a full professional crew who run the day so that guests never have to think about it.</p><p>She measures 29 metres on the waterline, which places her at the very top of what is available for private charter from Puerto Banús. For a day charter she is rated for <strong>twelve guests</strong>, the same headcount permitted on commercial charters across much of our larger fleet, but the experience at that number is entirely different. Where a 12 metre yacht carrying nine or ten feels comfortably full, the Ferretti 94 carrying twelve feels unhurried, with whole decks left open for guests to spread out, find shade, find sun, or simply find a quiet corner away from the group.</p><p>Below decks she holds <strong>four ensuite cabins and sleeps eight guests overnight</strong>, which makes her as much a floating residence as a day yacht. She is crewed by a <strong>captain, mate, chef and stewardess</strong>, a full hospitality team rather than a single skipper, and she carries a sun deck, a beach club at water level, and a dedicated water toys garage. That combination is what allows her to move seamlessly from a quiet morning at anchor to an afternoon of activity off the swim platform without anyone reaching for a paddle or pumping up a toy by hand.</p><p>She is also the most capable cruiser we offer. Beyond the classic Marbella day routes, the Ferretti 94 is comfortable on a run down to Gibraltar and across to the Strait, and she is built for full weekly charters. For guests who want one yacht that can do a sociable afternoon along the Golden Mile, a long lunch at anchor off Puerto Banús, and then a multi-day cruise west towards the Atlantic, she is the natural choice. She stands out in our fleet not because she is the fastest or the flashiest, but because she is the most complete.</p></div>
+  <figure class="plate"><img src="file:///Users/master/boat-rental-marbella/site/img/boats/ferretti-94/hero-1200.jpg" alt=""><figcaption>The Ferretti 94 at anchor off a sheltered cove, the 29 m flybridge profile that defines the Marbella flagship</figcaption></figure>
+</div>
+
+<div class="sec">
+  <div class="sec-head">
+    <div class="sec-kicker caps">Section 02</div>
+    <h2 class="display">2. The Builder and the Marque: Ferretti of Forlì</h2>
+    <div class="rules"><span class="thick"></span><span class="thin"></span></div>
+  </div>
+  <div class="sec-body"><p>To understand why a Ferretti carries the weight it does on a charter dock, it helps to know where the marque comes from. Ferretti was founded in the late 1960s by the brothers Alessandro and Norberto Ferretti, who began not as boatbuilders but selling and servicing cars and boats in the Emilia-Romagna region of northern Italy. The yard's move into building its own motor yachts in the 1970s coincided with the great post-war expansion of Mediterranean leisure boating, and Ferretti grew with it.</p><p>By the 1980s and 1990s the company had established itself as one of the defining names in the Italian flybridge motor yacht, the very category this vessel belongs to. Ferretti's reputation was built on a particular formula: a planing hull that delivered real performance, married to interiors and deck layouts that felt more like a designer apartment than a boat. The brand became a byword for a certain kind of confident, sociable, sun-soaked Italian luxury, the sort of yacht that looks entirely at home moored stern-to in Porto Cervo, Saint-Tropez or, indeed, Puerto Banús.</p><p>Over the following decades Ferretti expanded into the <strong>Ferretti Group</strong>, an umbrella that brought together some of the most respected names in yachting, including Riva, Pershing, Itama, CRN and the Custom Line and Wally brands. That breadth matters because it means the engineering, design and after-sales knowledge behind a Ferretti hull is drawn from one of the deepest benches in the industry. A Ferretti is not a one-off; it is the product of a yard that has built thousands of yachts and refined the same essential ideas across generations.</p><p>The marque is also known for collaborating with leading naval architects and designers, and for a house style that prioritises liveability. Ferretti yachts are designed to be used, by families and by groups, with wide side decks, generous flybridges and saloons that open up to the sea. That philosophy is exactly what makes a Ferretti such a good charter yacht. A boat conceived for private owners to enjoy with friends translates naturally into a boat that charter guests enjoy too. When you step aboard the Ferretti 94, you are stepping onto a yacht from a yard whose entire history has been about making time on the water feel effortless.</p></div>
+  
+</div>
+
+<div class="sec">
+  <div class="sec-head">
+    <div class="sec-kicker caps">Section 03</div>
+    <h2 class="display">3. The Model and the Design: What the 94 Class Is Known For</h2>
+    <div class="rules"><span class="thick"></span><span class="thin"></span></div>
+  </div>
+  <div class="sec-body"><p>Within the Ferretti range, a yacht in the 90-foot bracket sits firmly in flagship territory for the brand's flybridge line. At 29 metres, this is a yacht conceived as the largest expression of the classic Ferretti motor yacht before stepping up into fully custom superyacht territory. What that means in practice is a vessel that combines the brand's signature qualities at the most generous scale available in series production.</p><p>The defining feature of the class is the <strong>flybridge</strong>. On a yacht of this size the flybridge is not a token upper helm but a full second living space, typically running a large part of the length of the superstructure, with a second control station, sunbathing areas, shaded seating and very often a bar and dining setup. It is the social heart of the yacht under way, the place from which guests watch the coast slide past with the wind in their hair and the whole panorama of the bay open around them. The profile of this vessel, with its tall, glassed superstructure and the sweeping line of the flybridge, is instantly recognisable as a yacht of this generation.</p><p>The second hallmark is <strong>volume</strong>. Yachts of this class are designed with a wide beam carried well forward, which creates enormous interior volume for the length. That is why a 29 metre Ferretti can offer four full ensuite cabins, a main-deck saloon and dining area, a separate galley and crew quarters, without anything feeling cramped. The naval architecture prioritises a soft, comfortable ride and a stable platform at anchor, both of which matter enormously on a charter where guests may include children, older relatives and people who do not consider themselves natural sailors.</p><p>The third hallmark is the <strong>flow between inside and out</strong>. Ferretti's designers have long favoured large glazing, low-profile bulwarks and an easy transition from the saloon out to the aft cockpit and down to the water. On this class that culminates in a proper aft platform and beach club arrangement, so the sea is always within easy reach. The result is a yacht that feels open and connected to its surroundings rather than sealed off from them, which is precisely what you want for a day spent anchored in a Mediterranean bay.</p></div>
+  
+</div>
+
+<div class="sec">
+  <div class="sec-head">
+    <div class="sec-kicker caps">Section 04</div>
+    <h2 class="display">4. On Board: Layout, Saloon, Cabins and Water Toys</h2>
+    <div class="rules"><span class="thick"></span><span class="thin"></span></div>
+  </div>
+  <div class="sec-body"><p>The Ferretti 94 is arranged across several distinct zones, each with its own purpose, which is what allows a group of twelve to share the yacht comfortably without ever feeling on top of one another. The accommodation, drawn directly from this vessel's own specification, is built around <strong>four ensuite cabins that sleep eight guests overnight</strong>, each with its own private bathroom. For a day charter those cabins double as private changing rooms, somewhere to leave bags and towels, and a cool, quiet retreat out of the midday sun.</p><p>The <strong>main-deck saloon</strong> is the air-conditioned core of the yacht, a lounge and dining space framed by the large windows that are a Ferretti signature. This is where the group gathers when the breeze gets up, where lunch is served in comfort if the weather turns, and where the evening drifts on after the sun has dropped. Ahead of it sits the galley, the chef's domain, which on a yacht of this class is a serious working kitchen rather than a token pantry, capable of producing proper meals for a full complement of guests.</p><p>Moving outside, the <strong>aft cockpit</strong> is the natural social space at anchor, shaded and close to the water, with the saloon doors folding back so inside and out become one. Up top, the <strong>sun deck</strong> on the flybridge is the yacht's grandstand, the place to sunbathe, take in the view and watch the coast go by under way. At the stern, a <strong>beach club</strong> at water level transforms the back of the yacht into a swimming and lounging platform, the heart of the day for most charter groups, where guests step straight from the deck into the Mediterranean.</p><p>What sets the Ferretti 94 apart from smaller boats in the fleet is the <strong>dedicated water toys garage</strong>. Rather than lashing toys to the deck, a yacht of this size stows them in a purpose-built compartment and launches them off the swim platform when guests want them. That makes the activity side of the day effortless: the crew handles the launching and recovery, and guests simply enjoy the water. Taken together, the layout reads as a sequence of choices, sun or shade, in or out, social or private, that the yacht offers all day long, which is the real luxury of chartering at this scale.</p></div>
+  <figure class="plate"><img src="file:///Users/master/boat-rental-marbella/site/img/boats/ferretti-94/hero-1200.jpg" alt=""><figcaption>Clean lines and a tall, glassed superstructure: the Ferretti 94 holds four ensuite cabins below this profile</figcaption></figure>
+</div>
+
+<div class="sec">
+  <div class="sec-head">
+    <div class="sec-kicker caps">Section 05</div>
+    <h2 class="display">5. A Day Aboard: A Charter from Puerto Banús</h2>
+    <div class="rules"><span class="thick"></span><span class="thin"></span></div>
+  </div>
+  <div class="sec-body"><p>To picture what a charter on the Ferretti 94 is actually like, it helps to walk through a realistic day. Boarding is at <strong>Puerto Banús</strong>, Marbella's flagship marina, where the yacht waits stern-to among the rest of the harbour's famous fleet. Guests are welcomed aboard by the stewardess, shown around, and settled in the aft cockpit with a first cold drink from the included selection while the captain and mate make ready and the chef finalises the galley.</p><p>The yacht slips her lines and idles out through the harbour mouth, past the breakwater and the line of cafes and boutiques, and within a few minutes the open Mediterranean stretches ahead with the dramatic backdrop of <strong>La Concha</strong>, the mountain that towers over Marbella, behind. From the flybridge the whole coastline opens up. For the first leg the captain might run gently east or west along the shore, giving guests a sense of the famous Golden Mile from the water before settling the yacht into the rhythm of the day.</p><p>By late morning the yacht finds a <strong>swim stop</strong>, dropping anchor in clear water off one of the beaches or coves along the coast. This is when the yacht comes into her own. The crew launches the toys from the garage off the swim platform, the beach club comes alive, and guests swim, lounge and drift between the water and the shade of the cockpit. The chef serves lunch on board, and because the kitchen is a proper galley with a dedicated cook, this is a real meal eaten in comfort rather than a packed snack.</p><p>The afternoon unfolds at its own pace. Some guests stay in the water, some retreat to a cabin for a nap out of the heat, some take the flybridge for the sun and the view. The captain may move the yacht to a second anchorage to follow the light or the shelter, or run a stretch of coast at speed for the pleasure of the cruise. As the day cools, the yacht turns for home, and the run back into Puerto Banús in the softening late-afternoon light, the marina and the mountains glowing, is one of the quiet highlights of any Marbella charter. The crew handles every line; guests simply arrive back at the dock relaxed.</p></div>
+  
+</div>
+
+<div class="sec">
+  <div class="sec-head">
+    <div class="sec-kicker caps">Section 06</div>
+    <h2 class="display">6. Itineraries and Cruising Grounds</h2>
+    <div class="rules"><span class="thick"></span><span class="thin"></span></div>
+  </div>
+  <div class="sec-body"><p>Departing from Puerto Banús places the Ferretti 94 at the centre of one of the most cruisable stretches of the Spanish coast, with options that scale from a gentle afternoon to a serious passage. The natural starting point for almost every charter is a <strong>swim stop along the Golden Mile</strong>, the celebrated band of coastline between Puerto Banús and Marbella town lined with beach clubs and villas. Anchoring off here gives guests the postcard view, the marina to one side, the town to the other, and the great grey face of La Concha rising behind, all within a few minutes of leaving the berth.</p><p>Heading east, the coast runs towards <strong>Cabopino</strong>, with its photogenic marina and the dune-backed beaches of Artola, a slightly longer run that rewards guests with quieter water and a sense of having properly travelled for the day. Further along lie the beaches towards Calahonda and beyond, classic territory for a relaxed full-day cruise with a long lunch at anchor in the middle.</p><p>Heading west, the coast opens towards <strong>Estepona</strong>, a handsome working town with a pretty old quarter and a marina of its own, and an easy and popular destination for a day cruise from Puerto Banús. Beyond Estepona the coast continues towards the dramatic silhouette of the Rock and the town of <strong>Gibraltar</strong>, marking the gateway to the Strait where the Mediterranean meets the Atlantic. A run to Gibraltar is a genuine sea passage rather than a coastal hop, and it is exactly the kind of longer itinerary the Ferretti 94 is built for, an area where her range, comfort and full crew turn a long day or an overnight leg into a pleasure rather than an ordeal.</p><p>For guests with more time, the yacht's overnight accommodation and weekly-charter capability open up multi-day cruising along the whole Costa del Sol and into the Strait, with the option of pushing on towards the Atlantic resorts or simply spending several days exploring the bays, anchorages and harbour towns at a leisurely pace. Few boats on this coast can offer that full range, from a two-hour sociable afternoon to a week-long cruise, on a single hull.</p></div>
+  
+</div>
+
+<div class="sec">
+  <div class="sec-head">
+    <div class="sec-kicker caps">Section 07</div>
+    <h2 class="display">7. Who This Boat Suits</h2>
+    <div class="rules"><span class="thick"></span><span class="thin"></span></div>
+  </div>
+  <div class="sec-body"><p>The Ferretti 94 is not the yacht for every charter, and that is the point. She is the right answer for a particular set of guests and occasions, and matching the boat to the day is part of getting it right.</p><p>She suits <strong>larger groups who want space rather than just seats</strong>. Rated for twelve guests on a day charter, she carries that number with room to spare, which makes her ideal for an extended family, a group of friends travelling together, or a milestone celebration where everyone wants to be aboard the same yacht without it feeling crowded. The four ensuite cabins mean the group can split between sun and shade, deck and saloon, activity and quiet, all at the same time.</p><p>She suits <strong>occasions that call for a step up</strong>. A significant birthday, an anniversary, a proposal, a corporate hosting day or a celebration at the end of a holiday are all moments where the presence of a full crew, a chef and a genuine superyacht make the difference between a nice day out and a day people remember for years. The chef and stewardess turn the charter from self-catering on the water into something closer to a private restaurant and lounge that happens to be at sea.</p><p>She suits <strong>guests who value privacy and service</strong>. With the crew handling navigation, the galley, the drinks and the water toys, guests are free to do nothing but enjoy themselves. That is the essence of chartering at this level, and it is what justifies choosing the flagship over a smaller, simpler boat. And because she sleeps eight overnight and is built for weekly charters and Gibraltar runs, she also suits <strong>guests who want more than a single day</strong>, who want to combine a day along the Golden Mile with a longer cruise and treat the yacht as a moving base for several days on the coast.</p></div>
+  
+</div>
+
+<div class="sec">
+  <div class="sec-head">
+    <div class="sec-kicker caps">Section 08</div>
+    <h2 class="display">8. Pricing and Inclusions</h2>
+    <div class="rules"><span class="thick"></span><span class="thin"></span></div>
+  </div>
+  <div class="sec-body"><p>Charters on the Ferretti 94 are priced <strong>on request</strong>. Because day rates, Gibraltar passages and weekly itineraries vary with the season, the routing and the length of the charter, every booking is <strong>quoted individually on WhatsApp via the website</strong>, at competitive Marbella rates and with no obligation. Sharing your date, your group size and how long you would like to be out is enough for the team to come back with a tailored itinerary and a price.</p><p>Whatever the rate, every charter in our fleet includes the following as standard, so the headline figure is the figure you pay:</p><table><tr><th>Included on every charter</th><th>Detail</th></tr><tr><td>Licensed skipper</td><td>Professional crew at the helm throughout the charter</td></tr><tr><td>Fuel</td><td>Included on the quoted route, no surcharges</td></tr><tr><td>Drinks</td><td>Water, soft drinks, beer, white wine and cava</td></tr><tr><td>Light snacks</td><td>Served on board</td></tr><tr><td>Insurance</td><td>Full charter cover</td></tr><tr><td>Safety equipment</td><td>To Spanish charter standard</td></tr><tr><td>VAT (21%)</td><td>Included, so all quotes are final and tax-inclusive</td></tr></table><p>On the Ferretti 94 specifically, those fleet-standard inclusions are delivered by a full crew rather than a single skipper, which means a captain and mate running the yacht alongside a chef in the galley and a stewardess looking after guests. That depth of crew is part of what the flagship offers and is reflected in the bespoke quote rather than added on afterwards. The principle is simple: you ask for a charter, the team quotes a figure inclusive of fuel, drinks, snacks, insurance, safety gear and VAT, and that is what you pay.</p></div>
+  
+</div>
+
+<div class="sec">
+  <div class="sec-head">
+    <div class="sec-kicker caps">Section 09</div>
+    <h2 class="display">9. Seasonality and Booking Practicalities</h2>
+    <div class="rules"><span class="thick"></span><span class="thin"></span></div>
+  </div>
+  <div class="sec-body"><p>The Costa del Sol earns its name. Marbella enjoys one of the mildest climates in Europe, and the charter season runs long, but there are sensible windows worth understanding when planning a day on the Ferretti 94.</p><p>The <strong>core season runs roughly from May to October</strong>, with the warmest seas and the most settled weather through high summer in July and August. These are the months when a full day at anchor with the beach club open is at its best, when the water is warmest for swimming and the chance of a wash-out is at its lowest. They are also the busiest months, which means the flagship is in demand and the best dates go early. <strong>June and September</strong> are often the connoisseur's choice: the sea is warm, the days are long, the light is beautiful, and the coast is a little less crowded than at the absolute peak.</p><p>The <strong>shoulder months of April and October</strong> can deliver glorious charter days, particularly for cruising and sightseeing, though guests should expect cooler water and the occasional unsettled spell. Even in the winter, calm bright days are common on this coast, and the Ferretti 94's enclosed, air-conditioned saloon means a charter is never wholly weather-dependent in the way an open boat would be.</p><p>On practicalities, the single most important step is to <strong>book early</strong>, especially for peak summer weekends and for any longer or overnight itinerary, because there is only one flagship of this class and her best dates are spoken for well in advance. The team will discuss the day's weather window with you, since the captain always has the final say on conditions for the safety and comfort of guests. It is also worth raising any specifics at the quoting stage, such as dietary requirements for the chef, the age range of the group, whether children are aboard, and any special occasion the crew should know about, so the day can be shaped around you from the outset.</p></div>
+  
+</div>
+
+<div class="sec">
+  <div class="sec-head">
+    <div class="sec-kicker caps">Section 10</div>
+    <h2 class="display">10. Frequently Asked Questions</h2>
+    <div class="rules"><span class="thick"></span><span class="thin"></span></div>
+  </div>
+  <div class="sec-body"><p><strong>How many guests can the Ferretti 94 take?</strong> She is rated for <strong>twelve guests</strong> on a day charter, and sleeps <strong>eight guests overnight</strong> across her four ensuite cabins.</p><p><strong>Where does she depart from?</strong> From <strong>Puerto Banús</strong>, Marbella's flagship marina, with the Golden Mile and the open Mediterranean minutes from the berth.</p><p><strong>How much does it cost?</strong> The Ferretti 94 is priced <strong>on request</strong>. Because rates vary with season, length and routing, every charter is quoted individually on WhatsApp via the website, at competitive Marbella rates.</p><p><strong>What crew is on board?</strong> A full team: a <strong>captain, mate, chef and stewardess</strong>, so navigation, the galley and guest service are all handled professionally throughout the day.</p><p><strong>What is included in the price?</strong> Every charter includes a licensed skipper, fuel, drinks (water, soft drinks, beer, white wine and cava), light snacks, insurance, safety equipment and VAT at 21 per cent. On the Ferretti 94 these are delivered by the full crew.</p><p><strong>Can she do longer trips than a day charter?</strong> Yes. She is built for overnight stays and <strong>weekly charters</strong>, and is comfortable on a <strong>Gibraltar run</strong> and longer passages along the coast and into the Strait, making her our most capable cruiser.</p><p><strong>What is there to do on board?</strong> A sun deck on the flybridge, an aft cockpit for socialising, a beach club at water level for swimming, and a dedicated <strong>water toys garage</strong> whose contents the crew launches off the swim platform.</p><p><strong>When is the best time to charter?</strong> The core season runs roughly May to October, with July and August warmest and June and September often the sweet spot for warm seas and a quieter coast. Booking early is essential for the flagship's peak dates.</p></div>
+  
+</div>
+
+<div class="sec">
+  <div class="sec-head">
+    <div class="sec-kicker caps">Section 11</div>
+    <h2 class="display">11. Booking the Ferretti 94</h2>
+    <div class="rules"><span class="thick"></span><span class="thin"></span></div>
+  </div>
+  <div class="sec-body"><p>The Ferretti 94 is the most luxurious day-charter and weekly-charter option in our Marbella fleet, a 29 metre Ferretti flagship with four ensuite cabins, a full crew of captain, mate, chef and stewardess, and the deck space, water toys and range to make a day, or a week, on the Costa del Sol genuinely memorable. From a sociable afternoon along the Golden Mile to a multi-day cruise towards Gibraltar, she is built to do it all from her berth at Puerto Banús.</p><p>To book, visit the boat's page at <a href="https://boatrentalinmarbella.com/boats/ferretti-94/">boatrentalinmarbella.com/boats/ferretti-94</a> and request a quote on WhatsApp. Share your preferred date, group size and how long you would like to be out, and the team will come back with a tailored itinerary and price, inclusive of crew, fuel, drinks, snacks, insurance, safety equipment and VAT.</p></div>
+  
+</div>
+
+<div class="callout">
+  <h3 class="display">Charter the Ferretti 94</h3>
+  <p>Book this boat at <a href="https://boatrentalinmarbella.com/boats/ferretti-94/">boatrentalinmarbella.com</a>, with every quote handled personally on WhatsApp.</p><p><strong>Boat owners:</strong> list your boat free at <a href="https://boathire24.com">boathire24.com</a> and reach charter guests worldwide.</p>
+  <div class="linksrow caps"><a href="https://boathire24.com">https://boathire24.com</a><span class="sep">&#9670;</span><a href="https://boatrentalinmarbella.com/boats/ferretti-94/">https://boatrentalinmarbella.com/boats/ferretti-94/</a></div>
+</div>
+<div class="endmark"><span class="line"></span><svg width="14" height="14" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg" aria-hidden="true"><path fill="#b9924b" d="M17 15l1.55 1.55c-.96 1.69-3.33 3.04-5.55 3.37V11h3V9h-3V7.82C14.16 7.4 15 6.3 15 5c0-1.65-1.35-3-3-3S9 3.35 9 5c0 1.3.84 2.4 2 2.82V9H8v2h3v8.92c-2.22-.33-4.59-1.68-5.55-3.37L7 15l-4-3v3c0 3.88 4.92 7 9 7s9-3.12 9-7v-3l-4 3zM12 4c.55 0 1 .45 1 1s-.45 1-1 1-1-.45-1-1 .45-1 1-1z"/></svg><span class="line"></span></div>
+  </td></tr></tbody>
+  <tfoot><tr><td></td></tr></tfoot>
+</table>
+
+<div class="runfoot caps">
+  <span><b>boathire24.com</b> <span class="gold">&#9670;</span> rent boats worldwide
+    <span class="gold">&#9670;</span> list your boat free</span>
+  <span class="gold caps">boatrentalinmarbella.com/boats/ferretti-94</span>
+</div>
+</body>
+</html>

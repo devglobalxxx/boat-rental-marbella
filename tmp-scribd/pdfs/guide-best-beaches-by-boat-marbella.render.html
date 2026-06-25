@@ -1,0 +1,480 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<title>Best Beaches Reachable by Boat from Marbella</title>
+<style>
+:root {
+  --navy:      #0e2438;
+  --navy-deep: #08182a;
+  --gold:      #b9924b;
+  --gold-dark: #8a6c33;
+  --gold-light:#d4b06a;
+  --gold-pale: #e8d8af;
+  --ivory:     #f7f2e6;
+  --paper:     #fdfbf5;
+  --ink:       #22303e;
+  --muted:     #5d6a76;
+  --hairline:  #d9cdaf;
+  --row-tint:  #f5efdf;
+}
+* { -webkit-print-color-adjust: exact; print-color-adjust: exact;
+    box-sizing: border-box; }
+@page { size: A4; margin: 0; }
+html, body { margin: 0; padding: 0; }
+body {
+  background: var(--paper);
+  color: var(--ink);
+  font-family: Georgia, 'Palatino Linotype', Palatino, 'Times New Roman', serif;
+  font-size: 10.5pt;
+  line-height: 1.62;
+}
+.display { font-family: Didot, 'Didot LT STD', 'Playfair Display', Georgia,
+           'Times New Roman', serif; }
+.caps { font-family: Optima, 'Avenir Next', 'Gill Sans', 'Trebuchet MS',
+        sans-serif; text-transform: uppercase; }
+
+/* ---------------- Cover ---------------- */
+.cover {
+  position: relative;
+  width: 210mm; height: 297mm;
+  overflow: hidden;
+  background: var(--navy-deep);
+  page-break-after: always;
+}
+.cover-img {
+  position: absolute; inset: 0;
+  width: 100%; height: 100%;
+  object-fit: cover;
+  object-position: 24% center;  /* centres the yacht's full profile in the A4 crop */
+}
+.cover-veil {
+  position: absolute; inset: 0;
+  background:
+    linear-gradient(to top, rgba(11,26,46,0.92),
+                    rgba(11,26,46,0.86) 30%, transparent 55%),
+    linear-gradient(180deg,
+      rgba(8,24,42,0.62) 0%,
+      rgba(8,24,42,0.20) 26%,
+      rgba(8,24,42,0.12) 50%,
+      rgba(8,24,42,0.00) 62%);
+}
+.cover-veil.no-img {
+  background:
+    radial-gradient(120mm 90mm at 50% 26%, rgba(185,146,75,0.20), transparent 70%),
+    linear-gradient(180deg, #122c46 0%, #0a1d33 55%, #071426 100%);
+}
+.cover-top {
+  position: absolute; top: 13mm; left: 16mm; right: 16mm;
+  display: flex; align-items: center; justify-content: space-between;
+}
+.brand-lockup { display: flex; align-items: center; gap: 4.5mm; }
+.logo-chip {
+  background: #ffffff;
+  border: 1px solid var(--gold);
+  border-radius: 1.2mm;
+  padding: 2mm;
+  line-height: 0;
+}
+.logo-chip img { display: block; height: 13mm; width: 13mm;
+                 object-fit: cover; border-radius: 0.7mm; }
+.brand-name {
+  color: var(--ivory); font-size: 13pt; letter-spacing: 0.30em;
+  line-height: 1.25;
+}
+.brand-tag {
+  color: var(--gold-pale); font-size: 6.4pt; letter-spacing: 0.26em;
+  margin-top: 1mm;
+}
+.doc-type-flag {
+  text-align: right;
+  color: var(--gold-light);
+  font-size: 7.5pt; letter-spacing: 0.34em;
+  border-top: 0.7pt solid var(--gold);
+  border-bottom: 0.7pt solid var(--gold);
+  padding: 2.2mm 0 2mm 0;
+}
+.cover-main {
+  position: absolute; left: 16mm; right: 16mm; bottom: 34mm;
+}
+.cover-rule {
+  display: flex; align-items: center; gap: 4mm;
+  margin-bottom: 5mm;
+}
+.cover-rule .line { flex: 0 0 22mm; height: 0; border-top: 0.8pt solid var(--gold); }
+.cover-rule .word {
+  color: var(--gold-light); font-size: 8pt; letter-spacing: 0.42em;
+  white-space: nowrap;
+  text-shadow: 0 1px 5px rgba(5,14,26,0.65);
+}
+.cover-title {
+  color: #fdfaf2;
+  font-size: 44pt; line-height: 1.05;
+  font-weight: 600;
+  margin: 0 0 4mm 0;
+  text-shadow: 0 1px 8px rgba(5,14,26,0.55);
+}
+.cover-subtitle {
+  color: var(--gold-pale);
+  font-style: italic;
+  font-size: 13pt; line-height: 1.45;
+  margin: 0 0 7mm 0;
+  max-width: 150mm;
+  text-shadow: 0 1px 6px rgba(5,14,26,0.6);
+}
+.cover-meta {
+  color: rgba(247,242,230,0.92);
+  font-size: 7.6pt; letter-spacing: 0.22em;
+}
+.cover-meta .dot { color: var(--gold-light); padding: 0 2.2mm; }
+.fleet-strip {
+  margin-top: 8mm;
+  display: flex; align-items: center; gap: 4mm;
+}
+.fleet-strip .logo-chip img { height: 9mm; width: auto; }
+.fleet-label {
+  color: rgba(247,242,230,0.85); font-size: 6.6pt; letter-spacing: 0.30em;
+}
+
+/* ------------- Repeating footer ------------- */
+.runfoot {
+  position: fixed; left: 0; right: 0; bottom: 0;
+  height: 12mm;
+  background: var(--ivory);
+  border-top: 1pt solid var(--gold);
+  display: flex; align-items: center; justify-content: space-between;
+  padding: 0 16mm;
+  font-size: 6.8pt; letter-spacing: 0.12em;
+  color: var(--navy);
+}
+.runfoot b { letter-spacing: 0.22em; font-weight: 600; }
+.runfoot .gold { color: var(--gold-dark); }
+.runfoot a { color: var(--navy); text-decoration: none; }
+
+/* ------------- Paged content scaffold ------------- */
+table.paged { width: 100%; border-collapse: collapse; }
+table.paged > thead td { height: 15mm; padding: 0; }
+table.paged > tfoot td { height: 17mm; padding: 0; }
+table.paged > tbody > tr > td { padding: 0 18mm; }
+
+/* ------------- Sections ------------- */
+.sec { margin: 0 0 8mm 0; }
+.sec-head {
+  break-after: avoid-page; page-break-after: avoid;
+  break-inside: avoid; page-break-inside: avoid;
+  margin: 0 0 4.5mm 0;
+}
+.sec-kicker {
+  color: var(--gold-dark); font-size: 7pt; letter-spacing: 0.38em;
+  margin-bottom: 1.6mm;
+}
+.sec-head h2 {
+  color: var(--navy);
+  font-size: 18.5pt; font-weight: 400; line-height: 1.2;
+  margin: 0 0 2.6mm 0;
+}
+.sec-head .rules { position: relative; height: 2.4mm; }
+.sec-head .rules .thin {
+  position: absolute; left: 0; right: 0; top: 1mm;
+  border-top: 0.6pt solid var(--hairline);
+}
+.sec-head .rules .thick {
+  position: absolute; left: 0; top: 0; width: 26mm;
+  border-top: 2.2pt solid var(--gold);
+}
+.sec-body p { margin: 0 0 3.4mm 0; }
+.sec-body p:last-child { margin-bottom: 0; }
+.sec-body ol { margin: 0 0 3.4mm 0; padding-left: 5.5mm; }
+.sec-body ul { margin: 0 0 3.4mm 0; padding-left: 1mm; }
+.sec-body li { margin-bottom: 1.6mm; break-inside: avoid; page-break-inside: avoid;
+               -webkit-column-break-inside: avoid; }
+.sec-body ul.cols2 { columns: 2; column-gap: 9mm;
+                     break-inside: avoid; page-break-inside: avoid; }
+.sec-body ul > li {
+  list-style: none;
+  padding-left: 1.1em; text-indent: -1.1em;  /* hanging indent: wraps align under text */
+}
+.sec-body ul > li::before {
+  content: "\2726";            /* four-pointed star, brass compass point */
+  display: inline-block; width: 1.44em; text-indent: 0;
+  color: var(--gold); font-size: 8pt;       /* 1.44em @8pt == 1.1em @10.5pt */
+}
+.sec-body a { color: var(--navy); text-decoration: none;
+              border-bottom: 0.6pt solid var(--gold); }
+.sec-body strong { color: var(--navy); }
+
+/* generic tables inside section html */
+.sec-body table {
+  width: 100%; border-collapse: collapse;
+  margin: 1mm 0 4mm 0;
+  break-inside: avoid; page-break-inside: avoid;
+  font-size: 9.8pt;
+}
+.sec-body th {
+  background: var(--navy); color: var(--ivory);
+  font-family: Optima, 'Avenir Next', 'Gill Sans', 'Trebuchet MS', sans-serif;
+  text-transform: uppercase; letter-spacing: 0.16em;
+  font-size: 7.4pt; font-weight: 500;
+  text-align: left; padding: 2.6mm 3.5mm;
+  border-bottom: 1.4pt solid var(--gold);
+}
+.sec-body td {
+  padding: 2.2mm 3.5mm;
+  border-bottom: 0.6pt solid var(--hairline);
+  color: var(--ink);
+}
+.sec-body td, .sec-body th { font-variant-numeric: tabular-nums; }
+.sec-body td:not(:first-child),
+.sec-body th:not(:first-child) { text-align: right; }
+.sec-body tr:nth-child(even) td { background: var(--row-tint); }
+.sec-body td:first-child { color: var(--navy); }
+.sec-body tr.best td { background: rgba(212,175,55,0.12); }
+.sec-body tr.best td:first-child { color: var(--navy); font-weight: 600; }
+.best-tag {
+  display: inline-block;
+  font-family: Optima, 'Avenir Next', 'Gill Sans', 'Trebuchet MS', sans-serif;
+  font-variant-caps: small-caps; text-transform: lowercase;
+  font-size: 7.6pt; font-weight: 600; letter-spacing: 0.14em;
+  color: var(--gold-dark);
+  border: 0.6pt solid var(--gold);
+  border-radius: 1mm;
+  padding: 0.2mm 1.6mm;
+  margin-left: 2.2mm;
+  white-space: nowrap;
+  vertical-align: 0.2mm;
+}
+
+/* ------------- Figures ------------- */
+figure.plate {
+  break-inside: avoid; page-break-inside: avoid;
+  margin: 5mm 0 2mm 0;
+  background: #ffffff;
+  border: 0.7pt solid var(--gold-light);
+  padding: 2.6mm;
+}
+figure.plate img {
+  display: block; width: 100%; height: 78mm; object-fit: cover;
+}
+figure.plate figcaption {
+  text-align: center;
+  font-style: italic;
+  font-size: 8.4pt; color: var(--muted);
+  padding: 2.4mm 2mm 0.6mm 2mm;
+}
+figure.plate figcaption::before {
+  content: "\25C6\00a0"; color: var(--gold); font-size: 6pt;
+}
+
+/* ------------- Spec table (2-column grid: two lbl/val pairs per row) ------------- */
+.spec-block { margin: 0 0 8mm 0; }
+table.spec {
+  width: 100%; border-collapse: collapse;
+  border-top: 1.6pt solid var(--navy);
+  border-bottom: 1.6pt solid var(--navy);
+}
+table.spec td { padding: 1.7mm 1.5mm; border-bottom: 0.6pt solid var(--hairline);
+                vertical-align: top; }
+table.spec tr:last-child td { border-bottom: none; }
+table.spec td.lbl {
+  width: 21%;
+  font-family: Optima, 'Avenir Next', 'Gill Sans', 'Trebuchet MS', sans-serif;
+  text-transform: uppercase; letter-spacing: 0.16em;
+  font-size: 7.2pt; color: var(--gold-dark);
+  padding-top: 2.3mm;
+}
+table.spec td.val { width: 29%; color: var(--navy); font-size: 9.8pt; }
+table.spec td.lbl:nth-child(3) {
+  border-left: 0.6pt solid var(--hairline);
+  padding-left: 4mm;
+}
+table.spec td.val:nth-child(2) { padding-right: 4mm; }
+
+/* ------------- Callout ------------- */
+.callout {
+  break-inside: avoid; page-break-inside: avoid;
+  margin: 8mm 0 4mm 0;
+  background: var(--navy);
+  border: 1pt solid var(--gold);
+  outline: 0.6pt solid var(--gold);
+  outline-offset: -2.2mm;
+  color: var(--ivory);
+  padding: 8mm 9mm 7mm 9mm;
+}
+.callout h3 {
+  color: var(--gold-light);
+  font-size: 15pt; font-weight: 400;
+  margin: 0 0 3mm 0;
+}
+.callout p { margin: 0 0 2.8mm 0; line-height: 1.6; color: #efe7d3; }
+.callout a { color: var(--gold-light); text-decoration: none; }
+.callout ul { margin: 0 0 2.8mm 0; padding-left: 1mm; }
+.callout ul > li { list-style: none; margin-bottom: 1.4mm;
+                   padding-left: 1.1em; text-indent: -1.1em;
+                   break-inside: avoid; page-break-inside: avoid; }
+.callout ul > li::before {
+  content: "\2726"; display: inline-block; width: 1.44em; text-indent: 0;
+  color: var(--gold-light); font-size: 8pt;
+}
+.callout .linksrow {
+  margin-top: 4.5mm; padding-top: 3.6mm;
+  border-top: 0.6pt solid rgba(212,176,106,0.55);
+  font-size: 7.6pt; letter-spacing: 0.16em;
+  color: var(--gold-pale);
+}
+.callout .linksrow span.sep { padding: 0 2.6mm; color: var(--gold); }
+
+.endmark {
+  display: flex; align-items: center; justify-content: center; gap: 3.5mm;
+  margin: 7mm 0 0 0;
+}
+.endmark .line { width: 14mm; height: 0; border-top: 0.6pt solid var(--gold); }
+.endmark svg { display: block; }
+</style>
+</head>
+<body>
+
+<div class="cover">
+  <img class="cover-img" src="file:///Users/master/boat-rental-marbella/site/img/boats/mangusta-80/hero-1600.jpg" alt="">
+  <div class="cover-veil"></div>
+  <div class="cover-top">
+    <div class="brand-lockup">
+      <span class="logo-chip"><img src="file:///Users/master/boat-rental-platform/public/brand-logo.jpg" alt="BoatHire24"></span>
+      <div>
+        <div class="brand-name caps display">BoatHire24</div>
+        <div class="brand-tag caps">Rent boats worldwide <span class="gold">|</span> list your boat free</div>
+      </div>
+    </div>
+    <div class="doc-type-flag caps">June 2026</div>
+  </div>
+  <div class="cover-main">
+    <div class="cover-rule">
+      <span class="line"></span>
+      <span class="word caps">Charter Guide</span>
+    </div>
+    <h1 class="cover-title display">Best Beaches Reachable by Boat from Marbella</h1>
+    <p class="cover-subtitle display">A skipper&#x27;s guide to the nine best beaches and coves reachable from Puerto Banús, with distances, anchor depths, seasonality and realistic timings for 2 to 8 hour charters.</p>
+    <div class="cover-meta caps">BoatHire24 Guides</div>
+    
+  </div>
+</div>
+<table class="paged">
+  <thead><tr><td></td></tr></thead>
+  <tbody><tr><td>
+
+<div class="sec">
+  <div class="sec-head">
+    <div class="sec-kicker caps">Section 01</div>
+    <h2 class="display">Why Marbella reads differently from the water</h2>
+    <div class="rules"><span class="thick"></span><span class="thin"></span></div>
+  </div>
+  <div class="sec-body"><p>The honest answer most people do not get from glossy charter brochures: Marbella has no Balearic-style cliffs and no hidden Caribbean coves. What it does have is a 27-kilometre stretch of Blue Flag sand between Cabopino and Guadalmina, dotted with eight or nine genuinely good anchor spots reachable inside 45 minutes from Puerto Banús. This guide ranks the best beaches by boat from Marbella by distance, anchorage quality and what you can actually do once you are there, written from the skipper's seat rather than a tourist board pamphlet.</p><p>Seen from the water, the coast unfolds as a single shallow arc. To the west the land softens toward Estepona, Sotogrande and the silhouette of Gibraltar; to the east it firms up at the dune system of Cabopino, the only stretch of wild shoreline left on this part of the Costa del Sol. The Golden Mile sits in the middle, with the white wall of La Concha mountain rising behind the villas. Almost every cove below faces broadly south, which is why the morning light is flat and clear and the afternoon light turns gold over the Strait. That orientation, more than anything else, dictates when each beach is at its best, and a good skipper plans the day around it.</p><p>One more thing the brochures skip. Because these are mostly open roadsteads rather than enclosed bays, the day is built around the swim platform, not a gangway. You step off the back of the boat into four to six metres of clear water, and the tender carries anyone who actually wants sand underfoot. That rhythm shapes everything that follows.</p></div>
+  
+</div>
+
+<div class="sec">
+  <div class="sec-head">
+    <div class="sec-kicker caps">Section 02</div>
+    <h2 class="display">How we picked these beaches</h2>
+    <div class="rules"><span class="thick"></span><span class="thin"></span></div>
+  </div>
+  <div class="sec-body"><p>Three criteria shaped the list: holding ground, water clarity and accessibility from Puerto Banús within a standard 2-8h charter window. We left off beaches that look great from shore but anchor badly, with rocky bottom and no protection from levante, and we ignored anywhere more than 25 NM from Banús. Beyond that, you are paying for transit time, not swimming time. Every spot below has been worked by our fleet through the 2024 and 2025 seasons; the depths and bearings come from actual charter logs.</p><p>Holding ground matters more than first-time charterers expect. Sand at three to seven metres takes an anchor cleanly and lets it sit, which is why the boat stays put while you swim and why the skipper can shut the engines down rather than hold station. Mixed sand-and-rock bottoms, like the one at Cala Cortés, need a more careful drop and a check that the hook has bitten before anyone goes in. Water clarity is the second filter, and it is mostly a function of distance from a river mouth: the further a cove sits from a fresh-water outflow, the cleaner it tends to run. Accessibility, the third filter, is simply about how much of your booked time is spent underway versus at anchor. The closest spots reward a short charter; the far western runs only make sense once you have six or eight hours to spend.</p></div>
+  
+</div>
+
+<div class="sec">
+  <div class="sec-head">
+    <div class="sec-kicker caps">Section 03</div>
+    <h2 class="display">The eastern run: Río Verde to Cabopino</h2>
+    <div class="rules"><span class="thick"></span><span class="thin"></span></div>
+  </div>
+  <div class="sec-body"><p><strong>1. Playa de Río Verde, the 10-minute swim stop.</strong> 0.8 NM east of Puerto Banús, this is where almost every 2-hour charter drops first anchor. The bottom is sand and light weed at 3-5 m, holding well in any wind under 12 kts. The Golden Mile backdrop of the Marbella Club, Puente Romano and the white-walled villas makes it the most-photographed swim stop on the coast. Bring goggles: small schools of salema fish circle the boat in summer. It suits the Astondoa 40 and Azimut 39 perfectly on a quick midday outing.</p><p><strong>2. Cala del Faro, sunset and lighthouse views.</strong> 1.8 NM east, tucked under Marbella's stubby white lighthouse. Anchor in 4-6 m about 150 m offshore on clean sand. The cove faces west-southwest, so it is the prime sunset stop from late June through September. The skipper usually approaches from the south to keep the lighthouse framed off the bow on arrival, a small detail but worth asking for. Combine with Río Verde on a 3-hour outing for a two-beach loop.</p><p><strong>3. Playa Nagüeles roadstead, the Nikki Beach run.</strong> 2.5 NM east, off the famous beach club. Anchor is in 6-8 m on sand; ride the tender ashore if you have pre-booked a sunbed, as Nikki and Trocadero both take reservations. This is the social stop, busy in August and calmer in May and October. Music carries clearly across the water at weekends, which is either a feature or a bug depending on your party. Waiter service ashore is not included in the charter, so factor €150-300 per couple for lunch.</p><p><strong>4. Cabopino, with dunes, a marina and a longer swim.</strong> 8 NM east, the eastern limit of most half-day charters. The protected dune system, the only one left on the Costa del Sol, gives Cabopino a wilder feel than the central Marbella beaches. Anchor on sand at 5-7 m outside the marked swim zone. The small marina behind the beach takes visiting boats up to about 15 m if you want lunch ashore at Andrea's or Trocadero Beach; call ahead on VHF 9. A 4-hour charter from Banús comfortably fits a 75-90 minute stop here.</p><p><strong>A note for divers and snorkellers.</strong> Just east of the main Cabopino anchorage, the seabed dips to 8-12 m over rocky reefs that hold octopus, breams and the occasional moray. Drop in with a mask off the swim platform for the clearest snorkelling within easy reach of Banús. Bring your own gear; charter inventory typically includes only adult masks and snorkels. It is best on calm easterly mornings before the day-trip flotilla arrives around 12:00.</p><p>Run as a sequence, the eastern beaches make a natural progression. A morning start lets you take Río Verde while the water is glassy, push on to Cala del Faro and Nagüeles as the day warms, and reach Cabopino in time for a long midday swim and lunch before turning for home. The whole loop sits inside the half-day window, and because the run hugs the coast you are rarely more than a mile or two from shelter if the breeze gets up.</p></div>
+  <figure class="plate"><img src="file:///Users/master/boat-rental-marbella/site/img/boats/azimut-39/aerial-1200.jpg" alt=""><figcaption>The Azimut 39 at anchor off the Marbella coast, a regular sight on the eastern run</figcaption></figure>
+</div>
+
+<div class="sec">
+  <div class="sec-head">
+    <div class="sec-kicker caps">Section 04</div>
+    <h2 class="display">The western run: Guadalmina to Sotogrande</h2>
+    <div class="rules"><span class="thick"></span><span class="thin"></span></div>
+  </div>
+  <div class="sec-body"><p><strong>5. Guadalmina, the western Blue Flag option.</strong> 4 NM west of Puerto Banús, fronting the Guadalmina urbanisation and Roman ruins. Anchor in 5-7 m on sand; the bottom shelves gently so swimming is easy for kids. This is the go-to alternative when easterly levante chops up Río Verde and Cabopino, because Guadalmina sits in the wind shadow of Punta de la Doncella and stays glassy. It is less photogenic than the eastern beaches, but the water is reliably clearer because it is further from river outflows.</p><p><strong>6. Cala Cortés, a quiet anchorage west of Banús.</strong> 6 NM west, a small cove between Guadalmina and Estepona. Few charter boats stop here, which is exactly the appeal. Anchor in 4-6 m on sand and rock patches; drop carefully and check the holding. There are no facilities ashore, just a strip of grey-gold sand backed by pine. It works best as the middle stop on a 6-hour westbound itinerary, and it suits the Pershing 46 and Fairline Targa 12m for couples who want a quieter day on the water.</p><p><strong>7. Cala del Cristo, Estepona, 12 NM west.</strong> The marquee Estepona stop, just east of the marina. Anchor in 5-8 m on clean sand inside the bay. The town's old quarter, recently restored with the flower-pot streets, is a 10-minute tender ride away if you berth temporarily at Estepona marina; radio ahead for a visitor slot. A full day on the Mangusta 80 or Canados 86 from Banús to Estepona and back is the classic 8-hour itinerary, with lunch on board between the two legs.</p><p><strong>8. Sotogrande beach, the long western run.</strong> 20 NM west of Puerto Banús, sitting just east of Gibraltar. Sotogrande is the polo-and-yachts enclave, and the beach itself is wide, quiet and backed by the marina. It is worth the 75-minute transit only on an 8-hour charter; anything shorter and you will spend more time underway than swimming. Anchor in 5-8 m off the public beach, or take a visitor berth in Puerto Sotogrande for lunch at one of the marina restaurants.</p><p>The western run has a different character to the eastern loop. It trades the dense, social Golden Mile for quieter water, longer transits and a real sense of leaving the resort behind. Past Estepona the coastline grows wilder and the traffic thins out, and on a clear day the Rock of Gibraltar and the African coast across the Strait come into view off the bow. This is the run for guests who would rather cover distance and see the coast unfold than hop between busy beach clubs, and it is why the far western stops only earn their place on the longer charters.</p></div>
+  <figure class="plate"><img src="file:///Users/master/boat-rental-marbella/site/img/boats/canados-86/hero-1200.jpg" alt=""><figcaption>A full-day yacht like the Canados 86 makes the long western run to Estepona and Sotogrande comfortable</figcaption></figure>
+</div>
+
+<div class="sec">
+  <div class="sec-head">
+    <div class="sec-kicker caps">Section 05</div>
+    <h2 class="display">Matching beach choice to charter length</h2>
+    <div class="rules"><span class="thick"></span><span class="thin"></span></div>
+  </div>
+  <div class="sec-body"><table><tr><th>Charter length</th><th>Beaches realistically covered</th><th>Suggested boat</th></tr><tr><td>2 hours</td><td>Río Verde + Cala del Faro</td><td>Astondoa 40 / Azimut 39</td></tr><tr><td>4 hours</td><td>Río Verde + Nagüeles + Cabopino</td><td>Astondoa 40 / Azimut 39</td></tr><tr><td>6 hours</td><td>Guadalmina + Cala Cortés + Cala del Cristo</td><td>Pershing 46 / Fairline Targa 12m</td></tr><tr><td>8 hours</td><td>Cabopino &rarr; Banús &rarr; Estepona &rarr; Sotogrande</td><td>Mangusta 80 / Canados 86</td></tr></table><p>Tier A pricing on the Astondoa 40 and Azimut 39 starts at €749 for 2 hours and tops out at €2,299 for the full day. Tier B yachts in the Mangusta 80 family run from €4,719 for a 4-hour minimum, jet ski included free. Skipper, fuel, drinks, snacks and Spanish IVA are in every quote, with no fuel surcharges and no bar bill at the end.</p><p>The table is a starting point rather than a fixed menu. The right length depends less on how many beaches you want to tick off and more on how you like to spend a day. Two hours is a swim and a sundowner, not a tour; four hours buys a genuine half-day with a proper lunch stop; six hours opens up the quieter western coves; and only the full eight hours makes the long run to Estepona and Sotogrande feel relaxed rather than rushed. As a rule of thumb, the more time you spend at anchor relative to time underway, the better the day feels, which is why the shorter charters stay close to Banús and the longer ones earn the distance.</p></div>
+  <figure class="plate"><img src="file:///Users/master/boat-rental-marbella/site/img/boats/astondoa-40/sunset-1600.jpg" alt=""><figcaption>An evening charter on the Astondoa 40; Cala del Faro is the classic sunset anchorage</figcaption></figure>
+</div>
+
+<div class="sec">
+  <div class="sec-head">
+    <div class="sec-kicker caps">Section 06</div>
+    <h2 class="display">Sea conditions and the wind that matters</h2>
+    <div class="rules"><span class="thick"></span><span class="thin"></span></div>
+  </div>
+  <div class="sec-body"><p>The Costa del Sol has two prevailing winds: poniente, westerly, light and warm, and levante, easterly, stronger and choppier. Levante typically picks up in the afternoon during July and August, peaking at 18-22 kts. When it does, the eastern beaches such as Cabopino and Cala del Faro get short, sharp 1-1.5 m chop that ruins a swim stop. The fix is simple: head west to Guadalmina, Cala Cortés or Estepona's Cala del Cristo, all of which sit in the wind shadow. The skipper checks the morning forecast and reroutes automatically, so you do not need to ask.</p><p>The water itself rarely disappoints. Marbella's Blue Flag beaches, Cabopino, Río Verde, Guadalmina and Cala del Cristo, hold EU bathing-water 'excellent' ratings year on year. Visibility on a calm summer morning runs 5-8 m at the anchor points, dropping to 2-4 m near river mouths after rain. Sea temperature averages 22-24 °C July through September and 17-19 °C in May and October, fine for swimming with a short pause to acclimatise.</p><p>Understanding why the wind matters helps you read the day. Levante comes off the land mass to the east and builds across open water, so it hits the east-facing approaches hardest while the western coves stay tucked behind the headland of Punta de la Doncella. Poniente is the gentler of the two and rarely spoils a swim. Because the breeze almost always freshens through the afternoon in high summer, the calmest, glassiest water of the day is usually first thing, which is one good argument for an early start whatever route you choose. None of this requires any knowledge on your part. The point of an included skipper is that the morning forecast becomes their problem, not yours, and the route flexes to put you on flat water.</p></div>
+  
+</div>
+
+<div class="sec">
+  <div class="sec-head">
+    <div class="sec-kicker caps">Section 07</div>
+    <h2 class="display">Timing the day and the season</h2>
+    <div class="rules"><span class="thick"></span><span class="thin"></span></div>
+  </div>
+  <div class="sec-body"><p>The single biggest lever on a Marbella charter is the hour you cast off. A morning departure, broadly nine to eleven, gives you the flattest water, the clearest visibility and the eastern beaches before the day-trip flotilla arrives around midday. A late-afternoon departure trades the swimming for the light: the sun sets behind the Rock of Gibraltar from late June to early August at around 21:40, which is why an evening run to Cala del Faro for a sundowner has become its own small tradition. Midday charters sit in between, hottest and busiest, but best for a long lunch stop at Cabopino or Estepona where you can go ashore while the sun is high.</p><p>Seasonally, the water follows a predictable curve. May and October are the shoulder months, with sea temperatures around 17-19 °C, fewer boats on the water and softer prices than the peak. July, August and September bring the warmest sea, 22-24 °C, the longest run of settled days and, inevitably, the busiest anchorages and the most reliable afternoon levante. June and early autumn are the sweet spot for many: warm enough to swim happily, quiet enough that the popular coves still feel spacious. There is no closed season here, but the character of the day shifts month to month, and matching your route to the conditions, the busy eastern beaches in the calm shoulder weeks, the sheltered west on a blustery August afternoon, is what separates a good charter from a great one.</p></div>
+  
+</div>
+
+<div class="sec">
+  <div class="sec-head">
+    <div class="sec-kicker caps">Section 08</div>
+    <h2 class="display">What&#x27;s included and what to bring</h2>
+    <div class="rules"><span class="thick"></span><span class="thin"></span></div>
+  </div>
+  <div class="sec-body"><p>Every charter from our fleet includes a licensed skipper, all fuel, soft drinks plus beer, white wine and cava, light snacks, insurance, safety gear and Spanish IVA. The Mangusta 80 and Canados 86 add a complimentary jet ski. Lunch ashore is not included, so budget €40-80 per person for a sit-down at Andrea's Cabopino or a beach-club main course on the Golden Mile, and €150-300 per couple if you are heading for a sunbed at Nikki Beach or Trocadero off Nagüeles.</p><p>What you bring is short, because most of it is already on board. The essentials are sun protection and swim kit:</p><ul><li><strong>Sunscreen, ideally reef-safe</strong>, a hat and sunglasses. The Mediterranean sun is stronger on the water than it feels, with the reflection off the surface adding to the load.</li><li><strong>Towels and a light layer</strong> for the run home, especially on an evening charter once the sun is off the water.</li><li><strong>Your own snorkel and mask</strong> if you have them. Charter inventory typically includes only adult masks and snorkels, so bring child sizes if the little ones want to look down at the reef off Cabopino.</li><li><strong>A waterproof phone pouch or a proper camera</strong> for the Golden Mile and lighthouse backdrops, which are the most photographed on the coast.</li></ul><p>Safety kit is handled for you. Lifejackets in adult and child sizes are on board, the skipper carries the full safety inventory, and depths at the swim stops are chosen to keep the boat steady. You do not need any qualification, experience or licence; the licensed skipper handles the boat from cast-off to return.</p></div>
+  
+</div>
+
+<div class="sec">
+  <div class="sec-head">
+    <div class="sec-kicker caps">Section 09</div>
+    <h2 class="display">Who each run suits, and the boats that fit</h2>
+    <div class="rules"><span class="thick"></span><span class="thin"></span></div>
+  </div>
+  <div class="sec-body"><p>The fleet is sorted into tiers so the boat matches the day. Tier A, the Astondoa 40 and Azimut 39, are the day-boats: nimble, quick to the eastern beaches and priced for a short outing, which makes them the natural choice for couples and small groups doing a 2-hour swim stop or a 4-hour half-day. They are the boats that take Río Verde, Cala del Faro, Nagüeles and Cabopino on a single tank of fuel and an easy budget.</p><p>For the quieter western coves, the Pershing 46 and Fairline Targa 12m sit in the middle of the range: enough boat to be comfortable on the 6-hour run out to Guadalmina, Cala Cortés and Cala del Cristo, and well suited to couples who want a calmer, less crowded day on the water rather than the social bustle of the Golden Mile.</p><p>The Tier B yachts, the Mangusta 80 family and the Canados 86, are the full-day platforms. These are the boats for the classic 8-hour Banús to Estepona to Sotogrande itinerary, for larger groups and for celebrations where the space, the on-board lunch and the complimentary jet ski turn the run into an occasion rather than a trip. Families gravitate to the calm, shallow anchorages at Río Verde, Guadalmina and Cabopino whatever the boat, because the swell is minimal, the swims ashore are short and the inflatable toys, the donut and paddleboard standard on the Tier B yachts, keep younger crew happy at anchor. In short: pick the run for the kind of day you want, and the suggested boat in the table above will already be the right size for it.</p></div>
+  <figure class="plate"><img src="file:///Users/master/boat-rental-marbella/site/img/boats/mangusta-80/aerial-wake-1200.jpg" alt=""><figcaption>A Mangusta 80 under way; the full-day platform for the long Banús to Sotogrande itinerary</figcaption></figure>
+</div>
+
+<div class="sec">
+  <div class="sec-head">
+    <div class="sec-kicker caps">Section 10</div>
+    <h2 class="display">Booking, logistics and quick answers</h2>
+    <div class="rules"><span class="thick"></span><span class="thin"></span></div>
+  </div>
+  <div class="sec-body"><p>Charters depart from Puerto Banús, the obvious base for every route in this guide and the point all distances are measured from. The booking itself is simple: pick a charter length, the suggested boat follows from the table, and the quote you see already folds in skipper, fuel, drinks, snacks, insurance, safety gear and Spanish IVA. There are no fuel surcharges and no bar bill at the end, which means the price you book is the price you pay. On the morning of the charter the skipper reads the forecast and confirms the route, swapping eastern beaches for sheltered western coves if levante is up, so the plan flexes to the conditions without any input needed from you.</p><ul><li><strong>Can the boat berth instead of anchoring?</strong> Cabopino and Sotogrande both have marinas where the skipper can berth if a slot is available, and Estepona takes visitor slots if you radio ahead, but most Marbella beaches are anchor-only; there are no public pontoons at Río Verde, Cala del Faro or Guadalmina. You will swim or paddleboard ashore from a tender if you want sand under your feet. Stepping off the swim platform straight into 4-6 m of water is the usual rhythm of a Marbella charter.</li><li><strong>Can kids swim safely from the boat?</strong> Yes. Every charter carries lifejackets in adult and child sizes, and the skipper picks anchor depths of 3-6 m on sand so the boat sits steady and the bottom is visible. Río Verde, Guadalmina and Cabopino are the calmest options for families with under-10s, with minimal swell and short swims to floating mats. Inflatable toys, the donut and paddleboard, are standard on Tier B yachts like the Mangusta 80.</li><li><strong>Which beach is best for a sunset stop?</strong> Cala del Faro, directly under Marbella's old lighthouse, faces west-southwest and catches a clean horizon for sunset photos. Drop anchor in 5 m about 150 m offshore, kill the engines and pour the included cava. From late June to early August the sun drops behind the Rock of Gibraltar silhouette around 21:40, easy to fit into a 19:00-21:00 evening charter from Banús.</li><li><strong>Do we need any experience or a licence?</strong> No. A licensed skipper handles the boat throughout, reads the conditions and chooses the anchorages. Your only job is to choose the length of day and turn up at Puerto Banús with sunscreen and a swimsuit.</li><li><strong>Is the water clean enough to swim?</strong> Yes. The Blue Flag beaches on this coast, Cabopino, Río Verde, Guadalmina and Cala del Cristo, hold EU bathing-water 'excellent' ratings year on year, with summer visibility of 5-8 m at the anchor points.</li></ul></div>
+  <figure class="plate"><img src="file:///Users/master/boat-rental-marbella/site/img/boats/pershing-46/hero-1200.jpg" alt=""><figcaption>The Pershing 46, a comfortable mid-range choice for the quieter 6-hour western run</figcaption></figure>
+</div>
+
+<div class="callout">
+  <h3 class="display">Plan your day on the water</h3>
+  <p>Read more Marbella charter guides and book your beach run, from a 2-hour swim stop to a full 8-hour coastal day, at <a href="https://boatrentalinmarbella.com">boatrentalinmarbella.com</a>. Skipper, fuel, drinks, snacks and Spanish IVA are included on every charter.</p><p>Boat owners: list your boat free at <a href="https://boathire24.com">boathire24.com</a> and reach charter guests worldwide.</p>
+  <div class="linksrow caps"><a href="https://boathire24.com">https://boathire24.com</a><span class="sep">&#9670;</span><a href="https://boatrentalinmarbella.com/blog/best-beaches-by-boat-marbella.html">https://boatrentalinmarbella.com/blog/best-beaches-by-boat-marbella.html</a></div>
+</div>
+<div class="endmark"><span class="line"></span><svg width="14" height="14" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg" aria-hidden="true"><path fill="#b9924b" d="M17 15l1.55 1.55c-.96 1.69-3.33 3.04-5.55 3.37V11h3V9h-3V7.82C14.16 7.4 15 6.3 15 5c0-1.65-1.35-3-3-3S9 3.35 9 5c0 1.3.84 2.4 2 2.82V9H8v2h3v8.92c-2.22-.33-4.59-1.68-5.55-3.37L7 15l-4-3v3c0 3.88 4.92 7 9 7s9-3.12 9-7v-3l-4 3zM12 4c.55 0 1 .45 1 1s-.45 1-1 1-1-.45-1-1 .45-1 1-1z"/></svg><span class="line"></span></div>
+  </td></tr></tbody>
+  <tfoot><tr><td></td></tr></tfoot>
+</table>
+
+<div class="runfoot caps">
+  <span><b>boathire24.com</b> <span class="gold">&#9670;</span> rent boats worldwide
+    <span class="gold">&#9670;</span> list your boat free</span>
+  <span class="gold caps">boatrentalinmarbella.com/blog/best-beaches-by-boat-marbella.html</span>
+</div>
+</body>
+</html>

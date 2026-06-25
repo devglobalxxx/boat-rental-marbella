@@ -1,0 +1,490 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<title>Best Snorkel Spots on a Marbella Charter (Captain&#x27;s Picks)</title>
+<style>
+:root {
+  --navy:      #0e2438;
+  --navy-deep: #08182a;
+  --gold:      #b9924b;
+  --gold-dark: #8a6c33;
+  --gold-light:#d4b06a;
+  --gold-pale: #e8d8af;
+  --ivory:     #f7f2e6;
+  --paper:     #fdfbf5;
+  --ink:       #22303e;
+  --muted:     #5d6a76;
+  --hairline:  #d9cdaf;
+  --row-tint:  #f5efdf;
+}
+* { -webkit-print-color-adjust: exact; print-color-adjust: exact;
+    box-sizing: border-box; }
+@page { size: A4; margin: 0; }
+html, body { margin: 0; padding: 0; }
+body {
+  background: var(--paper);
+  color: var(--ink);
+  font-family: Georgia, 'Palatino Linotype', Palatino, 'Times New Roman', serif;
+  font-size: 10.5pt;
+  line-height: 1.62;
+}
+.display { font-family: Didot, 'Didot LT STD', 'Playfair Display', Georgia,
+           'Times New Roman', serif; }
+.caps { font-family: Optima, 'Avenir Next', 'Gill Sans', 'Trebuchet MS',
+        sans-serif; text-transform: uppercase; }
+
+/* ---------------- Cover ---------------- */
+.cover {
+  position: relative;
+  width: 210mm; height: 297mm;
+  overflow: hidden;
+  background: var(--navy-deep);
+  page-break-after: always;
+}
+.cover-img {
+  position: absolute; inset: 0;
+  width: 100%; height: 100%;
+  object-fit: cover;
+  object-position: 24% center;  /* centres the yacht's full profile in the A4 crop */
+}
+.cover-veil {
+  position: absolute; inset: 0;
+  background:
+    linear-gradient(to top, rgba(11,26,46,0.92),
+                    rgba(11,26,46,0.86) 30%, transparent 55%),
+    linear-gradient(180deg,
+      rgba(8,24,42,0.62) 0%,
+      rgba(8,24,42,0.20) 26%,
+      rgba(8,24,42,0.12) 50%,
+      rgba(8,24,42,0.00) 62%);
+}
+.cover-veil.no-img {
+  background:
+    radial-gradient(120mm 90mm at 50% 26%, rgba(185,146,75,0.20), transparent 70%),
+    linear-gradient(180deg, #122c46 0%, #0a1d33 55%, #071426 100%);
+}
+.cover-top {
+  position: absolute; top: 13mm; left: 16mm; right: 16mm;
+  display: flex; align-items: center; justify-content: space-between;
+}
+.brand-lockup { display: flex; align-items: center; gap: 4.5mm; }
+.logo-chip {
+  background: #ffffff;
+  border: 1px solid var(--gold);
+  border-radius: 1.2mm;
+  padding: 2mm;
+  line-height: 0;
+}
+.logo-chip img { display: block; height: 13mm; width: 13mm;
+                 object-fit: cover; border-radius: 0.7mm; }
+.brand-name {
+  color: var(--ivory); font-size: 13pt; letter-spacing: 0.30em;
+  line-height: 1.25;
+}
+.brand-tag {
+  color: var(--gold-pale); font-size: 6.4pt; letter-spacing: 0.26em;
+  margin-top: 1mm;
+}
+.doc-type-flag {
+  text-align: right;
+  color: var(--gold-light);
+  font-size: 7.5pt; letter-spacing: 0.34em;
+  border-top: 0.7pt solid var(--gold);
+  border-bottom: 0.7pt solid var(--gold);
+  padding: 2.2mm 0 2mm 0;
+}
+.cover-main {
+  position: absolute; left: 16mm; right: 16mm; bottom: 34mm;
+}
+.cover-rule {
+  display: flex; align-items: center; gap: 4mm;
+  margin-bottom: 5mm;
+}
+.cover-rule .line { flex: 0 0 22mm; height: 0; border-top: 0.8pt solid var(--gold); }
+.cover-rule .word {
+  color: var(--gold-light); font-size: 8pt; letter-spacing: 0.42em;
+  white-space: nowrap;
+  text-shadow: 0 1px 5px rgba(5,14,26,0.65);
+}
+.cover-title {
+  color: #fdfaf2;
+  font-size: 44pt; line-height: 1.05;
+  font-weight: 600;
+  margin: 0 0 4mm 0;
+  text-shadow: 0 1px 8px rgba(5,14,26,0.55);
+}
+.cover-subtitle {
+  color: var(--gold-pale);
+  font-style: italic;
+  font-size: 13pt; line-height: 1.45;
+  margin: 0 0 7mm 0;
+  max-width: 150mm;
+  text-shadow: 0 1px 6px rgba(5,14,26,0.6);
+}
+.cover-meta {
+  color: rgba(247,242,230,0.92);
+  font-size: 7.6pt; letter-spacing: 0.22em;
+}
+.cover-meta .dot { color: var(--gold-light); padding: 0 2.2mm; }
+.fleet-strip {
+  margin-top: 8mm;
+  display: flex; align-items: center; gap: 4mm;
+}
+.fleet-strip .logo-chip img { height: 9mm; width: auto; }
+.fleet-label {
+  color: rgba(247,242,230,0.85); font-size: 6.6pt; letter-spacing: 0.30em;
+}
+
+/* ------------- Repeating footer ------------- */
+.runfoot {
+  position: fixed; left: 0; right: 0; bottom: 0;
+  height: 12mm;
+  background: var(--ivory);
+  border-top: 1pt solid var(--gold);
+  display: flex; align-items: center; justify-content: space-between;
+  padding: 0 16mm;
+  font-size: 6.8pt; letter-spacing: 0.12em;
+  color: var(--navy);
+}
+.runfoot b { letter-spacing: 0.22em; font-weight: 600; }
+.runfoot .gold { color: var(--gold-dark); }
+.runfoot a { color: var(--navy); text-decoration: none; }
+
+/* ------------- Paged content scaffold ------------- */
+table.paged { width: 100%; border-collapse: collapse; }
+table.paged > thead td { height: 15mm; padding: 0; }
+table.paged > tfoot td { height: 17mm; padding: 0; }
+table.paged > tbody > tr > td { padding: 0 18mm; }
+
+/* ------------- Sections ------------- */
+.sec { margin: 0 0 8mm 0; }
+.sec-head {
+  break-after: avoid-page; page-break-after: avoid;
+  break-inside: avoid; page-break-inside: avoid;
+  margin: 0 0 4.5mm 0;
+}
+.sec-kicker {
+  color: var(--gold-dark); font-size: 7pt; letter-spacing: 0.38em;
+  margin-bottom: 1.6mm;
+}
+.sec-head h2 {
+  color: var(--navy);
+  font-size: 18.5pt; font-weight: 400; line-height: 1.2;
+  margin: 0 0 2.6mm 0;
+}
+.sec-head .rules { position: relative; height: 2.4mm; }
+.sec-head .rules .thin {
+  position: absolute; left: 0; right: 0; top: 1mm;
+  border-top: 0.6pt solid var(--hairline);
+}
+.sec-head .rules .thick {
+  position: absolute; left: 0; top: 0; width: 26mm;
+  border-top: 2.2pt solid var(--gold);
+}
+.sec-body p { margin: 0 0 3.4mm 0; }
+.sec-body p:last-child { margin-bottom: 0; }
+.sec-body ol { margin: 0 0 3.4mm 0; padding-left: 5.5mm; }
+.sec-body ul { margin: 0 0 3.4mm 0; padding-left: 1mm; }
+.sec-body li { margin-bottom: 1.6mm; break-inside: avoid; page-break-inside: avoid;
+               -webkit-column-break-inside: avoid; }
+.sec-body ul.cols2 { columns: 2; column-gap: 9mm;
+                     break-inside: avoid; page-break-inside: avoid; }
+.sec-body ul > li {
+  list-style: none;
+  padding-left: 1.1em; text-indent: -1.1em;  /* hanging indent: wraps align under text */
+}
+.sec-body ul > li::before {
+  content: "\2726";            /* four-pointed star, brass compass point */
+  display: inline-block; width: 1.44em; text-indent: 0;
+  color: var(--gold); font-size: 8pt;       /* 1.44em @8pt == 1.1em @10.5pt */
+}
+.sec-body a { color: var(--navy); text-decoration: none;
+              border-bottom: 0.6pt solid var(--gold); }
+.sec-body strong { color: var(--navy); }
+
+/* generic tables inside section html */
+.sec-body table {
+  width: 100%; border-collapse: collapse;
+  margin: 1mm 0 4mm 0;
+  break-inside: avoid; page-break-inside: avoid;
+  font-size: 9.8pt;
+}
+.sec-body th {
+  background: var(--navy); color: var(--ivory);
+  font-family: Optima, 'Avenir Next', 'Gill Sans', 'Trebuchet MS', sans-serif;
+  text-transform: uppercase; letter-spacing: 0.16em;
+  font-size: 7.4pt; font-weight: 500;
+  text-align: left; padding: 2.6mm 3.5mm;
+  border-bottom: 1.4pt solid var(--gold);
+}
+.sec-body td {
+  padding: 2.2mm 3.5mm;
+  border-bottom: 0.6pt solid var(--hairline);
+  color: var(--ink);
+}
+.sec-body td, .sec-body th { font-variant-numeric: tabular-nums; }
+.sec-body td:not(:first-child),
+.sec-body th:not(:first-child) { text-align: right; }
+.sec-body tr:nth-child(even) td { background: var(--row-tint); }
+.sec-body td:first-child { color: var(--navy); }
+.sec-body tr.best td { background: rgba(212,175,55,0.12); }
+.sec-body tr.best td:first-child { color: var(--navy); font-weight: 600; }
+.best-tag {
+  display: inline-block;
+  font-family: Optima, 'Avenir Next', 'Gill Sans', 'Trebuchet MS', sans-serif;
+  font-variant-caps: small-caps; text-transform: lowercase;
+  font-size: 7.6pt; font-weight: 600; letter-spacing: 0.14em;
+  color: var(--gold-dark);
+  border: 0.6pt solid var(--gold);
+  border-radius: 1mm;
+  padding: 0.2mm 1.6mm;
+  margin-left: 2.2mm;
+  white-space: nowrap;
+  vertical-align: 0.2mm;
+}
+
+/* ------------- Figures ------------- */
+figure.plate {
+  break-inside: avoid; page-break-inside: avoid;
+  margin: 5mm 0 2mm 0;
+  background: #ffffff;
+  border: 0.7pt solid var(--gold-light);
+  padding: 2.6mm;
+}
+figure.plate img {
+  display: block; width: 100%; height: 78mm; object-fit: cover;
+}
+figure.plate figcaption {
+  text-align: center;
+  font-style: italic;
+  font-size: 8.4pt; color: var(--muted);
+  padding: 2.4mm 2mm 0.6mm 2mm;
+}
+figure.plate figcaption::before {
+  content: "\25C6\00a0"; color: var(--gold); font-size: 6pt;
+}
+
+/* ------------- Spec table (2-column grid: two lbl/val pairs per row) ------------- */
+.spec-block { margin: 0 0 8mm 0; }
+table.spec {
+  width: 100%; border-collapse: collapse;
+  border-top: 1.6pt solid var(--navy);
+  border-bottom: 1.6pt solid var(--navy);
+}
+table.spec td { padding: 1.7mm 1.5mm; border-bottom: 0.6pt solid var(--hairline);
+                vertical-align: top; }
+table.spec tr:last-child td { border-bottom: none; }
+table.spec td.lbl {
+  width: 21%;
+  font-family: Optima, 'Avenir Next', 'Gill Sans', 'Trebuchet MS', sans-serif;
+  text-transform: uppercase; letter-spacing: 0.16em;
+  font-size: 7.2pt; color: var(--gold-dark);
+  padding-top: 2.3mm;
+}
+table.spec td.val { width: 29%; color: var(--navy); font-size: 9.8pt; }
+table.spec td.lbl:nth-child(3) {
+  border-left: 0.6pt solid var(--hairline);
+  padding-left: 4mm;
+}
+table.spec td.val:nth-child(2) { padding-right: 4mm; }
+
+/* ------------- Callout ------------- */
+.callout {
+  break-inside: avoid; page-break-inside: avoid;
+  margin: 8mm 0 4mm 0;
+  background: var(--navy);
+  border: 1pt solid var(--gold);
+  outline: 0.6pt solid var(--gold);
+  outline-offset: -2.2mm;
+  color: var(--ivory);
+  padding: 8mm 9mm 7mm 9mm;
+}
+.callout h3 {
+  color: var(--gold-light);
+  font-size: 15pt; font-weight: 400;
+  margin: 0 0 3mm 0;
+}
+.callout p { margin: 0 0 2.8mm 0; line-height: 1.6; color: #efe7d3; }
+.callout a { color: var(--gold-light); text-decoration: none; }
+.callout ul { margin: 0 0 2.8mm 0; padding-left: 1mm; }
+.callout ul > li { list-style: none; margin-bottom: 1.4mm;
+                   padding-left: 1.1em; text-indent: -1.1em;
+                   break-inside: avoid; page-break-inside: avoid; }
+.callout ul > li::before {
+  content: "\2726"; display: inline-block; width: 1.44em; text-indent: 0;
+  color: var(--gold-light); font-size: 8pt;
+}
+.callout .linksrow {
+  margin-top: 4.5mm; padding-top: 3.6mm;
+  border-top: 0.6pt solid rgba(212,176,106,0.55);
+  font-size: 7.6pt; letter-spacing: 0.16em;
+  color: var(--gold-pale);
+}
+.callout .linksrow span.sep { padding: 0 2.6mm; color: var(--gold); }
+
+.endmark {
+  display: flex; align-items: center; justify-content: center; gap: 3.5mm;
+  margin: 7mm 0 0 0;
+}
+.endmark .line { width: 14mm; height: 0; border-top: 0.6pt solid var(--gold); }
+.endmark svg { display: block; }
+</style>
+</head>
+<body>
+
+<div class="cover">
+  <img class="cover-img" src="file:///Users/master/boat-rental-marbella/site/img/boats/astondoa-40/hero-1600.jpg" alt="">
+  <div class="cover-veil"></div>
+  <div class="cover-top">
+    <div class="brand-lockup">
+      <span class="logo-chip"><img src="file:///Users/master/boat-rental-platform/public/brand-logo.jpg" alt="BoatHire24"></span>
+      <div>
+        <div class="brand-name caps display">BoatHire24</div>
+        <div class="brand-tag caps">Rent boats worldwide <span class="gold">|</span> list your boat free</div>
+      </div>
+    </div>
+    <div class="doc-type-flag caps">June 2026</div>
+  </div>
+  <div class="cover-main">
+    <div class="cover-rule">
+      <span class="line"></span>
+      <span class="word caps">Charter Guide</span>
+    </div>
+    <h1 class="cover-title display">Best Snorkel Spots on a Marbella Charter (Captain&#x27;s Picks)</h1>
+    <p class="cover-subtitle display">A skipper&#x27;s working guide to the six clearest snorkel anchorages reachable on a half-day or full-day charter from Puerto Banus, with real depths, visibility windows, fleet matches and how to plan the day so you actually get the clear water.</p>
+    <div class="cover-meta caps">BoatHire24 Guides</div>
+    
+  </div>
+</div>
+<table class="paged">
+  <thead><tr><td></td></tr></thead>
+  <tbody><tr><td>
+
+<div class="sec">
+  <div class="sec-head">
+    <div class="sec-kicker caps">Section 01</div>
+    <h2 class="display">Why snorkel the Marbella coast at all</h2>
+    <div class="rules"><span class="thick"></span><span class="thin"></span></div>
+  </div>
+  <div class="sec-body"><p>The honest answer to <em>best snorkel spots Marbella</em> is that there are six anchorages worth the diesel, all reachable in under 40 minutes from Puerto Banus, and visibility on a calm June or September morning runs 10 to 15 metres, which is better than most people expect from the Costa del Sol. This is Mediterranean snorkelling, so set the expectation now: there are no coral reefs, no turtles cruising past, no tropical colour wall. What you get instead is a rock-and-seagrass mosaic that is surprisingly busy with fish, water that warms to bathtub temperature in high summer, and a string of sheltered coves you can only reach properly by boat.</p><p>The reason a charter beats a beach mask-and-fins session is access. The clearest water sits 60 to 100 metres off rocky shorelines, or several hundred metres offshore over low reef, in places you simply cannot reach by swimming from a public beach without a long, tiring paddle through churned-up sand. A boat puts you on top of the good ground in minutes, gives you a stable swim platform to enter and exit from, and lets a skipper who knows the seabed pick the spot that is actually clear that morning rather than the one that was clear last week. That local read is the whole game with Costa del Sol visibility, which can swing from gin-clear to murky in a day.</p><p>This guide is the skipper's working list, ordered by reliability rather than by how the spot photographs. We have left in every depth, every distance and every price exactly as we quote them, and added the practical detail that turns a good idea into a good day: when to book, what to bring, how the captain reads the wind, and which boat suits which kind of group. Pricing on our snorkel-ready boats starts at 749 euros for a 2-hour Tier A charter, all inclusive of skipper, drinks and gear.</p></div>
+  
+</div>
+
+<div class="sec">
+  <div class="sec-head">
+    <div class="sec-kicker caps">Section 02</div>
+    <h2 class="display">The six spots, ranked by reliability</h2>
+    <div class="rules"><span class="thick"></span><span class="thin"></span></div>
+  </div>
+  <div class="sec-body"><p>Before the detail, here is the shortlist at a glance. The order is the order we trust them in, not the order of raw beauty. Distances are run from the Puerto Banus harbour mouth, and the visibility figures are what we see on a calm morning in the June to September window, not the once-a-year best.</p><table><tr><th>Spot</th><th>Run from Banus</th><th>Typical visibility</th><th>Entry style</th></tr><tr><td>Cala del Faro</td><td>15 min east</td><td>10 to 15 m</td><td>Tender in, anchor 80 m off</td></tr><tr><td>Rio Verde reef</td><td>5 min, 600 m offshore</td><td>High fish density</td><td>Straight off the platform</td></tr><tr><td>Cala Cortes</td><td>20 min east</td><td>8 to 12 m</td><td>Tender in, anchor 60 to 100 m off</td></tr><tr><td>Cabopino rocks</td><td>35 min east</td><td>Variable, current dependent</td><td>Skipper's call on the day</td></tr><tr><td>Estepona Isla</td><td>50 min west</td><td>10 to 12 m seaward side</td><td>Platform on the lee anchorage</td></tr><tr><td>Sotogrande coves</td><td>Full day, fast boat only</td><td>12 to 15 m</td><td>Platform, cleaner water</td></tr></table><p>Read that as a menu, not a fixed route. On any given morning the captain checks the wind at 07:00 and reorders, because two clear spots downwind beat four spots fought into a chop. The sections below walk through each in the order we would normally fit them into a day.</p></div>
+  <figure class="plate"><img src="file:///Users/master/boat-rental-marbella/site/img/boats/azimut-39/aerial-1200.jpg" alt=""><figcaption>The Azimut 39 over clear water east of Puerto Banus, where the eastern coves hold the cleanest sand.</figcaption></figure>
+</div>
+
+<div class="sec">
+  <div class="sec-head">
+    <div class="sec-kicker caps">Section 03</div>
+    <h2 class="display">Cala del Faro, the clearest water on the strip</h2>
+    <div class="rules"><span class="thick"></span><span class="thin"></span></div>
+  </div>
+  <div class="sec-body"><p>Fifteen minutes east of Puerto Banus, Cala del Faro is the first and last spot we recommend to anyone serious about snorkelling. The cove sits below the Marbella lighthouse, sheltered from the prevailing south-westerly, and the bottom transitions from clean sand at 3 metres to boulder gardens at 5 to 7 metres. Ornate wrasse, salema and painted comber are guaranteed, and we have had octopus sightings on roughly one trip in three. We anchor 80 metres off the rocks in sand and tender in, because the rocks at the waterline are sharp and the prop has no business near them.</p><p>It earns the top slot for one reason: consistency. The rocky shoreline shelters the cove from westerly swell, so it stays workable when the open coast is lumpy, and the sand-to-boulder structure at 3 to 6 metres concentrates fish into the depth band you can comfortably free-dive on a single breath. That same structure is what gives the standout 10 to 15 metre visibility on calm summer mornings. It is also the closest properly clear water to Banus, which matters enormously on a 2-hour booking where every minute of transit is a minute not in the water. If you only do one snorkel stop all week, do this one, ideally before the late-morning boat traffic stirs the bottom.</p></div>
+  
+</div>
+
+<div class="sec">
+  <div class="sec-head">
+    <div class="sec-kicker caps">Section 04</div>
+    <h2 class="display">Rio Verde reef, surprise snorkelling minutes from the marina</h2>
+    <div class="rules"><span class="thick"></span><span class="thin"></span></div>
+  </div>
+  <div class="sec-body"><p>Most charters skip the Rio Verde estuary because it does not look like much from the surface. There is no dramatic cliff, no postcard cove, just open water a few hundred metres off a built-up stretch of coast. Underwater it is a different story: a low rock reef in 4 to 6 metres of water, 600 metres offshore, with the highest fish density of anywhere on our list. It is our default first stop on a half-day charter. Engines down within 10 minutes of leaving Banus, snorkels in the water by minute twenty, and you are already swimming over busy ground while crews on other boats are still motoring east looking for somewhere prettier.</p><p>Because the reef sits in only 4 to 6 metres, with the bottom dropping cleanly, we drop swimmers straight off the platform here rather than tendering in. That makes it ideal for a warm-up: people who have not snorkelled in a while can find their breathing and their fins in shallow, calm water before you push on to the more committing spots. The one caveat is rain. Visibility drops after rain because the estuary pushes sediment offshore, so we check the previous 48 hours before committing. If it has been wet, the captain swaps Rio Verde for an eastern cove and nobody loses anything but a five-minute repositioning.</p></div>
+  
+</div>
+
+<div class="sec">
+  <div class="sec-head">
+    <div class="sec-kicker caps">Section 05</div>
+    <h2 class="display">Cala Cortes, quieter, deeper, fewer boats</h2>
+    <div class="rules"><span class="thick"></span><span class="thin"></span></div>
+  </div>
+  <div class="sec-body"><p>Twenty minutes further east, Cala Cortes trades a little visibility, typically 8 to 12 metres, for solitude. Even in August you will often have the cove to yourselves before 11:00, which is the single biggest reason confident snorkellers love it. The drop is steeper than Cala del Faro: sand at 4 metres, rock and seagrass at 8 to 10 metres. That makes it a better fit for strong swimmers and freedivers than for nervous first-timers, because the interesting structure sits a metre or two deeper than the absolute beginner band.</p><p>It rewards pairing. On an 8-hour day we will often run the eastern line and take Cala del Faro and Cala Cortes back to back, since both sit on the same eastern route from Banus and the repositioning between them is short. At rocky spots like this we anchor in sand 60 to 100 metres out and use the tender, which protects the boat's prop and keeps you off the sharp volcanic rock at the waterline. The fish list overlaps with Cala del Faro, with the bonus that the quieter water and deeper structure mean you are more likely to spot the larger passing fish the eastern coves are known for, including small barracuda and amberjack on the move.</p></div>
+  <figure class="plate"><img src="file:///Users/master/boat-rental-marbella/site/img/boats/astondoa-40/lifestyle-1200.jpg" alt=""><figcaption>The aft deck and swim platform of a Tier A Astondoa 40, set up for easy in-and-out between snorkel stops.</figcaption></figure>
+</div>
+
+<div class="sec">
+  <div class="sec-head">
+    <div class="sec-kicker caps">Section 06</div>
+    <h2 class="display">Cabopino rocks, the technical pick</h2>
+    <div class="rules"><span class="thick"></span><span class="thin"></span></div>
+  </div>
+  <div class="sec-body"><p>Cabopino is the eastern edge of our normal range, about 35 minutes from Banus on a Pershing 46 or similar. The reward is a series of submerged rock fingers running parallel to the dune coast, holding bigger fish: small barracuda, amberjack on passage, the occasional grouper deeper down. When the conditions line up it is the best fish-watching on the coast, full stop. This is the spot people remember from the trip, the one where someone surfaces grinning because a metre-long shape just cruised past in the blue.</p><p>The reason it sits fourth rather than first is current. Currents can pick up here on a flooding tide, and a snorkel spot with moving water is a different proposition: harder work, less safe for children and weaker swimmers, and not somewhere to drop an inexperienced group. So the skipper makes the call on the day on whether we anchor or skip, reading the tide and the surface. When it is on, it is exceptional. When it is not, we do not force it, because the whole point of the captain's playbook is that we go where the water is good rather than where the itinerary said it would be. Treat Cabopino as a bonus on a full day, not a guaranteed headline.</p></div>
+  
+</div>
+
+<div class="sec">
+  <div class="sec-head">
+    <div class="sec-kicker caps">Section 07</div>
+    <h2 class="display">Estepona Isla and Sotogrande, the westbound long-runners</h2>
+    <div class="rules"><span class="thick"></span><span class="thin"></span></div>
+  </div>
+  <div class="sec-body"><p>The two best westbound options only make sense on a longer charter, and only when the forecast is settled. On an 8-hour day we often run west toward Estepona. The small islet 800 metres off the town beach holds clear water on the seaward side, 10 to 12 metres visibility, and shelters a sandy lunch anchorage on the lee, so you get a snorkel and a relaxed anchor stop in one position. It is a longer run, roughly 50 minutes from Puerto Banus, so we only recommend it when the forecast is settled. It pairs beautifully with a paella stop at Puerto de Estepona before turning back, which is one of the nicer ways to spend the middle of a full day on the water.</p><p>Sotogrande is the committed version. Realistically a Sotogrande snorkel day only makes sense on a fast boat, the Mangusta 80 at 30-plus knots, or the Pershing 46, because you need the speed to make the distance pay. The coves west of Sotogrande marina sit in cleaner Atlantic-influenced water with visibility regularly 12 to 15 metres, the best numbers on the whole list. Budget the full 8 hours and accept that you will be running most of the morning to get there. It is worth it once per trip, as the adventure day rather than the default choice, and it is the kind of day a fast boat was built for: long transits eaten quickly, then a payoff of genuinely clear, quiet water away from the busy central strip.</p></div>
+  
+</div>
+
+<div class="sec">
+  <div class="sec-head">
+    <div class="sec-kicker caps">Section 08</div>
+    <h2 class="display">How to plan the day, the captain&#x27;s playbook</h2>
+    <div class="rules"><span class="thick"></span><span class="thin"></span></div>
+  </div>
+  <div class="sec-body"><p>We book the morning slot wherever possible. A 09:00 to 13:00 window gives you the flattest water, the best light for visibility, and the fewest jet skis stirring the sand at the popular spots. Light matters more than people realise: the low-to-mid morning sun angles into the water and lights up the seabed, where flat midday glare flattens everything and afternoon chop scatters the sightlines. The first two hours after sunrise are also when the fish are most active, so the early start pays twice.</p><p>A half-day realistically covers two snorkel stops plus a swim-and-drinks anchor, and the full day covers four. That is the honest number, not a sales number. The skipper checks wind direction at 07:00 the morning of and reorders the route accordingly: easterly wind, we go west; westerly, we go east. The logic is simple, you always want the land between you and the wind so the water stays flat and clear, and a Levante storm is the one thing that ruins the eastern coves, leaving them murky for 48 to 72 hours until the swell drops. If your day lands in that window the captain simply runs the western options instead.</p><p>On timing within the day, do not over-pack the route. Two unhurried stops where everyone gets a proper swim, dries off, has a drink and goes back in beats four rushed stops where you are climbing the ladder the moment you have found your rhythm. Tell the skipper at the dock whether your group wants maximum water time or a gentler mix of swimming and cruising, and the route gets built around that. You can see our full fleet and pricing on the site, and the booking thread is the place to confirm group size, gear sizes and any mobility needs before the day.</p></div>
+  
+</div>
+
+<div class="sec">
+  <div class="sec-head">
+    <div class="sec-kicker caps">Section 09</div>
+    <h2 class="display">Matching the boat to your group</h2>
+    <div class="rules"><span class="thick"></span><span class="thin"></span></div>
+  </div>
+  <div class="sec-body"><p>The right boat for a snorkel day is the one that suits your group size and the distance you want to cover, and our fleet splits cleanly into tiers. For 2 to 9 guests we would send the Astondoa 40 or Azimut 39, both Tier A boats. Both have low swim platforms, ladder access, and shaded aft decks for between-swims recovery, which is exactly the kit a snorkel day needs: easy water entry, an easy climb back out, and shade to warm up in. Tier A runs 749 euros for a 2-hour charter or 2,299 euros for a full 8-hour day, all inclusive, and covers up to 9 to 11 guests with everything thrown in.</p><p>For larger groups wanting space to lounge between swims, the Azimut 58 Flybridge or a Mangusta 80 gives you a wider beam to spread out. The Mangusta 80 sits in Tier B at 4,719 euros for a minimum 4-hour charter, and it includes a jet ski free, which on a snorkel day is genuinely useful: the jet ski shuttles people to shallower spots the main boat cannot reach, so the big boat anchors safely in deep sand while small groups buzz in to the rocks. The Mangusta's 30-plus knots is also what unlocks the long Sotogrande run. The underrated pick, though, is the Lagoon 380 catamaran. Twin hulls mean steadier swim-platform access and shade on both sides, so it sits flatter at anchor than a monohull and gives nervous swimmers a more reassuring entry. For families and mixed-ability groups it is often the best call of the lot.</p><table><tr><th>Boat</th><th>Best for</th><th>Price</th></tr><tr><td>Astondoa 40 / Azimut 39 (Tier A)</td><td>2 to 9 guests, up to 9 to 11 aboard</td><td>749 euros / 2h, 2,299 euros / 8h</td></tr><tr><td>Azimut 58 Flybridge</td><td>Larger groups wanting deck space</td><td>On request</td></tr><tr><td>Mangusta 80 (Tier B)</td><td>Big groups, long runs, jet ski included</td><td>4,719 euros, minimum 4h</td></tr><tr><td>Lagoon 380 catamaran</td><td>Families, steadiest platform, twin shade</td><td>On request</td></tr></table></div>
+  <figure class="plate"><img src="file:///Users/master/boat-rental-marbella/site/img/boats/mangusta-80/sun-pad-1200.jpg" alt=""><figcaption>The Mangusta 80 sun pad. Tier B at 4,719 euros for a minimum 4-hour charter, jet ski included free.</figcaption></figure>
+</div>
+
+<div class="sec">
+  <div class="sec-head">
+    <div class="sec-kicker caps">Section 10</div>
+    <h2 class="display">Seasonality, water and what to bring</h2>
+    <div class="rules"><span class="thick"></span><span class="thin"></span></div>
+  </div>
+  <div class="sec-body"><p>June through September is the window. July and August give you 22 to 24 degree water and the longest calm spells, but visibility actually peaks in early June and late September when fewer boats are stirring the bottom. That is the local's secret: the shoulder weeks of the season often snorkel better than the peak, with the trade-off being slightly cooler water and a little more chance of an unsettled day. The water temperature peaks at 22 to 24 degrees in August, and a wetsuit is optional from late June onward, which is to say nobody asks for one once the water is warm.</p><p>On gear, mask, snorkel and fins for adults are stocked on every boat in our fleet at no extra charge, with sizes confirmed on the booking thread. Children's sets are available on request. We recommend bringing your own mask if you wear a prescription one, because that is the one piece we cannot size for you on the day. Wetsuits are not standard kit, since in July to September the water is warm enough that they are unnecessary. Beyond that, the smart packing list is short: high-factor reef-safe sunscreen, because the back of your neck and legs catch full sun while you are face-down for an hour, a hat and a cover-up for between swims, a towel of your own if you like a big one even though towels are aboard, and a soft bag rather than a hard suitcase for whatever you carry on. Drinks, snacks and the snorkel-friendly swim platform are already part of every charter, so you do not need to bring food or water.</p></div>
+  
+</div>
+
+<div class="sec">
+  <div class="sec-head">
+    <div class="sec-kicker caps">Section 11</div>
+    <h2 class="display">Safety, families and what every charter includes</h2>
+    <div class="rules"><span class="thick"></span><span class="thin"></span></div>
+  </div>
+  <div class="sec-body"><p>Snorkelling here is safe for kids and non-swimmers, and we set it up that way. Most of our anchor points have sandy shallows at 1 to 2 metres where children can stand or float with a noodle, every boat carries life jackets in all sizes, and the swim platform has a rope ladder for easy exit. We brief non-swimmers on staying inside the boat's shadow, which keeps them in sight and in shade, and we never enter the water at spots with current, which the skipper flags before anchoring. The Cabopino call on a flooding tide is exactly that judgement in action. On entry style, at Cala del Faro and Rio Verde reef the bottom drops cleanly to 4 to 8 metres and we drop swimmers straight off the platform, while at rocky spots like Cala Cortes we anchor in sand 60 to 100 metres out and tender in to keep the prop clear and your feet off the rock.</p><p>Every snorkel charter includes the following, with no surprises at the end of the day:</p><ul><li>Licensed skipper who knows every anchorage on this list</li><li>Mask, snorkel and fins for adults, sizes confirmed at booking, children's sets on request</li><li>Fuel for the full duration, with no surcharges</li><li>Water, soft drinks, beer, white wine and cava on ice</li><li>Light snacks, with full catering available on 8-hour charters</li><li>Insurance, safety equipment and life jackets in all sizes</li><li>Spanish IVA at 21 per cent, included in the headline price</li></ul><p>That inclusive pricing is the part guests appreciate most after the fact. The number we quote is the number you pay, with the skipper, the fuel, the drinks and the tax all inside it, so there is no bar tab and no fuel surcharge waiting at the dock. Confirm group size and gear sizes on the booking thread, tell us if anyone is a nervous swimmer, and the skipper builds a day around your group rather than a generic loop.</p></div>
+  
+</div>
+
+<div class="callout">
+  <h3 class="display">Plan your snorkel day on the water</h3>
+  <p>Read more skipper-written guides and book your Marbella snorkel charter at <a href="https://boatrentalinmarbella.com">boatrentalinmarbella.com</a>. Tier A boats from 749 euros for 2 hours, with skipper, fuel, drinks, snorkel gear and IVA all included.</p><p><strong>Boat owners:</strong> list your boat free and reach charter guests worldwide at <a href="https://boathire24.com">boathire24.com</a>.</p>
+  <div class="linksrow caps"><a href="https://boathire24.com">https://boathire24.com</a><span class="sep">&#9670;</span><a href="https://boatrentalinmarbella.com/blog/best-snorkel-spots-marbella.html">https://boatrentalinmarbella.com/blog/best-snorkel-spots-marbella.html</a></div>
+</div>
+<div class="endmark"><span class="line"></span><svg width="14" height="14" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg" aria-hidden="true"><path fill="#b9924b" d="M17 15l1.55 1.55c-.96 1.69-3.33 3.04-5.55 3.37V11h3V9h-3V7.82C14.16 7.4 15 6.3 15 5c0-1.65-1.35-3-3-3S9 3.35 9 5c0 1.3.84 2.4 2 2.82V9H8v2h3v8.92c-2.22-.33-4.59-1.68-5.55-3.37L7 15l-4-3v3c0 3.88 4.92 7 9 7s9-3.12 9-7v-3l-4 3zM12 4c.55 0 1 .45 1 1s-.45 1-1 1-1-.45-1-1 .45-1 1-1z"/></svg><span class="line"></span></div>
+  </td></tr></tbody>
+  <tfoot><tr><td></td></tr></tfoot>
+</table>
+
+<div class="runfoot caps">
+  <span><b>boathire24.com</b> <span class="gold">&#9670;</span> rent boats worldwide
+    <span class="gold">&#9670;</span> list your boat free</span>
+  <span class="gold caps">boatrentalinmarbella.com/blog/best-snorkel-spots-marbella.html</span>
+</div>
+</body>
+</html>

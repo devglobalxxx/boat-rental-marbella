@@ -1,0 +1,503 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<title>Mariah SX21</title>
+<style>
+:root {
+  --navy:      #0e2438;
+  --navy-deep: #08182a;
+  --gold:      #b9924b;
+  --gold-dark: #8a6c33;
+  --gold-light:#d4b06a;
+  --gold-pale: #e8d8af;
+  --ivory:     #f7f2e6;
+  --paper:     #fdfbf5;
+  --ink:       #22303e;
+  --muted:     #5d6a76;
+  --hairline:  #d9cdaf;
+  --row-tint:  #f5efdf;
+}
+* { -webkit-print-color-adjust: exact; print-color-adjust: exact;
+    box-sizing: border-box; }
+@page { size: A4; margin: 0; }
+html, body { margin: 0; padding: 0; }
+body {
+  background: var(--paper);
+  color: var(--ink);
+  font-family: Georgia, 'Palatino Linotype', Palatino, 'Times New Roman', serif;
+  font-size: 10.5pt;
+  line-height: 1.62;
+}
+.display { font-family: Didot, 'Didot LT STD', 'Playfair Display', Georgia,
+           'Times New Roman', serif; }
+.caps { font-family: Optima, 'Avenir Next', 'Gill Sans', 'Trebuchet MS',
+        sans-serif; text-transform: uppercase; }
+
+/* ---------------- Cover ---------------- */
+.cover {
+  position: relative;
+  width: 210mm; height: 297mm;
+  overflow: hidden;
+  background: var(--navy-deep);
+  page-break-after: always;
+}
+.cover-img {
+  position: absolute; inset: 0;
+  width: 100%; height: 100%;
+  object-fit: cover;
+  object-position: 24% center;  /* centres the yacht's full profile in the A4 crop */
+}
+.cover-veil {
+  position: absolute; inset: 0;
+  background:
+    linear-gradient(to top, rgba(11,26,46,0.92),
+                    rgba(11,26,46,0.86) 30%, transparent 55%),
+    linear-gradient(180deg,
+      rgba(8,24,42,0.62) 0%,
+      rgba(8,24,42,0.20) 26%,
+      rgba(8,24,42,0.12) 50%,
+      rgba(8,24,42,0.00) 62%);
+}
+.cover-veil.no-img {
+  background:
+    radial-gradient(120mm 90mm at 50% 26%, rgba(185,146,75,0.20), transparent 70%),
+    linear-gradient(180deg, #122c46 0%, #0a1d33 55%, #071426 100%);
+}
+.cover-top {
+  position: absolute; top: 13mm; left: 16mm; right: 16mm;
+  display: flex; align-items: center; justify-content: space-between;
+}
+.brand-lockup { display: flex; align-items: center; gap: 4.5mm; }
+.logo-chip {
+  background: #ffffff;
+  border: 1px solid var(--gold);
+  border-radius: 1.2mm;
+  padding: 2mm;
+  line-height: 0;
+}
+.logo-chip img { display: block; height: 13mm; width: 13mm;
+                 object-fit: cover; border-radius: 0.7mm; }
+.brand-name {
+  color: var(--ivory); font-size: 13pt; letter-spacing: 0.30em;
+  line-height: 1.25;
+}
+.brand-tag {
+  color: var(--gold-pale); font-size: 6.4pt; letter-spacing: 0.26em;
+  margin-top: 1mm;
+}
+.doc-type-flag {
+  text-align: right;
+  color: var(--gold-light);
+  font-size: 7.5pt; letter-spacing: 0.34em;
+  border-top: 0.7pt solid var(--gold);
+  border-bottom: 0.7pt solid var(--gold);
+  padding: 2.2mm 0 2mm 0;
+}
+.cover-main {
+  position: absolute; left: 16mm; right: 16mm; bottom: 34mm;
+}
+.cover-rule {
+  display: flex; align-items: center; gap: 4mm;
+  margin-bottom: 5mm;
+}
+.cover-rule .line { flex: 0 0 22mm; height: 0; border-top: 0.8pt solid var(--gold); }
+.cover-rule .word {
+  color: var(--gold-light); font-size: 8pt; letter-spacing: 0.42em;
+  white-space: nowrap;
+  text-shadow: 0 1px 5px rgba(5,14,26,0.65);
+}
+.cover-title {
+  color: #fdfaf2;
+  font-size: 44pt; line-height: 1.05;
+  font-weight: 600;
+  margin: 0 0 4mm 0;
+  text-shadow: 0 1px 8px rgba(5,14,26,0.55);
+}
+.cover-subtitle {
+  color: var(--gold-pale);
+  font-style: italic;
+  font-size: 13pt; line-height: 1.45;
+  margin: 0 0 7mm 0;
+  max-width: 150mm;
+  text-shadow: 0 1px 6px rgba(5,14,26,0.6);
+}
+.cover-meta {
+  color: rgba(247,242,230,0.92);
+  font-size: 7.6pt; letter-spacing: 0.22em;
+}
+.cover-meta .dot { color: var(--gold-light); padding: 0 2.2mm; }
+.fleet-strip {
+  margin-top: 8mm;
+  display: flex; align-items: center; gap: 4mm;
+}
+.fleet-strip .logo-chip img { height: 9mm; width: auto; }
+.fleet-label {
+  color: rgba(247,242,230,0.85); font-size: 6.6pt; letter-spacing: 0.30em;
+}
+
+/* ------------- Repeating footer ------------- */
+.runfoot {
+  position: fixed; left: 0; right: 0; bottom: 0;
+  height: 12mm;
+  background: var(--ivory);
+  border-top: 1pt solid var(--gold);
+  display: flex; align-items: center; justify-content: space-between;
+  padding: 0 16mm;
+  font-size: 6.8pt; letter-spacing: 0.12em;
+  color: var(--navy);
+}
+.runfoot b { letter-spacing: 0.22em; font-weight: 600; }
+.runfoot .gold { color: var(--gold-dark); }
+.runfoot a { color: var(--navy); text-decoration: none; }
+
+/* ------------- Paged content scaffold ------------- */
+table.paged { width: 100%; border-collapse: collapse; }
+table.paged > thead td { height: 15mm; padding: 0; }
+table.paged > tfoot td { height: 17mm; padding: 0; }
+table.paged > tbody > tr > td { padding: 0 18mm; }
+
+/* ------------- Sections ------------- */
+.sec { margin: 0 0 8mm 0; }
+.sec-head {
+  break-after: avoid-page; page-break-after: avoid;
+  break-inside: avoid; page-break-inside: avoid;
+  margin: 0 0 4.5mm 0;
+}
+.sec-kicker {
+  color: var(--gold-dark); font-size: 7pt; letter-spacing: 0.38em;
+  margin-bottom: 1.6mm;
+}
+.sec-head h2 {
+  color: var(--navy);
+  font-size: 18.5pt; font-weight: 400; line-height: 1.2;
+  margin: 0 0 2.6mm 0;
+}
+.sec-head .rules { position: relative; height: 2.4mm; }
+.sec-head .rules .thin {
+  position: absolute; left: 0; right: 0; top: 1mm;
+  border-top: 0.6pt solid var(--hairline);
+}
+.sec-head .rules .thick {
+  position: absolute; left: 0; top: 0; width: 26mm;
+  border-top: 2.2pt solid var(--gold);
+}
+.sec-body p { margin: 0 0 3.4mm 0; }
+.sec-body p:last-child { margin-bottom: 0; }
+.sec-body ol { margin: 0 0 3.4mm 0; padding-left: 5.5mm; }
+.sec-body ul { margin: 0 0 3.4mm 0; padding-left: 1mm; }
+.sec-body li { margin-bottom: 1.6mm; break-inside: avoid; page-break-inside: avoid;
+               -webkit-column-break-inside: avoid; }
+.sec-body ul.cols2 { columns: 2; column-gap: 9mm;
+                     break-inside: avoid; page-break-inside: avoid; }
+.sec-body ul > li {
+  list-style: none;
+  padding-left: 1.1em; text-indent: -1.1em;  /* hanging indent: wraps align under text */
+}
+.sec-body ul > li::before {
+  content: "\2726";            /* four-pointed star, brass compass point */
+  display: inline-block; width: 1.44em; text-indent: 0;
+  color: var(--gold); font-size: 8pt;       /* 1.44em @8pt == 1.1em @10.5pt */
+}
+.sec-body a { color: var(--navy); text-decoration: none;
+              border-bottom: 0.6pt solid var(--gold); }
+.sec-body strong { color: var(--navy); }
+
+/* generic tables inside section html */
+.sec-body table {
+  width: 100%; border-collapse: collapse;
+  margin: 1mm 0 4mm 0;
+  break-inside: avoid; page-break-inside: avoid;
+  font-size: 9.8pt;
+}
+.sec-body th {
+  background: var(--navy); color: var(--ivory);
+  font-family: Optima, 'Avenir Next', 'Gill Sans', 'Trebuchet MS', sans-serif;
+  text-transform: uppercase; letter-spacing: 0.16em;
+  font-size: 7.4pt; font-weight: 500;
+  text-align: left; padding: 2.6mm 3.5mm;
+  border-bottom: 1.4pt solid var(--gold);
+}
+.sec-body td {
+  padding: 2.2mm 3.5mm;
+  border-bottom: 0.6pt solid var(--hairline);
+  color: var(--ink);
+}
+.sec-body td, .sec-body th { font-variant-numeric: tabular-nums; }
+.sec-body td:not(:first-child),
+.sec-body th:not(:first-child) { text-align: right; }
+.sec-body tr:nth-child(even) td { background: var(--row-tint); }
+.sec-body td:first-child { color: var(--navy); }
+.sec-body tr.best td { background: rgba(212,175,55,0.12); }
+.sec-body tr.best td:first-child { color: var(--navy); font-weight: 600; }
+.best-tag {
+  display: inline-block;
+  font-family: Optima, 'Avenir Next', 'Gill Sans', 'Trebuchet MS', sans-serif;
+  font-variant-caps: small-caps; text-transform: lowercase;
+  font-size: 7.6pt; font-weight: 600; letter-spacing: 0.14em;
+  color: var(--gold-dark);
+  border: 0.6pt solid var(--gold);
+  border-radius: 1mm;
+  padding: 0.2mm 1.6mm;
+  margin-left: 2.2mm;
+  white-space: nowrap;
+  vertical-align: 0.2mm;
+}
+
+/* ------------- Figures ------------- */
+figure.plate {
+  break-inside: avoid; page-break-inside: avoid;
+  margin: 5mm 0 2mm 0;
+  background: #ffffff;
+  border: 0.7pt solid var(--gold-light);
+  padding: 2.6mm;
+}
+figure.plate img {
+  display: block; width: 100%; height: 78mm; object-fit: cover;
+}
+figure.plate figcaption {
+  text-align: center;
+  font-style: italic;
+  font-size: 8.4pt; color: var(--muted);
+  padding: 2.4mm 2mm 0.6mm 2mm;
+}
+figure.plate figcaption::before {
+  content: "\25C6\00a0"; color: var(--gold); font-size: 6pt;
+}
+
+/* ------------- Spec table (2-column grid: two lbl/val pairs per row) ------------- */
+.spec-block { margin: 0 0 8mm 0; }
+table.spec {
+  width: 100%; border-collapse: collapse;
+  border-top: 1.6pt solid var(--navy);
+  border-bottom: 1.6pt solid var(--navy);
+}
+table.spec td { padding: 1.7mm 1.5mm; border-bottom: 0.6pt solid var(--hairline);
+                vertical-align: top; }
+table.spec tr:last-child td { border-bottom: none; }
+table.spec td.lbl {
+  width: 21%;
+  font-family: Optima, 'Avenir Next', 'Gill Sans', 'Trebuchet MS', sans-serif;
+  text-transform: uppercase; letter-spacing: 0.16em;
+  font-size: 7.2pt; color: var(--gold-dark);
+  padding-top: 2.3mm;
+}
+table.spec td.val { width: 29%; color: var(--navy); font-size: 9.8pt; }
+table.spec td.lbl:nth-child(3) {
+  border-left: 0.6pt solid var(--hairline);
+  padding-left: 4mm;
+}
+table.spec td.val:nth-child(2) { padding-right: 4mm; }
+
+/* ------------- Callout ------------- */
+.callout {
+  break-inside: avoid; page-break-inside: avoid;
+  margin: 8mm 0 4mm 0;
+  background: var(--navy);
+  border: 1pt solid var(--gold);
+  outline: 0.6pt solid var(--gold);
+  outline-offset: -2.2mm;
+  color: var(--ivory);
+  padding: 8mm 9mm 7mm 9mm;
+}
+.callout h3 {
+  color: var(--gold-light);
+  font-size: 15pt; font-weight: 400;
+  margin: 0 0 3mm 0;
+}
+.callout p { margin: 0 0 2.8mm 0; line-height: 1.6; color: #efe7d3; }
+.callout a { color: var(--gold-light); text-decoration: none; }
+.callout ul { margin: 0 0 2.8mm 0; padding-left: 1mm; }
+.callout ul > li { list-style: none; margin-bottom: 1.4mm;
+                   padding-left: 1.1em; text-indent: -1.1em;
+                   break-inside: avoid; page-break-inside: avoid; }
+.callout ul > li::before {
+  content: "\2726"; display: inline-block; width: 1.44em; text-indent: 0;
+  color: var(--gold-light); font-size: 8pt;
+}
+.callout .linksrow {
+  margin-top: 4.5mm; padding-top: 3.6mm;
+  border-top: 0.6pt solid rgba(212,176,106,0.55);
+  font-size: 7.6pt; letter-spacing: 0.16em;
+  color: var(--gold-pale);
+}
+.callout .linksrow span.sep { padding: 0 2.6mm; color: var(--gold); }
+
+.endmark {
+  display: flex; align-items: center; justify-content: center; gap: 3.5mm;
+  margin: 7mm 0 0 0;
+}
+.endmark .line { width: 14mm; height: 0; border-top: 0.6pt solid var(--gold); }
+.endmark svg { display: block; }
+</style>
+</head>
+<body>
+
+<div class="cover">
+  <img class="cover-img" src="file:///Users/master/boat-rental-marbella/site/img/boats/mariah-sx21/hero-1200.jpg" alt="">
+  <div class="cover-veil"></div>
+  <div class="cover-top">
+    <div class="brand-lockup">
+      <span class="logo-chip"><img src="file:///Users/master/boat-rental-platform/public/brand-logo.jpg" alt="BoatHire24"></span>
+      <div>
+        <div class="brand-name caps display">BoatHire24</div>
+        <div class="brand-tag caps">Rent boats worldwide <span class="gold">|</span> list your boat free</div>
+      </div>
+    </div>
+    <div class="doc-type-flag caps">June 2026</div>
+  </div>
+  <div class="cover-main">
+    <div class="cover-rule">
+      <span class="line"></span>
+      <span class="word caps">Vessel Specification</span>
+    </div>
+    <h1 class="cover-title display">Mariah SX21</h1>
+    <p class="cover-subtitle display">A 6.4-metre American bowrider for fast, fuss-free days on the Marbella coast, from Puerto Banus</p>
+    <div class="cover-meta caps">BoatHire24 Editorial</div>
+    <div class="fleet-strip"><span class="fleet-label caps">From the fleet of</span><span class="logo-chip"><img src="file:///Users/master/boat-rental-marbella/site/img/logo-640.png" alt="Boat Rental In Marbella"></span></div>
+  </div>
+</div>
+<table class="paged">
+  <thead><tr><td></td></tr></thead>
+  <tbody><tr><td>
+
+<div class="spec-block sec">
+  <div class="sec-head">
+    <div class="sec-kicker caps">Particulars</div>
+    <h2 class="display">Principal Particulars</h2>
+    <div class="rules"><span class="thick"></span><span class="thin"></span></div>
+  </div>
+  <table class="spec"><tr><td class="lbl">Vessel</td><td class="val">Mariah SX21</td><td class="lbl">Type</td><td class="val">Bowrider</td></tr>
+<tr><td class="lbl">Length</td><td class="val">6.4 m</td><td class="lbl">Builder</td><td class="val">Mariah</td></tr>
+<tr><td class="lbl">Guest capacity</td><td class="val">Up to 5</td><td class="lbl">Departure port</td><td class="val">Puerto Banus</td></tr>
+<tr><td class="lbl">Crew</td><td class="val">Licensed skipper included</td><td class="lbl">Model year</td><td class="val">Not specified</td></tr>
+<tr><td class="lbl">Rate band</td><td class="val">Quote on WhatsApp</td><td class="lbl">Inclusions</td><td class="val">Skipper, fuel, drinks, VAT</td></tr></table>
+</div>
+
+<div class="sec">
+  <div class="sec-head">
+    <div class="sec-kicker caps">Section 01</div>
+    <h2 class="display">An honest little day boat with a clear job</h2>
+    <div class="rules"><span class="thick"></span><span class="thin"></span></div>
+  </div>
+  <div class="sec-body"><p>The <strong>Mariah SX21</strong> is the boat in the Marbella fleet that does not pretend to be anything other than what it is, and that is exactly its appeal. At <strong>6.4 metres</strong> it is one of the smallest hulls we charter from Puerto Banus, an open <strong>bowrider</strong> built for small groups who want sun, speed and a swim rather than a flybridge, a saloon and a wine list as long as your arm. It carries <strong>up to 5 guests</strong>, comes with a <strong>licensed skipper</strong>, and is priced as the lowest entry point into our fleet, with the rate quoted directly on WhatsApp through the website.</p><p>Most of the boats profiled in this series are about scale and statement. This one is about ease. A bowrider is, by design, the most sociable layout afloat for a handful of people. The bow is opened up into a forward cockpit with its own seating, so instead of a sharp, unusable point you get a second lounge right over the water. For a couple, a young family, or a group of friends who simply want to be on the sea for a few hours without a five-figure commitment, the SX21 is the sensible, cheerful choice.</p><p>It stands out in our line-up precisely because it is the antidote to it. When the Mangusta 80 and the Maiora 26m are flagships measured in tens of metres and thousands of euros, the Mariah is the boat you take for a spontaneous morning, a birthday swim, or a first taste of the water before anyone decides whether they want the big yacht next time. There is no minimum entourage and no occasion required. You bring the towels, we bring the skipper and the fuel, and the rest of the day is yours.</p></div>
+  <figure class="plate"><img src="file:///Users/master/boat-rental-marbella/site/img/boats/mariah-sx21/hero-1600.jpg" alt=""><figcaption>The Mariah SX21, a 6.4 m bowrider, on the water off Marbella</figcaption></figure>
+</div>
+
+<div class="sec">
+  <div class="sec-head">
+    <div class="sec-kicker caps">Section 02</div>
+    <h2 class="display">The marque: Mariah, an American boat-building name</h2>
+    <div class="rules"><span class="thick"></span><span class="thin"></span></div>
+  </div>
+  <div class="sec-body"><p>Mariah Boats is an American builder, and that heritage tells you most of what you need to know about how the SX21 was conceived. The United States is the spiritual home of the bowrider and the runabout, the family sportboat that fills lakes, bays and coastal inlets from Florida to the Great Lakes. American yards built their reputations not on grand saloons but on robust, easy-to-drive day boats designed for ordinary families to enjoy in ordinary conditions, and Mariah sat squarely in that tradition of approachable, sun-and-water sportboats.</p><p>This matters for a charter guest because the design priorities of an American bowrider are different from those of an Italian flybridge yacht. The emphasis is on a planing hull that gets up to speed quickly, an open cockpit that seats a group around the action rather than around a dining table, and a deep, usable bow that turns the front of the boat into a sun lounge. These are boats engineered for movement and for play, not for slow, stately cruising. When you step aboard the SX21 you are stepping into that lineage of the accessible American sportboat, scaled neatly to the Costa del Sol coastline.</p><p>It is worth being plain about what we can and cannot confirm. The exact production year of this particular hull is not recorded in our fleet data, so we do not state one. What we can state with confidence is the marque, the type and the dimensions, and that the boat is maintained to the same standard as the rest of the Puerto Banus fleet and crewed by a licensed skipper every time it leaves the marina.</p></div>
+  
+</div>
+
+<div class="sec">
+  <div class="sec-head">
+    <div class="sec-kicker caps">Section 03</div>
+    <h2 class="display">The bowrider class and what it is known for</h2>
+    <div class="rules"><span class="thick"></span><span class="thin"></span></div>
+  </div>
+  <div class="sec-body"><p>If you have never chartered a bowrider, here is the shape of the thing. The defining feature is in the name: the bow, the front of the boat, is given over to seating rather than left as a closed deck. A walk-through windscreen lets you move from the helm area forward into a second, sociable space right at the prow. The result is a boat that is far roomier for its length than its size on paper suggests, because almost the entire deck is living space.</p><p>Bowriders are the workhorses of the recreational boating world for good reason. They are quick to plane, nimble to handle in the protected waters close to shore, and they sit naturally at the centre of a day built around swimming and water sports. A 6.4-metre boat like the SX21 is in the classic sweet spot of the class, large enough to feel safe and stable for five people on a calm Mediterranean morning, small enough to nose into a quiet cove, drop the anchor, and have everyone in the water within a minute of stopping.</p><p>What the class is not is a long-range cruiser or an overnight platform. There are no private cabins here, no galley turning out a catered lunch, no flybridge with a second helm. That is not a shortcoming, it is the point. The Mariah trades all of that away in favour of being simple, open and immediate. For a few hours of coast-hugging fun off Marbella, that trade is exactly the right one for a great many guests.</p></div>
+  
+</div>
+
+<div class="sec">
+  <div class="sec-head">
+    <div class="sec-kicker caps">Section 04</div>
+    <h2 class="display">On board: layout, deck and the open-air feel</h2>
+    <div class="rules"><span class="thick"></span><span class="thin"></span></div>
+  </div>
+  <div class="sec-body"><p>The SX21 is an open-layout boat, and the on-board experience is shaped entirely by that openness. From the fleet record, the highlights that define the day are clear: a <strong>6.4 m American bowrider</strong> hull, an <strong>open layout with a sport-day focus</strong>, capacity for <strong>up to 5 guests</strong>, and the equipment to run <strong>water-sports days</strong> including the banana, the donut and wakeboarding. A skipper is always included, so no one in your group needs a licence or any experience.</p><p>In practical terms the deck divides into three friendly zones. There is the helm area in the middle, where the skipper drives and where you sit when the boat is up on the plane and moving. There is the aft cockpit behind it, the natural gathering point at anchor, steps from the water and from the swim platform at the stern. And there is the forward bow seating reached through the windscreen, the spot the sun-seekers in any group will claim first and refuse to give up. Because everything is open to the air, the boat feels light and breezy rather than enclosed, and conversation flows from bow to stern without anyone having to raise their voice over an engine room.</p><ul><li>Open bowrider layout, sociable from prow to stern</li><li>Aft cockpit and swim access for easy in-and-out of the water</li><li>Forward bow seating that doubles as a sun lounge</li><li>Water-sports ready: banana, donut and wakeboarding on offer</li><li>Skipper included, so the whole group is free to relax</li></ul><p>There is no need to dress the experience up beyond what it is. This is a clean, open, sunny day boat that puts five people close to the water and gives them the toys to make a morning of it.</p></div>
+  <figure class="plate"><img src="file:///Users/master/boat-rental-marbella/site/img/boats/mariah-sx21/hero-900.jpg" alt=""><figcaption>Open-layout bowrider built for sun, swimming and water sports</figcaption></figure>
+</div>
+
+<div class="sec">
+  <div class="sec-head">
+    <div class="sec-kicker caps">Section 05</div>
+    <h2 class="display">A day aboard from Puerto Banus</h2>
+    <div class="rules"><span class="thick"></span><span class="thin"></span></div>
+  </div>
+  <div class="sec-body"><p>Here is how a typical few hours on the Mariah tends to unfold once you have stepped down onto the pontoon at <strong>Puerto Banus</strong>. The marina itself is part of the experience, lined with some of the most photographed yachts in Europe, so the walk to the boat is half the fun. Your skipper meets you at the berth, runs through the simple safety points, helps everyone aboard, and you are clear of the breakwater within a few minutes.</p><p>The first stretch is usually a short, brisk run along the coast to shake off the harbour and feel the boat get up on the plane. Marbella opens up to port: the long line of beach clubs, the apartments climbing the hillside, and behind it all the unmistakable saddle of La Concha mountain. The skipper finds a calm patch of water over a sandy bottom, eases off, and drops anchor. This is the heart of the day. The swim ladder goes down, the water toys come out, and for the next stretch the boat becomes a floating base for swimming, snorkelling and whatever water sports the group is up for.</p><p>Drinks are already aboard and included, so there is cold water, soft drinks, beer, white wine and cava to hand without anyone having packed a thing. Light snacks are included too, enough to keep a sun-and-swim morning going without pretending to be a full lunch. When the group has had their fill of the water, the skipper lifts the anchor and you cruise back, perhaps with a slow pass along the shoreline so everyone can pick out the landmarks, before slipping back into Puerto Banus. It is an uncomplicated, genuinely lovely few hours, and the small scale of the boat is what makes it feel so personal.</p></div>
+  
+</div>
+
+<div class="sec">
+  <div class="sec-head">
+    <div class="sec-kicker caps">Section 06</div>
+    <h2 class="display">Itineraries and cruising grounds</h2>
+    <div class="rules"><span class="thick"></span><span class="thin"></span></div>
+  </div>
+  <div class="sec-body"><p>The SX21 is a coastal day boat, so its natural range is the sheltered, scenic water close to the Marbella shore rather than long offshore passages. Within that range, though, there is plenty to build a day around, and your skipper will shape the route to the sea state and to what the group fancies. A few of the classic options from Puerto Banus:</p><ul><li><strong>The Golden Mile swim stop.</strong> The short hop east toward Marbella town runs you past the Golden Mile, the famous stretch of villas, hotels and beach clubs between Banus and Marbella. A calm anchorage here is the most popular swim stop of all, close to home and with the postcard view of La Concha behind you.</li><li><strong>Cabopino.</strong> Further east lies Cabopino, a smaller marina set against the protected Artola dunes, one of the prettier and less built-up corners of this coast. It makes a natural turning point for a longer outing and a change of scene from the glamour of Banus.</li><li><strong>Estepona.</strong> Heading west, the coast runs toward Estepona, the more traditional town along this part of the Costa del Sol. The water along the way is open and pleasant, and the run gives a real sense of how the coastline changes as you move away from the resort strip.</li><li><strong>Longer runs.</strong> On a flat, settled day the wider sweep of the bay is yours to explore at the skipper's discretion, picking quiet spots to anchor away from the busier beaches.</li></ul><p>For context, this coast sits at the western end of the Mediterranean, with the Strait of Gibraltar and the dramatic headland of Gibraltar itself away to the southwest. Those longer destinations belong to the larger, longer-range yachts in the fleet rather than to a 6.4-metre bowrider, and we would always point you to the right boat for the trip. The Mariah is at its very best doing what it was built to do: shorter, sunlit hops within easy reach of the home port, with a swim or a water-sports session at the heart of the day.</p></div>
+  
+</div>
+
+<div class="sec">
+  <div class="sec-head">
+    <div class="sec-kicker caps">Section 07</div>
+    <h2 class="display">Who this boat is for</h2>
+    <div class="rules"><span class="thick"></span><span class="thin"></span></div>
+  </div>
+  <div class="sec-body"><p>Matching the right group to the right boat is most of what makes a charter day work, and the Mariah suits a very specific and very common kind of guest beautifully. It is, first and foremost, a small-group boat, with room for <strong>up to 5</strong>. That makes it ideal for:</p><ul><li><strong>Couples and pairs of friends</strong> who want a few hours on the water without the scale or cost of a yacht, and who like the intimacy of a small open boat.</li><li><strong>Young families</strong> looking for an easy, safe morning of swimming and play, where the open bowrider layout keeps everyone close together and the skipper takes care of the driving.</li><li><strong>Water-sports groups</strong> who are there for the banana, the donut and the wakeboarding rather than for lounging on a sun deck, and who want a quick, nimble boat to make the most of it.</li><li><strong>First-timers</strong> testing the waters before committing to a bigger charter, who want to see whether a day at sea suits them before stepping up to one of the larger yachts.</li></ul><p>It is just as useful to say who the boat is not for. If you are a group of eight or more, if you want private cabins and an overnight stay, if you are planning a catered sit-down lunch or a corporate event with a flybridge and crew of three, the SX21 is not your boat, and the fleet has several that are. But for a handful of people who simply want to be out on the water, in the sun, near the swim ladder, for a few easy hours, very little beats it on value or on charm.</p></div>
+  
+</div>
+
+<div class="sec">
+  <div class="sec-head">
+    <div class="sec-kicker caps">Section 08</div>
+    <h2 class="display">Pricing and what is included</h2>
+    <div class="rules"><span class="thick"></span><span class="thin"></span></div>
+  </div>
+  <div class="sec-body"><p>The Mariah SX21 is the lowest entry point in our Marbella fleet, and its rate is quoted directly and competitively on WhatsApp through the website rather than published as a fixed table. That is deliberate: a quick message lets us match the price to the length of charter and the day you want, and confirm availability there and then. What never changes is what comes with the boat. Every charter includes the following as standard, with no add-ons sprung on you at the dock:</p><table><thead><tr><th>Included as standard</th><th>Detail</th></tr></thead><tbody><tr><td>Licensed skipper</td><td>Drives the boat throughout, no licence needed by you</td></tr><tr><td>Fuel</td><td>Included for the charter</td></tr><tr><td>Drinks</td><td>Water, soft drinks, beer, white wine, cava</td></tr><tr><td>Light snacks</td><td>Included on board</td></tr><tr><td>Insurance</td><td>Included</td></tr><tr><td>Safety equipment</td><td>Included</td></tr><tr><td>VAT (21%)</td><td>Included in the quoted price</td></tr></tbody></table><p>That inclusion list is the same standard applied across the crewed fleet, which means the price you are quoted is genuinely the price you pay. Skipper, fuel, drinks and Spanish VAT at twenty-one per cent are all already in it. For a small boat at the entry of the range, that is a clean, honest proposition: you message for the rate, you turn up with your group, and everything that makes the day run is already taken care of.</p><p>To get a current quote, the fastest route is the WhatsApp link on the boat's page at boatrentalinmarbella.com. Tell us your date, your group size and how many hours you are thinking of, and you will have a price back quickly.</p></div>
+  
+</div>
+
+<div class="sec">
+  <div class="sec-head">
+    <div class="sec-kicker caps">Section 09</div>
+    <h2 class="display">Seasonality and booking practicalities</h2>
+    <div class="rules"><span class="thick"></span><span class="thin"></span></div>
+  </div>
+  <div class="sec-body"><p>An open bowrider is a fair-weather boat, and on the Costa del Sol that is no great limitation, because the season here is long and generous. As a general guide, the Marbella charter season runs from spring through to autumn, with the high summer months bringing the warmest water, the longest days and the calmest, most reliable conditions for swimming and water sports. The shoulder months on either side can be glorious too, often quieter and very pleasant, though the sea is cooler and a swim stop is more of a brave plunge than a long soak.</p><p>Because the SX21 is open to the elements, its days are most enjoyable when the sea is settled and the sun is out, which is the norm rather than the exception here through the warmer half of the year. Mornings on this coast are very often the calmest part of the day, before any afternoon breeze gets up, which is one reason a morning slot is so popular for a swim-focused charter on a small boat. Your skipper will always read the conditions on the day and shape the route accordingly, keeping to the sheltered water when the breeze is up.</p><p>On the practical side, the boat departs from <strong>Puerto Banus</strong>, the marina is easy to reach and well known, and you do not need a licence or any experience because a licensed skipper is always aboard. The single most useful thing you can do is book ahead, especially for weekends and for any date in the peak summer weeks, when a small, well-priced boat is exactly the sort of thing that goes first. A short message to confirm your date and group size is all it takes to hold the slot.</p></div>
+  
+</div>
+
+<div class="sec">
+  <div class="sec-head">
+    <div class="sec-kicker caps">Section 10</div>
+    <h2 class="display">Frequently asked questions</h2>
+    <div class="rules"><span class="thick"></span><span class="thin"></span></div>
+  </div>
+  <div class="sec-body"><p><strong>How many people can the Mariah SX21 take?</strong> Up to five guests. It is a small-group boat by design, and five is the comfortable, sociable maximum for the open bowrider layout.</p><p><strong>Do I need a boat licence?</strong> No. A licensed skipper is included on every charter and drives the boat throughout, so no one in your group needs a licence or any prior experience.</p><p><strong>Is fuel included in the price?</strong> Yes. Fuel is included for the charter, along with the skipper, drinks, light snacks, insurance, safety equipment and VAT. The rate you are quoted is the rate you pay.</p><p><strong>What drinks and food come with the boat?</strong> Drinks are included and cover water, soft drinks, beer, white wine and cava. Light snacks are also included. It is set up for an easy sun-and-swim outing rather than a full sit-down lunch.</p><p><strong>Can we do water sports?</strong> Yes, this boat is built for it. The banana, the donut and wakeboarding are part of what the SX21 does best, which is why it suits groups who want an active, in-the-water day.</p><p><strong>Where does it leave from?</strong> Puerto Banus, the famous marina just west of Marbella, which is also where your skipper will meet you at the berth.</p><p><strong>How much does it cost?</strong> The Mariah is the lowest entry point in the fleet, with the rate quoted competitively on WhatsApp through the website so we can match it to your date and the number of hours you want. Message us with your details for a current price.</p><p><strong>Can we stay overnight on board?</strong> No. The SX21 is an open day boat with no cabins, built for daytime coastal outings. For overnight charters the fleet has larger yachts with private cabins, and we are happy to point you to the right one.</p></div>
+  
+</div>
+
+<div class="sec">
+  <div class="sec-head">
+    <div class="sec-kicker caps">Section 11</div>
+    <h2 class="display">Book the Mariah SX21</h2>
+    <div class="rules"><span class="thick"></span><span class="thin"></span></div>
+  </div>
+  <div class="sec-body"><p>If a few easy, sunlit hours on the Marbella coast with your own skipper sounds like the day you are after, the Mariah SX21 is one of the simplest and best-value ways to do it. It is a 6.4-metre American bowrider for up to five guests, leaving from Puerto Banus, with the skipper, fuel, drinks, light snacks, insurance, safety equipment and VAT all included as standard, and the rate quoted quickly and competitively on WhatsApp.</p><p>To check availability and get a price, head to the boat's page and send a message with your date, your group size and the number of hours you have in mind. You will have a quote back promptly, and a small, friendly boat held for your day on the water.</p></div>
+  
+</div>
+
+<div class="callout">
+  <h3 class="display">Ready when you are</h3>
+  <p>Book the Mariah SX21 and the rest of the Marbella fleet at <strong>boatrentalinmarbella.com</strong>, where the WhatsApp link gives you a fast, competitive quote for your date and group.</p><p>Own a boat and want it earning? <strong>List it free at boathire24.com</strong> and reach renters worldwide.</p>
+  <div class="linksrow caps"><a href="https://boathire24.com">https://boathire24.com</a><span class="sep">&#9670;</span><a href="https://boatrentalinmarbella.com/boats/mariah-sx21/">https://boatrentalinmarbella.com/boats/mariah-sx21/</a></div>
+</div>
+<div class="endmark"><span class="line"></span><svg width="14" height="14" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg" aria-hidden="true"><path fill="#b9924b" d="M17 15l1.55 1.55c-.96 1.69-3.33 3.04-5.55 3.37V11h3V9h-3V7.82C14.16 7.4 15 6.3 15 5c0-1.65-1.35-3-3-3S9 3.35 9 5c0 1.3.84 2.4 2 2.82V9H8v2h3v8.92c-2.22-.33-4.59-1.68-5.55-3.37L7 15l-4-3v3c0 3.88 4.92 7 9 7s9-3.12 9-7v-3l-4 3zM12 4c.55 0 1 .45 1 1s-.45 1-1 1-1-.45-1-1 .45-1 1-1z"/></svg><span class="line"></span></div>
+  </td></tr></tbody>
+  <tfoot><tr><td></td></tr></tfoot>
+</table>
+
+<div class="runfoot caps">
+  <span><b>boathire24.com</b> <span class="gold">&#9670;</span> rent boats worldwide
+    <span class="gold">&#9670;</span> list your boat free</span>
+  <span class="gold caps">boatrentalinmarbella.com/boats/mariah-sx21</span>
+</div>
+</body>
+</html>

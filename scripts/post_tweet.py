@@ -402,21 +402,40 @@ def _post_one(page, text: str, media_path: pathlib.Path | None = None) -> bool:
         page.keyboard.type(text, delay=15)
         page.wait_for_timeout(800)
 
-        # Extra wait if media is still uploading
+        # Wait for the media to FINISH uploading before submitting. While an image is
+        # uploading, the Post button stays disabled, so Cmd+Enter can't fire and a
+        # button-click would hang. Poll the Post button until it's enabled.
         if media_path:
-            page.wait_for_timeout(2000)
+            for _ in range(30):  # up to ~30s
+                try:
+                    btn0 = page.locator('[data-testid="tweetButton"]').first
+                    if btn0.count() and btn0.is_visible() and btn0.get_attribute("aria-disabled") in (None, "false"):
+                        break
+                except Exception:
+                    pass
+                page.wait_for_timeout(1000)
+            page.wait_for_timeout(800)
 
-        # Submit with Cmd+Enter — button click fires no network request
-        # Playwright uses "Enter" not "Return" for the Enter key
+        # Submit with Cmd+Enter — button clicks fire NO network request on X, so
+        # Cmd+Enter is the only thing that actually posts. The media-upload wait above
+        # ensures the tweet is valid (button enabled) so Cmd+Enter takes effect.
+        # Re-focus the compose box first so the keyboard shortcut targets it.
+        try:
+            box.click()
+            page.wait_for_timeout(300)
+        except Exception:
+            pass
         page.keyboard.press("Meta+Enter")
         page.wait_for_timeout(3500)
 
-        # Fallback: click button if compose still open
-        if "compose" in page.url:
-            btn = page.locator('[data-testid="tweetButton"]')
-            if btn.count() > 0:
-                btn.click()
+        # If the Post button is still present+enabled, the tweet didn't go — retry once.
+        try:
+            btn = page.locator('[data-testid="tweetButton"]').first
+            if btn.count() and btn.get_attribute("aria-disabled") in (None, "false"):
+                page.keyboard.press("Meta+Enter")
                 page.wait_for_timeout(3000)
+        except Exception:
+            pass
 
         return True
     except Exception as e:

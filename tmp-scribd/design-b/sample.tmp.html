@@ -1,0 +1,255 @@
+<!DOCTYPE html>
+<html lang="en"><head><meta charset="utf-8"><title>Astondoa 40 “Fufi”</title><style>
+:root {
+  --azure: #0E7FC1;
+  --azure-tint: #F1F7FB;
+  --ink: #1B2733;
+  --mute: #66737E;
+  --hair: #E3E8EC;
+}
+* { margin: 0; padding: 0; box-sizing: border-box; }
+
+@page {
+  size: A4;
+  margin: 18mm 17mm 16mm 17mm;
+}
+
+/* Paper wrapper table: the repeating tfoot reserves room for the fixed
+   runner footer at the bottom of every page. */
+table.paper { width: 100%; border-collapse: collapse; }
+table.paper > tbody > tr > td { padding: 0; vertical-align: top; }
+table.paper .footspace { height: 13mm; }
+
+html, body { margin: 0; padding: 0; }
+body {
+  font-family: -apple-system, "Helvetica Neue", "Segoe UI", Arial, sans-serif;
+  color: var(--ink);
+  font-size: 10.5pt;
+  line-height: 1.62;
+  -webkit-print-color-adjust: exact;
+  print-color-adjust: exact;
+}
+
+a { color: var(--azure); text-decoration: none; }
+
+/* ---------- repeating page footer (skipped on the zero-margin cover) ---- */
+.runner {
+  position: fixed;
+  left: 0; right: 0;
+  bottom: 0;
+  z-index: 50;
+  background: #fff;
+  display: flex;
+  justify-content: space-between;
+  align-items: baseline;
+  gap: 6mm;
+  border-top: 0.6pt solid var(--hair);
+  padding-top: 2.4mm;
+  font-size: 7.2pt;
+  letter-spacing: 0.02em;
+  color: var(--mute);
+}
+.runner a { color: var(--azure); }
+.runner .right { text-align: right; white-space: nowrap; }
+
+/* ---------- cover ------------------------------------------------------- */
+.cover {
+  height: 246mm;
+  position: relative;
+  overflow: hidden;
+  page-break-after: always;
+  background: #fff;
+}
+.cover-top {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.brandline { display: flex; align-items: center; gap: 4mm; }
+.brandline img {
+  height: 11mm; width: 11mm;
+  object-fit: cover;
+  border-radius: 2.2mm;
+  display: block;
+}
+.brandline .bn { font-size: 11pt; font-weight: 700; letter-spacing: 0.14em; text-transform: uppercase; }
+.brandline .bn .accent { color: var(--azure); }
+.brandline .bt { font-size: 7pt; letter-spacing: 0.22em; text-transform: uppercase; color: var(--mute); margin-top: 0.6mm; }
+.fleetmark img {
+  height: 10mm;
+  border-radius: 1.6mm;
+  display: block;
+}
+.cover-img {
+  margin: 10mm 0 0;
+  height: 122mm;
+  overflow: hidden;
+}
+.cover-img img { width: 100%; height: 100%; object-fit: cover; display: block; }
+.cover-body { padding: 0; }
+.kicker {
+  margin-top: 12mm;
+  font-size: 8pt;
+  letter-spacing: 0.3em;
+  text-transform: uppercase;
+  color: var(--azure);
+  font-weight: 600;
+}
+.cover h1 {
+  margin-top: 4mm;
+  font-size: 31pt;
+  font-weight: 300;
+  letter-spacing: -0.015em;
+  line-height: 1.12;
+}
+.cover .rule {
+  width: 22mm; height: 0; border: 0;
+  border-top: 1.4pt solid var(--azure);
+  margin: 6mm 0 5.5mm;
+}
+.cover .subtitle {
+  font-size: 12pt;
+  font-weight: 400;
+  color: var(--mute);
+  line-height: 1.55;
+  max-width: 150mm;
+}
+.cover-foot {
+  position: absolute;
+  left: 0; right: 0; bottom: 1mm;
+  display: flex;
+  justify-content: space-between;
+  border-top: 0.6pt solid var(--hair);
+  padding-top: 3mm;
+  font-size: 7.6pt;
+  letter-spacing: 0.18em;
+  text-transform: uppercase;
+  color: var(--mute);
+}
+
+/* ---------- content ----------------------------------------------------- */
+.sec { margin-top: 10mm; }
+.sec:first-child { margin-top: 0; }
+.sec-no {
+  display: block;
+  font-size: 7.6pt;
+  font-weight: 600;
+  letter-spacing: 0.28em;
+  color: var(--azure);
+  margin-bottom: 1.6mm;
+}
+h2 {
+  font-size: 15.5pt;
+  font-weight: 600;
+  letter-spacing: -0.01em;
+  margin-bottom: 3.4mm;
+  page-break-after: avoid;
+  break-after: avoid;
+}
+.sec-head { page-break-inside: avoid; break-inside: avoid; page-break-after: avoid; }
+
+.body-html p { margin-bottom: 3mm; }
+.body-html p:last-child { margin-bottom: 0; }
+.body-html ul, .body-html ol { margin: 1mm 0 3mm 5mm; }
+.body-html li { margin-bottom: 1.6mm; padding-left: 1mm; }
+.body-html li::marker { color: var(--azure); }
+.body-html strong { font-weight: 600; }
+.body-html em { font-style: italic; }
+
+.body-html table {
+  width: 100%;
+  border-collapse: collapse;
+  margin: 3mm 0 4mm;
+  font-size: 9.8pt;
+  page-break-inside: avoid;
+  break-inside: avoid;
+}
+.body-html th {
+  text-align: left;
+  font-size: 7.6pt;
+  font-weight: 600;
+  letter-spacing: 0.16em;
+  text-transform: uppercase;
+  color: var(--mute);
+  padding: 0 2mm 2mm 0;
+  border-bottom: 1.2pt solid var(--azure);
+}
+.body-html td {
+  padding: 2.5mm 2mm 2.5mm 0;
+  border-bottom: 0.6pt solid var(--hair);
+  vertical-align: top;
+}
+.body-html th.num, .body-html td.num { text-align: right; padding-right: 0; }
+
+figure {
+  margin: 5mm 0 1mm;
+  page-break-inside: avoid;
+  break-inside: avoid;
+}
+figure img {
+  width: 100%;
+  height: 76mm;
+  object-fit: cover;
+  display: block;
+}
+figcaption {
+  margin-top: 2.2mm;
+  font-size: 8pt;
+  color: var(--mute);
+  letter-spacing: 0.02em;
+}
+figcaption::before { content: "—  "; color: var(--azure); }
+
+/* ---------- spec at-a-glance grid --------------------------------------- */
+.atglance { margin-top: 0; }
+.spec-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  column-gap: 12mm;
+  page-break-inside: avoid;
+  break-inside: avoid;
+}
+.spec-cell {
+  border-bottom: 0.6pt solid var(--hair);
+  padding: 2.6mm 0 2.4mm;
+  page-break-inside: avoid;
+  break-inside: avoid;
+}
+.spec-cell .sl {
+  font-size: 7.2pt;
+  letter-spacing: 0.2em;
+  text-transform: uppercase;
+  color: var(--mute);
+}
+.spec-cell .sv { font-size: 10.5pt; font-weight: 500; margin-top: 0.6mm; }
+
+/* ---------- callout ------------------------------------------------------ */
+.callout {
+  margin-top: 10mm;
+  background: var(--azure-tint);
+  border-top: 1.6pt solid var(--azure);
+  padding: 6.5mm 7mm 6mm;
+  page-break-inside: avoid;
+  break-inside: avoid;
+}
+.callout h3 {
+  font-size: 12pt;
+  font-weight: 600;
+  margin-bottom: 2.4mm;
+}
+.callout .links {
+  margin-top: 3.6mm;
+  padding-top: 3mm;
+  border-top: 0.6pt solid #D5E4EE;
+  font-size: 9.2pt;
+}
+.callout .links a { font-weight: 600; }
+.callout .links .sep { color: var(--mute); margin: 0 2.4mm; }
+
+.endlinks {
+  margin-top: 10mm;
+  border-top: 0.6pt solid var(--hair);
+  padding-top: 3mm;
+  font-size: 9.2pt;
+}
+</style></head><body><table class="paper"><tbody><tr><td><section class="cover"><div class="cover-top"><div class="brandline"><img src="file:///Users/master/boat-rental-platform/public/brand-logo.jpg" alt="BoatHire24"><div><div class="bn">Boat<span class="accent">Hire</span>24</div><div class="bt">rent boats worldwide</div></div></div><div class="fleetmark"><img src="file:///Users/master/boat-rental-marbella/site/img/logo-640.png" alt="Boat Rental In Marbella"></div></div><div class="cover-img"><img src="file:///Users/master/boat-rental-marbella/site/img/boats/astondoa-40/hero-1600.jpg" alt=""></div><div class="cover-body"><div class="kicker">Charter Spec Sheet</div><h1>Astondoa 40 “Fufi”</h1><hr class="rule"><div class="subtitle">Spanish-built 12.5 m motor yacht — at home in Puerto Banús. Skipper, fuel, drinks and snacks included on every charter.</div></div><div class="cover-foot"><span>Boat Rental In Marbella · BoatHire24</span><span>June 2026</span></div></section><main><div class="sec atglance"><div class="sec-head"><span class="sec-no">At a glance</span></div><div class="spec-grid"><div class="spec-cell"><div class="sl">Builder</div><div class="sv">Astondoa (Cádiz, Spain)</div></div><div class="spec-cell"><div class="sl">Type</div><div class="sv">Motor yacht — flybridge</div></div><div class="spec-cell"><div class="sl">Length</div><div class="sv">12.5 m</div></div><div class="spec-cell"><div class="sl">Guests</div><div class="sv">Up to 9</div></div><div class="spec-cell"><div class="sl">Departure port</div><div class="sv">Puerto Banús, Marbella</div></div><div class="spec-cell"><div class="sl">Minimum charter</div><div class="sv">2 hours</div></div><div class="spec-cell"><div class="sl">Skipper</div><div class="sv">Licensed skipper included</div></div><div class="spec-cell"><div class="sl">Cabins</div><div class="sv">Two private cabins</div></div></div></div><div class="sec"><div class="sec-head"><span class="sec-no">01</span><h2>Overview</h2></div><div class="body-html"><p>The Astondoa 40 — known as <strong>“Fufi”</strong> — is the Spanish equivalent of the classic Mediterranean motor yacht. Built in Cádiz by Astondoa, fitted out in teak and cream leather, and at home anchoring off the Golden Mile for a long lunch.</p><p>At 12.5 metres with room for <strong>nine guests</strong>, she sits in the sweet spot for families and small groups: big enough for shade, a saloon and two private cabins, small enough to feel like your own boat. Every charter sails with a licensed skipper, and fuel is included in the price.</p></div><figure><img src="file:///Users/master/boat-rental-marbella/site/img/boats/astondoa-40/lifestyle-1200.jpg" alt=""><figcaption>Guests relaxing on the bow of the Astondoa 40 at Puerto Banús marina</figcaption></figure></div><div class="sec"><div class="sec-head"><span class="sec-no">02</span><h2>On-board highlights</h2></div><div class="body-html"><ul><li>Flybridge with shaded bimini and second helm</li><li>Cream-leather saloon with table-for-six and AC</li><li>Two private cabins for overnight charter</li><li>Spanish-built (Astondoa, Cádiz) — local provenance</li><li>Snorkel gear, inflatable donut &amp; paddleboard on board</li></ul></div><figure><img src="file:///Users/master/boat-rental-marbella/site/img/boats/astondoa-40/interior-1200.jpg" alt=""><figcaption>Cream-leather saloon with table-for-six and teak finish</figcaption></figure></div><div class="sec"><div class="sec-head"><span class="sec-no">03</span><h2>Pricing &amp; inclusions</h2></div><div class="body-html"><p>The Astondoa 40 charters by the hour from Puerto Banús, with a <strong>2-hour minimum</strong>. All prices are total — not per person — and include VAT.</p><table><thead><tr><th>Duration</th><th class="num">Price (EUR)</th></tr></thead><tbody><tr><td>2 hours</td><td class="num">€749</td></tr><tr><td>3 hours</td><td class="num">€1,049</td></tr><tr><td>4 hours</td><td class="num">€1,299</td></tr><tr><td>5 hours</td><td class="num">€1,549</td></tr><tr><td>6 hours</td><td class="num">€1,799</td></tr><tr><td>7 hours</td><td class="num">€2,099</td></tr><tr><td>8 hours</td><td class="num">€2,299</td></tr></tbody></table><p><strong>Every charter includes:</strong></p><ul><li>Licensed skipper</li><li>Fuel</li><li>Drinks (water, soft drinks, beer, white wine, cava)</li><li>Light snacks</li><li>Insurance</li><li>Safety equipment</li><li>VAT (21%)</li></ul></div></div><div class="sec"><div class="sec-head"><span class="sec-no">04</span><h2>Departure &amp; booking info</h2></div><div class="body-html"><p>The Astondoa 40 departs from <strong>Puerto Banús</strong>, Marbella’s flagship marina. Exact berth details are sent with your booking confirmation — plan to arrive about 15 minutes before departure so the skipper can run the welcome briefing and get you under way on time.</p><p>Popular routes include a swim-stop anchorage off the Golden Mile, a coastal cruise towards Cabopino, or a sunset loop back into Puerto Banús. Your skipper will tailor the route to the day’s conditions and your group’s plans.</p></div><figure><img src="file:///Users/master/boat-rental-marbella/site/img/boats/astondoa-40/sunset-1200.jpg" alt=""><figcaption>Arriving back at Puerto Banús marina at sunset</figcaption></figure></div><div class="callout"><h3>Book the Astondoa 40</h3><div class="body-html"><p>Check live availability and book the Astondoa 40 online at <a href="https://boatrentalinmarbella.com/boats/astondoa-40/">boatrentalinmarbella.com</a>. Own a boat? List it free on <a href="https://boathire24.com">BoatHire24</a> and start earning from charters worldwide.</p></div><div class="links"><a href="https://boathire24.com">boathire24.com</a><span class="sep">·</span><a href="https://boatrentalinmarbella.com/boats/astondoa-40/">boatrentalinmarbella.com/boats/astondoa-40</a></div></div></main></td></tr></tbody><tfoot><tr><td><div class="footspace"></div></td></tr></tfoot></table><footer class="runner"><span><a href="https://boathire24.com">boathire24.com</a> — rent boats worldwide&nbsp;&nbsp;|&nbsp;&nbsp;list your boat free</span><span class="right"><a href="https://boatrentalinmarbella.com/boats/astondoa-40/">boatrentalinmarbella.com/boats/astondoa-40</a></span></footer></body></html>

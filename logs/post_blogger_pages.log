@@ -1,0 +1,6 @@
+[2026-06-13 10:19:03] no credentials — run --login. Skipped.
+[2026-06-13 10:19:39] login OK — token saved
+[2026-06-13 10:22:14]   4858233363667605156  BoatHire24.com – Rent Boats Worldwide  https://blog.boathire24.com/
+[2026-06-13 10:22:15] publishing 2 page(s) to blog 5347820828408620730
+[2026-06-13 10:22:15]   WRITE-BLOCKED (quota): stopping. <HttpError 403 when requesting https://blogger.googleapis.com/v3/blogs/5347820828408620730/pages?isDraft=false&alt=json 
+[2026-06-13 10:22:15] published 0/2

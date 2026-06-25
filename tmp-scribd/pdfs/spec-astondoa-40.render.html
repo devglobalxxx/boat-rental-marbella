@@ -1,0 +1,493 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<title>Astondoa 40 “Fufi”</title>
+<style>
+:root {
+  --navy:      #0e2438;
+  --navy-deep: #08182a;
+  --gold:      #b9924b;
+  --gold-dark: #8a6c33;
+  --gold-light:#d4b06a;
+  --gold-pale: #e8d8af;
+  --ivory:     #f7f2e6;
+  --paper:     #fdfbf5;
+  --ink:       #22303e;
+  --muted:     #5d6a76;
+  --hairline:  #d9cdaf;
+  --row-tint:  #f5efdf;
+}
+* { -webkit-print-color-adjust: exact; print-color-adjust: exact;
+    box-sizing: border-box; }
+@page { size: A4; margin: 0; }
+html, body { margin: 0; padding: 0; }
+body {
+  background: var(--paper);
+  color: var(--ink);
+  font-family: Georgia, 'Palatino Linotype', Palatino, 'Times New Roman', serif;
+  font-size: 10.5pt;
+  line-height: 1.62;
+}
+.display { font-family: Didot, 'Didot LT STD', 'Playfair Display', Georgia,
+           'Times New Roman', serif; }
+.caps { font-family: Optima, 'Avenir Next', 'Gill Sans', 'Trebuchet MS',
+        sans-serif; text-transform: uppercase; }
+
+/* ---------------- Cover ---------------- */
+.cover {
+  position: relative;
+  width: 210mm; height: 297mm;
+  overflow: hidden;
+  background: var(--navy-deep);
+  page-break-after: always;
+}
+.cover-img {
+  position: absolute; inset: 0;
+  width: 100%; height: 100%;
+  object-fit: cover;
+  object-position: 24% center;  /* centres the yacht's full profile in the A4 crop */
+}
+.cover-veil {
+  position: absolute; inset: 0;
+  background:
+    linear-gradient(to top, rgba(11,26,46,0.92),
+                    rgba(11,26,46,0.86) 30%, transparent 55%),
+    linear-gradient(180deg,
+      rgba(8,24,42,0.62) 0%,
+      rgba(8,24,42,0.20) 26%,
+      rgba(8,24,42,0.12) 50%,
+      rgba(8,24,42,0.00) 62%);
+}
+.cover-veil.no-img {
+  background:
+    radial-gradient(120mm 90mm at 50% 26%, rgba(185,146,75,0.20), transparent 70%),
+    linear-gradient(180deg, #122c46 0%, #0a1d33 55%, #071426 100%);
+}
+.cover-top {
+  position: absolute; top: 13mm; left: 16mm; right: 16mm;
+  display: flex; align-items: center; justify-content: space-between;
+}
+.brand-lockup { display: flex; align-items: center; gap: 4.5mm; }
+.logo-chip {
+  background: #ffffff;
+  border: 1px solid var(--gold);
+  border-radius: 1.2mm;
+  padding: 2mm;
+  line-height: 0;
+}
+.logo-chip img { display: block; height: 13mm; width: 13mm;
+                 object-fit: cover; border-radius: 0.7mm; }
+.brand-name {
+  color: var(--ivory); font-size: 13pt; letter-spacing: 0.30em;
+  line-height: 1.25;
+}
+.brand-tag {
+  color: var(--gold-pale); font-size: 6.4pt; letter-spacing: 0.26em;
+  margin-top: 1mm;
+}
+.doc-type-flag {
+  text-align: right;
+  color: var(--gold-light);
+  font-size: 7.5pt; letter-spacing: 0.34em;
+  border-top: 0.7pt solid var(--gold);
+  border-bottom: 0.7pt solid var(--gold);
+  padding: 2.2mm 0 2mm 0;
+}
+.cover-main {
+  position: absolute; left: 16mm; right: 16mm; bottom: 34mm;
+}
+.cover-rule {
+  display: flex; align-items: center; gap: 4mm;
+  margin-bottom: 5mm;
+}
+.cover-rule .line { flex: 0 0 22mm; height: 0; border-top: 0.8pt solid var(--gold); }
+.cover-rule .word {
+  color: var(--gold-light); font-size: 8pt; letter-spacing: 0.42em;
+  white-space: nowrap;
+  text-shadow: 0 1px 5px rgba(5,14,26,0.65);
+}
+.cover-title {
+  color: #fdfaf2;
+  font-size: 44pt; line-height: 1.05;
+  font-weight: 600;
+  margin: 0 0 4mm 0;
+  text-shadow: 0 1px 8px rgba(5,14,26,0.55);
+}
+.cover-subtitle {
+  color: var(--gold-pale);
+  font-style: italic;
+  font-size: 13pt; line-height: 1.45;
+  margin: 0 0 7mm 0;
+  max-width: 150mm;
+  text-shadow: 0 1px 6px rgba(5,14,26,0.6);
+}
+.cover-meta {
+  color: rgba(247,242,230,0.92);
+  font-size: 7.6pt; letter-spacing: 0.22em;
+}
+.cover-meta .dot { color: var(--gold-light); padding: 0 2.2mm; }
+.fleet-strip {
+  margin-top: 8mm;
+  display: flex; align-items: center; gap: 4mm;
+}
+.fleet-strip .logo-chip img { height: 9mm; width: auto; }
+.fleet-label {
+  color: rgba(247,242,230,0.85); font-size: 6.6pt; letter-spacing: 0.30em;
+}
+
+/* ------------- Repeating footer ------------- */
+.runfoot {
+  position: fixed; left: 0; right: 0; bottom: 0;
+  height: 12mm;
+  background: var(--ivory);
+  border-top: 1pt solid var(--gold);
+  display: flex; align-items: center; justify-content: space-between;
+  padding: 0 16mm;
+  font-size: 6.8pt; letter-spacing: 0.12em;
+  color: var(--navy);
+}
+.runfoot b { letter-spacing: 0.22em; font-weight: 600; }
+.runfoot .gold { color: var(--gold-dark); }
+.runfoot a { color: var(--navy); text-decoration: none; }
+
+/* ------------- Paged content scaffold ------------- */
+table.paged { width: 100%; border-collapse: collapse; }
+table.paged > thead td { height: 15mm; padding: 0; }
+table.paged > tfoot td { height: 17mm; padding: 0; }
+table.paged > tbody > tr > td { padding: 0 18mm; }
+
+/* ------------- Sections ------------- */
+.sec { margin: 0 0 8mm 0; }
+.sec-head {
+  break-after: avoid-page; page-break-after: avoid;
+  break-inside: avoid; page-break-inside: avoid;
+  margin: 0 0 4.5mm 0;
+}
+.sec-kicker {
+  color: var(--gold-dark); font-size: 7pt; letter-spacing: 0.38em;
+  margin-bottom: 1.6mm;
+}
+.sec-head h2 {
+  color: var(--navy);
+  font-size: 18.5pt; font-weight: 400; line-height: 1.2;
+  margin: 0 0 2.6mm 0;
+}
+.sec-head .rules { position: relative; height: 2.4mm; }
+.sec-head .rules .thin {
+  position: absolute; left: 0; right: 0; top: 1mm;
+  border-top: 0.6pt solid var(--hairline);
+}
+.sec-head .rules .thick {
+  position: absolute; left: 0; top: 0; width: 26mm;
+  border-top: 2.2pt solid var(--gold);
+}
+.sec-body p { margin: 0 0 3.4mm 0; }
+.sec-body p:last-child { margin-bottom: 0; }
+.sec-body ol { margin: 0 0 3.4mm 0; padding-left: 5.5mm; }
+.sec-body ul { margin: 0 0 3.4mm 0; padding-left: 1mm; }
+.sec-body li { margin-bottom: 1.6mm; break-inside: avoid; page-break-inside: avoid;
+               -webkit-column-break-inside: avoid; }
+.sec-body ul.cols2 { columns: 2; column-gap: 9mm;
+                     break-inside: avoid; page-break-inside: avoid; }
+.sec-body ul > li {
+  list-style: none;
+  padding-left: 1.1em; text-indent: -1.1em;  /* hanging indent: wraps align under text */
+}
+.sec-body ul > li::before {
+  content: "\2726";            /* four-pointed star, brass compass point */
+  display: inline-block; width: 1.44em; text-indent: 0;
+  color: var(--gold); font-size: 8pt;       /* 1.44em @8pt == 1.1em @10.5pt */
+}
+.sec-body a { color: var(--navy); text-decoration: none;
+              border-bottom: 0.6pt solid var(--gold); }
+.sec-body strong { color: var(--navy); }
+
+/* generic tables inside section html */
+.sec-body table {
+  width: 100%; border-collapse: collapse;
+  margin: 1mm 0 4mm 0;
+  break-inside: avoid; page-break-inside: avoid;
+  font-size: 9.8pt;
+}
+.sec-body th {
+  background: var(--navy); color: var(--ivory);
+  font-family: Optima, 'Avenir Next', 'Gill Sans', 'Trebuchet MS', sans-serif;
+  text-transform: uppercase; letter-spacing: 0.16em;
+  font-size: 7.4pt; font-weight: 500;
+  text-align: left; padding: 2.6mm 3.5mm;
+  border-bottom: 1.4pt solid var(--gold);
+}
+.sec-body td {
+  padding: 2.2mm 3.5mm;
+  border-bottom: 0.6pt solid var(--hairline);
+  color: var(--ink);
+}
+.sec-body td, .sec-body th { font-variant-numeric: tabular-nums; }
+.sec-body td:not(:first-child),
+.sec-body th:not(:first-child) { text-align: right; }
+.sec-body tr:nth-child(even) td { background: var(--row-tint); }
+.sec-body td:first-child { color: var(--navy); }
+.sec-body tr.best td { background: rgba(212,175,55,0.12); }
+.sec-body tr.best td:first-child { color: var(--navy); font-weight: 600; }
+.best-tag {
+  display: inline-block;
+  font-family: Optima, 'Avenir Next', 'Gill Sans', 'Trebuchet MS', sans-serif;
+  font-variant-caps: small-caps; text-transform: lowercase;
+  font-size: 7.6pt; font-weight: 600; letter-spacing: 0.14em;
+  color: var(--gold-dark);
+  border: 0.6pt solid var(--gold);
+  border-radius: 1mm;
+  padding: 0.2mm 1.6mm;
+  margin-left: 2.2mm;
+  white-space: nowrap;
+  vertical-align: 0.2mm;
+}
+
+/* ------------- Figures ------------- */
+figure.plate {
+  break-inside: avoid; page-break-inside: avoid;
+  margin: 5mm 0 2mm 0;
+  background: #ffffff;
+  border: 0.7pt solid var(--gold-light);
+  padding: 2.6mm;
+}
+figure.plate img {
+  display: block; width: 100%; height: 78mm; object-fit: cover;
+}
+figure.plate figcaption {
+  text-align: center;
+  font-style: italic;
+  font-size: 8.4pt; color: var(--muted);
+  padding: 2.4mm 2mm 0.6mm 2mm;
+}
+figure.plate figcaption::before {
+  content: "\25C6\00a0"; color: var(--gold); font-size: 6pt;
+}
+
+/* ------------- Spec table (2-column grid: two lbl/val pairs per row) ------------- */
+.spec-block { margin: 0 0 8mm 0; }
+table.spec {
+  width: 100%; border-collapse: collapse;
+  border-top: 1.6pt solid var(--navy);
+  border-bottom: 1.6pt solid var(--navy);
+}
+table.spec td { padding: 1.7mm 1.5mm; border-bottom: 0.6pt solid var(--hairline);
+                vertical-align: top; }
+table.spec tr:last-child td { border-bottom: none; }
+table.spec td.lbl {
+  width: 21%;
+  font-family: Optima, 'Avenir Next', 'Gill Sans', 'Trebuchet MS', sans-serif;
+  text-transform: uppercase; letter-spacing: 0.16em;
+  font-size: 7.2pt; color: var(--gold-dark);
+  padding-top: 2.3mm;
+}
+table.spec td.val { width: 29%; color: var(--navy); font-size: 9.8pt; }
+table.spec td.lbl:nth-child(3) {
+  border-left: 0.6pt solid var(--hairline);
+  padding-left: 4mm;
+}
+table.spec td.val:nth-child(2) { padding-right: 4mm; }
+
+/* ------------- Callout ------------- */
+.callout {
+  break-inside: avoid; page-break-inside: avoid;
+  margin: 8mm 0 4mm 0;
+  background: var(--navy);
+  border: 1pt solid var(--gold);
+  outline: 0.6pt solid var(--gold);
+  outline-offset: -2.2mm;
+  color: var(--ivory);
+  padding: 8mm 9mm 7mm 9mm;
+}
+.callout h3 {
+  color: var(--gold-light);
+  font-size: 15pt; font-weight: 400;
+  margin: 0 0 3mm 0;
+}
+.callout p { margin: 0 0 2.8mm 0; line-height: 1.6; color: #efe7d3; }
+.callout a { color: var(--gold-light); text-decoration: none; }
+.callout ul { margin: 0 0 2.8mm 0; padding-left: 1mm; }
+.callout ul > li { list-style: none; margin-bottom: 1.4mm;
+                   padding-left: 1.1em; text-indent: -1.1em;
+                   break-inside: avoid; page-break-inside: avoid; }
+.callout ul > li::before {
+  content: "\2726"; display: inline-block; width: 1.44em; text-indent: 0;
+  color: var(--gold-light); font-size: 8pt;
+}
+.callout .linksrow {
+  margin-top: 4.5mm; padding-top: 3.6mm;
+  border-top: 0.6pt solid rgba(212,176,106,0.55);
+  font-size: 7.6pt; letter-spacing: 0.16em;
+  color: var(--gold-pale);
+}
+.callout .linksrow span.sep { padding: 0 2.6mm; color: var(--gold); }
+
+.endmark {
+  display: flex; align-items: center; justify-content: center; gap: 3.5mm;
+  margin: 7mm 0 0 0;
+}
+.endmark .line { width: 14mm; height: 0; border-top: 0.6pt solid var(--gold); }
+.endmark svg { display: block; }
+</style>
+</head>
+<body>
+
+<div class="cover">
+  <img class="cover-img" src="file:///Users/master/boat-rental-marbella/site/img/boats/astondoa-40/hero-1200.jpg" alt="">
+  <div class="cover-veil"></div>
+  <div class="cover-top">
+    <div class="brand-lockup">
+      <span class="logo-chip"><img src="file:///Users/master/boat-rental-platform/public/brand-logo.jpg" alt="BoatHire24"></span>
+      <div>
+        <div class="brand-name caps display">BoatHire24</div>
+        <div class="brand-tag caps">Rent boats worldwide <span class="gold">|</span> list your boat free</div>
+      </div>
+    </div>
+    <div class="doc-type-flag caps">June 2026</div>
+  </div>
+  <div class="cover-main">
+    <div class="cover-rule">
+      <span class="line"></span>
+      <span class="word caps">Vessel Specification</span>
+    </div>
+    <h1 class="cover-title display">Astondoa 40 “Fufi”</h1>
+    <p class="cover-subtitle display">A Spanish-built 12.5 metre motor yacht at home off the Golden Mile: the complete dossier on Marbella&#x27;s quiet classic.</p>
+    <div class="cover-meta caps">BoatHire24 Editorial</div>
+    <div class="fleet-strip"><span class="fleet-label caps">From the fleet of</span><span class="logo-chip"><img src="file:///Users/master/boat-rental-marbella/site/img/logo-640.png" alt="Boat Rental In Marbella"></span></div>
+  </div>
+</div>
+<table class="paged">
+  <thead><tr><td></td></tr></thead>
+  <tbody><tr><td>
+
+<div class="spec-block sec">
+  <div class="sec-head">
+    <div class="sec-kicker caps">Particulars</div>
+    <h2 class="display">Principal Particulars</h2>
+    <div class="rules"><span class="thick"></span><span class="thin"></span></div>
+  </div>
+  <table class="spec"><tr><td class="lbl">Vessel</td><td class="val">Astondoa 40, “Fufi”</td><td class="lbl">Type</td><td class="val">Motor yacht</td></tr>
+<tr><td class="lbl">Builder</td><td class="val">Astondoa</td><td class="lbl">Length</td><td class="val">12.5 m</td></tr>
+<tr><td class="lbl">Guest capacity</td><td class="val">9 guests</td><td class="lbl">Departure port</td><td class="val">Puerto Banús</td></tr>
+<tr><td class="lbl">Cabins</td><td class="val">Two private cabins</td><td class="lbl">Crew</td><td class="val">Licensed skipper included</td></tr>
+<tr><td class="lbl">Rate band</td><td class="val">Tier A, from €749 (2h) to €2,299 (8h)</td><td class="lbl">Minimum charter</td><td class="val">2 hours</td></tr></table>
+</div>
+
+<div class="sec">
+  <div class="sec-head">
+    <div class="sec-kicker caps">Section 01</div>
+    <h2 class="display">Overview: Marbella&#x27;s quiet classic</h2>
+    <div class="rules"><span class="thick"></span><span class="thin"></span></div>
+  </div>
+  <div class="sec-body"><p>Of all the boats lined up along the pontoons of Puerto Banús, the <strong>Astondoa 40</strong> is the one that rewards a second look. She does not shout. There is no carbon-fibre hardtop, no wall of throttles, no neon-lit transom. What she offers instead is something the Costa del Sol has rather less of than it pretends: <em>quiet, well-made, unhurried</em> time on the water. Known to her regulars simply as <strong>“Fufi”</strong>, she is a 12.5 metre Spanish-built motor yacht that carries up to nine guests, runs with a licensed skipper, and was made for exactly the kind of long, lazy lunch-at-anchor day that the Marbella coast does better than almost anywhere in Europe.</p><p>She stands out in our fleet for three reasons. The first is <strong>provenance</strong>. Most charter yachts on this coast were built in Italy; Fufi was built in Spain, by Astondoa, one of the oldest yards in the country. There is something fitting about cruising the Andalusian coast aboard an Andalusian-region boat, and her local roots show in the way she is finished and the way she sits at anchor. The second is <strong>scale</strong>. At 12.5 metres and nine guests, she is large enough to feel like a proper yacht, with a saloon, two cabins, a flybridge and real shade, yet small enough to slip into a quiet cove and keep the day intimate. The third is <strong>character</strong>. Teak underfoot, cream leather in the saloon, a table that seats six below and a second helm up top: this is a boat built to be lived in for a day, not merely driven.</p><p>This dossier sets out everything worth knowing about her: the shipyard that made her, the design thinking behind a motor yacht of this class, the layout you actually step aboard, a realistic account of a day spent aboard from Puerto Banús, the cruising grounds within easy reach, who she suits best, and the straightforward economics of chartering her. Every hard figure here, from her length and capacity to her cabins, her rates and what is included, comes from our own fleet records. Everything else is the context that turns a spec sheet into a sense of the boat.</p></div>
+  <figure class="plate"><img src="file:///Users/master/boat-rental-marbella/site/img/boats/astondoa-40/hero-1200.jpg" alt=""><figcaption>The Astondoa 40 “Fufi” cruising off Marbella with La Concha behind.</figcaption></figure>
+</div>
+
+<div class="sec">
+  <div class="sec-head">
+    <div class="sec-kicker caps">Section 02</div>
+    <h2 class="display">The builder and the marque</h2>
+    <div class="rules"><span class="thick"></span><span class="thin"></span></div>
+  </div>
+  <div class="sec-body"><p>To understand Fufi you have to understand <strong>Astondoa</strong>, the yard that built her. Astondoa is one of the genuine elders of European yacht building. The family business traces its origins back to the early twentieth century, when the Astondoa brothers were building working and fishing craft in wood on the Spanish coast. By the middle of the century the yard had moved decisively into pleasure boats, and through the latter decades it became one of the few Spanish builders to compete seriously with the great Italian houses for the motor-yacht market across the Mediterranean.</p><p>That matters because it gives the marque a particular flavour. Astondoa was never a fashion brand chasing the latest planing-hull trend; it was a builder with a long memory and a craftsman's instinct. The yard developed a reputation for <strong>solidly engineered hulls</strong>, generous use of timber and leather in the interiors, and a slightly more conservative, more seamanlike approach to design than some of its flashier rivals. Boats of this lineage tend to ride well, sit heavily and reassuringly at anchor, and age gracefully: the teak mellows, the leather softens, and the boat becomes more characterful rather than simply older.</p><p>It is also worth knowing that Astondoa has long been associated with <strong>Cádiz</strong>, the great Atlantic port of southern Spain, and that local provenance is part of Fufi's story. There is a continuity to it: a yacht built on the Andalusian coast, now working the Andalusian coast, in waters her builders would have known intimately. When you charter a boat like this you are not just hiring a hull; you are hiring a small piece of Spanish maritime craft tradition. Among a Marbella fleet heavy with imported Italian flybridges, that gives Fufi a quiet distinction that the people who choose her tend to appreciate.</p></div>
+  
+</div>
+
+<div class="sec">
+  <div class="sec-head">
+    <div class="sec-kicker caps">Section 03</div>
+    <h2 class="display">The model and the design</h2>
+    <div class="rules"><span class="thick"></span><span class="thin"></span></div>
+  </div>
+  <div class="sec-body"><p>A motor yacht of roughly this size, in the twelve-to-thirteen metre band, with a flybridge and two cabins below, occupies one of the most useful and best-loved categories in Mediterranean boating. It is the size at which a day boat becomes a proper yacht. Below twelve metres you are largely buying a fast, fun, open boat; above it you start moving into crewed superyacht territory with the costs and formality that brings. The 40-foot motor yacht sits in the sweet spot in between, and that is precisely where Fufi lives.</p><p>The design priorities of this class are clear once you have spent a day aboard one. The hull is shaped for <strong>comfortable cruising rather than outright speed</strong>: she will move you along the coast at a relaxed, easy pace, and she will hold a steady, planted attitude at anchor when a chop gets up in the afternoon breeze. The accommodation is arranged to make the most of the volume: a saloon and galley on the main level, sleeping cabins tucked below the waterline where it is cool and quiet, and the defining feature of the type, a <strong>flybridge</strong>, the raised upper deck that carries a second steering position and the best seats in the house.</p><p>That flybridge is the single most important reason boats of this class are so prized on a coast like Marbella's. It gives you a high, open, sun-or-shade vantage point from which to watch the shoreline slide past, La Concha mountain rising behind the town and the white villas of the Golden Mile stacked up the hillside. On Fufi the flybridge carries a <strong>shaded bimini</strong>, so you get the elevated view without roasting in the midday sun, and a second helm so the skipper can drive from up top in fine weather while everyone enjoys the breeze. It is a layout refined over decades, and it is exactly why this kind of boat never goes out of style.</p></div>
+  
+</div>
+
+<div class="sec">
+  <div class="sec-head">
+    <div class="sec-kicker caps">Section 04</div>
+    <h2 class="display">On board: layout, saloon and deck</h2>
+    <div class="rules"><span class="thick"></span><span class="thin"></span></div>
+  </div>
+  <div class="sec-body"><p>Step aboard Fufi and the first thing you notice is the <strong>teak</strong>. It runs underfoot on the decks and frames the cockpit, warm and grippy underfoot, the unmistakable signature of a boat finished properly rather than cheaply. From the cockpit you move forward into the saloon, and this is where the Astondoa character really lands.</p><p>The saloon is fitted in <strong>cream leather</strong>, with a <strong>table that seats six</strong> and <strong>air conditioning</strong>, a genuinely meaningful feature on a coast where July and August afternoons can be fierce. This is the heart of the boat for the hours when you want to be out of the sun: a cool, shaded, comfortable room where lunch can be laid out, a glass of cava poured, and the day slowed right down. The galley sits to hand so drinks and light snacks can be served without anyone having to leave the group.</p><p>Below the saloon are the <strong>two private cabins</strong>. For a day charter they are a luxury rather than a necessity, somewhere to change, to get out of the sun, to keep bags and to let a tired child or a flagging guest rest. For an overnight or longer charter they become the point of the whole exercise, two proper private spaces that turn a day boat into a small cruising yacht. Their presence is a large part of what separates Fufi from the open day boats elsewhere in the fleet.</p><p>Up top is the flybridge, with its shaded bimini and second helm. This is the social centre of the boat under way: the place to sit with a drink and a view as the coast unspools, and the place from which the skipper can con the boat in fair weather. Between the cool saloon below, the sociable flybridge above and the teak cockpit aft, Fufi gives you three distinct places to be across a single day, which is exactly what makes a long charter aboard her feel spacious rather than confined.</p><p>And then there are the toys. Fufi carries <strong>snorkel gear</strong>, an <strong>inflatable donut</strong> and a <strong>paddleboard</strong> on board. None of it is showy, but all of it is the right kit for this coast: clear water to snorkel in over the rocks, a towable ring to pull behind for the younger crowd, and a paddleboard for a quiet glide around the anchorage before lunch. It is everything a family or a group of friends actually wants for a day at anchor, and nothing they do not.</p></div>
+  <figure class="plate"><img src="file:///Users/master/boat-rental-marbella/site/img/boats/astondoa-40/interior-1200.jpg" alt=""><figcaption>Inside the saloon: cream leather, teak finish and air conditioning.</figcaption></figure>
+</div>
+
+<div class="sec">
+  <div class="sec-head">
+    <div class="sec-kicker caps">Section 05</div>
+    <h2 class="display">A day aboard from Puerto Banús</h2>
+    <div class="rules"><span class="thick"></span><span class="thin"></span></div>
+  </div>
+  <div class="sec-body"><p>The best way to understand a boat is to walk through a day on her, so here is a realistic one. Fufi's home is <strong>Puerto Banús</strong>, the glamorous marina just west of Marbella town, and a typical charter begins there in the late morning. You arrive at the pontoon, the skipper greets the group, bags go below into one of the cabins, and within a few minutes the lines are slipped and you are idling out past the harbour wall, the marina's famous parade of yachts and sports cars falling away behind you.</p><p>Clear of the harbour the skipper opens her up to an easy cruising pace and turns east along the coast. The first half-hour is pure scene-setting: the white sweep of Marbella, the villas of the <strong>Golden Mile</strong> climbing the hillside, and behind it all the dramatic limestone wall of <strong>La Concha</strong>, the mountain that gives the bay its shelter and its postcard. Drinks come up from the galley, water, soft drinks, a cold beer, a glass of white wine or cava, and the group settles, some on the flybridge for the view and the breeze, some in the cockpit in the shade.</p><p>By early afternoon the skipper has found a quiet patch of water off the Golden Mile or tucked into a calmer bay, and the anchor goes down. This is the still point of the day. The swim ladder comes off the transom, the snorkel gear and paddleboard come out, the inflatable donut goes over the side for whoever wants towing, and the water, clear, blue and a forgiving Mediterranean warm through the summer, does the rest. Lunch is laid out in the cool of the saloon or in the cockpit shade, light snacks and drinks circulating, nobody in any hurry to be anywhere. An hour drifts by, then another.</p><p>Mid-afternoon the anchor comes up and the day eases into its second act, perhaps a slow cruise further along the coast, perhaps a second swim stop somewhere quieter, perhaps simply a long, idling return with the sun dropping behind the boat. As you come back in toward Puerto Banús in the golden light of late afternoon, the marina lighting up ahead and everyone a little sun-warmed and salt-dried and content, you understand what a boat like this is for. It is not a thrill ride. It is a day, properly spent.</p></div>
+  <figure class="plate"><img src="file:///Users/master/boat-rental-marbella/site/img/boats/astondoa-40/lifestyle-1200.jpg" alt=""><figcaption>Guests on the bow at Puerto Banús, a day properly spent.</figcaption></figure>
+</div>
+
+<div class="sec">
+  <div class="sec-head">
+    <div class="sec-kicker caps">Section 06</div>
+    <h2 class="display">Itineraries and cruising grounds</h2>
+    <div class="rules"><span class="thick"></span><span class="thin"></span></div>
+  </div>
+  <div class="sec-body"><p>Fufi's home port of Puerto Banús sits at the centre of one of the most cruisable stretches of the Spanish Mediterranean. The coast runs broadly east to west, it is well sheltered by the mountains behind it, and there is a genuine variety of destinations within an easy day's range. Here is how the ground lies, and how a charter typically uses it.</p><p><strong>The Golden Mile swim stop.</strong> The default and the favourite. A short run east from Puerto Banús brings you off the Golden Mile, the celebrated stretch of beachfront villas and hotels between the marina and Marbella town. The water here is clean, the backdrop is the best on the coast, villas, palms and La Concha, and it is close enough that even a two or three hour charter can include a proper anchor-down swim. For a shorter booking this is almost always where Fufi heads.</p><p><strong>Cabopino and the east.</strong> Push further east, past Marbella town, and you reach the pretty marina and dune-backed beaches around <strong>Cabopino</strong>. The coast here is softer and more natural, the anchorages a little quieter, and it makes a fine destination for a longer half-day or full-day charter when you want to put some distance between yourself and the Puerto Banús crowd.</p><p><strong>Estepona and the west.</strong> Head the other way, west from Puerto Banús, and the coast runs toward <strong>Estepona</strong>, a handsome, less-developed town with its own charm and a coastline that feels a touch more authentic. The run west is a lovely full-day option, with open water, fewer boats and the chance of dolphins offshore, which are a regular sight in these waters.</p><p><strong>The long runs.</strong> For those with a full day and an appetite for distance, the coast opens up toward the dramatic profile of the <strong>Rock of Gibraltar</strong> away to the southwest, where the Mediterranean meets the Atlantic. These longer passages are very much weather-dependent and are best discussed with the skipper, but they hint at the range a boat like Fufi has when the day allows. For most charters, though, the magic is closer to home: a swim off the Golden Mile, a long lunch at anchor, and a golden-hour cruise back into Banús.</p></div>
+  
+</div>
+
+<div class="sec">
+  <div class="sec-head">
+    <div class="sec-kicker caps">Section 07</div>
+    <h2 class="display">Who this boat suits</h2>
+    <div class="rules"><span class="thick"></span><span class="thin"></span></div>
+  </div>
+  <div class="sec-body"><p>Fufi is a specific boat with a specific best use, and being honest about that is the surest way to a great day. She is, above all, a <strong>boat for groups who want to relax</strong> rather than groups who want speed and spray. If your idea of a perfect day on the water is a long lunch at anchor, a swim in clear water, drinks in the shade and an unhurried cruise along a beautiful coast, she is close to ideal. If you are after an adrenaline machine, she is the wrong boat, and we would happily point you to something faster in the fleet.</p><p>She suits a <strong>group of up to nine</strong> particularly well. That is enough for two families together, a group of friends, a milestone birthday, a small celebration or an anniversary. The saloon-with-table-for-six and the cool air conditioning make her especially good for groups with a mix of ages, where not everyone wants to be in the full sun all day: grandparents can stay cool and shaded below while the younger crowd swim, snorkel and ride the donut off the back.</p><p>She is a strong choice for <strong>families with children</strong>. The two cabins give somewhere for a small child to nap or a teenager to escape, the towable donut and paddleboard keep the youngsters busy at anchor, and the skipper handles all the seamanship so the parents can simply be present. She also makes a quietly elegant platform for a <strong>special occasion</strong>: a proposal, an anniversary, a relaxed celebration where the boat itself is the venue and the coast is the view. And for those who want more than a day, her two private cabins make her one of the few boats in this size band genuinely set up for an <strong>overnight charter</strong>.</p></div>
+  
+</div>
+
+<div class="sec">
+  <div class="sec-head">
+    <div class="sec-kicker caps">Section 08</div>
+    <h2 class="display">Pricing and inclusions</h2>
+    <div class="rules"><span class="thick"></span><span class="thin"></span></div>
+  </div>
+  <div class="sec-body"><p>Fufi charters in our <strong>Tier A</strong> band, the rate group for our 12.5 metre motor yachts, with a <strong>two-hour minimum</strong>. The pricing is genuinely all-inclusive in the Spanish charter tradition: the rates below already cover the skipper, the fuel, drinks, snacks, insurance, safety equipment and Spanish VAT at 21 per cent. There are no fuel surcharges and no surprise extras to find at the end of the day, for the number you book is the number you pay.</p><table><thead><tr><th>Charter length</th><th>Price (EUR, all-inclusive)</th></tr></thead><tbody><tr><td>2 hours</td><td>€749</td></tr><tr><td>3 hours</td><td>€1,049</td></tr><tr><td>4 hours</td><td>€1,299</td></tr><tr><td>5 hours</td><td>€1,549</td></tr><tr><td>6 hours</td><td>€1,799</td></tr><tr><td>7 hours</td><td>€2,099</td></tr><tr class="best"><td>8 hours, full day<span class="best-tag">Best value</span></td><td>€2,299</td></tr></tbody></table><p>Every charter aboard Fufi includes the following as standard:</p><ul><li><strong>Licensed skipper</strong>: a professional at the helm for the whole charter</li><li><strong>Fuel</strong>: included, with no surcharge on the published rate</li><li><strong>Drinks</strong>: water, soft drinks, beer, white wine and cava</li><li><strong>Light snacks</strong>: to keep the group going through the day</li><li><strong>Insurance</strong>: full charter cover</li><li><strong>Safety equipment</strong>: to current standards</li><li><strong>VAT at 21 per cent</strong>: already included in every price above</li></ul><p>Looking at the rates, the <strong>full day</strong> is comfortably the best value per hour and is the way to charter Fufi if you can: it is the eight-hour stretch that lets you reach the quieter anchorages, take two swim stops and enjoy the golden-hour run home without ever watching the clock. For overnight and multi-day charters, where the two cabins come into their own, we quote on request, a quick message over WhatsApp through the website is the fastest way to a price.</p></div>
+  
+</div>
+
+<div class="sec">
+  <div class="sec-head">
+    <div class="sec-kicker caps">Section 09</div>
+    <h2 class="display">Seasonality and booking practicalities</h2>
+    <div class="rules"><span class="thick"></span><span class="thin"></span></div>
+  </div>
+  <div class="sec-body"><p>The Marbella charter season runs broadly from spring through to autumn, and it is worth understanding how the months differ so you can pick your day well. <strong>High summer, July and August,</strong> brings the warmest water, the longest days and the liveliest scene, and it is also the busiest and most heavily booked period, so dates go early. This is when Fufi's air-conditioned saloon and shaded flybridge earn their keep, giving you cool refuge from the midday heat that an open boat simply cannot match.</p><p><strong>The shoulder seasons, late spring and early autumn, roughly May to June and September into October,</strong> are, for many people, the sweet spot. The weather is reliably fine, the water is still warm well into the autumn, the light is beautiful, and the coast is noticeably calmer than in peak August. If your dates are flexible, these months often deliver the best of the boat with the least of the crowds.</p><p>A few practical notes worth knowing. Fufi runs with a <strong>skipper</strong>, so no licence or experience is required of you, so you simply turn up and enjoy the day. Departures are from <strong>Puerto Banús</strong>, easily reached from Marbella, the wider Costa del Sol and Málaga. Charters are weather-dependent, as all coastal boating is; the skipper makes the final call on conditions and on the day's route, always with your comfort and safety first. Bring sun protection, soft-soled shoes or bare feet for the teak, a layer for the cooler air offshore, and a sense of how you want the day to unfold, and the skipper will shape the itinerary around it. Because the best dates in summer book out, the single best piece of advice is simply to <strong>reserve early</strong>.</p></div>
+  <figure class="plate"><img src="file:///Users/master/boat-rental-marbella/site/img/boats/astondoa-40/sunset-1200.jpg" alt=""><figcaption>Arriving back at Puerto Banús at sunset after a full day aboard.</figcaption></figure>
+</div>
+
+<div class="sec">
+  <div class="sec-head">
+    <div class="sec-kicker caps">Section 10</div>
+    <h2 class="display">Frequently asked questions</h2>
+    <div class="rules"><span class="thick"></span><span class="thin"></span></div>
+  </div>
+  <div class="sec-body"><p><strong>How many guests can the Astondoa 40 carry?</strong><br>Up to <strong>nine guests</strong>. That makes her well suited to two families together, a group of friends or a small celebration, with room to spread out across the cockpit, saloon and flybridge.</p><p><strong>Do I need a boat licence or any experience?</strong><br>No. Fufi always charters with a <strong>licensed skipper</strong> included in the rate, so you need no licence and no experience. You simply step aboard and enjoy the day while the skipper handles everything.</p><p><strong>What is included in the price?</strong><br>A great deal. Every charter includes the <strong>skipper, fuel, drinks</strong> (water, soft drinks, beer, white wine and cava), <strong>light snacks, insurance, safety equipment and VAT at 21 per cent</strong>. The published rate is genuinely all-in, with no fuel surcharge.</p><p><strong>Where does the boat leave from?</strong><br>From <strong>Puerto Banús</strong>, the marina just west of Marbella, which is easy to reach from across the Costa del Sol and from Málaga.</p><p><strong>What is there to do on board?</strong><br>Fufi carries <strong>snorkel gear, an inflatable donut and a paddleboard</strong>, and the standard day involves swimming and these water toys at anchor, with lunch and drinks in the cool of the air-conditioned saloon or the cockpit shade.</p><p><strong>Can we stay overnight?</strong><br>Yes. With <strong>two private cabins</strong>, Fufi is one of the few boats in her size band set up for overnight and multi-day charters. These are quoted on request: message us over WhatsApp through the website for a price.</p><p><strong>What is the shortest charter, and what is the best value?</strong><br>The minimum is <strong>two hours</strong> (€749, all-inclusive). The <strong>full eight-hour day</strong> (€2,299) is the best value per hour and the way to see the most of the coast, with time for two swim stops and a golden-hour cruise home.</p><p><strong>What is the best time of year to book?</strong><br>July and August are warmest and busiest; the shoulder months of late spring and early autumn often give the best balance of fine weather, warm water and a quieter coast. Whatever your dates, book early, because the best summer days go quickly.</p></div>
+  
+</div>
+
+<div class="callout">
+  <h3 class="display">Book the Astondoa 40 “Fufi”</h3>
+  <p>Reserve a day aboard this Spanish-built 12.5 metre motor yacht, with skipper, fuel, drinks and VAT all included, direct at <a href="https://boatrentalinmarbella.com/boats/astondoa-40/">boatrentalinmarbella.com</a>. For overnight, multi-day or bespoke charters, a quick WhatsApp message through the website is the fastest way to a quote.</p><p><strong>Own a boat?</strong> List it free and reach charter guests worldwide at <a href="https://boathire24.com">boathire24.com</a>.</p>
+  <div class="linksrow caps"><a href="https://boathire24.com">https://boathire24.com</a><span class="sep">&#9670;</span><a href="https://boatrentalinmarbella.com/boats/astondoa-40/">https://boatrentalinmarbella.com/boats/astondoa-40/</a></div>
+</div>
+<div class="endmark"><span class="line"></span><svg width="14" height="14" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg" aria-hidden="true"><path fill="#b9924b" d="M17 15l1.55 1.55c-.96 1.69-3.33 3.04-5.55 3.37V11h3V9h-3V7.82C14.16 7.4 15 6.3 15 5c0-1.65-1.35-3-3-3S9 3.35 9 5c0 1.3.84 2.4 2 2.82V9H8v2h3v8.92c-2.22-.33-4.59-1.68-5.55-3.37L7 15l-4-3v3c0 3.88 4.92 7 9 7s9-3.12 9-7v-3l-4 3zM12 4c.55 0 1 .45 1 1s-.45 1-1 1-1-.45-1-1 .45-1 1-1z"/></svg><span class="line"></span></div>
+  </td></tr></tbody>
+  <tfoot><tr><td></td></tr></tfoot>
+</table>
+
+<div class="runfoot caps">
+  <span><b>boathire24.com</b> <span class="gold">&#9670;</span> rent boats worldwide
+    <span class="gold">&#9670;</span> list your boat free</span>
+  <span class="gold caps">boatrentalinmarbella.com/boats/astondoa-40</span>
+</div>
+</body>
+</html>

@@ -1,0 +1,502 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<title>Fairline Targa 12m</title>
+<style>
+:root {
+  --navy:      #0e2438;
+  --navy-deep: #08182a;
+  --gold:      #b9924b;
+  --gold-dark: #8a6c33;
+  --gold-light:#d4b06a;
+  --gold-pale: #e8d8af;
+  --ivory:     #f7f2e6;
+  --paper:     #fdfbf5;
+  --ink:       #22303e;
+  --muted:     #5d6a76;
+  --hairline:  #d9cdaf;
+  --row-tint:  #f5efdf;
+}
+* { -webkit-print-color-adjust: exact; print-color-adjust: exact;
+    box-sizing: border-box; }
+@page { size: A4; margin: 0; }
+html, body { margin: 0; padding: 0; }
+body {
+  background: var(--paper);
+  color: var(--ink);
+  font-family: Georgia, 'Palatino Linotype', Palatino, 'Times New Roman', serif;
+  font-size: 10.5pt;
+  line-height: 1.62;
+}
+.display { font-family: Didot, 'Didot LT STD', 'Playfair Display', Georgia,
+           'Times New Roman', serif; }
+.caps { font-family: Optima, 'Avenir Next', 'Gill Sans', 'Trebuchet MS',
+        sans-serif; text-transform: uppercase; }
+
+/* ---------------- Cover ---------------- */
+.cover {
+  position: relative;
+  width: 210mm; height: 297mm;
+  overflow: hidden;
+  background: var(--navy-deep);
+  page-break-after: always;
+}
+.cover-img {
+  position: absolute; inset: 0;
+  width: 100%; height: 100%;
+  object-fit: cover;
+  object-position: 24% center;  /* centres the yacht's full profile in the A4 crop */
+}
+.cover-veil {
+  position: absolute; inset: 0;
+  background:
+    linear-gradient(to top, rgba(11,26,46,0.92),
+                    rgba(11,26,46,0.86) 30%, transparent 55%),
+    linear-gradient(180deg,
+      rgba(8,24,42,0.62) 0%,
+      rgba(8,24,42,0.20) 26%,
+      rgba(8,24,42,0.12) 50%,
+      rgba(8,24,42,0.00) 62%);
+}
+.cover-veil.no-img {
+  background:
+    radial-gradient(120mm 90mm at 50% 26%, rgba(185,146,75,0.20), transparent 70%),
+    linear-gradient(180deg, #122c46 0%, #0a1d33 55%, #071426 100%);
+}
+.cover-top {
+  position: absolute; top: 13mm; left: 16mm; right: 16mm;
+  display: flex; align-items: center; justify-content: space-between;
+}
+.brand-lockup { display: flex; align-items: center; gap: 4.5mm; }
+.logo-chip {
+  background: #ffffff;
+  border: 1px solid var(--gold);
+  border-radius: 1.2mm;
+  padding: 2mm;
+  line-height: 0;
+}
+.logo-chip img { display: block; height: 13mm; width: 13mm;
+                 object-fit: cover; border-radius: 0.7mm; }
+.brand-name {
+  color: var(--ivory); font-size: 13pt; letter-spacing: 0.30em;
+  line-height: 1.25;
+}
+.brand-tag {
+  color: var(--gold-pale); font-size: 6.4pt; letter-spacing: 0.26em;
+  margin-top: 1mm;
+}
+.doc-type-flag {
+  text-align: right;
+  color: var(--gold-light);
+  font-size: 7.5pt; letter-spacing: 0.34em;
+  border-top: 0.7pt solid var(--gold);
+  border-bottom: 0.7pt solid var(--gold);
+  padding: 2.2mm 0 2mm 0;
+}
+.cover-main {
+  position: absolute; left: 16mm; right: 16mm; bottom: 34mm;
+}
+.cover-rule {
+  display: flex; align-items: center; gap: 4mm;
+  margin-bottom: 5mm;
+}
+.cover-rule .line { flex: 0 0 22mm; height: 0; border-top: 0.8pt solid var(--gold); }
+.cover-rule .word {
+  color: var(--gold-light); font-size: 8pt; letter-spacing: 0.42em;
+  white-space: nowrap;
+  text-shadow: 0 1px 5px rgba(5,14,26,0.65);
+}
+.cover-title {
+  color: #fdfaf2;
+  font-size: 44pt; line-height: 1.05;
+  font-weight: 600;
+  margin: 0 0 4mm 0;
+  text-shadow: 0 1px 8px rgba(5,14,26,0.55);
+}
+.cover-subtitle {
+  color: var(--gold-pale);
+  font-style: italic;
+  font-size: 13pt; line-height: 1.45;
+  margin: 0 0 7mm 0;
+  max-width: 150mm;
+  text-shadow: 0 1px 6px rgba(5,14,26,0.6);
+}
+.cover-meta {
+  color: rgba(247,242,230,0.92);
+  font-size: 7.6pt; letter-spacing: 0.22em;
+}
+.cover-meta .dot { color: var(--gold-light); padding: 0 2.2mm; }
+.fleet-strip {
+  margin-top: 8mm;
+  display: flex; align-items: center; gap: 4mm;
+}
+.fleet-strip .logo-chip img { height: 9mm; width: auto; }
+.fleet-label {
+  color: rgba(247,242,230,0.85); font-size: 6.6pt; letter-spacing: 0.30em;
+}
+
+/* ------------- Repeating footer ------------- */
+.runfoot {
+  position: fixed; left: 0; right: 0; bottom: 0;
+  height: 12mm;
+  background: var(--ivory);
+  border-top: 1pt solid var(--gold);
+  display: flex; align-items: center; justify-content: space-between;
+  padding: 0 16mm;
+  font-size: 6.8pt; letter-spacing: 0.12em;
+  color: var(--navy);
+}
+.runfoot b { letter-spacing: 0.22em; font-weight: 600; }
+.runfoot .gold { color: var(--gold-dark); }
+.runfoot a { color: var(--navy); text-decoration: none; }
+
+/* ------------- Paged content scaffold ------------- */
+table.paged { width: 100%; border-collapse: collapse; }
+table.paged > thead td { height: 15mm; padding: 0; }
+table.paged > tfoot td { height: 17mm; padding: 0; }
+table.paged > tbody > tr > td { padding: 0 18mm; }
+
+/* ------------- Sections ------------- */
+.sec { margin: 0 0 8mm 0; }
+.sec-head {
+  break-after: avoid-page; page-break-after: avoid;
+  break-inside: avoid; page-break-inside: avoid;
+  margin: 0 0 4.5mm 0;
+}
+.sec-kicker {
+  color: var(--gold-dark); font-size: 7pt; letter-spacing: 0.38em;
+  margin-bottom: 1.6mm;
+}
+.sec-head h2 {
+  color: var(--navy);
+  font-size: 18.5pt; font-weight: 400; line-height: 1.2;
+  margin: 0 0 2.6mm 0;
+}
+.sec-head .rules { position: relative; height: 2.4mm; }
+.sec-head .rules .thin {
+  position: absolute; left: 0; right: 0; top: 1mm;
+  border-top: 0.6pt solid var(--hairline);
+}
+.sec-head .rules .thick {
+  position: absolute; left: 0; top: 0; width: 26mm;
+  border-top: 2.2pt solid var(--gold);
+}
+.sec-body p { margin: 0 0 3.4mm 0; }
+.sec-body p:last-child { margin-bottom: 0; }
+.sec-body ol { margin: 0 0 3.4mm 0; padding-left: 5.5mm; }
+.sec-body ul { margin: 0 0 3.4mm 0; padding-left: 1mm; }
+.sec-body li { margin-bottom: 1.6mm; break-inside: avoid; page-break-inside: avoid;
+               -webkit-column-break-inside: avoid; }
+.sec-body ul.cols2 { columns: 2; column-gap: 9mm;
+                     break-inside: avoid; page-break-inside: avoid; }
+.sec-body ul > li {
+  list-style: none;
+  padding-left: 1.1em; text-indent: -1.1em;  /* hanging indent: wraps align under text */
+}
+.sec-body ul > li::before {
+  content: "\2726";            /* four-pointed star, brass compass point */
+  display: inline-block; width: 1.44em; text-indent: 0;
+  color: var(--gold); font-size: 8pt;       /* 1.44em @8pt == 1.1em @10.5pt */
+}
+.sec-body a { color: var(--navy); text-decoration: none;
+              border-bottom: 0.6pt solid var(--gold); }
+.sec-body strong { color: var(--navy); }
+
+/* generic tables inside section html */
+.sec-body table {
+  width: 100%; border-collapse: collapse;
+  margin: 1mm 0 4mm 0;
+  break-inside: avoid; page-break-inside: avoid;
+  font-size: 9.8pt;
+}
+.sec-body th {
+  background: var(--navy); color: var(--ivory);
+  font-family: Optima, 'Avenir Next', 'Gill Sans', 'Trebuchet MS', sans-serif;
+  text-transform: uppercase; letter-spacing: 0.16em;
+  font-size: 7.4pt; font-weight: 500;
+  text-align: left; padding: 2.6mm 3.5mm;
+  border-bottom: 1.4pt solid var(--gold);
+}
+.sec-body td {
+  padding: 2.2mm 3.5mm;
+  border-bottom: 0.6pt solid var(--hairline);
+  color: var(--ink);
+}
+.sec-body td, .sec-body th { font-variant-numeric: tabular-nums; }
+.sec-body td:not(:first-child),
+.sec-body th:not(:first-child) { text-align: right; }
+.sec-body tr:nth-child(even) td { background: var(--row-tint); }
+.sec-body td:first-child { color: var(--navy); }
+.sec-body tr.best td { background: rgba(212,175,55,0.12); }
+.sec-body tr.best td:first-child { color: var(--navy); font-weight: 600; }
+.best-tag {
+  display: inline-block;
+  font-family: Optima, 'Avenir Next', 'Gill Sans', 'Trebuchet MS', sans-serif;
+  font-variant-caps: small-caps; text-transform: lowercase;
+  font-size: 7.6pt; font-weight: 600; letter-spacing: 0.14em;
+  color: var(--gold-dark);
+  border: 0.6pt solid var(--gold);
+  border-radius: 1mm;
+  padding: 0.2mm 1.6mm;
+  margin-left: 2.2mm;
+  white-space: nowrap;
+  vertical-align: 0.2mm;
+}
+
+/* ------------- Figures ------------- */
+figure.plate {
+  break-inside: avoid; page-break-inside: avoid;
+  margin: 5mm 0 2mm 0;
+  background: #ffffff;
+  border: 0.7pt solid var(--gold-light);
+  padding: 2.6mm;
+}
+figure.plate img {
+  display: block; width: 100%; height: 78mm; object-fit: cover;
+}
+figure.plate figcaption {
+  text-align: center;
+  font-style: italic;
+  font-size: 8.4pt; color: var(--muted);
+  padding: 2.4mm 2mm 0.6mm 2mm;
+}
+figure.plate figcaption::before {
+  content: "\25C6\00a0"; color: var(--gold); font-size: 6pt;
+}
+
+/* ------------- Spec table (2-column grid: two lbl/val pairs per row) ------------- */
+.spec-block { margin: 0 0 8mm 0; }
+table.spec {
+  width: 100%; border-collapse: collapse;
+  border-top: 1.6pt solid var(--navy);
+  border-bottom: 1.6pt solid var(--navy);
+}
+table.spec td { padding: 1.7mm 1.5mm; border-bottom: 0.6pt solid var(--hairline);
+                vertical-align: top; }
+table.spec tr:last-child td { border-bottom: none; }
+table.spec td.lbl {
+  width: 21%;
+  font-family: Optima, 'Avenir Next', 'Gill Sans', 'Trebuchet MS', sans-serif;
+  text-transform: uppercase; letter-spacing: 0.16em;
+  font-size: 7.2pt; color: var(--gold-dark);
+  padding-top: 2.3mm;
+}
+table.spec td.val { width: 29%; color: var(--navy); font-size: 9.8pt; }
+table.spec td.lbl:nth-child(3) {
+  border-left: 0.6pt solid var(--hairline);
+  padding-left: 4mm;
+}
+table.spec td.val:nth-child(2) { padding-right: 4mm; }
+
+/* ------------- Callout ------------- */
+.callout {
+  break-inside: avoid; page-break-inside: avoid;
+  margin: 8mm 0 4mm 0;
+  background: var(--navy);
+  border: 1pt solid var(--gold);
+  outline: 0.6pt solid var(--gold);
+  outline-offset: -2.2mm;
+  color: var(--ivory);
+  padding: 8mm 9mm 7mm 9mm;
+}
+.callout h3 {
+  color: var(--gold-light);
+  font-size: 15pt; font-weight: 400;
+  margin: 0 0 3mm 0;
+}
+.callout p { margin: 0 0 2.8mm 0; line-height: 1.6; color: #efe7d3; }
+.callout a { color: var(--gold-light); text-decoration: none; }
+.callout ul { margin: 0 0 2.8mm 0; padding-left: 1mm; }
+.callout ul > li { list-style: none; margin-bottom: 1.4mm;
+                   padding-left: 1.1em; text-indent: -1.1em;
+                   break-inside: avoid; page-break-inside: avoid; }
+.callout ul > li::before {
+  content: "\2726"; display: inline-block; width: 1.44em; text-indent: 0;
+  color: var(--gold-light); font-size: 8pt;
+}
+.callout .linksrow {
+  margin-top: 4.5mm; padding-top: 3.6mm;
+  border-top: 0.6pt solid rgba(212,176,106,0.55);
+  font-size: 7.6pt; letter-spacing: 0.16em;
+  color: var(--gold-pale);
+}
+.callout .linksrow span.sep { padding: 0 2.6mm; color: var(--gold); }
+
+.endmark {
+  display: flex; align-items: center; justify-content: center; gap: 3.5mm;
+  margin: 7mm 0 0 0;
+}
+.endmark .line { width: 14mm; height: 0; border-top: 0.6pt solid var(--gold); }
+.endmark svg { display: block; }
+</style>
+</head>
+<body>
+
+<div class="cover">
+  <img class="cover-img" src="file:///Users/master/boat-rental-marbella/site/img/boats/fairline-targa-12m/hero-1200.jpg" alt="">
+  <div class="cover-veil"></div>
+  <div class="cover-top">
+    <div class="brand-lockup">
+      <span class="logo-chip"><img src="file:///Users/master/boat-rental-platform/public/brand-logo.jpg" alt="BoatHire24"></span>
+      <div>
+        <div class="brand-name caps display">BoatHire24</div>
+        <div class="brand-tag caps">Rent boats worldwide <span class="gold">|</span> list your boat free</div>
+      </div>
+    </div>
+    <div class="doc-type-flag caps">June 2026</div>
+  </div>
+  <div class="cover-main">
+    <div class="cover-rule">
+      <span class="line"></span>
+      <span class="word caps">Vessel Specification</span>
+    </div>
+    <h1 class="cover-title display">Fairline Targa 12m</h1>
+    <p class="cover-subtitle display">A boat dossier. The British sport yacht in our Marbella fleet, profiled in full, from the shipyard behind her to a day aboard from Puerto Banús.</p>
+    <div class="cover-meta caps">BoatHire24</div>
+    <div class="fleet-strip"><span class="fleet-label caps">From the fleet of</span><span class="logo-chip"><img src="file:///Users/master/boat-rental-marbella/site/img/logo-640.png" alt="Boat Rental In Marbella"></span></div>
+  </div>
+</div>
+<table class="paged">
+  <thead><tr><td></td></tr></thead>
+  <tbody><tr><td>
+
+<div class="spec-block sec">
+  <div class="sec-head">
+    <div class="sec-kicker caps">Particulars</div>
+    <h2 class="display">Principal Particulars</h2>
+    <div class="rules"><span class="thick"></span><span class="thin"></span></div>
+  </div>
+  <table class="spec"><tr><td class="lbl">Length</td><td class="val">12 m</td><td class="lbl">Capacity</td><td class="val">10 guests</td></tr>
+<tr><td class="lbl">Type</td><td class="val">Sport yacht</td><td class="lbl">Builder</td><td class="val">Fairline</td></tr>
+<tr><td class="lbl">Departure port</td><td class="val">Puerto Banús, Marbella</td><td class="lbl">Cabins</td><td class="val">Twin cabins</td></tr>
+<tr><td class="lbl">Cruising speed</td><td class="val">26 knots</td><td class="lbl">Rate band</td><td class="val">On request (WhatsApp quote)</td></tr></table>
+</div>
+
+<div class="sec">
+  <div class="sec-head">
+    <div class="sec-kicker caps">Section 01</div>
+    <h2 class="display">Overview: a fast British answer on a coast of Italians</h2>
+    <div class="rules"><span class="thick"></span><span class="thin"></span></div>
+  </div>
+  <div class="sec-body"><p>Most of the charter fleet on the Costa del Sol speaks with an Italian accent. Azimut, Pershing, Ferretti, Mangusta. The Fairline Targa 12m is the boat in our Marbella line-up that answers in English, and she does it with a personality all of her own. She is a <strong>12 metre sport yacht built by Fairline</strong>, one of Britain's most respected yacht builders, and she carries the relaxed, slightly understated confidence that the British marque is known for. She is quick, she is clean-lined, and she is genuinely good fun to be aboard.</p><p>Three things make her stand out on this coast. The first is her <strong>retractable hardtop</strong>. At the touch of a button the roof over the cockpit slides back, turning a sheltered, air-conditioned saloon into an open-air sun deck and back again, so the weather never forces the day to go one way or another. The second is pace. She cruises at around <strong>26 knots</strong> on twin diesels, which is brisk enough to outrun most of the day-charter fleet here. On a coastline where the good anchorages are spread from Puerto Banús east towards Cabopino and west towards Estepona, that speed quietly buys you more time in the water and less time staring at the wake. The third is scale. She takes <strong>up to 10 guests</strong> and has <strong>twin cabins</strong> below, which puts her in the sweet spot between a small open day boat and a full crewed superyacht.</p><p>She departs from <strong>Puerto Banús</strong>, the marina that more or less invented the Marbella yachting scene, and she comes with a licensed skipper, fuel, drinks, snacks, insurance and VAT all included in the price. What follows is the full dossier on this particular boat: the yard that built her, the model line she belongs to, what she is actually like to spend a day aboard, where she goes, who she suits, and exactly what is and is not included when you book.</p></div>
+  <figure class="plate"><img src="file:///Users/master/boat-rental-marbella/site/img/boats/fairline-targa-12m/hero-1600.jpg" alt=""><figcaption>The Fairline Targa 12m, our British sport yacht, on the water off Marbella.</figcaption></figure>
+</div>
+
+<div class="sec">
+  <div class="sec-head">
+    <div class="sec-kicker caps">Section 02</div>
+    <h2 class="display">The builder and the marque: who Fairline are</h2>
+    <div class="rules"><span class="thick"></span><span class="thin"></span></div>
+  </div>
+  <div class="sec-body"><p>Fairline is one of the names that defines the British motor-yacht tradition. The yard was founded in the early 1960s at Oundle in Northamptonshire, on a flooded gravel pit that became, improbably, the birthplace of a boatbuilding marque sold in dozens of countries. For most of its history Fairline has built at Oundle and at Corby in the English Midlands, well inland, which is part of the company's folklore: boats designed for the Mediterranean and the open ocean, built a long way from the sea by people who took obsessive pride in the joinery.</p><p>What Fairline came to stand for, over six decades, is a particular balance. The boats are fast and sporting but they are not raw. They are finished to a standard of cabinetry, upholstery and detail that feels closer to a country house than a powerboat, yet they are engineered to handle a real swell. That combination of <strong>British craftsmanship and genuine sea-keeping</strong> built the brand a loyal international following, and it is exactly the character you feel on our Targa. Over the years Fairline has worked with respected naval architects and designers to keep its hulls modern, and the marque has been a fixture at the major European boat shows, where the Targa and Squadron ranges have been the headline acts.</p><p>The company has had its share of corporate weather. Like several heritage British yards it passed through ownership changes and a difficult period in the mid-2010s before being relaunched and continuing to build under the Fairline name. None of that turbulence shows on the water. A Fairline remains a Fairline: a boat that people who know boats tend to nod at approvingly on the dock. When you charter our Targa you are stepping aboard a product of that tradition rather than a generic hull, and on a marina full of Italian yachts that British pedigree is part of what makes her a talking point.</p></div>
+  
+</div>
+
+<div class="sec">
+  <div class="sec-head">
+    <div class="sec-kicker caps">Section 03</div>
+    <h2 class="display">The Targa line: what this class is known for</h2>
+    <div class="rules"><span class="thick"></span><span class="thin"></span></div>
+  </div>
+  <div class="sec-body"><p>Within the Fairline range there have historically been two families. The Squadron yachts are the flybridge boats, taller and more formal, with a second helm and a sun deck up top. The <strong>Targa</strong> line is the sportier sibling: lower, sleeker, faster-looking, built around the cockpit and the helm rather than an upper deck. If the Squadron is the country estate, the Targa is the sports coupé, and that is the right mental model for the boat in our fleet.</p><p>A few things define the Targa character. The hull is a deep-vee planing shape designed to settle into a fast, stable cruise and to cut through a chop rather than slam over it. The styling is clean and low, with a long sweeping coachroof and big glass. And the signature feature across much of the modern Targa range is the <strong>sliding or retractable hardtop</strong> we have on this boat, a clever piece of engineering that gives you a solid, weatherproof roof and an open sports boat in the same hull. It is the detail that makes a Targa so well suited to a climate like the Costa del Sol, where you want shade at midday and open sky at sunset on the very same afternoon.</p><p>The other thing the Targa line is known for is the way it uses its length. A 12 metre Targa is laid out to feel bigger than the number suggests. The cockpit is social and generous, the bathing platform aft is part of the living space rather than an afterthought, and the accommodation below is properly fitted out rather than tokenistic. That is why a 12 metre sport yacht like ours can comfortably host <strong>10 guests</strong> for the day and still offer <strong>twin cabins</strong> for changing, resting children, or simply getting out of the sun. The Targa name carries weight precisely because the boats deliver that blend of speed, style and usable space, and our Marbella example is a faithful representative of the line.</p></div>
+  
+</div>
+
+<div class="sec">
+  <div class="sec-head">
+    <div class="sec-kicker caps">Section 04</div>
+    <h2 class="display">On board: layout, saloon, deck and cabins</h2>
+    <div class="rules"><span class="thick"></span><span class="thin"></span></div>
+  </div>
+  <div class="sec-body"><p>Step aboard over the bathing platform at the stern and the Targa's layout reveals itself in a logical, sociable sequence. The aft <strong>cockpit</strong> is the heart of the boat: an open, sunlit social space with seating that wraps around, a table that becomes the lunch table, and the helm forward where your skipper runs the day. With the <strong>retractable hardtop</strong> open, this whole area is bathed in sunshine and breeze. Close it and you have instant shade and a sheltered lounge, which is exactly what you want at the height of a July afternoon or if a light sea breeze gets up.</p><p>Forward and down a couple of steps is the <strong>saloon</strong>, wrapped in the <strong>panoramic windows</strong> that are a hallmark of the modern Targa look. Big glass means the interior never feels closed in. It is a cool, calm space to retreat to, with air conditioning, comfortable seating and the kind of timber and upholstery finish that the Fairline name is built on. This is where guests drift when they want a quiet moment out of the heat, and it doubles as shelter on the rare day the weather turns.</p><p>Below the saloon sit the <strong>twin cabins</strong>. On a day charter these earn their keep in small but important ways: somewhere to change into and out of swimwear in privacy, a cool dark room for a tired child to nap, a place to stow bags and dry clothes away from the sun and spray. There is a heads (the marine bathroom) on board, which removes the single biggest practical worry of a longer day at sea. Up on the foredeck there is space to lie out and take the sun away from the social hubbub of the cockpit, and the broad <strong>bathing platform</strong> at the stern is the launch pad for the whole watersports side of the day, the easy step down into the sea for swimming and snorkelling and the place everyone gathers when the boat is at anchor. It all adds up to a boat that, despite measuring 12 metres, lives much larger than her length.</p></div>
+  <figure class="plate"><img src="file:///Users/master/boat-rental-marbella/site/img/boats/fairline-targa-12m/hero-900.jpg" alt=""><figcaption>Sleek lines and a low, sporting profile, the signature of the Fairline Targa line.</figcaption></figure>
+</div>
+
+<div class="sec">
+  <div class="sec-head">
+    <div class="sec-kicker caps">Section 05</div>
+    <h2 class="display">A day aboard: Puerto Banús, hour by hour</h2>
+    <div class="rules"><span class="thick"></span><span class="thin"></span></div>
+  </div>
+  <div class="sec-body"><p>Here is how a typical day charter unfolds on the Targa, to give you a feel for the rhythm rather than a rigid timetable. Your day begins at the berth in <strong>Puerto Banús</strong>. Parking, cafés and the beach are all a short walk away, so it is an easy place to gather a group. Your skipper meets you at the boat, helps everyone aboard, stows the cool boxes and runs a short, friendly safety briefing. Then the lines come off and you idle out through the marina entrance, past the rows of yachts that make Banús famous, and the open sea opens up ahead.</p><p>Clear of the harbour, the skipper brings her up onto the plane and the Targa does what she does best, settling into that fast, easy <strong>26-knot cruise</strong>. Within minutes the coastline is sliding past: the high-rises of Marbella, the green wedge of La Concha mountain behind the town, the long ribbon of beaches. Speed is the luxury here. Where a slower boat would still be plodding out of sight of the marina, you are already choosing where to drop the hook.</p><p>Mid-morning is the first swim stop. The skipper noses into a quiet patch of water off one of the beaches, cuts the engines, and the boat goes quiet except for the slap of small waves on the hull. The bathing platform comes into its own. People slip into the water, the more energetic grab a mask and fins, and the less energetic stretch out on the foredeck with a cold drink from the cool box. Lunch happens at anchor, plates and glasses out on the cockpit table, the hardtop open to the sun or rolled shut if anyone wants shade. There is no rush. The whole point of the day is that the boat bends around what your group feels like doing.</p><p>Through the afternoon the skipper might reposition once or twice, chasing the calmest water or simply showing you a stretch of coast you have not seen. As the light turns golden the Targa makes her run back towards Banús, and that final cruise into the marina with the sun low over the water is, for a lot of guests, the photograph of the whole trip. The skipper handles the berthing, you step ashore, and the marina's bars and restaurants are right there to carry the evening on. A four to eight hour charter passes in what feels like half the time.</p></div>
+  
+</div>
+
+<div class="sec">
+  <div class="sec-head">
+    <div class="sec-kicker caps">Section 06</div>
+    <h2 class="display">Itineraries and cruising grounds from Puerto Banús</h2>
+    <div class="rules"><span class="thick"></span><span class="thin"></span></div>
+  </div>
+  <div class="sec-body"><p>One of the real pleasures of chartering from <strong>Puerto Banús</strong> is that it sits almost dead centre on a long, varied stretch of the Costa del Sol, so you can run east or west and find a completely different kind of day. The Targa's turn of speed makes more of these options reachable inside a normal charter than a slower boat would manage. Here are the routes our skippers run most often.</p><ul><li><strong>The Golden Mile swim stop.</strong> The short, classic outing. Head east out of Banús and anchor off the Golden Mile, the celebrated strip of beachfront mansions and beach clubs between Banús and Marbella town. It is the postcard view of the coast, close to the marina, and ideal for a half-day where swimming and lounging matter more than distance covered.</li><li><strong>Cabopino and the dunes.</strong> Carry on east past Marbella towards Cabopino, with its little marina and the protected Artola dunes behind the beach. The water out this way is often beautifully clear, which makes it a favourite for swimming and snorkelling, and it feels a world away from the bustle of Banús.</li><li><strong>West to Estepona.</strong> Turn west instead and the coast quietens as you run towards Estepona, past quieter beaches and anchorages with the mountains rising behind. A good direction when you want a calmer, less crowded day on the water.</li><li><strong>The long run towards Gibraltar.</strong> With a full day and the Targa's pace, the coast opens up all the way down towards the Strait of Gibraltar, where the Rock dominates the horizon and the Atlantic meets the Mediterranean. This is a proper expedition rather than a lazy lunch trip, and the kind of route a fast sport yacht is built for. Your skipper will advise on what is realistic for your hours and the day's sea state.</li></ul><p>None of these are fixed packages. Because the boat comes with a licensed skipper who knows this coast intimately, the route is a conversation. Tell him what you are in the mood for, calm swimming, dramatic scenery, a long blast down the coast, and he will shape the day around the wind, the swell and the crowds.</p></div>
+  
+</div>
+
+<div class="sec">
+  <div class="sec-head">
+    <div class="sec-kicker caps">Section 07</div>
+    <h2 class="display">Who this boat suits</h2>
+    <div class="rules"><span class="thick"></span><span class="thin"></span></div>
+  </div>
+  <div class="sec-body"><p>The Targa 12m is a flexible boat, but she has a clear sweet spot. With a capacity of <strong>10 guests</strong> she is sized for a group rather than a couple, and her sporty, stylish character makes her a natural fit for a particular kind of day out.</p><ul><li><strong>Groups of friends.</strong> Ten is a generous number, enough for a real party atmosphere in the cockpit while still leaving room to spread out. The fast cruise and the open hardtop make her a fun, energetic boat for a celebratory day rather than a sedate one.</li><li><strong>Families.</strong> The twin cabins, the heads on board and the easy bathing platform make her genuinely family-friendly. Children can nap below, change in private, and get in and out of the water safely, while the saloon offers a cool, shaded retreat from the midday sun.</li><li><strong>Celebrations and special occasions.</strong> Birthdays, hen and stag days, anniversaries, a milestone worth marking. The Targa has the looks and the sense of occasion to make the day feel like an event, and Puerto Banús as a departure point only adds to that.</li><li><strong>Style-conscious charterers.</strong> If you would rather arrive on a sleek British sport yacht than a generic rental, the Targa is the answer. She is a head-turner on a dock full of yachts, which is no small thing in Banús.</li></ul><p>Where she is less suited: very large parties beyond her ten-guest limit, or anyone whose priority is a static superyacht experience with full hotel-style crew and a chef. For those, our fleet has larger crewed options. But for a fast, social, good-looking day on the water with a group of up to ten, the Targa is hard to beat.</p></div>
+  <figure class="plate"><img src="file:///Users/master/boat-rental-marbella/site/img/boats/fairline-targa-12m/hero-600.jpg" alt=""><figcaption>Sized for groups of up to ten, and built for a fast, social day on the water.</figcaption></figure>
+</div>
+
+<div class="sec">
+  <div class="sec-head">
+    <div class="sec-kicker caps">Section 08</div>
+    <h2 class="display">Pricing and inclusions</h2>
+    <div class="rules"><span class="thick"></span><span class="thin"></span></div>
+  </div>
+  <div class="sec-body"><p>The Fairline Targa 12m is priced <strong>on request</strong>, with competitive Marbella rates. Rather than a fixed published tariff, each charter is quoted individually on WhatsApp through the website, based on your chosen date, the size of your group and how many hours you would like on the water. It is a quick conversation: send your preferred date through <a href="https://boatrentalinmarbella.com/boats/fairline-targa-12m/">the boat's page</a> and a clear, all-in quote comes back.</p><p>What matters is that the quote is genuinely all-in. Every charter on this boat includes the following as standard, with no extras bolted on afterwards:</p><table><tr><th>Included in every charter</th></tr><tr><td>Licensed skipper</td></tr><tr><td>Fuel</td></tr><tr><td>Drinks (water, soft drinks, beer, white wine, cava)</td></tr><tr><td>Light snacks</td></tr><tr><td>Insurance</td></tr><tr><td>Safety equipment</td></tr><tr><td>VAT (21%)</td></tr></table><p>That list is worth dwelling on, because it covers the things that often appear as surprise charges elsewhere. The <strong>fuel is included</strong>, which on a fast boat is a meaningful figure and one you do not have to think about. A <strong>licensed skipper</strong> is included, so you never need a licence of your own and nobody in the group has to give up their day to drive. <strong>Drinks</strong>, from water and soft drinks to beer, white wine and cava, are on board, along with <strong>light snacks</strong>. <strong>Insurance, safety equipment and the 21 percent Spanish VAT</strong> are all built into the number you are quoted. The price you are given is the price you pay.</p></div>
+  
+</div>
+
+<div class="sec">
+  <div class="sec-head">
+    <div class="sec-kicker caps">Section 09</div>
+    <h2 class="display">Seasonality and booking practicalities</h2>
+    <div class="rules"><span class="thick"></span><span class="thin"></span></div>
+  </div>
+  <div class="sec-body"><p>The Costa del Sol earns its reputation: it is one of the sunniest corners of Europe, and the charter season is long. <strong>Late spring through to early autumn</strong> is the heart of it, when the sea is warm enough for easy swimming and the weather is reliably settled day after day. <strong>July and August</strong> are the peak, with the hottest, calmest water and the busiest marina, and it is in these months that the Targa's retractable hardtop earns its keep, giving you shade exactly when the sun is at its fiercest. The shoulder months of <strong>May, June, September and early October</strong> are many regulars' favourite, with warm days, comfortable seas and fewer boats on the water.</p><p>A few practical notes for booking. Banús is busy in high season and the best dates and times go early, so it pays to enquire a few days ahead rather than on the morning itself, especially for weekends and through the school holidays. Morning charters often have the calmest water, while late-afternoon and into-sunset slots trade a little breeze for that golden light on the run home. The boat is weather-dependent, as all charters are, and your skipper has the final call on conditions; if a day looks genuinely unsuitable it is far better to move it than to spend it being thrown around. Bring sun cream, hats, a layer for the faster passages when the breeze picks up, and soft-soled or bare feet for the deck. Everything else, from the drinks to the safety gear, is already aboard.</p></div>
+  
+</div>
+
+<div class="sec">
+  <div class="sec-head">
+    <div class="sec-kicker caps">Section 10</div>
+    <h2 class="display">Frequently asked questions</h2>
+    <div class="rules"><span class="thick"></span><span class="thin"></span></div>
+  </div>
+  <div class="sec-body"><p><strong>How many people can the Fairline Targa 12m take?</strong><br>Up to 10 guests for a day charter. That capacity makes her well suited to groups of friends, families and celebrations, with room to be sociable in the cockpit and still spread out on the foredeck.</p><p><strong>Do I need a boat licence?</strong><br>No. The charter includes a licensed skipper who handles the boat throughout, so no one in your party needs any qualification. You simply enjoy the day.</p><p><strong>Where does the boat leave from?</strong><br>From Puerto Banús, Marbella's best-known marina. It is easy to reach, with parking, restaurants and beaches all within a short walk, which makes it a simple meeting point for a group.</p><p><strong>How much does it cost?</strong><br>The Targa is quoted on request at competitive Marbella rates. Send your date and the number of hours you want through the boat's page and you will receive a clear, all-in quote on WhatsApp. Fuel, skipper, drinks, snacks, insurance and VAT are all included.</p><p><strong>What is included in the price?</strong><br>A licensed skipper, fuel, drinks (water, soft drinks, beer, white wine and cava), light snacks, insurance, safety equipment and the 21 percent VAT. There are no hidden extras.</p><p><strong>How fast is she, and why does it matter?</strong><br>She cruises at around 26 knots on twin diesels, quick for a day-charter boat on this coast. The practical benefit is more time at anchor swimming and relaxing, and less time in transit, plus the range to reach anchorages from the Golden Mile to Cabopino, Estepona and beyond.</p><p><strong>What is the retractable hardtop?</strong><br>It is a roof over the cockpit that slides back at the touch of a button. Open, you get an open-air sun deck; closed, you get instant shade and shelter. It is the feature that makes the Targa so well suited to the Costa del Sol climate.</p><p><strong>Is it suitable for families with children?</strong><br>Yes. There are twin cabins below for changing and napping, a heads (marine bathroom) on board, and a broad bathing platform that makes getting in and out of the water straightforward and safe.</p></div>
+  
+</div>
+
+<div class="sec">
+  <div class="sec-head">
+    <div class="sec-kicker caps">Section 11</div>
+    <h2 class="display">Book the Fairline Targa 12m</h2>
+    <div class="rules"><span class="thick"></span><span class="thin"></span></div>
+  </div>
+  <div class="sec-body"><p>If a fast, stylish British sport yacht for a group of up to ten sounds like your kind of day on the water, the Fairline Targa 12m is ready when you are. She departs from Puerto Banús with a licensed skipper, fuel, drinks, snacks, insurance and VAT all included, and the route is yours to shape, whether that is a lazy swim stop off the Golden Mile, a clear-water afternoon at Cabopino, a quieter run west towards Estepona, or a longer blast down the coast.</p><p>To check availability and get an all-in quote, visit <a href="https://boatrentalinmarbella.com/boats/fairline-targa-12m/">the Fairline Targa 12m page on boatrentalinmarbella.com</a> and tap the WhatsApp button. Quotes and dates come back quickly, and the best summer slots go early, so it is worth enquiring a few days before your trip.</p></div>
+  
+</div>
+
+<div class="callout">
+  <h3 class="display">Book this boat</h3>
+  <p>Book the Fairline Targa 12m and the rest of the Marbella fleet at <a href="https://boatrentalinmarbella.com">boatrentalinmarbella.com</a>. Boat owners: list your boat free and reach charterers worldwide at <a href="https://boathire24.com">boathire24.com</a>.</p>
+  <div class="linksrow caps"><a href="https://boathire24.com">https://boathire24.com</a><span class="sep">&#9670;</span><a href="https://boatrentalinmarbella.com/boats/fairline-targa-12m/">https://boatrentalinmarbella.com/boats/fairline-targa-12m/</a></div>
+</div>
+<div class="endmark"><span class="line"></span><svg width="14" height="14" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg" aria-hidden="true"><path fill="#b9924b" d="M17 15l1.55 1.55c-.96 1.69-3.33 3.04-5.55 3.37V11h3V9h-3V7.82C14.16 7.4 15 6.3 15 5c0-1.65-1.35-3-3-3S9 3.35 9 5c0 1.3.84 2.4 2 2.82V9H8v2h3v8.92c-2.22-.33-4.59-1.68-5.55-3.37L7 15l-4-3v3c0 3.88 4.92 7 9 7s9-3.12 9-7v-3l-4 3zM12 4c.55 0 1 .45 1 1s-.45 1-1 1-1-.45-1-1 .45-1 1-1z"/></svg><span class="line"></span></div>
+  </td></tr></tbody>
+  <tfoot><tr><td></td></tr></tfoot>
+</table>
+
+<div class="runfoot caps">
+  <span><b>boathire24.com</b> <span class="gold">&#9670;</span> rent boats worldwide
+    <span class="gold">&#9670;</span> list your boat free</span>
+  <span class="gold caps">boatrentalinmarbella.com/boats/fairline-targa-12m</span>
+</div>
+</body>
+</html>

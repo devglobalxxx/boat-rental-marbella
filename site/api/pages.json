@@ -1,7 +1,7 @@
 {
   "@context": "https://boatrentalinmarbella.com/api/pages.json",
   "source": "https://boatrentalinmarbella.com",
-  "count": 230,
+  "count": 240,
   "kinds": [
     "blog",
     "boat",
@@ -1046,6 +1046,14 @@
       "excerpt": "Fairline Targa 12 m — British sport yacht with retractable hardtop, sleek lines and the speed to outpace most of the Costa del Sol fleet. 10 guests, twin cabins, twin diesels. Quote on WhatsApp."
     },
     {
+      "url": "https://boatrentalinmarbella.com/boats/fairline-targa-43/",
+      "title": "Fairline Targa 43 — Fairline 14.4m Charter from Puerto Banús",
+      "description": "Charter the Fairline Targa 43 from Puerto Banús — 14.4 m, 11 guests, skipper &amp; fuel included. From €1,400 for 4h.",
+      "kind": "boat",
+      "locale": "en",
+      "excerpt": "Charter the Fairline Targa 43 — a sleek 14.4 m British sports cruiser built for fast, stylish days on the Costa del Sol. A huge sun-soaked cockpit, bathing platform and sociable layout host up to 11 guests for coastal cruising, swim stops and sundowners. Skippered private day cha"
+    },
+    {
       "url": "https://boatrentalinmarbella.com/boats/ferretti-94/",
       "title": "Ferretti 94 — Ferretti 29m Charter from Puerto Banús",
       "description": "Charter the Ferretti 94 from Puerto Banús — 29 m, 12 guests, skipper + drinks + VAT included. Quote on WhatsApp.",
@@ -1056,7 +1064,7 @@
     {
       "url": "https://boatrentalinmarbella.com/boats/",
       "title": "Our Marbella Boat Charter Fleet — Yachts &amp;amp; Catamarans",
-      "description": "Browse the 18-boat charter fleet — Astondoa, Azimut and more. All from Puerto Banús with skipper, fuel and drinks included. From €749 / 2h.",
+      "description": "Browse the 28-boat charter fleet — Astondoa, Azimut and more. All from Puerto Banús with skipper, fuel and drinks included. From €749 / 2h.",
       "kind": "spoke",
       "locale": "en",
       "excerpt": "Every charter from the fleet departs Puerto Banús with a licensed skipper, fuel, drinks, snorkel gear and water toys included — no surprise extras at the dock. Pick a boat below for full specs, photos and the hourly price grid, or message us on WhatsApp and we will match a boat t"
@@ -1118,12 +1126,44 @@
       "excerpt": "Mariah SX21 — 6.4 m American bowrider for small groups (up to 5) doing short coastal hops and water-sports days. Lowest entry-price in our Marbella fleet. Quote on WhatsApp."
     },
     {
+      "url": "https://boatrentalinmarbella.com/boats/mefasa-90/",
+      "title": "Mefasa 90 — Mefasa 29m Charter from Puerto Banús",
+      "description": "Charter the Mefasa 90 from Puerto Banús — 29 m, 12 guests, skipper &amp; fuel included. From €7,300 for 4h.",
+      "kind": "boat",
+      "locale": "en",
+      "excerpt": "The Mefasa 90 is a 29 m superyacht for unforgettable days on the Costa del Sol — vast deck spaces, a jacuzzi, a beach club and elegant interiors across multiple cabins. Crewed private charters for up to 12 guests with all-inclusive luxury from Puerto Banús, Marbella — the ultimat"
+    },
+    {
       "url": "https://boatrentalinmarbella.com/boats/pershing-46/",
       "title": "Pershing 46 — Pershing 14m Charter from Puerto Banús",
       "description": "Charter the Pershing 46 from Puerto Banús — 14 m, 10 guests, skipper + drinks + VAT included. Quote on WhatsApp.",
       "kind": "boat",
       "locale": "en",
       "excerpt": "Pershing 46 — 14 m Italian high-performance sport yacht, 30+ knot top speed, sleek dark interior, dual cabins. The choice when you want speed, style and Italian-yacht swagger. Quote on WhatsApp."
+    },
+    {
+      "url": "https://boatrentalinmarbella.com/boats/prestige-500/",
+      "title": "Prestige 500 — Prestige 16m Charter from Puerto Banús",
+      "description": "Charter the Prestige 500 from Puerto Banús — 16 m, 12 guests, skipper &amp; fuel included. From €2,999 for 4h.",
+      "kind": "boat",
+      "locale": "en",
+      "excerpt": "The Prestige 500 is a 16 m flybridge motor yacht designed around space and light — a vast flybridge, full-beam owner's cabin and an easy indoor-outdoor flow. Perfect for relaxed family days, celebrations and sunset cruises for up to 12 guests. Private skippered charters from Marb"
+    },
+    {
+      "url": "https://boatrentalinmarbella.com/boats/princess-f70/",
+      "title": "Princess F70 — Princess 21.8m Charter from Puerto Banús",
+      "description": "Charter the Princess F70 from Puerto Banús — 21.8 m, 12 guests, skipper &amp; fuel included. From €3,799 for 2h.",
+      "kind": "boat",
+      "locale": "en",
+      "excerpt": "The Princess F70 is a 21.8 m flybridge flagship — a huge flybridge with bar and sunbeds, a full-beam owner's suite and four cabins for overnight comfort. The ultimate platform for celebrations, family days and multi-day cruising for up to 12 guests. Private skippered charters fro"
+    },
+    {
+      "url": "https://boatrentalinmarbella.com/boats/princess-v58/",
+      "title": "Princess V58 — Princess 18.2m Charter from Puerto Banús",
+      "description": "Charter the Princess V58 from Puerto Banús — 18.2 m, 12 guests, skipper &amp; fuel included. From €2,999 for 4h.",
+      "kind": "boat",
+      "locale": "en",
+      "excerpt": "The Princess V58 is an 18.2 m British sports yacht blending performance with refined comfort — sweeping sunpads, a spacious cockpit and three elegant cabins below. Perfect for high-style day charters, swim stops and sundowner cruises for up to 12 guests. Skippered, from Marbella "
     },
     {
       "url": "https://boatrentalinmarbella.com/boats/red-tide-fishing-boat/",
@@ -1134,12 +1174,52 @@
       "excerpt": "Red Tide — purpose-built sport-fishing boat for Marbella deep-sea charters. Outriggers, rod holders, fighting chair, livewell, and a skipper + mate who know the productive offshore grounds. Quote on WhatsApp."
     },
     {
+      "url": "https://boatrentalinmarbella.com/boats/sea-doo-gtx-jet-ski/",
+      "title": "Sea-Doo GTX Jet Ski — Sea-Doo (BRP) 3.4m Charter from Puerto Banús",
+      "description": "Charter the Sea-Doo GTX Jet Ski from Puerto Banús — 3.4 m, 3 guests, skipper &amp; fuel included. From €250 for 1h.",
+      "kind": "boat",
+      "locale": "en",
+      "excerpt": "Sea-Doo GTX and GTI jet skis for rent in Marbella, launching from Puerto Banús. Self-drive the Marbella coast on powerful 3-seater Sea-Doos — life jackets and a safety briefing included. No licence required under Spanish licence-free rules. €250 for 1 hour, €450 for 2 hours, then"
+    },
+    {
       "url": "https://boatrentalinmarbella.com/boats/speedboat/",
       "title": "Speedboat — Various 7m Charter from Puerto Banús",
       "description": "Charter the Speedboat from Puerto Banús — 7 m, 6 guests, skipper + drinks + VAT included. Quote on WhatsApp.",
       "kind": "boat",
       "locale": "en",
       "excerpt": "Speedboat option for short, fast coastal hops along the Marbella shoreline. Quote on WhatsApp for pricing on the available speedboats."
+    },
+    {
+      "url": "https://boatrentalinmarbella.com/boats/sunseeker-63/",
+      "title": "Sunseeker 63 — Sunseeker 19m Charter from Puerto Banús",
+      "description": "Charter the Sunseeker 63 from Puerto Banús — 19 m, 10 guests, skipper &amp; fuel included. From €1,999 for 2h.",
+      "kind": "boat",
+      "locale": "en",
+      "excerpt": "The Sunseeker 63 is a 19 m flagship-feel sport yacht with sleek Sunseeker DNA — expansive sun terraces, a generous cockpit and three luxurious cabins. Built for show-stopping days on the water, swim breaks in hidden coves and golden-hour cruising for up to 10 guests. Private skip"
+    },
+    {
+      "url": "https://boatrentalinmarbella.com/boats/sunseeker-68-sport/",
+      "title": "Sunseeker 68 Sport — Sunseeker 21m Charter from Puerto Banús",
+      "description": "Charter the Sunseeker 68 Sport from Puerto Banús — 21 m, 12 guests, skipper &amp; fuel included. From €6,500 for 4h.",
+      "kind": "boat",
+      "locale": "en",
+      "excerpt": "The Sunseeker 68 Sport is a 21 m luxury sport yacht — commanding presence, a vast foredeck lounge and a beach-club swim platform. Three sumptuous cabins make her equally suited to a glamorous day charter or an overnight escape along the Costa del Sol. Skippered, up to 12 guests, "
+    },
+    {
+      "url": "https://boatrentalinmarbella.com/boats/sunseeker-predator-58/",
+      "title": "Sunseeker Predator 58 — Sunseeker 17.6m Charter from Puerto Banús",
+      "description": "Charter the Sunseeker Predator 58 from Puerto Banús — 17.6 m, 11 guests, skipper &amp; fuel included. From €2,999 for 4h.",
+      "kind": "boat",
+      "locale": "en",
+      "excerpt": "The Sunseeker Predator 58 is a 17.6 m British performance sport yacht — low, muscular lines, a retractable hardtop and serious pace. Big sunpads, a social cockpit and a swim platform make her a favourite for fast coastal runs and glamorous days at anchor for up to 11 guests. Skip"
+    },
+    {
+      "url": "https://boatrentalinmarbella.com/boats/sunseeker-predator-72/",
+      "title": "Sunseeker Predator 72 — Sunseeker 22.1m Charter from Puerto Banús",
+      "description": "Charter the Sunseeker Predator 72 from Puerto Banús — 22.1 m, 11 guests, skipper &amp; fuel included. From €5,000 for 4h.",
+      "kind": "boat",
+      "locale": "en",
+      "excerpt": "The Sunseeker Predator 72 is a 22.1 m thoroughbred sport yacht — striking lines, blistering performance and a sunken beach-club stern. Four cabins, sprawling sun terraces and a glamorous cockpit make her a statement charter for up to 11 guests. Skippered, from Puerto Banús, Marbe"
     },
     {
       "url": "https://boatrentalinmarbella.com/cancellation-policy/",

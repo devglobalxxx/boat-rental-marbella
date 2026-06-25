@@ -1,0 +1,503 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<title>Pershing 46</title>
+<style>
+:root {
+  --navy:      #0e2438;
+  --navy-deep: #08182a;
+  --gold:      #b9924b;
+  --gold-dark: #8a6c33;
+  --gold-light:#d4b06a;
+  --gold-pale: #e8d8af;
+  --ivory:     #f7f2e6;
+  --paper:     #fdfbf5;
+  --ink:       #22303e;
+  --muted:     #5d6a76;
+  --hairline:  #d9cdaf;
+  --row-tint:  #f5efdf;
+}
+* { -webkit-print-color-adjust: exact; print-color-adjust: exact;
+    box-sizing: border-box; }
+@page { size: A4; margin: 0; }
+html, body { margin: 0; padding: 0; }
+body {
+  background: var(--paper);
+  color: var(--ink);
+  font-family: Georgia, 'Palatino Linotype', Palatino, 'Times New Roman', serif;
+  font-size: 10.5pt;
+  line-height: 1.62;
+}
+.display { font-family: Didot, 'Didot LT STD', 'Playfair Display', Georgia,
+           'Times New Roman', serif; }
+.caps { font-family: Optima, 'Avenir Next', 'Gill Sans', 'Trebuchet MS',
+        sans-serif; text-transform: uppercase; }
+
+/* ---------------- Cover ---------------- */
+.cover {
+  position: relative;
+  width: 210mm; height: 297mm;
+  overflow: hidden;
+  background: var(--navy-deep);
+  page-break-after: always;
+}
+.cover-img {
+  position: absolute; inset: 0;
+  width: 100%; height: 100%;
+  object-fit: cover;
+  object-position: 24% center;  /* centres the yacht's full profile in the A4 crop */
+}
+.cover-veil {
+  position: absolute; inset: 0;
+  background:
+    linear-gradient(to top, rgba(11,26,46,0.92),
+                    rgba(11,26,46,0.86) 30%, transparent 55%),
+    linear-gradient(180deg,
+      rgba(8,24,42,0.62) 0%,
+      rgba(8,24,42,0.20) 26%,
+      rgba(8,24,42,0.12) 50%,
+      rgba(8,24,42,0.00) 62%);
+}
+.cover-veil.no-img {
+  background:
+    radial-gradient(120mm 90mm at 50% 26%, rgba(185,146,75,0.20), transparent 70%),
+    linear-gradient(180deg, #122c46 0%, #0a1d33 55%, #071426 100%);
+}
+.cover-top {
+  position: absolute; top: 13mm; left: 16mm; right: 16mm;
+  display: flex; align-items: center; justify-content: space-between;
+}
+.brand-lockup { display: flex; align-items: center; gap: 4.5mm; }
+.logo-chip {
+  background: #ffffff;
+  border: 1px solid var(--gold);
+  border-radius: 1.2mm;
+  padding: 2mm;
+  line-height: 0;
+}
+.logo-chip img { display: block; height: 13mm; width: 13mm;
+                 object-fit: cover; border-radius: 0.7mm; }
+.brand-name {
+  color: var(--ivory); font-size: 13pt; letter-spacing: 0.30em;
+  line-height: 1.25;
+}
+.brand-tag {
+  color: var(--gold-pale); font-size: 6.4pt; letter-spacing: 0.26em;
+  margin-top: 1mm;
+}
+.doc-type-flag {
+  text-align: right;
+  color: var(--gold-light);
+  font-size: 7.5pt; letter-spacing: 0.34em;
+  border-top: 0.7pt solid var(--gold);
+  border-bottom: 0.7pt solid var(--gold);
+  padding: 2.2mm 0 2mm 0;
+}
+.cover-main {
+  position: absolute; left: 16mm; right: 16mm; bottom: 34mm;
+}
+.cover-rule {
+  display: flex; align-items: center; gap: 4mm;
+  margin-bottom: 5mm;
+}
+.cover-rule .line { flex: 0 0 22mm; height: 0; border-top: 0.8pt solid var(--gold); }
+.cover-rule .word {
+  color: var(--gold-light); font-size: 8pt; letter-spacing: 0.42em;
+  white-space: nowrap;
+  text-shadow: 0 1px 5px rgba(5,14,26,0.65);
+}
+.cover-title {
+  color: #fdfaf2;
+  font-size: 44pt; line-height: 1.05;
+  font-weight: 600;
+  margin: 0 0 4mm 0;
+  text-shadow: 0 1px 8px rgba(5,14,26,0.55);
+}
+.cover-subtitle {
+  color: var(--gold-pale);
+  font-style: italic;
+  font-size: 13pt; line-height: 1.45;
+  margin: 0 0 7mm 0;
+  max-width: 150mm;
+  text-shadow: 0 1px 6px rgba(5,14,26,0.6);
+}
+.cover-meta {
+  color: rgba(247,242,230,0.92);
+  font-size: 7.6pt; letter-spacing: 0.22em;
+}
+.cover-meta .dot { color: var(--gold-light); padding: 0 2.2mm; }
+.fleet-strip {
+  margin-top: 8mm;
+  display: flex; align-items: center; gap: 4mm;
+}
+.fleet-strip .logo-chip img { height: 9mm; width: auto; }
+.fleet-label {
+  color: rgba(247,242,230,0.85); font-size: 6.6pt; letter-spacing: 0.30em;
+}
+
+/* ------------- Repeating footer ------------- */
+.runfoot {
+  position: fixed; left: 0; right: 0; bottom: 0;
+  height: 12mm;
+  background: var(--ivory);
+  border-top: 1pt solid var(--gold);
+  display: flex; align-items: center; justify-content: space-between;
+  padding: 0 16mm;
+  font-size: 6.8pt; letter-spacing: 0.12em;
+  color: var(--navy);
+}
+.runfoot b { letter-spacing: 0.22em; font-weight: 600; }
+.runfoot .gold { color: var(--gold-dark); }
+.runfoot a { color: var(--navy); text-decoration: none; }
+
+/* ------------- Paged content scaffold ------------- */
+table.paged { width: 100%; border-collapse: collapse; }
+table.paged > thead td { height: 15mm; padding: 0; }
+table.paged > tfoot td { height: 17mm; padding: 0; }
+table.paged > tbody > tr > td { padding: 0 18mm; }
+
+/* ------------- Sections ------------- */
+.sec { margin: 0 0 8mm 0; }
+.sec-head {
+  break-after: avoid-page; page-break-after: avoid;
+  break-inside: avoid; page-break-inside: avoid;
+  margin: 0 0 4.5mm 0;
+}
+.sec-kicker {
+  color: var(--gold-dark); font-size: 7pt; letter-spacing: 0.38em;
+  margin-bottom: 1.6mm;
+}
+.sec-head h2 {
+  color: var(--navy);
+  font-size: 18.5pt; font-weight: 400; line-height: 1.2;
+  margin: 0 0 2.6mm 0;
+}
+.sec-head .rules { position: relative; height: 2.4mm; }
+.sec-head .rules .thin {
+  position: absolute; left: 0; right: 0; top: 1mm;
+  border-top: 0.6pt solid var(--hairline);
+}
+.sec-head .rules .thick {
+  position: absolute; left: 0; top: 0; width: 26mm;
+  border-top: 2.2pt solid var(--gold);
+}
+.sec-body p { margin: 0 0 3.4mm 0; }
+.sec-body p:last-child { margin-bottom: 0; }
+.sec-body ol { margin: 0 0 3.4mm 0; padding-left: 5.5mm; }
+.sec-body ul { margin: 0 0 3.4mm 0; padding-left: 1mm; }
+.sec-body li { margin-bottom: 1.6mm; break-inside: avoid; page-break-inside: avoid;
+               -webkit-column-break-inside: avoid; }
+.sec-body ul.cols2 { columns: 2; column-gap: 9mm;
+                     break-inside: avoid; page-break-inside: avoid; }
+.sec-body ul > li {
+  list-style: none;
+  padding-left: 1.1em; text-indent: -1.1em;  /* hanging indent: wraps align under text */
+}
+.sec-body ul > li::before {
+  content: "\2726";            /* four-pointed star, brass compass point */
+  display: inline-block; width: 1.44em; text-indent: 0;
+  color: var(--gold); font-size: 8pt;       /* 1.44em @8pt == 1.1em @10.5pt */
+}
+.sec-body a { color: var(--navy); text-decoration: none;
+              border-bottom: 0.6pt solid var(--gold); }
+.sec-body strong { color: var(--navy); }
+
+/* generic tables inside section html */
+.sec-body table {
+  width: 100%; border-collapse: collapse;
+  margin: 1mm 0 4mm 0;
+  break-inside: avoid; page-break-inside: avoid;
+  font-size: 9.8pt;
+}
+.sec-body th {
+  background: var(--navy); color: var(--ivory);
+  font-family: Optima, 'Avenir Next', 'Gill Sans', 'Trebuchet MS', sans-serif;
+  text-transform: uppercase; letter-spacing: 0.16em;
+  font-size: 7.4pt; font-weight: 500;
+  text-align: left; padding: 2.6mm 3.5mm;
+  border-bottom: 1.4pt solid var(--gold);
+}
+.sec-body td {
+  padding: 2.2mm 3.5mm;
+  border-bottom: 0.6pt solid var(--hairline);
+  color: var(--ink);
+}
+.sec-body td, .sec-body th { font-variant-numeric: tabular-nums; }
+.sec-body td:not(:first-child),
+.sec-body th:not(:first-child) { text-align: right; }
+.sec-body tr:nth-child(even) td { background: var(--row-tint); }
+.sec-body td:first-child { color: var(--navy); }
+.sec-body tr.best td { background: rgba(212,175,55,0.12); }
+.sec-body tr.best td:first-child { color: var(--navy); font-weight: 600; }
+.best-tag {
+  display: inline-block;
+  font-family: Optima, 'Avenir Next', 'Gill Sans', 'Trebuchet MS', sans-serif;
+  font-variant-caps: small-caps; text-transform: lowercase;
+  font-size: 7.6pt; font-weight: 600; letter-spacing: 0.14em;
+  color: var(--gold-dark);
+  border: 0.6pt solid var(--gold);
+  border-radius: 1mm;
+  padding: 0.2mm 1.6mm;
+  margin-left: 2.2mm;
+  white-space: nowrap;
+  vertical-align: 0.2mm;
+}
+
+/* ------------- Figures ------------- */
+figure.plate {
+  break-inside: avoid; page-break-inside: avoid;
+  margin: 5mm 0 2mm 0;
+  background: #ffffff;
+  border: 0.7pt solid var(--gold-light);
+  padding: 2.6mm;
+}
+figure.plate img {
+  display: block; width: 100%; height: 78mm; object-fit: cover;
+}
+figure.plate figcaption {
+  text-align: center;
+  font-style: italic;
+  font-size: 8.4pt; color: var(--muted);
+  padding: 2.4mm 2mm 0.6mm 2mm;
+}
+figure.plate figcaption::before {
+  content: "\25C6\00a0"; color: var(--gold); font-size: 6pt;
+}
+
+/* ------------- Spec table (2-column grid: two lbl/val pairs per row) ------------- */
+.spec-block { margin: 0 0 8mm 0; }
+table.spec {
+  width: 100%; border-collapse: collapse;
+  border-top: 1.6pt solid var(--navy);
+  border-bottom: 1.6pt solid var(--navy);
+}
+table.spec td { padding: 1.7mm 1.5mm; border-bottom: 0.6pt solid var(--hairline);
+                vertical-align: top; }
+table.spec tr:last-child td { border-bottom: none; }
+table.spec td.lbl {
+  width: 21%;
+  font-family: Optima, 'Avenir Next', 'Gill Sans', 'Trebuchet MS', sans-serif;
+  text-transform: uppercase; letter-spacing: 0.16em;
+  font-size: 7.2pt; color: var(--gold-dark);
+  padding-top: 2.3mm;
+}
+table.spec td.val { width: 29%; color: var(--navy); font-size: 9.8pt; }
+table.spec td.lbl:nth-child(3) {
+  border-left: 0.6pt solid var(--hairline);
+  padding-left: 4mm;
+}
+table.spec td.val:nth-child(2) { padding-right: 4mm; }
+
+/* ------------- Callout ------------- */
+.callout {
+  break-inside: avoid; page-break-inside: avoid;
+  margin: 8mm 0 4mm 0;
+  background: var(--navy);
+  border: 1pt solid var(--gold);
+  outline: 0.6pt solid var(--gold);
+  outline-offset: -2.2mm;
+  color: var(--ivory);
+  padding: 8mm 9mm 7mm 9mm;
+}
+.callout h3 {
+  color: var(--gold-light);
+  font-size: 15pt; font-weight: 400;
+  margin: 0 0 3mm 0;
+}
+.callout p { margin: 0 0 2.8mm 0; line-height: 1.6; color: #efe7d3; }
+.callout a { color: var(--gold-light); text-decoration: none; }
+.callout ul { margin: 0 0 2.8mm 0; padding-left: 1mm; }
+.callout ul > li { list-style: none; margin-bottom: 1.4mm;
+                   padding-left: 1.1em; text-indent: -1.1em;
+                   break-inside: avoid; page-break-inside: avoid; }
+.callout ul > li::before {
+  content: "\2726"; display: inline-block; width: 1.44em; text-indent: 0;
+  color: var(--gold-light); font-size: 8pt;
+}
+.callout .linksrow {
+  margin-top: 4.5mm; padding-top: 3.6mm;
+  border-top: 0.6pt solid rgba(212,176,106,0.55);
+  font-size: 7.6pt; letter-spacing: 0.16em;
+  color: var(--gold-pale);
+}
+.callout .linksrow span.sep { padding: 0 2.6mm; color: var(--gold); }
+
+.endmark {
+  display: flex; align-items: center; justify-content: center; gap: 3.5mm;
+  margin: 7mm 0 0 0;
+}
+.endmark .line { width: 14mm; height: 0; border-top: 0.6pt solid var(--gold); }
+.endmark svg { display: block; }
+</style>
+</head>
+<body>
+
+<div class="cover">
+  <img class="cover-img" src="file:///Users/master/boat-rental-marbella/site/img/boats/pershing-46/hero-1600.jpg" alt="">
+  <div class="cover-veil"></div>
+  <div class="cover-top">
+    <div class="brand-lockup">
+      <span class="logo-chip"><img src="file:///Users/master/boat-rental-platform/public/brand-logo.jpg" alt="BoatHire24"></span>
+      <div>
+        <div class="brand-name caps display">BoatHire24</div>
+        <div class="brand-tag caps">Rent boats worldwide <span class="gold">|</span> list your boat free</div>
+      </div>
+    </div>
+    <div class="doc-type-flag caps">June 2026</div>
+  </div>
+  <div class="cover-main">
+    <div class="cover-rule">
+      <span class="line"></span>
+      <span class="word caps">Vessel Specification</span>
+    </div>
+    <h1 class="cover-title display">Pershing 46</h1>
+    <p class="cover-subtitle display">A 14-metre Italian sport yacht for fast, stylish days out of Puerto Banús: speed, dark Italian design and ten guests aboard.</p>
+    <div class="cover-meta caps">BoatHire24 Editorial</div>
+    <div class="fleet-strip"><span class="fleet-label caps">From the fleet of</span><span class="logo-chip"><img src="file:///Users/master/boat-rental-marbella/site/img/logo-640.png" alt="Boat Rental In Marbella"></span></div>
+  </div>
+</div>
+<table class="paged">
+  <thead><tr><td></td></tr></thead>
+  <tbody><tr><td>
+
+<div class="spec-block sec">
+  <div class="sec-head">
+    <div class="sec-kicker caps">Particulars</div>
+    <h2 class="display">Principal Particulars</h2>
+    <div class="rules"><span class="thick"></span><span class="thin"></span></div>
+  </div>
+  <table class="spec"><tr><td class="lbl">Length overall</td><td class="val">14 m</td><td class="lbl">Guest capacity</td><td class="val">10 guests</td></tr>
+<tr><td class="lbl">Type</td><td class="val">Sport yacht</td><td class="lbl">Builder</td><td class="val">Pershing</td></tr>
+<tr><td class="lbl">Departure port</td><td class="val">Puerto Banús, Marbella</td><td class="lbl">Cabins</td><td class="val">Two cabins</td></tr>
+<tr><td class="lbl">Top speed</td><td class="val">30+ knots</td><td class="lbl">Crew</td><td class="val">Licensed skipper included</td></tr>
+<tr><td class="lbl">Rate band</td><td class="val">Quote on WhatsApp at competitive Marbella rates</td><td class="lbl"></td><td class="val"></td></tr></table>
+</div>
+
+<div class="sec">
+  <div class="sec-head">
+    <div class="sec-kicker caps">Section 01</div>
+    <h2 class="display">Overview: the sport yacht of the Marbella fleet</h2>
+    <div class="rules"><span class="thick"></span><span class="thin"></span></div>
+  </div>
+  <div class="sec-body"><p>Some boats are built to drift, and some are built to move. The <strong>Pershing 46</strong> belongs firmly to the second group. She is a 14-metre Italian sport yacht with a top speed of more than 30 knots, a sleek dark interior, two cabins and room for ten guests, and she is one of the more characterful charters working out of Puerto Banús. Where a flybridge cruiser asks you to slow down and settle in, the Pershing asks a different question. It asks how much of the coast you would like to see, and how quickly you would like to get there.</p><p>That distinction matters on this stretch of the Costa del Sol. The waters off Marbella are wide and open, the Golden Mile and its swim stops are a short hop from the marina, and places that feel like a serious commitment in a slower boat (Estepona to the west, Cabopino to the east, the far headlands toward Gibraltar) come within easy reach when the hull underneath you is a genuine planing sport yacht. The Pershing 46 turns the geography of the coast from a constraint into a menu.</p><p>She is also, simply, a good-looking boat. The marque has spent decades refining a particular visual language of low, knife-edged profiles and dark, tailored interiors, and the 46 carries it well. For a group that wants their day on the water to look as sharp as it feels (a milestone birthday, a stag or hen celebration, a client they want to impress, a family that has graduated from the gentle pootle and now wants some thrill) she hits a specific and quite desirable note. This dossier walks through who builds her, what the class is known for, what a day aboard actually looks like, where she can take you from Puerto Banús, what is included, and how to book. Every hard figure here, from her length and her capacity to her cabin count, her top speed and what comes with the charter, is drawn from her listing. The colour around those figures is general context about the boat, the marque and the coast, and is flagged as such throughout.</p></div>
+  <figure class="plate"><img src="file:///Users/master/boat-rental-marbella/site/img/boats/pershing-46/hero-1200.jpg" alt=""><figcaption>The Pershing 46: 14 metres of Italian sport-yacht design, based at Puerto Banús.</figcaption></figure>
+</div>
+
+<div class="sec">
+  <div class="sec-head">
+    <div class="sec-kicker caps">Section 02</div>
+    <h2 class="display">The builder and the marque: the Pershing name</h2>
+    <div class="rules"><span class="thick"></span><span class="thin"></span></div>
+  </div>
+  <div class="sec-body"><p>To understand why the Pershing 46 looks and behaves the way she does, it helps to know a little about the name on her hull. <strong>Pershing</strong> is one of the best-known sport-yacht marques to come out of Italy, and the brand has built its entire identity around a single idea executed with unusual discipline: fast boats that look as fast standing still as they do at speed. Founded in the Adriatic boatbuilding heartland of Italy in the 1980s, the marque set out from the beginning to merge open-water performance with the kind of styling more often associated with sports cars than with motor yachts.</p><p>That ambition shaped a whole house style. Over the decades the yard became part of the wider Ferretti Group, one of the largest luxury-yacht builders in the world, which gave Pershing the engineering depth and the design resources of a major industrial shipyard while letting the marque keep its distinct, performance-first character. The result is a brand with a recognisable signature: long, low, wedge-shaped profiles, deeply raked windscreens, retractable hardtops on the larger models, and interiors finished in dark woods, smoked glass and brushed metal rather than the pale, beachy palette of a typical holiday cruiser.</p><p>Pershing yachts have long been a fixture of the glamorous Mediterranean ports, from Monaco and Saint-Tropez to Porto Cervo, and very much Puerto Banús, which has always had a soft spot for a fast Italian boat with attitude. The marque became shorthand for a certain kind of confident, design-led owner, and its boats have appeared often enough in film, advertising and the harbours of the rich and visible that the silhouette is genuinely iconic. None of that is a hard spec of this particular vessel, but it is the reason she carries the presence she does. When you charter a Pershing, you are chartering into a lineage that has spent forty years perfecting the marriage of speed and style, and you can feel that intent in every line of the boat.</p></div>
+  <figure class="plate"><img src="file:///Users/master/boat-rental-marbella/site/img/boats/pershing-46/hero-900.jpg" alt=""><figcaption>Low, raked and purposeful: the unmistakable Italian sport-yacht silhouette.</figcaption></figure>
+</div>
+
+<div class="sec">
+  <div class="sec-head">
+    <div class="sec-kicker caps">Section 03</div>
+    <h2 class="display">The model and the design: what this class is known for</h2>
+    <div class="rules"><span class="thick"></span><span class="thin"></span></div>
+  </div>
+  <div class="sec-body"><p>Within the marque's range, a boat of this size sits in a sweet spot that owners and charterers have always prized. A 14-metre sport yacht is large enough to feel like a proper yacht, with cabins, a saloon, a galley and the deck space to host a real group, yet small and light enough to deliver the headline figure that defines this class: genuine speed. A top speed of <strong>more than 30 knots</strong> is not a number you reach on a heavy displacement cruiser. It is the product of a planing hull, a powerful engine installation and a relentless focus on keeping weight and drag down, and it changes the entire experience of being aboard.</p><p>What this class is known for, beyond the raw pace, is the way it carries that pace. A well-sorted sport yacht of this size feels planted and composed at speed rather than nervous, sitting confidently on its plane with the bow trimmed and the wake peeling away cleanly behind. The dark, sport-yacht interior is part of the same philosophy. Where a family cruiser maximises soft, pale, sun-drenched lounging space, the sport-yacht layout is tighter and more driver-focused, built around the helm and the open cockpit, with the accommodation below decks tuned for two cabins of comfortable, well-finished space rather than spread thin across many.</p><p>That is the trade the design makes, and it is a deliberate one. You give up some of the sprawling sunbathing acreage of a bigger flybridge boat, and in return you get a vessel that is quicker, sharper to look at, more involving to be aboard and far more capable of covering distance. For the right group it is exactly the right trade. The Pershing 46 is not trying to be the most spacious boat in the marina. She is trying to be the most exciting one, and within her class that is a target she is built precisely to hit.</p></div>
+  
+</div>
+
+<div class="sec">
+  <div class="sec-head">
+    <div class="sec-kicker caps">Section 04</div>
+    <h2 class="display">On board: layout, deck, cabins and the experience</h2>
+    <div class="rules"><span class="thick"></span><span class="thin"></span></div>
+  </div>
+  <div class="sec-body"><p>Step aboard and the layout makes the boat's intentions obvious. The heart of the Pershing 46 is the open cockpit and helm, a low, wide social space wrapped around the driving position, where the group naturally gathers when the boat is on the move and where the action of the day plays out. This is where you feel the sport yacht for what it is: close to the water, close to the helm, and built for people who want to be part of the run rather than tucked away from it.</p><p>From her listing, the key features that define a day aboard are clear:</p><ul><li><strong>14-metre Pershing sport yacht</strong>: a substantial boat with genuine presence, not a small day-runner.</li><li><strong>Italian high-performance design</strong>: the marque's signature blend of speed and styling, inside and out.</li><li><strong>30-plus knot top speed</strong>: the headline that defines what this charter can do and where it can reach.</li><li><strong>Ten guests, two cabins</strong>: comfortable for a full group by day, with two finished cabins below.</li><li><strong>Dark Italian interior, sport-yacht layout</strong>: smoked, tailored and driver-focused rather than pale and beachy.</li></ul><p>The two cabins below deck give the boat a dimension that a pure day-boat lacks. They provide somewhere private to change, to store bags and belongings out of the sun, to step out of the heat for a moment, and to keep the day's gear stowed and tidy. For most charters out of Puerto Banús the day is spent up top, at the helm, in the cockpit and on the bathing platform at the stern, in and out of the water at the swim stops, but the dark, well-finished accommodation below is there when you want it, and it is a meaningful part of what makes ten guests feel comfortable rather than crowded over a long day on the water.</p><p>The stern bathing platform is the social anchor of any swim stop. Drop off the plane, cut the engines, and the back of the boat becomes the place where the group gathers, easing in and out of the water, passing drinks up from the cooler, drying off in the sun. On a sport yacht like this the platform sits low and close to the surface, which makes getting in and out of the sea easy and turns every anchorage into a natural swimming spot.</p></div>
+  <figure class="plate"><img src="file:///Users/master/boat-rental-marbella/site/img/boats/pershing-46/hero-600.jpg" alt=""><figcaption>Open cockpit and helm: the social heart of the boat when she is on the move.</figcaption></figure>
+</div>
+
+<div class="sec">
+  <div class="sec-head">
+    <div class="sec-kicker caps">Section 05</div>
+    <h2 class="display">A day aboard: a charter from Puerto Banús, hour by hour</h2>
+    <div class="rules"><span class="thick"></span><span class="thin"></span></div>
+  </div>
+  <div class="sec-body"><p>The best way to understand the Pershing 46 is to walk through a day. The following is a realistic shape for a charter from Puerto Banús; exact timings flex with the booking, the season and what the group wants, but it gives an honest sense of the rhythm.</p><p><strong>Late morning, boarding at Puerto Banús.</strong> You meet your <strong>licensed skipper</strong> at the berth in Marbella's most famous marina. Bags go below into one of the two cabins, the cool box is already stocked with the included drinks, and the skipper runs through the simple safety briefing. Within a few minutes the lines are off and the boat is idling out past the breakwater, the superyachts and the harbourfront cafés sliding by on either side.</p><p><strong>Midday, onto the plane.</strong> Clear of the harbour limit, the skipper opens her up, and this is the moment the boat earns her name. The bow lifts, she settles onto her plane, and 30-plus knots of Italian sport yacht turns the open water off Marbella into something exhilarating. The coastline scrolls past far faster than it would on a slower boat, and the first swim stop along the Golden Mile arrives in minutes rather than the best part of an hour.</p><p><strong>Early afternoon, the first swim stop.</strong> The skipper finds a calm patch of water off the beaches, cuts the engines and drops the anchor. The change of pace is total: from the rush of the run to the stillness of a Mediterranean anchorage, the only sound the water against the hull. The bathing platform comes alive, the cold drinks come out, and the group spreads between the water and the deck. This is the heart of the day: the contrast between speed and stillness that a sport yacht does better than anything else.</p><p><strong>Mid afternoon, a run along the coast.</strong> Back on the plane, you push further along the shore. Depending on the length of the charter and the conditions, that might mean a fast run east toward Cabopino, west toward Estepona, or a longer reach toward the dramatic headlands further down the coast. The point of a boat like this is that the distance is never the limiting factor. You can see a great deal of coast and still have time to stop.</p><p><strong>Late afternoon, second stop and the run home.</strong> A second anchorage, another swim, the last of the snacks and a final drink as the light starts to soften and go golden over the water. Then the skipper points the bow back toward Puerto Banús and brings her home, the marina lights coming up as you ease back into the berth. A full day, a lot of coast covered, and the particular satisfaction of having done it aboard a boat that looks as good as the day felt.</p></div>
+  
+</div>
+
+<div class="sec">
+  <div class="sec-head">
+    <div class="sec-kicker caps">Section 06</div>
+    <h2 class="display">Itineraries and cruising grounds from Puerto Banús</h2>
+    <div class="rules"><span class="thick"></span><span class="thin"></span></div>
+  </div>
+  <div class="sec-body"><p>Puerto Banús is one of the best charter bases on the whole Spanish coast, and a fast boat makes the most of it. Because the Pershing 46 covers ground so easily, the usual question of how far you can realistically get in a day has a generous answer. These are the natural cruising grounds from her home port. The destinations are real geography; the exact route on any given day is set by the skipper according to conditions, the length of the charter and what the group wants.</p><ul><li><strong>The Golden Mile swim stop.</strong> The strip of coast between Puerto Banús and Marbella town is the classic short hop: minutes away, sheltered, and lined with the beaches and beach clubs that made the area famous. It is the default first stop for a swim and the easiest grounds when time is short or the group simply wants to relax close to base.</li><li><strong>Cabopino, to the east.</strong> Heading east past Marbella you reach the pretty marina and dune-backed beaches around Cabopino, a favourite anchorage with a different, quieter character to the glamour of Banús. On a fast boat it is an easy run rather than an expedition.</li><li><strong>Estepona, to the west.</strong> West of Puerto Banús the coast opens out toward Estepona, with its long beaches and relaxed feel. It is a satisfying destination for a longer charter and a natural turning point for a full day out.</li><li><strong>The longer runs.</strong> When the conditions are right and the charter is long enough, the speed of the boat genuinely opens up the wider coast, the dramatic headlands further west and the distant prospect of Gibraltar and the strait. These are reaches that a slower boat would treat as a serious undertaking; here they become a possibility you can actually choose on the day.</li></ul><p>The honest framing is this: a sport yacht does not change the map, but it changes how much of the map you can use. The same number of hours buys you noticeably more coast, more swim stops and more variety than a slower boat would, which is exactly why a group with somewhere in mind, or a group that simply wants to keep moving, gravitates toward a boat like this.</p></div>
+  
+</div>
+
+<div class="sec">
+  <div class="sec-head">
+    <div class="sec-kicker caps">Section 07</div>
+    <h2 class="display">Who this boat suits</h2>
+    <div class="rules"><span class="thick"></span><span class="thin"></span></div>
+  </div>
+  <div class="sec-body"><p>The Pershing 46 is not the right boat for every charter, and being clear about that is part of recommending her well. She is a sport yacht built around speed and style, with two cabins and capacity for ten guests, and she suits some groups and occasions far better than others.</p><p><strong>She is an excellent fit for:</strong></p><ul><li><strong>Groups who want some thrill.</strong> If the appeal of a day on the water is partly the rush of a fast boat opening up across the bay, this is the charter for you. The 30-plus knot top speed is the whole point, and it is wasted on anyone who only wants to drift.</li><li><strong>Celebrations with a sense of occasion.</strong> Milestone birthdays, stag and hen parties, a group treating themselves: the boat's looks and pace give the day an unmistakable sense of event. She arrives and departs like she means it.</li><li><strong>Style-conscious charters.</strong> For a group who care how the day looks as much as how it feels, a client to impress, photographs that will end up everywhere, the dark Italian design photographs as sharply as it presents in the marina.</li><li><strong>Couples and small groups wanting range.</strong> With ten-guest capacity she handles a full group, but she is just as good for a smaller party who want to cover real distance and reach the quieter anchorages along the coast.</li></ul><p>She is a less obvious choice for a charter built entirely around slow, sprawling sunbathing for a very large group, where a bigger, beamier flybridge cruiser with more flat deck acreage might suit better. But for the specific brief of speed, style and Italian swagger with ten aboard, she is one of the most characterful boats you can put your group on out of Puerto Banús.</p></div>
+  
+</div>
+
+<div class="sec">
+  <div class="sec-head">
+    <div class="sec-kicker caps">Section 08</div>
+    <h2 class="display">Pricing and inclusions</h2>
+    <div class="rules"><span class="thick"></span><span class="thin"></span></div>
+  </div>
+  <div class="sec-body"><p>The Pershing 46 is offered on a <strong>quote-on-request</strong> basis rather than a fixed published hourly rate. Because demand, season and charter length all move the number, pricing is quoted directly on WhatsApp via the website, where you will get a competitive Marbella rate tailored to the day and the duration you have in mind. The fastest way to a firm price is to send the date, the number of guests and the rough length of charter you want, and the team will come back with a quote.</p><p>What you can be precise about is what comes with the charter. Every charter in the fleet is offered on the same all-inclusive basis, so the quote you receive already covers the day's essentials with no surprise add-ons stacked on top:</p><table><tr><th>Included in every charter</th><th>Detail</th></tr><tr><td>Licensed skipper</td><td>A professional at the helm for the day</td></tr><tr><td>Fuel</td><td>Included in the charter</td></tr><tr><td>Drinks</td><td>Water, soft drinks, beer, white wine and cava</td></tr><tr><td>Light snacks</td><td>Provided aboard</td></tr><tr><td>Insurance</td><td>Included</td></tr><tr><td>Safety equipment</td><td>Provided aboard</td></tr><tr><td>VAT (21%)</td><td>Included in the quoted price</td></tr></table><p>The detail worth underlining is that <strong>fuel and VAT are both already in</strong>, and the boat comes with a <strong>licensed skipper</strong>, so the quoted figure is genuinely the figure. On a fast boat that is a meaningful reassurance, since fuel on a planing sport yacht is not trivial and it is reassuring to know it is carried within the price rather than billed against your run at the end of the day. The drinks package (water, soft drinks, beer, white wine and cava) and the light snacks are aboard from the start, so beyond any extras you choose to bring, the day is covered.</p></div>
+  
+</div>
+
+<div class="sec">
+  <div class="sec-head">
+    <div class="sec-kicker caps">Section 09</div>
+    <h2 class="display">Seasonality and booking practicalities</h2>
+    <div class="rules"><span class="thick"></span><span class="thin"></span></div>
+  </div>
+  <div class="sec-body"><p>The charter season on the Costa del Sol runs long, and the Marbella climate is one of the most reliable in Europe for time on the water. The broad shape of the year is worth understanding when you plan, and the following is general context for the coast rather than a fixed guarantee for any one date, since sea conditions are always set by the weather on the day.</p><p><strong>High summer, roughly July and August,</strong> is the peak: the warmest seas, the longest days, the liveliest scene in Puerto Banús, and the busiest charter calendar. For a fast, characterful boat like this in peak weeks, booking well ahead is strongly advised, because the most sought-after dates and weekend slots go early. <strong>Late spring and early autumn, covering May, June, September and into October,</strong> are many people's favourite windows: warm water, plenty of sun, calmer marinas and a more relaxed feel, often with a little more flexibility on dates. The <strong>shoulder months</strong> at either end of that range can deliver beautiful days too, with the understanding that conditions are a touch more variable.</p><p>A few practical points worth knowing:</p><ul><li><strong>Book ahead for the boat you want.</strong> A specific, in-demand sport yacht is not infinitely available. The earlier you confirm, the more likely you are to get this exact boat on the date you want.</li><li><strong>Conditions come first.</strong> A planing boat is at her best in settled water, and your skipper will always make the call that keeps the day safe and enjoyable, adjusting the route to the sea state. That judgement is part of what the licensed skipper is there for.</li><li><strong>Tell them the shape of your day.</strong> The more the team knows up front, including group size, the date, how long you want to be out and whether you have a destination in mind, the more accurate the quote and the better the planning.</li><li><strong>Everyday gear is all you need.</strong> Swimwear, a towel, sun cream, a layer for the run home. The skipper, the safety equipment, the drinks and the snacks are all already aboard.</li></ul></div>
+  
+</div>
+
+<div class="sec">
+  <div class="sec-head">
+    <div class="sec-kicker caps">Section 10</div>
+    <h2 class="display">Frequently asked questions</h2>
+    <div class="rules"><span class="thick"></span><span class="thin"></span></div>
+  </div>
+  <div class="sec-body"><p><strong>How many people can the Pershing 46 take?</strong> She is set up for up to <strong>ten guests</strong> for a day charter, with two cabins below deck.</p><p><strong>How big and how fast is she?</strong> She is a <strong>14-metre</strong> Italian sport yacht with a top speed of <strong>more than 30 knots</strong>, which is what puts the more distant stretches of coast within easy reach in a day.</p><p><strong>Where does the charter leave from?</strong> From <strong>Puerto Banús</strong> in Marbella, one of the most famous and best-positioned marinas on the Spanish coast.</p><p><strong>Do I need a boat licence or any experience?</strong> No. The charter comes with a <strong>licensed skipper</strong> who handles the boat for the whole day, so all you need to do is enjoy it.</p><p><strong>What is included in the price?</strong> The skipper, fuel, a drinks package (water, soft drinks, beer, white wine and cava), light snacks, insurance, safety equipment and VAT at 21% are all included. The quoted figure is genuinely all-in.</p><p><strong>How much does it cost?</strong> Pricing for this boat is <strong>quoted on WhatsApp</strong> via the website at competitive Marbella rates, because the right number depends on the date, the season and how long you want to be out. Send your details and you will get a firm quote back.</p><p><strong>Can we choose where we go?</strong> Yes, within reason. Popular runs from Puerto Banús take in the Golden Mile swim stops, Cabopino to the east and Estepona to the west, with longer reaches possible on a longer charter. Your skipper will shape the route around the conditions and what your group wants.</p><p><strong>What should we bring?</strong> Swimwear, towels, sun protection and a light layer for the fast run home. Everything essential for the day on the water is already provided aboard.</p></div>
+  
+</div>
+
+<div class="sec">
+  <div class="sec-head">
+    <div class="sec-kicker caps">Section 11</div>
+    <h2 class="display">Book this charter</h2>
+    <div class="rules"><span class="thick"></span><span class="thin"></span></div>
+  </div>
+  <div class="sec-body"><p>If a fast, stylish day out of Puerto Banús is what you are after, 14 metres of Italian sport yacht, more than 30 knots, ten guests aboard and a skipper at the helm, the Pershing 46 is one of the most characterful ways to do it on this coast. Pricing is quoted on WhatsApp at competitive Marbella rates, and the simplest first step is to send your date, your group size and a rough idea of how long you want to be out.</p><p>To check availability, get a quote and book this exact boat, visit the listing at <a href="https://boatrentalinmarbella.com/boats/pershing-46/">boatrentalinmarbella.com/boats/pershing-46</a>. And if you own a boat and would like to put it in front of charter guests, you can list it free at <a href="https://boathire24.com">boathire24.com</a>.</p></div>
+  
+</div>
+
+<div class="callout">
+  <h3 class="display">Book the Pershing 46</h3>
+  <p>Fast, dark and unmistakably Italian, a 14-metre sport yacht for up to ten guests, leaving from Puerto Banús with a licensed skipper, fuel, drinks, snacks and VAT all included. Pricing is quoted on WhatsApp at competitive Marbella rates.</p><p><strong>Book this boat</strong> at boatrentalinmarbella.com. <strong>Own a boat?</strong> List it free and reach charter guests worldwide at boathire24.com.</p>
+  <div class="linksrow caps"><a href="https://boathire24.com">https://boathire24.com</a><span class="sep">&#9670;</span><a href="https://boatrentalinmarbella.com/boats/pershing-46/">https://boatrentalinmarbella.com/boats/pershing-46/</a></div>
+</div>
+<div class="endmark"><span class="line"></span><svg width="14" height="14" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg" aria-hidden="true"><path fill="#b9924b" d="M17 15l1.55 1.55c-.96 1.69-3.33 3.04-5.55 3.37V11h3V9h-3V7.82C14.16 7.4 15 6.3 15 5c0-1.65-1.35-3-3-3S9 3.35 9 5c0 1.3.84 2.4 2 2.82V9H8v2h3v8.92c-2.22-.33-4.59-1.68-5.55-3.37L7 15l-4-3v3c0 3.88 4.92 7 9 7s9-3.12 9-7v-3l-4 3zM12 4c.55 0 1 .45 1 1s-.45 1-1 1-1-.45-1-1 .45-1 1-1z"/></svg><span class="line"></span></div>
+  </td></tr></tbody>
+  <tfoot><tr><td></td></tr></tfoot>
+</table>
+
+<div class="runfoot caps">
+  <span><b>boathire24.com</b> <span class="gold">&#9670;</span> rent boats worldwide
+    <span class="gold">&#9670;</span> list your boat free</span>
+  <span class="gold caps">boatrentalinmarbella.com/boats/pershing-46</span>
+</div>
+</body>
+</html>

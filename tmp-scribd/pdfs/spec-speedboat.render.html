@@ -1,0 +1,502 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<title>The Speedboat</title>
+<style>
+:root {
+  --navy:      #0e2438;
+  --navy-deep: #08182a;
+  --gold:      #b9924b;
+  --gold-dark: #8a6c33;
+  --gold-light:#d4b06a;
+  --gold-pale: #e8d8af;
+  --ivory:     #f7f2e6;
+  --paper:     #fdfbf5;
+  --ink:       #22303e;
+  --muted:     #5d6a76;
+  --hairline:  #d9cdaf;
+  --row-tint:  #f5efdf;
+}
+* { -webkit-print-color-adjust: exact; print-color-adjust: exact;
+    box-sizing: border-box; }
+@page { size: A4; margin: 0; }
+html, body { margin: 0; padding: 0; }
+body {
+  background: var(--paper);
+  color: var(--ink);
+  font-family: Georgia, 'Palatino Linotype', Palatino, 'Times New Roman', serif;
+  font-size: 10.5pt;
+  line-height: 1.62;
+}
+.display { font-family: Didot, 'Didot LT STD', 'Playfair Display', Georgia,
+           'Times New Roman', serif; }
+.caps { font-family: Optima, 'Avenir Next', 'Gill Sans', 'Trebuchet MS',
+        sans-serif; text-transform: uppercase; }
+
+/* ---------------- Cover ---------------- */
+.cover {
+  position: relative;
+  width: 210mm; height: 297mm;
+  overflow: hidden;
+  background: var(--navy-deep);
+  page-break-after: always;
+}
+.cover-img {
+  position: absolute; inset: 0;
+  width: 100%; height: 100%;
+  object-fit: cover;
+  object-position: 24% center;  /* centres the yacht's full profile in the A4 crop */
+}
+.cover-veil {
+  position: absolute; inset: 0;
+  background:
+    linear-gradient(to top, rgba(11,26,46,0.92),
+                    rgba(11,26,46,0.86) 30%, transparent 55%),
+    linear-gradient(180deg,
+      rgba(8,24,42,0.62) 0%,
+      rgba(8,24,42,0.20) 26%,
+      rgba(8,24,42,0.12) 50%,
+      rgba(8,24,42,0.00) 62%);
+}
+.cover-veil.no-img {
+  background:
+    radial-gradient(120mm 90mm at 50% 26%, rgba(185,146,75,0.20), transparent 70%),
+    linear-gradient(180deg, #122c46 0%, #0a1d33 55%, #071426 100%);
+}
+.cover-top {
+  position: absolute; top: 13mm; left: 16mm; right: 16mm;
+  display: flex; align-items: center; justify-content: space-between;
+}
+.brand-lockup { display: flex; align-items: center; gap: 4.5mm; }
+.logo-chip {
+  background: #ffffff;
+  border: 1px solid var(--gold);
+  border-radius: 1.2mm;
+  padding: 2mm;
+  line-height: 0;
+}
+.logo-chip img { display: block; height: 13mm; width: 13mm;
+                 object-fit: cover; border-radius: 0.7mm; }
+.brand-name {
+  color: var(--ivory); font-size: 13pt; letter-spacing: 0.30em;
+  line-height: 1.25;
+}
+.brand-tag {
+  color: var(--gold-pale); font-size: 6.4pt; letter-spacing: 0.26em;
+  margin-top: 1mm;
+}
+.doc-type-flag {
+  text-align: right;
+  color: var(--gold-light);
+  font-size: 7.5pt; letter-spacing: 0.34em;
+  border-top: 0.7pt solid var(--gold);
+  border-bottom: 0.7pt solid var(--gold);
+  padding: 2.2mm 0 2mm 0;
+}
+.cover-main {
+  position: absolute; left: 16mm; right: 16mm; bottom: 34mm;
+}
+.cover-rule {
+  display: flex; align-items: center; gap: 4mm;
+  margin-bottom: 5mm;
+}
+.cover-rule .line { flex: 0 0 22mm; height: 0; border-top: 0.8pt solid var(--gold); }
+.cover-rule .word {
+  color: var(--gold-light); font-size: 8pt; letter-spacing: 0.42em;
+  white-space: nowrap;
+  text-shadow: 0 1px 5px rgba(5,14,26,0.65);
+}
+.cover-title {
+  color: #fdfaf2;
+  font-size: 44pt; line-height: 1.05;
+  font-weight: 600;
+  margin: 0 0 4mm 0;
+  text-shadow: 0 1px 8px rgba(5,14,26,0.55);
+}
+.cover-subtitle {
+  color: var(--gold-pale);
+  font-style: italic;
+  font-size: 13pt; line-height: 1.45;
+  margin: 0 0 7mm 0;
+  max-width: 150mm;
+  text-shadow: 0 1px 6px rgba(5,14,26,0.6);
+}
+.cover-meta {
+  color: rgba(247,242,230,0.92);
+  font-size: 7.6pt; letter-spacing: 0.22em;
+}
+.cover-meta .dot { color: var(--gold-light); padding: 0 2.2mm; }
+.fleet-strip {
+  margin-top: 8mm;
+  display: flex; align-items: center; gap: 4mm;
+}
+.fleet-strip .logo-chip img { height: 9mm; width: auto; }
+.fleet-label {
+  color: rgba(247,242,230,0.85); font-size: 6.6pt; letter-spacing: 0.30em;
+}
+
+/* ------------- Repeating footer ------------- */
+.runfoot {
+  position: fixed; left: 0; right: 0; bottom: 0;
+  height: 12mm;
+  background: var(--ivory);
+  border-top: 1pt solid var(--gold);
+  display: flex; align-items: center; justify-content: space-between;
+  padding: 0 16mm;
+  font-size: 6.8pt; letter-spacing: 0.12em;
+  color: var(--navy);
+}
+.runfoot b { letter-spacing: 0.22em; font-weight: 600; }
+.runfoot .gold { color: var(--gold-dark); }
+.runfoot a { color: var(--navy); text-decoration: none; }
+
+/* ------------- Paged content scaffold ------------- */
+table.paged { width: 100%; border-collapse: collapse; }
+table.paged > thead td { height: 15mm; padding: 0; }
+table.paged > tfoot td { height: 17mm; padding: 0; }
+table.paged > tbody > tr > td { padding: 0 18mm; }
+
+/* ------------- Sections ------------- */
+.sec { margin: 0 0 8mm 0; }
+.sec-head {
+  break-after: avoid-page; page-break-after: avoid;
+  break-inside: avoid; page-break-inside: avoid;
+  margin: 0 0 4.5mm 0;
+}
+.sec-kicker {
+  color: var(--gold-dark); font-size: 7pt; letter-spacing: 0.38em;
+  margin-bottom: 1.6mm;
+}
+.sec-head h2 {
+  color: var(--navy);
+  font-size: 18.5pt; font-weight: 400; line-height: 1.2;
+  margin: 0 0 2.6mm 0;
+}
+.sec-head .rules { position: relative; height: 2.4mm; }
+.sec-head .rules .thin {
+  position: absolute; left: 0; right: 0; top: 1mm;
+  border-top: 0.6pt solid var(--hairline);
+}
+.sec-head .rules .thick {
+  position: absolute; left: 0; top: 0; width: 26mm;
+  border-top: 2.2pt solid var(--gold);
+}
+.sec-body p { margin: 0 0 3.4mm 0; }
+.sec-body p:last-child { margin-bottom: 0; }
+.sec-body ol { margin: 0 0 3.4mm 0; padding-left: 5.5mm; }
+.sec-body ul { margin: 0 0 3.4mm 0; padding-left: 1mm; }
+.sec-body li { margin-bottom: 1.6mm; break-inside: avoid; page-break-inside: avoid;
+               -webkit-column-break-inside: avoid; }
+.sec-body ul.cols2 { columns: 2; column-gap: 9mm;
+                     break-inside: avoid; page-break-inside: avoid; }
+.sec-body ul > li {
+  list-style: none;
+  padding-left: 1.1em; text-indent: -1.1em;  /* hanging indent: wraps align under text */
+}
+.sec-body ul > li::before {
+  content: "\2726";            /* four-pointed star, brass compass point */
+  display: inline-block; width: 1.44em; text-indent: 0;
+  color: var(--gold); font-size: 8pt;       /* 1.44em @8pt == 1.1em @10.5pt */
+}
+.sec-body a { color: var(--navy); text-decoration: none;
+              border-bottom: 0.6pt solid var(--gold); }
+.sec-body strong { color: var(--navy); }
+
+/* generic tables inside section html */
+.sec-body table {
+  width: 100%; border-collapse: collapse;
+  margin: 1mm 0 4mm 0;
+  break-inside: avoid; page-break-inside: avoid;
+  font-size: 9.8pt;
+}
+.sec-body th {
+  background: var(--navy); color: var(--ivory);
+  font-family: Optima, 'Avenir Next', 'Gill Sans', 'Trebuchet MS', sans-serif;
+  text-transform: uppercase; letter-spacing: 0.16em;
+  font-size: 7.4pt; font-weight: 500;
+  text-align: left; padding: 2.6mm 3.5mm;
+  border-bottom: 1.4pt solid var(--gold);
+}
+.sec-body td {
+  padding: 2.2mm 3.5mm;
+  border-bottom: 0.6pt solid var(--hairline);
+  color: var(--ink);
+}
+.sec-body td, .sec-body th { font-variant-numeric: tabular-nums; }
+.sec-body td:not(:first-child),
+.sec-body th:not(:first-child) { text-align: right; }
+.sec-body tr:nth-child(even) td { background: var(--row-tint); }
+.sec-body td:first-child { color: var(--navy); }
+.sec-body tr.best td { background: rgba(212,175,55,0.12); }
+.sec-body tr.best td:first-child { color: var(--navy); font-weight: 600; }
+.best-tag {
+  display: inline-block;
+  font-family: Optima, 'Avenir Next', 'Gill Sans', 'Trebuchet MS', sans-serif;
+  font-variant-caps: small-caps; text-transform: lowercase;
+  font-size: 7.6pt; font-weight: 600; letter-spacing: 0.14em;
+  color: var(--gold-dark);
+  border: 0.6pt solid var(--gold);
+  border-radius: 1mm;
+  padding: 0.2mm 1.6mm;
+  margin-left: 2.2mm;
+  white-space: nowrap;
+  vertical-align: 0.2mm;
+}
+
+/* ------------- Figures ------------- */
+figure.plate {
+  break-inside: avoid; page-break-inside: avoid;
+  margin: 5mm 0 2mm 0;
+  background: #ffffff;
+  border: 0.7pt solid var(--gold-light);
+  padding: 2.6mm;
+}
+figure.plate img {
+  display: block; width: 100%; height: 78mm; object-fit: cover;
+}
+figure.plate figcaption {
+  text-align: center;
+  font-style: italic;
+  font-size: 8.4pt; color: var(--muted);
+  padding: 2.4mm 2mm 0.6mm 2mm;
+}
+figure.plate figcaption::before {
+  content: "\25C6\00a0"; color: var(--gold); font-size: 6pt;
+}
+
+/* ------------- Spec table (2-column grid: two lbl/val pairs per row) ------------- */
+.spec-block { margin: 0 0 8mm 0; }
+table.spec {
+  width: 100%; border-collapse: collapse;
+  border-top: 1.6pt solid var(--navy);
+  border-bottom: 1.6pt solid var(--navy);
+}
+table.spec td { padding: 1.7mm 1.5mm; border-bottom: 0.6pt solid var(--hairline);
+                vertical-align: top; }
+table.spec tr:last-child td { border-bottom: none; }
+table.spec td.lbl {
+  width: 21%;
+  font-family: Optima, 'Avenir Next', 'Gill Sans', 'Trebuchet MS', sans-serif;
+  text-transform: uppercase; letter-spacing: 0.16em;
+  font-size: 7.2pt; color: var(--gold-dark);
+  padding-top: 2.3mm;
+}
+table.spec td.val { width: 29%; color: var(--navy); font-size: 9.8pt; }
+table.spec td.lbl:nth-child(3) {
+  border-left: 0.6pt solid var(--hairline);
+  padding-left: 4mm;
+}
+table.spec td.val:nth-child(2) { padding-right: 4mm; }
+
+/* ------------- Callout ------------- */
+.callout {
+  break-inside: avoid; page-break-inside: avoid;
+  margin: 8mm 0 4mm 0;
+  background: var(--navy);
+  border: 1pt solid var(--gold);
+  outline: 0.6pt solid var(--gold);
+  outline-offset: -2.2mm;
+  color: var(--ivory);
+  padding: 8mm 9mm 7mm 9mm;
+}
+.callout h3 {
+  color: var(--gold-light);
+  font-size: 15pt; font-weight: 400;
+  margin: 0 0 3mm 0;
+}
+.callout p { margin: 0 0 2.8mm 0; line-height: 1.6; color: #efe7d3; }
+.callout a { color: var(--gold-light); text-decoration: none; }
+.callout ul { margin: 0 0 2.8mm 0; padding-left: 1mm; }
+.callout ul > li { list-style: none; margin-bottom: 1.4mm;
+                   padding-left: 1.1em; text-indent: -1.1em;
+                   break-inside: avoid; page-break-inside: avoid; }
+.callout ul > li::before {
+  content: "\2726"; display: inline-block; width: 1.44em; text-indent: 0;
+  color: var(--gold-light); font-size: 8pt;
+}
+.callout .linksrow {
+  margin-top: 4.5mm; padding-top: 3.6mm;
+  border-top: 0.6pt solid rgba(212,176,106,0.55);
+  font-size: 7.6pt; letter-spacing: 0.16em;
+  color: var(--gold-pale);
+}
+.callout .linksrow span.sep { padding: 0 2.6mm; color: var(--gold); }
+
+.endmark {
+  display: flex; align-items: center; justify-content: center; gap: 3.5mm;
+  margin: 7mm 0 0 0;
+}
+.endmark .line { width: 14mm; height: 0; border-top: 0.6pt solid var(--gold); }
+.endmark svg { display: block; }
+</style>
+</head>
+<body>
+
+<div class="cover">
+  <img class="cover-img" src="file:///Users/master/boat-rental-marbella/site/img/boats/speedboat/hero-1200.jpg" alt="">
+  <div class="cover-veil"></div>
+  <div class="cover-top">
+    <div class="brand-lockup">
+      <span class="logo-chip"><img src="file:///Users/master/boat-rental-platform/public/brand-logo.jpg" alt="BoatHire24"></span>
+      <div>
+        <div class="brand-name caps display">BoatHire24</div>
+        <div class="brand-tag caps">Rent boats worldwide <span class="gold">|</span> list your boat free</div>
+      </div>
+    </div>
+    <div class="doc-type-flag caps">June 2026</div>
+  </div>
+  <div class="cover-main">
+    <div class="cover-rule">
+      <span class="line"></span>
+      <span class="word caps">Vessel Specification</span>
+    </div>
+    <h1 class="cover-title display">The Speedboat</h1>
+    <p class="cover-subtitle display">A fast, fun coastal speedboat for short Marbella charters out of Puerto Banus</p>
+    <div class="cover-meta caps">BoatHire24</div>
+    <div class="fleet-strip"><span class="fleet-label caps">From the fleet of</span><span class="logo-chip"><img src="file:///Users/master/boat-rental-marbella/site/img/logo-640.png" alt="Boat Rental In Marbella"></span></div>
+  </div>
+</div>
+<table class="paged">
+  <thead><tr><td></td></tr></thead>
+  <tbody><tr><td>
+
+<div class="spec-block sec">
+  <div class="sec-head">
+    <div class="sec-kicker caps">Particulars</div>
+    <h2 class="display">Principal Particulars</h2>
+    <div class="rules"><span class="thick"></span><span class="thin"></span></div>
+  </div>
+  <table class="spec"><tr><td class="lbl">Length overall</td><td class="val">7 m</td><td class="lbl">Guest capacity</td><td class="val">6 guests</td></tr>
+<tr><td class="lbl">Vessel type</td><td class="val">Speedboat</td><td class="lbl">Builder</td><td class="val">Various</td></tr>
+<tr><td class="lbl">Departure port</td><td class="val">Puerto Banus, Marbella</td><td class="lbl">Model year</td><td class="val">On request</td></tr>
+<tr><td class="lbl">Crew</td><td class="val">Skipper included</td><td class="lbl">Rate band</td><td class="val">Quote on WhatsApp</td></tr></table>
+</div>
+
+<div class="sec">
+  <div class="sec-head">
+    <div class="sec-kicker caps">Section 01</div>
+    <h2 class="display">The boat for the short, sharp version of the day</h2>
+    <div class="rules"><span class="thick"></span><span class="thin"></span></div>
+  </div>
+  <div class="sec-body"><p>Not every day on the water needs to be an eight-hour expedition. Sometimes the right charter is the quick one: an hour or two of open throttle along the Marbella shoreline, the spray coming off the bow, the coast scrolling past faster than you can quite believe, and back to the marina in time for lunch. That is exactly what <strong>the Speedboat</strong> is for. She is a seven-metre coastal speedboat in the Boat Rental In Marbella fleet, set up to carry up to six guests, departing from Puerto Banus with a licensed skipper aboard, and built around speed and fun rather than long lunches at anchor.</p><p>She stands out in the fleet precisely because she is the antidote to everything the big yachts are about. Where the Mangusta and the Maiora are floating villas that move slowly and luxuriously, the Speedboat is light, nimble and quick. She is the boat you take when you want sensation over ceremony: when the point of the outing is the rush of cutting across the bay, the laughter of a group hanging on as the bow lifts, and the simple pleasure of going fast on a flat blue sea. There is a reason small fast boats have always been the most universally loved thing on any waterfront. They deliver the most fun per minute of anything that floats.</p><p>That makes her one of the most accessible boats on the dock. A full-day superyacht charter is a serious booking for a serious occasion. A speedboat hop is something you can do on a whim: a couple of hours carved out of a beach holiday, a birthday treat, a way to show visiting friends the coast from the water without committing the whole day to it. The price point follows the same logic, quoted on WhatsApp via the website at competitive Marbella rates, scaled to the length of the outing rather than fixed to a long minimum.</p><p>What follows is a full dossier on this specific vessel: the breed she belongs to and why fast boats earn their devoted following, what the speedboat class is built to do, what is aboard, what a day actually looks like from the Puerto Banus pontoon, where she ranges along this stretch of coast, who she suits, and exactly what is included when you charter her. Every hard figure here comes from the boat's own record. Everything else is the context that turns a spec line into a day on the water.</p></div>
+  
+</div>
+
+<div class="sec">
+  <div class="sec-head">
+    <div class="sec-kicker caps">Section 02</div>
+    <h2 class="display">The breed: small, fast and built for the coast</h2>
+    <div class="rules"><span class="thick"></span><span class="thin"></span></div>
+  </div>
+  <div class="sec-body"><p>The Speedboat in this fleet is listed with a builder of <em>Various</em>, which is honest and worth explaining rather than dressing up. Unlike the named Italian and Spanish marques elsewhere in the line-up, the speedboat slot is filled by whichever well-kept fast coastal boat in the seven-metre class is available and on the water that season. That is the practical reality of running a fast day-boat: these are working hulls that earn their keep on short charters, and the operation keeps a sound, well-maintained example ready rather than tying the listing to a single named model. When you book, you are booking the experience and the size class, and the team confirm the exact boat on the day.</p><p>What matters far more than the badge is the breed, and the breed is one of the oldest and best-loved in pleasure boating. The fast open coastal boat, the runabout, the bowrider, the sportboat, whatever name a given era hangs on it, has been the entry point to life on the water for the better part of a century. The recipe barely changes because it does not need to: a light planing hull, a powerful engine, an open layout that puts everyone in the air and the sun, and just enough boat to do it safely. The whole design exists to convert horsepower into grins.</p><p>The genius of the type is its efficiency of pleasure. A seven-metre boat like this gets onto the plane quickly, skips across flat water at a genuinely exciting clip, and turns and responds in a way that nothing large ever can. It is shallow enough in draught to nose into coves and right up to a beach, light enough to feel alive under you, and small enough that the whole group is together in one open cockpit rather than spread across three decks. That intimacy is part of the appeal. On a speedboat everybody is in on the same moment.</p></div>
+  <figure class="plate"><img src="file:///Users/master/boat-rental-marbella/site/img/boats/speedboat/hero-900.jpg" alt=""><figcaption>Seven metres of fast open coastal boat, ready on the Puerto Banus pontoon</figcaption></figure>
+</div>
+
+<div class="sec">
+  <div class="sec-head">
+    <div class="sec-kicker caps">Section 03</div>
+    <h2 class="display">What the class is known for</h2>
+    <div class="rules"><span class="thick"></span><span class="thin"></span></div>
+  </div>
+  <div class="sec-body"><p>If you have only ever been on a big slow cruiser, the first thing the Speedboat teaches you is how different fast feels. A superyacht moves through the sea. A speedboat moves over it. Up on the plane the hull rides on a fraction of its length, the ride goes light and skittish in the best way, and the same patch of coast that takes a motor yacht half an hour to amble along goes by in a few exhilarating minutes.</p><p>The defining features of the class are worth spelling out, because they explain why this boat is built and used the way she is:</p><ul><li><strong>The open cockpit is the whole boat.</strong> There is no saloon to retreat to and no flybridge to climb. Everyone sits together in the open air, in the sun and the breeze, which is exactly where you want to be on a fast boat. It makes the outing sociable and immediate.</li><li><strong>Speed is the headline feature, not a footnote.</strong> A planing hull and a strong engine are the point. The boat exists to go fast and to make that fun feel safe and easy, with a skipper who knows how to read the swell and pick the smoothest line across the bay.</li><li><strong>Shallow draught opens up the coast.</strong> A small light boat can nose into spots the big yachts cannot reach, getting you close to the cliffs, the coves and the beach for a swim off the side.</li><li><strong>Water sports come naturally.</strong> The same power and agility that make her fun to ride make her a natural tow boat, so an optional inflatable ride or a turn behind the boat fits the format perfectly.</li><li><strong>Short and flexible by design.</strong> The whole point is the short hop. You are not committing to a full day. An hour or two is a complete, satisfying outing on a boat like this.</li></ul><p>The Speedboat carries this character as standard. She is a fast coastal boat with a skipper aboard, set up for short-hop charters with the option of a bit of water-sport fun mixed in. That last point is one of the most underrated things about the format: a small fast boat is the most flexible thing in the fleet, able to be a sightseeing run, a swim trip, a water-sports session or a sundowner cruise depending entirely on the mood of the group.</p></div>
+  
+</div>
+
+<div class="sec">
+  <div class="sec-head">
+    <div class="sec-kicker caps">Section 04</div>
+    <h2 class="display">On board: layout and what is aboard</h2>
+    <div class="rules"><span class="thick"></span><span class="thin"></span></div>
+  </div>
+  <div class="sec-body"><p>The Speedboat is a seven-metre boat, which is a well-judged size for fast coastal work with a small group. She is big enough to take the gentle Marbella swell comfortably and to seat six guests with room to move, yet small and light enough to be genuinely quick and nimble, and economical to run on short charters. That balance is the whole reason a boat this size is the sweet spot for the kind of outing she is built for.</p><p>The layout follows the open speedboat template. The cockpit is the heart of the boat and is kept open to the sun and the breeze, so the whole group rides together with the helm forward and clear sightlines all round. There is comfortable seating arranged around the cockpit, space to stow towels and a cool box, and a low freeboard that makes it easy to slip over the side for a swim when the skipper finds a quiet spot. The helm is positioned so the skipper has full command of the boat and the water ahead, which is what keeps a fast boat both exciting and safe.</p><p>The essentials of the boat break down like this:</p><ul><li><strong>A fast planing hull</strong> that gets up and goes, for the quick coastal runs the boat is built for</li><li><strong>An open cockpit</strong> seating up to six guests together in the sun and breeze</li><li><strong>A licensed skipper</strong> aboard every charter to handle the boat, the navigation and the safety</li><li><strong>Water-sport capability</strong> as an option, so a tow or an inflatable ride can be part of the outing</li><li><strong>Shallow draught</strong> for nosing into coves and close to the beach for a swim stop</li></ul><p>What you will not find on the Speedboat is the spread of cabins, the catered galley and the inflatable water park that come with the big yachts in the fleet, and that is entirely by design. This is a fast open day-boat. The trade-off is a boat set up to do one thing brilliantly, the short fun run, rather than a dozen things at a stately pace. For the guests this boat is aimed at, that is exactly the right trade.</p></div>
+  
+</div>
+
+<div class="sec">
+  <div class="sec-head">
+    <div class="sec-kicker caps">Section 05</div>
+    <h2 class="display">A day aboard, from Puerto Banus</h2>
+    <div class="rules"><span class="thick"></span><span class="thin"></span></div>
+  </div>
+  <div class="sec-body"><p>The best way to understand the Speedboat is to walk through an outing on her, because she is the opposite of an all-day commitment and the rhythm is part of the charm. You meet your skipper at the berth in Puerto Banus, that famous marina doing its glamorous bustle around you, the superyachts lined up along the quay and the cafes filling up. Within a few minutes of stepping aboard you are easing out past the breakwater, and the moment you clear the harbour the day really begins.</p><p>The skipper opens the throttle and the boat lifts onto the plane. This is the moment everyone is there for. The bow comes up, the hull settles into its fast ride, the wind takes your hair and the engine note steadies into that satisfying drone, and Marbella starts to roll past at a pace that makes the whole group grin. La Concha mountain stands over the town behind you, the Golden Mile and its villas slide by to one side, and the water flattens out into the deep blue that this coast is famous for. There is nothing quite like seeing Marbella from a fast boat. It reorders the place in your mind.</p><p>Somewhere along the run the skipper eases off and noses the boat into a quieter patch of water for a swim stop. The engine drops to a murmur, someone is first over the side, and for a while the fast boat becomes a swimming platform anchored off a stretch of coast you would never reach from the beach. Cold drinks come out of the cool box, there are light snacks aboard, and the group floats in the clear water with the boat bobbing beside them. If the mood is for it, this is also where the water sports come in: a turn on an inflatable behind the boat, a tow across the flat water, the kind of thing that turns a nice outing into the highlight of a holiday.</p><p>Then it is back up on the plane for the run home, the marina lifting out of the haze ahead, and you come in flushed and salty and happy with that particular satisfaction a fast boat gives you. The whole thing can be done in an hour or two, which is the point. It slots into a day rather than swallowing it, and it leaves you wanting to do it again. Longer outings simply give the skipper room to range further along the coast and to linger longer at the swim stop.</p></div>
+  <figure class="plate"><img src="file:///Users/master/boat-rental-marbella/site/img/jet-ski/cruise-1200.jpg" alt=""><figcaption>Open throttle along the Marbella coast, the fastest fun in the fleet</figcaption></figure>
+</div>
+
+<div class="sec">
+  <div class="sec-head">
+    <div class="sec-kicker caps">Section 06</div>
+    <h2 class="display">Cruising grounds from Puerto Banus</h2>
+    <div class="rules"><span class="thick"></span><span class="thin"></span></div>
+  </div>
+  <div class="sec-body"><p>Puerto Banus is one of the best-placed departure points on the whole Costa del Sol, and for a fast boat that geography is a gift. The most scenic stretches of coast are all within an easy run, the water is generally calm in the mornings, and a quick boat can take in a remarkable amount of coastline in a short outing. The skipper shapes the run around conditions, the length of your charter and what the group fancies.</p><p>The grounds break down roughly like this:</p><ul><li><strong>The Golden Mile</strong> runs east from Puerto Banus towards Marbella town, the famous stretch of villas, beach clubs and grand hotels seen from the water. It is the classic short run, and a fast boat covers it in minutes, with a swim stop off one of the quieter sections a natural pause. Seeing the Golden Mile from the sea, with La Concha mountain rising behind it, is one of the signature Marbella experiences.</li><li><strong>Cabopino</strong>, further east, is a pretty marina backed by the dunes of Artola, one of the few undeveloped stretches of this coast. On a longer outing it makes a fine turning point, with calm water for swimming along the way.</li><li><strong>West towards Estepona</strong> opens up a quieter, more natural stretch of coast, with coves and clear water and far fewer boats. It is a lovely direction for a group that wants the scenery and the swim more than the glamour.</li><li><strong>The shoreline itself</strong> is the speedboat's playground. Her shallow draught and small size let her nose into spots the big yachts simply cannot reach, close to the cliffs and right up towards the beaches, which is exactly the kind of coastline a fast nimble boat is made to explore.</li></ul><p>Where exactly you go on the day is the skipper's call, made on the morning with the latest conditions in hand. That is the advantage of chartering a crewed boat with local knowledge rather than simply hiring a hull. The skipper knows where the water will be flattest, where the prettiest swim spots are, and how to give a short outing the most scenery and the most fun. On a fast boat, distance is cheap, so even a short charter can take in a generous slice of this coast.</p></div>
+  <figure class="plate"><img src="file:///Users/master/boat-rental-marbella/site/img/maps/puerto-ban-s-es-6ad7ad49da.png" alt=""><figcaption>Puerto Banus, the Speedboat&#x27;s home marina and the gateway to the Marbella coast</figcaption></figure>
+</div>
+
+<div class="sec">
+  <div class="sec-head">
+    <div class="sec-kicker caps">Section 07</div>
+    <h2 class="display">Who this boat suits</h2>
+    <div class="rules"><span class="thick"></span><span class="thin"></span></div>
+  </div>
+  <div class="sec-body"><p>The Speedboat is a specialist in fun, and like all specialists she is perfect for the right group and beside the point for the wrong one. Knowing which you are saves everyone a misjudged booking.</p><p>She suits, above all, <strong>small groups after a quick thrill</strong>, up to six guests who want the sensation of a fast boat without the cost or commitment of a full-day yacht. A couple wanting a memorable hour on the water, a small family wanting to show the children what going fast on the sea feels like, a few friends who want to be out on the bay rather than on the beach. For all of them, the speedboat is the most fun per euro in the fleet.</p><p>She suits <strong>celebrations that want energy</strong>, a birthday treat, a hen or stag morning, a holiday highlight that needs to feel special without taking the whole day. The shared rush of a fast boat does more for a group's mood than almost anything, and the open cockpit keeps everyone together in the moment rather than scattered across decks.</p><p>She suits <strong>the water-sports crowd</strong>, anyone who wants a tow, an inflatable ride or simply a fast nimble platform for a swim-and-play session in a quiet cove. The same agility that makes her exciting to ride makes her a natural for a bit of on-the-water fun.</p><p>She also suits <strong>visitors short on time</strong>. If you have an afternoon free and want to see the coast from the water, a couple of hours on a fast boat is the most vivid possible introduction to Marbella from the sea, and you are back in time for everything else.</p><p>Who she does not suit is the group whose day is really about a long catered lunch at anchor, sunbathing across a superyacht's decks, or an overnight stay in a private cabin. That is a wonderful day, but it is a completely different boat, and the fleet has plenty of those. The team will happily point you to the Astondoa, the Maiora or the Mangusta for that. The Speedboat is for the day where the point is to go fast and have fun.</p></div>
+  <figure class="plate"><img src="file:///Users/master/boat-rental-marbella/site/img/hen-party/hen-party-group-puerto-banus-1200.jpg" alt=""><figcaption>Small groups and celebrations: the Speedboat is the fleet&#x27;s fun-per-minute champion</figcaption></figure>
+</div>
+
+<div class="sec">
+  <div class="sec-head">
+    <div class="sec-kicker caps">Section 08</div>
+    <h2 class="display">Pricing and what is included</h2>
+    <div class="rules"><span class="thick"></span><span class="thin"></span></div>
+  </div>
+  <div class="sec-body"><p>The Speedboat is priced individually for each outing rather than from a fixed published rate, because short fast charters genuinely vary in length and in what the group wants to do. A quick one-hour blast and a longer half-day with a swim stop and some water sports are different propositions, and a single sticker price would not do justice to either. Quotes are provided on WhatsApp via the website at competitive Marbella rates. You send your preferred date, your group size and roughly how long you would like to be out, and you receive a firm price for the whole boat, the figure you actually pay.</p><p>That firm figure matters because of what comes with it. Every confirmed charter in the fleet includes the standard inclusions below, so there is no fuel surcharge waiting at the dock, no VAT bolted on at the end, and no separate skipper fee. The price is the price.</p><table><tr><th>Included in every charter</th><th>Status</th></tr><tr><td>Licensed skipper</td><td>Included</td></tr><tr><td>Fuel</td><td>Included</td></tr><tr><td>Drinks (water, soft drinks, beer, white wine, cava)</td><td>Included</td></tr><tr><td>Light snacks</td><td>Included</td></tr><tr><td>Insurance</td><td>Included</td></tr><tr><td>Safety equipment</td><td>Included</td></tr><tr><td>VAT (21%)</td><td>Included</td></tr></table><p>Fuel deserves a particular mention on a fast boat, because a planing hull at speed uses it, and an operator who leaves fuel off the quoted price can spring an unwelcome bill at the end of the outing. On the Speedboat fuel is included, which is part of why the quote you are given is the whole story. The skipper is included too, so you are not paying a separate crew charge on top of the boat. You get a fully crewed, all-in fast charter for the price quoted, and that simplicity is part of the appeal of booking through the fleet rather than piecing a day together yourself.</p></div>
+  
+</div>
+
+<div class="sec">
+  <div class="sec-head">
+    <div class="sec-kicker caps">Section 09</div>
+    <h2 class="display">Seasonality and the best time to go</h2>
+    <div class="rules"><span class="thick"></span><span class="thin"></span></div>
+  </div>
+  <div class="sec-body"><p>The Costa del Sol has one of the kindest climates in Europe, and the season for a fast coastal boat is correspondingly long. The high summer months of July and August bring the warmest sea for swimming, the calmest mornings and, inevitably, the heaviest demand, so dates in that window book out earliest and are worth confirming ahead. The water is at its most inviting and the swim stops are at their best.</p><p>The shoulder seasons of late spring and early autumn are a quiet secret on this coast. May, June, September and into October are often warm, frequently calmer and far less crowded than the peak, and they make wonderful conditions for a fast outing. The sea is settled, the light is beautiful and the coast is quieter, so a swim stop feels like you have the place to yourselves. For a boat whose whole appeal is the ride and the swim, these months are arguably the best of the year.</p><p>A few practicalities make for a better outing:</p><ul><li><strong>Mornings are usually flattest.</strong> On this coast the sea tends to be at its calmest early, before the afternoon breeze gets up. A flat sea makes for the smoothest, fastest, most comfortable ride, so an earlier slot is often the best one. The skipper will advise.</li><li><strong>Watch the wind, not the calendar.</strong> A small fast boat is most fun on settled water. If the wind is up, the skipper will keep the run sheltered and choose the smoothest line, and on the rare genuinely rough day will suggest moving the booking. A sensible plan flexes with the conditions.</li><li><strong>Bring sun protection and a towel.</strong> The cockpit is open, the swim stop is part of the outing, and there is little shade on a boat built for speed. Sun cream, a hat and a towel make all the difference.</li><li><strong>Book the whole boat.</strong> A charter is exclusive to your group, up to six guests, so the outing is yours to shape with the skipper.</li></ul><p>Because the Speedboat is a single, much-loved boat doing short turns, her calendar in peak season can fill quickly, with several outings possible in a single good day. If you have a date and a slot in mind, particularly a summer morning or a holiday weekend, it is well worth getting the quote and the booking confirmed early rather than leaving it to chance.</p></div>
+  
+</div>
+
+<div class="sec">
+  <div class="sec-head">
+    <div class="sec-kicker caps">Section 10</div>
+    <h2 class="display">Frequently asked questions</h2>
+    <div class="rules"><span class="thick"></span><span class="thin"></span></div>
+  </div>
+  <div class="sec-body"><p><strong>How many people can come aboard?</strong> Up to six guests. The charter is exclusive to your group, so the boat and skipper are yours for the booked period.</p><p><strong>Do I need a licence or any experience?</strong> No. The Speedboat is a fully crewed charter with a licensed skipper aboard who handles the boat, the navigation and the safety. You simply turn up and enjoy the ride. No boating experience of any kind is required.</p><p><strong>Where does the Speedboat leave from?</strong> Puerto Banus, Marbella's most famous and best-connected marina, with good road access, parking, restaurants and hotels close by. Your skipper meets you at the berth.</p><p><strong>How long are the outings?</strong> This is the boat for short, fast charters, so an hour or two is a complete and satisfying outing. Longer outings are possible and simply give the skipper room to range further along the coast and to linger longer at the swim stop. Tell the team how long you would like and they will quote accordingly.</p><p><strong>Can we swim and do water sports?</strong> Yes. A swim stop in a quiet cove is a natural part of most outings, and the boat's speed and agility make her a great platform for an optional tow or inflatable ride. Mention it when you book so the skipper can plan for it.</p><p><strong>Is it suitable for children?</strong> A fast boat with a skipper is a thrilling and safe outing for families, and children tend to love it. Let the team know the ages in your group and the skipper will pitch the ride accordingly, keeping it as gentle or as lively as suits you.</p><p><strong>Is fuel really included?</strong> Yes. Fuel, the skipper, drinks, light snacks, insurance, safety equipment and VAT are all included in the quoted price. On a fast planing boat, an all-in fuel-included quote is a real advantage and means no surprise bill at the dock.</p><p><strong>How do I get a price and book?</strong> Visit the boat's page and request a quote on WhatsApp with your date, group size and how long you would like to be out. The team replies quickly with pricing and a suggested plan for the outing.</p></div>
+  
+</div>
+
+<div class="sec">
+  <div class="sec-head">
+    <div class="sec-kicker caps">Section 11</div>
+    <h2 class="display">Booking the Speedboat</h2>
+    <div class="rules"><span class="thick"></span><span class="thin"></span></div>
+  </div>
+  <div class="sec-body"><p>The Speedboat is the boat to choose when you want your day on the water to be quick, fun and full of sensation rather than slow and stately. She is a seven-metre fast coastal boat with a licensed skipper aboard, departing Puerto Banus for the Golden Mile, Cabopino, Estepona or simply a swim stop in a quiet cove, depending on the day and your appetite. Up to six guests, water sports optional, and an all-inclusive price with fuel, drinks, skipper, insurance and VAT covered.</p><p>To check a date and get a firm quote, visit the boat's page and message the team on WhatsApp with your preferred day, your group size and how long you would like to be out. They reply quickly with pricing and a plan, and they know this water, so their advice on the best slot and the best run is worth having. Peak-summer mornings go first, so the earlier you ask, the better your chances of the time you want. For the most fun you can have in a couple of hours on the Marbella coast, there is little to beat it.</p></div>
+  
+</div>
+
+<div class="callout">
+  <h3 class="display">Book This Boat</h3>
+  <p>Book the Speedboat and the rest of the Marbella fleet at <a href="https://boatrentalinmarbella.com/boats/speedboat/">boatrentalinmarbella.com</a>, with quotes on WhatsApp at competitive local rates.</p><p><strong>Boat owners:</strong> list your boat free at <a href="https://boathire24.com">boathire24.com</a> and reach charter guests worldwide.</p>
+  <div class="linksrow caps"><a href="https://boathire24.com">https://boathire24.com</a><span class="sep">&#9670;</span><a href="https://boatrentalinmarbella.com/boats/speedboat/">https://boatrentalinmarbella.com/boats/speedboat/</a></div>
+</div>
+<div class="endmark"><span class="line"></span><svg width="14" height="14" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg" aria-hidden="true"><path fill="#b9924b" d="M17 15l1.55 1.55c-.96 1.69-3.33 3.04-5.55 3.37V11h3V9h-3V7.82C14.16 7.4 15 6.3 15 5c0-1.65-1.35-3-3-3S9 3.35 9 5c0 1.3.84 2.4 2 2.82V9H8v2h3v8.92c-2.22-.33-4.59-1.68-5.55-3.37L7 15l-4-3v3c0 3.88 4.92 7 9 7s9-3.12 9-7v-3l-4 3zM12 4c.55 0 1 .45 1 1s-.45 1-1 1-1-.45-1-1 .45-1 1-1z"/></svg><span class="line"></span></div>
+  </td></tr></tbody>
+  <tfoot><tr><td></td></tr></tfoot>
+</table>
+
+<div class="runfoot caps">
+  <span><b>boathire24.com</b> <span class="gold">&#9670;</span> rent boats worldwide
+    <span class="gold">&#9670;</span> list your boat free</span>
+  <span class="gold caps">boatrentalinmarbella.com/boats/speedboat</span>
+</div>
+</body>
+</html>

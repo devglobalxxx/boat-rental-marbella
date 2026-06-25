@@ -74,6 +74,109 @@
         "Heated freshwater jacuzzi onboard"
       ],
       "currency": "EUR"
+    },
+    "tier_mefasa_90": {
+      "label": "Mefasa 90 — 29m motor yacht",
+      "min_hours": 4,
+      "prices": {
+        "4h": 7300,
+        "6h": 10000,
+        "8h": 12000
+      },
+      "currency": "EUR"
+    },
+    "tier_sunseeker_predator_72": {
+      "label": "Sunseeker Predator 72 — 22.1m motor yacht",
+      "min_hours": 4,
+      "prices": {
+        "4h": 5000,
+        "6h": 6500,
+        "8h": 8000
+      },
+      "currency": "EUR"
+    },
+    "tier_princess_f70": {
+      "label": "Princess F70 — 21.8m motor yacht",
+      "min_hours": 2,
+      "prices": {
+        "2h": 3799,
+        "4h": 6399,
+        "6h": 8899,
+        "8h": 10999
+      },
+      "currency": "EUR"
+    },
+    "tier_sunseeker_68_sport": {
+      "label": "Sunseeker 68 Sport — 21m motor yacht",
+      "min_hours": 4,
+      "prices": {
+        "4h": 6500,
+        "6h": 8500,
+        "8h": 10500
+      },
+      "currency": "EUR"
+    },
+    "tier_sunseeker_63": {
+      "label": "Sunseeker 63 — 19m motor yacht",
+      "min_hours": 2,
+      "prices": {
+        "2h": 1999,
+        "4h": 2999,
+        "6h": 3899,
+        "8h": 4799
+      },
+      "currency": "EUR"
+    },
+    "tier_princess_v58": {
+      "label": "Princess V58 — 18.2m motor yacht",
+      "min_hours": 4,
+      "prices": {
+        "4h": 2999,
+        "6h": 4399,
+        "8h": 5499
+      },
+      "currency": "EUR"
+    },
+    "tier_sunseeker_predator_58": {
+      "label": "Sunseeker Predator 58 — 17.6m motor yacht",
+      "min_hours": 4,
+      "prices": {
+        "4h": 2999,
+        "6h": 3699,
+        "8h": 4399
+      },
+      "currency": "EUR"
+    },
+    "tier_prestige_500": {
+      "label": "Prestige 500 — 16m motor yacht",
+      "min_hours": 4,
+      "prices": {
+        "4h": 2999,
+        "6h": 4199,
+        "8h": 5799
+      },
+      "currency": "EUR"
+    },
+    "tier_fairline_targa_43": {
+      "label": "Fairline Targa 43 — 14.4m motor yacht",
+      "min_hours": 4,
+      "prices": {
+        "4h": 1400,
+        "6h": 1850,
+        "8h": 2350
+      },
+      "currency": "EUR"
+    },
+    "tier_sea_doo_gtx_jet_ski": {
+      "label": "Sea-Doo GTX Jet Ski — 3.4m jet ski",
+      "min_hours": 1,
+      "prices": {
+        "1h": 250,
+        "2h": 450,
+        "3h": 650,
+        "4h": 850
+      },
+      "currency": "EUR"
     }
   },
   "boats": [
@@ -1263,6 +1366,1075 @@
         "90ft yacht Marbella",
         "corporate yacht charter Marbella",
         "overnight yacht Marbella"
+      ]
+    },
+    {
+      "slug": "mefasa-90",
+      "name": "Mefasa 90",
+      "tagline": "Private Mefasa 90 charter · Puerto Banús, Marbella",
+      "model_year": 2012,
+      "builder": "Mefasa",
+      "type": "Motor yacht",
+      "length_m": 29,
+      "capacity_pax": 12,
+      "departure_port": "Puerto Banús",
+      "tier": "tier_mefasa_90",
+      "summary": "The Mefasa 90 is a 29 m superyacht for unforgettable days on the Costa del Sol  —  vast deck spaces, a jacuzzi, a beach club and elegant interiors across multiple cabins. Crewed private charters for up to 12 guests with all-inclusive luxury from Puerto Banús, Marbella  —  the ultimate way to experience Marbella by sea.",
+      "highlights": [
+        "4 en-suite cabins for overnight charter",
+        "Deck jacuzzi for sunset soaks",
+        "Full beach club at the stern",
+        "Flybridge with bar and sunbeds",
+        "Tender for beach-club drop-offs",
+        "Departs Puerto Banús with a licensed skipper, fuel & drinks included"
+      ],
+      "hero_local": "/img/boats/mefasa-90/hero-1600.jpg",
+      "hero_local_srcset": [
+        [
+          "/img/boats/mefasa-90/hero-600.jpg",
+          600
+        ],
+        [
+          "/img/boats/mefasa-90/hero-900.jpg",
+          900
+        ],
+        [
+          "/img/boats/mefasa-90/hero-1200.jpg",
+          1200
+        ],
+        [
+          "/img/boats/mefasa-90/hero-1600.jpg",
+          1600
+        ]
+      ],
+      "hero_local_alt": "Mefasa 90 motor yacht charter off Marbella, Puerto Banús"
+    },
+    {
+      "slug": "sunseeker-predator-72",
+      "name": "Sunseeker Predator 72",
+      "tagline": "Private Sunseeker Predator 72 charter · Puerto Banús, Marbella",
+      "model_year": 2018,
+      "builder": "Sunseeker",
+      "type": "Motor yacht",
+      "length_m": 22.1,
+      "capacity_pax": 11,
+      "departure_port": "Puerto Banús",
+      "tier": "tier_sunseeker_predator_72",
+      "summary": "The Sunseeker Predator 72 is a 22.1 m thoroughbred sport yacht  —  striking lines, blistering performance and a sunken beach-club stern. Four cabins, sprawling sun terraces and a glamorous cockpit make her a statement charter for up to 11 guests. Skippered, from Puerto Banús, Marbella.",
+      "highlights": [
+        "4 en-suite cabins for overnight charter",
+        "Sunken beach-club stern for swim-platform days",
+        "Flybridge with bar and sunbeds",
+        "Tender for beach-club drop-offs",
+        "Swim platform & ladder",
+        "Departs Puerto Banús with a licensed skipper, fuel & drinks included"
+      ],
+      "hero_local": "/img/boats/sunseeker-predator-72/hero-1600.jpg",
+      "hero_local_srcset": [
+        [
+          "/img/boats/sunseeker-predator-72/hero-600.jpg",
+          600
+        ],
+        [
+          "/img/boats/sunseeker-predator-72/hero-900.jpg",
+          900
+        ],
+        [
+          "/img/boats/sunseeker-predator-72/hero-1200.jpg",
+          1200
+        ],
+        [
+          "/img/boats/sunseeker-predator-72/hero-1600.jpg",
+          1600
+        ]
+      ],
+      "hero_local_alt": "Sunseeker Predator 72 motor yacht charter off Marbella, Puerto Banús",
+      "gallery_local": [
+        {
+          "src": "/img/boats/sunseeker-predator-72/g2-900.jpg",
+          "srcset": [
+            [
+              "/img/boats/sunseeker-predator-72/g2-600.jpg",
+              600
+            ],
+            [
+              "/img/boats/sunseeker-predator-72/g2-900.jpg",
+              900
+            ],
+            [
+              "/img/boats/sunseeker-predator-72/g2-1200.jpg",
+              1200
+            ]
+          ],
+          "alt": "Sunseeker Predator 72 — Marbella charter"
+        },
+        {
+          "src": "/img/boats/sunseeker-predator-72/g3-900.jpg",
+          "srcset": [
+            [
+              "/img/boats/sunseeker-predator-72/g3-600.jpg",
+              600
+            ],
+            [
+              "/img/boats/sunseeker-predator-72/g3-900.jpg",
+              900
+            ],
+            [
+              "/img/boats/sunseeker-predator-72/g3-1200.jpg",
+              1200
+            ]
+          ],
+          "alt": "Sunseeker Predator 72 — Marbella charter"
+        },
+        {
+          "src": "/img/boats/sunseeker-predator-72/g4-900.jpg",
+          "srcset": [
+            [
+              "/img/boats/sunseeker-predator-72/g4-600.jpg",
+              600
+            ],
+            [
+              "/img/boats/sunseeker-predator-72/g4-900.jpg",
+              900
+            ],
+            [
+              "/img/boats/sunseeker-predator-72/g4-1200.jpg",
+              1200
+            ]
+          ],
+          "alt": "Sunseeker Predator 72 — Marbella charter"
+        },
+        {
+          "src": "/img/boats/sunseeker-predator-72/g5-900.jpg",
+          "srcset": [
+            [
+              "/img/boats/sunseeker-predator-72/g5-600.jpg",
+              600
+            ],
+            [
+              "/img/boats/sunseeker-predator-72/g5-900.jpg",
+              900
+            ],
+            [
+              "/img/boats/sunseeker-predator-72/g5-1200.jpg",
+              1200
+            ]
+          ],
+          "alt": "Sunseeker Predator 72 — Marbella charter"
+        },
+        {
+          "src": "/img/boats/sunseeker-predator-72/g6-900.jpg",
+          "srcset": [
+            [
+              "/img/boats/sunseeker-predator-72/g6-600.jpg",
+              600
+            ],
+            [
+              "/img/boats/sunseeker-predator-72/g6-900.jpg",
+              900
+            ],
+            [
+              "/img/boats/sunseeker-predator-72/g6-1200.jpg",
+              1200
+            ]
+          ],
+          "alt": "Sunseeker Predator 72 — Marbella charter"
+        },
+        {
+          "src": "/img/boats/sunseeker-predator-72/g7-900.jpg",
+          "srcset": [
+            [
+              "/img/boats/sunseeker-predator-72/g7-600.jpg",
+              600
+            ],
+            [
+              "/img/boats/sunseeker-predator-72/g7-900.jpg",
+              900
+            ],
+            [
+              "/img/boats/sunseeker-predator-72/g7-1200.jpg",
+              1200
+            ]
+          ],
+          "alt": "Sunseeker Predator 72 — Marbella charter"
+        }
+      ]
+    },
+    {
+      "slug": "princess-f70",
+      "name": "Princess F70",
+      "tagline": "Private Princess F70 charter · Puerto Banús, Marbella",
+      "model_year": 2020,
+      "builder": "Princess",
+      "type": "Motor yacht",
+      "length_m": 21.8,
+      "capacity_pax": 12,
+      "departure_port": "Puerto Banús",
+      "tier": "tier_princess_f70",
+      "summary": "The Princess F70 is a 21.8 m flybridge flagship  —  a huge flybridge with bar and sunbeds, a full-beam owner's suite and four cabins for overnight comfort. The ultimate platform for celebrations, family days and multi-day cruising for up to 12 guests. Private skippered charters from Marbella.",
+      "highlights": [
+        "4 en-suite cabins for overnight charter",
+        "Flybridge with bar and sunbeds",
+        "Tender for beach-club drop-offs",
+        "Swim platform & ladder",
+        "Inflatable sea toys",
+        "Departs Puerto Banús with a licensed skipper, fuel & drinks included"
+      ],
+      "hero_local": "/img/boats/princess-f70/hero-1600.jpg",
+      "hero_local_srcset": [
+        [
+          "/img/boats/princess-f70/hero-600.jpg",
+          600
+        ],
+        [
+          "/img/boats/princess-f70/hero-900.jpg",
+          900
+        ],
+        [
+          "/img/boats/princess-f70/hero-1200.jpg",
+          1200
+        ],
+        [
+          "/img/boats/princess-f70/hero-1600.jpg",
+          1600
+        ]
+      ],
+      "hero_local_alt": "Princess F70 motor yacht charter off Marbella, Puerto Banús",
+      "gallery_local": [
+        {
+          "src": "/img/boats/princess-f70/g2-900.jpg",
+          "srcset": [
+            [
+              "/img/boats/princess-f70/g2-600.jpg",
+              600
+            ],
+            [
+              "/img/boats/princess-f70/g2-900.jpg",
+              900
+            ],
+            [
+              "/img/boats/princess-f70/g2-1200.jpg",
+              1200
+            ]
+          ],
+          "alt": "Princess F70 — Marbella charter"
+        },
+        {
+          "src": "/img/boats/princess-f70/g3-900.jpg",
+          "srcset": [
+            [
+              "/img/boats/princess-f70/g3-600.jpg",
+              600
+            ],
+            [
+              "/img/boats/princess-f70/g3-900.jpg",
+              900
+            ],
+            [
+              "/img/boats/princess-f70/g3-1200.jpg",
+              1200
+            ]
+          ],
+          "alt": "Princess F70 — Marbella charter"
+        },
+        {
+          "src": "/img/boats/princess-f70/g4-900.jpg",
+          "srcset": [
+            [
+              "/img/boats/princess-f70/g4-600.jpg",
+              600
+            ],
+            [
+              "/img/boats/princess-f70/g4-900.jpg",
+              900
+            ],
+            [
+              "/img/boats/princess-f70/g4-1200.jpg",
+              1200
+            ]
+          ],
+          "alt": "Princess F70 — Marbella charter"
+        }
+      ]
+    },
+    {
+      "slug": "sunseeker-68-sport",
+      "name": "Sunseeker 68 Sport",
+      "tagline": "Private Sunseeker 68 Sport charter · Puerto Banús, Marbella",
+      "model_year": 2019,
+      "builder": "Sunseeker",
+      "type": "Motor yacht",
+      "length_m": 21,
+      "capacity_pax": 12,
+      "departure_port": "Puerto Banús",
+      "tier": "tier_sunseeker_68_sport",
+      "summary": "The Sunseeker 68 Sport is a 21 m luxury sport yacht  —  commanding presence, a vast foredeck lounge and a beach-club swim platform. Three sumptuous cabins make her equally suited to a glamorous day charter or an overnight escape along the Costa del Sol. Skippered, up to 12 guests, from Puerto Banús.",
+      "highlights": [
+        "3 en-suite cabins for overnight charter",
+        "Flybridge with bar and sunbeds",
+        "Tender for beach-club drop-offs",
+        "Swim platform & ladder",
+        "Inflatable sea toys",
+        "Departs Puerto Banús with a licensed skipper, fuel & drinks included"
+      ],
+      "hero_local": "/img/boats/sunseeker-68-sport/hero-1600.jpg",
+      "hero_local_srcset": [
+        [
+          "/img/boats/sunseeker-68-sport/hero-600.jpg",
+          600
+        ],
+        [
+          "/img/boats/sunseeker-68-sport/hero-900.jpg",
+          900
+        ],
+        [
+          "/img/boats/sunseeker-68-sport/hero-1200.jpg",
+          1200
+        ],
+        [
+          "/img/boats/sunseeker-68-sport/hero-1600.jpg",
+          1600
+        ]
+      ],
+      "hero_local_alt": "Sunseeker 68 Sport motor yacht charter off Marbella, Puerto Banús",
+      "gallery_local": [
+        {
+          "src": "/img/boats/sunseeker-68-sport/g2-900.jpg",
+          "srcset": [
+            [
+              "/img/boats/sunseeker-68-sport/g2-600.jpg",
+              600
+            ],
+            [
+              "/img/boats/sunseeker-68-sport/g2-900.jpg",
+              900
+            ],
+            [
+              "/img/boats/sunseeker-68-sport/g2-1200.jpg",
+              1200
+            ]
+          ],
+          "alt": "Sunseeker 68 Sport — Marbella charter"
+        },
+        {
+          "src": "/img/boats/sunseeker-68-sport/g3-900.jpg",
+          "srcset": [
+            [
+              "/img/boats/sunseeker-68-sport/g3-600.jpg",
+              600
+            ],
+            [
+              "/img/boats/sunseeker-68-sport/g3-900.jpg",
+              900
+            ],
+            [
+              "/img/boats/sunseeker-68-sport/g3-1200.jpg",
+              1200
+            ]
+          ],
+          "alt": "Sunseeker 68 Sport — Marbella charter"
+        },
+        {
+          "src": "/img/boats/sunseeker-68-sport/g4-900.jpg",
+          "srcset": [
+            [
+              "/img/boats/sunseeker-68-sport/g4-600.jpg",
+              600
+            ],
+            [
+              "/img/boats/sunseeker-68-sport/g4-900.jpg",
+              900
+            ],
+            [
+              "/img/boats/sunseeker-68-sport/g4-1200.jpg",
+              1200
+            ]
+          ],
+          "alt": "Sunseeker 68 Sport — Marbella charter"
+        },
+        {
+          "src": "/img/boats/sunseeker-68-sport/g5-900.jpg",
+          "srcset": [
+            [
+              "/img/boats/sunseeker-68-sport/g5-600.jpg",
+              600
+            ],
+            [
+              "/img/boats/sunseeker-68-sport/g5-900.jpg",
+              900
+            ],
+            [
+              "/img/boats/sunseeker-68-sport/g5-1200.jpg",
+              1200
+            ]
+          ],
+          "alt": "Sunseeker 68 Sport — Marbella charter"
+        },
+        {
+          "src": "/img/boats/sunseeker-68-sport/g6-900.jpg",
+          "srcset": [
+            [
+              "/img/boats/sunseeker-68-sport/g6-600.jpg",
+              600
+            ],
+            [
+              "/img/boats/sunseeker-68-sport/g6-900.jpg",
+              900
+            ],
+            [
+              "/img/boats/sunseeker-68-sport/g6-1200.jpg",
+              1200
+            ]
+          ],
+          "alt": "Sunseeker 68 Sport — Marbella charter"
+        },
+        {
+          "src": "/img/boats/sunseeker-68-sport/g7-900.jpg",
+          "srcset": [
+            [
+              "/img/boats/sunseeker-68-sport/g7-600.jpg",
+              600
+            ],
+            [
+              "/img/boats/sunseeker-68-sport/g7-900.jpg",
+              900
+            ],
+            [
+              "/img/boats/sunseeker-68-sport/g7-1200.jpg",
+              1200
+            ]
+          ],
+          "alt": "Sunseeker 68 Sport — Marbella charter"
+        }
+      ]
+    },
+    {
+      "slug": "sunseeker-63",
+      "name": "Sunseeker 63",
+      "tagline": "Private Sunseeker 63 charter · Puerto Banús, Marbella",
+      "model_year": 2018,
+      "builder": "Sunseeker",
+      "type": "Motor yacht",
+      "length_m": 19,
+      "capacity_pax": 10,
+      "departure_port": "Puerto Banús",
+      "tier": "tier_sunseeker_63",
+      "summary": "The Sunseeker 63 is a 19 m flagship-feel sport yacht with sleek Sunseeker DNA  —  expansive sun terraces, a generous cockpit and three luxurious cabins. Built for show-stopping days on the water, swim breaks in hidden coves and golden-hour cruising for up to 10 guests. Private skippered charters from Marbella.",
+      "highlights": [
+        "3 en-suite cabins for overnight charter",
+        "Flybridge with bar and sunbeds",
+        "Tender for beach-club drop-offs",
+        "Swim platform & ladder",
+        "Inflatable sea toys",
+        "Departs Puerto Banús with a licensed skipper, fuel & drinks included"
+      ],
+      "hero_local": "/img/boats/sunseeker-63/hero-1600.jpg",
+      "hero_local_srcset": [
+        [
+          "/img/boats/sunseeker-63/hero-600.jpg",
+          600
+        ],
+        [
+          "/img/boats/sunseeker-63/hero-900.jpg",
+          900
+        ],
+        [
+          "/img/boats/sunseeker-63/hero-1200.jpg",
+          1200
+        ],
+        [
+          "/img/boats/sunseeker-63/hero-1600.jpg",
+          1600
+        ]
+      ],
+      "hero_local_alt": "Sunseeker 63 motor yacht charter off Marbella, Puerto Banús",
+      "gallery_local": [
+        {
+          "src": "/img/boats/sunseeker-63/g2-900.jpg",
+          "srcset": [
+            [
+              "/img/boats/sunseeker-63/g2-600.jpg",
+              600
+            ],
+            [
+              "/img/boats/sunseeker-63/g2-900.jpg",
+              900
+            ],
+            [
+              "/img/boats/sunseeker-63/g2-1200.jpg",
+              1200
+            ]
+          ],
+          "alt": "Sunseeker 63 — Marbella charter"
+        },
+        {
+          "src": "/img/boats/sunseeker-63/g3-900.jpg",
+          "srcset": [
+            [
+              "/img/boats/sunseeker-63/g3-600.jpg",
+              600
+            ],
+            [
+              "/img/boats/sunseeker-63/g3-900.jpg",
+              900
+            ],
+            [
+              "/img/boats/sunseeker-63/g3-1200.jpg",
+              1200
+            ]
+          ],
+          "alt": "Sunseeker 63 — Marbella charter"
+        }
+      ]
+    },
+    {
+      "slug": "princess-v58",
+      "name": "Princess V58",
+      "tagline": "Private Princess V58 charter · Puerto Banús, Marbella",
+      "model_year": 2017,
+      "builder": "Princess",
+      "type": "Motor yacht",
+      "length_m": 18.2,
+      "capacity_pax": 12,
+      "departure_port": "Puerto Banús",
+      "tier": "tier_princess_v58",
+      "summary": "The Princess V58 is an 18.2 m British sports yacht blending performance with refined comfort  —  sweeping sunpads, a spacious cockpit and three elegant cabins below. Perfect for high-style day charters, swim stops and sundowner cruises for up to 12 guests. Skippered, from Marbella / Puerto Banús.",
+      "highlights": [
+        "3 en-suite cabins for overnight charter",
+        "Swim platform & ladder",
+        "Inflatable sea toys",
+        "Paddleboard (SUP)",
+        "Bluetooth sound system",
+        "Departs Puerto Banús with a licensed skipper, fuel & drinks included"
+      ],
+      "hero_local": "/img/boats/princess-v58/hero-1600.jpg",
+      "hero_local_srcset": [
+        [
+          "/img/boats/princess-v58/hero-600.jpg",
+          600
+        ],
+        [
+          "/img/boats/princess-v58/hero-900.jpg",
+          900
+        ],
+        [
+          "/img/boats/princess-v58/hero-1200.jpg",
+          1200
+        ],
+        [
+          "/img/boats/princess-v58/hero-1600.jpg",
+          1600
+        ]
+      ],
+      "hero_local_alt": "Princess V58 motor yacht charter off Marbella, Puerto Banús",
+      "gallery_local": [
+        {
+          "src": "/img/boats/princess-v58/g2-900.jpg",
+          "srcset": [
+            [
+              "/img/boats/princess-v58/g2-600.jpg",
+              600
+            ],
+            [
+              "/img/boats/princess-v58/g2-900.jpg",
+              900
+            ],
+            [
+              "/img/boats/princess-v58/g2-1200.jpg",
+              1200
+            ]
+          ],
+          "alt": "Princess V58 — Marbella charter"
+        },
+        {
+          "src": "/img/boats/princess-v58/g3-900.jpg",
+          "srcset": [
+            [
+              "/img/boats/princess-v58/g3-600.jpg",
+              600
+            ],
+            [
+              "/img/boats/princess-v58/g3-900.jpg",
+              900
+            ],
+            [
+              "/img/boats/princess-v58/g3-1200.jpg",
+              1200
+            ]
+          ],
+          "alt": "Princess V58 — Marbella charter"
+        },
+        {
+          "src": "/img/boats/princess-v58/g4-900.jpg",
+          "srcset": [
+            [
+              "/img/boats/princess-v58/g4-600.jpg",
+              600
+            ],
+            [
+              "/img/boats/princess-v58/g4-900.jpg",
+              900
+            ],
+            [
+              "/img/boats/princess-v58/g4-1200.jpg",
+              1200
+            ]
+          ],
+          "alt": "Princess V58 — Marbella charter"
+        },
+        {
+          "src": "/img/boats/princess-v58/g5-900.jpg",
+          "srcset": [
+            [
+              "/img/boats/princess-v58/g5-600.jpg",
+              600
+            ],
+            [
+              "/img/boats/princess-v58/g5-900.jpg",
+              900
+            ],
+            [
+              "/img/boats/princess-v58/g5-1200.jpg",
+              1200
+            ]
+          ],
+          "alt": "Princess V58 — Marbella charter"
+        },
+        {
+          "src": "/img/boats/princess-v58/g6-900.jpg",
+          "srcset": [
+            [
+              "/img/boats/princess-v58/g6-600.jpg",
+              600
+            ],
+            [
+              "/img/boats/princess-v58/g6-900.jpg",
+              900
+            ],
+            [
+              "/img/boats/princess-v58/g6-1200.jpg",
+              1200
+            ]
+          ],
+          "alt": "Princess V58 — Marbella charter"
+        },
+        {
+          "src": "/img/boats/princess-v58/g7-900.jpg",
+          "srcset": [
+            [
+              "/img/boats/princess-v58/g7-600.jpg",
+              600
+            ],
+            [
+              "/img/boats/princess-v58/g7-900.jpg",
+              900
+            ],
+            [
+              "/img/boats/princess-v58/g7-1200.jpg",
+              1200
+            ]
+          ],
+          "alt": "Princess V58 — Marbella charter"
+        }
+      ]
+    },
+    {
+      "slug": "sunseeker-predator-58",
+      "name": "Sunseeker Predator 58",
+      "tagline": "Private Sunseeker Predator 58 charter · Puerto Banús, Marbella",
+      "model_year": 2018,
+      "builder": "Sunseeker",
+      "type": "Motor yacht",
+      "length_m": 17.6,
+      "capacity_pax": 11,
+      "departure_port": "Puerto Banús",
+      "tier": "tier_sunseeker_predator_58",
+      "summary": "The Sunseeker Predator 58 is a 17.6 m British performance sport yacht  —  low, muscular lines, a retractable hardtop and serious pace. Big sunpads, a social cockpit and a swim platform make her a favourite for fast coastal runs and glamorous days at anchor for up to 11 guests. Skippered private charters from Puerto Banús. Based in Puerto Banús, Marbella, with a licensed skipper on every charter.",
+      "highlights": [
+        "3 en-suite cabins for overnight charter",
+        "Swim platform & ladder",
+        "Paddleboard (SUP)",
+        "Bluetooth sound system",
+        "Air conditioning",
+        "Departs Puerto Banús with a licensed skipper, fuel & drinks included"
+      ],
+      "hero_local": "/img/boats/sunseeker-predator-58/hero-1600.jpg",
+      "hero_local_srcset": [
+        [
+          "/img/boats/sunseeker-predator-58/hero-600.jpg",
+          600
+        ],
+        [
+          "/img/boats/sunseeker-predator-58/hero-900.jpg",
+          900
+        ],
+        [
+          "/img/boats/sunseeker-predator-58/hero-1200.jpg",
+          1200
+        ],
+        [
+          "/img/boats/sunseeker-predator-58/hero-1600.jpg",
+          1600
+        ]
+      ],
+      "hero_local_alt": "Sunseeker Predator 58 motor yacht charter off Marbella, Puerto Banús"
+    },
+    {
+      "slug": "prestige-500",
+      "name": "Prestige 500",
+      "tagline": "Private Prestige 500 charter · Puerto Banús, Marbella",
+      "model_year": 2018,
+      "builder": "Prestige",
+      "type": "Motor yacht",
+      "length_m": 16,
+      "capacity_pax": 12,
+      "departure_port": "Puerto Banús",
+      "tier": "tier_prestige_500",
+      "summary": "The Prestige 500 is a 16 m flybridge motor yacht designed around space and light  —  a vast flybridge, full-beam owner's cabin and an easy indoor-outdoor flow. Perfect for relaxed family days, celebrations and sunset cruises for up to 12 guests. Private skippered charters from Marbella, fuel and captain included.",
+      "highlights": [
+        "3 en-suite cabins for overnight charter",
+        "Flybridge with bar and sunbeds",
+        "Tender for beach-club drop-offs",
+        "Swim platform & ladder",
+        "Paddleboard (SUP)",
+        "Bluetooth sound system"
+      ],
+      "hero_local": "/img/boats/prestige-500/hero-1600.jpg",
+      "hero_local_srcset": [
+        [
+          "/img/boats/prestige-500/hero-600.jpg",
+          600
+        ],
+        [
+          "/img/boats/prestige-500/hero-900.jpg",
+          900
+        ],
+        [
+          "/img/boats/prestige-500/hero-1200.jpg",
+          1200
+        ],
+        [
+          "/img/boats/prestige-500/hero-1600.jpg",
+          1600
+        ]
+      ],
+      "hero_local_alt": "Prestige 500 motor yacht charter off Marbella, Puerto Banús",
+      "gallery_local": [
+        {
+          "src": "/img/boats/prestige-500/g2-900.jpg",
+          "srcset": [
+            [
+              "/img/boats/prestige-500/g2-600.jpg",
+              600
+            ],
+            [
+              "/img/boats/prestige-500/g2-900.jpg",
+              900
+            ],
+            [
+              "/img/boats/prestige-500/g2-1200.jpg",
+              1200
+            ]
+          ],
+          "alt": "Prestige 500 — Marbella charter"
+        },
+        {
+          "src": "/img/boats/prestige-500/g3-900.jpg",
+          "srcset": [
+            [
+              "/img/boats/prestige-500/g3-600.jpg",
+              600
+            ],
+            [
+              "/img/boats/prestige-500/g3-900.jpg",
+              900
+            ],
+            [
+              "/img/boats/prestige-500/g3-1200.jpg",
+              1200
+            ]
+          ],
+          "alt": "Prestige 500 — Marbella charter"
+        },
+        {
+          "src": "/img/boats/prestige-500/g4-900.jpg",
+          "srcset": [
+            [
+              "/img/boats/prestige-500/g4-600.jpg",
+              600
+            ],
+            [
+              "/img/boats/prestige-500/g4-900.jpg",
+              900
+            ],
+            [
+              "/img/boats/prestige-500/g4-1200.jpg",
+              1200
+            ]
+          ],
+          "alt": "Prestige 500 — Marbella charter"
+        },
+        {
+          "src": "/img/boats/prestige-500/g5-900.jpg",
+          "srcset": [
+            [
+              "/img/boats/prestige-500/g5-600.jpg",
+              600
+            ],
+            [
+              "/img/boats/prestige-500/g5-900.jpg",
+              900
+            ],
+            [
+              "/img/boats/prestige-500/g5-1200.jpg",
+              1200
+            ]
+          ],
+          "alt": "Prestige 500 — Marbella charter"
+        },
+        {
+          "src": "/img/boats/prestige-500/g6-900.jpg",
+          "srcset": [
+            [
+              "/img/boats/prestige-500/g6-600.jpg",
+              600
+            ],
+            [
+              "/img/boats/prestige-500/g6-900.jpg",
+              900
+            ],
+            [
+              "/img/boats/prestige-500/g6-1200.jpg",
+              1200
+            ]
+          ],
+          "alt": "Prestige 500 — Marbella charter"
+        },
+        {
+          "src": "/img/boats/prestige-500/g7-900.jpg",
+          "srcset": [
+            [
+              "/img/boats/prestige-500/g7-600.jpg",
+              600
+            ],
+            [
+              "/img/boats/prestige-500/g7-900.jpg",
+              900
+            ],
+            [
+              "/img/boats/prestige-500/g7-1200.jpg",
+              1200
+            ]
+          ],
+          "alt": "Prestige 500 — Marbella charter"
+        }
+      ]
+    },
+    {
+      "slug": "fairline-targa-43",
+      "name": "Fairline Targa 43",
+      "tagline": "Private Fairline Targa 43 charter · Puerto Banús, Marbella",
+      "model_year": 2019,
+      "builder": "Fairline",
+      "type": "Motor yacht",
+      "length_m": 14.4,
+      "capacity_pax": 11,
+      "departure_port": "Puerto Banús",
+      "tier": "tier_fairline_targa_43",
+      "summary": "Charter the Fairline Targa 43  —  a sleek 14.4 m British sports cruiser built for fast, stylish days on the Costa del Sol. A huge sun-soaked cockpit, bathing platform and sociable layout host up to 11 guests for coastal cruising, swim stops and sundowners. Skippered private day charters from Puerto Banús, Marbella  —  fuel and captain included.",
+      "highlights": [
+        "2 en-suite cabins for overnight charter",
+        "Swim platform & ladder",
+        "Paddleboard (SUP)",
+        "Bluetooth sound system",
+        "Air conditioning",
+        "Sun pads"
+      ],
+      "hero_local": "/img/boats/fairline-targa-43/hero-1600.jpg",
+      "hero_local_srcset": [
+        [
+          "/img/boats/fairline-targa-43/hero-600.jpg",
+          600
+        ],
+        [
+          "/img/boats/fairline-targa-43/hero-900.jpg",
+          900
+        ],
+        [
+          "/img/boats/fairline-targa-43/hero-1200.jpg",
+          1200
+        ],
+        [
+          "/img/boats/fairline-targa-43/hero-1600.jpg",
+          1600
+        ]
+      ],
+      "hero_local_alt": "Fairline Targa 43 motor yacht charter off Marbella, Puerto Banús",
+      "gallery_local": [
+        {
+          "src": "/img/boats/fairline-targa-43/g2-900.jpg",
+          "srcset": [
+            [
+              "/img/boats/fairline-targa-43/g2-600.jpg",
+              600
+            ],
+            [
+              "/img/boats/fairline-targa-43/g2-900.jpg",
+              900
+            ],
+            [
+              "/img/boats/fairline-targa-43/g2-1200.jpg",
+              1200
+            ]
+          ],
+          "alt": "Fairline Targa 43 — Marbella charter"
+        },
+        {
+          "src": "/img/boats/fairline-targa-43/g3-900.jpg",
+          "srcset": [
+            [
+              "/img/boats/fairline-targa-43/g3-600.jpg",
+              600
+            ],
+            [
+              "/img/boats/fairline-targa-43/g3-900.jpg",
+              900
+            ],
+            [
+              "/img/boats/fairline-targa-43/g3-1200.jpg",
+              1200
+            ]
+          ],
+          "alt": "Fairline Targa 43 — Marbella charter"
+        },
+        {
+          "src": "/img/boats/fairline-targa-43/g4-900.jpg",
+          "srcset": [
+            [
+              "/img/boats/fairline-targa-43/g4-600.jpg",
+              600
+            ],
+            [
+              "/img/boats/fairline-targa-43/g4-900.jpg",
+              900
+            ],
+            [
+              "/img/boats/fairline-targa-43/g4-1200.jpg",
+              1200
+            ]
+          ],
+          "alt": "Fairline Targa 43 — Marbella charter"
+        },
+        {
+          "src": "/img/boats/fairline-targa-43/g5-900.jpg",
+          "srcset": [
+            [
+              "/img/boats/fairline-targa-43/g5-600.jpg",
+              600
+            ],
+            [
+              "/img/boats/fairline-targa-43/g5-900.jpg",
+              900
+            ],
+            [
+              "/img/boats/fairline-targa-43/g5-1200.jpg",
+              1200
+            ]
+          ],
+          "alt": "Fairline Targa 43 — Marbella charter"
+        }
+      ]
+    },
+    {
+      "slug": "sea-doo-gtx-jet-ski",
+      "name": "Sea-Doo GTX Jet Ski",
+      "tagline": "Sea-Doo GTX & GTI jet skis — self-drive from Puerto Banús, no licence needed",
+      "model_year": 2023,
+      "builder": "Sea-Doo (BRP)",
+      "type": "Jet ski",
+      "length_m": 3.4,
+      "capacity_pax": 3,
+      "departure_port": "Puerto Banús",
+      "tier": "tier_sea_doo_gtx_jet_ski",
+      "summary": "Sea-Doo GTX and GTI jet skis for rent in Marbella, launching from Puerto Banús. Self-drive the Marbella coast on powerful 3-seater Sea-Doos  —  life jackets and a safety briefing included. No licence required under Spanish licence-free rules. €250 for 1 hour, €450 for 2 hours, then €200 each additional hour.",
+      "highlights": [
+        "Departs Puerto Banús with a licensed skipper, fuel & drinks included"
+      ],
+      "hero_local": "/img/boats/sea-doo-gtx-jet-ski/hero-1600.jpg",
+      "hero_local_srcset": [
+        [
+          "/img/boats/sea-doo-gtx-jet-ski/hero-600.jpg",
+          600
+        ],
+        [
+          "/img/boats/sea-doo-gtx-jet-ski/hero-900.jpg",
+          900
+        ],
+        [
+          "/img/boats/sea-doo-gtx-jet-ski/hero-1200.jpg",
+          1200
+        ],
+        [
+          "/img/boats/sea-doo-gtx-jet-ski/hero-1600.jpg",
+          1600
+        ]
+      ],
+      "hero_local_alt": "Sea-Doo GTX Jet Ski jet ski charter off Marbella, Puerto Banús",
+      "gallery_local": [
+        {
+          "src": "/img/boats/sea-doo-gtx-jet-ski/g2-900.jpg",
+          "srcset": [
+            [
+              "/img/boats/sea-doo-gtx-jet-ski/g2-600.jpg",
+              600
+            ],
+            [
+              "/img/boats/sea-doo-gtx-jet-ski/g2-900.jpg",
+              900
+            ],
+            [
+              "/img/boats/sea-doo-gtx-jet-ski/g2-1200.jpg",
+              1200
+            ]
+          ],
+          "alt": "Sea-Doo GTX Jet Ski — Marbella charter"
+        },
+        {
+          "src": "/img/boats/sea-doo-gtx-jet-ski/g3-900.jpg",
+          "srcset": [
+            [
+              "/img/boats/sea-doo-gtx-jet-ski/g3-600.jpg",
+              600
+            ],
+            [
+              "/img/boats/sea-doo-gtx-jet-ski/g3-900.jpg",
+              900
+            ],
+            [
+              "/img/boats/sea-doo-gtx-jet-ski/g3-1200.jpg",
+              1200
+            ]
+          ],
+          "alt": "Sea-Doo GTX Jet Ski — Marbella charter"
+        },
+        {
+          "src": "/img/boats/sea-doo-gtx-jet-ski/g4-900.jpg",
+          "srcset": [
+            [
+              "/img/boats/sea-doo-gtx-jet-ski/g4-600.jpg",
+              600
+            ],
+            [
+              "/img/boats/sea-doo-gtx-jet-ski/g4-900.jpg",
+              900
+            ],
+            [
+              "/img/boats/sea-doo-gtx-jet-ski/g4-1200.jpg",
+              1200
+            ]
+          ],
+          "alt": "Sea-Doo GTX Jet Ski — Marbella charter"
+        }
       ]
     }
   ]

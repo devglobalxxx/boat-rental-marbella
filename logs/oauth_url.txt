@@ -1,0 +1,2 @@
+CONSENT_URL=https://accounts.google.com/o/oauth2/auth?response_type=code&client_id=316696231573-8u54qe9qmgl4l8pu6km6acqrrq7m9cpf.apps.googleusercontent.com&redirect_uri=http%3A%2F%2Flocalhost%3A8723%2F&scope=https%3A%2F%2Fwww.googleapis.com%2Fauth%2Fblogger&state=fNq0bGmZgvZhJRW2btShrhUOAL32fP&code_challenge=vanGJXof34-SCdnGAFbNnyly6PYAFr1NsCCy6Y31X8M&code_challenge_method=S256&prompt=consent&access_type=offline
+TOKEN SAVED to /Users/master/.blogger_marbella_api_token.json

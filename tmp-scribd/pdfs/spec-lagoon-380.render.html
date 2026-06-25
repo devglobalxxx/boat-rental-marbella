@@ -1,0 +1,493 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<title>The Lagoon 380</title>
+<style>
+:root {
+  --navy:      #0e2438;
+  --navy-deep: #08182a;
+  --gold:      #b9924b;
+  --gold-dark: #8a6c33;
+  --gold-light:#d4b06a;
+  --gold-pale: #e8d8af;
+  --ivory:     #f7f2e6;
+  --paper:     #fdfbf5;
+  --ink:       #22303e;
+  --muted:     #5d6a76;
+  --hairline:  #d9cdaf;
+  --row-tint:  #f5efdf;
+}
+* { -webkit-print-color-adjust: exact; print-color-adjust: exact;
+    box-sizing: border-box; }
+@page { size: A4; margin: 0; }
+html, body { margin: 0; padding: 0; }
+body {
+  background: var(--paper);
+  color: var(--ink);
+  font-family: Georgia, 'Palatino Linotype', Palatino, 'Times New Roman', serif;
+  font-size: 10.5pt;
+  line-height: 1.62;
+}
+.display { font-family: Didot, 'Didot LT STD', 'Playfair Display', Georgia,
+           'Times New Roman', serif; }
+.caps { font-family: Optima, 'Avenir Next', 'Gill Sans', 'Trebuchet MS',
+        sans-serif; text-transform: uppercase; }
+
+/* ---------------- Cover ---------------- */
+.cover {
+  position: relative;
+  width: 210mm; height: 297mm;
+  overflow: hidden;
+  background: var(--navy-deep);
+  page-break-after: always;
+}
+.cover-img {
+  position: absolute; inset: 0;
+  width: 100%; height: 100%;
+  object-fit: cover;
+  object-position: 24% center;  /* centres the yacht's full profile in the A4 crop */
+}
+.cover-veil {
+  position: absolute; inset: 0;
+  background:
+    linear-gradient(to top, rgba(11,26,46,0.92),
+                    rgba(11,26,46,0.86) 30%, transparent 55%),
+    linear-gradient(180deg,
+      rgba(8,24,42,0.62) 0%,
+      rgba(8,24,42,0.20) 26%,
+      rgba(8,24,42,0.12) 50%,
+      rgba(8,24,42,0.00) 62%);
+}
+.cover-veil.no-img {
+  background:
+    radial-gradient(120mm 90mm at 50% 26%, rgba(185,146,75,0.20), transparent 70%),
+    linear-gradient(180deg, #122c46 0%, #0a1d33 55%, #071426 100%);
+}
+.cover-top {
+  position: absolute; top: 13mm; left: 16mm; right: 16mm;
+  display: flex; align-items: center; justify-content: space-between;
+}
+.brand-lockup { display: flex; align-items: center; gap: 4.5mm; }
+.logo-chip {
+  background: #ffffff;
+  border: 1px solid var(--gold);
+  border-radius: 1.2mm;
+  padding: 2mm;
+  line-height: 0;
+}
+.logo-chip img { display: block; height: 13mm; width: 13mm;
+                 object-fit: cover; border-radius: 0.7mm; }
+.brand-name {
+  color: var(--ivory); font-size: 13pt; letter-spacing: 0.30em;
+  line-height: 1.25;
+}
+.brand-tag {
+  color: var(--gold-pale); font-size: 6.4pt; letter-spacing: 0.26em;
+  margin-top: 1mm;
+}
+.doc-type-flag {
+  text-align: right;
+  color: var(--gold-light);
+  font-size: 7.5pt; letter-spacing: 0.34em;
+  border-top: 0.7pt solid var(--gold);
+  border-bottom: 0.7pt solid var(--gold);
+  padding: 2.2mm 0 2mm 0;
+}
+.cover-main {
+  position: absolute; left: 16mm; right: 16mm; bottom: 34mm;
+}
+.cover-rule {
+  display: flex; align-items: center; gap: 4mm;
+  margin-bottom: 5mm;
+}
+.cover-rule .line { flex: 0 0 22mm; height: 0; border-top: 0.8pt solid var(--gold); }
+.cover-rule .word {
+  color: var(--gold-light); font-size: 8pt; letter-spacing: 0.42em;
+  white-space: nowrap;
+  text-shadow: 0 1px 5px rgba(5,14,26,0.65);
+}
+.cover-title {
+  color: #fdfaf2;
+  font-size: 44pt; line-height: 1.05;
+  font-weight: 600;
+  margin: 0 0 4mm 0;
+  text-shadow: 0 1px 8px rgba(5,14,26,0.55);
+}
+.cover-subtitle {
+  color: var(--gold-pale);
+  font-style: italic;
+  font-size: 13pt; line-height: 1.45;
+  margin: 0 0 7mm 0;
+  max-width: 150mm;
+  text-shadow: 0 1px 6px rgba(5,14,26,0.6);
+}
+.cover-meta {
+  color: rgba(247,242,230,0.92);
+  font-size: 7.6pt; letter-spacing: 0.22em;
+}
+.cover-meta .dot { color: var(--gold-light); padding: 0 2.2mm; }
+.fleet-strip {
+  margin-top: 8mm;
+  display: flex; align-items: center; gap: 4mm;
+}
+.fleet-strip .logo-chip img { height: 9mm; width: auto; }
+.fleet-label {
+  color: rgba(247,242,230,0.85); font-size: 6.6pt; letter-spacing: 0.30em;
+}
+
+/* ------------- Repeating footer ------------- */
+.runfoot {
+  position: fixed; left: 0; right: 0; bottom: 0;
+  height: 12mm;
+  background: var(--ivory);
+  border-top: 1pt solid var(--gold);
+  display: flex; align-items: center; justify-content: space-between;
+  padding: 0 16mm;
+  font-size: 6.8pt; letter-spacing: 0.12em;
+  color: var(--navy);
+}
+.runfoot b { letter-spacing: 0.22em; font-weight: 600; }
+.runfoot .gold { color: var(--gold-dark); }
+.runfoot a { color: var(--navy); text-decoration: none; }
+
+/* ------------- Paged content scaffold ------------- */
+table.paged { width: 100%; border-collapse: collapse; }
+table.paged > thead td { height: 15mm; padding: 0; }
+table.paged > tfoot td { height: 17mm; padding: 0; }
+table.paged > tbody > tr > td { padding: 0 18mm; }
+
+/* ------------- Sections ------------- */
+.sec { margin: 0 0 8mm 0; }
+.sec-head {
+  break-after: avoid-page; page-break-after: avoid;
+  break-inside: avoid; page-break-inside: avoid;
+  margin: 0 0 4.5mm 0;
+}
+.sec-kicker {
+  color: var(--gold-dark); font-size: 7pt; letter-spacing: 0.38em;
+  margin-bottom: 1.6mm;
+}
+.sec-head h2 {
+  color: var(--navy);
+  font-size: 18.5pt; font-weight: 400; line-height: 1.2;
+  margin: 0 0 2.6mm 0;
+}
+.sec-head .rules { position: relative; height: 2.4mm; }
+.sec-head .rules .thin {
+  position: absolute; left: 0; right: 0; top: 1mm;
+  border-top: 0.6pt solid var(--hairline);
+}
+.sec-head .rules .thick {
+  position: absolute; left: 0; top: 0; width: 26mm;
+  border-top: 2.2pt solid var(--gold);
+}
+.sec-body p { margin: 0 0 3.4mm 0; }
+.sec-body p:last-child { margin-bottom: 0; }
+.sec-body ol { margin: 0 0 3.4mm 0; padding-left: 5.5mm; }
+.sec-body ul { margin: 0 0 3.4mm 0; padding-left: 1mm; }
+.sec-body li { margin-bottom: 1.6mm; break-inside: avoid; page-break-inside: avoid;
+               -webkit-column-break-inside: avoid; }
+.sec-body ul.cols2 { columns: 2; column-gap: 9mm;
+                     break-inside: avoid; page-break-inside: avoid; }
+.sec-body ul > li {
+  list-style: none;
+  padding-left: 1.1em; text-indent: -1.1em;  /* hanging indent: wraps align under text */
+}
+.sec-body ul > li::before {
+  content: "\2726";            /* four-pointed star, brass compass point */
+  display: inline-block; width: 1.44em; text-indent: 0;
+  color: var(--gold); font-size: 8pt;       /* 1.44em @8pt == 1.1em @10.5pt */
+}
+.sec-body a { color: var(--navy); text-decoration: none;
+              border-bottom: 0.6pt solid var(--gold); }
+.sec-body strong { color: var(--navy); }
+
+/* generic tables inside section html */
+.sec-body table {
+  width: 100%; border-collapse: collapse;
+  margin: 1mm 0 4mm 0;
+  break-inside: avoid; page-break-inside: avoid;
+  font-size: 9.8pt;
+}
+.sec-body th {
+  background: var(--navy); color: var(--ivory);
+  font-family: Optima, 'Avenir Next', 'Gill Sans', 'Trebuchet MS', sans-serif;
+  text-transform: uppercase; letter-spacing: 0.16em;
+  font-size: 7.4pt; font-weight: 500;
+  text-align: left; padding: 2.6mm 3.5mm;
+  border-bottom: 1.4pt solid var(--gold);
+}
+.sec-body td {
+  padding: 2.2mm 3.5mm;
+  border-bottom: 0.6pt solid var(--hairline);
+  color: var(--ink);
+}
+.sec-body td, .sec-body th { font-variant-numeric: tabular-nums; }
+.sec-body td:not(:first-child),
+.sec-body th:not(:first-child) { text-align: right; }
+.sec-body tr:nth-child(even) td { background: var(--row-tint); }
+.sec-body td:first-child { color: var(--navy); }
+.sec-body tr.best td { background: rgba(212,175,55,0.12); }
+.sec-body tr.best td:first-child { color: var(--navy); font-weight: 600; }
+.best-tag {
+  display: inline-block;
+  font-family: Optima, 'Avenir Next', 'Gill Sans', 'Trebuchet MS', sans-serif;
+  font-variant-caps: small-caps; text-transform: lowercase;
+  font-size: 7.6pt; font-weight: 600; letter-spacing: 0.14em;
+  color: var(--gold-dark);
+  border: 0.6pt solid var(--gold);
+  border-radius: 1mm;
+  padding: 0.2mm 1.6mm;
+  margin-left: 2.2mm;
+  white-space: nowrap;
+  vertical-align: 0.2mm;
+}
+
+/* ------------- Figures ------------- */
+figure.plate {
+  break-inside: avoid; page-break-inside: avoid;
+  margin: 5mm 0 2mm 0;
+  background: #ffffff;
+  border: 0.7pt solid var(--gold-light);
+  padding: 2.6mm;
+}
+figure.plate img {
+  display: block; width: 100%; height: 78mm; object-fit: cover;
+}
+figure.plate figcaption {
+  text-align: center;
+  font-style: italic;
+  font-size: 8.4pt; color: var(--muted);
+  padding: 2.4mm 2mm 0.6mm 2mm;
+}
+figure.plate figcaption::before {
+  content: "\25C6\00a0"; color: var(--gold); font-size: 6pt;
+}
+
+/* ------------- Spec table (2-column grid: two lbl/val pairs per row) ------------- */
+.spec-block { margin: 0 0 8mm 0; }
+table.spec {
+  width: 100%; border-collapse: collapse;
+  border-top: 1.6pt solid var(--navy);
+  border-bottom: 1.6pt solid var(--navy);
+}
+table.spec td { padding: 1.7mm 1.5mm; border-bottom: 0.6pt solid var(--hairline);
+                vertical-align: top; }
+table.spec tr:last-child td { border-bottom: none; }
+table.spec td.lbl {
+  width: 21%;
+  font-family: Optima, 'Avenir Next', 'Gill Sans', 'Trebuchet MS', sans-serif;
+  text-transform: uppercase; letter-spacing: 0.16em;
+  font-size: 7.2pt; color: var(--gold-dark);
+  padding-top: 2.3mm;
+}
+table.spec td.val { width: 29%; color: var(--navy); font-size: 9.8pt; }
+table.spec td.lbl:nth-child(3) {
+  border-left: 0.6pt solid var(--hairline);
+  padding-left: 4mm;
+}
+table.spec td.val:nth-child(2) { padding-right: 4mm; }
+
+/* ------------- Callout ------------- */
+.callout {
+  break-inside: avoid; page-break-inside: avoid;
+  margin: 8mm 0 4mm 0;
+  background: var(--navy);
+  border: 1pt solid var(--gold);
+  outline: 0.6pt solid var(--gold);
+  outline-offset: -2.2mm;
+  color: var(--ivory);
+  padding: 8mm 9mm 7mm 9mm;
+}
+.callout h3 {
+  color: var(--gold-light);
+  font-size: 15pt; font-weight: 400;
+  margin: 0 0 3mm 0;
+}
+.callout p { margin: 0 0 2.8mm 0; line-height: 1.6; color: #efe7d3; }
+.callout a { color: var(--gold-light); text-decoration: none; }
+.callout ul { margin: 0 0 2.8mm 0; padding-left: 1mm; }
+.callout ul > li { list-style: none; margin-bottom: 1.4mm;
+                   padding-left: 1.1em; text-indent: -1.1em;
+                   break-inside: avoid; page-break-inside: avoid; }
+.callout ul > li::before {
+  content: "\2726"; display: inline-block; width: 1.44em; text-indent: 0;
+  color: var(--gold-light); font-size: 8pt;
+}
+.callout .linksrow {
+  margin-top: 4.5mm; padding-top: 3.6mm;
+  border-top: 0.6pt solid rgba(212,176,106,0.55);
+  font-size: 7.6pt; letter-spacing: 0.16em;
+  color: var(--gold-pale);
+}
+.callout .linksrow span.sep { padding: 0 2.6mm; color: var(--gold); }
+
+.endmark {
+  display: flex; align-items: center; justify-content: center; gap: 3.5mm;
+  margin: 7mm 0 0 0;
+}
+.endmark .line { width: 14mm; height: 0; border-top: 0.6pt solid var(--gold); }
+.endmark svg { display: block; }
+</style>
+</head>
+<body>
+
+<div class="cover">
+  <img class="cover-img" src="file:///Users/master/boat-rental-marbella/site/img/boats/lagoon-380/hero-1600.jpg" alt="">
+  <div class="cover-veil"></div>
+  <div class="cover-top">
+    <div class="brand-lockup">
+      <span class="logo-chip"><img src="file:///Users/master/boat-rental-platform/public/brand-logo.jpg" alt="BoatHire24"></span>
+      <div>
+        <div class="brand-name caps display">BoatHire24</div>
+        <div class="brand-tag caps">Rent boats worldwide <span class="gold">|</span> list your boat free</div>
+      </div>
+    </div>
+    <div class="doc-type-flag caps">June 2026</div>
+  </div>
+  <div class="cover-main">
+    <div class="cover-rule">
+      <span class="line"></span>
+      <span class="word caps">Vessel Specification</span>
+    </div>
+    <h1 class="cover-title display">The Lagoon 380</h1>
+    <p class="cover-subtitle display">An editorial profile of an 11.6 metre French cruising catamaran, the flat-deck choice in the Puerto Banus fleet</p>
+    <div class="cover-meta caps">BoatHire24 Editorial</div>
+    <div class="fleet-strip"><span class="fleet-label caps">From the fleet of</span><span class="logo-chip"><img src="file:///Users/master/boat-rental-marbella/site/img/logo-640.png" alt="Boat Rental In Marbella"></span></div>
+  </div>
+</div>
+<table class="paged">
+  <thead><tr><td></td></tr></thead>
+  <tbody><tr><td>
+
+<div class="spec-block sec">
+  <div class="sec-head">
+    <div class="sec-kicker caps">Particulars</div>
+    <h2 class="display">Principal Particulars</h2>
+    <div class="rules"><span class="thick"></span><span class="thin"></span></div>
+  </div>
+  <table class="spec"><tr><td class="lbl">Vessel</td><td class="val">Lagoon 380</td><td class="lbl">Type</td><td class="val">Sailing catamaran</td></tr>
+<tr><td class="lbl">Length</td><td class="val">11.6 m</td><td class="lbl">Builder</td><td class="val">Lagoon</td></tr>
+<tr><td class="lbl">Departure port</td><td class="val">Puerto Banus</td><td class="lbl">Guests (day)</td><td class="val">10</td></tr>
+<tr><td class="lbl">Guests (overnight)</td><td class="val">8</td><td class="lbl">Cabins</td><td class="val">Four cabins plus saloon</td></tr>
+<tr><td class="lbl">Crew</td><td class="val">Licensed skipper included</td><td class="lbl">Rate band</td><td class="val">Quote on WhatsApp via the website</td></tr></table>
+</div>
+
+<div class="sec">
+  <div class="sec-head">
+    <div class="sec-kicker caps">Section 01</div>
+    <h2 class="display">Why the Lagoon 380 stands out in the Marbella fleet</h2>
+    <div class="rules"><span class="thick"></span><span class="thin"></span></div>
+  </div>
+  <div class="sec-body"><p>Most of what ties up along the Costa del Sol is a single-hulled motor yacht built to plane fast, throw a wake and cut a profile against the marina. The <strong>Lagoon 380</strong> is a different proposition entirely, and that is precisely the point. She is an 11.6 metre French cruising catamaran: two slender hulls bridged by a wide, flat deck, with a saloon that sits at eye level with the sea rather than below it. In a fleet otherwise weighted towards motor yachts and superyachts, she is the boat people reach for when they want space, stillness and shade rather than speed.</p><p>The headline advantage is the one you feel in your stomach. A catamaran does not heel. Where a monohull leans into the wind and rolls in a beam swell, the twin-hull platform stays broadly level, which makes the 380 the natural answer for groups who get seasick on conventional sailing boats or who simply do not want to spend a day bracing against a slope. Children can move around the deck without being thrown off balance. Lunch stays on the table. A grandparent who would never set foot on a heeling yacht will happily sit out on the trampolines between the bows.</p><p>She carries up to <strong>ten guests for a day charter and eight overnight</strong> across four cabins plus the saloon, and she leaves from Puerto Banus, the smartest marina on this coast. Pricing on the 380 is quoted on request through WhatsApp via the website rather than fixed to a published hourly card, because catamaran charters vary so much by duration, season and what you want the day to be. What does not vary is the experience she offers: a stable, roomy, sociable platform built for slow, civilised days on the water.</p></div>
+  <figure class="plate"><img src="file:///Users/master/boat-rental-marbella/site/img/boats/lagoon-380/hero-1200.jpg" alt=""><figcaption>The Lagoon 380, an 11.6 metre cruising catamaran based at Puerto Banus</figcaption></figure>
+</div>
+
+<div class="sec">
+  <div class="sec-head">
+    <div class="sec-kicker caps">Section 02</div>
+    <h2 class="display">The builder and the marque</h2>
+    <div class="rules"><span class="thick"></span><span class="thin"></span></div>
+  </div>
+  <div class="sec-body"><p>Lagoon is one of those names that has quietly become shorthand for an entire category. The brand belongs to the world of French boatbuilding, and it grew out of a heritage steeped in serious offshore sailing rather than marina posing. Lagoon emerged from the orbit of Jeanneau and the wider Beneteau group, the largest leisure-boat manufacturing concern in France and one of the most significant in the world, and it brought to the cruising catamaran a discipline learned from racing multihulls.</p><p>That racing pedigree matters. Multihull design in France was driven for decades by some of the toughest offshore events on the planet, the kind of transatlantic and round-the-world races where catamarans and trimarans proved they could be both fast and seaworthy. Lagoon took those lessons and turned them in the opposite direction, towards comfort. The brief was never to win races. It was to take the inherent stability and volume of two hulls and build a boat a family could live aboard for a week, a fortnight, a season, without ever feeling cramped or precarious.</p><p>The result made Lagoon the best-selling cruising-catamaran brand in the world, a fixture of charter fleets from the Caribbean to the Aegean to, here, the southern coast of Spain. When people picture a charter catamaran, a Lagoon is very often the boat in their mind's eye even if they could not name the marque. The hallmarks are consistent across the range: generous interior volume, a bright saloon set high enough to see out of, walk-around decks, and a build philosophy that prizes liveable space over raw performance. A Lagoon is a boat designed first as a place to be, and only second as a thing that sails.</p></div>
+  
+</div>
+
+<div class="sec">
+  <div class="sec-head">
+    <div class="sec-kicker caps">Section 03</div>
+    <h2 class="display">The 380: the model and its design</h2>
+    <div class="rules"><span class="thick"></span><span class="thin"></span></div>
+  </div>
+  <div class="sec-body"><p>The 380 is a particular kind of legend within the Lagoon catalogue. It is the boat that, more than any other, put the cruising catamaran into the hands of ordinary sailors and charter guests. Compact by catamaran standards at <strong>11.6 metres</strong>, it is small enough to be manageable and affordable yet large enough to deliver the full multihull experience, and it became one of the most-produced cruising catamarans ever built. If you have stepped aboard a charter cat anywhere in the Mediterranean over the past two decades, there is a fair chance it was a 380 or a close relative.</p><p>The design language is unmistakably Lagoon. The vertical or near-vertical saloon glazing wraps around to give a bright, panoramic interior. The hulls are fine enough to slip through the water under sail yet carry the accommodation low and central for stability. The bridgedeck saloon sits at the same level as the cockpit, so the social heart of the boat flows seamlessly from inside to out, a single connected living space rather than a cabin you climb down into. Forward, between the two bows, the netting trampolines give you that signature catamaran lounging spot, suspended just above the water with nothing under you but the sea sliding past.</p><p>What the class is known for, above all, is forgiveness. A 380 is undramatic in the best sense. She does not punish a mistake, she does not slam, she does not throw her guests around. She makes steady, comfortable progress and turns a day on the water into something genuinely relaxing. For a charter operation, that predictability is gold, because it means a boat that suits almost everyone who steps aboard.</p></div>
+  
+</div>
+
+<div class="sec">
+  <div class="sec-head">
+    <div class="sec-kicker caps">Section 04</div>
+    <h2 class="display">On board: layout, saloon, deck and cabins</h2>
+    <div class="rules"><span class="thick"></span><span class="thin"></span></div>
+  </div>
+  <div class="sec-body"><p>Step aboard from the dock at Puerto Banus and the first thing that registers is space. The 380 is configured for <strong>ten guests by day and eight overnight</strong>, and she carries them across <strong>four cabins plus the saloon</strong>, a layout that gives a day group room to spread out and an overnight party genuine private quarters rather than improvised berths.</p><p>The living spaces, drawn from the boat's own highlights, break down roughly like this:</p><ul><li><strong>The saloon</strong> sits up on the bridgedeck, level with the cockpit and wrapped in glazing. It is the indoor lounge and dining area, cool and shaded, with the sea visible on every side. When the sun is fierce or a late-afternoon breeze gets up, this is where the group gathers.</li><li><strong>The cockpit and aft deck</strong> flow directly off the saloon, the open-air social hub where lunch is served and most of the day is spent. Shaded by the bimini overhead, it is the natural anchor point of a day charter.</li><li><strong>The trampolines</strong> forward, strung between the twin bows, are the catamaran's defining feature, a flat netting platform for sunbathing and watching the coast go by, low to the water and gently sprung.</li><li><strong>The four cabins</strong> below, in the hulls, make her a genuine overnight boat for up to eight, each hull carrying its own accommodation and heads.</li></ul><p>The water-toy and activity side is built around what the platform does best: a <strong>snorkel, swim and sail charter combo</strong>. The flat, low transoms and stable deck make getting in and out of the water effortless, which turns every anchored swim stop into a relaxed affair rather than a scramble. This is a boat you spend in the water as much as on it.</p></div>
+  <figure class="plate"><img src="file:///Users/master/boat-rental-marbella/site/img/boats/lagoon-380/hero-900.jpg" alt=""><figcaption>Twin hulls and a flat bridgedeck: the layout that keeps the 380 level</figcaption></figure>
+</div>
+
+<div class="sec">
+  <div class="sec-head">
+    <div class="sec-kicker caps">Section 05</div>
+    <h2 class="display">A day aboard, from Puerto Banus</h2>
+    <div class="rules"><span class="thick"></span><span class="thin"></span></div>
+  </div>
+  <div class="sec-body"><p>Picture a clear morning in June. You meet your <strong>licensed skipper</strong> on the pontoon at Puerto Banus a little before eleven. There is no rush and no paperwork drama, the skipper handles the lines and the navigation, and within a few minutes the 380 is easing out past the harbour wall with the Marbella mountains rising green and grey behind you.</p><p>The first leg is gentle. The skipper points the bows west along the coast, and because nothing heels, the group settles in immediately, some out on the forward trampolines with the breeze coming up through the netting, others in the shade of the cockpit with a cold drink. The water and soft drinks, the beer, the white wine and the cava are all aboard and included, along with light snacks, so the day finds its rhythm without anyone reaching for a wallet.</p><p>By early afternoon the skipper finds a sheltered patch of clear water and drops the hook for the swim stop. This is where a catamaran earns its keep. The flat deck and low transoms mean people are in and out of the sea in seconds, snorkels on, floating off the back of the boat or lounging on the trampolines between dips. Lunch comes out in the cockpit, eaten level and unhurried, the boat barely moving beneath you.</p><p>The afternoon unspools slowly. Perhaps the skipper raises the sails for a quiet downwind leg so you get the genuine sensation of sailing, silent but for the water, no engine, no lean. Perhaps you simply stay at anchor and let the day stretch. As the light turns gold the bows swing back towards Puerto Banus, and you come alongside salt-skinned and unhurried, which is exactly how a day on a Lagoon is meant to end.</p></div>
+  
+</div>
+
+<div class="sec">
+  <div class="sec-head">
+    <div class="sec-kicker caps">Section 06</div>
+    <h2 class="display">Itineraries and cruising grounds</h2>
+    <div class="rules"><span class="thick"></span><span class="thin"></span></div>
+  </div>
+  <div class="sec-body"><p>Puerto Banus sits at the centre of one of the most rewarding stretches of coastline in southern Spain, and the 380's stable, unhurried nature makes her ideally suited to exploring it slowly. A few of the classic runs:</p><ul><li><strong>The Golden Mile swim stop.</strong> The short hop east from Puerto Banus towards Marbella runs along the famous Golden Mile, the ribbon of villas, beach clubs and hotels that gives this coast its glamour. A sheltered swim stop within sight of the shoreline is the most popular single request on a half-day charter, and the catamaran's stability makes it a relaxed family anchorage rather than a rolly one.</li><li><strong>West to Estepona.</strong> Heading the other way, the coast opens up towards Estepona, quieter and more Spanish in feel, a longer and more scenic cruise for a group that wants real distance on the water rather than a quick dip.</li><li><strong>East to Cabopino.</strong> Beyond Marbella lies Cabopino, with its pretty marina and the dune-backed beaches around it, a natural turning point for a fuller day out and a change of scene from the Puerto Banus glitter.</li><li><strong>The longer run towards Gibraltar.</strong> For a full day with an early start, the coast west of Estepona stretches towards the Rock and the Strait, where the Mediterranean meets the Atlantic. It is a serious day's cruising and a memorable one, best discussed with the skipper when you book.</li></ul><p>Because she is a sailing catamaran rather than a fast motor yacht, the 380 rewards the unhurried itinerary over the dash to a distant point. The pleasure is in the cruise itself, the sails up, the coast sliding by, a swim whenever the water looks right. A good skipper will read the wind and the swell on the day and shape the route to suit, which is part of why the local knowledge that comes with the boat is worth so much.</p></div>
+  
+</div>
+
+<div class="sec">
+  <div class="sec-head">
+    <div class="sec-kicker caps">Section 07</div>
+    <h2 class="display">Who this boat suits</h2>
+    <div class="rules"><span class="thick"></span><span class="thin"></span></div>
+  </div>
+  <div class="sec-body"><p>The 380 has a very clear personality, and it pays to match the boat to the occasion. She is, above all, the <strong>family and group catamaran</strong>, and she shines for a particular set of guests:</p><ul><li><strong>Families with children or older relatives.</strong> The level deck, the easy water access and the absence of heeling make her the safest-feeling boat in the fleet for guests who are nervous on the water or unsteady on their feet.</li><li><strong>Anyone prone to seasickness.</strong> This is the headline reason people choose her. As a twin-hull catamaran she does not heel, and she is explicitly the choice for groups who get seasick on monohulls. If a conventional sailing boat has ruined a day for someone before, the flat platform is the cure.</li><li><strong>Larger sociable groups.</strong> With room for <strong>ten by day</strong> and a layout that flows from saloon to cockpit to trampolines, she handles a birthday, a reunion or a relaxed celebration with space to spare. There is no single cramped seating area to fight over.</li><li><strong>Overnight and multi-day parties.</strong> The four cabins make her one of the genuine sleep-aboard options, comfortable for <strong>eight overnight</strong>, which opens up coastal mini-cruises rather than just day trips.</li></ul><p>She is not the boat for the group that wants to roar across the bay at speed, throw up a wake and be seen doing it. That is what the motor yachts in the fleet are for. The 380 is for the group that understands a day afloat is better measured in swims and long lunches than in knots.</p></div>
+  
+</div>
+
+<div class="sec">
+  <div class="sec-head">
+    <div class="sec-kicker caps">Section 08</div>
+    <h2 class="display">Pricing and inclusions</h2>
+    <div class="rules"><span class="thick"></span><span class="thin"></span></div>
+  </div>
+  <div class="sec-body"><p>The Lagoon 380 is offered on a <strong>quote-on-request</strong> basis rather than against a fixed published hourly card. Catamaran charters vary so much by duration, season and itinerary, day sail, overnight or multi-day, that a single printed rate would mislead more than it helped. The honest and accurate answer is a tailored quote, which you get in minutes over <strong>WhatsApp via the website</strong>.</p><p>What is fixed, and worth stating plainly, is everything that comes included as standard. Every charter on the 380 is provided on the all-inclusive basis that applies across the fleet:</p><table><thead><tr><th>Included as standard</th><th>Detail</th></tr></thead><tbody><tr><td>Licensed skipper</td><td>Handles the boat, navigation and the day</td></tr><tr><td>Fuel</td><td>For the agreed itinerary</td></tr><tr><td>Drinks</td><td>Water, soft drinks, beer, white wine, cava</td></tr><tr><td>Light snacks</td><td>Aboard for the day</td></tr><tr><td>Insurance</td><td>Included</td></tr><tr><td>Safety equipment</td><td>Included</td></tr><tr><td>VAT</td><td>21 per cent, already in the quote</td></tr></tbody></table><p>That last line matters more than it looks. On the 380 the figure you are quoted is the figure you pay, with the skipper, the fuel, the drinks and the tax already folded in. There is no fuel surcharge waiting at the dock and no service add-on at the end of the day. To get a price for your dates, group size and the kind of day you have in mind, message the team on WhatsApp through the website and they will come straight back with a tailored quote.</p></div>
+  
+</div>
+
+<div class="sec">
+  <div class="sec-head">
+    <div class="sec-kicker caps">Section 09</div>
+    <h2 class="display">Seasonality and booking practicalities</h2>
+    <div class="rules"><span class="thick"></span><span class="thin"></span></div>
+  </div>
+  <div class="sec-body"><p>The charter season on this coast runs broadly from spring through to autumn, and the 380 reads the calendar a little differently from the fast motor boats around her. Because the pleasure of a catamaran is the slow, shaded, sociable day rather than the high-speed dash, she is wonderful right through the hottest months, when her bimini-shaded cockpit and constant easy water access are exactly what a group wants.</p><p>The peak window of high summer, roughly the school holidays through to early September, is when demand for a stable family platform is at its highest, and it is when the 380 books up first. If your dates fall in that stretch, treat the booking as something to lock in early rather than leave to the last week. The shoulder months either side, late spring and early autumn, are a quiet secret: warm, calmer water, thinner crowds at the swim stops, and an easier path to the dates you want.</p><p>A few practical notes drawn from how she runs. She leaves from <strong>Puerto Banus</strong>, so plan your meeting point and timings around that marina. The <strong>licensed skipper is included</strong>, which means no licence or experience is required of you, you are a guest, not the crew. Wind matters more to a sailing catamaran than to a motor yacht, so the skipper may shape the day's route around the conditions, and that local judgement is part of what you are paying for. And because pricing is quoted to your specific plan, the booking conversation doubles as the planning conversation, the more you tell the team about your group and your hopes for the day, the better the day they can build.</p></div>
+  
+</div>
+
+<div class="sec">
+  <div class="sec-head">
+    <div class="sec-kicker caps">Section 10</div>
+    <h2 class="display">Frequently asked questions</h2>
+    <div class="rules"><span class="thick"></span><span class="thin"></span></div>
+  </div>
+  <div class="sec-body"><p><strong>How many people can the Lagoon 380 take?</strong> Up to ten guests for a day charter and eight overnight, across four cabins plus the saloon. It is comfortably a group boat rather than a couple's day boat.</p><p><strong>Will I get seasick on it?</strong> This is the main reason people choose her. As a twin-hull catamaran she does not heel and stays broadly flat, which makes her the answer for guests who get seasick on conventional monohull sailing boats. Nothing is guaranteed at sea, but the flat platform is about as gentle as it gets.</p><p><strong>Do I need a sailing licence or any experience?</strong> No. A licensed skipper is included on every charter and handles the boat and the navigation. You are aboard purely as a guest.</p><p><strong>Where does she leave from?</strong> Puerto Banus, the principal charter marina on this stretch of the Costa del Sol, a short distance west of Marbella town.</p><p><strong>What is included in the price?</strong> The licensed skipper, fuel, drinks (water, soft drinks, beer, white wine and cava), light snacks, insurance, safety equipment and VAT at 21 per cent. The quoted figure is the all-in figure.</p><p><strong>Why is there no fixed hourly price?</strong> Catamaran charters vary widely by duration, season and itinerary, so the 380 is quoted on request. You get a tailored price in minutes over WhatsApp through the website.</p><p><strong>Can we stay aboard overnight?</strong> Yes. With four cabins she sleeps up to eight, which makes coastal overnight and multi-day cruises possible. Mention it when you enquire so the team can quote and plan accordingly.</p><p><strong>Can we actually sail, or is it engine only?</strong> She is a genuine sailing catamaran. Conditions permitting, the skipper will raise the sails so you get the real, silent sensation of sailing as part of the day, then drop the hook wherever the water looks best for swimming and snorkelling.</p></div>
+  
+</div>
+
+<div class="callout">
+  <h3 class="display">Book the Lagoon 380</h3>
+  <p>To reserve the Lagoon 380 from Puerto Banus, or to get a tailored quote for your dates, group size and itinerary, book directly at <a href="https://boatrentalinmarbella.com/boats/lagoon-380/">boatrentalinmarbella.com</a> and message the team on WhatsApp through the website. Skipper, fuel, drinks, snacks, insurance, safety equipment and VAT are all included.</p><p>Own a boat and want it earning? List it free and reach charter guests worldwide at <a href="https://boathire24.com">boathire24.com</a>.</p>
+  <div class="linksrow caps"><a href="https://boathire24.com">https://boathire24.com</a><span class="sep">&#9670;</span><a href="https://boatrentalinmarbella.com/boats/lagoon-380/">https://boatrentalinmarbella.com/boats/lagoon-380/</a></div>
+</div>
+<div class="endmark"><span class="line"></span><svg width="14" height="14" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg" aria-hidden="true"><path fill="#b9924b" d="M17 15l1.55 1.55c-.96 1.69-3.33 3.04-5.55 3.37V11h3V9h-3V7.82C14.16 7.4 15 6.3 15 5c0-1.65-1.35-3-3-3S9 3.35 9 5c0 1.3.84 2.4 2 2.82V9H8v2h3v8.92c-2.22-.33-4.59-1.68-5.55-3.37L7 15l-4-3v3c0 3.88 4.92 7 9 7s9-3.12 9-7v-3l-4 3zM12 4c.55 0 1 .45 1 1s-.45 1-1 1-1-.45-1-1 .45-1 1-1z"/></svg><span class="line"></span></div>
+  </td></tr></tbody>
+  <tfoot><tr><td></td></tr></tfoot>
+</table>
+
+<div class="runfoot caps">
+  <span><b>boathire24.com</b> <span class="gold">&#9670;</span> rent boats worldwide
+    <span class="gold">&#9670;</span> list your boat free</span>
+  <span class="gold caps">boatrentalinmarbella.com/boats/lagoon-380</span>
+</div>
+</body>
+</html>

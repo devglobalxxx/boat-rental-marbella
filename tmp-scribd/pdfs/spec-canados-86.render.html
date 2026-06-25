@@ -1,0 +1,502 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<title>The Canados 86 Dossier</title>
+<style>
+:root {
+  --navy:      #0e2438;
+  --navy-deep: #08182a;
+  --gold:      #b9924b;
+  --gold-dark: #8a6c33;
+  --gold-light:#d4b06a;
+  --gold-pale: #e8d8af;
+  --ivory:     #f7f2e6;
+  --paper:     #fdfbf5;
+  --ink:       #22303e;
+  --muted:     #5d6a76;
+  --hairline:  #d9cdaf;
+  --row-tint:  #f5efdf;
+}
+* { -webkit-print-color-adjust: exact; print-color-adjust: exact;
+    box-sizing: border-box; }
+@page { size: A4; margin: 0; }
+html, body { margin: 0; padding: 0; }
+body {
+  background: var(--paper);
+  color: var(--ink);
+  font-family: Georgia, 'Palatino Linotype', Palatino, 'Times New Roman', serif;
+  font-size: 10.5pt;
+  line-height: 1.62;
+}
+.display { font-family: Didot, 'Didot LT STD', 'Playfair Display', Georgia,
+           'Times New Roman', serif; }
+.caps { font-family: Optima, 'Avenir Next', 'Gill Sans', 'Trebuchet MS',
+        sans-serif; text-transform: uppercase; }
+
+/* ---------------- Cover ---------------- */
+.cover {
+  position: relative;
+  width: 210mm; height: 297mm;
+  overflow: hidden;
+  background: var(--navy-deep);
+  page-break-after: always;
+}
+.cover-img {
+  position: absolute; inset: 0;
+  width: 100%; height: 100%;
+  object-fit: cover;
+  object-position: 24% center;  /* centres the yacht's full profile in the A4 crop */
+}
+.cover-veil {
+  position: absolute; inset: 0;
+  background:
+    linear-gradient(to top, rgba(11,26,46,0.92),
+                    rgba(11,26,46,0.86) 30%, transparent 55%),
+    linear-gradient(180deg,
+      rgba(8,24,42,0.62) 0%,
+      rgba(8,24,42,0.20) 26%,
+      rgba(8,24,42,0.12) 50%,
+      rgba(8,24,42,0.00) 62%);
+}
+.cover-veil.no-img {
+  background:
+    radial-gradient(120mm 90mm at 50% 26%, rgba(185,146,75,0.20), transparent 70%),
+    linear-gradient(180deg, #122c46 0%, #0a1d33 55%, #071426 100%);
+}
+.cover-top {
+  position: absolute; top: 13mm; left: 16mm; right: 16mm;
+  display: flex; align-items: center; justify-content: space-between;
+}
+.brand-lockup { display: flex; align-items: center; gap: 4.5mm; }
+.logo-chip {
+  background: #ffffff;
+  border: 1px solid var(--gold);
+  border-radius: 1.2mm;
+  padding: 2mm;
+  line-height: 0;
+}
+.logo-chip img { display: block; height: 13mm; width: 13mm;
+                 object-fit: cover; border-radius: 0.7mm; }
+.brand-name {
+  color: var(--ivory); font-size: 13pt; letter-spacing: 0.30em;
+  line-height: 1.25;
+}
+.brand-tag {
+  color: var(--gold-pale); font-size: 6.4pt; letter-spacing: 0.26em;
+  margin-top: 1mm;
+}
+.doc-type-flag {
+  text-align: right;
+  color: var(--gold-light);
+  font-size: 7.5pt; letter-spacing: 0.34em;
+  border-top: 0.7pt solid var(--gold);
+  border-bottom: 0.7pt solid var(--gold);
+  padding: 2.2mm 0 2mm 0;
+}
+.cover-main {
+  position: absolute; left: 16mm; right: 16mm; bottom: 34mm;
+}
+.cover-rule {
+  display: flex; align-items: center; gap: 4mm;
+  margin-bottom: 5mm;
+}
+.cover-rule .line { flex: 0 0 22mm; height: 0; border-top: 0.8pt solid var(--gold); }
+.cover-rule .word {
+  color: var(--gold-light); font-size: 8pt; letter-spacing: 0.42em;
+  white-space: nowrap;
+  text-shadow: 0 1px 5px rgba(5,14,26,0.65);
+}
+.cover-title {
+  color: #fdfaf2;
+  font-size: 44pt; line-height: 1.05;
+  font-weight: 600;
+  margin: 0 0 4mm 0;
+  text-shadow: 0 1px 8px rgba(5,14,26,0.55);
+}
+.cover-subtitle {
+  color: var(--gold-pale);
+  font-style: italic;
+  font-size: 13pt; line-height: 1.45;
+  margin: 0 0 7mm 0;
+  max-width: 150mm;
+  text-shadow: 0 1px 6px rgba(5,14,26,0.6);
+}
+.cover-meta {
+  color: rgba(247,242,230,0.92);
+  font-size: 7.6pt; letter-spacing: 0.22em;
+}
+.cover-meta .dot { color: var(--gold-light); padding: 0 2.2mm; }
+.fleet-strip {
+  margin-top: 8mm;
+  display: flex; align-items: center; gap: 4mm;
+}
+.fleet-strip .logo-chip img { height: 9mm; width: auto; }
+.fleet-label {
+  color: rgba(247,242,230,0.85); font-size: 6.6pt; letter-spacing: 0.30em;
+}
+
+/* ------------- Repeating footer ------------- */
+.runfoot {
+  position: fixed; left: 0; right: 0; bottom: 0;
+  height: 12mm;
+  background: var(--ivory);
+  border-top: 1pt solid var(--gold);
+  display: flex; align-items: center; justify-content: space-between;
+  padding: 0 16mm;
+  font-size: 6.8pt; letter-spacing: 0.12em;
+  color: var(--navy);
+}
+.runfoot b { letter-spacing: 0.22em; font-weight: 600; }
+.runfoot .gold { color: var(--gold-dark); }
+.runfoot a { color: var(--navy); text-decoration: none; }
+
+/* ------------- Paged content scaffold ------------- */
+table.paged { width: 100%; border-collapse: collapse; }
+table.paged > thead td { height: 15mm; padding: 0; }
+table.paged > tfoot td { height: 17mm; padding: 0; }
+table.paged > tbody > tr > td { padding: 0 18mm; }
+
+/* ------------- Sections ------------- */
+.sec { margin: 0 0 8mm 0; }
+.sec-head {
+  break-after: avoid-page; page-break-after: avoid;
+  break-inside: avoid; page-break-inside: avoid;
+  margin: 0 0 4.5mm 0;
+}
+.sec-kicker {
+  color: var(--gold-dark); font-size: 7pt; letter-spacing: 0.38em;
+  margin-bottom: 1.6mm;
+}
+.sec-head h2 {
+  color: var(--navy);
+  font-size: 18.5pt; font-weight: 400; line-height: 1.2;
+  margin: 0 0 2.6mm 0;
+}
+.sec-head .rules { position: relative; height: 2.4mm; }
+.sec-head .rules .thin {
+  position: absolute; left: 0; right: 0; top: 1mm;
+  border-top: 0.6pt solid var(--hairline);
+}
+.sec-head .rules .thick {
+  position: absolute; left: 0; top: 0; width: 26mm;
+  border-top: 2.2pt solid var(--gold);
+}
+.sec-body p { margin: 0 0 3.4mm 0; }
+.sec-body p:last-child { margin-bottom: 0; }
+.sec-body ol { margin: 0 0 3.4mm 0; padding-left: 5.5mm; }
+.sec-body ul { margin: 0 0 3.4mm 0; padding-left: 1mm; }
+.sec-body li { margin-bottom: 1.6mm; break-inside: avoid; page-break-inside: avoid;
+               -webkit-column-break-inside: avoid; }
+.sec-body ul.cols2 { columns: 2; column-gap: 9mm;
+                     break-inside: avoid; page-break-inside: avoid; }
+.sec-body ul > li {
+  list-style: none;
+  padding-left: 1.1em; text-indent: -1.1em;  /* hanging indent: wraps align under text */
+}
+.sec-body ul > li::before {
+  content: "\2726";            /* four-pointed star, brass compass point */
+  display: inline-block; width: 1.44em; text-indent: 0;
+  color: var(--gold); font-size: 8pt;       /* 1.44em @8pt == 1.1em @10.5pt */
+}
+.sec-body a { color: var(--navy); text-decoration: none;
+              border-bottom: 0.6pt solid var(--gold); }
+.sec-body strong { color: var(--navy); }
+
+/* generic tables inside section html */
+.sec-body table {
+  width: 100%; border-collapse: collapse;
+  margin: 1mm 0 4mm 0;
+  break-inside: avoid; page-break-inside: avoid;
+  font-size: 9.8pt;
+}
+.sec-body th {
+  background: var(--navy); color: var(--ivory);
+  font-family: Optima, 'Avenir Next', 'Gill Sans', 'Trebuchet MS', sans-serif;
+  text-transform: uppercase; letter-spacing: 0.16em;
+  font-size: 7.4pt; font-weight: 500;
+  text-align: left; padding: 2.6mm 3.5mm;
+  border-bottom: 1.4pt solid var(--gold);
+}
+.sec-body td {
+  padding: 2.2mm 3.5mm;
+  border-bottom: 0.6pt solid var(--hairline);
+  color: var(--ink);
+}
+.sec-body td, .sec-body th { font-variant-numeric: tabular-nums; }
+.sec-body td:not(:first-child),
+.sec-body th:not(:first-child) { text-align: right; }
+.sec-body tr:nth-child(even) td { background: var(--row-tint); }
+.sec-body td:first-child { color: var(--navy); }
+.sec-body tr.best td { background: rgba(212,175,55,0.12); }
+.sec-body tr.best td:first-child { color: var(--navy); font-weight: 600; }
+.best-tag {
+  display: inline-block;
+  font-family: Optima, 'Avenir Next', 'Gill Sans', 'Trebuchet MS', sans-serif;
+  font-variant-caps: small-caps; text-transform: lowercase;
+  font-size: 7.6pt; font-weight: 600; letter-spacing: 0.14em;
+  color: var(--gold-dark);
+  border: 0.6pt solid var(--gold);
+  border-radius: 1mm;
+  padding: 0.2mm 1.6mm;
+  margin-left: 2.2mm;
+  white-space: nowrap;
+  vertical-align: 0.2mm;
+}
+
+/* ------------- Figures ------------- */
+figure.plate {
+  break-inside: avoid; page-break-inside: avoid;
+  margin: 5mm 0 2mm 0;
+  background: #ffffff;
+  border: 0.7pt solid var(--gold-light);
+  padding: 2.6mm;
+}
+figure.plate img {
+  display: block; width: 100%; height: 78mm; object-fit: cover;
+}
+figure.plate figcaption {
+  text-align: center;
+  font-style: italic;
+  font-size: 8.4pt; color: var(--muted);
+  padding: 2.4mm 2mm 0.6mm 2mm;
+}
+figure.plate figcaption::before {
+  content: "\25C6\00a0"; color: var(--gold); font-size: 6pt;
+}
+
+/* ------------- Spec table (2-column grid: two lbl/val pairs per row) ------------- */
+.spec-block { margin: 0 0 8mm 0; }
+table.spec {
+  width: 100%; border-collapse: collapse;
+  border-top: 1.6pt solid var(--navy);
+  border-bottom: 1.6pt solid var(--navy);
+}
+table.spec td { padding: 1.7mm 1.5mm; border-bottom: 0.6pt solid var(--hairline);
+                vertical-align: top; }
+table.spec tr:last-child td { border-bottom: none; }
+table.spec td.lbl {
+  width: 21%;
+  font-family: Optima, 'Avenir Next', 'Gill Sans', 'Trebuchet MS', sans-serif;
+  text-transform: uppercase; letter-spacing: 0.16em;
+  font-size: 7.2pt; color: var(--gold-dark);
+  padding-top: 2.3mm;
+}
+table.spec td.val { width: 29%; color: var(--navy); font-size: 9.8pt; }
+table.spec td.lbl:nth-child(3) {
+  border-left: 0.6pt solid var(--hairline);
+  padding-left: 4mm;
+}
+table.spec td.val:nth-child(2) { padding-right: 4mm; }
+
+/* ------------- Callout ------------- */
+.callout {
+  break-inside: avoid; page-break-inside: avoid;
+  margin: 8mm 0 4mm 0;
+  background: var(--navy);
+  border: 1pt solid var(--gold);
+  outline: 0.6pt solid var(--gold);
+  outline-offset: -2.2mm;
+  color: var(--ivory);
+  padding: 8mm 9mm 7mm 9mm;
+}
+.callout h3 {
+  color: var(--gold-light);
+  font-size: 15pt; font-weight: 400;
+  margin: 0 0 3mm 0;
+}
+.callout p { margin: 0 0 2.8mm 0; line-height: 1.6; color: #efe7d3; }
+.callout a { color: var(--gold-light); text-decoration: none; }
+.callout ul { margin: 0 0 2.8mm 0; padding-left: 1mm; }
+.callout ul > li { list-style: none; margin-bottom: 1.4mm;
+                   padding-left: 1.1em; text-indent: -1.1em;
+                   break-inside: avoid; page-break-inside: avoid; }
+.callout ul > li::before {
+  content: "\2726"; display: inline-block; width: 1.44em; text-indent: 0;
+  color: var(--gold-light); font-size: 8pt;
+}
+.callout .linksrow {
+  margin-top: 4.5mm; padding-top: 3.6mm;
+  border-top: 0.6pt solid rgba(212,176,106,0.55);
+  font-size: 7.6pt; letter-spacing: 0.16em;
+  color: var(--gold-pale);
+}
+.callout .linksrow span.sep { padding: 0 2.6mm; color: var(--gold); }
+
+.endmark {
+  display: flex; align-items: center; justify-content: center; gap: 3.5mm;
+  margin: 7mm 0 0 0;
+}
+.endmark .line { width: 14mm; height: 0; border-top: 0.6pt solid var(--gold); }
+.endmark svg { display: block; }
+</style>
+</head>
+<body>
+
+<div class="cover">
+  <img class="cover-img" src="file:///Users/master/boat-rental-marbella/site/img/boats/canados-86/hero-1200.jpg" alt="">
+  <div class="cover-veil"></div>
+  <div class="cover-top">
+    <div class="brand-lockup">
+      <span class="logo-chip"><img src="file:///Users/master/boat-rental-platform/public/brand-logo.jpg" alt="BoatHire24"></span>
+      <div>
+        <div class="brand-name caps display">BoatHire24</div>
+        <div class="brand-tag caps">Rent boats worldwide <span class="gold">|</span> list your boat free</div>
+      </div>
+    </div>
+    <div class="doc-type-flag caps">June 2026</div>
+  </div>
+  <div class="cover-main">
+    <div class="cover-rule">
+      <span class="line"></span>
+      <span class="word caps">Vessel Specification</span>
+    </div>
+    <h1 class="cover-title display">The Canados 86 Dossier</h1>
+    <p class="cover-subtitle display">A 26 metre Italian superyacht for top-tier private charter from Puerto Banus, Marbella. An editorial profile of this specific vessel by BoatHire24.</p>
+    <div class="cover-meta caps">BoatHire24</div>
+    <div class="fleet-strip"><span class="fleet-label caps">From the fleet of</span><span class="logo-chip"><img src="file:///Users/master/boat-rental-marbella/site/img/logo-640.png" alt="Boat Rental In Marbella"></span></div>
+  </div>
+</div>
+<table class="paged">
+  <thead><tr><td></td></tr></thead>
+  <tbody><tr><td>
+
+<div class="spec-block sec">
+  <div class="sec-head">
+    <div class="sec-kicker caps">Particulars</div>
+    <h2 class="display">Principal Particulars</h2>
+    <div class="rules"><span class="thick"></span><span class="thin"></span></div>
+  </div>
+  <table class="spec"><tr><td class="lbl">Length</td><td class="val">26 m (86 ft)</td><td class="lbl">Capacity</td><td class="val">Up to 12 guests</td></tr>
+<tr><td class="lbl">Type</td><td class="val">Luxury motor yacht</td><td class="lbl">Builder</td><td class="val">Canados (Rome, Italy)</td></tr>
+<tr><td class="lbl">Departure port</td><td class="val">Puerto Banus, Marbella</td><td class="lbl">Crew</td><td class="val">Captain, mate, chef and stewardess</td></tr>
+<tr><td class="lbl">Cabins</td><td class="val">Four for overnight charter</td><td class="lbl">Rate band</td><td class="val">Quoted on WhatsApp via the website</td></tr></table>
+</div>
+
+<div class="sec">
+  <div class="sec-head">
+    <div class="sec-kicker caps">Section 01</div>
+    <h2 class="display">Overview: the top of the Marbella fleet</h2>
+    <div class="rules"><span class="thick"></span><span class="thin"></span></div>
+  </div>
+  <div class="sec-body"><p>The Canados 86 sits at the very top of our Marbella charter fleet. She is a 26 metre Italian luxury motor yacht, genuine superyacht class, built to carry up to 12 guests in the kind of comfort that most day charters can only hint at. Where the smaller boats in the line-up are about a few hours of sun and a swim, the Canados 86 is about an occasion. She is the vessel you charter when the day itself is the event, and when the people aboard expect the finish, the service and the sheer scale to match.</p><p>What sets her apart from almost everything else on the dock at Puerto Banus is the combination of size and crew. At 26 metres she is in the same length class as our other flagships, but she comes with four cabins for overnight charter and a full professional crew of captain, mate, chef and stewardess. That last point is the one guests notice first. A chef on board changes the rhythm of the day completely. Lunch is not a cool box hauled out of a locker, it is prepared and served while you swim, and a stewardess keeps the glasses full and the decks immaculate from the moment you step aboard until the moment you step ashore.</p><p>She departs from Puerto Banus, Marbella's flagship marina and one of the most photographed harbours in Europe, which means the whole of the Costa del Sol coastline is within easy reach for a day at sea. With her range and her four cabins she is equally at home on a long day charter along the Golden Mile and on a serious passage west to Gibraltar, Tarifa and beyond. She is, in short, the boat for guests who want the best the fleet has to offer and are happy to have the route, the pace and the menu shaped entirely around them.</p><p>Pricing on the Canados 86 is quoted individually rather than published as a fixed rate card. Because she is a fully crewed superyacht with a chef on board, every charter is built around the date, the group size, the length of the day and the itinerary you have in mind. A quote is sent over WhatsApp through the website, usually the same day, and it carries the full standard inclusions set out later in this dossier.</p></div>
+  <figure class="plate"><img src="file:///Users/master/boat-rental-marbella/site/img/boats/canados-86/hero-1600.jpg" alt=""><figcaption>The Canados 86, a 26 metre Italian superyacht based in Puerto Banus, Marbella</figcaption></figure>
+</div>
+
+<div class="sec">
+  <div class="sec-head">
+    <div class="sec-kicker caps">Section 02</div>
+    <h2 class="display">The builder and the marque: Canados of Rome</h2>
+    <div class="rules"><span class="thick"></span><span class="thin"></span></div>
+  </div>
+  <div class="sec-body"><p>To understand this boat you have to understand the yard that built her. Canados is one of the oldest names in Italian yacht building, and its story runs right back to the early decades of the twentieth century. The yard was founded in Rome and built its reputation on the water around Ostia and Fiumicino, at the mouth of the Tiber, where the Italian capital meets the Tyrrhenian Sea. For a brand to survive that long in an industry as unforgiving as boatbuilding tells you something about the engineering underneath the gloss.</p><p>Canados earned its place in yachting history partly through fibreglass. In the post-war decades, as the industry moved away from timber hulls, the Roman yard was among the European pioneers of large glass-reinforced plastic construction, building some of the bigger production motor yachts of their day at a time when many rivals were still working in wood. That early commitment to composite hulls gave Canados a head start in the open, fast, planing motor yacht that would later become the signature of the whole Italian fleet.</p><p>The marque has always occupied a particular niche. Canados is not a mass-production name in the way some of the giant Italian groups are. It has tended to build in smaller numbers, often with a strong custom element, for owners who wanted a fast, sea-kindly motor yacht with an unmistakably Roman sense of style. The yard's models have ranged from sporty open boats up to full displacement and semi-displacement superyachts, and the larger Canados hulls, the 80s, 90s and beyond, have long been regarded as proper bluewater motor yachts rather than marina ornaments. The 86 sits squarely in that bracket: large enough to cross open water in comfort, fast enough to make a real passage in a day, and finished to the standard the Roman yard has always insisted on.</p><p>For a charter guest, the relevant part of all that heritage is simple. A Canados is a serious, well-engineered Italian motor yacht from a yard that has been doing exactly this for the better part of a century. She carries the design language of the great Italian motor yachts, the long low profile, the generous glazing and the emphasis on outdoor living, but she carries it with the slightly more discreet, less mass-market character that the Roman marque has always cultivated.</p></div>
+  
+</div>
+
+<div class="sec">
+  <div class="sec-head">
+    <div class="sec-kicker caps">Section 03</div>
+    <h2 class="display">The model and the design: what the 86 class is known for</h2>
+    <div class="rules"><span class="thick"></span><span class="thin"></span></div>
+  </div>
+  <div class="sec-body"><p>The 86 in her name refers to her length in feet, a shade over 26 metres, which places her firmly in the superyacht category that begins, by most reckonings, around the 24 metre mark. That is not a trivial line to cross. At and above that size a yacht moves into a different world of stability, range, deck volume and on-board systems, and it is the reason a boat like this can carry a chef's galley, four guest cabins and a proper crew without feeling cramped.</p><p>The 86 class is known for the things the larger Canados hulls have always done well. The first is sea-keeping. A 26 metre hull with the displacement of a yacht like this rides through the short Mediterranean chop in a way that smaller boats simply cannot, which matters enormously on a longer run toward Gibraltar or on a breezier afternoon when the levante wind picks up off the Strait. Guests who are nervous about getting seasick almost always find a yacht of this size the most reassuring boat in any fleet.</p><p>The second is the layout philosophy. Italian motor yachts of this generation are designed around outdoor social living, and the 86 is no exception. The deck spaces are the real living rooms of the boat: a large aft cockpit for dining and lounging at anchor, a foredeck given over to sun pads, and an upper deck that opens up the views and the breeze. The interior, by contrast, is conceived as a cool, air-conditioned retreat from the midday sun rather than the place you spend the day, with a main-deck saloon and a separate, more formal dining area.</p><p>The third is finish. The larger Canados models have always been built to a high interior standard, with quality joinery, generous use of leather and stone, and the kind of detailing you expect at this level. None of that is fake precision we can put a number on, but it is the character of the class, and it is why a yacht of this pedigree reads as genuinely luxurious rather than merely large.</p></div>
+  <figure class="plate"><img src="file:///Users/master/boat-rental-marbella/site/img/boats/canados-86/hero-900.jpg" alt=""><figcaption>Long, low Italian lines: the 86 class is built around outdoor social living</figcaption></figure>
+</div>
+
+<div class="sec">
+  <div class="sec-head">
+    <div class="sec-kicker caps">Section 04</div>
+    <h2 class="display">On board: layout, saloon, decks, cabins and toys</h2>
+    <div class="rules"><span class="thick"></span><span class="thin"></span></div>
+  </div>
+  <div class="sec-body"><p>Step aboard and the scale of the Canados 86 is immediately obvious. This is a boat designed to host, and the layout reflects it. The aft cockpit is the heart of the social day, a large shaded deck where the crew set up lunch, where guests gather between swims and where the table for long lunches is laid. From there a few steps lead up to the saloon, the cool air-conditioned interior where you retreat from the heat of the afternoon, with comfortable seating, panoramic glazing and the easy elegance you would expect of an Italian superyacht.</p><p>Below decks she carries four cabins, which is what lifts her out of the day-charter bracket and into genuine overnight and multi-day territory. Four cabins means a group can actually sleep aboard in private comfort, whether that is a family spread across the boat or a group of friends each with their own space. For a day charter those cabins double as somewhere to change, to rest out of the sun, and to keep bags and belongings stowed and secure.</p><p>The crew configuration is the detail that defines life on board. The Canados 86 runs with a captain, a mate, a chef and a stewardess. The captain handles the navigation and the route. The mate manages the deck, the lines, the tender and the water toys, and keeps everyone safe in and out of the water. The chef works the galley, which on a yacht of this size is a proper kitchen rather than a token galley, turning out lunch and refreshments to order. The stewardess looks after the interior and the service, so glasses stay full, decks stay clean and nothing is ever quite empty.</p><p>The Canados 86 also carries a full water toys package. At anchor that transforms a swim stop into an afternoon of activity, whether guests want to splash about off the swim platform, head out on the water or simply float in the warm Mediterranean alongside the boat. Combined with the chef's galley and the shaded decks, it means a single anchorage can comfortably fill three or four hours without anyone ever wishing they were somewhere else.</p></div>
+  
+</div>
+
+<div class="sec">
+  <div class="sec-head">
+    <div class="sec-kicker caps">Section 05</div>
+    <h2 class="display">A day aboard from Puerto Banus</h2>
+    <div class="rules"><span class="thick"></span><span class="thin"></span></div>
+  </div>
+  <div class="sec-body"><p>A typical day on the Canados 86 begins on the dock at Puerto Banus, where the crew are waiting and the yacht is already prepared. There is a brief welcome, a safety word from the captain, and then the lines come off and she eases out past the marina entrance with its famous run of superyachts and waterfront restaurants. The first few minutes out of the harbour are always the same: cameras come out, because the view back at Puerto Banus and up at La Concha mountain behind Marbella is one of the best on the coast.</p><p>Once clear of the harbour the captain settles her onto a course along the shore. On a calm morning she runs comfortably along the Golden Mile, the stretch of coast between Puerto Banus and Marbella town lined with the grand villas, the beach clubs and the famous Marbella Club. The pace is unhurried; this is a yacht to be enjoyed at cruising speed, glass in hand, rather than thrashed from point to point.</p><p>By late morning the captain finds a sheltered spot to drop anchor, usually off one of the calmer bays along the Golden Mile or further along the coast depending on the wind. The swim platform comes alive: the water toys come out, guests slip into the water, and the chef begins to bring lunch up to the cockpit. This is the long centrepiece of the day, two or three hours at anchor where swimming, eating, drinking and doing absolutely nothing all blur together. The stewardess keeps the drinks moving and the decks tidy throughout.</p><p>In the afternoon the captain might reposition to a second anchorage, push a little further along the coast, or simply turn for a slow cruise home. As the day cools, the run back into Puerto Banus is the quiet, golden-hour part of the charter, the light softening over the water and the mountains, the engines burbling, the group a little sun-warmed and slower than they were in the morning. She comes back alongside in the marina exactly where she started, and the crew handle the lines while you step ashore. The whole shape of the day, the timings, the anchorages, the menu, is built around the group rather than a fixed schedule.</p></div>
+  
+</div>
+
+<div class="sec">
+  <div class="sec-head">
+    <div class="sec-kicker caps">Section 06</div>
+    <h2 class="display">Itineraries and cruising grounds</h2>
+    <div class="rules"><span class="thick"></span><span class="thin"></span></div>
+  </div>
+  <div class="sec-body"><p>Puerto Banus is one of the best home ports on the Mediterranean for variety, and the Canados 86 has the range to make the most of it. The geography of the western Costa del Sol gives you a genuine spread of options, from a gentle few hours close to home to a full open-water passage, and the right itinerary depends entirely on the group and the conditions on the day.</p><ul><li><strong>The Golden Mile swim stop.</strong> The classic short itinerary. A gentle cruise east along the coast between Puerto Banus and Marbella town, with an anchor stop off the villas and beach clubs of the Golden Mile for swimming and lunch. This is the most popular route and the most reliably sheltered, ideal for families and for anyone who wants maximum time in the water and minimum time in transit.</li><li><strong>Cabopino and the eastern beaches.</strong> A longer run east past Marbella town toward Cabopino, with its dunes, its pretty marina and the calmer, quieter anchorages beyond the busier central stretch. A good choice when you want a sense of having actually gone somewhere, with a swim stop away from the crowds.</li><li><strong>Estepona to the west.</strong> Heading the other way, the coast toward Estepona is open and scenic, with the mountains rising behind and a string of bays to anchor in. The water on this side of Puerto Banus can feel a touch wilder and less developed, which suits guests looking for a slightly more away-from-it-all afternoon.</li><li><strong>The long run to Gibraltar and Tarifa.</strong> This is where a yacht of this size and range comes into her own. On a full-day or multi-day charter the Canados 86 can make the passage west toward Gibraltar, with the Rock looming at the entrance to the Strait, and on toward Tarifa where the Mediterranean meets the Atlantic and two continents are in view at once. It is a serious day at sea and exactly the sort of trip the smaller boats in the fleet cannot attempt, but for a crewed 26 metre superyacht it is a memorable highlight.</li></ul><p>On every one of these routes the captain has the final word on where to anchor and when, reading the wind and the swell on the day. The prevailing summer breeze and the occasional easterly levante both shape the choice of anchorage, and part of the value of a professional crew is that they know instinctively which side of the coast will be flat and comfortable on any given afternoon.</p></div>
+  
+</div>
+
+<div class="sec">
+  <div class="sec-head">
+    <div class="sec-kicker caps">Section 07</div>
+    <h2 class="display">Who this boat suits</h2>
+    <div class="rules"><span class="thick"></span><span class="thin"></span></div>
+  </div>
+  <div class="sec-body"><p>The Canados 86 is not the right boat for everyone, and that is rather the point. She suits guests for whom the boat is the occasion, and for whom the difference between a good day and a flawless one is worth it. A few groups fit her especially well.</p><p><strong>Large groups celebrating something.</strong> With capacity for up to 12 guests and a full crew, she is built for milestone occasions: significant birthdays, anniversaries, a stag or hen party that wants to do things properly, a family reunion that has people flying in from several countries. The chef and stewardess mean nobody in the group has to play host, and everyone, including the person whose celebration it is, gets to actually enjoy the day.</p><p><strong>Families wanting space and comfort.</strong> Four cabins, a stable 26 metre hull and a crew that handles everything makes her an unusually relaxing boat for families. Children can swim safely off the platform under the eye of the mate, parents can sit back rather than skipper, and there is enough room that nobody is on top of anyone else. The size of the boat also makes seasickness far less of a worry than it is on a smaller hull.</p><p><strong>Corporate and VIP charters.</strong> The combination of scale, finish, full crew and discretion makes the Canados 86 a natural fit for entertaining clients, rewarding a team or hosting guests who are used to the best. The formality of a proper crewed superyacht, with service and a chef's lunch, reads very differently from a self-drive day boat, and for the right occasion that difference is the whole point.</p><p><strong>Overnight and multi-day charterers.</strong> Because she carries four cabins and full crew, she is one of the few boats in the fleet genuinely set up for sleeping aboard. A group that wants more than a single day, perhaps an overnight at anchor or a passage along the coast with a night away from the dock, can do that on the Canados 86 in real comfort.</p></div>
+  
+</div>
+
+<div class="sec">
+  <div class="sec-head">
+    <div class="sec-kicker caps">Section 08</div>
+    <h2 class="display">Pricing and inclusions</h2>
+    <div class="rules"><span class="thick"></span><span class="thin"></span></div>
+  </div>
+  <div class="sec-body"><p>The Canados 86 is quoted on request rather than carrying a fixed published rate. Because she is a fully crewed 26 metre superyacht with a chef on board, every charter is priced individually around the date, the group size, the length of the day and the itinerary. You will always receive competitive Marbella rates and a clear, confirmed figure before you commit; nothing is left vague.</p><table><tr><th>Charter type</th><th>How it is priced</th></tr><tr class="best"><td>Day charter (half day or full day)<span class="best-tag">Best value</span></td><td>Quoted on WhatsApp via the website</td></tr><tr><td>Long run to Gibraltar or Tarifa</td><td>Quoted on WhatsApp via the website</td></tr><tr><td>Overnight or multi-day charter</td><td>Quoted on WhatsApp via the website</td></tr></table><p>To get a quote, open the Canados 86 page on the website and send a WhatsApp enquiry with your preferred date, your group size and the kind of day you have in mind. A confirmed quote usually comes back the same day.</p><p><strong>Included on every charter, as standard across the fleet:</strong></p><ul><li>Licensed skipper</li><li>Fuel</li><li>Drinks (water, soft drinks, beer, white wine, cava)</li><li>Light snacks</li><li>Insurance</li><li>Safety equipment</li><li>VAT (21%)</li></ul><p>On the Canados 86 specifically, that standard inclusions set is delivered by a full crew of captain, mate, chef and stewardess, with the chef's galley turning out lunch and refreshments on board and the yacht's full water toys package available at every anchor stop. The quote you receive is genuinely all-in for what is listed, so there are no surprise extras to settle when you step back onto the dock.</p></div>
+  
+</div>
+
+<div class="sec">
+  <div class="sec-head">
+    <div class="sec-kicker caps">Section 09</div>
+    <h2 class="display">Seasonality and booking practicalities</h2>
+    <div class="rules"><span class="thick"></span><span class="thin"></span></div>
+  </div>
+  <div class="sec-body"><p>The charter season on the Costa del Sol is long and forgiving, which is one of the great advantages of Marbella over more northern parts of the Mediterranean. The peak runs from roughly June to September, when the sea is warmest, the days are longest and the demand is highest. July and August in particular are the busiest weeks of the year, and a flagship like the Canados 86 is exactly the boat that books out first; if your date falls in high summer, the single most useful thing you can do is enquire early.</p><p>The shoulder months reward the people who know about them. May, early June, September and October often bring warm, settled weather, calmer water and noticeably better availability, all without the crush of high summer. For a crewed superyacht charter, where the experience is as much about the service and the cruising as about peak heat, these months can be the sweet spot. The comforts of a yacht of this class also make the edges of the season more pleasant than they would be on a smaller open boat.</p><p>On the practical side, the captain always has the final say on whether the planned route is sensible for the conditions, and will adjust the itinerary or the anchorages to keep the day comfortable. The western Costa del Sol is generally sheltered, but the occasional easterly levante can stir up the sea, and part of the value of a professional crew is that they read those conditions for you. Booking is simple: enquire through the website, confirm your date and quote over WhatsApp, and arrive at Puerto Banus on the day to a yacht that is already prepared and crewed. For high-summer dates and for any overnight or multi-day plan, the earlier you reserve, the better.</p></div>
+  
+</div>
+
+<div class="sec">
+  <div class="sec-head">
+    <div class="sec-kicker caps">Section 10</div>
+    <h2 class="display">Frequently asked questions</h2>
+    <div class="rules"><span class="thick"></span><span class="thin"></span></div>
+  </div>
+  <div class="sec-body"><p><strong>How many guests can the Canados 86 carry?</strong><br>Up to 12 guests for a charter. That is the figure the boat is set up and crewed for, and it makes her ideal for larger groups and celebrations.</p><p><strong>How big is she and who built her?</strong><br>She is a 26 metre (86 ft) Italian luxury motor yacht built by Canados, the long-established Roman yard. At 26 metres she is genuine superyacht class.</p><p><strong>Is there a crew, and what about a chef?</strong><br>Yes. She runs with a full crew of captain, mate, chef and stewardess. The chef works a proper galley and prepares lunch and refreshments on board, and the stewardess looks after the interior and the service throughout the day.</p><p><strong>Can we stay overnight on board?</strong><br>Yes. She carries four cabins for overnight charter, which makes her one of the few boats in the fleet genuinely set up for sleeping aboard. Overnight and multi-day charters are quoted on WhatsApp via the website.</p><p><strong>Where does she depart from, and where can we go?</strong><br>She departs from Puerto Banus in Marbella. From there you can cruise the Golden Mile, head east toward Cabopino, run west to Estepona, or, on a longer charter, make the passage to Gibraltar and Tarifa.</p><p><strong>What is included in the price?</strong><br>Every charter includes a licensed skipper, fuel, drinks (water, soft drinks, beer, white wine and cava), light snacks, insurance, safety equipment and VAT at 21%. On the Canados 86 that is delivered by the full crew, with the chef's galley and the yacht's water toys package on board.</p><p><strong>How much does it cost?</strong><br>Because she is a fully crewed superyacht with a chef, the Canados 86 is quoted individually rather than on a fixed rate card. Send your date, group size and plan over WhatsApp through the website and you will get a competitive, confirmed quote, usually the same day.</p><p><strong>When is the best time to book?</strong><br>The season runs roughly June to September, with July and August busiest. The shoulder months of May, early June, September and October often bring calmer water and better availability. For high-summer and overnight dates, enquire as early as you can.</p></div>
+  
+</div>
+
+<div class="sec">
+  <div class="sec-head">
+    <div class="sec-kicker caps">Section 11</div>
+    <h2 class="display">Booking the Canados 86</h2>
+    <div class="rules"><span class="thick"></span><span class="thin"></span></div>
+  </div>
+  <div class="sec-body"><p>The Canados 86 is the top tier of the Marbella fleet: a 26 metre Italian superyacht by the historic Roman yard of Canados, with four cabins, a full crew of captain, mate, chef and stewardess, and the range to take you anywhere from a Golden Mile swim stop to a long run to Gibraltar. She is the boat for the occasions that deserve the best the coast can offer.</p><p>To check availability and receive a quote, visit the Canados 86 page on the website and send a WhatsApp enquiry with your preferred date, group size and the kind of day you have in mind. Availability and a confirmed, competitive quote usually come back the same day, and for high-summer or overnight dates the earlier you ask, the better your chances of securing her.</p></div>
+  
+</div>
+
+<div class="callout">
+  <h3 class="display">Book this boat</h3>
+  <p>Charter the Canados 86 at <a href="https://boatrentalinmarbella.com/boats/canados-86/">boatrentalinmarbella.com</a>. Boat owners: list your boat free at <a href="https://boathire24.com">boathire24.com</a>.</p>
+  <div class="linksrow caps"><a href="https://boathire24.com">https://boathire24.com</a><span class="sep">&#9670;</span><a href="https://boatrentalinmarbella.com/boats/canados-86/">https://boatrentalinmarbella.com/boats/canados-86/</a></div>
+</div>
+<div class="endmark"><span class="line"></span><svg width="14" height="14" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg" aria-hidden="true"><path fill="#b9924b" d="M17 15l1.55 1.55c-.96 1.69-3.33 3.04-5.55 3.37V11h3V9h-3V7.82C14.16 7.4 15 6.3 15 5c0-1.65-1.35-3-3-3S9 3.35 9 5c0 1.3.84 2.4 2 2.82V9H8v2h3v8.92c-2.22-.33-4.59-1.68-5.55-3.37L7 15l-4-3v3c0 3.88 4.92 7 9 7s9-3.12 9-7v-3l-4 3zM12 4c.55 0 1 .45 1 1s-.45 1-1 1-1-.45-1-1 .45-1 1-1z"/></svg><span class="line"></span></div>
+  </td></tr></tbody>
+  <tfoot><tr><td></td></tr></tfoot>
+</table>
+
+<div class="runfoot caps">
+  <span><b>boathire24.com</b> <span class="gold">&#9670;</span> rent boats worldwide
+    <span class="gold">&#9670;</span> list your boat free</span>
+  <span class="gold caps">boatrentalinmarbella.com/boats/canados-86</span>
+</div>
+</body>
+</html>

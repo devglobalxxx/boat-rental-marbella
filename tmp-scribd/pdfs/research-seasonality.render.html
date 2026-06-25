@@ -1,0 +1,500 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<title>Seasonality and Weather Windows for Mediterranean Day Charter</title>
+<style>
+:root {
+  --navy:      #0e2438;
+  --navy-deep: #08182a;
+  --gold:      #b9924b;
+  --gold-dark: #8a6c33;
+  --gold-light:#d4b06a;
+  --gold-pale: #e8d8af;
+  --ivory:     #f7f2e6;
+  --paper:     #fdfbf5;
+  --ink:       #22303e;
+  --muted:     #5d6a76;
+  --hairline:  #d9cdaf;
+  --row-tint:  #f5efdf;
+}
+* { -webkit-print-color-adjust: exact; print-color-adjust: exact;
+    box-sizing: border-box; }
+@page { size: A4; margin: 0; }
+html, body { margin: 0; padding: 0; }
+body {
+  background: var(--paper);
+  color: var(--ink);
+  font-family: Georgia, 'Palatino Linotype', Palatino, 'Times New Roman', serif;
+  font-size: 10.5pt;
+  line-height: 1.62;
+}
+.display { font-family: Didot, 'Didot LT STD', 'Playfair Display', Georgia,
+           'Times New Roman', serif; }
+.caps { font-family: Optima, 'Avenir Next', 'Gill Sans', 'Trebuchet MS',
+        sans-serif; text-transform: uppercase; }
+
+/* ---------------- Cover ---------------- */
+.cover {
+  position: relative;
+  width: 210mm; height: 297mm;
+  overflow: hidden;
+  background: var(--navy-deep);
+  page-break-after: always;
+}
+.cover-img {
+  position: absolute; inset: 0;
+  width: 100%; height: 100%;
+  object-fit: cover;
+  object-position: 24% center;  /* centres the yacht's full profile in the A4 crop */
+}
+.cover-veil {
+  position: absolute; inset: 0;
+  background:
+    linear-gradient(to top, rgba(11,26,46,0.92),
+                    rgba(11,26,46,0.86) 30%, transparent 55%),
+    linear-gradient(180deg,
+      rgba(8,24,42,0.62) 0%,
+      rgba(8,24,42,0.20) 26%,
+      rgba(8,24,42,0.12) 50%,
+      rgba(8,24,42,0.00) 62%);
+}
+.cover-veil.no-img {
+  background:
+    radial-gradient(120mm 90mm at 50% 26%, rgba(185,146,75,0.20), transparent 70%),
+    linear-gradient(180deg, #122c46 0%, #0a1d33 55%, #071426 100%);
+}
+.cover-top {
+  position: absolute; top: 13mm; left: 16mm; right: 16mm;
+  display: flex; align-items: center; justify-content: space-between;
+}
+.brand-lockup { display: flex; align-items: center; gap: 4.5mm; }
+.logo-chip {
+  background: #ffffff;
+  border: 1px solid var(--gold);
+  border-radius: 1.2mm;
+  padding: 2mm;
+  line-height: 0;
+}
+.logo-chip img { display: block; height: 13mm; width: 13mm;
+                 object-fit: cover; border-radius: 0.7mm; }
+.brand-name {
+  color: var(--ivory); font-size: 13pt; letter-spacing: 0.30em;
+  line-height: 1.25;
+}
+.brand-tag {
+  color: var(--gold-pale); font-size: 6.4pt; letter-spacing: 0.26em;
+  margin-top: 1mm;
+}
+.doc-type-flag {
+  text-align: right;
+  color: var(--gold-light);
+  font-size: 7.5pt; letter-spacing: 0.34em;
+  border-top: 0.7pt solid var(--gold);
+  border-bottom: 0.7pt solid var(--gold);
+  padding: 2.2mm 0 2mm 0;
+}
+.cover-main {
+  position: absolute; left: 16mm; right: 16mm; bottom: 34mm;
+}
+.cover-rule {
+  display: flex; align-items: center; gap: 4mm;
+  margin-bottom: 5mm;
+}
+.cover-rule .line { flex: 0 0 22mm; height: 0; border-top: 0.8pt solid var(--gold); }
+.cover-rule .word {
+  color: var(--gold-light); font-size: 8pt; letter-spacing: 0.42em;
+  white-space: nowrap;
+  text-shadow: 0 1px 5px rgba(5,14,26,0.65);
+}
+.cover-title {
+  color: #fdfaf2;
+  font-size: 44pt; line-height: 1.05;
+  font-weight: 600;
+  margin: 0 0 4mm 0;
+  text-shadow: 0 1px 8px rgba(5,14,26,0.55);
+}
+.cover-subtitle {
+  color: var(--gold-pale);
+  font-style: italic;
+  font-size: 13pt; line-height: 1.45;
+  margin: 0 0 7mm 0;
+  max-width: 150mm;
+  text-shadow: 0 1px 6px rgba(5,14,26,0.6);
+}
+.cover-meta {
+  color: rgba(247,242,230,0.92);
+  font-size: 7.6pt; letter-spacing: 0.22em;
+}
+.cover-meta .dot { color: var(--gold-light); padding: 0 2.2mm; }
+.fleet-strip {
+  margin-top: 8mm;
+  display: flex; align-items: center; gap: 4mm;
+}
+.fleet-strip .logo-chip img { height: 9mm; width: auto; }
+.fleet-label {
+  color: rgba(247,242,230,0.85); font-size: 6.6pt; letter-spacing: 0.30em;
+}
+
+/* ------------- Repeating footer ------------- */
+.runfoot {
+  position: fixed; left: 0; right: 0; bottom: 0;
+  height: 12mm;
+  background: var(--ivory);
+  border-top: 1pt solid var(--gold);
+  display: flex; align-items: center; justify-content: space-between;
+  padding: 0 16mm;
+  font-size: 6.8pt; letter-spacing: 0.12em;
+  color: var(--navy);
+}
+.runfoot b { letter-spacing: 0.22em; font-weight: 600; }
+.runfoot .gold { color: var(--gold-dark); }
+.runfoot a { color: var(--navy); text-decoration: none; }
+
+/* ------------- Paged content scaffold ------------- */
+table.paged { width: 100%; border-collapse: collapse; }
+table.paged > thead td { height: 15mm; padding: 0; }
+table.paged > tfoot td { height: 17mm; padding: 0; }
+table.paged > tbody > tr > td { padding: 0 18mm; }
+
+/* ------------- Sections ------------- */
+.sec { margin: 0 0 8mm 0; }
+.sec-head {
+  break-after: avoid-page; page-break-after: avoid;
+  break-inside: avoid; page-break-inside: avoid;
+  margin: 0 0 4.5mm 0;
+}
+.sec-kicker {
+  color: var(--gold-dark); font-size: 7pt; letter-spacing: 0.38em;
+  margin-bottom: 1.6mm;
+}
+.sec-head h2 {
+  color: var(--navy);
+  font-size: 18.5pt; font-weight: 400; line-height: 1.2;
+  margin: 0 0 2.6mm 0;
+}
+.sec-head .rules { position: relative; height: 2.4mm; }
+.sec-head .rules .thin {
+  position: absolute; left: 0; right: 0; top: 1mm;
+  border-top: 0.6pt solid var(--hairline);
+}
+.sec-head .rules .thick {
+  position: absolute; left: 0; top: 0; width: 26mm;
+  border-top: 2.2pt solid var(--gold);
+}
+.sec-body p { margin: 0 0 3.4mm 0; }
+.sec-body p:last-child { margin-bottom: 0; }
+.sec-body ol { margin: 0 0 3.4mm 0; padding-left: 5.5mm; }
+.sec-body ul { margin: 0 0 3.4mm 0; padding-left: 1mm; }
+.sec-body li { margin-bottom: 1.6mm; break-inside: avoid; page-break-inside: avoid;
+               -webkit-column-break-inside: avoid; }
+.sec-body ul.cols2 { columns: 2; column-gap: 9mm;
+                     break-inside: avoid; page-break-inside: avoid; }
+.sec-body ul > li {
+  list-style: none;
+  padding-left: 1.1em; text-indent: -1.1em;  /* hanging indent: wraps align under text */
+}
+.sec-body ul > li::before {
+  content: "\2726";            /* four-pointed star, brass compass point */
+  display: inline-block; width: 1.44em; text-indent: 0;
+  color: var(--gold); font-size: 8pt;       /* 1.44em @8pt == 1.1em @10.5pt */
+}
+.sec-body a { color: var(--navy); text-decoration: none;
+              border-bottom: 0.6pt solid var(--gold); }
+.sec-body strong { color: var(--navy); }
+
+/* generic tables inside section html */
+.sec-body table {
+  width: 100%; border-collapse: collapse;
+  margin: 1mm 0 4mm 0;
+  break-inside: avoid; page-break-inside: avoid;
+  font-size: 9.8pt;
+}
+.sec-body th {
+  background: var(--navy); color: var(--ivory);
+  font-family: Optima, 'Avenir Next', 'Gill Sans', 'Trebuchet MS', sans-serif;
+  text-transform: uppercase; letter-spacing: 0.16em;
+  font-size: 7.4pt; font-weight: 500;
+  text-align: left; padding: 2.6mm 3.5mm;
+  border-bottom: 1.4pt solid var(--gold);
+}
+.sec-body td {
+  padding: 2.2mm 3.5mm;
+  border-bottom: 0.6pt solid var(--hairline);
+  color: var(--ink);
+}
+.sec-body td, .sec-body th { font-variant-numeric: tabular-nums; }
+.sec-body td:not(:first-child),
+.sec-body th:not(:first-child) { text-align: right; }
+.sec-body tr:nth-child(even) td { background: var(--row-tint); }
+.sec-body td:first-child { color: var(--navy); }
+.sec-body tr.best td { background: rgba(212,175,55,0.12); }
+.sec-body tr.best td:first-child { color: var(--navy); font-weight: 600; }
+.best-tag {
+  display: inline-block;
+  font-family: Optima, 'Avenir Next', 'Gill Sans', 'Trebuchet MS', sans-serif;
+  font-variant-caps: small-caps; text-transform: lowercase;
+  font-size: 7.6pt; font-weight: 600; letter-spacing: 0.14em;
+  color: var(--gold-dark);
+  border: 0.6pt solid var(--gold);
+  border-radius: 1mm;
+  padding: 0.2mm 1.6mm;
+  margin-left: 2.2mm;
+  white-space: nowrap;
+  vertical-align: 0.2mm;
+}
+
+/* ------------- Figures ------------- */
+figure.plate {
+  break-inside: avoid; page-break-inside: avoid;
+  margin: 5mm 0 2mm 0;
+  background: #ffffff;
+  border: 0.7pt solid var(--gold-light);
+  padding: 2.6mm;
+}
+figure.plate img {
+  display: block; width: 100%; height: 78mm; object-fit: cover;
+}
+figure.plate figcaption {
+  text-align: center;
+  font-style: italic;
+  font-size: 8.4pt; color: var(--muted);
+  padding: 2.4mm 2mm 0.6mm 2mm;
+}
+figure.plate figcaption::before {
+  content: "\25C6\00a0"; color: var(--gold); font-size: 6pt;
+}
+
+/* ------------- Spec table (2-column grid: two lbl/val pairs per row) ------------- */
+.spec-block { margin: 0 0 8mm 0; }
+table.spec {
+  width: 100%; border-collapse: collapse;
+  border-top: 1.6pt solid var(--navy);
+  border-bottom: 1.6pt solid var(--navy);
+}
+table.spec td { padding: 1.7mm 1.5mm; border-bottom: 0.6pt solid var(--hairline);
+                vertical-align: top; }
+table.spec tr:last-child td { border-bottom: none; }
+table.spec td.lbl {
+  width: 21%;
+  font-family: Optima, 'Avenir Next', 'Gill Sans', 'Trebuchet MS', sans-serif;
+  text-transform: uppercase; letter-spacing: 0.16em;
+  font-size: 7.2pt; color: var(--gold-dark);
+  padding-top: 2.3mm;
+}
+table.spec td.val { width: 29%; color: var(--navy); font-size: 9.8pt; }
+table.spec td.lbl:nth-child(3) {
+  border-left: 0.6pt solid var(--hairline);
+  padding-left: 4mm;
+}
+table.spec td.val:nth-child(2) { padding-right: 4mm; }
+
+/* ------------- Callout ------------- */
+.callout {
+  break-inside: avoid; page-break-inside: avoid;
+  margin: 8mm 0 4mm 0;
+  background: var(--navy);
+  border: 1pt solid var(--gold);
+  outline: 0.6pt solid var(--gold);
+  outline-offset: -2.2mm;
+  color: var(--ivory);
+  padding: 8mm 9mm 7mm 9mm;
+}
+.callout h3 {
+  color: var(--gold-light);
+  font-size: 15pt; font-weight: 400;
+  margin: 0 0 3mm 0;
+}
+.callout p { margin: 0 0 2.8mm 0; line-height: 1.6; color: #efe7d3; }
+.callout a { color: var(--gold-light); text-decoration: none; }
+.callout ul { margin: 0 0 2.8mm 0; padding-left: 1mm; }
+.callout ul > li { list-style: none; margin-bottom: 1.4mm;
+                   padding-left: 1.1em; text-indent: -1.1em;
+                   break-inside: avoid; page-break-inside: avoid; }
+.callout ul > li::before {
+  content: "\2726"; display: inline-block; width: 1.44em; text-indent: 0;
+  color: var(--gold-light); font-size: 8pt;
+}
+.callout .linksrow {
+  margin-top: 4.5mm; padding-top: 3.6mm;
+  border-top: 0.6pt solid rgba(212,176,106,0.55);
+  font-size: 7.6pt; letter-spacing: 0.16em;
+  color: var(--gold-pale);
+}
+.callout .linksrow span.sep { padding: 0 2.6mm; color: var(--gold); }
+
+.endmark {
+  display: flex; align-items: center; justify-content: center; gap: 3.5mm;
+  margin: 7mm 0 0 0;
+}
+.endmark .line { width: 14mm; height: 0; border-top: 0.6pt solid var(--gold); }
+.endmark svg { display: block; }
+</style>
+</head>
+<body>
+
+<div class="cover">
+  <img class="cover-img" src="file:///Users/master/boat-rental-marbella/site/img/boats/mangusta-80-white/hero-1200.jpg" alt="">
+  <div class="cover-veil"></div>
+  <div class="cover-top">
+    <div class="brand-lockup">
+      <span class="logo-chip"><img src="file:///Users/master/boat-rental-platform/public/brand-logo.jpg" alt="BoatHire24"></span>
+      <div>
+        <div class="brand-name caps display">BoatHire24</div>
+        <div class="brand-tag caps">Rent boats worldwide <span class="gold">|</span> list your boat free</div>
+      </div>
+    </div>
+    <div class="doc-type-flag caps">June 2026</div>
+  </div>
+  <div class="cover-main">
+    <div class="cover-rule">
+      <span class="line"></span>
+      <span class="word caps">Research Report</span>
+    </div>
+    <h1 class="cover-title display">Seasonality and Weather Windows for Mediterranean Day Charter</h1>
+    <p class="cover-subtitle display">Evidence from Marbella: month-by-month sea state, wind regimes, pricing tiers and the operational windows that govern a day on the water</p>
+    <div class="cover-meta caps">BoatHire24 Research</div>
+    
+  </div>
+</div>
+<table class="paged">
+  <thead><tr><td></td></tr></thead>
+  <tbody><tr><td>
+
+<div class="sec">
+  <div class="sec-head">
+    <div class="sec-kicker caps">Section 01</div>
+    <h2 class="display">Abstract</h2>
+    <div class="rules"><span class="thick"></span><span class="thin"></span></div>
+  </div>
+  <div class="sec-body"><p>This paper examines the seasonality of single-day yacht charter on the western Costa del Sol, using Marbella and its principal departure marina at Puerto Banus as the case study. Day charter is a peculiar product. Unlike a week-long bareboat cruise, where weather risk is pooled across many days, the day charter stands or falls on a single set of conditions inside a single daylight window. The variables that matter, then, are not annual averages but the distribution of sea temperature, wind direction and swell on any given calendar day, and the way those distributions shift through the year.</p><p>We synthesise operational data drawn from a working Marbella fleet operating from Puerto Banus across the full season. Three findings stand out. First, the warm-water window for comfortable swimming is wider than the price-peak window: sea temperature holds at <strong>22 to 24 degrees Celsius from June through October</strong>, yet headline demand concentrates in July and August. Second, the dominant constraint on comfort is not temperature but the afternoon wind regime, specifically the easterly <em>levante</em>, which builds from around 14:00 in high summer and can gust from 20 to 40 knots. Third, the resulting <strong>shoulder seasons of June and September</strong> deliver near-peak water with calmer afternoons and prices roughly 10 to 15 per cent below peak, making them the rational optimum for most charterers.</p><p>We set out the underlying month-by-month data, analyse the levante and <em>poniente</em> wind systems and their effect on routing, describe how a working fleet matches vessels to conditions, and translate the evidence into bookable guidance. All figures are drawn from the cited operational sources; contextual material on geography and itineraries is general and clearly marked as such.</p></div>
+  
+</div>
+
+<div class="sec">
+  <div class="sec-head">
+    <div class="sec-kicker caps">Section 02</div>
+    <h2 class="display">Study Area and the Logic of the Day Charter</h2>
+    <div class="rules"><span class="thick"></span><span class="thin"></span></div>
+  </div>
+  <div class="sec-body"><p>Marbella sits on the western Costa del Sol in Andalusia, sheltering under the limestone bulk of La Concha, the mountain that gives the bay its distinctive backdrop. The charter fleet considered here departs from a single port: <strong>Puerto Banus</strong>, the marina built in 1970 just west of Marbella town that has become the most recognisable yachting address on the Spanish south coast. Operating from one departure point matters for this study because it fixes the geography of every itinerary and removes the confounding variable of marina transfers.</p><p>The cruising ground runs along an east to west axis. Heading east, a vessel reaches Marbella Marina in roughly 15 minutes, the anchorage at Cala del Faro near Marbella town, and the dunes and inlets around Cabopino some 8 nautical miles away. Heading west lies the Golden Mile, the strip of villas and beach clubs between Banus and Marbella, then Estepona at 12 nautical miles and the luxury marina of Sotogrande at 20 nautical miles, the latter within sight of Gibraltar and the mouth of the Strait. This bidirectional layout is central to the weather argument that follows: because shelter can be sought either east or west, a skipper can almost always find lee water somewhere on the coast regardless of wind direction.</p><p>The economic logic of a day charter is distinct from longer cruising. The product is a four, six or eight-hour slot within a single day, sold all-inclusive. Because the customer commits to one date, the operator must manage weather risk on that date alone. There is no flexibility to wait out a blow. This concentrates the entire seasonality question onto the probability that a given day, and more precisely a given half-day window, will offer comfortable conditions. The rest of this paper is, in effect, a study of those probabilities.</p></div>
+  <figure class="plate"><img src="file:///Users/master/boat-rental-marbella/site/img/boats/azimut-58/hero-1200.jpg" alt=""><figcaption>The Azimut 58 Flybridge (17.6m, 12 guests), a mid-size flybridge well suited to moderate-wind days on the Marbella coast.</figcaption></figure>
+</div>
+
+<div class="sec">
+  <div class="sec-head">
+    <div class="sec-kicker caps">Section 03</div>
+    <h2 class="display">The Annual Cycle: Sea Temperature, Air and Price</h2>
+    <div class="rules"><span class="thick"></span><span class="thin"></span></div>
+  </div>
+  <div class="sec-body"><p>The foundation of the analysis is the month-by-month climatology of the bay, set against the operator's three-tier pricing structure. The table below reproduces the recorded figures for sea temperature, average air high, the prevailing wind character and the price position relative to peak.</p><table><thead><tr><th>Month</th><th>Sea temp</th><th>Air high</th><th>Wind character</th><th>Price vs peak</th></tr></thead><tbody><tr><td>January</td><td>16C</td><td>16C</td><td>Variable, occasional storms</td><td>-40%</td></tr><tr><td>February</td><td>15C</td><td>17C</td><td>Light, can be cold</td><td>-40%</td></tr><tr><td>March</td><td>16C</td><td>19C</td><td>Light to moderate</td><td>-30%</td></tr><tr><td>April</td><td>17C</td><td>20C</td><td>Light mornings</td><td>-20%</td></tr><tr><td>May</td><td>19C</td><td>23C</td><td>Light, calm sea</td><td>-15%</td></tr><tr><td>June</td><td>22C</td><td>27C</td><td>Light, occasional levante</td><td>-10%</td></tr><tr><td>July</td><td>23C</td><td>30C</td><td>Levante afternoons</td><td>peak</td></tr><tr><td>August</td><td>24C</td><td>31C</td><td>Levante afternoons</td><td>peak</td></tr><tr><td>September</td><td>24C</td><td>27C</td><td>Lighter than August</td><td>-10%</td></tr><tr><td>October</td><td>22C</td><td>23C</td><td>Light mornings, variable PM</td><td>-15%</td></tr><tr><td>November</td><td>19C</td><td>19C</td><td>Variable</td><td>-35%</td></tr><tr><td>December</td><td>17C</td><td>16C</td><td>Variable, storm risk</td><td>-40%</td></tr></tbody></table><p>Two structural features deserve comment. The first is the lag between water and air. The sea is slow to warm and slow to cool, so its annual peak of <strong>24 degrees in August and September</strong> trails the air, and October still records 22 degrees even as air highs fall to 23. This thermal inertia is why the practical swimming season extends a full month beyond the calendar peak. The second feature is the pricing structure itself. The operator maintains three tiers: low season from October to May excluding Easter and Christmas weeks, shoulder season in June and September, and high season in July, August, Easter and Christmas. The gap between adjacent tiers is roughly 10 to 15 per cent, and a Saturday at August peak runs about 25 per cent above a weekday at June shoulder. Price, in other words, tracks demand and school holidays far more closely than it tracks the quality of the water.</p></div>
+  
+</div>
+
+<div class="sec">
+  <div class="sec-head">
+    <div class="sec-kicker caps">Section 04</div>
+    <h2 class="display">Wind Regimes: Levante and Poniente</h2>
+    <div class="rules"><span class="thick"></span><span class="thin"></span></div>
+  </div>
+  <div class="sec-body"><p>If temperature defines whether one can swim, wind defines whether the day is pleasant. The Marbella coast is governed by two opposing wind systems, and understanding them is the single most useful piece of knowledge a charterer can carry.</p><p>The <strong>levante</strong> is an easterly wind that funnels out of the Mediterranean and through the constriction of the Strait of Gibraltar before spreading along the coast. It brings strong gusts, commonly recorded between 20 and 40 knots, choppy seas and reduced visibility, and it characteristically arrives in spells lasting three to five days. Crucially for day charter, it produces short, steep waves rather than long ocean swell, and that steep chop is what makes a small boat uncomfortable. The levante is most frequent in summer afternoons: in June it appears perhaps one day in five, but in July and August roughly one day in two carries a stiff levante building from around 14:00.</p><p>The <strong>poniente</strong> is its opposite, a westerly drawn off the Atlantic. It brings lighter breezes, typically under 15 knots, flatter seas and clearer skies, and it is unambiguously the preferred wind for a relaxed charter. Poniente conditions favour swimming, sunbathing and gentle coastal cruising. It is more frequent in spring and autumn but can occur at any time of year.</p><p>The interaction of these systems with the bidirectional coastline is what gives the Marbella skipper room to manoeuvre. On a levante day the fleet runs <em>west</em>, toward Estepona and Sotogrande, where the easterly is partly blanketed; on a poniente day it heads <em>east</em>, toward Cabopino and Cala del Faro. Puerto Banus itself is naturally sheltered from easterlies by its position and marina layout, which is why it remains a safe departure point even when the levante is blowing hard. The harbour, in effect, gives every charter a calm start regardless of the day's regime.</p></div>
+  
+</div>
+
+<div class="sec">
+  <div class="sec-head">
+    <div class="sec-kicker caps">Section 05</div>
+    <h2 class="display">The Diurnal Window: Why Mornings Win</h2>
+    <div class="rules"><span class="thick"></span><span class="thin"></span></div>
+  </div>
+  <div class="sec-body"><p>The most actionable finding in the operational record is not seasonal at all. It is diurnal. Within a single summer day the sea state follows a reliable arc, and that arc, more than the calendar, determines comfort.</p><p>The pattern in high summer runs as follows. From roughly 09:00 to 13:00 the water is glassy, with winds under 5 knots; this is the best window for paddleboarding, snorkelling and first-time guests. From around 14:00 to 18:00 thermal and synoptic winds combine, whether poniente or levante, to build sea breezes of 12 to 18 knots, occasionally gusting beyond 20 on a levante afternoon. Then from 18:00 to roughly 21:30 the wind drops away again, the sea calms, and the day closes with the long Mediterranean dusk.</p><p>This diurnal arc has a direct consequence for slot selection. The morning slot, typically 10:00 to 13:00, is the most booked in August precisely because it captures flat water before the breeze fills in. The sunset window, around 18:00 to 20:00, is the second most popular, helped by sunset falling as late as 21:15 to 21:45 in early August and air temperatures easing to a comfortable 25 to 27 degrees as La Concha turns orange in the low light. The midday slot, 13:00 to 16:00, is the easiest to book and the hardest to enjoy, being both the hottest and the windiest part of the day. The practical lesson is that a charterer who is sensitive to motion or heat should book either end of the day and avoid the middle. Notably, the diurnal calm of a high-summer morning can rival the all-day calm of a shoulder-season afternoon, which is why an August morning charter is often a better experience than its reputation for crowds would suggest.</p></div>
+  <figure class="plate"><img src="file:///Users/master/boat-rental-marbella/site/img/boats/astondoa-40/hero-1200.jpg" alt=""><figcaption>The Astondoa 40 (12.5m, 9 guests), an entry-tier day boat from EUR 749 for two hours, ideal for calm-morning charters.</figcaption></figure>
+</div>
+
+<div class="sec">
+  <div class="sec-head">
+    <div class="sec-kicker caps">Section 06</div>
+    <h2 class="display">Peak Season Mechanics: The August Case</h2>
+    <div class="rules"><span class="thick"></span><span class="thin"></span></div>
+  </div>
+  <div class="sec-body"><p>August is the system under maximum load, and it is worth studying as a stress test of the seasonality model. Sea temperatures average 23 to 25 degrees and peak around 26 degrees in the third week, the warmest water of the year. Air sits at 29 to 32 degrees inland and 26 to 29 degrees on the water, and rain risk falls under 2 per cent on any given day. The fleet runs at 85 to 95 per cent capacity through the month. Weather cancellations are rare, recorded at under 3 per cent of bookings, because the skippers route around chop rather than cancel.</p><p>Demand, not weather, is the binding constraint in August, and it expresses itself through lead time. The booking order is predictable: entry-tier boats go first on price, then the headline flybridge motor yachts, then the larger vessels which retain better mid-week availability. The table records the observed pattern.</p><table><thead><tr><th>Boat</th><th>Capacity</th><th>Weekend lead time</th></tr></thead><tbody><tr><td>Astondoa 40 / Azimut 39</td><td>9-11 pax</td><td>14-21 days</td></tr><tr><td>Mangusta 80 (white &amp; grey)</td><td>12 pax</td><td>10-14 days</td></tr><tr><td>Lagoon 380 catamaran</td><td>10 pax</td><td>7-10 days</td></tr><tr><td>Pershing 46, Fairline Targa 12m</td><td>10 pax</td><td>5-10 days</td></tr><tr><td>Ferretti 94, Canados 86, Maiora 26m</td><td>12 pax</td><td>3-7 days</td></tr></tbody></table><p>Three weekends function as the demand peaks within the peak: 8 to 9 August, the 15 to 16 August weekend around the Asuncion bank holiday, and 22 to 23 August. The 15 August public holiday adds domestic Spanish demand on top of international visitors. Shifting to a Tuesday, Wednesday or Thursday makes availability 20 to 30 per cent easier for the same boats and the same prices. Importantly, the operator's headline rates do not surge in August; what disappears is the discounted last-minute inventory and the cheapest morning windows. The price one pays for August is paid in lead time, not in a higher sticker.</p></div>
+  
+</div>
+
+<div class="sec">
+  <div class="sec-head">
+    <div class="sec-kicker caps">Section 07</div>
+    <h2 class="display">The Shoulder Optimum: June, September and October</h2>
+    <div class="rules"><span class="thick"></span><span class="thin"></span></div>
+  </div>
+  <div class="sec-body"><p>The central argument of this paper is that the shoulder seasons, not the peak, represent the rational optimum for most charterers, and the data supports it cleanly. Consider September. The sea still holds 23 to 24 degrees of warmth carried over from August, the levante is fading from its summer frequency, prices sit roughly 10 per cent below August, and crowds halve as schools restart across Europe. A charterer in mid-September is, in effect, buying August water at June prices on an uncrowded boat. June offers the mirror image at the start of the season: 22-degree water, light winds with only occasional levante, and prices around 10 per cent under peak before the summer rush arrives.</p><p>October extends the proposition into genuine value territory. The month records 22-degree sea temperatures, 24-degree air, and 8 to 10 hours of sunshine, with calm seas the norm. Swell rarely exceeds half a metre and the prevailing westerly stays light, typically 10 to 15 knots. The entry-tier boats hold their <strong>EUR 749 for two hours and EUR 2,299 for a full eight-hour day</strong>, rates that run roughly 15 to 20 per cent below the July to August peak, while anchorages and beach clubs sit empty. The trade-off is shorter daylight, with sunset around 19:30, which compresses the usable window but does nothing to the quality of the water itself.</p><p>The contrarian conclusion is that the best month is not the warmest. A charterer optimising for the joint objective of warm water, calm afternoons, low price and an uncrowded boat should book a weekday in mid-September, with a weekday in late June as a close second and a Saturday in May or October as a value-led third choice. The only configuration to avoid on experience grounds is a Saturday in August, where one pays peak price for peak crowds and the highest afternoon levante probability of the year.</p></div>
+  
+</div>
+
+<div class="sec">
+  <div class="sec-head">
+    <div class="sec-kicker caps">Section 08</div>
+    <h2 class="display">Matching Vessel to Conditions</h2>
+    <div class="rules"><span class="thick"></span><span class="thin"></span></div>
+  </div>
+  <div class="sec-body"><p>Seasonality interacts with fleet composition, because not every vessel handles every condition equally. The general naval-architecture principle is straightforward: a larger, heavier hull carries its way through steep chop better than a light one, so vessel choice is itself a weather-mitigation tool.</p><p>On the studied fleet, the vessels recommended for marginal or levante-affected days are the heaviest. The <strong>Mangusta 80 (24m, 12 guests)</strong>, the flagship of the line and chartered from EUR 4,719 for a four-hour minimum with a jet ski included, offers notable stability in moderate winds. The <strong>Ferretti 94 (29m, 12 guests)</strong> and <strong>Canados 86 (26m, 12 guests)</strong>, both priced on request, are the largest and steadiest options. The <strong>Azimut 58 Flybridge (17.6m, 12 guests)</strong> is a solid mid-size choice for smaller groups in moderate wind. By contrast, vessels under 12 metres, including the Astondoa 40 (12.5m, 9 guests) at EUR 749 for two hours and the Azimut 39 (12.5m, 11 guests), are most affected by levante chop and are at their best on the calm days that dominate the shoulder seasons and the high-summer mornings. The Lagoon 380 catamaran (10 guests) earns its popularity among groups precisely because the twin-hull form resists rolling, a structural answer to the comfort problem.</p><p>This is the practical synthesis of the whole analysis. The right booking is a function of three jointly chosen variables: the month, which sets water temperature and the baseline wind probability; the time slot, which exploits the diurnal calm; and the vessel, whose mass and form determine how much residual chop the guest actually feels. A heavier boat on a September morning is, in effect, wearing belt and braces against discomfort.</p></div>
+  
+</div>
+
+<div class="sec">
+  <div class="sec-head">
+    <div class="sec-kicker caps">Section 09</div>
+    <h2 class="display">Charter Logistics and the All-Inclusive Model</h2>
+    <div class="rules"><span class="thick"></span><span class="thin"></span></div>
+  </div>
+  <div class="sec-body"><p>The seasonality analysis is incomplete without the commercial context that surrounds it, because the operator's all-inclusive model removes several variables that would otherwise complicate the day. Every charter in the studied fleet includes, as standard and at every price point, a <strong>licensed Spanish skipper</strong> familiar with the Marbella coast, all fuel and harbour fees, a cold-drinks provision of water, soft drinks, beer, white wine and cava, light snacks such as chips, olives and cured ham, full insurance and safety equipment, and Spanish IVA at 21 per cent. There are no fuel surcharges, no mandatory skipper tips and no port fees added at the end.</p><p>The presence of a licensed skipper on every charter is itself a seasonality instrument. Because a professional assesses conditions daily and makes the routing call, the levante does not become the customer's problem to solve. The skipper monitors the marine forecast, chooses the sheltered side of the coast, picks the calmest available anchorage for each swim stop, and reschedules only when conditions are genuinely unsafe. This is why August weather cancellations stay under 3 per cent: the human judgement absorbs the variance that the calendar introduces. A typical high-summer half-day loop, weather permitting, runs Puerto Banus to Rio Verde, along the Golden Mile to Cala del Faro and back, with two swim stops; on a levante afternoon the same loop is simply mirrored to the west. Departure logistics are correspondingly simple, with a single departure port at Puerto Banus, no marina transfers, and guests met at the boat shortly before the slot begins.</p></div>
+  
+</div>
+
+<div class="sec">
+  <div class="sec-head">
+    <div class="sec-kicker caps">Section 10</div>
+    <h2 class="display">Practical Guidance and Frequently Asked Questions</h2>
+    <div class="rules"><span class="thick"></span><span class="thin"></span></div>
+  </div>
+  <div class="sec-body"><p>The evidence translates into a small set of decision rules. We close with the questions charterers most often raise.</p><ul><li><strong>What is the single best month?</strong> September, specifically the first three weeks. The sea is still 23 to 24 degrees, the levante is dropping, prices sit about 10 per cent under August, and crowds halve as European schools restart.</li><li><strong>What is the cheapest time to go?</strong> November weekdays, when the operating fleet is smallest and rates fall 30 to 40 per cent below summer, though the sea has cooled to 18 to 19 degrees and daylight is short, so swims are brief.</li><li><strong>Morning or afternoon?</strong> Morning. The 09:00 to 13:00 window is glassy in summer, with winds under 5 knots, before the afternoon breeze fills in. The sunset slot is the strong second choice.</li><li><strong>How far ahead should I book?</strong> For August weekends, 14 to 21 days for the popular boats and 30-plus days for the 15 August holiday weekend; for October, around two weeks, with last-minute slots often available.</li><li><strong>Can I charter in winter?</strong> Yes. A smaller fleet runs from November through February with sea at 15 to 17 degrees, better suited to sunset cruises and dolphin watching than swimming, and a flexible date is wise because rough days cancel.</li><li><strong>Does the wind ruin a summer charter?</strong> Rarely. Levante days are routed west toward Estepona for shelter, Puerto Banus is sheltered from easterlies, and under 3 per cent of August bookings are lost to weather.</li></ul><p>The overarching message is that Marbella offers a wide and forgiving charter season. The water is swimmable for half the year, the worst of the wind is confined to summer afternoons that a morning slot avoids entirely, and the best value sits in the shoulder months that bracket the peak rather than in the peak itself.</p></div>
+  
+</div>
+
+<div class="sec">
+  <div class="sec-head">
+    <div class="sec-kicker caps">Section 11</div>
+    <h2 class="display">Conclusion</h2>
+    <div class="rules"><span class="thick"></span><span class="thin"></span></div>
+  </div>
+  <div class="sec-body"><p>The seasonality of Mediterranean day charter at Marbella resolves into three nested windows. The widest is thermal: a swimmable sea from June through October, holding 22 to 24 degrees on the back of the water's slow response to the changing air. Nested inside it is the wind window, which removes high-summer afternoons from the comfort zone because of the easterly levante and its 20 to 40 knot gusts, while leaving mornings and the shoulder months calm. Nested inside that is the diurnal window, the glassy 09:00 to 13:00 morning that is reliable even in August.</p><p>The commercial structure does not align with this physical reality, and that misalignment is the charterer's opportunity. Prices peak with school holidays in July and August, yet the water is just as warm and the afternoons far calmer in June, September and October. The rational booking, for anyone with date flexibility, is therefore a shoulder-season weekday morning on a vessel sized to the conditions, captained by a skipper who will read the day's wind and route around it. That combination delivers peak-quality water and a calm sea at a 10 to 20 per cent discount on a boat one need not fight to book.</p><p>For the operator and the wider market the implication is equally clear. The shoulder seasons are not a consolation for missing the peak; on the evidence assembled here they are the peak of experience, if not of price. Marbella's bidirectional coast, its sheltered departure marina and its all-inclusive crewed model combine to make the season longer and more forgiving than the headline summer reputation suggests.</p></div>
+  
+</div>
+
+<div class="sec">
+  <div class="sec-head">
+    <div class="sec-kicker caps">Section 12</div>
+    <h2 class="display">References</h2>
+    <div class="rules"><span class="thick"></span><span class="thin"></span></div>
+  </div>
+  <div class="sec-body"><ul><li><a href="https://boatrentalinmarbella.com/blog/best-month-to-rent-a-boat-in-marbella.html">https://boatrentalinmarbella.com/blog/best-month-to-rent-a-boat-in-marbella.html</a></li><li><a href="https://boatrentalinmarbella.com/blog/levante-vs-poniente-wind-marbella-charter.html">https://boatrentalinmarbella.com/blog/levante-vs-poniente-wind-marbella-charter.html</a></li><li><a href="https://boatrentalinmarbella.com/blog/marbella-yacht-charter-august-peak-season.html">https://boatrentalinmarbella.com/blog/marbella-yacht-charter-august-peak-season.html</a></li><li><a href="https://boatrentalinmarbella.com/blog/marbella-yacht-charter-october-shoulder-season.html">https://boatrentalinmarbella.com/blog/marbella-yacht-charter-october-shoulder-season.html</a></li><li><a href="https://boatrentalinmarbella.com">https://boatrentalinmarbella.com</a></li><li><a href="https://boathire24.com">https://boathire24.com</a></li></ul></div>
+  
+</div>
+
+<div class="callout">
+  <h3 class="display">Charter data and fleet access</h3>
+  <p>The charter data, live availability and full fleet behind this study are maintained at boatrentalinmarbella.com, where every vessel is crewed and all-inclusive of skipper, fuel, drinks, snacks, insurance and 21 per cent IVA. For worldwide boat listings, and to list your own boat free, visit boathire24.com.</p>
+  <div class="linksrow caps"><a href="https://boathire24.com">https://boathire24.com</a><span class="sep">&#9670;</span><a href="https://boatrentalinmarbella.com">https://boatrentalinmarbella.com</a></div>
+</div>
+<div class="endmark"><span class="line"></span><svg width="14" height="14" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg" aria-hidden="true"><path fill="#b9924b" d="M17 15l1.55 1.55c-.96 1.69-3.33 3.04-5.55 3.37V11h3V9h-3V7.82C14.16 7.4 15 6.3 15 5c0-1.65-1.35-3-3-3S9 3.35 9 5c0 1.3.84 2.4 2 2.82V9H8v2h3v8.92c-2.22-.33-4.59-1.68-5.55-3.37L7 15l-4-3v3c0 3.88 4.92 7 9 7s9-3.12 9-7v-3l-4 3zM12 4c.55 0 1 .45 1 1s-.45 1-1 1-1-.45-1-1 .45-1 1-1z"/></svg><span class="line"></span></div>
+  </td></tr></tbody>
+  <tfoot><tr><td></td></tr></tfoot>
+</table>
+
+<div class="runfoot caps">
+  <span><b>boathire24.com</b> <span class="gold">&#9670;</span> rent boats worldwide
+    <span class="gold">&#9670;</span> list your boat free</span>
+  <span class="gold caps">boatrentalinmarbella.com</span>
+</div>
+</body>
+</html>

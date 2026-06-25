@@ -41,5 +41,12 @@ case "$1" in
     /usr/bin/python3 -m scripts.scraper.sync_outreach_sheet >> logs/cron.log 2>&1
     echo "[$TS] enrich done" >> logs/cron.log
     ;;
-  *) echo "usage: $0 {scan|followup|cold|maps|enrich}"; exit 2 ;;
+  activate)
+    echo "[$TS] activate start" >> logs/cron.log
+    # Weekly nudge to boathire24.com users who signed up but have no active boat
+    # listing yet (warmest leads). Pulls emails from Supabase auth.users.
+    /usr/bin/python3 -m scripts.scraper.activation_drip --send --limit 200 --sleep 3 >> logs/cron.log 2>&1
+    echo "[$TS] activate done" >> logs/cron.log
+    ;;
+  *) echo "usage: $0 {scan|followup|cold|maps|enrich|activate}"; exit 2 ;;
 esac

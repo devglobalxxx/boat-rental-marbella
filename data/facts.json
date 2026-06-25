@@ -51,7 +51,7 @@
     "policy": "WhatsApp follow-up after every charter; 3 and 4-star reviews kept published."
   },
   "fleet": {
-    "total_boats": 28,
+    "total_boats": 17,
     "primary_offers": [
       {
         "name": "Astondoa 40 'Fufi'",
@@ -123,7 +123,7 @@
       }
     ],
     "all_boats_index": "https://boatrentalinmarbella.com/boats/",
-    "pricing_on_request_count": 13
+    "pricing_on_request_count": 12
   },
   "inclusions_standard": [
     "Licensed Spanish skipper",

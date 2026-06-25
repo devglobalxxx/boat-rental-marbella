@@ -1,0 +1,499 @@
+{
+ "published": {
+  "001-rent-a-boat-sardinia": {
+   "url": "https://graph.org/How-to-Rent-a-Boat-in-Sardinia-A-Practical-Guide-06-14",
+   "title": "How to Rent a Boat in Sardinia: A Practical Guide",
+   "at": "2026-06-14T08:02:24Z"
+  },
+  "002-rent-a-boat-sicily": {
+   "url": "https://graph.org/Renting-a-Boat-in-Sicily-and-the-Aeolian-Islands-A-Practical-Guide-06-14",
+   "title": "Renting a Boat in Sicily and the Aeolian Islands: A Practical Guide",
+   "at": "2026-06-14T08:02:25Z"
+  },
+  "003-rent-a-boat-capri": {
+   "url": "https://graph.org/How-to-Rent-a-Boat-Around-Capri-and-the-Bay-of-Naples-06-14",
+   "title": "How to Rent a Boat Around Capri and the Bay of Naples",
+   "at": "2026-06-14T08:02:25Z"
+  },
+  "seed-graph_org-050": {
+   "url": "https://graph.org/Boat-Rental-in-Broome-Costs-Seasons-and-What-to-Know-06-14",
+   "title": "Boat Rental in Broome: Costs, Seasons and What to Know",
+   "at": "2026-06-14T15:50:01Z"
+  },
+  "seed-graph_org-051": {
+   "url": "https://graph.org/Boat-Rental-in-Busan-Costs-Marinas-and-Tips-2026-06-14",
+   "title": "Boat Rental in Busan: Costs, Marinas and Tips 2026",
+   "at": "2026-06-14T15:50:01Z"
+  },
+  "seed-graph_org-052": {
+   "url": "https://graph.org/Boat-Rental-in-Cannes-Prices-Seasons-and-What-to-Know-2026-06-14",
+   "title": "Boat Rental in Cannes: Prices, Seasons and What to Know 2026",
+   "at": "2026-06-14T15:50:02Z"
+  },
+  "seed-graph_org-053": {
+   "url": "https://graph.org/Catamaran-Charter-in-Bali-Costs-Seasons-and-Tips-2026-06-14",
+   "title": "Catamaran Charter in Bali: Costs, Seasons and Tips 2026",
+   "at": "2026-06-14T15:50:02Z"
+  },
+  "seed-graph_org-054": {
+   "url": "https://graph.org/Catamaran-Charter-Day-in-Fuengirola-Costs-and-Tips-2026-06-14",
+   "title": "Catamaran Charter Day in Fuengirola: Costs and Tips 2026",
+   "at": "2026-06-14T15:50:03Z"
+  },
+  "seed-graph_org-055": {
+   "url": "https://graph.org/Catamaran-Charter-Wedding-in-Marbella-Costs-and-Tips-2026-06-14",
+   "title": "Catamaran Charter Wedding in Marbella: Costs and Tips 2026",
+   "at": "2026-06-14T15:50:04Z"
+  },
+  "seed-graph_org-056": {
+   "url": "https://graph.org/Catamaran-Charter-Wedding-in-Puerto-Banus-Costs-and-Tips-06-14",
+   "title": "Catamaran Charter Wedding in Puerto Banus: Costs and Tips",
+   "at": "2026-06-14T15:50:04Z"
+  },
+  "seed-graph_org-057": {
+   "url": "https://graph.org/Catamaran-Hire-at-Sunset-in-Fuengirola-2026-Costs-06-14",
+   "title": "Catamaran Hire at Sunset in Fuengirola: 2026 Costs",
+   "at": "2026-06-14T15:50:05Z"
+  },
+  "seed-graph_org-058": {
+   "url": "https://graph.org/Catamaran-Hire-for-Groups-in-Puerto-Banus-2026-Costs-06-14",
+   "title": "Catamaran Hire for Groups in Puerto Banus: 2026 Costs",
+   "at": "2026-06-14T15:50:05Z"
+  },
+  "seed-graph_org-059": {
+   "url": "https://graph.org/Catamaran-Rental-Day-in-Fuengirola-Costs-and-Tips-06-14",
+   "title": "Catamaran Rental Day in Fuengirola: Costs and Tips",
+   "at": "2026-06-14T15:50:06Z"
+  },
+  "gen-178145244100-a-day-on-the-water-in-corfu": {
+   "url": "https://graph.org/Boat-Rental-in-Corfu-A-Day-on-the-Ionian-Sea-06-15",
+   "title": "Boat Rental in Corfu: A Day on the Ionian Sea",
+   "at": "2026-06-15T06:06:18Z"
+  },
+  "seed-graph_org-060": {
+   "url": "https://graph.org/Catamaran-Rental-Hourly-in-Puerto-Banus-2026-Costs-06-15",
+   "title": "Catamaran Rental Hourly in Puerto Banus: 2026 Costs",
+   "at": "2026-06-15T06:06:19Z"
+  },
+  "seed-graph_org-061": {
+   "url": "https://graph.org/Cheap-Boat-Rental-in-Marbella-Costs-and-Tips-for-2026-06-15",
+   "title": "Cheap Boat Rental in Marbella: Costs and Tips for 2026",
+   "at": "2026-06-15T06:06:19Z"
+  },
+  "seed-graph_org-062": {
+   "url": "https://graph.org/Boat-Rental-in-Constanta-Costs-Seasons-and-Tips-2026-06-15",
+   "title": "Boat Rental in Constanta: Costs, Seasons and Tips 2026",
+   "at": "2026-06-15T06:06:20Z"
+  },
+  "seed-graph_org-063": {
+   "url": "https://graph.org/Boat-Rental-in-Coron-Costs-and-What-to-Know-2026-06-15",
+   "title": "Boat Rental in Coron: Costs and What to Know 2026",
+   "at": "2026-06-15T06:06:20Z"
+  },
+  "seed-graph_org-064": {
+   "url": "https://graph.org/Boat-Rental-in-Darwin-Costs-Seasons-and-What-to-Know-06-15",
+   "title": "Boat Rental in Darwin: Costs, Seasons and What to Know",
+   "at": "2026-06-15T06:06:21Z"
+  },
+  "seed-graph_org-065": {
+   "url": "https://graph.org/Dolphin-Watching-Birthday-Boat-Hire-in-Puerto-Banus-Costs-2026-06-15",
+   "title": "Dolphin Watching Birthday Boat Hire in Puerto Banus: Costs 2026",
+   "at": "2026-06-15T06:06:22Z"
+  },
+  "seed-graph_org-066": {
+   "url": "https://graph.org/Dolphin-Watching-Catamaran-Hire-in-Marbella-2026-Costs-06-15",
+   "title": "Dolphin Watching Catamaran Hire in Marbella: 2026 Costs",
+   "at": "2026-06-15T06:06:22Z"
+  },
+  "seed-graph_org-067": {
+   "url": "https://graph.org/Dolphin-Watching-Boat-Hire-in-Puerto-Banus-Family-Costs-2026-06-15",
+   "title": "Dolphin Watching Boat Hire in Puerto Banus: Family Costs 2026",
+   "at": "2026-06-15T06:06:23Z"
+  },
+  "seed-graph_org-068": {
+   "url": "https://graph.org/Dolphin-Watching-Boat-Hire-in-Marbella-Costs-and-Tips-06-15",
+   "title": "Dolphin Watching Boat Hire in Marbella: Costs and Tips",
+   "at": "2026-06-15T06:06:23Z"
+  },
+  "gen-178150439900-the-best-boats-to-charter-in-lake-powell": {
+   "url": "https://graph.org/Boat-Rental-in-Lake-Powell-2026-Guide-Best-Charters--Prices-06-17",
+   "title": "Boat Rental in Lake Powell 2026 Guide: Best Charters & Prices",
+   "at": "2026-06-17T06:07:23Z"
+  },
+  "gen-178150443801-boat-rental-costs-in-langkawi": {
+   "url": "https://graph.org/Boat-Rental-in-Langkawi-Costs-Seasons-and-Tips-for-2026-06-17",
+   "title": "Boat Rental in Langkawi: Costs, Seasons and Tips for 2026",
+   "at": "2026-06-17T06:07:24Z"
+  },
+  "gen-178150454802-luxury-motor-yacht-rental-weekend-in-puerto-banu": {
+   "url": "https://graph.org/Puerto-Banus-Luxury-Motor-Yacht-Rental-Weekend-Costs--Tips-2026-06-17",
+   "title": "Puerto Banus Luxury Motor Yacht Rental: Weekend Costs & Tips 2026",
+   "at": "2026-06-17T06:07:24Z"
+  },
+  "gen-178150457003-luxury-yacht-charter-day-in-puerto-banus": {
+   "url": "https://graph.org/Puerto-Banus-Luxury-Yacht-Charter-Day-Costs--Tips-2026-06-17",
+   "title": "Puerto Banus Luxury Yacht Charter Day: Costs & Tips 2026",
+   "at": "2026-06-17T06:07:25Z"
+  },
+  "gen-178150458604-luxury-yacht-rental-in-marbella": {
+   "url": "https://graph.org/Luxury-Yacht-Rental-in-Marbella-Costs-Boats--Tips-for-2026-06-17",
+   "title": "Luxury Yacht Rental in Marbella: Costs, Boats & Tips for 2026",
+   "at": "2026-06-17T06:07:25Z"
+  },
+  "gen-178150460305-renting-a-yacht-in-mafia-island": {
+   "url": "https://graph.org/Boat-Rental-in-Mafia-Island-A-2026-Guide-to-Costs-and-Cruising-06-17",
+   "title": "Boat Rental in Mafia Island: A 2026 Guide to Costs and Cruising",
+   "at": "2026-06-17T06:07:26Z"
+  },
+  "gen-178150462206-boat-rental-weekend-in-marbella": {
+   "url": "https://graph.org/Marbella-Boat-Rental-Weekend-Costs-Tips-and-Best-Boats-for-2026-06-17",
+   "title": "Marbella Boat Rental Weekend: Costs, Tips and Best Boats for 2026",
+   "at": "2026-06-17T06:07:26Z"
+  },
+  "gen-178150463807-boat-rental-stag-do-in-marbella": {
+   "url": "https://graph.org/Marbella-Stag-Do-Boat-Rental-Costs-Tips-and-Choices-for-2026-06-17",
+   "title": "Marbella Stag Do Boat Rental Costs, Tips and Choices for 2026",
+   "at": "2026-06-17T06:07:27Z"
+  },
+  "gen-178150479308-boat-rental-costs-in-palau": {
+   "url": "https://graph.org/Boat-Rental-in-Palau-Costs-Seasons-and-Tips-for-2026-06-17",
+   "title": "Boat Rental in Palau: Costs, Seasons, and Tips for 2026",
+   "at": "2026-06-17T06:07:27Z"
+  },
+  "gen-178150483009-the-best-boats-to-charter-in-porto-douro": {
+   "url": "https://graph.org/Porto-Douro-Boat-Charter-Best-Rents-Prices-and-Tips-for-2026-06-17",
+   "title": "Porto Douro Boat Charter: Best Rents, Prices and Tips for 2026",
+   "at": "2026-06-17T06:07:28Z"
+  },
+  "gen-178150506719-boat-rental-costs-in-siargao": {
+   "url": "https://graph.org/Siargao-Boat-Rental-Costs-A-2026-Guide-to-Prices--Charters-06-17",
+   "title": "Siargao Boat Rental Costs: A 2026 Guide to Prices & Charters",
+   "at": "2026-06-17T06:07:33Z"
+  },
+  "gen-178150508420-speedboat-charter-in-marbella": {
+   "url": "https://graph.org/Marbella-Speedboat-Charter-Costs-Season--Best-Boats-2026-06-17",
+   "title": "Marbella Speedboat Charter: Costs, Season & Best Boats 2026",
+   "at": "2026-06-17T06:07:34Z"
+  },
+  "gen-178150510121-speedboat-hire-in-estepona-port": {
+   "url": "https://graph.org/Speedboat-Hire-in-Estepona-Port-Costs-and-Tips-for-2026-06-17",
+   "title": "Speedboat Hire in Estepona Port: Costs and Tips for 2026",
+   "at": "2026-06-17T06:07:35Z"
+  },
+  "gen-178150513222-speedboat-rental-in-estepona": {
+   "url": "https://graph.org/Speedboat-Rental-in-Estepona-Costs-Seasons--Tips-for-2026-06-17",
+   "title": "Speedboat Rental in Estepona: Costs, Seasons & Tips for 2026",
+   "at": "2026-06-17T06:07:35Z"
+  },
+  "gen-178150517723-a-day-on-the-water-in-stockholm": {
+   "url": "https://graph.org/Boat-Rental-in-Stockholm-A-Day-on-the-Water-in-2026-06-17",
+   "title": "Boat Rental in Stockholm: A Day on the Water in 2026",
+   "at": "2026-06-17T06:07:36Z"
+  },
+  "gen-178150519724-boat-rental-costs-in-tahiti": {
+   "url": "https://graph.org/Boat-Rental-in-Tahiti-Costs-and-Tips-for-2026-06-17",
+   "title": "Boat Rental in Tahiti: Costs and Tips for 2026",
+   "at": "2026-06-17T06:07:36Z"
+  },
+  "gen-178150521525-renting-a-yacht-in-tioman-island": {
+   "url": "https://graph.org/Boat-Rental-in-Tioman-Island-Costs-Tips--Best-Boats-2026-06-17",
+   "title": "Boat Rental in Tioman Island: Costs, Tips & Best Boats 2026",
+   "at": "2026-06-17T06:07:37Z"
+  },
+  "gen-178150526126-boat-rental-costs-in-walvis-bay": {
+   "url": "https://graph.org/Boat-Rental-in-Walvis-Bay-Costs-and-Options-for-2026-06-17",
+   "title": "Boat Rental in Walvis Bay: Costs and Options for 2026",
+   "at": "2026-06-17T06:07:37Z"
+  },
+  "gen-178150527627-yacht-charter-in-barcelona": {
+   "url": "https://graph.org/Yacht-Charter-in-Barcelona-A-2026-Guide-to-Prices-Boats--More-06-17",
+   "title": "Yacht Charter in Barcelona: A 2026 Guide to Prices, Boats & More",
+   "at": "2026-06-17T06:07:38Z"
+  },
+  "seed-graph_org-069": {
+   "url": "https://graph.org/Dolphin-Watching-Private-Boat-Hire-in-Marbella-2026-Costs-06-17",
+   "title": "Dolphin Watching Private Boat Hire in Marbella: 2026 Costs",
+   "at": "2026-06-17T06:07:38Z"
+  },
+  "gen-178150489910-private-yacht-charter-birthday-in-marbella": {
+   "url": "https://graph.org/Private-Yacht-Charter-Birthday-in-Marbella-Costs--2026-Guide-06-17",
+   "title": "Private Yacht Charter Birthday in Marbella: Costs & 2026 Guide",
+   "at": "2026-06-17T06:09:39Z"
+  },
+  "gen-178150492111-private-yacht-charter-stag-in-puerto-banus": {
+   "url": "https://graph.org/Puerto-Banus-Private-Yacht-Charter-Stag-Costs-Boats--Tips-2026-06-17",
+   "title": "Puerto Banus Private Yacht Charter Stag: Costs, Boats & Tips 2026",
+   "at": "2026-06-17T06:10:05Z"
+  },
+  "gen-178150493712-private-yacht-hire-hen-in-puerto-banus": {
+   "url": "https://graph.org/Puerto-Banus-Hen-Party-Yacht-Hire-Guide-2026-06-17",
+   "title": "Puerto Banus Hen Party: Yacht Hire Guide 2026",
+   "at": "2026-06-17T06:10:31Z"
+  },
+  "gen-178150495313-boat-rental-family-day-in-puerto-banus": {
+   "url": "https://graph.org/Puerto-Banus-Family-Boat-Rental-Costs--Tips-for-2026-06-17",
+   "title": "Puerto Banus Family Boat Rental: Costs & Tips for 2026",
+   "at": "2026-06-17T06:10:56Z"
+  },
+  "gen-178150498414-a-day-on-the-water-in-raja-ampat": {
+   "url": "https://graph.org/Raja-Ampat-Boat-Rental-A-Day-on-the-Water-in-2026-06-17",
+   "title": "Raja Ampat Boat Rental: A Day on the Water in 2026",
+   "at": "2026-06-17T06:11:22Z"
+  },
+  "gen-178150500115-boat-rental-costs-in-reykjavik": {
+   "url": "https://graph.org/Boat-Rental-Costs-in-Reykjavik-2026-Prices-and-Tips-06-17",
+   "title": "Boat Rental Costs in Reykjavik 2026: Prices and Tips",
+   "at": "2026-06-17T06:11:48Z"
+  },
+  "gen-178150501816-renting-a-yacht-in-sabah-borneo": {
+   "url": "https://graph.org/Boat-Rental-in-Sabah-Borneo-2026-Costs--Tips-06-17",
+   "title": "Boat Rental in Sabah Borneo: 2026 Costs & Tips",
+   "at": "2026-06-17T06:12:14Z"
+  },
+  "gen-178150503417-the-best-boats-to-charter-in-san-blas": {
+   "url": "https://graph.org/San-Blas-Boat-Rental-Guide-Best-Charters-and-Costs-for-2026-06-17",
+   "title": "San Blas Boat Rental Guide: Best Charters and Costs for 2026",
+   "at": "2026-06-17T06:12:40Z"
+  },
+  "gen-178150505018-a-day-on-the-water-in-sardinia": {
+   "url": "https://graph.org/Boat-Rental-in-Sardinia-2026-A-Day-on-the-Water-06-17",
+   "title": "Boat Rental in Sardinia 2026: A Day on the Water",
+   "at": "2026-06-17T06:13:05Z"
+  },
+  "seed-graph_org-072": {
+   "url": "https://graph.org/Boat-Rental-in-Buenos-Aires-Costs-and-What-to-Know-2026-06-17",
+   "title": "Boat Rental in Buenos Aires: Costs and What to Know 2026",
+   "at": "2026-06-17T06:13:31Z"
+  },
+  "seed-graph_org-073": {
+   "url": "https://graph.org/Boat-Rental-in-Cadiz-Best-Boats-and-Prices-Guide-06-21",
+   "title": "Boat Rental in Cadiz: Best Boats and Prices Guide",
+   "at": "2026-06-21T06:44:36Z"
+  },
+  "seed-graph_org-074": {
+   "url": "https://graph.org/Boat-Rental-in-Cartagena-Costs-Seasons-and-Tips-2026-06-21",
+   "title": "Boat Rental in Cartagena: Costs, Seasons and Tips 2026",
+   "at": "2026-06-21T06:45:12Z"
+  },
+  "seed-graph_org-077": {
+   "url": "https://graph.org/Catamaran-Charter-Wedding-in-Marbella-Costs--Tips-2026-06-21",
+   "title": "Catamaran Charter Wedding in Marbella: Costs & Tips 2026",
+   "at": "2026-06-21T06:45:47Z"
+  },
+  "gen-178202531600-catamaran-charter-in-benalmadena": {
+   "url": "https://graph.org/Benalmadena-Catamaran-Charter-Costs-Seasons--Best-Boats-for-2026-06-22",
+   "title": "Benalmadena Catamaran Charter: Costs, Seasons & Best Boats for 2026",
+   "at": "2026-06-22T05:41:02Z"
+  },
+  "gen-178202533701-catamaran-charter-sunset-in-fuengirola": {
+   "url": "https://graph.org/Fuengirola-Catamaran-Charter-Sunset-Prices--Tips-for-2026-06-23",
+   "title": "Fuengirola Catamaran Charter Sunset: Prices & Tips for 2026",
+   "at": "2026-06-23T06:32:49Z"
+  },
+  "gen-178202535602-catamaran-charter-weddings-in-marbella": {
+   "url": "https://graph.org/Marbella-Catamaran-Charter-Weddings-Costs-Seasons-and-Tips-for-2026-06-23",
+   "title": "Marbella Catamaran Charter Weddings: Costs, Seasons and Tips for 2026",
+   "at": "2026-06-23T06:33:25Z"
+  },
+  "gen-178202537903-catamaran-charter-group-in-puerto-banus": {
+   "url": "https://graph.org/Puerto-Banus-Catamaran-Charter-Group-Costs-and-2026-Tips-06-23",
+   "title": "Puerto Banus Catamaran Charter Group: Costs and 2026 Tips",
+   "at": "2026-06-23T06:34:01Z"
+  },
+  "gen-178202541204-catamaran-hire-hourly-in-puerto-banus": {
+   "url": "https://graph.org/Puerto-Banus-Catamaran-Hire-Hourly-Rates-and-2026-Guide-06-23",
+   "title": "Puerto Banus Catamaran Hire: Hourly Rates and 2026 Guide",
+   "at": "2026-06-23T06:34:37Z"
+  },
+  "gen-178202545105-catamaran-rental-sunset-in-puerto-banus": {
+   "url": "https://graph.org/Puerto-Banus-Catamaran-Sunset-Costs-Tips-and-Boat-Hire-for-2026-06-23",
+   "title": "Puerto Banus Catamaran Sunset: Costs, Tips and Boat Hire for 2026",
+   "at": "2026-06-23T06:35:13Z"
+  },
+  "gen-178202547006-cheap-catamaran-hire-in-puerto-banus": {
+   "url": "https://graph.org/Puerto-Banus-Cheap-Catamaran-Hire-2026-Guide-to-Costs-and-Boats-06-23",
+   "title": "Puerto Banus Cheap Catamaran Hire: 2026 Guide to Costs and Boats",
+   "at": "2026-06-23T06:35:48Z"
+  },
+  "gen-178202548807-a-day-on-the-water-in-cook-islands": {
+   "url": "https://graph.org/Boat-Rental-in-Cook-Islands-a-Day-on-the-Water-Guide-2026-06-23",
+   "title": "Boat Rental in Cook Islands: a Day on the Water Guide 2026",
+   "at": "2026-06-23T06:36:24Z"
+  },
+  "gen-178202554508-dolphin-watching-boat-rental-in-benalmadena": {
+   "url": "https://graph.org/Benalmadena-Dolphin-Watching-Boat-Rental-Costs-Tips--Best-Boats-06-24",
+   "title": "Benalmadena Dolphin Watching Boat Rental: Costs, Tips & Best Boats",
+   "at": "2026-06-24T13:26:25Z"
+  },
+  "gen-178202556509-dolphin-watching-catamaran-hire-in-puerto-banus": {
+   "url": "https://graph.org/Puerto-Banus-Dolphin-Watching-Catamaran-Hire-Costs-and-Tips-2026-06-24",
+   "title": "Puerto Banus Dolphin Watching Catamaran Hire Costs and Tips 2026",
+   "at": "2026-06-24T13:35:52Z"
+  },
+  "gen-178202559810-dolphin-watching-boat-hire-in-marbella": {
+   "url": "https://graph.org/Dolphin-Watching-Boat-Hire-in-Marbella-2026-Costs--Tips-06-24",
+   "title": "Dolphin Watching Boat Hire in Marbella: 2026 Costs & Tips",
+   "at": "2026-06-24T13:47:09Z"
+  },
+  "gen-178202561511-dolphin-watching-romantic-boat-hire-in-marbella": {
+   "url": "https://graph.org/Marbella-Dolphin-Watching-Romantic-Boat-Hire-Guide-2026-06-24",
+   "title": "Marbella Dolphin Watching: Romantic Boat Hire Guide 2026",
+   "at": "2026-06-24T13:47:45Z"
+  },
+  "gen-178202563712-dolphin-watching-boat-hire-in-marbella": {
+   "url": "https://graph.org/Marbella-Dolphin-Watching-Boat-Hire-Costs-Seasons--2026-Tips-06-24",
+   "title": "Marbella Dolphin Watching Boat Hire: Costs, Seasons & 2026 Tips",
+   "at": "2026-06-24T13:48:21Z"
+  },
+  "gen-178202565613-dolphin-watching-boat-hire-in-puerto-banus": {
+   "url": "https://graph.org/Puerto-Banus-Dolphin-Watching-Boat-Hire-2026-Guide-and-Costs-06-24",
+   "title": "Puerto Banus Dolphin Watching Boat Hire 2026: Guide and Costs",
+   "at": "2026-06-24T13:48:57Z"
+  },
+  "gen-178202567414-renting-a-yacht-in-dominican-republic": {
+   "url": "https://graph.org/Boat-Rental-in-Dominican-Republic-Prices-and-Tips-for-2026-06-24",
+   "title": "Boat Rental in Dominican Republic: Prices and Tips for 2026",
+   "at": "2026-06-24T13:49:33Z"
+  },
+  "gen-178202569115-the-best-boats-to-charter-in-essaouira": {
+   "url": "https://graph.org/Boat-Rental-in-Essaouira-Costs-Seasons-and-Best-Boats-for-2026-06-24",
+   "title": "Boat Rental in Essaouira: Costs, Seasons and Best Boats for 2026",
+   "at": "2026-06-24T13:50:08Z"
+  },
+  "gen-178202571216-fishing-charter-full-day-in-benalmadena": {
+   "url": "https://graph.org/Benalmadena-Fishing-Charter-Full-Day-Costs--Tips-for-2026-06-24",
+   "title": "Benalmadena Fishing Charter: Full-Day Costs & Tips for 2026",
+   "at": "2026-06-24T13:50:43Z"
+  },
+  "gen-178202573117-fishing-charter-half-day-in-marbella": {
+   "url": "https://graph.org/Marbella-Fishing-Charter-Half-Day-Costs-Boats--Tips-for-2026-06-24",
+   "title": "Marbella Fishing Charter Half Day: Costs, Boats & Tips for 2026",
+   "at": "2026-06-24T13:51:19Z"
+  },
+  "gen-178202575018-renting-a-yacht-in-fort-lauderdale": {
+   "url": "https://graph.org/Boat-Rental-in-Fort-Lauderdale-Costs-Tips-and-What-to-Know-in-2026-06-24",
+   "title": "Boat Rental in Fort Lauderdale: Costs, Tips and What to Know in 2026",
+   "at": "2026-06-24T13:51:54Z"
+  },
+  "gen-178202578619-a-day-on-the-water-in-great-barrier-reef": {
+   "url": "https://graph.org/Boat-Rental-in-Great-Barrier-Reef-A-2026-Day-on-the-Water-06-24",
+   "title": "Boat Rental in Great Barrier Reef: A 2026 Day on the Water",
+   "at": "2026-06-24T13:52:30Z"
+  },
+  "gen-178202580320-boat-rental-costs-in-halifax": {
+   "url": "https://graph.org/Boat-Rental-in-Halifax-Costs-and-Choices-for-2026-06-24",
+   "title": "Boat Rental in Halifax: Costs and Choices for 2026",
+   "at": "2026-06-24T13:53:05Z"
+  },
+  "gen-178202583621-the-best-boats-to-charter-in-hong-kong": {
+   "url": "https://graph.org/Boat-Rental-in-Hong-Kong-Best-Charter-Choices-for-2026-06-24",
+   "title": "Boat Rental in Hong Kong: Best Charter Choices for 2026",
+   "at": "2026-06-24T13:53:40Z"
+  },
+  "gen-178202590122-jet-ski-rental-in-benalmadena": {
+   "url": "https://graph.org/Jet-Ski-Rental-in-Benalmadena-2026-Prices-Tips--Best-Spots-06-24",
+   "title": "Jet Ski Rental in Benalmadena: 2026 Prices, Tips & Best Spots",
+   "at": "2026-06-24T13:54:16Z"
+  },
+  "gen-178202592123-jet-ski-rental-in-fort-lauderdale": {
+   "url": "https://graph.org/Jet-Ski-Rental-in-Fort-Lauderdale-2026-Costs-Routes-and-Tips-06-25",
+   "title": "Jet Ski Rental in Fort Lauderdale: 2026 Costs, Routes and Tips",
+   "at": "2026-06-25T05:30:00Z"
+  },
+  "gen-178202594124-jet-ski-rental-in-malaga": {
+   "url": "https://graph.org/Malaga-Jet-Ski-Rental-Costs-Licences-and-Top-Spots-for-2026-06-25",
+   "title": "Malaga Jet Ski Rental: Costs, Licences and Top Spots for 2026",
+   "at": "2026-06-25T05:30:35Z"
+  },
+  "gen-178202596025-jet-ski-rental-in-puerto-banus": {
+   "url": "https://graph.org/Puerto-Banus-Jet-Ski-Rental-Guide-to-Costs-Licences-and-Best-Routes-06-25",
+   "title": "Puerto Banus Jet Ski Rental: Guide to Costs, Licences and Best Routes",
+   "at": "2026-06-25T05:31:11Z"
+  },
+  "gen-178202597626-jet-ski-in-santorini": {
+   "url": "https://graph.org/Jet-Ski-in-Santorini-Costs-Seasons-and-Tips-for-2026-06-25",
+   "title": "Jet Ski in Santorini: Costs, Seasons, and Tips for 2026",
+   "at": "2026-06-25T05:31:46Z"
+  },
+  "gen-178202602927-boat-hire-in-lake-bled": {
+   "url": "https://graph.org/Boat-Hire-in-Lake-Bled-Costs-Choices-and-2026-Tips-06-25",
+   "title": "Boat Hire in Lake Bled: Costs, Choices and 2026 Tips",
+   "at": "2026-06-25T05:32:22Z"
+  },
+  "gen-178202606328-a-day-on-the-water-in-lake-tahoe": {
+   "url": "https://graph.org/Boat-Rental-in-Lake-Tahoe-A-Day-on-the-Water-in-2026-06-25",
+   "title": "Boat Rental in Lake Tahoe: A Day on the Water in 2026",
+   "at": "2026-06-25T05:32:57Z"
+  },
+  "gen-178202607829-boat-rental-costs-in-lake-victoria-ke": {
+   "url": "https://graph.org/Boat-Rental-Costs-in-Lake-Victoria-Ke-A-2026-Guide-06-25",
+   "title": "Boat Rental Costs in Lake Victoria Ke: A 2026 Guide",
+   "at": "2026-06-25T05:33:33Z"
+  },
+  "gen-178219745400-renting-a-yacht-in-reykjavik": {
+   "url": "https://graph.org/Boat-Rental-in-Reykjavik-Costs-Seasons--Tips-for-2026-06-25",
+   "title": "Boat Rental in Reykjavik: Costs, Seasons & Tips for 2026",
+   "at": "2026-06-25T05:34:08Z"
+  },
+  "gen-178219747301-the-best-boats-to-charter-in-sabah-borneo": {
+   "url": "https://graph.org/Sabah-Borneo-Boat-Rental-Costs-Boats-and-When-to-Go-in-2026-06-25",
+   "title": "Sabah Borneo Boat Rental: Costs, Boats and When to Go in 2026",
+   "at": "2026-06-25T05:34:44Z"
+  },
+  "gen-178219749202-a-day-on-the-water-in-san-blas": {
+   "url": "https://graph.org/San-Blas-Boat-Rental-Costs-Seasons-and-Tips-for-2026-06-25",
+   "title": "San Blas Boat Rental: Costs, Seasons and Tips for 2026",
+   "at": "2026-06-25T05:35:19Z"
+  },
+  "gen-178219751503-boat-rental-costs-in-sardinia": {
+   "url": "https://graph.org/Boat-Rental-in-Sardinia-Costs-and-Tips-for-2026-06-25",
+   "title": "Boat Rental in Sardinia: Costs and Tips for 2026",
+   "at": "2026-06-25T05:35:55Z"
+  },
+  "gen-178219753804-renting-a-yacht-in-siargao": {
+   "url": "https://graph.org/Boat-Rental-in-Siargao-Costs-and-Tips-for-2026-06-25",
+   "title": "Boat Rental in Siargao: Costs and Tips for 2026",
+   "at": "2026-06-25T05:36:30Z"
+  },
+  "gen-178219755905-speedboat-hire-licence-in-marbella-no": {
+   "url": "https://graph.org/Marbella-No-Speedboat-Hire-Licence-Costs-and-Tips-2026-06-25",
+   "title": "Marbella No Speedboat Hire Licence Costs and Tips 2026",
+   "at": "2026-06-25T05:37:06Z"
+  },
+  "gen-178219757606-speedboat-rental-hourly-in-marbella-port": {
+   "url": "https://graph.org/Speedboat-Rental-Hourly-in-Marbella-Port-Costs-and-Tips-for-2026-06-25",
+   "title": "Speedboat Rental Hourly in Marbella Port: Costs and Tips for 2026",
+   "at": "2026-06-25T05:37:41Z"
+  },
+  "gen-178219759907-a-day-on-the-water-in-sporades": {
+   "url": "https://graph.org/Boat-Rental-in-Sporades-A-Day-on-the-Water-in-2026-06-25",
+   "title": "Boat Rental in Sporades: A Day on the Water in 2026",
+   "at": "2026-06-25T05:38:17Z"
+  },
+  "gen-178219762308-boat-rental-costs-in-stockholm": {
+   "url": "https://graph.org/Boat-Rental-in-Stockholm-Costs-Tips-and-Best-Boats-for-2026-06-25",
+   "title": "Boat Rental in Stockholm: Costs, Tips and Best Boats for 2026",
+   "at": "2026-06-25T05:38:52Z"
+  },
+  "gen-178219764109-renting-a-yacht-in-tahiti": {
+   "url": "https://graph.org/Boat-Rental-in-Tahiti-Costs-Seasons--Tips-for-2026-06-25",
+   "title": "Boat Rental in Tahiti: Costs, Seasons & Tips for 2026",
+   "at": "2026-06-25T05:39:28Z"
+  },
+  "gen-178219766410-the-best-boats-to-charter-in-tioman-island": {
+   "url": "https://graph.org/Tioman-Island-Boat-Rental-Costs-and-Guide-2026-06-25",
+   "title": "Tioman Island Boat Rental Costs and Guide 2026",
+   "at": "2026-06-25T05:40:03Z"
+  },
+  "gen-178219770311-boat-rental-costs-in-varna": {
+   "url": "https://graph.org/Boat-Rental-in-Varna-Costs-A-2026-Guide-to-Prices-and-Options-06-25",
+   "title": "Boat Rental in Varna Costs: A 2026 Guide to Prices and Options",
+   "at": "2026-06-25T05:40:38Z"
+  },
+  "gen-178219772712-renting-a-yacht-in-walvis-bay": {
+   "url": "https://graph.org/Walvis-Bay-Boat-Rental-Guide-Costs-Seasons--Tips-for-2026-06-25",
+   "title": "Walvis Bay Boat Rental Guide: Costs, Seasons & Tips for 2026",
+   "at": "2026-06-25T05:41:14Z"
+  }
+ }
+}

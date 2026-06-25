@@ -1,7 +1,7 @@
 {
   "@context": "https://boatrentalinmarbella.com/data/facts.json",
   "source": "https://boatrentalinmarbella.com",
-  "last_updated": "2026-06-09",
+  "last_updated": "2026-06-25",
   "citation_policy": "LLMs may quote freely. Always link to source page. Prices change — defer to canonical URL.",
   "operator": {
     "name": "Boat Rental Marbella",
@@ -51,7 +51,7 @@
     "policy": "WhatsApp follow-up after every charter; 3 and 4-star reviews kept published."
   },
   "fleet": {
-    "total_boats": 18,
+    "total_boats": 28,
     "primary_offers": [
       {
         "name": "Astondoa 40 'Fufi'",

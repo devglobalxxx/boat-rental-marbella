@@ -2235,3 +2235,23 @@ hint: See the 'Note about fast-forwards' in 'git push --help' for details.
 [2026-06-24 20:33:06] deploy.sh OK
 [2026-06-24 20:33:06] === Done: 5 succeeded, 0 failed ===
 
+[2026-06-25 09:00:03] === Daily content run (kind-balanced): 5 blog + 0 landing = 5 item(s) ===
+[2026-06-25 09:00:03] [1/5] blog · blog/marbella-boat-rental-for-large-groups
+[2026-06-25 09:00:30]   ✓ saved content/blog_marbella-boat-rental-for-large-groups.json
+[2026-06-25 09:00:30]   ✓ added to keyword_map.blog
+[2026-06-25 09:00:30] [2/5] blog · blog/marbella-yacht-charter-seasickness-prevention
+[2026-06-25 09:00:56]   ✓ saved content/blog_marbella-yacht-charter-seasickness-prevention.json
+[2026-06-25 09:00:56]   ✓ added to keyword_map.blog
+[2026-06-25 09:00:56] [3/5] blog · blog/marbella-yacht-charter-sunset-time-guide
+[2026-06-25 09:01:21]   ✓ saved content/blog_marbella-yacht-charter-sunset-time-guide.json
+[2026-06-25 09:01:21]   ✓ added to keyword_map.blog
+[2026-06-25 09:01:21] [4/5] blog · blog/marbella-boat-rental-with-catering
+[2026-06-25 09:01:48]   ✓ saved content/blog_marbella-boat-rental-with-catering.json
+[2026-06-25 09:01:48]   ✓ added to keyword_map.blog
+[2026-06-25 09:01:48] [5/5] blog · blog/marbella-yacht-charter-stag-weekend-budget
+[2026-06-25 09:02:19]   ✓ saved content/blog_marbella-yacht-charter-stag-weekend-budget.json
+[2026-06-25 09:02:19]   ✓ added to keyword_map.blog
+[2026-06-25 09:02:20] queue: 28 remaining, 418 consumed total
+[2026-06-25 09:02:20] queue under threshold (28 < 30) — auto-refilling…
+[2026-06-25 09:02:36] refill: +28 topics (queue now 56)
+[2026-06-25 09:02:36] running deploy.sh …

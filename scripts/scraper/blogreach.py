@@ -21,7 +21,7 @@ Contact identity used in every message:
   Mardo · info@boathire24.com · WhatsApp +37258155779
 """
 from __future__ import annotations
-import argparse, json, re, sys, time, html as html_mod, urllib.parse, contextlib
+import argparse, json, re, sys, time, pathlib, html as html_mod, urllib.parse, contextlib
 
 from . import store, http as http_mod
 from . import enrich as enrich_mod
@@ -249,6 +249,35 @@ def discover(con, limit_kw=None, crawl_listicles=True, sleep=2.0, verbose=True):
         http_mod.polite_sleep(sleep, sleep)
     return total_new
 
+def harvest_urls(con, urls, verbose=True):
+    """Seed blogs by scraping outbound blog links from listicle/roundup URLs.
+    Bypasses DDG rate-limiting: one 'best travel blogs' page yields ~40 blogs."""
+    ensure_tables(con)
+    total = 0
+    for i, u in enumerate(urls, 1):
+        u = u.strip()
+        if not u:
+            continue
+        try:
+            found = _extract_outbound_blogs(u, cap=80)
+        except Exception as e:
+            found = []
+            if verbose:
+                print(f"[{i}/{len(urls)}] {u[:60]:60} ERROR {e}")
+            continue
+        new = 0
+        for oh, ot in found:
+            before = con.total_changes
+            add_blog(con, oh, ot, "listicle:" + (host_of(u) or ""))
+            if con.total_changes > before:
+                new += 1
+        con.commit()
+        total += new
+        if verbose:
+            print(f"[{i}/{len(urls)}] {u[:52]:52} +{new} blogs (total {total})")
+        http_mod.polite_sleep(0.8, 0.8)
+    return total
+
 def _extract_outbound_blogs(listicle_url, cap=40):
     r = http_mod.get(listicle_url, timeout=12)
     if not r or r.status_code != 200:
@@ -392,6 +421,40 @@ def push_sheet(con, verbose=True):
         print(f"pushed {len(out)} rows → https://docs.google.com/spreadsheets/d/{sid}")
     return sid, len(out)
 
+def sync_sheet(con, verbose=True):
+    """Update channel/outreach_status/sent_at (cols G:I) for rows already in the
+    sheet, so post-send outcomes are reflected without re-appending."""
+    sheets = _sheets()
+    st = sheets._state()
+    sid = st.get(BLOG_SHEET_STATE_KEY)
+    if not sid:
+        if verbose: print("no blog sheet yet — run push-sheet first")
+        return 0
+    svc = sheets.service()
+    col_a = svc.spreadsheets().values().get(spreadsheetId=sid, range="Blogs!A2:A").execute().get("values", [])
+    row_of = {}
+    for i, r in enumerate(col_a):
+        if r and r[0]:
+            row_of[r[0].strip().lower()] = i + 2  # sheet row (1-based, +header)
+    orec = {d: (ch, s, sa) for d, ch, s, sa in con.execute(
+        "SELECT domain, channel, status, sent_at FROM blog_outreach")}
+    data = []
+    for domain, (ch, status, sa) in orec.items():
+        row = row_of.get(domain)
+        if not row:
+            continue
+        data.append({"range": f"Blogs!G{row}:I{row}",
+                     "values": [[ch or "", status or "", sa or ""]]})
+    n = 0
+    for i in range(0, len(data), 200):  # batch to keep requests small
+        chunk = data[i:i+200]
+        svc.spreadsheets().values().batchUpdate(spreadsheetId=sid,
+            body={"valueInputOption": "RAW", "data": chunk}).execute()
+        n += len(chunk)
+    if verbose:
+        print(f"synced {n} outreach statuses → https://docs.google.com/spreadsheets/d/{sid}")
+    return n
+
 # ── outreach: record helper ─────────────────────────────────────────────────
 def record_outreach(con, domain, channel, target, status, http_status=None, detail=""):
     con.execute("""INSERT OR REPLACE INTO blog_outreach
@@ -417,20 +480,52 @@ def _match_field(attrs, kind):
     blob = " ".join(str(attrs.get(a, "")) for a in ("name", "id", "placeholder", "aria-label")).lower()
     return any(h in blob for h in FIELD_HINTS[kind])
 
+CONSENT_RX = re.compile(r"(accept|agree|got it|allow all|i understand|aceptar|acconsenti|accepter|zustimmen|ok)", re.I)
+
+def _dismiss_overlays(page):
+    """Click an obvious cookie/consent accept button so it doesn't cover the form."""
+    for sel in ("button", "a[role=button]", "[class*=cookie] button", "[id*=consent] button"):
+        for el in page.query_selector_all(sel)[:25]:
+            try:
+                txt = (el.inner_text() or "").strip()
+            except Exception:
+                continue
+            if txt and len(txt) < 30 and CONSENT_RX.search(txt):
+                with contextlib.suppress(Exception):
+                    el.click(timeout=2000)
+                    page.wait_for_timeout(400)
+                    return
+    return
+
+def _iter_form_scopes(page):
+    """Yield the main document plus every same-origin-ish iframe as form scopes —
+    many blogs embed the contact form (Gravity/HubSpot/Google) in an iframe."""
+    yield page
+    for fr in page.frames:
+        if fr is page.main_frame:
+            continue
+        yield fr
+
 def _find_target_form(page):
-    for f in page.query_selector_all("form"):
+    for scope in _iter_form_scopes(page):
         try:
-            if f.query_selector("textarea") or _form_has_message(f):
-                return f
+            forms = scope.query_selector_all("form")
         except Exception:
             continue
+        for f in forms:
+            try:
+                if f.query_selector("textarea") or _form_has_message(f):
+                    return f
+            except Exception:
+                continue
     return None
 
 def submit_form(page, form_url, domain=None):
     """Attempt to fill+submit one contact form. Returns (status, http_status, detail)."""
     resp = page.goto(form_url, wait_until="domcontentloaded", timeout=25000)
     http_status = resp.status if resp else None
-    page.wait_for_timeout(1800)
+    page.wait_for_timeout(2500)
+    _dismiss_overlays(page)
     content = page.content()
     if CAPTCHA_HINT.search(content):
         return "captcha", http_status, "captcha present"
@@ -511,16 +606,32 @@ def _fill(el, value):
     with contextlib.suppress(Exception):
         el.fill(value)
 
-def send_forms(con, limit=25, dry_run=False, headless=True, verbose=True):
+def _email_fallback(con, domain, emails_j):
+    """Reach a blog by email when its form couldn't be submitted. Returns
+    (status, detail). Records nothing — caller records the combined outcome."""
+    from . import outreach as ol
+    try:
+        emails = json.loads(emails_j) if emails_j else []
+    except Exception:
+        emails = []
+    email = ol.best_email_for_domain(emails, domain)
+    if not email:
+        return None, None
+    mid, err = ol.resend_send(email, SUBJECT, MESSAGE, from_=f"{CONTACT_NAME} <{CONTACT_EMAIL}>")
+    if mid:
+        return "sent", f"email→{email}"
+    return None, f"email failed {err}"
+
+def send_forms(con, limit=25, dry_run=False, headless=True, verbose=True, email_fallback=True):
     ensure_tables(con)
-    rows = con.execute("""SELECT domain, contact_form FROM blogs
+    rows = con.execute("""SELECT domain, contact_form, emails FROM blogs
         WHERE contact_form IS NOT NULL AND contact_form != ''
           AND domain NOT IN (SELECT domain FROM blog_outreach WHERE status IN ('submitted','sent','skipped'))
         LIMIT ?""", (limit,)).fetchall()
     if verbose:
         print(f"{len(rows)} blogs with a contact form to try (dry_run={dry_run})")
     if dry_run:
-        for d, cf in rows:
+        for d, cf, _ in rows:
             print(f"  WOULD submit → {d}  {cf}")
         return 0
     from playwright.sync_api import sync_playwright
@@ -528,20 +639,26 @@ def send_forms(con, limit=25, dry_run=False, headless=True, verbose=True):
     with sync_playwright() as p:
         browser = p.chromium.launch(headless=headless)
         ctx = browser.new_context(user_agent=http_mod.UAS[0], locale="en-US")
-        for domain, cf in rows:
+        for domain, cf, emails_j in rows:
             page = ctx.new_page()
             try:
                 status, hs, detail = submit_form(page, cf, domain)
             except Exception as e:
                 status, hs, detail = "failed", None, f"{type(e).__name__}: {e}"
-            record_outreach(con, domain, "form", cf, status, hs, detail)
-            if status == "submitted":
-                n_ok += 1
-            if verbose:
-                print(f"  {status:10} {domain:38} {detail[:60]}")
             with contextlib.suppress(Exception):
                 page.close()
-            http_mod.polite_sleep(1.5, 1.5)
+            channel = "form"
+            # Form couldn't go through → try email so the lead isn't wasted.
+            if status != "submitted" and email_fallback:
+                fb_status, fb_detail = _email_fallback(con, domain, emails_j)
+                if fb_status:
+                    status, channel, detail = fb_status, "form→email", f"{detail[:30]} | {fb_detail}"
+            record_outreach(con, domain, channel, cf, status, hs, detail)
+            if status in ("submitted", "sent"):
+                n_ok += 1
+            if verbose:
+                print(f"  {status:10} {channel:10} {domain:36} {detail[:50]}")
+            http_mod.polite_sleep(1.2, 1.2)
         browser.close()
     return n_ok
 
@@ -600,9 +717,12 @@ def main():
 
     d = sub.add_parser("discover"); d.add_argument("--limit-kw", type=int)
     d.add_argument("--no-listicles", action="store_true"); d.add_argument("--sleep", type=float, default=2.0)
+    hv = sub.add_parser("harvest-urls"); hv.add_argument("--file", required=True,
+        help="newline-separated listicle/roundup URLs to scrape outbound blog links from")
     e = sub.add_parser("enrich"); e.add_argument("--limit", type=int, default=200)
     e.add_argument("--workers", type=int, default=8)
     sub.add_parser("push-sheet")
+    sub.add_parser("sync-sheet")
     f = sub.add_parser("send-form"); f.add_argument("--limit", type=int, default=25)
     f.add_argument("--dry-run", action="store_true"); f.add_argument("--headed", action="store_true")
     m = sub.add_parser("send-email"); m.add_argument("--limit", type=int, default=50)
@@ -614,10 +734,15 @@ def main():
     if a.cmd == "discover":
         n = discover(con, limit_kw=a.limit_kw, crawl_listicles=not a.no_listicles, sleep=a.sleep)
         print(f"discover done: +{n} new blogs")
+    elif a.cmd == "harvest-urls":
+        urls = pathlib.Path(a.file).read_text().splitlines()
+        print(f"harvested: +{harvest_urls(con, urls)} new blogs from {len(urls)} URLs")
     elif a.cmd == "enrich":
-        print("enriched:", enrich(con, limit=a.limit))
+        print("enriched:", enrich(con, limit=a.limit, workers=a.workers))
     elif a.cmd == "push-sheet":
         push_sheet(con)
+    elif a.cmd == "sync-sheet":
+        sync_sheet(con)
     elif a.cmd == "send-form":
         print("submitted:", send_forms(con, limit=a.limit, dry_run=a.dry_run, headless=not a.headed))
     elif a.cmd == "send-email":

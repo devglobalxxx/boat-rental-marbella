@@ -1,0 +1,99 @@
+/Users/master/Library/Python/3.9/lib/python/site-packages/urllib3/__init__.py:35: NotOpenSSLWarning: urllib3 v2 only supports OpenSSL 1.1.1+, currently the 'ssl' module is compiled with 'LibreSSL 2.8.3'. See: https://github.com/urllib3/urllib3/issues/3020
+  warnings.warn(
+[1/403] 'travel blog 2026'                               +5 new (total 5)
+[2/403] 'best travel blog 2026'                          +3 new (total 8)
+[3/403] 'best travel blog contact us'                    +1 new (total 9)
+[4/403] 'top travel blog'                                +1 new (total 10)
+[5/403] 'top travel blog write for us'                   DDG blocked/failed — backing off, will retry
+[6/403] 'top travel blog 2026'                           DDG blocked/failed — backing off, will retry
+[7/403] 'top travel blog contact us'                     DDG blocked/failed — backing off, will retry
+[8/403] 'travel blogger'                                 DDG blocked/failed — backing off, will retry
+[9/403] 'travel blogger write for us'                    DDG blocked/failed — backing off, will retry
+[10/403] 'travel blogger 2026'                            +8 new (total 18)
+[11/403] 'travel blogger contact us'                      +3 new (total 21)
+[12/403] 'best travel blogger'                            DDG blocked/failed — backing off, will retry
+[13/403] 'best travel blogger write for us'               +18 new (total 39)
+[14/403] 'best travel blogger 2026'                       +0 new (total 39)
+[15/403] 'best travel blogger contact us'                 +1 new (total 40)
+[16/403] 'top travel blogger'                             DDG blocked/failed — backing off, will retry
+[17/403] 'top travel blogger write for us'                DDG blocked/failed — backing off, will retry
+[18/403] 'top travel blogger 2026'                        DDG blocked/failed — backing off, will retry
+[19/403] 'top travel blogger contact us'                  +3 new (total 43)
+[20/403] 'sailing blog'                                   +46 new (total 89)
+[21/403] 'sailing blog write for us'                      +5 new (total 94)
+[22/403] 'sailing blog 2026'                              +3 new (total 97)
+[23/403] 'sailing blog contact us'                        +3 new (total 100)
+[24/403] 'best sailing blog'                              +1 new (total 101)
+[25/403] 'best sailing blog write for us'                 +40 new (total 141)
+[26/403] 'best sailing blog 2026'                         +0 new (total 141)
+[27/403] 'best sailing blog contact us'                   +1 new (total 142)
+[28/403] 'top sailing blog'                               DDG blocked/failed — backing off, will retry
+[29/403] 'top sailing blog write for us'                  +1 new (total 143)
+[30/403] 'top sailing blog 2026'                          +5 new (total 148)
+[31/403] 'top sailing blog contact us'                    +1 new (total 149)
+[32/403] 'yacht blog'                                     +4 new (total 153)
+[33/403] 'yacht blog write for us'                        +5 new (total 158)
+[34/403] 'yacht blog 2026'                                DDG blocked/failed — backing off, will retry
+[35/403] 'yacht blog contact us'                          DDG blocked/failed — backing off, will retry
+[36/403] 'best yacht blog'                                DDG blocked/failed — backing off, will retry
+[37/403] 'best yacht blog write for us'                   +0 new (total 158)
+[38/403] 'best yacht blog 2026'                           +2 new (total 160)
+[39/403] 'best yacht blog contact us'                     +3 new (total 163)
+[40/403] 'top yacht blog'                                 +1 new (total 164)
+[41/403] 'top yacht blog write for us'                    +3 new (total 167)
+[42/403] 'top yacht blog 2026'                            +1 new (total 168)
+[43/403] 'top yacht blog contact us'                      +6 new (total 174)
+[44/403] 'boating blog'                                   DDG blocked/failed — backing off, will retry
+[45/403] 'boating blog write for us'                      +6 new (total 180)
+[46/403] 'boating blog 2026'                              +4 new (total 184)
+[47/403] 'boating blog contact us'                        +7 new (total 191)
+[48/403] 'best boating blog'                              +5 new (total 196)
+[49/403] 'best boating blog write for us'                 +0 new (total 196)
+[50/403] 'best boating blog 2026'                         +2 new (total 198)
+[51/403] 'best boating blog contact us'                   +2 new (total 200)
+[52/403] 'top boating blog'                               +0 new (total 200)
+[53/403] 'top boating blog write for us'                  +0 new (total 200)
+[54/403] 'top boating blog 2026'                          +1 new (total 201)
+[55/403] 'top boating blog contact us'                    +1 new (total 202)
+[56/403] 'boat travel blog'                               +1 new (total 203)
+[57/403] 'boat travel blog write for us'                  +1 new (total 204)
+[58/403] 'boat travel blog 2026'                          DDG blocked/failed — backing off, will retry
+[59/403] 'boat travel blog contact us'                    DDG blocked/failed — backing off, will retry
+[60/403] 'best boat travel blog'                          DDG blocked/failed — backing off, will retry
+[61/403] 'best boat travel blog write for us'             DDG blocked/failed — backing off, will retry
+[62/403] 'best boat travel blog 2026'                     DDG blocked/failed — backing off, will retry
+[63/403] 'best boat travel blog contact us'               +1 new (total 205)
+[64/403] 'top boat travel blog'                           +1 new (total 206)
+[65/403] 'top boat travel blog write for us'              +0 new (total 206)
+[66/403] 'top boat travel blog 2026'                      +1 new (total 207)
+[67/403] 'top boat travel blog contact us'                +1 new (total 208)
+[68/403] 'adventure travel blog'                          +34 new (total 242)
+[69/403] 'adventure travel blog write for us'             +5 new (total 247)
+[70/403] 'adventure travel blog 2026'                     DDG blocked/failed — backing off, will retry
+[71/403] 'adventure travel blog contact us'               DDG blocked/failed — backing off, will retry
+[72/403] 'best adventure travel blog'                     +2 new (total 249)
+[73/403] 'best adventure travel blog write for us'        +0 new (total 249)
+[74/403] 'best adventure travel blog 2026'                +3 new (total 252)
+[75/403] 'best adventure travel blog contact us'          +9 new (total 261)
+[76/403] 'top adventure travel blog'                      +0 new (total 261)
+[77/403] 'top adventure travel blog write for us'         DDG blocked/failed — backing off, will retry
+[78/403] 'top adventure travel blog 2026'                 +0 new (total 261)
+[79/403] 'top adventure travel blog contact us'           +1 new (total 262)
+[80/403] 'luxury travel blog'                             +3 new (total 265)
+[81/403] 'luxury travel blog write for us'                +5 new (total 270)
+[82/403] 'luxury travel blog 2026'                        +8 new (total 278)
+[83/403] 'luxury travel blog contact us'                  +3 new (total 281)
+[84/403] 'best luxury travel blog'                        +2 new (total 283)
+[85/403] 'best luxury travel blog write for us'           +0 new (total 283)
+[86/403] 'best luxury travel blog 2026'                   +3 new (total 286)
+[87/403] 'best luxury travel blog contact us'             +1 new (total 287)
+[88/403] 'top luxury travel blog'                         +0 new (total 287)
+[89/403] 'top luxury travel blog write for us'            +0 new (total 287)
+[90/403] 'top luxury travel blog 2026'                    +0 new (total 287)
+[91/403] 'top luxury travel blog contact us'              +2 new (total 289)
+[92/403] 'family travel blog'                             +1 new (total 290)
+[93/403] 'family travel blog write for us'                +6 new (total 296)
+[94/403] 'family travel blog 2026'                        DDG blocked/failed — backing off, will retry
+[95/403] 'family travel blog contact us'                  DDG blocked/failed — backing off, will retry
+[96/403] 'best family travel blog'                        +5 new (total 301)
+[97/403] 'best family travel blog write for us'           +0 new (total 301)

@@ -154,7 +154,7 @@ def gen_article_nodes(title: str, links: list, hero: str) -> list:
         "You are a travel/charter writer for Boat Rental Marbella, an independent boat-charter operator "
         "in Puerto Banús. Write accurate, locally-specific, genuinely useful articles. Real place names "
         "(Puerto Banús, Marbella Marina, Cabopino, Estepona, Sotogrande, La Concha, Río Verde, Golden Mile), "
-        "real prices in EUR (from €749/2h skippered, €230/2h licence-free Dubhe, Mangusta 80 €4,719/4h). "
+        "real prices in EUR (from €749/2h skippered, €230/2h Dubhe 8m day boat, Mangusta 80 €4,719/4h). "
         "Every charter includes skipper, fuel, drinks, snacks and 21% IVA. Never invent reviews."
     )
     user_p = (

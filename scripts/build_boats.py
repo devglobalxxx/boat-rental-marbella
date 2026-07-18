@@ -14,6 +14,10 @@ CONFIG = json.loads((ROOT / "config" / "keyword_map.json").read_text())
 BOATS_CFG = json.loads((ROOT / "config" / "boats.json").read_text())
 SITE = CONFIG["site"]
 SITE_DIR = ROOT / "site"
+_FLEET_LOWS = [min(t["prices"].values())
+               for t in (BOATS_CFG["hourly_price_tiers"][b["tier"]] for b in BOATS_CFG["boats"])
+               if t["prices"]]
+FLEET_PRICE_RANGE = f"€{min(_FLEET_LOWS)}–€{max(_FLEET_LOWS)}"
 
 _VID_PATH = ROOT / "config" / "videos.json"
 VIDEOS_CFG = json.loads(_VID_PATH.read_text()) if _VID_PATH.exists() else {"videos": []}
@@ -98,23 +102,6 @@ def guests_jsonld_blocks(photos, page_url):
         ],
     }]
 
-def video_jsonld_blocks(videos, page_url):
-    return [
-        {
-            "@context": "https://schema.org",
-            "@type": "VideoObject",
-            "name": v["title"],
-            "description": v["description"],
-            "thumbnailUrl": SITE['base_url'] + f"/video/{v['slug']}.jpg",
-            "contentUrl": SITE['base_url'] + f"/video/{v['slug']}.mp4",
-            "uploadDate": "2026-05-17",
-            "publisher": {"@id": SITE['base_url'] + "/#org"},
-            "isPartOf": page_url,
-            "keywords": ", ".join(v.get("tags", [])),
-            "inLanguage": "en",
-        } for v in videos
-    ]
-
 # ---------- helpers ----------
 def pexels(id_, w=1600):
     return f"https://images.pexels.com/photos/{id_}/pexels-photo-{id_}.jpeg?auto=compress&cs=tinysrgb&w={w}"
@@ -179,11 +166,12 @@ def jsonld_org():
     return {
         "@context":"https://schema.org","@type":["LocalBusiness","Organization"],
         "@id":SITE['base_url']+"/#org","name":SITE['name'],
+        "alternateName":["Boat Rental In Marbella","boatrentalinmarbella.com"],
         "url":SITE['base_url']+"/","logo": SITE['base_url'] + "/img/logo-480.png",
         "telephone":SITE['phone_e164'],"email":SITE['email'],
         "areaServed":SITE['departure_ports'],
-        "sameAs":[u for u in [SITE.get('instagram_url'), SITE.get('facebook_url')] if u],
-        "priceRange":f"€{SITE['price_anchor_low_2h']}–€{SITE['price_anchor_fullday_8h']}",
+        "sameAs":[u for u in [SITE.get('instagram_url'), SITE.get('facebook_url'), SITE.get('youtube_url'), SITE.get('x_url')] if u],
+        "priceRange":FLEET_PRICE_RANGE,
         "address":{"@type":"PostalAddress","addressLocality":"Marbella","addressRegion":"Andalucía","postalCode":"29602","addressCountry":"ES"},
         "geo":{"@type":"GeoCoordinates","latitude":SITE['geo_lat'],"longitude":SITE['geo_lng']},
         "foundingDate":str(SITE.get('founded_year',2025)),
@@ -264,7 +252,8 @@ def render_index():
     ]
 
     hero_src, hero_srcset, _ = boat_hero(boats[0])
-    jsonld += video_jsonld_blocks(videos_for_url("/boats/"), SITE['base_url']+"/boats/")
+    # VideoObject JSON-LD is emitted by build_video_sitemap.py only (it scans
+    # rendered <video> tags) — emitting it here too created duplicate blocks.
     write_page(
         slug="boats",
         title="Our Marbella Boat Charter Fleet — Yachts &amp; Catamarans",
@@ -438,7 +427,7 @@ def render_boat(boat):
             "@type":"Offer",
             "priceCurrency":"EUR",
             "availability":"https://schema.org/InStock",
-            "url": boat_url if False else (SITE['base_url']+f"/boats/{boat['slug']}/"),
+            "url": SITE['base_url']+f"/boats/{boat['slug']}/",
             "price": "0",  # zero is a JSON-LD-valid placeholder; quote on contact
         }
     jsonld = [
@@ -461,9 +450,8 @@ def render_boat(boat):
         },
     ]
 
-    # Attach VideoObject schema for any videos placed on this boat URL
-    boat_url = SITE['base_url']+f"/boats/{boat['slug']}/"
-    jsonld += video_jsonld_blocks(videos_for_url(f"/boats/{boat['slug']}/"), boat_url)
+    # VideoObject JSON-LD is emitted by build_video_sitemap.py only (it scans
+    # rendered <video> tags) — emitting it here too created duplicate blocks.
 
     write_page(
         slug=f"boats/{boat['slug']}",

@@ -1,0 +1,52 @@
+[2026-07-17 12:56:53] Making 1 reels (ffmpeg: ffmpeg-macos-x86_64-v7.1)
+[2026-07-17 12:57:07] Drive: 479 source photos
+[2026-07-17 12:57:10] Downloaded 3 photos
+[2026-07-17 12:58:09]   ✓ reel 1/1: reel_marbella_260717125807_1.mp4 (1320 KB)
+[2026-07-17 12:58:09] Done (local only): 1 reels in /Users/master/boat-rental-marbella/generated-reels
+[2026-07-17 12:59:27] Making 1 reels (ffmpeg: ffmpeg-macos-x86_64-v7.1)
+[2026-07-17 12:59:42] Drive: 479 source photos
+[2026-07-17 12:59:45] Downloaded 3 photos
+[2026-07-17 13:00:40]   ✓ reel 1/1: reel_marbella_260717130038_1.mp4 (1624 KB)
+[2026-07-17 13:00:40] Done (local only): 1 reels in /Users/master/boat-rental-marbella/generated-reels
+[2026-07-17 13:01:06] Making 8 reels (ffmpeg: ffmpeg-macos-x86_64-v7.1)
+[2026-07-17 13:01:21] Drive: 479 source photos
+[2026-07-17 13:01:44] Downloaded 24 photos
+[2026-07-17 13:02:39]   ✓ reel 1/8: reel_marbella_260717130238_1.mp4 (1500 KB)
+[2026-07-17 13:03:35]   ✓ reel 2/8: reel_marbella_260717130333_2.mp4 (1472 KB)
+[2026-07-17 13:04:30]   ✓ reel 3/8: reel_marbella_260717130429_3.mp4 (1346 KB)
+[2026-07-17 13:05:25]   ✓ reel 4/8: reel_marbella_260717130524_4.mp4 (1349 KB)
+[2026-07-17 13:06:21]   ✓ reel 5/8: reel_marbella_260717130619_5.mp4 (1331 KB)
+[2026-07-17 13:07:16]   ✓ reel 6/8: reel_marbella_260717130714_6.mp4 (1545 KB)
+[2026-07-17 13:08:11]   ✓ reel 7/8: reel_marbella_260717130810_7.mp4 (1371 KB)
+[2026-07-17 13:09:07]   ✓ reel 8/8: reel_marbella_260717130905_8.mp4 (1281 KB)
+[2026-07-17 13:09:10]   ⬆ uploaded reel_marbella_260717130238_1.mp4 -> Drive/AI REELS (1Nx-ds4lG8L05fbfFgpXe8V99KKx_DXuJ)
+[2026-07-17 13:09:12]   ⬆ uploaded reel_marbella_260717130333_2.mp4 -> Drive/AI REELS (13Z0ZrDCi_J_WbdLr08hd4mGu53f6ZgYp)
+[2026-07-17 13:09:14]   ⬆ uploaded reel_marbella_260717130429_3.mp4 -> Drive/AI REELS (1NnOpY1Rl4kTxv4G-CmN-CZIo_RjV7SeS)
+[2026-07-17 13:09:16]   ⬆ uploaded reel_marbella_260717130524_4.mp4 -> Drive/AI REELS (1O66YeAwJ6Zte1GRlC4r3GOASTE-DuAWo)
+[2026-07-17 13:09:18]   ⬆ uploaded reel_marbella_260717130619_5.mp4 -> Drive/AI REELS (1U5ssLc6NEwA2wRrHBPD0pb_u8FywSKzB)
+[2026-07-17 13:09:19]   ⬆ uploaded reel_marbella_260717130714_6.mp4 -> Drive/AI REELS (1ogLwnW8jge_3RnnklLP4b2tCbiNSWHlq)
+[2026-07-17 13:09:21]   ⬆ uploaded reel_marbella_260717130810_7.mp4 -> Drive/AI REELS (184Zt60X-GXsnZALtv_naGVVAFL-dHgQr)
+[2026-07-17 13:09:23]   ⬆ uploaded reel_marbella_260717130905_8.mp4 -> Drive/AI REELS (1TJ1iohxLluN0TtDB2TStvmh-6eVNTCUq)
+[2026-07-17 13:09:23] Done: 8 reels made, 8 uploaded to Drive/AI REELS
+[2026-07-17 13:09:23] They'll be picked up by the next post_youtube.py run.
+[2026-07-18 10:30:00] Making 8 reels (ffmpeg: ffmpeg-macos-x86_64-v7.1)
+[2026-07-18 10:30:16] Drive: 479 source photos
+[2026-07-18 10:30:38] Downloaded 24 photos
+[2026-07-18 10:31:39]   ✓ reel 1/8: reel_marbella_260718103138_1.mp4 (1110 KB)
+[2026-07-18 10:32:41]   ✓ reel 2/8: reel_marbella_260718103240_2.mp4 (1223 KB)
+[2026-07-18 10:33:47]   ✓ reel 3/8: reel_marbella_260718103345_3.mp4 (1778 KB)
+[2026-07-18 10:35:07]   ✓ reel 4/8: reel_marbella_260718103505_4.mp4 (1365 KB)
+[2026-07-18 10:36:09]   ✓ reel 5/8: reel_marbella_260718103608_5.mp4 (1206 KB)
+[2026-07-18 10:37:29]   ✓ reel 6/8: reel_marbella_260718103728_6.mp4 (1305 KB)
+[2026-07-18 10:38:32]   ✓ reel 7/8: reel_marbella_260718103831_7.mp4 (1330 KB)
+[2026-07-18 10:39:55]   ✓ reel 8/8: reel_marbella_260718103953_8.mp4 (1183 KB)
+[2026-07-18 10:39:57]   ⬆ uploaded reel_marbella_260718103138_1.mp4 -> Drive/AI REELS (17_RPGimL1g_hhFA8vApsokJVM-pWslR-)
+[2026-07-18 10:39:59]   ⬆ uploaded reel_marbella_260718103240_2.mp4 -> Drive/AI REELS (1Cd794_Zk-o0vH29BYsZfO7lZrRlM1meV)
+[2026-07-18 10:40:00]   ⬆ uploaded reel_marbella_260718103345_3.mp4 -> Drive/AI REELS (1Oa1OswBmUn0L9QrRGSv9BZ0Rtlc2foKK)
+[2026-07-18 10:40:02]   ⬆ uploaded reel_marbella_260718103505_4.mp4 -> Drive/AI REELS (13B50bKAucRPW8Or3sKjIltr2tAIoKIEh)
+[2026-07-18 10:40:04]   ⬆ uploaded reel_marbella_260718103608_5.mp4 -> Drive/AI REELS (1KDMr9xomHDZuq4Los7wcPwDe4WVVLPQ1)
+[2026-07-18 10:40:06]   ⬆ uploaded reel_marbella_260718103728_6.mp4 -> Drive/AI REELS (1nokdEWdePYOB-7yEc5exIntNMNpNvUsS)
+[2026-07-18 10:40:07]   ⬆ uploaded reel_marbella_260718103831_7.mp4 -> Drive/AI REELS (16h6qsHTp3mqZQhM-3YmipPPLuIJVfWb7)
+[2026-07-18 10:40:09]   ⬆ uploaded reel_marbella_260718103953_8.mp4 -> Drive/AI REELS (1RO5OgZxFkCD5wAvZeGuMsE1-BgUiVH8C)
+[2026-07-18 10:40:09] Done: 8 reels made, 8 uploaded to Drive/AI REELS
+[2026-07-18 10:40:09] They'll be picked up by the next post_youtube.py run.

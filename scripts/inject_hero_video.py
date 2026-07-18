@@ -23,18 +23,36 @@ for v in VIDEOS:
 def already_has_hero_video(s: str) -> bool:
     return 'class="hero-video"' in s
 
+def ensure_poster_preload(s: str, slug: str) -> str:
+    """The poster is the LCP candidate on hero-video pages — preload it (idempotent)."""
+    href = f"/video/{slug}.jpg"
+    if f'rel="preload" as="image" href="{href}"' in s:
+        return s
+    return s.replace(
+        '<link rel="stylesheet" href="/styles.css">',
+        f'<link rel="preload" as="image" href="{href}">\n<link rel="stylesheet" href="/styles.css">',
+        1,
+    )
+
 def swap(path: pathlib.Path, video: dict):
     s = path.read_text()
     if already_has_hero_video(s):
+        changed = False
         # Retro-fit the pause toggle onto pages whose hero video predates it
         if 'hero-video-toggle' not in s:
             toggle = ('<button class="hero-video-toggle" type="button" aria-label="Pause background video" '
                       'onclick="var v=this.previousElementSibling;if(v.paused){v.play();this.textContent=\'⏸\';this.setAttribute(\'aria-label\',\'Pause background video\')}else{v.pause();this.textContent=\'▶\';this.setAttribute(\'aria-label\',\'Play background video\')}">⏸</button>')
             new = re.sub(r'(<video class="hero-video"[\s\S]*?</video>)', r'\1' + toggle, s, count=1)
             if new != s:
-                path.write_text(new)
-                return True
-        return False
+                s = new
+                changed = True
+        new = ensure_poster_preload(s, video["slug"])
+        if new != s:
+            s = new
+            changed = True
+        if changed:
+            path.write_text(s)
+        return changed
     if 'class="hero-img-wrap"' not in s:
         return False
     title = html.escape(video["title"])
@@ -56,6 +74,7 @@ def swap(path: pathlib.Path, video: dict):
         r'<section class="video-section">[\s\S]*?</section>',
         "", new, count=1,
     )
+    new = ensure_poster_preload(new, video["slug"])
     if new != s:
         path.write_text(new)
         return True

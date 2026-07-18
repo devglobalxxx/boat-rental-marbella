@@ -19,16 +19,23 @@ TEMPLATE = (ROOT / "templates" / "page.html.template").read_text()
 CONFIG = json.loads((ROOT / "config" / "keyword_map.json").read_text())
 SITE = CONFIG["site"]
 SITE_DIR = ROOT / "site"
+BOATS_CFG = json.loads((ROOT / "config" / "boats.json").read_text())
+FLEET_N = len(BOATS_CFG["boats"])
+_FLEET_LOWS = [min(t["prices"].values())
+               for t in (BOATS_CFG["hourly_price_tiers"][b["tier"]] for b in BOATS_CFG["boats"])
+               if t["prices"]]
+FLEET_PRICE_RANGE = f"€{min(_FLEET_LOWS)}–€{max(_FLEET_LOWS)}"
 
 def jsonld_org():
     return {
         "@context":"https://schema.org","@type":["LocalBusiness","Organization"],
         "@id":SITE['base_url']+"/#org","name":SITE['name'],
+        "alternateName":["Boat Rental In Marbella","boatrentalinmarbella.com"],
         "url":SITE['base_url']+"/","logo": SITE['base_url'] + "/img/logo-480.png",
         "telephone":SITE['phone_e164'],"email":SITE['email'],
         "areaServed":SITE['departure_ports'],
-        "sameAs":[u for u in [SITE.get('instagram_url'), SITE.get('facebook_url')] if u],
-        "priceRange":f"€{SITE['price_anchor_low_2h']}–€{SITE['price_anchor_fullday_8h']}",
+        "sameAs":[u for u in [SITE.get('instagram_url'), SITE.get('facebook_url'), SITE.get('youtube_url'), SITE.get('x_url')] if u],
+        "priceRange":FLEET_PRICE_RANGE,
         "address":{"@type":"PostalAddress","addressLocality":"Marbella","addressRegion":"Andalucía","postalCode":"29602","addressCountry":"ES"},
         "geo":{"@type":"GeoCoordinates","latitude":SITE['geo_lat'],"longitude":SITE['geo_lng']},
         "foundingDate":str(SITE.get('founded_year',2025)),
@@ -354,7 +361,7 @@ def body_yates():
 <li><strong>Champán/bebidas premium:</strong> añade botellas específicas si prefieres marcas concretas. Nuestra cava de uso normal incluye cava español de calidad.</li>
 <li><strong>DJ y sistema de sonido:</strong> +€350 medio día, +€600 día completo. Ideal para fiestas de cumpleaños o despedidas.</li>
 <li><strong>Tender a chiringuito:</strong> te acercamos en lancha a Nikki Beach, Ocean Club o un beach club que prefieras. La entrada al club se paga aparte.</li>
-<li><strong>Moto de agua extra:</strong> €200/h adicional si quieres una segunda moto de agua (el Mangusta 80 ya incluye una).</li>
+<li><strong>Moto de agua extra:</strong> €250 la primera hora si quieres una segunda moto de agua (el Mangusta 80 ya incluye una).</li>
 </ul>
 
 <h2>Preguntas frecuentes</h2>
@@ -619,7 +626,7 @@ def render_es(slug, key, title, meta, h1, sub, eyebrow, body, en_alt):
         '💬 Message on WhatsApp':'💬 Escribir por WhatsApp',
         'Avg reply &lt; 5 min · No deposit until you confirm':'Respuesta media &lt;5 min · Sin pago hasta confirmar',
         '📞 Call ':'📞 Llamar ',
-        'Browse our 18-boat fleet':'Explorar nuestra flota de 18 barcos',
+        f'Browse our {FLEET_N}-boat fleet': f'Explorar nuestra flota de {FLEET_N} barcos',
         '>Boats<':'>Barcos<',
         'Our fleet':'Nuestra flota',
         'Yacht charter':'Alquiler de yates',

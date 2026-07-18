@@ -56,7 +56,13 @@ SPOKE_CLUSTERS = [
     {"en": "/blog/boat-license-rules-spain/", "de": "/de/blog/bootsfuehrerschein-spanien/"},
 ]
 
-HREFLANG_RE = re.compile(r'<link rel="alternate" hreflang="[^"]*" href="[^"]*">\s*')
+# Tolerates whitespace variants and the ' />' self-closing form emitted by the
+# locale builders (build_languages.py), plus their legacy marker comments.
+HREFLANG_RE = re.compile(r'<link\s+rel="alternate"\s+hreflang="[^"]*"\s+href="[^"]*"\s*/?>\s*')
+MARKER_RE = re.compile(r'<!-- (?:BEGIN|END) HREFLANG -->\s*')
+
+def strip_hreflang(s: str) -> str:
+    return MARKER_RE.sub("", HREFLANG_RE.sub("", s))
 
 def exists(path: str) -> bool:
     rel = path.strip("/")
@@ -78,7 +84,7 @@ def apply(path_str: str, block: str) -> bool:
     if not p.exists():
         return False
     s = p.read_text(errors="ignore")
-    stripped = HREFLANG_RE.sub("", s)
+    stripped = strip_hreflang(s)
     if block:
         # insert after canonical link
         new = re.sub(r'(<link rel="canonical"[^>]*>)', r"\1\n" + block, stripped, count=1)
@@ -110,8 +116,8 @@ def main():
         if path in in_cluster:
             continue
         s = f.read_text(errors="ignore")
-        if 'rel="alternate" hreflang' in s:
-            new = HREFLANG_RE.sub("", s)
+        if 'rel="alternate" hreflang' in s or "HREFLANG -->" in s:
+            new = strip_hreflang(s)
             if new != s:
                 f.write_text(new)
                 stripped += 1

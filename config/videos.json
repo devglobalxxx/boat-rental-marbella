@@ -1,137 +1,159 @@
 {
-  "videos": [
-    {
-      "slug": "aerial-yachts-marbella",
-      "drive_id": "1JnxJKnzg3doOUqYguQExD3tJXep88Uts",
-      "crop_bottom_pct": 14,
-      "title": "Yachts anchored off the Marbella coast",
-      "description": "Aerial drone view of two motor yachts anchored off the Marbella coastline with the Sierra Blanca mountains behind.",
-      "tags": [
-        "aerial",
-        "yachts",
-        "anchored",
-        "Marbella coast"
-      ],
-      "placement": []
-    },
-    {
-      "slug": "puerto-banus-bow-shot",
-      "drive_id": "1JJy_QGJAFbwLP995erB7aOcKVx-KmzGt",
-      "crop_bottom_pct": 0,
-      "title": "Departing Puerto Banús by yacht",
-      "description": "Bow-shot of a charter yacht slipping out of Puerto Banús marina past the working fleet, with Hotel Benabola in the background.",
-      "tags": [
-        "Puerto Banús",
-        "marina",
-        "departure"
-      ],
-      "placement": [
-        "/boat-rental-puerto-banus/"
-      ]
-    },
-    {
-      "slug": "marbella-boat-party",
-      "drive_id": "1HYbBSiYPZd9xNcCeHvovbXpR7OgUUJHg",
-      "crop_bottom_pct": 0,
-      "title": "Boat party in Marbella",
-      "description": "Group of guests on the flybridge of a luxury yacht enjoying a sunny day in Puerto Banús.",
-      "tags": [
-        "boat party",
-        "Puerto Banús",
-        "luxury yacht"
-      ],
-      "placement": [
-        "/boat-party-marbella/"
-      ]
-    },
-    {
-      "slug": "drinks-on-board",
-      "drive_id": "1uqP58QXV98yZ6OsSSn367X2dadJukWzh",
-      "crop_bottom_pct": 0,
-      "title": "All drinks included — fridge on board",
-      "description": "Our on-board fridge stocked with cava, white wine, beer, soft drinks and water — included with every Marbella charter.",
-      "tags": [
-        "drinks included",
-        "cava",
-        "white wine",
-        "beer",
-        "Marbella charter"
-      ],
-      "placement": [
-        "/blog/how-much-does-it-cost-to-rent-a-boat-in-marbella/",
-        "/blog/what-to-bring-on-a-boat-charter/"
-      ]
-    },
-    {
-      "slug": "astondoa-anchored",
-      "drive_id": "1N93lOHubWgv8GCApbr6rwPdiwiD_EpuO",
-      "crop_bottom_pct": 14,
-      "title": "Astondoa 40 'Fufi' at anchor off Marbella",
-      "description": "Drone view of our Astondoa 40 'Fufi' anchored off the Marbella coastline alongside another fleet yacht — typical mid-day swim stop.",
-      "tags": [
-        "Astondoa 40",
-        "Fufi",
-        "anchored",
-        "Marbella",
-        "aerial"
-      ],
-      "placement": [
-        "/boats/astondoa-40/"
-      ]
-    },
-    {
-      "slug": "mangusta-fruit-platter",
-      "drive_id": "1SXmjGED7OVYmz0ye--eipklnXTQMGipp",
-      "crop_bottom_pct": 0,
-      "title": "Chef-prepared fruit platter on the Mangusta 80",
-      "description": "Fresh fruit platter — pineapple, papaya, strawberries, raspberries, grapes and blueberries — served on the Mangusta 80 main saloon.",
-      "tags": [
-        "Mangusta 80",
-        "catering",
-        "luxury yacht",
-        "fruit platter",
-        "Marbella"
-      ],
-      "placement": [
-        "/boats/mangusta-80/"
-      ]
-    },
-    {
-      "slug": "azimut-39-cruising",
-      "drive_id": "1GE7ROcQdM_o3Z9tzo1D5JtTl1peAePRI",
-      "crop_bottom_pct": 0,
-      "title": "Azimut 39 cruising the Marbella coast",
-      "description": "Drone tracking shot of the Azimut 39 motor yacht cruising at speed along the Marbella coastline with the Sierra Blanca mountains behind.",
-      "tags": [
-        "Azimut 39",
-        "cruising",
-        "aerial",
-        "Marbella",
-        "drone"
-      ],
-      "placement": [
-        "/",
-        "/boats/",
-        "/boats/azimut-39/"
-      ]
-    },
-    {
-      "slug": "mangusta-80-white-stern",
-      "drive_id": "1L3raZNnDO-aHXwicNafLCArQ0nx_MK2L",
-      "crop_bottom_pct": 0,
-      "title": "Mangusta 80 (White) — stern with Sea-Doo jet ski",
-      "description": "Stern view of our Mangusta 80 'Nina' in Puerto Banús showing the Sea-Doo jet ski mounted on the swim platform — free for guests during the charter.",
-      "tags": [
-        "Mangusta 80",
-        "white",
-        "jet ski",
-        "Sea-Doo",
-        "Puerto Banús",
-        "Marbella"
-      ],
-      "placement": [
-        "/boats/mangusta-80-white/"
-      ]
-    }
-  ]
+ "videos": [
+  {
+   "slug": "aerial-yachts-marbella",
+   "drive_id": "1JnxJKnzg3doOUqYguQExD3tJXep88Uts",
+   "crop_bottom_pct": 14,
+   "title": "Yachts anchored off the Marbella coast",
+   "description": "Aerial drone view of two motor yachts anchored off the Marbella coastline with the Sierra Blanca mountains behind.",
+   "tags": [
+    "aerial",
+    "yachts",
+    "anchored",
+    "Marbella coast"
+   ],
+   "placement": [],
+   "upload_date": "2026-05-17"
+  },
+  {
+   "slug": "puerto-banus-bow-shot",
+   "drive_id": "1JJy_QGJAFbwLP995erB7aOcKVx-KmzGt",
+   "crop_bottom_pct": 0,
+   "title": "Departing Puerto Banús by yacht",
+   "description": "Bow-shot of a charter yacht slipping out of Puerto Banús marina past the working fleet, with Hotel Benabola in the background.",
+   "tags": [
+    "Puerto Banús",
+    "marina",
+    "departure"
+   ],
+   "placement": [
+    "/boat-rental-puerto-banus/"
+   ],
+   "upload_date": "2026-05-17"
+  },
+  {
+   "slug": "marbella-boat-party",
+   "drive_id": "1HYbBSiYPZd9xNcCeHvovbXpR7OgUUJHg",
+   "crop_bottom_pct": 0,
+   "title": "Boat party in Marbella",
+   "description": "Group of guests on the flybridge of a luxury yacht enjoying a sunny day in Puerto Banús.",
+   "tags": [
+    "boat party",
+    "Puerto Banús",
+    "luxury yacht"
+   ],
+   "placement": [
+    "/boat-party-marbella/"
+   ],
+   "upload_date": "2026-05-17"
+  },
+  {
+   "slug": "drinks-on-board",
+   "drive_id": "1uqP58QXV98yZ6OsSSn367X2dadJukWzh",
+   "crop_bottom_pct": 0,
+   "title": "All drinks included — fridge on board",
+   "description": "Our on-board fridge stocked with cava, white wine, beer, soft drinks and water — included with every Marbella charter.",
+   "tags": [
+    "drinks included",
+    "cava",
+    "white wine",
+    "beer",
+    "Marbella charter"
+   ],
+   "placement": [
+    "/blog/how-much-does-it-cost-to-rent-a-boat-in-marbella/",
+    "/blog/what-to-bring-on-a-boat-charter/"
+   ],
+   "upload_date": "2026-05-17"
+  },
+  {
+   "slug": "astondoa-anchored",
+   "drive_id": "1N93lOHubWgv8GCApbr6rwPdiwiD_EpuO",
+   "crop_bottom_pct": 14,
+   "title": "Astondoa 40 'Fufi' at anchor off Marbella",
+   "description": "Drone view of our Astondoa 40 'Fufi' anchored off the Marbella coastline alongside another fleet yacht — typical mid-day swim stop.",
+   "tags": [
+    "Astondoa 40",
+    "Fufi",
+    "anchored",
+    "Marbella",
+    "aerial"
+   ],
+   "placement": [
+    "/boats/astondoa-40/"
+   ],
+   "upload_date": "2026-05-17"
+  },
+  {
+   "slug": "mangusta-fruit-platter",
+   "drive_id": "1SXmjGED7OVYmz0ye--eipklnXTQMGipp",
+   "crop_bottom_pct": 0,
+   "title": "Chef-prepared fruit platter on the Mangusta 80",
+   "description": "Fresh fruit platter — pineapple, papaya, strawberries, raspberries, grapes and blueberries — served on the Mangusta 80 main saloon.",
+   "tags": [
+    "Mangusta 80",
+    "catering",
+    "luxury yacht",
+    "fruit platter",
+    "Marbella"
+   ],
+   "placement": [
+    "/boats/mangusta-80/"
+   ],
+   "upload_date": "2026-05-17"
+  },
+  {
+   "slug": "azimut-39-cruising",
+   "drive_id": "1GE7ROcQdM_o3Z9tzo1D5JtTl1peAePRI",
+   "crop_bottom_pct": 0,
+   "title": "Azimut 39 cruising the Marbella coast",
+   "description": "Drone tracking shot of the Azimut 39 motor yacht cruising at speed along the Marbella coastline with the Sierra Blanca mountains behind.",
+   "tags": [
+    "Azimut 39",
+    "cruising",
+    "aerial",
+    "Marbella",
+    "drone"
+   ],
+   "placement": [
+    "/",
+    "/boats/",
+    "/boats/azimut-39/"
+   ],
+   "upload_date": "2026-05-17"
+  },
+  {
+   "slug": "mangusta-80-white-stern",
+   "drive_id": "1L3raZNnDO-aHXwicNafLCArQ0nx_MK2L",
+   "crop_bottom_pct": 0,
+   "title": "Mangusta 80 (White) — stern with Sea-Doo jet ski",
+   "description": "Stern view of our Mangusta 80 'Nina' in Puerto Banús showing the Sea-Doo jet ski mounted on the swim platform — free for guests during the charter.",
+   "tags": [
+    "Mangusta 80",
+    "white",
+    "jet ski",
+    "Sea-Doo",
+    "Puerto Banús",
+    "Marbella"
+   ],
+   "placement": [
+    "/boats/mangusta-80-white/"
+   ],
+   "upload_date": "2026-05-17"
+  },
+  {
+   "slug": "andra-founder-note",
+   "drive_id": "",
+   "crop_bottom_pct": 0,
+   "title": "A note from Andra, founder of Boat Rental Marbella",
+   "description": "Founder Andra Kiirkivi on how direct WhatsApp booking works — no marketplace middlemen, skipper and drinks always included.",
+   "tags": [
+    "boat rental marbella",
+    "founder",
+    "puerto banus"
+   ],
+   "placement": [],
+   "upload_date": "2026-05-23"
+  }
+ ]
 }

@@ -15,6 +15,8 @@
     "instagram_handle": "@boatrentalmarbella",
     "facebook_url": "https://www.facebook.com/share/1JGRPkWsfv/",
     "facebook_label": "Facebook",
+    "youtube_url": "https://www.youtube.com/@BoatRentalInMarbella",
+    "x_url": "https://x.com/BoatRentalMarbs",
     "affiliate_partner": "Click&Boat",
     "affiliate_link": "https://www.clickandboat.com/?utm_source=boatrentalmarbella&utm_medium=affiliate",
     "departure_ports": [
@@ -38,7 +40,7 @@
     "primary_keyword": "boat rental Marbella",
     "title": "Boat Rental Marbella 2026: Yachts, Catamarans & Charters",
     "meta_description": "Boat rental in Marbella from €250 for 2h. Compare yachts, catamarans, fishing boats & license-free options from Puerto Banús, Marbella Marina & Cabopino. Skipper, fuel & drinks included. Instant WhatsApp booking.",
-    "h1": "Boat Rental Marbella — 17-Boat Fleet, Yachts, Catamarans & Charters",
+    "h1": "Boat Rental Marbella — 27-Boat Fleet, Yachts, Catamarans & Charters",
     "intent": "transactional",
     "target_words": 2200
   },
@@ -46,7 +48,7 @@
     {
       "slug": "yacht-charter-marbella",
       "primary_keyword": "yacht charter Marbella",
-      "title": "Yacht Charter Marbella 2026: Luxury Motor Yachts from €450",
+      "title": "Yacht Charter Marbella 2026: Luxury Motor Yachts from €749",
       "intent": "transactional",
       "target_words": 1600
     },
@@ -102,7 +104,7 @@
     {
       "slug": "jet-ski-rental-marbella",
       "primary_keyword": "jet ski rental Marbella",
-      "title": "Jet Ski Rental Marbella 2026: Sea-Doo Rides from €200/h",
+      "title": "Jet Ski Rental Marbella 2026: Sea-Doo Rides from €250 First Hour",
       "intent": "transactional",
       "target_words": 1200
     },
@@ -245,14 +247,14 @@
     {
       "slug": "yacht-charter-puerto-banus",
       "primary_keyword": "yacht charter Puerto Banús",
-      "title": "Yacht Charter Puerto Banús 2026: 17-Boat Fleet From €749",
+      "title": "Yacht Charter Puerto Banús 2026: 27-Boat Fleet From €749",
       "intent": "transactional",
       "target_words": 1400
     },
     {
       "slug": "motor-yacht-rental-marbella",
       "primary_keyword": "motor yacht rental Marbella",
-      "title": "Motor Yacht Rental Marbella 2026: From €749 on Our 17-Boat Fleet",
+      "title": "Motor Yacht Rental Marbella 2026: From €749 on Our 27-Boat Fleet",
       "intent": "transactional",
       "target_words": 1400
     },
@@ -1793,8 +1795,8 @@
     },
     {
       "slug": "blog/dubhe-review-marbella",
-      "primary_keyword": "Dubhe (licence-free) Marbella review",
-      "title": "Dubhe (licence-free) Charter Review: What It's Like Onboard in Marbella",
+      "primary_keyword": "Dubhe day boat Marbella review",
+      "title": "Dubhe Day Boat Charter Review: What It's Like Onboard in Marbella",
       "intent": "informational",
       "target_words": 1200
     },
@@ -1905,8 +1907,8 @@
     },
     {
       "slug": "blog/dubhe-best-for",
-      "primary_keyword": "Dubhe (licence-free) best for",
-      "title": "Dubhe (licence-free): Best Boat in Marbella for Licence-free self-drive afternoon",
+      "primary_keyword": "Dubhe best for",
+      "title": "Dubhe: Best Budget Day Boat in Marbella for a Small-Group Afternoon",
       "intent": "informational",
       "target_words": 1100
     },

@@ -18,6 +18,28 @@ SITE_DIR = ROOT / "site"
 TEMPLATE = (ROOT / "templates" / "page.html.template").read_text()
 CONFIG = json.loads((ROOT / "config" / "keyword_map.json").read_text())
 SITE = CONFIG["site"]
+BOATS_CFG = json.loads((ROOT / "config" / "boats.json").read_text())
+FLEET_N = len(BOATS_CFG["boats"])
+_FLEET_LOWS = [min(t["prices"].values())
+               for t in (BOATS_CFG["hourly_price_tiers"][b["tier"]] for b in BOATS_CFG["boats"])
+               if t["prices"]]
+FLEET_PRICE_RANGE = f"€{min(_FLEET_LOWS)}–€{max(_FLEET_LOWS)}"
+
+# Keep fleet-size claims in cached post summaries in sync with boats.json
+# (same scoped patterns as generate_pages.py / check_consistency.py).
+_FLEET_CLAIM_RES = [
+    re.compile(r"\b\d{1,3}(?=[-\s][Bb]oat [Ff]leet\b)"),
+    re.compile(r"(?<=\bfleet of )\d{1,3}(?= (?:boats|yachts|vessels)\b)"),
+    re.compile(r"\b\d{1,3}(?= (?:boats|yachts|vessels) in (?:our|the) fleet\b)"),
+    re.compile(r"(?<=\bour )\d{1,3}(?= (?:boats|yachts)\b)"),
+    re.compile(r"(?<=\b[Ww]e operate )\d{1,3}(?= (?:boats|yachts)\b)"),
+    re.compile(r"(?<=\b[Ww]e have )\d{1,3}(?= (?:boats|yachts)\b)"),
+]
+
+def fix_fleet_counts(text: str) -> str:
+    for rx in _FLEET_CLAIM_RES:
+        text = rx.sub(str(FLEET_N), text)
+    return text
 
 INDEX_HERO_IMG = "/img/boats/mangusta-80/hero-1600.jpg"
 INDEX_HERO_ALT = "Mangusta 80 cruising past La Concha mountain — Marbella charter guide"
@@ -151,11 +173,12 @@ def main():
         {
             "@context":"https://schema.org","@type":["LocalBusiness","Organization"],
             "@id": SITE['base_url']+"/#org","name":SITE['name'],
+            "alternateName":["Boat Rental In Marbella","boatrentalinmarbella.com"],
             "url":SITE['base_url']+"/","logo": SITE['base_url'] + "/img/logo-480.png",
             "telephone":SITE['phone_e164'],"email":SITE['email'],
             "areaServed":SITE['departure_ports'],
-            "sameAs":[u for u in [SITE.get('instagram_url'), SITE.get('facebook_url')] if u],
-            "priceRange":f"€{SITE['price_anchor_low_2h']}–€{SITE['price_anchor_fullday_8h']}",
+            "sameAs":[u for u in [SITE.get('instagram_url'), SITE.get('facebook_url'), SITE.get('youtube_url'), SITE.get('x_url')] if u],
+            "priceRange":FLEET_PRICE_RANGE,
             "address":{"@type":"PostalAddress","addressLocality":"Marbella","addressRegion":"Andalucía","postalCode":"29602","addressCountry":"ES"},
             "geo":{"@type":"GeoCoordinates","latitude":SITE['geo_lat'],"longitude":SITE['geo_lng']},
             "foundingDate": str(SITE.get('founded_year',2025)),
@@ -229,6 +252,7 @@ def main():
     out = TEMPLATE
     for k, v in repl.items():
         out = out.replace(k, v)
+    out = fix_fleet_counts(out)
 
     out_path = SITE_DIR / "blog" / "index.html"
     out_path.parent.mkdir(parents=True, exist_ok=True)

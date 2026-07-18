@@ -12,6 +12,12 @@ ROOT = pathlib.Path(__file__).resolve().parents[1]
 TEMPLATE = (ROOT / "templates" / "page.html.template").read_text()
 SITE = json.loads((ROOT / "config" / "keyword_map.json").read_text())["site"]
 SITE_DIR = ROOT / "site"
+BOATS_CFG = json.loads((ROOT / "config" / "boats.json").read_text())
+FLEET_N = len(BOATS_CFG["boats"])
+_FLEET_LOWS = [min(t["prices"].values())
+               for t in (BOATS_CFG["hourly_price_tiers"][b["tier"]] for b in BOATS_CFG["boats"])
+               if t["prices"]]
+FLEET_PRICE_RANGE = f"€{min(_FLEET_LOWS)}–€{max(_FLEET_LOWS)}"
 
 WA_NO_PLUS = SITE["whatsapp_e164"].lstrip("+")
 WA_LINK = f"https://wa.me/{WA_NO_PLUS}?text=Hallo%2C%20ich%20m%C3%B6chte%20ein%20Boot%20in%20Marbella%20mieten"
@@ -22,7 +28,7 @@ PAGES = [
         "en_alt": "/",
         "title": "Bootsverleih Marbella 2026: Yachten, Katamarane & Charter aus Puerto Banús",
         "meta": "Bootsverleih in Marbella ab €749 für 2h auf unseren 12,5 m Flybridge-Motoryachten (Astondoa 40 + Azimut 39). Abfahrt Puerto Banús. Skipper, Treibstoff, Getränke, MwSt. inklusive.",
-        "h1": "Bootsverleih Marbella — 17-Boote-Flotte, Yachten & Katamarane",
+        "h1": f"Bootsverleih Marbella — {FLEET_N}-Boote-Flotte, Yachten & Katamarane",
         "sub": "Direkter Anbieter aus Puerto Banús. Skipper, Treibstoff, Getränke und 21% IVA inklusive. WhatsApp-Antwort unter 5 Minuten.",
         "eyebrow": "Marbella · Puerto Banús",
         "hero_base": "/img/boats/mangusta-80/hero",
@@ -342,10 +348,10 @@ PAGES = [
     {
         "slug": "de/jetski-mieten-marbella",
         "en_alt": "/jet-ski-rental-marbella/",
-        "title": "Jetski mieten Marbella: Jet-Ski-Verleih ab €200/Stunde",
-        "meta": "Jetski mieten in Marbella — geführte Jet-Ski-Touren und Verleih ab Puerto Banús. Ab €200 pro Stunde. Auch als Kombi mit Bootscharter buchbar.",
+        "title": "Jetski mieten Marbella: Jet-Ski-Verleih ab €250 (erste Stunde)",
+        "meta": "Jetski mieten in Marbella — geführte Jet-Ski-Touren und Verleih ab Puerto Banús. €250 für die erste Stunde, €200 je weitere Stunde. Auch als Kombi mit Bootscharter buchbar.",
         "h1": "Jetski mieten Marbella — Jet-Ski-Touren ab Puerto Banús",
-        "sub": "Adrenalin auf dem Wasser: geführte Jet-Ski-Touren entlang der Goldenen Meile. Ab €200 pro Stunde.",
+        "sub": "Adrenalin auf dem Wasser: geführte Jet-Ski-Touren entlang der Goldenen Meile. €250 für die erste Stunde, €200 je weitere Stunde.",
         "eyebrow": "Jetski · Marbella",
         "hero_base": "/img/boats/speedboat/hero",
         "hero_alt": "Jetski mieten Marbella — Jet-Ski-Tour Costa del Sol",
@@ -357,9 +363,10 @@ PAGES = [
 <table>
 <thead><tr><th>Dauer</th><th>Preis</th></tr></thead>
 <tbody>
-<tr><td>1 Stunde</td><td><strong>€200</strong></td></tr>
-<tr><td>2 Stunden</td><td>€380</td></tr>
-<tr><td>Halbtags-Tour</td><td>ab €700</td></tr>
+<tr><td>1 Stunde</td><td><strong>€250</strong></td></tr>
+<tr><td>2 Stunden</td><td>€450</td></tr>
+<tr><td>3 Stunden</td><td>€650</td></tr>
+<tr><td>4 Stunden</td><td>€850</td></tr>
 </tbody>
 </table>
 <p>Schwimmweste und kurze Einweisung inklusive. Preise je nach Saison und Modell — aktuelle Verfügbarkeit auf <a href="{WA_LINK}">WhatsApp</a> bestätigen.</p>
@@ -628,8 +635,8 @@ PAGES = [
 <table>
 <thead><tr><th>Bootstyp</th><th>Ab Preis</th><th>Hinweis</th></tr></thead>
 <tbody>
-<tr><td><a href="/de/bootsverleih-ohne-fuehrerschein-marbella/">Führerscheinfrei (selbst fahren)</a></td><td>€230 / 2h</td><td>bis 5 m / 15 PS, Treibstoff extra</td></tr>
-<tr><td><a href="/de/jetski-mieten-marbella/">Jetski</a></td><td>€200 / Std</td><td>geführte Tour</td></tr>
+<tr><td><a href="/de/bootsverleih-ohne-fuehrerschein-marbella/">Günstigstes Tagesboot (Dubhe, 8 m)</a></td><td>€230 / 2h</td><td>Treibstoff extra</td></tr>
+<tr><td><a href="/de/jetski-mieten-marbella/">Jetski</a></td><td>€250 / 1. Std</td><td>€200 je weitere Stunde</td></tr>
 <tr><td><a href="/de/yachtcharter-marbella/">Yacht 12,5 m mit Skipper</a></td><td>€749 / 2h</td><td>alles inklusive</td></tr>
 <tr><td><a href="/de/tagescharter-marbella/">Ganztag (8h)</a></td><td>€2.299</td><td>mehrere Buchten</td></tr>
 <tr><td><a href="/de/luxusyacht-mieten-marbella/">Luxusyacht (Mangusta 80)</a></td><td>€4.719 / 4h</td><td>Crew + Jetski</td></tr>
@@ -766,9 +773,9 @@ CHROME_DE = [
     ("WhatsApp reply in &lt;5 min", "WhatsApp-Antwort in &lt;5 Min"),
     ("Year-round on the Costa del Sol", "Ganzjährig an der Costa del Sol"),
     # Booking card
-    ("87 verified reviews", "87 verifizierte Bewertungen"),
-    ("Read 87 verified reviews, average 4.9 out of 5",
-     "87 verifizierte Bewertungen lesen, Durchschnitt 4,9 von 5"),
+    ("Read our verified reviews, average 4.9 out of 5",
+     "Unsere verifizierten Bewertungen lesen, Durchschnitt 4,9 von 5"),
+    ("· verified reviews", "· verifizierte Bewertungen"),
     ("From <strong>€", "Ab <strong>€"),  # book-card price (hero already handled above)
     ("💬 Message on WhatsApp", "💬 Auf WhatsApp schreiben"),
     ("Avg reply &lt; 5 min · No deposit until you confirm",
@@ -796,7 +803,7 @@ CHROME_DE = [
     (">Recommend me a boat<", ">Empfiehl mir ein Boot<"),
     ("9 guests", "9 Gäste"), ("11 guests", "11 Gäste"),
     ("12 guests + jet ski", "12 Gäste + Jetski"),
-    ("(licence-free)", "(führerscheinfrei)"), ("5 guests", "5 Gäste"),
+    ("(8m day boat)", "(8-m-Tagesboot)"), ("5 guests", "5 Gäste"),
     (">Another boat from the fleet<", ">Ein anderes Boot der Flotte<"),
     (">Anything else?", ">Sonstige Wünsche?"),
     ('placeholder="Sunset preferred, one birthday on board…"',
@@ -841,8 +848,9 @@ def render(p):
         "logo": SITE["base_url"] + "/img/logo-480.png",
         "telephone": SITE["phone_e164"],
         "email": SITE["email"],
-        "sameAs": [u for u in [SITE.get("instagram_url"), SITE.get("facebook_url")] if u],
-        "priceRange": f"€{SITE['price_anchor_low_2h']}–€{SITE['price_anchor_fullday_8h']}",
+        "alternateName": ["Boat Rental In Marbella", "boatrentalinmarbella.com"],
+        "sameAs": [u for u in [SITE.get("instagram_url"), SITE.get("facebook_url"), SITE.get("youtube_url"), SITE.get("x_url")] if u],
+        "priceRange": FLEET_PRICE_RANGE,
         "address": {"@type": "PostalAddress", "addressLocality": "Marbella", "addressRegion": "Andalucía", "addressCountry": "ES"},
         "inLanguage": "de",
     }, ensure_ascii=False, separators=(",", ":"))
@@ -898,6 +906,7 @@ def render(p):
     out = TEMPLATE
     for k, v in sub.items():
         out = out.replace(k, str(v))
+    out = out.replace('<html lang="en">', '<html lang="de">')
     out = localize_chrome(out)
     out_dir = SITE_DIR / p["slug"]
     out_dir.mkdir(parents=True, exist_ok=True)

@@ -33,6 +33,14 @@ def first_para(html_str: str) -> str:
     para = re.search(r'<p>(.*?)</p>', m.group(1), re.DOTALL)
     return strip_html(para.group(1))[:400] if para else ""
 
+def sitemap_urls() -> set[str]:
+    """URLs from sitemap.xml — the same manifest search engines get. Keeps the
+    pages.json count consistent with sitemap.xml and llms-full*.txt."""
+    sm = SITE_DIR / "sitemap.xml"
+    if not sm.exists():
+        return set()
+    return set(re.findall(r"<loc>([^<]+)</loc>", sm.read_text()))
+
 def kind_for(slug: str) -> str:
     if not slug: return "hub"
     if slug.startswith("blog/"): return "blog"
@@ -52,13 +60,17 @@ def locale_for(slug: str) -> str:
     return "en"
 
 def main():
+    manifest = sitemap_urls()
     pages = []
     for f in sorted(SITE_DIR.rglob("index.html")):
         rel = f.relative_to(SITE_DIR).parent
         slug = "" if str(rel) == "." else str(rel)
+        url = f"{BASE}/" if not slug else f"{BASE}/{slug}/"
+        if manifest and url not in manifest:
+            continue  # noindexed (e.g. /ig/) or orphan pages stay out
         s = f.read_text(errors="ignore")
         pages.append({
-            "url": f"{BASE}/" if not slug else f"{BASE}/{slug}/",
+            "url": url,
             "title": (title(s) or slug)[:140],
             "description": (meta(s, "description") or "")[:300],
             "kind": kind_for(slug),
@@ -73,8 +85,11 @@ def main():
         "kinds": sorted(set(p["kind"] for p in pages)),
         "locales": sorted(set(p["locale"] for p in pages)),
         "usage": (
-            "Single-fetch index of every page on the site for AI agents / Custom GPT Actions. "
-            "To get a specific page's full text, fetch the url + '?format=text' or the URL directly. "
+            "Single-fetch index of every sitemap-listed page for AI agents / Custom GPT Actions. "
+            "For a page's full text, fetch its URL directly, or grep the canonical URL in the "
+            "full-text dumps: /llms-full-core.txt (hub + transactional + trust + locales), "
+            "/llms-full-boats.txt, /llms-full-experiences.txt, /llms-full-blog.txt (chunked into "
+            "-2, -3… parts). Highest-value pages only: /llms-full.txt. Site index: /llms.txt. "
             "All prices are in EUR and include 21% Spanish IVA. Always link to source URL when citing."
         ),
         "pages": pages,

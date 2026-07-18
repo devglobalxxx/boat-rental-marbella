@@ -42,7 +42,7 @@
       "currency": "EUR"
     },
     "entry": {
-      "label": "Licence-free day boat (Dubhe)",
+      "label": "Entry-level day boat (Dubhe)",
       "min_hours": 2,
       "prices": {
         "2h": 230,
@@ -51,9 +51,8 @@
       },
       "currency": "EUR",
       "extra_inclusions": [
-        "Self-drive after 10-minute marina briefing",
+        "10-minute marina briefing before departure",
         "Up to 5 guests",
-        "No licence required — Spanish licence-free rules apply",
         "Daylight only, 2 NM coastal limit"
       ],
       "extended_note": "Fuel NOT included on the Dubhe (typically €30–€60 depending on route). All other inclusions per Spanish charter standard."
@@ -653,7 +652,7 @@
     {
       "slug": "dubhe",
       "name": "Dubhe",
-      "tagline": "Cheapest boat available in Puerto Banús — no licence required, up to 5 people",
+      "tagline": "Cheapest boat available in Puerto Banús — up to 5 people",
       "builder": "Dubhe",
       "type": "Day boat",
       "length_m": 8,
@@ -661,11 +660,10 @@
       "departure_port": "Puerto Banús",
       "tier": "entry",
       "pricing_status": "published",
-      "summary": "Dubhe — licence-free day boat at Puerto Banús, the cheapest hull in our fleet. Up to 5 guests, 2-hour from €230, 3-hour €280, 4-hour €350. Fuel not included (typically €30–€60 depending on route). Self-drive after a 10-minute marina briefing, daylight only, 2 NM coastal limit per Spanish licence-free rules.",
+      "summary": "Dubhe — 8 m entry-level day boat at Puerto Banús, the cheapest hull in our fleet. Up to 5 guests, 2-hour from €230, 3-hour €280, 4-hour €350. Fuel not included (typically €30–€60 depending on route). 10-minute marina briefing, daylight only, 2 NM coastal limit.",
       "highlights": [
         "€230 / 2h — cheapest charter in Puerto Banús",
         "Up to 5 guests",
-        "No licence required (self-drive after briefing)",
         "Fuel not included (€30–€60 depending on route)",
         "Departs Puerto Banús marina",
         "Daylight only, 2 NM coastal limit"
@@ -694,7 +692,7 @@
           1600
         ]
       ],
-      "hero_local_alt": "Dubhe — cheapest licence-free boat in Puerto Banús, head-on bow shot",
+      "hero_local_alt": "Dubhe — cheapest day boat in Puerto Banús, head-on bow shot",
       "gallery_local": [
         {
           "src": "/img/boats/dubhe/puerto-banus-1200.jpg",
@@ -719,7 +717,7 @@
       "price_2h": 230,
       "price_3h": 280,
       "price_4h": 350,
-      "license_free": true,
+      "license_free": false,
       "fuel_included": false
     },
     {

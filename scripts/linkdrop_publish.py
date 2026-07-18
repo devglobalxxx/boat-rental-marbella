@@ -149,7 +149,7 @@ def pick_links(rng, n=3) -> list[dict]:
 
 SYS = ("You write short, accurate, genuinely useful posts about chartering boats and visiting "
        "Marbella, Puerto Banús and the Costa del Sol (Spain). Real place names and real prices: "
-       "from €749/2h skippered, €230/2h licence-free Dubhe, Mangusta 80 €4,719/4h; every charter "
+       "from €749/2h skippered, €230/2h Dubhe 8m day boat, Mangusta 80 €4,719/4h; every charter "
        "includes skipper, fuel, drinks, snacks, 21% IVA. Never invent reviews or fake statistics.")
 
 def gen_title(rng, avoid: set) -> str:

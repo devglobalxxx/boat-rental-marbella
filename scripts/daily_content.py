@@ -14,7 +14,7 @@ Triggered by ~/Library/LaunchAgents/com.boatrentalmarbella.daily-content.plist a
 Requires: ANTHROPIC_API_KEY env var with non-zero credit balance.
 """
 from __future__ import annotations
-import argparse, json, os, pathlib, re, sys, subprocess, datetime, traceback, time
+import argparse, difflib, json, os, pathlib, re, sys, subprocess, datetime, traceback, time
 
 ROOT = pathlib.Path(__file__).resolve().parents[1]
 QUEUE_PATH = ROOT / "config" / "content_queue.json"
@@ -184,6 +184,69 @@ def generate(item: dict) -> dict:
         last = raw.rfind("}")
         return json.loads(raw[:last + 1])
 
+# ---------- dedup / doorway gate (SEO audit 2026-07) ----------
+# Rejects proposed topics that (a) duplicate an existing page's search intent or
+# (b) are doorway pages for events more than 12 months out (no 2027/2028 spam).
+SIMILARITY_THRESHOLD = 0.75
+
+_GENERIC_TOKENS = {
+    "a", "an", "and", "at", "blog", "by", "day", "experiences", "for", "from",
+    "guide", "hire", "how", "in", "of", "on", "the", "tips", "to", "trip",
+    "vs", "what", "when", "where", "with", "your",
+    "marbella", "spain", "boat", "boats", "yacht", "yachts",
+    "charter", "charters", "rental", "rentals",
+}
+_MONTHS = {m: i + 1 for i, m in enumerate(
+    ["january", "february", "march", "april", "may", "june", "july",
+     "august", "september", "october", "november", "december"])}
+
+def _topic_tokens(text: str) -> set:
+    toks = set(re.split(r"[^a-z0-9]+", text.lower())) - {""}
+    return (toks - _GENERIC_TOKENS) or toks
+
+def _similarity(a: str, b: str) -> float:
+    ta, tb = _topic_tokens(a), _topic_tokens(b)
+    jaccard = len(ta & tb) / len(ta | tb) if (ta or tb) else 0.0
+    ratio = difflib.SequenceMatcher(None, " ".join(sorted(ta)), " ".join(sorted(tb))).ratio()
+    return max(jaccard, ratio)
+
+def existing_topics() -> list[str]:
+    """Every shipped slug + title: keyword_map (spokes+blog) plus rendered /site/ dirs."""
+    corpus = []
+    km = json.loads(KEYWORD_MAP_PATH.read_text())
+    for k in ("spokes", "blog"):
+        for it in km.get(k, []):
+            corpus.append(it.get("slug") or "")
+            corpus.append(it.get("title") or "")
+    for d in (ROOT / "site").rglob("index.html"):
+        rel = str(d.relative_to(ROOT / "site").parent)
+        if rel != ".":
+            corpus.append(rel)
+    return [c for c in corpus if c]
+
+def reject_reason(item: dict, corpus: list[str]) -> str | None:
+    """Why this proposed topic must not be generated (None = pass)."""
+    today = datetime.date.today()
+    text = f"{item.get('slug', '')} {item.get('title', '')}".lower()
+    # Doorway block: pages for event years >12 months out (month unknown → assume year-end).
+    for y in re.findall(r"\b(20\d{2})\b", text):
+        year = int(y)
+        if year <= today.year:
+            continue
+        month = next((n for m, n in _MONTHS.items() if m in text), None)
+        event = datetime.date(year, month, 1) if month else datetime.date(year, 12, 31)
+        if (event - today).days > 366:
+            return f"future-event doorway ({y} is >12 months out)"
+    # Dedup block: too similar to an existing slug or title.
+    for candidate in (item.get("slug", ""), item.get("title", "")):
+        if not candidate:
+            continue
+        for existing in corpus:
+            score = _similarity(candidate, existing)
+            if score >= SIMILARITY_THRESHOLD:
+                return f"too similar to existing '{existing}' ({score:.2f})"
+    return None
+
 def refill_queue(queue_cfg: dict, n: int) -> list[dict]:
     """Ask Claude (CLI) to invent N fresh blog/spoke topics, avoiding any slug
     already in queue/consumed. Returns a list of queue-shaped dicts."""
@@ -210,7 +273,9 @@ def refill_queue(queue_cfg: dict, n: int) -> list[dict]:
              "• Boat-by-boat comparison content (Astondoa 40, Azimut 39, Mangusta 80 vs alternatives or competitors)\n"
              "• Experiential angles (dolphin watching, sunset, snorkeling, fishing, jet ski, family days, photoshoots)\n"
              "• Cost / price / value angles, license rules, weather/seasonality, what to bring, dietary/age policies\n"
-             "Avoid generic clickbait. Each topic should be specific enough that the page can hit 1100–1500 words.")
+             "Avoid generic clickbait. Each topic should be specific enough that the page can hit 1100–1500 words. "
+             "Never rehash an existing page's intent with a reworded slug/title, and never propose pages for "
+             "events more than 12 months in the future (no next-next-year previews).")
     user_p = (f"Produce {n} new topics as a STRICT JSON ARRAY. Each item must be of shape:\n"
               '{"kind": "blog" | "spoke" | "experience",\n'
               ' "slug": "blog/<kebab-slug>" or "<kebab-slug>" or "experiences/<kebab-slug>",\n'
@@ -238,6 +303,7 @@ def refill_queue(queue_cfg: dict, n: int) -> list[dict]:
     if start < 0 or end <= start:
         raise RuntimeError("refill: no JSON array in response")
     arr = json.loads(raw[start:end + 1])
+    corpus = existing_topics()
     cleaned = []
     for it in arr:
         slug = (it.get("slug") or "").strip("/")
@@ -247,6 +313,10 @@ def refill_queue(queue_cfg: dict, n: int) -> list[dict]:
             continue
         if not it.get("primary_keyword") or not it.get("title"):
             continue
+        reason = reject_reason(it, corpus)
+        if reason:
+            log(f"  refill reject '{slug}': {reason}")
+            continue
         cleaned.append({
             "kind": it["kind"],
             "slug": slug,
@@ -255,6 +325,7 @@ def refill_queue(queue_cfg: dict, n: int) -> list[dict]:
             "target_words": int(it.get("target_words") or 1100),
         })
         seen.add(slug)
+        corpus.extend([slug, it["title"].strip()])  # catch intra-batch near-dupes too
     return cleaned
 
 # ---------- file plumbing ----------
@@ -332,9 +403,16 @@ def main():
         batch = queue[:n]
         log(f"=== Daily content run: {len(batch)} item(s) ===")
 
-    succeeded, failed = [], []
+    corpus = existing_topics()
+    succeeded, failed, rejected = [], [], []
     for i, item in enumerate(batch, 1):
         log(f"[{i}/{len(batch)}] {item['kind']} · {item['slug']}")
+        # Gate stale queue entries too — the queue may predate the dedup gate.
+        reason = reject_reason(item, corpus)
+        if reason:
+            log(f"  ✗ REJECTED: {reason}")
+            rejected.append((item, reason))
+            continue
         try:
             if args.dry_run:
                 log("  (dry-run, skipping generation)")
@@ -343,17 +421,26 @@ def main():
             save_content(item, data)
             add_to_keyword_map(item)
             succeeded.append(item)
+            corpus.extend([item["slug"], item["title"]])  # catch intra-run near-dupes
         except Exception as e:
             log(f"  ✗ FAILED: {type(e).__name__}: {str(e)[:200]}")
             traceback.print_exc()
             failed.append(item)
 
-    # Move succeeded items from queue → consumed (failures stay in queue head for retry)
-    if succeeded and not args.dry_run:
-        queue_cfg["queue"] = [q for q in queue if q not in succeeded]
+    # Move succeeded items from queue → consumed, rejected → rejected archive
+    # (failures stay in queue head for retry)
+    rejected_items = [it for it, _ in rejected]
+    if (succeeded or rejected) and not args.dry_run:
+        queue_cfg["queue"] = [q for q in queue if q not in succeeded and q not in rejected_items]
         queue_cfg.setdefault("consumed", []).extend(
             [{**s, "consumed_at": datetime.date.today().isoformat()} for s in succeeded]
         )
+        if rejected:
+            queue_cfg.setdefault("rejected", []).extend(
+                [{**it, "rejected_at": datetime.date.today().isoformat(), "reason": why}
+                 for it, why in rejected]
+            )
+            log(f"rejected {len(rejected)} queued topic(s) — archived under queue.rejected")
         QUEUE_PATH.write_text(json.dumps(queue_cfg, ensure_ascii=False, indent=2))
         log(f"queue: {len(queue_cfg['queue'])} remaining, {len(queue_cfg['consumed'])} consumed total")
 

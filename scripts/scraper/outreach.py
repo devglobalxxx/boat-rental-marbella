@@ -5,7 +5,23 @@ from __future__ import annotations
 import argparse, json, os, sys, time, pathlib, random, urllib.parse, urllib.request, urllib.error
 
 ROOT = pathlib.Path(__file__).resolve().parents[2]
-RESEND_KEY = os.environ.get("RESEND_API_KEY") or "re_Dktpe56w_7wPPWojo8ms9pzFiEwtarDDW"
+def _resend_key() -> str:
+    """Key comes from the environment or ROOT/.env — never hardcode it here.
+    (The previous hardcoded key was committed to git; rotate it in the Resend
+    dashboard and update .env.)"""
+    key = os.environ.get("RESEND_API_KEY", "").strip()
+    if not key:
+        env = ROOT / ".env"
+        if env.exists():
+            for line in env.read_text().splitlines():
+                if line.startswith("RESEND_API_KEY="):
+                    key = line.split("=", 1)[1].strip().strip('"').strip("'")
+                    break
+    if not key:
+        sys.exit("RESEND_API_KEY not set (env or .env) — refusing to run.")
+    return key
+
+RESEND_KEY = _resend_key()
 FROM = "Andra Kiirkivi <info@boathire24.com>"
 REPLY_TO = "info@boathire24.com"
 SITE = "https://boathire24.com"
@@ -239,9 +255,9 @@ def _text_to_html(text, domain):
 {body_html}{SIGNATURE_HTML.format(domain=domain)}
 </td></tr></table></td></tr></table></body></html>"""
 
-def resend_send(to, subject, text, html=None):
+def resend_send(to, subject, text, html=None, from_=None):
     if not RESEND_KEY: return None, "no RESEND_API_KEY"
-    payload = {"from":FROM,"to":[to],"reply_to":REPLY_TO,"subject":subject,"text":text}
+    payload = {"from":from_ or FROM,"to":[to],"reply_to":REPLY_TO,"subject":subject,"text":text}
     if html: payload["html"] = html
     body = json.dumps(payload).encode()
     req = urllib.request.Request("https://api.resend.com/emails", data=body, method="POST",

@@ -55,6 +55,7 @@ CONTENT = {
         "why_4": "Kostenlose Stornierung bis 7 Tage vor Abfahrt",
         "boat_features": ["Skipper", "Kraftstoff", "Getränke", "Schnorcheln"],
         "from_label": "Ab",
+        "price_on_request": "Preis auf Anfrage",
         "h2_destinations": "Abfahrtshäfen",
         "destinations_intro": "Wir bedienen die fünf wichtigsten Abfahrtspunkte der Costa del Sol:",
     },
@@ -74,6 +75,7 @@ CONTENT = {
         "why_4": "Annulation gratuite jusqu'à 7 jours avant le départ",
         "boat_features": ["Skipper", "Carburant", "Boissons", "Snorkeling"],
         "from_label": "À partir de",
+        "price_on_request": "Prix sur demande",
         "h2_destinations": "Ports de départ",
         "destinations_intro": "Nous desservons les cinq principaux points de départ de la Costa del Sol :",
     },
@@ -93,6 +95,7 @@ CONTENT = {
         "why_4": "إلغاء مجاني حتى 7 أيام قبل الإبحار",
         "boat_features": ["ربان", "وقود", "مشروبات", "غطس"],
         "from_label": "ابتداءً من",
+        "price_on_request": "السعر عند الطلب",
         "h2_destinations": "موانئ الانطلاق",
         "destinations_intro": "نخدم نقاط الانطلاق الخمس الرئيسية على ساحل كوستا ديل سول:",
     },
@@ -112,6 +115,7 @@ CONTENT = {
         "why_4": "Бесплатная отмена за 7 дней до отплытия",
         "boat_features": ["Шкипер", "Топливо", "Напитки", "Снорклинг"],
         "from_label": "От",
+        "price_on_request": "Цена по запросу",
         "h2_destinations": "Порты отправления",
         "destinations_intro": "Мы обслуживаем пять основных пунктов отправления на Коста-дель-Соль:",
     },
@@ -131,6 +135,7 @@ CONTENT = {
         "why_4": "Fri avbokning upp till 7 dagar före avgång",
         "boat_features": ["Skeppare", "Bränsle", "Drycker", "Snorkling"],
         "from_label": "Från",
+        "price_on_request": "Pris på begäran",
         "h2_destinations": "Avgångshamnar",
         "destinations_intro": "Vi betjänar de fem viktigaste avgångspunkterna på Costa del Sol:",
     },
@@ -150,6 +155,7 @@ CONTENT = {
         "why_4": "Gratis annulering tot 7 dagen voor vertrek",
         "boat_features": ["Schipper", "Brandstof", "Drankjes", "Snorkelen"],
         "from_label": "Vanaf",
+        "price_on_request": "Prijs op aanvraag",
         "h2_destinations": "Vertrekhavens",
         "destinations_intro": "We bedienen de vijf belangrijkste vertrekpunten van de Costa del Sol:",
     },
@@ -169,6 +175,7 @@ CONTENT = {
         "why_4": "Bezpłatne anulowanie do 7 dni przed wypłynięciem",
         "boat_features": ["Kapitan", "Paliwo", "Napoje", "Snorkeling"],
         "from_label": "Od",
+        "price_on_request": "Cena na zapytanie",
         "h2_destinations": "Porty odpływu",
         "destinations_intro": "Obsługujemy pięć głównych punktów wypłynięcia na Costa del Sol:",
     },
@@ -188,6 +195,7 @@ CONTENT = {
         "why_4": "Безкоштовне скасування за 7 днів до відплиття",
         "boat_features": ["Капітан", "Пальне", "Напої", "Снорклінг"],
         "from_label": "Від",
+        "price_on_request": "Ціна за запитом",
         "h2_destinations": "Порти відправлення",
         "destinations_intro": "Ми обслуговуємо п'ять основних пунктів відправлення на Коста-дель-Соль:",
     },
@@ -207,18 +215,44 @@ CONTENT = {
         "why_4": "Gratis avbestilling opptil 7 dager før avgang",
         "boat_features": ["Skipper", "Drivstoff", "Drikke", "Snorkling"],
         "from_label": "Fra",
+        "price_on_request": "Pris på forespørsel",
         "h2_destinations": "Avgangshavner",
         "destinations_intro": "Vi betjener de fem viktigste avgangspunktene på Costa del Sol:",
     },
 }
 
-# Featured boats — shared across all languages
-BOATS = [
-    {"slug": "astondoa-40", "name": "Astondoa 40", "spec": "12 m · 10 pax", "price": 749},
-    {"slug": "azimut-39",   "name": "Azimut 39",   "spec": "12 m · 10 pax", "price": 749},
-    {"slug": "mangusta-80", "name": "Mangusta 80", "spec": "24 m · 12 pax", "price": 2299},
-    {"slug": "canados-86",  "name": "Canados 86",  "spec": "26 m · 12 pax", "price": 2099},
-]
+# Featured boats — shared across all languages.
+# Specs + prices come from config/boats.json (same source as facts.json);
+# quote-only boats get price=None and render "price on request" per language.
+BOATS_CFG = json.loads((ROOT / "config" / "boats.json").read_text())
+_FLEET_LOWS = [min(t["prices"].values())
+               for t in (BOATS_CFG["hourly_price_tiers"][b["tier"]] for b in BOATS_CFG["boats"])
+               if t["prices"]]
+FLEET_PRICE_RANGE = f"€{min(_FLEET_LOWS)}–€{max(_FLEET_LOWS)}"
+
+FEATURED_SLUGS = ["astondoa-40", "azimut-39", "mangusta-80", "canados-86"]
+
+def _featured_boats():
+    by_slug = {b["slug"]: b for b in BOATS_CFG["boats"]}
+    out = []
+    for slug in FEATURED_SLUGS:
+        b = by_slug[slug]
+        tier = BOATS_CFG["hourly_price_tiers"][b["tier"]]
+        if tier["prices"]:
+            price = min(tier["prices"].values())
+            hours = tier.get("min_hours") or min(int(k.rstrip("h")) for k in tier["prices"])
+        else:
+            price = hours = None  # quote-only
+        out.append({
+            "slug": slug,
+            "name": b["name"],
+            "spec": f'{b["length_m"]} m · {b["capacity_pax"]} pax',
+            "price": price,
+            "hours": hours,
+        })
+    return out
+
+BOATS = _featured_boats()
 
 DESTINATIONS = ["Puerto Banús", "Marbella Marina", "Cabopino", "Estepona", "Sotogrande"]
 
@@ -235,7 +269,7 @@ def build_hub(code: str, lang_name: str, flag: str, dir_: str):
   <div style="padding:16px;">
     <div style="font-weight:700;font-size:15px;margin-bottom:4px;">{b["name"]}</div>
     <div style="font-size:12px;color:rgba(244,244,242,0.55);margin-bottom:10px;">{b["spec"]}</div>
-    <div style="font-size:11px;color:#c9a84e;font-weight:600;">{c["from_label"]} €{b["price"]} / 2h</div>
+    <div style="font-size:11px;color:#c9a84e;font-weight:600;">{f'{c["from_label"]} €{b["price"]} / {b["hours"]}h' if b["price"] else c["price_on_request"]}</div>
   </div>
 </a>'''
         for b in BOATS
@@ -252,11 +286,13 @@ def build_hub(code: str, lang_name: str, flag: str, dir_: str):
     )
 
     # hreflang alternates for all 10 languages + EN
+    # NB: /uk/ is the UK-English landing (build_uk.py), so it must be declared
+    # en-GB — "uk" is the Ukrainian language code and is invalid for that page.
     hreflang_links = (
         f'<link rel="alternate" hreflang="en" href="{BASE}/" />\n'
         + f'<link rel="alternate" hreflang="es" href="{BASE}/es/" />\n'
         + "\n".join(
-            f'<link rel="alternate" hreflang="{lc}" href="{BASE}/{lc}/" />'
+            f'<link rel="alternate" hreflang="{"en-GB" if lc == "uk" else lc}" href="{BASE}/{lc}/" />'
             for lc, _, _, _ in LANGUAGES
         )
         + f'\n<link rel="alternate" hreflang="x-default" href="{BASE}/" />'
@@ -267,15 +303,16 @@ def build_hub(code: str, lang_name: str, flag: str, dir_: str):
         "@type": ["LocalBusiness", "Organization"],
         "@id": f"{BASE}/#org",
         "name": SITE["name"],
+        "alternateName": ["Boat Rental In Marbella", "boatrentalinmarbella.com"],
         "url": f"{BASE}/{code}/",
         "logo": f"{BASE}/img/logo-480.png",
         "telephone": SITE["phone_e164"],
         "email": SITE["email"],
         "areaServed": SITE["departure_ports"],
         "sameAs": [
-            u for u in [SITE.get("instagram_url"), SITE.get("facebook_url")] if u
+            u for u in [SITE.get("instagram_url"), SITE.get("facebook_url"), SITE.get("youtube_url"), SITE.get("x_url")] if u
         ],
-        "priceRange": f"€{SITE['price_anchor_low_2h']}–€{SITE['price_anchor_fullday_8h']}",
+        "priceRange": FLEET_PRICE_RANGE,
         "address": {
             "@type": "PostalAddress",
             "addressLocality": "Marbella",

@@ -36,7 +36,33 @@ for f in SITE.rglob("index.html"):
 if token_pages:
     errors.append(f"unreplaced template tokens on {len(token_pages)} pages, e.g. {token_pages[:3]}")
 
-# 3. flagship price sanity
+# 3. fleet-size claims must match config/boats.json
+#    Scoped to fleet-claim phrases ("X-boat fleet", "fleet of X boats",
+#    "X boats in our/the fleet", "our X boats") so counts like "2 jet skis"
+#    never false-positive.
+FLEET_CLAIM_RES = [
+    re.compile(r"\b(\d{1,3})[-\s][Bb]oat [Ff]leet\b"),
+    re.compile(r"\bfleet of (\d{1,3}) (?:boats|yachts|vessels)\b", re.IGNORECASE),
+    re.compile(r"\b(\d{1,3}) (?:boats|yachts|vessels) in (?:our|the) fleet\b", re.IGNORECASE),
+    re.compile(r"\bour (\d{1,3}) (?:boats|yachts)\b", re.IGNORECASE),
+    re.compile(r"\bwe (?:operate|have) (\d{1,3}) (?:boats|yachts)\b", re.IGNORECASE),
+]
+fleet_claim_errors = []
+targets = list(SITE.rglob("index.html"))
+if (SITE / "llms.txt").exists():
+    targets.append(SITE / "llms.txt")
+for f in targets:
+    s = f.read_text(errors="ignore")
+    for rx in FLEET_CLAIM_RES:
+        for m in rx.finditer(s):
+            if int(m.group(1)) != FLEET_N:
+                fleet_claim_errors.append(f"{f.relative_to(SITE)}: '{m.group(0)}'")
+if fleet_claim_errors:
+    errors.append(
+        f"{len(fleet_claim_errors)} fleet-size claims contradict boats.json ({FLEET_N} boats), "
+        f"e.g. {fleet_claim_errors[:3]}")
+
+# 4. flagship price sanity
 tier_b_price = BOATS["hourly_price_tiers"]["tier_b"]["prices"]["4h"]
 mangusta = SITE / "boats" / "mangusta-80" / "index.html"
 if mangusta.exists():

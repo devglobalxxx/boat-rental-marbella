@@ -1,8 +1,8 @@
 {
-  "_doc": "Curated guest reviews. Edit/extend here; build_reviews_page.py renders /reviews/ and injects AggregateRating into LocalBusiness schema site-wide. Names are first-name + initial for privacy.",
+  "_doc": "Curated guest reviews. Edit/extend here; build_trust_pages.py renders /reviews/ and inject_aggregate_rating.py attaches AggregateRating on /reviews/ only. review_count must equal len(reviews) — Google requires the count to match visibly rendered reviews. Names are first-name + initial for privacy.",
   "aggregate": {
     "rating_value": 4.9,
-    "review_count": 87,
+    "review_count": 20,
     "best_rating": 5,
     "worst_rating": 1
   },

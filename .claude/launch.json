@@ -6,6 +6,12 @@
       "runtimeExecutable": "python3",
       "runtimeArgs": ["-m", "http.server", "8765", "--directory", "site"],
       "port": 8765
+    },
+    {
+      "name": "platform",
+      "runtimeExecutable": "/bin/sh",
+      "runtimeArgs": ["-c", "export PATH=/Users/master/.local/node/bin:$PATH && cd /Users/master/boat-rental-platform && exec npm run dev -- --port 3000"],
+      "port": 3000
     }
   ]
 }

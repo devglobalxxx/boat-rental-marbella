@@ -19,7 +19,12 @@ ROOT = pathlib.Path(__file__).resolve().parents[1]
 TEMPLATE = (ROOT / "templates" / "page.html.template").read_text()
 SITE = json.loads((ROOT / "config" / "keyword_map.json").read_text())["site"]
 REVIEWS = json.loads((ROOT / "config" / "reviews.json").read_text())
-FLEET_N = len(json.loads((ROOT / "config" / "boats.json").read_text())["boats"])
+BOATS_CFG = json.loads((ROOT / "config" / "boats.json").read_text())
+FLEET_N = len(BOATS_CFG["boats"])
+_FLEET_LOWS = [min(t["prices"].values())
+               for t in (BOATS_CFG["hourly_price_tiers"][b["tier"]] for b in BOATS_CFG["boats"])
+               if t["prices"]]
+FLEET_PRICE_RANGE = f"€{min(_FLEET_LOWS)}–€{max(_FLEET_LOWS)}"
 SITE_DIR = ROOT / "site"
 
 WA_NO_PLUS = SITE["whatsapp_e164"].lstrip("+")
@@ -32,14 +37,15 @@ def jsonld_org_with_rating():
         "@type": ["LocalBusiness", "Organization"],
         "@id": SITE["base_url"] + "/#org",
         "name": SITE["name"],
+        "alternateName": ["Boat Rental In Marbella", "boatrentalinmarbella.com"],
         "url": SITE["base_url"] + "/",
         "logo": SITE["base_url"] + "/img/logo-480.png",
         "image": SITE["base_url"] + "/img/boats/mangusta-80/hero-1600.jpg",
         "telephone": SITE["phone_e164"],
         "email": SITE["email"],
         "areaServed": SITE["departure_ports"],
-        "sameAs": [u for u in [SITE.get("instagram_url"), SITE.get("facebook_url")] if u],
-        "priceRange": f"€{SITE['price_anchor_low_2h']}–€{SITE['price_anchor_fullday_8h']}",
+        "sameAs": [u for u in [SITE.get("instagram_url"), SITE.get("facebook_url"), SITE.get("youtube_url"), SITE.get("x_url")] if u],
+        "priceRange": FLEET_PRICE_RANGE,
         "address": {"@type": "PostalAddress", "addressLocality": "Marbella", "addressRegion": "Andalucía", "postalCode": "29602", "addressCountry": "ES"},
         "geo": {"@type": "GeoCoordinates", "latitude": SITE["geo_lat"], "longitude": SITE["geo_lng"]},
         "foundingDate": str(SITE.get("founded_year", 2025)),
@@ -225,7 +231,7 @@ def render_about():
 <p>Boat Rental Marbella is an independent boat charter operator based in Puerto Banús. We're not a marketplace and we're not a booking platform — every boat listed on this site is run by skippers we work with directly, every booking goes through Andra's WhatsApp first, and the price you see is the price you pay.</p>
 
 <h2>What we do</h2>
-<p>We charter a curated fleet of {len(["azimut", "astondoa", "mangusta", "dubhe"]) * 4}+ motor yachts, catamarans, jet skis and licence-free day boats along the Costa del Sol. Most departures are from <strong>Puerto Banús</strong>, with pickups also available at Marbella Marina, Cabopino, Estepona and Sotogrande. Every skippered charter includes the captain, fuel for a standard coastal cruise, soft drinks + beer + white wine + cava, light snacks, insurance and Spanish IVA.</p>
+<p>We charter a curated fleet of {FLEET_N} motor yachts, catamarans, jet skis and day boats along the Costa del Sol. Most departures are from <strong>Puerto Banús</strong>, with pickups also available at Marbella Marina, Cabopino, Estepona and Sotogrande. Every skippered charter includes the captain, fuel for a standard coastal cruise, soft drinks + beer + white wine + cava, light snacks, insurance and Spanish IVA.</p>
 
 <h2>Who's running this</h2>
 <p>The operator on this site is <strong>Andra Kiirkivi</strong>. Andra splits the year between Marbella and Estonia, has been chartering boats on the Costa del Sol since 2022, and personally handles every WhatsApp inbound. Average reply under 5 minutes during Marbella daytime hours.</p>
@@ -238,7 +244,7 @@ def render_about():
 <h2>Our fleet</h2>
 <p>{FLEET_N}-boat fleet across three tiers:</p>
 <ul>
-  <li><strong>Day boats &amp; jet skis</strong> — Sea-Doo jet skis from €200/hour, Dubhe licence-free from €230/2h.</li>
+  <li><strong>Day boats &amp; jet skis</strong> — Sea-Doo jet skis from €250 first hour, Dubhe day boat from €230/2h.</li>
   <li><strong>Mid-fleet flybridge yachts</strong> — <a href="/boats/astondoa-40/">Astondoa 40 'Fufi'</a> and <a href="/boats/azimut-39/">Azimut 39</a> at €749/2h → €2,299/8h.</li>
   <li><strong>Flagship</strong> — <a href="/boats/mangusta-80/">Mangusta 80 'Nina'</a>, 24m sport yacht, €4,719 minimum 4h, jet ski included free.</li>
 </ul>

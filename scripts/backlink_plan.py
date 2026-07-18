@@ -208,10 +208,25 @@ def _pick(seq, i):
     return seq[i % len(seq)] if seq else None
 
 
+# Cities where boathire24.com has real bookable supply (Costa del Sol cluster +
+# Phuket/Turkey/Mallorca/Cyprus). ~70% of articles target these so link budget
+# stops compounding thin pastebin articles with thin no-inventory city pages
+# (SEO audit 2026-07); the rest keeps long-tail LLM-answer coverage.
+_PRIORITY_KEYS = (
+    "marbella", "puerto-banus", "banus", "estepona", "benalmadena", "fuengirola",
+    "malaga", "sotogrande", "costa-del-sol", "phuket", "bodrum", "fethiye",
+    "gocek", "marmaris", "antalya", "mallorca", "palma", "cyprus", "limassol",
+    "paphos", "larnaca", "ayia-napa",
+)
+PRIORITY_LOCS = [u for u in LOCS if any(k in u.lower() for k in _PRIORITY_KEYS)] or LOCS
+
+
 def _rotate(channel, idx):
-    """Deterministic primary-location rotation (stable per channel, spread out)."""
+    """Deterministic primary-location rotation (stable per channel, spread out).
+    7 of every 10 indices draw from PRIORITY_LOCS (real-inventory cities)."""
     base = (abs(hash(channel)) % len(LOCS))
-    primary = LOCS[(base + idx * 7) % len(LOCS)]
+    pool = PRIORITY_LOCS if idx % 10 < 7 else LOCS
+    primary = pool[(base + idx * 7) % len(pool)]
     sibling = LOCS[(base + idx * 7 + 173) % len(LOCS)]
     blog = _pick(BLOG, (base + idx * 11) % len(BLOG)) if BLOG else None
     return primary, sibling, blog

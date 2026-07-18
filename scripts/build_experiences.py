@@ -13,16 +13,22 @@ TEMPLATE = (ROOT / "templates" / "page.html.template").read_text()
 CONFIG = json.loads((ROOT / "config" / "keyword_map.json").read_text())
 SITE = CONFIG["site"]
 SITE_DIR = ROOT / "site"
+BOATS_CFG = json.loads((ROOT / "config" / "boats.json").read_text())
+_FLEET_LOWS = [min(t["prices"].values())
+               for t in (BOATS_CFG["hourly_price_tiers"][b["tier"]] for b in BOATS_CFG["boats"])
+               if t["prices"]]
+FLEET_PRICE_RANGE = f"€{min(_FLEET_LOWS)}–€{max(_FLEET_LOWS)}"
 
 def jsonld_org():
     return {
         "@context":"https://schema.org","@type":["LocalBusiness","Organization"],
         "@id":SITE['base_url']+"/#org","name":SITE['name'],
+        "alternateName":["Boat Rental In Marbella","boatrentalinmarbella.com"],
         "url":SITE['base_url']+"/","logo":SITE['base_url']+"/og-image.jpg",
         "telephone":SITE['phone_e164'],"email":SITE['email'],
         "areaServed":SITE['departure_ports'],
-        "sameAs":[u for u in [SITE.get('instagram_url'), SITE.get('facebook_url')] if u],
-        "priceRange":f"€{SITE['price_anchor_low_2h']}–€{SITE['price_anchor_fullday_8h']}",
+        "sameAs":[u for u in [SITE.get('instagram_url'), SITE.get('facebook_url'), SITE.get('youtube_url'), SITE.get('x_url')] if u],
+        "priceRange":FLEET_PRICE_RANGE,
         "address":{"@type":"PostalAddress","addressLocality":"Marbella","addressRegion":"Andalucía","postalCode":"29602","addressCountry":"ES"},
         "geo":{"@type":"GeoCoordinates","latitude":SITE['geo_lat'],"longitude":SITE['geo_lng']},
         "foundingDate":str(SITE.get('founded_year',2025)),
@@ -138,7 +144,7 @@ def render_hub():
   <li><strong>Group 6–8:</strong> <a href="/boats/astondoa-40/">Astondoa 40 "Fufi"</a> day charter from €1,299 / 4 h.</li>
   <li><strong>Group 9–11 (stag/hen):</strong> <a href="/boats/azimut-39/">Azimut 39</a> flybridge, BYO welcomed, DJ add-on.</li>
   <li><strong>Group 10–12 in luxury:</strong> <a href="/boats/mangusta-80/">Mangusta 80</a> superyacht with Sea-Doo jet ski free — €4,719 / 4 h.</li>
-  <li><strong>Adrenaline / solo:</strong> <a href="/jet-ski-rental-marbella/">Sea-Doo jet ski</a> at €200 / h.</li>
+  <li><strong>Adrenaline / solo:</strong> <a href="/jet-ski-rental-marbella/">Sea-Doo jet ski</a> at €250 for the first hour.</li>
   <li><strong>Content creators / brands:</strong> <a href="/experiences/photoshoot-yacht-marbella/">Photoshoot day</a> — La Concha backdrop, sun-pad-ready angles.</li>
 </ul>
 

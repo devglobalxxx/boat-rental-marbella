@@ -24,9 +24,41 @@ CONTENT_DIR = ROOT / "content"
 CONTENT_DIR.mkdir(exist_ok=True)
 SITE_DIR = ROOT / "site"
 
+# Duplicate-intent blog posts → their cluster canonical (SEO audit 2026-07).
+# GitHub Pages can't 301, so consolidation is done via <link rel="canonical">:
+# pages listed as keys canonicalize to their value slug instead of themselves.
+_CANON_MAP_PATH = ROOT / "config" / "blog_canonical_map.json"
+CANONICAL_MAP = (json.loads(_CANON_MAP_PATH.read_text())["map"]
+                 if _CANON_MAP_PATH.exists() else {})
+
 MODEL = os.environ.get("CLAUDE_MODEL", "claude-sonnet-4-6")
 
 SITE = CONFIG["site"]
+
+# ---------- fleet facts (single source of truth: config/boats.json) ----------
+BOATS_CFG = json.loads((ROOT / "config" / "boats.json").read_text())
+FLEET_N = len(BOATS_CFG["boats"])
+_FLEET_LOWS = [min(t["prices"].values())
+               for t in (BOATS_CFG["hourly_price_tiers"][b["tier"]] for b in BOATS_CFG["boats"])
+               if t["prices"]]
+FLEET_PRICE_RANGE = f"€{min(_FLEET_LOWS)}–€{max(_FLEET_LOWS)}"
+
+# Fleet-size claims baked into cached copy go stale when boats.json changes.
+# Rewrite them to the live count at render time (scoped to fleet-claim phrases
+# only — "2 jet skis" etc. are left alone).
+_FLEET_CLAIM_RES = [
+    re.compile(r"\b\d{1,3}(?=[-\s][Bb]oat [Ff]leet\b)"),
+    re.compile(r"(?<=\bfleet of )\d{1,3}(?= (?:boats|yachts|vessels)\b)"),
+    re.compile(r"\b\d{1,3}(?= (?:boats|yachts|vessels) in (?:our|the) fleet\b)"),
+    re.compile(r"(?<=\bour )\d{1,3}(?= (?:boats|yachts)\b)"),
+    re.compile(r"(?<=\b[Ww]e operate )\d{1,3}(?= (?:boats|yachts)\b)"),
+    re.compile(r"(?<=\b[Ww]e have )\d{1,3}(?= (?:boats|yachts)\b)"),
+]
+
+def fix_fleet_counts(text: str) -> str:
+    for rx in _FLEET_CLAIM_RES:
+        text = rx.sub(str(FLEET_N), text)
+    return text
 
 # ---------- env loading ----------
 def load_env():
@@ -147,7 +179,7 @@ PAGE_HERO_MAP = {
 # Per-page book-card override (price / duration label / pitch text)
 PAGE_BOOK_CARD = {
     "jet-ski-rental-marbella": {
-        "price": 200,
+        "price": 250,
         "label": "1h Sea-Doo rental",
         "pitch": "Sea-Doo personal watercraft from Puerto Banús. Solo or two-up — same price. Briefing, life jacket and fuel included.",
     },
@@ -278,25 +310,6 @@ def guests_jsonld_blocks(photos, page_url):
         ],
     }]
 
-def video_jsonld_blocks(videos, page_url):
-    blocks = []
-    for v in videos:
-        blocks.append({
-            "@context": "https://schema.org",
-            "@type": "VideoObject",
-            "name": v["title"],
-            "description": v["description"],
-            "thumbnailUrl": SITE['base_url'] + f"/video/{v['slug']}.jpg",
-            "contentUrl": SITE['base_url'] + f"/video/{v['slug']}.mp4",
-            "uploadDate": "2026-05-17",
-            "publisher": {"@id": SITE['base_url'] + "/#org"},
-            "isPartOf": page_url,
-            "keywords": ", ".join(v.get("tags", [])),
-            "inLanguage": "en",
-        })
-    return blocks
-
-
 # ---------- prompt ----------
 SYSTEM = f"""You are an SEO copywriter producing pages for {SITE['name']}, an independent affiliate guide to boat rentals in Marbella, Spain.
 
@@ -380,13 +393,14 @@ def jsonld_for(page: dict, kind: str, data: dict) -> str:
         "@type": ["LocalBusiness","Organization"],
         "@id": SITE['base_url'] + "/#org",
         "name": SITE['name'],
+        "alternateName": ["Boat Rental In Marbella", "boatrentalinmarbella.com"],
         "url": SITE['base_url'] + "/",
         "logo": SITE['base_url'] + "/img/logo-480.png",
         "telephone": SITE['phone_e164'],
         "email": SITE['email'],
         "areaServed": SITE['departure_ports'],
-        "sameAs": [u for u in [SITE.get('instagram_url'), SITE.get('facebook_url')] if u],
-        "priceRange": f"€{SITE['price_anchor_low_2h']}–€{SITE['price_anchor_fullday_8h']}",
+        "sameAs": [u for u in [SITE.get('instagram_url'), SITE.get('facebook_url'), SITE.get('youtube_url'), SITE.get('x_url')] if u],
+        "priceRange": FLEET_PRICE_RANGE,
         "address": {"@type":"PostalAddress","addressLocality":"Marbella","addressRegion":"Andalucía","postalCode":"29602","addressCountry":"ES"},
     }
     if SITE.get('geo_lat') and SITE.get('geo_lng'):
@@ -428,8 +442,9 @@ def jsonld_for(page: dict, kind: str, data: dict) -> str:
     elif page['slug']:
         crumbs.append({"@type":"ListItem","position":2,"name":page['title'],"item":url})
     blocks.append({"@context":"https://schema.org","@type":"BreadcrumbList","itemListElement":crumbs})
-    # Page-attached videos → VideoObject
-    blocks += video_jsonld_blocks(videos_for_slug(page['slug']), url)
+    # VideoObject JSON-LD is emitted by build_video_sitemap.py only (it scans
+    # rendered <video> tags) — emitting it here too created duplicate blocks
+    # with conflicting uploadDates.
     blocks += guests_jsonld_blocks(guests_for_slug(page['slug']), url)
     return json.dumps(blocks, ensure_ascii=False)
 
@@ -496,6 +511,9 @@ def render(page: dict, kind: str, data: dict) -> str:
     url = f"{SITE['base_url']}/{page['slug']}/".replace("//", "/").replace(":/", "://")
     if not page['slug']:
         url = SITE['base_url'] + "/"
+    # Duplicate-intent dupes canonicalize to their cluster canonical (blog_canonical_map.json)
+    canon_slug = CANONICAL_MAP.get(page['slug'])
+    canonical_url = f"{SITE['base_url']}/{canon_slug}/" if canon_slug else url
     # depth-aware CSS href
     depth = page['slug'].count("/") + (1 if page['slug'] else 0)
     css_href = "../" * depth + "styles.css" if depth else "/styles.css"
@@ -541,8 +559,13 @@ def render(page: dict, kind: str, data: dict) -> str:
             fleet_cards = []
             for b in boats_cfg["boats"]:
                 tier = boats_cfg["hourly_price_tiers"][b["tier"]]
-                low = min(tier["prices"].values())
-                entry_dur = f"{tier.get('min_hours') or sorted(int(k.rstrip('h')) for k in tier['prices'].keys())[0]}h"
+                if tier["prices"]:
+                    low = min(tier["prices"].values())
+                    entry_dur = f"{tier.get('min_hours') or sorted(int(k.rstrip('h')) for k in tier['prices'].keys())[0]}h"
+                    price_html = f'<span class="boat-card-price">From <strong>€{low:,}</strong><small>{entry_dur} skippered</small></span>'
+                else:
+                    # quote-only boats (pricing on request) — mirrors build_boats.py
+                    price_html = '<span class="boat-card-price">Quote on <strong>WhatsApp</strong><small>competitive rates</small></span>'
                 # Prefer local image variants; fall back to Pexels
                 if b.get("hero_local"):
                     srcset_pairs = b.get("hero_local_srcset") or [[b["hero_local"], 1600]]
@@ -564,7 +587,7 @@ def render(page: dict, kind: str, data: dict) -> str:
     <h3 class="boat-card-title">{html.escape(b["name"])}</h3>
     <p class="boat-card-desc">{html.escape(b["tagline"])}</p>
     <div class="boat-card-meta">
-      <span class="boat-card-price">From <strong>€{low:,}</strong><small>{entry_dur} skippered</small></span>
+      {price_html}
       <span class="boat-card-cta">View boat →</span>
     </div>
   </div>
@@ -594,7 +617,7 @@ def render(page: dict, kind: str, data: dict) -> str:
             ("boat-rental-no-license-marbella","No-License Boats","Skip the licence — our skippered fleet handles everything.",                  "astondoa-hero",     749,  "2h",  "Skippered"),
             ("fishing-boat-rental-marbella", "Fishing Charters","Inshore fishing on our 12.5 m fleet — light tackle and trolling.",              "fishing-big-catch",749,  "2h",  ""),
             ("boat-party-marbella",          "Boat Party",      "Group charters up to 12 guests — stag, hen, birthday, corporate.",              "mangusta-aerial",   749,  "2h",  ""),
-            ("jet-ski-rental-marbella",      "Jet Ski Rental",  "Sea-Doo PWC from Puerto Banús — solo or two-up. Free with Mangusta 80.",        "jetski-hero",       200,  "1h",  "Sea-Doo"),
+            ("jet-ski-rental-marbella",      "Jet Ski Rental",  "Sea-Doo PWC from Puerto Banús — solo or two-up. Free with Mangusta 80.",        "jetski-hero",       250,  "1h",  "Sea-Doo"),
         ]
         cards_html = []
         for slug, title, desc, fkey, price, dur, tag in BOAT_CARDS:
@@ -663,7 +686,7 @@ def render(page: dict, kind: str, data: dict) -> str:
         "{{HERO_ALT}}": html.escape(hero_alt),
         "{{TITLE}}": html.escape(page['title']),
         "{{META_DESCRIPTION}}": html.escape(data.get("meta_description", page.get("meta_description",""))),
-        "{{CANONICAL_URL}}": url,
+        "{{CANONICAL_URL}}": canonical_url,
         "{{OG_TYPE}}": "article" if kind == "blog" else "website",
         "{{CSS_HREF}}": "/styles.css",
         "{{JSONLD}}": jsonld_for(page, kind, data),
@@ -685,6 +708,8 @@ def render(page: dict, kind: str, data: dict) -> str:
     out = TEMPLATE
     for k, v in repl.items():
         out = out.replace(k, v)
+    # Deploy-gate companion: keep every fleet-size claim in sync with boats.json
+    out = fix_fleet_counts(out)
     return out
 
 def write_page(page: dict, kind: str, html_str: str, data: dict):

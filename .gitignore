@@ -5,3 +5,4 @@ __pycache__/
 .indexnow_key
 .telegraph_token
 .telegraph_tokens.json
+tmp-videos/originals/

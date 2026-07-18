@@ -108,7 +108,8 @@ def build_video_sitemap(pages_map):
             lines.append('      <video:family_friendly>yes</video:family_friendly>')
             lines.append('      <video:requires_subscription>no</video:requires_subscription>')
             lines.append('      <video:live>no</video:live>')
-            lines.append(f'      <video:publication_date>{TODAY}</video:publication_date>')
+            pub = (video_meta(slug) or {}).get('upload_date', TODAY)
+            lines.append(f'      <video:publication_date>{pub}</video:publication_date>')
             for tag in tags:
                 lines.append(f'      <video:tag>{html.escape(tag)}</video:tag>')
             lines.append('    </video:video>')
@@ -126,7 +127,7 @@ def videoobject_jsonld(slug, page_url, pos=1):
         "name": meta.get("title") or slug,
         "description": meta.get("description") or meta.get("title") or slug,
         "thumbnailUrl": [f"{BASE}/video/{slug}.jpg"],
-        "uploadDate": f"{TODAY}T00:00:00+02:00",
+        "uploadDate": f"{meta.get('upload_date', TODAY)}T00:00:00+02:00",
         "contentUrl": f"{BASE}/video/{slug}.mp4",
         "embedUrl": page_url,
         "isFamilyFriendly": True,

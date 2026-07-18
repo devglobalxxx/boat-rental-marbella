@@ -41,6 +41,14 @@ case "$1" in
     /usr/bin/python3 -m scripts.scraper.sync_outreach_sheet >> logs/cron.log 2>&1
     echo "[$TS] enrich done" >> logs/cron.log
     ;;
+  getlisted)
+    echo "[$TS] getlisted start" >> logs/cron.log
+    # Re-engagement drip (400/day) to operators we emailed who never replied —
+    # the zero-cost "get-listed" concierge angle. Excludes STOP/bounce/spam.
+    /usr/bin/python3 -m scripts.scraper.getlisted_send --limit 400 --sleep 3 >> logs/cron.log 2>&1
+    /usr/bin/python3 -m scripts.scraper.sync_outreach_sheet >> logs/cron.log 2>&1
+    echo "[$TS] getlisted done" >> logs/cron.log
+    ;;
   activate)
     echo "[$TS] activate start" >> logs/cron.log
     # Weekly nudge to boathire24.com users who signed up but have no active boat
@@ -48,5 +56,5 @@ case "$1" in
     /usr/bin/python3 -m scripts.scraper.activation_drip --send --limit 200 --sleep 3 >> logs/cron.log 2>&1
     echo "[$TS] activate done" >> logs/cron.log
     ;;
-  *) echo "usage: $0 {scan|followup|cold|maps|enrich|activate}"; exit 2 ;;
+  *) echo "usage: $0 {scan|followup|cold|maps|enrich|activate|getlisted}"; exit 2 ;;
 esac

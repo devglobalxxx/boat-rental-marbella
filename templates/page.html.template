@@ -30,6 +30,7 @@
 <meta name="google-site-verification" content="7IpKxNUsE6FCzFr-hIzpSyFxVAySSkJmX_pquu_rZlI">
 <meta name="msvalidate.01" content="CF4FA3F0F1CEAC43E77E46C1D522ABCF">
 <!-- Google tag (gtag.js) -->
+<link rel="preconnect" href="https://www.googletagmanager.com">
 <script async src="https://www.googletagmanager.com/gtag/js?id=G-SPMRYJVTHD"></script>
 <script>window.dataLayer=window.dataLayer||[];function gtag(){dataLayer.push(arguments);}gtag('js',new Date());gtag('config','G-SPMRYJVTHD');</script>
 <meta name="theme-color" content="#3f0f1c">
@@ -126,8 +127,8 @@
 </article>
 
 <aside class="book-card">
-  <a class="book-card-rating" href="/reviews/" aria-label="Read 87 verified reviews, average 4.9 out of 5">
-    <span class="stars" aria-hidden="true">★★★★★</span> <strong>4.9</strong> · 87 verified reviews
+  <a class="book-card-rating" href="/reviews/" aria-label="Read our verified reviews, average 4.9 out of 5">
+    <span class="stars" aria-hidden="true">★★★★★</span> <strong>4.9</strong> · verified reviews
   </a>
   <div class="book-card-price">
     From <strong>€{{PRICE_LOW}}</strong>
@@ -279,8 +280,8 @@
           <option>Astondoa 40 'Fufi' — €749 / 2h · 9 guests</option>
           <option>Azimut 39 — €749 / 2h · 11 guests</option>
           <option>Mangusta 80 — €4,719 / 4h · 12 guests + jet ski</option>
-          <option>Dubhe (licence-free) — €230 / 2h · 5 guests</option>
-          <option>Jet ski — €200 / h</option>
+          <option>Dubhe (8m day boat) — €230 / 2h · 5 guests</option>
+          <option>Jet ski — €250 / 1st h</option>
           <option>Another boat from the fleet</option>
         </select>
       </label>

@@ -16,8 +16,6 @@ import json, pathlib, re
 ROOT = pathlib.Path(__file__).resolve().parents[1]
 SITE_DIR = ROOT / "site"
 SITE = json.loads((ROOT / "config" / "keyword_map.json").read_text())["site"]
-REVIEWS = json.loads((ROOT / "config" / "reviews.json").read_text())
-AGG = REVIEWS["aggregate"]
 BASE = SITE["base_url"].rstrip("/")
 
 # ---------- canonical fact graph ----------
@@ -39,6 +37,8 @@ PERSON = {
     "sameAs": [
         SITE["instagram_url"],
         SITE["facebook_url"],
+        SITE["youtube_url"],
+        SITE["x_url"],
     ],
     "knowsAbout": [
         "Yacht charter Marbella", "Puerto Banús boat rental",
@@ -95,7 +95,7 @@ SERVICE = {
         },
         {
             "@type": "Offer",
-            "name": "Dubhe — licence-free 5m boat",
+            "name": "Dubhe — 8m day boat",
             "url": BASE + "/boats/dubhe/",
             "priceSpecification": [
                 {"@type": "UnitPriceSpecification", "price": 230, "priceCurrency": "EUR", "unitText": "2 hours"},
@@ -109,17 +109,10 @@ SERVICE = {
             "@type": "Offer",
             "name": "Sea-Doo jet ski rental",
             "url": BASE + "/jet-ski-rental-marbella/",
-            "priceSpecification": {"@type": "UnitPriceSpecification", "price": 200, "priceCurrency": "EUR", "unitText": "1 hour"},
+            "priceSpecification": {"@type": "UnitPriceSpecification", "price": 250, "priceCurrency": "EUR", "unitText": "first hour (€200 each additional hour)"},
             "availability": "https://schema.org/InStock",
         },
     ],
-    "aggregateRating": {
-        "@type": "AggregateRating",
-        "ratingValue": AGG["rating_value"],
-        "reviewCount": AGG["review_count"],
-        "bestRating": 5,
-        "worstRating": 1,
-    },
 }
 
 WEBSITE = {
@@ -146,28 +139,37 @@ SPEAKABLE = {
     "cssSelector": ["h1", "h2", ".hero-sub", ".byline", "details summary", "details p"],
 }
 
-# Stable graph block (added once per page)
-GRAPH_NODES = [PERSON, SERVICE, WEBSITE, SPEAKABLE]
-GRAPH_JSON = "</script>\n<script type=\"application/ld+json\">".join(
-    json.dumps(n, ensure_ascii=False, separators=(",", ":")) for n in GRAPH_NODES
-)
-
+# Stable graph block (added once per page). Pages whose template already emits
+# a Service block (homepage + money pages) get the graph WITHOUT the Service
+# node, so every page ends up with exactly one Service.
 BEGIN = "<!-- ai-graph:begin -->"
 END = "<!-- ai-graph:end -->"
-BLOCK_TEMPLATE = (
-    BEGIN + "\n"
-    f"<script type=\"application/ld+json\">{GRAPH_JSON}</script>\n"
-    + END
-)
+
+def _block(nodes) -> str:
+    graph_json = "</script>\n<script type=\"application/ld+json\">".join(
+        json.dumps(n, ensure_ascii=False, separators=(",", ":")) for n in nodes
+    )
+    return (
+        BEGIN + "\n"
+        f"<script type=\"application/ld+json\">{graph_json}</script>\n"
+        + END
+    )
+
+BLOCK_FULL = _block([PERSON, SERVICE, WEBSITE, SPEAKABLE])
+BLOCK_NO_SERVICE = _block([PERSON, WEBSITE, SPEAKABLE])
 
 PATTERN = re.compile(re.escape(BEGIN) + r"[\s\S]*?" + re.escape(END))
+SERVICE_RE = re.compile(r'"@type":\s*"Service"')
 
 def inject(path: pathlib.Path) -> bool:
     s = path.read_text()
+    # Detect a Service block emitted outside our own marker pair.
+    rest = PATTERN.sub("", s)
+    block = BLOCK_NO_SERVICE if SERVICE_RE.search(rest) else BLOCK_FULL
     if PATTERN.search(s):
-        new = PATTERN.sub(BLOCK_TEMPLATE, s)
+        new = PATTERN.sub(block, s)
     else:
-        new = s.replace("</head>", BLOCK_TEMPLATE + "\n</head>", 1)
+        new = s.replace("</head>", block + "\n</head>", 1)
     if new == s:
         return False
     path.write_text(new)
@@ -178,7 +180,7 @@ def main():
     for p in SITE_DIR.rglob("index.html"):
         if inject(p):
             n += 1
-    print(f"inject_ai_schema: AI graph (Person + Service + WebSite + Speakable) injected on {n} pages")
+    print(f"inject_ai_schema: AI graph (Person + WebSite + Speakable, + Service where the page has none) injected on {n} pages")
 
 if __name__ == "__main__":
     main()

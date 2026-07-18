@@ -1,0 +1,21 @@
+[2026-07-18 10:30:00] Making 8 reels (ffmpeg: ffmpeg-macos-x86_64-v7.1)
+[2026-07-18 10:30:16] Drive: 479 source photos
+[2026-07-18 10:30:38] Downloaded 24 photos
+[2026-07-18 10:31:39]   ✓ reel 1/8: reel_marbella_260718103138_1.mp4 (1110 KB)
+[2026-07-18 10:32:41]   ✓ reel 2/8: reel_marbella_260718103240_2.mp4 (1223 KB)
+[2026-07-18 10:33:47]   ✓ reel 3/8: reel_marbella_260718103345_3.mp4 (1778 KB)
+[2026-07-18 10:35:07]   ✓ reel 4/8: reel_marbella_260718103505_4.mp4 (1365 KB)
+[2026-07-18 10:36:09]   ✓ reel 5/8: reel_marbella_260718103608_5.mp4 (1206 KB)
+[2026-07-18 10:37:29]   ✓ reel 6/8: reel_marbella_260718103728_6.mp4 (1305 KB)
+[2026-07-18 10:38:32]   ✓ reel 7/8: reel_marbella_260718103831_7.mp4 (1330 KB)
+[2026-07-18 10:39:55]   ✓ reel 8/8: reel_marbella_260718103953_8.mp4 (1183 KB)
+[2026-07-18 10:39:57]   ⬆ uploaded reel_marbella_260718103138_1.mp4 -> Drive/AI REELS (17_RPGimL1g_hhFA8vApsokJVM-pWslR-)
+[2026-07-18 10:39:59]   ⬆ uploaded reel_marbella_260718103240_2.mp4 -> Drive/AI REELS (1Cd794_Zk-o0vH29BYsZfO7lZrRlM1meV)
+[2026-07-18 10:40:00]   ⬆ uploaded reel_marbella_260718103345_3.mp4 -> Drive/AI REELS (1Oa1OswBmUn0L9QrRGSv9BZ0Rtlc2foKK)
+[2026-07-18 10:40:02]   ⬆ uploaded reel_marbella_260718103505_4.mp4 -> Drive/AI REELS (13B50bKAucRPW8Or3sKjIltr2tAIoKIEh)
+[2026-07-18 10:40:04]   ⬆ uploaded reel_marbella_260718103608_5.mp4 -> Drive/AI REELS (1KDMr9xomHDZuq4Los7wcPwDe4WVVLPQ1)
+[2026-07-18 10:40:06]   ⬆ uploaded reel_marbella_260718103728_6.mp4 -> Drive/AI REELS (1nokdEWdePYOB-7yEc5exIntNMNpNvUsS)
+[2026-07-18 10:40:07]   ⬆ uploaded reel_marbella_260718103831_7.mp4 -> Drive/AI REELS (16h6qsHTp3mqZQhM-3YmipPPLuIJVfWb7)
+[2026-07-18 10:40:09]   ⬆ uploaded reel_marbella_260718103953_8.mp4 -> Drive/AI REELS (1RO5OgZxFkCD5wAvZeGuMsE1-BgUiVH8C)
+[2026-07-18 10:40:09] Done: 8 reels made, 8 uploaded to Drive/AI REELS
+[2026-07-18 10:40:09] They'll be picked up by the next post_youtube.py run.

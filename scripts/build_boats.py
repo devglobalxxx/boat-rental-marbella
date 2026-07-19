@@ -158,9 +158,13 @@ def entry_duration(boat):
     return f"{keys[0]}h"
 
 def all_inclusions(boat):
-    """Return shared + boat-tier extra inclusions list."""
+    """Return shared + boat-tier extra inclusions list (minus fuel when the
+    boat is fuel-excluded, e.g. Dubhe)."""
     extras = boat_price_tier(boat).get("extra_inclusions", [])
-    return BOATS_CFG["shared_inclusions"] + extras
+    shared = BOATS_CFG["shared_inclusions"]
+    if boat.get("fuel_included") is False:
+        shared = [i for i in shared if i.lower() != "fuel"]
+    return shared + extras
 
 def jsonld_org():
     return {
@@ -341,11 +345,11 @@ def render_boat(boat):
 
 {('<div class="callout"><strong>Quick specs:</strong> ' + str(boat["length_m"]) + ' m · ' + str(boat["capacity_pax"]) + ' pax · skipper included · departs ' + html.escape(boat["departure_port"]) + '.<br><strong>Quote on WhatsApp</strong> — give us your date and group size for a same-day price, no commitment.</div>'
   if is_on_request(boat) else
-  '<div class="callout"><strong>Quick specs:</strong> ' + str(boat["length_m"]) + ' m · ' + str(boat["capacity_pax"]) + ' pax · skipper included' + ((' · in fleet since ' + str(boat["model_year"])) if boat.get("model_year") else '') + ' · departs ' + html.escape(boat["departure_port"]) + '.<br><strong>From €' + f"{lowest_price(boat):,}" + ' for ' + entry_duration(boat) + '.</strong> Drinks, fuel, insurance &amp; VAT included.' + ((" Plus jet ski free for the day." if "Jet ski" in " ".join(tier_extras) else "")) + '</div>')}
+  '<div class="callout"><strong>Quick specs:</strong> ' + str(boat["length_m"]) + ' m · ' + str(boat["capacity_pax"]) + ' pax · skipper included' + ((' · in fleet since ' + str(boat["model_year"])) if boat.get("model_year") else '') + ' · departs ' + html.escape(boat["departure_port"]) + '.<br><strong>From €' + f"{lowest_price(boat):,}" + ' for ' + entry_duration(boat) + ('.</strong> Drinks, fuel, insurance &amp; VAT included.' if boat.get('fuel_included') is not False else '.</strong> Drinks, insurance &amp; VAT included; fuel billed separately.') + ((" Plus jet ski free for the day." if "Jet ski" in " ".join(tier_extras) else "")) + '</div>')}
 
 {('<h2>Pricing</h2><p>This boat is quoted to order — send your date and group size on WhatsApp for an instant rate. Charters always include licensed skipper, fuel, insurance and VAT (Spanish IVA 21%).</p>'
   if is_on_request(boat) else
-  '<h2>' + ("Pricing" if len(prices) == 1 else "Hourly pricing") + '</h2><p>' + ("Minimum charter on the " + name + " is " + entry_duration(boat) + " — the rate below is all-in. Longer durations on request." if len(prices) == 1 else "Same boat, same crew — price scales with duration. Pick the length that fits your day:") + '</p><table><thead><tr><th>Duration</th><th>Price (EUR)</th></tr></thead><tbody>' + price_rows + '</tbody></table><p><em>All prices include: ' + ", ".join(inclusions).lower() + '. No hidden marina fees, no fuel surcharge for the standard coastal route.' + ((" " + extended_note) if extended_note else "") + '</em></p>')}
+  '<h2>' + ("Pricing" if len(prices) == 1 else "Hourly pricing") + '</h2><p>' + ("Minimum charter on the " + name + " is " + entry_duration(boat) + " — the rate below is all-in. Longer durations on request." if len(prices) == 1 else "Same boat, same crew — price scales with duration. Pick the length that fits your day:") + '</p><table><thead><tr><th>Duration</th><th>Price (EUR)</th></tr></thead><tbody>' + price_rows + '</tbody></table><p><em>All prices include: ' + ", ".join(inclusions).lower() + ('. No hidden marina fees, no fuel surcharge for the standard coastal route.' if boat.get('fuel_included') is not False else '. No hidden marina fees; fuel is metered and billed separately after the trip.') + ((" " + extended_note) if extended_note else "") + '</em></p>')}
 
 <h2>What makes this boat work</h2>
 {highlights_html}
@@ -387,7 +391,7 @@ def render_boat(boat):
 <h2>Frequently asked questions</h2>
 <details><summary>How many guests can the {name} carry?</summary><p>{boat["capacity_pax"]} guests for day charter.{(" Overnight capacity is lower — typically 4–6 in cabins on a " + str(boat["length_m"]) + " m yacht.") if type_label != "jet ski" else ""}</p></details>
 <details><summary>Is the skipper included?</summary><p>Yes — every charter on the {name} comes with a licensed Spanish skipper. The captain handles navigation, anchoring and route planning. You and your group are guests for the day.</p></details>
-<details><summary>What's included in the price?</summary><p>Skipper, fuel for the standard coastal route, drinks (water and soft drinks), Spanish IVA (VAT) and insurance. Catered lunch and alcohol are extras you can add when booking.</p></details>
+<details><summary>What's included in the price?</summary><p>{"Skipper, fuel for the standard coastal route, drinks (water and soft drinks), Spanish IVA (VAT) and insurance." if boat.get("fuel_included") is not False else "Skipper, drinks (water and soft drinks), Spanish IVA (VAT) and insurance — fuel is metered and billed separately after the trip."} Catered lunch and alcohol are extras you can add when booking.</p></details>
 <details><summary>Can we go further than the standard route?</summary><p>Yes — longer or further itineraries (Gibraltar day trip, Estepona-Sotogrande loop) are bookable. A fuel surcharge applies for itineraries beyond the standard 12–15 NM coastal cruise. We will quote it before you commit.</p></details>
 <details><summary>What happens if the weather is bad?</summary><p>Skipper calls the night before. If forecast wind exceeds Force 4–5 or sea state makes the trip unsafe, you rebook or get a full refund. Light rain alone is not a cancellation reason on the Costa del Sol.</p></details>
 '''
@@ -455,10 +459,10 @@ def render_boat(boat):
 
     write_page(
         slug=f"boats/{boat['slug']}",
-        title=f"{name} — {boat['builder']} {boat['length_m']}m Charter from Puerto Banús",
+        title=(f"{name} — {boat['length_m']}m Charter from Puerto Banús" if boat["builder"] == name else f"{name} — {boat['builder']} {boat['length_m']}m Charter from Puerto Banús"),
         meta=(f"Charter the {name} from Puerto Banús — {boat['length_m']} m, {boat['capacity_pax']} guests, skipper + drinks + VAT included. Quote on WhatsApp."
               if is_on_request(boat) else
-              f"Charter the {name} from Puerto Banús — {boat['length_m']} m, {boat['capacity_pax']} guests, skipper & fuel included. From €{lowest_price(boat):,} for {entry_duration(boat)}."),
+              f"Charter the {name} from Puerto Banús — {boat['length_m']} m, {boat['capacity_pax']} guests, {'skipper & fuel included' if boat.get('fuel_included') is not False else 'skipper included (fuel billed separately)'}. From €{lowest_price(boat):,} for {entry_duration(boat)}."),
         h1=name,
         sub=html.unescape(boat["tagline"]),
         eyebrow=f"{boat['builder']} · {boat['length_m']}m · {boat['capacity_pax']} pax",

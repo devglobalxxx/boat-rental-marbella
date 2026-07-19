@@ -33,3 +33,4 @@ run_daily logs/.maps_last_run     maps
 run_daily logs/.enrich_last_run   enrich
 run_daily logs/.followup_last_run followup
 run_daily logs/.cold_last_run     cold
+run_daily logs/.blogreach_last_run blogreach

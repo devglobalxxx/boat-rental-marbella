@@ -56,5 +56,20 @@ case "$1" in
     /usr/bin/python3 -m scripts.scraper.activation_drip --send --limit 200 --sleep 3 >> logs/cron.log 2>&1
     echo "[$TS] activate done" >> logs/cron.log
     ;;
-  *) echo "usage: $0 {scan|followup|cold|maps|enrich|activate|getlisted}"; exit 2 ;;
+  blogreach)
+    echo "[$TS] blogreach start" >> logs/cron.log
+    # Travel-blog partnership outreach (link-swap). Top up the pool from listicles +
+    # a little DDG breadth, enrich, then drip a capped batch: contact form first
+    # (email fallback on captcha/JS), plus direct email to guarantee volume.
+    # Everything dedupes on leads.db, so a blog is never contacted twice.
+    [ -f config/blog_listicles.txt ] && /usr/bin/python3 -m scripts.scraper.blogreach harvest-urls --file config/blog_listicles.txt >> logs/cron.log 2>&1
+    /usr/bin/python3 -m scripts.scraper.blogreach discover --limit-kw 15 >> logs/cron.log 2>&1
+    /usr/bin/python3 -m scripts.scraper.blogreach enrich --limit 300 --workers 12 >> logs/cron.log 2>&1
+    /usr/bin/python3 -m scripts.scraper.blogreach push-sheet >> logs/cron.log 2>&1
+    /usr/bin/python3 -m scripts.scraper.blogreach send-form --limit 60 >> logs/cron.log 2>&1
+    /usr/bin/python3 -m scripts.scraper.blogreach send-email --any --limit 140 >> logs/cron.log 2>&1
+    /usr/bin/python3 -m scripts.scraper.blogreach sync-sheet >> logs/cron.log 2>&1
+    echo "[$TS] blogreach done" >> logs/cron.log
+    ;;
+  *) echo "usage: $0 {scan|followup|cold|maps|enrich|activate|getlisted|blogreach}"; exit 2 ;;
 esac

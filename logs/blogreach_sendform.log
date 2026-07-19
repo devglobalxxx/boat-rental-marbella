@@ -1,0 +1,9 @@
+/Users/master/Library/Python/3.9/lib/python/site-packages/urllib3/__init__.py:35: NotOpenSSLWarning: urllib3 v2 only supports OpenSSL 1.1.1+, currently the 'ssl' module is compiled with 'LibreSSL 2.8.3'. See: https://github.com/urllib3/urllib3/issues/3020
+  warnings.warn(
+300 blogs with a contact form to try (dry_run=False)
+  captcha    form       ytravelblog.com                      captcha present
+  captcha    form       goingawesomeplaces.com               captcha on /pr
+  sent       form→email stingynomads.com                     captcha present | email→camino.stingynomads@gmail.
+  sent       form→email loveandroad.com                      captcha on /collaborate | email→contact@loveandroa
+  sent       form→email alongdustyroads.com                  captcha present | email→hello@alongdustyroads.com
+  sent       form→email heatheronhertravels.com              captcha on /contact | email→blog@heatheronhertrave

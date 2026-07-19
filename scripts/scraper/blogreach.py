@@ -524,7 +524,7 @@ def submit_form(page, form_url, domain=None):
     """Attempt to fill+submit one contact form. Returns (status, http_status, detail)."""
     resp = page.goto(form_url, wait_until="domcontentloaded", timeout=25000)
     http_status = resp.status if resp else None
-    page.wait_for_timeout(2500)
+    page.wait_for_timeout(1800)
     _dismiss_overlays(page)
     content = page.content()
     if CAPTCHA_HINT.search(content):
@@ -585,7 +585,7 @@ def submit_form(page, form_url, domain=None):
         btn.click(timeout=8000)
     except Exception as e:
         return "failed", http_status, f"click failed: {e}"
-    page.wait_for_timeout(3500)
+    page.wait_for_timeout(2500)
     after = page.content().lower()
     if CAPTCHA_HINT.search(after):
         return "captcha", http_status, "captcha after submit"
@@ -663,12 +663,16 @@ def send_forms(con, limit=25, dry_run=False, headless=True, verbose=True, email_
     return n_ok
 
 # ── outreach: email fallback ────────────────────────────────────────────────
-def send_emails(con, limit=50, dry_run=False, verbose=True):
+def send_emails(con, limit=50, dry_run=False, verbose=True, any_form=False):
     ensure_tables(con)
     from . import outreach as ol
-    rows = con.execute("""SELECT domain, emails FROM blogs
-        WHERE (contact_form IS NULL OR contact_form='')
-          AND emails IS NOT NULL AND emails NOT IN ('','[]')
+    # Default: only form-less blogs (forms handled by send_forms). With any_form,
+    # email every blog that has an address and hasn't been contacted yet — used to
+    # guarantee daily volume when contact-form automation under-delivers.
+    form_clause = "" if any_form else "(contact_form IS NULL OR contact_form='') AND"
+    rows = con.execute(f"""SELECT domain, emails FROM blogs
+        WHERE {form_clause}
+          emails IS NOT NULL AND emails NOT IN ('','[]')
           AND domain NOT IN (SELECT domain FROM blog_outreach WHERE status IN ('submitted','sent','skipped'))
         LIMIT ?""", (limit,)).fetchall()
     if verbose:
@@ -726,7 +730,8 @@ def main():
     f = sub.add_parser("send-form"); f.add_argument("--limit", type=int, default=25)
     f.add_argument("--dry-run", action="store_true"); f.add_argument("--headed", action="store_true")
     m = sub.add_parser("send-email"); m.add_argument("--limit", type=int, default=50)
-    m.add_argument("--dry-run", action="store_true")
+    m.add_argument("--dry-run", action="store_true"); m.add_argument("--any", action="store_true",
+        help="email every blog with an address (incl. form-havers), not just form-less ones")
     sub.add_parser("stats")
 
     a = ap.parse_args()
@@ -746,7 +751,7 @@ def main():
     elif a.cmd == "send-form":
         print("submitted:", send_forms(con, limit=a.limit, dry_run=a.dry_run, headless=not a.headed))
     elif a.cmd == "send-email":
-        print("sent:", send_emails(con, limit=a.limit, dry_run=a.dry_run))
+        print("sent:", send_emails(con, limit=a.limit, dry_run=a.dry_run, any_form=a.any))
     elif a.cmd == "stats":
         stats(con)
 

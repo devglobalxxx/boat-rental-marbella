@@ -2255,3 +2255,33 @@ hint: See the 'Note about fast-forwards' in 'git push --help' for details.
 [2026-06-25 09:02:20] queue under threshold (28 < 30) — auto-refilling…
 [2026-06-25 09:02:36] refill: +28 topics (queue now 56)
 [2026-06-25 09:02:36] running deploy.sh …
+[2026-07-19 20:45:53] === Daily content run: 5 item(s) ===
+[2026-07-19 20:45:53] [1/5] blog · blog/marbella-yacht-charter-hen-weekend-budget
+[2026-07-19 20:45:53]   ✗ REJECTED: too similar to existing 'blog/marbella-yacht-charter-stag-weekend-budget' (0.81)
+[2026-07-19 20:45:53] [2/5] blog · blog/marbella-yacht-charter-f1-weekend-guide
+[2026-07-19 20:45:54]   ✗ FAILED: FileNotFoundError: [Errno 2] No such file or directory: 'claude'
+[2026-07-19 20:45:54] [3/5] blog · blog/marbella-boat-rental-sotogrande-departure
+[2026-07-19 20:45:54]   ✗ FAILED: FileNotFoundError: [Errno 2] No such file or directory: 'claude'
+[2026-07-19 20:45:54] [4/5] blog · blog/marbella-boat-rental-cabopino-departure
+[2026-07-19 20:45:54]   ✗ REJECTED: too similar to existing 'blog/cabopino-charter-departures' (0.97)
+[2026-07-19 20:45:54] [5/5] blog · blog/marbella-boat-rental-estepona-departure
+[2026-07-19 20:45:54]   ✗ REJECTED: too similar to existing 'Estepona Day Trip by Boat: Departures from Marbella' (0.97)
+[2026-07-19 20:45:54] rejected 3 queued topic(s) — archived under queue.rejected
+[2026-07-19 20:45:54] queue: 53 remaining, 418 consumed total
+[2026-07-19 20:45:54] === Done: 0 succeeded, 2 failed ===
+
+[2026-07-19 21:02:08] === Daily content run: 5 item(s) ===
+[2026-07-19 21:02:08] [1/5] blog · blog/astondoa-40-vs-azimut-39-cost-comparison
+[2026-07-19 21:02:08]   ✗ REJECTED: too similar to existing 'blog/astondoa-40-vs-azimut-39-vs-mangusta-80-marbella' (0.77)
+[2026-07-19 21:02:08] [2/5] blog · blog/mangusta-80-vs-azimut-58-comparison
+[2026-07-19 21:02:19]   ✗ FAILED: RuntimeError: claude CLI exit 1: 
+[2026-07-19 21:02:19] [3/5] blog · blog/pershing-46-vs-astondoa-40-comparison
+[2026-07-19 21:02:19]   ✗ REJECTED: too similar to existing 'astondoa-40-vs-pershing-46-marbella-comparison' (1.00)
+[2026-07-19 21:02:19] [4/5] blog · blog/astondoa-40-vs-princess-v58-marbella-comparison
+[2026-07-19 21:02:19]   ✗ REJECTED: too similar to existing 'astondoa-40-vs-pershing-46-marbella-comparison' (0.78)
+[2026-07-19 21:02:19] [5/5] blog · blog/marbella-yacht-charter-sotogrande-polo-final
+[2026-07-19 21:02:22]   ✗ FAILED: RuntimeError: claude CLI exit 1: 
+[2026-07-19 21:02:22] rejected 3 queued topic(s) — archived under queue.rejected
+[2026-07-19 21:02:22] queue: 48 remaining, 418 consumed total
+[2026-07-19 21:02:22] === Done: 0 succeeded, 2 failed ===
+

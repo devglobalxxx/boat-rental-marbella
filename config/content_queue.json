@@ -4,65 +4,9 @@
   "queue": [
     {
       "kind": "blog",
-      "slug": "blog/marbella-yacht-charter-hen-weekend-budget",
-      "primary_keyword": "marbella yacht charter hen weekend budget",
-      "title": "Marbella Yacht Charter for a Hen Weekend: Cost Breakdown",
-      "target_words": 1200
-    },
-    {
-      "kind": "blog",
-      "slug": "blog/marbella-yacht-charter-f1-weekend-guide",
-      "primary_keyword": "marbella yacht charter f1 weekend",
-      "title": "Marbella Yacht Charter for F1 Weekend: Viewing Parties",
-      "target_words": 1100
-    },
-    {
-      "kind": "blog",
-      "slug": "blog/marbella-boat-rental-sotogrande-departure",
-      "primary_keyword": "sotogrande boat rental marbella",
-      "title": "Sotogrande Boat Rental: Departing from Sotogrande Marina",
-      "target_words": 1100
-    },
-    {
-      "kind": "blog",
-      "slug": "blog/marbella-boat-rental-cabopino-departure",
-      "primary_keyword": "cabopino boat rental marbella",
-      "title": "Cabopino Boat Rental: Departing from Cabopino Marina",
-      "target_words": 1100
-    },
-    {
-      "kind": "blog",
-      "slug": "blog/marbella-boat-rental-estepona-departure",
-      "primary_keyword": "estepona boat rental marbella",
-      "title": "Estepona Boat Rental: Departing from Estepona Marina",
-      "target_words": 1100
-    },
-    {
-      "kind": "blog",
-      "slug": "blog/astondoa-40-vs-azimut-39-cost-comparison",
-      "primary_keyword": "astondoa 40 vs azimut 39 cost marbella",
-      "title": "Astondoa 40 vs Azimut 39 Cost Comparison in Marbella",
-      "target_words": 1200
-    },
-    {
-      "kind": "blog",
       "slug": "blog/mangusta-80-vs-azimut-58-comparison",
       "primary_keyword": "mangusta 80 vs azimut 58 marbella",
       "title": "Mangusta 80 vs Azimut 58: Which Yacht to Charter in Marbella",
-      "target_words": 1200
-    },
-    {
-      "kind": "blog",
-      "slug": "blog/pershing-46-vs-astondoa-40-comparison",
-      "primary_keyword": "pershing 46 vs astondoa 40 marbella",
-      "title": "Pershing 46 vs Astondoa 40: Charter Comparison in Marbella",
-      "target_words": 1200
-    },
-    {
-      "kind": "blog",
-      "slug": "blog/astondoa-40-vs-princess-v58-marbella-comparison",
-      "primary_keyword": "astondoa 40 vs princess v58 marbella comparison",
-      "title": "Astondoa 40 vs Princess V58: Which Yacht Suits Your Marbella Charter?",
       "target_words": 1200
     },
     {
@@ -3890,5 +3834,79 @@
     }
   ],
   "refill_threshold": 30,
-  "refill_batch": 30
+  "refill_batch": 30,
+  "rejected": [
+    {
+      "kind": "blog",
+      "slug": "blog/marbella-yacht-charter-hen-weekend-budget",
+      "primary_keyword": "marbella yacht charter hen weekend budget",
+      "title": "Marbella Yacht Charter for a Hen Weekend: Cost Breakdown",
+      "target_words": 1200,
+      "rejected_at": "2026-07-19",
+      "reason": "too similar to existing 'blog/marbella-yacht-charter-stag-weekend-budget' (0.81)"
+    },
+    {
+      "kind": "blog",
+      "slug": "blog/marbella-boat-rental-cabopino-departure",
+      "primary_keyword": "cabopino boat rental marbella",
+      "title": "Cabopino Boat Rental: Departing from Cabopino Marina",
+      "target_words": 1100,
+      "rejected_at": "2026-07-19",
+      "reason": "too similar to existing 'blog/cabopino-charter-departures' (0.97)"
+    },
+    {
+      "kind": "blog",
+      "slug": "blog/marbella-boat-rental-estepona-departure",
+      "primary_keyword": "estepona boat rental marbella",
+      "title": "Estepona Boat Rental: Departing from Estepona Marina",
+      "target_words": 1100,
+      "rejected_at": "2026-07-19",
+      "reason": "too similar to existing 'Estepona Day Trip by Boat: Departures from Marbella' (0.97)"
+    },
+    {
+      "kind": "blog",
+      "slug": "blog/marbella-yacht-charter-f1-weekend-guide",
+      "primary_keyword": "marbella yacht charter f1 weekend",
+      "title": "Marbella Yacht Charter for F1 Weekend: Viewing Parties",
+      "target_words": 1100,
+      "rejected_at": "2026-07-19",
+      "reason": "manual: topical duplicate of existing F1/Sotogrande coverage (cannibalization)"
+    },
+    {
+      "kind": "blog",
+      "slug": "blog/marbella-boat-rental-sotogrande-departure",
+      "primary_keyword": "sotogrande boat rental marbella",
+      "title": "Sotogrande Boat Rental: Departing from Sotogrande Marina",
+      "target_words": 1100,
+      "rejected_at": "2026-07-19",
+      "reason": "manual: topical duplicate of existing F1/Sotogrande coverage (cannibalization)"
+    },
+    {
+      "kind": "blog",
+      "slug": "blog/astondoa-40-vs-azimut-39-cost-comparison",
+      "primary_keyword": "astondoa 40 vs azimut 39 cost marbella",
+      "title": "Astondoa 40 vs Azimut 39 Cost Comparison in Marbella",
+      "target_words": 1200,
+      "rejected_at": "2026-07-19",
+      "reason": "too similar to existing 'blog/astondoa-40-vs-azimut-39-vs-mangusta-80-marbella' (0.77)"
+    },
+    {
+      "kind": "blog",
+      "slug": "blog/pershing-46-vs-astondoa-40-comparison",
+      "primary_keyword": "pershing 46 vs astondoa 40 marbella",
+      "title": "Pershing 46 vs Astondoa 40: Charter Comparison in Marbella",
+      "target_words": 1200,
+      "rejected_at": "2026-07-19",
+      "reason": "too similar to existing 'astondoa-40-vs-pershing-46-marbella-comparison' (1.00)"
+    },
+    {
+      "kind": "blog",
+      "slug": "blog/astondoa-40-vs-princess-v58-marbella-comparison",
+      "primary_keyword": "astondoa 40 vs princess v58 marbella comparison",
+      "title": "Astondoa 40 vs Princess V58: Which Yacht Suits Your Marbella Charter?",
+      "target_words": 1200,
+      "rejected_at": "2026-07-19",
+      "reason": "too similar to existing 'astondoa-40-vs-pershing-46-marbella-comparison' (0.78)"
+    }
+  ]
 }

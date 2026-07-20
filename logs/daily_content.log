@@ -2285,3 +2285,19 @@ hint: See the 'Note about fast-forwards' in 'git push --help' for details.
 [2026-07-19 21:02:22] queue: 48 remaining, 418 consumed total
 [2026-07-19 21:02:22] === Done: 0 succeeded, 2 failed ===
 
+[2026-07-20 18:48:42] === Daily content run: 5 item(s) ===
+[2026-07-20 18:48:42] [1/5] blog · blog/mangusta-80-vs-azimut-58-comparison
+[2026-07-20 18:51:36]   ✓ saved content/blog_mangusta-80-vs-azimut-58-comparison.json
+[2026-07-20 18:51:36]   ✓ added to keyword_map.blog
+[2026-07-20 18:51:36] [2/5] blog · blog/marbella-yacht-charter-sotogrande-polo-final
+[2026-07-20 18:57:00]   ✓ saved content/blog_marbella-yacht-charter-sotogrande-polo-final.json
+[2026-07-20 18:57:00]   ✓ added to keyword_map.blog
+[2026-07-20 18:57:00] [3/5] blog · blog/marbella-boat-rental-weather-april-easter
+[2026-07-20 18:57:00]   ✗ REJECTED: too similar to existing 'blog/marbella-yacht-charter-weather-april' (0.79)
+[2026-07-20 18:57:00] [4/5] blog · blog/mangusta-80-vs-sunseeker-predator-74-cost-comparison
+[2026-07-20 18:57:00]   ✗ REJECTED: too similar to existing 'blog/mangusta-80-vs-sunseeker-predator-74-marbella' (0.80)
+[2026-07-20 18:57:00] [5/5] blog · blog/marbella-hen-party-yacht-budget-breakdown-catering
+[2026-07-20 18:57:00]   ✗ REJECTED: too similar to existing 'blog/marbella-hen-party-yacht-budget-breakdown' (0.85)
+[2026-07-20 18:57:00] rejected 3 queued topic(s) — archived under queue.rejected
+[2026-07-20 18:57:00] queue: 43 remaining, 420 consumed total
+[2026-07-20 18:57:00] running deploy.sh …

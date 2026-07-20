@@ -62,7 +62,7 @@
 - https://boatrentalinmarbella.com/llms-full-experiences.txt — full text: experience landing pages (71 pages).
 - https://boatrentalinmarbella.com/llms-full-blog.txt — full text: blog posts & guides (85 pages).
 - https://boatrentalinmarbella.com/llms-full-blog-2.txt — full text: blog posts & guides (85 pages).
-- https://boatrentalinmarbella.com/llms-full-blog-3.txt — full text: blog posts & guides (69 pages).
+- https://boatrentalinmarbella.com/llms-full-blog-3.txt — full text: blog posts & guides (70 pages).
 - https://boatrentalinmarbella.com/data/facts.json — structured operator / fleet / pricing / policy facts (JSON; 'last_updated' stamped on every build).
 - https://boatrentalinmarbella.com/api/pages.json — single-fetch JSON index of every sitemap-listed page: url, title, description, kind, locale, excerpt.
 
@@ -116,7 +116,7 @@
 - https://boatrentalinmarbella.com/puerto-banus-vs-marbella-marina-boat-rental/ — Compare Puerto Banús vs Marbella Marina boat rental. Find which departure point suits your charter: glitz, parking, or convenience. Book your boat today.
 - https://boatrentalinmarbella.com/ru/ — Арендуйте яхту в Марбелье с лицензированным шкипером. Пуэрто-Банус, Марина Марбельи, Кабопино. Фиксированные цены, мгновенное подтверждение через WhatsApp.
 - https://boatrentalinmarbella.com/sailboat-rental-marbella/ — Discover sailboat rental Marbella with crewed and bareboat options. Explore the Costa del Sol from Puerto Banús. Book your sailing charter today.
-- https://boatrentalinmarbella.com/site-map/ — Full directory of all 525 pages on Boat Rental Marbella — charter types, fleet, experiences, guides, languages and policies.
+- https://boatrentalinmarbella.com/site-map/ — Full directory of all 526 pages on Boat Rental Marbella — charter types, fleet, experiences, guides, languages and policies.
 - https://boatrentalinmarbella.com/speedboat-rental-marbella/ — Book a speedboat rental Marbella from Puerto Banús. 6 passengers, 7m boat, skipper included, from €749/2h. High-performance charters with drinks &amp; snacks.
 - https://boatrentalinmarbella.com/sunset-cruise-marbella/ — Sunset cruise Marbella from €749 for 2 hours on our Astondoa 40 or Azimut 39 motor yacht. Departure 1h before sunset from Puerto Banús — skipper, drinks and VAT included.
 - https://boatrentalinmarbella.com/superyacht-charter-marbella/ — Superyacht charter Marbella with Mangusta 80, Ferretti 94 &amp; Canados 86. 24-29m vessels, 12 pax, skipper + drinks included. Book Puerto Banús.
@@ -396,6 +396,7 @@
 - https://boatrentalinmarbella.com/blog/marbella-yacht-charter-rainy-day-policy/ — Learn our Marbella yacht charter rain policy for refunds and reschedules. Clear terms for weather cancellations with 100% flexibility.
 - https://boatrentalinmarbella.com/blog/marbella-yacht-charter-rosé-wine-pairing/ — Discover the best rosé wines for your Marbella yacht charter. Expert pairing tips for sun, sea, and luxury cruising from Puerto Banús.
 - https://boatrentalinmarbella.com/blog/marbella-yacht-charter-sea-conditions-forecast/ — Learn to read sea conditions for your Marbella yacht charter. Get wind, swell &amp; tide tips for Puerto Banús departures. Book with confidence today.
+- https://boatrentalinmarbella.com/blog/marbella-yacht-charter-sotogrande-polo-final/ — Planning a Marbella yacht charter for the Sotogrande Polo Final 2026? Cruise 20NM of coast from €749/2h, then celebrate the Copa de Oro final. Book now.
 - https://boatrentalinmarbella.com/blog/marbella-yacht-charter-st-patricks-day/ — Celebrate St. Patrick&#x27;s Day with a yacht charter in Marbella. Our fleet departs Puerto Banús, includes skipper &amp; drinks. From €749/2h. Book now.
 - https://boatrentalinmarbella.com/blog/marbella-yacht-charter-stag-weekend-activities/ — Discover top marbella yacht charter stag weekend activities with onboard fun &amp; extras. Jet skis, BBQs, and more from €749. Book your ultimate party today.
 - https://boatrentalinmarbella.com/blog/marbella-yacht-charter-stag-weekend-budget/ — Plan a marbella yacht charter stag weekend budget from €749 for 2 hours. Compare boat specs, inclusions, and hidden costs for your group.

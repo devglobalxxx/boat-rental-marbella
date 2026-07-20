@@ -1,7 +1,7 @@
 {
   "@context": "https://boatrentalinmarbella.com/api/pages.json",
   "source": "https://boatrentalinmarbella.com",
-  "count": 430,
+  "count": 425,
   "kinds": [
     "blog",
     "boat",
@@ -300,14 +300,6 @@
       "kind": "blog",
       "locale": "en",
       "excerpt": "Imagine gliding across the Mediterranean as the sky turns shades of orange and pink, with the Sierra Blanca mountains as your backdrop. A Cabopino boat rental sunset cruise offers exactly that – a private, unforgettable evening on the water. Departing from Puerto Banús, just 10 m"
-    },
-    {
-      "url": "https://boatrentalinmarbella.com/blog/cabopino-charter-departures/",
-      "title": "Charter Departures from Cabopino vs Puerto Banús",
-      "description": "Compare Cabopino and Puerto Banús charter departures in Marbella. Find the best base for your boat trip with prices from €749/2h. Book your charter today.",
-      "kind": "blog",
-      "locale": "en",
-      "excerpt": "When planning a boat charter in Marbella, one of the first decisions is where to set sail. Most visitors choose between Cabopino, a quiet marina east of Marbella, and Puerto Banús, the glitzy superyacht hub west of the city. This guide compares both departure points for your Cabo"
     },
     {
       "url": "https://boatrentalinmarbella.com/blog/cabopino-vs-estepona-marina-departure/",
@@ -700,6 +692,14 @@
       "kind": "blog",
       "locale": "en",
       "excerpt": "If you are searching for a Mangusta 80 'Nina' Marbella review that tells you what it is really like onboard, you have found it. I spent a full day on this 24-metre open yacht out of Puerto Banús, and here is the honest, no-fluff breakdown: how it feels, what you get, and whether "
+    },
+    {
+      "url": "https://boatrentalinmarbella.com/blog/mangusta-80-vs-azimut-58-comparison/",
+      "title": "Mangusta 80 vs Azimut 58: Which Yacht to Charter in Marbella",
+      "description": "Mangusta 80 vs Azimut 58 in Marbella: compare size, speed, guest capacity and price from €4,719 for 4h. Book your Puerto Banús charter via WhatsApp today.",
+      "kind": "blog",
+      "locale": "en",
+      "excerpt": "Two yachts, one marina, very different feel on board: the Mangusta 80 is a 24-metre superyacht from €4,719 for a 4-hour minimum charter with a free jet ski included, while the Azimut 58 Flybridge is a 17.6-metre flybridge cruiser priced on request via WhatsApp. Both carry up to 1"
     },
     {
       "url": "https://boatrentalinmarbella.com/blog/mangusta-80-vs-canados-86-marbella/",
@@ -1758,14 +1758,6 @@
       "excerpt": "Understanding the Puerto Banus yacht rental cost breakdown is the first step to a stress-free day on the water. Unlike many operators that add fees for fuel, cleaning, or crew, our charters are transparent from the start. Every boat in our fleet departs from Puerto Banús and incl"
     },
     {
-      "url": "https://boatrentalinmarbella.com/blog/puerto-banus-yacht-rental-stag-weekend-guide/",
-      "title": "Puerto Banus Stag Weekend: Ultimate Yacht Rental Guide",
-      "description": "Plan the ultimate Puerto Banus stag weekend yacht rental with our guide. Prices from €749/2h on Astondoa 40. Book now for an unforgettable party on the water.",
-      "kind": "blog",
-      "locale": "en",
-      "excerpt": "Planning a Puerto Banus stag weekend yacht rental is the ultimate way to celebrate before the big day. With the Mediterranean sun, luxury yachts, and world-class nightlife on your doorstep, Marbella's Puerto Banús is the perfect party base. Whether you want a fast 2-hour blast or"
-    },
-    {
       "url": "https://boatrentalinmarbella.com/blog/puerto-banus-yacht-rental-winter-season/",
       "title": "Puerto Banus Yacht Rental in Winter: Why Off-Season Works",
       "description": "Discover why winter is the smart season for Puerto Banus yacht rental. Enjoy calm seas, lower rates, and guaranteed berths. Book your off-peak charter today.",
@@ -2742,14 +2734,6 @@
       "excerpt": "Combine two of Marbella's best experiences into one evening: a dolphin watching sunset cruise. You'll spend the first part of your charter scanning the Mediterranean for wild dolphins, then anchor off the coast to watch the sun sink behind La Concha. It's a private charter, so th"
     },
     {
-      "url": "https://boatrentalinmarbella.com/experiences/marbella-family-boat-day-paddleboarding/",
-      "title": "Marbella Family Boat Day with Paddleboarding and Snorkeling",
-      "description": "Book a Marbella family boat day with paddleboarding and snorkeling. From €749 for 2h on our Astondoa 40. Licensed skipper, drinks, snacks included.",
-      "kind": "experience",
-      "locale": "en",
-      "excerpt": "Spend a day on the water with your family, paddleboarding along the Costa del Sol and snorkeling in crystal-clear coves. Our Marbella family boat day with paddleboarding and snorkeling departs from Puerto Banús, with boats sized from 6.4m to 29m. All charters include a licensed s"
-    },
-    {
       "url": "https://boatrentalinmarbella.com/experiences/marbella-family-boat-day-paddleboarding-snorkeling/",
       "title": "Marbella Family Boat Day: Paddleboarding and Snorkeling Adventure",
       "description": "Book a Marbella family boat day with paddleboarding and snorkeling from Puerto Banús. 12.5m Astondoa 40 from €749/2h. Licensed skipper, drinks, snacks included.",
@@ -2772,14 +2756,6 @@
       "kind": "experience",
       "locale": "en",
       "excerpt": "Looking for a family paddleboarding boat day Marbella that keeps everyone happy from toddler to grandparent? You have found it. Depart from Puerto Banús on a private charter with SUP boards included, a relaxed skipper, and calm coves perfect for first-timers. No crowds, no queuin"
-    },
-    {
-      "url": "https://boatrentalinmarbella.com/experiences/marbella-family-snorkeling-paddleboard-combo/",
-      "title": "Marbella Family Snorkeling &amp; Paddleboard Boat Combo Experience",
-      "description": "Book a Marbella family snorkeling paddleboard boat combo from Puerto Banús. 12+ boats, 5-12 pax, skipper &amp; drinks included. Fun on the Costa del Sol.",
-      "kind": "experience",
-      "locale": "en",
-      "excerpt": "Combine the best of both worlds on a Marbella family snorkeling paddleboard boat charter. You get a private boat from Puerto Banús, with all the gear for snorkeling and paddleboarding, plus a skipper who knows the best coves. No crowds, no queues—just your family and the Mediterr"
     },
     {
       "url": "https://boatrentalinmarbella.com/experiences/marbella-fishing-and-sunset-combo/",
@@ -2908,14 +2884,6 @@
       "kind": "experience",
       "locale": "en",
       "excerpt": "As the sun drops behind La Concha and the Mediterranean turns gold, few experiences rival a Marbella sunset tapas cruise . Departing from Puerto Banús, you'll sip chilled cava, share Spanish tapas, and watch the coastline fade into dusk – all from a private motor yacht. Whether y"
-    },
-    {
-      "url": "https://boatrentalinmarbella.com/experiences/marbella-sunset-tapas-cruise-romantic/",
-      "title": "Marbella Sunset Tapas Cruise: A Romantic Evening on the Sea",
-      "description": "Experience a romantic Marbella sunset tapas cruise from Puerto Banús. Enjoy 2 hours on a luxury yacht with drinks, snacks &amp; sea views. Book your evening now.",
-      "kind": "experience",
-      "locale": "en",
-      "excerpt": "Imagine gliding across the Mediterranean as the sun sinks behind the Sierra Blanca, a glass of chilled cava in hand, the sky turning shades of amber and rose. A Marbella sunset tapas cruise is the quintessential romantic evening – intimate, effortless, and unforgettable. Whether "
     },
     {
       "url": "https://boatrentalinmarbella.com/experiences/marbella-wine-tasting-yacht-cruise/",
@@ -3342,14 +3310,6 @@
       "excerpt": ""
     },
     {
-      "url": "https://boatrentalinmarbella.com/private-boat-charter-marbella/",
-      "title": "Private Boat Charter Marbella 2026 — Luxury Yachts from €749",
-      "description": "Private boat charter Marbella from €749 · 2h. Luxury motor yachts departing Puerto Banús — skipper, drinks, fuel &amp; VAT all included. Direct booking, no intermediaries. WhatsApp reply in &lt;5 min.",
-      "kind": "spoke",
-      "locale": "en",
-      "excerpt": ""
-    },
-    {
       "url": "https://boatrentalinmarbella.com/puerto-banus-vs-marbella-marina-boat-rental/",
       "title": "Puerto Banus vs Marbella Marina Boat Rental: Which Departure Point Is Best?",
       "description": "Compare Puerto Banús vs Marbella Marina boat rental. Find which departure point suits your charter: glitz, parking, or convenience. Book your boat today.",
@@ -3384,7 +3344,7 @@
     {
       "url": "https://boatrentalinmarbella.com/site-map/",
       "title": "Site Map — every page on Boat Rental Marbella",
-      "description": "Full directory of all 524 pages on Boat Rental Marbella — charter types, fleet, experiences, guides, languages and policies.",
+      "description": "Full directory of all 525 pages on Boat Rental Marbella — charter types, fleet, experiences, guides, languages and policies.",
       "kind": "spoke",
       "locale": "en",
       "excerpt": "Every page on Boat Rental Marbella, grouped by section. Looking for something specific? Message us on WhatsApp and ask."

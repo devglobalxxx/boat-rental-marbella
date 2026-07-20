@@ -1,7 +1,7 @@
 {
   "@context": "https://boatrentalinmarbella.com/api/pages.json",
   "source": "https://boatrentalinmarbella.com",
-  "count": 425,
+  "count": 426,
   "kinds": [
     "blog",
     "boat",
@@ -1396,6 +1396,14 @@
       "kind": "blog",
       "locale": "en",
       "excerpt": "When you book a Marbella yacht charter , understanding sea conditions is key to a safe and enjoyable day on the water. The Mediterranean off Puerto Banús can change from glassy calm to choppy within hours, especially during summer afternoons. This guide explains how to read wind,"
+    },
+    {
+      "url": "https://boatrentalinmarbella.com/blog/marbella-yacht-charter-sotogrande-polo-final/",
+      "title": "Sotogrande Polo Final 2026: Best Marbella Yacht Charter Packages",
+      "description": "Planning a Marbella yacht charter for the Sotogrande Polo Final 2026? Cruise 20NM of coast from €749/2h, then celebrate the Copa de Oro final. Book now.",
+      "kind": "blog",
+      "locale": "en",
+      "excerpt": "The Sotogrande Polo Final 2026 — the Copa de Oro decider at Santa María Polo Club, traditionally staged on the last Sunday of August — pulls a crowd of spectators, sponsors and players along this stretch of Andalucian coast. A growing number of them are basing themselves in Marbe"
     },
     {
       "url": "https://boatrentalinmarbella.com/blog/marbella-yacht-charter-st-patricks-day/",
@@ -3344,7 +3352,7 @@
     {
       "url": "https://boatrentalinmarbella.com/site-map/",
       "title": "Site Map — every page on Boat Rental Marbella",
-      "description": "Full directory of all 525 pages on Boat Rental Marbella — charter types, fleet, experiences, guides, languages and policies.",
+      "description": "Full directory of all 526 pages on Boat Rental Marbella — charter types, fleet, experiences, guides, languages and policies.",
       "kind": "spoke",
       "locale": "en",
       "excerpt": "Every page on Boat Rental Marbella, grouped by section. Looking for something specific? Message us on WhatsApp and ask."
@@ -3411,7 +3419,7 @@
       "description": "Yacht charter Marbella from €749 for 2h. Our 12.5 m flybridge motor yachts (Astondoa 40 + Azimut 39) crewed by licensed skipper, departing Puerto Banús. Drinks, fuel, insurance and VAT included.",
       "kind": "spoke",
       "locale": "en",
-      "excerpt": "Yacht charter in Marbella means stepping onto a 10-to-25-metre crewed motor yacht at Puerto Banús (occasionally Marbella Marina), being handed a cold drink, and being driven up the Golden Mile coastline by a licensed skipper who knows where the wind drops in the afternoon. Prices"
+      "excerpt": "Yacht charter in Marbella means stepping onto a 10-to-25-metre crewed motor yacht at Puerto Banús (occasionally Marbella Marina ), being handed a cold drink, and being driven up the Golden Mile coastline by a licensed skipper who knows where the wind drops in the afternoon. Price"
     },
     {
       "url": "https://boatrentalinmarbella.com/yacht-charter-puerto-banus/",

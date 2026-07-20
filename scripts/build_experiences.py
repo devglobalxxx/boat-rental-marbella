@@ -204,7 +204,7 @@ def render_hub():
 def render_family():
     body = f'''<p>A family boat day in Marbella is its own type of charter — different boat choice, different itinerary, different pace from a stag-party flybridge or a sunset cruise for two. This page is the practical playbook: which of our boats works best for kids, what we pre-load on board, and where to anchor for the calmest snorkel of the day.</p>
 
-<figure class="inline-img"><img src="/img/customers/h06-1200.jpg" srcset="/img/customers/h06-600.jpg 600w, /img/customers/h06-900.jpg 900w, /img/customers/h06-1200.jpg 1200w" sizes="(max-width: 880px) 100vw, 720px" alt="Family on board a Marbella charter yacht with kids" loading="lazy" width="1200" height="800"></figure>
+<figure class="inline-img"><img src="/img/customers/h06-900.jpg" srcset="/img/customers/h06-600.jpg 600w, /img/customers/h06-900.jpg 900w" sizes="(max-width: 880px) 100vw, 720px" alt="Family on board a Marbella charter yacht with kids" loading="lazy" width="1200" height="800"></figure>
 
 <h2>Which boat for a family day?</h2>
 <table>
@@ -315,7 +315,7 @@ def render_family():
 def render_photoshoot():
     body = f'''<p>A yacht photoshoot in Marbella is its own kind of charter — different goals from a sunset cruise or a stag party. Models or photographers want light angles, deck space, backdrop options. This page is the practical guide: which boat shoots best, what time of day works, where to anchor for the iconic La Concha shot, and how to coordinate hair / makeup / outfit changes on board.</p>
 
-<figure class="inline-img"><img src="/img/customers/h04-1200.jpg" srcset="/img/customers/h04-600.jpg 600w, /img/customers/h04-900.jpg 900w" sizes="(max-width: 880px) 100vw, 720px" alt="Photoshoot on a Marbella yacht — guest at the helm in a white dress" loading="lazy" width="1200" height="800"></figure>
+<figure class="inline-img"><img src="/img/customers/h04-900.jpg" srcset="/img/customers/h04-600.jpg 600w, /img/customers/h04-900.jpg 900w" sizes="(max-width: 880px) 100vw, 720px" alt="Photoshoot on a Marbella yacht — guest at the helm in a white dress" loading="lazy" width="1200" height="800"></figure>
 
 <h2>Best boat for a photoshoot</h2>
 <table>

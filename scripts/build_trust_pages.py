@@ -21,6 +21,16 @@ SITE = json.loads((ROOT / "config" / "keyword_map.json").read_text())["site"]
 REVIEWS = json.loads((ROOT / "config" / "reviews.json").read_text())
 BOATS_CFG = json.loads((ROOT / "config" / "boats.json").read_text())
 FLEET_N = len(BOATS_CFG["boats"])
+
+def _boat_slug_for_review(display_name: str) -> str:
+    """Map a review's free-text boat name (e.g. "Astondoa 40 'Fufi'") to its
+    real boats.json slug — naive slugify of the display text produces
+    fictional URLs like /boats/astondoa-40-fufi/ once a nickname is quoted."""
+    for b in BOATS_CFG["boats"]:
+        if display_name.lower().startswith(b["name"].lower()):
+            return b["slug"]
+    # Fallback: old naive behaviour, better than a hard crash
+    return re.sub(r"[^a-z0-9]+", "-", display_name.lower()).strip("-")
 _FLEET_LOWS = [min(t["prices"].values())
                for t in (BOATS_CFG["hourly_price_tiers"][b["tier"]] for b in BOATS_CFG["boats"])
                if t["prices"]]
@@ -146,7 +156,7 @@ def render_reviews():
   <footer class="review-meta">
     <span itemprop="author" itemscope itemtype="https://schema.org/Person"><span itemprop="name">{html.escape(r['author'])}</span></span>
     · {r['country']}
-    · <a href="/boats/{re.sub(r'[^a-z0-9]+', '-', r['boat'].lower()).strip('-')}/">{html.escape(r['boat'])}</a>
+    · <a href="/boats/{_boat_slug_for_review(r['boat'])}/">{html.escape(r['boat'])}</a>
     · <time itemprop="datePublished" datetime="{r['date']}">{r['date']}</time>
   </footer>
 </article>''')

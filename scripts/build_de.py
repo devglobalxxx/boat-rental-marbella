@@ -835,9 +835,13 @@ def localize_chrome(out: str) -> str:
 
 
 def render(p):
-    widths = [600, 900, 1200, 1600]
+    # Not every hero_base has every size on disk (e.g. astondoa-40/lifestyle
+    # tops out at 1200) — only claim widths that actually exist.
+    all_widths = [600, 900, 1200, 1600]
+    widths = [w for w in all_widths
+              if (SITE_DIR / f"{p['hero_base'].lstrip('/')}-{w}.jpg").exists()] or [600]
     hero_srcset = ", ".join(f"{p['hero_base']}-{w}.jpg {w}w" for w in widths)
-    hero_img = f"{p['hero_base']}-1600.jpg"
+    hero_img = f"{p['hero_base']}-{widths[-1]}.jpg"
 
     jsonld = json.dumps({
         "@context": "https://schema.org",

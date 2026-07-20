@@ -1,0 +1,269 @@
+{
+ "threshold": 0.75,
+ "n_pages": 370,
+ "clusters": [
+  {
+   "members": [
+    "blog/astondoa-40-review-marbella",
+    "blog/azimut-39-review-marbella",
+    "blog/azimut-58-review-marbella",
+    "blog/bandido-review-marbella",
+    "blog/canados-86-review-marbella",
+    "blog/dubhe-review-marbella",
+    "blog/ferretti-94-review-marbella",
+    "blog/k80-review-marbella",
+    "blog/lagoon-380-review-marbella",
+    "blog/maiora-26m-review-marbella",
+    "blog/mangusta-80-review-marbella",
+    "blog/mariah-sx21-review-marbella",
+    "blog/pershing-46-review-marbella",
+    "blog/speedboat-review-marbella"
+   ],
+   "pair_scores": {
+    "blog/astondoa-40-review-marbella <> blog/bandido-review-marbella": 0.79,
+    "blog/astondoa-40-review-marbella <> blog/canados-86-review-marbella": 0.79,
+    "blog/astondoa-40-review-marbella <> blog/dubhe-review-marbella": 0.76,
+    "blog/astondoa-40-review-marbella <> blog/ferretti-94-review-marbella": 0.75,
+    "blog/azimut-39-review-marbella <> blog/azimut-58-review-marbella": 0.82,
+    "blog/azimut-39-review-marbella <> blog/bandido-review-marbella": 0.82,
+    "blog/azimut-39-review-marbella <> blog/canados-86-review-marbella": 0.78,
+    "blog/azimut-39-review-marbella <> blog/dubhe-review-marbella": 0.81,
+    "blog/azimut-39-review-marbella <> blog/ferretti-94-review-marbella": 0.8,
+    "blog/azimut-39-review-marbella <> blog/k80-review-marbella": 0.81,
+    "blog/azimut-39-review-marbella <> blog/maiora-26m-review-marbella": 0.75,
+    "blog/azimut-58-review-marbella <> blog/dubhe-review-marbella": 0.76,
+    "blog/bandido-review-marbella <> blog/canados-86-review-marbella": 0.87,
+    "blog/bandido-review-marbella <> blog/dubhe-review-marbella": 0.84,
+    "blog/bandido-review-marbella <> blog/ferretti-94-review-marbella": 0.76,
+    "blog/bandido-review-marbella <> blog/k80-review-marbella": 0.8,
+    "blog/canados-86-review-marbella <> blog/dubhe-review-marbella": 0.8,
+    "blog/canados-86-review-marbella <> blog/k80-review-marbella": 0.76,
+    "blog/canados-86-review-marbella <> blog/lagoon-380-review-marbella": 0.75,
+    "blog/dubhe-review-marbella <> blog/ferretti-94-review-marbella": 0.79,
+    "blog/dubhe-review-marbella <> blog/k80-review-marbella": 0.83,
+    "blog/dubhe-review-marbella <> blog/maiora-26m-review-marbella": 0.77,
+    "blog/dubhe-review-marbella <> blog/pershing-46-review-marbella": 0.76,
+    "blog/dubhe-review-marbella <> blog/speedboat-review-marbella": 0.75,
+    "blog/ferretti-94-review-marbella <> blog/k80-review-marbella": 0.75,
+    "blog/k80-review-marbella <> blog/maiora-26m-review-marbella": 0.76,
+    "blog/k80-review-marbella <> blog/mariah-sx21-review-marbella": 0.75,
+    "blog/k80-review-marbella <> blog/pershing-46-review-marbella": 0.75,
+    "blog/k80-review-marbella <> blog/speedboat-review-marbella": 0.77,
+    "blog/maiora-26m-review-marbella <> blog/mangusta-80-review-marbella": 0.79,
+    "blog/maiora-26m-review-marbella <> blog/mariah-sx21-review-marbella": 0.82
+   }
+  },
+  {
+   "members": [
+    "blog/estepona-marina-vs-puerto-banus-departure",
+    "blog/puerto-banus-vs-estepona-marina-yacht-departure",
+    "blog/puerto-banus-vs-marbella-marina",
+    "puerto-banus-vs-marbella-marina-boat-rental"
+   ],
+   "pair_scores": {
+    "blog/estepona-marina-vs-puerto-banus-departure <> blog/puerto-banus-vs-estepona-marina-yacht-departure": 0.87,
+    "blog/estepona-marina-vs-puerto-banus-departure <> puerto-banus-vs-marbella-marina-boat-rental": 0.83,
+    "blog/puerto-banus-vs-estepona-marina-yacht-departure <> blog/puerto-banus-vs-marbella-marina": 0.79,
+    "blog/puerto-banus-vs-estepona-marina-yacht-departure <> puerto-banus-vs-marbella-marina-boat-rental": 0.8
+   }
+  },
+  {
+   "members": [
+    "astondoa-40-vs-pershing-46-marbella-comparison",
+    "blog/astondoa-40-vs-pershing-46-cost-comparison",
+    "blog/astondoa-40-vs-sunseeker-manhattan-66-marbella-comparison"
+   ],
+   "pair_scores": {
+    "astondoa-40-vs-pershing-46-marbella-comparison <> blog/astondoa-40-vs-pershing-46-cost-comparison": 0.8,
+    "astondoa-40-vs-pershing-46-marbella-comparison <> blog/astondoa-40-vs-sunseeker-manhattan-66-marbella-comparison": 0.76
+   }
+  },
+  {
+   "members": [
+    "blog/birthday-yacht-charter-marbella",
+    "experiences/birthday-yacht-marbella",
+    "experiences/teen-birthday-yacht-marbella"
+   ],
+   "pair_scores": {
+    "blog/birthday-yacht-charter-marbella <> experiences/birthday-yacht-marbella": 0.76,
+    "experiences/birthday-yacht-marbella <> experiences/teen-birthday-yacht-marbella": 0.76
+   }
+  },
+  {
+   "members": [
+    "blog/marbella-boat-rental-weather-june",
+    "blog/marbella-boat-rental-weather-march",
+    "blog/marbella-yacht-charter-weather-conditions"
+   ],
+   "pair_scores": {
+    "blog/marbella-boat-rental-weather-june <> blog/marbella-boat-rental-weather-march": 0.84,
+    "blog/marbella-boat-rental-weather-june <> blog/marbella-yacht-charter-weather-conditions": 0.75,
+    "blog/marbella-boat-rental-weather-march <> blog/marbella-yacht-charter-weather-conditions": 0.81
+   }
+  },
+  {
+   "members": [
+    "experiences/marbella-family-boat-day-paddleboarding",
+    "experiences/marbella-family-boat-day-paddleboarding-snorkeling",
+    "experiences/marbella-family-snorkeling-paddleboard-combo"
+   ],
+   "pair_scores": {
+    "experiences/marbella-family-boat-day-paddleboarding <> experiences/marbella-family-boat-day-paddleboarding-snorkeling": 0.86,
+    "experiences/marbella-family-boat-day-paddleboarding-snorkeling <> experiences/marbella-family-snorkeling-paddleboard-combo": 0.75
+   }
+  },
+  {
+   "members": [
+    "azimut-58-vs-sunseeker-predator-74-marbella",
+    "blog/azimut-58-vs-sunseeker-predator-marbella"
+   ],
+   "pair_scores": {
+    "azimut-58-vs-sunseeker-predator-74-marbella <> blog/azimut-58-vs-sunseeker-predator-marbella": 0.76
+   }
+  },
+  {
+   "members": [
+    "blog/azimut-39-vs-pershing-46-marbella",
+    "blog/pershing-46-vs-azimut-39"
+   ],
+   "pair_scores": {
+    "blog/azimut-39-vs-pershing-46-marbella <> blog/pershing-46-vs-azimut-39": 0.85
+   }
+  },
+  {
+   "members": [
+    "blog/bandido-best-for",
+    "blog/marbella-hen-stag-weekend-yacht-cost"
+   ],
+   "pair_scores": {
+    "blog/bandido-best-for <> blog/marbella-hen-stag-weekend-yacht-cost": 0.76
+   }
+  },
+  {
+   "members": [
+    "blog/cabopino-boat-rental-family-snorkeling",
+    "blog/marbella-boat-rental-family-day-cabopino"
+   ],
+   "pair_scores": {
+    "blog/cabopino-boat-rental-family-snorkeling <> blog/marbella-boat-rental-family-day-cabopino": 0.93
+   }
+  },
+  {
+   "members": [
+    "blog/cabopino-charter-departures",
+    "blog/puerto-banus-vs-cabopino-departure"
+   ],
+   "pair_scores": {
+    "blog/cabopino-charter-departures <> blog/puerto-banus-vs-cabopino-departure": 0.79
+   }
+  },
+  {
+   "members": [
+    "blog/corporate-yacht-charter-marbella",
+    "corporate-boat-hire-marbella"
+   ],
+   "pair_scores": {
+    "blog/corporate-yacht-charter-marbella <> corporate-boat-hire-marbella": 0.84
+   }
+  },
+  {
+   "members": [
+    "blog/dolphin-watching-marbella",
+    "blog/marbella-dolphin-watching-best-time-of-day"
+   ],
+   "pair_scores": {
+    "blog/dolphin-watching-marbella <> blog/marbella-dolphin-watching-best-time-of-day": 0.76
+   }
+  },
+  {
+   "members": [
+    "blog/ferretti-94-vs-canados-86-marbella",
+    "superyacht-charter-marbella"
+   ],
+   "pair_scores": {
+    "blog/ferretti-94-vs-canados-86-marbella <> superyacht-charter-marbella": 0.77
+   }
+  },
+  {
+   "members": [
+    "blog/mangusta-80-vs-ferretti-94-marbella",
+    "mangusta-80-vs-ferretti-94-marbella-comparison"
+   ],
+   "pair_scores": {
+    "blog/mangusta-80-vs-ferretti-94-marbella <> mangusta-80-vs-ferretti-94-marbella-comparison": 0.77
+   }
+  },
+  {
+   "members": [
+    "blog/marbella-yacht-charter-stag-weekend-itinerary",
+    "blog/puerto-banus-yacht-rental-stag-weekend-guide"
+   ],
+   "pair_scores": {
+    "blog/marbella-yacht-charter-stag-weekend-itinerary <> blog/puerto-banus-yacht-rental-stag-weekend-guide": 0.77
+   }
+  },
+  {
+   "members": [
+    "blog/pershing-46-vs-fairline-targa-12m-marbella",
+    "blog/princess-v58-vs-fairline-targa-12m"
+   ],
+   "pair_scores": {
+    "blog/pershing-46-vs-fairline-targa-12m-marbella <> blog/princess-v58-vs-fairline-targa-12m": 0.78
+   }
+  },
+  {
+   "members": [
+    "blog/sotogrande-to-marbella-by-boat",
+    "experiences/sotogrande-charter-from-marbella"
+   ],
+   "pair_scores": {
+    "blog/sotogrande-to-marbella-by-boat <> experiences/sotogrande-charter-from-marbella": 0.76
+   }
+  },
+  {
+   "members": [
+    "blog/sotogrande-yacht-charter-polo-season",
+    "blog/sotogrande-yacht-charter-polo-season-guide"
+   ],
+   "pair_scores": {
+    "blog/sotogrande-yacht-charter-polo-season <> blog/sotogrande-yacht-charter-polo-season-guide": 0.82
+   }
+  },
+  {
+   "members": [
+    "experiences/marbella-full-day-yoga-retreat-at-sea",
+    "experiences/sunrise-yoga-yacht-marbella"
+   ],
+   "pair_scores": {
+    "experiences/marbella-full-day-yoga-retreat-at-sea <> experiences/sunrise-yoga-yacht-marbella": 0.76
+   }
+  },
+  {
+   "members": [
+    "experiences/marbella-sunset-tapas-cruise",
+    "experiences/marbella-sunset-tapas-cruise-romantic"
+   ],
+   "pair_scores": {
+    "experiences/marbella-sunset-tapas-cruise <> experiences/marbella-sunset-tapas-cruise-romantic": 0.84
+   }
+  },
+  {
+   "members": [
+    "marbella-boat-rental-vs-malaga",
+    "marbella-yacht-charter-vs-malaga"
+   ],
+   "pair_scores": {
+    "marbella-boat-rental-vs-malaga <> marbella-yacht-charter-vs-malaga": 0.78
+   }
+  },
+  {
+   "members": [
+    "private-boat-charter-marbella",
+    "yacht-charter-marbella"
+   ],
+   "pair_scores": {
+    "private-boat-charter-marbella <> yacht-charter-marbella": 0.77
+   }
+  }
+ ]
+}

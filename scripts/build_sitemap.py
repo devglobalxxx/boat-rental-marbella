@@ -47,7 +47,14 @@ def url(slug, prio, freq):
 lines = ['<?xml version="1.0" encoding="UTF-8"?>',
          '<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">',
          url("", "1.0", "weekly")]
+# Duplicate-intent dupes canonicalize to a cluster canonical — exclude their
+# keys from the sitemap (spokes here, blog below) so only canonicals get crawl budget.
+_canon_map_path = ROOT / "config" / "blog_canonical_map.json"
+NON_CANONICAL = (set(json.loads(_canon_map_path.read_text())["map"])
+                 if _canon_map_path.exists() else set())
 for s in CONFIG["spokes"]:
+    if s["slug"] in NON_CANONICAL:
+        continue
     lines.append(url(s["slug"], "0.9", "weekly"))
 lines.append(url("boats", "0.95", "weekly"))  # fleet index (high-intent)
 import json as _json

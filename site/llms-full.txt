@@ -1,14 +1,14 @@
 # Boat Rental Marbella — Full Content (top pages)
-# Generated 2026-07-20 · top 50 of 430 pages by sitemap priority
+# Generated 2026-07-20 · top 50 of 425 pages by sitemap priority
 # Canonical site: https://boatrentalinmarbella.com · index: https://boatrentalinmarbella.com/llms.txt
 #
 # Complete full-text dumps by section (fetch only what you need):
-#   https://boatrentalinmarbella.com/llms-full-core.txt — 89 pages (hub + transactional + trust & legal + localized (de/es/uk) pages)
+#   https://boatrentalinmarbella.com/llms-full-core.txt — 88 pages (hub + transactional + trust & legal + localized (de/es/uk) pages)
 #   https://boatrentalinmarbella.com/llms-full-boats.txt — 27 pages (per-boat detail pages)
-#   https://boatrentalinmarbella.com/llms-full-experiences.txt — 74 pages (experience landing pages)
+#   https://boatrentalinmarbella.com/llms-full-experiences.txt — 71 pages (experience landing pages)
 #   https://boatrentalinmarbella.com/llms-full-blog.txt — 85 pages (blog posts & guides)
 #   https://boatrentalinmarbella.com/llms-full-blog-2.txt — 85 pages (blog posts & guides)
-#   https://boatrentalinmarbella.com/llms-full-blog-3.txt — 70 pages (blog posts & guides)
+#   https://boatrentalinmarbella.com/llms-full-blog-3.txt — 69 pages (blog posts & guides)
 #
 # Records are separated by '---' and the canonical URL. Always link to
 # the canonical URL when citing.

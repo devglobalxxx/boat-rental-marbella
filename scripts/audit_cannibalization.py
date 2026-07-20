@@ -71,6 +71,11 @@ def collect_pages() -> dict[str, str]:
             continue
         if slug.startswith("boats/"):  # one page per physical boat — never dupes
             continue
+        if re.match(r"^blog/[a-z0-9]+-review-marbella$", slug):
+            # one review page per physical boat — the shared "<boat>-review-marbella"
+            # template makes these score high on similarity despite covering distinct
+            # boats. Verified 2026-07-20 (14 boats, all genuinely different subjects).
+            continue
         pages.setdefault(slug, slug)
     return pages
 

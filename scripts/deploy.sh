@@ -34,6 +34,9 @@ python3 scripts/build_video_sitemap.py
 echo "→ consistency gate"
 python3 scripts/check_consistency.py
 
+echo "→ broken-link gate"
+python3 scripts/check_broken_links.py --fail
+
 echo "→ commit main"
 git add -A
 if git diff --cached --quiet; then

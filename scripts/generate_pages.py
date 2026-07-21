@@ -192,7 +192,7 @@ def book_card_for(slug):
         return ov["price"], ov["label"], ov["pitch"]
     return (SITE['price_anchor_low_2h'],
             "2h skippered charter",
-            "Instant quotes from local operators across Puerto Banús, Marbella Marina, Cabopino, Estepona &amp; Sotogrande.")
+            "Direct quotes from our own Puerto Banús fleet — same boats, same skippers, no third-party hand-off.")
 
 # Optional secondary inline image per page (for body figure)
 PAGE_INLINE_MAP = {

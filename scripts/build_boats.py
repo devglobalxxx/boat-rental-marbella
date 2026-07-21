@@ -502,7 +502,7 @@ def write_page(slug, title, meta, h1, sub, eyebrow, hero_img, hero_srcset, hero_
         "{{JSONLD}}": json.dumps(jsonld, ensure_ascii=False),
         "{{PRICE_LOW}}": (f"{price_low:,}" if price_low else str(SITE['price_anchor_low_2h'])),
         "{{PRICE_LABEL}}": (price_label or "2h skippered charter"),
-        "{{BOOK_PITCH}}": (html.escape(book_pitch) if book_pitch else "Instant quotes from local operators across Puerto Banús, Marbella Marina, Cabopino, Estepona &amp; Sotogrande."),
+        "{{BOOK_PITCH}}": (html.escape(book_pitch) if book_pitch else "Direct quotes from our own Puerto Banús fleet — same boats, same skippers, no third-party hand-off."),
         "{{BOAT_GRID}}": "",
         "{{BREADCRUMBS}}": breadcrumbs,
         "{{BODY_HTML}}": body_html,

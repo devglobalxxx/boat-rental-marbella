@@ -3,7 +3,7 @@
 > Independent boat charter operator in Puerto Banús, Marbella (Spain). Founded by Andra Kiirkivi. Direct WhatsApp booking, no marketplace intermediaries. 27-boat fleet from entry-level day boats to a 24m Mangusta 80 flagship.
 
 ## Site facts
-- Last updated: 2026-07-20 (this file regenerates on every deploy)
+- Last updated: 2026-07-21 (this file regenerates on every deploy)
 - Operator: Boat Rental Marbella — independent, not a marketplace
 - Founder & operator: Andra Kiirkivi (CEO)
 - Locale: Marbella, Andalucía, Spain · Puerto Banús, Marbella Marina (Puerto Deportivo), Cabopino, Estepona, Sotogrande

@@ -195,6 +195,113 @@
   },
   "boats": [
     {
+      "slug": "nuvar-64",
+      "name": "Nuvari 64",
+      "tagline": "19.4 m flybridge motor yacht \"Avaco\" — Marbella's roomiest 10-guest charter",
+      "model_year": null,
+      "builder": "Nuvari",
+      "type": "Motor yacht",
+      "length_m": 19.4,
+      "capacity_pax": 10,
+      "departure_port": "Puerto Banús",
+      "tier": "tier_nuvar64",
+      "highlights": [
+        "19.4 m flybridge with full shade and second helm",
+        "Wood-and-cream saloon seating the whole group",
+        "Two private cabins for overnight charter",
+        "Seabob, paddleboard and snorkel gear included",
+        "Bluetooth sound system on deck and in the saloon"
+      ],
+      "hero_local": "/img/boats/nuvar-64/hero-1600.jpg",
+      "hero_local_srcset": [
+        [
+          "/img/boats/nuvar-64/hero-600.jpg",
+          600
+        ],
+        [
+          "/img/boats/nuvar-64/hero-900.jpg",
+          900
+        ],
+        [
+          "/img/boats/nuvar-64/hero-1200.jpg",
+          1200
+        ],
+        [
+          "/img/boats/nuvar-64/hero-1600.jpg",
+          1600
+        ]
+      ],
+      "hero_local_alt": "Nuvari 64 \"Avaco\" motor yacht anchored off Marbella with La Concha mountain behind",
+      "gallery_local": [
+        {
+          "src": "/img/boats/nuvar-64/marina-1200.jpg",
+          "srcset": [
+            [
+              "/img/boats/nuvar-64/marina-600.jpg",
+              600
+            ],
+            [
+              "/img/boats/nuvar-64/marina-900.jpg",
+              900
+            ],
+            [
+              "/img/boats/nuvar-64/marina-1200.jpg",
+              1200
+            ]
+          ],
+          "alt": "Nuvari 64 arriving at Puerto Banús marina"
+        },
+        {
+          "src": "/img/boats/nuvar-64/interior-1200.jpg",
+          "srcset": [
+            [
+              "/img/boats/nuvar-64/interior-600.jpg",
+              600
+            ],
+            [
+              "/img/boats/nuvar-64/interior-900.jpg",
+              900
+            ],
+            [
+              "/img/boats/nuvar-64/interior-1200.jpg",
+              1200
+            ]
+          ],
+          "alt": "Nuvari 64 interior saloon with wood finish and wraparound seating"
+        },
+        {
+          "src": "/img/boats/nuvar-64/lifestyle-1200.jpg",
+          "srcset": [
+            [
+              "/img/boats/nuvar-64/lifestyle-600.jpg",
+              600
+            ],
+            [
+              "/img/boats/nuvar-64/lifestyle-900.jpg",
+              900
+            ],
+            [
+              "/img/boats/nuvar-64/lifestyle-1200.jpg",
+              1200
+            ]
+          ],
+          "alt": "Guests relaxing on the foredeck of the Nuvari 64 off Marbella"
+        }
+      ],
+      "video_local": {
+        "src": "/video/nuvar-64-cruising.mp4",
+        "poster": "/video/nuvar-64-cruising.jpg",
+        "alt": "Nuvari 64 cruising off the Marbella coast",
+        "caption": "The Nuvari 64 underway off Marbella"
+      },
+      "summary": "The Nuvari 64 \"Avaco\" is the roomiest boat in the fleet for a 10-guest day out — 19.4 metres of flybridge motor yacht with a full-beam saloon, two cabins, and departure straight from Puerto Banús. Seabob, paddleboard and snorkel gear are included, and skipper, fuel, drinks and VAT come standard on every charter.",
+      "intent_keywords": [
+        "Nuvari 64 Marbella",
+        "10 guest yacht charter Marbella",
+        "flybridge motor yacht Puerto Banús"
+      ]
+    },
+    {
       "slug": "astondoa-40",
       "name": "Astondoa 40",
       "tagline": "Spanish-built 12.5 m motor yacht — \"Fufi\" — at home in Puerto Banús",
@@ -2401,113 +2508,6 @@
           ],
           "alt": "Sea-Doo GTX Jet Ski — Marbella charter"
         }
-      ]
-    },
-    {
-      "slug": "nuvar-64",
-      "name": "Nuvari 64",
-      "tagline": "19.4 m flybridge motor yacht \"Avaco\" — Marbella's roomiest 10-guest charter",
-      "model_year": null,
-      "builder": "Nuvari",
-      "type": "Motor yacht",
-      "length_m": 19.4,
-      "capacity_pax": 10,
-      "departure_port": "Puerto Banús",
-      "tier": "tier_nuvar64",
-      "highlights": [
-        "19.4 m flybridge with full shade and second helm",
-        "Wood-and-cream saloon seating the whole group",
-        "Two private cabins for overnight charter",
-        "Seabob, paddleboard and snorkel gear included",
-        "Bluetooth sound system on deck and in the saloon"
-      ],
-      "hero_local": "/img/boats/nuvar-64/hero-1600.jpg",
-      "hero_local_srcset": [
-        [
-          "/img/boats/nuvar-64/hero-600.jpg",
-          600
-        ],
-        [
-          "/img/boats/nuvar-64/hero-900.jpg",
-          900
-        ],
-        [
-          "/img/boats/nuvar-64/hero-1200.jpg",
-          1200
-        ],
-        [
-          "/img/boats/nuvar-64/hero-1600.jpg",
-          1600
-        ]
-      ],
-      "hero_local_alt": "Nuvari 64 \"Avaco\" motor yacht anchored off Marbella with La Concha mountain behind",
-      "gallery_local": [
-        {
-          "src": "/img/boats/nuvar-64/marina-1200.jpg",
-          "srcset": [
-            [
-              "/img/boats/nuvar-64/marina-600.jpg",
-              600
-            ],
-            [
-              "/img/boats/nuvar-64/marina-900.jpg",
-              900
-            ],
-            [
-              "/img/boats/nuvar-64/marina-1200.jpg",
-              1200
-            ]
-          ],
-          "alt": "Nuvari 64 arriving at Puerto Banús marina"
-        },
-        {
-          "src": "/img/boats/nuvar-64/interior-1200.jpg",
-          "srcset": [
-            [
-              "/img/boats/nuvar-64/interior-600.jpg",
-              600
-            ],
-            [
-              "/img/boats/nuvar-64/interior-900.jpg",
-              900
-            ],
-            [
-              "/img/boats/nuvar-64/interior-1200.jpg",
-              1200
-            ]
-          ],
-          "alt": "Nuvari 64 interior saloon with wood finish and wraparound seating"
-        },
-        {
-          "src": "/img/boats/nuvar-64/lifestyle-1200.jpg",
-          "srcset": [
-            [
-              "/img/boats/nuvar-64/lifestyle-600.jpg",
-              600
-            ],
-            [
-              "/img/boats/nuvar-64/lifestyle-900.jpg",
-              900
-            ],
-            [
-              "/img/boats/nuvar-64/lifestyle-1200.jpg",
-              1200
-            ]
-          ],
-          "alt": "Guests relaxing on the foredeck of the Nuvari 64 off Marbella"
-        }
-      ],
-      "video_local": {
-        "src": "/video/nuvar-64-cruising.mp4",
-        "poster": "/video/nuvar-64-cruising.jpg",
-        "alt": "Nuvari 64 cruising off the Marbella coast",
-        "caption": "The Nuvari 64 underway off Marbella"
-      },
-      "summary": "The Nuvari 64 \"Avaco\" is the roomiest boat in the fleet for a 10-guest day out — 19.4 metres of flybridge motor yacht with a full-beam saloon, two cabins, and departure straight from Puerto Banús. Seabob, paddleboard and snorkel gear are included, and skipper, fuel, drinks and VAT come standard on every charter.",
-      "intent_keywords": [
-        "Nuvari 64 Marbella",
-        "10 guest yacht charter Marbella",
-        "flybridge motor yacht Puerto Banús"
       ]
     }
   ]

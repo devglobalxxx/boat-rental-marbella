@@ -300,6 +300,16 @@ def render_boat(boat):
             for g in gallery_local
         )
         gallery_html = f'<h2>Gallery</h2>\n{thumbs}'
+        video_local = boat.get("video_local")
+        if video_local:
+            gallery_html += (
+                f'\n<figure class="inline-video" style="max-width:420px;margin:24px auto">'
+                f'<video controls playsinline preload="none" poster="{video_local["poster"]}" '
+                f'style="width:100%;border-radius:12px;display:block" aria-label="{html.escape(video_local.get("alt", name))}">'
+                f'<source src="{video_local["src"]}" type="video/mp4"></video>'
+                f'<figcaption style="text-align:center;font-size:.85rem;color:var(--c-muted,#6b7280);margin-top:8px">'
+                f'{html.escape(video_local.get("caption", f"{name} on the water"))}</figcaption></figure>'
+            )
     elif gallery:
         thumbs = "".join(
             f'<figure class="inline-img"><img src="{pexels(gid, 1200)}" srcset="{pexels_srcset(gid, (480,768,1200))}" sizes="(max-width: 880px) 100vw, 720px" alt="{html.escape(name)} — Marbella" loading="lazy" width="1200" height="800"></figure>'

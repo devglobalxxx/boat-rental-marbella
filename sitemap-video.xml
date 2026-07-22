@@ -225,6 +225,19 @@
     </video:video>
   </url>
   <url>
+    <loc>https://boatrentalinmarbella.com/boats/nuvar-64/</loc>
+    <video:video>
+      <video:thumbnail_loc>https://boatrentalinmarbella.com/video/nuvar-64-cruising.jpg</video:thumbnail_loc>
+      <video:title>Nuvar 64 Cruising</video:title>
+      <video:description>Nuvar 64 Cruising</video:description>
+      <video:content_loc>https://boatrentalinmarbella.com/video/nuvar-64-cruising.mp4</video:content_loc>
+      <video:family_friendly>yes</video:family_friendly>
+      <video:requires_subscription>no</video:requires_subscription>
+      <video:live>no</video:live>
+      <video:publication_date>2026-07-22</video:publication_date>
+    </video:video>
+  </url>
+  <url>
     <loc>https://boatrentalinmarbella.com/es/</loc>
     <video:video>
       <video:thumbnail_loc>https://boatrentalinmarbella.com/video/aerial-yachts-marbella.jpg</video:thumbnail_loc>

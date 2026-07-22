@@ -549,6 +549,49 @@ def render(page: dict, kind: str, data: dict) -> str:
     # Boat-type grid — render only on hub
     BOAT_GRID = ""
     if kind == "hub":
+        # ---- Happy customers marquee (real guest photos/videos + dolphins) ----
+        HC_CARDS = [
+            ("img", "birthday", "Birthday girls, best day ever 🎂"),
+            ("img", "hen-party", "Hen party onboard 💍"),
+            ("video", "confetti", "Confetti at sea 🎉"),
+            ("img", "welcome-to-marbs", "Welcome to Marbs! 🔥"),
+            ("video", "saturday-boat-day", "Saturday Boat Day"),
+            ("img", "cocktails", "Cava o'clock 🥂"),
+            ("img", "big-group-cheer", "The whole crew"),
+            ("video", "thank-you", "Thank you for choosing us 💛"),
+            ("img", "enjoy-marbs", "Enjoy Marbs to the fullest"),
+            ("img", "dolphins-jumping", "Dolphins escorted us home 🐬"),
+            ("video", "dolphin-sighting", "Dolphin pod off Puerto Banús 🐬"),
+            ("img", "group-cheer", "Squad on the water"),
+            ("img", "colorful-group", "Golden hour, good company"),
+            ("img", "seal", "Even the locals stopped by"),
+        ]
+        def _hc_card(kind_, name, caption):
+            if kind_ == "img":
+                media = (f'<img src="/img/happy-customers/{name}.jpg" '
+                         f'srcset="/img/happy-customers/{name}.webp 900w" '
+                         f'alt="{html.escape(caption)}" loading="lazy" width="220" height="391">')
+            else:
+                media = (f'<video autoplay muted loop playsinline preload="metadata" '
+                         f'poster="/video/happy-customers/{name}.jpg" aria-label="{html.escape(caption)}">'
+                         f'<source src="/video/happy-customers/{name}.mp4" type="video/mp4"></video>')
+            badge = '<span class="hc-badge">🐬 Wildlife</span>' if "dolphin" in name or name == "seal" else ""
+            return f'<div class="hc-card">{media}{badge}<div class="hc-caption">{html.escape(caption)}</div></div>'
+        _hc_cards_html = "".join(_hc_card(*c) for c in HC_CARDS)
+        HAPPY_CUSTOMERS_SECTION = f'''<section class="happy-customers" aria-label="Happy customers gallery">
+  <div class="section-head">
+    <span class="eyebrow">Real guests · real moments</span>
+    <h2>Happy customers on the water</h2>
+    <p>Straight from our guests' own cameras — birthdays, hen parties, and the dolphins that turn up uninvited.</p>
+  </div>
+  <div class="hc-track-wrap">
+    <div class="hc-track">
+      {_hc_cards_html}
+      {_hc_cards_html}
+    </div>
+  </div>
+</section>'''
+
         # ---- Featured fleet section (from config/boats.json) ----
         def _pex(id_, w):
             return f"https://images.pexels.com/photos/{id_}/pexels-photo-{id_}.jpeg?auto=compress&cs=tinysrgb&w={w}"
@@ -648,7 +691,7 @@ def render(page: dict, kind: str, data: dict) -> str:
     {"".join(cards_html)}
   </div>
 </section>'''
-        BOAT_GRID = FLEET_SECTION + category_section
+        BOAT_GRID = HAPPY_CUSTOMERS_SECTION + FLEET_SECTION + category_section
 
     # hreflang for EN ↔ ES mapping (only for pages that have an ES counterpart)
     EN_TO_ES = {
